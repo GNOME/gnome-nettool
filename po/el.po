@@ -1,0 +1,2201 @@
+# translation of el.po to Greek
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Kostas Papadimas <pkst@gnome.org>, 2003, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: el\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-01-06 14:47+0200\n"
+"PO-Revision-Date: 2004-01-06 14:49+0200\n"
+"Last-Translator: Kostas Papadimas <pkst@gnome.org>\n"
+"Language-Team: Greek <nls@tux.hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
+msgid "GNOME Remote Desktop Applet"
+msgstr "Εφαρμογίδιο απομακρυσμένης επιφάνειας εργασίας του GNOME"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:1
+msgid "Connect to a remote desktop computer"
+msgstr "Σύνδεση σε έναν απομακρυσμένο υπολογιστή"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:2
+msgid "Remote Desktop Client"
+msgstr "Πελάτης απομακρυσμένου συστήματος"
+
+#: desktop/client/src/connect.c:75
+msgid "640 x 480 pixels"
+msgstr "640 x 480 εικονοστοιχεία"
+
+#: desktop/client/src/connect.c:75
+msgid "800 x 600 pixels"
+msgstr "800 x 600 εικονοστοιχεία"
+
+#: desktop/client/src/connect.c:76
+msgid "1024 x 768 pixels"
+msgstr "1024 x 768 εικονοστοιχεία"
+
+#: desktop/client/src/connect.c:77
+msgid "1152 x 864 pixels"
+msgstr "1152 x 864 εικονοστοιχεία"
+
+#: desktop/client/src/connect.c:78
+msgid "1280 x 960 pixels"
+msgstr "1280 x 960 εικονοστοιχεία"
+
+#: desktop/client/src/connect.c:82
+msgid "256 Colors"
+msgstr "256 χρώματα"
+
+#: desktop/client/src/connect.c:83
+msgid "High Color (15 bit)"
+msgstr "High Color (15 bit)"
+
+#: desktop/client/src/connect.c:84
+msgid "High Color (16 bit)"
+msgstr "High Color (16 bit)"
+
+#: desktop/client/src/connect.c:85
+msgid "True Color (24 bit)"
+msgstr "True Color (24 bit)"
+
+#: desktop/client/src/connect.c:287 desktop/client/src/connect.c:310
+#: desktop/client/src/connect.c:312 desktop/client/src/support.c:780
+#: desktop/gnome-remote-desktop.glade.h:13
+msgid "GNOME Remote Desktop"
+msgstr "Απομακρυσμένη επιφάνεια εργασίας του GNOME"
+
+#.
+#. This is the input for the Compact mode
+#.
+#: desktop/client/src/connect.c:344 desktop/client/src/connect.c:555
+msgid "Compu_ter:"
+msgstr "Υπολογι_στής:"
+
+#: desktop/client/src/connect.c:368 desktop/client/src/connect.c:623
+msgid "Enter the name or address of the remote system."
+msgstr "Εισάγετε το όνομα ή την διεύθυνση του απομακρυσμένου συστήματος."
+
+#: desktop/client/src/connect.c:373 desktop/client/src/connect.c:630
+msgid "Select the protocol to use for this connection."
+msgstr "Επιλέξτε το πρωτόκολλο που θα χρησιμοποιηθεί για αυτή την σύνδεση."
+
+#: desktop/client/src/connect.c:380 desktop/client/src/connect.c:637
+msgid ""
+"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
+"systems with desktop sharing."
+msgstr ""
+"Το πρωτόκολλο RDP χρησιμοποιείται για την σύνδεση μεταξύ Microsoft Terminal "
+"Servers και συστήματα  Windows XP με κοινόχρηστη επιφάνεια εργασίας."
+
+#: desktop/client/src/connect.c:385 desktop/client/src/connect.c:644
+msgid "VNC protocol is used to connect to systems sharing the desktop by using VNC."
+msgstr ""
+"Το πρωτόκολλο VNC χρησιμοποιείται για την σύνδεση μεταξύ συστημάτων που "
+"έχουν κοινή χρήση της επιφάνειας εργασίας με την χρήση VNC."
+
+#: desktop/client/src/connect.c:394 desktop/client/src/connect.c:655
+msgid "XDMCP protocol uses Xnest to connect to servers running X."
+msgstr ""
+"Το πρωτόκολλο XDMCP χρησιμοποιεί το Xnest για να συνδεθεί σε εξυπηρετητές "
+"που τρέχουν X."
+
+#: desktop/client/src/connect.c:399 desktop/client/src/connect.c:662
+msgid "ICA protocol is used to connect to Citrix servers."
+msgstr "Το πρωτόκολλο ICA χρησιμοποιείται για την σύνδεση σε εξυπηρετητές Citrix."
+
+#.
+#. This is the Profile Launcher
+#.
+#: desktop/client/src/connect.c:410
+msgid "Prof_ile Launcher:"
+msgstr "Εκκινητής προ_φίλ:"
+
+#: desktop/client/src/connect.c:423
+msgid "Select a saved profile to launch it immediately."
+msgstr "Επιλέξτε ένα αποθηκευμένο προφίλ για να το εκκινήσετε άμεσα."
+
+#: desktop/client/src/connect.c:455
+msgid "_More"
+msgstr "Περι_σσότερα"
+
+#: desktop/client/src/connect.c:481 desktop/client/src/connect.c:1225
+#: network-utilities/gnome-remote-shell.glade.h:6
+msgid "Co_nnect"
+msgstr "Σύ_νδεση"
+
+#.
+#. This is the label for the Connection Profile
+#.
+#: desktop/client/src/connect.c:490 desktop/client/src/connect.c:492
+msgid "Connection Profile"
+msgstr "Προφίλ σύνδεσης"
+
+#: desktop/client/src/connect.c:521 desktop/client/src/connect.c:523
+msgid "Logon Settings"
+msgstr "Ρυθμίσεις εισόδου"
+
+#: desktop/client/src/connect.c:531
+msgid "Type the name of the computer or choose a computer from the drop-down list."
+msgstr ""
+"Πληκτρολογήστε το όνομα του υπολογιστή ή επιλέξτε έναν υπολογιστή από την "
+"λίστα."
+
+#: desktop/client/src/connect.c:563
+msgid "Pro_tocol:"
+msgstr "Πρωτ_όκολλο:"
+
+#: desktop/client/src/connect.c:571
+msgid "_User Name:"
+msgstr "Ό_νομα χρήστη:"
+
+#: desktop/client/src/connect.c:579
+msgid "Pass_word:"
+msgstr "Κω_δικός:"
+
+#: desktop/client/src/connect.c:587
+msgid "Do_main:"
+msgstr "Το_μέας:"
+
+#: desktop/client/src/connect.c:595
+msgid "C_lient Hostname:"
+msgstr "Όνομα συστήματος πε_λάτη:"
+
+#: desktop/client/src/connect.c:603
+msgid "Prot_ocol File:"
+msgstr "Αρχείο πρωτ_οκόλλου:"
+
+#: desktop/client/src/connect.c:678
+msgid ""
+"Enter the username for the remote system.\n"
+"For VNC, enter the path to your saved vnc password file."
+msgstr ""
+"Εισάγετε το όνομα χρήστη για το απομακρυσμένο σύστημα.\n"
+"Για VNC, εισάγετε την διαδρομή στο αποθηκευμένο αρχείο κωδικού vnc."
+
+#: desktop/client/src/connect.c:687
+msgid "Enter the password for the remote system."
+msgstr "Εισάγετε τον κωδικό για το απομακρυσμένο σύστημα."
+
+#: desktop/client/src/connect.c:695
+msgid "Enter the domain for the remote system."
+msgstr "Εισάγετε τον τομέα για το απομακρυσμένο σύστημα."
+
+#: desktop/client/src/connect.c:703
+msgid "Enter the local hostname for this system."
+msgstr "Εισάγετε το τοπικό όνομα συστήματος για αυτό το σύστημα."
+
+#: desktop/client/src/connect.c:715
+msgid ""
+"Some protocols require a file containing settings. If required, enter the "
+"path to the file here."
+msgstr ""
+"Μερικά πρωτόκολλα απαιτούν ένα αρχείο που περιέχει ρυθμίσεις. Αν αυτό "
+"απαιτείται, εισάγετε την διαδρομή για το αρχείο εδώ."
+
+#: desktop/client/src/connect.c:737 desktop/client/src/connect.c:739
+msgid "Remote Desktop Size"
+msgstr "Μέγεθος απομακρυσμένης επιφάνειας εργασίας"
+
+#: desktop/client/src/connect.c:757
+msgid "Use default screen size"
+msgstr "Χρήση προεπιλεγμένου μεγέθους οθόνης"
+
+#: desktop/client/src/connect.c:761
+msgid "Use the default screen size."
+msgstr "Χρήση του προεπιλεγμένου μεγέθους οθόνης."
+
+#: desktop/client/src/connect.c:766
+msgid "Use specified screen size"
+msgstr "Χρήση καθορισμένου μεγέθους οθόνης"
+
+#: desktop/client/src/connect.c:770
+msgid "Use the list to choose the screen size to use."
+msgstr "Χρήση της λίστας για την επιλογή μεγέθους οθόνης."
+
+#: desktop/client/src/connect.c:782
+msgid "Operate in full screen mode"
+msgstr "Λειτουργία σε κατάσταση πλήρους οθόνης"
+
+#: desktop/client/src/connect.c:786
+msgid "Work in full screen mode."
+msgstr "Εργασία σε κατάσταση πλήρους οθόνης"
+
+#: desktop/client/src/connect.c:795
+msgid "Use alternate full screen switch (-F)"
+msgstr "Χρήση εναλλακτικής αλλαγής πλήρους οθόνης (-F)"
+
+#: desktop/client/src/connect.c:799
+msgid "Check this if you use rdesktop with the unified patches."
+msgstr "Ελέγξτε αυτό αν χρησιμοποιείτε rdesktop με τα unified patches."
+
+#: desktop/client/src/connect.c:808 desktop/client/src/connect.c:810
+msgid "Colors"
+msgstr "Χρώματα"
+
+#: desktop/client/src/connect.c:828
+msgid "Use default color depth"
+msgstr "Χρήση προεπιλεγμένου βάθους χρώματος"
+
+#: desktop/client/src/connect.c:832
+msgid "Use the default color depth."
+msgstr "Χρήση του προεπιλεγμένου βάθους χρώματος."
+
+#: desktop/client/src/connect.c:837
+msgid "Use specified color depth"
+msgstr "Χρήση καθορισμένου βάθους χρώματος"
+
+#: desktop/client/src/connect.c:841
+msgid "Use the list to choose the color depth to use."
+msgstr "Χρήση της λίστας για επιλογή του βάθους χρώματος που θα χρησιμοποιηθεί."
+
+#: desktop/client/src/connect.c:865
+msgid "Remote Computer _Sound"
+msgstr "Ή_χος απομακρυσμένου υπολογιστή"
+
+#: desktop/client/src/connect.c:867
+msgid "Remote Computer Sound"
+msgstr "Ήχος απομακρυσμένου υπολογιστή"
+
+#: desktop/client/src/connect.c:891 desktop/client/src/connect.c:927
+msgid "On the local computer"
+msgstr "Στο τοπικό υπολογιστή"
+
+#: desktop/client/src/connect.c:894 desktop/client/src/connect.c:930
+msgid "On the remote computer"
+msgstr "Στον απομακρυσμένο υπολογιστή"
+
+#: desktop/client/src/connect.c:897
+msgid "Do not play"
+msgstr "Να μην αναπαραχθεί"
+
+#: desktop/client/src/connect.c:908
+msgid "_Keyboard"
+msgstr "Πλη_κτρολόγιο"
+
+#: desktop/client/src/connect.c:910
+msgid "Keyboard"
+msgstr "Πληκτρολόγιο"
+
+#: desktop/client/src/connect.c:933
+msgid "In full screen mode only"
+msgstr "Σε κατάσταση πλήρους οθόνης μόνο"
+
+#: desktop/client/src/connect.c:939
+msgid ""
+"Use the following keyboard language\n"
+"(2 char keycode)"
+msgstr ""
+"Χρήση της ακόλουθης γλώσσας πληκτρολογίου\n"
+"(2 char keycode)"
+
+#: desktop/client/src/connect.c:967
+msgid ""
+"Apply Windows key combinations\n"
+"(for example ALT+TAB) (unsupported)"
+msgstr ""
+"Εφαρμογή συνδυασμών πλήκτρων Windows (για παράδειγμα ALT+TAB) (δεν "
+"υποστηρίζεται)"
+
+#: desktop/client/src/connect.c:990 desktop/client/src/connect.c:992
+msgid "Start a Program"
+msgstr "Εκκίνηση ενός προγράμματος"
+
+#: desktop/client/src/connect.c:1007
+msgid "Start the following program on connection"
+msgstr "Έναρξη του ακόλουθου προγράμματος κατά την σύνδεση"
+
+#: desktop/client/src/connect.c:1014
+msgid "Program path and filename"
+msgstr "Διαδρομή προγράμματος και ονόματος αρχείου"
+
+#: desktop/client/src/connect.c:1027
+msgid "Start in the following folder"
+msgstr "Έναρξη στον ακόλουθο κατάλογο"
+
+#: desktop/client/src/connect.c:1049 desktop/client/src/connect.c:1051
+msgid "Optimize Performance"
+msgstr "Βελτιστοποίηση απόδοσης"
+
+#: desktop/client/src/connect.c:1072
+msgid "Desktop background (u)"
+msgstr "Παρασκήνιο επιφάνειας εργασίας (u)"
+
+#: desktop/client/src/connect.c:1076
+msgid "Show content of window while dragging (u)"
+msgstr "Εμφάνιση περιεχομένου παραθύρου κατά το σύρσιμο (u)"
+
+#: desktop/client/src/connect.c:1080
+msgid "Menu and window animation (u)"
+msgstr "Κίνηση μενού και παραθύρων  (u)"
+
+#: desktop/client/src/connect.c:1084
+msgid "Themes (u)"
+msgstr "Θέματα (u)"
+
+#: desktop/client/src/connect.c:1088
+msgid "Enable bitmap caching"
+msgstr "Ενεργοποίηση bitmap caching"
+
+#: desktop/client/src/connect.c:1092
+msgid "Do not send motion events"
+msgstr "Να μην αποστέλονται γεγονότα κίνησης"
+
+#: desktop/client/src/connect.c:1096
+msgid "Enable window manager's key bindings"
+msgstr "Ενεργοποίηση συνδυασμών πλήκτρων διαχειριστή παραθύρων"
+
+#: desktop/client/src/connect.c:1101
+msgid "Options available for optimizing performance"
+msgstr "Διαθέσιμες επιλογές για την βελτιστοποίηση απόδοσης"
+
+#.
+#. These are the labels for the notebook control
+#.
+#: desktop/client/src/connect.c:1114
+msgid "_General"
+msgstr "_Γενικά"
+
+#: desktop/client/src/connect.c:1119
+msgid "_Display"
+msgstr "Εμ_φάνιση"
+
+#: desktop/client/src/connect.c:1124
+msgid "Local _Resources"
+msgstr "Τοπικοί πό_ροι"
+
+#: desktop/client/src/connect.c:1129
+msgid "_Programs"
+msgstr "_Προγράμματα"
+
+#: desktop/client/src/connect.c:1134
+msgid "Perf_ormance"
+msgstr "Από_δοση"
+
+#: desktop/client/src/connect.c:1198
+msgid "_Less"
+msgstr "_Λιγότερα"
+
+#: desktop/client/src/connect.c:1709
+msgid "Input a filename to save as..."
+msgstr "Εισαγωγή ενός ονόματος αρχείου για αποθήκευση ως...."
+
+#: desktop/client/src/connect.c:1751 desktop/client/src/connect.c:1796
+msgid "Choose an RDP file to open..."
+msgstr "Επιλέξτε ένα αρχείο RDP για άνοιγμα..."
+
+#: desktop/client/src/support.c:277
+msgid ""
+"rdesktop was not found in your path.\n"
+"Please verify your rdesktop installation."
+msgstr ""
+"Το rdesktop δεν βρέθηκε στην διαδρομή.\n"
+"Παρακαλώ ελέγξτε την εγκατάσταση του rdesktop."
+
+#: desktop/client/src/support.c:417
+msgid ""
+"vncviewer or xvncviewer were\n"
+" not found in your path.\n"
+"Please verify your vnc installation."
+msgstr ""
+"Τοv ncviewer ή to xvncviewer δεν βρέθηκαν\n"
+"στην διαδρομή.\n"
+"Παρακαλώ ελέγξτε την εγκατάσταση του vnc."
+
+#: desktop/client/src/support.c:519
+msgid ""
+"Xnest was not found in your path.\n"
+"Please verify your Xnest installation."
+msgstr ""
+"Το Xnest δεν βρέθηκε στην διαδρομή.\n"
+"Παρακαλώ ελέγξτε την εγκατάσταση του Xnest ."
+
+#: desktop/client/src/support.c:578
+msgid ""
+"wfica was not found in your path.\n"
+"Please verify your ICAClient installation."
+msgstr ""
+"Το wfica  δεν βρέθηκε στην διαδρομή.\n"
+"Παρακαλώ ελέγξτε την εγκατάσταση του ICAClient."
+
+#: desktop/client/src/support.c:702
+msgid ""
+"Failed to spawn.\n"
+"Please verify your installation."
+msgstr ""
+"Αποτυχία αύξησης.\n"
+"Παρακαλώ ελέγξτε την εγκατάσταση σας."
+
+#. create the widgets
+#: desktop/client/src/support.c:744
+msgid "GNOME Remote Desktop Error"
+msgstr "Σφάλμα Επιφάνεια εργασίας GNOME "
+
+#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
+msgid "An error has occurred."
+msgstr "Δημιουργήθηκε ένα σφάλμα."
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
+msgid "Check this to enable desktop sharing in GNOME"
+msgstr ""
+"Ενεργοποιήστε αυτό για να ενεργοποιήσετε την κοινή χρήση επιφάνειας εργασίας "
+"στο GNOME"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
+msgid "Password to connect to desktop sharing"
+msgstr "Κωδικός για σύνδεση σε κοινή χρήση επιφάνειας εργασίας"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:3
+msgid ""
+"Set this to the password clients should use to connect to your desktop "
+"remotely"
+msgstr ""
+"Ορισμός αυτού σε κωδικό τον οποίο θα χρησιμοποιούν οι πελάτες για να συνδέονται απομακρυσμένα "
+"στην επιφάνεια εργασίας σας"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:4
+msgid "Whether to enable desktop sharing"
+msgstr "Αν θα ενεργοποιηθεί η κοινή χρήση επιφάνειας εργασίας"
+
+#: desktop/gnome-remote-desktop.glade.h:1
+#: gnome-netinfo/gnome-netinfo.glade.h:1
+#: network-utilities/gnome-remote-shell.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: desktop/gnome-remote-desktop.glade.h:2
+#: gnome-netinfo/gnome-netinfo.glade.h:5
+#: network-utilities/gnome-remote-shell.glade.h:2
+#: sync/entryconfigdialog.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: desktop/gnome-remote-desktop.glade.h:3
+msgid ""
+"<b>Connection settings</b>\n"
+"Type the name of the computer to open a new desktop session and/or the "
+"display number to connect to an already running session."
+msgstr ""
+"<b>Ρυθμίσεις σύνδεσης</b>\n"
+"Πληκτρολογήστε το όνομα του υπολογιστή για να ανοίξετε μια νέα συνεδρία "
+"επιφάνειας εργασίας, ή/και τον αριθμό οθόνης για να συνδεθείτε σε μια ήδη "
+"εκτελούμενη συνεδρία."
+
+#: desktop/gnome-remote-desktop.glade.h:5
+msgid ""
+"<b>Desktop settings</b>\n"
+"Select the size and color depth (not supported for all cases, so use with "
+"care) of you remote desktop."
+msgstr ""
+".b>Ρυθμίσεις επιφάνειας εργασίας</b>\n"
+"Επιλέξτε το μέγεθος και το βάθος χρώματος για την απομακρυσμένη επιφάνεια "
+"(δεν υποστηρίζονται όλες οι περιπτώσεις γι'αυτό προσέξτε)"
+
+#: desktop/gnome-remote-desktop.glade.h:7
+msgid ""
+"<b>Method</b>\n"
+"Select the method for connecting to the remote host. For Windows systems, "
+"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
+"work."
+msgstr ""
+"<b>Μέθοδος</b>\n"
+"Επιλέξτε την μέθοδο σύνδεσης με το απομακρυσμένο σύστημα. Για συστήματα "
+"Windows  θα πρέπει να επιλέξετε VNC. Για συστήματα UNIX, συνήθως X11, αν και "
+"το VNC δουλεύει επίσης."
+
+#: desktop/gnome-remote-desktop.glade.h:9
+msgid "Color depth"
+msgstr "Βάθος χρώματος"
+
+#: desktop/gnome-remote-desktop.glade.h:10
+msgid "Connect Now ..."
+msgstr "Σύνδεση τώρα..."
+
+#: desktop/gnome-remote-desktop.glade.h:11
+msgid "Display size"
+msgstr "Μέγεθος εμφάνισης"
+
+#: desktop/gnome-remote-desktop.glade.h:12
+msgid "Display:"
+msgstr "Εμφάνιση:"
+
+#: desktop/gnome-remote-desktop.glade.h:14
+msgid "Host:"
+msgstr "Σύστημα:"
+
+#: desktop/gnome-remote-desktop.glade.h:15
+msgid "VNC"
+msgstr "VNC"
+
+#: desktop/gnome-remote-desktop.glade.h:16
+msgid "X11"
+msgstr "X11"
+
+#: desktop/gnome-remote-desktop.glade.h:17
+msgid "by"
+msgstr "by"
+
+#: desktop/preferences/interface.c:48 desktop/preferences/interface.c:63
+#: desktop/server/tray.c:153
+msgid "Desktop Sharing"
+msgstr "Κονή χρήση επιφάνειας εργασίας"
+
+#: desktop/preferences/interface.c:72
+msgid "_Share my desktop with others"
+msgstr "Κονή χρήση της επιφάνειας εργασίας μου με άλλους"
+
+#: desktop/preferences/interface.c:78
+msgid "Enable this option to allow others to view your desktop"
+msgstr ""
+"Ενεργοποιήστε αυτή την επιλογή ώστε να επιτρέψετε σε τρίτους να βλέπουν την "
+"επιφάνεια εργασίας σας."
+
+#: desktop/preferences/interface.c:93
+msgid ""
+"The following information will need to be supplied by the user connecting to "
+"your desktop"
+msgstr ""
+"Οι ακόλουθες πληροφορίες χρειάζονται για να συνδεθεί ένας χρήστης στην "
+"επιφάνεια εργασίας σας."
+
+#: desktop/preferences/interface.c:104 gnome-ppp/account-window.c:1023
+msgid "Password"
+msgstr "Κωδικός"
+
+#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Αδυναμία εύρεσης αρχείου pixmap: %s"
+
+#: desktop/server/eggtrayicon.c:118
+msgid "Orientation"
+msgstr "Προσανατολισμός"
+
+#: desktop/server/eggtrayicon.c:119
+msgid "The orientation of the tray."
+msgstr "Ο προσανατολισμός του συρταριού."
+
+#: desktop/server/tray.c:52 pws/pws.c:83
+msgid "/_Preferences"
+msgstr "/_Προτιμήσεις"
+
+#: desktop/server/tray.c:53
+msgid "/_Clients"
+msgstr "/_Πελάτες"
+
+#: desktop/server/tray.c:55
+msgid "/_About"
+msgstr "/Πε_ρί"
+
+#: desktop/server/tray.c:56 pws/pws.c:86
+msgid "/_Quit"
+msgstr "/_Κλείσιμο"
+
+#: desktop/server/tray.c:108
+msgid "Your desktop is viewable to others"
+msgstr "Η επιφάνεια εργασίας είναι ορατή σε τρίτους"
+
+#: desktop/server/tray.c:143
+msgid "translator_credits"
+msgstr "Κώστας Παπαδήμας <pkst@gnome.org>"
+
+#: desktop/server/tray.c:155
+msgid "Remote Desktop Sharing"
+msgstr "Κοινή χρήση απομακρυσμένης επιφάνειας εργασίας"
+
+#: gnome-netinfo/callbacks.c:212
+msgid "Graphical user interface for common network utilities"
+msgstr "Γραφική διεπιφάνεια χρήσης για κοινές εφαρμογές δικτύου"
+
+#: gnome-netinfo/callbacks.c:214
+msgid "This is an untranslated version of GNOME Network Information"
+msgstr "This is an untranslated version of GNOME Network Information"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:2
+msgid "(eg. user@www.domain.com)"
+msgstr "(π.χ. user@www.domain.com)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:3
+msgid "(for example: domain.com)"
+msgstr "(για παράδειγμα: www.domain.com)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:4
+msgid "(for example: www.domain.com or 192.168.2.1)"
+msgstr "(για παράδειγμα: www.domain.com ή 192.168.2.1)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:6
+msgid "0.0"
+msgstr "0.0"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:7
+msgid "<span weight=\"bold\">@</span>"
+msgstr "<span weight=\"bold\">@</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:8
+msgid ""
+"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+"information</span>"
+msgstr ""
+"<span weight=\"bold\">Εισάγετε μια διεύθυνση δικτύου για αναζήτηση "
+"πληροφοριών \"whois\" </span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:9
+msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+msgstr "<span weight=\"bold\">Εισάγετε μια διεύθυνση δικτύου για αναζήτηση</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:10
+msgid ""
+"<span weight=\"bold\">Enter a user name and network address to finger that "
+"user</span>"
+msgstr ""
+"<span weight=\"bold\">Εισάγετε ένα όνομα χρήστη και μια διεύθυνση  δικτύου "
+"για να κάνετε finger σε αυτόν τον χρήστη</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:11
+msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+msgstr ""
+"<span weight=\"bold\">Εισάγετε μια διεύθυνση δικτύου για να κάνετε ping</"
+"span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:12
+msgid "<span weight=\"bold\">Enter the network address to scan for open ports</span>"
+msgstr ""
+"<span weight=\"bold\">Εισάγετε μια διεύθυνση δικτύου για να αναζητήσετε "
+"ανοικτές θύρες</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:13
+msgid "<span weight=\"bold\">Enter the network address to trace a route to</span>"
+msgstr ""
+"<span weight=\"bold\">Εισάγετε μια διεύθυνση δικτύου για να κάνετε trace a "
+"route to</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:14
+msgid "<span weight=\"bold\">Information</span>"
+msgstr "<span weight=\"bold\">Πληροφορίες</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:15
+msgid "<span weight=\"bold\">Round trip time statistics</span>"
+msgstr "<span weight=\"bold\">Στατιστικά Round trip time</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:16
+msgid "<span weight=\"bold\">Select the network device to get information on</span>"
+msgstr ""
+"<span weight=\"bold\">Επιλέξτε την συσκευή δικτύου για να λάβετε "
+"πληροφορίες</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:17
+msgid "<span weight=\"bold\">Select the type of information to display</span>"
+msgstr "<span weight=\"bold\"> Επιλογή τον τύπο της πληροφορίας για εμφάνιση</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:18
+msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
+msgstr "<span weight=\"bold\">Επιλογή τον τύπο της πληροφορίας για αναζήτηση:</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:19
+msgid "<span weight=\"bold\">Statistics</span>"
+msgstr "<span weight=\"bold\">Στατιστικά</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:20
+msgid "<span weight=\"bold\">Transmission statistics</span>"
+msgstr "<span weight=\"bold\">Στατιστικά μετάδοσης</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:21
+msgid "Any / All Information"
+msgstr "Οποιαδήποτε/ Όλες οι πληροφορίες"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:22
+msgid "Average:"
+msgstr "Μέσος όρος:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:23
+msgid "Broadcast:"
+msgstr "Μετάδοση:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:24
+msgid "CPU / OS Type"
+msgstr "Τύπος CPU / OS"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:25
+msgid "Canonical Name"
+msgstr "Κανονικό όνομα"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:26
+msgid "Clear _History"
+msgstr "Εκκαθάριση ι_στορικού"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:27
+msgid "Collisions:"
+msgstr "Συγκρούσεις:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:28
+msgid "Default Information"
+msgstr "Εξ ορισμού πληροφορίες"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:29
+msgid "Display active network services"
+msgstr "Εμφάνιση ενεργών υπηρεσιών δικτύου"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:30
+msgid "Display multicast information"
+msgstr "Εμφάνιση πληροφοριών multicast "
+
+#: gnome-netinfo/gnome-netinfo.glade.h:31
+msgid "Display routing table information"
+msgstr "Εμφάνιση πληροφοριών routing table "
+
+#: gnome-netinfo/gnome-netinfo.glade.h:32
+msgid "Enter the network address to ping"
+msgstr "Εισάγετε την διεύθυνση δικτύου για  ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:530
+msgid "Finger"
+msgstr "Finger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:34
+msgid "Hardware address:"
+msgstr "Διεύθυνση υλικού:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:35
+msgid "Host name for Address"
+msgstr "Όνομα συστήματος για διεύθυνση"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:36
+msgid "IP address:"
+msgstr "Διεύθυνση IP:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:37
+msgid "Internet Address"
+msgstr "Διεύθυνση διαδικτύου"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:38
+msgid "Link speed:"
+msgstr "Ταχύτητα σύνδεσης:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:485
+msgid "Lookup"
+msgstr "Αναζήτηση"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:40
+msgid "MTU:"
+msgstr "MTU:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:41
+msgid "Mailbox Exchange"
+msgstr " Mailbox Exchange"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:42
+msgid "Mailbox Information"
+msgstr "Πληροφορίες Mailbox "
+
+#: gnome-netinfo/gnome-netinfo.glade.h:43
+msgid "Maximum:"
+msgstr "Μέγιστο:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:44
+msgid "Minimum:"
+msgstr "Ελάχιστο:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:45
+msgid "Multicast:"
+msgstr "Multicast:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:46
+msgid "Name Server"
+msgstr "Εξυπηρετητής ονομάτων"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:47
+msgid "Netmask:"
+msgstr "Netmask:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:349
+msgid "Netstat"
+msgstr "Netstat"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:49 gnome-netinfo/main.c:110
+msgid "Network Information"
+msgstr "Πληροφορίες δικτύου"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:50
+msgid "Packets loss:"
+msgstr "Χαμένα πακέτα:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:51
+msgid "Packets received:"
+msgstr "Εισερχόμενα πακέτα:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:52
+msgid "Packets transmitted:"
+msgstr "Εξερχόμενα πακέτα:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:257
+msgid "Ping"
+msgstr "Ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:54
+msgid "Port _Scan"
+msgstr "_Σάρωση θύρας"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:55
+msgid "Received bytes:"
+msgstr "Εισερχόμενα bytes:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:56
+msgid "Received packets:"
+msgstr "Εισερχόμενα πακέτα:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:57
+msgid "Reception errors:"
+msgstr "Σφάλματα λήψης:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:447
+msgid "Scan"
+msgstr "Σάρωση"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:59
+msgid "Select network device from list"
+msgstr "Επιλογή συσκευής δικτύου από λίστα"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:60
+msgid "Send only"
+msgstr "Αποστολή μόνο"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:61
+msgid "Send unlimited requests (pings)"
+msgstr "Αποστολή απεριόριστων αιτήσεων (pings)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:62
+msgid "Start-of-authority"
+msgstr "Start-of-authority"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:63
+msgid "State:"
+msgstr "Κατάσταση:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:64
+msgid "Text Information"
+msgstr "Πληροφορίες κειμένου"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:305
+msgid "Trace"
+msgstr "Trace"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:66
+msgid "Transmission errors:"
+msgstr "Σφάλματα μετάδοσης:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:67
+msgid "Transmitted bytes:"
+msgstr "Εξερχόμενα Bytes:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:68
+msgid "Transmitted packets:"
+msgstr "Εξερχόμενα πακέτα:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:69
+msgid "Well Known Services"
+msgstr "Πολύ γνωστές υπηρεσίες"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:581
+msgid "Whois"
+msgstr "Whois"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:71
+msgid "_Devices"
+msgstr "_Συσκευές"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:72
+msgid "_Finger"
+msgstr "_Finger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:73
+msgid "_Information"
+msgstr "Πληρο_φορίες"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:74
+msgid "_Lookup"
+msgstr "Ανα_ζήτηση"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:75
+msgid "_Netstat"
+msgstr "_Netstat"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:76
+msgid "_Ping"
+msgstr "_Ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:77
+msgid "_Traceroute"
+msgstr "_Traceroute"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:78
+msgid "_Whois"
+msgstr "_Whois"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:79
+msgid "ms"
+msgstr "ms"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:80 gnome-netinfo/info.h:27
+msgid "not available"
+msgstr "όχι διαθέσιμη"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:81
+msgid "requests (pings)"
+msgstr "αιτήσεις (pings)"
+
+#: gnome-netinfo/info.c:277
+msgid "Active"
+msgstr "Ενεργές"
+
+#: gnome-netinfo/info.c:279
+msgid "Inactive"
+msgstr "Ανενεργές"
+
+#: gnome-netinfo/info.c:284
+msgid "Loopback"
+msgstr "Loopback"
+
+#: gnome-netinfo/info.c:297
+msgid "Enabled"
+msgstr "Ενεργοποιημένη"
+
+#: gnome-netinfo/info.c:299
+msgid "Disabled"
+msgstr "Απενεργοποιημένη"
+
+#. The info output in a text format (to copy on clipboard)
+#: gnome-netinfo/info.c:419
+#, c-format
+msgid "Network device:\t%s\n"
+msgstr "Συσκευή δίκτυου :\t%s\n"
+
+#: gnome-netinfo/info.c:420
+#, c-format
+msgid "Hardware address:\t%s\n"
+msgstr "Διεύθυνση υλικού:\t%s\n"
+
+#: gnome-netinfo/info.c:421
+#, c-format
+msgid "IP address:\t%s\n"
+msgstr "Διεύθυνση IP:\t%s\n"
+
+#: gnome-netinfo/info.c:422
+#, c-format
+msgid "Netmask:\t%s\n"
+msgstr "Netmask:\t%s\n"
+
+#: gnome-netinfo/info.c:423
+#, c-format
+msgid "Broadcast:\t%s\n"
+msgstr "Μετάδοση:\t%s\n"
+
+#: gnome-netinfo/info.c:424
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr "Multicast:\t%s\n"
+
+#: gnome-netinfo/info.c:425
+#, c-format
+msgid "MTU:\t%s\n"
+msgstr "MTU:\t%s\n"
+
+#: gnome-netinfo/info.c:426
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr "Ταχύτητα σύνδεσης:\t%s\n"
+
+#: gnome-netinfo/info.c:427
+#, c-format
+msgid "State:\t%s\n"
+msgstr "Κατάσταση:\t%s\n"
+
+#: gnome-netinfo/info.c:429
+#, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr "Εξερχόμενα πακέτα:\t%s\n"
+
+#: gnome-netinfo/info.c:430
+#, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Σφάλματα μετάδοσης:\t%s\n"
+
+#: gnome-netinfo/info.c:431
+#, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Εισερχόμενα πακέτα:\t%s\n"
+
+#: gnome-netinfo/info.c:432
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr "Σφάλματα λήψης:\t%s\n"
+
+#: gnome-netinfo/info.c:433
+#, c-format
+msgid "Collisions:\t%s\n"
+msgstr "Συγκρούσεις:\t%s\n"
+
+#. adds columns
+#: gnome-netinfo/lookup.c:272 sync/entrylist.c:67
+msgid "Name"
+msgstr "Όνομα"
+
+#: gnome-netinfo/lookup.c:280
+msgid "TTL"
+msgstr "TTL"
+
+#: gnome-netinfo/lookup.c:289
+msgid "Address Type"
+msgstr "Τύπος διεύθυνσης"
+
+#: gnome-netinfo/lookup.c:299
+msgid "Record Type"
+msgstr "Τύπος Record "
+
+#: gnome-netinfo/lookup.c:308
+msgid "Address"
+msgstr "Διεύθυνση"
+
+#. The lookup output in text format:
+#. Source of query (hostname/ip address),
+#. Time To Live (TTL), Address Type,
+#. Record Type (A, PTR, HINFO, NS, TXT, etc.),
+#. Resolution (results of the query)
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/lookup.c:336
+msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
+msgstr "Πηγή\tTTL\tΤύπος διεύθυνσης\tRecord Type1\tΑνάλυση\n"
+
+#: gnome-netinfo/main.c:75
+msgid "Load information for a network device"
+msgstr "Φόρτωση πληροφοριών για μια συσκευή δικτύου"
+
+#: gnome-netinfo/main.c:76
+msgid "DEVICE"
+msgstr "DEVICE"
+
+#: gnome-netinfo/main.c:78
+msgid "Send a ping to a network address"
+msgstr "Αποστολή ping σε μια διεύθυνση δικτύου"
+
+#: gnome-netinfo/main.c:79 gnome-netinfo/main.c:85 gnome-netinfo/main.c:88
+#: gnome-netinfo/main.c:91
+msgid "HOST"
+msgstr "HOST"
+
+#: gnome-netinfo/main.c:81
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr "Λήψη πληροφοριών netstat. Έγκυρες επιλογές είναι: route, active, multicast."
+
+#: gnome-netinfo/main.c:82
+msgid "COMMAND"
+msgstr "COMMAND"
+
+#: gnome-netinfo/main.c:84
+msgid "Trace a route to a network address"
+msgstr "Ανίχνευση (trace) μιας διαδρομής σε μια διεύθυνση δικτύου"
+
+#: gnome-netinfo/main.c:87
+msgid "Port scan a network address"
+msgstr "Σάρωση θύρας μιας διεύθυνσης δικτύου"
+
+#: gnome-netinfo/main.c:90
+msgid "Look up a network address"
+msgstr "Αναζήτηση μιας διεύθυνσης δικτύου"
+
+#: gnome-netinfo/main.c:93
+msgid "Finger command to run"
+msgstr "Εντολή Finger για εκτέλεση"
+
+#: gnome-netinfo/main.c:94
+msgid "USER"
+msgstr "USER"
+
+#: gnome-netinfo/main.c:96
+msgid "Perform a whois lookup for a network domain"
+msgstr "Εκτέλεση μιας αναζήτησης whois για ένα τομέα δικτύου"
+
+#: gnome-netinfo/main.c:97
+msgid "DOMAIN"
+msgstr "DOMAIN"
+
+#: gnome-netinfo/main.c:116
+#, c-format
+msgid ""
+"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"installed"
+msgstr ""
+"Το αρχείο %s  δεν υπάρχει, ελέγξτε αν το gnome-netinfo έχει εγκατασταθεί "
+"σωστά"
+
+#: gnome-netinfo/netinfo.c:157
+msgid "Network address not specified"
+msgstr "Δεν καθορίστηκε διεύθυνση δικτύου"
+
+#: gnome-netinfo/netinfo.c:165
+#, c-format
+msgid "The host '%s' cannot be found"
+msgstr "Το σύστημα '%s'  δεν μπορεί να βρεθεί"
+
+#: gnome-netinfo/netinfo.c:309
+msgid "Information not available"
+msgstr "Οι πληροφορίες δεν είναι διαθέσιμες"
+
+#: gnome-netinfo/netinfo.c:395
+msgid "Stop"
+msgstr "Διακοπή"
+
+#: gnome-netinfo/netinfo.c:401
+msgid "Run"
+msgstr "Εκτέλεση"
+
+#: gnome-netinfo/netstat.c:403
+msgid "Protocol"
+msgstr "Πρωτόκολλο"
+
+#: gnome-netinfo/netstat.c:410
+msgid "IP Source"
+msgstr "Πηγή IP"
+
+#: gnome-netinfo/netstat.c:418
+msgid "Port/Service"
+msgstr "Θύρα/Υπηρεσία"
+
+#: gnome-netinfo/netstat.c:426 gnome-netinfo/scan.c:289
+msgid "State"
+msgstr "Κατάσταση"
+
+#: gnome-netinfo/netstat.c:549
+msgid "Destination/Prefix"
+msgstr "Προορισμός/Πρόθεμα"
+
+#: gnome-netinfo/netstat.c:551
+msgid "Destination"
+msgstr "Προορισμός"
+
+#: gnome-netinfo/netstat.c:558
+msgid "Gateway"
+msgstr "Gateway"
+
+#. netmask
+#: gnome-netinfo/netstat.c:566 gnome-ppp/account-window.c:1106
+msgid "Netmask"
+msgstr "Netmask"
+
+#: gnome-netinfo/netstat.c:574 gnome-netinfo/netstat.c:680
+msgid "Interface"
+msgstr "Διεπαφή"
+
+#: gnome-netinfo/netstat.c:687
+msgid "Member"
+msgstr "Μέλος"
+
+#: gnome-netinfo/netstat.c:695
+msgid "Group"
+msgstr "Ομάδα"
+
+#. The netstat "Display active network services" output in
+#. text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:737
+msgid "Protocol\tIP Source\tPort/Service\tState\n"
+msgstr "Πρωτόκολλο\t Πηγή IP\tΘύρα/Υπηρεσία\tΚατάσταση\n"
+
+#. The netstat "Display routing" output in text format.
+#. This seems as a route table.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:743
+msgid "Destination\tGateway\tNetmask\tInterface\n"
+msgstr "Προορισμός\tGateway\tNetmask\tΔιεπαφή\n"
+
+#. The netstat "Multicast information" output in text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:748
+msgid "Interface\tMember\tGroup\n"
+msgstr "Διεπαφή\tΜέλος\tΟμάδα\n"
+
+#: gnome-netinfo/ping.c:378
+msgid "Bytes"
+msgstr "Bytes"
+
+#: gnome-netinfo/ping.c:385
+msgid "Source"
+msgstr "Πηγή"
+
+#: gnome-netinfo/ping.c:393
+msgid "Seq"
+msgstr "Seq"
+
+#: gnome-netinfo/ping.c:403
+msgid "Time"
+msgstr "Χρόνος"
+
+#: gnome-netinfo/ping.c:411
+msgid "Units"
+msgstr "Μονάδες"
+
+#. The ping output in text format:
+#. Bytes received, Address Source, Number of Sequence,
+#. Round Trip Time (Time), Units of Time.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/ping.c:437
+msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
+msgstr "Bytes\tΠηγή\tSeq\tΧρόνος\tΜονάδες\n"
+
+#. The ping output in a text format (to copy on clipboard)
+#: gnome-netinfo/ping.c:452
+#, c-format
+msgid "Time minimum:\t%s ms\n"
+msgstr "Ελάχιστος χρόνος:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:453
+#, c-format
+msgid "Time average:\t%s ms\n"
+msgstr "Μέσος χρόνος:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:454
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr "Μέγιστος χρόνος:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:456
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr "Εξερχόμενα πακέτα:\t%s\n"
+
+#: gnome-netinfo/ping.c:458
+#, c-format
+msgid "Packets received:\t%s\n"
+msgstr "Εισερχόμενα πακέτα:\t%s\n"
+
+#: gnome-netinfo/ping.c:460
+#, c-format
+msgid "Packet loss:\t%s\n"
+msgstr "Πακέτα που χάθηκαν:\t%s\n"
+
+#: gnome-netinfo/scan.c:151
+msgid "unknown"
+msgstr "άγνωστο"
+
+#: gnome-netinfo/scan.c:281
+msgid "Port"
+msgstr "Θύρα"
+
+#: gnome-netinfo/scan.c:297
+msgid "Service"
+msgstr "Υπηρεσία"
+
+#. The portscan output in text format:
+#. Port, State, Service.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/scan.c:319
+msgid "Port\tState\tService\n"
+msgstr "Θύρα\tΚατάσταση\tΥπηρεσία\n"
+
+#: gnome-netinfo/traceroute.c:260
+msgid "Hop"
+msgstr "Hop"
+
+#: gnome-netinfo/traceroute.c:268
+msgid "Hostname"
+msgstr "Όνομα συστήματος"
+
+#: gnome-netinfo/traceroute.c:276
+msgid "IP"
+msgstr "IP"
+
+#: gnome-netinfo/traceroute.c:287
+msgid "Time 1"
+msgstr "Time 1"
+
+#: gnome-netinfo/traceroute.c:297
+msgid "Time 2"
+msgstr "Time 2"
+
+#. The traceroute output in text format:
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
+#. Round Trip Time 2 (Time2),
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/traceroute.c:323
+msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgstr "Hop\tΌνομα συστήματος\tIP\tTime 1\tTime 2\n"
+
+#: gnome-netinfo/utils.c:227
+#, c-format
+msgid "%s: Command not found"
+msgstr "%s: Η εντολή δεν βρέθηκε"
+
+#: gnome-ppp/account-window.c:161
+msgid "Receive"
+msgstr "Λήψη"
+
+#: gnome-ppp/account-window.c:162
+msgid "Enter search string"
+msgstr "Εισάγετε αλφαριθμητικό αναζήτησης"
+
+#: gnome-ppp/account-window.c:165
+msgid "Send"
+msgstr "Αποστολή"
+
+#: gnome-ppp/account-window.c:166
+msgid "Enter transmission string"
+msgstr "Εισάγετε αλφαριθμητικό μετάδοσης"
+
+#: gnome-ppp/account-window.c:169
+msgid "Send User Name"
+msgstr "Αποστολή ονόματος χρήστη"
+
+#: gnome-ppp/account-window.c:170
+msgid "Username taken from Authentication"
+msgstr "Το όνομα χρήστη που λήφθηκε από την πιστοποίηση"
+
+#: gnome-ppp/account-window.c:173
+msgid "Send User Password"
+msgstr "Αποστολή κωδικού χρήστη"
+
+#: gnome-ppp/account-window.c:174
+msgid "Password taken from Authentication"
+msgstr "Ο κωδικός χρήστη που λήφθηκε από την πιστοποίηση"
+
+#: gnome-ppp/account-window.c:177
+msgid "Dialog Box Input"
+msgstr "Είσοδος κουτιού διαλόγου"
+
+#: gnome-ppp/account-window.c:178
+msgid "Enter text to be used as a dialog message when prompted for input"
+msgstr ""
+"Εισάγετε ένα κείμενο για να χρησιμοποιηθεί ως μήνυμα διαλόγου όταν γίνει "
+"ειδοποίηση για εισαγωγή"
+
+#: gnome-ppp/account-window.c:276
+msgid "open_account_window(): account=NULL with clone flag"
+msgstr "open_account_window(): account=NULL with clone flag"
+
+#: gnome-ppp/account-window.c:302
+msgid "open_account_window(): calling arguments invalid"
+msgstr "open_account_window(): calling arguments invalid"
+
+#. dial command entry widgets
+#: gnome-ppp/account-window.c:342 gnome-ppp/modem-window.c:288
+msgid "Dial"
+msgstr "Κλήση"
+
+#: gnome-ppp/account-window.c:348
+msgid "Authentication"
+msgstr "Πιστοποίηση"
+
+#. dns server entry
+#: gnome-ppp/account-window.c:354 gnome-ppp/account-window.c:1223
+msgid "IP Address"
+msgstr "Διεύθυνση IP"
+
+#: gnome-ppp/account-window.c:360
+msgid "DNS"
+msgstr "DNS"
+
+#: gnome-ppp/account-window.c:366
+msgid "Script"
+msgstr "Δέσμη ενεργειών"
+
+#: gnome-ppp/account-window.c:372
+msgid "PPP"
+msgstr "PPP"
+
+#: gnome-ppp/account-window.c:378
+msgid "Modem"
+msgstr "Μόντεμ"
+
+#: gnome-ppp/account-window.c:805
+msgid "Account Name"
+msgstr "Όνομα Λογαριασμού"
+
+#. redial spin button
+#: gnome-ppp/account-window.c:817
+msgid "Redial Maximum"
+msgstr "Μέγιστος αριθμός επανακλήσεων"
+
+#. dial timeout spin button
+#: gnome-ppp/account-window.c:838
+msgid "Dial Timeout (sec)"
+msgstr "Όριο λήξης χρόνου (δευτ)"
+
+#. phone number frame
+#: gnome-ppp/account-window.c:859
+msgid "Phone Numbers"
+msgstr "Αριθμοί τηλεφώνου"
+
+#. Phone number
+#: gnome-ppp/account-window.c:871
+msgid "#"
+msgstr "#"
+
+#. add/remove buttons
+#: gnome-ppp/account-window.c:892 gnome-ppp/account-window.c:1242
+#: gnome-ppp/account-window.c:1326 gnome-ppp/account-window.c:1464
+msgid "Add"
+msgstr "Προσθήκη"
+
+#: gnome-ppp/account-window.c:906 gnome-ppp/account-window.c:1256
+#: gnome-ppp/account-window.c:1340 gnome-ppp/account-window.c:1490
+#: sync/main.c:60 sync/main.c:170
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: gnome-ppp/account-window.c:958
+msgid "PAP/CHAP"
+msgstr "PAP/CHAP"
+
+#: gnome-ppp/account-window.c:970
+msgid "User Name"
+msgstr "Όνομα Χρήστη "
+
+#: gnome-ppp/account-window.c:990
+msgid "Remote Name"
+msgstr "Απομακρυσμένο όνομα"
+
+#. password
+#: gnome-ppp/account-window.c:1011
+msgid "Hidden Password"
+msgstr "Κρυφός κωδικός"
+
+#. local ip address
+#: gnome-ppp/account-window.c:1061
+msgid "Local IP Address"
+msgstr "Τοπική διεύθυνση IP"
+
+#: gnome-ppp/account-window.c:1072 gnome-ppp/account-window.c:1117
+#: gnome-ppp/account-window.c:1162
+msgid "Dynamic"
+msgstr "Δυναμική"
+
+#: gnome-ppp/account-window.c:1086 gnome-ppp/account-window.c:1131
+#: gnome-ppp/account-window.c:1176
+msgid "Static"
+msgstr "Στατική"
+
+#. remote ip address
+#: gnome-ppp/account-window.c:1151
+msgid "Remote IP Address"
+msgstr "Απομακρυσμένη διεύθυνση IP"
+
+#. dns server list
+#: gnome-ppp/account-window.c:1210
+msgid "DNS Servers"
+msgstr "Εξυπηρετητές DNS"
+
+#. search domains list
+#: gnome-ppp/account-window.c:1295
+msgid "Search Domains"
+msgstr "Τομείς αναζήτησης"
+
+#: gnome-ppp/account-window.c:1306
+msgid "Domain Name"
+msgstr "Όνομα τομέα"
+
+#: gnome-ppp/account-window.c:1388
+msgid "Action"
+msgstr "Ενέργεια"
+
+#: gnome-ppp/account-window.c:1389
+msgid "Text"
+msgstr "Κείμενο"
+
+#. script list
+#: gnome-ppp/account-window.c:1397
+msgid "Login Script"
+msgstr "Δέσμη ενεργειών εισόδου"
+
+#: gnome-ppp/account-window.c:1477
+msgid "Insert"
+msgstr "Εισαγωγή"
+
+#: gnome-ppp/account-window.c:1551
+msgid "Add Default Route"
+msgstr "Προσθήκη προεπιλεγμένου  Route"
+
+#: gnome-ppp/account-window.c:1567
+msgid "Lock Dialout Device"
+msgstr "Κλείδωμα συσκευής κλήσεων"
+
+#. mtu, mru spin buttons
+#: gnome-ppp/account-window.c:1582
+msgid "Maximum Transmission Unit"
+msgstr "Μέγιστη μονάδα μετάδοσης"
+
+#: gnome-ppp/account-window.c:1604
+msgid "Maximum Receive Unit"
+msgstr "Μέγιστη μονάδα λήψης"
+
+#: gnome-ppp/account-window.c:1625
+msgid "Run Program After Connect"
+msgstr "Εκτέλεση προγράμματος μετά την σύνδεση"
+
+#: gnome-ppp/account-window.c:1637
+msgid "Run Program After Disconnect"
+msgstr "Εκτέλεση προγράμματος μετά την αποσύνδεση"
+
+#. modem device
+#: gnome-ppp/account-window.c:1672
+msgid "Modem Device"
+msgstr "Συσκευή μόντεμ"
+
+#. modem speed
+#: gnome-ppp/account-window.c:1698
+msgid "Connection Speed"
+msgstr "Ταχύτητα σύνδεσης"
+
+#. modem flow control
+#: gnome-ppp/account-window.c:1724
+msgid "Flow Control"
+msgstr "Έλεγχος ροής"
+
+#. modem line termination
+#: gnome-ppp/account-window.c:1750
+msgid "Line Termination"
+msgstr "Τερματισμός γραμμής"
+
+#. modem speaker volume
+#: gnome-ppp/account-window.c:1776
+msgid "Modem Speaker Volume"
+msgstr "Ένταση ηχείου μόντεμ"
+
+#. modem edit commands
+#: gnome-ppp/account-window.c:1793
+msgid " Edit Modem Commands "
+msgstr " Επεξεργασία εντολών μόντεμ"
+
+#: gnome-ppp/account-window.c:2252
+msgid "**PASSWORD**"
+msgstr "**ΚΩΔΙΚΟΣ**"
+
+#: gnome-ppp/account-window.c:2256
+msgid "script_type_cb(): optionmenu data bad"
+msgstr "script_type_cb(): optionmenu data bad"
+
+#: gnome-ppp/dial-window.c:143
+msgid "_Debug Terminal"
+msgstr "Τερματικό Εκσ_φαλμάτωσης"
+
+#: gnome-ppp/dial-window.c:150
+msgid "_New..."
+msgstr "_Νέο..."
+
+#: gnome-ppp/dial-window.c:151
+msgid "D_uplicate..."
+msgstr "Αν_τίγραφο..."
+
+#: gnome-ppp/dial-window.c:152
+msgid "_Edit..."
+msgstr "_Επεξεργασία..."
+
+#: gnome-ppp/dial-window.c:153
+msgid "_Delete..."
+msgstr "_Διαγραφή..."
+
+#: gnome-ppp/dial-window.c:172
+msgid "_Account"
+msgstr "_Λογαριασμός"
+
+#. set up the main application
+#: gnome-ppp/dial-window.c:210
+msgid "gnome-ppp"
+msgstr "gnome-ppp"
+
+#: gnome-ppp/dial-window.c:358
+msgid "Dialing"
+msgstr "Γίνεται κλήση"
+
+#: gnome-ppp/dial-window.c:362
+msgid "Connected"
+msgstr "Συνδεδεμένο"
+
+#: gnome-ppp/dial-window.c:385
+msgid "refresh_dial_app(): gtk_clist_append failed."
+msgstr "refresh_dial_app(): gtk_clist_append failed."
+
+#: gnome-ppp/dial-window.c:409 gnome-ppp/dial-window.c:417
+msgid "Connect"
+msgstr "Σύνδεση"
+
+#: gnome-ppp/dial-window.c:427
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: gnome-ppp/dial-window.c:431
+msgid "Disconnect"
+msgstr "Αποσύνδεση"
+
+#: gnome-ppp/dial-window.c:452
+msgid "You must disconnect before closing."
+msgstr "Θα πρέπει να αποσυνθεθείτε πριν από το κλείσιμο"
+
+#: gnome-ppp/dial-window.c:742
+msgid "Are you sure you want to delete this account?\n"
+msgstr "Είστε σίγουροι ότι θλετε να διαγράψετε αυτό το λογαριασμό?\n"
+
+#: gnome-ppp/dial-window.c:752
+msgid "The account cannot be deleted."
+msgstr "Ο λογαριασμός δεν μπορεί να διαγραφεί"
+
+#: gnome-ppp/dial-window.c:758
+msgid "The account is in use and cannot be deleted."
+msgstr "Ο λογαριασμός χρησιμοποιείται και δεν μπορεί να διαγραφεί."
+
+#: gnome-ppp/dial-window.c:781
+msgid "GNOME Internet Dialer"
+msgstr "Εφαρμογή σύνδεσης στο διαδίκτυο του GNOME "
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:181
+msgid "Raise PPP Link"
+msgstr "Ανάδυση PPP Link"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:213 sync/main.c:67
+msgid "About..."
+msgstr "Περί..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:219
+msgid "Properties..."
+msgstr "Ιδιότητες..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:223
+msgid "Offline"
+msgstr "Χωρίς σύνδεση"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:432
+msgid "Connecting..."
+msgstr "Γίνεται σύνδεση..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:437
+msgid "PPP Connected"
+msgstr "Το PPP συνδέθηκε"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:443
+msgid "PPP Error!"
+msgstr "Σφάλμα PPP!"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:483
+msgid "That account is already in use.\n"
+msgstr "Αυτός ο λογαριασμός χρησιμοποιείται ήδη.\n"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:566
+msgid "GNOME PPP Dialer Applet"
+msgstr "Εφαρμογίδιο κλήσης PPP του GNOME"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:569
+msgid ""
+"An unnecessarily nice looking applet for GNOME's panel for easy control of "
+"PPP network links."
+msgstr ""
+"Ένα όμορφο εφαρμογίδιο για το ταμπλώ του GNOME, για τον εύκολο έλεγχο των "
+"συνδέσεων δικτύου PPP."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:691
+msgid "PPP Applet Properties"
+msgstr "Ιδιότητες εφαρμογιδίου PPP"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:706
+msgid "Animation"
+msgstr "Κίνηση"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:712
+msgid "Small"
+msgstr "Μικρό"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:716
+msgid "Large"
+msgstr "Μεγάλο"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:720
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:769
+msgid "None"
+msgstr "Κανένα"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:724
+msgid "Options"
+msgstr "Επιλογές"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:730
+msgid "Freeze Animation on Connect"
+msgstr "Πάγωμα κινουμένων σχεδίων κατά την σύνδεση"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:737
+msgid "Disconnect PPP on GNOME logout"
+msgstr "Αποσύνδεση PPP κατά την έξοδο από το GNOME"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:745
+msgid "Timer"
+msgstr "Χρονόμετρο"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:751
+msgid "Label"
+msgstr "Ετικέτα"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:760
+msgid "Tooltip"
+msgstr "Συμβουλή οθόνης"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:778
+msgid "Animation Speed"
+msgstr "Ταχύτητα κινούμενων εικόνων"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:791
+msgid "PPP Applet"
+msgstr "Εφαρμογίδιο PPP"
+
+#: gnome-ppp/libgnome_ppp/connect.c:203
+msgid "---NEW CONNECTION---"
+msgstr "---ΝΕΑ ΣΥΝΔΕΣΗ---"
+
+#: gnome-ppp/libgnome_ppp/msg.c:26
+msgid "Account already connected."
+msgstr "Ο λογαριασμός είναι ήδη συνδεδεμένος."
+
+#: gnome-ppp/libgnome_ppp/msg.c:27
+msgid "Starting PPP Connection."
+msgstr "Έναρξη σύνδεσης PPP."
+
+#: gnome-ppp/libgnome_ppp/msg.c:28
+msgid "You don't have permission to execute pppd."
+msgstr "Δεν έχετε τα απαραίτητα δικαιώματα να εκτελέσετε το pppd."
+
+#: gnome-ppp/libgnome_ppp/msg.c:29
+msgid "The modem is in use by another program."
+msgstr "Το μόντεμ χρησιμοποιείται από άλλο πρόγραμμα."
+
+#: gnome-ppp/libgnome_ppp/msg.c:30
+msgid "Running pppd."
+msgstr "Εκτελείται pppd."
+
+#: gnome-ppp/libgnome_ppp/msg.c:31
+msgid "Closing connection."
+msgstr "Κλείσιμο σύνδεσης."
+
+#: gnome-ppp/libgnome_ppp/msg.c:32
+msgid "The pppd program failed to run gnome-ppp-chat."
+msgstr "Το πρόγραμμα pppd απέτυχε να εκτελέσει το gnome-ppp-chat."
+
+#: gnome-ppp/libgnome_ppp/msg.c:33
+msgid "The modem could not be hung up."
+msgstr "Το μόντεμ δεν μπορεί να αποσυνδεθεί."
+
+#: gnome-ppp/libgnome_ppp/msg.c:34
+msgid "Initalizing modem."
+msgstr "Αρχικοποποίηση μόντεμ."
+
+#: gnome-ppp/libgnome_ppp/msg.c:35
+msgid "Your modem is not responding to initalization."
+msgstr "Το μόντεμ σας δεν ανταποκρίνεται στην αρχικοποίηση."
+
+#: gnome-ppp/libgnome_ppp/msg.c:36
+msgid "The command to set the volume on your modem's speaker failed."
+msgstr "Η εντολή για τον ορισμό έντασης του ηχείου του μόντεμ απέτυχε."
+
+#: gnome-ppp/libgnome_ppp/msg.c:37
+msgid "No answer after maximum number of re-dial attempts."
+msgstr "Δεν υπήρξε απάντηση μετά από τον μέγιστο αριθμό προσπαθειών επανάκλησης."
+
+#: gnome-ppp/libgnome_ppp/msg.c:38
+msgid "No phone numbers specified for this account."
+msgstr "Δεν έχουν ορισθεί αριθμοί τηλεφώνου για αυτό τον λογαριασμό."
+
+#: gnome-ppp/libgnome_ppp/msg.c:39
+msgid "Dialing."
+msgstr "Κλήση."
+
+#: gnome-ppp/libgnome_ppp/msg.c:40
+msgid "Dialing timeout."
+msgstr "Λήξη ορίου χρόνου κλήσης."
+
+#: gnome-ppp/libgnome_ppp/msg.c:41
+msgid "No dialtone."
+msgstr "Δεν υπάρχει ήχος κλήσης."
+
+#: gnome-ppp/libgnome_ppp/msg.c:42
+msgid "Number busy."
+msgstr "Ο αριθμός είναι κατειλημένος."
+
+#: gnome-ppp/libgnome_ppp/msg.c:43
+msgid "Ring, but no answer."
+msgstr "Καλεί, αλλά καμμία απάντηση."
+
+#: gnome-ppp/libgnome_ppp/msg.c:44
+msgid "Connection failure, reason unknown."
+msgstr "Αποτυχία σύνδεσης, άγνωστος λόγος."
+
+#: gnome-ppp/libgnome_ppp/msg.c:45
+msgid "Connected."
+msgstr "Συνδεδεμένο."
+
+#: gnome-ppp/libgnome_ppp/msg.c:46
+msgid "The modem lost connection with remote host."
+msgstr "Το μόντεμ έχασε την σύνδεση με το απομακρυσμένο σύστημα."
+
+#: gnome-ppp/libgnome_ppp/msg.c:47
+msgid "Running Script."
+msgstr "Εκτελείται δέσμη ενεργειών."
+
+#: gnome-ppp/libgnome_ppp/msg.c:48
+msgid "Script Complete."
+msgstr "Η δέσμη ενεργειών ολοκληρώθηκε."
+
+#: gnome-ppp/libgnome_ppp/msg.c:49
+msgid "PPP connection established."
+msgstr "Η σύνδεση PPP πραγματοποιήθηκε."
+
+#: gnome-ppp/libgnome_ppp/msg.c:50
+msgid "Failed to establish a PPP connection."
+msgstr "Αποτυχία πραγματοποίησης σύνδεσης PPP."
+
+#: gnome-ppp/libgnome_ppp/msg.c:51
+msgid "The pppd daemon died unexpectedly."
+msgstr "Ο δαίμονας pppd τερματίστηκε απρόσμενα."
+
+#: gnome-ppp/modem-window.c:83
+msgid "open_modem_window(): account=NULL"
+msgstr "open_modem_window(): account=NULL"
+
+#: gnome-ppp/modem-window.c:120
+msgid "Commands"
+msgstr "Εντολές"
+
+#: gnome-ppp/modem-window.c:126
+msgid "Responses"
+msgstr "Απαντήσεις"
+
+#. initialization command entry widgets
+#: gnome-ppp/modem-window.c:268 gnome-ppp/modem-window.c:408
+msgid "Initialization"
+msgstr "Αρχικοποίηση"
+
+#. hangup command entry widgets
+#: gnome-ppp/modem-window.c:307 gnome-ppp/modem-window.c:428
+msgid "Hangup"
+msgstr "Αποσύνδεση"
+
+#. volume mute command entry widgets
+#: gnome-ppp/modem-window.c:327
+msgid "Volume Mute"
+msgstr "Σιγή έντασης"
+
+#. volume low command entry widgets
+#: gnome-ppp/modem-window.c:347
+msgid "Volume Low"
+msgstr "Χαμηλή ένταση"
+
+#. volume high command entry widgets
+#: gnome-ppp/modem-window.c:367
+msgid "Volume High"
+msgstr "Υψηλή ένταση"
+
+#. connection response entry widgets
+#: gnome-ppp/modem-window.c:448
+msgid "Connection"
+msgstr "Σύνδεση"
+
+#. busy response entry widgets
+#: gnome-ppp/modem-window.c:468
+msgid "Busy"
+msgstr "Απασχολημένη"
+
+#. no answer response entry widgets
+#: gnome-ppp/modem-window.c:488
+msgid "No Answer"
+msgstr "Χωρίς απάντηση"
+
+#. no carrier response entry widgets
+#: gnome-ppp/modem-window.c:508
+msgid "No Carrier"
+msgstr "No Carrier"
+
+#. no dialtone response entry widgets
+#: gnome-ppp/modem-window.c:528
+msgid "No Dialtone"
+msgstr "Δεν υπάρχει ήχος κλήσης"
+
+#: gnome-transfer-manager/src/GNOME_Transfer_Manager.server.in.in.h:1
+msgid "GNOME Transfer Manager"
+msgstr "Διαχείριση μεταφορών του GNOME "
+
+#: network-utilities/gnome-remote-shell.c:189
+#: network-utilities/gnome-remote-shell.c:216
+msgid "There is a connection error"
+msgstr "Υπήρξε σφάλμα σύνδεσης"
+
+#: network-utilities/gnome-remote-shell.c:284
+msgid "There is an error with displaying help"
+msgstr "Υπήρξε σφάλμα κατά την εμφάνιση βοήθειας"
+
+#: network-utilities/gnome-remote-shell.c:324
+msgid "Graphical user interface for GNOME Remote Shell"
+msgstr "Γραφική διεπιφάνεια χρήσης για το  GNOME Remote Shell"
+
+#: network-utilities/gnome-remote-shell.c:327
+msgid "This is an untranslated version of GNOME Remote Shell"
+msgstr "Αυτή είναι μια αμετάφραστη έκδοση του GNOME Remote Shell"
+
+#: network-utilities/gnome-remote-shell.c:373
+#: network-utilities/gnome-remote-shell.c:423
+#: network-utilities/gnome-remote-shell.c:550
+msgid "Failed to create a connection"
+msgstr "Αποτυχία δημιουργίας σύνδεσης"
+
+#: network-utilities/gnome-remote-shell.c:373
+msgid "A hostname is required"
+msgstr "Απαιτείται όνομα συστήματος"
+
+#: network-utilities/gnome-remote-shell.c:423
+msgid "A user name is required for SSH"
+msgstr "Ένα όνομα χρήστη απαιτείται για SSH"
+
+#: network-utilities/gnome-remote-shell.c:501
+msgid "There is a command line error"
+msgstr "Υπήρξε σφάλμα γραμμής εντολών"
+
+#: network-utilities/gnome-remote-shell.c:550
+msgid "The host cannot be found"
+msgstr "Το σύστημα δεν μπορεί να βρεθεί"
+
+#: network-utilities/gnome-remote-shell.glade.h:3
+msgid "<span weight=\"bold\">Connect to remote host</span>"
+msgstr "<span weight=\"bold\">Σύνδεση σε απομακρυσμένο σύστημα</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:4
+msgid "<span weight=\"bold\">Method</span>"
+msgstr "<span weight=\"bold\">Μέθοδος</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:5
+msgid "<span weight=\"bold\">Window size</span>"
+msgstr "<span weight=\"bold\">Μέγεθος παραθύρου</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:7
+msgid "Connect to remote host"
+msgstr "Σύνδεση σε απομακρυσμένο σύστημα"
+
+#: network-utilities/gnome-remote-shell.glade.h:8
+msgid "H_eight:"
+msgstr "Ύ_ψος:"
+
+#: network-utilities/gnome-remote-shell.glade.h:9
+msgid "H_ost:"
+msgstr "Σύ_στημα:"
+
+#: network-utilities/gnome-remote-shell.glade.h:10
+msgid "Regular shell (_Telnet)"
+msgstr "Κανονικό κέλυφος (_Telnet)"
+
+#: network-utilities/gnome-remote-shell.glade.h:11
+msgid "Use _default"
+msgstr "Χρήση ε_ξ ορισμού"
+
+#: network-utilities/gnome-remote-shell.glade.h:12
+msgid "_Contents"
+msgstr "Περιε_χόμενα"
+
+#: network-utilities/gnome-remote-shell.glade.h:13
+msgid "_Port:"
+msgstr "_Θύρα:"
+
+#: network-utilities/gnome-remote-shell.glade.h:14
+msgid "_Secure shell (SSH)"
+msgstr "_Secure shell (SSH)"
+
+#: network-utilities/gnome-remote-shell.glade.h:15
+msgid "_Shell"
+msgstr "Κέ_λυφος"
+
+#: network-utilities/gnome-remote-shell.glade.h:16
+msgid "_User:"
+msgstr "_Χρήστης:"
+
+#: network-utilities/gnome-remote-shell.glade.h:17
+msgid "_Width:"
+msgstr "_Πλάτος:"
+
+#: network-utilities/gnome-remote-shell.glade.h:18
+msgid "characters"
+msgstr "χαρακτήρες"
+
+#: pws/pws-preferences-support.c:273
+msgid "Expander Size"
+msgstr "Μέγεθος Expander"
+
+#: pws/pws-preferences-support.c:274
+msgid "Size of the expander arrow"
+msgstr "Μέγεθος του βέλους διαστολής"
+
+#: pws/pws-preferences-widget.c:103
+msgid "Web folder:"
+msgstr "Δικτυακός φάκελος:"
+
+#: pws/pws-preferences-widget.c:107
+msgid "Select the folder to be published"
+msgstr "Επιλογή φακέλου για δημοσίευση"
+
+#: pws/pws-preferences-widget.c:115 pws/pws-preferences-widget.c:116
+msgid "Additional options"
+msgstr "Πρόσθετες επιλογές"
+
+#: pws/pws-preferences-widget.c:138
+msgid "Port number:"
+msgstr "Αριθμός θύρας:"
+
+#: pws/pws-preferences-widget.c:157
+msgid "Time out:"
+msgstr "Όριο χρόνου:"
+
+#: pws/pws-preferences-widget.c:176
+msgid "Keep alive"
+msgstr "Keep alive"
+
+#: pws/pws.c:84
+msgid "/_Open Web Folder"
+msgstr "/Ά_νοιγμα δικτυακού φακέλου:"
+
+#: pws/pws.c:176
+msgid "Personal web server preferences"
+msgstr "Προτιμήσεις προσωπικού web server"
+
+#: pws/pws.c:191
+msgid "Personal Web Server Preferences"
+msgstr "Προτιμήσεις προσωπικού web server"
+
+#: pws/pws.c:192
+msgid "Setup the options for your personal web server."
+msgstr "Καθορίστε της προτιμήσεις σας για τον προσωπικό σας web server."
+
+#: sync/entryconfigdialog.c:70
+msgid "Could not load UI for entry configuration dialog"
+msgstr "Αδυναμία φόρτωσης UI για διάλογο ρύθμισης καταχώρησης"
+
+#: sync/entryconfigdialog.glade.h:2
+msgid "Entry name"
+msgstr "Όνομα καταχώρησης"
+
+#: sync/entryconfigdialog.glade.h:3
+msgid "Local path"
+msgstr "Τοπική διαδρομή"
+
+#: sync/entryconfigdialog.glade.h:4
+msgid "Preserve group"
+msgstr "Διατήρηση ομάδας"
+
+#: sync/entryconfigdialog.glade.h:5
+msgid "Preserve permissions"
+msgstr "Διατήρηση δικαιωμάτων"
+
+#: sync/entryconfigdialog.glade.h:6
+msgid "Preserve times"
+msgstr "Διατήρηση χρόνων"
+
+#: sync/entryconfigdialog.glade.h:7
+msgid "Recurse into directories"
+msgstr "Recurse σε καταλόγους"
+
+#: sync/entryconfigdialog.glade.h:8
+msgid "Remote host"
+msgstr "Απομακρυσμένο σύστημα"
+
+#: sync/entryconfigdialog.glade.h:9
+msgid "Remote path"
+msgstr "Απομακρυσμένη διαδρομή"
+
+#: sync/entryconfigdialog.glade.h:10
+msgid "Synchronization options"
+msgstr "Επιλογές συγχρονισμού"
+
+#: sync/entryconfigdialog.glade.h:11
+msgid "Update only (don't overwrite newer files)"
+msgstr "Ενημέρωση μόνο (να μην αντικατασταθούν νεώτερα αρχεία)"
+
+#: sync/entryconfigdialog.glade.h:12
+msgid "Use relative path names"
+msgstr "Χρήση ονομάτων σχετικών διαδρομών"
+
+#: sync/entryconfigdialog.glade.h:13
+msgid "Use rsync"
+msgstr "Χρήση rsync"
+
+#: sync/entryconfigdialog.glade.h:14
+msgid "Use unison"
+msgstr "Χρήση unison"
+
+#: sync/entryconfigdialog.glade.h:15
+msgid "dialog1"
+msgstr "διάλογος1"
+
+#: sync/entryconfigdialog.glade.h:16
+msgid "rsync"
+msgstr "rsync"
+
+#: sync/entryconfigdialog.glade.h:17
+msgid "unison"
+msgstr "unison"
+
+#: sync/entrylist.c:70
+msgid "Local"
+msgstr "Τοπικό"
+
+#: sync/entrylist.c:73
+msgid "Remote"
+msgstr "Απομακρυσμένο"
+
+#: sync/entrylist.c:76
+msgid "Last sync"
+msgstr "Τελευταίος συγχρονισμός"
+
+#: sync/main.c:44
+msgid "_Synchronize"
+msgstr "_Συγχρονισμός "
+
+#: sync/main.c:55
+msgid "New entry..."
+msgstr "Νέα καταχώρηση..."
+
+#: sync/main.c:57 sync/main.c:171
+msgid "Edit..."
+msgstr "Επεξεργασία..."
+
+#: sync/main.c:75 sync/main.c:181
+msgid "Synchronize"
+msgstr "Συγχρονισμός "
+
+#: sync/main.c:103
+msgid "Gnome Synchronize"
+msgstr "Συγχρονισμός Gnome"
+
+#: sync/main.c:105
+msgid "The GNOME file synchronization program."
+msgstr "Πρόγραμμα συγχρονισμού αρχείου του GNOME"
+
+#: sync/main.c:176
+msgid "New"
+msgstr "Νέα"
+
+#: sync/main.c:177
+msgid "Create new synchronization entry"
+msgstr "Δημιουργία νέας καταχώρησης συγχρονισμού"
+
+#: sync/main.c:182
+msgid "Start synchronization for selected entries"
+msgstr "Έναρξη συγχρονισμού για επιλεγμένες καταχωρήσεις"
+
+#: sync/main.c:185
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: sync/main.c:186
+msgid "Edit selected entry"
+msgstr "Επεξεργασία επιλεγμένης καταχώρησης"
+
+#: sync/main.c:189
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: sync/main.c:190
+msgid "Delete selected entries"
+msgstr "Διαγραφή επιλεγμένων καταχωρήσεων"
+

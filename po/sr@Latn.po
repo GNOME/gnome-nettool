@@ -1,0 +1,2237 @@
+# Serbian translation of gnome-network
+# Courtesy of Prevod.org team (http://www.prevod.org/) -- 2003.
+# 
+# This file is distributed under the same license as the gnome-network package.
+# 
+# Maintainer: Predrag Krtolica <predrag_k@optusnet.com.au>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-network\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-01-12 02:59+0100\n"
+"PO-Revision-Date: 2004-01-12 03:01+0100\n"
+"Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
+"Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
+msgid "GNOME Remote Desktop Applet"
+msgstr "Programče za Gnomovu udaljenu radnu površinu"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:1
+msgid "Connect to a remote desktop computer"
+msgstr "Povezivanje sa udaljenom radnom površinom računara"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:2
+msgid "Remote Desktop Client"
+msgstr "Pristup udaljenoj radnoj površini"
+
+#: desktop/client/src/connect.c:75
+msgid "640 x 480 pixels"
+msgstr "640 x 480 tačaka"
+
+#: desktop/client/src/connect.c:75
+msgid "800 x 600 pixels"
+msgstr "800 x 600 tačaka"
+
+#: desktop/client/src/connect.c:76
+msgid "1024 x 768 pixels"
+msgstr "1024 x 768 tačaka"
+
+#: desktop/client/src/connect.c:77
+msgid "1152 x 864 pixels"
+msgstr "1152 x 864 tačaka"
+
+#: desktop/client/src/connect.c:78
+msgid "1280 x 960 pixels"
+msgstr "1280 x 960 tačaka"
+
+#: desktop/client/src/connect.c:82
+msgid "256 Colors"
+msgstr "256 boja"
+
+#: desktop/client/src/connect.c:83
+msgid "High Color (15 bit)"
+msgstr "Puno boja (15 bita)"
+
+#: desktop/client/src/connect.c:84
+msgid "High Color (16 bit)"
+msgstr "Puno boja (16 bita)"
+
+#: desktop/client/src/connect.c:85
+msgid "True Color (24 bit)"
+msgstr "Prave boje (24 bita)"
+
+#: desktop/client/src/connect.c:286 desktop/client/src/connect.c:309
+#: desktop/client/src/connect.c:311 desktop/client/src/support.c:780
+#: desktop/gnome-remote-desktop.glade.h:13
+msgid "GNOME Remote Desktop"
+msgstr "Gnomova udaljena radna površina "
+
+#.
+#. This is the input for the Compact mode
+#.
+#: desktop/client/src/connect.c:343 desktop/client/src/connect.c:554
+msgid "Compu_ter:"
+msgstr "_Računar:"
+
+#: desktop/client/src/connect.c:367 desktop/client/src/connect.c:622
+msgid "Enter the name or address of the remote system."
+msgstr "Unesite ime ili adresu udaljenog sistema."
+
+#: desktop/client/src/connect.c:372 desktop/client/src/connect.c:629
+msgid "Select the protocol to use for this connection."
+msgstr "Izaberite protokol za ovu vezu."
+
+#: desktop/client/src/connect.c:379 desktop/client/src/connect.c:636
+msgid ""
+"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
+"systems with desktop sharing."
+msgstr ""
+"RDP protokol se koristi za povezivanje sa Mikrosoftovim terminalskim "
+"serverima i Windows XP sistemima sa deljenom radnom površinom."
+
+#: desktop/client/src/connect.c:384 desktop/client/src/connect.c:643
+msgid ""
+"VNC protocol is used to connect to systems sharing the desktop by using VNC."
+msgstr ""
+"VNC protokol se koristi za povezivanje sa sistemima koji dele radnu površinu "
+"pomoću VNC-a."
+
+#: desktop/client/src/connect.c:393 desktop/client/src/connect.c:654
+msgid "XDMCP protocol uses Xnest to connect to servers running X."
+msgstr ""
+"XDMCP protokol koristi Xnest za povezivanje sa serverima koji koriste X."
+
+#: desktop/client/src/connect.c:398 desktop/client/src/connect.c:661
+msgid "ICA protocol is used to connect to Citrix servers."
+msgstr "ICA protokol se koristi za povezivanje sa Citrix serverima."
+
+#.
+#. This is the Profile Launcher
+#.
+#: desktop/client/src/connect.c:409
+msgid "Prof_ile Launcher:"
+msgstr "Pokretač skupa pod_ešavanja:"
+
+#: desktop/client/src/connect.c:422
+msgid "Select a saved profile to launch it immediately."
+msgstr "Izaberite sačuvan skup podešavanja da ga odmah pokrenete."
+
+#: desktop/client/src/connect.c:454
+msgid "_More"
+msgstr "_Više"
+
+#: desktop/client/src/connect.c:480 desktop/client/src/connect.c:1224
+#: network-utilities/gnome-remote-shell.glade.h:6
+msgid "Co_nnect"
+msgstr "Po_veži"
+
+#.
+#. This is the label for the Connection Profile
+#.
+#: desktop/client/src/connect.c:489 desktop/client/src/connect.c:491
+msgid "Connection Profile"
+msgstr "Skup podešavanja veze"
+
+#: desktop/client/src/connect.c:520 desktop/client/src/connect.c:522
+msgid "Logon Settings"
+msgstr "Podešavanja prijave"
+
+#: desktop/client/src/connect.c:530
+msgid ""
+"Type the name of the computer or choose a computer from the drop-down list."
+msgstr "Unesite ime računara ili izaberite računar iz padajuće liste."
+
+#: desktop/client/src/connect.c:562
+msgid "Pro_tocol:"
+msgstr "Pro_tokol:"
+
+#: desktop/client/src/connect.c:570
+msgid "_User Name:"
+msgstr "Ime _korisnika:"
+
+#: desktop/client/src/connect.c:578
+msgid "Pass_word:"
+msgstr "_Lozinka:"
+
+#: desktop/client/src/connect.c:586
+msgid "Do_main:"
+msgstr "Do_men:"
+
+#: desktop/client/src/connect.c:594
+msgid "C_lient Hostname:"
+msgstr "Pr_istupajući računar:"
+
+#: desktop/client/src/connect.c:602
+msgid "Prot_ocol File:"
+msgstr "D_atoteka protokola:"
+
+#: desktop/client/src/connect.c:677
+msgid ""
+"Enter the username for the remote system.\n"
+"For VNC, enter the path to your saved vnc password file."
+msgstr ""
+"Unesite korisničko ime za udaljeni sistem.\n"
+"Za VNC, unesite putanju do vaše sačuvane datoteke sa VNC lozinkama."
+
+#: desktop/client/src/connect.c:686
+msgid "Enter the password for the remote system."
+msgstr "Unesite lozinku za udaljeni sistem."
+
+#: desktop/client/src/connect.c:694
+msgid "Enter the domain for the remote system."
+msgstr "Unesite domen za udaljeni sistem."
+
+#: desktop/client/src/connect.c:702
+msgid "Enter the local hostname for this system."
+msgstr "Unesite lokalno ime ovog sistema."
+
+#: desktop/client/src/connect.c:714
+msgid ""
+"Some protocols require a file containing settings. If required, enter the "
+"path to the file here."
+msgstr ""
+"Neki protokoli zahtevaju datoteku sa podešavanjima. Ukoliko je neophodno, "
+"ovde unesite putanju do datoteke."
+
+#: desktop/client/src/connect.c:736 desktop/client/src/connect.c:738
+msgid "Remote Desktop Size"
+msgstr "Veličina udaljene radne površine"
+
+#: desktop/client/src/connect.c:756
+msgid "Use default screen size"
+msgstr "Koristi podrazumevanu veličinu ekrana"
+
+#: desktop/client/src/connect.c:760
+msgid "Use the default screen size."
+msgstr "Koristi podrazumevanu veličinu ekrana."
+
+#: desktop/client/src/connect.c:765
+msgid "Use specified screen size"
+msgstr "Koristi navedenu veličinu ekrana"
+
+#: desktop/client/src/connect.c:769
+msgid "Use the list to choose the screen size to use."
+msgstr "Pomoću ovog spiska izaberite koju veličinu ekrana želite."
+
+#: desktop/client/src/connect.c:781
+msgid "Operate in full screen mode"
+msgstr "Radi preko celog ekrana"
+
+#: desktop/client/src/connect.c:785
+msgid "Work in full screen mode."
+msgstr "Radi preko celog ekrana."
+
+#: desktop/client/src/connect.c:794
+msgid "Use alternate full screen switch (-F)"
+msgstr "Koristi dopunsko prebacivanje na ceo ekran (-F)"
+
+#: desktop/client/src/connect.c:798
+msgid "Check this if you use rdesktop with the unified patches."
+msgstr "Označite ovo ako koristite rdesktop sa sjedinjenim dopunama."
+
+#: desktop/client/src/connect.c:807 desktop/client/src/connect.c:809
+msgid "Colors"
+msgstr "Boje"
+
+#: desktop/client/src/connect.c:827
+msgid "Use default color depth"
+msgstr "Koristi podrazumevanu dubinu boja"
+
+#: desktop/client/src/connect.c:831
+msgid "Use the default color depth."
+msgstr "Koristi podrazumevanu dubinu boja."
+
+#: desktop/client/src/connect.c:836
+msgid "Use specified color depth"
+msgstr "Koristi navedenu dubinu boja"
+
+#: desktop/client/src/connect.c:840
+msgid "Use the list to choose the color depth to use."
+msgstr "Pomoću ovog spiska izaberite koju dubinu boja želite."
+
+#: desktop/client/src/connect.c:864
+msgid "Remote Computer _Sound"
+msgstr "Zvuk udaljenog _računara"
+
+#: desktop/client/src/connect.c:866
+msgid "Remote Computer Sound"
+msgstr "Zvuk udaljenog računara"
+
+#: desktop/client/src/connect.c:890 desktop/client/src/connect.c:926
+msgid "On the local computer"
+msgstr "Na lokalnom računaru"
+
+#: desktop/client/src/connect.c:893 desktop/client/src/connect.c:929
+msgid "On the remote computer"
+msgstr "Na udaljenom računaru"
+
+#: desktop/client/src/connect.c:896
+msgid "Do not play"
+msgstr "Ne puštaj"
+
+#: desktop/client/src/connect.c:907
+msgid "_Keyboard"
+msgstr "_Tastatura"
+
+#: desktop/client/src/connect.c:909
+msgid "Keyboard"
+msgstr "Tastatura"
+
+#: desktop/client/src/connect.c:932
+msgid "In full screen mode only"
+msgstr "Samo preko celog ekrana"
+
+#: desktop/client/src/connect.c:938
+msgid ""
+"Use the following keyboard language\n"
+"(2 char keycode)"
+msgstr ""
+"Koristi naredni jezik tastature\n"
+"(dvoslovni kôd)"
+
+#: desktop/client/src/connect.c:966
+msgid ""
+"Apply Windows key combinations\n"
+"(for example ALT+TAB) (unsupported)"
+msgstr ""
+"Prihvati Windows kombinacije tastera\n"
+"(npr. ALT+TAB) (nepodržano)"
+
+#: desktop/client/src/connect.c:989 desktop/client/src/connect.c:991
+msgid "Start a Program"
+msgstr "Pokreni program"
+
+#: desktop/client/src/connect.c:1006
+msgid "Start the following program on connection"
+msgstr "Pokreni sledeći program po povezivanju"
+
+#: desktop/client/src/connect.c:1013
+msgid "Program path and filename"
+msgstr "Putanja i datoteka programa"
+
+#: desktop/client/src/connect.c:1026
+msgid "Start in the following folder"
+msgstr "Pokreni u sledećem direktorijumu"
+
+#: desktop/client/src/connect.c:1048 desktop/client/src/connect.c:1050
+msgid "Optimize Performance"
+msgstr "Poboljšaj performanse"
+
+#: desktop/client/src/connect.c:1071
+msgid "Desktop background (u)"
+msgstr "Pozadina radne površine"
+
+#: desktop/client/src/connect.c:1075
+msgid "Show content of window while dragging (u)"
+msgstr "Prikaži sadržaj prozora pri prevlačenju"
+
+#: desktop/client/src/connect.c:1079
+msgid "Menu and window animation (u)"
+msgstr "Animacije menija i prozora"
+
+#: desktop/client/src/connect.c:1083
+msgid "Themes (u)"
+msgstr "Teme"
+
+#: desktop/client/src/connect.c:1087
+msgid "Enable bitmap caching"
+msgstr "Uključi ostavu bitmapa"
+
+#: desktop/client/src/connect.c:1091
+msgid "Do not send motion events"
+msgstr "Ne šalji događaje kretanja"
+
+#: desktop/client/src/connect.c:1095
+msgid "Enable window manager's key bindings"
+msgstr "Uključi prečice upravnika prozora"
+
+#: desktop/client/src/connect.c:1100
+msgid "Options available for optimizing performance"
+msgstr "Dostupne opcije za poboljšanje performansi"
+
+#.
+#. These are the labels for the notebook control
+#.
+#: desktop/client/src/connect.c:1113
+msgid "_General"
+msgstr "_Opšte"
+
+#: desktop/client/src/connect.c:1118
+msgid "_Display"
+msgstr "_Ekran"
+
+#: desktop/client/src/connect.c:1123
+msgid "Local _Resources"
+msgstr "Lokalni _resursi"
+
+#: desktop/client/src/connect.c:1128
+msgid "_Programs"
+msgstr "_Programi"
+
+#: desktop/client/src/connect.c:1133
+msgid "Perf_ormance"
+msgstr "Per_formanse"
+
+#: desktop/client/src/connect.c:1197
+msgid "_Less"
+msgstr "_Manje"
+
+#: desktop/client/src/connect.c:1708
+msgid "Input a filename to save as..."
+msgstr "Unesite ime datoteke u koju da sačuvam..."
+
+#: desktop/client/src/connect.c:1750 desktop/client/src/connect.c:1795
+msgid "Choose an RDP file to open..."
+msgstr "Izaberite RDP datoteku radi otvaranja..."
+
+#: desktop/client/src/support.c:277
+msgid ""
+"rdesktop was not found in your path.\n"
+"Please verify your rdesktop installation."
+msgstr ""
+"rdesktop nije nađen u vašoj putanji.\n"
+"Proverite vašu instalaciju rdesktop-a."
+
+#: desktop/client/src/support.c:417
+msgid ""
+"vncviewer or xvncviewer were\n"
+" not found in your path.\n"
+"Please verify your vnc installation."
+msgstr ""
+"vncviewer ili xvncviewer nisu \n"
+"nađeni u vašoj putanji.\n"
+"Proverite vašu instalaciju vnc-a."
+
+#: desktop/client/src/support.c:519
+msgid ""
+"Xnest was not found in your path.\n"
+"Please verify your Xnest installation."
+msgstr ""
+"Xnest nije nađen u vašoj putanji.\n"
+"Proverite vašu instalaciju Xnest-a."
+
+#: desktop/client/src/support.c:578
+msgid ""
+"wfica was not found in your path.\n"
+"Please verify your ICAClient installation."
+msgstr ""
+"wfica nije nađen u vašoj putanji.\n"
+"Proverite vašu instalaciju ICAClient-a."
+
+#: desktop/client/src/support.c:702
+msgid ""
+"Failed to spawn.\n"
+"Please verify your installation."
+msgstr ""
+"Nisam uspeo da pokrenem.\n"
+"Proverite vašu instalaciju."
+
+#. create the widgets
+#: desktop/client/src/support.c:744
+msgid "GNOME Remote Desktop Error"
+msgstr "Greška Gnomove udaljene radne površine"
+
+#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
+msgid "An error has occurred."
+msgstr "Dogodila se greška."
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
+msgid "Check this to enable desktop sharing in GNOME"
+msgstr "Označite ovo da biste uključili deljenje radne površine u Gnomu"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
+msgid "Password to connect to desktop sharing"
+msgstr "Lozinka za deljenje radne površine"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:3
+msgid ""
+"Set this to the password clients should use to connect to your desktop "
+"remotely"
+msgstr ""
+"Postavite ovo na lozinku koju treba da koriste klijenti radi povezivanja na "
+"vašu radnu površinu izdaleka"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:4
+msgid "Whether to enable desktop sharing"
+msgstr "Da li da uključi deljenje radne površine"
+
+#: desktop/gnome-remote-desktop.glade.h:1
+#: gnome-netinfo/gnome-netinfo.glade.h:1
+#: network-utilities/gnome-remote-shell.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: desktop/gnome-remote-desktop.glade.h:2
+#: gnome-netinfo/gnome-netinfo.glade.h:5
+#: network-utilities/gnome-remote-shell.glade.h:2
+#: sync/entryconfigdialog.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: desktop/gnome-remote-desktop.glade.h:3
+msgid ""
+"<b>Connection settings</b>\n"
+"Type the name of the computer to open a new desktop session and/or the "
+"display number to connect to an already running session."
+msgstr ""
+"<b>Podešavanja veze</b>\n"
+"Ukucajte ime računara za otvaranje nove radne seanse i/ili brojprikaza da "
+"biste se priključili na već postojeću seansu"
+
+#: desktop/gnome-remote-desktop.glade.h:5
+msgid ""
+"<b>Desktop settings</b>\n"
+"Select the size and color depth (not supported for all cases, so use with "
+"care) of you remote desktop."
+msgstr ""
+"<b>Podešavanja radne površine</b>\n"
+"Izaberite veličinu vaše udaljene radne površine i jačinu boje (nije moguće za "
+"sve slučajeve, pa budite pažljivi)"
+
+#: desktop/gnome-remote-desktop.glade.h:7
+msgid ""
+"<b>Method</b>\n"
+"Select the method for connecting to the remote host. For Windows systems, "
+"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
+"work."
+msgstr ""
+"<b>Način priključenja</b>\n"
+"Izaberite način priključenja na udaljeni server. Za Windows sisteme izabraćete "
+"VNC. Za UNIX sisteme obično X11, iako će VNC takođe raditi "
+
+#: desktop/gnome-remote-desktop.glade.h:9
+msgid "Color depth"
+msgstr "Dubina boje"
+
+#: desktop/gnome-remote-desktop.glade.h:10
+msgid "Connect Now ..."
+msgstr "Poveži sada..."
+
+#: desktop/gnome-remote-desktop.glade.h:11
+msgid "Display size"
+msgstr "Veličina prikaza"
+
+#: desktop/gnome-remote-desktop.glade.h:12
+msgid "Display:"
+msgstr "Prikaz:"
+
+#: desktop/gnome-remote-desktop.glade.h:14
+msgid "Host:"
+msgstr "Server:"
+
+#: desktop/gnome-remote-desktop.glade.h:15
+msgid "VNC"
+msgstr "VNC"
+
+#: desktop/gnome-remote-desktop.glade.h:16
+msgid "X11"
+msgstr "X11"
+
+#: desktop/gnome-remote-desktop.glade.h:17
+msgid "by"
+msgstr "po"
+
+#: desktop/preferences/interface.c:48 desktop/preferences/interface.c:63
+#: desktop/server/tray.c:163
+msgid "Desktop Sharing"
+msgstr "Deljenje radne površine"
+
+#: desktop/preferences/interface.c:72
+msgid "_Share my desktop with others"
+msgstr "_Deli moju radnu površinu sa drugima"
+
+#: desktop/preferences/interface.c:78
+msgid "Enable this option to allow others to view your desktop"
+msgstr ""
+"Uključite ovu opciju da biste dozvolili drugima da gledaju vašu radnu površinu"
+
+#: desktop/preferences/interface.c:93
+msgid ""
+"The following information will need to be supplied by the user connecting to "
+"your desktop"
+msgstr ""
+"Neophodno je da korisnik koji se povezuje na vašu radnu površinu prosledi "
+"naredne podatke"
+
+#: desktop/preferences/interface.c:104 gnome-ppp/account-window.c:1023
+msgid "Password"
+msgstr "Lozinka"
+
+#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Ne mogu da nađem datoteku slike: %s"
+
+#: desktop/server/eggtrayicon.c:118
+msgid "Orientation"
+msgstr "Usmerenje"
+
+#: desktop/server/eggtrayicon.c:119
+msgid "The orientation of the tray."
+msgstr "Usmerenje sličice."
+
+#: desktop/server/tray.c:62 pws/pws.c:85
+msgid "/_Preferences"
+msgstr "/_Postavke"
+
+#: desktop/server/tray.c:63
+msgid "/_Clients"
+msgstr "/_Klijenti"
+
+#: desktop/server/tray.c:65
+msgid "/_About"
+msgstr "/_O programu"
+
+#: desktop/server/tray.c:66 pws/pws.c:88
+msgid "/_Quit"
+msgstr "/_Izađi"
+
+#: desktop/server/tray.c:118
+msgid "Your desktop is viewable to others"
+msgstr "Vašu radnu površinu mogu da gledaju i drugi"
+
+#: desktop/server/tray.c:165
+msgid "Remote Desktop Sharing"
+msgstr "Deljenje udaljene radne površine"
+
+#: desktop/server/tray.c:168 gnome-netinfo/callbacks.c:214
+msgid "This is an untranslated version of GNOME Network Information"
+msgstr "Ovo je neprevedeno izdanje Gnomovih mrežnih podataka"
+
+#: desktop/server/tray.c:403
+msgid "Clients currently viewing your desktop"
+msgstr "Klijenti koji upravo gledaju vašu radnu površinu"
+
+#: desktop/server/tray.c:425 gnome-ppp/dial-window.c:431
+msgid "Disconnect"
+msgstr "Prekini vezu"
+
+#: gnome-netinfo/callbacks.c:212
+msgid "Graphical user interface for common network utilities"
+msgstr "Grafičko korisničko sučelje za uobičajene mrežne alate"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:2
+msgid "(eg. user@www.domain.com)"
+msgstr "(npr. korisnik@domen.kom)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:3
+msgid "(for example: domain.com)"
+msgstr "(na primer: prevod.org)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:4
+msgid "(for example: www.domain.com or 192.168.2.1)"
+msgstr "(na primer: prevod.org ili 192.168.2.1)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:6
+msgid "0.0"
+msgstr "0,0"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:7
+msgid "<span weight=\"bold\">@</span>"
+msgstr "<span weight=\"bold\">@</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:8
+msgid ""
+"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+"information</span>"
+msgstr "<span weight=\"bold\">Unesite domen za koji želite podatke</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:9
+msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+msgstr "<span weight=\"bold\">Unesite mrežnu adresu koju tražite</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:10
+msgid ""
+"<span weight=\"bold\">Enter a user name and network address to finger that "
+"user</span>"
+msgstr ""
+"<span weight=\"bold\">Unesite korisničko ime i mrežnu adresu da pročačkate "
+"(finger) tog korisnika</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:11
+msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+msgstr ""
+"<span weight=\"bold\">Unesite mrežnu adresu koju želite da pingujete</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:12
+msgid ""
+"<span weight=\"bold\">Enter the network address to scan for open ports</span>"
+msgstr ""
+"<span weight=\"bold\">Unesite mrežnu adresu na kojoj želite da tražite "
+"otvorene portove</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:13
+msgid ""
+"<span weight=\"bold\">Enter the network address to trace a route to</span>"
+msgstr ""
+"<span weight=\"bold\">Unesite mrežnu adresu do koje želite da pronađete "
+"putanju</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:14
+msgid "<span weight=\"bold\">Information</span>"
+msgstr "<span weight=\"bold\">Podaci</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:15
+msgid "<span weight=\"bold\">Round trip time statistics</span>"
+msgstr "<span weight=\"bold\">Statistika za povratni put</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:16
+msgid ""
+"<span weight=\"bold\">Select the network device to get information on</span>"
+msgstr ""
+"<span weight=\"bold\">Izaberite mrežni uređaj za koji želite podatke</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:17
+msgid "<span weight=\"bold\">Select the type of information to display</span>"
+msgstr ""
+"<span weight=\"bold\">Izaberite koju vrstu podataka želite da prikažete</"
+"span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:18
+msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
+msgstr ""
+"<span weight=\"bold\">Izaberite koju vrstu podataka želite da pronađete:</"
+"span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:19
+msgid "<span weight=\"bold\">Statistics</span>"
+msgstr "<span weight=\"bold\">Statistika</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:20
+msgid "<span weight=\"bold\">Transmission statistics</span>"
+msgstr "<span weight=\"bold\">Statistika prenosa</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:21
+msgid "Any / All Information"
+msgstr "Bilo koji/svi podaci"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:22
+msgid "Average:"
+msgstr "Prosek:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:23
+msgid "Broadcast:"
+msgstr "Emitovanje:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:24
+msgid "CPU / OS Type"
+msgstr "Tip procesora i operativnog sistema"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:25
+msgid "Canonical Name"
+msgstr "Kanonsko ime"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:26
+msgid "Clear _History"
+msgstr "Očisti _istorijat"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:27
+msgid "Collisions:"
+msgstr "Sudari:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:28
+msgid "Default Information"
+msgstr "Podrazumevani podaci"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:29
+msgid "Display active network services"
+msgstr "Pogledajte aktivne internet servise"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:30
+msgid "Display multicast information"
+msgstr "Pogledajte detalje o višestrukom emitovanju"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:31
+msgid "Display routing table information"
+msgstr "Pogledajte podatke o tabeli preusmeravanja paketa"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:32
+msgid "Enter the network address to ping"
+msgstr "Unesite mrežnu adresu da pingujete"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:530
+msgid "Finger"
+msgstr "Finger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:34
+msgid "Hardware address:"
+msgstr "Hardverska adresaL"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:35
+msgid "Host name for Address"
+msgstr "Ime računara za adresu"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:36
+msgid "IP address:"
+msgstr "IP adresa:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:37
+msgid "Internet Address"
+msgstr "Internet adresa"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:38
+msgid "Link speed:"
+msgstr "Brzina veze:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:485
+msgid "Lookup"
+msgstr "Pronađi"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:40
+msgid "MTU:"
+msgstr "MTU:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:41
+msgid "Mailbox Exchange"
+msgstr "Razmena pošte"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:42
+msgid "Mailbox Information"
+msgstr "Podaci o e-pošti"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:43
+msgid "Maximum:"
+msgstr "Najviše:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:44
+msgid "Minimum:"
+msgstr "Najmanje:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:45
+msgid "Multicast:"
+msgstr "Višestruko emitovanje:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:46
+msgid "Name Server"
+msgstr "DNS server"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:47
+msgid "Netmask:"
+msgstr "Mrežna maska:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:349
+msgid "Netstat"
+msgstr "Mrežna statistika"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:49 gnome-netinfo/main.c:110
+msgid "Network Information"
+msgstr "Podaci o mreži"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:50
+msgid "Packets loss:"
+msgstr "Izgubljeni paketi:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:51
+msgid "Packets received:"
+msgstr "Primljeni paketi:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:52
+msgid "Packets transmitted:"
+msgstr "Preneti paketi:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:257
+msgid "Ping"
+msgstr "Ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:54
+msgid "Port _Scan"
+msgstr "Traženje _portova"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:55
+msgid "Received bytes:"
+msgstr "Primljeni bajtovi:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:56
+msgid "Received packets:"
+msgstr "Primljeni paketi:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:57
+msgid "Reception errors:"
+msgstr "Greške kod primanja:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:447
+msgid "Scan"
+msgstr "Traži"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:59
+msgid "Select network device from list"
+msgstr "Izaberite mrežni uređaj iz spiska"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:60
+msgid "Send only"
+msgstr "Samo šalji"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:61
+msgid "Send unlimited requests (pings)"
+msgstr "Pošalji neograničen broj zahteva (pingova)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:62
+msgid "Start-of-authority"
+msgstr "Početak-autoriteta (SOA)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:63
+msgid "State:"
+msgstr "Stanje:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:64
+msgid "Text Information"
+msgstr "Tekstualni podaci"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:305
+msgid "Trace"
+msgstr "Put"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:66
+msgid "Transmission errors:"
+msgstr "Greške prenosa:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:67
+msgid "Transmitted bytes:"
+msgstr "Preneti bajtovi:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:68
+msgid "Transmitted packets:"
+msgstr "Preneti paketi:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:69
+msgid "Well Known Services"
+msgstr "Dobro poznate usluge"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:581
+msgid "Whois"
+msgstr "Ko-je (Whois)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:71
+msgid "_Devices"
+msgstr "U_ređaji"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:72
+msgid "_Finger"
+msgstr "_Finger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:73
+msgid "_Information"
+msgstr "_Detalji"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:74
+msgid "_Lookup"
+msgstr "_Pronađi"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:75
+msgid "_Netstat"
+msgstr "_Mrežna statistika"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:76
+msgid "_Ping"
+msgstr "P_ing"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:77
+msgid "_Traceroute"
+msgstr "P_utanja"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:78
+msgid "_Whois"
+msgstr "_Ko-je (Whois)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:79
+msgid "ms"
+msgstr "ms"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:80 gnome-netinfo/info.h:27
+msgid "not available"
+msgstr "nije dostupan"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:81
+msgid "requests (pings)"
+msgstr "zahtevi (pingovi)"
+
+#: gnome-netinfo/info.c:277
+msgid "Active"
+msgstr "Aktivan"
+
+#: gnome-netinfo/info.c:279
+msgid "Inactive"
+msgstr "Neaktivan"
+
+#: gnome-netinfo/info.c:284
+msgid "Loopback"
+msgstr "Zatvorena petlja"
+
+#: gnome-netinfo/info.c:297
+msgid "Enabled"
+msgstr "Omogućen"
+
+#: gnome-netinfo/info.c:299
+msgid "Disabled"
+msgstr "Onemogućen"
+
+#. The info output in a text format (to copy on clipboard)
+#: gnome-netinfo/info.c:419
+#, c-format
+msgid "Network device:\t%s\n"
+msgstr "Mrežni uređaj:\t%s\n"
+
+#: gnome-netinfo/info.c:420
+#, c-format
+msgid "Hardware address:\t%s\n"
+msgstr "Hardverska adresa:\t%s\n"
+
+#: gnome-netinfo/info.c:421
+#, c-format
+msgid "IP address:\t%s\n"
+msgstr "IP adresa:\t%s\n"
+
+#: gnome-netinfo/info.c:422
+#, c-format
+msgid "Netmask:\t%s\n"
+msgstr "Mrežna maska:\t%s\n"
+
+#: gnome-netinfo/info.c:423
+#, c-format
+msgid "Broadcast:\t%s\n"
+msgstr "Emitovanje:\t%s\n"
+
+#: gnome-netinfo/info.c:424
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr "Višestruko emitovanje:\t%s\n"
+
+#: gnome-netinfo/info.c:425
+#, c-format
+msgid "MTU:\t%s\n"
+msgstr "MTU:\t%s\n"
+
+#: gnome-netinfo/info.c:426
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr "Brzina veze:\t%s\n"
+
+#: gnome-netinfo/info.c:427
+#, c-format
+msgid "State:\t%s\n"
+msgstr "Stanje:\t%s\n"
+
+#: gnome-netinfo/info.c:429
+#, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr "Preneti paketi:\t%s\n"
+
+#: gnome-netinfo/info.c:430
+#, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Prenosne greške:\t%s\n"
+
+#: gnome-netinfo/info.c:431
+#, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Primljeni paketi:\t%s\n"
+
+#: gnome-netinfo/info.c:432
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr "Greške kod primanja:\t%s\n"
+
+#: gnome-netinfo/info.c:433
+#, c-format
+msgid "Collisions:\t%s\n"
+msgstr "Sudari:\t%s\n"
+
+#. adds columns
+#: gnome-netinfo/lookup.c:272 sync/entrylist.c:67
+msgid "Name"
+msgstr "Ime"
+
+#: gnome-netinfo/lookup.c:280
+msgid "TTL"
+msgstr "TTL"
+
+#: gnome-netinfo/lookup.c:289
+msgid "Address Type"
+msgstr "Vrsta adrese"
+
+#: gnome-netinfo/lookup.c:299
+msgid "Record Type"
+msgstr "Tip zapisa"
+
+#: gnome-netinfo/lookup.c:308
+msgid "Address"
+msgstr "Adresa"
+
+#. The lookup output in text format:
+#. Source of query (hostname/ip address),
+#. Time To Live (TTL), Address Type,
+#. Record Type (A, PTR, HINFO, NS, TXT, etc.),
+#. Resolution (results of the query)
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/lookup.c:336
+msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
+msgstr "Izvor\tTTL\tVrsta adrese\tZapis Vrste\tRezolucija\n"
+
+#: gnome-netinfo/main.c:75
+msgid "Load information for a network device"
+msgstr "Učitaj podatke za mrežni uređaj"
+
+#: gnome-netinfo/main.c:76
+msgid "DEVICE"
+msgstr "UREĐAJ"
+
+#: gnome-netinfo/main.c:78
+msgid "Send a ping to a network address"
+msgstr "Pošalji ping na mrežnu adresu"
+
+#: gnome-netinfo/main.c:79 gnome-netinfo/main.c:85 gnome-netinfo/main.c:88
+#: gnome-netinfo/main.c:91
+msgid "HOST"
+msgstr "RAČUNAR"
+
+#: gnome-netinfo/main.c:81
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr ""
+"Preuzmi podatke o stanju mreže.  Dopuštene opcije su: route, active, "
+"multicast."
+
+#: gnome-netinfo/main.c:82
+msgid "COMMAND"
+msgstr "NAREDBA"
+
+#: gnome-netinfo/main.c:84
+msgid "Trace a route to a network address"
+msgstr "Prati rutu do mrežne adrese"
+
+#: gnome-netinfo/main.c:87
+msgid "Port scan a network address"
+msgstr "Pretraži portove mrežne adrese"
+
+#: gnome-netinfo/main.c:90
+msgid "Look up a network address"
+msgstr "Pronađi mrežnu adresu"
+
+#: gnome-netinfo/main.c:93
+msgid "Finger command to run"
+msgstr "Finger naredba za pokretanje"
+
+#: gnome-netinfo/main.c:94
+msgid "USER"
+msgstr "KORISNIK"
+
+#: gnome-netinfo/main.c:96
+msgid "Perform a whois lookup for a network domain"
+msgstr "Izvrši ko-je (whois) pretraživanje za mrežni domen"
+
+#: gnome-netinfo/main.c:97
+msgid "DOMAIN"
+msgstr "DOMEN"
+
+#: gnome-netinfo/main.c:116
+#, c-format
+msgid ""
+"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"installed"
+msgstr ""
+"Datoteka %s ne postoji, molim vas proverite da li je gnome-netinfo pravilno "
+"instaliran "
+
+#: gnome-netinfo/netinfo.c:157
+msgid "Network address not specified"
+msgstr "Mrežna adresa nije naznačena"
+
+#: gnome-netinfo/netinfo.c:165
+#, c-format
+msgid "The host '%s' cannot be found"
+msgstr "Ne mogu da nađem računar „%s“."
+
+#: gnome-netinfo/netinfo.c:309
+msgid "Information not available"
+msgstr "Detalji nisu dostupni"
+
+#: gnome-netinfo/netinfo.c:395
+msgid "Stop"
+msgstr "Zaustavi"
+
+#: gnome-netinfo/netinfo.c:401
+msgid "Run"
+msgstr "Počni"
+
+#: gnome-netinfo/netstat.c:403
+msgid "Protocol"
+msgstr "Protokol"
+
+#: gnome-netinfo/netstat.c:410
+msgid "IP Source"
+msgstr "Izvorni IP"
+
+#: gnome-netinfo/netstat.c:418
+msgid "Port/Service"
+msgstr "Port/usluga"
+
+#: gnome-netinfo/netstat.c:426 gnome-netinfo/scan.c:289
+msgid "State"
+msgstr "Stanje"
+
+#: gnome-netinfo/netstat.c:549
+msgid "Destination/Prefix"
+msgstr "Odredište/predmetak"
+
+#: gnome-netinfo/netstat.c:551
+msgid "Destination"
+msgstr "Odredište"
+
+#: gnome-netinfo/netstat.c:558
+msgid "Gateway"
+msgstr "Mrežni izlaz"
+
+#. netmask
+#: gnome-netinfo/netstat.c:566 gnome-ppp/account-window.c:1106
+msgid "Netmask"
+msgstr "Mrežna maska"
+
+#: gnome-netinfo/netstat.c:574 gnome-netinfo/netstat.c:680
+msgid "Interface"
+msgstr "Uređaj"
+
+#: gnome-netinfo/netstat.c:687
+msgid "Member"
+msgstr "Član"
+
+#: gnome-netinfo/netstat.c:695
+msgid "Group"
+msgstr "Grupa"
+
+#. The netstat "Display active network services" output in
+#. text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:737
+msgid "Protocol\tIP Source\tPort/Service\tState\n"
+msgstr "Protokol\tIzvorni IP\tPort/usluga\tStanje\n"
+
+#. The netstat "Display routing" output in text format.
+#. This seems as a route table.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:743
+msgid "Destination\tGateway\tNetmask\tInterface\n"
+msgstr "Odredište\tMrežni izlaz\tMrežna maska\tUređaj\n"
+
+#. The netstat "Multicast information" output in text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:748
+msgid "Interface\tMember\tGroup\n"
+msgstr "Uređaj\tČlan\tGrupa\n"
+
+#: gnome-netinfo/ping.c:378
+msgid "Bytes"
+msgstr "Bajtovi"
+
+#: gnome-netinfo/ping.c:385
+msgid "Source"
+msgstr "Izvor"
+
+#: gnome-netinfo/ping.c:393
+msgid "Seq"
+msgstr "Red"
+
+#: gnome-netinfo/ping.c:403
+msgid "Time"
+msgstr "Vreme"
+
+#: gnome-netinfo/ping.c:411
+msgid "Units"
+msgstr "Jedinice"
+
+#. The ping output in text format:
+#. Bytes received, Address Source, Number of Sequence,
+#. Round Trip Time (Time), Units of Time.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/ping.c:437
+msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
+msgstr "Bajtovi\tIzvor\tRed\tVreme\tJedinice\n"
+
+#. The ping output in a text format (to copy on clipboard)
+#: gnome-netinfo/ping.c:452
+#, c-format
+msgid "Time minimum:\t%s ms\n"
+msgstr "Najmanje vreme:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:453
+#, c-format
+msgid "Time average:\t%s ms\n"
+msgstr "Srednje vreme:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:454
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr "Najveće vreme:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:456
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr "Preneti paketi:\t%s\n"
+
+#: gnome-netinfo/ping.c:458
+#, c-format
+msgid "Packets received:\t%s\n"
+msgstr "Primljeni paketi:\t%s\n"
+
+#: gnome-netinfo/ping.c:460
+#, c-format
+msgid "Packet loss:\t%s\n"
+msgstr "Izgubljeni paketi:\t%s\n"
+
+#: gnome-netinfo/scan.c:151
+msgid "unknown"
+msgstr "nepoznat"
+
+#: gnome-netinfo/scan.c:281
+msgid "Port"
+msgstr "Port"
+
+#: gnome-netinfo/scan.c:297
+msgid "Service"
+msgstr "Usluga"
+
+#. The portscan output in text format:
+#. Port, State, Service.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/scan.c:319
+msgid "Port\tState\tService\n"
+msgstr "Port\tStanje\tUsluga\n"
+
+#: gnome-netinfo/traceroute.c:260
+msgid "Hop"
+msgstr "Čvor"
+
+#: gnome-netinfo/traceroute.c:268
+msgid "Hostname"
+msgstr "Ime računara"
+
+#: gnome-netinfo/traceroute.c:276
+msgid "IP"
+msgstr "IP"
+
+#: gnome-netinfo/traceroute.c:287
+msgid "Time 1"
+msgstr "Vreme 1"
+
+#: gnome-netinfo/traceroute.c:297
+msgid "Time 2"
+msgstr "Vreme 2"
+
+#. The traceroute output in text format:
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
+#. Round Trip Time 2 (Time2),
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/traceroute.c:323
+msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgstr "Čvor\tIme računara\tIP\tVreme 1\tVreme 2\n"
+
+#: gnome-netinfo/utils.c:227
+#, c-format
+msgid "%s: Command not found"
+msgstr "%s: naredba nije nađena"
+
+#: gnome-ppp/account-window.c:161
+msgid "Receive"
+msgstr "Primi"
+
+#: gnome-ppp/account-window.c:162
+msgid "Enter search string"
+msgstr "Unesite reč za traženje"
+
+#: gnome-ppp/account-window.c:165
+msgid "Send"
+msgstr "Pošalji"
+
+#: gnome-ppp/account-window.c:166
+msgid "Enter transmission string"
+msgstr "Unesite reč za prenos"
+
+#: gnome-ppp/account-window.c:169
+msgid "Send User Name"
+msgstr "Pošaljite ime korisnika"
+
+#: gnome-ppp/account-window.c:170
+msgid "Username taken from Authentication"
+msgstr "Korisničko ime uzeto iz Provere"
+
+#: gnome-ppp/account-window.c:173
+msgid "Send User Password"
+msgstr "Pošaljite korisničku lozinku"
+
+#: gnome-ppp/account-window.c:174
+msgid "Password taken from Authentication"
+msgstr "Lozinka uzeta iz Provere"
+
+#: gnome-ppp/account-window.c:177
+msgid "Dialog Box Input"
+msgstr "Prozorče za unos"
+
+#: gnome-ppp/account-window.c:178
+msgid "Enter text to be used as a dialog message when prompted for input"
+msgstr ""
+"Unesite tekst koji će se koristiti kao poruka kada budete upitani za unos"
+
+#: gnome-ppp/account-window.c:276
+msgid "open_account_window(): account=NULL with clone flag"
+msgstr "open_account_window(): account=NULL sa kopiranom zastavicom"
+
+#: gnome-ppp/account-window.c:302
+msgid "open_account_window(): calling arguments invalid"
+msgstr "open_account_window(): nepravilni pozivni argumenti"
+
+#. dial command entry widgets
+#: gnome-ppp/account-window.c:342 gnome-ppp/modem-window.c:288
+msgid "Dial"
+msgstr "Pozovi"
+
+#: gnome-ppp/account-window.c:348
+msgid "Authentication"
+msgstr "Provera"
+
+#. dns server entry
+#: gnome-ppp/account-window.c:354 gnome-ppp/account-window.c:1223
+msgid "IP Address"
+msgstr "IP Adresa"
+
+#: gnome-ppp/account-window.c:360
+msgid "DNS"
+msgstr "DNS"
+
+#: gnome-ppp/account-window.c:366
+msgid "Script"
+msgstr "Skripta"
+
+#: gnome-ppp/account-window.c:372
+msgid "PPP"
+msgstr "PPP"
+
+#: gnome-ppp/account-window.c:378
+msgid "Modem"
+msgstr "Modem"
+
+#: gnome-ppp/account-window.c:805
+msgid "Account Name"
+msgstr "Ime korisnika"
+
+#. redial spin button
+#: gnome-ppp/account-window.c:817
+msgid "Redial Maximum"
+msgstr "Najveći broj poziva"
+
+#. dial timeout spin button
+#: gnome-ppp/account-window.c:838
+msgid "Dial Timeout (sec)"
+msgstr "Vremensko ograničenje poziva (sekunda)"
+
+#. phone number frame
+#: gnome-ppp/account-window.c:859
+msgid "Phone Numbers"
+msgstr "Telefonski brojevi"
+
+#. Phone number
+#: gnome-ppp/account-window.c:871
+msgid "#"
+msgstr "#"
+
+#. add/remove buttons
+#: gnome-ppp/account-window.c:892 gnome-ppp/account-window.c:1242
+#: gnome-ppp/account-window.c:1326 gnome-ppp/account-window.c:1464
+msgid "Add"
+msgstr "Dodaj"
+
+#: gnome-ppp/account-window.c:906 gnome-ppp/account-window.c:1256
+#: gnome-ppp/account-window.c:1340 gnome-ppp/account-window.c:1490
+#: sync/main.c:60 sync/main.c:170
+msgid "Remove"
+msgstr "Ukloni"
+
+#: gnome-ppp/account-window.c:958
+msgid "PAP/CHAP"
+msgstr "PAP/CHAP"
+
+#: gnome-ppp/account-window.c:970
+msgid "User Name"
+msgstr "Ime korisnika"
+
+#: gnome-ppp/account-window.c:990
+msgid "Remote Name"
+msgstr "Ime udaljenog korisnika"
+
+#. password
+#: gnome-ppp/account-window.c:1011
+msgid "Hidden Password"
+msgstr "Sakrivena lozinka"
+
+#. local ip address
+#: gnome-ppp/account-window.c:1061
+msgid "Local IP Address"
+msgstr "Lokalna IP adresa"
+
+#: gnome-ppp/account-window.c:1072 gnome-ppp/account-window.c:1117
+#: gnome-ppp/account-window.c:1162
+msgid "Dynamic"
+msgstr "Dinamička"
+
+#: gnome-ppp/account-window.c:1086 gnome-ppp/account-window.c:1131
+#: gnome-ppp/account-window.c:1176
+msgid "Static"
+msgstr "Statična"
+
+#. remote ip address
+#: gnome-ppp/account-window.c:1151
+msgid "Remote IP Address"
+msgstr "Udaljena IP adresa"
+
+#. dns server list
+#: gnome-ppp/account-window.c:1210
+msgid "DNS Servers"
+msgstr "DNS serveri"
+
+#. search domains list
+#: gnome-ppp/account-window.c:1295
+msgid "Search Domains"
+msgstr "Traži domene"
+
+#: gnome-ppp/account-window.c:1306
+msgid "Domain Name"
+msgstr "Ime domena"
+
+#: gnome-ppp/account-window.c:1388
+msgid "Action"
+msgstr "Akcija"
+
+#: gnome-ppp/account-window.c:1389
+msgid "Text"
+msgstr "Tekst"
+
+#. script list
+#: gnome-ppp/account-window.c:1397
+msgid "Login Script"
+msgstr "Skripta za pristup"
+
+#: gnome-ppp/account-window.c:1477
+msgid "Insert"
+msgstr "Unesite"
+
+#: gnome-ppp/account-window.c:1551
+msgid "Add Default Route"
+msgstr "Dodajte podrazumevanu putanju"
+
+#: gnome-ppp/account-window.c:1567
+msgid "Lock Dialout Device"
+msgstr "Zaključajte uređaj za biranje"
+
+#. mtu, mru spin buttons
+#: gnome-ppp/account-window.c:1582
+msgid "Maximum Transmission Unit"
+msgstr "Maksimalni prenosni paket"
+
+#: gnome-ppp/account-window.c:1604
+msgid "Maximum Receive Unit"
+msgstr "Maksimalni prihvatni paket"
+
+#: gnome-ppp/account-window.c:1625
+msgid "Run Program After Connect"
+msgstr "Pokrenite program nakon priključenja"
+
+#: gnome-ppp/account-window.c:1637
+msgid "Run Program After Disconnect"
+msgstr "Pokrenite program nakon odspajanja"
+
+#. modem device
+#: gnome-ppp/account-window.c:1672
+msgid "Modem Device"
+msgstr "Modem"
+
+#. modem speed
+#: gnome-ppp/account-window.c:1698
+msgid "Connection Speed"
+msgstr "Brzina veze"
+
+#. modem flow control
+#: gnome-ppp/account-window.c:1724
+msgid "Flow Control"
+msgstr "Kontrola protoka"
+
+#. modem line termination
+#: gnome-ppp/account-window.c:1750
+msgid "Line Termination"
+msgstr "Završetak linije"
+
+#. modem speaker volume
+#: gnome-ppp/account-window.c:1776
+msgid "Modem Speaker Volume"
+msgstr "Jačina zvuka modema"
+
+#. modem edit commands
+#: gnome-ppp/account-window.c:1793
+msgid " Edit Modem Commands "
+msgstr "Izmeni modemove komande"
+
+#: gnome-ppp/account-window.c:2252
+msgid "**PASSWORD**"
+msgstr "**LOZINKA**"
+
+#: gnome-ppp/account-window.c:2256
+msgid "script_type_cb(): optionmenu data bad"
+msgstr "script_type_cb(): nepravilni podaci na izbornom meniju"
+
+#: gnome-ppp/dial-window.c:143
+msgid "_Debug Terminal"
+msgstr "Pronađi _grešku na terminalu"
+
+#: gnome-ppp/dial-window.c:150
+msgid "_New..."
+msgstr "_Novi..."
+
+#: gnome-ppp/dial-window.c:151
+msgid "D_uplicate..."
+msgstr "Dup_likat..."
+
+#: gnome-ppp/dial-window.c:152
+msgid "_Edit..."
+msgstr "I_zmeni..."
+
+#: gnome-ppp/dial-window.c:153
+msgid "_Delete..."
+msgstr "U_kloni..."
+
+#: gnome-ppp/dial-window.c:172
+msgid "_Account"
+msgstr "N_alog"
+
+#. set up the main application
+#: gnome-ppp/dial-window.c:210
+msgid "gnome-ppp"
+msgstr "gnome-ppp"
+
+#: gnome-ppp/dial-window.c:358
+msgid "Dialing"
+msgstr "Pozivam"
+
+#: gnome-ppp/dial-window.c:362
+msgid "Connected"
+msgstr "Priključen"
+
+#: gnome-ppp/dial-window.c:385
+msgid "refresh_dial_app(): gtk_clist_append failed."
+msgstr "refresh_dial_app(): gtk_clist_append neuspešan."
+
+#: gnome-ppp/dial-window.c:409 gnome-ppp/dial-window.c:417
+msgid "Connect"
+msgstr "Priključi"
+
+#: gnome-ppp/dial-window.c:427
+msgid "Cancel"
+msgstr "Odustani"
+
+#: gnome-ppp/dial-window.c:452
+msgid "You must disconnect before closing."
+msgstr "Morate se odspojiti prije zatvaranja"
+
+#: gnome-ppp/dial-window.c:742
+msgid "Are you sure you want to delete this account?\n"
+msgstr "Da li ste sigurni da želite da uklonite ovaj nalog?\n"
+
+#: gnome-ppp/dial-window.c:752
+msgid "The account cannot be deleted."
+msgstr "Ovaj nalog se ne može ukloniti"
+
+#: gnome-ppp/dial-window.c:758
+msgid "The account is in use and cannot be deleted."
+msgstr "Ovaj nalog je u upotrebi i ne može se ukloniti"
+
+#: gnome-ppp/dial-window.c:781
+msgid "GNOME Internet Dialer"
+msgstr "Gnomovo povezivanje na Internet"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:181
+msgid "Raise PPP Link"
+msgstr "Uspostavi PPP vezu"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:213 sync/main.c:67
+msgid "About..."
+msgstr "O ovome..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:219
+msgid "Properties..."
+msgstr "Osobine..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:223
+msgid "Offline"
+msgstr "Odspojen"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:432
+msgid "Connecting..."
+msgstr "Priključujem..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:437
+msgid "PPP Connected"
+msgstr "PPP priključen"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:443
+msgid "PPP Error!"
+msgstr "PPP greška!"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:483
+msgid "That account is already in use.\n"
+msgstr "Ovaj nalog je već u upotrebi.\n"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:566
+msgid "GNOME PPP Dialer Applet"
+msgstr "Gnomovo programče za PPP pozivanje"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:569
+msgid ""
+"An unnecessarily nice looking applet for GNOME's panel for easy control of "
+"PPP network links."
+msgstr ""
+"Programče nepotrebno lepog izgleda za Gnomov panel za jednostavnu kontrolu "
+"PPP mrežnih veza"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:691
+msgid "PPP Applet Properties"
+msgstr "Osobine PPP programčeta"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:706
+msgid "Animation"
+msgstr "Animacija"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:712
+msgid "Small"
+msgstr "Mali"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:716
+msgid "Large"
+msgstr "Veliki"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:720
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:769
+msgid "None"
+msgstr "Nijedan"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:724
+msgid "Options"
+msgstr "Opcije"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:730
+msgid "Freeze Animation on Connect"
+msgstr "Zaustavi animaciju prilikom priključenja"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:737
+msgid "Disconnect PPP on GNOME logout"
+msgstr "Isključi PPP vezu prilikom odjavljivanja iz Gnoma"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:745
+msgid "Timer"
+msgstr "Štoperica"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:751
+msgid "Label"
+msgstr "Naziv"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:760
+msgid "Tooltip"
+msgstr "Opis alatke"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:778
+msgid "Animation Speed"
+msgstr "Brzina animacije"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:791
+msgid "PPP Applet"
+msgstr "PPP programče"
+
+#: gnome-ppp/libgnome_ppp/connect.c:203
+msgid "---NEW CONNECTION---"
+msgstr "---NOVA VEZA---"
+
+#: gnome-ppp/libgnome_ppp/msg.c:26
+msgid "Account already connected."
+msgstr "Nalog je već povezan."
+
+#: gnome-ppp/libgnome_ppp/msg.c:27
+msgid "Starting PPP Connection."
+msgstr "Počinjem PPP povezivanje."
+
+#: gnome-ppp/libgnome_ppp/msg.c:28
+msgid "You don't have permission to execute pppd."
+msgstr "Nemate dozvolu za pokretanje pppd."
+
+#: gnome-ppp/libgnome_ppp/msg.c:29
+msgid "The modem is in use by another program."
+msgstr "Drugi program koristi ovaj modem"
+
+#: gnome-ppp/libgnome_ppp/msg.c:30
+msgid "Running pppd."
+msgstr "Pokrećem pppd."
+
+#: gnome-ppp/libgnome_ppp/msg.c:31
+msgid "Closing connection."
+msgstr "Prekidam vezu."
+
+#: gnome-ppp/libgnome_ppp/msg.c:32
+msgid "The pppd program failed to run gnome-ppp-chat."
+msgstr "Program pppd nije uspio da pokrene gnome-ppp-chat."
+
+#: gnome-ppp/libgnome_ppp/msg.c:33
+msgid "The modem could not be hung up."
+msgstr "Modem ne može da prekine vezu."
+
+#: gnome-ppp/libgnome_ppp/msg.c:34
+msgid "Initalizing modem."
+msgstr "Pokrećem modem."
+
+#: gnome-ppp/libgnome_ppp/msg.c:35
+msgid "Your modem is not responding to initalization."
+msgstr "Vaš modem ne odgovara na naredbu za pokretanje."
+
+#: gnome-ppp/libgnome_ppp/msg.c:36
+msgid "The command to set the volume on your modem's speaker failed."
+msgstr "Naredba za postavljanje jačine zvuka na modemu nije uspela."
+
+#: gnome-ppp/libgnome_ppp/msg.c:37
+msgid "No answer after maximum number of re-dial attempts."
+msgstr "Nema odgovora nakon maksimalnog broja pokušaja pozivanja."
+
+#: gnome-ppp/libgnome_ppp/msg.c:38
+msgid "No phone numbers specified for this account."
+msgstr "Nema naznačenih telefonskih brojeva za ovaj nalog."
+
+#: gnome-ppp/libgnome_ppp/msg.c:39
+msgid "Dialing."
+msgstr "Pozivam"
+
+#: gnome-ppp/libgnome_ppp/msg.c:40
+msgid "Dialing timeout."
+msgstr "Isteklo vreme pozivanja"
+
+#: gnome-ppp/libgnome_ppp/msg.c:41
+msgid "No dialtone."
+msgstr "Nema pozivnog signala."
+
+#: gnome-ppp/libgnome_ppp/msg.c:42
+msgid "Number busy."
+msgstr "Broj je zauzet."
+
+#: gnome-ppp/libgnome_ppp/msg.c:43
+msgid "Ring, but no answer."
+msgstr "Zvoni, ali nema odgovora."
+
+#: gnome-ppp/libgnome_ppp/msg.c:44
+msgid "Connection failure, reason unknown."
+msgstr "Neuspelo priključenje, razlog nepoznat."
+
+#: gnome-ppp/libgnome_ppp/msg.c:45
+msgid "Connected."
+msgstr "Priključen."
+
+#: gnome-ppp/libgnome_ppp/msg.c:46
+msgid "The modem lost connection with remote host."
+msgstr "Modem je izgubio vezu sa udaljenim serverom."
+
+#: gnome-ppp/libgnome_ppp/msg.c:47
+msgid "Running Script."
+msgstr "Skripta se izvršava."
+
+#: gnome-ppp/libgnome_ppp/msg.c:48
+msgid "Script Complete."
+msgstr "Skripta je završena."
+
+#: gnome-ppp/libgnome_ppp/msg.c:49
+msgid "PPP connection established."
+msgstr "PPP veza je uspostavljena."
+
+#: gnome-ppp/libgnome_ppp/msg.c:50
+msgid "Failed to establish a PPP connection."
+msgstr "Neuspešno uspostavljanje PPP veze."
+
+#: gnome-ppp/libgnome_ppp/msg.c:51
+msgid "The pppd daemon died unexpectedly."
+msgstr "Pozadinski proces pppd je neočekivano zavšio "
+
+#: gnome-ppp/modem-window.c:83
+msgid "open_modem_window(): account=NULL"
+msgstr "open_modem_window(): account=NULL"
+
+#: gnome-ppp/modem-window.c:120
+msgid "Commands"
+msgstr "Komande"
+
+#: gnome-ppp/modem-window.c:126
+msgid "Responses"
+msgstr "Odgovori"
+
+#. initialization command entry widgets
+#: gnome-ppp/modem-window.c:268 gnome-ppp/modem-window.c:408
+msgid "Initialization"
+msgstr "Pokretanje"
+
+#. hangup command entry widgets
+#: gnome-ppp/modem-window.c:307 gnome-ppp/modem-window.c:428
+msgid "Hangup"
+msgstr "Zatvaranje veze"
+
+#. volume mute command entry widgets
+#: gnome-ppp/modem-window.c:327
+msgid "Volume Mute"
+msgstr "Zvuk utišan"
+
+#. volume low command entry widgets
+#: gnome-ppp/modem-window.c:347
+msgid "Volume Low"
+msgstr "Zvuk nizak"
+
+#. volume high command entry widgets
+#: gnome-ppp/modem-window.c:367
+msgid "Volume High"
+msgstr "Zvuk jak"
+
+#. connection response entry widgets
+#: gnome-ppp/modem-window.c:448
+msgid "Connection"
+msgstr "Priključenje"
+
+#. busy response entry widgets
+#: gnome-ppp/modem-window.c:468
+msgid "Busy"
+msgstr "Zauzet"
+
+#. no answer response entry widgets
+#: gnome-ppp/modem-window.c:488
+msgid "No Answer"
+msgstr "Bez odgovora"
+
+#. no carrier response entry widgets
+#: gnome-ppp/modem-window.c:508
+msgid "No Carrier"
+msgstr "Nema nosača"
+
+#. no dialtone response entry widgets
+#: gnome-ppp/modem-window.c:528
+msgid "No Dialtone"
+msgstr "Nema pozivnog signala"
+
+#: gnome-transfer-manager/src/GNOME_Transfer_Manager.server.in.in.h:1
+msgid "GNOME Transfer Manager"
+msgstr "Gnomovo upravljanje prenosima"
+
+#: network-utilities/gnome-remote-shell.c:189
+#: network-utilities/gnome-remote-shell.c:216
+msgid "There is a connection error"
+msgstr "Došlo je do greške pri povezivanju"
+
+#: network-utilities/gnome-remote-shell.c:284
+msgid "There is an error with displaying help"
+msgstr "Došlo je do greške pri prikazivanju pomoći"
+
+#: network-utilities/gnome-remote-shell.c:324
+msgid "Graphical user interface for GNOME Remote Shell"
+msgstr "Grafičko korisničko sučelje za Gnomovu udaljenu ljusku"
+
+#: network-utilities/gnome-remote-shell.c:327
+msgid "This is an untranslated version of GNOME Remote Shell"
+msgstr "Ovo je neprevedeno izdanje Gnomove udaljene ljuske"
+
+#: network-utilities/gnome-remote-shell.c:373
+#: network-utilities/gnome-remote-shell.c:423
+#: network-utilities/gnome-remote-shell.c:550
+msgid "Failed to create a connection"
+msgstr "Neuspešno uspostavljanje veze"
+
+#: network-utilities/gnome-remote-shell.c:373
+msgid "A hostname is required"
+msgstr "Ime računara je obavezno"
+
+#: network-utilities/gnome-remote-shell.c:423
+msgid "A user name is required for SSH"
+msgstr "Korisničko ime je obavezno za SSH"
+
+#: network-utilities/gnome-remote-shell.c:501
+msgid "There is a command line error"
+msgstr "Postoji greška u redu naredbe"
+
+#: network-utilities/gnome-remote-shell.c:550
+msgid "The host cannot be found"
+msgstr "Ne mogu da nađem ovaj računar"
+
+#: network-utilities/gnome-remote-shell.glade.h:3
+msgid "<span weight=\"bold\">Connect to remote host</span>"
+msgstr "<span weight=\"bold\">Poveži se sa udaljenim računarom</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:4
+msgid "<span weight=\"bold\">Method</span>"
+msgstr "<span weight=\"bold\">Način</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:5
+msgid "<span weight=\"bold\">Window size</span>"
+msgstr "<span weight=\"bold\">Veličina prozora</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:7
+msgid "Connect to remote host"
+msgstr "Povezivanje sa udaljenim računarom"
+
+#: network-utilities/gnome-remote-shell.glade.h:8
+msgid "H_eight:"
+msgstr "V_isina:"
+
+#: network-utilities/gnome-remote-shell.glade.h:9
+msgid "H_ost:"
+msgstr "R_ačunar:"
+
+#: network-utilities/gnome-remote-shell.glade.h:10
+msgid "Regular shell (_Telnet)"
+msgstr "Obična ljuska (_telnet)"
+
+#: network-utilities/gnome-remote-shell.glade.h:11
+msgid "Use _default"
+msgstr "Koristi po_drazumevano"
+
+#: network-utilities/gnome-remote-shell.glade.h:12
+msgid "_Contents"
+msgstr "_Sadržaj"
+
+#: network-utilities/gnome-remote-shell.glade.h:13
+msgid "_Port:"
+msgstr "_Port:"
+
+#: network-utilities/gnome-remote-shell.glade.h:14
+msgid "_Secure shell (SSH)"
+msgstr "_Bezbedna ljuska (ssh)"
+
+#: network-utilities/gnome-remote-shell.glade.h:15
+msgid "_Shell"
+msgstr "_Ljuska"
+
+#: network-utilities/gnome-remote-shell.glade.h:16
+msgid "_User:"
+msgstr "_Korisnik:"
+
+#: network-utilities/gnome-remote-shell.glade.h:17
+msgid "_Width:"
+msgstr "_Širina:"
+
+#: network-utilities/gnome-remote-shell.glade.h:18
+msgid "characters"
+msgstr "znakova"
+
+#: pws/pws-preferences-support.c:273
+msgid "Expander Size"
+msgstr "Veličina razgranika"
+
+#: pws/pws-preferences-support.c:274
+msgid "Size of the expander arrow"
+msgstr "Veličina strelice razgranika"
+
+#: pws/pws-preferences-widget.c:112
+msgid "Web folder:"
+msgstr "Veb direktorijum:"
+
+#: pws/pws-preferences-widget.c:116
+msgid "Select the folder to be published"
+msgstr "Izaberite direktorijum koji želite da objavite"
+
+#. Server status
+#: pws/pws-preferences-widget.c:125
+msgid "Enable web server"
+msgstr "Uključi veb server"
+
+#. Additional options
+#: pws/pws-preferences-widget.c:133 pws/pws-preferences-widget.c:134
+msgid "Additional options"
+msgstr "Dodatne opcije"
+
+#: pws/pws-preferences-widget.c:156
+msgid "Port number:"
+msgstr "Broj porta:"
+
+#: pws/pws-preferences-widget.c:175
+msgid "Time out:"
+msgstr "Rok:"
+
+# nečisto
+#: pws/pws-preferences-widget.c:194
+msgid "Keep alive"
+msgstr "Drži u životu"
+
+#: pws/pws.c:86
+msgid "/_Open Web Folder"
+msgstr "/_Otvori veb direktorijum"
+
+#: pws/pws.c:179
+msgid "Personal web server preferences"
+msgstr "Postavke ličnog veb servera"
+
+#: pws/pws.c:194
+msgid "Personal Web Server Preferences"
+msgstr "Postavke ličnog veb servera"
+
+#: pws/pws.c:195
+msgid "Setup the options for your personal web server."
+msgstr "Postavite opcije za vaš lični veb server."
+
+#: sync/entryconfigdialog.c:70
+msgid "Could not load UI for entry configuration dialog"
+msgstr "U nemogućnosti da pozove UI za unos konfiguracije"
+
+#: sync/entryconfigdialog.glade.h:2
+msgid "Entry name"
+msgstr "Ime unosa1"
+
+#: sync/entryconfigdialog.glade.h:3
+msgid "Local path"
+msgstr "Lokalna putanja"
+
+#: sync/entryconfigdialog.glade.h:4
+msgid "Preserve group"
+msgstr "Sačuvajte grupu"
+
+#: sync/entryconfigdialog.glade.h:5
+msgid "Preserve permissions"
+msgstr "Sačuvajte ovlašćenja"
+
+#: sync/entryconfigdialog.glade.h:6
+msgid "Preserve times"
+msgstr "Sačuvajte vremena"
+
+#: sync/entryconfigdialog.glade.h:7
+msgid "Recurse into directories"
+msgstr "Prođi kroz direktorije"
+
+#: sync/entryconfigdialog.glade.h:8
+msgid "Remote host"
+msgstr "Udaljeni server"
+
+#: sync/entryconfigdialog.glade.h:9
+msgid "Remote path"
+msgstr "Udaljena putanja"
+
+#: sync/entryconfigdialog.glade.h:10
+msgid "Synchronization options"
+msgstr "Opcije za sinhronizaciju"
+
+#: sync/entryconfigdialog.glade.h:11
+msgid "Update only (don't overwrite newer files)"
+msgstr "Samo obnovi (nemoj da prebrišeš novije datoteke)"
+
+#: sync/entryconfigdialog.glade.h:12
+msgid "Use relative path names"
+msgstr "Koristi relativnu putanju"
+
+#: sync/entryconfigdialog.glade.h:13
+msgid "Use rsync"
+msgstr "Koristi rsync"
+
+#: sync/entryconfigdialog.glade.h:14
+msgid "Use unison"
+msgstr "Koristi unison"
+
+#: sync/entryconfigdialog.glade.h:15
+msgid "dialog1"
+msgstr "dijalog 1"
+
+#: sync/entryconfigdialog.glade.h:16
+msgid "rsync"
+msgstr "rsync"
+
+#: sync/entryconfigdialog.glade.h:17
+msgid "unison"
+msgstr "unison"
+
+#: sync/entrylist.c:70
+msgid "Local"
+msgstr "Lokalno"
+
+#: sync/entrylist.c:73
+msgid "Remote"
+msgstr "Udaljeno"
+
+#: sync/entrylist.c:76
+msgid "Last sync"
+msgstr "Zadnja sinhronizacija"
+
+#: sync/main.c:44
+msgid "_Synchronize"
+msgstr "Sinhroniziraj"
+
+#: sync/main.c:55
+msgid "New entry..."
+msgstr "Novi unos"
+
+#: sync/main.c:57 sync/main.c:171
+msgid "Edit..."
+msgstr "Izmeni"
+
+#: sync/main.c:75 sync/main.c:181
+msgid "Synchronize"
+msgstr "Sinhroniziraj"
+
+#: sync/main.c:103
+msgid "Gnome Synchronize"
+msgstr "Gnomovo usklađivanje"
+
+#: sync/main.c:105
+msgid "The GNOME file synchronization program."
+msgstr "Gnomov program za usklađivanje datoteka."
+
+#: sync/main.c:176
+msgid "New"
+msgstr "Novi"
+
+#: sync/main.c:177
+msgid "Create new synchronization entry"
+msgstr "Napravi novi unos za usklađivanje"
+
+#: sync/main.c:182
+msgid "Start synchronization for selected entries"
+msgstr "Počni usklađivanje odabranih unosa"
+
+#: sync/main.c:185
+msgid "Edit"
+msgstr "Izmeni"
+
+#: sync/main.c:186
+msgid "Edit selected entry"
+msgstr "Izmeni odabrane unose"
+
+#: sync/main.c:189
+msgid "Delete"
+msgstr "Obriši"
+
+#: sync/main.c:190
+msgid "Delete selected entries"
+msgstr "Obriši odabrane unose"
+
+#~ msgid "translator_credits"
+#~ msgstr ""
+#~ "Predrag Krtolica <predrag_k@optusnet.com.au>\n"
+#~ "Danilo Šegan <dsegan@gmx.net>\n"
+#~ "\n"
+#~ "Prevod.org — prevod na srpski jezik."
+
+#~ msgid "No host specified."
+#~ msgstr "Računar nije naznačen."
+
+#~ msgid "<b>Desktop Sharing</b>"
+#~ msgstr "<b>Deljenje radne površine</b>"
+
+#~ msgid "Document root:"
+#~ msgstr "Koren dokumenta:"
+
+#~ msgid "Enable logging"
+#~ msgstr "Vodi dnevnik"
+
+#~ msgid "You don't have the Xnest program installed in the system"
+#~ msgstr "Nemate instaliran Xnest program na ovom sistemu "
+
+#~ msgid "You have to specify at least a host or display name"
+#~ msgstr "Morate naznačiti barem server ili ime prikaza"
+
+#~ msgid "You don't have a VNC viewer installed in the system"
+#~ msgstr "Nemate instaliran VNC pregledač na ovom sistemu "
+
+#~ msgid "Could not load UI for remote desktop client"
+#~ msgstr "Ne mogu da pozovem korisnički pristup za udaljenog radnog klijenta"

@@ -1,0 +1,82 @@
+AC_PREREQ(2.52)
+AC_INIT(src/ping.c)
+
+dnl Useful to call aclocal after 'make'
+AC_SUBST(ACLOCAL_AMFLAGS, "$ACLOCAL_FLAGS")
+
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(gnome-netinfo, 0.1.0)
+AM_MAINTAINER_MODE
+
+AC_PROG_INTLTOOL([0.11])
+
+GNOME_PLATFORM_GNOME_2(yes, force)
+
+AC_ISC_POSIX
+AC_PROG_CC
+AC_STDC_HEADERS
+AC_CHECK_HEADERS(sys/sockio.h sys/socket.h)
+dnl AC_ARG_PROGRAM
+AM_PROG_LIBTOOL
+
+GNOME_COMPILE_WARNINGS(yes)
+CFLAGS="$CFLAGS $WARN_CFLAGS"
+
+PKG_CHECK_MODULES(GNETWORK, libgnomeui-2.0 libgnome-2.0 gtk+-2.0 glib-2.0 libglade-2.0 gconf-2.0)
+AC_SUBST(GNETWORK_CFLAGS)
+AC_SUBST(GNETWORK_LIBS)
+
+dnl Find ifconfig
+dnl
+AC_ARG_WITH(ifconfig, [  --with-ifconfig=PATH    Where ifconfig is.])
+if test "x$with_ifconfig" = "x" ; then
+	AC_PATH_PROG(IFCONFIG_PROGRAM, 
+		ifconfig,,
+		$PATH:/sbin:/usr/etc:/usr/sbin)
+	if test "x$IFCONFIG_PROGRAM" != "x" ; then
+		AC_DEFINE_UNQUOTED(IFCONFIG_PROGRAM, "$IFCONFIG_PROGRAM", [The ifconfig program])
+	fi
+else
+	AC_DEFINE_UNQUOTED(IFCONFIG_PROGRAM, "$with_ifconfig", [The ifconfig program])
+fi
+AM_CONDITIONAL(HAVE_IFCONFIG, test "x$IFCONFIG_PROGRAM" != "x")
+
+dnl
+dnl Translations
+dnl
+GETTEXT_PACKAGE=gnome-netinfo
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The gettext package])
+ALL_LINGUAS="az ca cs da de el es fr ga gl he hu it ja ko ms nl no pl pt pt_BR ru sr sr@Latn sv tr uk vi wa zh_CN zh_TW"
+AM_GLIB_GNU_GETTEXT
+
+AC_SUBST(CFLAGS)
+AC_SUBST(CPPFLAGS)
+AC_SUBST(LDFLAGS)
+
+if test "x${prefix}" = "xNONE"; then
+   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${ac_default_prefix}/share/pixmaps", [Pixmap directory])
+else
+   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${prefix}/share/pixmaps", [Pixmap directory])
+fi 
+
+dnl
+dnl Debugging flags
+dnl
+set_debug=no
+AC_ARG_ENABLE(debug,
+[  --enable-debug       Lots of noisy debug messages],
+set_debug="$enableval")
+
+AC_MSG_CHECKING(if debug messages are enabled)
+if test "$set_debug" != "no"; then
+        AC_MSG_RESULT(yes)
+        CFLAGS="-DGRD_DEBUG $CFLAGS"
+else
+        AC_MSG_RESULT(no)
+fi
+
+AC_OUTPUT([
+Makefile
+po/Makefile.in
+src/Makefile])

@@ -1,0 +1,17 @@
+This is an small ping helper to assist gnome-netinfo get the 
+ping information in the same way accross differents operating
+systems.
+
+To work, gnome-ping-helper needs SUID permission (2755) because
+is needed to build sockets raw.  This is because it was implemented
+as a helper and not in the GUI application.
+
+At moment is possible to run in a terminal.  It accepts two
+options:
+-c count	Set the limit of ICMP ECHO packets to send
+-verbose	Show the packets sent.  This is only useful for a
+            frontend, to calculate Loss packets, Round-Trip-Time,
+			etc. after each packet.
+
+The main part of the code was stolen from Richard Stevens 
+examples about how ping works.

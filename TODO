@@ -1,0 +1,35 @@
+Bug fixes:
+[X] Add any new entry at the end of GtkTreeView, not in the cursor
+    position.  This bug is valid on ping, traceroute and scan.
+
+General:
+[ ] Add gconf support to store:
+    - Last host requested
+	- Last settings used (count ping, netstat query, etc)
+[ ] Implement information of network devices
+    [ ] Add support for IPv6
+	[ ] To implement "link state" and "collission"
+[X] Implement traceroute (with tcp and/or icmp)
+[X] Implement netstat
+[X] Add DNS query
+[ ] Add Whois query
+[ ] Add support to IPv6 (ping6, traceroute6, network interface)
+[ ] Add Copy-to-clipboard on Information (info.c)
+[ ] Show error messages, feeback to the user.
+    (for instance: Host not found)
+[ ] Glib-ize util-mii
+
+i18n:
+[X] Add internacionalization support (mostly add files in POTFILES.in)
+
+UI:
+[ ] A graphical traceroute
+[X] A better ping output: GtkTreeView instead GtkTextView and 
+    a label to show the perfomance every time.
+[ ] Accept arguments by command line.
+
+Portability:
+[-] Multiplataform support (may be with a ping/traceroute helper to
+    process de same output)
+[X] Detection of network devices
+[ ] Add *BSD support in ping command/output

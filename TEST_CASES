@@ -1,0 +1,43 @@
+Test Cases
+
+(If you find another test case, please let me know).
+
+User interaction:
+
+ * Toggle buttons and sensitive:
+
+ 1. For:
+ 	a) Enter a right hostname and press return; and
+	b) Enter a right hostname push Ping button
+
+	The UI must:
+    - The host entry must toggle to insensitive
+    - The button Ping must change to Stop
+
+	And try:
+	1.1 Wait until the process stop automatically
+		- The host entry must toggle to sensitive
+		- The button Stop must change to Ping
+
+	1.2 Push the Stop button to stop the process
+		- The host entry must toggle to sensitive
+		- The button Stop must change to Ping
+
+ 2. Try the items in 1, with a bad hostname
+   (inexistent, by example: aeiou)
+  
+ 3. Try 1 and 2, with differnt counts (minimal,
+    maximal, medium)
+
+
+Process Interacion:
+
+  For 1, 2 and 3, compare the results (format) shown
+  on the GUI with the console program equivalent.
+
+
+Known Issues:
+  On same error cases (2) the GUI doesn't show
+  any text, because de GIOChannel doesn' return any
+  value, but GIOCondition is G_IO_IN. 
+  (see ping.c - io_text_buffer_dialog)

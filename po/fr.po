@@ -1,0 +1,2593 @@
+# French translation of gnome-network.
+# Copyright (C) 1998-2004 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-network package.
+#
+# Vincent Renardias <vincent@ldsol.com>, 1998-1999.
+# Laurent Richard (Kouran) <laurent.richard@lilit.be>, 2003.
+# Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2003.
+# Sébastien Bacher <seb128@debian.org>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-network 1.99.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-01-20 01:03+0100\n"
+"PO-Revision-Date: 2004-01-20 00:38+0100\n"
+"Last-Translator: Sébastien Bacher <seb128@debian.org>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
+msgid "GNOME Remote Desktop Applet"
+msgstr "Applet du Bureau à distance GNOME"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:1
+msgid "Connect to a remote desktop computer"
+msgstr "Se connecter au bureau d'un ordinateur distant"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:2
+msgid "Remote Desktop Client"
+msgstr "Client de bureau distant"
+
+#: desktop/client/src/connect.c:75
+msgid "640 x 480 pixels"
+msgstr "640 x 480 pixels"
+
+#: desktop/client/src/connect.c:75
+msgid "800 x 600 pixels"
+msgstr "800 x 600 pixels"
+
+#: desktop/client/src/connect.c:76
+msgid "1024 x 768 pixels"
+msgstr "1024 x 768 pixels"
+
+#: desktop/client/src/connect.c:77
+msgid "1152 x 864 pixels"
+msgstr "1152 x 864 pixels"
+
+#: desktop/client/src/connect.c:78
+msgid "1280 x 960 pixels"
+msgstr "1280 x 960 pixels"
+
+#: desktop/client/src/connect.c:82
+msgid "256 Colors"
+msgstr "256 couleurs"
+
+#: desktop/client/src/connect.c:83
+msgid "High Color (15 bit)"
+msgstr "Hautes couleurs (15 bits)"
+
+#: desktop/client/src/connect.c:84
+msgid "High Color (16 bit)"
+msgstr "Hautes couleurs (16 bits)"
+
+#: desktop/client/src/connect.c:85
+msgid "True Color (24 bit)"
+msgstr "Vraies couleurs (24 bits)"
+
+#: desktop/client/src/connect.c:286 desktop/client/src/connect.c:309
+#: desktop/client/src/connect.c:311 desktop/client/src/support.c:780
+#: desktop/gnome-remote-desktop.glade.h:13
+msgid "GNOME Remote Desktop"
+msgstr "GNOME Bureau à distance"
+
+#.
+#. This is the input for the Compact mode
+#.
+#: desktop/client/src/connect.c:343 desktop/client/src/connect.c:554
+msgid "Compu_ter:"
+msgstr "Ordina_teur :"
+
+#: desktop/client/src/connect.c:367 desktop/client/src/connect.c:622
+msgid "Enter the name or address of the remote system."
+msgstr "Saisissez le nom ou l'adresse réseau du système distant."
+
+#: desktop/client/src/connect.c:372 desktop/client/src/connect.c:629
+msgid "Select the protocol to use for this connection."
+msgstr "Sélectionnez le protocole à utiliser pour cette connexion."
+
+#: desktop/client/src/connect.c:379 desktop/client/src/connect.c:636
+msgid ""
+"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
+"systems with desktop sharing."
+msgstr ""
+"Le protocole RDP est utilisé pour se connecter aux serveurs de terminaux "
+"Microsoft et aux systèmes Windows XP avec partage du bureau."
+
+#: desktop/client/src/connect.c:384 desktop/client/src/connect.c:643
+msgid ""
+"VNC protocol is used to connect to systems sharing the desktop by using VNC."
+msgstr ""
+"Le protocole VNC est utilisé pour se connecter aux systèmes partageant leur "
+"bureau à l'aide de VNC."
+
+#: desktop/client/src/connect.c:393 desktop/client/src/connect.c:654
+msgid "XDMCP protocol uses Xnest to connect to servers running X."
+msgstr ""
+"Le protocole XDMCP utilise Xnest pour se connecter aux serveurs utilisant X."
+
+#: desktop/client/src/connect.c:398 desktop/client/src/connect.c:661
+msgid "ICA protocol is used to connect to Citrix servers."
+msgstr "Le protocole ICA est utilisé pour se connecter aux serveurs Citrix."
+
+#.
+#. This is the Profile Launcher
+#.
+#: desktop/client/src/connect.c:409
+msgid "Prof_ile Launcher:"
+msgstr "Prof_ile à lancer :"
+
+#: desktop/client/src/connect.c:422
+msgid "Select a saved profile to launch it immediately."
+msgstr "Sélectionnez un profil enregistré pour le lancer immédiatement."
+
+#: desktop/client/src/connect.c:454
+msgid "_More"
+msgstr "_Plus"
+
+#: desktop/client/src/connect.c:480 desktop/client/src/connect.c:1224
+#: network-utilities/gnome-remote-shell.glade.h:6
+msgid "Co_nnect"
+msgstr "Se _connecter"
+
+#.
+#. This is the label for the Connection Profile
+#.
+#: desktop/client/src/connect.c:489 desktop/client/src/connect.c:491
+msgid "Connection Profile"
+msgstr "Profile de connexion"
+
+#: desktop/client/src/connect.c:520 desktop/client/src/connect.c:522
+msgid "Logon Settings"
+msgstr "Paramètres de connexion"
+
+#: desktop/client/src/connect.c:530
+msgid ""
+"Type the name of the computer or choose a computer from the drop-down list."
+msgstr ""
+"Entrez le nom de l'ordinateur ou choisissez un ordinateur dans la liste."
+
+#: desktop/client/src/connect.c:562
+msgid "Pro_tocol:"
+msgstr "Pro_tocole :"
+
+#: desktop/client/src/connect.c:570
+msgid "_User Name:"
+msgstr "Nom d'_utilisateur :"
+
+#: desktop/client/src/connect.c:578
+msgid "Pass_word:"
+msgstr "_Mot de passe :"
+
+#: desktop/client/src/connect.c:586
+msgid "Do_main:"
+msgstr "Nom de _domaine :"
+
+#: desktop/client/src/connect.c:594
+msgid "C_lient Hostname:"
+msgstr "Nom d'hôte du c_lient :"
+
+#: desktop/client/src/connect.c:602
+msgid "Prot_ocol File:"
+msgstr "Prot_ocole de fichier :"
+
+#: desktop/client/src/connect.c:677
+msgid ""
+"Enter the username for the remote system.\n"
+"For VNC, enter the path to your saved vnc password file."
+msgstr ""
+"Entrez le nom d'utilisateur pour le système distant.\n"
+"Pour VNC entrez le chemin de votre fichier de sauvegarde du mot de passe vnc."
+
+#: desktop/client/src/connect.c:686
+msgid "Enter the password for the remote system."
+msgstr "Entrez le mot de passe du système distant."
+
+#: desktop/client/src/connect.c:694
+msgid "Enter the domain for the remote system."
+msgstr "Entrez le domaine du système distant."
+
+#: desktop/client/src/connect.c:702
+msgid "Enter the local hostname for this system."
+msgstr "Entrez le nom d'hôte local pour ce système."
+
+#: desktop/client/src/connect.c:714
+msgid ""
+"Some protocols require a file containing settings. If required, enter the "
+"path to the file here."
+msgstr ""
+"Certains procotoles nécessitent un fichier contenant les paramètres. Si cela "
+"est nécessaire, veuillez entrer le chemin vers le fichier ici."
+
+#: desktop/client/src/connect.c:736 desktop/client/src/connect.c:738
+msgid "Remote Desktop Size"
+msgstr "Taille du bureau à distance"
+
+#: desktop/client/src/connect.c:756
+msgid "Use default screen size"
+msgstr "Utiliser taille d'écran par défaut"
+
+#: desktop/client/src/connect.c:760
+msgid "Use the default screen size."
+msgstr "Utiliser la taille par défaut de l'écran."
+
+#: desktop/client/src/connect.c:765
+msgid "Use specified screen size"
+msgstr "Utiliser taille d'écran spécifiée"
+
+#: desktop/client/src/connect.c:769
+msgid "Use the list to choose the screen size to use."
+msgstr "Utiliser la liste pour choisir la taille d'écran à utiliser."
+
+#: desktop/client/src/connect.c:781
+msgid "Operate in full screen mode"
+msgstr "Travailler en mode plein écran"
+
+#: desktop/client/src/connect.c:785
+msgid "Work in full screen mode."
+msgstr "Travailler en mode plein écran."
+
+#: desktop/client/src/connect.c:794
+msgid "Use alternate full screen switch (-F)"
+msgstr "Utiliser le commutateur alternatif pour le plein écran (-F)"
+
+#: desktop/client/src/connect.c:798
+msgid "Check this if you use rdesktop with the unified patches."
+msgstr "Vérifiez cela si vous utilisez rdesktop avec les correctifs unifiés."
+
+#: desktop/client/src/connect.c:807 desktop/client/src/connect.c:809
+msgid "Colors"
+msgstr "Couleurs"
+
+#: desktop/client/src/connect.c:827
+msgid "Use default color depth"
+msgstr "Utiliser la profondeur de couleurs par défaut"
+
+#: desktop/client/src/connect.c:831
+msgid "Use the default color depth."
+msgstr "Utiliser la profondeur de couleurs par défaut."
+
+#: desktop/client/src/connect.c:836
+msgid "Use specified color depth"
+msgstr "Utiliser une profondeur de couleurs spécifiée"
+
+#: desktop/client/src/connect.c:840
+msgid "Use the list to choose the color depth to use."
+msgstr "Utiliser la liste pour choisir la profonfeur de couleurs à utiliser."
+
+#: desktop/client/src/connect.c:864
+msgid "Remote Computer _Sound"
+msgstr "_Son de l'ordinateur distant"
+
+#: desktop/client/src/connect.c:866
+msgid "Remote Computer Sound"
+msgstr "Son de l'ordinateur distant"
+
+#: desktop/client/src/connect.c:890 desktop/client/src/connect.c:926
+msgid "On the local computer"
+msgstr "Sur l'ordinateur local"
+
+#: desktop/client/src/connect.c:893 desktop/client/src/connect.c:929
+msgid "On the remote computer"
+msgstr "Sur l'ordinateur distant"
+
+#: desktop/client/src/connect.c:896
+msgid "Do not play"
+msgstr "Ne pas jouer"
+
+#: desktop/client/src/connect.c:907
+msgid "_Keyboard"
+msgstr "_Clavier"
+
+#: desktop/client/src/connect.c:909
+msgid "Keyboard"
+msgstr "Clavier"
+
+#: desktop/client/src/connect.c:932
+msgid "In full screen mode only"
+msgstr "En mode plein écran seulement"
+
+#: desktop/client/src/connect.c:938
+#, fuzzy
+msgid ""
+"Use the following keyboard language\n"
+"(2 char keycode)"
+msgstr ""
+"Utiliser la langue suivante pour le clavier\n"
+"(code clavier de 2 caractères)"
+
+#: desktop/client/src/connect.c:966
+msgid ""
+"Apply Windows key combinations\n"
+"(for example ALT+TAB) (unsupported)"
+msgstr ""
+"Appliquer les combinaisons de touches de Windows\n"
+"(par exemple ALT+TAB) (non supporté)"
+
+#: desktop/client/src/connect.c:989 desktop/client/src/connect.c:991
+msgid "Start a Program"
+msgstr "Démarrer un programme"
+
+#: desktop/client/src/connect.c:1006
+msgid "Start the following program on connection"
+msgstr "Démarrer le programme suivant à la connexion"
+
+#: desktop/client/src/connect.c:1013
+msgid "Program path and filename"
+msgstr "Chemin et nom de fichier du programme"
+
+#: desktop/client/src/connect.c:1026
+msgid "Start in the following folder"
+msgstr "Démarrer dans le dossier suivant"
+
+#: desktop/client/src/connect.c:1048 desktop/client/src/connect.c:1050
+msgid "Optimize Performance"
+msgstr "Optimisez les performances"
+
+#: desktop/client/src/connect.c:1071
+msgid "Desktop background (u)"
+msgstr "Arrière-plan du bureau (u)"
+
+#: desktop/client/src/connect.c:1075
+msgid "Show content of window while dragging (u)"
+msgstr "Afficher le contenu de la fenêtre lors des déplacements (u)"
+
+#: desktop/client/src/connect.c:1079
+msgid "Menu and window animation (u)"
+msgstr "Animation des menus et des fenêtres"
+
+#: desktop/client/src/connect.c:1083
+msgid "Themes (u)"
+msgstr "Thèmes (u)"
+
+#: desktop/client/src/connect.c:1087
+msgid "Enable bitmap caching"
+msgstr "Activer le cache des bitmaps"
+
+#: desktop/client/src/connect.c:1091
+msgid "Do not send motion events"
+msgstr "Ne pas envoyer les événements de mouvement"
+
+#: desktop/client/src/connect.c:1095
+msgid "Enable window manager's key bindings"
+msgstr "Activer les raccourcis clavier du gestionnaire de fenêtres"
+
+#: desktop/client/src/connect.c:1100
+msgid "Options available for optimizing performance"
+msgstr "Options disponibles pour optimiser les performances"
+
+#.
+#. These are the labels for the notebook control
+#.
+#: desktop/client/src/connect.c:1113
+msgid "_General"
+msgstr "_Général"
+
+#: desktop/client/src/connect.c:1118
+msgid "_Display"
+msgstr "_Affichage"
+
+#: desktop/client/src/connect.c:1123
+msgid "Local _Resources"
+msgstr "_Ressources locales"
+
+#: desktop/client/src/connect.c:1128
+msgid "_Programs"
+msgstr "_Programmes"
+
+#: desktop/client/src/connect.c:1133
+msgid "Perf_ormance"
+msgstr "Perf_ormances"
+
+#: desktop/client/src/connect.c:1197
+msgid "_Less"
+msgstr "_Moins"
+
+#: desktop/client/src/connect.c:1708
+msgid "Input a filename to save as..."
+msgstr "Entrez un nom de fichier sous lequel sauvegarder..."
+
+#: desktop/client/src/connect.c:1750 desktop/client/src/connect.c:1795
+msgid "Choose an RDP file to open..."
+msgstr "Choisissez un fichier RDP à ouvrir..."
+
+#: desktop/client/src/support.c:277
+msgid ""
+"rdesktop was not found in your path.\n"
+"Please verify your rdesktop installation."
+msgstr ""
+"rdesktop n'a pas été trouvé dans votre path.\n"
+"Veuillez vérifier votre installation de rdesktop."
+
+#: desktop/client/src/support.c:417
+msgid ""
+"vncviewer or xvncviewer were\n"
+" not found in your path.\n"
+"Please verify your vnc installation."
+msgstr ""
+"vncviewer ou xvncviewer n'ont \n"
+"pas été trouvés dans votre path.\n"
+"Veuillez vérifier votre installation de vnc"
+
+#: desktop/client/src/support.c:519
+msgid ""
+"Xnest was not found in your path.\n"
+"Please verify your Xnest installation."
+msgstr ""
+"Xnest n'a pas été trouvé dans votre path.\n"
+"Veuillez vérifier votre installation de Xnest."
+
+#: desktop/client/src/support.c:578
+msgid ""
+"wfica was not found in your path.\n"
+"Please verify your ICAClient installation."
+msgstr ""
+"wfica n'a pas été trouvé dans votre path.\n"
+"Veuillez vérifier votre installation d'ICAClient."
+
+#: desktop/client/src/support.c:702
+msgid ""
+"Failed to spawn.\n"
+"Please verify your installation."
+msgstr ""
+"Erreur à l'exécution.\n"
+"Veuillez vérifier votre installation."
+
+#. create the widgets
+#: desktop/client/src/support.c:744
+msgid "GNOME Remote Desktop Error"
+msgstr "Erreur Bureau à distance GNOME"
+
+#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
+msgid "An error has occurred."
+msgstr "Une erreur est survenue."
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
+msgid "Check this to enable desktop sharing in GNOME"
+msgstr "Vérifiez ceci pour activer le partage du bureau dans GNOME"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
+msgid "Password to connect to desktop sharing"
+msgstr "Mot de passe pour se connecteur au partage de bureau"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:3
+msgid ""
+"Set this to the password clients should use to connect to your desktop "
+"remotely"
+msgstr ""
+"Mettez ici le mot de passe que les clients devront utiliser pour se "
+"connecter à distance à votre bureau."
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:4
+msgid "Whether to enable desktop sharing"
+msgstr "Indique si le partage de bureau est actif"
+
+#: desktop/gnome-remote-desktop.glade.h:1
+#: gnome-netinfo/gnome-netinfo.glade.h:1
+#: network-utilities/gnome-remote-shell.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: desktop/gnome-remote-desktop.glade.h:2
+#: gnome-netinfo/gnome-netinfo.glade.h:5
+#: network-utilities/gnome-remote-shell.glade.h:2
+#: sync/entryconfigdialog.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: desktop/gnome-remote-desktop.glade.h:3
+msgid ""
+"<b>Connection settings</b>\n"
+"Type the name of the computer to open a new desktop session and/or the "
+"display number to connect to an already running session."
+msgstr ""
+"<b>Paramètres de connexion</b>\n"
+"Saisissez le nom de l'ordinateur sur lequel ouvrir une nouvelle session et/"
+"ou le numéro de visuel pour se connecter à une session déjà en cours de "
+"fonctionnement."
+
+#: desktop/gnome-remote-desktop.glade.h:5
+msgid ""
+"<b>Desktop settings</b>\n"
+"Select the size and color depth (not supported for all cases, so use with "
+"care) of you remote desktop."
+msgstr ""
+"<b>Paramètres de bureau</b>\n"
+"Sélectionnez la taille et la profondeur de couleur (non supportés dans tous "
+"les cas, à utiliser avec précaution) de votre bureau distant."
+
+#: desktop/gnome-remote-desktop.glade.h:7
+msgid ""
+"<b>Method</b>\n"
+"Select the method for connecting to the remote host. For Windows systems, "
+"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
+"work."
+msgstr ""
+"<b>Méthode</b>\n"
+"Selectionner la méthode pour vous connecter à l'hôte distant. Pour les "
+"systèmes Windows, vous pouvez choisir VNC. Pour les systèmes Unix, "
+"généralement VNC, éventuellement VNC fonctionnera."
+
+#: desktop/gnome-remote-desktop.glade.h:9
+msgid "Color depth"
+msgstr "Profondeur de la couleur"
+
+#: desktop/gnome-remote-desktop.glade.h:10
+msgid "Connect Now ..."
+msgstr "Se connecter maintenant..."
+
+#: desktop/gnome-remote-desktop.glade.h:11
+msgid "Display size"
+msgstr "Taille d'affichage"
+
+#: desktop/gnome-remote-desktop.glade.h:12
+msgid "Display:"
+msgstr "Affichage :"
+
+#: desktop/gnome-remote-desktop.glade.h:14
+msgid "Host:"
+msgstr "Hôte :"
+
+#: desktop/gnome-remote-desktop.glade.h:15
+msgid "VNC"
+msgstr "VNC"
+
+#: desktop/gnome-remote-desktop.glade.h:16
+msgid "X11"
+msgstr "X11"
+
+#: desktop/gnome-remote-desktop.glade.h:17
+msgid "by"
+msgstr "par"
+
+#: desktop/preferences/interface.c:48 desktop/preferences/interface.c:63
+#: desktop/server/tray.c:163
+msgid "Desktop Sharing"
+msgstr "Partage de bureau"
+
+#: desktop/preferences/interface.c:72
+msgid "_Share my desktop with others"
+msgstr "_Partager mon bureau avec les autres"
+
+#: desktop/preferences/interface.c:78
+msgid "Enable this option to allow others to view your desktop"
+msgstr "Activez cette option pour permettre aux autres de voir votre bureau"
+
+#: desktop/preferences/interface.c:93
+msgid ""
+"The following information will need to be supplied by the user connecting to "
+"your desktop"
+msgstr ""
+"Les informations suivante devront être fournies par l'utilisateur pour se "
+"connecter à votre bureau"
+
+#: desktop/preferences/interface.c:104 gnome-ppp/account-window.c:1023
+msgid "Password"
+msgstr "Mot de passe"
+
+#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Impossible de trouver le fichier pixmap : %s"
+
+#: desktop/server/eggtrayicon.c:118
+msgid "Orientation"
+msgstr "Orientation"
+
+#: desktop/server/eggtrayicon.c:119
+msgid "The orientation of the tray."
+msgstr "L'orientation du tiroir."
+
+#: desktop/server/tray.c:62 pws/pws.c:85
+msgid "/_Preferences"
+msgstr "/_Préférences"
+
+#: desktop/server/tray.c:63
+msgid "/_Clients"
+msgstr "/_Clients"
+
+#: desktop/server/tray.c:65
+msgid "/_About"
+msgstr "/À _propos"
+
+#: desktop/server/tray.c:66 pws/pws.c:88
+msgid "/_Quit"
+msgstr "/_Quitter"
+
+#: desktop/server/tray.c:118
+msgid "Your desktop is viewable to others"
+msgstr "Votre bureau est visible par les autres"
+
+#: desktop/server/tray.c:165
+msgid "Remote Desktop Sharing"
+msgstr "Partage de bureau à distance"
+
+#: desktop/server/tray.c:168 gnome-netinfo/callbacks.c:214
+msgid "This is an untranslated version of GNOME Network Information"
+msgstr "Ceci est une version non traduite des informations réseau de GNOME"
+
+#: desktop/server/tray.c:403
+msgid "Clients currently viewing your desktop"
+msgstr "Les clients peuvent actuellement voir votre bureau"
+
+#: desktop/server/tray.c:425 gnome-ppp/dial-window.c:431
+msgid "Disconnect"
+msgstr "Déconnecter"
+
+#: gnome-netinfo/callbacks.c:212
+msgid "Graphical user interface for common network utilities"
+msgstr "Interface graphique utilisateur pour les outils réseau courants"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:2
+msgid "(eg. user@www.domain.com)"
+msgstr "(i.e. utilisateur@www.domaine.com)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:3
+msgid "(for example: domain.com)"
+msgstr "(par exemple : domaine.com)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:4
+msgid "(for example: www.domain.com or 192.168.2.1)"
+msgstr "(par exemple : www.domaine.com ou 192.168.2.1)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:6
+msgid "0.0"
+msgstr "0.0"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:7
+msgid "<span weight=\"bold\">@</span>"
+msgstr "<span weight=\"bold\">@</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:8
+msgid ""
+"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+"information</span>"
+msgstr ""
+"<span weight=\"bold\">Saisissez l'adresse du domaine pour obtenir ses "
+"informations.</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:9
+msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+msgstr "<span weight=\"bold\">Saisissez une adresse réseau à rechercher</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:10
+msgid ""
+"<span weight=\"bold\">Enter a user name and network address to finger that "
+"user</span>"
+msgstr ""
+"<span weight=\"bold\">Saisissez un nom d'utilisateur et une adresse réseau "
+"pour obtenir des détails sur cet utilisateur</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:11
+msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+msgstr "<span weight=\"bold\">Saisissez l'adresse réseau à pinger</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:12
+msgid ""
+"<span weight=\"bold\">Enter the network address to scan for open ports</span>"
+msgstr ""
+"<span weight=\"bold\">Saisissez l'adresse réseau à scanner pour des ports "
+"ouverts</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:13
+msgid ""
+"<span weight=\"bold\">Enter the network address to trace a route to</span>"
+msgstr ""
+"<span weight=\"bold\">Saisissez l'adresse réseau vers laquelle tracer une "
+"route</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:14
+msgid "<span weight=\"bold\">Information</span>"
+msgstr "<span weight=\"bold\">Information</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:15
+msgid "<span weight=\"bold\">Round trip time statistics</span>"
+msgstr "<span weight=\"bold\">Statistiques moyenne</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:16
+msgid ""
+"<span weight=\"bold\">Select the network device to get information on</span>"
+msgstr ""
+"<span weight=\"bold\">Sélectionnez l'interface réseau pour laquelle obtenir "
+"des informations</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:17
+msgid "<span weight=\"bold\">Select the type of information to display</span>"
+msgstr ""
+"<span weight=\"bold\">Sélectionnez le type d'informations à afficher</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:18
+msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
+msgstr ""
+"<span weight=\"bold\">Sélectionnez le type d'informations à rechercher :</"
+"span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:19
+msgid "<span weight=\"bold\">Statistics</span>"
+msgstr "<span weight=\"bold\">Statistiques</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:20
+msgid "<span weight=\"bold\">Transmission statistics</span>"
+msgstr "<span weight=\"bold\">Statistiques de transmission</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:21
+msgid "Any / All Information"
+msgstr "Chacune des / toutes les informations"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:22
+msgid "Average:"
+msgstr "Moyenne :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:23
+msgid "Broadcast:"
+msgstr "Diffusion :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:24
+msgid "CPU / OS Type"
+msgstr "Type de CPU / OS"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:25
+msgid "Canonical Name"
+msgstr "Nom canonique"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:26
+msgid "Clear _History"
+msgstr "Purger l'_historique"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:27
+msgid "Collisions:"
+msgstr "Collisions :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:28
+msgid "Default Information"
+msgstr "Informations par défaut"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:29
+msgid "Display active network services"
+msgstr "Afficher les services réseaux actifs"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:30
+msgid "Display multicast information"
+msgstr "Afficher les informations multicast"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:31
+msgid "Display routing table information"
+msgstr "Afficher les informations de la table de routage"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:32
+msgid "Enter the network address to ping"
+msgstr "Saisissez l'adresse réseau à pinger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:530
+msgid "Finger"
+msgstr "Finger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:34
+msgid "Hardware address:"
+msgstr "Adresse matérielle :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:35
+msgid "Host name for Address"
+msgstr "Nom d'hôte pour l'adresse"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:36
+msgid "IP address:"
+msgstr "Adresse IP :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:37
+msgid "Internet Address"
+msgstr "Adresse internet"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:38
+msgid "Link speed:"
+msgstr "Vitesse du lien :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:485
+msgid "Lookup"
+msgstr "Recherche"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:40
+msgid "MTU:"
+msgstr "MTU :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:41
+msgid "Mailbox Exchange"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:42
+msgid "Mailbox Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:43
+msgid "Maximum:"
+msgstr "Maximum :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:44
+msgid "Minimum:"
+msgstr "Minimum :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:45
+msgid "Multicast:"
+msgstr "Multicast :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:46
+msgid "Name Server"
+msgstr "Serveurs de noms"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:47
+msgid "Netmask:"
+msgstr "Masque de réseau :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:349
+msgid "Netstat"
+msgstr "Statistiques réseau"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:49 gnome-netinfo/main.c:110
+msgid "Network Information"
+msgstr "Information sur le réseau"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:50
+msgid "Packets loss:"
+msgstr "Paquets perdus :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:51
+msgid "Packets received:"
+msgstr "Paquets reçus :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:52
+msgid "Packets transmitted:"
+msgstr "Paquets transmis :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:257
+msgid "Ping"
+msgstr "Ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:54
+msgid "Port _Scan"
+msgstr "_Scan de ports"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:55
+msgid "Received bytes:"
+msgstr "Octets reçus :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:56
+msgid "Received packets:"
+msgstr "Paquets reçus :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:57
+msgid "Reception errors:"
+msgstr "Erreurs de réception :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:447
+msgid "Scan"
+msgstr "Scanner"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:59
+msgid "Select network device from list"
+msgstr "Sélectionnez un périphérique réseau dans la liste"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:60
+msgid "Send only"
+msgstr "Envoyer seulement"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:61
+msgid "Send unlimited requests (pings)"
+msgstr "Envoyer des requêtes non limitées (pings)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:62
+msgid "Start-of-authority"
+msgstr "Début-de-l'autorité"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:63
+msgid "State:"
+msgstr "État :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:64
+msgid "Text Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:305
+msgid "Trace"
+msgstr "Tracer"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:66
+msgid "Transmission errors:"
+msgstr "Erreurs de transmission :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:67
+msgid "Transmitted bytes:"
+msgstr "Octets transmis :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:68
+msgid "Transmitted packets:"
+msgstr "Paquets transmis :"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:69
+msgid "Well Known Services"
+msgstr "Services connus"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:581
+msgid "Whois"
+msgstr "Whois"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:71
+msgid "_Devices"
+msgstr "_Périphériques"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:72
+msgid "_Finger"
+msgstr "_Finger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:73
+msgid "_Information"
+msgstr "_Informations"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:74
+msgid "_Lookup"
+msgstr "_Lookup"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:75
+msgid "_Netstat"
+msgstr "_Netstat"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:76
+msgid "_Ping"
+msgstr "_Ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:77
+msgid "_Traceroute"
+msgstr "_Traceroute"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:78
+msgid "_Whois"
+msgstr "_Whois"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:79
+msgid "ms"
+msgstr "ms"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:80 gnome-netinfo/info.h:27
+msgid "not available"
+msgstr "non disponible"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:81
+msgid "requests (pings)"
+msgstr "requêtes (pings)"
+
+#: gnome-netinfo/info.c:277
+msgid "Active"
+msgstr "Actif"
+
+#: gnome-netinfo/info.c:279
+msgid "Inactive"
+msgstr "Inactif"
+
+#: gnome-netinfo/info.c:284
+msgid "Loopback"
+msgstr "Bouclage"
+
+#: gnome-netinfo/info.c:297
+msgid "Enabled"
+msgstr "Activé"
+
+#: gnome-netinfo/info.c:299
+msgid "Disabled"
+msgstr "Désactivé"
+
+#. The info output in a text format (to copy on clipboard)
+#: gnome-netinfo/info.c:419
+#, c-format
+msgid "Network device:\t%s\n"
+msgstr "Périphérique réseau :\t%s\n"
+
+#: gnome-netinfo/info.c:420
+#, c-format
+msgid "Hardware address:\t%s\n"
+msgstr "Adresse matérielle :\t%s\n"
+
+#: gnome-netinfo/info.c:421
+#, c-format
+msgid "IP address:\t%s\n"
+msgstr "Adresse IP :\t%s\n"
+
+#: gnome-netinfo/info.c:422
+#, c-format
+msgid "Netmask:\t%s\n"
+msgstr "Masque de réseau :\t%s\n"
+
+#: gnome-netinfo/info.c:423
+#, c-format
+msgid "Broadcast:\t%s\n"
+msgstr "Diffusion :\t%s\n"
+
+#: gnome-netinfo/info.c:424
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr "Multicast :\t%s\n"
+
+#: gnome-netinfo/info.c:425
+#, c-format
+msgid "MTU:\t%s\n"
+msgstr "MTU :\t%s\n"
+
+#: gnome-netinfo/info.c:426
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr "Vitesse du lien :\t%s\n"
+
+#: gnome-netinfo/info.c:427
+#, c-format
+msgid "State:\t%s\n"
+msgstr "État :\t%s\n"
+
+#: gnome-netinfo/info.c:429
+#, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr "Paquets transmis :\t%s\n"
+
+#: gnome-netinfo/info.c:430
+#, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Erreurs de transmission :\t%s\n"
+
+#: gnome-netinfo/info.c:431
+#, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Paquets reçus :\t%s\n"
+
+#: gnome-netinfo/info.c:432
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr "Erreurs de réception :\t%s\n"
+
+#: gnome-netinfo/info.c:433
+#, c-format
+msgid "Collisions:\t%s\n"
+msgstr "Collisions :\t%s\n"
+
+#. adds columns
+#: gnome-netinfo/lookup.c:272 sync/entrylist.c:67
+msgid "Name"
+msgstr "Nom d'utilisateur"
+
+#: gnome-netinfo/lookup.c:280
+msgid "TTL"
+msgstr "TTL"
+
+#: gnome-netinfo/lookup.c:289
+msgid "Address Type"
+msgstr "Type d'adresse"
+
+#: gnome-netinfo/lookup.c:299
+msgid "Record Type"
+msgstr "Type d'enregistrement"
+
+#: gnome-netinfo/lookup.c:308
+msgid "Address"
+msgstr "Adresse"
+
+#. The lookup output in text format:
+#. Source of query (hostname/ip address),
+#. Time To Live (TTL), Address Type,
+#. Record Type (A, PTR, HINFO, NS, TXT, etc.),
+#. Resolution (results of the query)
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/lookup.c:336
+msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
+msgstr "Source\tTTL\tType d'adresse\tType d'enregistrement\tRésolution\n"
+
+#: gnome-netinfo/main.c:75
+msgid "Load information for a network device"
+msgstr "Charger les informations d'un périphérique réseau"
+
+#: gnome-netinfo/main.c:76
+#, fuzzy
+msgid "DEVICE"
+msgstr "PERIPH."
+
+#: gnome-netinfo/main.c:78
+msgid "Send a ping to a network address"
+msgstr "Envoyer un ping à l'adresse réseau"
+
+#: gnome-netinfo/main.c:79 gnome-netinfo/main.c:85 gnome-netinfo/main.c:88
+#: gnome-netinfo/main.c:91
+msgid "HOST"
+msgstr "HÔTE"
+
+#: gnome-netinfo/main.c:81
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr ""
+"Obtenir les informations netstat. Les options valides sont : route, active, "
+"multicast."
+
+#: gnome-netinfo/main.c:82
+msgid "COMMAND"
+msgstr "COMMANDE"
+
+#: gnome-netinfo/main.c:84
+msgid "Trace a route to a network address"
+msgstr "Tracer une route vers une adresse réseau"
+
+#: gnome-netinfo/main.c:87
+msgid "Port scan a network address"
+msgstr "Scanner les ports d'une adresse réseau"
+
+#: gnome-netinfo/main.c:90
+msgid "Look up a network address"
+msgstr "Chercher une adresse réseau"
+
+#: gnome-netinfo/main.c:93
+msgid "Finger command to run"
+msgstr "Commander finger à lancer"
+
+#: gnome-netinfo/main.c:94
+msgid "USER"
+msgstr "UTILISATEUR"
+
+#: gnome-netinfo/main.c:96
+msgid "Perform a whois lookup for a network domain"
+msgstr "Effectuer une recherche whois pour un domaine réseau"
+
+#: gnome-netinfo/main.c:97
+msgid "DOMAIN"
+msgstr "DOMAINE"
+
+#: gnome-netinfo/main.c:116
+#, c-format
+msgid ""
+"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"installed"
+msgstr ""
+"Le fichier %s n'existe pas, veuillez vérifier si gnome-netinfo est "
+"correctement installé"
+
+#: gnome-netinfo/netinfo.c:157
+msgid "Network address not specified"
+msgstr "Adresse réseau non spécifiée"
+
+#: gnome-netinfo/netinfo.c:165
+#, c-format
+msgid "The host '%s' cannot be found"
+msgstr "L'hôte « %s » ne peut être trouvé."
+
+#: gnome-netinfo/netinfo.c:309
+msgid "Information not available"
+msgstr "Information non disponible"
+
+#: gnome-netinfo/netinfo.c:395
+msgid "Stop"
+msgstr "Arrêter"
+
+#: gnome-netinfo/netinfo.c:401
+msgid "Run"
+msgstr "Lancer"
+
+#: gnome-netinfo/netstat.c:403
+msgid "Protocol"
+msgstr "Protocole"
+
+#: gnome-netinfo/netstat.c:410
+msgid "IP Source"
+msgstr "Source IP"
+
+#: gnome-netinfo/netstat.c:418
+msgid "Port/Service"
+msgstr "Port/Service"
+
+#: gnome-netinfo/netstat.c:426 gnome-netinfo/scan.c:289
+msgid "State"
+msgstr "État"
+
+#: gnome-netinfo/netstat.c:549
+msgid "Destination/Prefix"
+msgstr "Destination/Préfixe"
+
+#: gnome-netinfo/netstat.c:551
+msgid "Destination"
+msgstr "Destination"
+
+#: gnome-netinfo/netstat.c:558
+msgid "Gateway"
+msgstr "Passerelle"
+
+#. netmask
+#: gnome-netinfo/netstat.c:566 gnome-ppp/account-window.c:1106
+msgid "Netmask"
+msgstr "Masque de réseau"
+
+#: gnome-netinfo/netstat.c:574 gnome-netinfo/netstat.c:680
+msgid "Interface"
+msgstr "Interface"
+
+#: gnome-netinfo/netstat.c:687
+msgid "Member"
+msgstr "Membre"
+
+#: gnome-netinfo/netstat.c:695
+msgid "Group"
+msgstr "Groupe"
+
+#. The netstat "Display active network services" output in
+#. text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:737
+msgid "Protocol\tIP Source\tPort/Service\tState\n"
+msgstr "Protocole\tAdresse IP\tSource\tPort/Service\tÉtat\n"
+
+#. The netstat "Display routing" output in text format.
+#. This seems as a route table.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:743
+msgid "Destination\tGateway\tNetmask\tInterface\n"
+msgstr "Destination\tPasserelle\tMasque réseau\tInterface\n"
+
+#. The netstat "Multicast information" output in text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:748
+msgid "Interface\tMember\tGroup\n"
+msgstr "Interface\tMembre\tGroupe\n"
+
+#: gnome-netinfo/ping.c:378
+msgid "Bytes"
+msgstr "Octets"
+
+#: gnome-netinfo/ping.c:385
+msgid "Source"
+msgstr "Source"
+
+#: gnome-netinfo/ping.c:393
+msgid "Seq"
+msgstr "Seq"
+
+#: gnome-netinfo/ping.c:403
+msgid "Time"
+msgstr "Temps"
+
+#: gnome-netinfo/ping.c:411
+msgid "Units"
+msgstr "Unités"
+
+#. The ping output in text format:
+#. Bytes received, Address Source, Number of Sequence,
+#. Round Trip Time (Time), Units of Time.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/ping.c:437
+msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
+msgstr "Octets\tSource\tSeq\tTemps\tUnitées\n"
+
+#. The ping output in a text format (to copy on clipboard)
+#: gnome-netinfo/ping.c:452
+#, c-format
+msgid "Time minimum:\t%s ms\n"
+msgstr "Temps minimum :\t%s ms\n"
+
+#: gnome-netinfo/ping.c:453
+#, c-format
+msgid "Time average:\t%s ms\n"
+msgstr "Temps moyen :\t%s ms\n"
+
+#: gnome-netinfo/ping.c:454
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr "Temps maximum :\t%s ms\n"
+
+#: gnome-netinfo/ping.c:456
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr "Paquets transmis :\t%s\n"
+
+#: gnome-netinfo/ping.c:458
+#, c-format
+msgid "Packets received:\t%s\n"
+msgstr "Paquets reçus :\t%s\n"
+
+#: gnome-netinfo/ping.c:460
+#, c-format
+msgid "Packet loss:\t%s\n"
+msgstr "Paquets perdus :\t%s\n"
+
+#: gnome-netinfo/scan.c:151
+msgid "unknown"
+msgstr "inconnu"
+
+#: gnome-netinfo/scan.c:281
+msgid "Port"
+msgstr "Port"
+
+#: gnome-netinfo/scan.c:297
+msgid "Service"
+msgstr "Service"
+
+#. The portscan output in text format:
+#. Port, State, Service.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/scan.c:319
+msgid "Port\tState\tService\n"
+msgstr "Port\tÉtat\tService\n"
+
+#: gnome-netinfo/traceroute.c:260
+msgid "Hop"
+msgstr "Saut"
+
+#: gnome-netinfo/traceroute.c:268
+msgid "Hostname"
+msgstr "Nom d'hôte"
+
+#: gnome-netinfo/traceroute.c:276
+msgid "IP"
+msgstr "IP"
+
+#: gnome-netinfo/traceroute.c:287
+msgid "Time 1"
+msgstr "Temps 1"
+
+#: gnome-netinfo/traceroute.c:297
+msgid "Time 2"
+msgstr "Temps 2"
+
+#. The traceroute output in text format:
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
+#. Round Trip Time 2 (Time2),
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/traceroute.c:323
+msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgstr "Hop\tNom d'hôte\tAdresse IP\tTemps 1\tTemps 2\n"
+
+#: gnome-netinfo/utils.c:227
+#, c-format
+msgid "%s: Command not found"
+msgstr "%s : Commande non trouvée"
+
+#: gnome-ppp/account-window.c:161
+msgid "Receive"
+msgstr "Recevoir"
+
+#: gnome-ppp/account-window.c:162
+msgid "Enter search string"
+msgstr "Saisissez la chaîne de recherche"
+
+#: gnome-ppp/account-window.c:165
+msgid "Send"
+msgstr "Envoyer"
+
+#: gnome-ppp/account-window.c:166
+msgid "Enter transmission string"
+msgstr "Saisissez la chaîne de transmission"
+
+#: gnome-ppp/account-window.c:169
+msgid "Send User Name"
+msgstr "Envoyer le nom d'utilisateur"
+
+#: gnome-ppp/account-window.c:170
+msgid "Username taken from Authentication"
+msgstr "Nom d'utilisateur pris à partir de l'authentification"
+
+#: gnome-ppp/account-window.c:173
+msgid "Send User Password"
+msgstr "Envoyer le mot de passe"
+
+#: gnome-ppp/account-window.c:174
+msgid "Password taken from Authentication"
+msgstr "Mot de passe pris à partir de l'authentification"
+
+#: gnome-ppp/account-window.c:177
+msgid "Dialog Box Input"
+msgstr "Entrée de la boîte de dialogue"
+
+#: gnome-ppp/account-window.c:178
+msgid "Enter text to be used as a dialog message when prompted for input"
+msgstr "Saisissez le texte qui sera affiché lors de la demande"
+
+#: gnome-ppp/account-window.c:276
+msgid "open_account_window(): account=NULL with clone flag"
+msgstr "open_account_window() : account=NULL with clone flag"
+
+#: gnome-ppp/account-window.c:302
+msgid "open_account_window(): calling arguments invalid"
+msgstr "open_account_window() : calling arguments invalid"
+
+#. dial command entry widgets
+#: gnome-ppp/account-window.c:342 gnome-ppp/modem-window.c:288
+msgid "Dial"
+msgstr "Composer"
+
+#: gnome-ppp/account-window.c:348
+msgid "Authentication"
+msgstr "Authentication"
+
+#. dns server entry
+#: gnome-ppp/account-window.c:354 gnome-ppp/account-window.c:1223
+msgid "IP Address"
+msgstr "Adresse IP"
+
+#: gnome-ppp/account-window.c:360
+msgid "DNS"
+msgstr "Serveur de noms (DNS)"
+
+#: gnome-ppp/account-window.c:366
+msgid "Script"
+msgstr "Script"
+
+#: gnome-ppp/account-window.c:372
+msgid "PPP"
+msgstr "PPP"
+
+#: gnome-ppp/account-window.c:378
+msgid "Modem"
+msgstr "Modem"
+
+#: gnome-ppp/account-window.c:805
+msgid "Account Name"
+msgstr "Nom du compte"
+
+#. redial spin button
+#: gnome-ppp/account-window.c:817
+msgid "Redial Maximum"
+msgstr "Maximum de recompositions"
+
+#. dial timeout spin button
+#: gnome-ppp/account-window.c:838
+msgid "Dial Timeout (sec)"
+msgstr "Délai de connexion (sec)"
+
+#. phone number frame
+#: gnome-ppp/account-window.c:859
+msgid "Phone Numbers"
+msgstr "Numéros de téléphone"
+
+#. Phone number
+#: gnome-ppp/account-window.c:871
+msgid "#"
+msgstr "#"
+
+#. add/remove buttons
+#: gnome-ppp/account-window.c:892 gnome-ppp/account-window.c:1242
+#: gnome-ppp/account-window.c:1326 gnome-ppp/account-window.c:1464
+msgid "Add"
+msgstr "Ajouter"
+
+#: gnome-ppp/account-window.c:906 gnome-ppp/account-window.c:1256
+#: gnome-ppp/account-window.c:1340 gnome-ppp/account-window.c:1490
+#: sync/main.c:60 sync/main.c:170
+msgid "Remove"
+msgstr "Enlever"
+
+#: gnome-ppp/account-window.c:958
+msgid "PAP/CHAP"
+msgstr "PAP/CHAP"
+
+#: gnome-ppp/account-window.c:970
+msgid "User Name"
+msgstr "Nom d'utilisateur"
+
+#: gnome-ppp/account-window.c:990
+msgid "Remote Name"
+msgstr "Nom distant"
+
+#. password
+#: gnome-ppp/account-window.c:1011
+msgid "Hidden Password"
+msgstr "Mot de passe caché"
+
+#. local ip address
+#: gnome-ppp/account-window.c:1061
+msgid "Local IP Address"
+msgstr "Adresse IP locale"
+
+#: gnome-ppp/account-window.c:1072 gnome-ppp/account-window.c:1117
+#: gnome-ppp/account-window.c:1162
+msgid "Dynamic"
+msgstr "Dynamique"
+
+#: gnome-ppp/account-window.c:1086 gnome-ppp/account-window.c:1131
+#: gnome-ppp/account-window.c:1176
+msgid "Static"
+msgstr "Statique"
+
+#. remote ip address
+#: gnome-ppp/account-window.c:1151
+msgid "Remote IP Address"
+msgstr "Adresse IP distante"
+
+#. dns server list
+#: gnome-ppp/account-window.c:1210
+msgid "DNS Servers"
+msgstr "Serveurs de noms (DNS)"
+
+#. search domains list
+#: gnome-ppp/account-window.c:1295
+msgid "Search Domains"
+msgstr "Domaines de recherche"
+
+#: gnome-ppp/account-window.c:1306
+msgid "Domain Name"
+msgstr "Nom de domaine"
+
+#: gnome-ppp/account-window.c:1388
+msgid "Action"
+msgstr "Action"
+
+#: gnome-ppp/account-window.c:1389
+msgid "Text"
+msgstr "Texte"
+
+#. script list
+#: gnome-ppp/account-window.c:1397
+msgid "Login Script"
+msgstr "Script de connexion"
+
+#: gnome-ppp/account-window.c:1477
+msgid "Insert"
+msgstr "Insérer"
+
+#: gnome-ppp/account-window.c:1551
+msgid "Add Default Route"
+msgstr "Ajouter une route par défaut"
+
+#: gnome-ppp/account-window.c:1567
+msgid "Lock Dialout Device"
+msgstr "Verrouiller le périphérique d'appel"
+
+#. mtu, mru spin buttons
+#: gnome-ppp/account-window.c:1582
+msgid "Maximum Transmission Unit"
+msgstr "Maximum Transmission Unit (MTU)"
+
+#: gnome-ppp/account-window.c:1604
+msgid "Maximum Receive Unit"
+msgstr "Maximum Receive Unit (MRU)"
+
+#: gnome-ppp/account-window.c:1625
+msgid "Run Program After Connect"
+msgstr "Programme à exécuter après la connexion"
+
+#: gnome-ppp/account-window.c:1637
+msgid "Run Program After Disconnect"
+msgstr "Programme à exécuter après la déconnexion"
+
+#. modem device
+#: gnome-ppp/account-window.c:1672
+msgid "Modem Device"
+msgstr "Périphérique du modem"
+
+#. modem speed
+#: gnome-ppp/account-window.c:1698
+msgid "Connection Speed"
+msgstr "Vitesse de connexion"
+
+#. modem flow control
+#: gnome-ppp/account-window.c:1724
+msgid "Flow Control"
+msgstr "Contrôle du flux"
+
+#. modem line termination
+#: gnome-ppp/account-window.c:1750
+msgid "Line Termination"
+msgstr "Terminaison de la ligne"
+
+#. modem speaker volume
+#: gnome-ppp/account-window.c:1776
+msgid "Modem Speaker Volume"
+msgstr "Volume du haut-parleur du modem"
+
+#. modem edit commands
+#: gnome-ppp/account-window.c:1793
+msgid " Edit Modem Commands "
+msgstr " Éditer les commandes du modem "
+
+#: gnome-ppp/account-window.c:2252
+msgid "**PASSWORD**"
+msgstr "**MOT DE PASSE**"
+
+#: gnome-ppp/account-window.c:2256
+msgid "script_type_cb(): optionmenu data bad"
+msgstr "script_type_cb() : optionmenu data bad"
+
+#: gnome-ppp/dial-window.c:143
+msgid "_Debug Terminal"
+msgstr "_Débogage du Terminal"
+
+#: gnome-ppp/dial-window.c:150
+msgid "_New..."
+msgstr "_Nouveau..."
+
+#: gnome-ppp/dial-window.c:151
+msgid "D_uplicate..."
+msgstr "D_upliquer..."
+
+#: gnome-ppp/dial-window.c:152
+msgid "_Edit..."
+msgstr "_Éditer..."
+
+#: gnome-ppp/dial-window.c:153
+msgid "_Delete..."
+msgstr "_Éffacer..."
+
+#: gnome-ppp/dial-window.c:172
+msgid "_Account"
+msgstr "_Compte"
+
+#. set up the main application
+#: gnome-ppp/dial-window.c:210
+msgid "gnome-ppp"
+msgstr "gnome-ppp"
+
+#: gnome-ppp/dial-window.c:358
+msgid "Dialing"
+msgstr "Composition"
+
+#: gnome-ppp/dial-window.c:362
+msgid "Connected"
+msgstr "Connecté"
+
+#: gnome-ppp/dial-window.c:385
+msgid "refresh_dial_app(): gtk_clist_append failed."
+msgstr "refresh_dial_app() : gtk_clist_append failed."
+
+#: gnome-ppp/dial-window.c:409 gnome-ppp/dial-window.c:417
+msgid "Connect"
+msgstr "Connecter"
+
+#: gnome-ppp/dial-window.c:427
+msgid "Cancel"
+msgstr "Annuler"
+
+#: gnome-ppp/dial-window.c:452
+msgid "You must disconnect before closing."
+msgstr "Vous devez déconnecter avant de fermer."
+
+#: gnome-ppp/dial-window.c:742
+msgid "Are you sure you want to delete this account?\n"
+msgstr "Êtes-vous sûr de vouloir supprimer ce compte ?\n"
+
+#: gnome-ppp/dial-window.c:752
+msgid "The account cannot be deleted."
+msgstr "Ce compte ne peut pas être supprimé."
+
+#: gnome-ppp/dial-window.c:758
+msgid "The account is in use and cannot be deleted."
+msgstr "Ce compte est en cours d'utilisation et ne peut être supprimé."
+
+#: gnome-ppp/dial-window.c:781
+msgid "GNOME Internet Dialer"
+msgstr "GNOME Composeur Internet"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:181
+msgid "Raise PPP Link"
+msgstr "Terminer la liaison PPP"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:213 sync/main.c:67
+msgid "About..."
+msgstr "À propos..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:219
+msgid "Properties..."
+msgstr "Propriétés..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:223
+msgid "Offline"
+msgstr "Hors ligne"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:432
+msgid "Connecting..."
+msgstr "Connection..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:437
+msgid "PPP Connected"
+msgstr "PPP connecté"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:443
+msgid "PPP Error!"
+msgstr "Erreur PPP !"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:483
+msgid "That account is already in use.\n"
+msgstr "Ce compte est en cours d'utilisation.\n"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:566
+msgid "GNOME PPP Dialer Applet"
+msgstr "GNOME Applet de connexion PPP"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:569
+msgid ""
+"An unnecessarily nice looking applet for GNOME's panel for easy control of "
+"PPP network links."
+msgstr ""
+"Une joli applet inutile pour le tableau de bord GNOME pour faciliter le "
+"contrôle des liens réseaux PPP."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:691
+msgid "PPP Applet Properties"
+msgstr "Propriétés de l'applet PPP"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:706
+msgid "Animation"
+msgstr "Animation"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:712
+msgid "Small"
+msgstr "Petit"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:716
+msgid "Large"
+msgstr "Grand"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:720
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:769
+msgid "None"
+msgstr "Aucun"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:724
+msgid "Options"
+msgstr "Options"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:730
+msgid "Freeze Animation on Connect"
+msgstr "Geler les animations à la connexion"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:737
+msgid "Disconnect PPP on GNOME logout"
+msgstr "Déconnecter PPP lors de l'arrêt de GNOME"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:745
+msgid "Timer"
+msgstr "Temporisateur"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:751
+msgid "Label"
+msgstr "Étiquette"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:760
+msgid "Tooltip"
+msgstr "Conseil"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:778
+msgid "Animation Speed"
+msgstr "Vitesse d'animation"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:791
+msgid "PPP Applet"
+msgstr "Applet PPP"
+
+#: gnome-ppp/libgnome_ppp/connect.c:203
+msgid "---NEW CONNECTION---"
+msgstr "---NOUVELLE CONNEXION---"
+
+#: gnome-ppp/libgnome_ppp/msg.c:26
+msgid "Account already connected."
+msgstr "Compte en cours d'utilisation."
+
+#: gnome-ppp/libgnome_ppp/msg.c:27
+msgid "Starting PPP Connection."
+msgstr "Établir la connexion PPP."
+
+#: gnome-ppp/libgnome_ppp/msg.c:28
+msgid "You don't have permission to execute pppd."
+msgstr "Vous navez pas la permission d'exécuter pppd."
+
+#: gnome-ppp/libgnome_ppp/msg.c:29
+msgid "The modem is in use by another program."
+msgstr "Le modem est déjà utilisé par un autre programme."
+
+#: gnome-ppp/libgnome_ppp/msg.c:30
+msgid "Running pppd."
+msgstr "Lancement de pppd."
+
+#: gnome-ppp/libgnome_ppp/msg.c:31
+msgid "Closing connection."
+msgstr "Fermeture de la connexion."
+
+#: gnome-ppp/libgnome_ppp/msg.c:32
+msgid "The pppd program failed to run gnome-ppp-chat."
+msgstr "Le programme pppd a été incapable de lancer gnome-ppp-chat."
+
+#: gnome-ppp/libgnome_ppp/msg.c:33
+msgid "The modem could not be hung up."
+msgstr "Le modem ne peut obtenir la tonalité."
+
+#: gnome-ppp/libgnome_ppp/msg.c:34
+msgid "Initalizing modem."
+msgstr "Initialisation du modem."
+
+#: gnome-ppp/libgnome_ppp/msg.c:35
+msgid "Your modem is not responding to initalization."
+msgstr "Votre modem ne répond pas à l'initialisation."
+
+#: gnome-ppp/libgnome_ppp/msg.c:36
+msgid "The command to set the volume on your modem's speaker failed."
+msgstr "La commande pour régler le volume des haut-parleurs de modem a échoué"
+
+#: gnome-ppp/libgnome_ppp/msg.c:37
+msgid "No answer after maximum number of re-dial attempts."
+msgstr ""
+"Aucune réponse n'a été obtenue après le nombre maximum de tentatives de "
+"connexion."
+
+#: gnome-ppp/libgnome_ppp/msg.c:38
+msgid "No phone numbers specified for this account."
+msgstr "Aucun numéro de téléphone n'est spécifié pour ce compte."
+
+#: gnome-ppp/libgnome_ppp/msg.c:39
+msgid "Dialing."
+msgstr "Composition."
+
+#: gnome-ppp/libgnome_ppp/msg.c:40
+msgid "Dialing timeout."
+msgstr "Temps d'attente de composition."
+
+#: gnome-ppp/libgnome_ppp/msg.c:41
+msgid "No dialtone."
+msgstr "Aucune tonalité."
+
+#: gnome-ppp/libgnome_ppp/msg.c:42
+msgid "Number busy."
+msgstr "Numéro occupé."
+
+#: gnome-ppp/libgnome_ppp/msg.c:43
+msgid "Ring, but no answer."
+msgstr "Aucune réponse de l'appelant."
+
+#: gnome-ppp/libgnome_ppp/msg.c:44
+msgid "Connection failure, reason unknown."
+msgstr "Echec de connexion pour une raison inconnue."
+
+#: gnome-ppp/libgnome_ppp/msg.c:45
+msgid "Connected."
+msgstr "Connecté"
+
+#: gnome-ppp/libgnome_ppp/msg.c:46
+msgid "The modem lost connection with remote host."
+msgstr "Le modem a perdu la connexion avec l'hôte distant."
+
+#: gnome-ppp/libgnome_ppp/msg.c:47
+msgid "Running Script."
+msgstr "Script de Login"
+
+#: gnome-ppp/libgnome_ppp/msg.c:48
+msgid "Script Complete."
+msgstr "Script terminé."
+
+#: gnome-ppp/libgnome_ppp/msg.c:49
+msgid "PPP connection established."
+msgstr "Connexion PPP établie"
+
+#: gnome-ppp/libgnome_ppp/msg.c:50
+msgid "Failed to establish a PPP connection."
+msgstr "Impossible d'établir une connexion PPP."
+
+#: gnome-ppp/libgnome_ppp/msg.c:51
+msgid "The pppd daemon died unexpectedly."
+msgstr "Le démon pppd s'est arrêté de façon inattendue."
+
+#: gnome-ppp/modem-window.c:83
+msgid "open_modem_window(): account=NULL"
+msgstr "open_account_window() : account=NULL"
+
+#: gnome-ppp/modem-window.c:120
+msgid "Commands"
+msgstr "Commandes"
+
+#: gnome-ppp/modem-window.c:126
+msgid "Responses"
+msgstr "Réponses"
+
+#. initialization command entry widgets
+#. initialization response entry widgets
+#: gnome-ppp/modem-window.c:268 gnome-ppp/modem-window.c:408
+msgid "Initialization"
+msgstr "Initialisation Modem"
+
+#. hangup command entry widgets
+#. hangup response entry widgets
+#: gnome-ppp/modem-window.c:307 gnome-ppp/modem-window.c:428
+msgid "Hangup"
+msgstr "Décrocher"
+
+#. volume mute command entry widgets
+#: gnome-ppp/modem-window.c:327
+msgid "Volume Mute"
+msgstr "Sourdine son"
+
+#. volume low command entry widgets
+#: gnome-ppp/modem-window.c:347
+msgid "Volume Low"
+msgstr "Volume faible"
+
+#. volume high command entry widgets
+#: gnome-ppp/modem-window.c:367
+msgid "Volume High"
+msgstr "Volume fort"
+
+#. connection response entry widgets
+#: gnome-ppp/modem-window.c:448
+msgid "Connection"
+msgstr "Connexion"
+
+#. busy response entry widgets
+#: gnome-ppp/modem-window.c:468
+msgid "Busy"
+msgstr "Occupé"
+
+#. no answer response entry widgets
+#: gnome-ppp/modem-window.c:488
+msgid "No Answer"
+msgstr "Aucune réponse"
+
+#. no carrier response entry widgets
+#: gnome-ppp/modem-window.c:508
+msgid "No Carrier"
+msgstr "Pas de ligne"
+
+#. no dialtone response entry widgets
+#: gnome-ppp/modem-window.c:528
+msgid "No Dialtone"
+msgstr "Aucune tonalité"
+
+#: gnome-transfer-manager/src/GNOME_Transfer_Manager.server.in.in.h:1
+msgid "GNOME Transfer Manager"
+msgstr "GNOME Gestionnaire de transferts"
+
+#: network-utilities/gnome-remote-shell.c:189
+#: network-utilities/gnome-remote-shell.c:216
+msgid "There is a connection error"
+msgstr "Erreur de connexion"
+
+#: network-utilities/gnome-remote-shell.c:284
+msgid "There is an error with displaying help"
+msgstr "Erreur lors de l'affichage de l'aide"
+
+#: network-utilities/gnome-remote-shell.c:324
+msgid "Graphical user interface for GNOME Remote Shell"
+msgstr "Interface graphique utilisateur pour le shell distant GNOME"
+
+#: network-utilities/gnome-remote-shell.c:327
+msgid "This is an untranslated version of GNOME Remote Shell"
+msgstr "Ceci est une version non traduite du shell distant GNOME"
+
+#: network-utilities/gnome-remote-shell.c:373
+#: network-utilities/gnome-remote-shell.c:423
+#: network-utilities/gnome-remote-shell.c:550
+msgid "Failed to create a connection"
+msgstr "La création de la connexion a échouée"
+
+#: network-utilities/gnome-remote-shell.c:373
+msgid "A hostname is required"
+msgstr "Un nom d'hôte est requis"
+
+#: network-utilities/gnome-remote-shell.c:423
+msgid "A user name is required for SSH"
+msgstr "Un nom d'utilisateur est requis pour SSH"
+
+#: network-utilities/gnome-remote-shell.c:501
+msgid "There is a command line error"
+msgstr "Erreur de ligne de commande"
+
+#: network-utilities/gnome-remote-shell.c:550
+msgid "The host cannot be found"
+msgstr "L'hôte ne peut être trouvé"
+
+#: network-utilities/gnome-remote-shell.glade.h:3
+msgid "<span weight=\"bold\">Connect to remote host</span>"
+msgstr "<span weight=\"bold\">Se connecter à un hôte distant</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:4
+msgid "<span weight=\"bold\">Method</span>"
+msgstr "<span weight=\"bold\">Méthode</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:5
+msgid "<span weight=\"bold\">Window size</span>"
+msgstr "<span weight=\"bold\">Taille de la fenêtre</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:7
+msgid "Connect to remote host"
+msgstr "Se connecter à un hôte distant"
+
+#: network-utilities/gnome-remote-shell.glade.h:8
+msgid "H_eight:"
+msgstr "H_auteur :"
+
+#: network-utilities/gnome-remote-shell.glade.h:9
+msgid "H_ost:"
+msgstr "_Hôte :"
+
+#: network-utilities/gnome-remote-shell.glade.h:10
+msgid "Regular shell (_Telnet)"
+msgstr "Shell normal (_Telnet)"
+
+#: network-utilities/gnome-remote-shell.glade.h:11
+msgid "Use _default"
+msgstr "Utiliser les valeurs par _défauts"
+
+#: network-utilities/gnome-remote-shell.glade.h:12
+msgid "_Contents"
+msgstr "_Sommaire"
+
+#: network-utilities/gnome-remote-shell.glade.h:13
+msgid "_Port:"
+msgstr "_Port :"
+
+#: network-utilities/gnome-remote-shell.glade.h:14
+msgid "_Secure shell (SSH)"
+msgstr "Shell _sécurisé (SSH)"
+
+#: network-utilities/gnome-remote-shell.glade.h:15
+msgid "_Shell"
+msgstr "_Shell"
+
+#: network-utilities/gnome-remote-shell.glade.h:16
+msgid "_User:"
+msgstr "_Utilisateur :"
+
+#: network-utilities/gnome-remote-shell.glade.h:17
+msgid "_Width:"
+msgstr "_Largeur :"
+
+#: network-utilities/gnome-remote-shell.glade.h:18
+msgid "characters"
+msgstr "caractères"
+
+#: pws/pws-preferences-support.c:273
+msgid "Expander Size"
+msgstr "Taille de l'étendeur"
+
+#: pws/pws-preferences-support.c:274
+msgid "Size of the expander arrow"
+msgstr "Taille de la flèche de l'étendeur"
+
+#: pws/pws-preferences-widget.c:112
+msgid "Web folder:"
+msgstr "Dossier web :"
+
+#: pws/pws-preferences-widget.c:116
+msgid "Select the folder to be published"
+msgstr "Sélectionnez le dossier à publier"
+
+#. Server status
+#: pws/pws-preferences-widget.c:125
+msgid "Enable web server"
+msgstr "Activer le serveur web"
+
+#. Additional options
+#: pws/pws-preferences-widget.c:133 pws/pws-preferences-widget.c:134
+msgid "Additional options"
+msgstr "Options additionnelles"
+
+#: pws/pws-preferences-widget.c:156
+msgid "Port number:"
+msgstr "Numéros de port :"
+
+#: pws/pws-preferences-widget.c:175
+msgid "Time out:"
+msgstr "Délai :"
+
+#: pws/pws-preferences-widget.c:194
+msgid "Keep alive"
+msgstr "Conserver vivant"
+
+#: pws/pws.c:86
+msgid "/_Open Web Folder"
+msgstr "/_Ouvrir le dosser web"
+
+#: pws/pws.c:179
+msgid "Personal web server preferences"
+msgstr "Préférences du serveur web personnel"
+
+#: pws/pws.c:194
+msgid "Personal Web Server Preferences"
+msgstr "Préférences du serveur web personnel"
+
+#: pws/pws.c:195
+msgid "Setup the options for your personal web server."
+msgstr "Paramétrer les options pour votre serveur web personnel."
+
+#: sync/entryconfigdialog.c:70
+msgid "Could not load UI for entry configuration dialog"
+msgstr "Ne peut charger l'interface utilisateur pour l'entrée de confguration"
+
+#: sync/entryconfigdialog.glade.h:2
+msgid "Entry name"
+msgstr "Entrée du nom"
+
+#: sync/entryconfigdialog.glade.h:3
+msgid "Local path"
+msgstr "Chemin local"
+
+#: sync/entryconfigdialog.glade.h:4
+msgid "Preserve group"
+msgstr "Préserver le groupe"
+
+#: sync/entryconfigdialog.glade.h:5
+msgid "Preserve permissions"
+msgstr "Préserver les permissions"
+
+#: sync/entryconfigdialog.glade.h:6
+msgid "Preserve times"
+msgstr "Préserver les dates"
+
+#: sync/entryconfigdialog.glade.h:7
+msgid "Recurse into directories"
+msgstr "Parcourir récursivement les répertoires"
+
+#: sync/entryconfigdialog.glade.h:8
+msgid "Remote host"
+msgstr "Hôte distant"
+
+#: sync/entryconfigdialog.glade.h:9
+msgid "Remote path"
+msgstr "Chemin distant"
+
+#: sync/entryconfigdialog.glade.h:10
+msgid "Synchronization options"
+msgstr "Options de synchronisation"
+
+#: sync/entryconfigdialog.glade.h:11
+msgid "Update only (don't overwrite newer files)"
+msgstr "Mise à jour uniquement (ne pas écraser les nouveaux fichier)"
+
+#: sync/entryconfigdialog.glade.h:12
+msgid "Use relative path names"
+msgstr "Utiliser les noms de chemin relatifs"
+
+#: sync/entryconfigdialog.glade.h:13
+msgid "Use rsync"
+msgstr "Utiliser rsync"
+
+#: sync/entryconfigdialog.glade.h:14
+msgid "Use unison"
+msgstr "Utiliser unison"
+
+#: sync/entryconfigdialog.glade.h:15
+msgid "dialog1"
+msgstr "dialogue1"
+
+#: sync/entryconfigdialog.glade.h:16
+msgid "rsync"
+msgstr "rsync"
+
+#: sync/entryconfigdialog.glade.h:17
+msgid "unison"
+msgstr "unison"
+
+#: sync/entrylist.c:70
+msgid "Local"
+msgstr "Local"
+
+#: sync/entrylist.c:73
+msgid "Remote"
+msgstr "Distant"
+
+#: sync/entrylist.c:76
+msgid "Last sync"
+msgstr "Dernière sync"
+
+#: sync/main.c:44
+msgid "_Synchronize"
+msgstr "_Synchroniser"
+
+#: sync/main.c:55
+msgid "New entry..."
+msgstr "Nouvelle entrée..."
+
+#: sync/main.c:57 sync/main.c:171
+msgid "Edit..."
+msgstr "Éditer..."
+
+#: sync/main.c:75 sync/main.c:181
+msgid "Synchronize"
+msgstr "Synchroniser"
+
+#: sync/main.c:103
+msgid "Gnome Synchronize"
+msgstr "Gnome Synchronize"
+
+#: sync/main.c:105
+msgid "The GNOME file synchronization program."
+msgstr "Le programme de synchronisation de fichiers Gnome."
+
+#: sync/main.c:176
+msgid "New"
+msgstr "Nouveau"
+
+#: sync/main.c:177
+msgid "Create new synchronization entry"
+msgstr "Créer une nouvelle entrée de synchronisation"
+
+#: sync/main.c:182
+msgid "Start synchronization for selected entries"
+msgstr "Lancer la synchronisation pour les entrées selectionnées"
+
+#: sync/main.c:185
+msgid "Edit"
+msgstr "Éditer..."
+
+#: sync/main.c:186
+msgid "Edit selected entry"
+msgstr "Éditer l'entrée selectionnée"
+
+#: sync/main.c:189
+msgid "Delete"
+msgstr "Supprimer"
+
+#: sync/main.c:190
+msgid "Delete selected entries"
+msgstr "Supprimer les entrées selectionnées"
+
+#~ msgid "No host specified."
+#~ msgstr "Aucun hôte spécifié."
+
+#~ msgid "You don't have the Xnest program installed in the system"
+#~ msgstr "Vous n'avez pas le programme Xnest installé sur votre système"
+
+#~ msgid "You have to specify at least a host or display name"
+#~ msgstr "Vous devez spécifier au moins un hôte ou un nom à afficher"
+
+#~ msgid "You don't have a VNC viewer installed in the system"
+#~ msgstr "Vous n'avez pas de visionneur VNC installé sur votre système"
+
+#~ msgid "Could not load UI for remote desktop client"
+#~ msgstr ""
+#~ "Impossible de charger d'interface utilisateur pour le bureau distant"
+
+#~ msgid "User_Configuration"
+#~ msgstr "_Configuration utilisateur"
+
+#~ msgid "Evolution_Data"
+#~ msgstr "Données _Evolution"
+
+#~ msgid "Backup to file"
+#~ msgstr "Sauvegarder dans un fichier"
+
+#~ msgid "Items"
+#~ msgstr "Éléments"
+
+#~ msgid "Size"
+#~ msgstr "Taille"
+
+#~ msgid "Last backed up"
+#~ msgstr "Dernière sauvegarde le"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>Destination</b>"
+
+#~ msgid "<b>General Options</b>"
+#~ msgstr "<b>Options générales</b>"
+
+#~ msgid "Compress file"
+#~ msgstr "Comprimer le fichier"
+
+#~ msgid "Local file"
+#~ msgstr "Fichier local"
+
+#~ msgid "Remote file"
+#~ msgstr "Fichier distant"
+
+#~ msgid "Copyright (C) 2003 Rodrigo Moya"
+#~ msgstr "Copyright (C) 2003 Rodrigo Moya"
+
+#~ msgid "Backup client tool for GNOME"
+#~ msgstr "Outil client de sauvegarde pour GNOME"
+
+#~ msgid "Backup options"
+#~ msgstr "Options de sauvegarde"
+
+#~ msgid "/_File"
+#~ msgstr "/_Fichier"
+
+#~ msgid "/File/_New"
+#~ msgstr "/Fichier/_Nouveau"
+
+#~ msgid "<control>N"
+#~ msgstr "<controle>N"
+
+#~ msgid "/File/sep1"
+#~ msgstr "/Fichier/sep1"
+
+#~ msgid "<control>Q"
+#~ msgstr "<controle>Q"
+
+#~ msgid "/_Edit"
+#~ msgstr "/_Édition"
+
+#~ msgid "/Edit/_Properties"
+#~ msgstr "/Édition/_Propriétés"
+
+#~ msgid "/Edit/_Delete"
+#~ msgstr "/Édition/_Supprimer"
+
+#~ msgid "<control>D"
+#~ msgstr "<controle>D"
+
+#~ msgid "/Edit/sep1"
+#~ msgstr "/Édition/sep1"
+
+#~ msgid "/_Help"
+#~ msgstr "/_Aide"
+
+#~ msgid "/Help/_About"
+#~ msgstr "/Aide/À _propos"
+
+#~ msgid "Select backup destination"
+#~ msgstr "Sélectionner la destination de la sauvegarde"
+
+#~ msgid "Set options for selected backup destination"
+#~ msgstr ""
+#~ "Définir les options pour les destinations de sauvegarde sélectionnées"
+
+#~ msgid "Create a new set of files to be backed up"
+#~ msgstr "Créer un nouveau jeu de fichiers à sauvegarder"
+
+#~ msgid "Edit properties for selection"
+#~ msgstr "Éditer les propriétes de la sélection"
+
+#~ msgid "Files"
+#~ msgstr "Fichiers"
+
+#~ msgid "<b>Connection settings</b>"
+#~ msgstr "<b>Paramètres de connexion</b>"
+
+#~ msgid "<b>Method</b>"
+#~ msgstr "<b>Méthode</b>"
+
+#~ msgid "Host"
+#~ msgstr "Hôte"
+
+#~ msgid "For example: www.domain.com or 192.168.2.1"
+#~ msgstr "Par exemple : www.domaine.com ou 192.168.2.1"
+
+#~ msgid "Traceroute"
+#~ msgstr "Traceroute"
+
+#~ msgid "open"
+#~ msgstr "ouvrir"
+
+#~ msgid "(for instance: 192.168.2.1 or www.domain.com)"
+#~ msgstr "(par exemple : 192.168.2.1 ou www.domaine.com)"
+
+#~ msgid "Enter the target Internet address to check for activity and delay"
+#~ msgstr ""
+#~ "Saisisser l'adresse Internet cible pour vérifier l'activité et le retard"
+
+#~ msgid "Enter the target Internet address to scan for services running"
+#~ msgstr ""
+#~ "Saisisser l'adresse Internet cible à scanner afin de connaître les "
+#~ "services actifs"
+
+#~ msgid "Enter the target Internet address to trace the route in Internet"
+#~ msgstr ""
+#~ "Saisisser l'adresse Internet cible pour tracer sa route dans Internet"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistiques"
+
+#~ msgid "Transmission"
+#~ msgstr "Transmission"
+
+#~ msgid "View information of routing table"
+#~ msgstr "Voir les informations de la table de routage"
+
+#~ msgid "Method"
+#~ msgstr "Méthode"
+
+#~ msgid "Terminal Window"
+#~ msgstr "Fenêtre de terminal"
+
+#~ msgid "<b>About GNOME Remote Desktop</b>"
+#~ msgstr "<b>À propos de GNOME Bureau à distance</b>"
+
+#~ msgid ""
+#~ "GNOME Remote Desktop\n"
+#~ "By Rodrigo Moya <rodrigo@gnome-db.org>\n"
+#~ "Copyright 2002. All Rights Reserved.\n"
+#~ "\n"
+#~ "GNOME Remote Desktop lets you connect to remote desktops by using many "
+#~ "different available protocols, such as UNIX's X11 or VNC.\n"
+#~ "\n"
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version.\n"
+#~ "\n"
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details.\n"
+#~ "\n"
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "59 Temple Place, Suite 330, Boston, MA  02111-1307  USA\n"
+#~ msgstr ""
+#~ "GNOME Bureau à distance\n"
+#~ "de Rodrigo Moya <rodrigo@gnome-db.org>\n"
+#~ "Copyright 2002. Tous droits réservés.\n"
+#~ "\n"
+#~ "GNOME Bureau à distance vous permet de vous connecter à des bureaux à "
+#~ "distance grâce à l'utilisation de différents protocoles disponibles comme "
+#~ "le X11 de UNIX ou VNC.\n"
+#~ "\n"
+#~ "Ce logiciel est un logiciel libre ; vous pouvez le diffuser et/ou le "
+#~ "modifier suivant les termes de la Licence Publique Générale GNU telle que "
+#~ "publiée par la Free Software Foundation ; soit la version 2 de cette "
+#~ "licence, soit (à votre convenance) une version ultérieure.\n"
+#~ "\n"
+#~ "Ce programme est diffusé dans l'espoir qu'il sera utile, mais SANS AUCUNE "
+#~ "GARANTIE ; sans même une garantie implicite de COMMERCIALISABILITÉ ou "
+#~ "d'ADÉQUATION À UN USAGE PARTICULIER. Voyez la Licence Publique Générale "
+#~ "GNU pour plus de détails.\n"
+#~ "\n"
+#~ "Vous devriez avoir reçu une copie de la Licence Publique Générale GNU "
+#~ "avec ce programme ; sinon, veuillez écrire à la Free Software Foundation, "
+#~ "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, États-Unis.\n"
+
+#~ msgid "Only one connection allowed.\n"
+#~ msgstr "Une seule connexion est possible.\n"
+
+#~ msgid "Fullscreen updates are disabled"
+#~ msgstr "Les mises à jour en mode plein écran sont déactivées"
+
+#~ msgid "RFB server already initialized"
+#~ msgstr "Le serveur RFB est déjà initialisé"
+
+#~ msgid "Display does not support the XTest extension"
+#~ msgstr "L'affichage ne supporte pas l'extention XTest"
+
+#~ msgid "Display does not support XShm extension (must be local)"
+#~ msgstr "L'affichage ne supporte pas l'extention XShl (doit être en local)"
+
+#~ msgid "GNOME Talk"
+#~ msgstr "GNOME Talk"
+
+#~ msgid "The GNOME talk program."
+#~ msgstr "Le programme GNOME talk."
+
+#~ msgid "Terminates this talk session"
+#~ msgstr "Terminer cette session talk"
+
+#~ msgid "Info about this program"
+#~ msgstr "Informations à propos de ce programme"
+
+#~ msgid "_Talk"
+#~ msgstr "_Parler"
+
+#~ msgid "Talking to "
+#~ msgstr "En conversation avec "
+
+#~ msgid "Talk"
+#~ msgstr "Parler"
+
+#~ msgid "Talk to"
+#~ msgstr "Parler à"
+
+#~ msgid "Specify TTY"
+#~ msgstr "Spécifier le Terminal"
+
+#~ msgid "Failed to find the address for this host"
+#~ msgstr "Échec de la recherche de l'adresse pour cet hôte"
+
+#~ msgid "Talk progress"
+#~ msgstr "État du de la conversation"
+
+#~ msgid "could not create socket"
+#~ msgstr "could not create socket"
+
+#~ msgid "init_control_socket: could not bind()"
+#~ msgstr "init_control_socket: could not bind()"
+
+#~ msgid "getsockname() failed"
+#~ msgstr "getsockname() failed"
+
+#~ msgid "could not bind ()"
+#~ msgstr "could not bind ()"
+
+#~ msgid "Error sending"
+#~ msgstr "Erreur d'envoi"
+
+#~ msgid "Error when reading from talk daemon"
+#~ msgstr "Erreur lors de la lecture des données"
+
+#~ msgid "Error trying to listen for caller"
+#~ msgstr "Erreur lors de l'attente d'une connection"
+
+#~ msgid "Trying to connect to your party's talk daemon"
+#~ msgstr "Tentative de connection avec votre correspondant"
+
+#~ msgid "Unable to connect with your party"
+#~ msgstr "Impossible de joindre votre correspondant"
+
+#~ msgid "Waiting for your party to respond"
+#~ msgstr "Attente de la réponse de votre correspondant"
+
+#~ msgid "CANCEL CALLBACK:Answer:%d\n"
+#~ msgstr "CANCEL CALLBACK:Answer:%d\n"
+
+#~ msgid "Your party is not logged on"
+#~ msgstr "Votre correspondant n'est pas connecté"
+
+#~ msgid "Target machine is too confused to talk to us"
+#~ msgstr "Target machine is too confused to talk to us"
+
+#~ msgid "Target machine does not recognize us"
+#~ msgstr "La machine cible n'a pas pu nous identifier"
+
+#~ msgid "Your party is refusing messages"
+#~ msgstr "Votre correspondant refuse les messages"
+
+#~ msgid "Target machine can not handle remote talk"
+#~ msgstr "La machine cible ne peut utiliser ce protocole"
+
+#~ msgid "Target machine indicates protocol mismatch"
+#~ msgstr "La machine cible indique un désacord de protocole"
+
+#~ msgid "Target machine indicates protocol botch (addr)"
+#~ msgstr "Target machine indicates protocol botch (addr)"
+
+#~ msgid "Target machine indicates protocol botch (ctl_addr)"
+#~ msgstr "Target machine indicates protocol botch (ctl_addr)"
+
+#~ msgid "Error while writing to remote file"
+#~ msgstr "Erreur lors de l'écriture d'un fichier distant"
+
+#~ msgid "Error while writing to local file"
+#~ msgstr "Erreur lors de l'écriture d'un fichier local"
+
+#~ msgid "Error while writing to database file"
+#~ msgstr "Erreur lors de l'écriture dans la base de données"
+
+#~ msgid "Copying from local to remote"
+#~ msgstr "Copie en cours local --> distant"
+
+#~ msgid "Copying from remote to local"
+#~ msgstr "Copieen cours distant --> local"
+
+#~ msgid "Couldn't open file for writing: "
+#~ msgstr "Impossible d'ouvrir le fichier en écriture: "
+
+#~ msgid "Error while reading database file"
+#~ msgstr "Erreur lors de la lecture de la base de données"
+
+#~ msgid "Initial entry"
+#~ msgstr "Entrée initialle"
+
+#~ msgid "Retry"
+#~ msgstr "Re-essayer"
+
+#~ msgid "Immediately synchronize with remote"
+#~ msgstr "Synchronisation immédiate"
+
+#~ msgid "Error while synchronizing database file"
+#~ msgstr "Erreur durant la synchronisation de la base de données"
+
+#~ msgid "Browse..."
+#~ msgstr "Parcourir..."
+
+#~ msgid "New entry"
+#~ msgstr "Nouvelle entrée"
+
+#~ msgid "Both files modified since last synchronization"
+#~ msgstr ""
+#~ "Les deux fichiers ont été modifiés depuis la dernière synchronisation"
+
+#~ msgid "Error while reading local file"
+#~ msgstr "Erreur lors de la lecture d'un fichier local"
+
+#~ msgid "Error while reading remote file"
+#~ msgstr "Erreur lors de la lecture d'un fichier distant"
+
+#~ msgid "Couldn't open remote file for reading"
+#~ msgstr "Impossible d'ouvrir le fichier distant en lecture"
+
+#~ msgid "Couldn't open local file for reading"
+#~ msgstr "Impossible d'ouvrir le fichier local en lecture"
+
+#~ msgid "Both local and remote files are missing"
+#~ msgstr "Les deux fichiers (local et distant) sont manquant"
+
+#~ msgid "Dynamic User Input"
+#~ msgstr "Entrée dynamique par l'utilisateur"
+
+#~ msgid "Prompt for hidden input, enter mnenonic"
+#~ msgstr "Invite pour entrée masquée, entrez un mnémonique"
+
+#~ msgid "This account is in use and cannot be modified."
+#~ msgstr "Ce compte est en cours d'utilisation et ne peut être modifié."
