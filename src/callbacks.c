@@ -335,7 +335,7 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 	{
 		gchar *filename = NULL;
                                                                                 
-		filename = g_build_filename (GNOME_ICONDIR, "gnome-nettool.png", NULL);
+		filename = g_build_filename (PIXMAPS_DIR, "gnome-nettool.png", NULL);
 		if (filename != NULL) {
 			pixbuf = gdk_pixbuf_new_from_file (filename, NULL);
 			g_free (filename);

@@ -67,22 +67,6 @@ AC_SUBST(CFLAGS)
 AC_SUBST(CPPFLAGS)
 AC_SUBST(LDFLAGS)
 
-if test "x${prefix}" = "xNONE"; then
-   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${ac_default_prefix}/share/pixmaps", [Gnome pixmap directory])
-else
-   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${prefix}/share/pixmaps", [Gnome pixmap directory])
-fi 
-
-if test "x${prefix}" = "xNONE"; then
-   AC_DEFINE_UNQUOTED(PIXMAPS_DIR, "${ac_default_prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps", [pixmaps directory])
-   pixmapsdir="${ac_default_prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps"
-else
-   AC_DEFINE_UNQUOTED(PIXMAPS_DIR, "${prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps", [pixmaps directory])
-   pixmapsdir="${prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps"
-fi
-
-AC_SUBST(pixmapsdir)
-
 dnl
 dnl Debugging flags
 dnl
@@ -102,7 +86,5 @@ fi
 AC_OUTPUT([
 Makefile
 po/Makefile.in
-help/Makefile
-help/C/Makefile
 pixmaps/Makefile
 src/Makefile])

@@ -1,5 +1,19 @@
 2004-08-18  Rodrigo Moya <rodrigo@gnome-db.org>
 
+	Fixes #150470
+
+	* configure.in: no need to AC_SUBST(pixmapsdir) here. Removed help/
+	directory from the build until it's ready.
+
+	* pixmaps/Makefile.am: install gnome-nettool.png and define
+	pixmapsdir here.
+
+	* src/Makefile.am: pass -DPIXMAPS_DIR to compiler.
+
+	* src/callbacks.c (on_about_activate): s/GNOME_ICONDIR/PIXMAPS_DIR.
+
+2004-08-18  Rodrigo Moya <rodrigo@gnome-db.org>
+
 	* help/C/*:
 	* help/Makefile.am: added beginning of documentation.
 

@@ -1,9 +1,10 @@
 dialogdir = $(datadir)/$(PACKAGE)/dialogs
 dialog_DATA = gnome-nettool.glade
 
-INCLUDES = 			\
-	-DGNOME_NETTOOL_LOCALEDIR=\""$(datadir)/locale"\" \
-	-DDATADIR=\""$(dialogdir)/"\" \
+INCLUDES = 							\
+	-DGNOME_NETTOOL_LOCALEDIR=\""$(datadir)/locale"\" 	\
+	-DDATADIR=\""$(dialogdir)/"\" 				\
+	-DPIXMAPS_DIR=\""$(datadir)/gnome-nettool/pixmaps"\"	\
 	@NETTOOL_CFLAGS@
 
 LDADD =				\
