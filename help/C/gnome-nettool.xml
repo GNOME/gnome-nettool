@@ -1,0 +1,1616 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "2.5.90">
+  <!ENTITY manrevision "2.7">
+  <!ENTITY date "March 2004">
+  <!ENTITY app "GNOME Nettool">
+]>
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>&app; Manual V&manrevision;</title>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright> 
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher> 
+		<publishername> GNOME Documentation Project </publishername>
+	 </publisher>
+	 &legal; 
+	 <authorgroup> 
+		<author> 
+		  <firstname>Sun </firstname>
+		  <surname>GNOME Documentation Team</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname>
+		  </affiliation>
+		</author>
+		<author> 
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname> 
+		  <affiliation> 
+			 <orgname>GNOME Documentation Project</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author> 
+		<othercredit role="reviewer">
+			<firstname>Baris</firstname> 
+			<surname>Cicek provided information from earlier revisions of the gedit application.</surname> 
+			<contrib>Acknowledgements</contrib>
+      </othercredit>
+		<othercredit role="reviewer">
+			<firstname>Ajit</firstname> 
+			<surname>George provided information about plugins.</surname> 
+			<contrib>Acknowledgements</contrib>
+      </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+   		<revision> 
+		  <revnumber>&app; Manual V&manrevision;</revnumber>
+		  <date>&date;</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision> 
+		  <revnumber>gedit Manual V2.6</revnumber>
+		  <date>September 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision> 
+		  <revnumber>gedit Manual V2.5</revnumber>
+		  <date>March 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision> 
+		  <revnumber>gedit Manual V2.4</revnumber>
+		  <date>January 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision> 
+		  <revnumber>gedit Manual V2.3</revnumber>
+		  <date>September 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision> 
+		  <revnumber>gedit Manual V2.2</revnumber>
+		  <date>August 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision> 
+		  <revnumber>gedit Manual V2.1</revnumber>
+		  <date>June 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision> 
+		  <revnumber>gedit Manual V2.0</revnumber>
+		  <date>March 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision> 
+		  <revnumber>gedit V1.0</revnumber>
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Eric Baudais <email>baudais@okstate.edu</email>
+				</para>
+			 <para role="publisher">GNOME Documentation Project</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo> This manual describes version &appversion; of &app;.
+		</releaseinfo>
+	 <legalnotice> 
+		<title>Feedback</title>
+		<para>To report a bug or make a suggestion regarding the <application>&app;</application> application or this manual, follow the directions in the <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>. 
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+  </articleinfo>
+  <indexterm><primary>gedit</primary></indexterm>
+  <indexterm><primary>text editor</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gedit-intro"> 
+	 <title>Introduction</title>
+	 <para>The <application>&app;</application> application enables you to create and edit text files. You can use <application>&app;</application> plugins to perform a variety of tasks related to text-editing from within the <application>&app;</application> window.</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gedit-getting-started"> 
+	 <title>Getting Started</title>
+
+<!-- ============= To Start gedit ============================ -->
+	 <sect2 id="gedit-to-start"> 
+		<title>To Start &app;</title>
+		<para>You can start <application>&app;</application> in the following ways:</para>
+		<variablelist>
+    		<varlistentry>
+    		<term><guimenu>Applications</guimenu> menu</term>
+    		<listitem>
+    		<para>Choose <menuchoice><guisubmenu>Accessories</guisubmenu><guimenuitem>Text Editor</guimenuitem></menuchoice>. </para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>Command line</term>
+    		<listitem>
+    		<para>Execute the following command: <command>gedit</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+	</sect2>
+	
+	<sect2 id="gedit-when-you-start">
+	
+		<title>When You Start &app;</title>	
+		<para>When you start <application>&app;</application>, the following window is displayed:</para>
+	
+		<figure id="gedit-window"> 
+		  <title>&app; Window</title>
+		  <screenshot> 
+			 <mediaobject> 
+				<imageobject> 
+				  <imagedata fileref="figures/gedit_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Shows gedit main window.</phrase>
+				</textobject> 
+			</mediaobject>
+		  </screenshot>
+		</figure>
+	
+		<para>The <application>&app;</application> window contains the following
+		  elements: </para>
+		<variablelist> 
+		  <varlistentry> <term>Menubar</term> 
+			 <listitem> 
+				<para>The menus on the menubar contain all of the commands you need to work with files in <application>&app;</application>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Toolbar</term> 
+			 <listitem> 
+				<para> The toolbar contains a subset of the commands that you can access from the menubar.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Display area</term> 
+			 <listitem> 
+				<para> The display area contains the text of the file that you are editing. </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Output window</term> 
+			 <listitem> 
+				<para>The output window displays the output returned by the Shell command plugin and the Compare files plugin. </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Statusbar</term> 
+			 <listitem> 
+				<para>The statusbar displays information about current <application>&app;</application> activity and contextual information about the menu items. The statusbar also displays the following information:</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>Cursor position: the line number and column number where the cursor is located.</para>
+		  </listitem>
+		  <listitem>
+		  <para>Edit mode: If the editor is in insert mode, the statusbar contains the text <guilabel>INS</guilabel>. If the editor is in overwrite mode, the statusbar contains the text <guilabel>OVR</guilabel>. Press the <keycap>Insert</keycap> key to change edit mode.</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>When you right-click in the <application>&app;</application> window, the application displays a popup menu. The popup menu contains the most common text editing commands. </para>
+
+      <para>
+        In <application>&app;</application>, you can perform the same action in several ways. For example, you can open a file in the following ways:
+                  <informaltable frame="all">
+                    <tgroup cols="2" colsep="1" rowsep="1">
+                      <colspec colname="COLSPEC0" colwidth="50*"/>
+                      <colspec colname="COLSPEC1" colwidth="50*"/>
+                      <thead>
+                        <row valign="top">
+                          <entry colname="COLSPEC0">
+                            <para>UI Component</para></entry>
+                          <entry colname="COLSPEC1" align="left"> 
+                            <para>Action</para></entry>
+                        </row>
+                      </thead>
+                      <tbody>
+                        <row valign="top">               
+                          <entry><para>Window</para></entry>
+                          <entry><para>Drag a file into the <application>&app;</application> window from another application such as a file manager.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para>Menubar</para></entry>
+                          <entry><para>Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open</guimenuitem></menuchoice>.</para>
+           <para>If you have recently opened the file, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open Recent</guimenuitem></menuchoice>.</para> 
+</entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para>Toolbar</para></entry>
+                          <entry><para>Click on the <guibutton>Open</guibutton> toolbar button.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para>Right-click popup menu</para></entry>
+                          <entry><para>Right-click on the file in a file manager window, then choose <guilabel>Open With</guilabel> from the popup menu. </para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para>Shortcut keys</para></entry>
+                          <entry><para>Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para></entry>
+                        </row>
+                      </tbody>
+                    </tgroup>
+                  </informaltable>
+      </para>
+      <para>
+      This manual documents functionality from the menubar.
+      </para>
+	 </sect2>
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="gedit-open-file"> 
+		<title>To Open a File</title>
+		<para>To open a file, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open</guimenuitem></menuchoice> to display the <guilabel>Open File</guilabel> dialog. Select the file that you want to open, then click <guibutton>Open</guibutton>. The file is displayed in the <application>&app;</application> window. </para>
+		<para>You can open multiple files in <application>&app;</application>. The application displays one file at a time in the application window. The application adds a tab for each open file to the window. To display another open file, click on the tab that corresponds to the file. To create a new <application> &app;</application> window for each file that is open, drag the tab corresponding to each file to the desktop background. </para>
+                  <para>You can also use the <guimenu>Documents</guimenu> menu to move between the open files. You can choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Move to New Window</guimenuitem> </menuchoice> to move a document to a new <application> &app;</application> window.
+</para>
+		<para>The application records the paths and filenames of the five most recent files that you edited and displays the files as menu items on the <menuchoice><guimenu>File</guimenu></menuchoice> menu. You can also click on the <inlinemediaobject><imageobject><imagedata fileref="figures/gedit_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>Shows Recent Files menu icon.</phrase></textobject></inlinemediaobject>  icon on the toolbar to display the list of recent files.  </para>
+	 </sect2>
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="gedit-run-from-cmd-line"> 
+		<title>To Open Multiple Files from a Command Line</title>
+		<para>You can run <application>&app;</application> from a command line and open a single file or multiple files. To open multiple files from a command line, type the following command, then press <keycap>Return</keycap>:</para>
+		<para><command>gedit <replaceable>file1.txt file2.txt file3.txt</replaceable></command></para>
+		<para>When the application starts, the files that you specify are displayed in the <application>&app;</application> window.</para>
+                <para>For more information on how to run <application>&app;</application> from a command line, see <ulink url="man:gedit" type="man"><citerefentry><refentrytitle>&app;</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="gedit-usage"> 
+	 <title>Usage</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="gedit-create-new-file"> 
+		<title>To Create a New File</title>
+		<para>To create a new file, choose <menuchoice><guimenu>File</guimenu><guimenuitem>New</guimenuitem></menuchoice>. The application displays a new file in the <application>&app;</application> window.</para>
+	 </sect2>
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="gedit-save-file"> 
+		<title>To Save a File</title>
+		<para>You can save files in the following ways:</para>
+		<itemizedlist> 
+		  <listitem><para>To save changes to an existing file, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Save</guimenuitem></menuchoice>. </para>
+		  </listitem>
+		  <listitem><para>To save a new file or to save an existing file under a new filename, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save As</guimenuitem> </menuchoice>. Enter a name for the file in the <guilabel>Save As</guilabel> dialog, then click <guibutton>Save</guibutton>. </para>
+		  </listitem>
+		  <listitem><para>To save all of the files that are currently open in <application>&app;</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Save All</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>To close all of the files that are currently open in <application>&app;</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Close All</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="gedit-edit-text"> 
+		<title>To Edit Text</title>
+		<para>You can edit the text of a file in the following ways:</para>
+		<itemizedlist> 
+		  <listitem><para>Type new text from the keyboard. </para>
+		  </listitem>
+		  <listitem><para>To copy the selected text to a buffer, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>To delete the selected text from the file and move the selected text to a buffer, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>To permanently delete the selected text from the file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Delete</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>To insert the contents of the buffer at the cursor position, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem> </menuchoice>. You must cut or copy text before you can paste text into the file.</para>
+		  </listitem>
+		  <listitem><para>To select all of the text in a file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem> </menuchoice>. </para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="gedit-undo-redo-edits"> 
+		<title>To Undo or Redo Edits</title>
+		<para>To undo an edit, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem> </menuchoice>. To redo an edit, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem> </menuchoice>. The number of previous edits that you can undo is determined by the <guilabel>Undo</guilabel> limit setting in the <xref linkend="gedit-prefs-editor"/> tabbed section of the <guilabel>Preferences</guilabel> dialog.  </para>
+	 </sect2>
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="gedit-find-text"> 
+		<title>To Find Text</title>
+		<para>To search a file for a string, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice> to display the <guilabel>Find</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Type the string that you want to find, in the <guilabel>Search for</guilabel> field.</para>
+                  <para>You can include the following escape sequences:</para>
+			 <itemizedlist> 
+				<listitem>
+                                   <para><literal>\n</literal></para>
+                                   <para>Use this escape sequence to specify a new line.</para>
+				</listitem>
+				<listitem>
+                                   <para><literal>\t</literal></para>
+                                   <para>Use this escape sequence to specify a tab character.</para>
+				</listitem>
+				<listitem>
+                                   <para><literal>\r</literal></para>
+                                   <para>Use this escape sequence to specify a carriage return.</para>
+				</listitem>
+			 </itemizedlist> 
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Match case</guilabel> option to only find occurrences of the string that match the case of the text that you type. </para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Match entire word only</guilabel> option to only find occurrences of the string that match the entire words of the text that you type. </para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Search backwards</guilabel> option to search backwards to the beginning of the file. </para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Wrap around</guilabel> option to search to one end of the file and then continue the search from the other end of the file. </para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Find</guibutton> to search the file for the first occurrence of the string. If <application>&app;</application> finds the string, the application moves the cursor to the string, and selects the string.</para>
+		  </listitem>
+		  <listitem><para>To find the next occurrence of the string, click <guibutton>Find</guibutton> or choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice>. To find the previous occurrence of the string, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>To finish the search, click <guibutton>Close</guibutton>. </para>
+		  </listitem>
+		</orderedlist>
+	 </sect2>
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="gedit-find-replace-text"> 
+		<title>To Find and Replace Text</title>
+		<para>To search a file for a string, and replace the string with an alternative string, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Replace</guimenuitem> </menuchoice> to display the <guilabel>Replace</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Type the string that you want to find, in the <guilabel>Search for</guilabel> field. </para>
+                  <para>You can include the following escape sequences:</para>
+			 <itemizedlist> 
+				<listitem>
+                                   <para><literal>\n</literal></para>
+                                   <para>Use this escape sequence to specify a new line.</para>
+				</listitem>
+				<listitem>
+                                   <para><literal>\t</literal></para>
+                                   <para>Use this escape sequence to specify a tab character.</para>
+				</listitem>
+				<listitem>
+                                   <para><literal>\r</literal></para>
+                                   <para>Use this escape sequence to specify a carriage return.</para>
+				</listitem>
+			 </itemizedlist> 
+		  </listitem>
+		  <listitem><para>Type the string that you want to use to replace the string that you find, in the <guilabel>Replace with</guilabel> field.</para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Match case</guilabel> option to only find occurrences of the string that match the case of the text that you enter. </para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Match entire word only</guilabel> option to only find occurrences of the string that match the entire words of the text that you type. </para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Search backwards</guilabel> option to search backwards to the beginning of the file. </para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Wrap around</guilabel> option to search to one end of the file and then continue the search from the other end of the file. </para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Find</guibutton> to search the file for the first occurrence of the string. If <application>&app;</application> finds the string, the application moves the cursor to the string, and selects the string. </para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Replace</guibutton> to replace the occurrence of the string with the text in the <guilabel>Replace with</guilabel> field. Click <guibutton>Replace All</guibutton> to replace all occurrences of the string.</para>
+		  </listitem>
+		  <listitem><para>To find the next occurrence of the string, click <guibutton>Find</guibutton>.</para>
+		  </listitem>
+		  <listitem><para>To finish the search, click <guibutton>Close</guibutton>. </para>
+		  </listitem>
+		</orderedlist>
+	 </sect2>
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="gedit-open-from-uri"> 
+		<title>To Open a File from a URI</title>
+		<para>To open a file from a Uniform Resource Identifier (URI), perform the following steps:</para>
+		<orderedlist>
+		<listitem>
+		<para>Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Open Location</guimenuitem> </menuchoice> to display the <guilabel>Open Location</guilabel> dialog. </para>
+		</listitem>
+		<listitem>
+		<para>Enter the URI of the file that you want to open.</para>
+		</listitem>
+		<listitem>
+		<para>Use the <guilabel>Character coding</guilabel> drop-down list to select the appropriate character coding. </para>
+		</listitem>
+		<listitem>
+		<para>Click <guibutton>Open</guibutton>.</para>
+		</listitem>
+		</orderedlist>
+		<para>Alternatively, type <command>gedit <replaceable>URI</replaceable></command> at a command line, where <replaceable>URI</replaceable> is the URI of the file that you want to open, then press <keycap>Return</keycap>. Valid types of <replaceable>URI</replaceable> include <literal>http:</literal>, <literal>ftp:</literal>, <literal>file:</literal>, and all of the methods supported by <literal>gnome-vfs</literal>.</para>
+		<para>The application opens the file located at the URI in read-only mode.</para>
+	 </sect2>	 
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="gedit-pipe-output"> 
+		<title>To Pipe the Output of a Command to a File</title>
+		<para>You can use <application>&app;</application> to pipe the output of a command to a text file. For example, to pipe the output of an <command>ls</command> command to a text file, type <command>ls | gedit</command>, then press <keycap>Return</keycap>.</para>
+		<para>The output of the <command>ls</command> command is displayed in a new text file in the <application>&app;</application> window.</para>
+		<para>Alternatively, you can use the Shell command plugin to pipe command output to the current file. For information about how to use the Shell command plugin, see <xref linkend="gedit-shell-command-plugin"/>.</para>
+	 </sect2>
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+	 <sect2 id="gedit-goto-line"> 
+		<title>To Position the Cursor on a Specific Line</title>
+		<para>To position the cursor on a specific line in the current file, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Go to Line</guimenuitem> </menuchoice> to display the <guilabel>Go to Line</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Type the number of the line that you want to move the cursor to in the <guilabel>Line number</guilabel> field.</para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Go to Line</guibutton>. The application moves the cursor to the line number that you specify.</para>
+		  </listitem>
+		  <listitem><para>To close the <guilabel>Go to Line</guilabel> dialog, click <guibutton>Close</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+	 </sect2>
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="gedit-page-setup"> 
+		<title>To Set the Page Options</title>
+		  
+		<para>To set the page options, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Page Setup</guimenuitem> </menuchoice> to display the <guilabel>Page Setup</guilabel> dialog.</para>
+				
+		<para>The <guilabel>Page Setup</guilabel> dialog enables you to specify the following print options:</para>
+		
+		<sect3 id="gedit-page-setup-general">
+		<title>General Tabbed Section</title>
+	 	<variablelist> 
+		  <varlistentry> <term><guilabel>Print syntax highlighting</guilabel> </term> 
+			 <listitem> 
+				<para>Select this option to print syntax highlighting. For more information about syntax highlighting, see <xref linkend="gedit-set-highlightmode"/>.  </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Print page headers</guilabel> </term> 
+			 <listitem> 
+				<para>Select this option to include a header on each page that you print. You cannot configure the header. </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Line Numbers</guilabel>
+			 </term> 
+			 <listitem> 
+				<para>Select the <guilabel>Print line numbers</guilabel> option to include line numbers when you print a file. </para>
+				<para>Use the <guilabel>Number every ... lines </guilabel> spin box to specify how often to print the line numbers, for example every 5 lines, every 10 lines, and so on. </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Text Wrapping</guilabel> </term> 
+			 <listitem> 
+                            <para>Select the <guilabel>Enable text wrapping</guilabel> option to wrap text onto the next line, at a character level, when you print a file. The application counts wrapped lines as one line for line numbering purposes.
+				  </para>
+				<para>Select the <guilabel>Do not split words over two lines</guilabel> option to wrap text onto the next line, at a word level, when you print a file.
+				  </para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+		
+		<sect3 id="gedit-page-setup-fonts">
+	 		<title>Fonts</title>
+	 	<variablelist> 
+		  <varlistentry> <term><guilabel>Body</guilabel> </term> 
+			 <listitem> 
+				<para>Click on this button to select the font to use to print the body text of a file.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Line numbers</guilabel>
+			 </term> 
+			 <listitem> 
+				<para>Click on this button to select the font to use to print line numbers.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Headers and footers</guilabel> </term> 
+			 <listitem> 
+				<para>Click on this button to select the font to use to print the headers and footers in a file.  </para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>To reset the fonts to the default fonts for printing a file from <application>&app;</application>, click <guibutton>Restore Default Fonts</guibutton>.</para>
+		</sect3>
+		
+	 </sect2>
+	 
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="gedit-print-file"> 
+		<title>To Print a File</title>
+		<para>You can use <application>&app;</application> to perform the following print operations:</para>
+		<itemizedlist> 
+		  <listitem><para>Print a file to a printer. </para>
+		  </listitem>
+		  <listitem><para>Print the output of the print command to a file.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>If you print to a file, <application>&app;</application> sends the output of the file to a pre-press format file. The most common pre-press formats are PostScript and Portable Document Format (PDF).</para>
+		  
+		<para>To preview the pages that you want to print, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print Preview</guimenuitem> </menuchoice>.</para>
+		  
+		<para>To print the current file to a printer or a file, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice> to display the <guilabel>Print</guilabel> dialog.</para>
+				
+		<para>The <guilabel>Print</guilabel> dialog enables you to specify the following print options:</para>
+		
+		<sect3 id="print-dialog-job">
+		<title>Job Tabbed Section</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>Print range</guilabel> </term> 
+			 <listitem> 
+				<para>Select one of the following options to determine how many pages to print:</para>
+				<itemizedlist>
+				<listitem>
+				<para><guilabel>All</guilabel></para>
+				<para>Select this option to print all of the pages in the file.</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>Lines</guilabel></para>
+				<para>Select this option to print the specified lines only. Use the <guilabel>From</guilabel> and <guilabel>To</guilabel> spin boxes to specify the line range.</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>Selection</guilabel></para>
+				<para>Select this option to print the selected text only. This option is only available if you select text.</para>
+				</listitem>
+								
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Copies</guilabel> </term> 
+			 <listitem> 
+				<para>Use the <guilabel>Number of copies</guilabel> spin box to specify the number of copies of the file that you want to print.</para>
+				<para>If you print multiple copies of the file, select the <guilabel>Collate</guilabel> option to collate the printed copies.</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+		
+		<sect3 id="print-dialog-printer">
+		<title>Printer Tabbed Section</title>
+	<variablelist>
+	  <varlistentry> <term><guilabel>Printer</guilabel> </term> 
+	    <listitem> 
+	      <para>Use this drop-down list to select the printer to which you want to print the file.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Settings</guilabel> </term> 
+	    <listitem> 
+	      <para>Use this drop-down list to select the printer settings. 
+              </para>
+	      <para>To configure the printer, click <guibutton>Configure</guibutton>. For example, you can enable or disable duplex printing, or schedule delayed printing, if this functionality is supported by the printer.
+              </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Location</guilabel> </term> 
+	    <listitem> 
+	      <para>
+                Use this drop-down list to select one of the following print destinations: 
+	      </para>
+	      <variablelist>
+	        <varlistentry>
+	          <term><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>
+                      Print the file to a CUPS printer. 
+	            </para>
+	            <note>
+	              <para>
+                        If the selected printer is a CUPS printer, <guilabel>CUPS</guilabel> is the only entry in this drop-down list. 
+	              </para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>
+                      Print the file to a printer. 
+	            </para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>
+                      Print the file to a PostScript file. 
+	            </para>
+	            <para>
+                      Click <guibutton>Save As</guibutton> to display a dialog where you specify the name and location of the PostScript file.
+	            </para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>
+                      Use the specified command to print the file.
+	            </para>
+	            <para>
+                      Type the name of the command in the text box. Include all command-line arguments.
+	            </para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>State</guilabel> </term> 
+	    <listitem> 
+	      <para>This functionality is not supported in this version of &app;.
+              </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Type</guilabel> </term> 
+	    <listitem> 
+	      <para>This functionality is not supported in this version of &app;.
+              </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Comment</guilabel> </term> 
+	    <listitem> 
+	      <para>This functionality is not supported in this version of &app;.
+              </para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>Paper Tabbed Section</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>Paper size</guilabel> </term> 
+			 <listitem> 
+				<para>Use this drop-down list to select the size of the paper to which you want to print the file.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Width</guilabel> </term> 
+			 <listitem> 
+				<para>Use this spin box to specify the width of the paper. Use the adjacent drop-down list to change the measurement unit.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Height</guilabel> </term> 
+			 <listitem> 
+				<para>Use this spin box to specify the height of the paper.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Feed orientation</guilabel> </term> 
+			 <listitem> 
+				<para>Use this drop-down list to select the orientation of the paper in the printer.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Page orientation</guilabel> </term> 
+			 <listitem> 
+				<para>Use this drop-down list to select the page orientation.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Layout</guilabel> </term> 
+			 <listitem> 
+				<para>Use this drop-down list to select the page layout. A preview of each layout that you select is displayed in the <guilabel>Preview</guilabel> area.</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term><guilabel>Paper tray</guilabel> </term>
+            <listitem>
+              <para>Use this drop-down list to select the paper tray.
+              </para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+		
+	 </sect2>
+
+	 <sect2 id="gedit-customize-toolbar">
+	 <title>To Customize the Toolbar</title>
+	 <para>To display or hide the toolbar, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Toolbar</guimenuitem> </menuchoice>. To customize how <application>&app;</application> displays the toolbar, choose <menuchoice> <guimenu>View</guimenu> <guisubmenu>Customize Toolbar</guisubmenu> </menuchoice>, then select one of the following menu items:</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para><guimenuitem>Desktop Default</guimenuitem></para>
+		  <para>Display the default toolbar.</para>
+		  </listitem>
+		  <listitem>
+		  <para><guimenuitem>Icons Only</guimenuitem></para>
+		  <para>Display icons only.</para>
+		  </listitem>
+		  <listitem>
+		  <para><guimenuitem>Text for All Icons</guimenuitem></para>
+		  <para>Display icons, and display text for all icons.</para>
+		  </listitem>
+		  <listitem>
+		  <para><guimenuitem>Text for Important Icons</guimenuitem></para>
+		  <para>Display icons, and display text for the important icons.</para>
+		  </listitem>
+		  </itemizedlist>
+	 <para>To display or hide the output window, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Output Window</guimenuitem> </menuchoice>.</para>
+	 
+	 </sect2>
+
+	 <sect2 id="gedit-set-highlightmode">
+	 <title>To Set the Syntax Highlighting Mode</title>
+	 <para>To set the syntax highlighting mode, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Highlight Mode</guimenuitem> </menuchoice>, then select one of the following menu items:</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term><guimenuitem>Normal</guimenuitem></term>
+		      <listitem>
+		        <para>Do not display any syntax highlighting.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Sources</guisubmenu></term>
+		      <listitem>
+		        <para>Display syntax highlighting to edit source code. Use the <guisubmenu>Sources</guisubmenu> submenu to select one of the following source code types: <guimenuitem>Verilog</guimenuitem>, <guimenuitem>PHP</guimenuitem>, <guimenuitem>SQL</guimenuitem>, <guimenuitem>IDL</guimenuitem>, <guimenuitem>C</guimenuitem>, <guimenuitem>Ada</guimenuitem>, <guimenuitem>C++</guimenuitem>, <guimenuitem>C#</guimenuitem>, or <guimenuitem>Java</guimenuitem>.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Markup</guisubmenu></term>
+		      <listitem>
+		        <para>Display syntax highlighting to edit markup code. Use the <guisubmenu>Markup</guisubmenu> submenu to select one of the following markup code types: <guimenuitem>HTML</guimenuitem>, <guimenuitem>LaTeX</guimenuitem>, or <guimenuitem>XML</guimenuitem>.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Scripts</guisubmenu></term>
+		      <listitem>
+		        <para>Display syntax highlighting to edit script code. Use the <guisubmenu>Scripts</guisubmenu> submenu to select one of the following script code types: <guimenuitem>Python</guimenuitem> or <guimenuitem>Perl</guimenuitem>.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Others</guisubmenu></term>
+		      <listitem>
+		        <para>Display syntax highlighting to edit other types of code. Use the <guisubmenu>Others</guisubmenu> submenu to select one of the following code types: <guimenuitem>MSIL</guimenuitem>, <guimenuitem>gettext translation</guimenuitem>, <guimenuitem>.desktop</guimenuitem>, or <guimenuitem>Diff</guimenuitem>.</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 <para>For more information about how to configure syntax highlighting, see <xref linkend="gedit-prefs-syntax"/>.
+</para>
+	 </sect2>
+	 
+  </sect1>
+<!-- ============= Preferences ============================= -->
+  <sect1 id="gedit-prefs"> 
+	 <title>Preferences</title>
+	   
+	 <para>To configure <application>&app;</application>, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. The <guilabel>Preferences</guilabel> dialog contains the following categories:</para>
+	 <itemizedlist> 
+		<listitem><para><xref linkend="gedit-prefs-editor"/></para></listitem>
+		<listitem><para><xref linkend="gedit-prefs-view"/></para></listitem>
+		<listitem><para><xref linkend="gedit-prefs-fontsandcolors"/></para></listitem>
+		<listitem><para><xref linkend="gedit-prefs-syntax"/></para></listitem>
+		<listitem><para><xref linkend="gedit-prefs-plugins"/></para></listitem>
+	 </itemizedlist>
+	 
+	 <sect2 id="gedit-prefs-editor">
+	 <title>Editor</title>
+			<variablelist>
+	 		<varlistentry> <term><guilabel>Tabs</guilabel> </term> 
+			 <listitem> 
+				<para>Use the <guilabel>Tabs width</guilabel> spin box to specify the width of the space that <application> &app;</application> inserts when you press the <keycap>Tab</keycap> key. </para>
+				<para>Select the <guilabel>Insert spaces instead of tabs</guilabel> option to specify that <application> &app;</application> inserts spaces instead of a tab character when you press the <keycap>Tab</keycap> key. </para>
+			 </listitem>
+		  	</varlistentry>
+	 		<varlistentry> <term><guilabel>Auto Indentation</guilabel> </term> 
+			 <listitem> <para>Select the <guilabel>Enable auto indentation</guilabel> option to specify that the next line starts at the indentation level of the current line.  </para>
+			 </listitem>
+		  	</varlistentry>
+	 		<varlistentry> <term><guilabel>File Saving</guilabel> </term> 
+			 <listitem> 
+				<para>Select the <guilabel>Create a backup copy of files before saving</guilabel> option to create a backup copy of a file each time you save the file. The backup copy of the file contains a ~ at the end of the filename.</para>
+				<para>Select the <guilabel>Autosave files every ... minutes</guilabel> option to automatically save the current file at regular intervals. Use the spin box to specify how often you want to save the file.</para>
+			 </listitem>
+		  	</varlistentry>
+	 		<varlistentry> <term><guilabel>Undo</guilabel> </term> 
+			 <listitem> 
+				<para>Select the <guilabel>Limit to ... actions</guilabel> option to set a limit on the number of editing actions that you can undo. Use the spin box to specify the maximum number of actions that you can undo. </para>
+				<para>Select the <guilabel>Unlimited undo</guilabel> option to set no limit on the number of editing actions that you can undo.  </para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+	 	</sect2>
+
+	 	<sect2 id="gedit-prefs-view">
+	 		<title>View</title>
+			<variablelist>
+	 		<varlistentry> <term><guilabel>Text Wrapping</guilabel> </term> 
+                          <listitem> 
+                            <para>Select the <guilabel>Enable text wrapping</guilabel> option to wrap text onto the next line, at a character level, when you reach the text window boundary. </para>
+			   <para>Select the <guilabel>Do not split words over two lines</guilabel> option to wrap text onto the next line, at a word level, when you reach the text window boundary. </para>
+			 </listitem>
+		  	</varlistentry>
+		        <varlistentry> 
+                          <term><guilabel>Line Numbers</guilabel></term> 
+			 <listitem> 
+				<para>Select the <guilabel>Display line numbers</guilabel> option to display line numbers on the left side of the <application>&app;</application> window. </para>
+			 </listitem>
+		  </varlistentry>
+		        <varlistentry> 
+                          <term><guilabel>Right Margin</guilabel></term> 
+			 <listitem> 
+				<para>Select the <guilabel>Display right margin</guilabel> option to display a vertical line that indicates the right margin. </para>
+				<para>Use the <guilabel>Right margin at column</guilabel> spin box to specify the location of the vertical line. </para>
+			 </listitem>
+		  </varlistentry>
+			</variablelist>
+		</sect2>	 
+
+	 	<sect2 id="gedit-prefs-fontsandcolors">
+	 		<title>Font &amp; Colors</title>
+	 		<variablelist> 
+		   <varlistentry> <term><guilabel>Font</guilabel> </term> 
+			 <listitem> 
+				<para>Select the <guilabel>Use default theme font</guilabel> option to use the default system font for the text in the <application>&app;</application> text window. </para>
+				<para>The <guilabel>Editor font</guilabel> field displays the font that <application>&app;</application> uses to display text. Click on the button to specify the font type, style, and size to use for text. </para>
+			 </listitem>
+		  	</varlistentry>
+		   <varlistentry> <term><guilabel>Colors</guilabel> </term> 
+			 <listitem> 
+				<para>Select the <guilabel>Use default theme colors</guilabel> option to use the default theme colors in the <application>&app;</application> text window. </para>
+				<para>Click on the <guibutton>Normal text color</guibutton> color button to display the color selector dialog. Select a color to use to display normal text in the <application>&app;</application> text window. </para>
+				<para>Click on the <guibutton>Background color</guibutton> color button to display the color selector dialog. Select a background color for the <application>&app;</application> text window. </para>
+				<para>Click on the <guibutton>Selected text color</guibutton> color button to display the color selector dialog. Select a color to use to display selected text.
+				</para>
+				<para>Click on the <guibutton>Selection color</guibutton> color button to display the color selector dialog. Select a background color to use to highlight a text selection.  </para>
+			 </listitem>
+		  	</varlistentry>			
+			</variablelist>
+		</sect2>
+				
+	 <sect2 id="gedit-prefs-syntax">
+	 <title>Syntax Highlighting</title>
+	 	<variablelist> 
+		  <varlistentry> <term><guilabel>Enable syntax highlighting</guilabel> </term> 
+			 <listitem> 
+				<para>Select this option to highlight the syntax of the text that you edit.  </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Highlight mode</guilabel> </term> 
+			 <listitem> 
+				<para>Use this drop-down list to select a syntax mode to configure.  </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Elements</guilabel> </term> 
+			 <listitem> 
+				<para>Use this list box to select a syntax element to configure.  </para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Format buttons </term> 
+			 <listitem> 
+				<para>Use the following buttons to change the format of the selected syntax element:  </para>
+    <informaltable frame="all">
+      <tgroup cols="2" colsep="1" rowsep="1">
+        <colspec colname="COLSPEC0" colwidth="50*"/>
+        <colspec colname="COLSPEC1" colwidth="50*"/>
+        <thead>
+          <row valign="top">
+            <entry colname="COLSPEC0">
+              <para>Button</para></entry>
+            <entry colname="COLSPEC1">
+              <para>Format</para></entry>
+          </row>
+        </thead>
+        <tbody>
+          <row valign="top">
+            <entry>
+              <para>
+                <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref="figures/gedit_format_bold.png" format="PNG"/>
+                  </imageobject>
+                  <textobject>
+                    <phrase>Shows icon for bold format.</phrase>
+                  </textobject>
+                </inlinemediaobject>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Bold
+              </para>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry>
+              <para>
+                <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref="figures/gedit_format_italic.png" format="PNG"/>                    </imageobject>
+                  <textobject>
+                    <phrase>Shows icon for italic format.</phrase>
+                  </textobject>
+                </inlinemediaobject>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Italic
+              </para>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry>
+              <para>
+                <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref="figures/gedit_format_underline.png" format="PNG"/>                    </imageobject>
+                  <textobject>
+                    <phrase>Shows icon for underline.</phrase>
+                  </textobject>
+                </inlinemediaobject>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Underline
+              </para>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry>
+              <para>
+                <inlinemediaobject>
+                  <imageobject>
+                    <imagedata fileref="figures/gedit_format_strikethrough.png" format="PNG"/>                    </imageobject>
+                  <textobject>
+                    <phrase>Shows icon for strikethrough.</phrase>
+                  </textobject>
+                </inlinemediaobject>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Strikethrough
+              </para>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Foreground</guilabel> </term> 
+			 <listitem> 
+				<para>Select this option to change the font color of the selected syntax element. Click on the color button to display the color selector dialog, then select the font color.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Background</guilabel> </term> 
+			 <listitem> 
+				<para>Select this option to change the background color of the selected syntax element. Click on the color button to display the color selector dialog, then select the background color.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guibutton>Reset to Default</guibutton> </term> 
+			 <listitem> 
+				<para>Click on this button to reset the foreground color and background color of the selected syntax element to the default values.</para>
+			 </listitem>
+		  </varlistentry>
+	 	</variablelist> 
+	 </sect2>	 
+
+	 <sect2 id="gedit-prefs-plugins">
+	 <title>Plugins</title>
+	 <para>For information about how to use the <guilabel>Plugins</guilabel> category of the <guilabel>Preferences</guilabel> dialog, see <xref linkend="gedit-install-plugins"/>. </para>		
+	 </sect2>	 
+	 
+ </sect1>
+<!-- ============= To Use the gedit Plugins ========================= -->
+	 <sect1 id="gedit-plugins"> 
+		<title>Working with Plugins</title>
+		<para>A plugin is a supplementary program that enhances the functionality of an application. The <application>&app;</application> plugins enable you to perform a variety of functions related to text editing from within the <application> &app;</application> window. The following table lists the <application> &app;</application> plugins.</para>
+		<informaltable frame="topbot"> 
+		<tgroup cols="2"> 
+			<colspec colname="col1"/> 
+			<colspec colname="col2"/> 
+		<thead> 
+		<row valign="top">
+			<entry colname="col1" colsep="0" valign="top"><para>Plugin Name</para></entry>
+			<entry colname="col2" valign="top"><para>Purpose</para></entry> 
+		</row> 
+		</thead>
+		<tbody> 
+		<row valign="top"> 
+			<entry><para>ASCII table</para></entry> 
+			<entry><para>Displays a dialog that contains an ASCII table. You can use the ASCII table to insert characters into a file.</para></entry> 
+		</row>  
+		<row valign="top"> 
+			<entry><para>Compare files</para></entry> 
+			<entry><para>Compares two files and displays the differences between the files in the output window. This plugin uses the <command>diff</command> command to compare the files.</para></entry> 
+		</row>
+		<row valign="top"> 
+			<entry><para>CVS ChangeLog</para></entry> 
+			<entry><para>Opens the log messages associated with CVS commit commands.</para></entry> 
+		</row> 
+		<row valign="top"> 
+			<entry><para>Document Statistics</para></entry> 
+			<entry><para>Counts the number of lines, words, characters with spaces, characters without spaces, and bytes in the current file. The plugin displays the results in a <guilabel>Document Statistics</guilabel> dialog. </para></entry> 
+		</row> 
+		<row valign="top">
+			<entry><para>Indent lines</para></entry> 
+			<entry><para>Indents the selected lines, or removes the indentation from the selected lines.</para></entry> 
+		</row>
+		<row valign="top">
+			<entry><para>Insert Date/Time</para></entry> 
+			<entry><para>Inserts the current date and time into a file.</para></entry> 
+		</row>
+		<row valign="top">
+			<entry><para>Shell command</para></entry> 
+			<entry><para>Displays the text output of a shell command in the output window. </para></entry> 
+		</row> 
+		<row valign="top">
+			<entry><para>Sort</para></entry> 
+			<entry><para>Sorts the selected text. </para></entry> 
+		</row> 
+		<row valign="top">
+			<entry><para>Spell checker</para></entry> 
+			<entry><para>Checks the spelling in the selected text. You can configure <application>&app;</application> to check the spelling automatically, or you can check the spelling manually, in the specified language.</para></entry> 
+		</row>
+
+		<row valign="top">
+			<entry><para>Tag list</para></entry> 
+			<entry><para>Displays a window that contains a list of common tags. You can use the window to insert a tag into a file. </para></entry> 
+		</row>
+		<row valign="top">
+			<entry><para>User name</para></entry> 
+			<entry><para>Inserts the username of the current user into the file. </para></entry> 
+		</row>
+		</tbody> 
+		</tgroup>
+		</informaltable> 
+		<para>When you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>, the <guilabel>Plugins</guilabel> tabbed section displays the following information:</para>
+		<itemizedlist> 
+		  <listitem><para>A table that contains two columns: </para>
+                    <variablelist>
+                      <varlistentry>
+                        <term><guilabel>Enabled</guilabel></term>
+                        <listitem>
+                          <para>Displays check boxes that you select to load the plugins.</para>
+                        </listitem>
+                      </varlistentry>
+                      <varlistentry>
+                        <term><guilabel>Plugin</guilabel></term>
+                        <listitem>
+                          <para>Displays a list of the plugins that you can use with <application>&app;</application>.</para>
+                        </listitem>
+                      </varlistentry>
+                    </variablelist>
+		  </listitem>
+		  <listitem><para>An <guibutton>About Plugin</guibutton> button: use this button to display a brief description of the selected plugin, including details about the author of the plugin. </para>
+		  </listitem>
+		  <listitem><para>A <guibutton>Configure Plugin</guibutton> button: use this button to open a configuration dialog for the selected plugin, if that plugin is configurable. For example, see <xref linkend="gedit-compare-files-configure"/> and <xref linkend="gedit-date-time-configure"/>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>When you load a plugin, <application>&app;</application> adds the plugin to the appropriate <application>&app;</application> menu, as described in the following table.</para>
+		<informaltable frame="topbot"> 
+		<tgroup cols="2"> 
+		<colspec colname="col1"/> 
+		<colspec colname="col2"/> 
+		<thead> 
+		<row valign="top">
+			<entry colname="col1" colsep="0" valign="top"><para>Plugin Name</para></entry>
+			<entry colname="col2" valign="top"><para>Added to Menu</para></entry> 
+		</row> 
+		</thead>
+		<tbody> 
+		<row valign="top"> 
+			<entry><para>ASCII table</para></entry> 
+			<entry><para><menuchoice><guimenu>View</guimenu>
+			<guimenuitem>ASCII Table</guimenuitem></menuchoice></para></entry> 
+		</row>  
+		<row valign="top"> 
+			<entry><para>Compare files</para></entry> 
+			<entry><para><menuchoice><guimenu>Tools</guimenu> 
+			<guimenuitem>Compare Files</guimenuitem></menuchoice></para></entry> 
+		</row>
+		<row valign="top"> 
+			<entry><para>CVS ChangeLog</para></entry> 
+			<entry><para><menuchoice><guimenu>File</guimenu> 
+			<guimenuitem>Open CVS ChangeLogs</guimenuitem></menuchoice></para></entry> 
+		</row>
+		<row valign="top"> 
+			<entry><para>Document Statistics</para></entry> 
+			<entry><para><menuchoice><guimenu>Tools</guimenu> 
+			<guimenuitem>Document Statistics</guimenuitem></menuchoice></para></entry> 
+		</row> 
+		<row valign="top"> 
+			<entry><para>Indent lines</para></entry> 
+			<entry><para><menuchoice><guimenu>Edit</guimenu> 
+			<guimenuitem>Indent</guimenuitem></menuchoice></para>
+                        <para><menuchoice><guimenu>Edit</guimenu> 
+			<guimenuitem>Unindent</guimenuitem></menuchoice></para></entry> 
+		</row> 
+		<row valign="top">
+			<entry><para>Insert Date/Time</para></entry> 
+			<entry><para><menuchoice><guimenu>Edit</guimenu> 
+			<guimenuitem>Insert Date and Time</guimenuitem></menuchoice></para></entry> 
+		</row>
+		<row valign="top">
+			<entry><para>Shell command</para></entry> 
+			<entry><para><menuchoice><guimenu>Tools</guimenu> 
+			<guimenuitem>Run Command</guimenuitem></menuchoice></para></entry> 
+		</row> 
+		<row valign="top">
+			<entry><para>Sort</para></entry> 
+			<entry><para><menuchoice><guimenu>Edit</guimenu> 
+			<guimenuitem>Sort</guimenuitem></menuchoice></para></entry> 
+		</row> 
+		<row valign="top">
+			<entry><para>Spell checker</para></entry> 
+			<entry>
+                          <para><menuchoice><guimenu>Tools</guimenu> 
+			  <guimenuitem>Check Spelling</guimenuitem></menuchoice></para>
+			  <para><menuchoice><guimenu>Tools</guimenu> 
+			  <guimenuitem>Autocheck Spelling</guimenuitem></menuchoice></para> 
+			  <para><menuchoice><guimenu>Tools</guimenu> 
+			  <guimenuitem>Set Language</guimenuitem></menuchoice></para> 
+                        </entry> 
+		</row> 
+		<row valign="top">
+			<entry><para>Tag list</para></entry> 
+			<entry><para><menuchoice><guimenu>View</guimenu> 
+			<guimenuitem>Tag List</guimenuitem></menuchoice></para></entry> 
+		</row>
+		<row valign="top">
+			<entry><para>User name</para></entry> 
+			<entry><para><menuchoice><guimenu>Edit</guimenu> 
+			<guimenuitem>Insert User Name</guimenuitem></menuchoice></para></entry> 
+		</row> 
+		</tbody> 
+		</tgroup>
+		</informaltable> 
+<!-- ============= To Load gedit Plugins ========================= -->
+	 <sect2 id="gedit-install-plugins"> 
+		<title>To Load a &app; Plugin</title>
+		<para>To load a <application>&app;</application> plugin, perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Select the <guilabel>Plugins</guilabel> tab. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Select the check box next to the name of the plugin that you want to load.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Click <guibutton>Close</guibutton> to close the <guilabel>Preferences</guilabel> dialog. </para>
+                  </listitem>
+                </orderedlist>
+	 </sect2>
+
+<!-- ============= To Remove gedit Plugins ========================= -->
+	 <sect2 id="gedit-remove-plugins"> 
+		<title>To Remove a &app; Plugin</title>
+		<para>A plugin remains loaded when you quit <application>&app;</application>. </para>
+		<para>To remove a <application>&app;</application> plugin, perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Select the <guilabel>Plugins</guilabel> tab. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Deselect the check box next to the name of the plugin that you want to remove.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Click <guibutton>Close</guibutton> to close the <guilabel>Preferences</guilabel> dialog. </para>
+                  </listitem>
+                </orderedlist>
+	 </sect2>
+
+
+<sect2 id="gedit-ascii-table-plugin">
+<title>To Use the ASCII Table Plugin</title>
+	<para>The ASCII table plugin displays a dialog that contains an ASCII table. You can use the ASCII table to insert characters into a file. To use the ASCII table plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the ASCII table plugin. </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>ASCII Table</guimenuitem> </menuchoice> to display the <guilabel>ASCII Table</guilabel> dialog.  </para>
+		  </listitem>
+		  <listitem><para>Scroll through the list to find the character that you require, then select the character with a single click.
+                           </para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Insert char</guibutton> to insert the character at the cursor position in the current file.
+                           </para>
+		  </listitem>
+		  <listitem><para>When you finish entering ASCII characters, click <guibutton>Close</guibutton> to close the <guilabel>ASCII Table</guilabel> dialog.
+				</para>
+		  </listitem>
+		</orderedlist> 
+</sect2>
+
+
+
+<sect2 id="gedit-compare-files-plugin">
+<title>To Use the Compare Files Plugin</title>
+	<para>The Compare files plugin compares two files and displays the differences between the files in the output window. This plugin uses the <command>diff</command> command to compare the files. To use the Compare files plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the Compare files plugin. </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Compare Files</guimenuitem> </menuchoice>. When you choose this option for the first time, you are prompted to confirm the location of the <command>diff</command> command. You are not prompted for this location again. See <xref linkend="gedit-compare-files-configure"/> for information about how to change this location later.</para>
+                           <para> Click <guibutton>OK</guibutton> to display the <guilabel>Compare Files</guilabel> dialog.  </para>
+		  </listitem>
+		  <listitem><para>Specify the files that you want to compare. To specify an open file, select the <guilabel>From document</guilabel> option then select the file from the drop-down list. To specify a closed file, select the <guilabel>From a file on disk</guilabel> option then enter the location of the file in the text box.  </para>
+		  </listitem>
+		  <listitem><para>To ignore changes in the amount of white space, select the <guilabel>Ignore blanks (-b option)</guilabel> option.  </para>
+		  </listitem>
+		  <listitem><para>To use the unified output format, showing three lines of context, select the <guilabel>Use the unified output format (-u option)</guilabel> option.
+                           </para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Compare</guibutton> to compare the contents of the specified files. The command output is displayed in the output window.  </para>
+		  </listitem>
+		</orderedlist> 
+		<para>For more information, see <ulink url="man:diff" type="man"><citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.  </para>
+
+<sect3 id="gedit-compare-files-configure">
+<title>To Configure the Compare Files Plugin</title>
+<para>To change the location of the command that the Compare files plugin uses, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem> <para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. 
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Select the <guilabel>Plugins</guilabel> tab.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Select the <guilabel>Compare Files</guilabel> plugin.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Click <guibutton>Configure Plugin</guibutton> to display the <guilabel>Set program location</guilabel> dialog.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Specify the location of the <command>diff</command> command in the <guilabel>Location to search for</guilabel> text box.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Click <guibutton>OK</guibutton> to close the <guilabel>Set program location</guilabel> dialog.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>To close the <guilabel>Preferences</guilabel> dialog, click <guibutton>Close</guibutton>.</para>
+		  </listitem> 
+		</orderedlist> 
+</sect3>
+</sect2>
+
+<sect2 id="gedit-cvs-changelog-plugin">
+<title>To Use the CVS ChangeLog Plugin</title>
+	<para>The CVS ChangeLog plugin opens the log messages associated with CVS commit commands. This plugin enables you to easily paste text into the commit message from the ChangeLog file. To use the CVS ChangeLog plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Set the environment variable CVSEDITOR to <application>&app;</application>. For example, if you are using the <command>bash</command> shell, run the following command at the operating system prompt:
+                           <screen> <userinput>export CVSEDITOR=&app;</userinput> </screen>
+                           </para>
+		  </listitem>
+		  <listitem><para>Commit a file to CVS in the usual way. A <application>&app;</application> window opens, to enable you to enter the commit message.
+                           </para>
+		  </listitem>
+		  <listitem><para>Load the CVS ChangeLog plugin.</para>
+		  </listitem>
+                  <listitem><para>Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Open CVS ChangeLogs</guimenuitem> </menuchoice> to open all of the ChangeLog files referenced in the commit message. <application>&app;</application> opens each ChangeLog file in a new tab.</para>
+		  </listitem>
+		  <listitem><para>Copy the ChangeLog entries that you want to add to the commit message from the <application>&app;</application> ChangeLog files. 
+                           </para>
+		  </listitem>
+		  <listitem><para>Insert the copied ChangeLog entries in the <application>&app;</application> commit message tab.
+                           </para>
+		  </listitem>
+		  <listitem><para>Save your changes to the commit message, then close all files.
+                           </para>
+		  </listitem>
+		  <listitem><para>Quit <application>&app;</application>. </para>
+		  </listitem>
+		</orderedlist> 
+</sect2>
+
+<sect2 id="gedit-document-statistics-plugin">
+<title>To Use the Document Statistics Plugin</title>
+	<para>The Document Statistics plugin counts the number of lines, words, characters with spaces, characters without spaces, and bytes in the current file. The plugin displays the results in a <guilabel>Document Statistics</guilabel> dialog. To use the Document Statistics plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the Document Statistics plugin. </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Document Statistics</guimenuitem> </menuchoice> to display the <guilabel>Document Statistics</guilabel> dialog. The <guilabel>Document Statistics</guilabel> dialog displays the following information about the file:
+				</para>
+		      <itemizedlist>
+		      <listitem><para>Number of lines in the current document.
+		                </para>
+		      </listitem>
+		      <listitem><para>Number of words in the current document.
+		                </para>
+		      </listitem>
+		      <listitem><para>Number of characters, including spaces, in the current document.
+		                </para>
+		      </listitem>
+		      <listitem><para>Number of characters, not including spaces, in the current document.
+		                </para>
+		      </listitem>
+		      <listitem><para>Number of bytes in the current document.
+		                </para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para>You can continue to update the <application>&app;</application> file while the <guilabel>Document Statistics</guilabel> dialog is open. To refresh the contents of the <guilabel>Document Statistics</guilabel> dialog, click <guibutton>Update</guibutton>.
+                           </para>
+		  </listitem>
+		  <listitem><para>To close the <guilabel>Document Statistics</guilabel> dialog, click <guibutton>Close</guibutton>.
+                           </para>
+		  </listitem>
+		</orderedlist> 
+</sect2>
+
+<sect2 id="gedit-indent-lines-plugin">
+<title>To Use the Indent Lines Plugin</title>
+	<para>The Indent lines plugin indents the selected lines, or removes the indentation from the selected lines. To use the Indent lines plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the Indent lines plugin. </para>
+		  </listitem>
+		  <listitem><para>Select the lines that you want to indent. To indent or unindent a single line, place the cursor anywhere on that line.
+                           </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Indent</guimenuitem> </menuchoice>.  </para>
+		  </listitem>
+		  <listitem><para>To remove the indentation, select the lines and choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Unindent</guimenuitem> </menuchoice>.
+                           </para>
+		  </listitem>
+		</orderedlist> 
+</sect2>
+
+<sect2 id="gedit-insert-date-time-plugin">
+<title>To Use the Insert Date/Time Plugin</title>
+	<para>The Insert Date/Time plugin inserts the current date and time into a file. To use the Insert Date/Time plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the Insert Date/Time plugin. </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>. </para>
+                                <para>If you have not configured the Insert Date/Time plugin to automatically insert the date/time without prompting you for the format, <application>&app;</application> displays the <guilabel>Insert Date and Time</guilabel> dialog. Select the appropriate date/time format from the list. Click <guibutton>Insert</guibutton> to close the <guilabel>Insert Date and Time</guilabel> dialog. <application>&app;</application> inserts the date/time at the cursor position in the current file. </para>
+				<para>If you have configured <application>&app;</application> to use one particular date/time format, the <guilabel>Insert Date and Time</guilabel> dialog is not displayed. The date/time is automatically entered at the cursor position in the current file. </para>
+                                <para>See <xref linkend="gedit-date-time-configure"/> for information about how to configure the Insert Date/Time plugin.</para>
+		  </listitem>
+		</orderedlist> 
+
+<sect3 id="gedit-date-time-configure">
+<title>To Configure the Insert Date/Time Plugin</title>
+<para>To configure the Insert Date/Time plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem> <para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. 
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Select the <guilabel>Plugins</guilabel> tab.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Select the <guilabel>Insert Date/Time</guilabel> plugin.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Click <guibutton>Configure Plugin</guibutton> to display the <guilabel>Configure insert date/time plugin</guilabel> dialog.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>Select one of the options, as follows: </para>
+		      <itemizedlist>
+		      <listitem><para>To specify the date/time format each time you insert the date/time, select the <guilabel>Prompt for a format</guilabel> option.
+		                </para>
+		      </listitem>
+		      <listitem><para>To use the same <application>&app;</application>-provided date/time format each time you insert the date/time, select the <guilabel>Use the selected format</guilabel> option, then select the appropriate format from the list. When you select this option, <application>&app;</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>. 
+		                </para>
+		      </listitem>
+		      <listitem><para>To use the same customized date/time format each time you insert the date/time, select the <guilabel>Use custom format</guilabel> option, then enter the appropriate format in the text box. For more information about how to specify a custom format, see <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>. When you select this option, <application>&app;</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>. 
+		                </para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem> 
+		  <listitem> <para>Click <guibutton>OK</guibutton> to close the <guilabel>Configure insert date/time plugin</guilabel> dialog.
+                    </para>
+		  </listitem> 
+		  <listitem> <para>To close the <guilabel>Preferences</guilabel> dialog, click <guibutton>Close</guibutton>.</para>
+		  </listitem> 
+		</orderedlist> 
+</sect3>
+</sect2>
+
+<sect2 id="gedit-shell-command-plugin">
+<title>To Use the Shell Command Plugin</title>
+
+	<para>The Shell Command plugin enables you to capture the output from a shell command in <application>&app;</application>, by displaying the text output of the shell command in the output window. To use the Shell command plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the Shell command plugin. </para>
+		  </listitem>
+
+		  <listitem><para>Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Run Command</guimenuitem> </menuchoice> to display the <guilabel>Run Command</guilabel> dialog.
+				</para>
+		  </listitem>
+		  <listitem><para>Type the shell command that you want to execute in the <guilabel>Command</guilabel> field. </para>
+                             <para> You can include the following special characters:</para>
+                                <itemizedlist>
+                                  <listitem>
+                                   <para><literal>%f</literal></para>
+                                   <para>Use these special characters to specify the filename of the current active document, including the path. </para>
+                                  </listitem>
+                                  <listitem>
+                                   <para><literal>%n</literal></para>
+                                   <para>Use these special characters to specify the filename of the current active document, without the path. In this case, <application>&app;</application> looks for the file in the Working directory. </para>
+                                  </listitem>
+                                </itemizedlist>
+		  </listitem>
+		  <listitem><para>Edit the <guilabel>Working directory</guilabel> field if necessary. By default, the Shell command plugin executes the command you specify in the current directory. </para>
+		  </listitem>
+		  <listitem><para>Select the <guilabel>Show results in Output Window</guilabel> option to display the results of the command in the output window. If you do not select this option, <application>&app;</application> discards the results of the command. 
+				</para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Run</guibutton>. The Shell command plugin executes the command and inserts the text output into the output window.
+				</para>
+		  </listitem>
+		  <listitem><para>Use the <keycap>Shift</keycap> key to select the text in the output window.  </para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Copy selected lines</guibutton> to copy the selected text into the buffer.
+				</para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem> </menuchoice> to paste the selected text into the file.
+				</para>
+		  </listitem>
+		  <listitem><para>Click <guibutton>Close the output window</guibutton> to close the output window.
+				</para>
+		  </listitem>
+		</orderedlist>
+
+</sect2>
+<sect2 id="gedit-sort-plugin">
+<title>To Use the Sort Plugin</title>
+	<para>The Sort plugin sorts the selected text.</para>
+		  <note><para>You cannot undo the Sort operation, so you should save the file before performing the sort. To revert to the saved version of the file after the sort operation, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Revert</guimenuitem> </menuchoice>.
+				</para>
+		  </note>
+              <para>To use the Sort plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the Sort plugin. </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Sort</guimenuitem> </menuchoice> to display the <guilabel>Sort</guilabel> dialog.
+				</para>
+		  </listitem>
+		  <listitem><para>To arrange the text in reverse sort order, select the <guilabel>Reverse order</guilabel> option.
+				</para>
+		  </listitem>
+		  <listitem><para>To delete duplicate lines, select the <guilabel>Remove duplicates</guilabel> option.
+				</para>
+		  </listitem>
+		  <listitem><para>To ignore case sensitivity, select the <guilabel>Ignore case</guilabel> option.
+				</para>
+		  </listitem>
+		  <listitem><para>To specify the start position of the sort, use the <guilabel>Start at column</guilabel> spin box.
+				</para>
+		  </listitem>
+		  <listitem><para>To perform the sort operation, click <guibutton>Sort</guibutton>. 
+				</para>
+		  </listitem>
+		</orderedlist> 
+</sect2>
+
+<sect2 id="gedit-spell-checker-plugin">
+<title>To Use the Spell Checker Plugin</title>
+	<para>The Spell checker plugin checks the spelling in the selected text. You can configure <application>&app;</application> to check the spelling automatically, or you can check the spelling manually, in the specified language. The language setting, and the autocheck spelling properties, apply per document. To use the Spell checker plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the Spell checker plugin. </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Set Language</guimenuitem> </menuchoice> to display the <guilabel>Set language</guilabel> dialog. Select the appropriate language from the list. Click <guibutton>OK</guibutton> to close the <guilabel>Set language</guilabel> dialog.
+				</para>
+		  </listitem>
+		  <listitem><para>To check the spelling automatically, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice>. To unset the automatic spell check, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice> again. When automatic spell checking is set, an icon is displayed beside the <guimenuitem>Autocheck Spelling</guimenuitem> menu item. Automatic spell checking is unset by default, each time <application>&app;</application> starts.</para>
+                            <para>Unknown spellings are displayed in a different color, and underlined. Right-click on an unknown spelling, then select <guimenu>Spelling Suggestions</guimenu> from the popup menu:
+				</para>
+		    <itemizedlist> 
+		      <listitem><para>To replace the unknown spelling with another spelling in the list, select the replacement spelling from the <guimenu>Spelling Suggestions</guimenu> popup menu. 
+				</para>
+		      </listitem>
+		      <listitem><para>To add the unknown spelling to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Add</guimenuitem> </menuchoice>. 
+				</para>
+		      </listitem>
+		      <listitem><para>To ignore all occurrences of the unknown spelling, so that they are no longer flagged as unknown but are not added to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Ignore All</guimenuitem> </menuchoice>. The unknown word is ignored in the current <application>&app;</application> session only. 
+				</para>
+		      </listitem>
+		    </itemizedlist> 
+		  </listitem>
+		  <listitem><para>To check the spelling manually, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Check Spelling</guimenuitem> </menuchoice>.
+				</para>
+				<para>If there are no spelling errors, an <guilabel>Information</guilabel> dialog displays a message stating that the document does not contain misspelled words. Click <guibutton>OK</guibutton> to close the <guilabel>Information</guilabel> dialog.
+				</para>
+				<para>If there are spelling errors, the <guilabel>Check Spelling</guilabel> dialog is displayed:
+				</para>
+		    <itemizedlist> 
+		      <listitem><para>The <guilabel>Misspelled word</guilabel> is displayed at the top of the dialog.
+				</para>
+		      </listitem>
+		      <listitem><para>A suggested known spelling is displayed in the <guilabel>Change to</guilabel> text box. You can replace this with another known spelling by selecting a spelling from the <guilabel>Suggestions</guilabel> list, or you can enter text directly into the <guilabel>Change to</guilabel> text box.
+				</para>
+		      </listitem>
+		      <listitem><para>To check the spelling of the text in the <guilabel>Change to</guilabel> text box, click <guibutton>Check Word</guibutton>. If this is a known word, the <guilabel>Suggestions</guilabel> list is replaced with the text <literal>(correct spelling)</literal>. If the word is not known, new entries appear in the <guilabel>Suggestions</guilabel> list.
+				</para>
+		      </listitem>
+		      <listitem><para>To ignore the current occurrence of the unknown word, click <guibutton>Ignore</guibutton>. To ignore all occurrences of the unknown word, click <guibutton>Ignore All</guibutton>. The unknown word is ignored in the current <application>&app;</application> session only.
+				</para>
+		      </listitem>
+		      <listitem><para>To change the current occurrence of the unknown word to the text in the <guilabel>Change to</guilabel> text box, click <guibutton>Change</guibutton>. To change all occurrences of the unknown word to the text in the <guilabel>Change to</guilabel> text box, click <guibutton>Change All</guibutton>.
+				</para>
+		      </listitem>
+		      <listitem><para>To add the unknown word to your personal dictionary, click <guibutton>Add word</guibutton>. 
+				</para>
+		      </listitem>
+		      <listitem><para>To close the <guilabel>Check Spelling</guilabel> dialog, click <guibutton>Close</guibutton>.
+				</para>
+		      </listitem>
+		    </itemizedlist> 
+		  </listitem>
+		</orderedlist> 
+</sect2>
+
+<sect2 id="gedit-tag-list-plugin">
+<title>To Use the Tag List Plugin</title>
+	<para>The Tag List plugin displays a window that contains a list of common tags. You can use the window to insert a tag into a file. To use the Tag List plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the Tag List plugin. </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Tag List</guimenuitem> </menuchoice> to display the <guilabel>Tag list plugin</guilabel> window.
+				</para>
+		  </listitem>
+		  <listitem><para>Select the appropriate tag category from the drop-down list. For example, <literal>HTML - Tags</literal>.
+				</para>
+		  </listitem>
+		  <listitem><para>Scroll through the tag list to find the required tag.
+				</para>
+		  </listitem>
+		  <listitem><para>To insert a tag at the cursor position in the current file, double-click on the tag in the tag list. You can also insert a tag as follows:</para>
+		    <itemizedlist>
+		      <listitem><para>To insert a tag in the current file and change the focus from the <guilabel>Tag list plugin</guilabel> window to the editor window, press <keycap>Return</keycap>.
+				</para>
+		      </listitem>
+		      <listitem><para>To insert a tag in the current file and maintain the focus on the <guilabel>Tag list plugin</guilabel> window, press <keycombo><keycap>Shift</keycap><keycap>Return</keycap></keycombo>.
+				</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>To close the <guilabel>Tag list plugin</guilabel> window, click on the <guibutton>Close Window</guibutton> button in the window frame. Alternatively, press <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo> when the focus is on the <guilabel>Tag list plugin</guilabel> window.
+				</para>
+		  </listitem>
+		</orderedlist> 
+</sect2>
+
+<sect2 id="gedit-user-name-plugin">
+<title>To Use the User Name Plugin</title>
+	<para>The User name plugin inserts the username of the current user into the file. To use the User name plugin, perform the following steps:</para>
+		<orderedlist> 
+		  <listitem><para>Load the User name plugin. </para>
+		  </listitem>
+		  <listitem><para>Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert User Name</guimenuitem> </menuchoice> to insert your username at the cursor position in the current file.
+				</para>
+		  </listitem>
+		</orderedlist> 
+</sect2>
+  </sect1>
+
+</article>
