@@ -19,6 +19,8 @@
  */
 
 #include <gnome.h>
+#include <glib/gprintf.h>
+
 #include "lookup.h"
 #include "utils.h"
 #include <regex.h>
@@ -62,7 +64,6 @@ lookup_do (Netinfo * netinfo)
 	GtkWidget *parent;
 	gboolean use_reverse_lookup;
 	const gchar *address_regular_expression = "^[ ]*[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}[ ]*$";
-	GtkWidget *option_menu, *menu, *active_item;
 	gint active_index;
 	const gchar *query_types[12] = {"", "A", "CNAME", "HINFO", "MX", "MINFO", "NS", "PTR", "SOA", "TXT", "WKS", "ANY"};
 	gchar **command_line;
@@ -83,10 +84,11 @@ lookup_do (Netinfo * netinfo)
 		gtk_list_store_clear (GTK_LIST_STORE (model));
 	}
 
-	option_menu = netinfo->type;
+	/*option_menu = netinfo->type;
 	menu = gtk_option_menu_get_menu (GTK_OPTION_MENU (option_menu));
 	active_item = gtk_menu_get_active (GTK_MENU (menu));
-	active_index = g_list_index (GTK_MENU_SHELL (menu)->children, active_item);
+	active_index = g_list_index (GTK_MENU_SHELL (menu)->children, active_item);*/
+	active_index = gtk_combo_box_get_active (GTK_COMBO_BOX (netinfo->type));
 
 	parent = gtk_widget_get_toplevel (netinfo->output);
 	

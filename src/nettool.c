@@ -54,13 +54,13 @@ netinfo_get_host (Netinfo * netinfo)
 {
 	g_return_val_if_fail (netinfo != NULL, NULL);
 	g_return_val_if_fail (GTK_IS_ENTRY
-			      (gnome_entry_gtk_entry
-			       (GNOME_ENTRY (netinfo->host))), NULL);
+			      (gtk_bin_get_child
+			       (GTK_BIN (netinfo->host))), NULL);
 
 	return
-	    gtk_entry_get_text (GTK_ENTRY
-				(gnome_entry_gtk_entry
-				 (GNOME_ENTRY (netinfo->host))));
+		gtk_entry_get_text (GTK_ENTRY
+				    (gtk_bin_get_child
+				     (GTK_BIN (netinfo->host))));
 }
 
 void
@@ -68,13 +68,12 @@ netinfo_set_host (Netinfo * netinfo, const gchar *host)
 {
 	g_return_if_fail (netinfo != NULL);
 	g_return_if_fail (GTK_IS_ENTRY
-			  (gnome_entry_gtk_entry
-			   (GNOME_ENTRY (netinfo->host))));
-
+			  (gtk_bin_get_child
+			   (GTK_BIN (netinfo->host))));
+	
 	gtk_entry_set_text (GTK_ENTRY
-			    (gnome_entry_gtk_entry
-			     (GNOME_ENTRY (netinfo->host))),
-			    host);
+			    (gtk_bin_get_child
+			     (GTK_BIN (netinfo->host))), host);
 }
 
 gboolean
@@ -103,13 +102,13 @@ netinfo_get_user (Netinfo * netinfo)
 {
 	g_return_val_if_fail (netinfo != NULL, NULL);
 	g_return_val_if_fail (GTK_IS_ENTRY
-			      (gnome_entry_gtk_entry
-			       (GNOME_ENTRY (netinfo->user))), NULL);
+			      (gtk_bin_get_child 
+			       (GTK_BIN (netinfo->user))), NULL);
 
 	return
 	    gtk_entry_get_text (GTK_ENTRY
-				(gnome_entry_gtk_entry
-				 (GNOME_ENTRY (netinfo->user))));
+				(gtk_bin_get_child
+				 (GTK_BIN (netinfo->user))));
 }
 
 void
@@ -119,11 +118,10 @@ netinfo_set_user (Netinfo * netinfo, const gchar *user)
 	g_return_if_fail (GTK_IS_ENTRY
 			  (gnome_entry_gtk_entry
 			   (GNOME_ENTRY (netinfo->user))));
-
+	
 	gtk_entry_set_text (GTK_ENTRY
 			    (gnome_entry_gtk_entry
-			     (GNOME_ENTRY (netinfo->user))),
-			    user);
+			     (GNOME_ENTRY (netinfo->user))), user);
 }
 
 gint
@@ -134,12 +132,12 @@ netinfo_get_ip_version (Netinfo * netinfo)
 
 	g_return_val_if_fail (netinfo != NULL, -1);
 	g_return_val_if_fail (GTK_IS_ENTRY
-			      (gnome_entry_gtk_entry
-			       (GNOME_ENTRY (netinfo->host))), -1);
+			      (gtk_bin_get_child
+			       (GTK_BIN (netinfo->host))), -1);
 
 	ip = g_strdup (gtk_entry_get_text
-		       (GTK_ENTRY (gnome_entry_gtk_entry
-				   (GNOME_ENTRY (netinfo->host)))));
+		       (GTK_ENTRY (gtk_bin_get_child
+				   (GTK_BIN (netinfo->host)))));
 
 	if (strlen (ip) > 0) {
 		host = gethostbyname2 (ip, AF_INET6);

@@ -18,6 +18,8 @@
  */
 
 #include <gnome.h>
+#include <glib/gprintf.h>
+
 #include "traceroute.h"
 #include "utils.h"
 

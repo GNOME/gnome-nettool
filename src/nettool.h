@@ -22,6 +22,8 @@
 #  include <config.h>
 #endif
 
+#include "gn-combo-history.h"
+
 #ifndef __NETINFO__
 #define __NETINFO__
 
@@ -59,6 +61,7 @@ struct _Netinfo {
 	NetinfoForeachFunc process_line;
 	NetinfoCopyFunc copy_output;
 	GCallback button_callback;
+	GnComboHistory *history;
 	/* extra definitions for ping */
 	GtkWidget *min;
 	GtkWidget *max;
@@ -67,6 +70,10 @@ struct _Netinfo {
 	GtkWidget *packets_received;
 	GtkWidget *packets_loss;
 	/* extra definitions for info */
+	GtkWidget *combo;
+	GtkWidget *ipv6_frame;
+	GtkWidget *ipv4_frame;
+	GtkWidget *list_ip_addr;
 	GtkWidget *nic;
 	GtkWidget *hw_address;
 	GtkWidget *ip_address;
@@ -84,6 +91,8 @@ struct _Netinfo {
 	GtkWidget *rx;
 	GtkWidget *rx_errors;
 	GtkWidget *collisions;
+	/* extra definitions for finger */
+	GnComboHistory *history_user;
 };
 
 enum {

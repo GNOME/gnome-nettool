@@ -18,6 +18,8 @@
  */
 
 #include <gnome.h>
+#include <glib/gprintf.h>
+
 #ifdef HAVE_CONFIG_H
 #  include <config.h>
 #endif
@@ -31,6 +33,7 @@
 #include <sys/socket.h>	/* basic socket definitions */
 #include <arpa/inet.h>	/* inet(3) functions */
 #include <sys/un.h>	/* for Unix domain sockets */
+#include <ifaddrs.h> /* getifaddrs () funtion */
 #include <sys/ioctl.h>
 #include <stdlib.h>
 #include <net/if.h>
@@ -39,8 +42,27 @@
 #include "utils.h"
 #include "util-mii.h"
 
+#ifndef IN6_IS_ADDR_GLOBAL
+#define IN6_IS_ADDR_GLOBAL(a) \
+   (((((__const uint8_t *) (a))[0] & 0xff) == 0x3f   \
+     || (((__const uint8_t *) (a))[0] & 0xff) == 0x20))
+#endif
+
 static gboolean info_nic_update_stats (gpointer data);
-static GList * info_get_interfaces (void);
+static GList   *info_get_interfaces   (Netinfo *info);
+
+static InfoInterfaceDescription info_iface_desc [] = {
+	/*  Interface Name                 Interface Type           icon          Device prefix  Pixbuf  */
+	{ N_("Other type"),              INFO_INTERFACE_OTHER,   "network.png",     "other_type", NULL },
+	{ N_("Ethernet Interface"),      INFO_INTERFACE_ETH,     "16_ethernet.xpm", "eth",        NULL },
+	{ N_("Wireless Interface"),      INFO_INTERFACE_WLAN,    "wavelan-16.png",  "wlan",       NULL },
+	{ N_("Modem Interface"),         INFO_INTERFACE_PPP,     "16_ppp.xpm",      "ppp",        NULL },
+	{ N_("Parallel Line Interface"), INFO_INTERFACE_PLIP,    "16_plip.xpm",     "plip",       NULL },
+	{ N_("Infrared Interface"),      INFO_INTERFACE_IRLAN,   "irda-16.png",     "irlan",      NULL },
+	{ N_("Loopback Interface"),      INFO_INTERFACE_LO,      "16_loopback.xpm", "lo",         NULL },
+	{ N_("Unknown Interface"),       INFO_INTERFACE_UNKNOWN, "network.png",     NULL,         NULL },
+	{ NULL,                          INFO_INTERFACE_UNKNOWN,  NULL,             NULL,         NULL }
+};
 
 void
 info_do (const gchar * nic, Netinfo * info)
@@ -58,33 +80,108 @@ info_set_nic (Netinfo * netinfo, const gchar *nic)
 	if (nic == NULL)
 		return;
 
-	interfaces = info_get_interfaces ();
+	interfaces = info_get_interfaces (netinfo);
 	for (p = interfaces; p != NULL; p = p->next) {
 		if (! strcmp (p->data, nic)) {
+			/* FIXME */
 			gtk_entry_set_text (GTK_ENTRY (netinfo->nic),
 					    nic);
 		}
 	}
+	
 	g_list_free (interfaces);
 }
 
-void
-info_load_iface (Netinfo * info, GtkWidget * combo)
+static void
+info_get_interface_from_dev_name (const gchar *dev_name, gchar **iface, GdkPixbuf **pixbuf)
 {
-	GList *items = NULL;
-
-	items = info_get_interfaces ();
-	if (items != NULL) {
-		gtk_combo_set_popdown_strings (GTK_COMBO (combo), items);
-	}
+	gint i;
+	gchar *path;
 	
-	g_list_free (items);
+	for (i = 0; info_iface_desc[i].name; i++)
+		if (strstr (dev_name, info_iface_desc[i].prefix) == dev_name) {
+			(*iface) = g_strdup_printf ("%s (%s)", info_iface_desc[i].name, dev_name);
+			if (info_iface_desc[i].pixbuf == NULL) {
+				path = g_build_filename (PIXMAPS_DIR, info_iface_desc[i].icon, NULL);
+				info_iface_desc[i].pixbuf = gdk_pixbuf_new_from_file (path, NULL);
+				g_free (path);
+			}
+			(*pixbuf) = info_iface_desc[i].pixbuf;
+			return;
+		}
+}
+
+void
+info_load_iface (Netinfo *info)
+{
+	GtkTreeModel    *model;
+	GtkTreeIter      iter;
+	GtkCellRenderer *renderer;
+	GList *items = NULL;
+	GList *p;
+	GdkPixbuf *pixbuf;
+	gchar *iface, *text;
+
+	items = info_get_interfaces (info);
+	p = items;
+	model = gtk_combo_box_get_model (GTK_COMBO_BOX (info->combo));
+	
+	if (!items) {
+		iface = g_strdup (_("<i>Network Devices Not Found</i>"));
+		
+		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+				    0, NULL,
+				    1, iface,
+				    2, (gpointer) NULL,
+				    -1);
+
+		g_free (iface);
+	} else {
+		while (p) {
+			text = g_strdup (p->data);
+			
+			info_get_interface_from_dev_name (text, &iface, &pixbuf);
+			
+			gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+			gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+					    0, pixbuf,
+					    1, iface,
+					    2, (gpointer) text,
+					    -1);
+		
+			g_free (iface);
+			g_object_unref (pixbuf);
+
+			p = g_list_next (p);
+		}
+		
+		g_list_free (items);
+	}
+
+	gtk_cell_layout_clear (GTK_CELL_LAYOUT (info->combo));
+	
+	renderer = gtk_cell_renderer_pixbuf_new ();
+	gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (info->combo), renderer, TRUE);
+	gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (info->combo), renderer,
+					"pixbuf", 0, NULL);
+	g_object_unref (renderer);
+
+	renderer = gtk_cell_renderer_text_new ();
+	gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (info->combo), renderer, TRUE);
+	gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (info->combo), renderer,
+					"markup", 1, NULL);
+	g_object_unref (renderer);
+
+	gtk_combo_box_set_active (GTK_COMBO_BOX (info->combo), 0);
 }
 
 static gboolean
 info_nic_update_stats (gpointer data)
 {
 	Netinfo *info = data;
+	GtkTreeModel *model;
+	GtkTreeIter   iter;
 	/*
 	gchar mtu[10], met[10], rx[10], rx_error[10], rx_drop[10], rx_ovr[10];
 	gchar tx[10], tx_error[10], tx_drop[10], tx_ovr[10]; 
@@ -102,8 +199,13 @@ info_nic_update_stats (gpointer data)
 	gchar *text_tx_bytes, *text_rx_bytes;
 		
 	g_return_val_if_fail (info != NULL, FALSE);
-	
-	text = gtk_entry_get_text (GTK_ENTRY (info->nic));
+
+	model = gtk_combo_box_get_model (GTK_COMBO_BOX (info->combo));
+	if (gtk_combo_box_get_active_iter (GTK_COMBO_BOX (info->combo), &iter))
+		gtk_tree_model_get (model, &iter, 2, &text, -1);
+	else
+		return FALSE;
+	/*text = gtk_entry_get_text (GTK_ENTRY (info->nic));*/
 	
 #if defined(__linux__)
 	io = g_io_channel_new_file ("/proc/net/dev", "r", NULL);
@@ -152,116 +254,226 @@ info_nic_update_stats (gpointer data)
 }
 
 void
-info_nic_changed (GtkEditable *editable, gpointer data)
+info_nic_changed (GtkWidget *combo, gpointer data)
 {
-	const gchar *text;
+	gchar *text = NULL;
 	Netinfo *info = data;
+	GtkTreeModel *model;
+	GtkTreeIter   iter;
 		
 	static gint timeout_source = 0;
 	
 	g_return_if_fail (info != NULL);
-	
-	text = gtk_entry_get_text (GTK_ENTRY (editable));
 
-	/* Fill the NIC configuration data */
-	info_get_nic_information (text, info);
-	info_nic_update_stats (data);
+	model = gtk_tree_view_get_model (GTK_TREE_VIEW (info->list_ip_addr));
+	if (model)
+		gtk_list_store_clear (GTK_LIST_STORE (model));
+
+	model = gtk_combo_box_get_model (GTK_COMBO_BOX (combo));
+	if (gtk_combo_box_get_active_iter (GTK_COMBO_BOX (combo), &iter)) {
+		gtk_tree_model_get (model, &iter, 2, &text, -1);
+
+		if (!text)
+			return;
+		
+		/* Fill the NIC configuration data */
+		info_get_nic_information (text, info);
+		info_nic_update_stats (info);
 	
-	if (timeout_source > 0) {
-		g_source_remove (timeout_source);
+		if (timeout_source > 0) {
+			g_source_remove (timeout_source);
+		}
+	
+		timeout_source = g_timeout_add (DELAY_STATS, info_nic_update_stats, info);
+	}
+}
+
+static gint
+info_ip6_masklen (struct in6_addr netmask)
+{
+	gint len = 0;
+	guchar val;
+	guchar *pnt;
+
+	pnt = (guchar *) & netmask;
+
+	while ((*pnt == 0xff) && len < 128) {
+		len += 8;
+		pnt ++;
+	}
+
+	if (len < 128) {
+		val = *pnt;
+		while (val) {
+			len++;
+			val <<= 1;
+		}
 	}
 	
-	timeout_source = g_timeout_add (DELAY_STATS, info_nic_update_stats, data);
+	return len;
+}
+
+static InfoIpAddr *
+info_ip6_construct_address (const struct ifaddrs *ifr6)
+{
+	struct sockaddr_in6 *sinptr6;
+	gchar ip_addr[INFO_ADDRSTRLEN], *scope;
+	gint prefix;
+	InfoIpAddr *ip6;
+
+	sinptr6 = (struct sockaddr_in6 *) ifr6->ifa_addr;
+	inet_ntop (AF_INET6, &sinptr6->sin6_addr, ip_addr, INFO_ADDRSTRLEN);
+
+	if (IN6_IS_ADDR_LINKLOCAL (&sinptr6->sin6_addr))
+		scope = g_strdup ("Link");
+	else if (IN6_IS_ADDR_SITELOCAL (&sinptr6->sin6_addr))
+		scope = g_strdup ("Site");
+	else if (IN6_IS_ADDR_GLOBAL (&sinptr6->sin6_addr))
+		scope = g_strdup ("Global");
+	else if (IN6_IS_ADDR_MC_ORGLOCAL (&sinptr6->sin6_addr))
+		scope = g_strdup ("Global");
+	else if (IN6_IS_ADDR_V4COMPAT (&sinptr6->sin6_addr))
+		scope = g_strdup ("Global");
+	else if (IN6_IS_ADDR_MULTICAST (&sinptr6->sin6_addr))
+		scope = g_strdup ("Global");
+	else if (IN6_IS_ADDR_UNSPECIFIED (&sinptr6->sin6_addr))
+		scope = g_strdup ("Global");
+	else if (IN6_IS_ADDR_LOOPBACK (&sinptr6->sin6_addr))
+		scope = g_strdup ("Host");
+	else
+		scope = g_strdup (_("Unknown"));
+
+	sinptr6 = (struct sockaddr_in6 *) ifr6->ifa_netmask;
+	prefix = info_ip6_masklen (sinptr6->sin6_addr);
+
+	ip6 = g_new0 (InfoIpAddr, 1);
+	ip6->ip_addr = g_strdup (ip_addr);
+	ip6->ip_prefix = g_strdup_printf ("%d", prefix);
+	ip6->ip_bcast = g_strdup ("");
+	ip6->ip_scope = g_strdup (scope);
+
+	g_free (scope);
+
+	return (ip6);
 }
 
 void
 info_get_nic_information (const gchar *nic, Netinfo *info)
 {
+	GtkTreeModel *model;
+	GtkTreeIter   iter;
 	gint sockfd, len;
 	gchar *ptr, buf[2048], dst[INFO_ADDRSTRLEN];
 	struct ifconf ifc;
 	struct ifreq *ifr = NULL, ifrcopy;
+	struct ifaddrs *ifa0, *ifr6;
 	struct sockaddr_in *sinptr;
+	InfoIpAddr *ip;
 	gint flags;
 	mii_data_result data;
-		
-	sockfd = socket (AF_INET, SOCK_DGRAM, 0);
 
-	ifc.ifc_len = sizeof (buf);
-	ifc.ifc_req = (struct ifreq *) buf;
-	ioctl (sockfd, SIOCGIFCONF, &ifc);
+	getifaddrs (&ifa0);
 
-	for (ptr = buf; ptr < buf + ifc.ifc_len;) {
-		ifr = (struct ifreq *) ptr;
-		len = sizeof (struct sockaddr);
-#if	defined(HAVE_SOCKADDR_SA_LEN) || defined(__FreeBSD__)
-		if (ifr->ifr_addr.sa_len > len)
-			len = ifr->ifr_addr.sa_len;	/* length > 16 */
-#endif
-		ptr += sizeof (ifr->ifr_name) + len;	/* for next one in buffer */
-
-		if (strcmp (ifr->ifr_name, nic) != 0) {
+	for (ifr6 = ifa0; ifr6; ifr6 = ifr6->ifa_next) {
+		if (strcmp (ifr6->ifa_name, nic) != 0) {
 			continue;
 		}
 
-		memset (&data, 0, sizeof(data));
-		
-#ifdef __linux__
-		data = mii_get_basic (nic);
-#endif
-		
-		switch (ifr->ifr_addr.sa_family) {
+		switch (ifr6->ifa_addr->sa_family) {
+
+		case AF_INET6:
+			ip = info_ip6_construct_address (ifr6);
+
+			model = gtk_tree_view_get_model (
+				GTK_TREE_VIEW (info->list_ip_addr));
+
+			gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+			gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+					    0, "IPv6",
+					    1, ip->ip_addr,
+					    2, ip->ip_prefix,
+					    3, ip->ip_bcast,
+					    4, ip->ip_scope,
+					    -1);
+			g_free (ip);
+
+			break;
 		case AF_INET:
-			
 			/* Get the IPv4 address */
-			sinptr = (struct sockaddr_in *) &ifr->ifr_addr;
+			ip = g_new0 (InfoIpAddr, 1);
+
+			sinptr = (struct sockaddr_in *) ifr6->ifa_addr;
 			inet_ntop (AF_INET, &sinptr->sin_addr, dst, INFO_ADDRSTRLEN);
-			
-			gtk_label_set_text (GTK_LABEL (info->ip_address), dst);
+
+			ip->ip_addr = g_strdup (dst);
+			gtk_label_set_text (GTK_LABEL (info->ip_address), ip->ip_addr);
 			bzero (dst, INFO_ADDRSTRLEN);
-			
+
+			sockfd = socket (AF_INET, SOCK_DGRAM, 0);
+			ifc.ifc_len = sizeof (buf);
+			ifc.ifc_req = (struct ifreq *) buf;
+			ioctl (sockfd, SIOCGIFCONF, &ifc);
+
+			data = mii_get_basic (nic);
+
+			for (ptr = buf; ptr < buf + ifc.ifc_len;) {
+				ifr = (struct ifreq *) ptr;
+				len = sizeof (struct sockaddr);
+#ifdef HAVE_SOCKADDR_SA_LEN
+				if (ifr->ifr_addr.sa_len > len)
+					len = ifr->ifr_addr.sa_len;   /* length > 16 */
+#endif
+				ptr += sizeof (ifr->ifr_name) + len;    /* for next one in buffer */
+
+				if (strcmp (ifr->ifr_name, nic) == 0) {
+					break;
+				}
+			}
+
 			ifrcopy = *ifr;
 			flags = ifrcopy.ifr_flags;
 
-			/* Get the Hardware Address */
+			/*Get the Hardware Address */
 #ifdef SIOCGIFHWADDR
 			ioctl (sockfd, SIOCGIFHWADDR, &ifrcopy);
 			sinptr =
 				(struct sockaddr_in *) &ifrcopy.ifr_dstaddr;
 			g_sprintf (dst, "%02x:%02x:%02x:%02x:%02x:%02x",
-				 (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[0],
-				 (int) ((guchar*)  &ifrcopy.ifr_hwaddr.sa_data)[1],
-				 (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[2],
-				 (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[3],
-				 (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[4],
-				 (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[5]);
+				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[0],
+				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[1],
+				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[2],
+				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[3],
+				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[4],
+				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[5]);
 #else
 			g_sprintf (dst, NOT_AVAILABLE);
 #endif /* SIOCGIFHWADDR */
-				
+
 			gtk_label_set_text (GTK_LABEL (info->hw_address), dst);
 
 			/* Get the netMask address */
 #ifdef SIOCGIFNETMASK
 			ioctl (sockfd, SIOCGIFNETMASK, &ifrcopy);
-				
-			sinptr = (struct sockaddr_in *) &ifrcopy.ifr_addr;	
 
-/*			sinptr =  (struct sockaddr_in *) &ifrcopy.ifr_netmask;*/
+			sinptr = (struct sockaddr_in *) &ifrcopy.ifr_addr;
+
+			/* sinptr =  (struct sockaddr_in *) &ifrcopy.ifr_netmask;*/
 			inet_ntop (AF_INET, &sinptr->sin_addr, dst, INFO_ADDRSTRLEN);
 #else
 			g_sprintf (dst, NOT_AVAILABLE);
 #endif /* SIOCGIFNETMASK */
-			gtk_label_set_text (GTK_LABEL (info->netmask), dst);
+			ip->ip_prefix = g_strdup (dst);
+			gtk_label_set_text (GTK_LABEL (info->netmask), ip->ip_prefix);
 			bzero (dst, INFO_ADDRSTRLEN);
-			
+
 			/* Get the broadcast address */
 			ioctl (sockfd, SIOCGIFBRDADDR, &ifrcopy);
 			sinptr = (struct sockaddr_in *) &ifrcopy.ifr_broadaddr;
 			inet_ntop (AF_INET, &sinptr->sin_addr, dst, INFO_ADDRSTRLEN);
-			gtk_label_set_text (GTK_LABEL (info->broadcast), dst);
+			ip->ip_bcast = g_strdup (dst);
+			gtk_label_set_text (GTK_LABEL (info->broadcast), ip->ip_bcast);
 			bzero (dst, INFO_ADDRSTRLEN);
-			
+
 			/* Get the MTU */
 			ioctl (sockfd, SIOCGIFMTU, &ifrcopy);
 			g_sprintf (dst, "%d", ifrcopy.ifr_mtu);
@@ -283,6 +495,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			if ((flags & IFF_LOOPBACK)) {
 				gtk_label_set_text (GTK_LABEL (info->hw_address), _("Loopback"));
 				gtk_label_set_text (GTK_LABEL (info->broadcast), " ");
+				ip->ip_bcast = g_strdup ("");
 				gtk_label_set_text (GTK_LABEL (info->link_speed), " ");
 			} else {
 				if (data.has_data) {
@@ -291,7 +504,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 					gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
 				}
 			}
-			
+
 			/* Supports multicast */
 			if (flags & IFF_MULTICAST) {
 				gtk_label_set_text (GTK_LABEL (info->multicast), _("Enabled"));
@@ -303,7 +516,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			if (flags & IFF_POINTOPOINT) {
 				ioctl (sockfd, SIOCGIFDSTADDR, &ifrcopy);
 				sinptr = (struct sockaddr_in *) &ifrcopy.ifr_dstaddr;
-				
+
 				printf ("\tP-t-P: %s\n",
 					inet_ntop (AF_INET,
 						   &sinptr->sin_addr, dst,
@@ -311,8 +524,20 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			}
 			bzero (dst, INFO_ADDRSTRLEN);
 
-			break;
+			model = gtk_tree_view_get_model (
+				GTK_TREE_VIEW (info->list_ip_addr));
 
+			gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+			gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+					    0, "IPv4",
+					    1, ip->ip_addr,
+					    2, ip->ip_prefix,
+					    3, ip->ip_bcast,
+					    4, "",
+					    -1);
+			g_free (ip);
+
+			break;
 		default:
 			gtk_label_set_text (GTK_LABEL (info->hw_address), NOT_AVAILABLE);
 			gtk_label_set_text (GTK_LABEL (info->ip_address), NOT_AVAILABLE);
@@ -328,44 +553,52 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			} else {
 				gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
 			}
+			
 			break;
 		}
 	}
+
+	freeifaddrs (ifa0);
+}
+
+static gint *
+compare (gconstpointer a, gconstpointer b)
+{
+	return (GINT_TO_POINTER (strcmp (a, b)));
 }
 
 static GList *
-info_get_interfaces ()
+info_get_interfaces (Netinfo *info)
 {
 	GList *items = NULL;
 	gchar *iface;
-	gchar *ptr, buf[2048];
-	struct ifconf ifc;
-	struct ifreq *ifr;
-	int sockfd, len;
+	struct ifaddrs *ifa0, *ifr;
+	gboolean ipv6 = FALSE;
 
-	sockfd = socket (AF_INET, SOCK_DGRAM, 0);
+	getifaddrs (&ifa0);
 
-	memset (&ifc, 0, sizeof (struct ifconf));
-	memset (&buf, 0, sizeof (buf));
-	ifc.ifc_len = sizeof (buf);
-	ifc.ifc_req = (struct ifreq *) buf;
+	for (ifr = ifa0; ifr; ifr = ifr->ifa_next) {
+		iface = g_strdup (ifr->ifa_name);
 
-	ioctl (sockfd, SIOCGIFCONF, &ifc);
-
-	for (ptr = buf; ptr < buf + ifc.ifc_len;) {
-		ifr = (struct ifreq *) ptr;
-		len = sizeof (struct sockaddr);
-
-		iface = g_strdup (ifr->ifr_name);
-		if (g_list_find_custom (items, iface, (GCompareFunc) g_ascii_strcasecmp) == NULL) {
-			items = g_list_append (items, iface);
+		if (((ifr->ifa_flags & IFF_UP) != 0) &&
+		    (ifr->ifa_addr->sa_family == AF_INET6)) {
+			ipv6 = TRUE;
 		}
 
-#if defined(HAVE_SOCKADDR_SA_LEN) || defined(__FreeBSD__)
-		if (ifr->ifr_addr.sa_len > len)
-			len = ifr->ifr_addr.sa_len;	/* length > 16 */
-#endif
-		ptr += sizeof (ifr->ifr_name) + len;	/* for next one in buffer */
+		if (((ifr->ifa_flags & IFF_UP) != 0) &&
+		    (g_list_find_custom (items, iface, (GCompareFunc) compare) == NULL)) {
+			items = g_list_append (items, iface);
+		}
+	}
+
+	freeifaddrs (ifa0);
+
+	if (ipv6) {
+		gtk_widget_show (info->ipv6_frame);
+		gtk_widget_hide (info->ipv4_frame);
+	} else {
+		gtk_widget_hide (info->ipv6_frame);
+		gtk_widget_show (info->ipv4_frame);
 	}
 
 	return items;

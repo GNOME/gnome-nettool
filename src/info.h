@@ -33,11 +33,37 @@
 #  define ifr_mtu  ifr_ifru.ifru_metric
 #endif
 
+typedef enum {
+	   INFO_INTERFACE_OTHER,
+	   INFO_INTERFACE_ETH,
+	   INFO_INTERFACE_WLAN,
+	   INFO_INTERFACE_PPP,
+	   INFO_INTERFACE_PLIP,
+	   INFO_INTERFACE_IRLAN,
+	   INFO_INTERFACE_LO,
+	   INFO_INTERFACE_UNKNOWN
+} InfoInterfaceType;
+
+typedef struct {
+	   const gchar       *name;
+	   InfoInterfaceType  type;
+	   const gchar       *icon;
+	   const gchar       *prefix;
+	   GdkPixbuf         *pixbuf;
+} InfoInterfaceDescription;
+
+typedef struct {
+	   gchar *ip_addr;
+	   gchar *ip_prefix;
+	   gchar *ip_bcast;
+	   gchar *ip_scope;
+} InfoIpAddr;
+
 void info_do (const gchar * nic, Netinfo * info);
 void info_set_nic (Netinfo * info, const gchar *nic);
-void info_load_iface (Netinfo * info, GtkWidget * combo);
+void info_load_iface (Netinfo *info);
 
-void info_nic_changed (GtkEditable *editable, gpointer data);
+void info_nic_changed (GtkWidget *combo, gpointer data);
 
 void info_get_nic_information (const gchar *nic, Netinfo *info);
 void info_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);

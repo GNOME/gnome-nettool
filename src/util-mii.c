@@ -41,6 +41,7 @@
 
 #ifdef __linux__
 #include <glib.h>
+#include <glib/gprintf.h>
 
 #include <errno.h>
 #include <net/if.h>

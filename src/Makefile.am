@@ -14,6 +14,7 @@ bin_PROGRAMS = gnome-nettool
 gnome_nettool_SOURCES = \
 	callbacks.c callbacks.h \
 	nettool.c nettool.h \
+	gn-combo-history.c gn-combo-history.h \
 	ping.c ping.h \
 	traceroute.c traceroute.h \
 	netstat.c netstat.h \
@@ -29,10 +30,7 @@ gnome_nettool_SOURCES = \
 
 gnome_nettool_LDADD = @NETTOOL_LIBS@
 
-pixmapdir   = $(datadir)/pixmaps
-pixmap_DATA = gnome-nettool.png
 EXTRA_DIST  = \
-	$(pixmap_DATA) \
 	gnome-nettool.desktop.in \
 	$(dialog_DATA)
 

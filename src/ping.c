@@ -19,6 +19,7 @@
  */
 
 #include <gnome.h>
+#include <glib/gprintf.h>
 #include <sys/types.h>
 #include <signal.h>
 #include <errno.h>

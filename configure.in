@@ -20,7 +20,22 @@ AM_PROG_LIBTOOL
 GNOME_COMPILE_WARNINGS(yes)
 CFLAGS="$CFLAGS $WARN_CFLAGS"
 
-PKG_CHECK_MODULES(NETTOOL, libgnomeui-2.0 libgnome-2.0 gtk+-2.0 glib-2.0 libglade-2.0 gconf-2.0)
+dnl ******************************************
+dnl ** pkg-config dependacy checks          **
+dnl ******************************************
+
+LIBGNOMEUI_REQUIRED=2.0.0
+LIBGNOME_REQUIRED=2.0.0
+GTK_REQUIRED=2.4.0
+LIBGLADE_REQUIRED=2.0.0
+GCONF_REQUIRED=1.1.11
+
+PKG_CHECK_MODULES(NETTOOL, 
+		  libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED 
+		  libgnome-2.0   >= $LIBGNOME_REQUIRED 
+		  gtk+-2.0       >= $GTK_REQUIRED 
+		  libglade-2.0   >= $LIBGLADE_REQUIRED 
+		  gconf-2.0      >= $GCONF_REQUIRED)
 AC_SUBST(NETTOOL_CFLAGS)
 AC_SUBST(NETTOOL_LIBS)
 
@@ -53,10 +68,20 @@ AC_SUBST(CPPFLAGS)
 AC_SUBST(LDFLAGS)
 
 if test "x${prefix}" = "xNONE"; then
-   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${ac_default_prefix}/share/pixmaps", [Pixmap directory])
+   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${ac_default_prefix}/share/pixmaps", [Gnome pixmap directory])
 else
-   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${prefix}/share/pixmaps", [Pixmap directory])
+   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${prefix}/share/pixmaps", [Gnome pixmap directory])
 fi 
+
+if test "x${prefix}" = "xNONE"; then
+   AC_DEFINE_UNQUOTED(PIXMAPS_DIR, "${ac_default_prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps", [pixmaps directory])
+   pixmapsdir="${ac_default_prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps"
+else
+   AC_DEFINE_UNQUOTED(PIXMAPS_DIR, "${prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps", [pixmaps directory])
+   pixmapsdir="${prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps"
+fi
+
+AC_SUBST(pixmapsdir)
 
 dnl
 dnl Debugging flags
@@ -77,4 +102,5 @@ fi
 AC_OUTPUT([
 Makefile
 po/Makefile.in
+pixmaps/Makefile
 src/Makefile])

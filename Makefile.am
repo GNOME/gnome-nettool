@@ -1,4 +1,4 @@
-SUBDIRS = src po
+SUBDIRS = pixmaps src po
 
 EXTRA_DIST = \
 	intltool-extract.in \

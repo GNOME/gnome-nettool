@@ -23,6 +23,7 @@
 #endif
 
 #include <gnome.h>
+#include <glib/gprintf.h>
 
 #include <sys/wait.h>
 #include <unistd.h>
@@ -38,19 +39,32 @@
 #include "lookup.h"
 #include "finger.h"
 #include "whois.h"
+#include "gn-combo-history.h"
 
 /* Ping callbacks */
 void
 on_ping_activate (GtkWidget * widget, gpointer data)
 {
 	Netinfo *pinger = data;
+	GtkEntry *entry_host;
+	gchar *text;
 
 	g_return_if_fail (pinger != NULL);
 
 	if (pinger->running) {
 		ping_stop (pinger);
 	} else {
-		ping_do (pinger);
+		if (netinfo_validate_host (pinger)) {
+			entry_host = GTK_ENTRY (
+				gtk_bin_get_child (GTK_BIN (pinger->host)));
+			text = g_strdup (gtk_entry_get_text (entry_host));
+			
+			gn_combo_history_add (pinger->history, text);
+			
+			g_free (text);
+			
+			ping_do (pinger);
+		}
 	}
 }
 
@@ -59,13 +73,41 @@ void
 on_traceroute_activate (GtkWidget * widget, gpointer data)
 {
 	Netinfo *tracer = data;
+	GtkEntry *entry_host;
+	gchar *text;
 
 	g_return_if_fail (tracer != NULL);
+
+/*	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (tracer->host)));
+	completion = gtk_entry_get_completion (entry_host);
+
+	model = gtk_entry_completion_get_model (completion);
+
+	text = g_strdup (gtk_entry_get_text (entry_host));
+
+	if (! nettool_item_is_in_model (model, text)) {
+		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+				    0, text,
+				    -1);
+	}
+
+	g_free (text);*/
 
 	if (tracer->running) {
 		traceroute_stop (tracer);
 	} else {
-		traceroute_do (tracer);
+		if (netinfo_validate_host (tracer)) {
+			entry_host = GTK_ENTRY (
+				gtk_bin_get_child (GTK_BIN (tracer->host)));
+			text = g_strdup (gtk_entry_get_text (entry_host));
+
+			gn_combo_history_add (tracer->history, text);
+
+			g_free (text);
+
+			traceroute_do (tracer);
+		}
 	}
 }
 
@@ -85,19 +127,21 @@ on_netstat_activate (GtkWidget * widget, gpointer data)
 
 /* Info callbacks */
 #ifdef IFCONFIG_PROGRAM
-void
+/*void
 on_info_nic_changed (GtkEntry * entry, gpointer info)
 {
-	const gchar *nic;
+	gchar *nic;
 
 	g_return_if_fail (info != NULL);
 
-	nic = gtk_entry_get_text (entry);
+	nic = g_strdup (gtk_entry_get_text (entry));
 
 	if (strlen (nic) > 0) {
 		info_do (nic, (Netinfo *) & info);
 	}
-}
+
+	g_free (nic);
+}*/
 #endif
 
 /* Scan callbacks */
@@ -105,13 +149,41 @@ void
 on_scan_activate (GtkWidget * widget, gpointer data)
 {
 	Netinfo *scan = data;
+	GtkEntry *entry_host;
+	gchar *text;
 
 	g_return_if_fail (scan != NULL);
+
+	/*entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (scan->host)));
+	completion = gtk_entry_get_completion (entry_host);
+
+	model = gtk_entry_completion_get_model (completion);
+
+	text = g_strdup (gtk_entry_get_text (entry_host));
+
+	if (! nettool_item_is_in_model (model, text)) {
+		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+				    0, text,
+				    -1);
+	}
+
+	g_free (text);*/
 
 	if (scan->running) {
 		scan_stop (scan);
 	} else {
-		scan_do (scan);
+		if (netinfo_validate_host (scan)) {
+			entry_host = GTK_ENTRY (
+				gtk_bin_get_child (GTK_BIN (scan->host)));
+			text = g_strdup (gtk_entry_get_text (entry_host));
+
+			gn_combo_history_add (scan->history, text);
+
+			g_free (text);
+
+			scan_do (scan);
+		}
 	}
 }
 
@@ -120,13 +192,41 @@ void
 on_lookup_activate (GtkWidget * widget, gpointer data)
 {
 	Netinfo *lookup = data;
+	GtkEntry *entry_host;
+	gchar *text;
 
 	g_return_if_fail (lookup != NULL);
+
+/*	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (lookup->host)));
+	completion = gtk_entry_get_completion (entry_host);
+
+	model = gtk_entry_completion_get_model (completion);
+
+	text = g_strdup (gtk_entry_get_text (entry_host));
+
+	if (! nettool_item_is_in_model (model, text)) {
+		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+				    0, text,
+				    -1);
+	}
+
+	g_free (text);*/
 
 	if (lookup->running) {
 		lookup_stop (lookup);
 	} else {
-		lookup_do (lookup);
+		if (netinfo_validate_host (lookup)) {
+			entry_host = GTK_ENTRY (
+				gtk_bin_get_child (GTK_BIN (lookup->host)));
+			text = g_strdup (gtk_entry_get_text (entry_host));
+
+			gn_combo_history_add (lookup->history, text);
+
+			g_free (text);
+
+			lookup_do (lookup);
+		}
 	}
 }
 
@@ -135,13 +235,65 @@ void
 on_finger_activate (GtkWidget * widget, gpointer data)
 {
 	Netinfo *finger = data;
+	GtkEntry *entry_host;
+	gchar *text;
 
 	g_return_if_fail (finger != NULL);
+
+	/*entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->user)));
+	completion = gtk_entry_get_completion (entry_host);
+
+	model = gtk_entry_completion_get_model (completion);
+
+	text = g_strdup (gtk_entry_get_text (entry_host));
+
+	if (! nettool_item_is_in_model (model, text)) {
+		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+				    0, text,
+				    -1);
+	}
+
+	g_free (text);
+
+	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->host)));
+	completion = gtk_entry_get_completion (entry_host);
+
+	model = gtk_entry_completion_get_model (completion);
+
+	text = g_strdup (gtk_entry_get_text (entry_host));
+
+	if (! nettool_item_is_in_model (model, text)) {
+		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+				    0, text,
+				    -1);
+	}
+
+	g_free (text);*/
 
 	if (finger->running) {
 		finger_stop (finger);
 	} else {
-		finger_do (finger);
+		if (netinfo_validate_host (finger)) {
+			entry_host = GTK_ENTRY (
+				gtk_bin_get_child (GTK_BIN (finger->host)));
+			text = g_strdup (gtk_entry_get_text (entry_host));
+
+			gn_combo_history_add (finger->history, text);
+
+			g_free (text);
+
+			entry_host = GTK_ENTRY (
+				gtk_bin_get_child (GTK_BIN (finger->user)));
+			text = g_strdup (gtk_entry_get_text (entry_host));
+
+			gn_combo_history_add (finger->history_user, text);
+
+			g_free (text);
+
+			finger_do (finger);
+		}
 	}
 }
 
@@ -150,13 +302,41 @@ void
 on_whois_activate (GtkWidget * widget, gpointer data)
 {
 	Netinfo *whois = data;
+	GtkEntry *entry_host;
+	gchar *text;
 
 	g_return_if_fail (whois != NULL);
+
+/*	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (whois->host)));
+	completion = gtk_entry_get_completion (entry_host);
+
+	model = gtk_entry_completion_get_model (completion);
+
+	text = g_strdup (gtk_entry_get_text (entry_host));
+
+	if (! nettool_item_is_in_model (model, text)) {
+		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+				    0, text,
+				    -1);
+	}
+
+	g_free (text);*/
 
 	if (whois->running) {
 		whois_stop (whois);
 	} else {
-		whois_do (whois);
+		if (netinfo_validate_host (whois)) {
+			entry_host = GTK_ENTRY (
+				gtk_bin_get_child (GTK_BIN (whois->host)));
+			text = g_strdup (gtk_entry_get_text (entry_host));
+
+			gn_combo_history_add (whois->history, text);
+
+			g_free (text);
+
+			whois_do (whois);
+		}
 	}
 }
 
@@ -178,7 +358,7 @@ gn_quit_app (GtkWidget * widget, gpointer data)
 }
 
 void
-on_about_activate (GtkWidget * parent, gpointer data)
+on_about_activate (GtkWidget *menu_item, gpointer data)
 {
 	static GtkWidget *about_box = NULL;
 	GdkPixbuf *pixbuf = NULL;
@@ -190,7 +370,10 @@ on_about_activate (GtkWidget * parent, gpointer data)
 	};
 	const gchar *documentors[] = { NULL };
 	const gchar *translator_credits = _("translator_credits");
-	const gchar copyright[1024];
+	gchar copyright[1024];
+	GtkWindow *parent;
+
+	parent = (GtkWindow *) data;
 
 	g_sprintf (copyright, "Copyright \xc2\xa9 2003 %s", "Germán Poo Caamaño");
 	
@@ -203,7 +386,7 @@ on_about_activate (GtkWidget * parent, gpointer data)
 	{
 		gchar *filename = NULL;
                                                                                 
-		filename = g_build_filename (GNOME_ICONDIR, "gnome-netinfo.png", NULL);
+		filename = g_build_filename (PIXMAPS_DIR, "gnome-nettool.png", NULL);
 		if (filename != NULL) {
 			pixbuf = gdk_pixbuf_new_from_file (filename, NULL);
 			g_free (filename);
@@ -222,11 +405,15 @@ on_about_activate (GtkWidget * parent, gpointer data)
         if (pixbuf != NULL)
                 g_object_unref (pixbuf);
 
-	gtk_window_set_transient_for (GTK_WINDOW (about_box),
-				      GTK_WINDOW (parent));
+	gtk_window_set_transient_for (GTK_WINDOW (about_box), parent);
+	
+	gtk_window_set_screen (GTK_WINDOW (about_box),
+			       gtk_widget_get_screen (GTK_WIDGET (parent)));
 
 	g_signal_connect (G_OBJECT (about_box), "destroy",
-			  G_CALLBACK (gtk_widget_destroyed), &about_box);
+			  G_CALLBACK (gtk_widget_destroyed),
+			  &about_box);
+	
 	gtk_widget_show (about_box);
 }
 
@@ -287,19 +474,21 @@ on_copy_activate (GtkWidget * notebook, gpointer data)
 }
 
 void
-on_clear_history_activate (GtkWidget * notebook, gpointer data)
+on_clear_history_activate (GtkWidget *notebook, gpointer data)
 {
 	Netinfo *netinfo;
 
 	g_return_if_fail (GTK_IS_NOTEBOOK (notebook));
 
 	/* Pages all share a history id for host entry except whois */
-	netinfo = g_object_get_data (G_OBJECT (notebook), "finger");
-	gnome_entry_clear_history (GNOME_ENTRY (netinfo->host));
-	gnome_entry_clear_history (GNOME_ENTRY (netinfo->user));
+	netinfo = g_object_get_data (G_OBJECT (notebook), "pinger");
+	gn_combo_history_clear (netinfo->history);
+	/*netinfo = g_object_get_data (G_OBJECT (notebook), "finger");
+	gnome_entry_clear_history (netinfo->host);
+	gnome_entry_clear_history (netinfo->user);
 
 	netinfo = g_object_get_data (G_OBJECT (notebook), "whois");
-	gnome_entry_clear_history (GNOME_ENTRY (netinfo->host));
+	gnome_entry_clear_history (netinfo->host);*/
 
 }
 
@@ -321,7 +510,8 @@ on_page_switch (GtkNotebook     * notebook,
 	else
 		netinfo_progress_indicator_stop (netinfo);
 
-	title = g_strdup_printf ("Network Tools - %s", gtk_label_get_text (netinfo->page_label));
+	title = g_strdup_printf ("Network Tools - %s",
+				 gtk_label_get_text (GTK_LABEL (netinfo->page_label)));
 	gtk_window_set_title (GTK_WINDOW (netinfo->main_window), title);
 	g_free (title);
 }

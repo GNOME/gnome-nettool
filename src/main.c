@@ -34,6 +34,7 @@
 #include "lookup.h"
 #include "finger.h"
 #include "whois.h"
+#include "gn-combo-history.h"
 
 Netinfo *load_ping_widgets_from_xml (GladeXML * xml);
 Netinfo *load_traceroute_widgets_from_xml (GladeXML * xml);
@@ -49,6 +50,7 @@ int
 main (int argc, char *argv[])
 {
 	GtkWidget *window;
+	GtkWidget *menu_about;
 	GladeXML *xml;
 	GtkWidget *notebook;
 	const gchar *dialog = DATADIR "gnome-nettool.glade";
@@ -119,14 +121,29 @@ main (int argc, char *argv[])
 		return -1;
 	}
 
+/*<<<<<<< main.c
+	icon_path = g_build_filename (PIXMAPS_DIR, "gnome-nettool.png", NULL);
+	gnome_window_icon_set_default_from_file (icon_path);
+	g_free (icon_path);
+	=======*/
 	icon_info = gtk_icon_theme_lookup_icon (gtk_icon_theme_get_default (), "gnome-nettool", 48, 0);
 	if (icon_info != NULL) {
 		gtk_window_set_default_icon_from_file (gtk_icon_info_get_filename (icon_info), NULL);
 		gtk_icon_info_free (icon_info);
 	}
+/*>>>>>>> 1.4*/
 
 	xml = glade_xml_new (dialog, "main_window", NULL);
 	window = glade_xml_get_widget (xml, "main_window");
+
+	g_signal_connect (G_OBJECT (window), "delete-event",
+			  G_CALLBACK (gn_quit_app), NULL);
+	
+	menu_about = glade_xml_get_widget (xml, "m_about");
+
+	g_signal_connect (G_OBJECT (menu_about), "activate",
+			  G_CALLBACK (on_about_activate),
+			  (gpointer) window);
 
 	pinger = load_ping_widgets_from_xml (xml);
 	tracer = load_traceroute_widgets_from_xml (xml);
@@ -209,7 +226,7 @@ main (int argc, char *argv[])
 
 	gtk_notebook_set_current_page (GTK_NOTEBOOK (notebook), current_page);
 
-	gtk_widget_show_all (window);
+	gtk_widget_show (window);
 
 	gtk_main ();
 
@@ -245,6 +262,9 @@ load_ping_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *pinger;
 	GtkWidget *vbox_ping;
+	GtkEntry  *entry_host;
+	GtkTreeModel *model;
+	GtkEntryCompletion *completion;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -278,13 +298,32 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	pinger->button_callback = G_CALLBACK (on_ping_activate);
 	pinger->process_line = NETINFO_FOREACH_FUNC (ping_foreach_with_tree);
 	pinger->copy_output = NETINFO_COPY_FUNC (ping_copy_to_clipboard);
+
+	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
+	gtk_combo_box_set_model (GTK_COMBO_BOX (pinger->host), model);
+	g_object_unref (model);
+
+	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (pinger->host), 0);*/
+
+	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (pinger->host)));
 	
-	g_signal_connect (G_OBJECT (pinger->host), "activate",
-				  G_CALLBACK (on_ping_activate),
-				  pinger);
+	completion = gtk_entry_completion_new ();
+	gtk_entry_set_completion (entry_host, completion);
+	g_object_unref (completion);
+	gtk_entry_completion_set_model (completion, model);
+	gtk_entry_completion_set_text_column (completion, 0);
+	g_object_unref (model);
+
+	pinger->history = gn_combo_history_new ();
+	gn_combo_history_set_id (pinger->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_combo (pinger->history, GTK_COMBO_BOX (pinger->host));
+
+	g_signal_connect (G_OBJECT (entry_host), "activate",
+			  G_CALLBACK (on_ping_activate),
+			  pinger);
 	g_signal_connect (G_OBJECT (pinger->button), "clicked",
-				  pinger->button_callback,
-				  pinger);
+			  pinger->button_callback,
+			  pinger);
 
 	return pinger;
 }
@@ -295,6 +334,9 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *tracer;
 	GtkWidget *vbox_traceroute;
+	GtkEntry  *entry_host;
+	GtkTreeModel *model;
+	GtkEntryCompletion *completion;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -323,12 +365,31 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	tracer->process_line = NETINFO_FOREACH_FUNC (traceroute_foreach_with_tree);
 	tracer->copy_output = NETINFO_COPY_FUNC (traceroute_copy_to_clipboard);
 
-	g_signal_connect (G_OBJECT (tracer->host), "activate",
-				  G_CALLBACK (on_traceroute_activate),
-				  tracer);
+	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
+	gtk_combo_box_set_model (GTK_COMBO_BOX (tracer->host), model);
+	g_object_unref (model);
+
+	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (tracer->host), 0);*/
+
+	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (tracer->host)));
+
+	completion = gtk_entry_completion_new ();
+	gtk_entry_set_completion (entry_host, completion);
+	g_object_unref (completion);
+	gtk_entry_completion_set_model (completion, model);
+	gtk_entry_completion_set_text_column (completion, 0);
+	g_object_unref (model);
+
+	tracer->history = gn_combo_history_new ();
+	gn_combo_history_set_id (tracer->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_combo (tracer->history, GTK_COMBO_BOX (tracer->host));
+
+	g_signal_connect (G_OBJECT (entry_host), "activate",
+			  G_CALLBACK (on_traceroute_activate),
+			  tracer);
 	g_signal_connect (G_OBJECT (tracer->button), "clicked",
-				  tracer->button_callback,
-				  tracer);
+			  tracer->button_callback,
+			  tracer);
 
 	return tracer;
 }
@@ -383,21 +444,70 @@ load_netstat_widgets_from_xml (GladeXML * xml)
 	return netstat;
 }
 
+static void
+info_list_ip_addr_add_columns (GtkWidget *list_ip_addr)
+{
+	GtkTreeViewColumn *column;
+	GtkCellRenderer   *renderer;
+
+	renderer = gtk_cell_renderer_text_new ();
+	column = gtk_tree_view_column_new_with_attributes (_("Protocol"),
+							   renderer,
+							   "text", 0,
+							   NULL);
+	gtk_tree_view_insert_column (GTK_TREE_VIEW (list_ip_addr), column, 0);
+
+	renderer = gtk_cell_renderer_text_new ();
+	column = gtk_tree_view_column_new_with_attributes (_("IP Address"),
+							   renderer,
+							   "text", 1,
+							   NULL);
+	gtk_tree_view_insert_column (GTK_TREE_VIEW (list_ip_addr), column, 1);
+
+	renderer = gtk_cell_renderer_text_new ();
+	column = gtk_tree_view_column_new_with_attributes (_("Netmask / Prefix"),
+							   renderer,
+							   "text", 2,
+							   NULL);
+	gtk_tree_view_insert_column (GTK_TREE_VIEW (list_ip_addr), column, 2);
+	
+	renderer = gtk_cell_renderer_text_new ();
+	column = gtk_tree_view_column_new_with_attributes (_("Broadcast"),
+							   renderer,
+							   "text", 3,
+							   NULL);
+	gtk_tree_view_insert_column (GTK_TREE_VIEW (list_ip_addr), column, 3);
+	
+	renderer = gtk_cell_renderer_text_new ();
+	column = gtk_tree_view_column_new_with_attributes (_("Scope"),
+							   renderer,
+							   "text", 4,
+							   NULL);
+	gtk_tree_view_insert_column (GTK_TREE_VIEW (list_ip_addr), column, 4);
+
+	
+}
+
 /* The value returned must be released from memory */
 Netinfo *
 load_info_widgets_from_xml (GladeXML * xml)
 {
-	Netinfo *info;
-	GtkWidget *combo;
-	GtkWidget *vbox_info;
+	Netinfo      *info;
+	GtkTreeModel *model;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
 	info = g_malloc (sizeof (Netinfo));
 
 	info->main_window = glade_xml_get_widget (xml, "main_window");
+/*<<<<<<< main.c*/
+	info->combo = glade_xml_get_widget (xml, "info_combo");
+	info->ipv6_frame = glade_xml_get_widget (xml, "info_ipv6_frame");
+	info->ipv4_frame = glade_xml_get_widget (xml, "info_ipv4_frame");
+/*=======*/
 	info->progress_bar = glade_xml_get_widget (xml, "progress_bar");
 	info->page_label = glade_xml_get_widget (xml, "device");
+/*>>>>>>> 1.4*/
 	info->hw_address = glade_xml_get_widget (xml, "info_hw_address");
 	info->ip_address = glade_xml_get_widget (xml, "info_ip_address");
 	info->netmask = glade_xml_get_widget (xml, "info_netmask");
@@ -413,19 +523,31 @@ load_info_widgets_from_xml (GladeXML * xml)
 	info->rx = glade_xml_get_widget (xml, "info_rx");
 	info->rx_errors = glade_xml_get_widget (xml, "info_rx_errors");
 	info->collisions = glade_xml_get_widget (xml, "info_collisions");
+	info->list_ip_addr = glade_xml_get_widget (xml, "info_list_ip_addr");
 
-	vbox_info = glade_xml_get_widget (xml, "vbox_info");
+	model = GTK_TREE_MODEL (gtk_list_store_new (5, G_TYPE_STRING, G_TYPE_STRING,
+						    G_TYPE_STRING, G_TYPE_STRING,
+						    G_TYPE_STRING));
+	gtk_tree_view_set_model (GTK_TREE_VIEW (info->list_ip_addr), model);
+	g_object_unref (model);
+	
+	info_list_ip_addr_add_columns (info->list_ip_addr);
 
 /*
 #ifdef IFCONFIG_PROGRAM
 */
-	info->nic = glade_xml_get_widget (xml, "info_nic");
-	combo = glade_xml_get_widget (xml, "info_combo");
+	model = GTK_TREE_MODEL (gtk_list_store_new (3, GDK_TYPE_PIXBUF,
+						    G_TYPE_STRING,
+						    G_TYPE_POINTER));
+	gtk_combo_box_set_model (GTK_COMBO_BOX (info->combo), model);
+
+	g_object_unref (model);
 	
-	g_signal_connect (G_OBJECT (info->nic), "changed",
-				  G_CALLBACK (info_nic_changed),
-				  info);
-	info_load_iface (info, combo);
+	g_signal_connect (G_OBJECT (info->combo), "changed",
+			  G_CALLBACK (info_nic_changed),
+			  info);
+	
+	info_load_iface (info);
 /*
 #else
 	gtk_widget_set_sensitive (vbox_info, FALSE);
@@ -440,6 +562,9 @@ Netinfo *
 load_scan_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *scan;
+	GtkEntry  *entry_host;
+	GtkTreeModel *model;
+	GtkEntryCompletion *completion;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -465,15 +590,78 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	scan->button_callback = G_CALLBACK (on_scan_activate);
 	scan->copy_output = NETINFO_COPY_FUNC (scan_copy_to_clipboard);
 	scan->process_line = NETINFO_FOREACH_FUNC (scan_foreach);
-	
-	g_signal_connect (G_OBJECT (scan->host), "activate",
-                          scan->button_callback,
-                          scan);
+
+	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
+	gtk_combo_box_set_model (GTK_COMBO_BOX (scan->host), model);
+	g_object_unref (model);
+
+	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (scan->host), 0);*/
+
+	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (scan->host)));
+
+	completion = gtk_entry_completion_new ();
+	gtk_entry_set_completion (entry_host, completion);
+	g_object_unref (completion);
+	gtk_entry_completion_set_model (completion, model);
+	gtk_entry_completion_set_text_column (completion, 0);
+	g_object_unref (model);
+
+	scan->history = gn_combo_history_new ();
+	gn_combo_history_set_id (scan->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_combo (scan->history, GTK_COMBO_BOX (scan->host));
+
+	g_signal_connect (G_OBJECT (entry_host), "activate",
+			  scan->button_callback,
+			  scan);
 	g_signal_connect (G_OBJECT (scan->button), "clicked",
                           scan->button_callback,
                           scan);
 
 	return scan;
+}
+
+static void
+nettool_lookup_setup_combo_type (Netinfo *lookup)
+{
+	gint i;
+	GtkTreeModel *model;
+	GtkTreeIter   iter;
+	GtkCellRenderer *renderer;
+	gchar *types[] = {
+		"Default Information",
+		"Internet Address",
+		"Canonical Name",
+		"CPU / OS Type",
+		"Mailbox Exchange",
+		"Mailbox Information",
+		"Name Server",
+		"Host name for Address",
+		"Start-of-authority",
+		"Text Information",
+		"Well Known Services",
+		"Any / All Information",
+		NULL
+	};
+
+	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
+	
+	for (i=0; types[i]; i++) {
+		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+				    0, types[i], -1);
+	}
+	
+	gtk_combo_box_set_model (GTK_COMBO_BOX (lookup->type), model);
+
+	g_object_unref (model);
+
+	gtk_cell_layout_clear (GTK_CELL_LAYOUT (lookup->type));
+	renderer = gtk_cell_renderer_text_new ();
+	gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (lookup->type), renderer, TRUE);
+	gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (lookup->type), renderer,
+					"text", 0, NULL);
+
+	gtk_combo_box_set_active (GTK_COMBO_BOX (lookup->type), 0);
 }
 
 /* The value returned must be released from memory */
@@ -482,6 +670,9 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *lookup;
 	GtkWidget *vbox_lookup;
+	GtkEntry  *entry_host;
+	GtkTreeModel *model;
+	GtkEntryCompletion *completion;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -511,7 +702,28 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	lookup->process_line = NETINFO_FOREACH_FUNC (lookup_foreach_with_tree);
 	lookup->copy_output = NETINFO_COPY_FUNC (lookup_copy_to_clipboard);
 
-	g_signal_connect (G_OBJECT (lookup->host), "activate",
+	nettool_lookup_setup_combo_type (lookup);
+
+	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
+	gtk_combo_box_set_model (GTK_COMBO_BOX (lookup->host), model);
+	g_object_unref (model);
+
+	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (lookup->host), 0);*/
+
+	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (lookup->host)));
+
+	completion = gtk_entry_completion_new ();
+	gtk_entry_set_completion (entry_host, completion);
+	g_object_unref (completion);
+	gtk_entry_completion_set_model (completion, model);
+	gtk_entry_completion_set_text_column (completion, 0);
+	g_object_unref (model);
+
+	lookup->history = gn_combo_history_new ();
+	gn_combo_history_set_id (lookup->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_combo (lookup->history, GTK_COMBO_BOX (lookup->host));
+
+	g_signal_connect (G_OBJECT (entry_host), "activate",
 			  G_CALLBACK (on_lookup_activate),
 			  lookup);
 	g_signal_connect (G_OBJECT (lookup->button), "clicked",
@@ -528,6 +740,9 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	Netinfo *finger;
 	GtkWidget *vbox_finger;
 	PangoFontDescription *font_desc;
+	GtkEntry  *entry_host;
+	GtkTreeModel *model;
+	GtkEntryCompletion *completion;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -563,12 +778,52 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	finger->process_line = NETINFO_FOREACH_FUNC (finger_foreach);
 	finger->copy_output = NETINFO_COPY_FUNC (finger_copy_to_clipboard);
 
-	g_signal_connect (G_OBJECT (finger->user), "activate",
+	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
+	gtk_combo_box_set_model (GTK_COMBO_BOX (finger->user), model);
+	g_object_unref (model);
+
+	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->user), 0);*/
+
+	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->user)));
+
+	completion = gtk_entry_completion_new ();
+	gtk_entry_set_completion (entry_host, completion);
+	g_object_unref (completion);
+	gtk_entry_completion_set_model (completion, model);
+	gtk_entry_completion_set_text_column (completion, 0);
+	g_object_unref (model);
+
+	finger->history_user = gn_combo_history_new ();
+	gn_combo_history_set_id (finger->history_user, "GNOME_Network_netinfo_user");
+	gn_combo_history_set_combo (finger->history_user, GTK_COMBO_BOX (finger->user));
+
+	g_signal_connect (G_OBJECT (entry_host), "activate",
 			  G_CALLBACK (on_finger_activate),
 			  finger);
-	g_signal_connect (G_OBJECT (finger->host), "activate",
+
+	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
+	gtk_combo_box_set_model (GTK_COMBO_BOX (finger->host), model);
+	g_object_unref (model);
+
+	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->host), 0);*/
+
+	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->host)));
+
+	completion = gtk_entry_completion_new ();
+	gtk_entry_set_completion (entry_host, completion);
+	g_object_unref (completion);
+	gtk_entry_completion_set_model (completion, model);
+	gtk_entry_completion_set_text_column (completion, 0);
+	g_object_unref (model);
+
+	finger->history = gn_combo_history_new ();
+	gn_combo_history_set_id (finger->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_combo (finger->history, GTK_COMBO_BOX (finger->host));
+
+	g_signal_connect (G_OBJECT (entry_host), "activate",
 			  G_CALLBACK (on_finger_activate),
 			  finger);
+
 	g_signal_connect (G_OBJECT (finger->button), "clicked",
 			  finger->button_callback,
 			  finger);
@@ -582,7 +837,11 @@ load_whois_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *whois;
 	GtkWidget *vbox_whois;
+	GtkEntry  *entry_host;
+	GtkTreeModel *model;
+	GtkEntryCompletion *completion;
 	PangoFontDescription *font_desc;
+	
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -616,7 +875,26 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	whois->process_line = NETINFO_FOREACH_FUNC (whois_foreach);
 	whois->copy_output = NETINFO_COPY_FUNC (whois_copy_to_clipboard);
 
-	g_signal_connect (G_OBJECT (whois->host), "activate",
+	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
+	gtk_combo_box_set_model (GTK_COMBO_BOX (whois->host), model);
+	g_object_unref (model);
+
+	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (whois->host), 0);*/
+	
+	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (whois->host)));
+	
+	completion = gtk_entry_completion_new ();
+	gtk_entry_set_completion (entry_host, completion);
+	g_object_unref (completion);
+	gtk_entry_completion_set_model (completion, model);
+	gtk_entry_completion_set_text_column (completion, 0);
+	g_object_unref (model);
+
+	whois->history = gn_combo_history_new ();
+	gn_combo_history_set_id (whois->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_combo (whois->history, GTK_COMBO_BOX (whois->host));
+
+	g_signal_connect (G_OBJECT (entry_host), "activate",
 			  G_CALLBACK (on_whois_activate),
 			  whois);
 	g_signal_connect (G_OBJECT (whois->button), "clicked",

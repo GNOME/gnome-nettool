@@ -1,3 +1,51 @@
+2004-06-08  Carlos García Campos <carlosgc@gnome.org>
+
+	* src/info.c (load_iface): checks if there is no network devices
+	enabled
+
+	* src/gnome-nettool.glade: s/GtkCombo/GtkComboBox and added a treeview
+	to show the IP information when there are IPv6 ips. 
+
+	* src/info.c (set_nic, load_iface, ip6_masklen,
+	ip6_construct_address, get_nic_information, get_interfaces),
+	src/info.h, src/main.c (list_ip_addr_add_columns, 
+	load_info_widgets_from_xml), src/nettol.h: IPv6 support. 
+	When there are IPv6 addresses, a treeview is shown with
+	the information about all of the ip addresses, but if there aren't IPv6
+	addresses, the IPv4 information is shown in text labels.
+
+	* src/info.c (load_iface, nic_update_stats, nic_changed), src/info.h, 
+	src/main.c (load_info_widgets_from_xml): Ported to GTK+ 2.4, uses
+	GtkComboBox instead of GtkCombo
+
+	* pixmaps, pixmaps/Makefile.am, configure.in: added a pixmap directory and 
+	moved gnome-nettol.png from src to pixmaps. Added all of the pixmaps
+	needed to the new pixmap directory.
+
+	* configure.in: checks the libraries version because now 
+	nettool depends on gtk+ >= 2.4
+
+	* src/*.c, : ported to Gtk+ 2.4, uses GtkComboBox and GtkEntryCompletion
+	instead of GnomeEntry (deprecated)
+
+	* src/gnome-nettool.glade: some gui changes that make it a bit more
+	HIG-Compliant
+
+	* src/callbacks.c (on_about_activate), src/main.c (main): uses
+	PIXMAPS_DIR instead of GNOME_ICONDIR and gnome-nettool.png instead of
+	gnome-netinfo.png
+
+	* src/gn-combo-history.[ch]: files added. It is an object to manage
+	the history of new combo boxes
+
+	* src/main.c (load_*_widgets_from_xml), src/callbacks
+	(on_*_activate): added support for history in
+	new combo boxes
+
+	* src/callbacks.c, src/info.c, src/ping.c, src/traceroute.c,
+	src/lookup.c, src/util-mii.c: added #include <glib/gprintf.h> to avoid
+	compile warnings about g_sprintf ()
+
 2004-06-06  William Jon McCann  <mccann@jhu.edu>
 
 	* src/netstat.c (netstat_protocol_tree_insert)

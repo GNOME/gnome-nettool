@@ -21,7 +21,7 @@ void on_whois_activate (GtkWidget * editable, gpointer data);
 /* General stuff */
 void gn_quit_app (GtkWidget * widget, gpointer data);
 
-void on_about_activate (GtkWidget * parent, gpointer data);
+void on_about_activate (GtkWidget *menu_item, gpointer data);
 
 void on_copy_activate (GtkWidget * notebook, gpointer data);
 
