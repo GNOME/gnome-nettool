@@ -51,7 +51,7 @@ main (int argc, char *argv[])
 	GtkWidget *window;
 	GladeXML *xml;
 	GtkWidget *notebook;
-	const gchar *dialog = DATADIR "gnome-netinfo.glade";
+	const gchar *dialog = DATADIR "gnome-nettool.glade";
 	Netinfo *pinger;
 	Netinfo *tracer;
 	Netinfo *netstat;
@@ -99,7 +99,7 @@ main (int argc, char *argv[])
 	};
 
 #ifdef ENABLE_NLS
-	bindtextdomain (GETTEXT_PACKAGE, GNOME_NETINFO_LOCALEDIR);
+	bindtextdomain (GETTEXT_PACKAGE, GNOME_NETTOOL_LOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
 #endif

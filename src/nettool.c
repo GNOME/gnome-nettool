@@ -26,7 +26,7 @@
 #include <sys/wait.h>
 #include <netdb.h>
 
-#include "netinfo.h"
+#include "nettool.h"
 #include "utils.h"
 
 gushort

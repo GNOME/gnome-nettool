@@ -21,7 +21,7 @@
 #  include <config.h>
 #endif
 
-#include "netinfo.h"
+#include "nettool.h"
 
 #define TRACE_FORMAT "%d %s %s %s ms %s ms"
 #define TRACE_FORMAT_CLOSE "%d %s %s [closed] %s ms %s ms"

@@ -21,7 +21,7 @@
 #  include <config.h>
 #endif
 
-#include "netinfo.h"
+#include "nettool.h"
 
 #define SCAN_FORMAT "%d %s %s"
 

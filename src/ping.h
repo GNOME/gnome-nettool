@@ -21,7 +21,7 @@
 #  include <config.h>
 #endif
 
-#include "netinfo.h"
+#include "nettool.h"
 
 /* The ping usage and output is different between Unix flavours */
 /* FIXME: Add BSD support */

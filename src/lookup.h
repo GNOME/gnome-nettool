@@ -22,7 +22,7 @@
 #  include <config.h>
 #endif
 
-#include "netinfo.h"
+#include "nettool.h"
 
 #define LOOKUP_OPTIONS "+nocomments +search +nocmd +nostats +noadditional"
 #define LOOKUP_FORMAT "%s %d %s %s %s"

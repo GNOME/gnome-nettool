@@ -21,7 +21,7 @@
 #  include <config.h>
 #endif
 
-#include "netinfo.h"
+#include "nettool.h"
 
 #if defined(__linux__)
 	/* proto 0 0 ip port ip port state */

@@ -22,7 +22,7 @@
 #  include <config.h>
 #endif
 
-#include "netinfo.h"
+#include "nettool.h"
 
 #define WHOIS_OPTIONS ""
 

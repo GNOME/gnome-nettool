@@ -21,7 +21,7 @@
 #  include <config.h>
 #endif
 
-#include "netinfo.h"
+#include "nettool.h"
 
 #define INFO_ADDRSTRLEN 128
 #define NOT_AVAILABLE _("not available")
