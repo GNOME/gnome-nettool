@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-12 04:32+0100\n"
+"POT-Creation-Date: 2004-02-11 16:35+0100\n"
 "PO-Revision-Date: 2004-01-12 10:15+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -17,625 +17,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
-msgid "GNOME Remote Desktop Applet"
-msgstr "Aplet GNOME Remote Desktop"
-
-#: desktop/client/gnome-remote-desktop.desktop.in.h:1
-msgid "Connect to a remote desktop computer"
-msgstr "Připojit se k pracovní ploše vzdáleného počítače"
-
-#: desktop/client/gnome-remote-desktop.desktop.in.h:2
-msgid "Remote Desktop Client"
-msgstr "Klient vzdálené pracovní plochy"
-
-#: desktop/client/src/connect.c:75
-msgid "640 x 480 pixels"
-msgstr "640 × 480 pixelů"
-
-#: desktop/client/src/connect.c:75
-msgid "800 x 600 pixels"
-msgstr "800 × 600 pixelů"
-
-#: desktop/client/src/connect.c:76
-msgid "1024 x 768 pixels"
-msgstr "1024 × 768 pixelů"
-
-#: desktop/client/src/connect.c:77
-msgid "1152 x 864 pixels"
-msgstr "1152 × 864 pixelů"
-
-#: desktop/client/src/connect.c:78
-msgid "1280 x 960 pixels"
-msgstr "1280 × 960 pixelů"
-
-#: desktop/client/src/connect.c:82
-msgid "256 Colors"
-msgstr "256 barev"
-
-#: desktop/client/src/connect.c:83
-msgid "High Color (15 bit)"
-msgstr "High Color (15 bitů)"
-
-#: desktop/client/src/connect.c:84
-msgid "High Color (16 bit)"
-msgstr "High Color (16 bitů)"
-
-#: desktop/client/src/connect.c:85
-msgid "True Color (24 bit)"
-msgstr "True Color (24 bitů)"
-
-#: desktop/client/src/connect.c:286 desktop/client/src/connect.c:309
-#: desktop/client/src/connect.c:311 desktop/client/src/support.c:780
-#: desktop/gnome-remote-desktop.glade.h:13
-msgid "GNOME Remote Desktop"
-msgstr "GNOME Remote Desktop"
-
-#.
-#. This is the input for the Compact mode
-#.
-#: desktop/client/src/connect.c:343 desktop/client/src/connect.c:554
-msgid "Compu_ter:"
-msgstr "_Počítač:"
-
-#: desktop/client/src/connect.c:367 desktop/client/src/connect.c:622
-msgid "Enter the name or address of the remote system."
-msgstr "Zadejte název nebo adresu vzdáleného systému."
-
-#: desktop/client/src/connect.c:372 desktop/client/src/connect.c:629
-msgid "Select the protocol to use for this connection."
-msgstr "Vyberte protokol, který používat pro toto spojení."
-
-#: desktop/client/src/connect.c:379 desktop/client/src/connect.c:636
-msgid ""
-"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
-"systems with desktop sharing."
-msgstr ""
-"Protokol RDP se používá pro spojení s Microsoft Terminal Servery a systémy "
-"Windows XP se sdílením pracovní plochy."
-
-#: desktop/client/src/connect.c:384 desktop/client/src/connect.c:643
-msgid ""
-"VNC protocol is used to connect to systems sharing the desktop by using VNC."
-msgstr ""
-"Protokol VNC se používá pro připojení k systémům, které sdílí pracovní "
-"plochu pomocí VNC."
-
-#: desktop/client/src/connect.c:393 desktop/client/src/connect.c:654
-msgid "XDMCP protocol uses Xnest to connect to servers running X."
-msgstr "Protokol XDMCP používá Xnest pro připojení k serverům používajícím X."
-
-#: desktop/client/src/connect.c:398 desktop/client/src/connect.c:661
-msgid "ICA protocol is used to connect to Citrix servers."
-msgstr "Protokol ICA se používá pro připojení k serverům Citrix."
-
-#.
-#. This is the Profile Launcher
-#.
-#: desktop/client/src/connect.c:409
-msgid "Prof_ile Launcher:"
-msgstr "Spouštěč _profilu:"
-
-#: desktop/client/src/connect.c:422
-msgid "Select a saved profile to launch it immediately."
-msgstr "Uložený profil okamžitě spustíte jeho vybráním."
-
-#: desktop/client/src/connect.c:454
-msgid "_More"
-msgstr "_Více"
-
-#: desktop/client/src/connect.c:480 desktop/client/src/connect.c:1224
-#: network-utilities/gnome-remote-shell.glade.h:6
-msgid "Co_nnect"
-msgstr "_Připojit"
-
-#.
-#. This is the label for the Connection Profile
-#.
-#: desktop/client/src/connect.c:489 desktop/client/src/connect.c:491
-msgid "Connection Profile"
-msgstr "Profil připojení"
-
-#: desktop/client/src/connect.c:520 desktop/client/src/connect.c:522
-msgid "Logon Settings"
-msgstr "Nastavení přihlášení"
-
-#: desktop/client/src/connect.c:530
-msgid ""
-"Type the name of the computer or choose a computer from the drop-down list."
-msgstr "Zadejte název počítače nebo vyberte počítač ze seznamu."
-
-#: desktop/client/src/connect.c:562
-msgid "Pro_tocol:"
-msgstr "_Protokol:"
-
-#: desktop/client/src/connect.c:570
-msgid "_User Name:"
-msgstr "Jméno _uživatele:"
-
-#: desktop/client/src/connect.c:578
-msgid "Pass_word:"
-msgstr "_Heslo:"
-
-#: desktop/client/src/connect.c:586
-msgid "Do_main:"
-msgstr "_Doména:"
-
-#: desktop/client/src/connect.c:594
-msgid "C_lient Hostname:"
-msgstr "Jméno počítače _klienta:"
-
-#: desktop/client/src/connect.c:602
-msgid "Prot_ocol File:"
-msgstr "_Soubor protokolu:"
-
-#: desktop/client/src/connect.c:677
-msgid ""
-"Enter the username for the remote system.\n"
-"For VNC, enter the path to your saved vnc password file."
-msgstr ""
-"Zadejte jméno uživatele pro vzdálený systém.\n"
-"Pro VNC zadejte cestu k vašemu uloženému souboru hesla vnc."
-
-#: desktop/client/src/connect.c:686
-msgid "Enter the password for the remote system."
-msgstr "Zadejte heslo pro vzdálený systém."
-
-#: desktop/client/src/connect.c:694
-msgid "Enter the domain for the remote system."
-msgstr "Zadejte doménu pro vzdálený systém."
-
-#: desktop/client/src/connect.c:702
-msgid "Enter the local hostname for this system."
-msgstr "Zadejte místní jméno počítače pro tento systém."
-
-#: desktop/client/src/connect.c:714
-msgid ""
-"Some protocols require a file containing settings. If required, enter the "
-"path to the file here."
-msgstr ""
-"Některé protokoly vyžadují soubor obsahující nastavení. Pokud je to potřeba, "
-"zadejte zde cestu k tomuto souboru."
-
-#: desktop/client/src/connect.c:736 desktop/client/src/connect.c:738
-msgid "Remote Desktop Size"
-msgstr "Velikost vzdálené pracovní plochy"
-
-#: desktop/client/src/connect.c:756
-msgid "Use default screen size"
-msgstr "Použít implicitní velikost obrazovky"
-
-#: desktop/client/src/connect.c:760
-msgid "Use the default screen size."
-msgstr "Používat implicitní velikost obrazovky."
-
-#: desktop/client/src/connect.c:765
-msgid "Use specified screen size"
-msgstr "Používat zadanou velikost obrazovky"
-
-#: desktop/client/src/connect.c:769
-msgid "Use the list to choose the screen size to use."
-msgstr "Použijte seznam pro výběr velikosti obrazovky, kterou používat."
-
-#: desktop/client/src/connect.c:781
-msgid "Operate in full screen mode"
-msgstr "Pracovat v režimu přes celou obrazovku"
-
-#: desktop/client/src/connect.c:785
-msgid "Work in full screen mode."
-msgstr "Pracovat v režimu přes celou obrazovku."
-
-#: desktop/client/src/connect.c:794
-msgid "Use alternate full screen switch (-F)"
-msgstr "Použít jiný přepínač přes celou obrazovku (-F)"
-
-#: desktop/client/src/connect.c:798
-msgid "Check this if you use rdesktop with the unified patches."
-msgstr "Zaškrtněte toto, pokud používáte rdesktop s unified patchi."
-
-#: desktop/client/src/connect.c:807 desktop/client/src/connect.c:809
-msgid "Colors"
-msgstr "Barvy"
-
-#: desktop/client/src/connect.c:827
-msgid "Use default color depth"
-msgstr "Použít implicitní barevnou hloubku"
-
-#: desktop/client/src/connect.c:831
-msgid "Use the default color depth."
-msgstr "Používat implicitní barevnou hloubku."
-
-#: desktop/client/src/connect.c:836
-msgid "Use specified color depth"
-msgstr "Používat zadanou barevnou hloubku"
-
-#: desktop/client/src/connect.c:840
-msgid "Use the list to choose the color depth to use."
-msgstr "Použijte seznam pro výběr barevné hloubky, kterou používat."
-
-#: desktop/client/src/connect.c:864
-msgid "Remote Computer _Sound"
-msgstr "Zvuk ze _vzdáleného počítače"
-
-#: desktop/client/src/connect.c:866
-msgid "Remote Computer Sound"
-msgstr "Zvuk ze vzdáleného počítače"
-
-#: desktop/client/src/connect.c:890 desktop/client/src/connect.c:926
-msgid "On the local computer"
-msgstr "Na místním počítači"
-
-#: desktop/client/src/connect.c:893 desktop/client/src/connect.c:929
-msgid "On the remote computer"
-msgstr "Na vzdáleném počítači"
-
-#: desktop/client/src/connect.c:896
-msgid "Do not play"
-msgstr "Nehrát"
-
-#: desktop/client/src/connect.c:907
-msgid "_Keyboard"
-msgstr "_Klávesnice"
-
-#: desktop/client/src/connect.c:909
-msgid "Keyboard"
-msgstr "Klávesnice"
-
-#: desktop/client/src/connect.c:932
-msgid "In full screen mode only"
-msgstr "Jen v režimu přes celou obrazovku"
-
-#: desktop/client/src/connect.c:938
-msgid ""
-"Use the following keyboard language\n"
-"(2 char keycode)"
-msgstr ""
-"Používat následující jazyk klávesnice\n"
-"(dvouznakový kód)"
-
-#: desktop/client/src/connect.c:966
-msgid ""
-"Apply Windows key combinations\n"
-"(for example ALT+TAB) (unsupported)"
-msgstr ""
-"Používat kombinace kláves Windows\n"
-"(například ALT+TAB) (nepodporováno)"
-
-#: desktop/client/src/connect.c:989 desktop/client/src/connect.c:991
-msgid "Start a Program"
-msgstr "Spustit program"
-
-#: desktop/client/src/connect.c:1006
-msgid "Start the following program on connection"
-msgstr "Spustit při připojení následující program"
-
-#: desktop/client/src/connect.c:1013
-msgid "Program path and filename"
-msgstr "Cesta a název souboru programu"
-
-#: desktop/client/src/connect.c:1026
-msgid "Start in the following folder"
-msgstr "Spustit v následujícím adresáři"
-
-#: desktop/client/src/connect.c:1048 desktop/client/src/connect.c:1050
-msgid "Optimize Performance"
-msgstr "Optimzalizovat výkon"
-
-#: desktop/client/src/connect.c:1071
-msgid "Desktop background (u)"
-msgstr "Pozadí pracovní plochy (u)"
-
-#: desktop/client/src/connect.c:1075
-msgid "Show content of window while dragging (u)"
-msgstr "Zobrazovat obsah okna při tažení (u)"
-
-#: desktop/client/src/connect.c:1079
-msgid "Menu and window animation (u)"
-msgstr "Animace menu a oken (u)"
-
-#: desktop/client/src/connect.c:1083
-msgid "Themes (u)"
-msgstr "Témata (u)"
-
-#: desktop/client/src/connect.c:1087
-msgid "Enable bitmap caching"
-msgstr "Povolit kešování bitmap"
-
-#: desktop/client/src/connect.c:1091
-msgid "Do not send motion events"
-msgstr "Neposílat události pohybu"
-
-#: desktop/client/src/connect.c:1095
-msgid "Enable window manager's key bindings"
-msgstr "Povolit klávesové zkratky manažera oken"
-
-#: desktop/client/src/connect.c:1100
-msgid "Options available for optimizing performance"
-msgstr "Možnosti dostupné pro optimalizaci výkonu"
-
-#.
-#. These are the labels for the notebook control
-#.
-#: desktop/client/src/connect.c:1113
-msgid "_General"
-msgstr "_Obecné"
-
-#: desktop/client/src/connect.c:1118
-msgid "_Display"
-msgstr "_Displej"
-
-#: desktop/client/src/connect.c:1123
-msgid "Local _Resources"
-msgstr "_Místní zdroje"
-
-#: desktop/client/src/connect.c:1128
-msgid "_Programs"
-msgstr "_Programy"
-
-#: desktop/client/src/connect.c:1133
-msgid "Perf_ormance"
-msgstr "_Výkon"
-
-#: desktop/client/src/connect.c:1197
-msgid "_Less"
-msgstr "_Méně"
-
-#: desktop/client/src/connect.c:1708
-msgid "Input a filename to save as..."
-msgstr "Zadejte název souboru, kam uložit..."
-
-#: desktop/client/src/connect.c:1750 desktop/client/src/connect.c:1795
-msgid "Choose an RDP file to open..."
-msgstr "Zvolte soubor RDP, který otevřít..."
-
-#: desktop/client/src/support.c:277
-msgid ""
-"rdesktop was not found in your path.\n"
-"Please verify your rdesktop installation."
-msgstr ""
-"Ve vaší cestě nebyl nalezen rdesktop.\n"
-"Zkontrolujte prosím svou instalaci rdesktop."
-
-#: desktop/client/src/support.c:417
-msgid ""
-"vncviewer or xvncviewer were\n"
-" not found in your path.\n"
-"Please verify your vnc installation."
-msgstr ""
-"Ve vaší cestě nebyl nalezen vncviewer\n"
-"nebo xvncviewer..\n"
-"Zkontrolujte prosím svou instalaci vnc."
-
-#: desktop/client/src/support.c:519
-msgid ""
-"Xnest was not found in your path.\n"
-"Please verify your Xnest installation."
-msgstr ""
-"Ve vaší cestě nebyl nalezen Xnest.\n"
-"Zkontrolujte prosím svou instalaci Xnest."
-
-#: desktop/client/src/support.c:578
-msgid ""
-"wfica was not found in your path.\n"
-"Please verify your ICAClient installation."
-msgstr ""
-"Ve vaší cestě nebyl nalezen wfica.\n"
-"Zkontrolujte prosím svou instalaci ICAClient."
-
-#: desktop/client/src/support.c:702
-msgid ""
-"Failed to spawn.\n"
-"Please verify your installation."
-msgstr ""
-"Nemohu spustit.\n"
-"Zkontrolujte prosím svou instalaci."
-
-#. create the widgets
-#: desktop/client/src/support.c:744
-msgid "GNOME Remote Desktop Error"
-msgstr "Chyba GNOME Remote Desktop"
-
-#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
-msgid "An error has occurred."
-msgstr "Došlo k chybě."
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
-msgid "Check this to enable desktop sharing in GNOME"
-msgstr "Zaškrtnutím tohoto povolíte sdílení pracovní plochy v GNOME"
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
-msgid "Password to connect to desktop sharing"
-msgstr "Heslo pro připojení ke sdílení pracovní plochy"
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:3
-msgid ""
-"Set this to the password clients should use to connect to your desktop "
-"remotely"
-msgstr ""
-"Nastavte toto na heslo, které mají klienti používat pro vzdálené připojení k "
-"vaší pracovní ploše"
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:4
-msgid "Whether to enable desktop sharing"
-msgstr "Jestli povolit sdílení pracovní plochy"
-
-#: desktop/gnome-remote-desktop.glade.h:1
-#: gnome-netinfo/gnome-netinfo.glade.h:1
-#: network-utilities/gnome-remote-shell.glade.h:1
-msgid "    "
-msgstr "    "
-
-#: desktop/gnome-remote-desktop.glade.h:2
-#: gnome-netinfo/gnome-netinfo.glade.h:5
-#: network-utilities/gnome-remote-shell.glade.h:2
-#: sync/entryconfigdialog.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: desktop/gnome-remote-desktop.glade.h:3
-msgid ""
-"<b>Connection settings</b>\n"
-"Type the name of the computer to open a new desktop session and/or the "
-"display number to connect to an already running session."
-msgstr ""
-"<b>Nastavení připojení</b>\n"
-"Napište jméno počítače pro otevření nového sezení pracovní plochy a/nebo "
-"číslo displeje pro připojení k již existujícímu sezení."
-
-#: desktop/gnome-remote-desktop.glade.h:5
-msgid ""
-"<b>Desktop settings</b>\n"
-"Select the size and color depth (not supported for all cases, so use with "
-"care) of you remote desktop."
-msgstr ""
-"<b>Nastavení pracovní plochy</b>\n"
-"Zvolte velikost a barevnou hloubku (není vždy podporováno, takže vybírejte "
-"opatrně) své vzdálené pracovní plochy."
-
-#: desktop/gnome-remote-desktop.glade.h:7
-msgid ""
-"<b>Method</b>\n"
-"Select the method for connecting to the remote host. For Windows systems, "
-"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
-"work."
-msgstr ""
-"<b>Metoda</b>\n"
-"Zvolte metodu připojení ke vzdálenému počítači. Pro systémy Windows budete "
-"chtít zvolit VNC. Pro systémy UNIX obvykle X11, ale VNC bude fungovat také."
-
-#: desktop/gnome-remote-desktop.glade.h:9
-msgid "Color depth"
-msgstr "Barevná hloubka"
-
-#: desktop/gnome-remote-desktop.glade.h:10
-msgid "Connect Now ..."
-msgstr "Připojit se nyní ..."
-
-#: desktop/gnome-remote-desktop.glade.h:11
-msgid "Display size"
-msgstr "Velikost displeje"
-
-#: desktop/gnome-remote-desktop.glade.h:12
-msgid "Display:"
-msgstr "Displej:"
-
-#: desktop/gnome-remote-desktop.glade.h:14
-msgid "Host:"
-msgstr "Počítač:"
-
-#: desktop/gnome-remote-desktop.glade.h:15
-msgid "VNC"
-msgstr "VNC"
-
-#: desktop/gnome-remote-desktop.glade.h:16
-msgid "X11"
-msgstr "X11"
-
-# ???
-#: desktop/gnome-remote-desktop.glade.h:17
-msgid "by"
-msgstr "od"
-
-#: desktop/preferences/interface.c:48 desktop/preferences/interface.c:63
-#: desktop/server/tray.c:163
-msgid "Desktop Sharing"
-msgstr "Sdílení pracovních ploch"
-
-#: desktop/preferences/interface.c:72
-msgid "_Share my desktop with others"
-msgstr "_Sdílet mou pracovní plochu s ostatními"
-
-#: desktop/preferences/interface.c:78
-msgid "Enable this option to allow others to view your desktop"
-msgstr ""
-"Povolením této možnosti umožníte ostatním prohlížet si vaši pracovní plochu"
-
-#: desktop/preferences/interface.c:93
-msgid ""
-"The following information will need to be supplied by the user connecting to "
-"your desktop"
-msgstr ""
-"Uživatel, který se k vaší pracovní ploše připojuje, bude potřebovat "
-"následující informace"
-
-#: desktop/preferences/interface.c:104 gnome-ppp/account-window.c:1023
-msgid "Password"
-msgstr "Heslo"
-
-#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
-#, c-format
-msgid "Couldn't find pixmap file: %s"
-msgstr "Nemohu najít soubor pixmapy: %s"
-
-#: desktop/server/eggtrayicon.c:118
-msgid "Orientation"
-msgstr "Orientace"
-
-#: desktop/server/eggtrayicon.c:119
-msgid "The orientation of the tray."
-msgstr "Orientace oblasti upozornění."
-
-#: desktop/server/tray.c:62 pws/pws.c:85
-msgid "/_Preferences"
-msgstr "/_Nastavení"
-
-#: desktop/server/tray.c:63
-msgid "/_Clients"
-msgstr "/_Klienti"
-
-#: desktop/server/tray.c:65
-msgid "/_About"
-msgstr "/O _aplikaci"
-
-#: desktop/server/tray.c:66 pws/pws.c:88
-msgid "/_Quit"
-msgstr "/_Konec"
-
-#: desktop/server/tray.c:118
-msgid "Your desktop is viewable to others"
-msgstr "Vaši pracovní plochu si mohou prohlížet ostatní"
-
-#: desktop/server/tray.c:165
-msgid "Remote Desktop Sharing"
-msgstr "Vzdálené sdílení pracovní plochy"
-
-#: desktop/server/tray.c:168 gnome-netinfo/callbacks.c:214
-msgid "This is an untranslated version of GNOME Network Information"
-msgstr "Miloslav Trmač <mitr@volny.cz>"
-
-#: desktop/server/tray.c:403
-msgid "Clients currently viewing your desktop"
-msgstr "Klienti momentálně zobrazující vaši pracovní plochu"
-
-#: desktop/server/tray.c:425 gnome-ppp/dial-window.c:431
-msgid "Disconnect"
-msgstr "Odpojit"
-
-#: gnome-netinfo/callbacks.c:212
+#: src/callbacks.c:212
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafické uživatelské rozhraní pro základní síťové pomůcky"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:2
+#: src/callbacks.c:214
+msgid "This is an untranslated version of GNOME Network Information"
+msgstr "Miloslav Trmač <mitr@volny.cz>"
+
+#: src/gnome-netinfo.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: src/gnome-netinfo.glade.h:2
 msgid "(eg. user@www.domain.com)"
 msgstr "(např. user@www.domain.com)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:3
+#: src/gnome-netinfo.glade.h:3
 msgid "(for example: domain.com)"
 msgstr "(například: www.domain.com)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:4
+#: src/gnome-netinfo.glade.h:4
 msgid "(for example: www.domain.com or 192.168.2.1)"
 msgstr "(například: www.domain.com nebo 192.168.2.1)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:6
+#: src/gnome-netinfo.glade.h:5
+msgid "*"
+msgstr "*"
+
+#: src/gnome-netinfo.glade.h:6
 msgid "0.0"
 msgstr "0.0"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:7
+#: src/gnome-netinfo.glade.h:7
 msgid "<span weight=\"bold\">@</span>"
 msgstr "<span weight=\"bold\">@</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:8
+#: src/gnome-netinfo.glade.h:8
 msgid ""
 "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
 "information</span>"
@@ -643,11 +61,11 @@ msgstr ""
 "<span weight=\"bold\">Vyhledejte informace \"whois\" zadáním adresy domény</"
 "span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:9
+#: src/gnome-netinfo.glade.h:9
 msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
 msgstr "<span weight=\"bold\">Zadejte síťovou adresu, kterou vyhledat</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:10
+#: src/gnome-netinfo.glade.h:10
 msgid ""
 "<span weight=\"bold\">Enter a user name and network address to finger that "
 "user</span>"
@@ -655,407 +73,406 @@ msgstr ""
 "<span weight=\"bold\">Zadejte jméno uživatele a síťovou adresu pro spuštění "
 "finger o uživateli</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:11
+#: src/gnome-netinfo.glade.h:11
 msgid "<span weight=\"bold\">Enter the network address to ping</span>"
 msgstr "<span weight=\"bold\">Zadejte síťovou adresu, kam poslat ping</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:12
+#: src/gnome-netinfo.glade.h:12
 msgid ""
 "<span weight=\"bold\">Enter the network address to scan for open ports</span>"
 msgstr ""
 "<span weight=\"bold\">Zadejte síťovou adresu, kde hledat otevřené porty</"
 "span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:13
+#: src/gnome-netinfo.glade.h:13
 msgid ""
 "<span weight=\"bold\">Enter the network address to trace a route to</span>"
 msgstr ""
 "<span weight=\"bold\">Zadejte síťovou adresu, ke které sledovat cestu</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:14
+#: src/gnome-netinfo.glade.h:14
 msgid "<span weight=\"bold\">Information</span>"
 msgstr "<span weight=\"bold\">Informace</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:15
+#: src/gnome-netinfo.glade.h:15
 msgid "<span weight=\"bold\">Round trip time statistics</span>"
 msgstr "<span weight=\"bold\">Statistika doby odezvy</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:16
+#: src/gnome-netinfo.glade.h:16
 msgid ""
 "<span weight=\"bold\">Select the network device to get information on</span>"
 msgstr ""
 "<span weight=\"bold\">Vyberte síťové zařízení, o kterém získat informace</"
 "span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:17
+#: src/gnome-netinfo.glade.h:17
 msgid "<span weight=\"bold\">Select the type of information to display</span>"
 msgstr "<span weight=\"bold\">Vyberte typ informací, které zobrazit</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:18
+#: src/gnome-netinfo.glade.h:18
 msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
 msgstr "<span weight=\"bold\">Vyberte typ informací, které vyhledat:</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:19
+#: src/gnome-netinfo.glade.h:19
 msgid "<span weight=\"bold\">Statistics</span>"
 msgstr "<span weight=\"bold\">Statistiky</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:20
+#: src/gnome-netinfo.glade.h:20
 msgid "<span weight=\"bold\">Transmission statistics</span>"
 msgstr "<span weight=\"bold\">Statistiky přenosu</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:21
+#: src/gnome-netinfo.glade.h:21
 msgid "Any / All Information"
 msgstr "Některé / všechny informace"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:22
+#: src/gnome-netinfo.glade.h:22
 msgid "Average:"
 msgstr "Průměr:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:23
+#: src/gnome-netinfo.glade.h:23
 msgid "Broadcast:"
 msgstr "Broadcast:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:24
+#: src/gnome-netinfo.glade.h:24
 msgid "CPU / OS Type"
 msgstr "Typ CPU / OS"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:25
+#: src/gnome-netinfo.glade.h:25
 msgid "Canonical Name"
 msgstr "Kanonické jméno"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:26
+#: src/gnome-netinfo.glade.h:26
 msgid "Clear _History"
 msgstr "Vymazat _historii"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:27
+#: src/gnome-netinfo.glade.h:27
 msgid "Collisions:"
 msgstr "Kolize:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:28
+#: src/gnome-netinfo.glade.h:28
 msgid "Default Information"
 msgstr "Implicitní informace"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:29
+#: src/gnome-netinfo.glade.h:29
 msgid "Display active network services"
 msgstr "Zobrazit aktivní síťové služby"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:30
+#: src/gnome-netinfo.glade.h:30
 msgid "Display multicast information"
 msgstr "Zobrazit informace o multicastu"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:31
+#: src/gnome-netinfo.glade.h:31
 msgid "Display routing table information"
 msgstr "Zobrazit informace o směrovací tabulce"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:32
+#: src/gnome-netinfo.glade.h:32
 msgid "Enter the network address to ping"
 msgstr "Zadejte síťovou adresu, kam poslat ping"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:530
+#: src/gnome-netinfo.glade.h:33 src/main.c:530
 msgid "Finger"
 msgstr "Finger"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:34
+#: src/gnome-netinfo.glade.h:34
 msgid "Hardware address:"
 msgstr "Hardwarová adresa:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:35
+#: src/gnome-netinfo.glade.h:35
 msgid "Host name for Address"
 msgstr "Jméno počítače pro adresu"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:36
+#: src/gnome-netinfo.glade.h:36
 msgid "IP address:"
 msgstr "IP adresa:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:37
+#: src/gnome-netinfo.glade.h:37
 msgid "Internet Address"
 msgstr "Internetová adresa"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:38
+#: src/gnome-netinfo.glade.h:38
 msgid "Link speed:"
 msgstr "Rychlost spojení:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:485
+#: src/gnome-netinfo.glade.h:39 src/main.c:485
 msgid "Lookup"
 msgstr "Vyhledat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:40
+#: src/gnome-netinfo.glade.h:40
 msgid "MTU:"
 msgstr "MTU:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:41
+#: src/gnome-netinfo.glade.h:41
 msgid "Mailbox Exchange"
 msgstr "Příjemce pošty"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:42
+#: src/gnome-netinfo.glade.h:42
 msgid "Mailbox Information"
 msgstr "Informace o poštovních schránkách"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:43
+#: src/gnome-netinfo.glade.h:43
 msgid "Maximum:"
 msgstr "Maximum:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:44
+#: src/gnome-netinfo.glade.h:44
 msgid "Minimum:"
 msgstr "Minimum:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:45
+#: src/gnome-netinfo.glade.h:45
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:46
+#: src/gnome-netinfo.glade.h:46
 msgid "Name Server"
 msgstr "Jmenný server"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:47
+#: src/gnome-netinfo.glade.h:47
 msgid "Netmask:"
 msgstr "Síťová maska:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:349
+#: src/gnome-netinfo.glade.h:48 src/main.c:349
 msgid "Netstat"
 msgstr "Netstat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:49 gnome-netinfo/main.c:110
+#: src/gnome-netinfo.glade.h:49 src/main.c:110
 msgid "Network Information"
 msgstr "Informace o síti"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:50
+#: src/gnome-netinfo.glade.h:50
 msgid "Packets loss:"
 msgstr "Ztracené pakety:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:51
+#: src/gnome-netinfo.glade.h:51
 msgid "Packets received:"
 msgstr "Přijaté pakety:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:52
+#: src/gnome-netinfo.glade.h:52
 msgid "Packets transmitted:"
 msgstr "Odeslané pakety:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:257
+#: src/gnome-netinfo.glade.h:53 src/main.c:257
 msgid "Ping"
 msgstr "Ping"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:54
+#: src/gnome-netinfo.glade.h:54
 msgid "Port _Scan"
 msgstr "_Sken portů"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:55
+#: src/gnome-netinfo.glade.h:55
 msgid "Received bytes:"
 msgstr "Přijaté bajty:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:56
+#: src/gnome-netinfo.glade.h:56
 msgid "Received packets:"
 msgstr "Přijaté pakety:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:57
+#: src/gnome-netinfo.glade.h:57
 msgid "Reception errors:"
 msgstr "Chyby příjmu:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:447
+#: src/gnome-netinfo.glade.h:58 src/main.c:447
 msgid "Scan"
 msgstr "Skenovat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:59
+#: src/gnome-netinfo.glade.h:59
 msgid "Select network device from list"
 msgstr "Vyberte síťové zařízení ze seznamu"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:60
+#: src/gnome-netinfo.glade.h:60
 msgid "Send only"
 msgstr "Posílat jen"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:61
+#: src/gnome-netinfo.glade.h:61
 msgid "Send unlimited requests (pings)"
 msgstr "Posílat neomezeně požadavků (pingů)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:62
+#: src/gnome-netinfo.glade.h:62
 msgid "Start-of-authority"
 msgstr "Start autority"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:63
+#: src/gnome-netinfo.glade.h:63
 msgid "State:"
 msgstr "Stav:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:64
+#: src/gnome-netinfo.glade.h:64
 msgid "Text Information"
 msgstr "Textové informace"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:305
+#: src/gnome-netinfo.glade.h:65 src/main.c:305
 msgid "Trace"
 msgstr "Stopa"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:66
+#: src/gnome-netinfo.glade.h:66
 msgid "Transmission errors:"
 msgstr "Chyby odesílání:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:67
+#: src/gnome-netinfo.glade.h:67
 msgid "Transmitted bytes:"
 msgstr "Odeslané bajty:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:68
+#: src/gnome-netinfo.glade.h:68
 msgid "Transmitted packets:"
 msgstr "Odeslané pakety:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:69
+#: src/gnome-netinfo.glade.h:69
 msgid "Well Known Services"
 msgstr "Dobře známé služby"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:581
+#: src/gnome-netinfo.glade.h:70 src/main.c:581
 msgid "Whois"
 msgstr "Whois"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:71
+#: src/gnome-netinfo.glade.h:71
 msgid "_Devices"
 msgstr "_Zařízení"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:72
+#: src/gnome-netinfo.glade.h:72
 msgid "_Finger"
 msgstr "_Finger"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:73
+#: src/gnome-netinfo.glade.h:73
 msgid "_Information"
 msgstr "_Informace"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:74
+#: src/gnome-netinfo.glade.h:74
 msgid "_Lookup"
 msgstr "_Vyhledat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:75
+#: src/gnome-netinfo.glade.h:75
 msgid "_Netstat"
 msgstr "_Netstat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:76
+#: src/gnome-netinfo.glade.h:76
 msgid "_Ping"
 msgstr "_Ping"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:77
+#: src/gnome-netinfo.glade.h:77
 msgid "_Traceroute"
 msgstr "_Traceroute"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:78
+#: src/gnome-netinfo.glade.h:78
 msgid "_Whois"
 msgstr "_Whois"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:79
+#: src/gnome-netinfo.glade.h:79
 msgid "ms"
 msgstr "ms"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:80 gnome-netinfo/info.h:27
+#: src/gnome-netinfo.glade.h:80 src/info.h:27
 msgid "not available"
 msgstr "není k dispozici"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:81
+#: src/gnome-netinfo.glade.h:81
 msgid "requests (pings)"
 msgstr "požadavků (pingů)"
 
-#: gnome-netinfo/info.c:277
+#: src/info.c:277
 msgid "Active"
 msgstr "Aktivní"
 
-#: gnome-netinfo/info.c:279
+#: src/info.c:279
 msgid "Inactive"
 msgstr "Neaktivní"
 
-#: gnome-netinfo/info.c:284
+#: src/info.c:284
 msgid "Loopback"
 msgstr "Loopback"
 
-#: gnome-netinfo/info.c:297
+#: src/info.c:297
 msgid "Enabled"
 msgstr "Povoleno"
 
-#: gnome-netinfo/info.c:299
+#: src/info.c:299
 msgid "Disabled"
 msgstr "Zakázáno"
 
 #. The info output in a text format (to copy on clipboard)
-#: gnome-netinfo/info.c:419
+#: src/info.c:419
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Síťové zařízení:\t%s\n"
 
-#: gnome-netinfo/info.c:420
+#: src/info.c:420
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardwarová adresa:\t%s\n"
 
-#: gnome-netinfo/info.c:421
+#: src/info.c:421
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP adresa:\t%s\n"
 
-#: gnome-netinfo/info.c:422
+#: src/info.c:422
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Síťová maska:\t%s\n"
 
-#: gnome-netinfo/info.c:423
+#: src/info.c:423
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: gnome-netinfo/info.c:424
+#: src/info.c:424
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: gnome-netinfo/info.c:425
+#: src/info.c:425
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: gnome-netinfo/info.c:426
+#: src/info.c:426
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Rychlost spojení:\t%s\n"
 
-#: gnome-netinfo/info.c:427
+#: src/info.c:427
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stav:\t%s\n"
 
-#: gnome-netinfo/info.c:429
+#: src/info.c:429
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Odeslané pakety:\t%s\n"
 
-#: gnome-netinfo/info.c:430
+#: src/info.c:430
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Chyby odesílání:\t%s\n"
 
-#: gnome-netinfo/info.c:431
+#: src/info.c:431
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Přijaté pakety:\t%s\n"
 
-#: gnome-netinfo/info.c:432
+#: src/info.c:432
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Chyby příjmu:\t%s\n"
 
-#: gnome-netinfo/info.c:433
+#: src/info.c:433
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kolize:\t%s\n"
 
-#. adds columns
-#: gnome-netinfo/lookup.c:272 sync/entrylist.c:67
+#: src/lookup.c:272
 msgid "Name"
 msgstr "Jméno"
 
-#: gnome-netinfo/lookup.c:280
+#: src/lookup.c:280
 msgid "TTL"
 msgstr "TTL"
 
-#: gnome-netinfo/lookup.c:289
+#: src/lookup.c:289
 msgid "Address Type"
 msgstr "Typ adresy"
 
-#: gnome-netinfo/lookup.c:299
+#: src/lookup.c:299
 msgid "Record Type"
 msgstr "Typ záznamu"
 
-#: gnome-netinfo/lookup.c:308
+#: src/lookup.c:308
 msgid "Address"
 msgstr "Adresa"
 
@@ -1065,64 +482,63 @@ msgstr "Adresa"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/lookup.c:336
+#: src/lookup.c:336
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Zdroj\tTTL\tTyp adresy\tTyp záznamu1\tVýsledek\n"
 
-#: gnome-netinfo/main.c:75
+#: src/main.c:75
 msgid "Load information for a network device"
 msgstr "Načíst informace o síťovém zařízení"
 
-#: gnome-netinfo/main.c:76
+#: src/main.c:76
 msgid "DEVICE"
 msgstr "ZAŘÍZENÍ"
 
-#: gnome-netinfo/main.c:78
+#: src/main.c:78
 msgid "Send a ping to a network address"
 msgstr "Poslat ping na síťovou adresu"
 
-#: gnome-netinfo/main.c:79 gnome-netinfo/main.c:85 gnome-netinfo/main.c:88
-#: gnome-netinfo/main.c:91
+#: src/main.c:79 src/main.c:85 src/main.c:88 src/main.c:91
 msgid "HOST"
 msgstr "POČÍTAČ"
 
-#: gnome-netinfo/main.c:81
+#: src/main.c:81
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "Získat informace nestat. Platné volby jsou: route, active, multicast."
 
-#: gnome-netinfo/main.c:82
+#: src/main.c:82
 msgid "COMMAND"
 msgstr "PŘÍKAZ"
 
-#: gnome-netinfo/main.c:84
+#: src/main.c:84
 msgid "Trace a route to a network address"
 msgstr "Sledovat směrování k síťové adrese"
 
-#: gnome-netinfo/main.c:87
+#: src/main.c:87
 msgid "Port scan a network address"
 msgstr "Skenovat porty na síťové adrese"
 
-#: gnome-netinfo/main.c:90
+#: src/main.c:90
 msgid "Look up a network address"
 msgstr "Vyhledat síťovou adresu"
 
-#: gnome-netinfo/main.c:93
+#: src/main.c:93
 msgid "Finger command to run"
 msgstr "Příkaz finger, který spustit"
 
-#: gnome-netinfo/main.c:94
+#: src/main.c:94
 msgid "USER"
 msgstr "UŽIVATEL"
 
-#: gnome-netinfo/main.c:96
+#: src/main.c:96
 msgid "Perform a whois lookup for a network domain"
 msgstr "Provést dotaz whois na doménu v síti"
 
-#: gnome-netinfo/main.c:97
+#: src/main.c:97
 msgid "DOMAIN"
 msgstr "DOMÉNA"
 
-#: gnome-netinfo/main.c:116
+#: src/main.c:116
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
@@ -1131,109 +547,108 @@ msgstr ""
 "Soubor %s neexistuje, zkontrolujte prosím, jestli je gnome-netinfo správně "
 "nainstalováno"
 
-#: gnome-netinfo/netinfo.c:157
+#: src/netinfo.c:157
 msgid "Network address not specified"
 msgstr "Neurčena adresa sítě."
 
-#: gnome-netinfo/netinfo.c:165
+#: src/netinfo.c:165
 #, c-format
 msgid "The host '%s' cannot be found"
 msgstr "Počítač '%s' nebyl nalezen"
 
-#: gnome-netinfo/netinfo.c:309
+#: src/netinfo.c:309
 msgid "Information not available"
 msgstr "Informace není k dispozici"
 
-#: gnome-netinfo/netinfo.c:395
+#: src/netinfo.c:395
 msgid "Stop"
 msgstr "Zastavit"
 
-#: gnome-netinfo/netinfo.c:401
+#: src/netinfo.c:401
 msgid "Run"
 msgstr "Spustit"
 
-#: gnome-netinfo/netstat.c:403
+#: src/netstat.c:403
 msgid "Protocol"
 msgstr "Protokol"
 
-#: gnome-netinfo/netstat.c:410
+#: src/netstat.c:410
 msgid "IP Source"
 msgstr "Zdrojové IP"
 
-#: gnome-netinfo/netstat.c:418
+#: src/netstat.c:418
 msgid "Port/Service"
 msgstr "Port/Služba"
 
-#: gnome-netinfo/netstat.c:426 gnome-netinfo/scan.c:289
+#: src/netstat.c:426 src/scan.c:289
 msgid "State"
 msgstr "Stav"
 
-#: gnome-netinfo/netstat.c:549
+#: src/netstat.c:549
 msgid "Destination/Prefix"
 msgstr "Cíl/Předpona"
 
-#: gnome-netinfo/netstat.c:551
+#: src/netstat.c:551
 msgid "Destination"
 msgstr "Cíl"
 
-#: gnome-netinfo/netstat.c:558
+#: src/netstat.c:558
 msgid "Gateway"
 msgstr "Brána"
 
-#. netmask
-#: gnome-netinfo/netstat.c:566 gnome-ppp/account-window.c:1106
+#: src/netstat.c:566
 msgid "Netmask"
 msgstr "Síťová maska"
 
-#: gnome-netinfo/netstat.c:574 gnome-netinfo/netstat.c:680
+#: src/netstat.c:574 src/netstat.c:680
 msgid "Interface"
 msgstr "Rozhraní"
 
-#: gnome-netinfo/netstat.c:687
+#: src/netstat.c:687
 msgid "Member"
 msgstr "Člen"
 
-#: gnome-netinfo/netstat.c:695
+#: src/netstat.c:695
 msgid "Group"
 msgstr "Skupina"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:737
+#: src/netstat.c:737
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokol\tIP zdroje\tPort/Služba\tStav\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:743
+#: src/netstat.c:743
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Cíl\tBrána\tMaska\tRozhraní\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:748
+#: src/netstat.c:748
 msgid "Interface\tMember\tGroup\n"
 msgstr "Rozhraní\tČlen\tSkupina\n"
 
-#: gnome-netinfo/ping.c:378
+#: src/ping.c:378
 msgid "Bytes"
 msgstr "Bajtů"
 
-#: gnome-netinfo/ping.c:385
+#: src/ping.c:385
 msgid "Source"
 msgstr "Zdroj"
 
-#: gnome-netinfo/ping.c:393
+#: src/ping.c:393
 msgid "Seq"
 msgstr "Seq"
 
-#: gnome-netinfo/ping.c:403
+#: src/ping.c:403
 msgid "Time"
 msgstr "Čas"
 
-#: gnome-netinfo/ping.c:411
+#: src/ping.c:411
 msgid "Units"
 msgstr "Jednotek"
 
@@ -1241,77 +656,77 @@ msgstr "Jednotek"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/ping.c:437
+#: src/ping.c:437
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bajtů\tZdroj\tSekv\tČas\tJednotky\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: gnome-netinfo/ping.c:452
+#: src/ping.c:452
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimální čas:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:453
+#: src/ping.c:453
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Průměrný čas:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:454
+#: src/ping.c:454
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maximální čas:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:456
+#: src/ping.c:456
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Odeslané pakety:\t%s\n"
 
-#: gnome-netinfo/ping.c:458
+#: src/ping.c:458
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Přijaté pakety:\t%s\n"
 
-#: gnome-netinfo/ping.c:460
+#: src/ping.c:460
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Ztracené pakety:\t%s\n"
 
-#: gnome-netinfo/scan.c:151
+#: src/scan.c:151
 msgid "unknown"
 msgstr "neznámý"
 
-#: gnome-netinfo/scan.c:281
+#: src/scan.c:281
 msgid "Port"
 msgstr "Port"
 
-#: gnome-netinfo/scan.c:297
+#: src/scan.c:297
 msgid "Service"
 msgstr "Služba"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/scan.c:319
+#: src/scan.c:319
 msgid "Port\tState\tService\n"
 msgstr "Port\tStav\tSlužba\n"
 
-#: gnome-netinfo/traceroute.c:260
+#: src/traceroute.c:260
 msgid "Hop"
 msgstr "Hop"
 
-#: gnome-netinfo/traceroute.c:268
+#: src/traceroute.c:268
 msgid "Hostname"
 msgstr "Jméno počítače"
 
-#: gnome-netinfo/traceroute.c:276
+#: src/traceroute.c:276
 msgid "IP"
 msgstr "IP"
 
-#: gnome-netinfo/traceroute.c:287
+#: src/traceroute.c:287
 msgid "Time 1"
 msgstr "Čas 1"
 
-#: gnome-netinfo/traceroute.c:297
+#: src/traceroute.c:297
 msgid "Time 2"
 msgstr "Čas 2"
 
@@ -1319,886 +734,1079 @@ msgstr "Čas 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/traceroute.c:323
+#: src/traceroute.c:323
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tJméno počítače\tIP\tČas 1\tČas 2\n"
 
-#: gnome-netinfo/utils.c:227
+#: src/utils.c:227
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: Příkaz nenalezen"
 
-#: gnome-ppp/account-window.c:161
-msgid "Receive"
-msgstr "Přijmout"
-
-#: gnome-ppp/account-window.c:162
-msgid "Enter search string"
-msgstr "Zadejte hledaný řetězec"
-
-#: gnome-ppp/account-window.c:165
-msgid "Send"
-msgstr "Poslat"
-
-#: gnome-ppp/account-window.c:166
-msgid "Enter transmission string"
-msgstr "Zadejte přenosový řetězec"
-
-#: gnome-ppp/account-window.c:169
-msgid "Send User Name"
-msgstr "Poslat jméno uživatele"
-
-#: gnome-ppp/account-window.c:170
-msgid "Username taken from Authentication"
-msgstr "Jméno uživatele převzaté z autentizace"
-
-#: gnome-ppp/account-window.c:173
-msgid "Send User Password"
-msgstr "Poslat heslo uživatele"
-
-#: gnome-ppp/account-window.c:174
-msgid "Password taken from Authentication"
-msgstr "Heslo převzaté z autentizace"
-
-#: gnome-ppp/account-window.c:177
-msgid "Dialog Box Input"
-msgstr "Vstup dialogového okna"
-
-#: gnome-ppp/account-window.c:178
-msgid "Enter text to be used as a dialog message when prompted for input"
-msgstr "Zadejte text, který bude použit jako výzva k zadání dat"
-
-#: gnome-ppp/account-window.c:276
-msgid "open_account_window(): account=NULL with clone flag"
-msgstr "open_account_window(): account=NULL s příznakem clone"
-
-#: gnome-ppp/account-window.c:302
-msgid "open_account_window(): calling arguments invalid"
-msgstr "open_account_window(): argumenty volání neplatné"
-
-#. dial command entry widgets
-#: gnome-ppp/account-window.c:342 gnome-ppp/modem-window.c:288
-msgid "Dial"
-msgstr "Vytočit"
-
-#: gnome-ppp/account-window.c:348
-msgid "Authentication"
-msgstr "Autentizace"
-
-#. dns server entry
-#: gnome-ppp/account-window.c:354 gnome-ppp/account-window.c:1223
-msgid "IP Address"
-msgstr "IP adresa"
-
-#: gnome-ppp/account-window.c:360
-msgid "DNS"
-msgstr "DNS"
-
-#: gnome-ppp/account-window.c:366
-msgid "Script"
-msgstr "Skript"
-
-#: gnome-ppp/account-window.c:372
-msgid "PPP"
-msgstr "PPP"
-
-#: gnome-ppp/account-window.c:378
-msgid "Modem"
-msgstr "Modem"
-
-#: gnome-ppp/account-window.c:805
-msgid "Account Name"
-msgstr "Název účtu"
-
-#. redial spin button
-#: gnome-ppp/account-window.c:817
-msgid "Redial Maximum"
-msgstr "Maximální počet vytočení"
-
-#. dial timeout spin button
-#: gnome-ppp/account-window.c:838
-msgid "Dial Timeout (sec)"
-msgstr "Čas pro vytáčení (s)"
-
-#. phone number frame
-#: gnome-ppp/account-window.c:859
-msgid "Phone Numbers"
-msgstr "Telefonní čísla"
-
-#. Phone number
-#: gnome-ppp/account-window.c:871
-msgid "#"
-msgstr "tel. č."
-
-#. add/remove buttons
-#: gnome-ppp/account-window.c:892 gnome-ppp/account-window.c:1242
-#: gnome-ppp/account-window.c:1326 gnome-ppp/account-window.c:1464
-msgid "Add"
-msgstr "Přidat"
-
-#: gnome-ppp/account-window.c:906 gnome-ppp/account-window.c:1256
-#: gnome-ppp/account-window.c:1340 gnome-ppp/account-window.c:1490
-#: sync/main.c:60 sync/main.c:170
-msgid "Remove"
-msgstr "Odstranit"
-
-#: gnome-ppp/account-window.c:958
-msgid "PAP/CHAP"
-msgstr "PAP/CHAP"
-
-#: gnome-ppp/account-window.c:970
-msgid "User Name"
-msgstr "Jméno uživatele"
-
-#: gnome-ppp/account-window.c:990
-msgid "Remote Name"
-msgstr "Jméno vzdáleného stroje"
-
-#. password
-#: gnome-ppp/account-window.c:1011
-msgid "Hidden Password"
-msgstr "Skryté heslo"
-
-#. local ip address
-#: gnome-ppp/account-window.c:1061
-msgid "Local IP Address"
-msgstr "Místní IP adresa"
-
-#: gnome-ppp/account-window.c:1072 gnome-ppp/account-window.c:1117
-#: gnome-ppp/account-window.c:1162
-msgid "Dynamic"
-msgstr "Dynamická"
-
-#: gnome-ppp/account-window.c:1086 gnome-ppp/account-window.c:1131
-#: gnome-ppp/account-window.c:1176
-msgid "Static"
-msgstr "Statická"
-
-#. remote ip address
-#: gnome-ppp/account-window.c:1151
-msgid "Remote IP Address"
-msgstr "Vzdálená IP adresa"
-
-#. dns server list
-#: gnome-ppp/account-window.c:1210
-msgid "DNS Servers"
-msgstr "DNS servery"
-
-#. search domains list
-#: gnome-ppp/account-window.c:1295
-msgid "Search Domains"
-msgstr "Prohledávané domény"
-
-#: gnome-ppp/account-window.c:1306
-msgid "Domain Name"
-msgstr "Jméno domény"
-
-#: gnome-ppp/account-window.c:1388
-msgid "Action"
-msgstr "Akce"
-
-#: gnome-ppp/account-window.c:1389
-msgid "Text"
-msgstr "Text"
-
-#. script list
-#: gnome-ppp/account-window.c:1397
-msgid "Login Script"
-msgstr "Přihlašovací skript"
-
-#: gnome-ppp/account-window.c:1477
-msgid "Insert"
-msgstr "Vložit"
-
-#: gnome-ppp/account-window.c:1551
-msgid "Add Default Route"
-msgstr "Přidat implicitní cestu"
-
-#: gnome-ppp/account-window.c:1567
-msgid "Lock Dialout Device"
-msgstr "Zamknout zařízení modemu"
-
-#. mtu, mru spin buttons
-#: gnome-ppp/account-window.c:1582
-msgid "Maximum Transmission Unit"
-msgstr "MTU"
-
-#: gnome-ppp/account-window.c:1604
-msgid "Maximum Receive Unit"
-msgstr "MRU"
-
-#: gnome-ppp/account-window.c:1625
-msgid "Run Program After Connect"
-msgstr "Program po připojení"
-
-#: gnome-ppp/account-window.c:1637
-msgid "Run Program After Disconnect"
-msgstr "Program po odpojení"
-
-#. modem device
-#: gnome-ppp/account-window.c:1672
-msgid "Modem Device"
-msgstr "Zařízení modemu"
-
-#. modem speed
-#: gnome-ppp/account-window.c:1698
-msgid "Connection Speed"
-msgstr "Rychlost připojení"
-
-#. modem flow control
-#: gnome-ppp/account-window.c:1724
-msgid "Flow Control"
-msgstr "Řízení toku dat"
-
-#. modem line termination
-#: gnome-ppp/account-window.c:1750
-msgid "Line Termination"
-msgstr "Ukončení řádku"
-
-#. modem speaker volume
-#: gnome-ppp/account-window.c:1776
-msgid "Modem Speaker Volume"
-msgstr "Hlasitost reproduktoru modemu"
-
-#. modem edit commands
-#: gnome-ppp/account-window.c:1793
-msgid " Edit Modem Commands "
-msgstr " Upravit příkazy modemu "
-
-#: gnome-ppp/account-window.c:2252
-msgid "**PASSWORD**"
-msgstr "**HESLO**"
-
-#: gnome-ppp/account-window.c:2256
-msgid "script_type_cb(): optionmenu data bad"
-msgstr "script_type_cb(): špatná data optionmenu"
-
-#: gnome-ppp/dial-window.c:143
-msgid "_Debug Terminal"
-msgstr "_Ladicí terminál"
-
-#: gnome-ppp/dial-window.c:150
-msgid "_New..."
-msgstr "_Nové..."
-
-#: gnome-ppp/dial-window.c:151
-msgid "D_uplicate..."
-msgstr "D_uplikovat..."
-
-#: gnome-ppp/dial-window.c:152
-msgid "_Edit..."
-msgstr "_Upravit..."
-
-#: gnome-ppp/dial-window.c:153
-msgid "_Delete..."
-msgstr "S_mazat..."
-
-#: gnome-ppp/dial-window.c:172
-msgid "_Account"
-msgstr "_Účet"
-
-#. set up the main application
-#: gnome-ppp/dial-window.c:210
-msgid "gnome-ppp"
-msgstr "gnome-ppp"
-
-#: gnome-ppp/dial-window.c:358
-msgid "Dialing"
-msgstr "Vytáčím"
-
-#: gnome-ppp/dial-window.c:362
-msgid "Connected"
-msgstr "Spojeno"
-
-#: gnome-ppp/dial-window.c:385
-msgid "refresh_dial_app(): gtk_clist_append failed."
-msgstr "refresh_dial_app(): gtk_clist_append selhalo."
-
-#: gnome-ppp/dial-window.c:409 gnome-ppp/dial-window.c:417
-msgid "Connect"
-msgstr "Připojit"
-
-#: gnome-ppp/dial-window.c:427
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: gnome-ppp/dial-window.c:452
-msgid "You must disconnect before closing."
-msgstr "Před ukončením programu se musíte odpojit."
-
-#: gnome-ppp/dial-window.c:742
-msgid "Are you sure you want to delete this account?\n"
-msgstr "Jste si jisti, že chcete odstranit tento účet?\n"
-
-#: gnome-ppp/dial-window.c:752
-msgid "The account cannot be deleted."
-msgstr "Tento účet nemůže být odstraněn."
-
-#: gnome-ppp/dial-window.c:758
-msgid "The account is in use and cannot be deleted."
-msgstr "Tento účet se používá a nemůže být odstraněn."
-
-#: gnome-ppp/dial-window.c:781
-msgid "GNOME Internet Dialer"
-msgstr "GNOME Internet Dialer"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:181
-msgid "Raise PPP Link"
-msgstr "Aktivovat spojení PPP"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:213 sync/main.c:67
-msgid "About..."
-msgstr "O programu..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:219
-msgid "Properties..."
-msgstr "Vlastnosti..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:223
-msgid "Offline"
-msgstr "Offline"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:432
-msgid "Connecting..."
-msgstr "Připojuji se..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:437
-msgid "PPP Connected"
-msgstr "PPP Spojeno"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:443
-msgid "PPP Error!"
-msgstr "Chyba PPP!"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:483
-msgid "That account is already in use.\n"
-msgstr "Tento účet se již používá.\n"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:566
-msgid "GNOME PPP Dialer Applet"
-msgstr "Aplet GNOME PPP Dialeru"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:569
-msgid ""
-"An unnecessarily nice looking applet for GNOME's panel for easy control of "
-"PPP network links."
-msgstr ""
-"Zbytečně hezky vypadající aplet pro panel GNOME pro snadné ovládání síťových "
-"spojení PPP."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:691
-msgid "PPP Applet Properties"
-msgstr "Vlastnosti apletu PPP"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:706
-msgid "Animation"
-msgstr "Animace"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:712
-msgid "Small"
-msgstr "Malý"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:716
-msgid "Large"
-msgstr "Velký"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:720
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:769
-msgid "None"
-msgstr "Žádný"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:724
-msgid "Options"
-msgstr "Možnosti"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:730
-msgid "Freeze Animation on Connect"
-msgstr "Zmrazit animaci po připojení"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:737
-msgid "Disconnect PPP on GNOME logout"
-msgstr "Odpojit PPP při odhlášení z GNOME"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:745
-msgid "Timer"
-msgstr "Časovač"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:751
-msgid "Label"
-msgstr "Jmenovka"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:760
-msgid "Tooltip"
-msgstr "Nástrojový tip"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:778
-msgid "Animation Speed"
-msgstr "Rychlost animace"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:791
-msgid "PPP Applet"
-msgstr "Aplet PPP"
-
-#: gnome-ppp/libgnome_ppp/connect.c:203
-msgid "---NEW CONNECTION---"
-msgstr "---NOVÉ SPOJENÍ---"
-
-#: gnome-ppp/libgnome_ppp/msg.c:26
-msgid "Account already connected."
-msgstr "Účet je již připojen."
-
-#: gnome-ppp/libgnome_ppp/msg.c:27
-msgid "Starting PPP Connection."
-msgstr "Startuji spojení PPP."
-
-#: gnome-ppp/libgnome_ppp/msg.c:28
-msgid "You don't have permission to execute pppd."
-msgstr "Nemáte oprávnění spustit pppd."
-
-#: gnome-ppp/libgnome_ppp/msg.c:29
-msgid "The modem is in use by another program."
-msgstr "Modem je používán jiným programem."
-
-#: gnome-ppp/libgnome_ppp/msg.c:30
-msgid "Running pppd."
-msgstr "Spouštím pppd."
-
-#: gnome-ppp/libgnome_ppp/msg.c:31
-msgid "Closing connection."
-msgstr "Zavírám spojení."
-
-#: gnome-ppp/libgnome_ppp/msg.c:32
-msgid "The pppd program failed to run gnome-ppp-chat."
-msgstr "Program ppp nemohl spustit gnome-ppp-chat."
-
-#: gnome-ppp/libgnome_ppp/msg.c:33
-msgid "The modem could not be hung up."
-msgstr "Modem se nepodařilo zavěsit."
-
-#: gnome-ppp/libgnome_ppp/msg.c:34
-msgid "Initalizing modem."
-msgstr "Inicializuji modem."
-
-#: gnome-ppp/libgnome_ppp/msg.c:35
-msgid "Your modem is not responding to initalization."
-msgstr "Váš modem neodpovídá na inicializaci."
-
-#: gnome-ppp/libgnome_ppp/msg.c:36
-msgid "The command to set the volume on your modem's speaker failed."
-msgstr "Příkaz k nastavení hlasitosti reproduktoru vašeho modemu selhal."
-
-#: gnome-ppp/libgnome_ppp/msg.c:37
-msgid "No answer after maximum number of re-dial attempts."
-msgstr "Po maximálním počtu vytočení čísla modem neodpověděl."
-
-#: gnome-ppp/libgnome_ppp/msg.c:38
-msgid "No phone numbers specified for this account."
-msgstr "Pro tento účet nebyla určena telefonní čísla."
-
-#: gnome-ppp/libgnome_ppp/msg.c:39
-msgid "Dialing."
-msgstr "Vytáčím."
-
-#: gnome-ppp/libgnome_ppp/msg.c:40
-msgid "Dialing timeout."
-msgstr "Vypršel čas pro vytáčení."
-
-#: gnome-ppp/libgnome_ppp/msg.c:41
-msgid "No dialtone."
-msgstr "Nedetekován oznamovací tón."
-
-#: gnome-ppp/libgnome_ppp/msg.c:42
-msgid "Number busy."
-msgstr "Číslo obsazeno."
-
-#: gnome-ppp/libgnome_ppp/msg.c:43
-msgid "Ring, but no answer."
-msgstr "Vyzvánění bez odpovědi."
-
-#: gnome-ppp/libgnome_ppp/msg.c:44
-msgid "Connection failure, reason unknown."
-msgstr "Selhání spojení, důvod neznámý."
-
-#: gnome-ppp/libgnome_ppp/msg.c:45
-msgid "Connected."
-msgstr "Spojeno."
-
-#: gnome-ppp/libgnome_ppp/msg.c:46
-msgid "The modem lost connection with remote host."
-msgstr "Modem ztratil spojení se vzdáleným počítačem."
-
-#: gnome-ppp/libgnome_ppp/msg.c:47
-msgid "Running Script."
-msgstr "Spouštím skript."
-
-#: gnome-ppp/libgnome_ppp/msg.c:48
-msgid "Script Complete."
-msgstr "Skript ukončen."
-
-#: gnome-ppp/libgnome_ppp/msg.c:49
-msgid "PPP connection established."
-msgstr "Spojení PPP vytvořeno."
-
-#: gnome-ppp/libgnome_ppp/msg.c:50
-msgid "Failed to establish a PPP connection."
-msgstr "Nemohu vytvořit spojení PPP."
-
-#: gnome-ppp/libgnome_ppp/msg.c:51
-msgid "The pppd daemon died unexpectedly."
-msgstr "Program pppd neočekávaně umřel."
-
-#: gnome-ppp/modem-window.c:83
-msgid "open_modem_window(): account=NULL"
-msgstr "open_modem_window(): account=NULL"
-
-#: gnome-ppp/modem-window.c:120
-msgid "Commands"
-msgstr "Příkazy"
-
-#: gnome-ppp/modem-window.c:126
-msgid "Responses"
-msgstr "Odpovědi"
-
-#. initialization command entry widgets
-#. initialization response entry widgets
-#: gnome-ppp/modem-window.c:268 gnome-ppp/modem-window.c:408
-msgid "Initialization"
-msgstr "Inicializace"
-
-#. hangup command entry widgets
-#. hangup response entry widgets
-#: gnome-ppp/modem-window.c:307 gnome-ppp/modem-window.c:428
-msgid "Hangup"
-msgstr "Zavěšení"
-
-#. volume mute command entry widgets
-#: gnome-ppp/modem-window.c:327
-msgid "Volume Mute"
-msgstr "Hlasitost: ticho"
-
-#. volume low command entry widgets
-#: gnome-ppp/modem-window.c:347
-msgid "Volume Low"
-msgstr "Nízká hlasitost"
-
-#. volume high command entry widgets
-#: gnome-ppp/modem-window.c:367
-msgid "Volume High"
-msgstr "Vysoká hlasitost"
-
-#. connection response entry widgets
-#: gnome-ppp/modem-window.c:448
-msgid "Connection"
-msgstr "Připojení"
-
-#. busy response entry widgets
-#: gnome-ppp/modem-window.c:468
-msgid "Busy"
-msgstr "Obsazeno"
-
-#. no answer response entry widgets
-#: gnome-ppp/modem-window.c:488
-msgid "No Answer"
-msgstr "Žádná odpověď"
-
-#. no carrier response entry widgets
-#: gnome-ppp/modem-window.c:508
-msgid "No Carrier"
-msgstr "Nedetekována nosná"
-
-#. no dialtone response entry widgets
-#: gnome-ppp/modem-window.c:528
-msgid "No Dialtone"
-msgstr "Nedetekován oznamovací tón"
-
-#: gnome-transfer-manager/src/GNOME_Transfer_Manager.server.in.in.h:1
-msgid "GNOME Transfer Manager"
-msgstr "GNOME Transfer Manager"
-
-#: network-utilities/gnome-remote-shell.c:189
-#: network-utilities/gnome-remote-shell.c:216
-msgid "There is a connection error"
-msgstr "Došlo k chybě při připojování"
-
-#: network-utilities/gnome-remote-shell.c:284
-msgid "There is an error with displaying help"
-msgstr "Došlo k chybě při zobrazování nápovědy"
-
-#: network-utilities/gnome-remote-shell.c:324
-msgid "Graphical user interface for GNOME Remote Shell"
-msgstr "Grafické uživatelské rozhraní pro GNOME Remote Shell"
-
-#: network-utilities/gnome-remote-shell.c:327
-msgid "This is an untranslated version of GNOME Remote Shell"
-msgstr "Miloslav Trmač <mitr@volny.cz>"
-
-#: network-utilities/gnome-remote-shell.c:373
-#: network-utilities/gnome-remote-shell.c:423
-#: network-utilities/gnome-remote-shell.c:550
-msgid "Failed to create a connection"
-msgstr "Nemohu vytvořit spojení."
-
-#: network-utilities/gnome-remote-shell.c:373
-msgid "A hostname is required"
-msgstr "Je vyžadováno jméno počítače."
-
-#: network-utilities/gnome-remote-shell.c:423
-msgid "A user name is required for SSH"
-msgstr "Pro SSH je vyžadováno jméno uživatele"
-
-#: network-utilities/gnome-remote-shell.c:501
-msgid "There is a command line error"
-msgstr "Na příkazovém řádku je chyba"
-
-#: network-utilities/gnome-remote-shell.c:550
-msgid "The host cannot be found"
-msgstr "Počítač nebyl nalezen"
-
-#: network-utilities/gnome-remote-shell.glade.h:3
-msgid "<span weight=\"bold\">Connect to remote host</span>"
-msgstr "<span weight=\"bold\">Připojit se ke vzdálenému počítači</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:4
-msgid "<span weight=\"bold\">Method</span>"
-msgstr "<span weight=\"bold\">Metoda</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:5
-msgid "<span weight=\"bold\">Window size</span>"
-msgstr "<span weight=\"bold\">Velikost okna</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:7
-msgid "Connect to remote host"
-msgstr "Připojit se ke vzdálenému počítači"
-
-#: network-utilities/gnome-remote-shell.glade.h:8
-msgid "H_eight:"
-msgstr "_Výška:"
-
-#: network-utilities/gnome-remote-shell.glade.h:9
-msgid "H_ost:"
-msgstr "_Počítač:"
-
-#: network-utilities/gnome-remote-shell.glade.h:10
-msgid "Regular shell (_Telnet)"
-msgstr "Obyčejný shell (_telnet)"
-
-#: network-utilities/gnome-remote-shell.glade.h:11
-msgid "Use _default"
-msgstr "Použít _implicitní"
-
-#: network-utilities/gnome-remote-shell.glade.h:12
-msgid "_Contents"
-msgstr "_Obsah"
-
-#: network-utilities/gnome-remote-shell.glade.h:13
-msgid "_Port:"
-msgstr "_Port:"
-
-#: network-utilities/gnome-remote-shell.glade.h:14
-msgid "_Secure shell (SSH)"
-msgstr "Za_bezpečený shell (SSH)"
-
-#: network-utilities/gnome-remote-shell.glade.h:15
-msgid "_Shell"
-msgstr "_Shell"
-
-#: network-utilities/gnome-remote-shell.glade.h:16
-msgid "_User:"
-msgstr "_Uživatel:"
-
-#: network-utilities/gnome-remote-shell.glade.h:17
-msgid "_Width:"
-msgstr "_Šířka:"
-
-#: network-utilities/gnome-remote-shell.glade.h:18
-msgid "characters"
-msgstr "znaků"
-
-#: pws/pws-preferences-support.c:273
-msgid "Expander Size"
-msgstr "Velikost rozbalovače"
-
-#: pws/pws-preferences-support.c:274
-msgid "Size of the expander arrow"
-msgstr "Velikost šipky rozbalovače"
-
-#: pws/pws-preferences-widget.c:112
-msgid "Web folder:"
-msgstr "Adresář WWW:"
-
-#: pws/pws-preferences-widget.c:116
-msgid "Select the folder to be published"
-msgstr "Zvolte adresář, který publikovat"
-
-#. Server status
-#: pws/pws-preferences-widget.c:125
-msgid "Enable web server"
-msgstr "Povolit WWW server"
-
-#. Additional options
-#: pws/pws-preferences-widget.c:133 pws/pws-preferences-widget.c:134
-msgid "Additional options"
-msgstr "Další možnosti"
-
-#: pws/pws-preferences-widget.c:156
-msgid "Port number:"
-msgstr "Číslo portu:"
-
-#: pws/pws-preferences-widget.c:175
-msgid "Time out:"
-msgstr "Časový limit:"
-
-#: pws/pws-preferences-widget.c:194
-msgid "Keep alive"
-msgstr "Udržovat spojení"
-
-#: pws/pws.c:86
-msgid "/_Open Web Folder"
-msgstr "/_Otevřít adresář WWW:"
-
-#: pws/pws.c:179
-msgid "Personal web server preferences"
-msgstr "Nastavení osobního WWW serveru"
-
-#: pws/pws.c:194
-msgid "Personal Web Server Preferences"
-msgstr "Nastavení osobního WWW serveru"
-
-#: pws/pws.c:195
-msgid "Setup the options for your personal web server."
-msgstr "Nastavte možnosti svého osobního WWW serveru."
-
-#: sync/entryconfigdialog.c:70
-msgid "Could not load UI for entry configuration dialog"
-msgstr "Nemohu načíst UI pro dialog nastavení položky"
-
-#: sync/entryconfigdialog.glade.h:2
-msgid "Entry name"
-msgstr "Název položky"
-
-#: sync/entryconfigdialog.glade.h:3
-msgid "Local path"
-msgstr "Místní cesta"
-
-#: sync/entryconfigdialog.glade.h:4
-msgid "Preserve group"
-msgstr "Zachovat skupinu"
-
-#: sync/entryconfigdialog.glade.h:5
-msgid "Preserve permissions"
-msgstr "Zachovat oprávnění"
-
-#: sync/entryconfigdialog.glade.h:6
-msgid "Preserve times"
-msgstr "Zachovat časy"
-
-#: sync/entryconfigdialog.glade.h:7
-msgid "Recurse into directories"
-msgstr "Zanořovat se do adresářů"
-
-#: sync/entryconfigdialog.glade.h:8
-msgid "Remote host"
-msgstr "Vzdálený počítač"
-
-#: sync/entryconfigdialog.glade.h:9
-msgid "Remote path"
-msgstr "Vzdálená cesta"
-
-#: sync/entryconfigdialog.glade.h:10
-msgid "Synchronization options"
-msgstr "Možnosti synchronizace"
-
-#: sync/entryconfigdialog.glade.h:11
-msgid "Update only (don't overwrite newer files)"
-msgstr "Jen aktualizovat (nepřepisovat novější soubory)"
-
-#: sync/entryconfigdialog.glade.h:12
-msgid "Use relative path names"
-msgstr "Používat relativní jména cesty"
-
-#: sync/entryconfigdialog.glade.h:13
-msgid "Use rsync"
-msgstr "Použít rsync"
-
-#: sync/entryconfigdialog.glade.h:14
-msgid "Use unison"
-msgstr "Použít unison"
-
-#: sync/entryconfigdialog.glade.h:15
-msgid "dialog1"
-msgstr "dialog1"
-
-#: sync/entryconfigdialog.glade.h:16
-msgid "rsync"
-msgstr "rsync"
-
-#: sync/entryconfigdialog.glade.h:17
-msgid "unison"
-msgstr "unison"
-
-#: sync/entrylist.c:70
-msgid "Local"
-msgstr "Místní"
-
-#: sync/entrylist.c:73
-msgid "Remote"
-msgstr "Vzdálené"
-
-#: sync/entrylist.c:76
-msgid "Last sync"
-msgstr "Poslední synchronizace"
-
-#: sync/main.c:44
-msgid "_Synchronize"
-msgstr "_Synchronizovat"
-
-#: sync/main.c:55
-msgid "New entry..."
-msgstr "Nová položka..."
-
-#: sync/main.c:57 sync/main.c:171
-msgid "Edit..."
-msgstr "Upravit..."
-
-#: sync/main.c:75 sync/main.c:181
-msgid "Synchronize"
-msgstr "Synchronizovat"
-
-#: sync/main.c:103
-msgid "Gnome Synchronize"
-msgstr "Gnome Synchronize"
-
-#: sync/main.c:105
-msgid "The GNOME file synchronization program."
-msgstr "Program pro synchronizaci souborů pro GNOME."
-
-#: sync/main.c:176
-msgid "New"
-msgstr "Nový"
-
-#: sync/main.c:177
-msgid "Create new synchronization entry"
-msgstr "Vytvořit novou synchronizační položku"
-
-#: sync/main.c:182
-msgid "Start synchronization for selected entries"
-msgstr "Začít synchronizaci vybraných položek"
-
-#: sync/main.c:185
-msgid "Edit"
-msgstr "Upravit"
-
-#: sync/main.c:186
-msgid "Edit selected entry"
-msgstr "Upravit vybranou položku"
-
-#: sync/main.c:189
-msgid "Delete"
-msgstr "Odstranit"
-
-#: sync/main.c:190
-msgid "Delete selected entries"
-msgstr "Odstranit vybrané položky"
+#~ msgid "GNOME Remote Desktop Applet"
+#~ msgstr "Aplet GNOME Remote Desktop"
+
+#~ msgid "Connect to a remote desktop computer"
+#~ msgstr "Připojit se k pracovní ploše vzdáleného počítače"
+
+#~ msgid "Remote Desktop Client"
+#~ msgstr "Klient vzdálené pracovní plochy"
+
+#~ msgid "640 x 480 pixels"
+#~ msgstr "640 × 480 pixelů"
+
+#~ msgid "800 x 600 pixels"
+#~ msgstr "800 × 600 pixelů"
+
+#~ msgid "1024 x 768 pixels"
+#~ msgstr "1024 × 768 pixelů"
+
+#~ msgid "1152 x 864 pixels"
+#~ msgstr "1152 × 864 pixelů"
+
+#~ msgid "1280 x 960 pixels"
+#~ msgstr "1280 × 960 pixelů"
+
+#~ msgid "256 Colors"
+#~ msgstr "256 barev"
+
+#~ msgid "High Color (15 bit)"
+#~ msgstr "High Color (15 bitů)"
+
+#~ msgid "High Color (16 bit)"
+#~ msgstr "High Color (16 bitů)"
+
+#~ msgid "True Color (24 bit)"
+#~ msgstr "True Color (24 bitů)"
+
+#~ msgid "GNOME Remote Desktop"
+#~ msgstr "GNOME Remote Desktop"
+
+#~ msgid "Compu_ter:"
+#~ msgstr "_Počítač:"
+
+#~ msgid "Enter the name or address of the remote system."
+#~ msgstr "Zadejte název nebo adresu vzdáleného systému."
+
+#~ msgid "Select the protocol to use for this connection."
+#~ msgstr "Vyberte protokol, který používat pro toto spojení."
+
+#~ msgid ""
+#~ "RDP protocol is used to connect to Microsoft Terminal Servers and Windows "
+#~ "XP systems with desktop sharing."
+#~ msgstr ""
+#~ "Protokol RDP se používá pro spojení s Microsoft Terminal Servery a "
+#~ "systémy Windows XP se sdílením pracovní plochy."
+
+#~ msgid ""
+#~ "VNC protocol is used to connect to systems sharing the desktop by using "
+#~ "VNC."
+#~ msgstr ""
+#~ "Protokol VNC se používá pro připojení k systémům, které sdílí pracovní "
+#~ "plochu pomocí VNC."
+
+#~ msgid "XDMCP protocol uses Xnest to connect to servers running X."
+#~ msgstr ""
+#~ "Protokol XDMCP používá Xnest pro připojení k serverům používajícím X."
+
+#~ msgid "ICA protocol is used to connect to Citrix servers."
+#~ msgstr "Protokol ICA se používá pro připojení k serverům Citrix."
+
+#~ msgid "Prof_ile Launcher:"
+#~ msgstr "Spouštěč _profilu:"
+
+#~ msgid "Select a saved profile to launch it immediately."
+#~ msgstr "Uložený profil okamžitě spustíte jeho vybráním."
+
+#~ msgid "_More"
+#~ msgstr "_Více"
+
+#~ msgid "Co_nnect"
+#~ msgstr "_Připojit"
+
+#~ msgid "Connection Profile"
+#~ msgstr "Profil připojení"
+
+#~ msgid "Logon Settings"
+#~ msgstr "Nastavení přihlášení"
+
+#~ msgid ""
+#~ "Type the name of the computer or choose a computer from the drop-down "
+#~ "list."
+#~ msgstr "Zadejte název počítače nebo vyberte počítač ze seznamu."
+
+#~ msgid "Pro_tocol:"
+#~ msgstr "_Protokol:"
+
+#~ msgid "_User Name:"
+#~ msgstr "Jméno _uživatele:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "_Heslo:"
+
+#~ msgid "Do_main:"
+#~ msgstr "_Doména:"
+
+#~ msgid "C_lient Hostname:"
+#~ msgstr "Jméno počítače _klienta:"
+
+#~ msgid "Prot_ocol File:"
+#~ msgstr "_Soubor protokolu:"
+
+#~ msgid ""
+#~ "Enter the username for the remote system.\n"
+#~ "For VNC, enter the path to your saved vnc password file."
+#~ msgstr ""
+#~ "Zadejte jméno uživatele pro vzdálený systém.\n"
+#~ "Pro VNC zadejte cestu k vašemu uloženému souboru hesla vnc."
+
+#~ msgid "Enter the password for the remote system."
+#~ msgstr "Zadejte heslo pro vzdálený systém."
+
+#~ msgid "Enter the domain for the remote system."
+#~ msgstr "Zadejte doménu pro vzdálený systém."
+
+#~ msgid "Enter the local hostname for this system."
+#~ msgstr "Zadejte místní jméno počítače pro tento systém."
+
+#~ msgid ""
+#~ "Some protocols require a file containing settings. If required, enter the "
+#~ "path to the file here."
+#~ msgstr ""
+#~ "Některé protokoly vyžadují soubor obsahující nastavení. Pokud je to "
+#~ "potřeba, zadejte zde cestu k tomuto souboru."
+
+#~ msgid "Remote Desktop Size"
+#~ msgstr "Velikost vzdálené pracovní plochy"
+
+#~ msgid "Use default screen size"
+#~ msgstr "Použít implicitní velikost obrazovky"
+
+#~ msgid "Use the default screen size."
+#~ msgstr "Používat implicitní velikost obrazovky."
+
+#~ msgid "Use specified screen size"
+#~ msgstr "Používat zadanou velikost obrazovky"
+
+#~ msgid "Use the list to choose the screen size to use."
+#~ msgstr "Použijte seznam pro výběr velikosti obrazovky, kterou používat."
+
+#~ msgid "Operate in full screen mode"
+#~ msgstr "Pracovat v režimu přes celou obrazovku"
+
+#~ msgid "Work in full screen mode."
+#~ msgstr "Pracovat v režimu přes celou obrazovku."
+
+#~ msgid "Use alternate full screen switch (-F)"
+#~ msgstr "Použít jiný přepínač přes celou obrazovku (-F)"
+
+#~ msgid "Check this if you use rdesktop with the unified patches."
+#~ msgstr "Zaškrtněte toto, pokud používáte rdesktop s unified patchi."
+
+#~ msgid "Colors"
+#~ msgstr "Barvy"
+
+#~ msgid "Use default color depth"
+#~ msgstr "Použít implicitní barevnou hloubku"
+
+#~ msgid "Use the default color depth."
+#~ msgstr "Používat implicitní barevnou hloubku."
+
+#~ msgid "Use specified color depth"
+#~ msgstr "Používat zadanou barevnou hloubku"
+
+#~ msgid "Use the list to choose the color depth to use."
+#~ msgstr "Použijte seznam pro výběr barevné hloubky, kterou používat."
+
+#~ msgid "Remote Computer _Sound"
+#~ msgstr "Zvuk ze _vzdáleného počítače"
+
+#~ msgid "Remote Computer Sound"
+#~ msgstr "Zvuk ze vzdáleného počítače"
+
+#~ msgid "On the local computer"
+#~ msgstr "Na místním počítači"
+
+#~ msgid "On the remote computer"
+#~ msgstr "Na vzdáleném počítači"
+
+#~ msgid "Do not play"
+#~ msgstr "Nehrát"
+
+#~ msgid "_Keyboard"
+#~ msgstr "_Klávesnice"
+
+#~ msgid "Keyboard"
+#~ msgstr "Klávesnice"
+
+#~ msgid "In full screen mode only"
+#~ msgstr "Jen v režimu přes celou obrazovku"
+
+#~ msgid ""
+#~ "Use the following keyboard language\n"
+#~ "(2 char keycode)"
+#~ msgstr ""
+#~ "Používat následující jazyk klávesnice\n"
+#~ "(dvouznakový kód)"
+
+#~ msgid ""
+#~ "Apply Windows key combinations\n"
+#~ "(for example ALT+TAB) (unsupported)"
+#~ msgstr ""
+#~ "Používat kombinace kláves Windows\n"
+#~ "(například ALT+TAB) (nepodporováno)"
+
+#~ msgid "Start a Program"
+#~ msgstr "Spustit program"
+
+#~ msgid "Start the following program on connection"
+#~ msgstr "Spustit při připojení následující program"
+
+#~ msgid "Program path and filename"
+#~ msgstr "Cesta a název souboru programu"
+
+#~ msgid "Start in the following folder"
+#~ msgstr "Spustit v následujícím adresáři"
+
+#~ msgid "Optimize Performance"
+#~ msgstr "Optimzalizovat výkon"
+
+#~ msgid "Desktop background (u)"
+#~ msgstr "Pozadí pracovní plochy (u)"
+
+#~ msgid "Show content of window while dragging (u)"
+#~ msgstr "Zobrazovat obsah okna při tažení (u)"
+
+#~ msgid "Menu and window animation (u)"
+#~ msgstr "Animace menu a oken (u)"
+
+#~ msgid "Themes (u)"
+#~ msgstr "Témata (u)"
+
+#~ msgid "Enable bitmap caching"
+#~ msgstr "Povolit kešování bitmap"
+
+#~ msgid "Do not send motion events"
+#~ msgstr "Neposílat události pohybu"
+
+#~ msgid "Enable window manager's key bindings"
+#~ msgstr "Povolit klávesové zkratky manažera oken"
+
+#~ msgid "Options available for optimizing performance"
+#~ msgstr "Možnosti dostupné pro optimalizaci výkonu"
+
+#~ msgid "_General"
+#~ msgstr "_Obecné"
+
+#~ msgid "_Display"
+#~ msgstr "_Displej"
+
+#~ msgid "Local _Resources"
+#~ msgstr "_Místní zdroje"
+
+#~ msgid "_Programs"
+#~ msgstr "_Programy"
+
+#~ msgid "Perf_ormance"
+#~ msgstr "_Výkon"
+
+#~ msgid "_Less"
+#~ msgstr "_Méně"
+
+#~ msgid "Input a filename to save as..."
+#~ msgstr "Zadejte název souboru, kam uložit..."
+
+#~ msgid "Choose an RDP file to open..."
+#~ msgstr "Zvolte soubor RDP, který otevřít..."
+
+#~ msgid ""
+#~ "rdesktop was not found in your path.\n"
+#~ "Please verify your rdesktop installation."
+#~ msgstr ""
+#~ "Ve vaší cestě nebyl nalezen rdesktop.\n"
+#~ "Zkontrolujte prosím svou instalaci rdesktop."
+
+#~ msgid ""
+#~ "vncviewer or xvncviewer were\n"
+#~ " not found in your path.\n"
+#~ "Please verify your vnc installation."
+#~ msgstr ""
+#~ "Ve vaší cestě nebyl nalezen vncviewer\n"
+#~ "nebo xvncviewer..\n"
+#~ "Zkontrolujte prosím svou instalaci vnc."
+
+#~ msgid ""
+#~ "Xnest was not found in your path.\n"
+#~ "Please verify your Xnest installation."
+#~ msgstr ""
+#~ "Ve vaší cestě nebyl nalezen Xnest.\n"
+#~ "Zkontrolujte prosím svou instalaci Xnest."
+
+#~ msgid ""
+#~ "wfica was not found in your path.\n"
+#~ "Please verify your ICAClient installation."
+#~ msgstr ""
+#~ "Ve vaší cestě nebyl nalezen wfica.\n"
+#~ "Zkontrolujte prosím svou instalaci ICAClient."
+
+#~ msgid ""
+#~ "Failed to spawn.\n"
+#~ "Please verify your installation."
+#~ msgstr ""
+#~ "Nemohu spustit.\n"
+#~ "Zkontrolujte prosím svou instalaci."
+
+#~ msgid "GNOME Remote Desktop Error"
+#~ msgstr "Chyba GNOME Remote Desktop"
+
+#~ msgid "An error has occurred."
+#~ msgstr "Došlo k chybě."
+
+#~ msgid "Check this to enable desktop sharing in GNOME"
+#~ msgstr "Zaškrtnutím tohoto povolíte sdílení pracovní plochy v GNOME"
+
+#~ msgid "Password to connect to desktop sharing"
+#~ msgstr "Heslo pro připojení ke sdílení pracovní plochy"
+
+#~ msgid ""
+#~ "Set this to the password clients should use to connect to your desktop "
+#~ "remotely"
+#~ msgstr ""
+#~ "Nastavte toto na heslo, které mají klienti používat pro vzdálené "
+#~ "připojení k vaší pracovní ploše"
+
+#~ msgid "Whether to enable desktop sharing"
+#~ msgstr "Jestli povolit sdílení pracovní plochy"
+
+#~ msgid ""
+#~ "<b>Connection settings</b>\n"
+#~ "Type the name of the computer to open a new desktop session and/or the "
+#~ "display number to connect to an already running session."
+#~ msgstr ""
+#~ "<b>Nastavení připojení</b>\n"
+#~ "Napište jméno počítače pro otevření nového sezení pracovní plochy a/nebo "
+#~ "číslo displeje pro připojení k již existujícímu sezení."
+
+#~ msgid ""
+#~ "<b>Desktop settings</b>\n"
+#~ "Select the size and color depth (not supported for all cases, so use with "
+#~ "care) of you remote desktop."
+#~ msgstr ""
+#~ "<b>Nastavení pracovní plochy</b>\n"
+#~ "Zvolte velikost a barevnou hloubku (není vždy podporováno, takže "
+#~ "vybírejte opatrně) své vzdálené pracovní plochy."
+
+#~ msgid ""
+#~ "<b>Method</b>\n"
+#~ "Select the method for connecting to the remote host. For Windows systems, "
+#~ "you want to choose VNC. For UNIX systems, usually X11, though VNC will "
+#~ "also work."
+#~ msgstr ""
+#~ "<b>Metoda</b>\n"
+#~ "Zvolte metodu připojení ke vzdálenému počítači. Pro systémy Windows "
+#~ "budete chtít zvolit VNC. Pro systémy UNIX obvykle X11, ale VNC bude "
+#~ "fungovat také."
+
+#~ msgid "Color depth"
+#~ msgstr "Barevná hloubka"
+
+#~ msgid "Connect Now ..."
+#~ msgstr "Připojit se nyní ..."
+
+#~ msgid "Display size"
+#~ msgstr "Velikost displeje"
+
+#~ msgid "Display:"
+#~ msgstr "Displej:"
+
+#~ msgid "Host:"
+#~ msgstr "Počítač:"
+
+#~ msgid "VNC"
+#~ msgstr "VNC"
+
+#~ msgid "X11"
+#~ msgstr "X11"
+
+# ???
+#~ msgid "by"
+#~ msgstr "od"
+
+#~ msgid "Desktop Sharing"
+#~ msgstr "Sdílení pracovních ploch"
+
+#~ msgid "_Share my desktop with others"
+#~ msgstr "_Sdílet mou pracovní plochu s ostatními"
+
+#~ msgid "Enable this option to allow others to view your desktop"
+#~ msgstr ""
+#~ "Povolením této možnosti umožníte ostatním prohlížet si vaši pracovní "
+#~ "plochu"
+
+#~ msgid ""
+#~ "The following information will need to be supplied by the user connecting "
+#~ "to your desktop"
+#~ msgstr ""
+#~ "Uživatel, který se k vaší pracovní ploše připojuje, bude potřebovat "
+#~ "následující informace"
+
+#~ msgid "Password"
+#~ msgstr "Heslo"
+
+#~ msgid "Couldn't find pixmap file: %s"
+#~ msgstr "Nemohu najít soubor pixmapy: %s"
+
+#~ msgid "Orientation"
+#~ msgstr "Orientace"
+
+#~ msgid "The orientation of the tray."
+#~ msgstr "Orientace oblasti upozornění."
+
+#~ msgid "/_Preferences"
+#~ msgstr "/_Nastavení"
+
+#~ msgid "/_Clients"
+#~ msgstr "/_Klienti"
+
+#~ msgid "/_About"
+#~ msgstr "/O _aplikaci"
+
+#~ msgid "/_Quit"
+#~ msgstr "/_Konec"
+
+#~ msgid "Your desktop is viewable to others"
+#~ msgstr "Vaši pracovní plochu si mohou prohlížet ostatní"
+
+#~ msgid "Remote Desktop Sharing"
+#~ msgstr "Vzdálené sdílení pracovní plochy"
+
+#~ msgid "Clients currently viewing your desktop"
+#~ msgstr "Klienti momentálně zobrazující vaši pracovní plochu"
+
+#~ msgid "Disconnect"
+#~ msgstr "Odpojit"
+
+#~ msgid "Receive"
+#~ msgstr "Přijmout"
+
+#~ msgid "Enter search string"
+#~ msgstr "Zadejte hledaný řetězec"
+
+#~ msgid "Send"
+#~ msgstr "Poslat"
+
+#~ msgid "Enter transmission string"
+#~ msgstr "Zadejte přenosový řetězec"
+
+#~ msgid "Send User Name"
+#~ msgstr "Poslat jméno uživatele"
+
+#~ msgid "Username taken from Authentication"
+#~ msgstr "Jméno uživatele převzaté z autentizace"
+
+#~ msgid "Send User Password"
+#~ msgstr "Poslat heslo uživatele"
+
+#~ msgid "Password taken from Authentication"
+#~ msgstr "Heslo převzaté z autentizace"
+
+#~ msgid "Dialog Box Input"
+#~ msgstr "Vstup dialogového okna"
+
+#~ msgid "Enter text to be used as a dialog message when prompted for input"
+#~ msgstr "Zadejte text, který bude použit jako výzva k zadání dat"
+
+#~ msgid "open_account_window(): account=NULL with clone flag"
+#~ msgstr "open_account_window(): account=NULL s příznakem clone"
+
+#~ msgid "open_account_window(): calling arguments invalid"
+#~ msgstr "open_account_window(): argumenty volání neplatné"
+
+#~ msgid "Dial"
+#~ msgstr "Vytočit"
+
+#~ msgid "Authentication"
+#~ msgstr "Autentizace"
+
+#~ msgid "IP Address"
+#~ msgstr "IP adresa"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "Script"
+#~ msgstr "Skript"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "Account Name"
+#~ msgstr "Název účtu"
+
+#~ msgid "Redial Maximum"
+#~ msgstr "Maximální počet vytočení"
+
+#~ msgid "Dial Timeout (sec)"
+#~ msgstr "Čas pro vytáčení (s)"
+
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefonní čísla"
+
+#~ msgid "#"
+#~ msgstr "tel. č."
+
+#~ msgid "Add"
+#~ msgstr "Přidat"
+
+#~ msgid "Remove"
+#~ msgstr "Odstranit"
+
+#~ msgid "PAP/CHAP"
+#~ msgstr "PAP/CHAP"
+
+#~ msgid "User Name"
+#~ msgstr "Jméno uživatele"
+
+#~ msgid "Remote Name"
+#~ msgstr "Jméno vzdáleného stroje"
+
+#~ msgid "Hidden Password"
+#~ msgstr "Skryté heslo"
+
+#~ msgid "Local IP Address"
+#~ msgstr "Místní IP adresa"
+
+#~ msgid "Dynamic"
+#~ msgstr "Dynamická"
+
+#~ msgid "Static"
+#~ msgstr "Statická"
+
+#~ msgid "Remote IP Address"
+#~ msgstr "Vzdálená IP adresa"
+
+#~ msgid "DNS Servers"
+#~ msgstr "DNS servery"
+
+#~ msgid "Search Domains"
+#~ msgstr "Prohledávané domény"
+
+#~ msgid "Domain Name"
+#~ msgstr "Jméno domény"
+
+#~ msgid "Action"
+#~ msgstr "Akce"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Login Script"
+#~ msgstr "Přihlašovací skript"
+
+#~ msgid "Insert"
+#~ msgstr "Vložit"
+
+#~ msgid "Add Default Route"
+#~ msgstr "Přidat implicitní cestu"
+
+#~ msgid "Lock Dialout Device"
+#~ msgstr "Zamknout zařízení modemu"
+
+#~ msgid "Maximum Transmission Unit"
+#~ msgstr "MTU"
+
+#~ msgid "Maximum Receive Unit"
+#~ msgstr "MRU"
+
+#~ msgid "Run Program After Connect"
+#~ msgstr "Program po připojení"
+
+#~ msgid "Run Program After Disconnect"
+#~ msgstr "Program po odpojení"
+
+#~ msgid "Modem Device"
+#~ msgstr "Zařízení modemu"
+
+#~ msgid "Connection Speed"
+#~ msgstr "Rychlost připojení"
+
+#~ msgid "Flow Control"
+#~ msgstr "Řízení toku dat"
+
+#~ msgid "Line Termination"
+#~ msgstr "Ukončení řádku"
+
+#~ msgid "Modem Speaker Volume"
+#~ msgstr "Hlasitost reproduktoru modemu"
+
+#~ msgid " Edit Modem Commands "
+#~ msgstr " Upravit příkazy modemu "
+
+#~ msgid "**PASSWORD**"
+#~ msgstr "**HESLO**"
+
+#~ msgid "script_type_cb(): optionmenu data bad"
+#~ msgstr "script_type_cb(): špatná data optionmenu"
+
+#~ msgid "_Debug Terminal"
+#~ msgstr "_Ladicí terminál"
+
+#~ msgid "_New..."
+#~ msgstr "_Nové..."
+
+#~ msgid "D_uplicate..."
+#~ msgstr "D_uplikovat..."
+
+#~ msgid "_Edit..."
+#~ msgstr "_Upravit..."
+
+#~ msgid "_Delete..."
+#~ msgstr "S_mazat..."
+
+#~ msgid "_Account"
+#~ msgstr "_Účet"
+
+#~ msgid "gnome-ppp"
+#~ msgstr "gnome-ppp"
+
+#~ msgid "Dialing"
+#~ msgstr "Vytáčím"
+
+#~ msgid "Connected"
+#~ msgstr "Spojeno"
+
+#~ msgid "refresh_dial_app(): gtk_clist_append failed."
+#~ msgstr "refresh_dial_app(): gtk_clist_append selhalo."
+
+#~ msgid "Connect"
+#~ msgstr "Připojit"
+
+#~ msgid "Cancel"
+#~ msgstr "Zrušit"
+
+#~ msgid "You must disconnect before closing."
+#~ msgstr "Před ukončením programu se musíte odpojit."
+
+#~ msgid "Are you sure you want to delete this account?\n"
+#~ msgstr "Jste si jisti, že chcete odstranit tento účet?\n"
+
+#~ msgid "The account cannot be deleted."
+#~ msgstr "Tento účet nemůže být odstraněn."
+
+#~ msgid "The account is in use and cannot be deleted."
+#~ msgstr "Tento účet se používá a nemůže být odstraněn."
+
+#~ msgid "GNOME Internet Dialer"
+#~ msgstr "GNOME Internet Dialer"
+
+#~ msgid "Raise PPP Link"
+#~ msgstr "Aktivovat spojení PPP"
+
+#~ msgid "About..."
+#~ msgstr "O programu..."
+
+#~ msgid "Properties..."
+#~ msgstr "Vlastnosti..."
+
+#~ msgid "Offline"
+#~ msgstr "Offline"
+
+#~ msgid "Connecting..."
+#~ msgstr "Připojuji se..."
+
+#~ msgid "PPP Connected"
+#~ msgstr "PPP Spojeno"
+
+#~ msgid "PPP Error!"
+#~ msgstr "Chyba PPP!"
+
+#~ msgid "That account is already in use.\n"
+#~ msgstr "Tento účet se již používá.\n"
+
+#~ msgid "GNOME PPP Dialer Applet"
+#~ msgstr "Aplet GNOME PPP Dialeru"
+
+#~ msgid ""
+#~ "An unnecessarily nice looking applet for GNOME's panel for easy control "
+#~ "of PPP network links."
+#~ msgstr ""
+#~ "Zbytečně hezky vypadající aplet pro panel GNOME pro snadné ovládání "
+#~ "síťových spojení PPP."
+
+#~ msgid "PPP Applet Properties"
+#~ msgstr "Vlastnosti apletu PPP"
+
+#~ msgid "Animation"
+#~ msgstr "Animace"
+
+#~ msgid "Small"
+#~ msgstr "Malý"
+
+#~ msgid "Large"
+#~ msgstr "Velký"
+
+#~ msgid "None"
+#~ msgstr "Žádný"
+
+#~ msgid "Options"
+#~ msgstr "Možnosti"
+
+#~ msgid "Freeze Animation on Connect"
+#~ msgstr "Zmrazit animaci po připojení"
+
+#~ msgid "Disconnect PPP on GNOME logout"
+#~ msgstr "Odpojit PPP při odhlášení z GNOME"
+
+#~ msgid "Timer"
+#~ msgstr "Časovač"
+
+#~ msgid "Label"
+#~ msgstr "Jmenovka"
+
+#~ msgid "Tooltip"
+#~ msgstr "Nástrojový tip"
+
+#~ msgid "Animation Speed"
+#~ msgstr "Rychlost animace"
+
+#~ msgid "PPP Applet"
+#~ msgstr "Aplet PPP"
+
+#~ msgid "---NEW CONNECTION---"
+#~ msgstr "---NOVÉ SPOJENÍ---"
+
+#~ msgid "Account already connected."
+#~ msgstr "Účet je již připojen."
+
+#~ msgid "Starting PPP Connection."
+#~ msgstr "Startuji spojení PPP."
+
+#~ msgid "You don't have permission to execute pppd."
+#~ msgstr "Nemáte oprávnění spustit pppd."
+
+#~ msgid "The modem is in use by another program."
+#~ msgstr "Modem je používán jiným programem."
+
+#~ msgid "Running pppd."
+#~ msgstr "Spouštím pppd."
+
+#~ msgid "Closing connection."
+#~ msgstr "Zavírám spojení."
+
+#~ msgid "The pppd program failed to run gnome-ppp-chat."
+#~ msgstr "Program ppp nemohl spustit gnome-ppp-chat."
+
+#~ msgid "The modem could not be hung up."
+#~ msgstr "Modem se nepodařilo zavěsit."
+
+#~ msgid "Initalizing modem."
+#~ msgstr "Inicializuji modem."
+
+#~ msgid "Your modem is not responding to initalization."
+#~ msgstr "Váš modem neodpovídá na inicializaci."
+
+#~ msgid "The command to set the volume on your modem's speaker failed."
+#~ msgstr "Příkaz k nastavení hlasitosti reproduktoru vašeho modemu selhal."
+
+#~ msgid "No answer after maximum number of re-dial attempts."
+#~ msgstr "Po maximálním počtu vytočení čísla modem neodpověděl."
+
+#~ msgid "No phone numbers specified for this account."
+#~ msgstr "Pro tento účet nebyla určena telefonní čísla."
+
+#~ msgid "Dialing."
+#~ msgstr "Vytáčím."
+
+#~ msgid "Dialing timeout."
+#~ msgstr "Vypršel čas pro vytáčení."
+
+#~ msgid "No dialtone."
+#~ msgstr "Nedetekován oznamovací tón."
+
+#~ msgid "Number busy."
+#~ msgstr "Číslo obsazeno."
+
+#~ msgid "Ring, but no answer."
+#~ msgstr "Vyzvánění bez odpovědi."
+
+#~ msgid "Connection failure, reason unknown."
+#~ msgstr "Selhání spojení, důvod neznámý."
+
+#~ msgid "Connected."
+#~ msgstr "Spojeno."
+
+#~ msgid "The modem lost connection with remote host."
+#~ msgstr "Modem ztratil spojení se vzdáleným počítačem."
+
+#~ msgid "Running Script."
+#~ msgstr "Spouštím skript."
+
+#~ msgid "Script Complete."
+#~ msgstr "Skript ukončen."
+
+#~ msgid "PPP connection established."
+#~ msgstr "Spojení PPP vytvořeno."
+
+#~ msgid "Failed to establish a PPP connection."
+#~ msgstr "Nemohu vytvořit spojení PPP."
+
+#~ msgid "The pppd daemon died unexpectedly."
+#~ msgstr "Program pppd neočekávaně umřel."
+
+#~ msgid "open_modem_window(): account=NULL"
+#~ msgstr "open_modem_window(): account=NULL"
+
+#~ msgid "Commands"
+#~ msgstr "Příkazy"
+
+#~ msgid "Responses"
+#~ msgstr "Odpovědi"
+
+#~ msgid "Initialization"
+#~ msgstr "Inicializace"
+
+#~ msgid "Hangup"
+#~ msgstr "Zavěšení"
+
+#~ msgid "Volume Mute"
+#~ msgstr "Hlasitost: ticho"
+
+#~ msgid "Volume Low"
+#~ msgstr "Nízká hlasitost"
+
+#~ msgid "Volume High"
+#~ msgstr "Vysoká hlasitost"
+
+#~ msgid "Connection"
+#~ msgstr "Připojení"
+
+#~ msgid "Busy"
+#~ msgstr "Obsazeno"
+
+#~ msgid "No Answer"
+#~ msgstr "Žádná odpověď"
+
+#~ msgid "No Carrier"
+#~ msgstr "Nedetekována nosná"
+
+#~ msgid "No Dialtone"
+#~ msgstr "Nedetekován oznamovací tón"
+
+#~ msgid "GNOME Transfer Manager"
+#~ msgstr "GNOME Transfer Manager"
+
+#~ msgid "There is a connection error"
+#~ msgstr "Došlo k chybě při připojování"
+
+#~ msgid "There is an error with displaying help"
+#~ msgstr "Došlo k chybě při zobrazování nápovědy"
+
+#~ msgid "Graphical user interface for GNOME Remote Shell"
+#~ msgstr "Grafické uživatelské rozhraní pro GNOME Remote Shell"
+
+#~ msgid "This is an untranslated version of GNOME Remote Shell"
+#~ msgstr "Miloslav Trmač <mitr@volny.cz>"
+
+#~ msgid "Failed to create a connection"
+#~ msgstr "Nemohu vytvořit spojení."
+
+#~ msgid "A hostname is required"
+#~ msgstr "Je vyžadováno jméno počítače."
+
+#~ msgid "A user name is required for SSH"
+#~ msgstr "Pro SSH je vyžadováno jméno uživatele"
+
+#~ msgid "There is a command line error"
+#~ msgstr "Na příkazovém řádku je chyba"
+
+#~ msgid "The host cannot be found"
+#~ msgstr "Počítač nebyl nalezen"
+
+#~ msgid "<span weight=\"bold\">Connect to remote host</span>"
+#~ msgstr "<span weight=\"bold\">Připojit se ke vzdálenému počítači</span>"
+
+#~ msgid "<span weight=\"bold\">Method</span>"
+#~ msgstr "<span weight=\"bold\">Metoda</span>"
+
+#~ msgid "<span weight=\"bold\">Window size</span>"
+#~ msgstr "<span weight=\"bold\">Velikost okna</span>"
+
+#~ msgid "Connect to remote host"
+#~ msgstr "Připojit se ke vzdálenému počítači"
+
+#~ msgid "H_eight:"
+#~ msgstr "_Výška:"
+
+#~ msgid "H_ost:"
+#~ msgstr "_Počítač:"
+
+#~ msgid "Regular shell (_Telnet)"
+#~ msgstr "Obyčejný shell (_telnet)"
+
+#~ msgid "Use _default"
+#~ msgstr "Použít _implicitní"
+
+#~ msgid "_Contents"
+#~ msgstr "_Obsah"
+
+#~ msgid "_Port:"
+#~ msgstr "_Port:"
+
+#~ msgid "_Secure shell (SSH)"
+#~ msgstr "Za_bezpečený shell (SSH)"
+
+#~ msgid "_Shell"
+#~ msgstr "_Shell"
+
+#~ msgid "_User:"
+#~ msgstr "_Uživatel:"
+
+#~ msgid "_Width:"
+#~ msgstr "_Šířka:"
+
+#~ msgid "characters"
+#~ msgstr "znaků"
+
+#~ msgid "Expander Size"
+#~ msgstr "Velikost rozbalovače"
+
+#~ msgid "Size of the expander arrow"
+#~ msgstr "Velikost šipky rozbalovače"
+
+#~ msgid "Web folder:"
+#~ msgstr "Adresář WWW:"
+
+#~ msgid "Select the folder to be published"
+#~ msgstr "Zvolte adresář, který publikovat"
+
+#~ msgid "Enable web server"
+#~ msgstr "Povolit WWW server"
+
+#~ msgid "Additional options"
+#~ msgstr "Další možnosti"
+
+#~ msgid "Port number:"
+#~ msgstr "Číslo portu:"
+
+#~ msgid "Time out:"
+#~ msgstr "Časový limit:"
+
+#~ msgid "Keep alive"
+#~ msgstr "Udržovat spojení"
+
+#~ msgid "/_Open Web Folder"
+#~ msgstr "/_Otevřít adresář WWW:"
+
+#~ msgid "Personal web server preferences"
+#~ msgstr "Nastavení osobního WWW serveru"
+
+#~ msgid "Personal Web Server Preferences"
+#~ msgstr "Nastavení osobního WWW serveru"
+
+#~ msgid "Setup the options for your personal web server."
+#~ msgstr "Nastavte možnosti svého osobního WWW serveru."
+
+#~ msgid "Could not load UI for entry configuration dialog"
+#~ msgstr "Nemohu načíst UI pro dialog nastavení položky"
+
+#~ msgid "Entry name"
+#~ msgstr "Název položky"
+
+#~ msgid "Local path"
+#~ msgstr "Místní cesta"
+
+#~ msgid "Preserve group"
+#~ msgstr "Zachovat skupinu"
+
+#~ msgid "Preserve permissions"
+#~ msgstr "Zachovat oprávnění"
+
+#~ msgid "Preserve times"
+#~ msgstr "Zachovat časy"
+
+#~ msgid "Recurse into directories"
+#~ msgstr "Zanořovat se do adresářů"
+
+#~ msgid "Remote host"
+#~ msgstr "Vzdálený počítač"
+
+#~ msgid "Remote path"
+#~ msgstr "Vzdálená cesta"
+
+#~ msgid "Synchronization options"
+#~ msgstr "Možnosti synchronizace"
+
+#~ msgid "Update only (don't overwrite newer files)"
+#~ msgstr "Jen aktualizovat (nepřepisovat novější soubory)"
+
+#~ msgid "Use relative path names"
+#~ msgstr "Používat relativní jména cesty"
+
+#~ msgid "Use rsync"
+#~ msgstr "Použít rsync"
+
+#~ msgid "Use unison"
+#~ msgstr "Použít unison"
+
+#~ msgid "dialog1"
+#~ msgstr "dialog1"
+
+#~ msgid "rsync"
+#~ msgstr "rsync"
+
+#~ msgid "unison"
+#~ msgstr "unison"
+
+#~ msgid "Local"
+#~ msgstr "Místní"
+
+#~ msgid "Remote"
+#~ msgstr "Vzdálené"
+
+#~ msgid "Last sync"
+#~ msgstr "Poslední synchronizace"
+
+#~ msgid "_Synchronize"
+#~ msgstr "_Synchronizovat"
+
+#~ msgid "New entry..."
+#~ msgstr "Nová položka..."
+
+#~ msgid "Edit..."
+#~ msgstr "Upravit..."
+
+#~ msgid "Synchronize"
+#~ msgstr "Synchronizovat"
+
+#~ msgid "Gnome Synchronize"
+#~ msgstr "Gnome Synchronize"
+
+#~ msgid "The GNOME file synchronization program."
+#~ msgstr "Program pro synchronizaci souborů pro GNOME."
+
+#~ msgid "New"
+#~ msgstr "Nový"
+
+#~ msgid "Create new synchronization entry"
+#~ msgstr "Vytvořit novou synchronizační položku"
+
+#~ msgid "Start synchronization for selected entries"
+#~ msgstr "Začít synchronizaci vybraných položek"
+
+#~ msgid "Edit"
+#~ msgstr "Upravit"
+
+#~ msgid "Edit selected entry"
+#~ msgstr "Upravit vybranou položku"
+
+#~ msgid "Delete"
+#~ msgstr "Odstranit"
+
+#~ msgid "Delete selected entries"
+#~ msgstr "Odstranit vybrané položky"
 
 #~ msgid "translator_credits"
 #~ msgstr "Miloslav Trmač <mitr@volny.cz>"

@@ -6,634 +6,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-12 20:32+0100\n"
+"POT-Creation-Date: 2004-02-11 16:35+0100\n"
 "PO-Revision-Date: 2004-01-13 01:14+0100\n"
 "Last-Translator: Elros Cyriatan <cyriatan@fastmail.fm>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
-msgid "GNOME Remote Desktop Applet"
-msgstr "GNOME Bureaublad op Afstand Applet"
-
-#: desktop/client/gnome-remote-desktop.desktop.in.h:1
-msgid "Connect to a remote desktop computer"
-msgstr "Verbinden met een computer op afstand"
-
-#: desktop/client/gnome-remote-desktop.desktop.in.h:2
-msgid "Remote Desktop Client"
-msgstr "Bureaublad op afstand client"
-
-#: desktop/client/src/connect.c:75
-msgid "640 x 480 pixels"
-msgstr "640 x 480 beeldpunten"
-
-#: desktop/client/src/connect.c:75
-msgid "800 x 600 pixels"
-msgstr "800 x 600 beeldpunten"
-
-#: desktop/client/src/connect.c:76
-msgid "1024 x 768 pixels"
-msgstr "1024 x 768 beeldpunten"
-
-#: desktop/client/src/connect.c:77
-msgid "1152 x 864 pixels"
-msgstr "1152 x 864 beeldpunten"
-
-#: desktop/client/src/connect.c:78
-msgid "1280 x 960 pixels"
-msgstr "1280 x 960 beeldpunten"
-
-#: desktop/client/src/connect.c:82
-msgid "256 Colors"
-msgstr "256 kleuren"
-
-#: desktop/client/src/connect.c:83
-msgid "High Color (15 bit)"
-msgstr "Hoge kleuren (15 bit)"
-
-#: desktop/client/src/connect.c:84
-msgid "High Color (16 bit)"
-msgstr "Hoge kleuren (16 bit)"
-
-#: desktop/client/src/connect.c:85
-msgid "True Color (24 bit)"
-msgstr "Ware kleuren (24 bit)"
-
-#: desktop/client/src/connect.c:286 desktop/client/src/connect.c:309
-#: desktop/client/src/connect.c:311 desktop/client/src/support.c:780
-#: desktop/gnome-remote-desktop.glade.h:13
-msgid "GNOME Remote Desktop"
-msgstr "GNOME Bureaublad op Afstand"
-
-#.
-#. This is the input for the Compact mode
-#.
-#: desktop/client/src/connect.c:343 desktop/client/src/connect.c:554
-msgid "Compu_ter:"
-msgstr "Compu_ter:"
-
-#: desktop/client/src/connect.c:367 desktop/client/src/connect.c:622
-msgid "Enter the name or address of the remote system."
-msgstr "Geef de naam of het adres van het systeem op afstand."
-
-#: desktop/client/src/connect.c:372 desktop/client/src/connect.c:629
-msgid "Select the protocol to use for this connection."
-msgstr "Kies het protocol dat voor deze verbinding gebruikt moet worden."
-
-#: desktop/client/src/connect.c:379 desktop/client/src/connect.c:636
-msgid ""
-"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
-"systems with desktop sharing."
-msgstr ""
-"Het RDP-protocol wordt gebruikt om te verbinden met Microsoft Terminal "
-"Servers en Windows XP systemen met bureaublad-delen."
-
-#: desktop/client/src/connect.c:384 desktop/client/src/connect.c:643
-msgid ""
-"VNC protocol is used to connect to systems sharing the desktop by using VNC."
-msgstr ""
-"Het VNC-protocol wordt gebruikt om te verbinden met systemen die het "
-"bureaublad delen met VNC."
-
-#: desktop/client/src/connect.c:393 desktop/client/src/connect.c:654
-msgid "XDMCP protocol uses Xnest to connect to servers running X."
-msgstr ""
-"Het XDMCP-protocol gebruikt Xnest om te verbinden met servers die X draaien."
-
-#: desktop/client/src/connect.c:398 desktop/client/src/connect.c:661
-msgid "ICA protocol is used to connect to Citrix servers."
-msgstr "Het ICA-protocol wordt gebruikt om te verbinden met Citrix servers."
-
-#.
-#. This is the Profile Launcher
-#.
-#: desktop/client/src/connect.c:409
-msgid "Prof_ile Launcher:"
-msgstr "_Profiel opstarter:"
-
-#: desktop/client/src/connect.c:422
-msgid "Select a saved profile to launch it immediately."
-msgstr "Kies een opgeslagen profiel om het direct op te starten."
-
-#: desktop/client/src/connect.c:454
-msgid "_More"
-msgstr "_Meer"
-
-#: desktop/client/src/connect.c:480 desktop/client/src/connect.c:1224
-#: network-utilities/gnome-remote-shell.glade.h:6
-msgid "Co_nnect"
-msgstr "_Verbinden"
-
-#.
-#. This is the label for the Connection Profile
-#.
-#: desktop/client/src/connect.c:489 desktop/client/src/connect.c:491
-msgid "Connection Profile"
-msgstr "Verbindingsprofiel"
-
-#: desktop/client/src/connect.c:520 desktop/client/src/connect.c:522
-msgid "Logon Settings"
-msgstr "Aanmeld instellingen"
-
-#: desktop/client/src/connect.c:530
-msgid ""
-"Type the name of the computer or choose a computer from the drop-down list."
-msgstr "Geef de naam van de computer of kies een computer uit de lijst."
-
-#: desktop/client/src/connect.c:562
-msgid "Pro_tocol:"
-msgstr "_Protocol:"
-
-#: desktop/client/src/connect.c:570
-msgid "_User Name:"
-msgstr "_Gebruikersnaam:"
-
-#: desktop/client/src/connect.c:578
-msgid "Pass_word:"
-msgstr "_Wachtwoord:"
-
-#: desktop/client/src/connect.c:586
-msgid "Do_main:"
-msgstr "_Domein:"
-
-#: desktop/client/src/connect.c:594
-msgid "C_lient Hostname:"
-msgstr "_Client hostnaam:"
-
-#: desktop/client/src/connect.c:602
-msgid "Prot_ocol File:"
-msgstr "_Protocol bestand:"
-
-#: desktop/client/src/connect.c:677
-msgid ""
-"Enter the username for the remote system.\n"
-"For VNC, enter the path to your saved vnc password file."
-msgstr ""
-"Geef de gebruikersnaam voor het systeem op afstand.\n"
-"Voer voor VNC het pad in naar uw opgeslagen VNC wachtwoordbestand."
-
-#: desktop/client/src/connect.c:686
-msgid "Enter the password for the remote system."
-msgstr "Geef het wachtwoord voor het systeem op afstand."
-
-#: desktop/client/src/connect.c:694
-msgid "Enter the domain for the remote system."
-msgstr "Geef het domein voor het systeem op afstand."
-
-#: desktop/client/src/connect.c:702
-msgid "Enter the local hostname for this system."
-msgstr "Geef de lokale hostnaam voor dit systeem."
-
-#: desktop/client/src/connect.c:714
-msgid ""
-"Some protocols require a file containing settings. If required, enter the "
-"path to the file here."
-msgstr ""
-"Sommige protocollen vereisen een bestand met daarin instellingen. Voer, als "
-"dit nodig is, hier het pad naar het bestand in."
-
-#: desktop/client/src/connect.c:736 desktop/client/src/connect.c:738
-msgid "Remote Desktop Size"
-msgstr "Grootte bureaublad op afstand"
-
-#: desktop/client/src/connect.c:756
-msgid "Use default screen size"
-msgstr "Standaard schermgrootte gebruiken"
-
-#: desktop/client/src/connect.c:760
-msgid "Use the default screen size."
-msgstr "De standaard schermgrootte gebruiken."
-
-#: desktop/client/src/connect.c:765
-msgid "Use specified screen size"
-msgstr "De opgegeven schermgrootte gebruiken"
-
-#: desktop/client/src/connect.c:769
-msgid "Use the list to choose the screen size to use."
-msgstr ""
-"Gebruik de lijst om de schermgrootte te kiezen die gebruikt moet worden."
-
-#: desktop/client/src/connect.c:781
-msgid "Operate in full screen mode"
-msgstr "In volledig-scherm modus werken"
-
-#: desktop/client/src/connect.c:785
-msgid "Work in full screen mode."
-msgstr "In volledig-scherm modus werken."
-
-#: desktop/client/src/connect.c:794
-msgid "Use alternate full screen switch (-F)"
-msgstr "Alternatieve volledig-scherm keuze (-F) gebruiken"
-
-#: desktop/client/src/connect.c:798
-msgid "Check this if you use rdesktop with the unified patches."
-msgstr "Vink dit aan als u rdesktop met de geünificeerde patches."
-
-#: desktop/client/src/connect.c:807 desktop/client/src/connect.c:809
-msgid "Colors"
-msgstr "Kleuren"
-
-#: desktop/client/src/connect.c:827
-msgid "Use default color depth"
-msgstr "Standaard kleurdiepte gebruiken"
-
-#: desktop/client/src/connect.c:831
-msgid "Use the default color depth."
-msgstr "De standaard kleurdiepte gebruiken."
-
-#: desktop/client/src/connect.c:836
-msgid "Use specified color depth"
-msgstr "De opgegeven kleurdiepte gebruiken"
-
-#: desktop/client/src/connect.c:840
-msgid "Use the list to choose the color depth to use."
-msgstr "Gebruik de lijst om de te gebruiken kleurdiepte te kiezen."
-
-#: desktop/client/src/connect.c:864
-msgid "Remote Computer _Sound"
-msgstr "_Geluid computer op afstand"
-
-#: desktop/client/src/connect.c:866
-msgid "Remote Computer Sound"
-msgstr "Geluid computer op afstand"
-
-#: desktop/client/src/connect.c:890 desktop/client/src/connect.c:926
-msgid "On the local computer"
-msgstr "Op de lokale computer"
-
-#: desktop/client/src/connect.c:893 desktop/client/src/connect.c:929
-msgid "On the remote computer"
-msgstr "Op de computer op afstand"
-
-#: desktop/client/src/connect.c:896
-msgid "Do not play"
-msgstr "Niet afspelen"
-
-#: desktop/client/src/connect.c:907
-msgid "_Keyboard"
-msgstr "_Toetsenbord"
-
-#: desktop/client/src/connect.c:909
-msgid "Keyboard"
-msgstr "Toetsenbord"
-
-#: desktop/client/src/connect.c:932
-msgid "In full screen mode only"
-msgstr "Alleen in volledig-scherm modus"
-
-#: desktop/client/src/connect.c:938
-msgid ""
-"Use the following keyboard language\n"
-"(2 char keycode)"
-msgstr ""
-"De volgende toetsenbord taal gebruiken\n"
-"(2-tekens toetscode)"
-
-#: desktop/client/src/connect.c:966
-msgid ""
-"Apply Windows key combinations\n"
-"(for example ALT+TAB) (unsupported)"
-msgstr ""
-"Windows-toets combinaties toepassen\n"
-"(bijvoorbeeld ALT+TAB) (niet-ondersteund)"
-
-#: desktop/client/src/connect.c:989 desktop/client/src/connect.c:991
-msgid "Start a Program"
-msgstr "Een programma uitvoeren"
-
-#: desktop/client/src/connect.c:1006
-msgid "Start the following program on connection"
-msgstr "Het volgende programma uitvoeren bij verbinden"
-
-#: desktop/client/src/connect.c:1013
-msgid "Program path and filename"
-msgstr "Programma pad en bestandsnaam"
-
-#: desktop/client/src/connect.c:1026
-msgid "Start in the following folder"
-msgstr "In de volgende map uitvoeren"
-
-#: desktop/client/src/connect.c:1048 desktop/client/src/connect.c:1050
-msgid "Optimize Performance"
-msgstr "Snelheid optimaliseren"
-
-#: desktop/client/src/connect.c:1071
-msgid "Desktop background (u)"
-msgstr "Bureaublad achtergrond (u)"
-
-#: desktop/client/src/connect.c:1075
-msgid "Show content of window while dragging (u)"
-msgstr "Inhoud van venster weergeven tijdens slepen (u)"
-
-#: desktop/client/src/connect.c:1079
-msgid "Menu and window animation (u)"
-msgstr "Menu en venster animatie (u)"
-
-#: desktop/client/src/connect.c:1083
-msgid "Themes (u)"
-msgstr "Thema's (u)"
-
-#: desktop/client/src/connect.c:1087
-msgid "Enable bitmap caching"
-msgstr "Bufferen plaatjes aanzetten"
-
-#: desktop/client/src/connect.c:1091
-msgid "Do not send motion events"
-msgstr "Bewegingsevenementen niet verzenden"
-
-#: desktop/client/src/connect.c:1095
-msgid "Enable window manager's key bindings"
-msgstr "Toetsenbindingen van vensterbeheerder aanzetten"
-
-#: desktop/client/src/connect.c:1100
-msgid "Options available for optimizing performance"
-msgstr "Opties die beschikbaar zijn om de snelheid te optimaliseren"
-
-#.
-#. These are the labels for the notebook control
-#.
-#: desktop/client/src/connect.c:1113
-msgid "_General"
-msgstr "_Algemeen"
-
-#: desktop/client/src/connect.c:1118
-msgid "_Display"
-msgstr "_Beeldscherm"
-
-#: desktop/client/src/connect.c:1123
-msgid "Local _Resources"
-msgstr "Lokale _bronnen"
-
-#: desktop/client/src/connect.c:1128
-msgid "_Programs"
-msgstr "_Programma's"
-
-#: desktop/client/src/connect.c:1133
-msgid "Perf_ormance"
-msgstr "_Snelheid"
-
-#: desktop/client/src/connect.c:1197
-msgid "_Less"
-msgstr "Mi_nder"
-
-#: desktop/client/src/connect.c:1708
-msgid "Input a filename to save as..."
-msgstr "Voer een bestandsnaam in om naar op te slaan..."
-
-#: desktop/client/src/connect.c:1750 desktop/client/src/connect.c:1795
-msgid "Choose an RDP file to open..."
-msgstr "Kies een RDP-bestand om te openen..."
-
-#: desktop/client/src/support.c:277
-msgid ""
-"rdesktop was not found in your path.\n"
-"Please verify your rdesktop installation."
-msgstr ""
-"rdesktop is niet in uw pad gevonden.\n"
-"Controleer alstublieft uw rdesktop installatie."
-
-#: desktop/client/src/support.c:417
-msgid ""
-"vncviewer or xvncviewer were\n"
-" not found in your path.\n"
-"Please verify your vnc installation."
-msgstr ""
-"vncviewer of xvncviewer zijn niet\n"
-" in uw pad gevonden.\n"
-"Controleer alstublieft uw installatie van vnc."
-
-#: desktop/client/src/support.c:519
-msgid ""
-"Xnest was not found in your path.\n"
-"Please verify your Xnest installation."
-msgstr ""
-"Xnest is niet gevonden in uw pad.\n"
-"Controleer alstublieft uw Xnest installatie."
-
-#: desktop/client/src/support.c:578
-msgid ""
-"wfica was not found in your path.\n"
-"Please verify your ICAClient installation."
-msgstr ""
-"wfica is niet gevonden in uw pad.\n"
-"Controleer alstublieft uw ICAClient installatie."
-
-#: desktop/client/src/support.c:702
-msgid ""
-"Failed to spawn.\n"
-"Please verify your installation."
-msgstr ""
-"Spawnen mislukt.\n"
-"Controleer alstublieft uw installatie."
-
-#. create the widgets
-#: desktop/client/src/support.c:744
-msgid "GNOME Remote Desktop Error"
-msgstr "GNOME Bureaublad op Afstand Fout"
-
-#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
-msgid "An error has occurred."
-msgstr "Er is een fout opgetreden."
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
-msgid "Check this to enable desktop sharing in GNOME"
-msgstr "Kies dit om bureaublad deling in GNOME aan te zetten"
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
-msgid "Password to connect to desktop sharing"
-msgstr "Wachtwoord om bij bureaublad delen mee te verbinden"
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:3
-msgid ""
-"Set this to the password clients should use to connect to your desktop "
-"remotely"
-msgstr ""
-"Stel dit in op het wachtwoord dat clients moeten gebruiken om op afstand te verbinden met uw bureaublad"
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:4
-msgid "Whether to enable desktop sharing"
-msgstr "Of bureaublad delen aan of uit staan"
-
-#: desktop/gnome-remote-desktop.glade.h:1
-#: gnome-netinfo/gnome-netinfo.glade.h:1
-#: network-utilities/gnome-remote-shell.glade.h:1
-msgid "    "
-msgstr "    "
-
-#: desktop/gnome-remote-desktop.glade.h:2
-#: gnome-netinfo/gnome-netinfo.glade.h:5
-#: network-utilities/gnome-remote-shell.glade.h:2
-#: sync/entryconfigdialog.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: desktop/gnome-remote-desktop.glade.h:3
-msgid ""
-"<b>Connection settings</b>\n"
-"Type the name of the computer to open a new desktop session and/or the "
-"display number to connect to an already running session."
-msgstr ""
-"<b>Verbindingsinstellingen</b>\n"
-"Voer de naam van de computer in om een nieuwe bureaublad sessie te beginnen, "
-"en/of voer het beeldschermnummer om te verbinden met een al lopende sessie."
-
-#: desktop/gnome-remote-desktop.glade.h:5
-msgid ""
-"<b>Desktop settings</b>\n"
-"Select the size and color depth (not supported for all cases, so use with "
-"care) of you remote desktop."
-msgstr ""
-"<b>Bureaublad instellingen</b>\n"
-"Selecteer de grootte en kleurdiepte (niet in alle gevallen ondersteund, dus "
-"gebruik met zorg) van uw bureaublad op afstand."
-
-#: desktop/gnome-remote-desktop.glade.h:7
-msgid ""
-"<b>Method</b>\n"
-"Select the method for connecting to the remote host. For Windows systems, "
-"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
-"work."
-msgstr ""
-"<b>Methode</b>\n"
-"Selecteer de methode waarop moet worden verbonden met de host op afstand. "
-"Voor Windows systemen wilt u VNC kiezen. Voor UNIX systemen meestal X11, "
-"maar VNC werkt ook."
-
-#: desktop/gnome-remote-desktop.glade.h:9
-msgid "Color depth"
-msgstr "Kleurdiepte"
-
-#: desktop/gnome-remote-desktop.glade.h:10
-msgid "Connect Now ..."
-msgstr "Nu verbinden..."
-
-#: desktop/gnome-remote-desktop.glade.h:11
-msgid "Display size"
-msgstr "Beeldgrootte"
-
-#: desktop/gnome-remote-desktop.glade.h:12
-msgid "Display:"
-msgstr "Beeldscherm:"
-
-#: desktop/gnome-remote-desktop.glade.h:14
-msgid "Host:"
-msgstr "Host:"
-
-#: desktop/gnome-remote-desktop.glade.h:15
-msgid "VNC"
-msgstr "VNC"
-
-#: desktop/gnome-remote-desktop.glade.h:16
-msgid "X11"
-msgstr "X11"
-
-#: desktop/gnome-remote-desktop.glade.h:17
-msgid "by"
-msgstr "door"
-
-#: desktop/preferences/interface.c:48 desktop/preferences/interface.c:63
-#: desktop/server/tray.c:163
-msgid "Desktop Sharing"
-msgstr "Bureaublad delen"
-
-#: desktop/preferences/interface.c:72
-msgid "_Share my desktop with others"
-msgstr "Mijn bureaublad met anderen _delen"
-
-#: desktop/preferences/interface.c:78
-msgid "Enable this option to allow others to view your desktop"
-msgstr ""
-"Zet deze optie aan om anderen toe te staan om uw bureaublad weer te geven"
-
-#: desktop/preferences/interface.c:93
-msgid ""
-"The following information will need to be supplied by the user connecting to "
-"your desktop"
-msgstr ""
-"De volgende informatie zal de gebruiker, die met uw bureaublad verbindt, "
-"nodig hebben"
-
-#: desktop/preferences/interface.c:104 gnome-ppp/account-window.c:1023
-msgid "Password"
-msgstr "Wachtwoord"
-
-#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
-#, c-format
-msgid "Couldn't find pixmap file: %s"
-msgstr "Kon pixmap bestand niet vinden: %s"
-
-#: desktop/server/eggtrayicon.c:118
-msgid "Orientation"
-msgstr "Oriëntatie"
-
-#: desktop/server/eggtrayicon.c:119
-msgid "The orientation of the tray."
-msgstr "De oriëntatie van het vak."
-
-#: desktop/server/tray.c:62 pws/pws.c:85
-msgid "/_Preferences"
-msgstr "/_Voorkeuren"
-
-#: desktop/server/tray.c:63
-msgid "/_Clients"
-msgstr "/_Clients"
-
-#: desktop/server/tray.c:65
-msgid "/_About"
-msgstr "/_Info"
-
-#: desktop/server/tray.c:66 pws/pws.c:88
-msgid "/_Quit"
-msgstr "/_Afsluiten"
-
-#: desktop/server/tray.c:118
-msgid "Your desktop is viewable to others"
-msgstr "Uw bureaublad is door anderen op afstand weer te geven"
-
-#: desktop/server/tray.c:165
-msgid "Remote Desktop Sharing"
-msgstr "Bureaublad delen op afstand"
-
-#: desktop/server/tray.c:168 gnome-netinfo/callbacks.c:214
-msgid "This is an untranslated version of GNOME Network Information"
-msgstr "Elros Cyriatan <cyriatan@fastmail.fm>"
-
-#: desktop/server/tray.c:403
-msgid "Clients currently viewing your desktop"
-msgstr "Clients die op dit moment uw bureaublad weergeven"
-
-#: desktop/server/tray.c:425 gnome-ppp/dial-window.c:431
-msgid "Disconnect"
-msgstr "Verbinding verbreken"
-
-#: gnome-netinfo/callbacks.c:212
+#: src/callbacks.c:212
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafische gebruikersinterface voor gewone netwerkgereedschappen"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:2
+#: src/callbacks.c:214
+msgid "This is an untranslated version of GNOME Network Information"
+msgstr "Elros Cyriatan <cyriatan@fastmail.fm>"
+
+#: src/gnome-netinfo.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: src/gnome-netinfo.glade.h:2
 msgid "(eg. user@www.domain.com)"
 msgstr "(bijv. gebruiker@www.domain.com)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:3
+#: src/gnome-netinfo.glade.h:3
 msgid "(for example: domain.com)"
 msgstr "(bijvoorbeeld: domain.com)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:4
+#: src/gnome-netinfo.glade.h:4
 msgid "(for example: www.domain.com or 192.168.2.1)"
 msgstr "(bijvoorbeeld: www.domain.com of 192.168.2.1)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:6
+#: src/gnome-netinfo.glade.h:5
+msgid "*"
+msgstr "*"
+
+#: src/gnome-netinfo.glade.h:6
 msgid "0.0"
 msgstr "0.0"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:7
+#: src/gnome-netinfo.glade.h:7
 msgid "<span weight=\"bold\">@</span>"
 msgstr "<span weight=\"bold\">@</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:8
+#: src/gnome-netinfo.glade.h:8
 msgid ""
 "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
 "information</span>"
@@ -641,12 +58,12 @@ msgstr ""
 "<span weight=\"bold\">Geef een domeinadres waarvan de \"whois\" informatie "
 "moet worden opgezocht</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:9
+#: src/gnome-netinfo.glade.h:9
 msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
 msgstr ""
 "<span weight=\"bold\">Geef het netwerkadres dat opgezocht moet worden</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:10
+#: src/gnome-netinfo.glade.h:10
 msgid ""
 "<span weight=\"bold\">Enter a user name and network address to finger that "
 "user</span>"
@@ -654,410 +71,409 @@ msgstr ""
 "<span weight=\"bold\">Geef een gebruikersnaam en netwerkadres om voor die "
 "gebruiker finger uit te voeren</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:11
+#: src/gnome-netinfo.glade.h:11
 msgid "<span weight=\"bold\">Enter the network address to ping</span>"
 msgstr "<span weight=\"bold\">Geef het netwerkadres om te pingen</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:12
+#: src/gnome-netinfo.glade.h:12
 msgid ""
 "<span weight=\"bold\">Enter the network address to scan for open ports</span>"
 msgstr ""
 "<span weight=\"bold\">Geef het netwerkadres dat op open poorten moet worden "
 "gescand</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:13
+#: src/gnome-netinfo.glade.h:13
 msgid ""
 "<span weight=\"bold\">Enter the network address to trace a route to</span>"
 msgstr ""
 "<span weight=\"bold\">Geef het netwerkadres waarnaar de route moet worden "
 "getraceerd</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:14
+#: src/gnome-netinfo.glade.h:14
 msgid "<span weight=\"bold\">Information</span>"
 msgstr "<span weight=\"bold\">Informatie</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:15
+#: src/gnome-netinfo.glade.h:15
 msgid "<span weight=\"bold\">Round trip time statistics</span>"
 msgstr "<span weight=\"bold\">Heen-en-weer tijd statistieken</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:16
+#: src/gnome-netinfo.glade.h:16
 msgid ""
 "<span weight=\"bold\">Select the network device to get information on</span>"
 msgstr ""
 "<span weight=\"bold\">Selecteer het netwerkapparaat om informatie over te "
 "geven</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:17
+#: src/gnome-netinfo.glade.h:17
 msgid "<span weight=\"bold\">Select the type of information to display</span>"
 msgstr ""
 "<span weight=\"bold\">Selecteer het soort informatie om weer te geven</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:18
+#: src/gnome-netinfo.glade.h:18
 msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
 msgstr ""
 "<span weight=\"bold\">Selecteer het soort informatie om op te zoeken:</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:19
+#: src/gnome-netinfo.glade.h:19
 msgid "<span weight=\"bold\">Statistics</span>"
 msgstr "<span weight=\"bold\">Statistieken</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:20
+#: src/gnome-netinfo.glade.h:20
 msgid "<span weight=\"bold\">Transmission statistics</span>"
 msgstr "<span weight=\"bold\">Verzendstatistieken</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:21
+#: src/gnome-netinfo.glade.h:21
 msgid "Any / All Information"
 msgstr "Elke/Alle informatie"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:22
+#: src/gnome-netinfo.glade.h:22
 msgid "Average:"
 msgstr "Gemiddeld:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:23
+#: src/gnome-netinfo.glade.h:23
 msgid "Broadcast:"
 msgstr "Broadcast:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:24
+#: src/gnome-netinfo.glade.h:24
 msgid "CPU / OS Type"
 msgstr "Soort processor/besturingssysteem"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:25
+#: src/gnome-netinfo.glade.h:25
 msgid "Canonical Name"
 msgstr "Kanonieke naam"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:26
+#: src/gnome-netinfo.glade.h:26
 msgid "Clear _History"
 msgstr "Geschiedenis _wissen"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:27
+#: src/gnome-netinfo.glade.h:27
 msgid "Collisions:"
 msgstr "Botsingen:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:28
+#: src/gnome-netinfo.glade.h:28
 msgid "Default Information"
 msgstr "Standaard informatie"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:29
+#: src/gnome-netinfo.glade.h:29
 msgid "Display active network services"
 msgstr "Actieve netwerkdiensten weergeven"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:30
+#: src/gnome-netinfo.glade.h:30
 msgid "Display multicast information"
 msgstr "Multicast informatie weergeven"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:31
+#: src/gnome-netinfo.glade.h:31
 msgid "Display routing table information"
 msgstr "Routing tabelinformatie weergeven"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:32
+#: src/gnome-netinfo.glade.h:32
 msgid "Enter the network address to ping"
 msgstr "Geef het netwerkadres om te pingen"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:530
+#: src/gnome-netinfo.glade.h:33 src/main.c:530
 msgid "Finger"
 msgstr "Finger"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:34
+#: src/gnome-netinfo.glade.h:34
 msgid "Hardware address:"
 msgstr "Hardware adres:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:35
+#: src/gnome-netinfo.glade.h:35
 msgid "Host name for Address"
 msgstr "Hostnaam voor adres"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:36
+#: src/gnome-netinfo.glade.h:36
 msgid "IP address:"
 msgstr "IP-adres:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:37
+#: src/gnome-netinfo.glade.h:37
 msgid "Internet Address"
 msgstr "Internet adres"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:38
+#: src/gnome-netinfo.glade.h:38
 msgid "Link speed:"
 msgstr "Verbindingssnelheid:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:485
+#: src/gnome-netinfo.glade.h:39 src/main.c:485
 msgid "Lookup"
 msgstr "Opzoeken"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:40
+#: src/gnome-netinfo.glade.h:40
 msgid "MTU:"
 msgstr "MTU:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:41
+#: src/gnome-netinfo.glade.h:41
 msgid "Mailbox Exchange"
 msgstr "Postvak uitwisseling"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:42
+#: src/gnome-netinfo.glade.h:42
 msgid "Mailbox Information"
 msgstr "Postvak informatie"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:43
+#: src/gnome-netinfo.glade.h:43
 msgid "Maximum:"
 msgstr "Maximum:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:44
+#: src/gnome-netinfo.glade.h:44
 msgid "Minimum:"
 msgstr "Minimum:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:45
+#: src/gnome-netinfo.glade.h:45
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:46
+#: src/gnome-netinfo.glade.h:46
 msgid "Name Server"
 msgstr "Naamserver"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:47
+#: src/gnome-netinfo.glade.h:47
 msgid "Netmask:"
 msgstr "Netmasker:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:349
+#: src/gnome-netinfo.glade.h:48 src/main.c:349
 msgid "Netstat"
 msgstr "Netstat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:49 gnome-netinfo/main.c:110
+#: src/gnome-netinfo.glade.h:49 src/main.c:110
 msgid "Network Information"
 msgstr "Netwerk informatie"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:50
+#: src/gnome-netinfo.glade.h:50
 msgid "Packets loss:"
 msgstr "Pakket verlies:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:51
+#: src/gnome-netinfo.glade.h:51
 msgid "Packets received:"
 msgstr "Pakketten ontvangen:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:52
+#: src/gnome-netinfo.glade.h:52
 msgid "Packets transmitted:"
 msgstr "Pakketten verzonden:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:257
+#: src/gnome-netinfo.glade.h:53 src/main.c:257
 msgid "Ping"
 msgstr "Ping"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:54
+#: src/gnome-netinfo.glade.h:54
 msgid "Port _Scan"
 msgstr "Poort_scannen"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:55
+#: src/gnome-netinfo.glade.h:55
 msgid "Received bytes:"
 msgstr "Ontvangen bytes:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:56
+#: src/gnome-netinfo.glade.h:56
 msgid "Received packets:"
 msgstr "Ontvangen pakketten:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:57
+#: src/gnome-netinfo.glade.h:57
 msgid "Reception errors:"
 msgstr "Ontvangstfouten:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:447
+#: src/gnome-netinfo.glade.h:58 src/main.c:447
 msgid "Scan"
 msgstr "Scannen"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:59
+#: src/gnome-netinfo.glade.h:59
 msgid "Select network device from list"
 msgstr "Selecteer het netwerkapparaat uit de lijst"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:60
+#: src/gnome-netinfo.glade.h:60
 msgid "Send only"
 msgstr "Alleen verzenden"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:61
+#: src/gnome-netinfo.glade.h:61
 msgid "Send unlimited requests (pings)"
 msgstr "Onbeperkt aantal verzoeken (pings) verzenden"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:62
+#: src/gnome-netinfo.glade.h:62
 msgid "Start-of-authority"
 msgstr "Start-of-authority"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:63
+#: src/gnome-netinfo.glade.h:63
 msgid "State:"
 msgstr "Status:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:64
+#: src/gnome-netinfo.glade.h:64
 msgid "Text Information"
 msgstr "Tekstinformatie"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:305
+#: src/gnome-netinfo.glade.h:65 src/main.c:305
 msgid "Trace"
 msgstr "Traceren"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:66
+#: src/gnome-netinfo.glade.h:66
 msgid "Transmission errors:"
 msgstr "Verzendfouten:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:67
+#: src/gnome-netinfo.glade.h:67
 msgid "Transmitted bytes:"
 msgstr "Verzonden bytes:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:68
+#: src/gnome-netinfo.glade.h:68
 msgid "Transmitted packets:"
 msgstr "Verzonden pakketten:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:69
+#: src/gnome-netinfo.glade.h:69
 msgid "Well Known Services"
 msgstr "Bekende diensten"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:581
+#: src/gnome-netinfo.glade.h:70 src/main.c:581
 msgid "Whois"
 msgstr "Whois"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:71
+#: src/gnome-netinfo.glade.h:71
 msgid "_Devices"
 msgstr "_Apparaten"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:72
+#: src/gnome-netinfo.glade.h:72
 msgid "_Finger"
 msgstr "_Finger"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:73
+#: src/gnome-netinfo.glade.h:73
 msgid "_Information"
 msgstr "_Informatie"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:74
+#: src/gnome-netinfo.glade.h:74
 msgid "_Lookup"
 msgstr "_Opzoeken"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:75
+#: src/gnome-netinfo.glade.h:75
 msgid "_Netstat"
 msgstr "_Netstat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:76
+#: src/gnome-netinfo.glade.h:76
 msgid "_Ping"
 msgstr "_Ping"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:77
+#: src/gnome-netinfo.glade.h:77
 msgid "_Traceroute"
 msgstr "_Traceroute"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:78
+#: src/gnome-netinfo.glade.h:78
 msgid "_Whois"
 msgstr "_Whois"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:79
+#: src/gnome-netinfo.glade.h:79
 msgid "ms"
 msgstr "ms"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:80 gnome-netinfo/info.h:27
+#: src/gnome-netinfo.glade.h:80 src/info.h:27
 msgid "not available"
 msgstr "niet beschikbaar"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:81
+#: src/gnome-netinfo.glade.h:81
 msgid "requests (pings)"
 msgstr "verzoeken (pings)"
 
-#: gnome-netinfo/info.c:277
+#: src/info.c:277
 msgid "Active"
 msgstr "Actief"
 
-#: gnome-netinfo/info.c:279
+#: src/info.c:279
 msgid "Inactive"
 msgstr "Inactief"
 
-#: gnome-netinfo/info.c:284
+#: src/info.c:284
 msgid "Loopback"
 msgstr "Lus"
 
-#: gnome-netinfo/info.c:297
+#: src/info.c:297
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: gnome-netinfo/info.c:299
+#: src/info.c:299
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
 #. The info output in a text format (to copy on clipboard)
-#: gnome-netinfo/info.c:419
+#: src/info.c:419
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Netwerkapparaat:\t%s\n"
 
-#: gnome-netinfo/info.c:420
+#: src/info.c:420
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardware adres:\t%s\n"
 
-#: gnome-netinfo/info.c:421
+#: src/info.c:421
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP-adres:\t%s\n"
 
-#: gnome-netinfo/info.c:422
+#: src/info.c:422
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Netmasker:\t%s\n"
 
-#: gnome-netinfo/info.c:423
+#: src/info.c:423
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: gnome-netinfo/info.c:424
+#: src/info.c:424
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: gnome-netinfo/info.c:425
+#: src/info.c:425
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: gnome-netinfo/info.c:426
+#: src/info.c:426
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Verbindingssnelheid:\t%s\n"
 
-#: gnome-netinfo/info.c:427
+#: src/info.c:427
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Status:\t%s\n"
 
-#: gnome-netinfo/info.c:429
+#: src/info.c:429
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Verzonden pakketten:\t%s\n"
 
-#: gnome-netinfo/info.c:430
+#: src/info.c:430
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Verzendfouten:\t%s\n"
 
-#: gnome-netinfo/info.c:431
+#: src/info.c:431
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Ontvangen pakketten:\t%s\n"
 
-#: gnome-netinfo/info.c:432
+#: src/info.c:432
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Ontvangstfouten:\t%s\n"
 
-#: gnome-netinfo/info.c:433
+#: src/info.c:433
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Botsingen:\t%s\n"
 
-#. adds columns
-#: gnome-netinfo/lookup.c:272 sync/entrylist.c:67
+#: src/lookup.c:272
 msgid "Name"
 msgstr "Naam"
 
-#: gnome-netinfo/lookup.c:280
+#: src/lookup.c:280
 msgid "TTL"
 msgstr "TTL"
 
-#: gnome-netinfo/lookup.c:289
+#: src/lookup.c:289
 msgid "Address Type"
 msgstr "Soort adres"
 
-#: gnome-netinfo/lookup.c:299
+#: src/lookup.c:299
 msgid "Record Type"
 msgstr "Soort ingang"
 
-#: gnome-netinfo/lookup.c:308
+#: src/lookup.c:308
 msgid "Address"
 msgstr "Adres"
 
@@ -1067,65 +483,64 @@ msgstr "Adres"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/lookup.c:336
+#: src/lookup.c:336
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Bron\tTTL\tSoort adres\tSoort ingang1\tResolutie\n"
 
-#: gnome-netinfo/main.c:75
+#: src/main.c:75
 msgid "Load information for a network device"
 msgstr "Informatie over een netwerkapparaat laden"
 
-#: gnome-netinfo/main.c:76
+#: src/main.c:76
 msgid "DEVICE"
 msgstr "APPARAAT"
 
-#: gnome-netinfo/main.c:78
+#: src/main.c:78
 msgid "Send a ping to a network address"
 msgstr "Een ping naar een netwerkadres sturen"
 
-#: gnome-netinfo/main.c:79 gnome-netinfo/main.c:85 gnome-netinfo/main.c:88
-#: gnome-netinfo/main.c:91
+#: src/main.c:79 src/main.c:85 src/main.c:88 src/main.c:91
 msgid "HOST"
 msgstr "HOST"
 
-#: gnome-netinfo/main.c:81
+#: src/main.c:81
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Netstat-informatie opvragen.  Geldige opties zijn: route, active, multicast."
 
-#: gnome-netinfo/main.c:82
+#: src/main.c:82
 msgid "COMMAND"
 msgstr "OPDRACHT"
 
-#: gnome-netinfo/main.c:84
+#: src/main.c:84
 msgid "Trace a route to a network address"
 msgstr "Een route naar een netwerkadres traceren"
 
-#: gnome-netinfo/main.c:87
+#: src/main.c:87
 msgid "Port scan a network address"
 msgstr "Een netwerkadres poortscannen"
 
-#: gnome-netinfo/main.c:90
+#: src/main.c:90
 msgid "Look up a network address"
 msgstr "Een netwerkadres opzoeken"
 
-#: gnome-netinfo/main.c:93
+#: src/main.c:93
 msgid "Finger command to run"
 msgstr "Finger-opdracht om uit te voeren"
 
-#: gnome-netinfo/main.c:94
+#: src/main.c:94
 msgid "USER"
 msgstr "GEBRUIKER"
 
-#: gnome-netinfo/main.c:96
+#: src/main.c:96
 msgid "Perform a whois lookup for a network domain"
 msgstr "Een whois-opzoekopdracht uitvoeren voor een netwerkdomein"
 
-#: gnome-netinfo/main.c:97
+#: src/main.c:97
 msgid "DOMAIN"
 msgstr "DOMEIN"
 
-#: gnome-netinfo/main.c:116
+#: src/main.c:116
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
@@ -1134,109 +549,108 @@ msgstr ""
 "Het bestand %s bestaat niet. Controleer a.u.b. of gnome-netinfo goed is "
 "geïnstalleerd"
 
-#: gnome-netinfo/netinfo.c:157
+#: src/netinfo.c:157
 msgid "Network address not specified"
 msgstr "Netwerkadres niet opgegeven"
 
-#: gnome-netinfo/netinfo.c:165
+#: src/netinfo.c:165
 #, c-format
 msgid "The host '%s' cannot be found"
 msgstr "De host '%s' kan niet worden gevonden"
 
-#: gnome-netinfo/netinfo.c:309
+#: src/netinfo.c:309
 msgid "Information not available"
 msgstr "Informatie niet beschikbaar"
 
-#: gnome-netinfo/netinfo.c:395
+#: src/netinfo.c:395
 msgid "Stop"
 msgstr "Stoppen"
 
-#: gnome-netinfo/netinfo.c:401
+#: src/netinfo.c:401
 msgid "Run"
 msgstr "Uitvoeren"
 
-#: gnome-netinfo/netstat.c:403
+#: src/netstat.c:403
 msgid "Protocol"
 msgstr "Protocol"
 
-#: gnome-netinfo/netstat.c:410
+#: src/netstat.c:410
 msgid "IP Source"
 msgstr "IP bron"
 
-#: gnome-netinfo/netstat.c:418
+#: src/netstat.c:418
 msgid "Port/Service"
 msgstr "Poort/diensten"
 
-#: gnome-netinfo/netstat.c:426 gnome-netinfo/scan.c:289
+#: src/netstat.c:426 src/scan.c:289
 msgid "State"
 msgstr "Status"
 
-#: gnome-netinfo/netstat.c:549
+#: src/netstat.c:549
 msgid "Destination/Prefix"
 msgstr "Bestemming/Voorvoegsel"
 
-#: gnome-netinfo/netstat.c:551
+#: src/netstat.c:551
 msgid "Destination"
 msgstr "Bestemming"
 
-#: gnome-netinfo/netstat.c:558
+#: src/netstat.c:558
 msgid "Gateway"
 msgstr "Gateway"
 
-#. netmask
-#: gnome-netinfo/netstat.c:566 gnome-ppp/account-window.c:1106
+#: src/netstat.c:566
 msgid "Netmask"
 msgstr "Netmasker"
 
-#: gnome-netinfo/netstat.c:574 gnome-netinfo/netstat.c:680
+#: src/netstat.c:574 src/netstat.c:680
 msgid "Interface"
 msgstr "Interface"
 
-#: gnome-netinfo/netstat.c:687
+#: src/netstat.c:687
 msgid "Member"
 msgstr "Lid"
 
-#: gnome-netinfo/netstat.c:695
+#: src/netstat.c:695
 msgid "Group"
 msgstr "Groep"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:737
+#: src/netstat.c:737
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protocol\tIP bron\tPoort/Dienst\tStatus\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:743
+#: src/netstat.c:743
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Bestemming\tGateway\tNetmasker\tInterface\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:748
+#: src/netstat.c:748
 msgid "Interface\tMember\tGroup\n"
 msgstr "Interface\tLid\tGroep\n"
 
-#: gnome-netinfo/ping.c:378
+#: src/ping.c:378
 msgid "Bytes"
 msgstr "Bytes"
 
-#: gnome-netinfo/ping.c:385
+#: src/ping.c:385
 msgid "Source"
 msgstr "Bron"
 
-#: gnome-netinfo/ping.c:393
+#: src/ping.c:393
 msgid "Seq"
 msgstr "Reeks"
 
-#: gnome-netinfo/ping.c:403
+#: src/ping.c:403
 msgid "Time"
 msgstr "Tijd"
 
-#: gnome-netinfo/ping.c:411
+#: src/ping.c:411
 msgid "Units"
 msgstr "Eenheden"
 
@@ -1244,77 +658,77 @@ msgstr "Eenheden"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/ping.c:437
+#: src/ping.c:437
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bytes\tBron\tReeks\tTijd\tEenheden\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: gnome-netinfo/ping.c:452
+#: src/ping.c:452
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Tijd minimum:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:453
+#: src/ping.c:453
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Tijd gemiddelde:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:454
+#: src/ping.c:454
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Tijd maximum:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:456
+#: src/ping.c:456
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Pakketten verzonden:\t%s\n"
 
-#: gnome-netinfo/ping.c:458
+#: src/ping.c:458
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Pakketten ontvangen:\t%s\n"
 
-#: gnome-netinfo/ping.c:460
+#: src/ping.c:460
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Pakketverlies:\t%s\n"
 
-#: gnome-netinfo/scan.c:151
+#: src/scan.c:151
 msgid "unknown"
 msgstr "onbekend"
 
-#: gnome-netinfo/scan.c:281
+#: src/scan.c:281
 msgid "Port"
 msgstr "Poort"
 
-#: gnome-netinfo/scan.c:297
+#: src/scan.c:297
 msgid "Service"
 msgstr "Dienst"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/scan.c:319
+#: src/scan.c:319
 msgid "Port\tState\tService\n"
 msgstr "Poort\tStatus\tDienst\n"
 
-#: gnome-netinfo/traceroute.c:260
+#: src/traceroute.c:260
 msgid "Hop"
 msgstr "Hop"
 
-#: gnome-netinfo/traceroute.c:268
+#: src/traceroute.c:268
 msgid "Hostname"
 msgstr "Hostnaam"
 
-#: gnome-netinfo/traceroute.c:276
+#: src/traceroute.c:276
 msgid "IP"
 msgstr "IP"
 
-#: gnome-netinfo/traceroute.c:287
+#: src/traceroute.c:287
 msgid "Time 1"
 msgstr "Tijd 1"
 
-#: gnome-netinfo/traceroute.c:297
+#: src/traceroute.c:297
 msgid "Time 2"
 msgstr "Tijd 2"
 
@@ -1322,888 +736,1081 @@ msgstr "Tijd 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/traceroute.c:323
+#: src/traceroute.c:323
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tHostnaam\tIP\tTijd 1\tTijd 2\n"
 
-#: gnome-netinfo/utils.c:227
+#: src/utils.c:227
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: Opdracht niet gevonden"
 
-#: gnome-ppp/account-window.c:161
-msgid "Receive"
-msgstr "Ontvangen"
-
-#: gnome-ppp/account-window.c:162
-msgid "Enter search string"
-msgstr "Geef zoektekst"
-
-#: gnome-ppp/account-window.c:165
-msgid "Send"
-msgstr "Verzenden"
-
-#: gnome-ppp/account-window.c:166
-msgid "Enter transmission string"
-msgstr "Geef verzendtekst"
-
-#: gnome-ppp/account-window.c:169
-msgid "Send User Name"
-msgstr "Gebruikersnaam verzenden"
-
-#: gnome-ppp/account-window.c:170
-msgid "Username taken from Authentication"
-msgstr "Gebruikersnaam genomen uit authentificatie"
-
-#: gnome-ppp/account-window.c:173
-msgid "Send User Password"
-msgstr "Gebruikerswachtwoord verzenden"
-
-#: gnome-ppp/account-window.c:174
-msgid "Password taken from Authentication"
-msgstr "Wachtwoord genomen uit authentificatie"
-
-#: gnome-ppp/account-window.c:177
-msgid "Dialog Box Input"
-msgstr "Dialoogvenster invoer"
-
-#: gnome-ppp/account-window.c:178
-msgid "Enter text to be used as a dialog message when prompted for input"
-msgstr ""
-"Geef de tekst die moet worden gebruikt als dialoogbericht voor het vragen om "
-"invoer"
-
-#: gnome-ppp/account-window.c:276
-msgid "open_account_window(): account=NULL with clone flag"
-msgstr "open_account_window(): account=NULL met clone optie"
-
-#: gnome-ppp/account-window.c:302
-msgid "open_account_window(): calling arguments invalid"
-msgstr "open_account_window(): aanroep arguments onjuist"
-
-#. dial command entry widgets
-#: gnome-ppp/account-window.c:342 gnome-ppp/modem-window.c:288
-msgid "Dial"
-msgstr "Inbellen"
-
-#: gnome-ppp/account-window.c:348
-msgid "Authentication"
-msgstr "Authentificatie"
-
-#. dns server entry
-#: gnome-ppp/account-window.c:354 gnome-ppp/account-window.c:1223
-msgid "IP Address"
-msgstr "IP-adres"
-
-#: gnome-ppp/account-window.c:360
-msgid "DNS"
-msgstr "DNS"
-
-#: gnome-ppp/account-window.c:366
-msgid "Script"
-msgstr "Script"
-
-#: gnome-ppp/account-window.c:372
-msgid "PPP"
-msgstr "PPP"
-
-#: gnome-ppp/account-window.c:378
-msgid "Modem"
-msgstr "Modem"
-
-#: gnome-ppp/account-window.c:805
-msgid "Account Name"
-msgstr "Accoutnaam"
-
-#. redial spin button
-#: gnome-ppp/account-window.c:817
-msgid "Redial Maximum"
-msgstr "Maximum aantal belpogingen"
-
-#. dial timeout spin button
-#: gnome-ppp/account-window.c:838
-msgid "Dial Timeout (sec)"
-msgstr "Inbel time-out (sec)"
-
-#. phone number frame
-#: gnome-ppp/account-window.c:859
-msgid "Phone Numbers"
-msgstr "Telefoonnummers"
-
-#. Phone number
-#: gnome-ppp/account-window.c:871
-msgid "#"
-msgstr "#"
-
-#. add/remove buttons
-#: gnome-ppp/account-window.c:892 gnome-ppp/account-window.c:1242
-#: gnome-ppp/account-window.c:1326 gnome-ppp/account-window.c:1464
-msgid "Add"
-msgstr "Toevoegen"
-
-#: gnome-ppp/account-window.c:906 gnome-ppp/account-window.c:1256
-#: gnome-ppp/account-window.c:1340 gnome-ppp/account-window.c:1490
-#: sync/main.c:60 sync/main.c:170
-msgid "Remove"
-msgstr "Verwijderen"
-
-#: gnome-ppp/account-window.c:958
-msgid "PAP/CHAP"
-msgstr "PAP/CHAP"
-
-#: gnome-ppp/account-window.c:970
-msgid "User Name"
-msgstr "Gebruikersnaam"
-
-#: gnome-ppp/account-window.c:990
-msgid "Remote Name"
-msgstr "Naam op afstand"
-
-#. password
-#: gnome-ppp/account-window.c:1011
-msgid "Hidden Password"
-msgstr "Verborgen wachtwoord"
-
-#. local ip address
-#: gnome-ppp/account-window.c:1061
-msgid "Local IP Address"
-msgstr "Lokaal IP-adres"
-
-#: gnome-ppp/account-window.c:1072 gnome-ppp/account-window.c:1117
-#: gnome-ppp/account-window.c:1162
-msgid "Dynamic"
-msgstr "Dynamisch"
-
-#: gnome-ppp/account-window.c:1086 gnome-ppp/account-window.c:1131
-#: gnome-ppp/account-window.c:1176
-msgid "Static"
-msgstr "Statisch"
-
-#. remote ip address
-#: gnome-ppp/account-window.c:1151
-msgid "Remote IP Address"
-msgstr "IP-adres op afstand"
-
-#. dns server list
-#: gnome-ppp/account-window.c:1210
-msgid "DNS Servers"
-msgstr "DNS-servers"
-
-#. search domains list
-#: gnome-ppp/account-window.c:1295
-msgid "Search Domains"
-msgstr "Zoekdomeinen"
-
-#: gnome-ppp/account-window.c:1306
-msgid "Domain Name"
-msgstr "Domeinnaam"
-
-#: gnome-ppp/account-window.c:1388
-msgid "Action"
-msgstr "Actie"
-
-#: gnome-ppp/account-window.c:1389
-msgid "Text"
-msgstr "Tekst"
-
-#. script list
-#: gnome-ppp/account-window.c:1397
-msgid "Login Script"
-msgstr "Inlogscript"
-
-#: gnome-ppp/account-window.c:1477
-msgid "Insert"
-msgstr "Invoegen"
-
-#: gnome-ppp/account-window.c:1551
-msgid "Add Default Route"
-msgstr "Standaard route toevoegen"
-
-#: gnome-ppp/account-window.c:1567
-msgid "Lock Dialout Device"
-msgstr "Inbelapparaat blokkeren"
-
-#. mtu, mru spin buttons
-#: gnome-ppp/account-window.c:1582
-msgid "Maximum Transmission Unit"
-msgstr "Maximale verzendeenheid"
-
-#: gnome-ppp/account-window.c:1604
-msgid "Maximum Receive Unit"
-msgstr "Maximale ontvangeenheid"
-
-#: gnome-ppp/account-window.c:1625
-msgid "Run Program After Connect"
-msgstr "Programma uitvoeren na verbinden"
-
-#: gnome-ppp/account-window.c:1637
-msgid "Run Program After Disconnect"
-msgstr "Programma uitvoeren na verbreken verbinding"
-
-#. modem device
-#: gnome-ppp/account-window.c:1672
-msgid "Modem Device"
-msgstr "Modem apparaat"
-
-#. modem speed
-#: gnome-ppp/account-window.c:1698
-msgid "Connection Speed"
-msgstr "Verbindingssnelheid"
-
-#. modem flow control
-#: gnome-ppp/account-window.c:1724
-msgid "Flow Control"
-msgstr "Stroom contrôle"
-
-#. modem line termination
-#: gnome-ppp/account-window.c:1750
-msgid "Line Termination"
-msgstr "Lijn afbreken"
-
-#. modem speaker volume
-#: gnome-ppp/account-window.c:1776
-msgid "Modem Speaker Volume"
-msgstr "Geluidssterkte modem luidspreker"
-
-#. modem edit commands
-#: gnome-ppp/account-window.c:1793
-msgid " Edit Modem Commands "
-msgstr " Modem opdrachten bewerken "
-
-#: gnome-ppp/account-window.c:2252
-msgid "**PASSWORD**"
-msgstr "**WACHTWOORD**"
-
-#: gnome-ppp/account-window.c:2256
-msgid "script_type_cb(): optionmenu data bad"
-msgstr "script_type_cb(): optionmenu gegevens slecht"
-
-#: gnome-ppp/dial-window.c:143
-msgid "_Debug Terminal"
-msgstr "_Debug terminal"
-
-#: gnome-ppp/dial-window.c:150
-msgid "_New..."
-msgstr "_Nieuws..."
-
-#: gnome-ppp/dial-window.c:151
-msgid "D_uplicate..."
-msgstr "D_ubbel..."
-
-#: gnome-ppp/dial-window.c:152
-msgid "_Edit..."
-msgstr "Be_werken..."
-
-#: gnome-ppp/dial-window.c:153
-msgid "_Delete..."
-msgstr "_Verwijderen..."
-
-#: gnome-ppp/dial-window.c:172
-msgid "_Account"
-msgstr "_Account"
-
-#. set up the main application
-#: gnome-ppp/dial-window.c:210
-msgid "gnome-ppp"
-msgstr "gnome-ppp"
-
-#: gnome-ppp/dial-window.c:358
-msgid "Dialing"
-msgstr "Bezig met inbellen"
-
-#: gnome-ppp/dial-window.c:362
-msgid "Connected"
-msgstr "Verbonden"
-
-#: gnome-ppp/dial-window.c:385
-msgid "refresh_dial_app(): gtk_clist_append failed."
-msgstr "refresh_dial_app(): gtk_clist_append mislukt."
-
-#: gnome-ppp/dial-window.c:409 gnome-ppp/dial-window.c:417
-msgid "Connect"
-msgstr "Verbinden"
-
-#: gnome-ppp/dial-window.c:427
-msgid "Cancel"
-msgstr "Annuleren"
-
-#: gnome-ppp/dial-window.c:452
-msgid "You must disconnect before closing."
-msgstr "U dient de verbinding te verbreken voordat u dit sluit."
-
-#: gnome-ppp/dial-window.c:742
-msgid "Are you sure you want to delete this account?\n"
-msgstr "Weer u zeker dat u dit account wilt verwijderen?\n"
-
-#: gnome-ppp/dial-window.c:752
-msgid "The account cannot be deleted."
-msgstr "Het account kan niet worden verwijderd."
-
-#: gnome-ppp/dial-window.c:758
-msgid "The account is in use and cannot be deleted."
-msgstr "Het account is in gebruik en kan niet worden verwijderd."
-
-#: gnome-ppp/dial-window.c:781
-msgid "GNOME Internet Dialer"
-msgstr "GNOME Internet Inbeller"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:181
-msgid "Raise PPP Link"
-msgstr "PPP-verbinding opbouwen"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:213 sync/main.c:67
-msgid "About..."
-msgstr "Info..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:219
-msgid "Properties..."
-msgstr "Eigenschappen..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:223
-msgid "Offline"
-msgstr "Offline"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:432
-msgid "Connecting..."
-msgstr "Bezig met verbinden..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:437
-msgid "PPP Connected"
-msgstr "PPP verbonden"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:443
-msgid "PPP Error!"
-msgstr "PPP fout!"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:483
-msgid "That account is already in use.\n"
-msgstr "Het account is al in gebruik.\n"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:566
-msgid "GNOME PPP Dialer Applet"
-msgstr "GNOME PPP Inbeller applet"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:569
-msgid ""
-"An unnecessarily nice looking applet for GNOME's panel for easy control of "
-"PPP network links."
-msgstr ""
-"Een onnodig goed uitziende applet voor GNOME's paneel om gemakkelijk PPP "
-"netwerkverbindingen te beheren."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:691
-msgid "PPP Applet Properties"
-msgstr "PPP applet eigenschappen"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:706
-msgid "Animation"
-msgstr "Animatie"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:712
-msgid "Small"
-msgstr "Klein"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:716
-msgid "Large"
-msgstr "Groot"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:720
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:769
-msgid "None"
-msgstr "Geen"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:724
-msgid "Options"
-msgstr "Opties"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:730
-msgid "Freeze Animation on Connect"
-msgstr "Animatie bevriezen bij verbinden"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:737
-msgid "Disconnect PPP on GNOME logout"
-msgstr "PPP verbinding verbreken bij uitloggen GNOME"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:745
-msgid "Timer"
-msgstr "Timer"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:751
-msgid "Label"
-msgstr "Label"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:760
-msgid "Tooltip"
-msgstr "Werktip"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:778
-msgid "Animation Speed"
-msgstr "Animatie snelheid"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:791
-msgid "PPP Applet"
-msgstr "PPP applet"
-
-#: gnome-ppp/libgnome_ppp/connect.c:203
-msgid "---NEW CONNECTION---"
-msgstr "---NIEUWE VERBINDING---"
-
-#: gnome-ppp/libgnome_ppp/msg.c:26
-msgid "Account already connected."
-msgstr "Account al verbonden."
-
-#: gnome-ppp/libgnome_ppp/msg.c:27
-msgid "Starting PPP Connection."
-msgstr "Bezig met beginnen PPP verbinding."
-
-#: gnome-ppp/libgnome_ppp/msg.c:28
-msgid "You don't have permission to execute pppd."
-msgstr "U heeft geen toegangsrechten om pppd uit te voeren."
-
-#: gnome-ppp/libgnome_ppp/msg.c:29
-msgid "The modem is in use by another program."
-msgstr "Het modem is al in gebruik door een ander programma."
-
-#: gnome-ppp/libgnome_ppp/msg.c:30
-msgid "Running pppd."
-msgstr "Bezig met uitvoeren pppd."
-
-#: gnome-ppp/libgnome_ppp/msg.c:31
-msgid "Closing connection."
-msgstr "Bezig met sluiten verbinding."
-
-#: gnome-ppp/libgnome_ppp/msg.c:32
-msgid "The pppd program failed to run gnome-ppp-chat."
-msgstr "Het pppd programma heeft gnome-ppp-chat niet uitgevoerd."
-
-#: gnome-ppp/libgnome_ppp/msg.c:33
-msgid "The modem could not be hung up."
-msgstr "Het modem kon niet ophangen."
-
-#: gnome-ppp/libgnome_ppp/msg.c:34
-msgid "Initalizing modem."
-msgstr "Bezig met initialiseren modem."
-
-#: gnome-ppp/libgnome_ppp/msg.c:35
-msgid "Your modem is not responding to initalization."
-msgstr "Uw modem reageert niet op initialisatie."
-
-#: gnome-ppp/libgnome_ppp/msg.c:36
-msgid "The command to set the volume on your modem's speaker failed."
-msgstr ""
-"De opdracht om de geluidssterkte van de luidspreker van uw modem in te "
-"stellen, mislukte."
-
-#: gnome-ppp/libgnome_ppp/msg.c:37
-msgid "No answer after maximum number of re-dial attempts."
-msgstr "Geen antwoord na maximum aantal inbel pogingen."
-
-#: gnome-ppp/libgnome_ppp/msg.c:38
-msgid "No phone numbers specified for this account."
-msgstr "Geen telefoonnummers opgegeven voor dit account."
-
-#: gnome-ppp/libgnome_ppp/msg.c:39
-msgid "Dialing."
-msgstr "Bezig met inbellen."
-
-#: gnome-ppp/libgnome_ppp/msg.c:40
-msgid "Dialing timeout."
-msgstr "Inbel time-out."
-
-#: gnome-ppp/libgnome_ppp/msg.c:41
-msgid "No dialtone."
-msgstr "Geen beltoon."
-
-#: gnome-ppp/libgnome_ppp/msg.c:42
-msgid "Number busy."
-msgstr "Nummer bezig."
-
-#: gnome-ppp/libgnome_ppp/msg.c:43
-msgid "Ring, but no answer."
-msgstr "Telefoon gaat over, maar geen antwoord."
-
-#: gnome-ppp/libgnome_ppp/msg.c:44
-msgid "Connection failure, reason unknown."
-msgstr "Verbinding mislukt, reden onbekend."
-
-#: gnome-ppp/libgnome_ppp/msg.c:45
-msgid "Connected."
-msgstr "Verbonden."
-
-#: gnome-ppp/libgnome_ppp/msg.c:46
-msgid "The modem lost connection with remote host."
-msgstr "Het modem heeft de verbinding met de host op afstand verloren."
-
-#: gnome-ppp/libgnome_ppp/msg.c:47
-msgid "Running Script."
-msgstr "Bezig met uitvoeren script."
-
-#: gnome-ppp/libgnome_ppp/msg.c:48
-msgid "Script Complete."
-msgstr "Script voltooid."
-
-#: gnome-ppp/libgnome_ppp/msg.c:49
-msgid "PPP connection established."
-msgstr "PPP-verbinding opgebouwd."
-
-#: gnome-ppp/libgnome_ppp/msg.c:50
-msgid "Failed to establish a PPP connection."
-msgstr "Opbouwen PPP-verbinding mislukt."
-
-#: gnome-ppp/libgnome_ppp/msg.c:51
-msgid "The pppd daemon died unexpectedly."
-msgstr "De pppd daemon stierf onverwachts."
-
-#: gnome-ppp/modem-window.c:83
-msgid "open_modem_window(): account=NULL"
-msgstr "open_modem_window(): account=NULL"
-
-#: gnome-ppp/modem-window.c:120
-msgid "Commands"
-msgstr "Opdrachten"
-
-#: gnome-ppp/modem-window.c:126
-msgid "Responses"
-msgstr "Antwoorden"
-
-#. initialization command entry widgets
-#. initialization response entry widgets
-#: gnome-ppp/modem-window.c:268 gnome-ppp/modem-window.c:408
-msgid "Initialization"
-msgstr "Initialisatie"
-
-#. hangup command entry widgets
-#. hangup response entry widgets
-#: gnome-ppp/modem-window.c:307 gnome-ppp/modem-window.c:428
-msgid "Hangup"
-msgstr "Ophangen"
-
-#. volume mute command entry widgets
-#: gnome-ppp/modem-window.c:327
-msgid "Volume Mute"
-msgstr "Geluid uit"
-
-#. volume low command entry widgets
-#: gnome-ppp/modem-window.c:347
-msgid "Volume Low"
-msgstr "Geluid zacht"
-
-#. volume high command entry widgets
-#: gnome-ppp/modem-window.c:367
-msgid "Volume High"
-msgstr "Geluid hard"
-
-#. connection response entry widgets
-#: gnome-ppp/modem-window.c:448
-msgid "Connection"
-msgstr "Verbinding"
-
-#. busy response entry widgets
-#: gnome-ppp/modem-window.c:468
-msgid "Busy"
-msgstr "Bezig"
-
-#. no answer response entry widgets
-#: gnome-ppp/modem-window.c:488
-msgid "No Answer"
-msgstr "Geen antwoord"
-
-#. no carrier response entry widgets
-#: gnome-ppp/modem-window.c:508
-msgid "No Carrier"
-msgstr "Geen telefoonverbinding"
-
-#. no dialtone response entry widgets
-#: gnome-ppp/modem-window.c:528
-msgid "No Dialtone"
-msgstr "Geen beltoon"
-
-#: gnome-transfer-manager/src/GNOME_Transfer_Manager.server.in.in.h:1
-msgid "GNOME Transfer Manager"
-msgstr "GNOME Overdrachtbeheerder"
-
-#: network-utilities/gnome-remote-shell.c:189
-#: network-utilities/gnome-remote-shell.c:216
-msgid "There is a connection error"
-msgstr "Er is een verbindingsfout"
-
-#: network-utilities/gnome-remote-shell.c:284
-msgid "There is an error with displaying help"
-msgstr "Er is een fout bij het weergeven van de hulp"
-
-#: network-utilities/gnome-remote-shell.c:324
-msgid "Graphical user interface for GNOME Remote Shell"
-msgstr "Grafische gebruikersinterface voor GNOME Shell op Afstand"
-
-#: network-utilities/gnome-remote-shell.c:327
-msgid "This is an untranslated version of GNOME Remote Shell"
-msgstr "Elros Cyriatan"
-
-#: network-utilities/gnome-remote-shell.c:373
-#: network-utilities/gnome-remote-shell.c:423
-#: network-utilities/gnome-remote-shell.c:550
-msgid "Failed to create a connection"
-msgstr "Opbouwen van een verbinding mislukt"
-
-#: network-utilities/gnome-remote-shell.c:373
-msgid "A hostname is required"
-msgstr "Een hostnaam is vereist"
-
-#: network-utilities/gnome-remote-shell.c:423
-msgid "A user name is required for SSH"
-msgstr "Een gebruikersnaam is vereist voor SSH"
-
-#: network-utilities/gnome-remote-shell.c:501
-msgid "There is a command line error"
-msgstr "Er is een opdrachtregel fout"
-
-#: network-utilities/gnome-remote-shell.c:550
-msgid "The host cannot be found"
-msgstr "De host kan niet worden gevonden"
-
-#: network-utilities/gnome-remote-shell.glade.h:3
-msgid "<span weight=\"bold\">Connect to remote host</span>"
-msgstr "<span weight=\"bold\">Verbinden met host op afstand</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:4
-msgid "<span weight=\"bold\">Method</span>"
-msgstr "<span weight=\"bold\">Methode</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:5
-msgid "<span weight=\"bold\">Window size</span>"
-msgstr "<span weight=\"bold\">Venstergrootte</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:7
-msgid "Connect to remote host"
-msgstr "Verbinden met host op afstand"
-
-#: network-utilities/gnome-remote-shell.glade.h:8
-msgid "H_eight:"
-msgstr "_Hoogte:"
-
-#: network-utilities/gnome-remote-shell.glade.h:9
-msgid "H_ost:"
-msgstr "H_ost:"
-
-#: network-utilities/gnome-remote-shell.glade.h:10
-msgid "Regular shell (_Telnet)"
-msgstr "Gewone shell (_Telnet)"
-
-#: network-utilities/gnome-remote-shell.glade.h:11
-msgid "Use _default"
-msgstr "_Standaard gebruiken"
-
-#: network-utilities/gnome-remote-shell.glade.h:12
-msgid "_Contents"
-msgstr "_Inhoud"
-
-#: network-utilities/gnome-remote-shell.glade.h:13
-msgid "_Port:"
-msgstr "_Poort:"
-
-#: network-utilities/gnome-remote-shell.glade.h:14
-msgid "_Secure shell (SSH)"
-msgstr "_Veilige shell (SSH)"
-
-#: network-utilities/gnome-remote-shell.glade.h:15
-msgid "_Shell"
-msgstr "_Shell"
-
-#: network-utilities/gnome-remote-shell.glade.h:16
-msgid "_User:"
-msgstr "_Gebruiker:"
-
-#: network-utilities/gnome-remote-shell.glade.h:17
-msgid "_Width:"
-msgstr "_Breedte:"
-
-#: network-utilities/gnome-remote-shell.glade.h:18
-msgid "characters"
-msgstr "tekens"
-
-#: pws/pws-preferences-support.c:273
-msgid "Expander Size"
-msgstr "Grootte vergroter"
-
-#: pws/pws-preferences-support.c:274
-msgid "Size of the expander arrow"
-msgstr "Grootte van de vergroot-pijl"
-
-#: pws/pws-preferences-widget.c:112
-msgid "Web folder:"
-msgstr "Webmap:"
-
-#: pws/pws-preferences-widget.c:116
-msgid "Select the folder to be published"
-msgstr "Selecteer de map die gepubliceerd moet worden"
-
-#. Server status
-#: pws/pws-preferences-widget.c:125
-msgid "Enable web server"
-msgstr "Webserver aan zetten"
-
-#. Additional options
-#: pws/pws-preferences-widget.c:133 pws/pws-preferences-widget.c:134
-msgid "Additional options"
-msgstr "Extra opties"
-
-#: pws/pws-preferences-widget.c:156
-msgid "Port number:"
-msgstr "Poortnummer:"
-
-#: pws/pws-preferences-widget.c:175
-msgid "Time out:"
-msgstr "Time-out:"
-
-#: pws/pws-preferences-widget.c:194
-msgid "Keep alive"
-msgstr "Levend houden"
-
-#: pws/pws.c:86
-msgid "/_Open Web Folder"
-msgstr "/Webmap _openen"
-
-#: pws/pws.c:179
-msgid "Personal web server preferences"
-msgstr "Persoonlijke webserver voorkeuren"
-
-#: pws/pws.c:194
-msgid "Personal Web Server Preferences"
-msgstr "Persoonlijke webserver voorkeuren"
-
-#: pws/pws.c:195
-msgid "Setup the options for your personal web server."
-msgstr "Configureer de opties voor uw persoonlijke webserver."
-
-#: sync/entryconfigdialog.c:70
-msgid "Could not load UI for entry configuration dialog"
-msgstr "Kon UI voor ingang-configuratie dialoog niet laden"
-
-#: sync/entryconfigdialog.glade.h:2
-msgid "Entry name"
-msgstr "Ingang naam"
-
-#: sync/entryconfigdialog.glade.h:3
-msgid "Local path"
-msgstr "Lokaal pad"
-
-#: sync/entryconfigdialog.glade.h:4
-msgid "Preserve group"
-msgstr "Groep behouden"
-
-#: sync/entryconfigdialog.glade.h:5
-msgid "Preserve permissions"
-msgstr "Toegangsrechten behouden"
-
-#: sync/entryconfigdialog.glade.h:6
-msgid "Preserve times"
-msgstr "Tijden behouden"
-
-#: sync/entryconfigdialog.glade.h:7
-msgid "Recurse into directories"
-msgstr "Recursief in mappen"
-
-#: sync/entryconfigdialog.glade.h:8
-msgid "Remote host"
-msgstr "Host op afstand"
-
-#: sync/entryconfigdialog.glade.h:9
-msgid "Remote path"
-msgstr "Pad op afstand"
-
-#: sync/entryconfigdialog.glade.h:10
-msgid "Synchronization options"
-msgstr "Synchronisatie opties"
-
-#: sync/entryconfigdialog.glade.h:11
-msgid "Update only (don't overwrite newer files)"
-msgstr "Alleen bijwerken (niet nieuwere bestanden overschrijven)"
-
-#: sync/entryconfigdialog.glade.h:12
-msgid "Use relative path names"
-msgstr "Relatieve padnamen gebruiken"
-
-#: sync/entryconfigdialog.glade.h:13
-msgid "Use rsync"
-msgstr "Rsync gebruiken"
-
-#: sync/entryconfigdialog.glade.h:14
-msgid "Use unison"
-msgstr "Unison gebruiken"
-
-#: sync/entryconfigdialog.glade.h:15
-msgid "dialog1"
-msgstr "dialoog1"
-
-#: sync/entryconfigdialog.glade.h:16
-msgid "rsync"
-msgstr "rsync"
-
-#: sync/entryconfigdialog.glade.h:17
-msgid "unison"
-msgstr "unison"
-
-#: sync/entrylist.c:70
-msgid "Local"
-msgstr "Lokaal"
-
-#: sync/entrylist.c:73
-msgid "Remote"
-msgstr "Op afstand"
-
-#: sync/entrylist.c:76
-msgid "Last sync"
-msgstr "Laatste synchronisatie"
-
-#: sync/main.c:44
-msgid "_Synchronize"
-msgstr "_Synchroniseren"
-
-#: sync/main.c:55
-msgid "New entry..."
-msgstr "Nieuwe ingang..."
-
-#: sync/main.c:57 sync/main.c:171
-msgid "Edit..."
-msgstr "Bewerken..."
-
-#: sync/main.c:75 sync/main.c:181
-msgid "Synchronize"
-msgstr "Synchroniseren"
-
-#: sync/main.c:103
-msgid "Gnome Synchronize"
-msgstr "GNOME Synchroniseren"
-
-#: sync/main.c:105
-msgid "The GNOME file synchronization program."
-msgstr "Het GNOME bestandssynchronisatie programma."
-
-#: sync/main.c:176
-msgid "New"
-msgstr "Nieuw"
-
-#: sync/main.c:177
-msgid "Create new synchronization entry"
-msgstr "Nieuwe synchronisatie ingang maken"
-
-#: sync/main.c:182
-msgid "Start synchronization for selected entries"
-msgstr "Synchronisatie starten voor geselecteerde ingangen"
-
-#: sync/main.c:185
-msgid "Edit"
-msgstr "Bewerken"
-
-#: sync/main.c:186
-msgid "Edit selected entry"
-msgstr "Geselecteerde ingangen bewerken"
-
-#: sync/main.c:189
-msgid "Delete"
-msgstr "Verwijderen"
-
-#: sync/main.c:190
-msgid "Delete selected entries"
-msgstr "Geselecteerde ingangen verwijderen"
+#~ msgid "GNOME Remote Desktop Applet"
+#~ msgstr "GNOME Bureaublad op Afstand Applet"
 
+#~ msgid "Connect to a remote desktop computer"
+#~ msgstr "Verbinden met een computer op afstand"
+
+#~ msgid "Remote Desktop Client"
+#~ msgstr "Bureaublad op afstand client"
+
+#~ msgid "640 x 480 pixels"
+#~ msgstr "640 x 480 beeldpunten"
+
+#~ msgid "800 x 600 pixels"
+#~ msgstr "800 x 600 beeldpunten"
+
+#~ msgid "1024 x 768 pixels"
+#~ msgstr "1024 x 768 beeldpunten"
+
+#~ msgid "1152 x 864 pixels"
+#~ msgstr "1152 x 864 beeldpunten"
+
+#~ msgid "1280 x 960 pixels"
+#~ msgstr "1280 x 960 beeldpunten"
+
+#~ msgid "256 Colors"
+#~ msgstr "256 kleuren"
+
+#~ msgid "High Color (15 bit)"
+#~ msgstr "Hoge kleuren (15 bit)"
+
+#~ msgid "High Color (16 bit)"
+#~ msgstr "Hoge kleuren (16 bit)"
+
+#~ msgid "True Color (24 bit)"
+#~ msgstr "Ware kleuren (24 bit)"
+
+#~ msgid "GNOME Remote Desktop"
+#~ msgstr "GNOME Bureaublad op Afstand"
+
+#~ msgid "Compu_ter:"
+#~ msgstr "Compu_ter:"
+
+#~ msgid "Enter the name or address of the remote system."
+#~ msgstr "Geef de naam of het adres van het systeem op afstand."
+
+#~ msgid "Select the protocol to use for this connection."
+#~ msgstr "Kies het protocol dat voor deze verbinding gebruikt moet worden."
+
+#~ msgid ""
+#~ "RDP protocol is used to connect to Microsoft Terminal Servers and Windows "
+#~ "XP systems with desktop sharing."
+#~ msgstr ""
+#~ "Het RDP-protocol wordt gebruikt om te verbinden met Microsoft Terminal "
+#~ "Servers en Windows XP systemen met bureaublad-delen."
+
+#~ msgid ""
+#~ "VNC protocol is used to connect to systems sharing the desktop by using "
+#~ "VNC."
+#~ msgstr ""
+#~ "Het VNC-protocol wordt gebruikt om te verbinden met systemen die het "
+#~ "bureaublad delen met VNC."
+
+#~ msgid "XDMCP protocol uses Xnest to connect to servers running X."
+#~ msgstr ""
+#~ "Het XDMCP-protocol gebruikt Xnest om te verbinden met servers die X "
+#~ "draaien."
+
+#~ msgid "ICA protocol is used to connect to Citrix servers."
+#~ msgstr "Het ICA-protocol wordt gebruikt om te verbinden met Citrix servers."
+
+#~ msgid "Prof_ile Launcher:"
+#~ msgstr "_Profiel opstarter:"
+
+#~ msgid "Select a saved profile to launch it immediately."
+#~ msgstr "Kies een opgeslagen profiel om het direct op te starten."
+
+#~ msgid "_More"
+#~ msgstr "_Meer"
+
+#~ msgid "Co_nnect"
+#~ msgstr "_Verbinden"
+
+#~ msgid "Connection Profile"
+#~ msgstr "Verbindingsprofiel"
+
+#~ msgid "Logon Settings"
+#~ msgstr "Aanmeld instellingen"
+
+#~ msgid ""
+#~ "Type the name of the computer or choose a computer from the drop-down "
+#~ "list."
+#~ msgstr "Geef de naam van de computer of kies een computer uit de lijst."
+
+#~ msgid "Pro_tocol:"
+#~ msgstr "_Protocol:"
+
+#~ msgid "_User Name:"
+#~ msgstr "_Gebruikersnaam:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "_Wachtwoord:"
+
+#~ msgid "Do_main:"
+#~ msgstr "_Domein:"
+
+#~ msgid "C_lient Hostname:"
+#~ msgstr "_Client hostnaam:"
+
+#~ msgid "Prot_ocol File:"
+#~ msgstr "_Protocol bestand:"
+
+#~ msgid ""
+#~ "Enter the username for the remote system.\n"
+#~ "For VNC, enter the path to your saved vnc password file."
+#~ msgstr ""
+#~ "Geef de gebruikersnaam voor het systeem op afstand.\n"
+#~ "Voer voor VNC het pad in naar uw opgeslagen VNC wachtwoordbestand."
+
+#~ msgid "Enter the password for the remote system."
+#~ msgstr "Geef het wachtwoord voor het systeem op afstand."
+
+#~ msgid "Enter the domain for the remote system."
+#~ msgstr "Geef het domein voor het systeem op afstand."
+
+#~ msgid "Enter the local hostname for this system."
+#~ msgstr "Geef de lokale hostnaam voor dit systeem."
+
+#~ msgid ""
+#~ "Some protocols require a file containing settings. If required, enter the "
+#~ "path to the file here."
+#~ msgstr ""
+#~ "Sommige protocollen vereisen een bestand met daarin instellingen. Voer, "
+#~ "als dit nodig is, hier het pad naar het bestand in."
+
+#~ msgid "Remote Desktop Size"
+#~ msgstr "Grootte bureaublad op afstand"
+
+#~ msgid "Use default screen size"
+#~ msgstr "Standaard schermgrootte gebruiken"
+
+#~ msgid "Use the default screen size."
+#~ msgstr "De standaard schermgrootte gebruiken."
+
+#~ msgid "Use specified screen size"
+#~ msgstr "De opgegeven schermgrootte gebruiken"
+
+#~ msgid "Use the list to choose the screen size to use."
+#~ msgstr ""
+#~ "Gebruik de lijst om de schermgrootte te kiezen die gebruikt moet worden."
+
+#~ msgid "Operate in full screen mode"
+#~ msgstr "In volledig-scherm modus werken"
+
+#~ msgid "Work in full screen mode."
+#~ msgstr "In volledig-scherm modus werken."
+
+#~ msgid "Use alternate full screen switch (-F)"
+#~ msgstr "Alternatieve volledig-scherm keuze (-F) gebruiken"
+
+#~ msgid "Check this if you use rdesktop with the unified patches."
+#~ msgstr "Vink dit aan als u rdesktop met de geünificeerde patches."
+
+#~ msgid "Colors"
+#~ msgstr "Kleuren"
+
+#~ msgid "Use default color depth"
+#~ msgstr "Standaard kleurdiepte gebruiken"
+
+#~ msgid "Use the default color depth."
+#~ msgstr "De standaard kleurdiepte gebruiken."
+
+#~ msgid "Use specified color depth"
+#~ msgstr "De opgegeven kleurdiepte gebruiken"
+
+#~ msgid "Use the list to choose the color depth to use."
+#~ msgstr "Gebruik de lijst om de te gebruiken kleurdiepte te kiezen."
+
+#~ msgid "Remote Computer _Sound"
+#~ msgstr "_Geluid computer op afstand"
+
+#~ msgid "Remote Computer Sound"
+#~ msgstr "Geluid computer op afstand"
+
+#~ msgid "On the local computer"
+#~ msgstr "Op de lokale computer"
+
+#~ msgid "On the remote computer"
+#~ msgstr "Op de computer op afstand"
+
+#~ msgid "Do not play"
+#~ msgstr "Niet afspelen"
+
+#~ msgid "_Keyboard"
+#~ msgstr "_Toetsenbord"
+
+#~ msgid "Keyboard"
+#~ msgstr "Toetsenbord"
+
+#~ msgid "In full screen mode only"
+#~ msgstr "Alleen in volledig-scherm modus"
+
+#~ msgid ""
+#~ "Use the following keyboard language\n"
+#~ "(2 char keycode)"
+#~ msgstr ""
+#~ "De volgende toetsenbord taal gebruiken\n"
+#~ "(2-tekens toetscode)"
+
+#~ msgid ""
+#~ "Apply Windows key combinations\n"
+#~ "(for example ALT+TAB) (unsupported)"
+#~ msgstr ""
+#~ "Windows-toets combinaties toepassen\n"
+#~ "(bijvoorbeeld ALT+TAB) (niet-ondersteund)"
+
+#~ msgid "Start a Program"
+#~ msgstr "Een programma uitvoeren"
+
+#~ msgid "Start the following program on connection"
+#~ msgstr "Het volgende programma uitvoeren bij verbinden"
+
+#~ msgid "Program path and filename"
+#~ msgstr "Programma pad en bestandsnaam"
+
+#~ msgid "Start in the following folder"
+#~ msgstr "In de volgende map uitvoeren"
+
+#~ msgid "Optimize Performance"
+#~ msgstr "Snelheid optimaliseren"
+
+#~ msgid "Desktop background (u)"
+#~ msgstr "Bureaublad achtergrond (u)"
+
+#~ msgid "Show content of window while dragging (u)"
+#~ msgstr "Inhoud van venster weergeven tijdens slepen (u)"
+
+#~ msgid "Menu and window animation (u)"
+#~ msgstr "Menu en venster animatie (u)"
+
+#~ msgid "Themes (u)"
+#~ msgstr "Thema's (u)"
+
+#~ msgid "Enable bitmap caching"
+#~ msgstr "Bufferen plaatjes aanzetten"
+
+#~ msgid "Do not send motion events"
+#~ msgstr "Bewegingsevenementen niet verzenden"
+
+#~ msgid "Enable window manager's key bindings"
+#~ msgstr "Toetsenbindingen van vensterbeheerder aanzetten"
+
+#~ msgid "Options available for optimizing performance"
+#~ msgstr "Opties die beschikbaar zijn om de snelheid te optimaliseren"
+
+#~ msgid "_General"
+#~ msgstr "_Algemeen"
+
+#~ msgid "_Display"
+#~ msgstr "_Beeldscherm"
+
+#~ msgid "Local _Resources"
+#~ msgstr "Lokale _bronnen"
+
+#~ msgid "_Programs"
+#~ msgstr "_Programma's"
+
+#~ msgid "Perf_ormance"
+#~ msgstr "_Snelheid"
+
+#~ msgid "_Less"
+#~ msgstr "Mi_nder"
+
+#~ msgid "Input a filename to save as..."
+#~ msgstr "Voer een bestandsnaam in om naar op te slaan..."
+
+#~ msgid "Choose an RDP file to open..."
+#~ msgstr "Kies een RDP-bestand om te openen..."
+
+#~ msgid ""
+#~ "rdesktop was not found in your path.\n"
+#~ "Please verify your rdesktop installation."
+#~ msgstr ""
+#~ "rdesktop is niet in uw pad gevonden.\n"
+#~ "Controleer alstublieft uw rdesktop installatie."
+
+#~ msgid ""
+#~ "vncviewer or xvncviewer were\n"
+#~ " not found in your path.\n"
+#~ "Please verify your vnc installation."
+#~ msgstr ""
+#~ "vncviewer of xvncviewer zijn niet\n"
+#~ " in uw pad gevonden.\n"
+#~ "Controleer alstublieft uw installatie van vnc."
+
+#~ msgid ""
+#~ "Xnest was not found in your path.\n"
+#~ "Please verify your Xnest installation."
+#~ msgstr ""
+#~ "Xnest is niet gevonden in uw pad.\n"
+#~ "Controleer alstublieft uw Xnest installatie."
+
+#~ msgid ""
+#~ "wfica was not found in your path.\n"
+#~ "Please verify your ICAClient installation."
+#~ msgstr ""
+#~ "wfica is niet gevonden in uw pad.\n"
+#~ "Controleer alstublieft uw ICAClient installatie."
+
+#~ msgid ""
+#~ "Failed to spawn.\n"
+#~ "Please verify your installation."
+#~ msgstr ""
+#~ "Spawnen mislukt.\n"
+#~ "Controleer alstublieft uw installatie."
+
+#~ msgid "GNOME Remote Desktop Error"
+#~ msgstr "GNOME Bureaublad op Afstand Fout"
+
+#~ msgid "An error has occurred."
+#~ msgstr "Er is een fout opgetreden."
+
+#~ msgid "Check this to enable desktop sharing in GNOME"
+#~ msgstr "Kies dit om bureaublad deling in GNOME aan te zetten"
+
+#~ msgid "Password to connect to desktop sharing"
+#~ msgstr "Wachtwoord om bij bureaublad delen mee te verbinden"
+
+#~ msgid ""
+#~ "Set this to the password clients should use to connect to your desktop "
+#~ "remotely"
+#~ msgstr ""
+#~ "Stel dit in op het wachtwoord dat clients moeten gebruiken om op afstand "
+#~ "te verbinden met uw bureaublad"
+
+#~ msgid "Whether to enable desktop sharing"
+#~ msgstr "Of bureaublad delen aan of uit staan"
+
+#~ msgid ""
+#~ "<b>Connection settings</b>\n"
+#~ "Type the name of the computer to open a new desktop session and/or the "
+#~ "display number to connect to an already running session."
+#~ msgstr ""
+#~ "<b>Verbindingsinstellingen</b>\n"
+#~ "Voer de naam van de computer in om een nieuwe bureaublad sessie te "
+#~ "beginnen, en/of voer het beeldschermnummer om te verbinden met een al "
+#~ "lopende sessie."
+
+#~ msgid ""
+#~ "<b>Desktop settings</b>\n"
+#~ "Select the size and color depth (not supported for all cases, so use with "
+#~ "care) of you remote desktop."
+#~ msgstr ""
+#~ "<b>Bureaublad instellingen</b>\n"
+#~ "Selecteer de grootte en kleurdiepte (niet in alle gevallen ondersteund, "
+#~ "dus gebruik met zorg) van uw bureaublad op afstand."
+
+#~ msgid ""
+#~ "<b>Method</b>\n"
+#~ "Select the method for connecting to the remote host. For Windows systems, "
+#~ "you want to choose VNC. For UNIX systems, usually X11, though VNC will "
+#~ "also work."
+#~ msgstr ""
+#~ "<b>Methode</b>\n"
+#~ "Selecteer de methode waarop moet worden verbonden met de host op afstand. "
+#~ "Voor Windows systemen wilt u VNC kiezen. Voor UNIX systemen meestal X11, "
+#~ "maar VNC werkt ook."
+
+#~ msgid "Color depth"
+#~ msgstr "Kleurdiepte"
+
+#~ msgid "Connect Now ..."
+#~ msgstr "Nu verbinden..."
+
+#~ msgid "Display size"
+#~ msgstr "Beeldgrootte"
+
+#~ msgid "Display:"
+#~ msgstr "Beeldscherm:"
+
+#~ msgid "Host:"
+#~ msgstr "Host:"
+
+#~ msgid "VNC"
+#~ msgstr "VNC"
+
+#~ msgid "X11"
+#~ msgstr "X11"
+
+#~ msgid "by"
+#~ msgstr "door"
+
+#~ msgid "Desktop Sharing"
+#~ msgstr "Bureaublad delen"
+
+#~ msgid "_Share my desktop with others"
+#~ msgstr "Mijn bureaublad met anderen _delen"
+
+#~ msgid "Enable this option to allow others to view your desktop"
+#~ msgstr ""
+#~ "Zet deze optie aan om anderen toe te staan om uw bureaublad weer te geven"
+
+#~ msgid ""
+#~ "The following information will need to be supplied by the user connecting "
+#~ "to your desktop"
+#~ msgstr ""
+#~ "De volgende informatie zal de gebruiker, die met uw bureaublad verbindt, "
+#~ "nodig hebben"
+
+#~ msgid "Password"
+#~ msgstr "Wachtwoord"
+
+#~ msgid "Couldn't find pixmap file: %s"
+#~ msgstr "Kon pixmap bestand niet vinden: %s"
+
+#~ msgid "Orientation"
+#~ msgstr "Oriëntatie"
+
+#~ msgid "The orientation of the tray."
+#~ msgstr "De oriëntatie van het vak."
+
+#~ msgid "/_Preferences"
+#~ msgstr "/_Voorkeuren"
+
+#~ msgid "/_Clients"
+#~ msgstr "/_Clients"
+
+#~ msgid "/_About"
+#~ msgstr "/_Info"
+
+#~ msgid "/_Quit"
+#~ msgstr "/_Afsluiten"
+
+#~ msgid "Your desktop is viewable to others"
+#~ msgstr "Uw bureaublad is door anderen op afstand weer te geven"
+
+#~ msgid "Remote Desktop Sharing"
+#~ msgstr "Bureaublad delen op afstand"
+
+#~ msgid "Clients currently viewing your desktop"
+#~ msgstr "Clients die op dit moment uw bureaublad weergeven"
+
+#~ msgid "Disconnect"
+#~ msgstr "Verbinding verbreken"
+
+#~ msgid "Receive"
+#~ msgstr "Ontvangen"
+
+#~ msgid "Enter search string"
+#~ msgstr "Geef zoektekst"
+
+#~ msgid "Send"
+#~ msgstr "Verzenden"
+
+#~ msgid "Enter transmission string"
+#~ msgstr "Geef verzendtekst"
+
+#~ msgid "Send User Name"
+#~ msgstr "Gebruikersnaam verzenden"
+
+#~ msgid "Username taken from Authentication"
+#~ msgstr "Gebruikersnaam genomen uit authentificatie"
+
+#~ msgid "Send User Password"
+#~ msgstr "Gebruikerswachtwoord verzenden"
+
+#~ msgid "Password taken from Authentication"
+#~ msgstr "Wachtwoord genomen uit authentificatie"
+
+#~ msgid "Dialog Box Input"
+#~ msgstr "Dialoogvenster invoer"
+
+#~ msgid "Enter text to be used as a dialog message when prompted for input"
+#~ msgstr ""
+#~ "Geef de tekst die moet worden gebruikt als dialoogbericht voor het vragen "
+#~ "om invoer"
+
+#~ msgid "open_account_window(): account=NULL with clone flag"
+#~ msgstr "open_account_window(): account=NULL met clone optie"
+
+#~ msgid "open_account_window(): calling arguments invalid"
+#~ msgstr "open_account_window(): aanroep arguments onjuist"
+
+#~ msgid "Dial"
+#~ msgstr "Inbellen"
+
+#~ msgid "Authentication"
+#~ msgstr "Authentificatie"
+
+#~ msgid "IP Address"
+#~ msgstr "IP-adres"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "Script"
+#~ msgstr "Script"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "Account Name"
+#~ msgstr "Accoutnaam"
+
+#~ msgid "Redial Maximum"
+#~ msgstr "Maximum aantal belpogingen"
+
+#~ msgid "Dial Timeout (sec)"
+#~ msgstr "Inbel time-out (sec)"
+
+#~ msgid "Phone Numbers"
+#~ msgstr "Telefoonnummers"
+
+#~ msgid "#"
+#~ msgstr "#"
+
+#~ msgid "Add"
+#~ msgstr "Toevoegen"
+
+#~ msgid "Remove"
+#~ msgstr "Verwijderen"
+
+#~ msgid "PAP/CHAP"
+#~ msgstr "PAP/CHAP"
+
+#~ msgid "User Name"
+#~ msgstr "Gebruikersnaam"
+
+#~ msgid "Remote Name"
+#~ msgstr "Naam op afstand"
+
+#~ msgid "Hidden Password"
+#~ msgstr "Verborgen wachtwoord"
+
+#~ msgid "Local IP Address"
+#~ msgstr "Lokaal IP-adres"
+
+#~ msgid "Dynamic"
+#~ msgstr "Dynamisch"
+
+#~ msgid "Static"
+#~ msgstr "Statisch"
+
+#~ msgid "Remote IP Address"
+#~ msgstr "IP-adres op afstand"
+
+#~ msgid "DNS Servers"
+#~ msgstr "DNS-servers"
+
+#~ msgid "Search Domains"
+#~ msgstr "Zoekdomeinen"
+
+#~ msgid "Domain Name"
+#~ msgstr "Domeinnaam"
+
+#~ msgid "Action"
+#~ msgstr "Actie"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Login Script"
+#~ msgstr "Inlogscript"
+
+#~ msgid "Insert"
+#~ msgstr "Invoegen"
+
+#~ msgid "Add Default Route"
+#~ msgstr "Standaard route toevoegen"
+
+#~ msgid "Lock Dialout Device"
+#~ msgstr "Inbelapparaat blokkeren"
+
+#~ msgid "Maximum Transmission Unit"
+#~ msgstr "Maximale verzendeenheid"
+
+#~ msgid "Maximum Receive Unit"
+#~ msgstr "Maximale ontvangeenheid"
+
+#~ msgid "Run Program After Connect"
+#~ msgstr "Programma uitvoeren na verbinden"
+
+#~ msgid "Run Program After Disconnect"
+#~ msgstr "Programma uitvoeren na verbreken verbinding"
+
+#~ msgid "Modem Device"
+#~ msgstr "Modem apparaat"
+
+#~ msgid "Connection Speed"
+#~ msgstr "Verbindingssnelheid"
+
+#~ msgid "Flow Control"
+#~ msgstr "Stroom contrôle"
+
+#~ msgid "Line Termination"
+#~ msgstr "Lijn afbreken"
+
+#~ msgid "Modem Speaker Volume"
+#~ msgstr "Geluidssterkte modem luidspreker"
+
+#~ msgid " Edit Modem Commands "
+#~ msgstr " Modem opdrachten bewerken "
+
+#~ msgid "**PASSWORD**"
+#~ msgstr "**WACHTWOORD**"
+
+#~ msgid "script_type_cb(): optionmenu data bad"
+#~ msgstr "script_type_cb(): optionmenu gegevens slecht"
+
+#~ msgid "_Debug Terminal"
+#~ msgstr "_Debug terminal"
+
+#~ msgid "_New..."
+#~ msgstr "_Nieuws..."
+
+#~ msgid "D_uplicate..."
+#~ msgstr "D_ubbel..."
+
+#~ msgid "_Edit..."
+#~ msgstr "Be_werken..."
+
+#~ msgid "_Delete..."
+#~ msgstr "_Verwijderen..."
+
+#~ msgid "_Account"
+#~ msgstr "_Account"
+
+#~ msgid "gnome-ppp"
+#~ msgstr "gnome-ppp"
+
+#~ msgid "Dialing"
+#~ msgstr "Bezig met inbellen"
+
+#~ msgid "Connected"
+#~ msgstr "Verbonden"
+
+#~ msgid "refresh_dial_app(): gtk_clist_append failed."
+#~ msgstr "refresh_dial_app(): gtk_clist_append mislukt."
+
+#~ msgid "Connect"
+#~ msgstr "Verbinden"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuleren"
+
+#~ msgid "You must disconnect before closing."
+#~ msgstr "U dient de verbinding te verbreken voordat u dit sluit."
+
+#~ msgid "Are you sure you want to delete this account?\n"
+#~ msgstr "Weer u zeker dat u dit account wilt verwijderen?\n"
+
+#~ msgid "The account cannot be deleted."
+#~ msgstr "Het account kan niet worden verwijderd."
+
+#~ msgid "The account is in use and cannot be deleted."
+#~ msgstr "Het account is in gebruik en kan niet worden verwijderd."
+
+#~ msgid "GNOME Internet Dialer"
+#~ msgstr "GNOME Internet Inbeller"
+
+#~ msgid "Raise PPP Link"
+#~ msgstr "PPP-verbinding opbouwen"
+
+#~ msgid "About..."
+#~ msgstr "Info..."
+
+#~ msgid "Properties..."
+#~ msgstr "Eigenschappen..."
+
+#~ msgid "Offline"
+#~ msgstr "Offline"
+
+#~ msgid "Connecting..."
+#~ msgstr "Bezig met verbinden..."
+
+#~ msgid "PPP Connected"
+#~ msgstr "PPP verbonden"
+
+#~ msgid "PPP Error!"
+#~ msgstr "PPP fout!"
+
+#~ msgid "That account is already in use.\n"
+#~ msgstr "Het account is al in gebruik.\n"
+
+#~ msgid "GNOME PPP Dialer Applet"
+#~ msgstr "GNOME PPP Inbeller applet"
+
+#~ msgid ""
+#~ "An unnecessarily nice looking applet for GNOME's panel for easy control "
+#~ "of PPP network links."
+#~ msgstr ""
+#~ "Een onnodig goed uitziende applet voor GNOME's paneel om gemakkelijk PPP "
+#~ "netwerkverbindingen te beheren."
+
+#~ msgid "PPP Applet Properties"
+#~ msgstr "PPP applet eigenschappen"
+
+#~ msgid "Animation"
+#~ msgstr "Animatie"
+
+#~ msgid "Small"
+#~ msgstr "Klein"
+
+#~ msgid "Large"
+#~ msgstr "Groot"
+
+#~ msgid "None"
+#~ msgstr "Geen"
+
+#~ msgid "Options"
+#~ msgstr "Opties"
+
+#~ msgid "Freeze Animation on Connect"
+#~ msgstr "Animatie bevriezen bij verbinden"
+
+#~ msgid "Disconnect PPP on GNOME logout"
+#~ msgstr "PPP verbinding verbreken bij uitloggen GNOME"
+
+#~ msgid "Timer"
+#~ msgstr "Timer"
+
+#~ msgid "Label"
+#~ msgstr "Label"
+
+#~ msgid "Tooltip"
+#~ msgstr "Werktip"
+
+#~ msgid "Animation Speed"
+#~ msgstr "Animatie snelheid"
+
+#~ msgid "PPP Applet"
+#~ msgstr "PPP applet"
+
+#~ msgid "---NEW CONNECTION---"
+#~ msgstr "---NIEUWE VERBINDING---"
+
+#~ msgid "Account already connected."
+#~ msgstr "Account al verbonden."
+
+#~ msgid "Starting PPP Connection."
+#~ msgstr "Bezig met beginnen PPP verbinding."
+
+#~ msgid "You don't have permission to execute pppd."
+#~ msgstr "U heeft geen toegangsrechten om pppd uit te voeren."
+
+#~ msgid "The modem is in use by another program."
+#~ msgstr "Het modem is al in gebruik door een ander programma."
+
+#~ msgid "Running pppd."
+#~ msgstr "Bezig met uitvoeren pppd."
+
+#~ msgid "Closing connection."
+#~ msgstr "Bezig met sluiten verbinding."
+
+#~ msgid "The pppd program failed to run gnome-ppp-chat."
+#~ msgstr "Het pppd programma heeft gnome-ppp-chat niet uitgevoerd."
+
+#~ msgid "The modem could not be hung up."
+#~ msgstr "Het modem kon niet ophangen."
+
+#~ msgid "Initalizing modem."
+#~ msgstr "Bezig met initialiseren modem."
+
+#~ msgid "Your modem is not responding to initalization."
+#~ msgstr "Uw modem reageert niet op initialisatie."
+
+#~ msgid "The command to set the volume on your modem's speaker failed."
+#~ msgstr ""
+#~ "De opdracht om de geluidssterkte van de luidspreker van uw modem in te "
+#~ "stellen, mislukte."
+
+#~ msgid "No answer after maximum number of re-dial attempts."
+#~ msgstr "Geen antwoord na maximum aantal inbel pogingen."
+
+#~ msgid "No phone numbers specified for this account."
+#~ msgstr "Geen telefoonnummers opgegeven voor dit account."
+
+#~ msgid "Dialing."
+#~ msgstr "Bezig met inbellen."
+
+#~ msgid "Dialing timeout."
+#~ msgstr "Inbel time-out."
+
+#~ msgid "No dialtone."
+#~ msgstr "Geen beltoon."
+
+#~ msgid "Number busy."
+#~ msgstr "Nummer bezig."
+
+#~ msgid "Ring, but no answer."
+#~ msgstr "Telefoon gaat over, maar geen antwoord."
+
+#~ msgid "Connection failure, reason unknown."
+#~ msgstr "Verbinding mislukt, reden onbekend."
+
+#~ msgid "Connected."
+#~ msgstr "Verbonden."
+
+#~ msgid "The modem lost connection with remote host."
+#~ msgstr "Het modem heeft de verbinding met de host op afstand verloren."
+
+#~ msgid "Running Script."
+#~ msgstr "Bezig met uitvoeren script."
+
+#~ msgid "Script Complete."
+#~ msgstr "Script voltooid."
+
+#~ msgid "PPP connection established."
+#~ msgstr "PPP-verbinding opgebouwd."
+
+#~ msgid "Failed to establish a PPP connection."
+#~ msgstr "Opbouwen PPP-verbinding mislukt."
+
+#~ msgid "The pppd daemon died unexpectedly."
+#~ msgstr "De pppd daemon stierf onverwachts."
+
+#~ msgid "open_modem_window(): account=NULL"
+#~ msgstr "open_modem_window(): account=NULL"
+
+#~ msgid "Commands"
+#~ msgstr "Opdrachten"
+
+#~ msgid "Responses"
+#~ msgstr "Antwoorden"
+
+#~ msgid "Initialization"
+#~ msgstr "Initialisatie"
+
+#~ msgid "Hangup"
+#~ msgstr "Ophangen"
+
+#~ msgid "Volume Mute"
+#~ msgstr "Geluid uit"
+
+#~ msgid "Volume Low"
+#~ msgstr "Geluid zacht"
+
+#~ msgid "Volume High"
+#~ msgstr "Geluid hard"
+
+#~ msgid "Connection"
+#~ msgstr "Verbinding"
+
+#~ msgid "Busy"
+#~ msgstr "Bezig"
+
+#~ msgid "No Answer"
+#~ msgstr "Geen antwoord"
+
+#~ msgid "No Carrier"
+#~ msgstr "Geen telefoonverbinding"
+
+#~ msgid "No Dialtone"
+#~ msgstr "Geen beltoon"
+
+#~ msgid "GNOME Transfer Manager"
+#~ msgstr "GNOME Overdrachtbeheerder"
+
+#~ msgid "There is a connection error"
+#~ msgstr "Er is een verbindingsfout"
+
+#~ msgid "There is an error with displaying help"
+#~ msgstr "Er is een fout bij het weergeven van de hulp"
+
+#~ msgid "Graphical user interface for GNOME Remote Shell"
+#~ msgstr "Grafische gebruikersinterface voor GNOME Shell op Afstand"
+
+#~ msgid "This is an untranslated version of GNOME Remote Shell"
+#~ msgstr "Elros Cyriatan"
+
+#~ msgid "Failed to create a connection"
+#~ msgstr "Opbouwen van een verbinding mislukt"
+
+#~ msgid "A hostname is required"
+#~ msgstr "Een hostnaam is vereist"
+
+#~ msgid "A user name is required for SSH"
+#~ msgstr "Een gebruikersnaam is vereist voor SSH"
+
+#~ msgid "There is a command line error"
+#~ msgstr "Er is een opdrachtregel fout"
+
+#~ msgid "The host cannot be found"
+#~ msgstr "De host kan niet worden gevonden"
+
+#~ msgid "<span weight=\"bold\">Connect to remote host</span>"
+#~ msgstr "<span weight=\"bold\">Verbinden met host op afstand</span>"
+
+#~ msgid "<span weight=\"bold\">Method</span>"
+#~ msgstr "<span weight=\"bold\">Methode</span>"
+
+#~ msgid "<span weight=\"bold\">Window size</span>"
+#~ msgstr "<span weight=\"bold\">Venstergrootte</span>"
+
+#~ msgid "Connect to remote host"
+#~ msgstr "Verbinden met host op afstand"
+
+#~ msgid "H_eight:"
+#~ msgstr "_Hoogte:"
+
+#~ msgid "H_ost:"
+#~ msgstr "H_ost:"
+
+#~ msgid "Regular shell (_Telnet)"
+#~ msgstr "Gewone shell (_Telnet)"
+
+#~ msgid "Use _default"
+#~ msgstr "_Standaard gebruiken"
+
+#~ msgid "_Contents"
+#~ msgstr "_Inhoud"
+
+#~ msgid "_Port:"
+#~ msgstr "_Poort:"
+
+#~ msgid "_Secure shell (SSH)"
+#~ msgstr "_Veilige shell (SSH)"
+
+#~ msgid "_Shell"
+#~ msgstr "_Shell"
+
+#~ msgid "_User:"
+#~ msgstr "_Gebruiker:"
+
+#~ msgid "_Width:"
+#~ msgstr "_Breedte:"
+
+#~ msgid "characters"
+#~ msgstr "tekens"
+
+#~ msgid "Expander Size"
+#~ msgstr "Grootte vergroter"
+
+#~ msgid "Size of the expander arrow"
+#~ msgstr "Grootte van de vergroot-pijl"
+
+#~ msgid "Web folder:"
+#~ msgstr "Webmap:"
+
+#~ msgid "Select the folder to be published"
+#~ msgstr "Selecteer de map die gepubliceerd moet worden"
+
+#~ msgid "Enable web server"
+#~ msgstr "Webserver aan zetten"
+
+#~ msgid "Additional options"
+#~ msgstr "Extra opties"
+
+#~ msgid "Port number:"
+#~ msgstr "Poortnummer:"
+
+#~ msgid "Time out:"
+#~ msgstr "Time-out:"
+
+#~ msgid "Keep alive"
+#~ msgstr "Levend houden"
+
+#~ msgid "/_Open Web Folder"
+#~ msgstr "/Webmap _openen"
+
+#~ msgid "Personal web server preferences"
+#~ msgstr "Persoonlijke webserver voorkeuren"
+
+#~ msgid "Personal Web Server Preferences"
+#~ msgstr "Persoonlijke webserver voorkeuren"
+
+#~ msgid "Setup the options for your personal web server."
+#~ msgstr "Configureer de opties voor uw persoonlijke webserver."
+
+#~ msgid "Could not load UI for entry configuration dialog"
+#~ msgstr "Kon UI voor ingang-configuratie dialoog niet laden"
+
+#~ msgid "Entry name"
+#~ msgstr "Ingang naam"
+
+#~ msgid "Local path"
+#~ msgstr "Lokaal pad"
+
+#~ msgid "Preserve group"
+#~ msgstr "Groep behouden"
+
+#~ msgid "Preserve permissions"
+#~ msgstr "Toegangsrechten behouden"
+
+#~ msgid "Preserve times"
+#~ msgstr "Tijden behouden"
+
+#~ msgid "Recurse into directories"
+#~ msgstr "Recursief in mappen"
+
+#~ msgid "Remote host"
+#~ msgstr "Host op afstand"
+
+#~ msgid "Remote path"
+#~ msgstr "Pad op afstand"
+
+#~ msgid "Synchronization options"
+#~ msgstr "Synchronisatie opties"
+
+#~ msgid "Update only (don't overwrite newer files)"
+#~ msgstr "Alleen bijwerken (niet nieuwere bestanden overschrijven)"
+
+#~ msgid "Use relative path names"
+#~ msgstr "Relatieve padnamen gebruiken"
+
+#~ msgid "Use rsync"
+#~ msgstr "Rsync gebruiken"
+
+#~ msgid "Use unison"
+#~ msgstr "Unison gebruiken"
+
+#~ msgid "dialog1"
+#~ msgstr "dialoog1"
+
+#~ msgid "rsync"
+#~ msgstr "rsync"
+
+#~ msgid "unison"
+#~ msgstr "unison"
+
+#~ msgid "Local"
+#~ msgstr "Lokaal"
+
+#~ msgid "Remote"
+#~ msgstr "Op afstand"
+
+#~ msgid "Last sync"
+#~ msgstr "Laatste synchronisatie"
+
+#~ msgid "_Synchronize"
+#~ msgstr "_Synchroniseren"
+
+#~ msgid "New entry..."
+#~ msgstr "Nieuwe ingang..."
+
+#~ msgid "Edit..."
+#~ msgstr "Bewerken..."
+
+#~ msgid "Synchronize"
+#~ msgstr "Synchroniseren"
+
+#~ msgid "Gnome Synchronize"
+#~ msgstr "GNOME Synchroniseren"
+
+#~ msgid "The GNOME file synchronization program."
+#~ msgstr "Het GNOME bestandssynchronisatie programma."
+
+#~ msgid "New"
+#~ msgstr "Nieuw"
+
+#~ msgid "Create new synchronization entry"
+#~ msgstr "Nieuwe synchronisatie ingang maken"
+
+#~ msgid "Start synchronization for selected entries"
+#~ msgstr "Synchronisatie starten voor geselecteerde ingangen"
+
+#~ msgid "Edit"
+#~ msgstr "Bewerken"
+
+#~ msgid "Edit selected entry"
+#~ msgstr "Geselecteerde ingangen bewerken"
+
+#~ msgid "Delete"
+#~ msgstr "Verwijderen"
+
+#~ msgid "Delete selected entries"
+#~ msgstr "Geselecteerde ingangen verwijderen"

@@ -5,1015 +5,466 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network 1.0.0\n"
-"POT-Creation-Date: 2003-11-25 00:45+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-02-11 16:35+0100\n"
 "PO-Revision-Date: 2003-11-09 12:41+0900\n"
 "Last-Translator: Young-Ho Cha <ganadist at mizi.com>\n"
 "Language-Team: GTP Korean <gnome-kr-translation@gnome.or.kr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
-#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
-msgid "GNOME Remote Desktop Applet"
-msgstr "그놈 원격 데스크탑 애플릿"
-
-#: desktop/client/gnome-remote-desktop.desktop.in.h:1
-msgid "Connect to a remote desktop computer"
-msgstr "원격 컴퓨터와 연결합니다"
-
-#: desktop/client/gnome-remote-desktop.desktop.in.h:2
-msgid "Remote Desktop Client"
-msgstr "원격 데스크탑 클라이언트"
-
-#: desktop/client/src/connect.c:75
-msgid "640 x 480 pixels"
-msgstr "640 x 480 해상도"
-
-#: desktop/client/src/connect.c:75
-msgid "800 x 600 pixels"
-msgstr "800 x 600 해상도"
-
-#: desktop/client/src/connect.c:76
-msgid "1024 x 768 pixels"
-msgstr "1024 x 768 해상도"
-
-#: desktop/client/src/connect.c:77
-msgid "1152 x 864 pixels"
-msgstr "1152 x 864 해상도"
-
-#: desktop/client/src/connect.c:78
-msgid "1280 x 960 pixels"
-msgstr "1280 x 960 해상도"
-
-#: desktop/client/src/connect.c:82
-msgid "256 Colors"
-msgstr "256색상"
-
-#: desktop/client/src/connect.c:83
-msgid "High Color (15 bit)"
-msgstr ""
-
-#: desktop/client/src/connect.c:84
-msgid "High Color (16 bit)"
-msgstr ""
-
-#: desktop/client/src/connect.c:85
-msgid "True Color (24 bit)"
-msgstr ""
-
-#: desktop/client/src/connect.c:287 desktop/client/src/connect.c:310
-#: desktop/client/src/connect.c:312 desktop/client/src/support.c:780
-#: desktop/gnome-remote-desktop.glade.h:13
-msgid "GNOME Remote Desktop"
-msgstr "그놈 원격 데스크탑"
-
-#.
-#. This is the input for the Compact mode
-#.
-#: desktop/client/src/connect.c:344 desktop/client/src/connect.c:555
-msgid "Compu_ter:"
-msgstr "컴퓨터(_T):"
-
-#: desktop/client/src/connect.c:368 desktop/client/src/connect.c:623
-msgid "Enter the name or address of the remote system."
-msgstr "원격 시스템의 이름이나 주소를 넣으십시오."
-
-#: desktop/client/src/connect.c:373 desktop/client/src/connect.c:630
-msgid "Select the protocol to use for this connection."
-msgstr "연결에 사용될 프로토콜을 선택하십시오."
-
-#: desktop/client/src/connect.c:380 desktop/client/src/connect.c:637
-msgid ""
-"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
-"systems with desktop sharing."
-msgstr ""
-"RDP 프로토콜은 마이크로소프트 터미널 서버와 윈도우즈 XP 시스템의 데스크탑 공"
-"유와 연결할 때 사용됩니다."
-
-#: desktop/client/src/connect.c:385 desktop/client/src/connect.c:644
-msgid ""
-"VNC protocol is used to connect to systems sharing the desktop by using VNC."
-msgstr ""
-"VNC 프로토콜은 VNC으로 데스크탑을 공유한 시스템에 연결할 때 사용됩니다."
-
-#: desktop/client/src/connect.c:394 desktop/client/src/connect.c:655
-msgid "XDMCP protocol uses Xnest to connect to servers running X."
-msgstr "XDMCP 프로토콜은 Xnest를 X가 실행되는 서버에 연결합니다."
-
-#: desktop/client/src/connect.c:399 desktop/client/src/connect.c:662
-msgid "ICA protocol is used to connect to Citrix servers."
-msgstr "ICA 프로토콜은 Citrix 서버에 연결될 때 사용됩니다."
-
-#.
-#. This is the Profile Launcher
-#.
-#: desktop/client/src/connect.c:410
-msgid "Prof_ile Launcher:"
-msgstr "프로파일 실행기:"
-
-#: desktop/client/src/connect.c:423
-msgid "Select a saved profile to launch it immediately."
-msgstr "바로 시작하려는 저장된 프로파일을 선택하십시오."
-
-#: desktop/client/src/connect.c:455
-msgid "_More"
-msgstr ""
-
-#: desktop/client/src/connect.c:481 desktop/client/src/connect.c:1225
-#: network-utilities/gnome-remote-shell.glade.h:6
-msgid "Co_nnect"
-msgstr "연결(_N)"
-
-#.
-#. This is the label for the Connection Profile
-#.
-#: desktop/client/src/connect.c:490 desktop/client/src/connect.c:492
-msgid "Connection Profile"
-msgstr "연결 프로파일"
-
-#: desktop/client/src/connect.c:521 desktop/client/src/connect.c:523
-msgid "Logon Settings"
-msgstr "로그온 설정"
-
-#: desktop/client/src/connect.c:531
-msgid ""
-"Type the name of the computer or choose a computer from the drop-down list."
-msgstr ""
-"컴퓨터의 이름을 직접 입력하거나 드랍다운 목록에서 컴퓨터를 선택하십시오."
-
-#: desktop/client/src/connect.c:563
-msgid "Pro_tocol:"
-msgstr "프로토콜(_T):"
-
-#: desktop/client/src/connect.c:571
-msgid "_User Name:"
-msgstr "사용자 이름(_U):"
-
-#: desktop/client/src/connect.c:579
-msgid "Pass_word:"
-msgstr "열쇠글(_W):"
-
-#: desktop/client/src/connect.c:587
-msgid "Do_main:"
-msgstr "도메인(_M):"
-
-#: desktop/client/src/connect.c:595
-msgid "C_lient Hostname:"
-msgstr "클라이언트 호스트이름(_L):"
-
-#: desktop/client/src/connect.c:603
-msgid "Prot_ocol File:"
-msgstr "프로토콜 파일(_O):"
-
-#: desktop/client/src/connect.c:678
-msgid ""
-"Enter the username for the remote system.\n"
-"For VNC, enter the path to your saved vnc password file."
-msgstr ""
-"원격 시스템의 사용자 이름을 입력하십시오.\n"
-"VNC에서는 저장된 VNC 열쇠글 파일의 경로를 입력하십시오."
-
-#: desktop/client/src/connect.c:687
-msgid "Enter the password for the remote system."
-msgstr "원격 시스템의 열쇠글을 입력하십시오."
-
-#: desktop/client/src/connect.c:695
-msgid "Enter the domain for the remote system."
-msgstr "원격 시스템의 도메인을 입력하십시오."
-
-#: desktop/client/src/connect.c:703
-msgid "Enter the local hostname for this system."
-msgstr "현재 시스템의 로컬 호스트이름을 입력하십시오."
-
-#: desktop/client/src/connect.c:715
-msgid ""
-"Some protocols require a file containing settings. If required, enter the "
-"path to the file here."
-msgstr ""
-"몇몇 프로토콜에서는 설정이 포함된 파일이 필요합니다. 필요하다면, 여기에 파일"
-"의 경로를 입력하십시오."
-
-#: desktop/client/src/connect.c:737 desktop/client/src/connect.c:739
-msgid "Remote Desktop Size"
-msgstr "원격 데스크탑 크기"
-
-#: desktop/client/src/connect.c:757
-msgid "Use default screen size"
-msgstr "기본 화면 크기 쓰기"
-
-#: desktop/client/src/connect.c:761
-msgid "Use the default screen size."
-msgstr "기본 화면 크기를 씁니다."
-
-#: desktop/client/src/connect.c:766
-msgid "Use specified screen size"
-msgstr "지정된 화면 크기 쓰기"
-
-#: desktop/client/src/connect.c:770
-msgid "Use the list to choose the screen size to use."
-msgstr ""
-
-#: desktop/client/src/connect.c:782
-msgid "Operate in full screen mode"
-msgstr "전체 화면 쓰기"
-
-#: desktop/client/src/connect.c:786
-msgid "Work in full screen mode."
-msgstr "전체 화면 모드에서 작업합니다."
-
-#: desktop/client/src/connect.c:795
-msgid "Use alternate full screen switch (-F)"
-msgstr ""
-
-#: desktop/client/src/connect.c:799
-msgid "Check this if you use rdesktop with the unified patches."
-msgstr ""
-
-#: desktop/client/src/connect.c:808 desktop/client/src/connect.c:810
-msgid "Colors"
-msgstr "색상"
-
-#: desktop/client/src/connect.c:828
-msgid "Use default color depth"
-msgstr "기본 색상수 쓰기"
-
-#: desktop/client/src/connect.c:832
-msgid "Use the default color depth."
-msgstr "기본 색상수를 씁니다."
-
-#: desktop/client/src/connect.c:837
-msgid "Use specified color depth"
-msgstr "지정한 색상수 쓰기"
-
-#: desktop/client/src/connect.c:841
-msgid "Use the list to choose the color depth to use."
-msgstr ""
-
-#: desktop/client/src/connect.c:865
-msgid "Remote Computer _Sound"
-msgstr "원격 컴퓨터 소리(_S)"
-
-#: desktop/client/src/connect.c:867
-msgid "Remote Computer Sound"
-msgstr ""
-
-#: desktop/client/src/connect.c:891 desktop/client/src/connect.c:927
-msgid "On the local computer"
-msgstr ""
-
-#: desktop/client/src/connect.c:894 desktop/client/src/connect.c:930
-msgid "On the remote computer"
-msgstr ""
-
-#: desktop/client/src/connect.c:897
-msgid "Do not play"
-msgstr ""
-
-#: desktop/client/src/connect.c:908
-msgid "_Keyboard"
-msgstr "글쇠판(_K)"
-
-#: desktop/client/src/connect.c:910
-msgid "Keyboard"
-msgstr "글쇠판"
-
-#: desktop/client/src/connect.c:933
-msgid "In full screen mode only"
-msgstr "전체 화면 모드만 쓰기"
-
-#: desktop/client/src/connect.c:939
-msgid ""
-"Use the following keyboard language\n"
-"(2 char keycode)"
-msgstr ""
-"다음의 글쇠판 언어를 씁니다\n"
-"(2자의 글쇠코드)"
-
-#: desktop/client/src/connect.c:967
-msgid ""
-"Apply Windows key combinations\n"
-"(for example ALT+TAB) (unsupported)"
-msgstr ""
-"윈도우즈의 글쇠 조합을 씁니다\n"
-"(예: ALT+TAB) (지원하지 않음)"
-
-#: desktop/client/src/connect.c:990 desktop/client/src/connect.c:992
-msgid "Start a Program"
-msgstr "프로그램 시작"
-
-#: desktop/client/src/connect.c:1007
-msgid "Start the following program on connection"
-msgstr "연결할 때 다음 프로그램을 시작합니다"
-
-#: desktop/client/src/connect.c:1014
-msgid "Program path and filename"
-msgstr "프로그램의 경로와 파일 이름"
-
-#: desktop/client/src/connect.c:1027
-msgid "Start in the following folder"
-msgstr "다음 폴더에서 시작"
-
-#: desktop/client/src/connect.c:1049 desktop/client/src/connect.c:1051
-msgid "Optimize Performance"
-msgstr ""
-
-#: desktop/client/src/connect.c:1072
-msgid "Desktop background (u)"
-msgstr "데스크탑 바탕 화면 (u)"
-
-#: desktop/client/src/connect.c:1076
-msgid "Show content of window while dragging (u)"
-msgstr "창을 끌어 놓을 때 창 내용 보이기 (u)"
-
-#: desktop/client/src/connect.c:1080
-msgid "Menu and window animation (u)"
-msgstr "메뉴 및 창 움직임 (u)"
-
-#: desktop/client/src/connect.c:1084
-msgid "Themes (u)"
-msgstr "테마 (u)"
-
-#: desktop/client/src/connect.c:1088
-msgid "Enable bitmap caching"
-msgstr "비트맵 캐싱 쓰기"
-
-#: desktop/client/src/connect.c:1092
-msgid "Do not send motion events"
-msgstr "움직임 이벤트 보내지 않기"
-
-#: desktop/client/src/connect.c:1096
-msgid "Enable window manager's key bindings"
-msgstr "창 관리자 글쇠 조합 쓰기"
-
-#: desktop/client/src/connect.c:1101
-msgid "Options available for optimizing performance"
-msgstr ""
-
-#.
-#. These are the labels for the notebook control
-#.
-#: desktop/client/src/connect.c:1114
-msgid "_General"
-msgstr "일반(_G)"
-
-#: desktop/client/src/connect.c:1119
-msgid "_Display"
-msgstr "보기(_D)"
-
-#: desktop/client/src/connect.c:1124
-msgid "Local _Resources"
-msgstr "로컬 자원(_R)"
-
-#: desktop/client/src/connect.c:1129
-msgid "_Programs"
-msgstr "프로그램(_P)"
-
-#: desktop/client/src/connect.c:1134
-msgid "Perf_ormance"
-msgstr "성능(_O)"
-
-#: desktop/client/src/connect.c:1198
-msgid "_Less"
-msgstr ""
-
-#: desktop/client/src/connect.c:1709
-msgid "Input a filename to save as..."
-msgstr "저장할 파일이름 입력..."
-
-#: desktop/client/src/connect.c:1751 desktop/client/src/connect.c:1796
-msgid "Choose an RDP file to open..."
-msgstr "열려는 RDP 파일 선택..."
-
-#: desktop/client/src/support.c:277
-msgid ""
-"rdesktop was not found in your path.\n"
-"Please verify your rdesktop installation."
-msgstr ""
-"rdesktop이 경로에서 찾을 수 없습니다.\n"
-"rdesktop 설치가 올바른지 확인하십시오."
-
-#: desktop/client/src/support.c:417
-msgid ""
-"vncviewer or xvncviewer were\n"
-" not found in your path.\n"
-"Please verify your vnc installation."
-msgstr ""
-"vncviewer나 xvncviewer가 \n"
-"경로에서 찾을 수 없습니다.\n"
-"vnc 설치가 올바른지 확인하십시오."
-
-#: desktop/client/src/support.c:519
-msgid ""
-"Xnest was not found in your path.\n"
-"Please verify your Xnest installation."
-msgstr ""
-"Xnest가 경로에서 찾을 수 없습니다.\n"
-"Xnest 설치가 올바른지 확인하십시오."
-
-#: desktop/client/src/support.c:578
-msgid ""
-"wfica was not found in your path.\n"
-"Please verify your ICAClient installation."
-msgstr ""
-"wfica가 경로에서 찾을 수 없습니다.\n"
-"ICAClient 설치가 올바른지 확인하십시오."
-
-#: desktop/client/src/support.c:702
-msgid ""
-"Failed to spawn.\n"
-"Please verify your installation."
-msgstr ""
-"프로그램을 실행할 수 없습니다.\n"
-"설치가 올바른지 확인하십시오."
-
-#. create the widgets
-#: desktop/client/src/support.c:744
-msgid "GNOME Remote Desktop Error"
-msgstr "그놈 원격 데스크탑 오류"
-
-#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
-msgid "An error has occurred."
-msgstr "오류가 발생했습니다."
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
-msgid "Check this to enable desktop sharing in GNOME"
-msgstr "그놈에서 데스크탑 공유를 하려면 확인하십시오"
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
-msgid "Whether to enable desktop sharing"
-msgstr "데스크탑 공유 설정"
-
-#: desktop/gnome-remote-desktop.glade.h:1
-#: gnome-netinfo/gnome-netinfo.glade.h:1
-#: network-utilities/gnome-remote-shell.glade.h:1
-msgid "    "
-msgstr "    "
-
-#: desktop/gnome-remote-desktop.glade.h:2
-#: gnome-netinfo/gnome-netinfo.glade.h:5
-#: network-utilities/gnome-remote-shell.glade.h:2
-#: sync/entryconfigdialog.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: desktop/gnome-remote-desktop.glade.h:3
-msgid ""
-"<b>Connection settings</b>\n"
-"Type the name of the computer to open a new desktop session and/or the "
-"display number to connect to an already running session."
-msgstr ""
-"<b>연결 설정</b>\n"
-"새 데스크탑 세션을 열 컴퓨터 이름 또는 이미 실행중인 세션에 연결할 디스플레"
-"이 번호를 입력하십시오."
-
-#: desktop/gnome-remote-desktop.glade.h:5
-msgid ""
-"<b>Desktop settings</b>\n"
-"Select the size and color depth (not supported for all cases, so use with "
-"care) of you remote desktop."
-msgstr ""
-"<b>데스크탑 설정</b>\n"
-"원격 데스크탑의 크기와 색상수(모든 경우에서 지원되지 않습니다. 주의해서 쓰기 "
-"바랍니다)를 선택하십시오."
-
-#: desktop/gnome-remote-desktop.glade.h:7
-msgid ""
-"<b>Method</b>\n"
-"Select the method for connecting to the remote host. For Windows systems, "
-"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
-"work."
-msgstr ""
-"<b>방법</b>\n"
-"원격 호스트에 연결항 방법을 선택하십시오. 윈도우즈 시스템에는 VNC를 선택하십"
-"시오. 유닉스 시스템에는 보통 X11을 선택하지만 VNC도 동작할 것 입니다."
-
-#: desktop/gnome-remote-desktop.glade.h:9
-msgid "Color depth"
-msgstr "색상수"
-
-#: desktop/gnome-remote-desktop.glade.h:10
-msgid "Connect Now ..."
-msgstr "지금 연결..."
-
-#: desktop/gnome-remote-desktop.glade.h:11
-msgid "Display size"
-msgstr "화면 크기"
-
-#: desktop/gnome-remote-desktop.glade.h:12
-msgid "Display:"
-msgstr "화면:"
-
-#: desktop/gnome-remote-desktop.glade.h:14
-msgid "Host:"
-msgstr "호스트:"
-
-#: desktop/gnome-remote-desktop.glade.h:15
-msgid "VNC"
-msgstr "VNC"
-
-#: desktop/gnome-remote-desktop.glade.h:16
-msgid "X11"
-msgstr "X11"
-
-#: desktop/gnome-remote-desktop.glade.h:17
-msgid "by"
-msgstr ""
-
-#: desktop/preferences/interface.c:48 desktop/preferences/interface.c:63
-#: desktop/server/tray.c:170
-msgid "Desktop Sharing"
-msgstr "데스크탑 공유"
-
-#: desktop/preferences/interface.c:72
-msgid "_Share my desktop with others"
-msgstr "내 데스크탑을 다른 사람과 공유(_S)"
-
-#: desktop/preferences/interface.c:78
-msgid "Enable this option to allow others to view your desktop"
-msgstr "다른 사람이 내 데스크탑을 볼 수 있도록 허용합니다"
-
-#: desktop/preferences/interface.c:93
-msgid ""
-"The following information will need to be supplied by the user connecting to "
-"your desktop"
-msgstr "다음 정보는 데스크탑에 사용자가 연결할 때 필요합니다"
-
-#: desktop/preferences/interface.c:104 gnome-ppp/account-window.c:1023
-msgid "Password"
-msgstr "열쇠글"
-
-#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
-#, c-format
-msgid "Couldn't find pixmap file: %s"
-msgstr "그림 파일을 찾을 수 없습니다: %s"
-
-#: desktop/server/eggtrayicon.c:118
-msgid "Orientation"
-msgstr "방향"
-
-#: desktop/server/eggtrayicon.c:119
-msgid "The orientation of the tray."
-msgstr "트레이의 방향"
-
-#: desktop/server/tray.c:104
-msgid "Your desktop is viewable to others"
-msgstr "다른사람 한테 데스크탑이 보여질 수 있습니다"
-
-#: desktop/server/tray.c:160
-msgid "translator_credits"
-msgstr ""
-"류창우 <cwryu at debian dot org>\n"
-"차영호 <ganadist at mizi dot com>"
-
-#: desktop/server/tray.c:172
-msgid "Remote Desktop Sharing"
-msgstr "원격 데스크탑 공유"
-
-#: gnome-netinfo/callbacks.c:211
+#: src/callbacks.c:212
 msgid "Graphical user interface for common network utilities"
 msgstr "일반 네트워크 도구의 그래픽 사용자 인터페이스"
 
-#: gnome-netinfo/callbacks.c:213
+#: src/callbacks.c:214
 msgid "This is an untranslated version of GNOME Network Information"
 msgstr "This is an untranslated version of GNOME Network Information"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:2
+#: src/gnome-netinfo.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: src/gnome-netinfo.glade.h:2
 msgid "(eg. user@www.domain.com)"
 msgstr "(예: user@www.domain.com)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:3
+#: src/gnome-netinfo.glade.h:3
 #, fuzzy
 msgid "(for example: domain.com)"
 msgstr "(예: www.domain.com 또는 192.168.2.1)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:4
+#: src/gnome-netinfo.glade.h:4
 msgid "(for example: www.domain.com or 192.168.2.1)"
 msgstr "(예: www.domain.com 또는 192.168.2.1)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:6
+#: src/gnome-netinfo.glade.h:5
+msgid "*"
+msgstr "*"
+
+#: src/gnome-netinfo.glade.h:6
 msgid "0.0"
 msgstr "0.0"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:7
+#: src/gnome-netinfo.glade.h:7
 msgid "<span weight=\"bold\">@</span>"
 msgstr "<span weight=\"bold\">@</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:8
+#: src/gnome-netinfo.glade.h:8
 #, fuzzy
 msgid ""
 "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
 "information</span>"
 msgstr "<span weight=\"bold\">찾아 볼 네트워크 주소를 입력하십시오</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:9
+#: src/gnome-netinfo.glade.h:9
 msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
 msgstr "<span weight=\"bold\">찾아 볼 네트워크 주소를 입력하십시오</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:10
+#: src/gnome-netinfo.glade.h:10
 msgid ""
 "<span weight=\"bold\">Enter a user name and network address to finger that "
 "user</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:11
+#: src/gnome-netinfo.glade.h:11
 msgid "<span weight=\"bold\">Enter the network address to ping</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:12
+#: src/gnome-netinfo.glade.h:12
 msgid ""
 "<span weight=\"bold\">Enter the network address to scan for open ports</span>"
 msgstr ""
 "<span weight=\"bold\">열린 포트를 찾아 볼 네트워크 주소를 입력하십시오</span>"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:13
+#: src/gnome-netinfo.glade.h:13
 msgid ""
 "<span weight=\"bold\">Enter the network address to trace a route to</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:14
+#: src/gnome-netinfo.glade.h:14
 msgid "<span weight=\"bold\">Information</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:15
+#: src/gnome-netinfo.glade.h:15
 msgid "<span weight=\"bold\">Round trip time statistics</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:16
+#: src/gnome-netinfo.glade.h:16
 msgid ""
 "<span weight=\"bold\">Select the network device to get information on</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:17
+#: src/gnome-netinfo.glade.h:17
 msgid "<span weight=\"bold\">Select the type of information to display</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:18
+#: src/gnome-netinfo.glade.h:18
 msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:19
+#: src/gnome-netinfo.glade.h:19
 msgid "<span weight=\"bold\">Statistics</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:20
+#: src/gnome-netinfo.glade.h:20
 msgid "<span weight=\"bold\">Transmission statistics</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:21
+#: src/gnome-netinfo.glade.h:21
 msgid "Any / All Information"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:22
+#: src/gnome-netinfo.glade.h:22
 msgid "Average:"
 msgstr "평균:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:23
+#: src/gnome-netinfo.glade.h:23
 msgid "Broadcast:"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:24
+#: src/gnome-netinfo.glade.h:24
 msgid "CPU / OS Type"
 msgstr "CPU / OS 형식"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:25
+#: src/gnome-netinfo.glade.h:25
 msgid "Canonical Name"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:26
+#: src/gnome-netinfo.glade.h:26
 msgid "Clear _History"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:27
+#: src/gnome-netinfo.glade.h:27
 msgid "Collisions:"
 msgstr "충돌:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:28
+#: src/gnome-netinfo.glade.h:28
 msgid "Default Information"
 msgstr "기본 정보"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:29
+#: src/gnome-netinfo.glade.h:29
 msgid "Display active network services"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:30
+#: src/gnome-netinfo.glade.h:30
 msgid "Display multicast information"
 msgstr "멀티 캐스트 정보 보기"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:31
+#: src/gnome-netinfo.glade.h:31
 msgid "Display routing table information"
 msgstr "라우팅 테이블 정보 보기"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:32
+#: src/gnome-netinfo.glade.h:32
 msgid "Enter the network address to ping"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:420
+#: src/gnome-netinfo.glade.h:33 src/main.c:530
 msgid "Finger"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:34
+#: src/gnome-netinfo.glade.h:34
 msgid "Hardware address:"
 msgstr "하드웨어 주소:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:35
+#: src/gnome-netinfo.glade.h:35
 msgid "Host name for Address"
 msgstr "주소의 호스트 이름"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:36
+#: src/gnome-netinfo.glade.h:36
 msgid "IP address:"
 msgstr "IP 주소:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:37
+#: src/gnome-netinfo.glade.h:37
 msgid "Internet Address"
 msgstr "인터넷 주소"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:38
+#: src/gnome-netinfo.glade.h:38
 msgid "Link speed:"
 msgstr "연결 속도:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:375
+#: src/gnome-netinfo.glade.h:39 src/main.c:485
 msgid "Lookup"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:40
+#: src/gnome-netinfo.glade.h:40
 msgid "MTU:"
 msgstr "MTU:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:41
+#: src/gnome-netinfo.glade.h:41
 msgid "Mailbox Exchange"
 msgstr "메일박스 전달"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:42
+#: src/gnome-netinfo.glade.h:42
 msgid "Mailbox Information"
 msgstr "메일박스 정보"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:43
+#: src/gnome-netinfo.glade.h:43
 msgid "Maximum:"
 msgstr "최대:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:44
+#: src/gnome-netinfo.glade.h:44
 msgid "Minimum:"
 msgstr "최소:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:45
+#: src/gnome-netinfo.glade.h:45
 msgid "Multicast:"
 msgstr "멀티캐스트:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:46
+#: src/gnome-netinfo.glade.h:46
 msgid "Name Server"
 msgstr "네임 서버"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:47
+#: src/gnome-netinfo.glade.h:47
 msgid "Netmask:"
 msgstr "넷마스크:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:239
+#: src/gnome-netinfo.glade.h:48 src/main.c:349
 msgid "Netstat"
 msgstr "Netstat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:49
+#: src/gnome-netinfo.glade.h:49 src/main.c:110
 msgid "Network Information"
 msgstr "네트워크 정보"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:50
+#: src/gnome-netinfo.glade.h:50
 msgid "Packets loss:"
 msgstr "잃어버린 패킷:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:51
+#: src/gnome-netinfo.glade.h:51
 msgid "Packets received:"
 msgstr "받은 패킷:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:52
+#: src/gnome-netinfo.glade.h:52
 msgid "Packets transmitted:"
 msgstr "보낸 패킷:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:147
+#: src/gnome-netinfo.glade.h:53 src/main.c:257
 msgid "Ping"
 msgstr "Ping"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:54
+#: src/gnome-netinfo.glade.h:54
 msgid "Port _Scan"
 msgstr "포트 검색(_S)"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:55
+#: src/gnome-netinfo.glade.h:55
 msgid "Received bytes:"
 msgstr "받은 바이트 수:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:56
+#: src/gnome-netinfo.glade.h:56
 msgid "Received packets:"
 msgstr "받은 패킷 수:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:57
+#: src/gnome-netinfo.glade.h:57
 msgid "Reception errors:"
 msgstr "받기 에러 횟수:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:337
+#: src/gnome-netinfo.glade.h:58 src/main.c:447
 msgid "Scan"
 msgstr "검색"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:59
+#: src/gnome-netinfo.glade.h:59
 msgid "Select network device from list"
 msgstr "목록에서 네트워크 장치 선택"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:60
+#: src/gnome-netinfo.glade.h:60
 msgid "Send only"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:61
+#: src/gnome-netinfo.glade.h:61
 msgid "Send unlimited requests (pings)"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:62
+#: src/gnome-netinfo.glade.h:62
 msgid "Start-of-authority"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:63
+#: src/gnome-netinfo.glade.h:63
 msgid "State:"
 msgstr "상태:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:64
+#: src/gnome-netinfo.glade.h:64
 msgid "Text Information"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:195
+#: src/gnome-netinfo.glade.h:65 src/main.c:305
 msgid "Trace"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:66
+#: src/gnome-netinfo.glade.h:66
 msgid "Transmission errors:"
 msgstr "보내기 오류:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:67
+#: src/gnome-netinfo.glade.h:67
 msgid "Transmitted bytes:"
 msgstr "보낸 바이트 수:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:68
+#: src/gnome-netinfo.glade.h:68
 msgid "Transmitted packets:"
 msgstr "보낸 패킷 수:"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:69
+#: src/gnome-netinfo.glade.h:69
 msgid "Well Known Services"
 msgstr "알려진 서비스"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:471
+#: src/gnome-netinfo.glade.h:70 src/main.c:581
 msgid "Whois"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:71
+#: src/gnome-netinfo.glade.h:71
 #, fuzzy
 msgid "_Devices"
 msgstr "서비스"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:72
+#: src/gnome-netinfo.glade.h:72
 msgid "_Finger"
 msgstr "_Finger"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:73
+#: src/gnome-netinfo.glade.h:73
 msgid "_Information"
 msgstr "_Information"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:74
+#: src/gnome-netinfo.glade.h:74
 msgid "_Lookup"
 msgstr "_Lookup"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:75
+#: src/gnome-netinfo.glade.h:75
 msgid "_Netstat"
 msgstr "_Netstat"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:76
+#: src/gnome-netinfo.glade.h:76
 msgid "_Ping"
 msgstr "_Ping"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:77
+#: src/gnome-netinfo.glade.h:77
 msgid "_Traceroute"
 msgstr "_Traceroute"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:78
+#: src/gnome-netinfo.glade.h:78
 msgid "_Whois"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:79
+#: src/gnome-netinfo.glade.h:79
 msgid "ms"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:80 gnome-netinfo/info.h:27
+#: src/gnome-netinfo.glade.h:80 src/info.h:27
 msgid "not available"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:81
+#: src/gnome-netinfo.glade.h:81
 msgid "requests (pings)"
 msgstr ""
 
-#: gnome-netinfo/info.c:252
+#: src/info.c:277
 msgid "Active"
 msgstr ""
 
-#: gnome-netinfo/info.c:254
+#: src/info.c:279
 msgid "Inactive"
 msgstr ""
 
-#: gnome-netinfo/info.c:259
+#: src/info.c:284
 msgid "Loopback"
 msgstr ""
 
-#: gnome-netinfo/info.c:272
+#: src/info.c:297
 msgid "Enabled"
 msgstr "쓰기"
 
-#: gnome-netinfo/info.c:274
+#: src/info.c:299
 msgid "Disabled"
 msgstr "걸기"
 
 #. The info output in a text format (to copy on clipboard)
-#: gnome-netinfo/info.c:391
+#: src/info.c:419
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "네트워크 장치:\t%s\n"
 
-#: gnome-netinfo/info.c:392
+#: src/info.c:420
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "하드웨어 주소:\t%s\n"
 
-#: gnome-netinfo/info.c:393
+#: src/info.c:421
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP 주소:\t%s\n"
 
-#: gnome-netinfo/info.c:394
+#: src/info.c:422
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "넷마스크:\t%s\n"
 
-#: gnome-netinfo/info.c:395
+#: src/info.c:423
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "브로드캐스트:\t%s\n"
 
-#: gnome-netinfo/info.c:396
+#: src/info.c:424
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "멀티캐스트:\t%s\n"
 
-#: gnome-netinfo/info.c:397
+#: src/info.c:425
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: gnome-netinfo/info.c:398
+#: src/info.c:426
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "연결 속도:\t%s\n"
 
-#: gnome-netinfo/info.c:399
+#: src/info.c:427
 #, c-format
 msgid "State:\t%s\n"
 msgstr "상태:\t%s\n"
 
-#: gnome-netinfo/info.c:401
+#: src/info.c:429
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "보낸 패킷 수:\t%s\n"
 
-#: gnome-netinfo/info.c:402
+#: src/info.c:430
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "보내기 오류 횟수:\t%s\n"
 
-#: gnome-netinfo/info.c:403
+#: src/info.c:431
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "받은 패킷 수:\t%s\n"
 
-#: gnome-netinfo/info.c:404
+#: src/info.c:432
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "받기 오류 횟수:\t%s\n"
 
-#: gnome-netinfo/info.c:405
+#: src/info.c:433
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "충돌:\t%s\n"
 
-#. adds columns
-#: gnome-netinfo/lookup.c:272 sync/entrylist.c:67
+#: src/lookup.c:272
 msgid "Name"
 msgstr "이름"
 
-#: gnome-netinfo/lookup.c:280
+#: src/lookup.c:280
 msgid "TTL"
 msgstr "TTL"
 
-#: gnome-netinfo/lookup.c:289
+#: src/lookup.c:289
 msgid "Address Type"
 msgstr "주소 형식"
 
-#: gnome-netinfo/lookup.c:299
+#: src/lookup.c:299
 msgid "Record Type"
 msgstr "레코드 형식"
 
-#: gnome-netinfo/lookup.c:308
+#: src/lookup.c:308
 msgid "Address"
 msgstr "주소"
 
@@ -1023,11 +474,64 @@ msgstr "주소"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/lookup.c:336
+#: src/lookup.c:336
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr ""
 
-#: gnome-netinfo/main.c:76
+#: src/main.c:75
+msgid "Load information for a network device"
+msgstr ""
+
+#: src/main.c:76
+msgid "DEVICE"
+msgstr ""
+
+#: src/main.c:78
+msgid "Send a ping to a network address"
+msgstr ""
+
+#: src/main.c:79 src/main.c:85 src/main.c:88 src/main.c:91
+msgid "HOST"
+msgstr ""
+
+#: src/main.c:81
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr ""
+
+#: src/main.c:82
+msgid "COMMAND"
+msgstr ""
+
+#: src/main.c:84
+msgid "Trace a route to a network address"
+msgstr ""
+
+#: src/main.c:87
+#, fuzzy
+msgid "Port scan a network address"
+msgstr "주소의 호스트 이름"
+
+#: src/main.c:90
+msgid "Look up a network address"
+msgstr ""
+
+#: src/main.c:93
+msgid "Finger command to run"
+msgstr ""
+
+#: src/main.c:94
+msgid "USER"
+msgstr ""
+
+#: src/main.c:96
+msgid "Perform a whois lookup for a network domain"
+msgstr ""
+
+#: src/main.c:97
+msgid "DOMAIN"
+msgstr ""
+
+#: src/main.c:116
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
@@ -1035,106 +539,109 @@ msgid ""
 msgstr ""
 "파일 %s(이)가 없습니다 gnome-netinfo가 올바르게 설치되었는 지 확인하십시오"
 
-#: gnome-netinfo/netinfo.c:128
+#: src/netinfo.c:157
 #, fuzzy
 msgid "Network address not specified"
 msgstr "호스트가 지정되지 않았습니다."
 
-#: gnome-netinfo/netinfo.c:136
+#: src/netinfo.c:165
 #, fuzzy, c-format
 msgid "The host '%s' cannot be found"
 msgstr "호스트를 찾을 수 없습니다."
 
-#: gnome-netinfo/netinfo.c:278
+#: src/netinfo.c:309
 msgid "Information not available"
 msgstr ""
 
-#: gnome-netinfo/netinfo.c:363
+#: src/netinfo.c:395
 msgid "Stop"
 msgstr ""
 
-#: gnome-netinfo/netinfo.c:369
+#: src/netinfo.c:401
 msgid "Run"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:363
+#: src/netstat.c:403
 msgid "Protocol"
 msgstr "프로토콜"
 
-#: gnome-netinfo/netstat.c:370
+#: src/netstat.c:410
 msgid "IP Source"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:378
+#: src/netstat.c:418
 msgid "Port/Service"
 msgstr "포트/서비스"
 
-#: gnome-netinfo/netstat.c:386 gnome-netinfo/scan.c:289
+#: src/netstat.c:426 src/scan.c:289
 msgid "State"
 msgstr "상태"
 
-#: gnome-netinfo/netstat.c:496
+#: src/netstat.c:549
+msgid "Destination/Prefix"
+msgstr ""
+
+#: src/netstat.c:551
 msgid "Destination"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:502
+#: src/netstat.c:558
 msgid "Gateway"
 msgstr "게이트웨이"
 
-#. netmask
-#: gnome-netinfo/netstat.c:509 gnome-ppp/account-window.c:1106
+#: src/netstat.c:566
 msgid "Netmask"
 msgstr "넷마스크"
 
-#: gnome-netinfo/netstat.c:516 gnome-netinfo/netstat.c:622
+#: src/netstat.c:574 src/netstat.c:680
 msgid "Interface"
 msgstr "인터페이스"
 
-#: gnome-netinfo/netstat.c:629
+#: src/netstat.c:687
 msgid "Member"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:637
+#: src/netstat.c:695
 msgid "Group"
 msgstr ""
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:679
+#: src/netstat.c:737
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr ""
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:685
+#: src/netstat.c:743
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr ""
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:690
+#: src/netstat.c:748
 msgid "Interface\tMember\tGroup\n"
 msgstr ""
 
-#: gnome-netinfo/ping.c:376
+#: src/ping.c:378
 msgid "Bytes"
 msgstr ""
 
-#: gnome-netinfo/ping.c:383
+#: src/ping.c:385
 msgid "Source"
 msgstr ""
 
-#: gnome-netinfo/ping.c:391
+#: src/ping.c:393
 msgid "Seq"
 msgstr ""
 
-#: gnome-netinfo/ping.c:401
+#: src/ping.c:403
 msgid "Time"
 msgstr ""
 
-#: gnome-netinfo/ping.c:409
+#: src/ping.c:411
 msgid "Units"
 msgstr ""
 
@@ -1142,77 +649,77 @@ msgstr ""
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/ping.c:435
+#: src/ping.c:437
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr ""
 
 #. The ping output in a text format (to copy on clipboard)
-#: gnome-netinfo/ping.c:450
+#: src/ping.c:452
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "최소 시간:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:451
+#: src/ping.c:453
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "평균 시간:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:452
+#: src/ping.c:454
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "최대 시간:\t%s ms\n"
 
-#: gnome-netinfo/ping.c:454
+#: src/ping.c:456
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "패킷 보냄:\t%s\n"
 
-#: gnome-netinfo/ping.c:456
+#: src/ping.c:458
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "패킷 받음:\t%s\n"
 
-#: gnome-netinfo/ping.c:458
+#: src/ping.c:460
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "패킷 잃음:\t%s\n"
 
-#: gnome-netinfo/scan.c:151
+#: src/scan.c:151
 msgid "unknown"
 msgstr "알 수 없음"
 
-#: gnome-netinfo/scan.c:281
+#: src/scan.c:281
 msgid "Port"
 msgstr "포트"
 
-#: gnome-netinfo/scan.c:297
+#: src/scan.c:297
 msgid "Service"
 msgstr "서비스"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/scan.c:319
+#: src/scan.c:319
 msgid "Port\tState\tService\n"
 msgstr "포트\t상태\t서비스\n"
 
-#: gnome-netinfo/traceroute.c:260
+#: src/traceroute.c:260
 msgid "Hop"
 msgstr ""
 
-#: gnome-netinfo/traceroute.c:268
+#: src/traceroute.c:268
 msgid "Hostname"
 msgstr "호스트이름"
 
-#: gnome-netinfo/traceroute.c:276
+#: src/traceroute.c:276
 msgid "IP"
 msgstr "IP"
 
-#: gnome-netinfo/traceroute.c:287
+#: src/traceroute.c:287
 msgid "Time 1"
 msgstr ""
 
-#: gnome-netinfo/traceroute.c:297
+#: src/traceroute.c:297
 msgid "Time 2"
 msgstr ""
 
@@ -1220,847 +727,911 @@ msgstr ""
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/traceroute.c:323
+#: src/traceroute.c:323
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr ""
 
-#: gnome-netinfo/utils.c:227
+#: src/utils.c:227
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: 명령을 찾을 수 없습니다"
 
-#: gnome-ppp/account-window.c:161
-msgid "Receive"
-msgstr "받기"
-
-#: gnome-ppp/account-window.c:162
-msgid "Enter search string"
-msgstr "찾기 문자열 입력"
-
-#: gnome-ppp/account-window.c:165
-msgid "Send"
-msgstr "보내기"
-
-#: gnome-ppp/account-window.c:166
-msgid "Enter transmission string"
-msgstr "보낼 문자열 입력"
-
-#: gnome-ppp/account-window.c:169
-msgid "Send User Name"
-msgstr "사용자 이름 보내기"
-
-#: gnome-ppp/account-window.c:170
-msgid "Username taken from Authentication"
-msgstr "사용자 이름을 인증과정에서 가져오기"
-
-#: gnome-ppp/account-window.c:173
-msgid "Send User Password"
-msgstr "사용자 이름 보내기"
-
-#: gnome-ppp/account-window.c:174
-msgid "Password taken from Authentication"
-msgstr "암호를 인증과정에서 가져오기"
-
-#: gnome-ppp/account-window.c:177
-msgid "Dialog Box Input"
-msgstr "동적 사용자 입력"
-
-#: gnome-ppp/account-window.c:178
-msgid "Enter text to be used as a dialog message when prompted for input"
-msgstr "숨겨진 입력을 알려주고, 기호 입력"
-
-#: gnome-ppp/account-window.c:276
-msgid "open_account_window(): account=NULL with clone flag"
-msgstr "open_account_window(): clone flag에서 account=NULL"
-
-#: gnome-ppp/account-window.c:302
-msgid "open_account_window(): calling arguments invalid"
-msgstr "open_account_window(): 부를 때 인자가 잘못되었습니다"
-
-#. dial command entry widgets
-#: gnome-ppp/account-window.c:342 gnome-ppp/modem-window.c:288
-msgid "Dial"
-msgstr "전화 걸기"
-
-#: gnome-ppp/account-window.c:348
-msgid "Authentication"
-msgstr "인증"
-
-#. dns server entry
-#: gnome-ppp/account-window.c:354 gnome-ppp/account-window.c:1223
-msgid "IP Address"
-msgstr "IP 주소"
-
-#: gnome-ppp/account-window.c:360
-msgid "DNS"
-msgstr "DNS"
-
-#: gnome-ppp/account-window.c:366
-msgid "Script"
-msgstr "스크립트"
-
-#: gnome-ppp/account-window.c:372
-msgid "PPP"
-msgstr "PPP"
-
-#: gnome-ppp/account-window.c:378
-msgid "Modem"
-msgstr "모뎀"
-
-#: gnome-ppp/account-window.c:805
-msgid "Account Name"
-msgstr "계정 이름"
-
-#. redial spin button
-#: gnome-ppp/account-window.c:817
-msgid "Redial Maximum"
-msgstr "전화 다시거는 최대 횟수"
-
-#. dial timeout spin button
-#: gnome-ppp/account-window.c:838
-msgid "Dial Timeout (sec)"
-msgstr "전화걸기 시간 제한 (초)"
-
-#. phone number frame
-#: gnome-ppp/account-window.c:859
-msgid "Phone Numbers"
-msgstr "전화 번호"
-
-#. Phone number
-#: gnome-ppp/account-window.c:871
-msgid "#"
-msgstr "번호"
-
-#. add/remove buttons
-#: gnome-ppp/account-window.c:892 gnome-ppp/account-window.c:1242
-#: gnome-ppp/account-window.c:1326 gnome-ppp/account-window.c:1464
-msgid "Add"
-msgstr "더하기"
-
-#: gnome-ppp/account-window.c:906 gnome-ppp/account-window.c:1256
-#: gnome-ppp/account-window.c:1340 gnome-ppp/account-window.c:1490
-#: sync/main.c:60 sync/main.c:170
-msgid "Remove"
-msgstr "지우기"
-
-#: gnome-ppp/account-window.c:958
-msgid "PAP/CHAP"
-msgstr "PAP/CHAP"
-
-#: gnome-ppp/account-window.c:970
-msgid "User Name"
-msgstr "사용자 이름"
-
-#: gnome-ppp/account-window.c:990
-msgid "Remote Name"
-msgstr "원격 사용자 이름"
-
-#. password
-#: gnome-ppp/account-window.c:1011
-msgid "Hidden Password"
-msgstr "숨겨진 열쇠글"
-
-#. local ip address
-#: gnome-ppp/account-window.c:1061
-msgid "Local IP Address"
-msgstr "로칼 IP 주소"
-
-#: gnome-ppp/account-window.c:1072 gnome-ppp/account-window.c:1117
-#: gnome-ppp/account-window.c:1162
-msgid "Dynamic"
-msgstr "동적"
-
-#: gnome-ppp/account-window.c:1086 gnome-ppp/account-window.c:1131
-#: gnome-ppp/account-window.c:1176
-msgid "Static"
-msgstr "정적"
-
-#. remote ip address
-#: gnome-ppp/account-window.c:1151
-msgid "Remote IP Address"
-msgstr "원격 IP 주소"
-
-#. dns server list
-#: gnome-ppp/account-window.c:1210
-msgid "DNS Servers"
-msgstr "DNS 서버"
-
-#. search domains list
-#: gnome-ppp/account-window.c:1295
-msgid "Search Domains"
-msgstr "찾기 도메인"
-
-#: gnome-ppp/account-window.c:1306
-msgid "Domain Name"
-msgstr "도메인 이름"
-
-#: gnome-ppp/account-window.c:1388
-msgid "Action"
-msgstr "동작"
-
-#: gnome-ppp/account-window.c:1389
-msgid "Text"
-msgstr "텍스트"
-
-#. script list
-#: gnome-ppp/account-window.c:1397
-msgid "Login Script"
-msgstr "로그인 스크립트"
-
-#: gnome-ppp/account-window.c:1477
-msgid "Insert"
-msgstr "넣기"
-
-#: gnome-ppp/account-window.c:1551
-msgid "Add Default Route"
-msgstr "기본 라우팅 더하기"
-
-#: gnome-ppp/account-window.c:1567
-msgid "Lock Dialout Device"
-msgstr "전화걸기 장치 잠그기"
-
-#. mtu, mru spin buttons
-#: gnome-ppp/account-window.c:1582
-msgid "Maximum Transmission Unit"
-msgstr "최대 송신 단위(MTU)"
-
-#: gnome-ppp/account-window.c:1604
-msgid "Maximum Receive Unit"
-msgstr "최대 수신 단위(MRU)"
-
-#: gnome-ppp/account-window.c:1625
-msgid "Run Program After Connect"
-msgstr "연결 후에 프로그램 실행"
-
-#: gnome-ppp/account-window.c:1637
-msgid "Run Program After Disconnect"
-msgstr "연결끊기 후에 프로그램 실행"
-
-#. modem device
-#: gnome-ppp/account-window.c:1672
-msgid "Modem Device"
-msgstr "모뎀 장치"
-
-#. modem speed
-#: gnome-ppp/account-window.c:1698
-msgid "Connection Speed"
-msgstr "연결 속도"
-
-#. modem flow control
-#: gnome-ppp/account-window.c:1724
-msgid "Flow Control"
-msgstr "흐름 제어"
-
-#. modem line termination
-#: gnome-ppp/account-window.c:1750
-msgid "Line Termination"
-msgstr ""
-
-#. modem speaker volume
-#: gnome-ppp/account-window.c:1776
-msgid "Modem Speaker Volume"
-msgstr "모뎀 스피커 볼륨"
-
-#. modem edit commands
-#: gnome-ppp/account-window.c:1793
-msgid " Edit Modem Commands "
-msgstr " 모뎀 명령어 편집 "
-
-#: gnome-ppp/account-window.c:2252
-msgid "**PASSWORD**"
-msgstr "**열쇠글**"
-
-#: gnome-ppp/account-window.c:2256
-msgid "script_type_cb(): optionmenu data bad"
-msgstr "script_type_cb(): 잘못된 옵션 메뉴 데이타"
-
-#: gnome-ppp/dial-window.c:143
-msgid "_Debug Terminal"
-msgstr "터미널 디버그(_D)"
-
-#: gnome-ppp/dial-window.c:150
-msgid "_New..."
-msgstr "새 계정(_N)..."
-
-#: gnome-ppp/dial-window.c:151
-msgid "D_uplicate..."
-msgstr "복사(_U)..."
-
-#: gnome-ppp/dial-window.c:152
-msgid "_Edit..."
-msgstr "편집(_E)..."
-
-#: gnome-ppp/dial-window.c:153
-msgid "_Delete..."
-msgstr "지우기(_D)..."
-
-#: gnome-ppp/dial-window.c:172
-msgid "_Account"
-msgstr "계정(_A)"
-
-#. set up the main application
-#: gnome-ppp/dial-window.c:210
-msgid "gnome-ppp"
-msgstr "gnome-ppp"
-
-#: gnome-ppp/dial-window.c:358
-msgid "Dialing"
-msgstr "전화 거는 중"
-
-#: gnome-ppp/dial-window.c:362
-msgid "Connected"
-msgstr "연결됨"
-
-#: gnome-ppp/dial-window.c:385
-msgid "refresh_dial_app(): gtk_clist_append failed."
-msgstr "refresh_dial_app(): gtk_clist_append 실패."
-
-#: gnome-ppp/dial-window.c:409 gnome-ppp/dial-window.c:417
-msgid "Connect"
-msgstr "연결"
-
-#: gnome-ppp/dial-window.c:427
-msgid "Cancel"
-msgstr "취소"
-
-#: gnome-ppp/dial-window.c:431
-msgid "Disconnect"
-msgstr "연결 끊기"
-
-#: gnome-ppp/dial-window.c:452
-msgid "You must disconnect before closing."
-msgstr "닫기 전에 연결을 끊어야 합니다."
-
-#: gnome-ppp/dial-window.c:742
-msgid "Are you sure you want to delete this account?\n"
-msgstr "정말로 이 계정을 지우시겠습니까?\n"
-
-#: gnome-ppp/dial-window.c:752
-msgid "The account cannot be deleted."
-msgstr "이 계정은 지울 수 없습니다"
-
-#: gnome-ppp/dial-window.c:758
-msgid "The account is in use and cannot be deleted."
-msgstr "이 계정은 사용중이고 지울 수 없습니다"
-
-#: gnome-ppp/dial-window.c:781
-msgid "GNOME Internet Dialer"
-msgstr "그놈 인터넷 전화걸기"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:181
-msgid "Raise PPP Link"
-msgstr "PPP 연결 띄우기"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:213 sync/main.c:67
-msgid "About..."
-msgstr "정보..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:219
-msgid "Properties..."
-msgstr "등록 정보..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:223
-msgid "Offline"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:432
-msgid "Connecting..."
-msgstr "연결중..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:437
-msgid "PPP Connected"
-msgstr "PPP 연결됨"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:443
-msgid "PPP Error!"
-msgstr "PPP 오류!"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:483
-msgid "That account is already in use.\n"
-msgstr "이 계정은 사용중입니다.\n"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:566
-msgid "GNOME PPP Dialer Applet"
-msgstr "그놈 PPP 전화걸기 애플릿"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:569
-msgid ""
-"An unnecessarily nice looking applet for GNOME's panel for easy control of "
-"PPP network links."
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:691
-msgid "PPP Applet Properties"
-msgstr "PPP 애플릿 기본 설정"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:706
-msgid "Animation"
-msgstr "움직임"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:712
-msgid "Small"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:716
-msgid "Large"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:720
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:769
-msgid "None"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:724
-msgid "Options"
-msgstr "옵션"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:730
-msgid "Freeze Animation on Connect"
-msgstr "연결되면 움직임 멈추기"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:737
-msgid "Disconnect PPP on GNOME logout"
-msgstr "그놈에서 로그아웃 할 때 PPP연결을 끊음"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:745
-msgid "Timer"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:751
-msgid "Label"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:760
-msgid "Tooltip"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:778
-msgid "Animation Speed"
-msgstr "움직임 속도"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:791
-msgid "PPP Applet"
-msgstr "PPP 애플릿"
-
-#: gnome-ppp/libgnome_ppp/connect.c:203
-msgid "---NEW CONNECTION---"
-msgstr "---새로운 연결---"
-
-#: gnome-ppp/libgnome_ppp/msg.c:26
-msgid "Account already connected."
-msgstr "계정이 이미 연결되었습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:27
-msgid "Starting PPP Connection."
-msgstr "PPP연결 시작중."
-
-#: gnome-ppp/libgnome_ppp/msg.c:28
-msgid "You don't have permission to execute pppd."
-msgstr "pppd를 실행할 수 있는 권한이 없습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:29
-msgid "The modem is in use by another program."
-msgstr "모뎀이 다른 프로그램에 의해 사용중입니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:30
-msgid "Running pppd."
-msgstr "pppd 실행중."
-
-#: gnome-ppp/libgnome_ppp/msg.c:31
-msgid "Closing connection."
-msgstr "연결 닫는 중."
-
-#: gnome-ppp/libgnome_ppp/msg.c:32
-msgid "The pppd program failed to run gnome-ppp-chat."
-msgstr "pppd 프로그램이 gnome-ppp-chat을 실행하는 데 실패했습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:33
-msgid "The modem could not be hung up."
-msgstr "모뎀을 끊을 수 없습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:34
-msgid "Initalizing modem."
-msgstr "모뎀 초기화중."
-
-#: gnome-ppp/libgnome_ppp/msg.c:35
-msgid "Your modem is not responding to initalization."
-msgstr "모뎀이 초기화 명령에 응답하지 않습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:36
-msgid "The command to set the volume on your modem's speaker failed."
-msgstr "모뎀 소리 크기를 바꾸는 명령이 실패했습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:37
-msgid "No answer after maximum number of re-dial attempts."
-msgstr "최대 횟수만큼 전화를 걸었는데도 응답이 없습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:38
-msgid "No phone numbers specified for this account."
-msgstr "이 계정에 대한 전화 번호가 지정되지 않았습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:39
-msgid "Dialing."
-msgstr "전화 거는 중."
-
-#: gnome-ppp/libgnome_ppp/msg.c:40
-msgid "Dialing timeout."
-msgstr "시간 제한이 지났습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:41
-msgid "No dialtone."
-msgstr "신호음이 안 들림."
-
-#: gnome-ppp/libgnome_ppp/msg.c:42
-msgid "Number busy."
-msgstr "번호가 통화중입니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:43
-msgid "Ring, but no answer."
-msgstr "걸었지만 응답이 없습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:44
-msgid "Connection failure, reason unknown."
-msgstr "연결 실패, 이유를 알 수 없습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:45
-msgid "Connected."
-msgstr "연결."
-
-#: gnome-ppp/libgnome_ppp/msg.c:46
-msgid "The modem lost connection with remote host."
-msgstr "모뎀과 원격 호스트와의 연결이 끊어졌습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:47
-msgid "Running Script."
-msgstr "스크립트 실행중."
-
-#: gnome-ppp/libgnome_ppp/msg.c:48
-msgid "Script Complete."
-msgstr "스크립트 완료."
-
-#: gnome-ppp/libgnome_ppp/msg.c:49
-msgid "PPP connection established."
-msgstr "PPP 연결이 이루어졌습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:50
-msgid "Failed to establish a PPP connection."
-msgstr "PPP 연결에 실패했습니다."
-
-#: gnome-ppp/libgnome_ppp/msg.c:51
-msgid "The pppd daemon died unexpectedly."
-msgstr "pppd 데몬이 갑자기 죽었습니다."
-
-#: gnome-ppp/modem-window.c:83
-msgid "open_modem_window(): account=NULL"
-msgstr "open_modem_window(): account=NULL"
-
-#: gnome-ppp/modem-window.c:120
-msgid "Commands"
-msgstr ""
-
-#: gnome-ppp/modem-window.c:126
-msgid "Responses"
-msgstr ""
-
-#. initialization command entry widgets
-#: gnome-ppp/modem-window.c:268 gnome-ppp/modem-window.c:408
-msgid "Initialization"
-msgstr "초기화"
-
-#. hangup command entry widgets
-#: gnome-ppp/modem-window.c:307 gnome-ppp/modem-window.c:428
-msgid "Hangup"
-msgstr ""
-
-#. volume mute command entry widgets
-#: gnome-ppp/modem-window.c:327
-msgid "Volume Mute"
-msgstr "소리 끄기"
-
-#. volume low command entry widgets
-#: gnome-ppp/modem-window.c:347
-msgid "Volume Low"
-msgstr "소리 낮추기"
-
-#. volume high command entry widgets
-#: gnome-ppp/modem-window.c:367
-msgid "Volume High"
-msgstr "소리 높이기"
-
-#. connection response entry widgets
-#: gnome-ppp/modem-window.c:448
-msgid "Connection"
-msgstr "연결"
-
-#. busy response entry widgets
-#: gnome-ppp/modem-window.c:468
-msgid "Busy"
-msgstr "통화중"
-
-#. no answer response entry widgets
-#: gnome-ppp/modem-window.c:488
-msgid "No Answer"
-msgstr "응답 없음"
-
-#. no carrier response entry widgets
-#: gnome-ppp/modem-window.c:508
-msgid "No Carrier"
-msgstr ""
-
-#. no dialtone response entry widgets
-#: gnome-ppp/modem-window.c:528
-msgid "No Dialtone"
-msgstr "신호음 없음"
-
-#: network-utilities/gnome-remote-shell.c:243
-msgid "No host specified."
-msgstr "호스트가 지정되지 않았습니다."
-
-#: network-utilities/gnome-remote-shell.c:292
-msgid "A user name is required for SSH"
-msgstr "SSH에 사용자 이름이 필요합니다"
-
-#: network-utilities/gnome-remote-shell.c:420
-msgid "The host cannot be found."
-msgstr "호스트를 찾을 수 없습니다."
-
-#: network-utilities/gnome-remote-shell.glade.h:3
-msgid "<span weight=\"bold\">Connect to remote host</span>"
-msgstr "<span weight=\"bold\">리모트 호스트에 연결</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:4
-msgid "<span weight=\"bold\">Method</span>"
-msgstr "<span weight=\"bold\">방법</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:5
-msgid "<span weight=\"bold\">Window size</span>"
-msgstr "<span weight=\"bold\">창 크기</span>"
-
-#: network-utilities/gnome-remote-shell.glade.h:7
-msgid "Connect to remote host"
-msgstr "원격 호스트에 연결"
-
-#: network-utilities/gnome-remote-shell.glade.h:8
-msgid "H_eight:"
-msgstr "높이(_E):"
-
-#: network-utilities/gnome-remote-shell.glade.h:9
-msgid "H_ost:"
-msgstr "호스트(_O):"
-
-#: network-utilities/gnome-remote-shell.glade.h:10
-msgid "Regular shell (_Telnet)"
-msgstr "보통 쉘 (텔넷)(_T)"
-
-#: network-utilities/gnome-remote-shell.glade.h:11
-msgid "Use _default"
-msgstr "기본값 쓰기(_D)"
-
-#: network-utilities/gnome-remote-shell.glade.h:12
-msgid "_Port:"
-msgstr "포트(_P):"
-
-#: network-utilities/gnome-remote-shell.glade.h:13
-msgid "_Secure shell (SSH)"
-msgstr "보안 쉘 (_SSH)"
-
-#: network-utilities/gnome-remote-shell.glade.h:14
-msgid "_User:"
-msgstr "사용자(_U):"
-
-#: network-utilities/gnome-remote-shell.glade.h:15
-msgid "_Width:"
-msgstr "너비(_W):"
-
-#: network-utilities/gnome-remote-shell.glade.h:16
-msgid "characters"
-msgstr "문자"
-
-#: pws/pws-preferences-support.c:273
-msgid "Expander Size"
-msgstr ""
-
-#: pws/pws-preferences-support.c:274
-msgid "Size of the expander arrow"
-msgstr ""
-
-#: pws/pws-preferences-widget.c:103
-msgid "Web folder:"
-msgstr "웹 폴더:"
-
-#: pws/pws-preferences-widget.c:107
-msgid "Select the folder to be published"
-msgstr ""
-
-#: pws/pws-preferences-widget.c:115 pws/pws-preferences-widget.c:116
-msgid "Additional options"
-msgstr ""
-
-#: pws/pws-preferences-widget.c:138
-msgid "Port number:"
-msgstr "포트 번호"
-
-#: pws/pws-preferences-widget.c:157
-msgid "Time out:"
-msgstr "시간 제한:"
-
-#: pws/pws-preferences-widget.c:176
-msgid "Keep alive"
-msgstr "연결 유지"
-
-#: pws/pws.c:83
-msgid "/_Preferences"
-msgstr "/기본 설정(_P)"
-
-#: pws/pws.c:84
+#~ msgid "GNOME Remote Desktop Applet"
+#~ msgstr "그놈 원격 데스크탑 애플릿"
+
+#~ msgid "Connect to a remote desktop computer"
+#~ msgstr "원격 컴퓨터와 연결합니다"
+
+#~ msgid "Remote Desktop Client"
+#~ msgstr "원격 데스크탑 클라이언트"
+
+#~ msgid "640 x 480 pixels"
+#~ msgstr "640 x 480 해상도"
+
+#~ msgid "800 x 600 pixels"
+#~ msgstr "800 x 600 해상도"
+
+#~ msgid "1024 x 768 pixels"
+#~ msgstr "1024 x 768 해상도"
+
+#~ msgid "1152 x 864 pixels"
+#~ msgstr "1152 x 864 해상도"
+
+#~ msgid "1280 x 960 pixels"
+#~ msgstr "1280 x 960 해상도"
+
+#~ msgid "256 Colors"
+#~ msgstr "256색상"
+
+#~ msgid "GNOME Remote Desktop"
+#~ msgstr "그놈 원격 데스크탑"
+
+#~ msgid "Compu_ter:"
+#~ msgstr "컴퓨터(_T):"
+
+#~ msgid "Enter the name or address of the remote system."
+#~ msgstr "원격 시스템의 이름이나 주소를 넣으십시오."
+
+#~ msgid "Select the protocol to use for this connection."
+#~ msgstr "연결에 사용될 프로토콜을 선택하십시오."
+
+#~ msgid ""
+#~ "RDP protocol is used to connect to Microsoft Terminal Servers and Windows "
+#~ "XP systems with desktop sharing."
+#~ msgstr ""
+#~ "RDP 프로토콜은 마이크로소프트 터미널 서버와 윈도우즈 XP 시스템의 데스크탑 "
+#~ "공유와 연결할 때 사용됩니다."
+
+#~ msgid ""
+#~ "VNC protocol is used to connect to systems sharing the desktop by using "
+#~ "VNC."
+#~ msgstr ""
+#~ "VNC 프로토콜은 VNC으로 데스크탑을 공유한 시스템에 연결할 때 사용됩니다."
+
+#~ msgid "XDMCP protocol uses Xnest to connect to servers running X."
+#~ msgstr "XDMCP 프로토콜은 Xnest를 X가 실행되는 서버에 연결합니다."
+
+#~ msgid "ICA protocol is used to connect to Citrix servers."
+#~ msgstr "ICA 프로토콜은 Citrix 서버에 연결될 때 사용됩니다."
+
+#~ msgid "Prof_ile Launcher:"
+#~ msgstr "프로파일 실행기:"
+
+#~ msgid "Select a saved profile to launch it immediately."
+#~ msgstr "바로 시작하려는 저장된 프로파일을 선택하십시오."
+
+#~ msgid "Co_nnect"
+#~ msgstr "연결(_N)"
+
+#~ msgid "Connection Profile"
+#~ msgstr "연결 프로파일"
+
+#~ msgid "Logon Settings"
+#~ msgstr "로그온 설정"
+
+#~ msgid ""
+#~ "Type the name of the computer or choose a computer from the drop-down "
+#~ "list."
+#~ msgstr ""
+#~ "컴퓨터의 이름을 직접 입력하거나 드랍다운 목록에서 컴퓨터를 선택하십시오."
+
+#~ msgid "Pro_tocol:"
+#~ msgstr "프로토콜(_T):"
+
+#~ msgid "_User Name:"
+#~ msgstr "사용자 이름(_U):"
+
+#~ msgid "Pass_word:"
+#~ msgstr "열쇠글(_W):"
+
+#~ msgid "Do_main:"
+#~ msgstr "도메인(_M):"
+
+#~ msgid "C_lient Hostname:"
+#~ msgstr "클라이언트 호스트이름(_L):"
+
+#~ msgid "Prot_ocol File:"
+#~ msgstr "프로토콜 파일(_O):"
+
+#~ msgid ""
+#~ "Enter the username for the remote system.\n"
+#~ "For VNC, enter the path to your saved vnc password file."
+#~ msgstr ""
+#~ "원격 시스템의 사용자 이름을 입력하십시오.\n"
+#~ "VNC에서는 저장된 VNC 열쇠글 파일의 경로를 입력하십시오."
+
+#~ msgid "Enter the password for the remote system."
+#~ msgstr "원격 시스템의 열쇠글을 입력하십시오."
+
+#~ msgid "Enter the domain for the remote system."
+#~ msgstr "원격 시스템의 도메인을 입력하십시오."
+
+#~ msgid "Enter the local hostname for this system."
+#~ msgstr "현재 시스템의 로컬 호스트이름을 입력하십시오."
+
+#~ msgid ""
+#~ "Some protocols require a file containing settings. If required, enter the "
+#~ "path to the file here."
+#~ msgstr ""
+#~ "몇몇 프로토콜에서는 설정이 포함된 파일이 필요합니다. 필요하다면, 여기에 파"
+#~ "일의 경로를 입력하십시오."
+
+#~ msgid "Remote Desktop Size"
+#~ msgstr "원격 데스크탑 크기"
+
+#~ msgid "Use default screen size"
+#~ msgstr "기본 화면 크기 쓰기"
+
+#~ msgid "Use the default screen size."
+#~ msgstr "기본 화면 크기를 씁니다."
+
+#~ msgid "Use specified screen size"
+#~ msgstr "지정된 화면 크기 쓰기"
+
+#~ msgid "Operate in full screen mode"
+#~ msgstr "전체 화면 쓰기"
+
+#~ msgid "Work in full screen mode."
+#~ msgstr "전체 화면 모드에서 작업합니다."
+
+#~ msgid "Colors"
+#~ msgstr "색상"
+
+#~ msgid "Use default color depth"
+#~ msgstr "기본 색상수 쓰기"
+
+#~ msgid "Use the default color depth."
+#~ msgstr "기본 색상수를 씁니다."
+
+#~ msgid "Use specified color depth"
+#~ msgstr "지정한 색상수 쓰기"
+
+#~ msgid "Remote Computer _Sound"
+#~ msgstr "원격 컴퓨터 소리(_S)"
+
+#~ msgid "_Keyboard"
+#~ msgstr "글쇠판(_K)"
+
+#~ msgid "Keyboard"
+#~ msgstr "글쇠판"
+
+#~ msgid "In full screen mode only"
+#~ msgstr "전체 화면 모드만 쓰기"
+
+#~ msgid ""
+#~ "Use the following keyboard language\n"
+#~ "(2 char keycode)"
+#~ msgstr ""
+#~ "다음의 글쇠판 언어를 씁니다\n"
+#~ "(2자의 글쇠코드)"
+
+#~ msgid ""
+#~ "Apply Windows key combinations\n"
+#~ "(for example ALT+TAB) (unsupported)"
+#~ msgstr ""
+#~ "윈도우즈의 글쇠 조합을 씁니다\n"
+#~ "(예: ALT+TAB) (지원하지 않음)"
+
+#~ msgid "Start a Program"
+#~ msgstr "프로그램 시작"
+
+#~ msgid "Start the following program on connection"
+#~ msgstr "연결할 때 다음 프로그램을 시작합니다"
+
+#~ msgid "Program path and filename"
+#~ msgstr "프로그램의 경로와 파일 이름"
+
+#~ msgid "Start in the following folder"
+#~ msgstr "다음 폴더에서 시작"
+
+#~ msgid "Desktop background (u)"
+#~ msgstr "데스크탑 바탕 화면 (u)"
+
+#~ msgid "Show content of window while dragging (u)"
+#~ msgstr "창을 끌어 놓을 때 창 내용 보이기 (u)"
+
+#~ msgid "Menu and window animation (u)"
+#~ msgstr "메뉴 및 창 움직임 (u)"
+
+#~ msgid "Themes (u)"
+#~ msgstr "테마 (u)"
+
+#~ msgid "Enable bitmap caching"
+#~ msgstr "비트맵 캐싱 쓰기"
+
+#~ msgid "Do not send motion events"
+#~ msgstr "움직임 이벤트 보내지 않기"
+
+#~ msgid "Enable window manager's key bindings"
+#~ msgstr "창 관리자 글쇠 조합 쓰기"
+
+#~ msgid "_General"
+#~ msgstr "일반(_G)"
+
+#~ msgid "_Display"
+#~ msgstr "보기(_D)"
+
+#~ msgid "Local _Resources"
+#~ msgstr "로컬 자원(_R)"
+
+#~ msgid "_Programs"
+#~ msgstr "프로그램(_P)"
+
+#~ msgid "Perf_ormance"
+#~ msgstr "성능(_O)"
+
+#~ msgid "Input a filename to save as..."
+#~ msgstr "저장할 파일이름 입력..."
+
+#~ msgid "Choose an RDP file to open..."
+#~ msgstr "열려는 RDP 파일 선택..."
+
+#~ msgid ""
+#~ "rdesktop was not found in your path.\n"
+#~ "Please verify your rdesktop installation."
+#~ msgstr ""
+#~ "rdesktop이 경로에서 찾을 수 없습니다.\n"
+#~ "rdesktop 설치가 올바른지 확인하십시오."
+
+#~ msgid ""
+#~ "vncviewer or xvncviewer were\n"
+#~ " not found in your path.\n"
+#~ "Please verify your vnc installation."
+#~ msgstr ""
+#~ "vncviewer나 xvncviewer가 \n"
+#~ "경로에서 찾을 수 없습니다.\n"
+#~ "vnc 설치가 올바른지 확인하십시오."
+
+#~ msgid ""
+#~ "Xnest was not found in your path.\n"
+#~ "Please verify your Xnest installation."
+#~ msgstr ""
+#~ "Xnest가 경로에서 찾을 수 없습니다.\n"
+#~ "Xnest 설치가 올바른지 확인하십시오."
+
+#~ msgid ""
+#~ "wfica was not found in your path.\n"
+#~ "Please verify your ICAClient installation."
+#~ msgstr ""
+#~ "wfica가 경로에서 찾을 수 없습니다.\n"
+#~ "ICAClient 설치가 올바른지 확인하십시오."
+
+#~ msgid ""
+#~ "Failed to spawn.\n"
+#~ "Please verify your installation."
+#~ msgstr ""
+#~ "프로그램을 실행할 수 없습니다.\n"
+#~ "설치가 올바른지 확인하십시오."
+
+#~ msgid "GNOME Remote Desktop Error"
+#~ msgstr "그놈 원격 데스크탑 오류"
+
+#~ msgid "An error has occurred."
+#~ msgstr "오류가 발생했습니다."
+
+#~ msgid "Check this to enable desktop sharing in GNOME"
+#~ msgstr "그놈에서 데스크탑 공유를 하려면 확인하십시오"
+
+#~ msgid "Whether to enable desktop sharing"
+#~ msgstr "데스크탑 공유 설정"
+
+#~ msgid ""
+#~ "<b>Connection settings</b>\n"
+#~ "Type the name of the computer to open a new desktop session and/or the "
+#~ "display number to connect to an already running session."
+#~ msgstr ""
+#~ "<b>연결 설정</b>\n"
+#~ "새 데스크탑 세션을 열 컴퓨터 이름 또는 이미 실행중인 세션에 연결할 디스플"
+#~ "레이 번호를 입력하십시오."
+
+#~ msgid ""
+#~ "<b>Desktop settings</b>\n"
+#~ "Select the size and color depth (not supported for all cases, so use with "
+#~ "care) of you remote desktop."
+#~ msgstr ""
+#~ "<b>데스크탑 설정</b>\n"
+#~ "원격 데스크탑의 크기와 색상수(모든 경우에서 지원되지 않습니다. 주의해서 쓰"
+#~ "기 바랍니다)를 선택하십시오."
+
+#~ msgid ""
+#~ "<b>Method</b>\n"
+#~ "Select the method for connecting to the remote host. For Windows systems, "
+#~ "you want to choose VNC. For UNIX systems, usually X11, though VNC will "
+#~ "also work."
+#~ msgstr ""
+#~ "<b>방법</b>\n"
+#~ "원격 호스트에 연결항 방법을 선택하십시오. 윈도우즈 시스템에는 VNC를 선택하"
+#~ "십시오. 유닉스 시스템에는 보통 X11을 선택하지만 VNC도 동작할 것 입니다."
+
+#~ msgid "Color depth"
+#~ msgstr "색상수"
+
+#~ msgid "Connect Now ..."
+#~ msgstr "지금 연결..."
+
+#~ msgid "Display size"
+#~ msgstr "화면 크기"
+
+#~ msgid "Display:"
+#~ msgstr "화면:"
+
+#~ msgid "Host:"
+#~ msgstr "호스트:"
+
+#~ msgid "VNC"
+#~ msgstr "VNC"
+
+#~ msgid "X11"
+#~ msgstr "X11"
+
+#~ msgid "Desktop Sharing"
+#~ msgstr "데스크탑 공유"
+
+#~ msgid "_Share my desktop with others"
+#~ msgstr "내 데스크탑을 다른 사람과 공유(_S)"
+
+#~ msgid "Enable this option to allow others to view your desktop"
+#~ msgstr "다른 사람이 내 데스크탑을 볼 수 있도록 허용합니다"
+
+#~ msgid ""
+#~ "The following information will need to be supplied by the user connecting "
+#~ "to your desktop"
+#~ msgstr "다음 정보는 데스크탑에 사용자가 연결할 때 필요합니다"
+
+#~ msgid "Password"
+#~ msgstr "열쇠글"
+
+#~ msgid "Couldn't find pixmap file: %s"
+#~ msgstr "그림 파일을 찾을 수 없습니다: %s"
+
+#~ msgid "Orientation"
+#~ msgstr "방향"
+
+#~ msgid "The orientation of the tray."
+#~ msgstr "트레이의 방향"
+
+#~ msgid "Your desktop is viewable to others"
+#~ msgstr "다른사람 한테 데스크탑이 보여질 수 있습니다"
+
+#~ msgid "translator_credits"
+#~ msgstr ""
+#~ "류창우 <cwryu at debian dot org>\n"
+#~ "차영호 <ganadist at mizi dot com>"
+
+#~ msgid "Remote Desktop Sharing"
+#~ msgstr "원격 데스크탑 공유"
+
+#~ msgid "Receive"
+#~ msgstr "받기"
+
+#~ msgid "Enter search string"
+#~ msgstr "찾기 문자열 입력"
+
+#~ msgid "Send"
+#~ msgstr "보내기"
+
+#~ msgid "Enter transmission string"
+#~ msgstr "보낼 문자열 입력"
+
+#~ msgid "Send User Name"
+#~ msgstr "사용자 이름 보내기"
+
+#~ msgid "Username taken from Authentication"
+#~ msgstr "사용자 이름을 인증과정에서 가져오기"
+
+#~ msgid "Send User Password"
+#~ msgstr "사용자 이름 보내기"
+
+#~ msgid "Password taken from Authentication"
+#~ msgstr "암호를 인증과정에서 가져오기"
+
+#~ msgid "Dialog Box Input"
+#~ msgstr "동적 사용자 입력"
+
+#~ msgid "Enter text to be used as a dialog message when prompted for input"
+#~ msgstr "숨겨진 입력을 알려주고, 기호 입력"
+
+#~ msgid "open_account_window(): account=NULL with clone flag"
+#~ msgstr "open_account_window(): clone flag에서 account=NULL"
+
+#~ msgid "open_account_window(): calling arguments invalid"
+#~ msgstr "open_account_window(): 부를 때 인자가 잘못되었습니다"
+
+#~ msgid "Dial"
+#~ msgstr "전화 걸기"
+
+#~ msgid "Authentication"
+#~ msgstr "인증"
+
+#~ msgid "IP Address"
+#~ msgstr "IP 주소"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "Script"
+#~ msgstr "스크립트"
+
+#~ msgid "PPP"
+#~ msgstr "PPP"
+
+#~ msgid "Modem"
+#~ msgstr "모뎀"
+
+#~ msgid "Account Name"
+#~ msgstr "계정 이름"
+
+#~ msgid "Redial Maximum"
+#~ msgstr "전화 다시거는 최대 횟수"
+
+#~ msgid "Dial Timeout (sec)"
+#~ msgstr "전화걸기 시간 제한 (초)"
+
+#~ msgid "Phone Numbers"
+#~ msgstr "전화 번호"
+
+#~ msgid "#"
+#~ msgstr "번호"
+
+#~ msgid "Add"
+#~ msgstr "더하기"
+
+#~ msgid "Remove"
+#~ msgstr "지우기"
+
+#~ msgid "PAP/CHAP"
+#~ msgstr "PAP/CHAP"
+
+#~ msgid "User Name"
+#~ msgstr "사용자 이름"
+
+#~ msgid "Remote Name"
+#~ msgstr "원격 사용자 이름"
+
+#~ msgid "Hidden Password"
+#~ msgstr "숨겨진 열쇠글"
+
+#~ msgid "Local IP Address"
+#~ msgstr "로칼 IP 주소"
+
+#~ msgid "Dynamic"
+#~ msgstr "동적"
+
+#~ msgid "Static"
+#~ msgstr "정적"
+
+#~ msgid "Remote IP Address"
+#~ msgstr "원격 IP 주소"
+
+#~ msgid "DNS Servers"
+#~ msgstr "DNS 서버"
+
+#~ msgid "Search Domains"
+#~ msgstr "찾기 도메인"
+
+#~ msgid "Domain Name"
+#~ msgstr "도메인 이름"
+
+#~ msgid "Action"
+#~ msgstr "동작"
+
+#~ msgid "Text"
+#~ msgstr "텍스트"
+
+#~ msgid "Login Script"
+#~ msgstr "로그인 스크립트"
+
+#~ msgid "Insert"
+#~ msgstr "넣기"
+
+#~ msgid "Add Default Route"
+#~ msgstr "기본 라우팅 더하기"
+
+#~ msgid "Lock Dialout Device"
+#~ msgstr "전화걸기 장치 잠그기"
+
+#~ msgid "Maximum Transmission Unit"
+#~ msgstr "최대 송신 단위(MTU)"
+
+#~ msgid "Maximum Receive Unit"
+#~ msgstr "최대 수신 단위(MRU)"
+
+#~ msgid "Run Program After Connect"
+#~ msgstr "연결 후에 프로그램 실행"
+
+#~ msgid "Run Program After Disconnect"
+#~ msgstr "연결끊기 후에 프로그램 실행"
+
+#~ msgid "Modem Device"
+#~ msgstr "모뎀 장치"
+
+#~ msgid "Connection Speed"
+#~ msgstr "연결 속도"
+
+#~ msgid "Flow Control"
+#~ msgstr "흐름 제어"
+
+#~ msgid "Modem Speaker Volume"
+#~ msgstr "모뎀 스피커 볼륨"
+
+#~ msgid " Edit Modem Commands "
+#~ msgstr " 모뎀 명령어 편집 "
+
+#~ msgid "**PASSWORD**"
+#~ msgstr "**열쇠글**"
+
+#~ msgid "script_type_cb(): optionmenu data bad"
+#~ msgstr "script_type_cb(): 잘못된 옵션 메뉴 데이타"
+
+#~ msgid "_Debug Terminal"
+#~ msgstr "터미널 디버그(_D)"
+
+#~ msgid "_New..."
+#~ msgstr "새 계정(_N)..."
+
+#~ msgid "D_uplicate..."
+#~ msgstr "복사(_U)..."
+
+#~ msgid "_Edit..."
+#~ msgstr "편집(_E)..."
+
+#~ msgid "_Delete..."
+#~ msgstr "지우기(_D)..."
+
+#~ msgid "_Account"
+#~ msgstr "계정(_A)"
+
+#~ msgid "gnome-ppp"
+#~ msgstr "gnome-ppp"
+
+#~ msgid "Dialing"
+#~ msgstr "전화 거는 중"
+
+#~ msgid "Connected"
+#~ msgstr "연결됨"
+
+#~ msgid "refresh_dial_app(): gtk_clist_append failed."
+#~ msgstr "refresh_dial_app(): gtk_clist_append 실패."
+
+#~ msgid "Connect"
+#~ msgstr "연결"
+
+#~ msgid "Cancel"
+#~ msgstr "취소"
+
+#~ msgid "Disconnect"
+#~ msgstr "연결 끊기"
+
+#~ msgid "You must disconnect before closing."
+#~ msgstr "닫기 전에 연결을 끊어야 합니다."
+
+#~ msgid "Are you sure you want to delete this account?\n"
+#~ msgstr "정말로 이 계정을 지우시겠습니까?\n"
+
+#~ msgid "The account cannot be deleted."
+#~ msgstr "이 계정은 지울 수 없습니다"
+
+#~ msgid "The account is in use and cannot be deleted."
+#~ msgstr "이 계정은 사용중이고 지울 수 없습니다"
+
+#~ msgid "GNOME Internet Dialer"
+#~ msgstr "그놈 인터넷 전화걸기"
+
+#~ msgid "Raise PPP Link"
+#~ msgstr "PPP 연결 띄우기"
+
+#~ msgid "About..."
+#~ msgstr "정보..."
+
+#~ msgid "Properties..."
+#~ msgstr "등록 정보..."
+
+#~ msgid "Connecting..."
+#~ msgstr "연결중..."
+
+#~ msgid "PPP Connected"
+#~ msgstr "PPP 연결됨"
+
+#~ msgid "PPP Error!"
+#~ msgstr "PPP 오류!"
+
+#~ msgid "That account is already in use.\n"
+#~ msgstr "이 계정은 사용중입니다.\n"
+
+#~ msgid "GNOME PPP Dialer Applet"
+#~ msgstr "그놈 PPP 전화걸기 애플릿"
+
+#~ msgid "PPP Applet Properties"
+#~ msgstr "PPP 애플릿 기본 설정"
+
+#~ msgid "Animation"
+#~ msgstr "움직임"
+
+#~ msgid "Options"
+#~ msgstr "옵션"
+
+#~ msgid "Freeze Animation on Connect"
+#~ msgstr "연결되면 움직임 멈추기"
+
+#~ msgid "Disconnect PPP on GNOME logout"
+#~ msgstr "그놈에서 로그아웃 할 때 PPP연결을 끊음"
+
+#~ msgid "Animation Speed"
+#~ msgstr "움직임 속도"
+
+#~ msgid "PPP Applet"
+#~ msgstr "PPP 애플릿"
+
+#~ msgid "---NEW CONNECTION---"
+#~ msgstr "---새로운 연결---"
+
+#~ msgid "Account already connected."
+#~ msgstr "계정이 이미 연결되었습니다."
+
+#~ msgid "Starting PPP Connection."
+#~ msgstr "PPP연결 시작중."
+
+#~ msgid "You don't have permission to execute pppd."
+#~ msgstr "pppd를 실행할 수 있는 권한이 없습니다."
+
+#~ msgid "The modem is in use by another program."
+#~ msgstr "모뎀이 다른 프로그램에 의해 사용중입니다."
+
+#~ msgid "Running pppd."
+#~ msgstr "pppd 실행중."
+
+#~ msgid "Closing connection."
+#~ msgstr "연결 닫는 중."
+
+#~ msgid "The pppd program failed to run gnome-ppp-chat."
+#~ msgstr "pppd 프로그램이 gnome-ppp-chat을 실행하는 데 실패했습니다."
+
+#~ msgid "The modem could not be hung up."
+#~ msgstr "모뎀을 끊을 수 없습니다."
+
+#~ msgid "Initalizing modem."
+#~ msgstr "모뎀 초기화중."
+
+#~ msgid "Your modem is not responding to initalization."
+#~ msgstr "모뎀이 초기화 명령에 응답하지 않습니다."
+
+#~ msgid "The command to set the volume on your modem's speaker failed."
+#~ msgstr "모뎀 소리 크기를 바꾸는 명령이 실패했습니다."
+
+#~ msgid "No answer after maximum number of re-dial attempts."
+#~ msgstr "최대 횟수만큼 전화를 걸었는데도 응답이 없습니다."
+
+#~ msgid "No phone numbers specified for this account."
+#~ msgstr "이 계정에 대한 전화 번호가 지정되지 않았습니다."
+
+#~ msgid "Dialing."
+#~ msgstr "전화 거는 중."
+
+#~ msgid "Dialing timeout."
+#~ msgstr "시간 제한이 지났습니다."
+
+#~ msgid "No dialtone."
+#~ msgstr "신호음이 안 들림."
+
+#~ msgid "Number busy."
+#~ msgstr "번호가 통화중입니다."
+
+#~ msgid "Ring, but no answer."
+#~ msgstr "걸었지만 응답이 없습니다."
+
+#~ msgid "Connection failure, reason unknown."
+#~ msgstr "연결 실패, 이유를 알 수 없습니다."
+
+#~ msgid "Connected."
+#~ msgstr "연결."
+
+#~ msgid "The modem lost connection with remote host."
+#~ msgstr "모뎀과 원격 호스트와의 연결이 끊어졌습니다."
+
+#~ msgid "Running Script."
+#~ msgstr "스크립트 실행중."
+
+#~ msgid "Script Complete."
+#~ msgstr "스크립트 완료."
+
+#~ msgid "PPP connection established."
+#~ msgstr "PPP 연결이 이루어졌습니다."
+
+#~ msgid "Failed to establish a PPP connection."
+#~ msgstr "PPP 연결에 실패했습니다."
+
+#~ msgid "The pppd daemon died unexpectedly."
+#~ msgstr "pppd 데몬이 갑자기 죽었습니다."
+
+#~ msgid "open_modem_window(): account=NULL"
+#~ msgstr "open_modem_window(): account=NULL"
+
+#~ msgid "Initialization"
+#~ msgstr "초기화"
+
+#~ msgid "Volume Mute"
+#~ msgstr "소리 끄기"
+
+#~ msgid "Volume Low"
+#~ msgstr "소리 낮추기"
+
+#~ msgid "Volume High"
+#~ msgstr "소리 높이기"
+
+#~ msgid "Connection"
+#~ msgstr "연결"
+
+#~ msgid "Busy"
+#~ msgstr "통화중"
+
+#~ msgid "No Answer"
+#~ msgstr "응답 없음"
+
+#~ msgid "No Dialtone"
+#~ msgstr "신호음 없음"
+
+#~ msgid "No host specified."
+#~ msgstr "호스트가 지정되지 않았습니다."
+
+#~ msgid "A user name is required for SSH"
+#~ msgstr "SSH에 사용자 이름이 필요합니다"
+
+#~ msgid "The host cannot be found."
+#~ msgstr "호스트를 찾을 수 없습니다."
+
+#~ msgid "<span weight=\"bold\">Connect to remote host</span>"
+#~ msgstr "<span weight=\"bold\">리모트 호스트에 연결</span>"
+
+#~ msgid "<span weight=\"bold\">Method</span>"
+#~ msgstr "<span weight=\"bold\">방법</span>"
+
+#~ msgid "<span weight=\"bold\">Window size</span>"
+#~ msgstr "<span weight=\"bold\">창 크기</span>"
+
+#~ msgid "Connect to remote host"
+#~ msgstr "원격 호스트에 연결"
+
+#~ msgid "H_eight:"
+#~ msgstr "높이(_E):"
+
+#~ msgid "H_ost:"
+#~ msgstr "호스트(_O):"
+
+#~ msgid "Regular shell (_Telnet)"
+#~ msgstr "보통 쉘 (텔넷)(_T)"
+
+#~ msgid "Use _default"
+#~ msgstr "기본값 쓰기(_D)"
+
+#~ msgid "_Port:"
+#~ msgstr "포트(_P):"
+
+#~ msgid "_Secure shell (SSH)"
+#~ msgstr "보안 쉘 (_SSH)"
+
+#~ msgid "_User:"
+#~ msgstr "사용자(_U):"
+
+#~ msgid "_Width:"
+#~ msgstr "너비(_W):"
+
+#~ msgid "characters"
+#~ msgstr "문자"
+
+#~ msgid "Web folder:"
+#~ msgstr "웹 폴더:"
+
+#~ msgid "Port number:"
+#~ msgstr "포트 번호"
+
+#~ msgid "Time out:"
+#~ msgstr "시간 제한:"
+
+#~ msgid "Keep alive"
+#~ msgstr "연결 유지"
+
+#~ msgid "/_Preferences"
+#~ msgstr "/기본 설정(_P)"
+
 #, fuzzy
-msgid "/_Open Web Folder"
-msgstr "웹 폴더:"
+#~ msgid "/_Open Web Folder"
+#~ msgstr "웹 폴더:"
 
-#: pws/pws.c:86
-msgid "/_Quit"
-msgstr "/끝내기(_Q)"
+#~ msgid "/_Quit"
+#~ msgstr "/끝내기(_Q)"
 
-#: pws/pws.c:176
-msgid "Personal web server preferences"
-msgstr "개인용 웹 서버 기본 설정"
+#~ msgid "Personal web server preferences"
+#~ msgstr "개인용 웹 서버 기본 설정"
 
-#: pws/pws.c:191
-msgid "Personal Web Server Preferences"
-msgstr "개인용 웹 서버 기본 설정"
+#~ msgid "Personal Web Server Preferences"
+#~ msgstr "개인용 웹 서버 기본 설정"
 
-#: pws/pws.c:192
-msgid "Setup the options for your personal web server."
-msgstr "개인용 웹서버의 옵션을 설정합니다."
+#~ msgid "Setup the options for your personal web server."
+#~ msgstr "개인용 웹서버의 옵션을 설정합니다."
 
-#: sync/entryconfigdialog.c:70
-msgid "Could not load UI for entry configuration dialog"
-msgstr "설정 대화상자의 UI를 읽을 수 없습니다"
+#~ msgid "Could not load UI for entry configuration dialog"
+#~ msgstr "설정 대화상자의 UI를 읽을 수 없습니다"
 
-#: sync/entryconfigdialog.glade.h:2
-msgid "Entry name"
-msgstr "항목 이름"
+#~ msgid "Entry name"
+#~ msgstr "항목 이름"
 
-#: sync/entryconfigdialog.glade.h:3
-msgid "Local path"
-msgstr "로컬 경로"
+#~ msgid "Local path"
+#~ msgstr "로컬 경로"
 
-#: sync/entryconfigdialog.glade.h:4
-msgid "Preserve group"
-msgstr ""
+#~ msgid "Remote host"
+#~ msgstr "원격 호스트"
 
-#: sync/entryconfigdialog.glade.h:5
-msgid "Preserve permissions"
-msgstr ""
+#~ msgid "Remote path"
+#~ msgstr "원격 경로"
 
-#: sync/entryconfigdialog.glade.h:6
-msgid "Preserve times"
-msgstr ""
+#~ msgid "Synchronization options"
+#~ msgstr "동기화 옵션"
 
-#: sync/entryconfigdialog.glade.h:7
-msgid "Recurse into directories"
-msgstr ""
+#~ msgid "Update only (don't overwrite newer files)"
+#~ msgstr "업데이트만 하기(새로운 파일 덮어 쓰지 않기)"
 
-#: sync/entryconfigdialog.glade.h:8
-msgid "Remote host"
-msgstr "원격 호스트"
+#~ msgid "Use relative path names"
+#~ msgstr "상대 경로 쓰기"
 
-#: sync/entryconfigdialog.glade.h:9
-msgid "Remote path"
-msgstr "원격 경로"
+#~ msgid "Use rsync"
+#~ msgstr "rsync 쓰기"
 
-#: sync/entryconfigdialog.glade.h:10
-msgid "Synchronization options"
-msgstr "동기화 옵션"
+#~ msgid "Use unison"
+#~ msgstr "unison 쓰기"
 
-#: sync/entryconfigdialog.glade.h:11
-msgid "Update only (don't overwrite newer files)"
-msgstr "업데이트만 하기(새로운 파일 덮어 쓰지 않기)"
+#~ msgid "dialog1"
+#~ msgstr "dialog1"
 
-#: sync/entryconfigdialog.glade.h:12
-msgid "Use relative path names"
-msgstr "상대 경로 쓰기"
+#~ msgid "rsync"
+#~ msgstr "rsync"
 
-#: sync/entryconfigdialog.glade.h:13
-msgid "Use rsync"
-msgstr "rsync 쓰기"
+#~ msgid "unison"
+#~ msgstr "unison"
 
-#: sync/entryconfigdialog.glade.h:14
-msgid "Use unison"
-msgstr "unison 쓰기"
+#~ msgid "Local"
+#~ msgstr "로컬"
 
-#: sync/entryconfigdialog.glade.h:15
-msgid "dialog1"
-msgstr "dialog1"
+#~ msgid "Remote"
+#~ msgstr "원격"
 
-#: sync/entryconfigdialog.glade.h:16
-msgid "rsync"
-msgstr "rsync"
+#~ msgid "Last sync"
+#~ msgstr "마지막 동기"
 
-#: sync/entryconfigdialog.glade.h:17
-msgid "unison"
-msgstr "unison"
+#~ msgid "_Synchronize"
+#~ msgstr "동기화(_S)"
 
-#: sync/entrylist.c:70
-msgid "Local"
-msgstr "로컬"
+#~ msgid "New entry..."
+#~ msgstr "새 항목..."
 
-#: sync/entrylist.c:73
-msgid "Remote"
-msgstr "원격"
+#~ msgid "Edit..."
+#~ msgstr "편집..."
 
-#: sync/entrylist.c:76
-msgid "Last sync"
-msgstr "마지막 동기"
+#~ msgid "Synchronize"
+#~ msgstr "동기화"
 
-#: sync/main.c:44
-msgid "_Synchronize"
-msgstr "동기화(_S)"
+#~ msgid "Gnome Synchronize"
+#~ msgstr "그놈 동기화"
 
-#: sync/main.c:55
-msgid "New entry..."
-msgstr "새 항목..."
+#~ msgid "The GNOME file synchronization program."
+#~ msgstr "그놈 파일 동기화 프로그램."
 
-#: sync/main.c:57 sync/main.c:171
-msgid "Edit..."
-msgstr "편집..."
+#~ msgid "New"
+#~ msgstr "새로 만들기"
 
-#: sync/main.c:75 sync/main.c:181
-msgid "Synchronize"
-msgstr "동기화"
+#~ msgid "Create new synchronization entry"
+#~ msgstr "새 동기화 항목 만들기"
 
-#: sync/main.c:103
-msgid "Gnome Synchronize"
-msgstr "그놈 동기화"
+#~ msgid "Start synchronization for selected entries"
+#~ msgstr "선택한 항목을 동기화 시작"
 
-#: sync/main.c:105
-msgid "The GNOME file synchronization program."
-msgstr "그놈 파일 동기화 프로그램."
+#~ msgid "Edit"
+#~ msgstr "편집"
 
-#: sync/main.c:176
-msgid "New"
-msgstr "새로 만들기"
+#~ msgid "Edit selected entry"
+#~ msgstr "선택한 항목 편집"
 
-#: sync/main.c:177
-msgid "Create new synchronization entry"
-msgstr "새 동기화 항목 만들기"
+#~ msgid "Delete"
+#~ msgstr "지우기"
 
-#: sync/main.c:182
-msgid "Start synchronization for selected entries"
-msgstr "선택한 항목을 동기화 시작"
-
-#: sync/main.c:185
-msgid "Edit"
-msgstr "편집"
-
-#: sync/main.c:186
-msgid "Edit selected entry"
-msgstr "선택한 항목 편집"
-
-#: sync/main.c:189
-msgid "Delete"
-msgstr "지우기"
-
-#: sync/main.c:190
-msgid "Delete selected entries"
-msgstr "선택한 항목 지우기"
+#~ msgid "Delete selected entries"
+#~ msgstr "선택한 항목 지우기"

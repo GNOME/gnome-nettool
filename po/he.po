@@ -6,1039 +6,495 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-network.txt\n"
-"POT-Creation-Date: 2003-11-25 00:45+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-02-11 16:35+0100\n"
 "PO-Revision-Date: 2003-03-12 20:57+0200\n"
 "Last-Translator: Gil 'Dolfin' Osher <dolfin@rpg.org.il>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.0\n"
 
-#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
-#, fuzzy
-msgid "GNOME Remote Desktop Applet"
-msgstr "שולחן העבודה המרוחק של GNOME"
-
-#: desktop/client/gnome-remote-desktop.desktop.in.h:1
-#, fuzzy
-msgid "Connect to a remote desktop computer"
-msgstr "המודם איבד את החיבור עם המארח המרוחק."
-
-#: desktop/client/gnome-remote-desktop.desktop.in.h:2
-#, fuzzy
-msgid "Remote Desktop Client"
-msgstr "שולחן העבודה המרוחק של GNOME"
-
-#: desktop/client/src/connect.c:75
-msgid "640 x 480 pixels"
-msgstr ""
-
-#: desktop/client/src/connect.c:75
-msgid "800 x 600 pixels"
-msgstr ""
-
-#: desktop/client/src/connect.c:76
-msgid "1024 x 768 pixels"
-msgstr ""
-
-#: desktop/client/src/connect.c:77
-msgid "1152 x 864 pixels"
-msgstr ""
-
-#: desktop/client/src/connect.c:78
-msgid "1280 x 960 pixels"
-msgstr ""
-
-#: desktop/client/src/connect.c:82
-msgid "256 Colors"
-msgstr ""
-
-#: desktop/client/src/connect.c:83
-msgid "High Color (15 bit)"
-msgstr ""
-
-#: desktop/client/src/connect.c:84
-msgid "High Color (16 bit)"
-msgstr ""
-
-#: desktop/client/src/connect.c:85
-msgid "True Color (24 bit)"
-msgstr ""
-
-#: desktop/client/src/connect.c:287 desktop/client/src/connect.c:310
-#: desktop/client/src/connect.c:312 desktop/client/src/support.c:780
-#: desktop/gnome-remote-desktop.glade.h:13
-msgid "GNOME Remote Desktop"
-msgstr "שולחן העבודה המרוחק של GNOME"
-
-#.
-#. This is the input for the Compact mode
-#.
-#: desktop/client/src/connect.c:344 desktop/client/src/connect.c:555
-msgid "Compu_ter:"
-msgstr ""
-
-#: desktop/client/src/connect.c:368 desktop/client/src/connect.c:623
-msgid "Enter the name or address of the remote system."
-msgstr ""
-
-#: desktop/client/src/connect.c:373 desktop/client/src/connect.c:630
-msgid "Select the protocol to use for this connection."
-msgstr ""
-
-#: desktop/client/src/connect.c:380 desktop/client/src/connect.c:637
-msgid ""
-"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
-"systems with desktop sharing."
-msgstr ""
-
-#: desktop/client/src/connect.c:385 desktop/client/src/connect.c:644
-msgid ""
-"VNC protocol is used to connect to systems sharing the desktop by using VNC."
-msgstr ""
-
-#: desktop/client/src/connect.c:394 desktop/client/src/connect.c:655
-msgid "XDMCP protocol uses Xnest to connect to servers running X."
-msgstr ""
-
-#: desktop/client/src/connect.c:399 desktop/client/src/connect.c:662
-msgid "ICA protocol is used to connect to Citrix servers."
-msgstr ""
-
-#.
-#. This is the Profile Launcher
-#.
-#: desktop/client/src/connect.c:410
-msgid "Prof_ile Launcher:"
-msgstr ""
-
-#: desktop/client/src/connect.c:423
-msgid "Select a saved profile to launch it immediately."
-msgstr ""
-
-#: desktop/client/src/connect.c:455
-#, fuzzy
-msgid "_More"
-msgstr "מודם"
-
-#: desktop/client/src/connect.c:481 desktop/client/src/connect.c:1225
-#: network-utilities/gnome-remote-shell.glade.h:6
-#, fuzzy
-msgid "Co_nnect"
-msgstr "התחבר"
-
-#.
-#. This is the label for the Connection Profile
-#.
-#: desktop/client/src/connect.c:490 desktop/client/src/connect.c:492
-#, fuzzy
-msgid "Connection Profile"
-msgstr "חיבור"
-
-#: desktop/client/src/connect.c:521 desktop/client/src/connect.c:523
-msgid "Logon Settings"
-msgstr ""
-
-#: desktop/client/src/connect.c:531
-msgid ""
-"Type the name of the computer or choose a computer from the drop-down list."
-msgstr ""
-
-#: desktop/client/src/connect.c:563
-msgid "Pro_tocol:"
-msgstr ""
-
-#: desktop/client/src/connect.c:571
-#, fuzzy
-msgid "_User Name:"
-msgstr "שם משתמש"
-
-#: desktop/client/src/connect.c:579
-#, fuzzy
-msgid "Pass_word:"
-msgstr "סיסמא"
-
-#: desktop/client/src/connect.c:587
-#, fuzzy
-msgid "Do_main:"
-msgstr "שם התחום"
-
-#: desktop/client/src/connect.c:595
-#, fuzzy
-msgid "C_lient Hostname:"
-msgstr "מארח"
-
-#: desktop/client/src/connect.c:603
-msgid "Prot_ocol File:"
-msgstr ""
-
-#: desktop/client/src/connect.c:678
-msgid ""
-"Enter the username for the remote system.\n"
-"For VNC, enter the path to your saved vnc password file."
-msgstr ""
-
-#: desktop/client/src/connect.c:687
-msgid "Enter the password for the remote system."
-msgstr ""
-
-#: desktop/client/src/connect.c:695
-msgid "Enter the domain for the remote system."
-msgstr ""
-
-#: desktop/client/src/connect.c:703
-msgid "Enter the local hostname for this system."
-msgstr ""
-
-#: desktop/client/src/connect.c:715
-msgid ""
-"Some protocols require a file containing settings. If required, enter the "
-"path to the file here."
-msgstr ""
-
-#: desktop/client/src/connect.c:737 desktop/client/src/connect.c:739
-#, fuzzy
-msgid "Remote Desktop Size"
-msgstr "שולחן העבודה המרוחק של GNOME"
-
-#: desktop/client/src/connect.c:757
-msgid "Use default screen size"
-msgstr ""
-
-#: desktop/client/src/connect.c:761
-msgid "Use the default screen size."
-msgstr ""
-
-#: desktop/client/src/connect.c:766
-msgid "Use specified screen size"
-msgstr ""
-
-#: desktop/client/src/connect.c:770
-msgid "Use the list to choose the screen size to use."
-msgstr ""
-
-#: desktop/client/src/connect.c:782
-msgid "Operate in full screen mode"
-msgstr ""
-
-#: desktop/client/src/connect.c:786
-msgid "Work in full screen mode."
-msgstr ""
-
-#: desktop/client/src/connect.c:795
-msgid "Use alternate full screen switch (-F)"
-msgstr ""
-
-#: desktop/client/src/connect.c:799
-msgid "Check this if you use rdesktop with the unified patches."
-msgstr ""
-
-#: desktop/client/src/connect.c:808 desktop/client/src/connect.c:810
-msgid "Colors"
-msgstr ""
-
-#: desktop/client/src/connect.c:828
-msgid "Use default color depth"
-msgstr ""
-
-#: desktop/client/src/connect.c:832
-msgid "Use the default color depth."
-msgstr ""
-
-#: desktop/client/src/connect.c:837
-msgid "Use specified color depth"
-msgstr ""
-
-#: desktop/client/src/connect.c:841
-msgid "Use the list to choose the color depth to use."
-msgstr ""
-
-#: desktop/client/src/connect.c:865
-msgid "Remote Computer _Sound"
-msgstr ""
-
-#: desktop/client/src/connect.c:867
-msgid "Remote Computer Sound"
-msgstr ""
-
-#: desktop/client/src/connect.c:891 desktop/client/src/connect.c:927
-msgid "On the local computer"
-msgstr ""
-
-#: desktop/client/src/connect.c:894 desktop/client/src/connect.c:930
-msgid "On the remote computer"
-msgstr ""
-
-#: desktop/client/src/connect.c:897
-msgid "Do not play"
-msgstr ""
-
-#: desktop/client/src/connect.c:908
-msgid "_Keyboard"
-msgstr ""
-
-#: desktop/client/src/connect.c:910
-msgid "Keyboard"
-msgstr ""
-
-#: desktop/client/src/connect.c:933
-msgid "In full screen mode only"
-msgstr ""
-
-#: desktop/client/src/connect.c:939
-msgid ""
-"Use the following keyboard language\n"
-"(2 char keycode)"
-msgstr ""
-
-#: desktop/client/src/connect.c:967
-msgid ""
-"Apply Windows key combinations\n"
-"(for example ALT+TAB) (unsupported)"
-msgstr ""
-
-#: desktop/client/src/connect.c:990 desktop/client/src/connect.c:992
-msgid "Start a Program"
-msgstr ""
-
-#: desktop/client/src/connect.c:1007
-msgid "Start the following program on connection"
-msgstr ""
-
-#: desktop/client/src/connect.c:1014
-msgid "Program path and filename"
-msgstr ""
-
-#: desktop/client/src/connect.c:1027
-msgid "Start in the following folder"
-msgstr ""
-
-#: desktop/client/src/connect.c:1049 desktop/client/src/connect.c:1051
-msgid "Optimize Performance"
-msgstr ""
-
-#: desktop/client/src/connect.c:1072
-msgid "Desktop background (u)"
-msgstr ""
-
-#: desktop/client/src/connect.c:1076
-msgid "Show content of window while dragging (u)"
-msgstr ""
-
-#: desktop/client/src/connect.c:1080
-msgid "Menu and window animation (u)"
-msgstr ""
-
-#: desktop/client/src/connect.c:1084
-msgid "Themes (u)"
-msgstr ""
-
-#: desktop/client/src/connect.c:1088
-msgid "Enable bitmap caching"
-msgstr ""
-
-#: desktop/client/src/connect.c:1092
-msgid "Do not send motion events"
-msgstr ""
-
-#: desktop/client/src/connect.c:1096
-msgid "Enable window manager's key bindings"
-msgstr ""
-
-#: desktop/client/src/connect.c:1101
-msgid "Options available for optimizing performance"
-msgstr ""
-
-#.
-#. These are the labels for the notebook control
-#.
-#: desktop/client/src/connect.c:1114
-msgid "_General"
-msgstr ""
-
-#: desktop/client/src/connect.c:1119
-#, fuzzy
-msgid "_Display"
-msgstr "תצוגה"
-
-#: desktop/client/src/connect.c:1124
-msgid "Local _Resources"
-msgstr ""
-
-#: desktop/client/src/connect.c:1129
-msgid "_Programs"
-msgstr ""
-
-#: desktop/client/src/connect.c:1134
-msgid "Perf_ormance"
-msgstr ""
-
-#: desktop/client/src/connect.c:1198
-msgid "_Less"
-msgstr ""
-
-#: desktop/client/src/connect.c:1709
-msgid "Input a filename to save as..."
-msgstr ""
-
-#: desktop/client/src/connect.c:1751 desktop/client/src/connect.c:1796
-msgid "Choose an RDP file to open..."
-msgstr ""
-
-#: desktop/client/src/support.c:277
-msgid ""
-"rdesktop was not found in your path.\n"
-"Please verify your rdesktop installation."
-msgstr ""
-
-#: desktop/client/src/support.c:417
-msgid ""
-"vncviewer or xvncviewer were\n"
-" not found in your path.\n"
-"Please verify your vnc installation."
-msgstr ""
-
-#: desktop/client/src/support.c:519
-msgid ""
-"Xnest was not found in your path.\n"
-"Please verify your Xnest installation."
-msgstr ""
-
-#: desktop/client/src/support.c:578
-msgid ""
-"wfica was not found in your path.\n"
-"Please verify your ICAClient installation."
-msgstr ""
-
-#: desktop/client/src/support.c:702
-msgid ""
-"Failed to spawn.\n"
-"Please verify your installation."
-msgstr ""
-
-#. create the widgets
-#: desktop/client/src/support.c:744
-#, fuzzy
-msgid "GNOME Remote Desktop Error"
-msgstr "שולחן העבודה המרוחק של GNOME"
-
-#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
-msgid "An error has occurred."
-msgstr ""
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
-msgid "Check this to enable desktop sharing in GNOME"
-msgstr ""
-
-#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
-#, fuzzy
-msgid "Whether to enable desktop sharing"
-msgstr "שולחן העבודה המרוחק של GNOME"
-
-#: desktop/gnome-remote-desktop.glade.h:1
-#: gnome-netinfo/gnome-netinfo.glade.h:1
-#: network-utilities/gnome-remote-shell.glade.h:1
-msgid "    "
-msgstr ""
-
-#: desktop/gnome-remote-desktop.glade.h:2
-#: gnome-netinfo/gnome-netinfo.glade.h:5
-#: network-utilities/gnome-remote-shell.glade.h:2
-#: sync/entryconfigdialog.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: desktop/gnome-remote-desktop.glade.h:3
-#, fuzzy
-msgid ""
-"<b>Connection settings</b>\n"
-"Type the name of the computer to open a new desktop session and/or the "
-"display number to connect to an already running session."
-msgstr ""
-"כתוב את שם המחשב כדי לפתוח תצורת שולחן עבודה חדשה ו/או את מספר התצוגה כדי "
-"להתחבר לתצורה פועלת"
-
-#: desktop/gnome-remote-desktop.glade.h:5
-#, fuzzy
-msgid ""
-"<b>Desktop settings</b>\n"
-"Select the size and color depth (not supported for all cases, so use with "
-"care) of you remote desktop."
-msgstr ""
-"בחר את הגודל ועומק הצבע (לא נתמך בכל המקרים, לכן השתמש בזהירות) של שולחן "
-"העבודה המרוחק שלך"
-
-#: desktop/gnome-remote-desktop.glade.h:7
-#, fuzzy
-msgid ""
-"<b>Method</b>\n"
-"Select the method for connecting to the remote host. For Windows systems, "
-"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
-"work."
-msgstr ""
-"בחר את שיטת החיבור למארח המרוחק. למערכות חלונות, תרצה לבחור VNC. למערכות "
-"UNIX, בדרך-כלל X11, למרות ש VNC גם יעבוד."
-
-#: desktop/gnome-remote-desktop.glade.h:9
-msgid "Color depth"
-msgstr "עומק צבע"
-
-#: desktop/gnome-remote-desktop.glade.h:10
-#, fuzzy
-msgid "Connect Now ..."
-msgstr "מתחבר..."
-
-#: desktop/gnome-remote-desktop.glade.h:11
-msgid "Display size"
-msgstr "גודל התצוגה"
-
-#: desktop/gnome-remote-desktop.glade.h:12
-#, fuzzy
-msgid "Display:"
-msgstr "תצוגה"
-
-#: desktop/gnome-remote-desktop.glade.h:14
-#, fuzzy
-msgid "Host:"
-msgstr "מארח"
-
-#: desktop/gnome-remote-desktop.glade.h:15
-msgid "VNC"
-msgstr "VNC"
-
-#: desktop/gnome-remote-desktop.glade.h:16
-msgid "X11"
-msgstr "X11"
-
-#: desktop/gnome-remote-desktop.glade.h:17
-msgid "by"
-msgstr "על-ידי"
-
-#: desktop/preferences/interface.c:48 desktop/preferences/interface.c:63
-#: desktop/server/tray.c:170
-#, fuzzy
-msgid "Desktop Sharing"
-msgstr "שולחן עבודה"
-
-#: desktop/preferences/interface.c:72
-msgid "_Share my desktop with others"
-msgstr ""
-
-#: desktop/preferences/interface.c:78
-msgid "Enable this option to allow others to view your desktop"
-msgstr ""
-
-#: desktop/preferences/interface.c:93
-msgid ""
-"The following information will need to be supplied by the user connecting to "
-"your desktop"
-msgstr ""
-
-#: desktop/preferences/interface.c:104 gnome-ppp/account-window.c:1023
-msgid "Password"
-msgstr "סיסמא"
-
-#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
-#, c-format
-msgid "Couldn't find pixmap file: %s"
-msgstr ""
-
-#: desktop/server/eggtrayicon.c:118
-#, fuzzy
-msgid "Orientation"
-msgstr "הזדהות"
-
-#: desktop/server/eggtrayicon.c:119
-msgid "The orientation of the tray."
-msgstr ""
-
-#: desktop/server/tray.c:104
-msgid "Your desktop is viewable to others"
-msgstr ""
-
-#: desktop/server/tray.c:160
-msgid "translator_credits"
-msgstr ""
-
-#: desktop/server/tray.c:172
-#, fuzzy
-msgid "Remote Desktop Sharing"
-msgstr "שולחן העבודה המרוחק של GNOME"
-
-#: gnome-netinfo/callbacks.c:211
+#: src/callbacks.c:212
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 
-#: gnome-netinfo/callbacks.c:213
+#: src/callbacks.c:214
 msgid "This is an untranslated version of GNOME Network Information"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:2
+#: src/gnome-netinfo.glade.h:1
+msgid "    "
+msgstr ""
+
+#: src/gnome-netinfo.glade.h:2
 msgid "(eg. user@www.domain.com)"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:3
+#: src/gnome-netinfo.glade.h:3
 #, fuzzy
 msgid "(for example: domain.com)"
 msgstr "לדוגמא: www.domain.com או 192.168.2.1"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:4
+#: src/gnome-netinfo.glade.h:4
 #, fuzzy
 msgid "(for example: www.domain.com or 192.168.2.1)"
 msgstr "לדוגמא: www.domain.com או 192.168.2.1"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:6
+#: src/gnome-netinfo.glade.h:5
+msgid "*"
+msgstr "*"
+
+#: src/gnome-netinfo.glade.h:6
 msgid "0.0"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:7
+#: src/gnome-netinfo.glade.h:7
 msgid "<span weight=\"bold\">@</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:8
+#: src/gnome-netinfo.glade.h:8
 #, fuzzy
 msgid ""
 "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
 "information</span>"
 msgstr "קבע את ממשק הרשת לקבלת המידע"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:9
+#: src/gnome-netinfo.glade.h:9
 msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:10
+#: src/gnome-netinfo.glade.h:10
 msgid ""
 "<span weight=\"bold\">Enter a user name and network address to finger that "
 "user</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:11
+#: src/gnome-netinfo.glade.h:11
 msgid "<span weight=\"bold\">Enter the network address to ping</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:12
+#: src/gnome-netinfo.glade.h:12
 msgid ""
 "<span weight=\"bold\">Enter the network address to scan for open ports</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:13
+#: src/gnome-netinfo.glade.h:13
 msgid ""
 "<span weight=\"bold\">Enter the network address to trace a route to</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:14
+#: src/gnome-netinfo.glade.h:14
 msgid "<span weight=\"bold\">Information</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:15
+#: src/gnome-netinfo.glade.h:15
 msgid "<span weight=\"bold\">Round trip time statistics</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:16
+#: src/gnome-netinfo.glade.h:16
 #, fuzzy
 msgid ""
 "<span weight=\"bold\">Select the network device to get information on</span>"
 msgstr "קבע את ממשק הרשת לקבלת המידע"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:17
+#: src/gnome-netinfo.glade.h:17
 msgid "<span weight=\"bold\">Select the type of information to display</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:18
+#: src/gnome-netinfo.glade.h:18
 msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:19
+#: src/gnome-netinfo.glade.h:19
 msgid "<span weight=\"bold\">Statistics</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:20
+#: src/gnome-netinfo.glade.h:20
 msgid "<span weight=\"bold\">Transmission statistics</span>"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:21
+#: src/gnome-netinfo.glade.h:21
 #, fuzzy
 msgid "Any / All Information"
 msgstr "מידע"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:22
+#: src/gnome-netinfo.glade.h:22
 msgid "Average:"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:23
+#: src/gnome-netinfo.glade.h:23
 #, fuzzy
 msgid "Broadcast:"
 msgstr "שידור"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:24
+#: src/gnome-netinfo.glade.h:24
 msgid "CPU / OS Type"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:25
+#: src/gnome-netinfo.glade.h:25
 msgid "Canonical Name"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:26
+#: src/gnome-netinfo.glade.h:26
 msgid "Clear _History"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:27
+#: src/gnome-netinfo.glade.h:27
 #, fuzzy
 msgid "Collisions:"
 msgstr "התנגשויות"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:28
+#: src/gnome-netinfo.glade.h:28
 #, fuzzy
 msgid "Default Information"
 msgstr "מידע רשת"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:29
+#: src/gnome-netinfo.glade.h:29
 #, fuzzy
 msgid "Display active network services"
 msgstr "הצג שירותי אינטרנט פעילים"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:30
+#: src/gnome-netinfo.glade.h:30
 #, fuzzy
 msgid "Display multicast information"
 msgstr "הצג מידע שידור מרובב"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:31
+#: src/gnome-netinfo.glade.h:31
 #, fuzzy
 msgid "Display routing table information"
 msgstr "הצג מידע שידור מרובב"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:32
+#: src/gnome-netinfo.glade.h:32
 msgid "Enter the network address to ping"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:420
+#: src/gnome-netinfo.glade.h:33 src/main.c:530
 msgid "Finger"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:34
+#: src/gnome-netinfo.glade.h:34
 #, fuzzy
 msgid "Hardware address:"
 msgstr "כתובת חומרה"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:35
+#: src/gnome-netinfo.glade.h:35
 #, fuzzy
 msgid "Host name for Address"
 msgstr "כתובת IP מרוחקת"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:36
+#: src/gnome-netinfo.glade.h:36
 #, fuzzy
 msgid "IP address:"
 msgstr "כתובת IP"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:37
+#: src/gnome-netinfo.glade.h:37
 #, fuzzy
 msgid "Internet Address"
 msgstr "כתובת IP"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:38
+#: src/gnome-netinfo.glade.h:38
 #, fuzzy
 msgid "Link speed:"
 msgstr "מהירות הקישור"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:375
+#: src/gnome-netinfo.glade.h:39 src/main.c:485
 msgid "Lookup"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:40
+#: src/gnome-netinfo.glade.h:40
 #, fuzzy
 msgid "MTU:"
 msgstr "MTU"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:41
+#: src/gnome-netinfo.glade.h:41
 msgid "Mailbox Exchange"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:42
+#: src/gnome-netinfo.glade.h:42
 #, fuzzy
 msgid "Mailbox Information"
 msgstr "מידע"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:43
+#: src/gnome-netinfo.glade.h:43
 #, fuzzy
 msgid "Maximum:"
 msgstr "מספר מקסימלי של חיוגים חוזרים"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:44
+#: src/gnome-netinfo.glade.h:44
 msgid "Minimum:"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:45
+#: src/gnome-netinfo.glade.h:45
 #, fuzzy
 msgid "Multicast:"
 msgstr "שידור מרובב"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:46
+#: src/gnome-netinfo.glade.h:46
 #, fuzzy
 msgid "Name Server"
 msgstr "שרתי DNS"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:47
+#: src/gnome-netinfo.glade.h:47
 msgid "Netmask:"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:239
+#: src/gnome-netinfo.glade.h:48 src/main.c:349
 msgid "Netstat"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:49
+#: src/gnome-netinfo.glade.h:49 src/main.c:110
 msgid "Network Information"
 msgstr "מידע רשת"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:50
+#: src/gnome-netinfo.glade.h:50
 msgid "Packets loss:"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:51
+#: src/gnome-netinfo.glade.h:51
 msgid "Packets received:"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:52
+#: src/gnome-netinfo.glade.h:52
 msgid "Packets transmitted:"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:147
+#: src/gnome-netinfo.glade.h:53 src/main.c:257
 msgid "Ping"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:54
+#: src/gnome-netinfo.glade.h:54
 msgid "Port _Scan"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:55
+#: src/gnome-netinfo.glade.h:55
 #, fuzzy
 msgid "Received bytes:"
 msgstr "חבילות מידע שהתקבלו"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:56
+#: src/gnome-netinfo.glade.h:56
 #, fuzzy
 msgid "Received packets:"
 msgstr "חבילות מידע שהתקבלו"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:57
+#: src/gnome-netinfo.glade.h:57
 #, fuzzy
 msgid "Reception errors:"
 msgstr "שגיאות קבלה"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:337
+#: src/gnome-netinfo.glade.h:58 src/main.c:447
 msgid "Scan"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:59
+#: src/gnome-netinfo.glade.h:59
 msgid "Select network device from list"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:60
+#: src/gnome-netinfo.glade.h:60
 #, fuzzy
 msgid "Send only"
 msgstr "שליחה בלבד"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:61
+#: src/gnome-netinfo.glade.h:61
 msgid "Send unlimited requests (pings)"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:62
+#: src/gnome-netinfo.glade.h:62
 msgid "Start-of-authority"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:63
+#: src/gnome-netinfo.glade.h:63
 #, fuzzy
 msgid "State:"
 msgstr "מצב"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:64
+#: src/gnome-netinfo.glade.h:64
 #, fuzzy
 msgid "Text Information"
 msgstr "מידע"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:195
+#: src/gnome-netinfo.glade.h:65 src/main.c:305
 msgid "Trace"
 msgstr "מעקב"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:66
+#: src/gnome-netinfo.glade.h:66
 #, fuzzy
 msgid "Transmission errors:"
 msgstr "שגיאות שליחה"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:67
+#: src/gnome-netinfo.glade.h:67
 #, fuzzy
 msgid "Transmitted bytes:"
 msgstr "חבילות מידע שנשלחו"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:68
+#: src/gnome-netinfo.glade.h:68
 #, fuzzy
 msgid "Transmitted packets:"
 msgstr "חבילות מידע שנשלחו"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:69
+#: src/gnome-netinfo.glade.h:69
 msgid "Well Known Services"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:471
+#: src/gnome-netinfo.glade.h:70 src/main.c:581
 msgid "Whois"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:71
+#: src/gnome-netinfo.glade.h:71
 #, fuzzy
 msgid "_Devices"
 msgstr "התקן מודם"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:72
+#: src/gnome-netinfo.glade.h:72
 msgid "_Finger"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:73
+#: src/gnome-netinfo.glade.h:73
 msgid "_Information"
 msgstr "_מידע"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:74
+#: src/gnome-netinfo.glade.h:74
 msgid "_Lookup"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:75
+#: src/gnome-netinfo.glade.h:75
 msgid "_Netstat"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:76
+#: src/gnome-netinfo.glade.h:76
 msgid "_Ping"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:77
+#: src/gnome-netinfo.glade.h:77
 msgid "_Traceroute"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:78
+#: src/gnome-netinfo.glade.h:78
 msgid "_Whois"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:79
+#: src/gnome-netinfo.glade.h:79
 msgid "ms"
 msgstr ""
 
-#: gnome-netinfo/gnome-netinfo.glade.h:80 gnome-netinfo/info.h:27
+#: src/gnome-netinfo.glade.h:80 src/info.h:27
 msgid "not available"
 msgstr "לא זמין"
 
-#: gnome-netinfo/gnome-netinfo.glade.h:81
+#: src/gnome-netinfo.glade.h:81
 msgid "requests (pings)"
 msgstr ""
 
-#: gnome-netinfo/info.c:252
+#: src/info.c:277
 msgid "Active"
 msgstr "פעיל"
 
-#: gnome-netinfo/info.c:254
+#: src/info.c:279
 msgid "Inactive"
 msgstr "לא פעיל"
 
-#: gnome-netinfo/info.c:259
+#: src/info.c:284
 msgid "Loopback"
 msgstr ""
 
-#: gnome-netinfo/info.c:272
+#: src/info.c:297
 msgid "Enabled"
 msgstr "פועל"
 
-#: gnome-netinfo/info.c:274
+#: src/info.c:299
 msgid "Disabled"
 msgstr "כבוי"
 
 #. The info output in a text format (to copy on clipboard)
-#: gnome-netinfo/info.c:391
+#: src/info.c:419
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr ""
 
-#: gnome-netinfo/info.c:392
+#: src/info.c:420
 #, fuzzy, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "כתובת חומרה"
 
-#: gnome-netinfo/info.c:393
+#: src/info.c:421
 #, fuzzy, c-format
 msgid "IP address:\t%s\n"
 msgstr "כתובת IP"
 
-#: gnome-netinfo/info.c:394
+#: src/info.c:422
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr ""
 
-#: gnome-netinfo/info.c:395
+#: src/info.c:423
 #, fuzzy, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "שידור"
 
-#: gnome-netinfo/info.c:396
+#: src/info.c:424
 #, fuzzy, c-format
 msgid "Multicast:\t%s\n"
 msgstr "שידור מרובב"
 
-#: gnome-netinfo/info.c:397
+#: src/info.c:425
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr ""
 
-#: gnome-netinfo/info.c:398
+#: src/info.c:426
 #, fuzzy, c-format
 msgid "Link speed:\t%s\n"
 msgstr "מהירות הקישור"
 
-#: gnome-netinfo/info.c:399
+#: src/info.c:427
 #, fuzzy, c-format
 msgid "State:\t%s\n"
 msgstr "מצב"
 
-#: gnome-netinfo/info.c:401
+#: src/info.c:429
 #, fuzzy, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "חבילות מידע שנשלחו"
 
-#: gnome-netinfo/info.c:402
+#: src/info.c:430
 #, fuzzy, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "שגיאות שליחה"
 
-#: gnome-netinfo/info.c:403
+#: src/info.c:431
 #, fuzzy, c-format
 msgid "Received packets:\t%s\n"
 msgstr "חבילות מידע שהתקבלו"
 
-#: gnome-netinfo/info.c:404
+#: src/info.c:432
 #, fuzzy, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "שגיאות קבלה"
 
-#: gnome-netinfo/info.c:405
+#: src/info.c:433
 #, fuzzy, c-format
 msgid "Collisions:\t%s\n"
 msgstr "התנגשויות"
 
-#. adds columns
-#: gnome-netinfo/lookup.c:272 sync/entrylist.c:67
+#: src/lookup.c:272
 msgid "Name"
 msgstr "שם"
 
-#: gnome-netinfo/lookup.c:280
+#: src/lookup.c:280
 msgid "TTL"
 msgstr ""
 
-#: gnome-netinfo/lookup.c:289
+#: src/lookup.c:289
 #, fuzzy
 msgid "Address Type"
 msgstr "כתובת IP"
 
-#: gnome-netinfo/lookup.c:299
+#: src/lookup.c:299
 msgid "Record Type"
 msgstr ""
 
-#: gnome-netinfo/lookup.c:308
+#: src/lookup.c:308
 #, fuzzy
 msgid "Address"
 msgstr "כתובת IP"
@@ -1049,119 +505,176 @@ msgstr "כתובת IP"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/lookup.c:336
+#: src/lookup.c:336
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr ""
 
-#: gnome-netinfo/main.c:76
+#: src/main.c:75
+msgid "Load information for a network device"
+msgstr ""
+
+#: src/main.c:76
+msgid "DEVICE"
+msgstr ""
+
+#: src/main.c:78
+msgid "Send a ping to a network address"
+msgstr ""
+
+#: src/main.c:79 src/main.c:85 src/main.c:88 src/main.c:91
+msgid "HOST"
+msgstr ""
+
+#: src/main.c:81
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr ""
+
+#: src/main.c:82
+msgid "COMMAND"
+msgstr ""
+
+#: src/main.c:84
+msgid "Trace a route to a network address"
+msgstr ""
+
+#: src/main.c:87
+#, fuzzy
+msgid "Port scan a network address"
+msgstr "כתובת IP מרוחקת"
+
+#: src/main.c:90
+msgid "Look up a network address"
+msgstr ""
+
+#: src/main.c:93
+msgid "Finger command to run"
+msgstr ""
+
+#: src/main.c:94
+msgid "USER"
+msgstr ""
+
+#: src/main.c:96
+msgid "Perform a whois lookup for a network domain"
+msgstr ""
+
+#: src/main.c:97
+msgid "DOMAIN"
+msgstr ""
+
+#: src/main.c:116
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
 "installed"
 msgstr ""
 
-#: gnome-netinfo/netinfo.c:128
+#: src/netinfo.c:157
 #, fuzzy
 msgid "Network address not specified"
 msgstr "לא צויין מארח"
 
-#: gnome-netinfo/netinfo.c:136
+#: src/netinfo.c:165
 #, fuzzy, c-format
 msgid "The host '%s' cannot be found"
 msgstr "החשבון לא יכול להמחק."
 
-#: gnome-netinfo/netinfo.c:278
+#: src/netinfo.c:309
 msgid "Information not available"
 msgstr "מידע לא זמין"
 
-#: gnome-netinfo/netinfo.c:363
+#: src/netinfo.c:395
 msgid "Stop"
 msgstr "הפסק"
 
-#: gnome-netinfo/netinfo.c:369
+#: src/netinfo.c:401
 msgid "Run"
 msgstr "הפעל"
 
-#: gnome-netinfo/netstat.c:363
+#: src/netstat.c:403
 msgid "Protocol"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:370
+#: src/netstat.c:410
 msgid "IP Source"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:378
+#: src/netstat.c:418
 msgid "Port/Service"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:386 gnome-netinfo/scan.c:289
+#: src/netstat.c:426 src/scan.c:289
 msgid "State"
 msgstr "מצב"
 
-#: gnome-netinfo/netstat.c:496
+#: src/netstat.c:549
+#, fuzzy
+msgid "Destination/Prefix"
+msgstr "הזדהות"
+
+#: src/netstat.c:551
 #, fuzzy
 msgid "Destination"
 msgstr "הזדהות"
 
-#: gnome-netinfo/netstat.c:502
+#: src/netstat.c:558
 msgid "Gateway"
 msgstr ""
 
-#. netmask
-#: gnome-netinfo/netstat.c:509 gnome-ppp/account-window.c:1106
+#: src/netstat.c:566
 msgid "Netmask"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:516 gnome-netinfo/netstat.c:622
+#: src/netstat.c:574 src/netstat.c:680
 msgid "Interface"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:629
+#: src/netstat.c:687
 msgid "Member"
 msgstr ""
 
-#: gnome-netinfo/netstat.c:637
+#: src/netstat.c:695
 msgid "Group"
 msgstr ""
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:679
+#: src/netstat.c:737
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr ""
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:685
+#: src/netstat.c:743
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr ""
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/netstat.c:690
+#: src/netstat.c:748
 msgid "Interface\tMember\tGroup\n"
 msgstr ""
 
-#: gnome-netinfo/ping.c:376
+#: src/ping.c:378
 msgid "Bytes"
 msgstr ""
 
-#: gnome-netinfo/ping.c:383
+#: src/ping.c:385
 msgid "Source"
 msgstr ""
 
-#: gnome-netinfo/ping.c:391
+#: src/ping.c:393
 msgid "Seq"
 msgstr ""
 
-#: gnome-netinfo/ping.c:401
+#: src/ping.c:403
 #, fuzzy
 msgid "Time"
 msgstr "מד זמן"
 
-#: gnome-netinfo/ping.c:409
+#: src/ping.c:411
 msgid "Units"
 msgstr ""
 
@@ -1169,80 +682,80 @@ msgstr ""
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/ping.c:435
+#: src/ping.c:437
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr ""
 
 #. The ping output in a text format (to copy on clipboard)
-#: gnome-netinfo/ping.c:450
+#: src/ping.c:452
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr ""
 
-#: gnome-netinfo/ping.c:451
+#: src/ping.c:453
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr ""
 
-#: gnome-netinfo/ping.c:452
+#: src/ping.c:454
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr ""
 
-#: gnome-netinfo/ping.c:454
+#: src/ping.c:456
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr ""
 
-#: gnome-netinfo/ping.c:456
+#: src/ping.c:458
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr ""
 
-#: gnome-netinfo/ping.c:458
+#: src/ping.c:460
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr ""
 
-#: gnome-netinfo/scan.c:151
+#: src/scan.c:151
 #, fuzzy
 msgid "unknown"
 msgstr "unison"
 
-#: gnome-netinfo/scan.c:281
+#: src/scan.c:281
 msgid "Port"
 msgstr "פתחה"
 
-#: gnome-netinfo/scan.c:297
+#: src/scan.c:297
 msgid "Service"
 msgstr ""
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/scan.c:319
+#: src/scan.c:319
 msgid "Port\tState\tService\n"
 msgstr ""
 
-#: gnome-netinfo/traceroute.c:260
+#: src/traceroute.c:260
 msgid "Hop"
 msgstr ""
 
-#: gnome-netinfo/traceroute.c:268
+#: src/traceroute.c:268
 #, fuzzy
 msgid "Hostname"
 msgstr "מארח"
 
-#: gnome-netinfo/traceroute.c:276
+#: src/traceroute.c:276
 msgid "IP"
 msgstr ""
 
-#: gnome-netinfo/traceroute.c:287
+#: src/traceroute.c:287
 #, fuzzy
 msgid "Time 1"
 msgstr "מד זמן"
 
-#: gnome-netinfo/traceroute.c:297
+#: src/traceroute.c:297
 #, fuzzy
 msgid "Time 2"
 msgstr "מד זמן"
@@ -1251,862 +764,671 @@ msgstr "מד זמן"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: gnome-netinfo/traceroute.c:323
+#: src/traceroute.c:323
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr ""
 
-#: gnome-netinfo/utils.c:227
+#: src/utils.c:227
 #, c-format
 msgid "%s: Command not found"
 msgstr ""
 
-#: gnome-ppp/account-window.c:161
-msgid "Receive"
-msgstr "קבל"
-
-#: gnome-ppp/account-window.c:162
-msgid "Enter search string"
-msgstr "כתוב מחרוזת חיפוש"
-
-#: gnome-ppp/account-window.c:165
-msgid "Send"
-msgstr "שלח"
-
-#: gnome-ppp/account-window.c:166
-msgid "Enter transmission string"
-msgstr "כתוב מחרוזת שליחה"
-
-#: gnome-ppp/account-window.c:169
-msgid "Send User Name"
-msgstr "שלח שם משתמש"
-
-#: gnome-ppp/account-window.c:170
-msgid "Username taken from Authentication"
-msgstr "שם המשתמש נלקח מההזדהות"
-
-#: gnome-ppp/account-window.c:173
-msgid "Send User Password"
-msgstr "שלח את סיסמת המשתמש"
-
-#: gnome-ppp/account-window.c:174
-msgid "Password taken from Authentication"
-msgstr "הסיסמה נלקחה מההזדהות"
-
-#: gnome-ppp/account-window.c:177
-msgid "Dialog Box Input"
-msgstr "קלט תיבת דו-שיח"
-
-#: gnome-ppp/account-window.c:178
-msgid "Enter text to be used as a dialog message when prompted for input"
-msgstr "כתוב מלל שישמש כהודעת דו-שיח כאשר תתבקש לקלט"
-
-#: gnome-ppp/account-window.c:276
-msgid "open_account_window(): account=NULL with clone flag"
-msgstr ""
-
-#: gnome-ppp/account-window.c:302
-msgid "open_account_window(): calling arguments invalid"
-msgstr ""
-
-#. dial command entry widgets
-#: gnome-ppp/account-window.c:342 gnome-ppp/modem-window.c:288
-msgid "Dial"
-msgstr "חייג"
-
-#: gnome-ppp/account-window.c:348
-msgid "Authentication"
-msgstr "הזדהות"
-
-#. dns server entry
-#: gnome-ppp/account-window.c:354 gnome-ppp/account-window.c:1223
-msgid "IP Address"
-msgstr "כתובת IP"
-
-#: gnome-ppp/account-window.c:360
-msgid "DNS"
-msgstr "DNS"
-
-#: gnome-ppp/account-window.c:366
-msgid "Script"
-msgstr ""
-
-#: gnome-ppp/account-window.c:372
-msgid "PPP"
-msgstr "PPP"
-
-#: gnome-ppp/account-window.c:378
-msgid "Modem"
-msgstr "מודם"
-
-#: gnome-ppp/account-window.c:805
-msgid "Account Name"
-msgstr "שם החשבון"
-
-#. redial spin button
-#: gnome-ppp/account-window.c:817
-msgid "Redial Maximum"
-msgstr "מספר מקסימלי של חיוגים חוזרים"
-
-#. dial timeout spin button
-#: gnome-ppp/account-window.c:838
-msgid "Dial Timeout (sec)"
-msgstr "סף זמן החיוג (בשניות)"
-
-#. phone number frame
-#: gnome-ppp/account-window.c:859
-msgid "Phone Numbers"
-msgstr "מספרי טלפון"
-
-#. Phone number
-#: gnome-ppp/account-window.c:871
-msgid "#"
-msgstr "#"
-
-#. add/remove buttons
-#: gnome-ppp/account-window.c:892 gnome-ppp/account-window.c:1242
-#: gnome-ppp/account-window.c:1326 gnome-ppp/account-window.c:1464
-msgid "Add"
-msgstr "הוסף"
-
-#: gnome-ppp/account-window.c:906 gnome-ppp/account-window.c:1256
-#: gnome-ppp/account-window.c:1340 gnome-ppp/account-window.c:1490
-#: sync/main.c:60 sync/main.c:170
-msgid "Remove"
-msgstr "הסר"
-
-#: gnome-ppp/account-window.c:958
-msgid "PAP/CHAP"
-msgstr "PAP/CHAP"
-
-#: gnome-ppp/account-window.c:970
-msgid "User Name"
-msgstr "שם משתמש"
-
-#: gnome-ppp/account-window.c:990
-msgid "Remote Name"
-msgstr "שם מרוחק"
-
-#. password
-#: gnome-ppp/account-window.c:1011
-msgid "Hidden Password"
-msgstr "סיסמא מוסתרת"
-
-#. local ip address
-#: gnome-ppp/account-window.c:1061
-msgid "Local IP Address"
-msgstr "כתובת IP מקומית"
-
-#: gnome-ppp/account-window.c:1072 gnome-ppp/account-window.c:1117
-#: gnome-ppp/account-window.c:1162
-msgid "Dynamic"
-msgstr "דינמי"
-
-#: gnome-ppp/account-window.c:1086 gnome-ppp/account-window.c:1131
-#: gnome-ppp/account-window.c:1176
-msgid "Static"
-msgstr "סטטי"
-
-#. remote ip address
-#: gnome-ppp/account-window.c:1151
-msgid "Remote IP Address"
-msgstr "כתובת IP מרוחקת"
-
-#. dns server list
-#: gnome-ppp/account-window.c:1210
-msgid "DNS Servers"
-msgstr "שרתי DNS"
-
-#. search domains list
-#: gnome-ppp/account-window.c:1295
-msgid "Search Domains"
-msgstr "תחומי חיפוש"
-
-#: gnome-ppp/account-window.c:1306
-msgid "Domain Name"
-msgstr "שם התחום"
-
-#: gnome-ppp/account-window.c:1388
-msgid "Action"
-msgstr "פעולה"
-
-#: gnome-ppp/account-window.c:1389
-msgid "Text"
-msgstr "מלל"
-
-#. script list
-#: gnome-ppp/account-window.c:1397
-msgid "Login Script"
-msgstr ""
-
-#: gnome-ppp/account-window.c:1477
-msgid "Insert"
-msgstr "הכנס"
-
-#: gnome-ppp/account-window.c:1551
-msgid "Add Default Route"
-msgstr "הוסף נתיב ברירת מחדל"
-
-#: gnome-ppp/account-window.c:1567
-msgid "Lock Dialout Device"
-msgstr "התקן נעילת החיוג היוצא"
-
-#. mtu, mru spin buttons
-#: gnome-ppp/account-window.c:1582
-msgid "Maximum Transmission Unit"
-msgstr "יחידת תמסורת מקסימלית"
-
-#: gnome-ppp/account-window.c:1604
-msgid "Maximum Receive Unit"
-msgstr "יחידת קבלה מקסימלית"
-
-#: gnome-ppp/account-window.c:1625
-msgid "Run Program After Connect"
-msgstr "הפעל תוכנית לאחר החיבור"
-
-#: gnome-ppp/account-window.c:1637
-msgid "Run Program After Disconnect"
-msgstr "הפעל תוכנית לאחר הניתוק"
-
-#. modem device
-#: gnome-ppp/account-window.c:1672
-msgid "Modem Device"
-msgstr "התקן מודם"
-
-#. modem speed
-#: gnome-ppp/account-window.c:1698
-msgid "Connection Speed"
-msgstr "מהירות החיבור"
-
-#. modem flow control
-#: gnome-ppp/account-window.c:1724
-msgid "Flow Control"
-msgstr "בקרת זרימה"
-
-#. modem line termination
-#: gnome-ppp/account-window.c:1750
-msgid "Line Termination"
-msgstr "סיום קו"
-
-#. modem speaker volume
-#: gnome-ppp/account-window.c:1776
-msgid "Modem Speaker Volume"
-msgstr "עוצמת רמקול המודם"
-
-#. modem edit commands
-#: gnome-ppp/account-window.c:1793
-msgid " Edit Modem Commands "
-msgstr " ערוך את פקודות המודם "
-
-#: gnome-ppp/account-window.c:2252
-msgid "**PASSWORD**"
-msgstr "**סיסמא**"
-
-#: gnome-ppp/account-window.c:2256
-msgid "script_type_cb(): optionmenu data bad"
-msgstr ""
-
-#: gnome-ppp/dial-window.c:143
-msgid "_Debug Terminal"
-msgstr "מסוף _ניפוי"
-
-#: gnome-ppp/dial-window.c:150
-msgid "_New..."
-msgstr "_חדש..."
-
-#: gnome-ppp/dial-window.c:151
-msgid "D_uplicate..."
-msgstr "_שכפל..."
-
-#: gnome-ppp/dial-window.c:152
-msgid "_Edit..."
-msgstr "_ערוך..."
-
-#: gnome-ppp/dial-window.c:153
-msgid "_Delete..."
-msgstr "_מחק..."
-
-#: gnome-ppp/dial-window.c:172
-msgid "_Account"
-msgstr "_חשבון"
-
-#. set up the main application
-#: gnome-ppp/dial-window.c:210
-msgid "gnome-ppp"
-msgstr "gnome-ppp"
-
-#: gnome-ppp/dial-window.c:358
-msgid "Dialing"
-msgstr "מתקשר"
-
-#: gnome-ppp/dial-window.c:362
-msgid "Connected"
-msgstr "מחובר"
-
-#: gnome-ppp/dial-window.c:385
-msgid "refresh_dial_app(): gtk_clist_append failed."
-msgstr "refresh_dial_app(): gtk_clist_append נכשל."
-
-#: gnome-ppp/dial-window.c:409 gnome-ppp/dial-window.c:417
-msgid "Connect"
-msgstr "התחבר"
-
-#: gnome-ppp/dial-window.c:427
-msgid "Cancel"
-msgstr "ביטול"
-
-#: gnome-ppp/dial-window.c:431
-msgid "Disconnect"
-msgstr "התנתק"
-
-#: gnome-ppp/dial-window.c:452
-msgid "You must disconnect before closing."
-msgstr "אתה חייב להתנתק לפני הסגירה."
-
-#: gnome-ppp/dial-window.c:742
-msgid "Are you sure you want to delete this account?\n"
-msgstr "האם אתה בטוח שברצונך למחוק את החשבון הזה?\n"
-
-#: gnome-ppp/dial-window.c:752
-msgid "The account cannot be deleted."
-msgstr "החשבון לא יכול להמחק."
-
-#: gnome-ppp/dial-window.c:758
-msgid "The account is in use and cannot be deleted."
-msgstr "החשבון בשימוש ולכן אינו יכול להמחק."
-
-#: gnome-ppp/dial-window.c:781
-msgid "GNOME Internet Dialer"
-msgstr "חייגן האינטרנט של GNOME"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:181
-msgid "Raise PPP Link"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:213 sync/main.c:67
-msgid "About..."
-msgstr "אודות..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:219
-msgid "Properties..."
-msgstr "מאפיינים..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:223
-msgid "Offline"
-msgstr "מנותק"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:432
-msgid "Connecting..."
-msgstr "מתחבר..."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:437
-msgid "PPP Connected"
-msgstr "PPP מחובר"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:443
-msgid "PPP Error!"
-msgstr "שגיאת PPP!"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:483
-msgid "That account is already in use.\n"
-msgstr "החשבון הזה כבר בשימוש.\n"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:566
-msgid "GNOME PPP Dialer Applet"
-msgstr "יישומון חיוג PPP בעבור GNOME"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:569
-msgid ""
-"An unnecessarily nice looking applet for GNOME's panel for easy control of "
-"PPP network links."
-msgstr ""
-"יישומון נאה ולא נחוץ ללוח של GNOME לשליטה קלה על חיבורי רשת באמצעות PPP."
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:691
-msgid "PPP Applet Properties"
-msgstr "מאפייני יישומון PPP"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:706
-msgid "Animation"
-msgstr "הנפשה"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:712
-msgid "Small"
-msgstr "קטן"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:716
-msgid "Large"
-msgstr "גדול"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:720
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:769
-msgid "None"
-msgstr "ללא"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:724
-msgid "Options"
-msgstr "אפשרויות"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:730
-msgid "Freeze Animation on Connect"
-msgstr "הקפא את ההנפשה בהתחברות"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:737
-msgid "Disconnect PPP on GNOME logout"
-msgstr "נתק את PPP בהתנתקות מ GNOME"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:745
-msgid "Timer"
-msgstr "מד זמן"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:751
-msgid "Label"
-msgstr "תווית"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:760
-msgid "Tooltip"
-msgstr ""
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:778
-msgid "Animation Speed"
-msgstr "מהירות ההנפשה"
-
-#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:791
-msgid "PPP Applet"
-msgstr "יישומון PPP"
-
-#: gnome-ppp/libgnome_ppp/connect.c:203
-msgid "---NEW CONNECTION---"
-msgstr "---חיבור חדש---"
-
-#: gnome-ppp/libgnome_ppp/msg.c:26
-msgid "Account already connected."
-msgstr "החשבון כבר מחובר."
-
-#: gnome-ppp/libgnome_ppp/msg.c:27
-msgid "Starting PPP Connection."
-msgstr "מתחיל בתקשורת PPP."
-
-#: gnome-ppp/libgnome_ppp/msg.c:28
-msgid "You don't have permission to execute pppd."
-msgstr "אין לך הרשאות להפעלת pppd."
-
-#: gnome-ppp/libgnome_ppp/msg.c:29
-msgid "The modem is in use by another program."
-msgstr "המודם בשימוש על-ידי תוכנית אחרת."
-
-#: gnome-ppp/libgnome_ppp/msg.c:30
-msgid "Running pppd."
-msgstr "מפעיל את pppd."
-
-#: gnome-ppp/libgnome_ppp/msg.c:31
-msgid "Closing connection."
-msgstr "מסיים את החיבור."
-
-#: gnome-ppp/libgnome_ppp/msg.c:32
-msgid "The pppd program failed to run gnome-ppp-chat."
-msgstr "התוכנית pppd נכשלה להפעית את gnome-ppp-chat."
-
-#: gnome-ppp/libgnome_ppp/msg.c:33
-msgid "The modem could not be hung up."
-msgstr "לא ניתן לנתק את המודם."
-
-#: gnome-ppp/libgnome_ppp/msg.c:34
-msgid "Initalizing modem."
-msgstr "מאתחל את המודם."
-
-#: gnome-ppp/libgnome_ppp/msg.c:35
-msgid "Your modem is not responding to initalization."
-msgstr "המודם שלך אינו מגיב לאתחול."
-
-#: gnome-ppp/libgnome_ppp/msg.c:36
-msgid "The command to set the volume on your modem's speaker failed."
-msgstr "הפקודה לקביעת עוצמת רמקול המודם שלך נכשלה."
-
-#: gnome-ppp/libgnome_ppp/msg.c:37
-msgid "No answer after maximum number of re-dial attempts."
-msgstr "אין תשובה לאחר מספר ניסיונות החיוג החוזר המקסימלי."
-
-#: gnome-ppp/libgnome_ppp/msg.c:38
-msgid "No phone numbers specified for this account."
-msgstr "לא צויינו מספרי טלפון לחשבון זה."
-
-#: gnome-ppp/libgnome_ppp/msg.c:39
-msgid "Dialing."
-msgstr "מחייג."
-
-#: gnome-ppp/libgnome_ppp/msg.c:40
-msgid "Dialing timeout."
-msgstr ""
-
-#: gnome-ppp/libgnome_ppp/msg.c:41
-msgid "No dialtone."
-msgstr "אין צליל חיוג."
-
-#: gnome-ppp/libgnome_ppp/msg.c:42
-msgid "Number busy."
-msgstr "המספר תפוס."
-
-#: gnome-ppp/libgnome_ppp/msg.c:43
-msgid "Ring, but no answer."
-msgstr "מצלצל, אך אין תשובה."
-
-#: gnome-ppp/libgnome_ppp/msg.c:44
-msgid "Connection failure, reason unknown."
-msgstr "החיבור נכשל, הסיבה איננה ידועה."
-
-#: gnome-ppp/libgnome_ppp/msg.c:45
-msgid "Connected."
-msgstr "מחובר."
-
-#: gnome-ppp/libgnome_ppp/msg.c:46
-msgid "The modem lost connection with remote host."
-msgstr "המודם איבד את החיבור עם המארח המרוחק."
-
-#: gnome-ppp/libgnome_ppp/msg.c:47
-msgid "Running Script."
-msgstr ""
-
-#: gnome-ppp/libgnome_ppp/msg.c:48
-msgid "Script Complete."
-msgstr ""
-
-#: gnome-ppp/libgnome_ppp/msg.c:49
-msgid "PPP connection established."
-msgstr "חיבור PPP נוסד."
-
-#: gnome-ppp/libgnome_ppp/msg.c:50
-msgid "Failed to establish a PPP connection."
-msgstr "נכשל ביסוד חיבור PPP."
-
-#: gnome-ppp/libgnome_ppp/msg.c:51
-msgid "The pppd daemon died unexpectedly."
-msgstr ""
-
-#: gnome-ppp/modem-window.c:83
-msgid "open_modem_window(): account=NULL"
-msgstr "open_modem_window(): account=NULL"
-
-#: gnome-ppp/modem-window.c:120
-msgid "Commands"
-msgstr "פקודות"
-
-#: gnome-ppp/modem-window.c:126
-msgid "Responses"
-msgstr "תגובות"
-
-#. initialization command entry widgets
-#: gnome-ppp/modem-window.c:268 gnome-ppp/modem-window.c:408
-msgid "Initialization"
-msgstr "אתחול"
-
-#. hangup command entry widgets
-#: gnome-ppp/modem-window.c:307 gnome-ppp/modem-window.c:428
-msgid "Hangup"
-msgstr "ניתוק"
-
-#. volume mute command entry widgets
-#: gnome-ppp/modem-window.c:327
-msgid "Volume Mute"
-msgstr "השתקת עוצמה"
-
-#. volume low command entry widgets
-#: gnome-ppp/modem-window.c:347
-msgid "Volume Low"
-msgstr "הנמכת עוצמה"
-
-#. volume high command entry widgets
-#: gnome-ppp/modem-window.c:367
-msgid "Volume High"
-msgstr "הגברת עוצמה"
-
-#. connection response entry widgets
-#: gnome-ppp/modem-window.c:448
-msgid "Connection"
-msgstr "חיבור"
-
-#. busy response entry widgets
-#: gnome-ppp/modem-window.c:468
-msgid "Busy"
-msgstr "עסוק"
-
-#. no answer response entry widgets
-#: gnome-ppp/modem-window.c:488
-msgid "No Answer"
-msgstr "אין תשובה"
-
-#. no carrier response entry widgets
-#: gnome-ppp/modem-window.c:508
-msgid "No Carrier"
-msgstr "אין צליל תקשורת"
-
-#. no dialtone response entry widgets
-#: gnome-ppp/modem-window.c:528
-msgid "No Dialtone"
-msgstr "אין צליל חיוג"
-
-#: network-utilities/gnome-remote-shell.c:243
 #, fuzzy
-msgid "No host specified."
-msgstr "לא צויין מארח"
+#~ msgid "GNOME Remote Desktop Applet"
+#~ msgstr "שולחן העבודה המרוחק של GNOME"
 
-#: network-utilities/gnome-remote-shell.c:292
-msgid "A user name is required for SSH"
-msgstr "שם משתמש דרוש ל SSH"
-
-#: network-utilities/gnome-remote-shell.c:420
 #, fuzzy
-msgid "The host cannot be found."
-msgstr "החשבון לא יכול להמחק."
+#~ msgid "Connect to a remote desktop computer"
+#~ msgstr "המודם איבד את החיבור עם המארח המרוחק."
 
-#: network-utilities/gnome-remote-shell.glade.h:3
-msgid "<span weight=\"bold\">Connect to remote host</span>"
-msgstr ""
-
-#: network-utilities/gnome-remote-shell.glade.h:4
-msgid "<span weight=\"bold\">Method</span>"
-msgstr ""
-
-#: network-utilities/gnome-remote-shell.glade.h:5
-msgid "<span weight=\"bold\">Window size</span>"
-msgstr ""
-
-#: network-utilities/gnome-remote-shell.glade.h:7
 #, fuzzy
-msgid "Connect to remote host"
-msgstr "המודם איבד את החיבור עם המארח המרוחק."
+#~ msgid "Remote Desktop Client"
+#~ msgstr "שולחן העבודה המרוחק של GNOME"
 
-#: network-utilities/gnome-remote-shell.glade.h:8
+#~ msgid "GNOME Remote Desktop"
+#~ msgstr "שולחן העבודה המרוחק של GNOME"
+
 #, fuzzy
-msgid "H_eight:"
-msgstr "גובה"
+#~ msgid "_More"
+#~ msgstr "מודם"
 
-#: network-utilities/gnome-remote-shell.glade.h:9
 #, fuzzy
-msgid "H_ost:"
-msgstr "מארח"
+#~ msgid "Co_nnect"
+#~ msgstr "התחבר"
 
-#: network-utilities/gnome-remote-shell.glade.h:10
-msgid "Regular shell (_Telnet)"
-msgstr ""
-
-#: network-utilities/gnome-remote-shell.glade.h:11
-msgid "Use _default"
-msgstr ""
-
-#: network-utilities/gnome-remote-shell.glade.h:12
 #, fuzzy
-msgid "_Port:"
-msgstr "פתחה"
+#~ msgid "Connection Profile"
+#~ msgstr "חיבור"
 
-#: network-utilities/gnome-remote-shell.glade.h:13
-msgid "_Secure shell (SSH)"
-msgstr ""
-
-#: network-utilities/gnome-remote-shell.glade.h:14
 #, fuzzy
-msgid "_User:"
-msgstr "משתמש"
+#~ msgid "_User Name:"
+#~ msgstr "שם משתמש"
 
-#: network-utilities/gnome-remote-shell.glade.h:15
 #, fuzzy
-msgid "_Width:"
-msgstr "רוחב"
+#~ msgid "Pass_word:"
+#~ msgstr "סיסמא"
 
-#: network-utilities/gnome-remote-shell.glade.h:16
-msgid "characters"
-msgstr ""
-
-#: pws/pws-preferences-support.c:273
-msgid "Expander Size"
-msgstr ""
-
-#: pws/pws-preferences-support.c:274
-msgid "Size of the expander arrow"
-msgstr ""
-
-#: pws/pws-preferences-widget.c:103
-msgid "Web folder:"
-msgstr ""
-
-#: pws/pws-preferences-widget.c:107
-msgid "Select the folder to be published"
-msgstr ""
-
-#: pws/pws-preferences-widget.c:115 pws/pws-preferences-widget.c:116
 #, fuzzy
-msgid "Additional options"
-msgstr "אפשרויות סנכרון"
+#~ msgid "Do_main:"
+#~ msgstr "שם התחום"
 
-#: pws/pws-preferences-widget.c:138
 #, fuzzy
-msgid "Port number:"
-msgstr "מספרי טלפון"
+#~ msgid "C_lient Hostname:"
+#~ msgstr "מארח"
 
-#: pws/pws-preferences-widget.c:157
 #, fuzzy
-msgid "Time out:"
-msgstr "מד זמן"
+#~ msgid "Remote Desktop Size"
+#~ msgstr "שולחן העבודה המרוחק של GNOME"
 
-#: pws/pws-preferences-widget.c:176
-msgid "Keep alive"
-msgstr ""
-
-#: pws/pws.c:83
-msgid "/_Preferences"
-msgstr ""
-
-#: pws/pws.c:84
-msgid "/_Open Web Folder"
-msgstr ""
-
-#: pws/pws.c:86
 #, fuzzy
-msgid "/_Quit"
-msgstr "עריכה"
+#~ msgid "_Display"
+#~ msgstr "תצוגה"
 
-#: pws/pws.c:176
-msgid "Personal web server preferences"
-msgstr ""
+#, fuzzy
+#~ msgid "GNOME Remote Desktop Error"
+#~ msgstr "שולחן העבודה המרוחק של GNOME"
 
-#: pws/pws.c:191
-msgid "Personal Web Server Preferences"
-msgstr ""
+#, fuzzy
+#~ msgid "Whether to enable desktop sharing"
+#~ msgstr "שולחן העבודה המרוחק של GNOME"
 
-#: pws/pws.c:192
-msgid "Setup the options for your personal web server."
-msgstr ""
+#, fuzzy
+#~ msgid ""
+#~ "<b>Connection settings</b>\n"
+#~ "Type the name of the computer to open a new desktop session and/or the "
+#~ "display number to connect to an already running session."
+#~ msgstr ""
+#~ "כתוב את שם המחשב כדי לפתוח תצורת שולחן עבודה חדשה ו/או את מספר התצוגה כדי "
+#~ "להתחבר לתצורה פועלת"
 
-#: sync/entryconfigdialog.c:70
-msgid "Could not load UI for entry configuration dialog"
-msgstr "לא ניתן לטעון את ממשק המשתמש של תיבת דו-השיח הגדרות הערך"
+#, fuzzy
+#~ msgid ""
+#~ "<b>Desktop settings</b>\n"
+#~ "Select the size and color depth (not supported for all cases, so use with "
+#~ "care) of you remote desktop."
+#~ msgstr ""
+#~ "בחר את הגודל ועומק הצבע (לא נתמך בכל המקרים, לכן השתמש בזהירות) של שולחן "
+#~ "העבודה המרוחק שלך"
 
-#: sync/entryconfigdialog.glade.h:2
-msgid "Entry name"
-msgstr "שם הערך"
+#, fuzzy
+#~ msgid ""
+#~ "<b>Method</b>\n"
+#~ "Select the method for connecting to the remote host. For Windows systems, "
+#~ "you want to choose VNC. For UNIX systems, usually X11, though VNC will "
+#~ "also work."
+#~ msgstr ""
+#~ "בחר את שיטת החיבור למארח המרוחק. למערכות חלונות, תרצה לבחור VNC. למערכות "
+#~ "UNIX, בדרך-כלל X11, למרות ש VNC גם יעבוד."
 
-#: sync/entryconfigdialog.glade.h:3
-msgid "Local path"
-msgstr "נתיב מקומי"
+#~ msgid "Color depth"
+#~ msgstr "עומק צבע"
 
-#: sync/entryconfigdialog.glade.h:4
-msgid "Preserve group"
-msgstr "שמר קבוצה"
+#, fuzzy
+#~ msgid "Connect Now ..."
+#~ msgstr "מתחבר..."
 
-#: sync/entryconfigdialog.glade.h:5
-msgid "Preserve permissions"
-msgstr "שמר הרשאות"
+#~ msgid "Display size"
+#~ msgstr "גודל התצוגה"
 
-#: sync/entryconfigdialog.glade.h:6
-msgid "Preserve times"
-msgstr "שמר זמנים"
+#, fuzzy
+#~ msgid "Display:"
+#~ msgstr "תצוגה"
 
-#: sync/entryconfigdialog.glade.h:7
-msgid "Recurse into directories"
-msgstr "השתמש ברקורסיה לתוך הסיפריות"
+#, fuzzy
+#~ msgid "Host:"
+#~ msgstr "מארח"
 
-#: sync/entryconfigdialog.glade.h:8
-msgid "Remote host"
-msgstr "מארח מרוחק"
+#~ msgid "VNC"
+#~ msgstr "VNC"
 
-#: sync/entryconfigdialog.glade.h:9
-msgid "Remote path"
-msgstr "נתיב מרוחק"
+#~ msgid "X11"
+#~ msgstr "X11"
 
-#: sync/entryconfigdialog.glade.h:10
-msgid "Synchronization options"
-msgstr "אפשרויות סנכרון"
+#~ msgid "by"
+#~ msgstr "על-ידי"
 
-#: sync/entryconfigdialog.glade.h:11
-msgid "Update only (don't overwrite newer files)"
-msgstr "עדכן בלבד (אל תחליף קבצים חדשים יותר)"
+#, fuzzy
+#~ msgid "Desktop Sharing"
+#~ msgstr "שולחן עבודה"
 
-#: sync/entryconfigdialog.glade.h:12
-msgid "Use relative path names"
-msgstr "השתמש בשמות נתיבים יחסיים"
+#~ msgid "Password"
+#~ msgstr "סיסמא"
 
-#: sync/entryconfigdialog.glade.h:13
-msgid "Use rsync"
-msgstr "השתמש ב rsync"
+#, fuzzy
+#~ msgid "Orientation"
+#~ msgstr "הזדהות"
 
-#: sync/entryconfigdialog.glade.h:14
-msgid "Use unison"
-msgstr "השתמש ב unison"
+#, fuzzy
+#~ msgid "Remote Desktop Sharing"
+#~ msgstr "שולחן העבודה המרוחק של GNOME"
 
-#: sync/entryconfigdialog.glade.h:15
-msgid "dialog1"
-msgstr "דו-שיח1"
+#~ msgid "Receive"
+#~ msgstr "קבל"
 
-#: sync/entryconfigdialog.glade.h:16
-msgid "rsync"
-msgstr "rsync"
+#~ msgid "Enter search string"
+#~ msgstr "כתוב מחרוזת חיפוש"
 
-#: sync/entryconfigdialog.glade.h:17
-msgid "unison"
-msgstr "unison"
+#~ msgid "Send"
+#~ msgstr "שלח"
 
-#: sync/entrylist.c:70
-msgid "Local"
-msgstr "מקומי"
+#~ msgid "Enter transmission string"
+#~ msgstr "כתוב מחרוזת שליחה"
 
-#: sync/entrylist.c:73
-msgid "Remote"
-msgstr "מרוחק"
+#~ msgid "Send User Name"
+#~ msgstr "שלח שם משתמש"
 
-#: sync/entrylist.c:76
-msgid "Last sync"
-msgstr "סנכרון אחרון"
+#~ msgid "Username taken from Authentication"
+#~ msgstr "שם המשתמש נלקח מההזדהות"
 
-#: sync/main.c:44
-msgid "_Synchronize"
-msgstr "_סנכרן"
+#~ msgid "Send User Password"
+#~ msgstr "שלח את סיסמת המשתמש"
 
-#: sync/main.c:55
-msgid "New entry..."
-msgstr "ערך חדש..."
+#~ msgid "Password taken from Authentication"
+#~ msgstr "הסיסמה נלקחה מההזדהות"
 
-#: sync/main.c:57 sync/main.c:171
-msgid "Edit..."
-msgstr "ערוך..."
+#~ msgid "Dialog Box Input"
+#~ msgstr "קלט תיבת דו-שיח"
 
-#: sync/main.c:75 sync/main.c:181
-msgid "Synchronize"
-msgstr "סנכרן"
+#~ msgid "Enter text to be used as a dialog message when prompted for input"
+#~ msgstr "כתוב מלל שישמש כהודעת דו-שיח כאשר תתבקש לקלט"
 
-#: sync/main.c:103
-msgid "Gnome Synchronize"
-msgstr "סנכרון Gnome"
+#~ msgid "Dial"
+#~ msgstr "חייג"
 
-#: sync/main.c:105
-msgid "The GNOME file synchronization program."
-msgstr "תוכנית סנכרון הקבצים של GNOME."
+#~ msgid "Authentication"
+#~ msgstr "הזדהות"
 
-#: sync/main.c:176
-msgid "New"
-msgstr "חדש"
+#~ msgid "IP Address"
+#~ msgstr "כתובת IP"
 
-#: sync/main.c:177
-msgid "Create new synchronization entry"
-msgstr "צור ערך סנכרון חדש"
+#~ msgid "DNS"
+#~ msgstr "DNS"
 
-#: sync/main.c:182
-msgid "Start synchronization for selected entries"
-msgstr "התחל סנכרון לערכים הנבחרים"
+#~ msgid "PPP"
+#~ msgstr "PPP"
 
-#: sync/main.c:185
-msgid "Edit"
-msgstr "עריכה"
+#~ msgid "Modem"
+#~ msgstr "מודם"
 
-#: sync/main.c:186
-msgid "Edit selected entry"
-msgstr "ערוך ערך נבחר"
+#~ msgid "Account Name"
+#~ msgstr "שם החשבון"
 
-#: sync/main.c:189
-msgid "Delete"
-msgstr "מחק"
+#~ msgid "Redial Maximum"
+#~ msgstr "מספר מקסימלי של חיוגים חוזרים"
 
-#: sync/main.c:190
-msgid "Delete selected entries"
-msgstr "מחק ערכים נבחרים"
+#~ msgid "Dial Timeout (sec)"
+#~ msgstr "סף זמן החיוג (בשניות)"
+
+#~ msgid "Phone Numbers"
+#~ msgstr "מספרי טלפון"
+
+#~ msgid "#"
+#~ msgstr "#"
+
+#~ msgid "Add"
+#~ msgstr "הוסף"
+
+#~ msgid "Remove"
+#~ msgstr "הסר"
+
+#~ msgid "PAP/CHAP"
+#~ msgstr "PAP/CHAP"
+
+#~ msgid "User Name"
+#~ msgstr "שם משתמש"
+
+#~ msgid "Remote Name"
+#~ msgstr "שם מרוחק"
+
+#~ msgid "Hidden Password"
+#~ msgstr "סיסמא מוסתרת"
+
+#~ msgid "Local IP Address"
+#~ msgstr "כתובת IP מקומית"
+
+#~ msgid "Dynamic"
+#~ msgstr "דינמי"
+
+#~ msgid "Static"
+#~ msgstr "סטטי"
+
+#~ msgid "Remote IP Address"
+#~ msgstr "כתובת IP מרוחקת"
+
+#~ msgid "DNS Servers"
+#~ msgstr "שרתי DNS"
+
+#~ msgid "Search Domains"
+#~ msgstr "תחומי חיפוש"
+
+#~ msgid "Domain Name"
+#~ msgstr "שם התחום"
+
+#~ msgid "Action"
+#~ msgstr "פעולה"
+
+#~ msgid "Text"
+#~ msgstr "מלל"
+
+#~ msgid "Insert"
+#~ msgstr "הכנס"
+
+#~ msgid "Add Default Route"
+#~ msgstr "הוסף נתיב ברירת מחדל"
+
+#~ msgid "Lock Dialout Device"
+#~ msgstr "התקן נעילת החיוג היוצא"
+
+#~ msgid "Maximum Transmission Unit"
+#~ msgstr "יחידת תמסורת מקסימלית"
+
+#~ msgid "Maximum Receive Unit"
+#~ msgstr "יחידת קבלה מקסימלית"
+
+#~ msgid "Run Program After Connect"
+#~ msgstr "הפעל תוכנית לאחר החיבור"
+
+#~ msgid "Run Program After Disconnect"
+#~ msgstr "הפעל תוכנית לאחר הניתוק"
+
+#~ msgid "Modem Device"
+#~ msgstr "התקן מודם"
+
+#~ msgid "Connection Speed"
+#~ msgstr "מהירות החיבור"
+
+#~ msgid "Flow Control"
+#~ msgstr "בקרת זרימה"
+
+#~ msgid "Line Termination"
+#~ msgstr "סיום קו"
+
+#~ msgid "Modem Speaker Volume"
+#~ msgstr "עוצמת רמקול המודם"
+
+#~ msgid " Edit Modem Commands "
+#~ msgstr " ערוך את פקודות המודם "
+
+#~ msgid "**PASSWORD**"
+#~ msgstr "**סיסמא**"
+
+#~ msgid "_Debug Terminal"
+#~ msgstr "מסוף _ניפוי"
+
+#~ msgid "_New..."
+#~ msgstr "_חדש..."
+
+#~ msgid "D_uplicate..."
+#~ msgstr "_שכפל..."
+
+#~ msgid "_Edit..."
+#~ msgstr "_ערוך..."
+
+#~ msgid "_Delete..."
+#~ msgstr "_מחק..."
+
+#~ msgid "_Account"
+#~ msgstr "_חשבון"
+
+#~ msgid "gnome-ppp"
+#~ msgstr "gnome-ppp"
+
+#~ msgid "Dialing"
+#~ msgstr "מתקשר"
+
+#~ msgid "Connected"
+#~ msgstr "מחובר"
+
+#~ msgid "refresh_dial_app(): gtk_clist_append failed."
+#~ msgstr "refresh_dial_app(): gtk_clist_append נכשל."
+
+#~ msgid "Connect"
+#~ msgstr "התחבר"
+
+#~ msgid "Cancel"
+#~ msgstr "ביטול"
+
+#~ msgid "Disconnect"
+#~ msgstr "התנתק"
+
+#~ msgid "You must disconnect before closing."
+#~ msgstr "אתה חייב להתנתק לפני הסגירה."
+
+#~ msgid "Are you sure you want to delete this account?\n"
+#~ msgstr "האם אתה בטוח שברצונך למחוק את החשבון הזה?\n"
+
+#~ msgid "The account cannot be deleted."
+#~ msgstr "החשבון לא יכול להמחק."
+
+#~ msgid "The account is in use and cannot be deleted."
+#~ msgstr "החשבון בשימוש ולכן אינו יכול להמחק."
+
+#~ msgid "GNOME Internet Dialer"
+#~ msgstr "חייגן האינטרנט של GNOME"
+
+#~ msgid "About..."
+#~ msgstr "אודות..."
+
+#~ msgid "Properties..."
+#~ msgstr "מאפיינים..."
+
+#~ msgid "Offline"
+#~ msgstr "מנותק"
+
+#~ msgid "Connecting..."
+#~ msgstr "מתחבר..."
+
+#~ msgid "PPP Connected"
+#~ msgstr "PPP מחובר"
+
+#~ msgid "PPP Error!"
+#~ msgstr "שגיאת PPP!"
+
+#~ msgid "That account is already in use.\n"
+#~ msgstr "החשבון הזה כבר בשימוש.\n"
+
+#~ msgid "GNOME PPP Dialer Applet"
+#~ msgstr "יישומון חיוג PPP בעבור GNOME"
+
+#~ msgid ""
+#~ "An unnecessarily nice looking applet for GNOME's panel for easy control "
+#~ "of PPP network links."
+#~ msgstr ""
+#~ "יישומון נאה ולא נחוץ ללוח של GNOME לשליטה קלה על חיבורי רשת באמצעות PPP."
+
+#~ msgid "PPP Applet Properties"
+#~ msgstr "מאפייני יישומון PPP"
+
+#~ msgid "Animation"
+#~ msgstr "הנפשה"
+
+#~ msgid "Small"
+#~ msgstr "קטן"
+
+#~ msgid "Large"
+#~ msgstr "גדול"
+
+#~ msgid "None"
+#~ msgstr "ללא"
+
+#~ msgid "Options"
+#~ msgstr "אפשרויות"
+
+#~ msgid "Freeze Animation on Connect"
+#~ msgstr "הקפא את ההנפשה בהתחברות"
+
+#~ msgid "Disconnect PPP on GNOME logout"
+#~ msgstr "נתק את PPP בהתנתקות מ GNOME"
+
+#~ msgid "Timer"
+#~ msgstr "מד זמן"
+
+#~ msgid "Label"
+#~ msgstr "תווית"
+
+#~ msgid "Animation Speed"
+#~ msgstr "מהירות ההנפשה"
+
+#~ msgid "PPP Applet"
+#~ msgstr "יישומון PPP"
+
+#~ msgid "---NEW CONNECTION---"
+#~ msgstr "---חיבור חדש---"
+
+#~ msgid "Account already connected."
+#~ msgstr "החשבון כבר מחובר."
+
+#~ msgid "Starting PPP Connection."
+#~ msgstr "מתחיל בתקשורת PPP."
+
+#~ msgid "You don't have permission to execute pppd."
+#~ msgstr "אין לך הרשאות להפעלת pppd."
+
+#~ msgid "The modem is in use by another program."
+#~ msgstr "המודם בשימוש על-ידי תוכנית אחרת."
+
+#~ msgid "Running pppd."
+#~ msgstr "מפעיל את pppd."
+
+#~ msgid "Closing connection."
+#~ msgstr "מסיים את החיבור."
+
+#~ msgid "The pppd program failed to run gnome-ppp-chat."
+#~ msgstr "התוכנית pppd נכשלה להפעית את gnome-ppp-chat."
+
+#~ msgid "The modem could not be hung up."
+#~ msgstr "לא ניתן לנתק את המודם."
+
+#~ msgid "Initalizing modem."
+#~ msgstr "מאתחל את המודם."
+
+#~ msgid "Your modem is not responding to initalization."
+#~ msgstr "המודם שלך אינו מגיב לאתחול."
+
+#~ msgid "The command to set the volume on your modem's speaker failed."
+#~ msgstr "הפקודה לקביעת עוצמת רמקול המודם שלך נכשלה."
+
+#~ msgid "No answer after maximum number of re-dial attempts."
+#~ msgstr "אין תשובה לאחר מספר ניסיונות החיוג החוזר המקסימלי."
+
+#~ msgid "No phone numbers specified for this account."
+#~ msgstr "לא צויינו מספרי טלפון לחשבון זה."
+
+#~ msgid "Dialing."
+#~ msgstr "מחייג."
+
+#~ msgid "No dialtone."
+#~ msgstr "אין צליל חיוג."
+
+#~ msgid "Number busy."
+#~ msgstr "המספר תפוס."
+
+#~ msgid "Ring, but no answer."
+#~ msgstr "מצלצל, אך אין תשובה."
+
+#~ msgid "Connection failure, reason unknown."
+#~ msgstr "החיבור נכשל, הסיבה איננה ידועה."
+
+#~ msgid "Connected."
+#~ msgstr "מחובר."
+
+#~ msgid "The modem lost connection with remote host."
+#~ msgstr "המודם איבד את החיבור עם המארח המרוחק."
+
+#~ msgid "PPP connection established."
+#~ msgstr "חיבור PPP נוסד."
+
+#~ msgid "Failed to establish a PPP connection."
+#~ msgstr "נכשל ביסוד חיבור PPP."
+
+#~ msgid "open_modem_window(): account=NULL"
+#~ msgstr "open_modem_window(): account=NULL"
+
+#~ msgid "Commands"
+#~ msgstr "פקודות"
+
+#~ msgid "Responses"
+#~ msgstr "תגובות"
+
+#~ msgid "Initialization"
+#~ msgstr "אתחול"
+
+#~ msgid "Hangup"
+#~ msgstr "ניתוק"
+
+#~ msgid "Volume Mute"
+#~ msgstr "השתקת עוצמה"
+
+#~ msgid "Volume Low"
+#~ msgstr "הנמכת עוצמה"
+
+#~ msgid "Volume High"
+#~ msgstr "הגברת עוצמה"
+
+#~ msgid "Connection"
+#~ msgstr "חיבור"
+
+#~ msgid "Busy"
+#~ msgstr "עסוק"
+
+#~ msgid "No Answer"
+#~ msgstr "אין תשובה"
+
+#~ msgid "No Carrier"
+#~ msgstr "אין צליל תקשורת"
+
+#~ msgid "No Dialtone"
+#~ msgstr "אין צליל חיוג"
+
+#, fuzzy
+#~ msgid "No host specified."
+#~ msgstr "לא צויין מארח"
+
+#~ msgid "A user name is required for SSH"
+#~ msgstr "שם משתמש דרוש ל SSH"
+
+#, fuzzy
+#~ msgid "The host cannot be found."
+#~ msgstr "החשבון לא יכול להמחק."
+
+#, fuzzy
+#~ msgid "Connect to remote host"
+#~ msgstr "המודם איבד את החיבור עם המארח המרוחק."
+
+#, fuzzy
+#~ msgid "H_eight:"
+#~ msgstr "גובה"
+
+#, fuzzy
+#~ msgid "H_ost:"
+#~ msgstr "מארח"
+
+#, fuzzy
+#~ msgid "_Port:"
+#~ msgstr "פתחה"
+
+#, fuzzy
+#~ msgid "_User:"
+#~ msgstr "משתמש"
+
+#, fuzzy
+#~ msgid "_Width:"
+#~ msgstr "רוחב"
+
+#, fuzzy
+#~ msgid "Additional options"
+#~ msgstr "אפשרויות סנכרון"
+
+#, fuzzy
+#~ msgid "Port number:"
+#~ msgstr "מספרי טלפון"
+
+#, fuzzy
+#~ msgid "Time out:"
+#~ msgstr "מד זמן"
+
+#, fuzzy
+#~ msgid "/_Quit"
+#~ msgstr "עריכה"
+
+#~ msgid "Could not load UI for entry configuration dialog"
+#~ msgstr "לא ניתן לטעון את ממשק המשתמש של תיבת דו-השיח הגדרות הערך"
+
+#~ msgid "Entry name"
+#~ msgstr "שם הערך"
+
+#~ msgid "Local path"
+#~ msgstr "נתיב מקומי"
+
+#~ msgid "Preserve group"
+#~ msgstr "שמר קבוצה"
+
+#~ msgid "Preserve permissions"
+#~ msgstr "שמר הרשאות"
+
+#~ msgid "Preserve times"
+#~ msgstr "שמר זמנים"
+
+#~ msgid "Recurse into directories"
+#~ msgstr "השתמש ברקורסיה לתוך הסיפריות"
+
+#~ msgid "Remote host"
+#~ msgstr "מארח מרוחק"
+
+#~ msgid "Remote path"
+#~ msgstr "נתיב מרוחק"
+
+#~ msgid "Synchronization options"
+#~ msgstr "אפשרויות סנכרון"
+
+#~ msgid "Update only (don't overwrite newer files)"
+#~ msgstr "עדכן בלבד (אל תחליף קבצים חדשים יותר)"
+
+#~ msgid "Use relative path names"
+#~ msgstr "השתמש בשמות נתיבים יחסיים"
+
+#~ msgid "Use rsync"
+#~ msgstr "השתמש ב rsync"
+
+#~ msgid "Use unison"
+#~ msgstr "השתמש ב unison"
+
+#~ msgid "dialog1"
+#~ msgstr "דו-שיח1"
+
+#~ msgid "rsync"
+#~ msgstr "rsync"
+
+#~ msgid "unison"
+#~ msgstr "unison"
+
+#~ msgid "Local"
+#~ msgstr "מקומי"
+
+#~ msgid "Remote"
+#~ msgstr "מרוחק"
+
+#~ msgid "Last sync"
+#~ msgstr "סנכרון אחרון"
+
+#~ msgid "_Synchronize"
+#~ msgstr "_סנכרן"
+
+#~ msgid "New entry..."
+#~ msgstr "ערך חדש..."
+
+#~ msgid "Edit..."
+#~ msgstr "ערוך..."
+
+#~ msgid "Synchronize"
+#~ msgstr "סנכרן"
+
+#~ msgid "Gnome Synchronize"
+#~ msgstr "סנכרון Gnome"
+
+#~ msgid "The GNOME file synchronization program."
+#~ msgstr "תוכנית סנכרון הקבצים של GNOME."
+
+#~ msgid "New"
+#~ msgstr "חדש"
+
+#~ msgid "Create new synchronization entry"
+#~ msgstr "צור ערך סנכרון חדש"
+
+#~ msgid "Start synchronization for selected entries"
+#~ msgstr "התחל סנכרון לערכים הנבחרים"
+
+#~ msgid "Edit"
+#~ msgstr "עריכה"
+
+#~ msgid "Edit selected entry"
+#~ msgstr "ערוך ערך נבחר"
+
+#~ msgid "Delete"
+#~ msgstr "מחק"
+
+#~ msgid "Delete selected entries"
+#~ msgstr "מחק ערכים נבחרים"
 
 #, fuzzy
 #~ msgid "<b>Desktop Sharing</b>"

@@ -34,8 +34,7 @@ pixmap_DATA = gnome-netinfo.png
 EXTRA_DIST  = \
 	$(pixmap_DATA) \
 	gnome-netinfo.desktop.in \
-	$(dialog_DATA) \
-	gnome-netinfo.gladep
+	$(dialog_DATA)
 
 Applicationsdir = $(datadir)/applications
 Applications_in_files = gnome-netinfo.desktop.in
