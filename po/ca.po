@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-24 10:17+0100\n"
-"PO-Revision-Date: 2005-02-21 09:59+0100\n"
+"POT-Creation-Date: 2005-03-18 23:44+0100\n"
+"PO-Revision-Date: 2005-03-18 23:44+0100\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -81,7 +81,7 @@ msgid "Display:"
 msgstr "Visualitza:"
 
 # FIXME: jo deixaria Finger (josep)
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:832
+#: ../src/gnome-nettool.glade.h:14 ../src/main.c:834
 msgid "Finger"
 msgstr "Cerca usuaris"
 
@@ -102,7 +102,7 @@ msgid "Link speed:"
 msgstr "Velocitat de l'enllaç:"
 
 # Netscape_4.7->String:RESDLL.DLL
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:746
+#: ../src/gnome-nettool.glade.h:19 ../src/main.c:748
 msgid "Lookup"
 msgstr "Cerca"
 
@@ -131,7 +131,7 @@ msgid "Netmask:"
 msgstr "Màscara de xarxa:"
 
 # FIXME: jo deixaria Netstat
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:445
+#: ../src/gnome-nettool.glade.h:26 ../src/main.c:447
 msgid "Netstat"
 msgstr "Estat de la xarxa"
 
@@ -159,7 +159,7 @@ msgstr "Paquets rebuts:"
 msgid "Packets transmitted:"
 msgstr "Paquets transmessos:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:281
+#: ../src/gnome-nettool.glade.h:33 ../src/main.c:283
 msgid "Ping"
 msgstr "Ping"
 
@@ -183,7 +183,7 @@ msgstr "Errors de recepció:"
 msgid "Routing Table Information"
 msgstr "Informació de la taula d'encaminament"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:627
+#: ../src/gnome-nettool.glade.h:39 ../src/main.c:629
 msgid "Scan"
 msgstr "Escaneja"
 
@@ -195,7 +195,7 @@ msgstr "Envia:"
 msgid "State:"
 msgstr "Estat:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:369
+#: ../src/gnome-nettool.glade.h:42 ../src/main.c:371
 msgid "Trace"
 msgstr "Traça"
 
@@ -224,7 +224,7 @@ msgid "User"
 msgstr "Usuari"
 
 # FIXME: jo deixaria "Whois" (josep)
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:948
+#: ../src/gnome-nettool.glade.h:49 ../src/main.c:950
 msgid "Whois"
 msgstr "Qui és"
 
@@ -237,30 +237,38 @@ msgid "_Domain address:"
 msgstr "A_dreça del domini:"
 
 #: ../src/gnome-nettool.glade.h:52
+msgid "_Edit"
+msgstr "_edita"
+
+#: ../src/gnome-nettool.glade.h:53
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Information type:"
 msgstr "T_ipus d'informació:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:55
 msgid "_Network address:"
 msgstr "Ad_reça de xarxa:"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:56
 msgid "_Network device:"
 msgstr "Dis_positiu de xarxa:"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Tool"
 msgstr "_Eina"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Username:"
 msgstr "Nom d'_usuari:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:59
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:60
 msgid "requests"
 msgstr "peticions"
 
@@ -448,64 +456,59 @@ msgstr "Carrega informació per a un dispositiu de xarxa"
 msgid "DEVICE"
 msgstr "Dispositiu"
 
-#: ../src/main.c:81
+#: ../src/main.c:82
 msgid "Send a ping to a network address"
 msgstr "Envia un ping a una adreça de xarxa"
 
 # Gnome_2.6_Desktop [zenity.HEAD.ca.po]
-#: ../src/main.c:82 ../src/main.c:88 ../src/main.c:91 ../src/main.c:94
+#: ../src/main.c:83 ../src/main.c:91 ../src/main.c:95 ../src/main.c:99
 msgid "HOST"
 msgstr "Ordinador"
 
 # Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:84
+#: ../src/main.c:86
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Obté la informació d'estat de xarxa. Les opcions vàlides són: ruta, actiu, "
 "multicast."
 
-#: ../src/main.c:85
+#: ../src/main.c:87
 msgid "COMMAND"
 msgstr "Ordre"
 
-#: ../src/main.c:87
+#: ../src/main.c:90
 msgid "Trace a route to a network address"
 msgstr "Segueix una ruta fins a una adreça de xarxa"
 
-#: ../src/main.c:90
+#: ../src/main.c:94
 msgid "Port scan a network address"
 msgstr "Escaneja els ports d'una adreça de xarxa"
 
-#: ../src/main.c:93
+#: ../src/main.c:98
 msgid "Look up a network address"
 msgstr "Fes una cerca d'una adreça de xarxa"
 
 # Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:96
+#: ../src/main.c:102
 msgid "Finger command to run"
 msgstr "Ordre finger a executar"
 
 # Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:97
+#: ../src/main.c:103
 msgid "USER"
 msgstr "Usuari"
 
 # Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:99
+#: ../src/main.c:106
 msgid "Perform a whois lookup for a network domain"
 msgstr "Realitza una cerca whois per a un domini de xarxa"
 
-#: ../src/main.c:100
+#: ../src/main.c:107
 msgid "DOMAIN"
 msgstr "Domini"
 
 # Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:113
-msgid "Network Information"
-msgstr "Informació de xarxa"
-
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:119
+#: ../src/main.c:121
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
@@ -514,7 +517,7 @@ msgstr ""
 "No existeix el fitxer %s. Comproveu que gnome-netinfo està instal·lat "
 "correctament"
 
-#: ../src/main.c:314
+#: ../src/main.c:316
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -522,7 +525,7 @@ msgstr ""
 "Introduïu l'adreça de xarxa a on fer ping.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/main.c:396
+#: ../src/main.c:398
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -532,28 +535,28 @@ msgstr ""
 
 # source\offapp\dialog\inetdlg.src pageitem RID_OFADLG_INTERNET.1 RID_SVXPAGE_INET_OTHER
 # Projecte_Open_Office_1.1 [offmgr.po]
-#: ../src/main.c:481 ../src/netstat.c:442
+#: ../src/main.c:483 ../src/netstat.c:442
 msgid "Protocol"
 msgstr "Protocol"
 
-#: ../src/main.c:488
+#: ../src/main.c:490
 msgid "IP Address"
 msgstr "Adreça IP"
 
-#: ../src/main.c:495
+#: ../src/main.c:497
 msgid "Netmask / Prefix"
 msgstr "Màscara de xarxa/prefix"
 
-#: ../src/main.c:502
+#: ../src/main.c:504
 msgid "Broadcast"
 msgstr "Difusió"
 
 # Gnome_2.6_Extras [conglomerate.HEAD.ca.po]
-#: ../src/main.c:509
+#: ../src/main.c:511
 msgid "Scope"
 msgstr "Abast"
 
-#: ../src/main.c:649
+#: ../src/main.c:651
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -561,7 +564,7 @@ msgstr ""
 "Introduïu l'adreça de xarxa on escanejar els ports oberts.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/main.c:777
+#: ../src/main.c:779
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -569,11 +572,11 @@ msgstr ""
 "Introduïu l'adreça de xarxa a cercar.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/main.c:866
+#: ../src/main.c:868
 msgid "Enter the user to finger."
 msgstr "Introduïu l'usuari al qual fer finger."
 
-#: ../src/main.c:893
+#: ../src/main.c:895
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -581,7 +584,7 @@ msgstr ""
 "Introduïu l'adreça de xarxa on fer finger a aquest usuari.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/main.c:980
+#: ../src/main.c:982
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -826,7 +829,7 @@ msgstr "Temps 2"
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Salt\\tOrdinador\\tIP\\Temps 1\\tTemps 2\n"
 
-#: ../src/utils.c:227
+#: ../src/utils.c:228
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: No s'ha trobat l'ordre"
@@ -853,3 +856,7 @@ msgstr "S'està obtenint informació de tots els usuaris de «%s»"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "S'està obtenint la informació whois de %s"
+
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
+#~ msgid "Network Information"
+#~ msgstr "Informació de xarxa"
