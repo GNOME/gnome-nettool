@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-21 15:53+0200\n"
-"PO-Revision-Date: 2004-08-21 15:51+0200\n"
+"POT-Creation-Date: 2004-08-30 12:55+0200\n"
+"PO-Revision-Date: 2004-08-30 12:55+0200\n"
 "Last-Translator: Martin Willemoes Hansen <mwh@sysrq.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,7 @@ msgstr "<b>Statistik for grænsefladen</b>"
 
 #: src/gnome-nettool.glade.h:5
 msgid "<b>Round Trip Time Statistics</b>"
-msgstr "<b>Statistik over tiden for en rundtur</b>"
+msgstr "<b>Statistik for tiden tur-retur</b>"
 
 #: src/gnome-nettool.glade.h:6
 msgid "<b>Transmision Statistics</b>"
@@ -149,7 +149,7 @@ msgid "Only"
 msgstr "Kun"
 
 #: src/gnome-nettool.glade.h:30
-msgid "Packets loss:"
+msgid "Packets lost:"
 msgstr "Pakketab:"
 
 #: src/gnome-nettool.glade.h:31
@@ -178,7 +178,7 @@ msgstr "Pakker modtaget:"
 
 #: src/gnome-nettool.glade.h:37
 msgid "Reception errors:"
-msgstr "Fejl ved modtagelse:"
+msgstr "Modtagelsesfejl:"
 
 #: src/gnome-nettool.glade.h:38
 msgid "Routing Table Information"
@@ -295,7 +295,7 @@ msgstr "Loopback-grænseflade"
 
 #: src/info.c:63
 msgid "Unknown Interface"
-msgstr "Ukendt-grænseflade"
+msgstr "Ukendt grænseflade"
 
 #: src/info.c:130
 msgid "<i>Network Devices Not Found</i>"
@@ -389,7 +389,7 @@ msgstr "Pakker modtaget:\t%s\n"
 #: src/info.c:683
 #, c-format
 msgid "Reception errors:\t%s\n"
-msgstr "Fejl ved modtagelse:\t%s\n"
+msgstr "Modtagelsesfejl:\t%s\n"
 
 #: src/info.c:684
 #, c-format
@@ -453,7 +453,8 @@ msgstr "VÆRT"
 
 #: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "Hent netstat-information. Gyldige flag er: route, active, multicast."
+msgstr ""
+"Hent netstat-information. Gyldige muligheder er: route, active, multicast."
 
 #: src/main.c:85
 msgid "COMMAND"
@@ -473,7 +474,7 @@ msgstr "Slå en netværksadresse op"
 
 #: src/main.c:96
 msgid "Finger command to run"
-msgstr "Finger-kommando at køre"
+msgstr "Finger-kommando som skal køres"
 
 #: src/main.c:97
 msgid "USER"
@@ -497,7 +498,7 @@ msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
 "installed"
 msgstr ""
-"Filen %s findes ikke, kontrollér om gnome-netinfo er korrekt installeret"
+"Filen %s findes ikke, kontrollér at gnome-netinfo er korrekt installeret"
 
 #: src/main.c:314
 msgid ""
@@ -525,7 +526,7 @@ msgstr "IP-adresse"
 
 #: src/main.c:492
 msgid "Netmask / Prefix"
-msgstr "Netmaske / Præfiks"
+msgstr "Netmaske / præfiks"
 
 #: src/main.c:499
 msgid "Broadcast"
@@ -597,7 +598,7 @@ msgstr "Tilstand"
 
 #: src/netstat.c:606
 msgid "Destination/Prefix"
-msgstr "Destination/Præfiks"
+msgstr "Destination / præfiks"
 
 #: src/netstat.c:608
 msgid "Destination"
@@ -767,7 +768,7 @@ msgstr "Port\tTilstand\tTjeneste\n"
 #: src/traceroute.c:58
 #, c-format
 msgid "Tracing route to %s"
-msgstr "Spore ruten til %s"
+msgstr "Sporer ruten til %s"
 
 #: src/traceroute.c:265
 msgid "Hop"
@@ -804,7 +805,7 @@ msgstr "%s: Kommando ikke fundet"
 
 #: src/gnome-nettool.desktop.in.h:1
 msgid "Network Information Tools"
-msgstr "Værktøjer for netværksinformation"
+msgstr "Værktøjer til visning af netværksoplysninger"
 
 #: src/gnome-nettool.desktop.in.h:2
 msgid "Network Tools"
