@@ -4,10 +4,10 @@ dialog_DATA = gnome-netinfo.glade
 INCLUDES = 			\
 	-DGNOME_NETINFO_LOCALEDIR=\""$(datadir)/locale"\" \
 	-DDATADIR=\""$(dialogdir)/"\" \
-	@GNETWORK_CFLAGS@
+	@NETINFO_CFLAGS@
 
 LDADD =				\
-	$(GNETWORK_LIBS)	
+	$(NETINFO_LIBS)	
 
 bin_PROGRAMS = gnome-netinfo
 
@@ -27,7 +27,7 @@ gnome_netinfo_SOURCES = \
 	util-mii-wireless.h \
 	main.c
 
-gnome_netinfo_LDADD = @GNETWORK_LIBS@
+gnome_netinfo_LDADD = @NETINFO_LIBS@
 
 pixmapdir   = $(datadir)/pixmaps
 pixmap_DATA = gnome-netinfo.png
