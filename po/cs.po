@@ -9,19 +9,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-05 11:48+0200\n"
-"PO-Revision-Date: 2004-09-05 16:01+0200\n"
+"POT-Creation-Date: 2004-10-20 19:30+0200\n"
+"PO-Revision-Date: 2004-10-20 21:38+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: src/callbacks.c:321
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr "Miloslav Trmač <mitr@volny.cz>"
 
-#: src/callbacks.c:349
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafické uživatelské rozhraní pro základní síťové pomůcky"
 
@@ -46,7 +46,7 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Statistika doby odezvy</b>"
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
+msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Statistiky přenosu</b>"
 
 #: src/gnome-nettool.glade.h:7
@@ -77,7 +77,7 @@ msgstr "Zařízení"
 msgid "Display:"
 msgstr "Zobrazení:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:837
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
 msgstr "Finger"
 
@@ -97,7 +97,7 @@ msgstr "IP adresa:"
 msgid "Link speed:"
 msgstr "Rychlost spojení:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:751
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr "Vyhledat"
 
@@ -125,7 +125,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Síťová maska:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -177,7 +177,7 @@ msgstr "Chyby příjmu:"
 msgid "Routing Table Information"
 msgstr "Informace o směrovací tabulce"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:632
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr "Skenovat"
 
@@ -189,7 +189,7 @@ msgstr "Odesílat:"
 msgid "State:"
 msgstr "Stav:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "Stopa"
 
@@ -217,7 +217,7 @@ msgstr "Neomezeně požadavků"
 msgid "User"
 msgstr "Uživatel"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:953
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr "Whois"
 
@@ -291,8 +291,8 @@ msgid "Unknown Interface"
 msgstr "Neznámé rozhraní"
 
 #: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
-msgstr "<i>Síťová zařízení nenalezena</i>"
+msgid "Network Devices Not Found"
+msgstr "Síťová zařízení nenalezena"
 
 #: src/info.c:344
 msgid "Unknown"
@@ -402,19 +402,20 @@ msgstr "Vyhledávám %s"
 msgid "Name"
 msgstr "Jméno"
 
-#: src/lookup.c:285
+#. Time To Live of a hostname in a name server
+#: src/lookup.c:286
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:294
+#: src/lookup.c:295
 msgid "Address Type"
 msgstr "Typ adresy"
 
-#: src/lookup.c:304
+#: src/lookup.c:305
 msgid "Record Type"
 msgstr "Typ záznamu"
 
-#: src/lookup.c:313
+#: src/lookup.c:314
 msgid "Address"
 msgstr "Adresa"
 
@@ -424,7 +425,7 @@ msgstr "Adresa"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:341
+#: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Zdroj\tTTL\tTyp adresy\tTyp záznamu1\tVýsledek\n"
 
@@ -501,7 +502,7 @@ msgstr ""
 "Zadejte síťovou adresu, kam poslat ping.\n"
 "Například www.domain.com nebo 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -509,27 +510,27 @@ msgstr ""
 "Zadejte síťovou adresu, ke které sledovat cestu.\n"
 "Například www.domain.com nebo 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "IP adresa"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr "Síťová maska / prefix"
 
-#: src/main.c:499
+#: src/main.c:502
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: src/main.c:506
+#: src/main.c:509
 msgid "Scope"
 msgstr "Rozsah"
 
-#: src/main.c:654
+#: src/main.c:649
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -537,7 +538,7 @@ msgstr ""
 "Zadejte síťovou adresu, kde hledat otevřené porty.\n"
 "Například www.domain.com nebo 192.168.2.1"
 
-#: src/main.c:782
+#: src/main.c:777
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -546,11 +547,11 @@ msgstr ""
 "Například www.domain.com nebo 192.168.2.1"
 
 # "kterého finger"
-#: src/main.c:871
+#: src/main.c:866
 msgid "Enter the user to finger."
 msgstr "Zadejte uživatele, pro kterého spustit finger."
 
-#: src/main.c:898
+#: src/main.c:893
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -558,7 +559,7 @@ msgstr ""
 "Zadejte síťovou adresu pro spuštění finger o uživateli.\n"
 "Například www.domain.com nebo 192.168.2.1"
 
-#: src/main.c:985
+#: src/main.c:980
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -586,7 +587,7 @@ msgstr "Zdrojové IP"
 msgid "Port/Service"
 msgstr "Port/Služba"
 
-#: src/netstat.c:464 src/scan.c:292
+#: src/netstat.c:464 src/scan.c:295
 msgid "State"
 msgstr "Stav"
 
@@ -638,61 +639,61 @@ msgstr "Cíl\tBrána\tMaska\tRozhraní\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Rozhraní\tČlen\tSkupina\n"
 
-#: src/nettool.c:206
+#: src/nettool.c:207
 msgid "A network address was not specified"
 msgstr "Nebyla zadána adresa sítě"
 
-#: src/nettool.c:207 src/nettool.c:216
+#: src/nettool.c:208 src/nettool.c:217
 msgid "Please enter a valid network address and try again."
 msgstr "Zadejte prosím platnou adresu sítě a zkuste to znovu"
 
-#: src/nettool.c:214
+#: src/nettool.c:215
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "Adresa '%s' nebyla nalezena"
 
-#: src/nettool.c:243
+#: src/nettool.c:244
 msgid "A domain address was not specified"
 msgstr "Nebyla zadána adresa domény"
 
-#: src/nettool.c:244
+#: src/nettool.c:245
 msgid "Please enter a valid domain address and try again."
 msgstr "Zadejte prosím platnou adresu domény a zkuste to znovu."
 
-#: src/nettool.c:376
+#: src/nettool.c:377
 msgid "Information not available"
 msgstr "Informace není k dispozici"
 
-#: src/nettool.c:494
+#: src/nettool.c:495
 msgid "Stop"
 msgstr "Zastavit"
 
-#: src/nettool.c:500
+#: src/nettool.c:501
 msgid "Run"
 msgstr "Spustit"
 
-#: src/ping.c:73
+#: src/ping.c:76
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Odesílám požadavky ping na %s"
 
-#: src/ping.c:381
+#: src/ping.c:384
 msgid "Bytes"
 msgstr "Bajtů"
 
-#: src/ping.c:388
+#: src/ping.c:391
 msgid "Source"
 msgstr "Zdroj"
 
-#: src/ping.c:396
+#: src/ping.c:399
 msgid "Seq"
 msgstr "Seq"
 
-#: src/ping.c:406
+#: src/ping.c:409
 msgid "Time"
 msgstr "Čas"
 
-#: src/ping.c:414
+#: src/ping.c:417
 msgid "Units"
 msgstr "Jednotek"
 
@@ -700,87 +701,87 @@ msgstr "Jednotek"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:440
+#: src/ping.c:443
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bajtů\tZdroj\tSekv\tČas\tJednotky\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:455
+#: src/ping.c:458
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimální čas:\t%s ms\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Průměrný čas:\t%s ms\n"
 
-#: src/ping.c:457
+#: src/ping.c:460
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maximální čas:\t%s ms\n"
 
-#: src/ping.c:459
+#: src/ping.c:462
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Odeslané pakety:\t%s\n"
 
-#: src/ping.c:461
+#: src/ping.c:464
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Přijaté pakety:\t%s\n"
 
-#: src/ping.c:463
+#: src/ping.c:466
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Ztracené pakety:\t%s\n"
 
-#: src/scan.c:80
+#: src/scan.c:83
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Hledám otevřené porty na %s"
 
-#: src/scan.c:155
+#: src/scan.c:158
 msgid "unknown"
 msgstr "neznámý"
 
-#: src/scan.c:284
+#: src/scan.c:287
 msgid "Port"
 msgstr "Port"
 
-#: src/scan.c:300
+#: src/scan.c:303
 msgid "Service"
 msgstr "Služba"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:322
+#: src/scan.c:325
 msgid "Port\tState\tService\n"
 msgstr "Port\tStav\tSlužba\n"
 
-#: src/traceroute.c:58
+#: src/traceroute.c:61
 #, c-format
 msgid "Tracing route to %s"
 msgstr "Sleduji cestu k %s"
 
-#: src/traceroute.c:265
+#: src/traceroute.c:270
 msgid "Hop"
 msgstr "Hop"
 
-#: src/traceroute.c:273
+#: src/traceroute.c:278
 msgid "Hostname"
 msgstr "Jméno počítače"
 
-#: src/traceroute.c:281
+#: src/traceroute.c:286
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:292
+#: src/traceroute.c:297
 msgid "Time 1"
 msgstr "Čas 1"
 
-#: src/traceroute.c:302
+#: src/traceroute.c:307
 msgid "Time 2"
 msgstr "Čas 2"
 
@@ -788,7 +789,7 @@ msgstr "Čas 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:328
+#: src/traceroute.c:333
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tJméno počítače\tIP\tČas 1\tČas 2\n"
 
