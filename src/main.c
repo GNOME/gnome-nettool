@@ -60,7 +60,7 @@ main (int argc, char *argv[])
 	Netinfo *lookup;
 	Netinfo *finger;
 	Netinfo *whois;
-	gchar *icon_path;
+	GtkIconInfo *icon_info;
 	gint current_page = 0;
 	static gchar *info_input = NULL;
 	static gchar *ping_input = NULL;
@@ -119,9 +119,11 @@ main (int argc, char *argv[])
 		return -1;
 	}
 
-	icon_path = g_build_filename (GNOME_ICONDIR, "gnome-netinfo.png", NULL);
-	gnome_window_icon_set_default_from_file (icon_path);
-	g_free (icon_path);
+	icon_info = gtk_icon_theme_lookup_icon (gtk_icon_theme_get_default (), "gnome-nettool", 48, 0);
+	if (icon_info != NULL) {
+		gtk_window_set_default_icon_from_file (gtk_icon_info_get_filename (icon_info), NULL);
+		gtk_icon_info_free (icon_info);
+	}
 
 	xml = glade_xml_new (dialog, "main_window", NULL);
 	window = glade_xml_get_widget (xml, "main_window");
