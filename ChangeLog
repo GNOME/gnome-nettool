@@ -1,5 +1,13 @@
 2004-06-09  William Jon McCann  <mccann@jhu.edu>
 
+	* src/callbacks.c (on_finger_activate): Allow blank hostname to finger
+	local system.
+
+	* src/main.c (load_whois_widgets_from_xml): Use distinct history id again
+	for whois domain.
+
+2004-06-09  William Jon McCann  <mccann@jhu.edu>
+
 	* src/main.c (load_info_widgets_from_xml): Use size group to align labels.
 	(main): Removed spurious commented code.
 

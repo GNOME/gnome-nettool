@@ -275,25 +275,25 @@ on_finger_activate (GtkWidget * widget, gpointer data)
 	if (finger->running) {
 		finger_stop (finger);
 	} else {
-		if (netinfo_validate_host (finger)) {
-			entry_host = GTK_ENTRY (
-				gtk_bin_get_child (GTK_BIN (finger->host)));
-			text = g_strdup (gtk_entry_get_text (entry_host));
+		finger_do (finger);
 
+		entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->host)));
+		text = g_strdup (gtk_entry_get_text (entry_host));
+		g_strstrip (text);
+
+		if (strcmp (text, "") != 0)
 			gn_combo_history_add (finger->history, text);
 
-			g_free (text);
+		g_free (text);
 
-			entry_host = GTK_ENTRY (
-				gtk_bin_get_child (GTK_BIN (finger->user)));
-			text = g_strdup (gtk_entry_get_text (entry_host));
+		entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->user)));
+		text = g_strdup (gtk_entry_get_text (entry_host));
+		g_strstrip (text);
 
+		if (strcmp (text, "") != 0)
 			gn_combo_history_add (finger->history_user, text);
 
-			g_free (text);
-
-			finger_do (finger);
-		}
+		g_free (text);
 	}
 }
 

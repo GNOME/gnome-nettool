@@ -890,7 +890,7 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	g_object_unref (model);
 
 	whois->history = gn_combo_history_new ();
-	gn_combo_history_set_id (whois->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_id (whois->history, "GNOME_Network_netinfo_domain");
 	gn_combo_history_set_combo (whois->history, GTK_COMBO_BOX (whois->host));
 
 	g_signal_connect (G_OBJECT (entry_host), "activate",
