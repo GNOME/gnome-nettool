@@ -1,16 +1,17 @@
 # Traducció del mòdul gnome-nettool per l'equip de Softcatalà.
-# Copyright © 2004 Free Software Foundation, Inc.
+# Copyright © 2000, 2004 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
-# Ivan Vilata i Balaguer <al011097@alumail.uji.es>, 2000
-# Softcatala <linux@softcatala.org>, 2000
+# Ivan Vilata i Balaguer <al011097@alumail.uji.es>, 2000.
+# Softcatala <linux@softcatala.org>, 2000.
 # Xavier Conde Rueda <xaviconde@eresmas.com>, 2004.
+# Jordi Mallach <jordi@sindominio.net>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 11:34+0200\n"
-"PO-Revision-Date: 2004-07-02 16:30+01:00\n"
+"POT-Creation-Date: 2004-09-06 13:42+0200\n"
+"PO-Revision-Date: 2004-09-06 14:29+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -398,9 +399,9 @@ msgstr "no disponible"
 
 # Netscape_4.7->String:RESDLL.DLL
 #: src/lookup.c:79
-#, fuzzy, c-format
+#, c-format
 msgid "Looking up %s"
-msgstr "Cerca"
+msgstr "S'està cercant %s"
 
 #: src/lookup.c:277
 msgid "Name"
@@ -514,12 +515,16 @@ msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"Introduïu l'adreça de xarxa a fer ping.\n"
+"Per exemple: www.domini.com o 192.168.2.1"
 
 #: src/main.c:393
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"Introduïu l'adreça de xarxa per a traçar la ruta.\n"
+"Per exemple: www.domini.com o 192.168.2.1"
 
 # source\offapp\dialog\inetdlg.src pageitem RID_OFADLG_INTERNET.1 RID_SVXPAGE_INET_OTHER
 # Projecte_Open_Office_1.1 [offmgr.po]
@@ -549,40 +554,48 @@ msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"Introduïu l'adreça de xarxa per a analitzar els ports oberts.\n"
+"Per exemple: www.domini.com o 192.168.2.1"
 
 #: src/main.c:782
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"Introduïu l'adreça de xarxa a buscar.\n"
+"Per exemple: www.domini.com o 192.168.2.1"
 
 #: src/main.c:871
 msgid "Enter the user to finger."
-msgstr ""
+msgstr "Introduïu l'usuari al qual fer finger."
 
 #: src/main.c:898
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"Introduïu l'adreça de xarxa on fer finger a aquest usuari.\n"
+"Per exemple: www.domini.com o 192.168.2.1"
 
 #: src/main.c:985
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"Introduïu un nom de domini per a cercar la seva informació whois.\n"
+"Per exemple: www.domini.com o 192.168.2.1"
 
 #: src/netstat.c:120
 msgid "Getting routing table"
-msgstr ""
+msgstr "S'està obtenint la taula de rutes"
 
 #: src/netstat.c:135
 msgid "Getting active Internet connections"
-msgstr ""
+msgstr "S'estan obtenint les connexions d'Internet actives"
 
 #: src/netstat.c:144
 msgid "Getting group memberships"
-msgstr ""
+msgstr "S'estan obtenint les pertenències de grups"
 
 # Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: src/netstat.c:448
@@ -755,7 +768,7 @@ msgstr "Paquets perduts:\t%s\n"
 #: src/scan.c:80
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr ""
+msgstr "S'està analitzant %s per a ports oberts"
 
 #: src/scan.c:155
 msgid "unknown"
@@ -807,12 +820,12 @@ msgstr "Temps 2"
 #. It's a tabular output, and these belongs to the column titles
 #: src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr ""
+msgstr "Salt\\tOrdinador\\tIP\\Temps 1\\tTemps 2\n"
 
 #: src/utils.c:227
 #, c-format
 msgid "%s: Command not found"
-msgstr ""
+msgstr "%s: No s'ha trobat l'ordre"
 
 #: src/gnome-nettool.desktop.in.h:1
 msgid "Network Information Tools"
@@ -825,14 +838,14 @@ msgstr "Eines de xarxa"
 #: src/finger.c:58
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr ""
+msgstr "S'està obtenint informació de l'usuari «%s» en «%s»"
 
 #: src/finger.c:62
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr ""
+msgstr "S'està obtenint informació de tots els usuaris en «%s»"
 
 #: src/whois.c:56
-#, fuzzy, c-format
+#, c-format
 msgid "Getting the whois information of %s"
-msgstr "Eines d'informació de xarxa"
+msgstr "S'està obtenint la informació whois de %s"
