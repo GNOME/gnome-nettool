@@ -35,6 +35,8 @@ EXTRA_DIST  = \
 	gnome-nettool.desktop.in \
 	$(dialog_DATA)
 
+DISTCLEANFILES = gnome-nettool.desktop
+
 Applicationsdir = $(datadir)/applications
 Applications_in_files = gnome-nettool.desktop.in
 Applications_DATA = $(Applications_in_files:.desktop.in=.desktop)

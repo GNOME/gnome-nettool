@@ -5,16 +5,11 @@ srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
 PKG_NAME="gnome-netinfo"
+REQUIRED_AUTOMAKE_VERSION=1.7
 
-(test -f $srcdir/configure.in \
-  && test -d $srcdir/src \
-  && test -f $srcdir/src/ping.c) || {
-    echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
-    echo " top-level $PKG_NAME directory"
-    exit 1
-}
+if [ ! -f "$srcdir/src/nettool.c" ]; then
+	echo "$srcdir doesn't look like source directory for $PKG_NAME" >&2
+	exit 1
+fi
 
-gnome_autogen=`which gnome-autogen.sh`
-test -z "$gnome_autogen"
-
-USE_GNOME2_MACROS=1 . $gnome_autogen
+USE_GNOME2_MACROS=1 . gnome-autogen.sh
