@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-18 11:47+0200\n"
-"PO-Revision-Date: 2004-08-23 14:22+0530\n"
+"POT-Creation-Date: 2004-10-26 04:33+0200\n"
+"PO-Revision-Date: 2004-10-26 14:56+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
@@ -18,12 +18,13 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
+"\n"
 
-#: src/callbacks.c:321
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr "અંકિત પટેલ (ankit@redhat.com)"
 
-#: src/callbacks.c:349
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr "સામાન્ય નેટવર્ક ઉપયોગિતાઓ માટે ગ્રાફિકવાળું વપરાશકર્તા ઈન્ટરફેસ"
 
@@ -48,7 +49,7 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>સમય સ્થિતિનું પરિભ્રમણ</b>"
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
+msgid "<b>Transmission Statistics</b>"
 msgstr "<b>પરિવહન સ્થિતિઓ</b>"
 
 #: src/gnome-nettool.glade.h:7
@@ -79,9 +80,9 @@ msgstr "ઉપકરણો"
 msgid "Display:"
 msgstr "ડિસ્પ્લે:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:837
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
-msgstr "finger"
+msgstr "Finger"
 
 #: src/gnome-nettool.glade.h:15
 msgid "Hardware address:"
@@ -99,7 +100,7 @@ msgstr "IP સરનામું:"
 msgid "Link speed:"
 msgstr "કડીની ઝડપ:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:751
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr "દેખાવ"
 
@@ -127,7 +128,7 @@ msgstr "મલ્ટીકાસ્ટ:"
 msgid "Netmask:"
 msgstr "નેટમાસ્ક:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr "નેટસ્ટેટ"
 
@@ -179,7 +180,7 @@ msgstr "મેળવવામાં ભૂલ:"
 msgid "Routing Table Information"
 msgstr "રાઉટીંગ કોષ્ટકની જાણકારી"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:632
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr "સ્કેન"
 
@@ -191,7 +192,7 @@ msgstr "મોકલો:"
 msgid "State:"
 msgstr "સ્થિતિ:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "ટ્રેસ"
 
@@ -219,7 +220,7 @@ msgstr "અમર્યાદિત મંજૂરીઓ"
 msgid "User"
 msgstr "વપરાશકર્તા"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:953
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr "Whois"
 
@@ -293,8 +294,8 @@ msgid "Unknown Interface"
 msgstr "અજ્ઞાત ઈન્ટરફેસ"
 
 #: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
-msgstr "<i>નેટવર્ક ઉપકરણો મળ્યા નથી</i>"
+msgid "Network Devices Not Found"
+msgstr "નેટવર્ક ઉપકરણો મળ્યા નથી"
 
 #: src/info.c:344
 msgid "Unknown"
@@ -404,19 +405,20 @@ msgstr "%s જોઈ રહ્યા છીએ"
 msgid "Name"
 msgstr "નામ"
 
-#: src/lookup.c:285
+#. Time To Live of a hostname in a name server
+#: src/lookup.c:286
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:294
+#: src/lookup.c:295
 msgid "Address Type"
 msgstr "સરનામા પ્રકાર"
 
-#: src/lookup.c:304
+#: src/lookup.c:305
 msgid "Record Type"
 msgstr "રેકોર્ડ પ્રકાર"
 
-#: src/lookup.c:313
+#: src/lookup.c:314
 msgid "Address"
 msgstr "સરનામુ"
 
@@ -426,7 +428,7 @@ msgstr "સરનામુ"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:341
+#: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "સ્રોત\tTTL\tસરનામા પ્રકાર\tRecord Type1\tરીઝોલ્યુશન\n"
 
@@ -503,7 +505,7 @@ msgstr ""
 "પીંગ માટે નેટવર્ક સરનામુ દાખલ કરો.\n"
 "ઉદાહરણ તરીકે: www.domain.com અથવા 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -511,27 +513,27 @@ msgstr ""
 "નો રુટ ટ્રેસ કરવા માટે નેટવર્ક સરનામુ દાખલ કરો.\n"
 "ઉદાહરણ તરીકે: www.domain.com અથવા 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr "પ્રોટોકોલ"
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "IP સરનામુ"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr "નેટમાસ્ક / પૂર્વગ"
 
-#: src/main.c:499
+#: src/main.c:502
 msgid "Broadcast"
 msgstr "બ્રોડકાસ્ટ"
 
-#: src/main.c:506
+#: src/main.c:509
 msgid "Scope"
 msgstr "હદ"
 
-#: src/main.c:654
+#: src/main.c:649
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -539,7 +541,7 @@ msgstr ""
 "ખુલ્લા પોર્ટ સ્કેન કરવા માટે નેટવર્ક સરનામુ દાખલ કરો.\n"
 "ઉદાહરણ તરીકે: www.domain.com અથવા 192.168.2.1"
 
-#: src/main.c:782
+#: src/main.c:777
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -547,11 +549,11 @@ msgstr ""
 "જોવા માટે નેટવર્ક સરનામુ દાખલ કરો.\n"
 "ઉદાહરણ તરીકે: www.domain.com અથવા 192.168.2.1"
 
-#: src/main.c:871
+#: src/main.c:866
 msgid "Enter the user to finger."
-msgstr "fingerને વપરાશકર્તા દાખલ કરો."
+msgstr "finger ને વપરાશકર્તા દાખલ કરો."
 
-#: src/main.c:898
+#: src/main.c:893
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -559,7 +561,7 @@ msgstr ""
 "વપરાશકર્તાને finger કરવા માટે નેટવર્ક સરનામુ દાખલ કરો.\n"
 "ઉદાહરણ તરીકે: www.domain.com અથવા 192.168.2.1"
 
-#: src/main.c:985
+#: src/main.c:980
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -587,7 +589,7 @@ msgstr "IP સ્રોત"
 msgid "Port/Service"
 msgstr "પોર્ટ/સેવા"
 
-#: src/netstat.c:464 src/scan.c:292
+#: src/netstat.c:464 src/scan.c:295
 msgid "State"
 msgstr "સ્થિતિ"
 
@@ -639,61 +641,61 @@ msgstr "અંતિમ મુકામ\tગેટવે\tનેટમાસ્�
 msgid "Interface\tMember\tGroup\n"
 msgstr "ઈન્ટરફેસ\tસભ્ય\tજૂથ\n"
 
-#: src/nettool.c:206
+#: src/nettool.c:207
 msgid "A network address was not specified"
 msgstr "નેટવર્ક સરનામુ સ્પષ્ટ કરેલ નથી"
 
-#: src/nettool.c:207 src/nettool.c:216
+#: src/nettool.c:208 src/nettool.c:217
 msgid "Please enter a valid network address and try again."
 msgstr "મહેરબાની કરીને માન્ય નેટવર્ક સરનામુ દાખલ કરો અને ફરીથી પ્રયત્ન કરો."
 
-#: src/nettool.c:214
+#: src/nettool.c:215
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "સરનામુ '%s' શોધી શકાયું નથી"
 
-#: src/nettool.c:243
+#: src/nettool.c:244
 msgid "A domain address was not specified"
 msgstr "ડોમેઈન સરનામુ સ્પષ્ટ કરેલ નથી"
 
-#: src/nettool.c:244
+#: src/nettool.c:245
 msgid "Please enter a valid domain address and try again."
 msgstr "મહેરબાની કરીને માન્ય ડોમેઈન સરનામુ દાખલ કરો અને ફરીથી પ્રયત્ન કરો."
 
-#: src/nettool.c:376
+#: src/nettool.c:377
 msgid "Information not available"
 msgstr "જાણકારી ઉપ્લબ્ધ નથી"
 
-#: src/nettool.c:494
+#: src/nettool.c:495
 msgid "Stop"
 msgstr "બંધ કરો"
 
-#: src/nettool.c:500
+#: src/nettool.c:501
 msgid "Run"
 msgstr "ચલાવો"
 
-#: src/ping.c:73
+#: src/ping.c:76
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "%s ને પીંગ મંજૂરી મોકલી રહ્યા છીએ"
 
-#: src/ping.c:381
+#: src/ping.c:384
 msgid "Bytes"
 msgstr "બાઈટો"
 
-#: src/ping.c:388
+#: src/ping.c:391
 msgid "Source"
 msgstr "સ્રોત"
 
-#: src/ping.c:396
+#: src/ping.c:399
 msgid "Seq"
 msgstr "Seq"
 
-#: src/ping.c:406
+#: src/ping.c:409
 msgid "Time"
 msgstr "સમય"
 
-#: src/ping.c:414
+#: src/ping.c:417
 msgid "Units"
 msgstr "એકમો"
 
@@ -701,87 +703,87 @@ msgstr "એકમો"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:440
+#: src/ping.c:443
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "બાઈટો\tસ્રોત\tSeq\tસમય\tએકમો\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:455
+#: src/ping.c:458
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "ન્યુનતમ સમય:\t%s ms\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "સરેરાશ સમય:\t%s ms\n"
 
-#: src/ping.c:457
+#: src/ping.c:460
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "મહત્તમ સમય:\t%s ms\n"
 
-#: src/ping.c:459
+#: src/ping.c:462
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "મોકલાયેલ પેકેટો:\t%s\n"
 
-#: src/ping.c:461
+#: src/ping.c:464
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "મેળવેલ પેકેટો:\t%s\n"
 
-#: src/ping.c:463
+#: src/ping.c:466
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "ખોવાયેલ પેકેટો:\t%s\n"
 
-#: src/scan.c:80
+#: src/scan.c:83
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s ને ખુલ્લા પોર્ટ માટે સ્કેન કરી રહ્યા છીએ"
 
-#: src/scan.c:155
+#: src/scan.c:158
 msgid "unknown"
 msgstr "અજ્ઞાત"
 
-#: src/scan.c:284
+#: src/scan.c:287
 msgid "Port"
 msgstr "પોર્ટ"
 
-#: src/scan.c:300
+#: src/scan.c:303
 msgid "Service"
 msgstr "સેવા"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:322
+#: src/scan.c:325
 msgid "Port\tState\tService\n"
 msgstr "પોર્ટ\tસ્થિતિ\tસેવા\n"
 
-#: src/traceroute.c:58
+#: src/traceroute.c:61
 #, c-format
 msgid "Tracing route to %s"
 msgstr "%s નો રુટ ટ્રેસ કરી રહ્યા છીએ"
 
-#: src/traceroute.c:265
+#: src/traceroute.c:270
 msgid "Hop"
 msgstr "Hop"
 
-#: src/traceroute.c:273
+#: src/traceroute.c:278
 msgid "Hostname"
 msgstr "યજમાનનામ"
 
-#: src/traceroute.c:281
+#: src/traceroute.c:286
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:292
+#: src/traceroute.c:297
 msgid "Time 1"
 msgstr "સમય ૧"
 
-#: src/traceroute.c:302
+#: src/traceroute.c:307
 msgid "Time 2"
 msgstr "સમય ૨"
 
@@ -789,7 +791,7 @@ msgstr "સમય ૨"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:328
+#: src/traceroute.c:333
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tયજમાનનામ\tIP\tસમય ૧\tસમય ૨\n"
 
