@@ -25,6 +25,7 @@
 #include <errno.h>
 #include <sys/wait.h>
 #include <netdb.h>
+#include <fcntl.h>
 
 #include "nettool.h"
 #include "utils.h"
@@ -279,6 +280,9 @@ netinfo_text_buffer_insert (Netinfo * netinfo)
 		netinfo->child_pid = child_pid;
 		netinfo->pipe_out = pout;
 		/*netinfo->pipe_err = perr; */
+		fcntl (pout, F_SETFL, O_NONBLOCK);
+		fcntl (pout, F_SETFL, O_NONBLOCK);
+		netinfo->command_output = NULL;
 
 		channel = g_io_channel_unix_new (pout);
 		g_io_add_watch (channel,
@@ -311,7 +315,7 @@ gboolean
 netinfo_io_text_buffer_dialog (GIOChannel * channel,
 			       GIOCondition condition, gpointer data)
 {
-	gchar *text;
+	gchar *text = NULL;
 	gint len;
 	Netinfo *netinfo = (Netinfo *) data;
 
@@ -340,18 +344,40 @@ netinfo_io_text_buffer_dialog (GIOChannel * channel,
 #endif				/* DEBUG */
 
 	if (condition & G_IO_IN) {
-		g_io_channel_read_line (channel, &text, &len, NULL, NULL);
+		GIOStatus status;
 
-		if (text != NULL) {
+		status = g_io_channel_read_line (channel, &text, &len, NULL, NULL);
+
+		if (status == G_IO_STATUS_NORMAL) {
+			if (netinfo->command_output) {
+				g_string_append (netinfo->command_output, text);
+				g_free (text);
+				text = g_string_free (netinfo->command_output, FALSE);
+				netinfo->command_output = NULL;
+			}
+
 			if (netinfo->process_line != NULL) {
 				(netinfo->process_line) ((gpointer) netinfo, text,
 						 	len, NULL);
 			}
 
-			g_free (text);
+		} else if (status == G_IO_STATUS_AGAIN) {
+			char buf[1];
 
-			return TRUE;
-		}
+			/* A non-terminated line was read, read the data into the buffer. */
+			status = g_io_channel_read_chars (channel, buf, 1, NULL, NULL);
+			if (status == G_IO_STATUS_NORMAL) {
+				if (netinfo->command_output == NULL) {
+					netinfo->command_output = g_string_new (NULL);
+				}
+				g_string_append_c (netinfo->command_output, buf[0]);
+			}
+		} else if (status == G_IO_STATUS_EOF) {
+		} 
+
+		g_free (text);
+
+		return TRUE;
 	}
 
 	/* The condition is not G_IO_HUP | G_IO_ERR | G_IO_NVAL, so

@@ -1,5 +1,11 @@
 2004-11-17  William Jon McCann  <mccann@jhu.edu>
 
+	* src/nettool.c (netinfo_io_text_buffer_dialog)
+	(netinfo_text_buffer_insert): Make output read non-blocking.
+	Fixes #157498.
+
+2004-11-17  William Jon McCann  <mccann@jhu.edu>
+
 	* src/gnome-nettool.desktop.in: Add startup-notification.  Fixes #157167.
 
 2004-11-15  William Jon McCann  <mccann@jhu.edu>
