@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 11:34+0200\n"
+"POT-Creation-Date: 2004-09-18 03:49+0200\n"
 "PO-Revision-Date: 2004-08-06 11:20+0800\n"
 "Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:321
+#: src/callbacks.c:303
 msgid "translator_credits"
 msgstr "开源软件国际化之简体中文组 http://i18n.linux.net.cn"
 
-#: src/callbacks.c:349
+#: src/callbacks.c:331
 msgid "Graphical user interface for common network utilities"
 msgstr "网络公共工具的图形用户界面"
 
@@ -74,7 +74,7 @@ msgstr "设备"
 msgid "Display:"
 msgstr "显示："
 
-#: src/gnome-nettool.glade.h:14 src/main.c:837
+#: src/gnome-nettool.glade.h:14 src/main.c:829
 msgid "Finger"
 msgstr "Finger"
 
@@ -94,7 +94,7 @@ msgstr "IP 地址："
 msgid "Link speed:"
 msgstr "链接速度："
 
-#: src/gnome-nettool.glade.h:19 src/main.c:751
+#: src/gnome-nettool.glade.h:19 src/main.c:743
 msgid "Lookup"
 msgstr "查阅"
 
@@ -168,13 +168,13 @@ msgstr "接收包数："
 
 #: src/gnome-nettool.glade.h:37
 msgid "Reception errors:"
-msgstr "接受错误数："
+msgstr "接收错误数："
 
 #: src/gnome-nettool.glade.h:38
 msgid "Routing Table Information"
 msgstr "路由表信息"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:632
+#: src/gnome-nettool.glade.h:39 src/main.c:624
 msgid "Scan"
 msgstr "扫描"
 
@@ -214,7 +214,7 @@ msgstr "发送无限制请求"
 msgid "User"
 msgstr "用户"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:953
+#: src/gnome-nettool.glade.h:49 src/main.c:945
 msgid "Whois"
 msgstr "Whois"
 
@@ -399,19 +399,20 @@ msgstr "查阅 %s"
 msgid "Name"
 msgstr "名称"
 
-#: src/lookup.c:285
+#. Time To Live of a hostname in a name server
+#: src/lookup.c:286
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:294
+#: src/lookup.c:295
 msgid "Address Type"
 msgstr "地址类型"
 
-#: src/lookup.c:304
+#: src/lookup.c:305
 msgid "Record Type"
 msgstr "记录类型"
 
-#: src/lookup.c:313
+#: src/lookup.c:314
 msgid "Address"
 msgstr "地址"
 
@@ -421,7 +422,7 @@ msgstr "地址"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:341
+#: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "源\tTTL\t地址类型\t记录类型1\t解析\n"
 
@@ -524,7 +525,7 @@ msgstr "广播"
 msgid "Scope"
 msgstr "范围"
 
-#: src/main.c:654
+#: src/main.c:646
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -532,7 +533,7 @@ msgstr ""
 "输入要扫描开放端口的网络地址。\n"
 "例如：www.domain.com 或 192.168.2.1"
 
-#: src/main.c:782
+#: src/main.c:774
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -540,11 +541,11 @@ msgstr ""
 "输入要查阅的网络地址。\n"
 "例如：www.domain.com 或 192.168.2.1"
 
-#: src/main.c:871
+#: src/main.c:863
 msgid "Enter the user to finger."
 msgstr "输入要 finger 的用户。"
 
-#: src/main.c:898
+#: src/main.c:890
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -552,7 +553,7 @@ msgstr ""
 "输入要 finger 用户的网络地址。\n"
 "例如：www.domain.com 或 192.168.2.1"
 
-#: src/main.c:985
+#: src/main.c:977
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -580,7 +581,7 @@ msgstr "IP 源"
 msgid "Port/Service"
 msgstr "端口/服务"
 
-#: src/netstat.c:464 src/scan.c:292
+#: src/netstat.c:464 src/scan.c:295
 msgid "State"
 msgstr "状态"
 
@@ -634,61 +635,61 @@ msgstr "目的\t网关\t网络掩码\t接口\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "接口\t成员\t组\n"
 
-#: src/nettool.c:206
+#: src/nettool.c:207
 msgid "A network address was not specified"
 msgstr "网络地址未指定"
 
-#: src/nettool.c:207 src/nettool.c:216
+#: src/nettool.c:208 src/nettool.c:217
 msgid "Please enter a valid network address and try again."
 msgstr "请输入有效的网络地址然后再试一次。"
 
-#: src/nettool.c:214
+#: src/nettool.c:215
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "找不到地址“%s”"
 
-#: src/nettool.c:243
+#: src/nettool.c:244
 msgid "A domain address was not specified"
 msgstr "域地址未指定"
 
-#: src/nettool.c:244
+#: src/nettool.c:245
 msgid "Please enter a valid domain address and try again."
 msgstr "请输入有效的域地址然后再试一次。"
 
-#: src/nettool.c:376
+#: src/nettool.c:377
 msgid "Information not available"
 msgstr "信息不可用"
 
-#: src/nettool.c:494
+#: src/nettool.c:495
 msgid "Stop"
 msgstr "停止"
 
-#: src/nettool.c:500
+#: src/nettool.c:501
 msgid "Run"
 msgstr "运行"
 
-#: src/ping.c:73
+#: src/ping.c:76
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "向 %s 发送 ping 请求"
 
-#: src/ping.c:381
+#: src/ping.c:384
 msgid "Bytes"
 msgstr "字节"
 
-#: src/ping.c:388
+#: src/ping.c:391
 msgid "Source"
 msgstr "源"
 
-#: src/ping.c:396
+#: src/ping.c:399
 msgid "Seq"
 msgstr "序列"
 
-#: src/ping.c:406
+#: src/ping.c:409
 msgid "Time"
 msgstr "时间"
 
-#: src/ping.c:414
+#: src/ping.c:417
 msgid "Units"
 msgstr "单位"
 
@@ -696,87 +697,87 @@ msgstr "单位"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:440
+#: src/ping.c:443
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "字节\t源\t序列\t时间\t单位\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:455
+#: src/ping.c:458
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "最小时间：\t%s 毫秒\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "平均时间：\t%s 毫秒\n"
 
-#: src/ping.c:457
+#: src/ping.c:460
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "最大时间：\t%s 毫秒\n"
 
-#: src/ping.c:459
+#: src/ping.c:462
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "传送包数：\t%s\n"
 
-#: src/ping.c:461
+#: src/ping.c:464
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "接收包数：\t%s\n"
 
-#: src/ping.c:463
+#: src/ping.c:466
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "丢失包数：\t%s\n"
 
-#: src/scan.c:80
+#: src/scan.c:83
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "扫描 %s 的开放端口"
 
-#: src/scan.c:155
+#: src/scan.c:158
 msgid "unknown"
 msgstr "未知"
 
-#: src/scan.c:284
+#: src/scan.c:287
 msgid "Port"
 msgstr "端口"
 
-#: src/scan.c:300
+#: src/scan.c:303
 msgid "Service"
 msgstr "服务"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:322
+#: src/scan.c:325
 msgid "Port\tState\tService\n"
 msgstr "端口\t状态\t服务\n"
 
-#: src/traceroute.c:58
+#: src/traceroute.c:61
 #, c-format
 msgid "Tracing route to %s"
 msgstr "跟踪到 %s 的路由"
 
-#: src/traceroute.c:265
+#: src/traceroute.c:270
 msgid "Hop"
 msgstr "Hop"
 
-#: src/traceroute.c:273
+#: src/traceroute.c:278
 msgid "Hostname"
 msgstr "主机名"
 
-#: src/traceroute.c:281
+#: src/traceroute.c:286
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:292
+#: src/traceroute.c:297
 msgid "Time 1"
 msgstr "时间 1"
 
-#: src/traceroute.c:302
+#: src/traceroute.c:307
 msgid "Time 2"
 msgstr "时间 2"
 
@@ -784,7 +785,7 @@ msgstr "时间 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:328
+#: src/traceroute.c:333
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\t主机名\tIP\t时间1\t时间2\n"
 
