@@ -1,3 +1,12 @@
+2004-11-15  William Jon McCann  <mccann@jhu.edu>
+
+	* src/nettool.c (netinfo_set_user, netinfo_set_host): 
+	* src/info.c (info_set_nic): Fix to work with GtkComboBox.
+	Fixes #154070.
+
+	* src/gn-combo-history.c (gn_on_gconf_history_changed): Don't unset the
+	active item when gconf changes.
+
 2004-11-03  German Poo-Caamaño <gpoo@ubiobio.cl>
 
 	* pixmaps/network.png: Resized of network icon to 16x16.

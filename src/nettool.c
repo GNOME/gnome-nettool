@@ -67,13 +67,9 @@ void
 netinfo_set_host (Netinfo * netinfo, const gchar *host)
 {
 	g_return_if_fail (netinfo != NULL);
-	g_return_if_fail (GTK_IS_ENTRY
-			  (gtk_bin_get_child
-			   (GTK_BIN (netinfo->host))));
-	
-	gtk_entry_set_text (GTK_ENTRY
-			    (gtk_bin_get_child
-			     (GTK_BIN (netinfo->host))), host);
+	g_return_if_fail (GN_IS_COMBO_HISTORY (netinfo->history));
+
+	gn_combo_history_add (GN_COMBO_HISTORY (netinfo->history), host);
 }
 
 gboolean
@@ -115,13 +111,9 @@ void
 netinfo_set_user (Netinfo * netinfo, const gchar *user)
 {
 	g_return_if_fail (netinfo != NULL);
-	g_return_if_fail (GTK_IS_ENTRY
-			  (gnome_entry_gtk_entry
-			   (GNOME_ENTRY (netinfo->user))));
-	
-	gtk_entry_set_text (GTK_ENTRY
-			    (gnome_entry_gtk_entry
-			     (GNOME_ENTRY (netinfo->user))), user);
+	g_return_if_fail (GN_IS_COMBO_HISTORY (netinfo->history_user));
+
+	gn_combo_history_add (GN_COMBO_HISTORY (netinfo->history_user), user);
 }
 
 gint

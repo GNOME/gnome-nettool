@@ -73,23 +73,32 @@ info_do (const gchar * nic, Netinfo * info)
 void
 info_set_nic (Netinfo * netinfo, const gchar *nic)
 {
-	GList *interfaces = NULL, *p;
+	GtkTreeModel    *model;
+	GtkTreeIter      iter;
 
 	g_return_if_fail (netinfo != NULL);
 	
 	if (nic == NULL)
 		return;
 
-	interfaces = info_get_interfaces (netinfo);
-	for (p = interfaces; p != NULL; p = p->next) {
-		if (! strcmp (p->data, nic)) {
-			/* FIXME */
-			gtk_entry_set_text (GTK_ENTRY (netinfo->nic),
-					    nic);
-		}
+	model = gtk_combo_box_get_model (GTK_COMBO_BOX (netinfo->combo));
+	if (!gtk_tree_model_get_iter_first (model, &iter)) {
+		g_warning ("No network devices found.");
+		return;
 	}
-	
-	g_list_free (interfaces);
+
+	do {
+		char *text = NULL;
+
+		gtk_tree_model_get (GTK_TREE_MODEL (model), &iter, 2, &text, -1);
+		if (!text)
+			continue;
+
+		if (strcmp (text, nic) == 0) {
+			gtk_combo_box_set_active_iter (GTK_COMBO_BOX (netinfo->combo), &iter);
+			return;
+		}
+	} while (gtk_tree_model_iter_next (GTK_TREE_MODEL (model), &iter));
 }
 
 static void
