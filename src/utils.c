@@ -24,9 +24,10 @@
    on GNOME 2.0 */
 
 #include "utils.h"
+#include <glib/gi18n.h>
 
 #if (GLIB_MINOR_VERSION < 2)
-#include <glib.h>
+
 #include <string.h>
 
 gint
