@@ -1,71 +1,72 @@
-# Swedish translation of gnome-network.
-# Copyright (C) 1999, 2001, 2003 Free Software Foundation, Inc.
-# Bo Serrander <bserrander@atr.se>, 1999.
-# Christian Rose <menthos@menthos.com>, 2001, 2003.
+# Swedish translation of gnome-nettool.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Christian Rose <menthos@menthos.com>, 2004.
 #
 # $Id$
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-network\n"
+"Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-02-11 16:35+0100\n"
-"PO-Revision-Date: 2003-11-02 02:01+0100\n"
+"POT-Creation-Date: 2004-06-02 12:42+0200\n"
+"PO-Revision-Date: 2004-06-02 12:42+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:212
+#: src/callbacks.c:190
+msgid "translator_credits"
+msgstr ""
+"Christian Rose\n"
+"Skicka synpunkter på översättningen till sv@li.org"
+
+#: src/callbacks.c:215
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafiskt användargränssnitt för vanliga nätverksverktyg"
 
-#: src/callbacks.c:214
-msgid "This is an untranslated version of GNOME Network Information"
-msgstr "Detta är en oöversatt version av GNOME-nätverksinformation"
-
-#: src/gnome-netinfo.glade.h:1
+#: src/gnome-nettool.glade.h:1
 msgid "    "
 msgstr "    "
 
-#: src/gnome-netinfo.glade.h:2
+#: src/gnome-nettool.glade.h:2
 msgid "(eg. user@www.domain.com)"
 msgstr "(t.ex. användare@www.domän.se)"
 
-#: src/gnome-netinfo.glade.h:3
-#, fuzzy
+#: src/gnome-nettool.glade.h:3
 msgid "(for example: domain.com)"
-msgstr "(till exempel www.domän.se eller 192.168.2.1)"
+msgstr "(till exempel domän.se)"
 
-#: src/gnome-netinfo.glade.h:4
+#: src/gnome-nettool.glade.h:4
 msgid "(for example: www.domain.com or 192.168.2.1)"
 msgstr "(till exempel www.domän.se eller 192.168.2.1)"
 
-#: src/gnome-netinfo.glade.h:5
+#: src/gnome-nettool.glade.h:5
 msgid "*"
 msgstr "*"
 
-#: src/gnome-netinfo.glade.h:6
+#: src/gnome-nettool.glade.h:6
 msgid "0.0"
 msgstr "0.0"
 
-#: src/gnome-netinfo.glade.h:7
+#: src/gnome-nettool.glade.h:7
 msgid "<span weight=\"bold\">@</span>"
 msgstr "<span weight=\"bold\">@</span>"
 
-#: src/gnome-netinfo.glade.h:8
-#, fuzzy
+#: src/gnome-nettool.glade.h:8
 msgid ""
 "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
 "information</span>"
-msgstr "<span weight=\"bold\">Ange en nätverksadress att slå upp</span>"
+msgstr ""
+"<span weight=\"bold\">Ange en domänadress för att slå upp dess \"whois\"-"
+"information</span>"
 
-#: src/gnome-netinfo.glade.h:9
+#: src/gnome-nettool.glade.h:9
 msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
 msgstr "<span weight=\"bold\">Ange en nätverksadress att slå upp</span>"
 
-#: src/gnome-netinfo.glade.h:10
+#: src/gnome-nettool.glade.h:10
 msgid ""
 "<span weight=\"bold\">Enter a user name and network address to finger that "
 "user</span>"
@@ -73,299 +74,298 @@ msgstr ""
 "<span weight=\"bold\">Ange ett användarnamn och en nätverksadress för att "
 "använda finger på den användaren</span>"
 
-#: src/gnome-netinfo.glade.h:11
+#: src/gnome-nettool.glade.h:11
 msgid "<span weight=\"bold\">Enter the network address to ping</span>"
 msgstr "<span weight=\"bold\">Ange nätverksadressen att pinga</span>"
 
-#: src/gnome-netinfo.glade.h:12
+#: src/gnome-nettool.glade.h:12
 msgid ""
 "<span weight=\"bold\">Enter the network address to scan for open ports</span>"
 msgstr ""
 "<span weight=\"bold\">Ange nätverksadressen att genomsöka för öppna portar</"
 "span>"
 
-#: src/gnome-netinfo.glade.h:13
+#: src/gnome-nettool.glade.h:13
 msgid ""
 "<span weight=\"bold\">Enter the network address to trace a route to</span>"
 msgstr ""
 "<span weight=\"bold\">Ange nätverksadressen att spåra en väg till/span>"
 
-#: src/gnome-netinfo.glade.h:14
+#: src/gnome-nettool.glade.h:14
 msgid "<span weight=\"bold\">Information</span>"
 msgstr "<span weight=\"bold\">Information</span>"
 
-#: src/gnome-netinfo.glade.h:15
+#: src/gnome-nettool.glade.h:15
 msgid "<span weight=\"bold\">Round trip time statistics</span>"
 msgstr "<span weight=\"bold\">Statistik för varvtid</span>"
 
-#: src/gnome-netinfo.glade.h:16
+#: src/gnome-nettool.glade.h:16
 msgid ""
 "<span weight=\"bold\">Select the network device to get information on</span>"
 msgstr ""
 "<span weight=\"bold\">Välj nätverksenheten att få information om</span>"
 
-#: src/gnome-netinfo.glade.h:17
+#: src/gnome-nettool.glade.h:17
 msgid "<span weight=\"bold\">Select the type of information to display</span>"
 msgstr "<span weight=\"bold\">Välj typen av information att visa</span>"
 
-#: src/gnome-netinfo.glade.h:18
+#: src/gnome-nettool.glade.h:18
 msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
 msgstr "<span weight=\"bold\">Välj typen av information att slå upp:</span>"
 
-#: src/gnome-netinfo.glade.h:19
+#: src/gnome-nettool.glade.h:19
 msgid "<span weight=\"bold\">Statistics</span>"
 msgstr "<span weight=\"bold\">Statistik</span>"
 
-#: src/gnome-netinfo.glade.h:20
+#: src/gnome-nettool.glade.h:20
 msgid "<span weight=\"bold\">Transmission statistics</span>"
 msgstr "<span weight=\"bold\">Överföringsstatistik</span>"
 
-#: src/gnome-netinfo.glade.h:21
+#: src/gnome-nettool.glade.h:21
 msgid "Any / All Information"
 msgstr "Viss / All information"
 
-#: src/gnome-netinfo.glade.h:22
+#: src/gnome-nettool.glade.h:22
 msgid "Average:"
 msgstr "Genomsnitt:"
 
-#: src/gnome-netinfo.glade.h:23
+#: src/gnome-nettool.glade.h:23
 msgid "Broadcast:"
 msgstr "Broadcast:"
 
-#: src/gnome-netinfo.glade.h:24
+#: src/gnome-nettool.glade.h:24
 msgid "CPU / OS Type"
 msgstr "Processor / Operativsystemstyp"
 
 # Osäker
-#: src/gnome-netinfo.glade.h:25
+#: src/gnome-nettool.glade.h:25
 msgid "Canonical Name"
 msgstr "Kanoniskt namn"
 
-#: src/gnome-netinfo.glade.h:26
+#: src/gnome-nettool.glade.h:26
 msgid "Clear _History"
-msgstr ""
+msgstr "Töm _historiken"
 
-#: src/gnome-netinfo.glade.h:27
+#: src/gnome-nettool.glade.h:27
 msgid "Collisions:"
 msgstr "Kollisioner:"
 
-#: src/gnome-netinfo.glade.h:28
+#: src/gnome-nettool.glade.h:28
 msgid "Default Information"
 msgstr "Standardinformation"
 
-#: src/gnome-netinfo.glade.h:29
+#: src/gnome-nettool.glade.h:29
 msgid "Display active network services"
 msgstr "Visa aktiva nätverkstjänster"
 
-#: src/gnome-netinfo.glade.h:30
+#: src/gnome-nettool.glade.h:30
 msgid "Display multicast information"
 msgstr "Visa multicast-information"
 
-#: src/gnome-netinfo.glade.h:31
+#: src/gnome-nettool.glade.h:31
 msgid "Display routing table information"
 msgstr "Visa routingtabellinformation"
 
-#: src/gnome-netinfo.glade.h:32
+#: src/gnome-nettool.glade.h:32
 msgid "Enter the network address to ping"
 msgstr "Ange nätverksadressen att pinga"
 
-#: src/gnome-netinfo.glade.h:33 src/main.c:530
+#: src/gnome-nettool.glade.h:33 src/main.c:532
 msgid "Finger"
 msgstr "Finger"
 
-#: src/gnome-netinfo.glade.h:34
+#: src/gnome-nettool.glade.h:34
 msgid "Hardware address:"
 msgstr "Hårdvaruadress:"
 
-#: src/gnome-netinfo.glade.h:35
+#: src/gnome-nettool.glade.h:35
 msgid "Host name for Address"
 msgstr "Värdnamn för adress"
 
-#: src/gnome-netinfo.glade.h:36
+#: src/gnome-nettool.glade.h:36
 msgid "IP address:"
 msgstr "IP-adress:"
 
-#: src/gnome-netinfo.glade.h:37
+#: src/gnome-nettool.glade.h:37
 msgid "Internet Address"
 msgstr "Internetadress"
 
-#: src/gnome-netinfo.glade.h:38
+#: src/gnome-nettool.glade.h:38
 msgid "Link speed:"
 msgstr "Länkhastighet:"
 
-#: src/gnome-netinfo.glade.h:39 src/main.c:485
+#: src/gnome-nettool.glade.h:39 src/main.c:487
 msgid "Lookup"
 msgstr "Uppslagning"
 
-#: src/gnome-netinfo.glade.h:40
+#: src/gnome-nettool.glade.h:40
 msgid "MTU:"
 msgstr "MTU:"
 
-#: src/gnome-netinfo.glade.h:41
+#: src/gnome-nettool.glade.h:41
 msgid "Mailbox Exchange"
 msgstr "Brevlådeutväxling"
 
-#: src/gnome-netinfo.glade.h:42
+#: src/gnome-nettool.glade.h:42
 msgid "Mailbox Information"
 msgstr "Brevlådeinformation"
 
-#: src/gnome-netinfo.glade.h:43
+#: src/gnome-nettool.glade.h:43
 msgid "Maximum:"
 msgstr "Maximum:"
 
-#: src/gnome-netinfo.glade.h:44
+#: src/gnome-nettool.glade.h:44
 msgid "Minimum:"
 msgstr "Minimum:"
 
-#: src/gnome-netinfo.glade.h:45
+#: src/gnome-nettool.glade.h:45
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: src/gnome-netinfo.glade.h:46
+#: src/gnome-nettool.glade.h:46
 msgid "Name Server"
 msgstr "Namnserver"
 
-#: src/gnome-netinfo.glade.h:47
+#: src/gnome-nettool.glade.h:47
 msgid "Netmask:"
 msgstr "Nätmask:"
 
-#: src/gnome-netinfo.glade.h:48 src/main.c:349
+#: src/gnome-nettool.glade.h:48 src/main.c:351
 msgid "Netstat"
 msgstr "Netstat"
 
-#: src/gnome-netinfo.glade.h:49 src/main.c:110
-msgid "Network Information"
-msgstr "Nätverksinformation"
+#: src/gnome-nettool.glade.h:49
+msgid "Network Tool"
+msgstr "Nätverksverktyg"
 
-#: src/gnome-netinfo.glade.h:50
+#: src/gnome-nettool.glade.h:50
 msgid "Packets loss:"
 msgstr "Paketförluster:"
 
-#: src/gnome-netinfo.glade.h:51
+#: src/gnome-nettool.glade.h:51
 msgid "Packets received:"
 msgstr "Mottagna paket:"
 
-#: src/gnome-netinfo.glade.h:52
+#: src/gnome-nettool.glade.h:52
 msgid "Packets transmitted:"
 msgstr "Överförda paket:"
 
-#: src/gnome-netinfo.glade.h:53 src/main.c:257
+#: src/gnome-nettool.glade.h:53 src/main.c:259
 msgid "Ping"
 msgstr "Ping"
 
 # Osäker
-#: src/gnome-netinfo.glade.h:54
+#: src/gnome-nettool.glade.h:54
 msgid "Port _Scan"
 msgstr "Port_skanna"
 
-#: src/gnome-netinfo.glade.h:55
+#: src/gnome-nettool.glade.h:55
 msgid "Received bytes:"
 msgstr "Mottagna byte:"
 
-#: src/gnome-netinfo.glade.h:56
+#: src/gnome-nettool.glade.h:56
 msgid "Received packets:"
 msgstr "Mottagna paket:"
 
-#: src/gnome-netinfo.glade.h:57
+#: src/gnome-nettool.glade.h:57
 msgid "Reception errors:"
 msgstr "Mottagningsfel:"
 
 # Osäker
-#: src/gnome-netinfo.glade.h:58 src/main.c:447
+#: src/gnome-nettool.glade.h:58 src/main.c:449
 msgid "Scan"
 msgstr "Skanna"
 
-#: src/gnome-netinfo.glade.h:59
+#: src/gnome-nettool.glade.h:59
 msgid "Select network device from list"
 msgstr "Välj nätverksenhet från lista"
 
-#: src/gnome-netinfo.glade.h:60
+#: src/gnome-nettool.glade.h:60
 msgid "Send only"
 msgstr "Skicka endast"
 
-#: src/gnome-netinfo.glade.h:61
+#: src/gnome-nettool.glade.h:61
 msgid "Send unlimited requests (pings)"
 msgstr "Skickade obegränsade begäranden (ping)"
 
-#: src/gnome-netinfo.glade.h:62
+#: src/gnome-nettool.glade.h:62
 msgid "Start-of-authority"
 msgstr "Auktoritetsstart"
 
-#: src/gnome-netinfo.glade.h:63
+#: src/gnome-nettool.glade.h:63
 msgid "State:"
 msgstr "Tillstånd:"
 
-#: src/gnome-netinfo.glade.h:64
+#: src/gnome-nettool.glade.h:64
 msgid "Text Information"
 msgstr "Textinformation"
 
-#: src/gnome-netinfo.glade.h:65 src/main.c:305
+#: src/gnome-nettool.glade.h:65 src/main.c:307
 msgid "Trace"
 msgstr "Spår"
 
-#: src/gnome-netinfo.glade.h:66
+#: src/gnome-nettool.glade.h:66
 msgid "Transmission errors:"
 msgstr "Överföringsfel:"
 
-#: src/gnome-netinfo.glade.h:67
+#: src/gnome-nettool.glade.h:67
 msgid "Transmitted bytes:"
 msgstr "Överförda byte:"
 
-#: src/gnome-netinfo.glade.h:68
+#: src/gnome-nettool.glade.h:68
 msgid "Transmitted packets:"
 msgstr "Överförda paket:"
 
-#: src/gnome-netinfo.glade.h:69
+#: src/gnome-nettool.glade.h:69
 msgid "Well Known Services"
 msgstr "Välkända tjänster"
 
-#: src/gnome-netinfo.glade.h:70 src/main.c:581
+#: src/gnome-nettool.glade.h:70 src/main.c:583
 msgid "Whois"
-msgstr ""
+msgstr "Vemär"
 
-#: src/gnome-netinfo.glade.h:71
-#, fuzzy
+#: src/gnome-nettool.glade.h:71
 msgid "_Devices"
-msgstr "Tjänst"
+msgstr "_Enheter"
 
-#: src/gnome-netinfo.glade.h:72
+#: src/gnome-nettool.glade.h:72
 msgid "_Finger"
 msgstr "_Finger"
 
-#: src/gnome-netinfo.glade.h:73
-msgid "_Information"
-msgstr "_Information"
-
-#: src/gnome-netinfo.glade.h:74
+#: src/gnome-nettool.glade.h:73
 msgid "_Lookup"
 msgstr "_Uppslagning"
 
-#: src/gnome-netinfo.glade.h:75
+#: src/gnome-nettool.glade.h:74
 msgid "_Netstat"
 msgstr "_Netstat"
 
-#: src/gnome-netinfo.glade.h:76
+#: src/gnome-nettool.glade.h:75
 msgid "_Ping"
 msgstr "_Ping"
 
-#: src/gnome-netinfo.glade.h:77
+#: src/gnome-nettool.glade.h:76
+msgid "_Tool"
+msgstr "_Verktyg"
+
+#: src/gnome-nettool.glade.h:77
 msgid "_Traceroute"
 msgstr "_Traceroute"
 
-#: src/gnome-netinfo.glade.h:78
+#: src/gnome-nettool.glade.h:78
 msgid "_Whois"
-msgstr ""
+msgstr "_Vemär"
 
 # millisekunder
-#: src/gnome-netinfo.glade.h:79
+#: src/gnome-nettool.glade.h:79
 msgid "ms"
 msgstr "ms"
 
-#: src/gnome-netinfo.glade.h:80 src/info.h:27
+#: src/gnome-nettool.glade.h:80 src/info.h:27
 msgid "not available"
 msgstr "inte tillgänglig"
 
-#: src/gnome-netinfo.glade.h:81
+#: src/gnome-nettool.glade.h:81
 msgid "requests (pings)"
 msgstr "begäranden (ping)"
 
@@ -494,59 +494,60 @@ msgstr "Källa\tTTL\tAdresstyp\tPosttyp1\tUpplösning\n"
 
 #: src/main.c:75
 msgid "Load information for a network device"
-msgstr ""
+msgstr "Läs in information för en nätverksenhet"
 
 #: src/main.c:76
 msgid "DEVICE"
-msgstr ""
+msgstr "ENHET"
 
 #: src/main.c:78
-#, fuzzy
 msgid "Send a ping to a network address"
-msgstr "svaret använder en ogiltig nätadress"
+msgstr "Skicka ett ping till en nätverksadress"
 
 #: src/main.c:79 src/main.c:85 src/main.c:88 src/main.c:91
 msgid "HOST"
-msgstr ""
+msgstr "VÄRD"
 
 #: src/main.c:81
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
+"Hämta netstat-information. Giltiga flaggor är: route, active, multicast."
 
 #: src/main.c:82
 msgid "COMMAND"
-msgstr ""
+msgstr "KOMMANDO"
 
 #: src/main.c:84
-#, fuzzy
 msgid "Trace a route to a network address"
-msgstr "svaret använder en ogiltig nätadress"
+msgstr "Spåra en väg till en nätverksadress"
 
 #: src/main.c:87
-#, fuzzy
 msgid "Port scan a network address"
-msgstr "svaret använder en ogiltig nätadress"
+msgstr "Portskanna en nätverksadress"
 
 #: src/main.c:90
-#, fuzzy
 msgid "Look up a network address"
-msgstr "svaret använder en ogiltig nätadress"
+msgstr "Slå upp en nätverksadress"
 
 #: src/main.c:93
 msgid "Finger command to run"
-msgstr ""
+msgstr "Finger-kommando att köra"
 
 #: src/main.c:94
 msgid "USER"
-msgstr ""
+msgstr "ANVÄNDARE"
 
 #: src/main.c:96
 msgid "Perform a whois lookup for a network domain"
-msgstr ""
+msgstr "Utför en \"whois\"-uppslagning för en nätverksdomän"
 
 #: src/main.c:97
 msgid "DOMAIN"
-msgstr ""
+msgstr "DOMÄN"
+
+#: src/main.c:110
+msgid "Network Information"
+msgstr "Nätverksinformation"
 
 #: src/main.c:116
 #, c-format
@@ -556,92 +557,90 @@ msgid ""
 msgstr ""
 "Filen %s finns inte, kontrollera om gnome-netinfo är korrekt installerat"
 
-#: src/netinfo.c:157
-#, fuzzy
-msgid "Network address not specified"
-msgstr "Ingen värd angiven"
-
-#: src/netinfo.c:165
-#, fuzzy, c-format
-msgid "The host '%s' cannot be found"
-msgstr "Värden kan inte hittas."
-
-#: src/netinfo.c:309
-msgid "Information not available"
-msgstr "Information inte tillgänglig"
-
-#: src/netinfo.c:395
-msgid "Stop"
-msgstr "Stoppa"
-
-#: src/netinfo.c:401
-msgid "Run"
-msgstr "Kör"
-
-#: src/netstat.c:403
+#: src/netstat.c:430
 msgid "Protocol"
 msgstr "Protokoll"
 
-#: src/netstat.c:410
+#: src/netstat.c:437
 msgid "IP Source"
 msgstr "IP-källa"
 
-#: src/netstat.c:418
+#: src/netstat.c:445
 msgid "Port/Service"
 msgstr "Port/Tjänst"
 
-#: src/netstat.c:426 src/scan.c:289
+#: src/netstat.c:453 src/scan.c:289
 msgid "State"
 msgstr "Tillstånd"
 
-#: src/netstat.c:549
-#, fuzzy
+#: src/netstat.c:596
 msgid "Destination/Prefix"
-msgstr "Destination"
+msgstr "Destination/Prefix"
 
-#: src/netstat.c:551
+#: src/netstat.c:598
 msgid "Destination"
 msgstr "Destination"
 
-#: src/netstat.c:558
+#: src/netstat.c:605
 msgid "Gateway"
 msgstr "Gateway"
 
-#: src/netstat.c:566
+#: src/netstat.c:613
 msgid "Netmask"
 msgstr "Nätmask"
 
-#: src/netstat.c:574 src/netstat.c:680
+#: src/netstat.c:621 src/netstat.c:728
 msgid "Interface"
 msgstr "Gränssnitt"
 
-#: src/netstat.c:687
+#: src/netstat.c:735
 msgid "Member"
 msgstr "Medlem"
 
-#: src/netstat.c:695
+#: src/netstat.c:743
 msgid "Group"
 msgstr "Grupp"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:737
+#: src/netstat.c:785
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokoll\tIP-källa\tPort/Tjänst\tTillstånd\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:743
+#: src/netstat.c:791
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Destination\tGateway\tNätmask\tGränssnitt\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:748
+#: src/netstat.c:796
 msgid "Interface\tMember\tGroup\n"
 msgstr "Gränssnitt\tMedlem\tGrupp\n"
+
+#: src/nettool.c:178
+msgid "Network address not specified"
+msgstr "Nätverksadress inte angiven"
+
+#: src/nettool.c:186
+#, c-format
+msgid "The host '%s' cannot be found"
+msgstr "Värden \"%s\" kan inte hittas"
+
+#: src/nettool.c:328
+msgid "Information not available"
+msgstr "Information inte tillgänglig"
+
+#: src/nettool.c:424
+msgid "Stop"
+msgstr "Stoppa"
+
+#: src/nettool.c:430
+msgid "Run"
+msgstr "Kör"
 
 #: src/ping.c:378
 msgid "Bytes"
@@ -753,6 +752,26 @@ msgstr "Hopp\tVärdnamn\tIP\tTid 1\tTid 2\n"
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: Kommandot hittades inte"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Christian Rose\n"
+#~ "Skicka synpunkter på översättningen till sv@li.org"
+
+#~ msgid "Enter a domain address to lookup its \"whois\" information"
+#~ msgstr "Ange en domänadress för att slå upp dess \"whois\"-information"
+
+#~ msgid "The host '%s' cannot be found."
+#~ msgstr "Värden \"%s\" kan inte hittas."
+
+#~ msgid "The host cannot be found"
+#~ msgstr "Värden kan inte hittas"
+
+#~ msgid "This is an untranslated version of GNOME Network Information"
+#~ msgstr "Detta är en oöversatt version av GNOME-nätverksinformation"
+
+#~ msgid "_Information"
+#~ msgstr "_Information"
 
 #~ msgid "GNOME Remote Desktop Applet"
 #~ msgstr "GNOME-panelprogram för fjärrskrivbord"
@@ -1163,12 +1182,6 @@ msgstr "%s: Kommandot hittades inte"
 #~ msgid "Your desktop is viewable to others"
 #~ msgstr "Ditt skrivbord är synligt för andra"
 
-#~ msgid "translator_credits"
-#~ msgstr ""
-#~ "Christian Rose\n"
-#~ "Bo Serrander\n"
-#~ "Skicka synpunkter på översättningen till sv@li.org"
-
 #~ msgid "Remote Desktop Sharing"
 #~ msgstr "Fjärrskrivbordsdelning"
 
@@ -1456,9 +1469,6 @@ msgstr "%s: Kommandot hittades inte"
 #~ msgid "Label"
 #~ msgstr "Etikett"
 
-#~ msgid "Tooltip"
-#~ msgstr "Verktygstips"
-
 #~ msgid "Animation Speed"
 #~ msgstr "Animationshastighet"
 
@@ -1662,10 +1672,6 @@ msgstr "%s: Kommandot hittades inte"
 
 #~ msgid "/_Preferences"
 #~ msgstr "/_Inställningar"
-
-#, fuzzy
-#~ msgid "/_Open Web Folder"
-#~ msgstr "Webbmapp"
 
 #~ msgid "/_Quit"
 #~ msgstr "/_Avsluta"
