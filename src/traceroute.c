@@ -53,6 +53,10 @@ traceroute_do (Netinfo * netinfo)
 
 	host = netinfo_get_host (netinfo);
 
+	if (netinfo->stbar_text)
+		g_free (netinfo->stbar_text);
+	netinfo->stbar_text = g_strdup_printf (_("Tracing route to %s"), host);
+
 	model = gtk_tree_view_get_model (GTK_TREE_VIEW (netinfo->output));
 	if (GTK_IS_LIST_STORE (model)) {
 		gtk_list_store_clear (GTK_LIST_STORE (model));

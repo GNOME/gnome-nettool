@@ -139,7 +139,7 @@ main (int argc, char *argv[])
 	g_signal_connect (G_OBJECT (menu_about), "activate",
 			  G_CALLBACK (on_about_activate),
 			  (gpointer) window);
-
+	
 	pinger = load_ping_widgets_from_xml (xml);
 	tracer = load_traceroute_widgets_from_xml (xml);
 	netstat = load_netstat_widgets_from_xml (xml);
@@ -260,6 +260,7 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
+	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -288,6 +289,9 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	pinger->packets_received = glade_xml_get_widget (xml, "ping_packets_received");
 	pinger->packets_loss = glade_xml_get_widget (xml, "ping_packets_loss");
 
+	pinger->status_bar = glade_xml_get_widget (xml, "statusbar");
+	pinger->stbar_text = NULL;
+
 	vbox_ping = glade_xml_get_widget (xml, "vbox_ping");
 	
 	pinger->button_callback = G_CALLBACK (on_ping_activate);
@@ -301,6 +305,11 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (pinger->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (pinger->host)));
+	tips = gtk_tooltips_new ();
+	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
+			      _("Enter the network address to ping.\n"
+				"For example: www.domain.com or 192.168.2.1"),
+			      NULL);
 	
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -332,6 +341,7 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
+	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -353,6 +363,9 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	tracer->routing = NULL;
 	tracer->protocol = NULL;
 	tracer->multicast = NULL;
+
+	tracer->status_bar = glade_xml_get_widget (xml, "statusbar");
+	tracer->stbar_text = NULL;
 	
 	vbox_traceroute = glade_xml_get_widget (xml, "vbox_traceroute");
 
@@ -367,6 +380,11 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (tracer->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (tracer->host)));
+	tips = gtk_tooltips_new ();
+	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
+			      _("Enter the network address to trace a route to.\n"
+				"For example: www.domain.com or 192.168.2.1"),
+			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -415,6 +433,9 @@ load_netstat_widgets_from_xml (GladeXML * xml)
 	netstat->sensitive = NULL;
 	netstat->label_run = _("Netstat");
 	netstat->label_stop = NULL;
+
+	netstat->status_bar = glade_xml_get_widget (xml, "statusbar");
+	netstat->stbar_text = NULL;
 	
 	vbox_netstat = glade_xml_get_widget (xml, "vbox_netstat");
 	
@@ -520,6 +541,9 @@ load_info_widgets_from_xml (GladeXML * xml)
 	info->list_ip_addr = glade_xml_get_widget (xml, "info_list_ip_addr");
 	info->configure_button = glade_xml_get_widget (xml, "info_configure_button");
 
+	info->status_bar = glade_xml_get_widget (xml, "statusbar");
+	info->stbar_text = NULL;
+
 	info->network_tool_path = util_find_program_in_path (GST_NETWORK_TOOL, NULL);
 
 	model = GTK_TREE_MODEL (gtk_list_store_new (5, G_TYPE_STRING, G_TYPE_STRING,
@@ -573,6 +597,7 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
+	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -594,6 +619,9 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	scan->sensitive = NULL;
 	scan->label_run = _("Scan");
 	scan->label_stop = NULL;
+
+	scan->status_bar = glade_xml_get_widget (xml, "statusbar");
+	scan->stbar_text = NULL;
 	
 	scan->button_callback = G_CALLBACK (on_scan_activate);
 	scan->copy_output = NETINFO_COPY_FUNC (scan_copy_to_clipboard);
@@ -606,6 +634,11 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (scan->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (scan->host)));
+	tips = gtk_tooltips_new ();
+	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
+			      _("Enter the network address to scan for open ports.\n"
+				"For example: www.domain.com or 192.168.2.1"),
+			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -681,6 +714,7 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
+	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -703,6 +737,9 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	lookup->routing = NULL;
 	lookup->protocol = NULL;
 	lookup->multicast = NULL;
+
+	lookup->status_bar = glade_xml_get_widget (xml, "statusbar");
+	lookup->stbar_text = NULL;
 	
 	vbox_lookup = glade_xml_get_widget (xml, "vbox_lookup");
 
@@ -719,6 +756,11 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (lookup->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (lookup->host)));
+	tips = gtk_tooltips_new ();
+	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
+			      _("Enter the network address to lookup.\n"
+				"For example: www.domain.com or 192.168.2.1"),
+			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -751,6 +793,7 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
+	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -774,6 +817,9 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	finger->routing = NULL;
 	finger->protocol = NULL;
 	finger->multicast = NULL;
+
+	finger->status_bar = glade_xml_get_widget (xml, "statusbar");
+	finger->stbar_text = NULL;
 	
 	vbox_finger = glade_xml_get_widget (xml, "vbox_finger");
 
@@ -793,6 +839,10 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->user), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->user)));
+	tips = gtk_tooltips_new ();
+	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
+			      _("Enter the user to finger."),
+			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -816,6 +866,11 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->host)));
+	tips = gtk_tooltips_new ();
+	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
+			      _("Enter the network address to finger that user.\n"
+				"For example: www.domain.com or 192.168.2.1"),
+			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -848,6 +903,7 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
+	GtkTooltips *tips;
 	PangoFontDescription *font_desc;
 	
 
@@ -872,6 +928,9 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	whois->protocol = NULL;
 	whois->multicast = NULL;
 
+	whois->status_bar = glade_xml_get_widget (xml, "statusbar");
+	whois->stbar_text = NULL;
+
 	vbox_whois = glade_xml_get_widget (xml, "vbox_whois");
 
 	font_desc = pango_font_description_new ();
@@ -890,6 +949,11 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (whois->host), 0);*/
 	
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (whois->host)));
+	tips = gtk_tooltips_new ();
+	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
+			      _("Enter a domain address to lookup its whois information.\n"
+				"For example: www.domain.com or 192.168.2.1"),
+			      NULL);
 	
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);

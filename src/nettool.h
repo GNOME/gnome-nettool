@@ -39,6 +39,8 @@ typedef struct _Netinfo Netinfo;
 struct _Netinfo {
 	GtkWidget *main_window;
 	GtkWidget *progress_bar;
+	GtkWidget *status_bar;
+	gchar     *stbar_text;
 	GtkWidget *page_label;
 	GtkWidget *user;
 	GtkWidget *host;

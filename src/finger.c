@@ -53,6 +53,20 @@ finger_do (Netinfo * netinfo)
 	host = netinfo_get_host (netinfo);
 	user = netinfo_get_user (netinfo);
 
+	if (g_ascii_strcasecmp (user, "") != 0)
+		netinfo->stbar_text =
+			g_strdup_printf (_("Getting information of %s on \"%s\""), user,	
+					 g_ascii_strcasecmp (host, "") != 0 ? host : "localhost");	
+	else
+		netinfo->stbar_text =
+			g_strdup_printf (_("Getting information of all users on \"%s\""),
+					 g_ascii_strcasecmp (host, "") != 0 ? host : "localhost");
+	/*if (netinfo->stbar_text)
+		g_free (netinfo->stbar_text);
+	netinfo->stbar_text = g_strdup_printf (_("Getting information of %s on %s"),
+					       g_ascii_strcasecmp (user, "") != 0 ? user : "all users",
+					       g_ascii_strcasecmp (host, "") != 0 ? host : "localhost");*/
+
 	buffer =
 		gtk_text_view_get_buffer (GTK_TEXT_VIEW (netinfo->output));
 

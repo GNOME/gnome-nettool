@@ -68,6 +68,10 @@ ping_do (Netinfo * netinfo)
 	count = netinfo_get_count (netinfo);
 	host = netinfo_get_host (netinfo);
 
+	if (netinfo->stbar_text)
+		g_free (netinfo->stbar_text);
+	netinfo->stbar_text = g_strdup_printf (_("Sending ping requests to %s"), host);
+	
 	rttmin = rttavg = rttmax = packets_loss = 0.0;
 	packets_transmitted = packets_received = 0;
 
@@ -344,9 +348,8 @@ strip_line (gchar * line, ping_data * data, Netinfo * netinfo)
 			&(data)->ttl, data->srtt, data->unit);
 #endif
 	if (count != 5 && count != 6) {
-
 	}
-	/*printf ("DBG: bytes: %d, ip: %s, icmp_seq: %d\n", data->bytes, data->ip, data->icmp_seq);*/
+
 	return count;
 }
 

@@ -1,3 +1,16 @@
+2004-06-23  Carlos García Campos <carlosgc@gnome.org>
+
+	* src/callbacks.c (on_page_switch), src/finger.c (finger_do),
+	src/lookup.c (lookup_do), src/netstat.c (get_active_option),
+	src/nettool.[ch] (toggle_state), src/ping.c (ping_do), src/scan.c
+	(scan_do), src/traceroute.c (traceroute_do), src/whois.c (whois_do):
+	added status_bar messages
+
+	* src/main.c (load_*_widgets_from_xml): added tooltips
+
+	* src/gnome-nettool.glade: "Send unlimited requests" renamed as
+	"Unlimited requests"
+
 2004-06-14  Fernando Herrera  <fherrera@onirica.com>
 
 	* src/info.c: (info_get_nic_information), (info_get_interfaces):

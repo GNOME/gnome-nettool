@@ -74,6 +74,10 @@ lookup_do (Netinfo * netinfo)
 
 	host = netinfo_get_host (netinfo);
 
+	if (netinfo->stbar_text)
+		g_free (netinfo->stbar_text);
+	netinfo->stbar_text = g_strdup_printf (_("Looking up %s"), host);
+
 	if (netinfo_validate_host (netinfo) == FALSE) {
 		netinfo_stop_process_command (netinfo);
 		return;

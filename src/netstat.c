@@ -114,6 +114,10 @@ netstat_get_active_option (Netinfo * netinfo)
 		} else {
 			option = g_strdup ("-rn -A inet");
 		}
+
+		if (netinfo->stbar_text)
+			g_free (netinfo->stbar_text);
+		netinfo->stbar_text = g_strdup (_("Getting routing table"));
 	}
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (netinfo->protocol))) {
 		/* Only works for Solaris */
@@ -125,11 +129,19 @@ netstat_get_active_option (Netinfo * netinfo)
 		} else {
 			option = g_strdup ("-A inet -ln");
 		}
+
+		if (netinfo->stbar_text)
+			g_free (netinfo->stbar_text);
+		netinfo->stbar_text = g_strdup (_("Getting active Internet connections"));
 #endif
 	}
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (netinfo->multicast))) {
 		/* It works for Solaris and Linux */
 		option = g_strdup ("-g");
+
+		if (netinfo->stbar_text)
+			g_free (netinfo->stbar_text);
+		netinfo->stbar_text = g_strdup (_("Getting group memberships"));
 	}
 	return option;
 }

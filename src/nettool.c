@@ -425,6 +425,8 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 		netinfo_progress_indicator_stop (netinfo);
 		gdk_window_set_cursor ((netinfo->output)->window, NULL);
 		netinfo->child_pid = 0;
+		
+		gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);
 	} else {
 		pango_font_description_set_weight (font_desc,
 						   PANGO_WEIGHT_BOLD);
@@ -435,6 +437,12 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 			gtk_widget_realize (GTK_WIDGET (netinfo->output));
 		gdk_window_set_cursor ((netinfo->output)->window, cursor);
 		gdk_cursor_destroy (cursor);
+
+		if (netinfo->stbar_text) {
+			gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);
+			gtk_statusbar_push (GTK_STATUSBAR (netinfo->status_bar),
+					    0, netinfo->stbar_text);
+		}
 	}
 
 	gtk_widget_modify_font (netinfo->page_label, font_desc);

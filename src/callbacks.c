@@ -452,10 +452,17 @@ on_page_switch (GtkNotebook     * notebook,
 	if (!netinfo)
 		return;
 
-	if (netinfo->running)
+	if (netinfo->running) {
 		netinfo_progress_indicator_start (netinfo);
-	else
+		if (netinfo->stbar_text) {
+			gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);
+			gtk_statusbar_push (GTK_STATUSBAR (netinfo->status_bar),
+					    0, netinfo->stbar_text);
+		}
+	} else {
 		netinfo_progress_indicator_stop (netinfo);
+		gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);
+	}
 
 	title = g_strdup_printf ("Network Tools - %s",
 				 gtk_label_get_text (GTK_LABEL (netinfo->page_label)));

@@ -51,6 +51,10 @@ whois_do (Netinfo * netinfo)
 
 	host = netinfo_get_host (netinfo);
 
+	if (netinfo->stbar_text)
+		g_free (netinfo->stbar_text);
+	netinfo->stbar_text = g_strdup_printf (_("Getting the whois information of %s"), host);
+
 	host_is_set = (strcmp (host, "") != 0);
 	if (! host_is_set)
 		return;
