@@ -282,6 +282,7 @@ lookup_create_model (GtkTreeView *widget)
 	/* Time To Live of a hostname in a name server */
 	column =
 	    gtk_tree_view_column_new_with_attributes
+		/* Time To Live of a hostname in a name server */
 	    (_("TTL"), renderer, "text", LOOKUP_TTL, NULL);
 	gtk_tree_view_column_set_alignment (column, 0.5);
 	g_object_set (G_OBJECT (renderer), "xalign", 1.0, NULL);

@@ -71,7 +71,9 @@ traceroute_do (Netinfo * netinfo)
 	{
 	case IPV4:
 		program = util_find_program_in_path ("tcptraceroute", NULL);
+#ifdef DEBUG
 		g_print ("tcptraceroute: %s\n", program);
+#endif /* DEBUG */
 		if (program != NULL) {
 			program_name = g_strdup ("tcptraceroute");
 		} else {
