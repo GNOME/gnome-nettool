@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-network.txt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 11:34+0200\n"
+"POT-Creation-Date: 2004-12-22 13:11+0100\n"
 "PO-Revision-Date: 2003-03-12 20:57+0200\n"
 "Last-Translator: Gil 'Dolfin' Osher <dolfin@rpg.org.il>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0\n"
 
-#: src/callbacks.c:321
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr ""
 
-#: src/callbacks.c:349
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 
@@ -48,8 +48,9 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr ""
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
-msgstr ""
+#, fuzzy
+msgid "<b>Transmission Statistics</b>"
+msgstr "<b>הגדרות חיבור</b>"
 
 #: src/gnome-nettool.glade.h:7
 #, fuzzy
@@ -84,7 +85,7 @@ msgstr "התקן מודם"
 msgid "Display:"
 msgstr "תצוגה"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:837
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
 msgstr ""
 
@@ -108,7 +109,7 @@ msgstr "כתובת IP"
 msgid "Link speed:"
 msgstr "מהירות הקישור"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:751
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr ""
 
@@ -140,7 +141,7 @@ msgstr "שידור מרובב"
 msgid "Netmask:"
 msgstr ""
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr ""
 
@@ -198,7 +199,7 @@ msgstr "שגיאות קבלה"
 msgid "Routing Table Information"
 msgstr "הצג מידע שידור מרובב"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:632
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr ""
 
@@ -212,7 +213,7 @@ msgstr "שלח"
 msgid "State:"
 msgstr "מצב"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "מעקב"
 
@@ -245,7 +246,7 @@ msgstr ""
 msgid "User"
 msgstr "משתמש"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:953
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr ""
 
@@ -324,102 +325,103 @@ msgstr ""
 msgid "Unknown Interface"
 msgstr ""
 
-#: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
-msgstr ""
+#: src/info.c:139
+#, fuzzy
+msgid "Network Devices Not Found"
+msgstr "התקן מודם"
 
-#: src/info.c:344
+#: src/info.c:353
 #, fuzzy
 msgid "Unknown"
 msgstr "unison"
 
-#: src/info.c:504
+#: src/info.c:513
 msgid "Active"
 msgstr "פעיל"
 
-#: src/info.c:506
+#: src/info.c:515
 msgid "Inactive"
 msgstr "לא פעיל"
 
-#: src/info.c:511
+#: src/info.c:520
 msgid "Loopback"
 msgstr ""
 
-#: src/info.c:528
+#: src/info.c:537
 msgid "Enabled"
 msgstr "פועל"
 
-#: src/info.c:530
+#: src/info.c:539
 msgid "Disabled"
 msgstr "כבוי"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:670
+#: src/info.c:679
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr ""
 
-#: src/info.c:671
+#: src/info.c:680
 #, fuzzy, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "כתובת חומרה"
 
-#: src/info.c:672
+#: src/info.c:681
 #, fuzzy, c-format
 msgid "IP address:\t%s\n"
 msgstr "כתובת IP"
 
-#: src/info.c:673
+#: src/info.c:682
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr ""
 
-#: src/info.c:674
+#: src/info.c:683
 #, fuzzy, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "שידור"
 
-#: src/info.c:675
+#: src/info.c:684
 #, fuzzy, c-format
 msgid "Multicast:\t%s\n"
 msgstr "שידור מרובב"
 
-#: src/info.c:676
+#: src/info.c:685
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr ""
 
-#: src/info.c:677
+#: src/info.c:686
 #, fuzzy, c-format
 msgid "Link speed:\t%s\n"
 msgstr "מהירות הקישור"
 
-#: src/info.c:678
+#: src/info.c:687
 #, fuzzy, c-format
 msgid "State:\t%s\n"
 msgstr "מצב"
 
-#: src/info.c:680
+#: src/info.c:689
 #, fuzzy, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "חבילות מידע שנשלחו"
 
-#: src/info.c:681
+#: src/info.c:690
 #, fuzzy, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "שגיאות שליחה"
 
-#: src/info.c:682
+#: src/info.c:691
 #, fuzzy, c-format
 msgid "Received packets:\t%s\n"
 msgstr "חבילות מידע שהתקבלו"
 
-#: src/info.c:683
+#: src/info.c:692
 #, fuzzy, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "שגיאות קבלה"
 
-#: src/info.c:684
+#: src/info.c:693
 #, fuzzy, c-format
 msgid "Collisions:\t%s\n"
 msgstr "התנגשויות"
@@ -437,20 +439,21 @@ msgstr "מדבר אל %s"
 msgid "Name"
 msgstr "שם"
 
-#: src/lookup.c:285
+#. Time To Live of a hostname in a name server
+#: src/lookup.c:286
 msgid "TTL"
 msgstr ""
 
-#: src/lookup.c:294
+#: src/lookup.c:295
 #, fuzzy
 msgid "Address Type"
 msgstr "כתובת IP"
 
-#: src/lookup.c:304
+#: src/lookup.c:305
 msgid "Record Type"
 msgstr ""
 
-#: src/lookup.c:313
+#: src/lookup.c:314
 #, fuzzy
 msgid "Address"
 msgstr "כתובת IP"
@@ -461,7 +464,7 @@ msgstr "כתובת IP"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:341
+#: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr ""
 
@@ -536,62 +539,62 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr "לדוגמא: www.domain.com או 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 #, fuzzy
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr "לדוגמא: www.domain.com או 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr ""
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "כתובת IP"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr ""
 
-#: src/main.c:499
+#: src/main.c:502
 #, fuzzy
 msgid "Broadcast"
 msgstr "שידור"
 
-#: src/main.c:506
+#: src/main.c:509
 #, fuzzy
 msgid "Scope"
 msgstr "הפסק"
 
-#: src/main.c:654
+#: src/main.c:649
 #, fuzzy
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr "לדוגמא: www.domain.com או 192.168.2.1"
 
-#: src/main.c:782
+#: src/main.c:777
 #, fuzzy
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr "לדוגמא: www.domain.com או 192.168.2.1"
 
-#: src/main.c:871
+#: src/main.c:866
 #, fuzzy
 msgid "Enter the user to finger."
 msgstr "כתוב מחרוזת חיפוש"
 
-#: src/main.c:898
+#: src/main.c:893
 #, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr "לדוגמא: www.domain.com או 192.168.2.1"
 
-#: src/main.c:985
+#: src/main.c:980
 #, fuzzy
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
@@ -618,7 +621,7 @@ msgstr ""
 msgid "Port/Service"
 msgstr ""
 
-#: src/netstat.c:464 src/scan.c:292
+#: src/netstat.c:464 src/scan.c:295
 msgid "State"
 msgstr "מצב"
 
@@ -672,64 +675,64 @@ msgstr ""
 msgid "Interface\tMember\tGroup\n"
 msgstr ""
 
-#: src/nettool.c:206
+#: src/nettool.c:200
 #, fuzzy
 msgid "A network address was not specified"
 msgstr "לא צויין מארח"
 
-#: src/nettool.c:207 src/nettool.c:216
+#: src/nettool.c:201 src/nettool.c:210
 msgid "Please enter a valid network address and try again."
 msgstr ""
 
-#: src/nettool.c:214
+#: src/nettool.c:208
 #, fuzzy, c-format
 msgid "The address '%s' cannot be found"
 msgstr "החשבון לא יכול להמחק."
 
-#: src/nettool.c:243
+#: src/nettool.c:237
 #, fuzzy
 msgid "A domain address was not specified"
 msgstr "לא צויין מארח"
 
-#: src/nettool.c:244
+#: src/nettool.c:238
 msgid "Please enter a valid domain address and try again."
 msgstr ""
 
-#: src/nettool.c:376
+#: src/nettool.c:395
 msgid "Information not available"
 msgstr "מידע לא זמין"
 
-#: src/nettool.c:494
+#: src/nettool.c:513
 msgid "Stop"
 msgstr "הפסק"
 
-#: src/nettool.c:500
+#: src/nettool.c:519
 msgid "Run"
 msgstr "הפעל"
 
-#: src/ping.c:73
+#: src/ping.c:76
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr ""
 
-#: src/ping.c:381
+#: src/ping.c:384
 msgid "Bytes"
 msgstr ""
 
-#: src/ping.c:388
+#: src/ping.c:391
 msgid "Source"
 msgstr ""
 
-#: src/ping.c:396
+#: src/ping.c:399
 msgid "Seq"
 msgstr ""
 
-#: src/ping.c:406
+#: src/ping.c:409
 #, fuzzy
 msgid "Time"
 msgstr "מד זמן"
 
-#: src/ping.c:414
+#: src/ping.c:417
 msgid "Units"
 msgstr ""
 
@@ -737,90 +740,90 @@ msgstr ""
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:440
+#: src/ping.c:443
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr ""
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:455
+#: src/ping.c:458
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr ""
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr ""
 
-#: src/ping.c:457
+#: src/ping.c:460
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr ""
 
-#: src/ping.c:459
+#: src/ping.c:462
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr ""
 
-#: src/ping.c:461
+#: src/ping.c:464
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr ""
 
-#: src/ping.c:463
+#: src/ping.c:466
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr ""
 
-#: src/scan.c:80
+#: src/scan.c:83
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr ""
 
-#: src/scan.c:155
+#: src/scan.c:158
 #, fuzzy
 msgid "unknown"
 msgstr "unison"
 
-#: src/scan.c:284
+#: src/scan.c:287
 msgid "Port"
 msgstr "פתחה"
 
-#: src/scan.c:300
+#: src/scan.c:303
 msgid "Service"
 msgstr ""
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:322
+#: src/scan.c:325
 msgid "Port\tState\tService\n"
 msgstr ""
 
-#: src/traceroute.c:58
+#: src/traceroute.c:61
 #, fuzzy, c-format
 msgid "Tracing route to %s"
 msgstr "מדבר אל %s"
 
-#: src/traceroute.c:265
+#: src/traceroute.c:270
 msgid "Hop"
 msgstr ""
 
-#: src/traceroute.c:273
+#: src/traceroute.c:278
 #, fuzzy
 msgid "Hostname"
 msgstr "מארח"
 
-#: src/traceroute.c:281
+#: src/traceroute.c:286
 msgid "IP"
 msgstr ""
 
-#: src/traceroute.c:292
+#: src/traceroute.c:297
 #, fuzzy
 msgid "Time 1"
 msgstr "מד זמן"
 
-#: src/traceroute.c:302
+#: src/traceroute.c:307
 #, fuzzy
 msgid "Time 2"
 msgstr "מד זמן"
@@ -829,7 +832,7 @@ msgstr "מד זמן"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:328
+#: src/traceroute.c:333
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr ""
 

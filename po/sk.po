@@ -8,19 +8,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-20 19:51+0200\n"
+"POT-Creation-Date: 2004-12-22 13:11+0100\n"
 "PO-Revision-Date: 2004-09-21 00:22+0200\n"
 "Last-Translator: Ivan Noris <vix@vazka.sk>\n"
 "Language-Team: Slovak <sk-i18n@linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:303
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr "Ivan Noris <vix@vazka.sk>"
 
-#: src/callbacks.c:331
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafické používateľské prostredie pre bežné sieťové pomôcky"
 
@@ -45,7 +45,8 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Štatistiky časovej odozvy</b>"
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
+#, fuzzy
+msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Štatistiky prenosu</b>"
 
 #: src/gnome-nettool.glade.h:7
@@ -76,7 +77,7 @@ msgstr "Zariadenia"
 msgid "Display:"
 msgstr "Zobraziť:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:829
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
 msgstr "Finger"
 
@@ -96,7 +97,7 @@ msgstr "IP adresa:"
 msgid "Link speed:"
 msgstr "Rýchlosť linky:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:743
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr "Vyhľadať"
 
@@ -124,7 +125,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Sieťová maska:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -176,7 +177,7 @@ msgstr "Chyby pri prijímaní:"
 msgid "Routing Table Information"
 msgstr "Informácie o smerovacej tabuľke"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:624
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr "Skenovať"
 
@@ -188,7 +189,7 @@ msgstr "Odoslať:"
 msgid "State:"
 msgstr "Stav:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "Sledovať"
 
@@ -216,7 +217,7 @@ msgstr "Neobmedzený počet požiadaviek"
 msgid "User"
 msgstr "Používateľ"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:945
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr "Whois"
 
@@ -289,101 +290,102 @@ msgstr "Rozhranie loopback"
 msgid "Unknown Interface"
 msgstr "Neznáme rozhranie"
 
-#: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
+#: src/info.c:139
+#, fuzzy
+msgid "Network Devices Not Found"
 msgstr "<i>Neboli nájdené sieťové rozhrania</i>"
 
-#: src/info.c:344
+#: src/info.c:353
 msgid "Unknown"
 msgstr "Neznámy"
 
-#: src/info.c:504
+#: src/info.c:513
 msgid "Active"
 msgstr "Aktívny"
 
-#: src/info.c:506
+#: src/info.c:515
 msgid "Inactive"
 msgstr "Neaktívny"
 
-#: src/info.c:511
+#: src/info.c:520
 msgid "Loopback"
 msgstr "Loopback"
 
-#: src/info.c:528
+#: src/info.c:537
 msgid "Enabled"
 msgstr "Povolený"
 
-#: src/info.c:530
+#: src/info.c:539
 msgid "Disabled"
 msgstr "Zakázaný"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:670
+#: src/info.c:679
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Sieťové zariadenie:\t%s\n"
 
-#: src/info.c:671
+#: src/info.c:680
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardvérová adresa:\t%s\n"
 
-#: src/info.c:672
+#: src/info.c:681
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP adresa:\t%s\n"
 
-#: src/info.c:673
+#: src/info.c:682
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Sieťová maska:\t%s\n"
 
-#: src/info.c:674
+#: src/info.c:683
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: src/info.c:675
+#: src/info.c:684
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:676
+#: src/info.c:685
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:677
+#: src/info.c:686
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Rýchlosť linky:\t%s\n"
 
-#: src/info.c:678
+#: src/info.c:687
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stav:\t%s\n"
 
-#: src/info.c:680
+#: src/info.c:689
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Odoslané pakety:\t%s\n"
 
-#: src/info.c:681
+#: src/info.c:690
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Chyby pri vysielaní:\t%s\n"
 
-#: src/info.c:682
+#: src/info.c:691
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Prijaté pakety:\t%s\n"
 
-#: src/info.c:683
+#: src/info.c:692
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Chyby pri prijímaní:\t%s\n"
 
-#: src/info.c:684
+#: src/info.c:693
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kolízie:\t%s\n"
@@ -426,7 +428,9 @@ msgstr "Adresa"
 #. It's a tabular output, and these belongs to the column titles
 #: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
-msgstr "Zdroj\tTTL\tTyp adresy\nTyp záznamu1\tVýsledok\n"
+msgstr ""
+"Zdroj\tTTL\tTyp adresy\n"
+"Typ záznamu1\tVýsledok\n"
 
 #: src/main.c:78
 msgid "Load information for a network device"
@@ -502,63 +506,68 @@ msgstr ""
 "Zadajte sieťovú adresu na ping.\n"
 "Napríklad: www.domain.com alebo 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "Zadajte sieťovú adresu na sledovanie smerovania.\n"
+msgstr ""
+"Zadajte sieťovú adresu na sledovanie smerovania.\n"
 "Napríklad: www.domain.com alebo 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "IP adresa"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr "Sieťová maska / prefix"
 
-#: src/main.c:499
+#: src/main.c:502
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: src/main.c:506
+#: src/main.c:509
 msgid "Scope"
 msgstr "Rozsah"
 
-#: src/main.c:646
+#: src/main.c:649
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "Zadajte sieťovú adresu, na ktorej sa majú skenovať otvorené porty.\n"
+msgstr ""
+"Zadajte sieťovú adresu, na ktorej sa majú skenovať otvorené porty.\n"
 "Napríklad:www.domain.com alebo 192.168.2.1"
 
-#: src/main.c:774
+#: src/main.c:777
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "Zadajte sieťovú adresu na vyhľadanie.\n"
+msgstr ""
+"Zadajte sieťovú adresu na vyhľadanie.\n"
 "Napríklad: www.domain.com alebo 192.168.2.1"
 
-#: src/main.c:863
+#: src/main.c:866
 msgid "Enter the user to finger."
 msgstr "Zadajte používateľa pre finger."
 
-#: src/main.c:890
+#: src/main.c:893
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "Zadajte sieťovú adresu na získanie informácií finger používateľa.\n"
+msgstr ""
+"Zadajte sieťovú adresu na získanie informácií finger používateľa.\n"
 "Napríklad: www.domain.com alebo 192.168.2.1"
 
-#: src/main.c:977
+#: src/main.c:980
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "Zadajte doménovú adresu, pre ktorú sa majú vyhľadať informácie whois.\n"
+msgstr ""
+"Zadajte doménovú adresu, pre ktorú sa majú vyhľadať informácie whois.\n"
 "Napríklad: www.domain.com alebo 192.168.2.1"
 
 #: src/netstat.c:120
@@ -633,36 +642,36 @@ msgstr "Cieľ\tBrána\tSieťová maska\tRozhranie\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Rozhranie\tČlen\tSkupina\n"
 
-#: src/nettool.c:207
+#: src/nettool.c:200
 msgid "A network address was not specified"
 msgstr "Nebola špecifikovaná sieťová adresa"
 
-#: src/nettool.c:208 src/nettool.c:217
+#: src/nettool.c:201 src/nettool.c:210
 msgid "Please enter a valid network address and try again."
 msgstr "Zadajte prosím platnú sieťovú adresu a skúste to znova"
 
-#: src/nettool.c:215
+#: src/nettool.c:208
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "Adresu '%s' sa nepodarilo nájsť"
 
-#: src/nettool.c:244
+#: src/nettool.c:237
 msgid "A domain address was not specified"
 msgstr "Nebola špecifikovaná doménová·adresa·"
 
-#: src/nettool.c:245
+#: src/nettool.c:238
 msgid "Please enter a valid domain address and try again."
 msgstr "Zadajte prosím platnú doménovú adresu a skúste to znova"
 
-#: src/nettool.c:377
+#: src/nettool.c:395
 msgid "Information not available"
 msgstr "Informácia nie je dostupná"
 
-#: src/nettool.c:495
+#: src/nettool.c:513
 msgid "Stop"
 msgstr "Zastaviť"
 
-#: src/nettool.c:501
+#: src/nettool.c:519
 msgid "Run"
 msgstr "Spustiť"
 
@@ -814,4 +823,3 @@ msgstr "Získavajú sa informácie o všetkých používateľoch \"%s\""
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Získavajú sa informácie whois pre %s"
-

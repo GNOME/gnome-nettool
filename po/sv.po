@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-05 18:54+0200\n"
+"POT-Creation-Date: 2004-12-22 13:11+0100\n"
 "PO-Revision-Date: 2004-09-05 18:54+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:321
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr ""
 "Christian Rose\n"
 "Skicka synpunkter på översättningen till sv@li.org"
 
-#: src/callbacks.c:349
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafiskt användargränssnitt för vanliga nätverksverktyg"
 
@@ -47,7 +47,7 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Statistik för varvtid</b>"
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
+msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Överföringsstatistik</b>"
 
 #: src/gnome-nettool.glade.h:7
@@ -78,7 +78,7 @@ msgstr "Enheter"
 msgid "Display:"
 msgstr "Display:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:837
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
 msgstr "Finger"
 
@@ -98,7 +98,7 @@ msgstr "IP-adress:"
 msgid "Link speed:"
 msgstr "Länkhastighet:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:751
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr "Uppslagning"
 
@@ -126,7 +126,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Nätmask:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -180,7 +180,7 @@ msgid "Routing Table Information"
 msgstr "Routingtabellinformation"
 
 # Osäker
-#: src/gnome-nettool.glade.h:39 src/main.c:632
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr "Skanna"
 
@@ -192,7 +192,7 @@ msgstr "Skicka:"
 msgid "State:"
 msgstr "Tillstånd:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "Spår"
 
@@ -220,7 +220,7 @@ msgstr "Obegränsade begäranden"
 msgid "User"
 msgstr "Användare"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:953
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr "Vemär"
 
@@ -294,102 +294,102 @@ msgstr "Vändslingegränssnitt"
 msgid "Unknown Interface"
 msgstr "Okänt gränssnitt"
 
-#: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
-msgstr "<i>Nätverksenheter hittades inte</i>"
+#: src/info.c:139
+msgid "Network Devices Not Found"
+msgstr "Nätverksenheter hittades inte"
 
-#: src/info.c:344
+#: src/info.c:353
 msgid "Unknown"
 msgstr "Okänd"
 
-#: src/info.c:504
+#: src/info.c:513
 msgid "Active"
 msgstr "Aktiv"
 
-#: src/info.c:506
+#: src/info.c:515
 msgid "Inactive"
 msgstr "Inaktiv"
 
 # Osäker
-#: src/info.c:511
+#: src/info.c:520
 msgid "Loopback"
 msgstr "Vändslinga"
 
-#: src/info.c:528
+#: src/info.c:537
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: src/info.c:530
+#: src/info.c:539
 msgid "Disabled"
 msgstr "Inaktiverad"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:670
+#: src/info.c:679
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Nätverksenhet:\t%s\n"
 
-#: src/info.c:671
+#: src/info.c:680
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hårdvaruadress:\t%s\n"
 
-#: src/info.c:672
+#: src/info.c:681
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP-adress:\t%s\n"
 
-#: src/info.c:673
+#: src/info.c:682
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Nätmask:\t%s\n"
 
-#: src/info.c:674
+#: src/info.c:683
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: src/info.c:675
+#: src/info.c:684
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:676
+#: src/info.c:685
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:677
+#: src/info.c:686
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Länkhastighet:\t%s\n"
 
-#: src/info.c:678
+#: src/info.c:687
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Tillstånd:\t%s\n"
 
-#: src/info.c:680
+#: src/info.c:689
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Överförda paket:\t%s\n"
 
-#: src/info.c:681
+#: src/info.c:690
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Överföringsfel:\t%s\n"
 
-#: src/info.c:682
+#: src/info.c:691
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Mottagna paket:\t%s\n"
 
-#: src/info.c:683
+#: src/info.c:692
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Mottagningsfel:\t%s\n"
 
-#: src/info.c:684
+#: src/info.c:693
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kollisioner:\t%s\n"
@@ -408,19 +408,20 @@ msgid "Name"
 msgstr "Namn"
 
 # Time To Live antar jag
-#: src/lookup.c:285
+#. Time To Live of a hostname in a name server
+#: src/lookup.c:286
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:294
+#: src/lookup.c:295
 msgid "Address Type"
 msgstr "Adresstyp"
 
-#: src/lookup.c:304
+#: src/lookup.c:305
 msgid "Record Type"
 msgstr "Posttyp"
 
-#: src/lookup.c:313
+#: src/lookup.c:314
 msgid "Address"
 msgstr "Adress"
 
@@ -430,7 +431,7 @@ msgstr "Adress"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:341
+#: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Källa\tTTL\tAdresstyp\tPosttyp1\tUpplösning\n"
 
@@ -507,7 +508,7 @@ msgstr ""
 "Ange nätverksadressen att pinga.\n"
 "Till exempel www.domän.se eller 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -515,27 +516,27 @@ msgstr ""
 "Ange nätverksadressen att spåra en väg till.\n"
 "Till exempel www.domän.se eller 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr "Protokoll"
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "IP-adress"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr "Nätmask / Prefix"
 
-#: src/main.c:499
+#: src/main.c:502
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: src/main.c:506
+#: src/main.c:509
 msgid "Scope"
 msgstr "Omfattning"
 
-#: src/main.c:654
+#: src/main.c:649
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -543,7 +544,7 @@ msgstr ""
 "Ange nätverksadressen att genomsöka för öppna portar.\n"
 "Till exempel www.domän.se eller 192.168.2.1"
 
-#: src/main.c:782
+#: src/main.c:777
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -551,11 +552,11 @@ msgstr ""
 "Ange nätverksadressen att slå upp.\n"
 "Till exempel www.domän.se eller 192.168.2.1"
 
-#: src/main.c:871
+#: src/main.c:866
 msgid "Enter the user to finger."
 msgstr "Ange användaren att söka efter fingerinformation om."
 
-#: src/main.c:898
+#: src/main.c:893
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -563,7 +564,7 @@ msgstr ""
 "Ange nätverksadressen för att hämta fingerinformation om den användaren.\n"
 "Till exempel www.domän.se eller 192.168.2.1"
 
-#: src/main.c:985
+#: src/main.c:980
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -591,7 +592,7 @@ msgstr "IP-källa"
 msgid "Port/Service"
 msgstr "Port/Tjänst"
 
-#: src/netstat.c:464 src/scan.c:292
+#: src/netstat.c:464 src/scan.c:295
 msgid "State"
 msgstr "Tillstånd"
 
@@ -643,61 +644,61 @@ msgstr "Destination\tGateway\tNätmask\tGränssnitt\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Gränssnitt\tMedlem\tGrupp\n"
 
-#: src/nettool.c:206
+#: src/nettool.c:200
 msgid "A network address was not specified"
 msgstr "En nätverksadress angavs inte"
 
-#: src/nettool.c:207 src/nettool.c:216
+#: src/nettool.c:201 src/nettool.c:210
 msgid "Please enter a valid network address and try again."
 msgstr "Ange en giltig nätverksadress och försök igen."
 
-#: src/nettool.c:214
+#: src/nettool.c:208
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "Adressen \"%s\" kan inte hittas"
 
-#: src/nettool.c:243
+#: src/nettool.c:237
 msgid "A domain address was not specified"
 msgstr "En domänadress angavs inte"
 
-#: src/nettool.c:244
+#: src/nettool.c:238
 msgid "Please enter a valid domain address and try again."
 msgstr "Ange en giltig domänadress och försök igen."
 
-#: src/nettool.c:376
+#: src/nettool.c:395
 msgid "Information not available"
 msgstr "Information inte tillgänglig"
 
-#: src/nettool.c:494
+#: src/nettool.c:513
 msgid "Stop"
 msgstr "Stoppa"
 
-#: src/nettool.c:500
+#: src/nettool.c:519
 msgid "Run"
 msgstr "Kör"
 
-#: src/ping.c:73
+#: src/ping.c:76
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Skickar pingbegäranden till %s"
 
-#: src/ping.c:381
+#: src/ping.c:384
 msgid "Bytes"
 msgstr "Byte"
 
-#: src/ping.c:388
+#: src/ping.c:391
 msgid "Source"
 msgstr "Källa"
 
-#: src/ping.c:396
+#: src/ping.c:399
 msgid "Seq"
 msgstr "Sekvens"
 
-#: src/ping.c:406
+#: src/ping.c:409
 msgid "Time"
 msgstr "Tid"
 
-#: src/ping.c:414
+#: src/ping.c:417
 msgid "Units"
 msgstr "Enheter"
 
@@ -705,87 +706,87 @@ msgstr "Enheter"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:440
+#: src/ping.c:443
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Byte\tKälla\tSekvens\tTid\tEnheter\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:455
+#: src/ping.c:458
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimal tid:\t%s ms\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Medeltid:\t%s ms\n"
 
-#: src/ping.c:457
+#: src/ping.c:460
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maximal tid:\t%s ms\n"
 
-#: src/ping.c:459
+#: src/ping.c:462
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Överförda paket:\t%s\n"
 
-#: src/ping.c:461
+#: src/ping.c:464
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Mottagna paket:\t%s\n"
 
-#: src/ping.c:463
+#: src/ping.c:466
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Paketförluster:\t%s\n"
 
-#: src/scan.c:80
+#: src/scan.c:83
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Genomsöker %s för öppna portar"
 
-#: src/scan.c:155
+#: src/scan.c:158
 msgid "unknown"
 msgstr "okänd"
 
-#: src/scan.c:284
+#: src/scan.c:287
 msgid "Port"
 msgstr "Port"
 
-#: src/scan.c:300
+#: src/scan.c:303
 msgid "Service"
 msgstr "Tjänst"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:322
+#: src/scan.c:325
 msgid "Port\tState\tService\n"
 msgstr "Port\tTillstånd\tTjänst\n"
 
-#: src/traceroute.c:58
+#: src/traceroute.c:61
 #, c-format
 msgid "Tracing route to %s"
 msgstr "Spårar väg till %s"
 
-#: src/traceroute.c:265
+#: src/traceroute.c:270
 msgid "Hop"
 msgstr "Hopp"
 
-#: src/traceroute.c:273
+#: src/traceroute.c:278
 msgid "Hostname"
 msgstr "Värdnamn"
 
-#: src/traceroute.c:281
+#: src/traceroute.c:286
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:292
+#: src/traceroute.c:297
 msgid "Time 1"
 msgstr "Tid 1"
 
-#: src/traceroute.c:302
+#: src/traceroute.c:307
 msgid "Time 2"
 msgstr "Tid 2"
 
@@ -793,7 +794,7 @@ msgstr "Tid 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:328
+#: src/traceroute.c:333
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hopp\tVärdnamn\tIP\tTid 1\tTid 2\n"
 
@@ -825,6 +826,12 @@ msgstr "Hämtar information om alla användare på \"%s\""
 msgid "Getting the whois information of %s"
 msgstr "Hämtar \"whois\"-informationen om %s"
 
+#~ msgid "<b>Transmision Statistics</b>"
+#~ msgstr "<b>Överföringsstatistik</b>"
+
+#~ msgid "<i>Network Devices Not Found</i>"
+#~ msgstr "<i>Nätverksenheter hittades inte</i>"
+
 #~ msgid "IP Information"
 #~ msgstr "IP-information"
 
@@ -840,9 +847,6 @@ msgstr "Hämtar \"whois\"-informationen om %s"
 #~ msgid "Round Trip Time Statistics"
 #~ msgstr "Statistik för varvtid"
 
-#~ msgid "<b>Transmission Statistics</b>"
-#~ msgstr "<b>Överföringsstatistik</b>"
-
 #~ msgid "Transmission Statistics"
 #~ msgstr "Överföringsstatistik"
 
@@ -851,9 +855,6 @@ msgstr "Hämtar \"whois\"-informationen om %s"
 
 #~ msgid "_Domain address"
 #~ msgstr "_Domänadress"
-
-#~ msgid "Network Devices Not Found"
-#~ msgstr "Nätverksenheter hittades inte"
 
 #~ msgid "_Network Device"
 #~ msgstr "_Nätverksenhet"

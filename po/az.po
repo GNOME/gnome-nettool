@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.az\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-04 11:47+0200\n"
+"POT-Creation-Date: 2004-12-22 13:11+0100\n"
 "PO-Revision-Date: 2004-09-04 19:38+0300\n"
 "Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
 "Language-Team: Azerbaijani <translation-team-az@lists.sourceforge.net>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
 
-#: src/callbacks.c:321
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr ""
 "Mətin Əmirov <metin@karegen.com>\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Tərcümə işləri üzrə yazışma siyahısı ünvanımız:\n"
 "<translation-team-az@lists.sourceforge.net> "
 
-#: src/callbacks.c:349
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr "Ümumi şəbəkə vasitələri üçün qrafiki ara üz"
 
@@ -52,7 +52,8 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Yuvarladılmış Vaxt Statistikaları</b>"
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
+#, fuzzy
+msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Transmissiya Statistikaları</b>"
 
 #: src/gnome-nettool.glade.h:7
@@ -83,7 +84,7 @@ msgstr "Avadanlıqlar"
 msgid "Display:"
 msgstr "Displey:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:837
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
 msgstr "Finger"
 
@@ -103,7 +104,7 @@ msgstr "IP Ünvanı:"
 msgid "Link speed:"
 msgstr "Link sürəti:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:751
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr "Axtarış"
 
@@ -131,7 +132,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Şəbəkə maskası:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -183,7 +184,7 @@ msgstr "Alım xətaları:"
 msgid "Routing Table Information"
 msgstr "Yol Cədvəli Məlumatı"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:632
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr "Axtar"
 
@@ -195,7 +196,7 @@ msgstr "Göndər:"
 msgid "State:"
 msgstr "Vəziyyət:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "Yol"
 
@@ -223,7 +224,7 @@ msgstr "Məhdudiyyətsiz istək"
 msgid "User"
 msgstr "İstifadəçi"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:953
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr "Whois"
 
@@ -296,101 +297,102 @@ msgstr "Loopback Ara Üzü"
 msgid "Unknown Interface"
 msgstr "Naməlum Ara Üz"
 
-#: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
+#: src/info.c:139
+#, fuzzy
+msgid "Network Devices Not Found"
 msgstr "<i>Şəbəkə Avadanlıqları Tapılmadı</i>"
 
-#: src/info.c:344
+#: src/info.c:353
 msgid "Unknown"
 msgstr "Naməlum"
 
-#: src/info.c:504
+#: src/info.c:513
 msgid "Active"
 msgstr "Fəal"
 
-#: src/info.c:506
+#: src/info.c:515
 msgid "Inactive"
 msgstr "Qeyri-fəal"
 
-#: src/info.c:511
+#: src/info.c:520
 msgid "Loopback"
 msgstr "Loopback"
 
-#: src/info.c:528
+#: src/info.c:537
 msgid "Enabled"
 msgstr "Fəal"
 
-#: src/info.c:530
+#: src/info.c:539
 msgid "Disabled"
 msgstr "Qeyri-fəal"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:670
+#: src/info.c:679
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Şəbəkə avadanlığı:\t%s\n"
 
-#: src/info.c:671
+#: src/info.c:680
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Avadanlıq ünvanı: \t%s\n"
 
-#: src/info.c:672
+#: src/info.c:681
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP ünvanı: \t%s\n"
 
-#: src/info.c:673
+#: src/info.c:682
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Şəbəkə maskası: \t%s\n"
 
-#: src/info.c:674
+#: src/info.c:683
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Yayım:\t%s\n"
 
-#: src/info.c:675
+#: src/info.c:684
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:676
+#: src/info.c:685
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:677
+#: src/info.c:686
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Link sürəti:\t%s\n"
 
-#: src/info.c:678
+#: src/info.c:687
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Vəziyyət: \t%s\n"
 
-#: src/info.c:680
+#: src/info.c:689
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Ötürürlən paketlər: \t%s\n"
 
-#: src/info.c:681
+#: src/info.c:690
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Ötürmə xətaları: \t%s\n"
 
-#: src/info.c:682
+#: src/info.c:691
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Alınan paketlər: \t%s\n"
 
-#: src/info.c:683
+#: src/info.c:692
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Alış xətaları: \t%s\n"
 
-#: src/info.c:684
+#: src/info.c:693
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Yığılmalar: \t%s\n"
@@ -408,19 +410,20 @@ msgstr "%s axtarılır"
 msgid "Name"
 msgstr "Ad"
 
-#: src/lookup.c:285
+#. Time To Live of a hostname in a name server
+#: src/lookup.c:286
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:294
+#: src/lookup.c:295
 msgid "Address Type"
 msgstr "Ünvan Növü"
 
-#: src/lookup.c:304
+#: src/lookup.c:305
 msgid "Record Type"
 msgstr "Qeyd Növü"
 
-#: src/lookup.c:313
+#: src/lookup.c:314
 msgid "Address"
 msgstr "Ünvan"
 
@@ -430,7 +433,7 @@ msgstr "Ünvan"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:341
+#: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Mənbə\tTTL\tÜnvan Növü\tQeyd Növü1\tNəticələr\n"
 
@@ -507,7 +510,7 @@ msgstr ""
 "Pinq ediləcək şəbəkə ünvanını bildirin.\n"
 "Məs: www.domen.com ya da 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -515,27 +518,27 @@ msgstr ""
 "Yolu izlənəcək şəbəkə ünvanını bildirin.\n"
 "Məs: www.domen.com ya da 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "IP Ünvanı"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr "Şəbəkə Maskası / Prefiks"
 
-#: src/main.c:499
+#: src/main.c:502
 msgid "Broadcast"
 msgstr "Yayım"
 
-#: src/main.c:506
+#: src/main.c:509
 msgid "Scope"
 msgstr "Əhatə"
 
-#: src/main.c:654
+#: src/main.c:649
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -543,7 +546,7 @@ msgstr ""
 "Açıq portların axtarılacağı şəbəkə ünvanını bildirin.\n"
 "Məs: www.domen.com ya da 192.168.2.1"
 
-#: src/main.c:782
+#: src/main.c:777
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -551,11 +554,11 @@ msgstr ""
 "Məlumat alınacaq şəbəkə ünvanını bildirin.\n"
 "Məs: www.domen.com ya da 192.168.2.1"
 
-#: src/main.c:871
+#: src/main.c:866
 msgid "Enter the user to finger."
 msgstr "Finger ediləcək istifadəçi adını bildirin."
 
-#: src/main.c:898
+#: src/main.c:893
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -563,7 +566,7 @@ msgstr ""
 "Bu istifadəçini finger etmək üçün şəbəkə ünvanını bildirin.\n"
 "Məs: www.domen.com ya da 192.168.2.1"
 
-#: src/main.c:985
+#: src/main.c:980
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -591,7 +594,7 @@ msgstr "IP Mənbəsi"
 msgid "Port/Service"
 msgstr "Port/Xidmət"
 
-#: src/netstat.c:464 src/scan.c:292
+#: src/netstat.c:464 src/scan.c:295
 msgid "State"
 msgstr "Vəziyyət"
 
@@ -643,61 +646,61 @@ msgstr "Hədəf\tGeçiş Qapısı\tŞəbəkə Maskası\tAra Üz\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Ara Üz\tÜzv\tQrup\n"
 
-#: src/nettool.c:206
+#: src/nettool.c:200
 msgid "A network address was not specified"
 msgstr "Şəbəkə ünvanı bildirilməyib"
 
-#: src/nettool.c:207 src/nettool.c:216
+#: src/nettool.c:201 src/nettool.c:210
 msgid "Please enter a valid network address and try again."
 msgstr "Xahiş edirik düzgün şəbəkə ünvanını bildirin və yenidən sınayın."
 
-#: src/nettool.c:214
+#: src/nettool.c:208
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "'%s' ünvanı tapıla bilmir"
 
-#: src/nettool.c:243
+#: src/nettool.c:237
 msgid "A domain address was not specified"
 msgstr "Domen ünvanı ünvanı bildirilməyib"
 
-#: src/nettool.c:244
+#: src/nettool.c:238
 msgid "Please enter a valid domain address and try again."
 msgstr "Xahiş edirik düzgün domen ünvanı bildirin və yenidən sınayın."
 
-#: src/nettool.c:376
+#: src/nettool.c:395
 msgid "Information not available"
 msgstr "Məlumat mövcud deyil"
 
-#: src/nettool.c:494
+#: src/nettool.c:513
 msgid "Stop"
 msgstr "Dayan"
 
-#: src/nettool.c:500
+#: src/nettool.c:519
 msgid "Run"
 msgstr "İcra Et"
 
-#: src/ping.c:73
+#: src/ping.c:76
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "%s ünvanına ping istəyi göndərilir"
 
-#: src/ping.c:381
+#: src/ping.c:384
 msgid "Bytes"
 msgstr "Bayt"
 
-#: src/ping.c:388
+#: src/ping.c:391
 msgid "Source"
 msgstr "Mənbə"
 
-#: src/ping.c:396
+#: src/ping.c:399
 msgid "Seq"
 msgstr "Seq"
 
-#: src/ping.c:406
+#: src/ping.c:409
 msgid "Time"
 msgstr "Vaxt"
 
-#: src/ping.c:414
+#: src/ping.c:417
 msgid "Units"
 msgstr "Vahid"
 
@@ -705,87 +708,87 @@ msgstr "Vahid"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:440
+#: src/ping.c:443
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bayt\tMənbə\tSeq\tVaxt\tVahid\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:455
+#: src/ping.c:458
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimal vaxt:\t%s ms\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Ortalama vaxt\t%s ms\n"
 
-#: src/ping.c:457
+#: src/ping.c:460
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maksimal vaxt:\t%s ms\n"
 
-#: src/ping.c:459
+#: src/ping.c:462
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Ötürülən paket:\t%s\n"
 
-#: src/ping.c:461
+#: src/ping.c:464
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Alınan paket:\t%s\n"
 
-#: src/ping.c:463
+#: src/ping.c:466
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "İtirilən paket:\t%s\n"
 
-#: src/scan.c:80
+#: src/scan.c:83
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s ünvanında açıq portlar axtarılır"
 
-#: src/scan.c:155
+#: src/scan.c:158
 msgid "unknown"
 msgstr "namə'lum"
 
-#: src/scan.c:284
+#: src/scan.c:287
 msgid "Port"
 msgstr "Port"
 
-#: src/scan.c:300
+#: src/scan.c:303
 msgid "Service"
 msgstr "Xidmət"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:322
+#: src/scan.c:325
 msgid "Port\tState\tService\n"
 msgstr "Port\tVəziyyət\tXidmət\n"
 
-#: src/traceroute.c:58
+#: src/traceroute.c:61
 #, c-format
 msgid "Tracing route to %s"
 msgstr "Yol %s ünvanına istiqamətləndirilir"
 
-#: src/traceroute.c:265
+#: src/traceroute.c:270
 msgid "Hop"
 msgstr "Hop"
 
-#: src/traceroute.c:273
+#: src/traceroute.c:278
 msgid "Hostname"
 msgstr "Qovşaq Adı"
 
-#: src/traceroute.c:281
+#: src/traceroute.c:286
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:292
+#: src/traceroute.c:297
 msgid "Time 1"
 msgstr "Vaxt 1"
 
-#: src/traceroute.c:302
+#: src/traceroute.c:307
 msgid "Time 2"
 msgstr "Vaxt 2"
 
@@ -793,7 +796,7 @@ msgstr "Vaxt 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:328
+#: src/traceroute.c:333
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tQovşaq adı\tIP\tVaxt 1\tVaxt 2\n"
 
@@ -824,4 +827,3 @@ msgstr "\"%s\" üstündəki bütün istifadəçilər haqqında məlumat alınır
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s ünvanının whois məlumatı alınır"
-

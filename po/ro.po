@@ -1,12 +1,11 @@
 # Romanian translation for gnome-nettool
 # Copyright (C) 2004, Free Software Foundation, Inc
 # Mişu Moldovan <dumol@go.ro>
-
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-11 11:49+0200\n"
+"POT-Creation-Date: 2004-12-22 13:11+0100\n"
 "PO-Revision-Date: 2004-09-12 01:51+0300\n"
 "Last-Translator: Mişu Moldovan <dumol@go.ro>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
@@ -15,11 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/callbacks.c:303
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr "Mişu Moldovan <dumol@go.ro>"
 
-#: src/callbacks.c:331
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr "Interfaţă grafică pentru utilitare de reţea"
 
@@ -44,7 +43,8 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Statistici „round trip time”"
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
+#, fuzzy
+msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Statistici transmisiune</b>"
 
 #: src/gnome-nettool.glade.h:7
@@ -75,7 +75,7 @@ msgstr "Dispozitive"
 msgid "Display:"
 msgstr "Ecran:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:829
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
 msgstr "Finger"
 
@@ -95,7 +95,7 @@ msgstr "Adresă IP:"
 msgid "Link speed:"
 msgstr "Lăţime de bandă:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:743
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -123,7 +123,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Netmask:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -175,7 +175,7 @@ msgstr "Erori primire:"
 msgid "Routing Table Information"
 msgstr "Detalii tabelă de rutare"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:624
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr "Scanare"
 
@@ -187,7 +187,7 @@ msgstr "Trimite:"
 msgid "State:"
 msgstr "Stare:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "Trace"
 
@@ -215,7 +215,7 @@ msgstr "Cereri nelimitate"
 msgid "User"
 msgstr "Utilizator"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:945
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr "Whois"
 
@@ -288,101 +288,102 @@ msgstr "Interfaţă loopback"
 msgid "Unknown Interface"
 msgstr "Interfaţă necunoscută"
 
-#: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
+#: src/info.c:139
+#, fuzzy
+msgid "Network Devices Not Found"
 msgstr "<i>Dispozitive de reţea inexistente</i>"
 
-#: src/info.c:344
+#: src/info.c:353
 msgid "Unknown"
 msgstr "Necunoscut"
 
-#: src/info.c:504
+#: src/info.c:513
 msgid "Active"
 msgstr "Activ"
 
-#: src/info.c:506
+#: src/info.c:515
 msgid "Inactive"
 msgstr "Inactiv"
 
-#: src/info.c:511
+#: src/info.c:520
 msgid "Loopback"
 msgstr "Loopback"
 
-#: src/info.c:528
+#: src/info.c:537
 msgid "Enabled"
 msgstr "Activat"
 
-#: src/info.c:530
+#: src/info.c:539
 msgid "Disabled"
 msgstr "Dezactivat"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:670
+#: src/info.c:679
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Dispozitiv de reţea:\t%s\n"
 
-#: src/info.c:671
+#: src/info.c:680
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Adresă hardware:\t%s\n"
 
-#: src/info.c:672
+#: src/info.c:681
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "Adresă IP:\t%s\n"
 
-#: src/info.c:673
+#: src/info.c:682
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Netmask:\t%s\n"
 
-#: src/info.c:674
+#: src/info.c:683
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: src/info.c:675
+#: src/info.c:684
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:676
+#: src/info.c:685
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:677
+#: src/info.c:686
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Lăţime de bandă:\t%s\n"
 
-#: src/info.c:678
+#: src/info.c:687
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stare:\t%s\n"
 
-#: src/info.c:680
+#: src/info.c:689
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Pachete transmise:\t%s\n"
 
-#: src/info.c:681
+#: src/info.c:690
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Erori de transmise:\t%s\n"
 
-#: src/info.c:682
+#: src/info.c:691
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Pachete primite:\t%s\n"
 
-#: src/info.c:683
+#: src/info.c:692
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Erori primire:\t%s\n"
 
-#: src/info.c:684
+#: src/info.c:693
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Coliziuni:\t%s\n"
@@ -499,7 +500,7 @@ msgstr ""
 "Introduceţi adresa de reţea pentru ping\n"
 "De exemplu: www.domeniu.com sau 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -507,27 +508,27 @@ msgstr ""
 "Introduceţi adresa de reţea pentru traceroute.\n"
 "De exemplu: www.domeniu.com sau 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr "Protocol"
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "Adresă IP"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr "Netmask / Prefix"
 
-#: src/main.c:499
+#: src/main.c:502
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: src/main.c:506
+#: src/main.c:509
 msgid "Scope"
 msgstr "Domeniu"
 
-#: src/main.c:646
+#: src/main.c:649
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -535,7 +536,7 @@ msgstr ""
 "Introduceţi adresa de reţea pentru scanarea porturilor.\n"
 "De exemplu: www.domeniu.com sau 192.168.2.1"
 
-#: src/main.c:774
+#: src/main.c:777
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -543,11 +544,11 @@ msgstr ""
 "Introduceţi adresa de reţea pentru lookup\n"
 "De exemplu: www.domeniu.com sau 192.168.2.1"
 
-#: src/main.c:863
+#: src/main.c:866
 msgid "Enter the user to finger."
 msgstr "Introduceţi un utilizator pentru „finger”."
 
-#: src/main.c:890
+#: src/main.c:893
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -555,7 +556,7 @@ msgstr ""
 "Introduceţi adresa de reţea pentru „finger”.\n"
 "De exemplu: www.domeniu.com sau 192.168.2.1"
 
-#: src/main.c:977
+#: src/main.c:980
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -635,36 +636,36 @@ msgstr "Destinaţie\tGateway\tNetmask\tInterfaţă\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Interfaţă\tMembru\tGrup\n"
 
-#: src/nettool.c:207
+#: src/nettool.c:200
 msgid "A network address was not specified"
 msgstr "Nu s-a specificat o adresă de reţea"
 
-#: src/nettool.c:208 src/nettool.c:217
+#: src/nettool.c:201 src/nettool.c:210
 msgid "Please enter a valid network address and try again."
 msgstr "Introduceţi o adresă de reţea validă şi încercaţi din nou."
 
-#: src/nettool.c:215
+#: src/nettool.c:208
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "Adresa „%s” nu a fost găsită"
 
-#: src/nettool.c:244
+#: src/nettool.c:237
 msgid "A domain address was not specified"
 msgstr "Nu s-a specificat adresa unui domeniu"
 
-#: src/nettool.c:245
+#: src/nettool.c:238
 msgid "Please enter a valid domain address and try again."
 msgstr "Introduceţi o adresă de domeniu validă şi încercaţi din nou."
 
-#: src/nettool.c:377
+#: src/nettool.c:395
 msgid "Information not available"
 msgstr "Informaţii indisponibile"
 
-#: src/nettool.c:495
+#: src/nettool.c:513
 msgid "Stop"
 msgstr "Stop"
 
-#: src/nettool.c:501
+#: src/nettool.c:519
 msgid "Run"
 msgstr "Start"
 
@@ -816,4 +817,3 @@ msgstr "Obţin detalii pentru toţi utilizatorii de la „%s”"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Obţin detalii „whois” pentru %s"
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-27 03:46+0200\n"
+"POT-Creation-Date: 2004-12-22 13:11+0100\n"
 "PO-Revision-Date: 2004-08-27 15:44+0530\n"
 "Last-Translator: Jayaradha N <jaya@pune.redhat.com>\n"
 "Language-Team: Tamil <zhakanini@yahoogroups.com>\n"
@@ -15,13 +15,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
 
-#: src/callbacks.c:321
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr "(_c)மொழிபெயர்பாளர் நன்றிகள்"
 
-#: src/callbacks.c:349
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr "பொதுவான வலைப்பின்னல் பயன்பாடுகளுக்கன சித்திர பயனீட்டாளர் இடைமுகம்"
 
@@ -46,7 +47,8 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>முழு நேர புள்ளிவிவர தகவல்</b>"
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
+#, fuzzy
+msgid "<b>Transmission Statistics</b>"
 msgstr "<b>அனுப்பிய தகவல்</b>"
 
 #: src/gnome-nettool.glade.h:7
@@ -77,7 +79,7 @@ msgstr "சாதனங்கள்"
 msgid "Display:"
 msgstr "காட்சி:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:837
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
 msgstr "விரல்"
 
@@ -97,7 +99,7 @@ msgstr "IP முகவரி:"
 msgid "Link speed:"
 msgstr "இணைப்பு வேகம்:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:751
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr "பார்வை"
 
@@ -125,7 +127,7 @@ msgstr "தொலை ஒலிபரப்பு"
 msgid "Netmask:"
 msgstr "நெட்மாஸ்க்:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr "வலைபுள்ளிவிவரம்"
 
@@ -177,7 +179,7 @@ msgstr "பெறுதல் பிழை"
 msgid "Routing Table Information"
 msgstr "வழிகாட்டி அட்டவணை தகவல்"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:632
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr "தேடு"
 
@@ -189,7 +191,7 @@ msgstr "அனுப்பு:"
 msgid "State:"
 msgstr "நிலை:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "தடத்தை தேடு"
 
@@ -217,7 +219,7 @@ msgstr "கணக்கில்லா கோரிக்கைகள்"
 msgid "User"
 msgstr "பயனீட்டாளர்"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:953
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr "யாரது"
 
@@ -290,101 +292,102 @@ msgstr "லூப்பேக் இடைமுகம்"
 msgid "Unknown Interface"
 msgstr "தெரியாத இடைமுகம்"
 
-#: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
+#: src/info.c:139
+#, fuzzy
+msgid "Network Devices Not Found"
 msgstr "<i>வலைப்பின்னல் சாதனத்தை காணவில்லை</i>"
 
-#: src/info.c:344
+#: src/info.c:353
 msgid "Unknown"
 msgstr "தெரியாத"
 
-#: src/info.c:504
+#: src/info.c:513
 msgid "Active"
 msgstr "செயலில் உள்ள"
 
-#: src/info.c:506
+#: src/info.c:515
 msgid "Inactive"
 msgstr "செயலில் இல்லாத"
 
-#: src/info.c:511
+#: src/info.c:520
 msgid "Loopback"
 msgstr "லூப்பேக்"
 
-#: src/info.c:528
+#: src/info.c:537
 msgid "Enabled"
 msgstr "செயல்படுத்தப்பட்ட"
 
-#: src/info.c:530
+#: src/info.c:539
 msgid "Disabled"
 msgstr "செயலில் இல்லாத"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:670
+#: src/info.c:679
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "வலைப்பின்னல் சாதனம்:\t%s\n"
 
-#: src/info.c:671
+#: src/info.c:680
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "வன்பொருள் முகவரி:\t%s\n"
 
-#: src/info.c:672
+#: src/info.c:681
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP முகவரி:\t%s\n"
 
-#: src/info.c:673
+#: src/info.c:682
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "நெட்மாஸ்க்:\t%s\n"
 
-#: src/info.c:674
+#: src/info.c:683
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "ஒலிபரப்பு:\t%s\n"
 
-#: src/info.c:675
+#: src/info.c:684
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "தொலை ஒலிபரப்பு:\t%s\n"
 
-#: src/info.c:676
+#: src/info.c:685
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:677
+#: src/info.c:686
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "இணைப்பு வேகம்:\t%s\n"
 
-#: src/info.c:678
+#: src/info.c:687
 #, c-format
 msgid "State:\t%s\n"
 msgstr "நிலை:\t%s\n"
 
-#: src/info.c:680
+#: src/info.c:689
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "அனுப்பப்பட்ட கட்டுகள்:\t%s\n"
 
-#: src/info.c:681
+#: src/info.c:690
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "அனுப்பல் பிழை:\t%s\n"
 
-#: src/info.c:682
+#: src/info.c:691
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "பெறப்பட்ட கட்டுகள்:\t%s\n"
 
-#: src/info.c:683
+#: src/info.c:692
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "பெற்றுக்கொள்ளும் போது பிழை:\t%s\n"
 
-#: src/info.c:684
+#: src/info.c:693
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "மோதல்:\t%s\n"
@@ -402,19 +405,20 @@ msgstr "மேலே பார்க்கிறது %s"
 msgid "Name"
 msgstr "பெயர்"
 
-#: src/lookup.c:285
+#. Time To Live of a hostname in a name server
+#: src/lookup.c:286
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:294
+#: src/lookup.c:295
 msgid "Address Type"
 msgstr "முகவரி வகை"
 
-#: src/lookup.c:304
+#: src/lookup.c:305
 msgid "Record Type"
 msgstr "பதிப்பு வகை"
 
-#: src/lookup.c:313
+#: src/lookup.c:314
 msgid "Address"
 msgstr "முகவரி"
 
@@ -424,7 +428,7 @@ msgstr "முகவரி"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:341
+#: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "மூலம்\tTTL\tமுகவரிவகை\tபதிப்பு வகை1\tதெளிவுத்திறன்\n"
 
@@ -446,7 +450,9 @@ msgstr "HOST"
 
 #: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "வலைப்பின்னல் புள்ளிவிவரத்தகவலை பெற்றுக்கொள். செல்லகூடிய தேர்வுக: வழி, செயலில் உள்ள , தொலை ஒலை ஒலிபரப்பு"
+msgstr ""
+"வலைப்பின்னல் புள்ளிவிவரத்தகவலை பெற்றுக்கொள். செல்லகூடிய தேர்வுக: வழி, செயலில் உள்ள , "
+"தொலை ஒலை ஒலிபரப்பு"
 
 #: src/main.c:85
 msgid "COMMAND"
@@ -499,7 +505,7 @@ msgstr ""
 "பிங் செய்ய வலைப்பின்னல் முகவரியை உள்ளிடவும்\n"
 "உதாரணம்: www.domain.com or 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -507,27 +513,27 @@ msgstr ""
 "வழிகாண வலைப்பின்னல் முகவரியை உள்ளிடவும்\n"
 "உதாரணம்: www.domain.com or 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr "விதிமுறைகள்"
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "IP முகவரி"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr "நெட்மாஸ்க் / முன்னொட்டு"
 
-#: src/main.c:499
+#: src/main.c:502
 msgid "Broadcast"
 msgstr "ஒலிபரப்பு"
 
-#: src/main.c:506
+#: src/main.c:509
 msgid "Scope"
 msgstr "நோக்கம்"
 
-#: src/main.c:654
+#: src/main.c:649
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -535,7 +541,7 @@ msgstr ""
 "வழியை திறந்து தேட வலைப்பின்னல் முகவரியை உள்ளிடவும்\n"
 "உதாரணம்: www.domain.com or 192.168.2.1"
 
-#: src/main.c:782
+#: src/main.c:777
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -543,11 +549,11 @@ msgstr ""
 "மறுபார்வைக்கு வலைப்பின்னல் முகவரியை உள்ளிடவும்\n"
 "உதாரணம்: www.domain.com or 192.168.2.1"
 
-#: src/main.c:871
+#: src/main.c:866
 msgid "Enter the user to finger."
 msgstr "கண்டுபிடிக்க வேண்டிய பயனீட்டாளரை உள்ளிடவும்"
 
-#: src/main.c:898
+#: src/main.c:893
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -555,7 +561,7 @@ msgstr ""
 "பயனீட்டாளரை கண்டுபிடிக்க வலைப்பின்னல் முகவரியை உள்ளிடவும்\n"
 "உதாரணம்: www.domain.com or 192.168.2.1"
 
-#: src/main.c:985
+#: src/main.c:980
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -583,7 +589,7 @@ msgstr "IP மூலம்"
 msgid "Port/Service"
 msgstr "பாதை/சேவை"
 
-#: src/netstat.c:464 src/scan.c:292
+#: src/netstat.c:464 src/scan.c:295
 msgid "State"
 msgstr "நிலை"
 
@@ -635,61 +641,61 @@ msgstr "இலக்கு\tநுழைவாயில்\tநெட்மா�
 msgid "Interface\tMember\tGroup\n"
 msgstr "இடைமுகம்\tஉறுப்பினர்\tகுழு\n"
 
-#: src/nettool.c:206
+#: src/nettool.c:200
 msgid "A network address was not specified"
 msgstr "வலைப்பின்னல் முகவரி குறிப்பிடப்படவில்லை"
 
-#: src/nettool.c:207 src/nettool.c:216
+#: src/nettool.c:201 src/nettool.c:210
 msgid "Please enter a valid network address and try again."
 msgstr "சரியான வலைப்பின்னல் முகவரியை உள்ளிட்டு மீண்டும் முயற்சிக்கவும்"
 
-#: src/nettool.c:214
+#: src/nettool.c:208
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "முகவரி '%s' ஐ காணவில்லை"
 
-#: src/nettool.c:243
+#: src/nettool.c:237
 msgid "A domain address was not specified"
 msgstr "டொமைன் முகவரி குறிப்பிடப்படவில்லை"
 
-#: src/nettool.c:244
+#: src/nettool.c:238
 msgid "Please enter a valid domain address and try again."
 msgstr "சரியான டொமைன் முகவரியை உள்ளிட்டு மீண்டும் முயற்சிக்கவும்"
 
-#: src/nettool.c:376
+#: src/nettool.c:395
 msgid "Information not available"
 msgstr "தகவல் இல்லை"
 
-#: src/nettool.c:494
+#: src/nettool.c:513
 msgid "Stop"
 msgstr "நிறுத்து"
 
-#: src/nettool.c:500
+#: src/nettool.c:519
 msgid "Run"
 msgstr "இயக்கு"
 
-#: src/ping.c:73
+#: src/ping.c:76
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "பிங் கோரிக்கையை %s க்கு அனுப்புகிறது"
 
-#: src/ping.c:381
+#: src/ping.c:384
 msgid "Bytes"
 msgstr "பைட்கள்"
 
-#: src/ping.c:388
+#: src/ping.c:391
 msgid "Source"
 msgstr "மூலம்"
 
-#: src/ping.c:396
+#: src/ping.c:399
 msgid "Seq"
 msgstr "Seq"
 
-#: src/ping.c:406
+#: src/ping.c:409
 msgid "Time"
 msgstr "நேரம்"
 
-#: src/ping.c:414
+#: src/ping.c:417
 msgid "Units"
 msgstr "அலகுகள்"
 
@@ -697,87 +703,87 @@ msgstr "அலகுகள்"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:440
+#: src/ping.c:443
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "பைட்கள்\tமூலம்\tவரிசை\tநேரம்\tஅலகு\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:455
+#: src/ping.c:458
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "குறைந்தபட்ச நேரம்:\t%s ms\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "சராசரி நேரம்:\t%s ms\n"
 
-#: src/ping.c:457
+#: src/ping.c:460
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "அதிகபட்ச நேரம்:\t%s ms\n"
 
-#: src/ping.c:459
+#: src/ping.c:462
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "அனுப்பபட்ட கட்டுகள்:\t%s\n"
 
-#: src/ping.c:461
+#: src/ping.c:464
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "பெறப்பட்ட கட்டுகள்:\t%s\n"
 
-#: src/ping.c:463
+#: src/ping.c:466
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "இழக்கப்பட்ட கட்டுகள்:\t%s\n"
 
-#: src/scan.c:80
+#: src/scan.c:83
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s ஐ திறந்த வழிக்காக தேடுகிறது"
 
-#: src/scan.c:155
+#: src/scan.c:158
 msgid "unknown"
 msgstr "தெரியாத"
 
-#: src/scan.c:284
+#: src/scan.c:287
 msgid "Port"
 msgstr "வழி"
 
-#: src/scan.c:300
+#: src/scan.c:303
 msgid "Service"
 msgstr "சேவை"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:322
+#: src/scan.c:325
 msgid "Port\tState\tService\n"
 msgstr "வழி\tநிலை\tசேவை\n"
 
-#: src/traceroute.c:58
+#: src/traceroute.c:61
 #, c-format
 msgid "Tracing route to %s"
 msgstr "பாதையை தேடுகிறது %s"
 
-#: src/traceroute.c:265
+#: src/traceroute.c:270
 msgid "Hop"
 msgstr "Hop"
 
-#: src/traceroute.c:273
+#: src/traceroute.c:278
 msgid "Hostname"
 msgstr "புரவலன் பெயர்"
 
-#: src/traceroute.c:281
+#: src/traceroute.c:286
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:292
+#: src/traceroute.c:297
 msgid "Time 1"
 msgstr "நேரம் 1"
 
-#: src/traceroute.c:302
+#: src/traceroute.c:307
 msgid "Time 2"
 msgstr "நேரம் 2"
 
@@ -785,7 +791,7 @@ msgstr "நேரம் 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:328
+#: src/traceroute.c:333
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tபுரவலன் பெயர்\tIP\tநேரம் 1\tநேரம் 2\n"
 
@@ -816,4 +822,3 @@ msgstr "\"%s\" க்கான தகவலை பெறுகிறது"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s க்கான யாரது தகவலை பெறுகிறது."
-
