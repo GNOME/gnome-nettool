@@ -127,7 +127,7 @@ info_load_iface (Netinfo *info)
 	model = gtk_combo_box_get_model (GTK_COMBO_BOX (info->combo));
 	
 	if (!items) {
-		iface = g_strdup (_("<i>Network Devices Not Found</i>"));
+		iface = g_strdup_printf ("<i>%s</i>", _("Network Devices Not Found"));
 		
 		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
 		gtk_list_store_set (GTK_LIST_STORE (model), &iter,

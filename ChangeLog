@@ -1,3 +1,10 @@
+2004-10-20  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	Fixes #151915
+
+	* src/info.c (info_load_iface): don't use markup in translatable
+	messages.
+
 2004-10-18  Mario Fuentes <mario@gnome.cl>
 
 	* main.c (load_ping_widgets_from_xml): connected "toggled" signal
