@@ -121,17 +121,11 @@ main (int argc, char *argv[])
 		return -1;
 	}
 
-/*<<<<<<< main.c
-	icon_path = g_build_filename (PIXMAPS_DIR, "gnome-nettool.png", NULL);
-	gnome_window_icon_set_default_from_file (icon_path);
-	g_free (icon_path);
-	=======*/
 	icon_info = gtk_icon_theme_lookup_icon (gtk_icon_theme_get_default (), "gnome-nettool", 48, 0);
 	if (icon_info != NULL) {
 		gtk_window_set_default_icon_from_file (gtk_icon_info_get_filename (icon_info), NULL);
 		gtk_icon_info_free (icon_info);
 	}
-/*>>>>>>> 1.4*/
 
 	xml = glade_xml_new (dialog, "main_window", NULL);
 	window = glade_xml_get_widget (xml, "main_window");
@@ -494,20 +488,19 @@ load_info_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo      *info;
 	GtkTreeModel *model;
+	GtkSizeGroup *group;
+	GtkWidget    *label1, *label2;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
 	info = g_malloc (sizeof (Netinfo));
 
 	info->main_window = glade_xml_get_widget (xml, "main_window");
-/*<<<<<<< main.c*/
 	info->combo = glade_xml_get_widget (xml, "info_combo");
 	info->ipv6_frame = glade_xml_get_widget (xml, "info_ipv6_frame");
 	info->ipv4_frame = glade_xml_get_widget (xml, "info_ipv4_frame");
-/*=======*/
 	info->progress_bar = glade_xml_get_widget (xml, "progress_bar");
 	info->page_label = glade_xml_get_widget (xml, "device");
-/*>>>>>>> 1.4*/
 	info->hw_address = glade_xml_get_widget (xml, "info_hw_address");
 	info->ip_address = glade_xml_get_widget (xml, "info_ip_address");
 	info->netmask = glade_xml_get_widget (xml, "info_netmask");
@@ -532,6 +525,12 @@ load_info_widgets_from_xml (GladeXML * xml)
 	g_object_unref (model);
 	
 	info_list_ip_addr_add_columns (info->list_ip_addr);
+
+	label1 = glade_xml_get_widget (xml, "label_ip_address");
+	label2 = glade_xml_get_widget (xml, "label_hw_address");
+	group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+	gtk_size_group_add_widget (group, label1);
+	gtk_size_group_add_widget (group, label2);
 
 /*
 #ifdef IFCONFIG_PROGRAM
