@@ -76,7 +76,7 @@ netinfo_set_host (Netinfo * netinfo, const gchar *host)
 }
 
 gboolean
-netinfo_is_ipv6_enable ()
+netinfo_is_ipv6_enable (void)
 {
 	gint sock;
 	struct sockaddr_in6 sin6;
@@ -199,8 +199,6 @@ netinfo_validate_host (Netinfo * netinfo)
 			 message);
 		gtk_label_set_use_markup 
 			(GTK_LABEL (GTK_MESSAGE_DIALOG (dialog)->label), TRUE);
- 		gtk_dialog_set_has_separator (GTK_DIALOG (dialog),
-					      FALSE);
 		gtk_dialog_run (GTK_DIALOG (dialog));
 		gtk_widget_destroy (dialog);
 		g_free (message);
@@ -224,7 +222,7 @@ void
 netinfo_text_buffer_insert (Netinfo * netinfo)
 {
 	gchar *dir = g_get_current_dir ();
-	gint child_pid, pout, perr;
+	gint child_pid, pout; /* , perr; */
 	GIOChannel *channel;
 	GError *err = NULL;
 

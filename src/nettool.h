@@ -118,7 +118,7 @@ gushort netinfo_get_count (Netinfo * netinfo);
 const gchar * netinfo_get_host (Netinfo * netinfo);
 const gchar * netinfo_get_user (Netinfo * netinfo);
 void netinfo_set_host (Netinfo * netinfo, const gchar *host);
-gboolean netinfo_is_ipv6_enable ();
+gboolean netinfo_is_ipv6_enable (void);
 void netinfo_set_user (Netinfo * netinfo, const gchar *user);
 gint netinfo_get_ip_version (Netinfo * netinfo);
 gboolean netinfo_validate_host (Netinfo * netinfo);
