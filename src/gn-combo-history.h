@@ -45,18 +45,21 @@ struct _GnComboHistoryClass
 	   GObjectClass parent_class;
 };
 
-GType               gn_combo_history_get_type  (void);
-GnComboHistory     *gn_combo_history_new       (void);
+GType               gn_combo_history_get_type        (void);
+GnComboHistory     *gn_combo_history_new             (void);
 
-void                gn_combo_history_set_combo (GnComboHistory *history,
-									   GtkComboBox    *combo);
-GtkComboBox        *gn_combo_history_get_combo (GnComboHistory *history);
-void                gn_combo_history_set_id    (GnComboHistory *history,
-									   const gchar *history_id);
-const gchar        *gn_combo_history_get_id    (GnComboHistory *history);
-void                gn_combo_history_add       (GnComboHistory *history,
-									   const gchar *text);
-void                gn_combo_history_clear     (GnComboHistory *history);
+void                gn_combo_history_set_combo       (GnComboHistory *history,
+										    GtkComboBox    *combo);
+GtkComboBox        *gn_combo_history_get_combo       (GnComboHistory *history);
+void                gn_combo_history_set_id          (GnComboHistory *history,
+										    const gchar *history_id);
+const gchar        *gn_combo_history_get_id          (GnComboHistory *history);
+void                gn_combo_history_add             (GnComboHistory *history,
+										    const gchar *text);
+void                gn_combo_history_clear           (GnComboHistory *history);
+guint               gn_combo_history_get_max_history (GnComboHistory *history);
+void                gn_combo_history_set_max_history (GnComboHistory *history,
+										    guint max_history);
 
 
 #endif /* __GN_COMBO_HISTORY_H__ */

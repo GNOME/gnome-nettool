@@ -531,6 +531,7 @@ load_info_widgets_from_xml (GladeXML * xml)
 	group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 	gtk_size_group_add_widget (group, label1);
 	gtk_size_group_add_widget (group, label2);
+	g_object_unref (group);
 
 /*
 #ifdef IFCONFIG_PROGRAM

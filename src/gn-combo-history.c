@@ -27,16 +27,19 @@
 enum {
 	   PROP_0,
 	   PROP_COMBO,
-	   PROP_ID
+	   PROP_ID,
+	   PROP_MAX_HISTORY
 };
 
 struct _GnComboHistoryPrivate {
 	   GtkComboBox *combo;
 	   gchar       *id;
+	   guint        max_history;
 
 	   GList       *items;
 
 	   GConfClient *gconf_client;
+	   guint        gconf_notify;
 };
 
 static void     gn_combo_history_init         (GnComboHistory      *history);
@@ -90,8 +93,10 @@ gn_combo_history_init (GnComboHistory *history)
 	   history->priv = g_new0 (GnComboHistoryPrivate, 1);
 	   history->priv->combo = NULL;
 	   history->priv->id = NULL;
+	   history->priv->max_history = 10;
 	   history->priv->items = NULL;
 	   history->priv->gconf_client = gconf_client_get_default ();
+	   history->priv->gconf_notify = 0;
 }
 
 static void
@@ -110,6 +115,10 @@ gn_combo_history_class_init (GnComboHistoryClass *klass)
 	   g_object_class_install_property (object_class, PROP_ID,
 								 g_param_spec_string ("id", NULL, NULL,
 												  NULL, G_PARAM_READWRITE));
+	   g_object_class_install_property (object_class, PROP_MAX_HISTORY,
+								 g_param_spec_uint ("max_history", NULL, NULL,
+												0, G_MAXUINT, 10,
+												G_PARAM_READWRITE));
 
 	   object_class->finalize = gn_combo_history_finalize;
 }
@@ -133,6 +142,12 @@ gn_combo_history_finalize (GObject *object)
 			 if (history->priv->items) {
 				    g_list_free (history->priv->items);
 				    history->priv->items = NULL;
+			 }
+
+			 if (history->priv->gconf_notify != 0) {
+				    gconf_client_notify_remove (history->priv->gconf_client,
+										  history->priv->gconf_notify);
+				    history->priv->gconf_notify = 0;
 			 }
 
 			 if (history->priv->gconf_client) {
@@ -163,6 +178,9 @@ gn_combo_history_set_property (GObject  *object, guint prop_id, const GValue *va
 			 if (history->priv->id) g_free (history->priv->id);
 			 history->priv->id = g_value_dup_string (value);
 			 break;
+	   case PROP_MAX_HISTORY:
+			 history->priv->max_history = g_value_get_uint (value);
+			 break;
 	   default:
 			 break;
 	   }
@@ -185,6 +203,9 @@ gn_combo_history_get_property (GObject  *object, guint prop_id, GValue *value,
 	   case PROP_ID:
 			 g_value_set_string (value, history->priv->id);
 			 break;
+	   case PROP_MAX_HISTORY:
+			 g_value_set_uint (value, history->priv->max_history);
+			 break;
 	   default:
 			 G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, spec);
 	   }
@@ -205,6 +226,7 @@ gn_combo_history_gconf_load (GnComboHistory *history)
 {
 	   gchar  *key;
 	   GSList *gconf_items, *items;
+	   guint   i;
 	   
 	   g_return_if_fail (GN_IS_COMBO_HISTORY (history));
 	   g_return_if_fail (history->priv->gconf_client != NULL);
@@ -226,7 +248,9 @@ gn_combo_history_gconf_load (GnComboHistory *history)
 									key, GCONF_VALUE_STRING, NULL);
 	   g_free (key);
 
-	   for (items = gconf_items; items; items = items->next) {
+	   for (items = gconf_items, i = 0;
+		   items && i < history->priv->max_history;
+		   items = items->next, i++) {
 			 history->priv->items = g_list_append (history->priv->items, items->data);
 	   }
 
@@ -282,10 +306,13 @@ gn_combo_history_set_popdown_strings (GnComboHistory *history)
 	   text_column = gtk_combo_box_entry_get_text_column (
 			 GTK_COMBO_BOX_ENTRY (history->priv->combo));
 
-	   if (history->priv->items)
-			 gtk_list_store_clear (GTK_LIST_STORE (model));
-	   else
+	   gtk_list_store_clear (GTK_LIST_STORE (model));
+	   
+	   if (! history->priv->items) {
+			 gtk_combo_box_set_active (GTK_COMBO_BOX (history->priv->combo), -1);
+			 
 			 return;
+	   }
 
 	   i = 0;
 	   for (items = history->priv->items; items; items = items->next) {
@@ -338,6 +365,24 @@ gn_combo_history_get_combo (GnComboHistory *history)
 }
 
 static void
+gn_on_gconf_history_changed (GConfClient *client, guint cnxn_id,
+					    GConfEntry *entry, gpointer gdata)
+{
+	   GnComboHistory *history;
+
+	   history = GN_COMBO_HISTORY (gdata);
+
+	   gn_combo_history_gconf_load (history);
+
+	   gn_combo_history_set_popdown_strings (history);
+
+	   gtk_combo_box_set_active (GTK_COMBO_BOX (history->priv->combo), -1);
+	   gtk_entry_set_text (
+			 GTK_ENTRY (gtk_bin_get_child (
+							GTK_BIN (history->priv->combo))), "");
+}
+
+static void
 gn_combo_history_gconf_register_id (GnComboHistory *history)
 {
 	   gchar *key;
@@ -356,6 +401,11 @@ gn_combo_history_gconf_register_id (GnComboHistory *history)
 	   gconf_client_add_dir (history->priv->gconf_client,
 						key,	GCONF_CLIENT_PRELOAD_NONE,
 						NULL);
+	   
+	   history->priv->gconf_notify = gconf_client_notify_add (
+			 history->priv->gconf_client, key,
+			 gn_on_gconf_history_changed,
+			 (gpointer) history, NULL, NULL);
 
 	   g_free (key);
 }
@@ -400,6 +450,11 @@ gn_combo_history_add (GnComboHistory *history, const gchar *text)
 			 /* item is already in list, remove them */
 			 history->priv->items = g_list_remove (history->priv->items, item->data);
 	   }
+
+	   if (g_list_length (history->priv->items) >= history->priv->max_history) {
+			 item = g_list_last (history->priv->items);
+			 history->priv->items = g_list_remove (history->priv->items, item->data);
+	   }
 	   
 	   history->priv->items = g_list_prepend (history->priv->items,
 									  g_strdup (text));
@@ -418,8 +473,23 @@ gn_combo_history_clear (GnComboHistory *history)
 			 g_list_free (history->priv->items);
 			 history->priv->items = NULL;
 
-			 gn_combo_history_set_popdown_strings (history);
-
 			 gn_combo_history_gconf_save (history);
 	   }
+}
+
+guint
+gn_combo_history_get_max_history (GnComboHistory *history)
+{
+	   g_return_val_if_fail (GN_IS_COMBO_HISTORY (history), 0);
+
+	   return history->priv->max_history;
+}
+
+void
+gn_combo_history_set_max_history (GnComboHistory *history,
+						    guint max_history)
+{
+	   g_return_if_fail (GN_IS_COMBO_HISTORY (history));
+
+	   history->priv->max_history = max_history;
 }

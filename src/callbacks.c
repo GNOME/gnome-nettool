@@ -78,22 +78,6 @@ on_traceroute_activate (GtkWidget * widget, gpointer data)
 
 	g_return_if_fail (tracer != NULL);
 
-/*	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (tracer->host)));
-	completion = gtk_entry_get_completion (entry_host);
-
-	model = gtk_entry_completion_get_model (completion);
-
-	text = g_strdup (gtk_entry_get_text (entry_host));
-
-	if (! nettool_item_is_in_model (model, text)) {
-		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-				    0, text,
-				    -1);
-	}
-
-	g_free (text);*/
-
 	if (tracer->running) {
 		traceroute_stop (tracer);
 	} else {
@@ -154,22 +138,6 @@ on_scan_activate (GtkWidget * widget, gpointer data)
 
 	g_return_if_fail (scan != NULL);
 
-	/*entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (scan->host)));
-	completion = gtk_entry_get_completion (entry_host);
-
-	model = gtk_entry_completion_get_model (completion);
-
-	text = g_strdup (gtk_entry_get_text (entry_host));
-
-	if (! nettool_item_is_in_model (model, text)) {
-		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-				    0, text,
-				    -1);
-	}
-
-	g_free (text);*/
-
 	if (scan->running) {
 		scan_stop (scan);
 	} else {
@@ -196,22 +164,6 @@ on_lookup_activate (GtkWidget * widget, gpointer data)
 	gchar *text;
 
 	g_return_if_fail (lookup != NULL);
-
-/*	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (lookup->host)));
-	completion = gtk_entry_get_completion (entry_host);
-
-	model = gtk_entry_completion_get_model (completion);
-
-	text = g_strdup (gtk_entry_get_text (entry_host));
-
-	if (! nettool_item_is_in_model (model, text)) {
-		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-				    0, text,
-				    -1);
-	}
-
-	g_free (text);*/
 
 	if (lookup->running) {
 		lookup_stop (lookup);
@@ -240,60 +192,30 @@ on_finger_activate (GtkWidget * widget, gpointer data)
 
 	g_return_if_fail (finger != NULL);
 
-	/*entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->user)));
-	completion = gtk_entry_get_completion (entry_host);
-
-	model = gtk_entry_completion_get_model (completion);
-
-	text = g_strdup (gtk_entry_get_text (entry_host));
-
-	if (! nettool_item_is_in_model (model, text)) {
-		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-				    0, text,
-				    -1);
-	}
-
-	g_free (text);
-
-	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->host)));
-	completion = gtk_entry_get_completion (entry_host);
-
-	model = gtk_entry_completion_get_model (completion);
-
-	text = g_strdup (gtk_entry_get_text (entry_host));
-
-	if (! nettool_item_is_in_model (model, text)) {
-		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-				    0, text,
-				    -1);
-	}
-
-	g_free (text);*/
-
 	if (finger->running) {
 		finger_stop (finger);
 	} else {
-		finger_do (finger);
-
-		entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->host)));
+		entry_host = GTK_ENTRY (
+			gtk_bin_get_child (GTK_BIN (finger->host)));
 		text = g_strdup (gtk_entry_get_text (entry_host));
 		g_strstrip (text);
 
-		if (strcmp (text, "") != 0)
+		if (g_strcasecmp (text, "") != 0)
 			gn_combo_history_add (finger->history, text);
-
+		
 		g_free (text);
 
-		entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->user)));
+		entry_host = GTK_ENTRY (
+			gtk_bin_get_child (GTK_BIN (finger->user)));
 		text = g_strdup (gtk_entry_get_text (entry_host));
 		g_strstrip (text);
-
-		if (strcmp (text, "") != 0)
+		
+		if (g_strcasecmp (text, "") != 0)
 			gn_combo_history_add (finger->history_user, text);
-
+		
 		g_free (text);
+
+		finger_do (finger);
 	}
 }
 
@@ -306,22 +228,6 @@ on_whois_activate (GtkWidget * widget, gpointer data)
 	gchar *text;
 
 	g_return_if_fail (whois != NULL);
-
-/*	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (whois->host)));
-	completion = gtk_entry_get_completion (entry_host);
-
-	model = gtk_entry_completion_get_model (completion);
-
-	text = g_strdup (gtk_entry_get_text (entry_host));
-
-	if (! nettool_item_is_in_model (model, text)) {
-		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-				    0, text,
-				    -1);
-	}
-
-	g_free (text);*/
 
 	if (whois->running) {
 		whois_stop (whois);
@@ -483,13 +389,13 @@ on_clear_history_activate (GtkWidget *notebook, gpointer data)
 	/* Pages all share a history id for host entry except whois */
 	netinfo = g_object_get_data (G_OBJECT (notebook), "pinger");
 	gn_combo_history_clear (netinfo->history);
-	/*netinfo = g_object_get_data (G_OBJECT (notebook), "finger");
-	gnome_entry_clear_history (netinfo->host);
-	gnome_entry_clear_history (netinfo->user);
+
+	netinfo = g_object_get_data (G_OBJECT (notebook), "finger");
+	gn_combo_history_clear (netinfo->history);
+	gn_combo_history_clear (netinfo->history_user);
 
 	netinfo = g_object_get_data (G_OBJECT (notebook), "whois");
-	gnome_entry_clear_history (netinfo->host);*/
-
+	gn_combo_history_clear (netinfo->history);
 }
 
 void
