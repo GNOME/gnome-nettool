@@ -1,23 +1,23 @@
-# Serbian translation of gnome-network
-# Courtesy of Prevod.org team (http://www.prevod.org/) -- 2003.
-# 
-# This file is distributed under the same license as the gnome-network package.
-# 
+# Serbian translation of gnome-nettool
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004.
+#
+# This file is distributed under the same license as the gnome-nettool package.
+#
 # Maintainer: Predrag Krtolica <predrag_k@optusnet.com.au>
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-network\n"
+"Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-13 20:15+0200\n"
-"PO-Revision-Date: 2004-01-12 03:01+0100\n"
+"POT-Creation-Date: 2004-08-07 16:28+0200\n"
+"PO-Revision-Date: 2004-08-07 16:38+0200\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
-"Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
+"Language-Team: Serbian (sr) <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:319
+#: src/callbacks.c:321
 msgid "translator_credits"
 msgstr ""
 "Predrag Krtolica <predrag_k@optusnet.com.au>\n"
@@ -25,7 +25,7 @@ msgstr ""
 "\n"
 "Prevod.org — prevod na srpski jezik."
 
-#: src/callbacks.c:347
+#: src/callbacks.c:349
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafičko korisničko sučelje za uobičajene mrežne alate"
 
@@ -34,33 +34,28 @@ msgid "0.0"
 msgstr "0,0"
 
 #: src/gnome-nettool.glade.h:2
-#, fuzzy
 msgid "<b>IP Information</b>"
-msgstr "_Detalji"
+msgstr "<b>IP podaci</b>"
 
 #: src/gnome-nettool.glade.h:3
-#, fuzzy
 msgid "<b>Interface Information</b>"
-msgstr "Podrazumevani podaci"
+msgstr "<b>Podaci o uređaju</b>"
 
 #: src/gnome-nettool.glade.h:4
 msgid "<b>Interface Statistics</b>"
-msgstr ""
+msgstr "<b>Statistika uređaja</b>"
 
 #: src/gnome-nettool.glade.h:5
-#, fuzzy
 msgid "<b>Round Trip Time Statistics</b>"
-msgstr "<span weight=\"bold\">Statistika za povratni put</span>"
+msgstr "<b>Statistika za povratni put</b>"
 
 #: src/gnome-nettool.glade.h:6
-#, fuzzy
 msgid "<b>Transmision Statistics</b>"
-msgstr "<span weight=\"bold\">Statistika prenosa</span>"
+msgstr "<b>Statistika prenosa</b>"
 
 #: src/gnome-nettool.glade.h:7
-#, fuzzy
 msgid "Active Network Services"
-msgstr "Pogledajte aktivne internet servise"
+msgstr "Aktivne mrežne usluge"
 
 #: src/gnome-nettool.glade.h:8
 msgid "Average:"
@@ -79,38 +74,34 @@ msgid "Collisions:"
 msgstr "Sudari:"
 
 #: src/gnome-nettool.glade.h:12
-#, fuzzy
 msgid "Devices"
-msgstr "U_ređaji"
+msgstr "Uređaji"
 
 #: src/gnome-nettool.glade.h:13
-#, fuzzy
-msgid "Display: "
-msgstr "Prikaz:"
+msgid "Display:"
+msgstr "Prikaži:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:772
+#: src/gnome-nettool.glade.h:14 src/main.c:837
 msgid "Finger"
 msgstr "Finger"
 
 #: src/gnome-nettool.glade.h:15
 msgid "Hardware address:"
-msgstr "Hardverska adresaL"
+msgstr "Hardverska adresa:"
 
 #: src/gnome-nettool.glade.h:16
-#, fuzzy
 msgid "Host"
-msgstr "Server:"
+msgstr "Računar"
 
 #: src/gnome-nettool.glade.h:17
-#, fuzzy
 msgid "IP Address:"
-msgstr "IP Adresa"
+msgstr "IP adresa:"
 
 #: src/gnome-nettool.glade.h:18
 msgid "Link speed:"
 msgstr "Brzina veze:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:701
+#: src/gnome-nettool.glade.h:19 src/main.c:751
 msgid "Lookup"
 msgstr "Pronađi"
 
@@ -127,9 +118,8 @@ msgid "Minimum:"
 msgstr "Najmanje:"
 
 #: src/gnome-nettool.glade.h:23
-#, fuzzy
 msgid "Multicast Information"
-msgstr "Pogledajte detalje o višestrukom emitovanju"
+msgstr "Podaci o višestrukom emitovanju"
 
 #: src/gnome-nettool.glade.h:24
 msgid "Multicast:"
@@ -139,23 +129,21 @@ msgstr "Višestruko emitovanje:"
 msgid "Netmask:"
 msgstr "Mrežna maska:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:416
+#: src/gnome-nettool.glade.h:26 src/main.c:442
 msgid "Netstat"
 msgstr "Mrežna statistika"
 
 #: src/gnome-nettool.glade.h:27
-#, fuzzy
 msgid "Network Tools - Devices"
-msgstr "Mrežni uređaj:\t%s\n"
+msgstr "Mrežni alati — uređaji"
 
 #: src/gnome-nettool.glade.h:28
-#, fuzzy
 msgid "Not Available"
 msgstr "nije dostupan"
 
 #: src/gnome-nettool.glade.h:29
 msgid "Only"
-msgstr ""
+msgstr "samo"
 
 #: src/gnome-nettool.glade.h:30
 msgid "Packets loss:"
@@ -169,14 +157,13 @@ msgstr "Primljeni paketi:"
 msgid "Packets transmitted:"
 msgstr "Preneti paketi:"
 
-#: src/gnome-nettool.glade.h:33 src/main.c:279
+#: src/gnome-nettool.glade.h:33 src/main.c:281
 msgid "Ping"
 msgstr "Ping"
 
 #: src/gnome-nettool.glade.h:34
-#, fuzzy
 msgid "Port Scan"
-msgstr "Traženje _portova"
+msgstr "Traženje portova"
 
 #: src/gnome-nettool.glade.h:35
 msgid "Received bytes:"
@@ -191,236 +178,217 @@ msgid "Reception errors:"
 msgstr "Greške kod primanja:"
 
 #: src/gnome-nettool.glade.h:38
-#, fuzzy
 msgid "Routing Table Information"
-msgstr "Pogledajte podatke o tabeli preusmeravanja paketa"
+msgstr "Podaci o tabeli preusmeravanja"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:595
+#: src/gnome-nettool.glade.h:39 src/main.c:632
 msgid "Scan"
 msgstr "Traži"
 
 #: src/gnome-nettool.glade.h:40
-#, fuzzy
-msgid "Send unlimited requests"
-msgstr "Pošalji neograničen broj zahteva (pingova)"
+msgid "Send:"
+msgstr "Pošalji:"
 
 #: src/gnome-nettool.glade.h:41
-#, fuzzy
-msgid "Send: "
-msgstr "Pošalji"
-
-#: src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "Stanje:"
 
-#: src/gnome-nettool.glade.h:43 src/main.c:351
+#: src/gnome-nettool.glade.h:42 src/main.c:366
 msgid "Trace"
 msgstr "Put"
 
-#: src/gnome-nettool.glade.h:44
-#, fuzzy
+#: src/gnome-nettool.glade.h:43
 msgid "Traceroute"
-msgstr "P_utanja"
+msgstr "Putanja"
 
-#: src/gnome-nettool.glade.h:45
+#: src/gnome-nettool.glade.h:44
 msgid "Transmission errors:"
 msgstr "Greške prenosa:"
 
-#: src/gnome-nettool.glade.h:46
+#: src/gnome-nettool.glade.h:45
 msgid "Transmitted bytes:"
 msgstr "Preneti bajtovi:"
 
-#: src/gnome-nettool.glade.h:47
+#: src/gnome-nettool.glade.h:46
 msgid "Transmitted packets:"
 msgstr "Preneti paketi:"
 
-#: src/gnome-nettool.glade.h:48
-#, fuzzy
-msgid "User"
-msgstr "_Korisnik:"
+#: src/gnome-nettool.glade.h:47
+msgid "Unlimited requests"
+msgstr "Neograničeno zahteva"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:869
+#: src/gnome-nettool.glade.h:48
+msgid "User"
+msgstr "Korisnik"
+
+#: src/gnome-nettool.glade.h:49 src/main.c:953
 msgid "Whois"
 msgstr "Ko-je (Whois)"
 
 #: src/gnome-nettool.glade.h:50
 msgid "_Configure"
-msgstr ""
+msgstr "_Podesi"
 
 #: src/gnome-nettool.glade.h:51
-#, fuzzy
-msgid "_Domain Address: "
-msgstr "Lokalna IP adresa"
+msgid "_Domain address:"
+msgstr "Adresa _domena:"
 
 #: src/gnome-nettool.glade.h:52
-#, fuzzy
-msgid "_Information Type: "
-msgstr "_Detalji"
+msgid "_Information type:"
+msgstr "Vrsta _podataka:"
 
 #: src/gnome-nettool.glade.h:53
-#, fuzzy
-msgid "_Network Address: "
-msgstr "Mrežna adresa nije naznačena"
+msgid "_Network address:"
+msgstr "_Mrežna adresa:"
 
 #: src/gnome-nettool.glade.h:54
-#, fuzzy
-msgid "_Network Device"
-msgstr "Mrežni uređaj:\t%s\n"
+msgid "_Network device:"
+msgstr "_Mrežni uređaj:"
 
 #: src/gnome-nettool.glade.h:55
-#, fuzzy
 msgid "_Tool"
-msgstr "Opis alatke"
+msgstr "_Alat"
 
 #: src/gnome-nettool.glade.h:56
-#, fuzzy
-msgid "_Username: "
-msgstr "Ime _korisnika:"
+msgid "_Username:"
+msgstr "_Korisnik:"
 
 #: src/gnome-nettool.glade.h:57
 msgid "ms"
 msgstr "ms"
 
 #: src/gnome-nettool.glade.h:58
-#, fuzzy
 msgid "requests"
-msgstr "zahtevi (pingovi)"
+msgstr "zahteva"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: src/info.c:56
 msgid "Other type"
-msgstr ""
+msgstr "Druge vrste"
 
 #: src/info.c:57
-#, fuzzy
 msgid "Ethernet Interface"
-msgstr "Uređaj"
+msgstr "Eternet uređaj"
 
 #: src/info.c:58
-#, fuzzy
 msgid "Wireless Interface"
-msgstr "Uređaj"
+msgstr "Bežični uređaj"
 
 #: src/info.c:59
-#, fuzzy
 msgid "Modem Interface"
-msgstr "Uređaj"
+msgstr "Modemski uređaj"
 
 #: src/info.c:60
 msgid "Parallel Line Interface"
-msgstr ""
+msgstr "Veza preko paralelne linije"
 
 #: src/info.c:61
-#, fuzzy
 msgid "Infrared Interface"
-msgstr "Uređaj"
+msgstr "Infracrveni uređaj"
 
 #: src/info.c:62
-#, fuzzy
 msgid "Loopback Interface"
-msgstr "Uređaj"
+msgstr "Kružni uređaj"
 
 #: src/info.c:63
-#, fuzzy
 msgid "Unknown Interface"
-msgstr "Uređaj"
+msgstr "Nepoznati uređaj"
 
 #: src/info.c:130
 msgid "<i>Network Devices Not Found</i>"
-msgstr ""
+msgstr "<i>Mrežni uređaji nisu nađeni</i>"
 
 #: src/info.c:344
-#, fuzzy
 msgid "Unknown"
-msgstr "nepoznat"
+msgstr "Nepoznat"
 
-#: src/info.c:500
+#: src/info.c:504
 msgid "Active"
 msgstr "Aktivan"
 
-#: src/info.c:502
+#: src/info.c:506
 msgid "Inactive"
 msgstr "Neaktivan"
 
-#: src/info.c:507
+#: src/info.c:511
 msgid "Loopback"
 msgstr "Zatvorena petlja"
 
-#: src/info.c:524
+#: src/info.c:528
 msgid "Enabled"
 msgstr "Omogućen"
 
-#: src/info.c:526
+#: src/info.c:530
 msgid "Disabled"
 msgstr "Onemogućen"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:666
+#: src/info.c:670
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Mrežni uređaj:\t%s\n"
 
-#: src/info.c:667
+#: src/info.c:671
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardverska adresa:\t%s\n"
 
-#: src/info.c:668
+#: src/info.c:672
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP adresa:\t%s\n"
 
-#: src/info.c:669
+#: src/info.c:673
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Mrežna maska:\t%s\n"
 
-#: src/info.c:670
+#: src/info.c:674
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Emitovanje:\t%s\n"
 
-#: src/info.c:671
+#: src/info.c:675
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Višestruko emitovanje:\t%s\n"
 
-#: src/info.c:672
+#: src/info.c:676
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:673
+#: src/info.c:677
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Brzina veze:\t%s\n"
 
-#: src/info.c:674
+#: src/info.c:678
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stanje:\t%s\n"
 
-#: src/info.c:676
+#: src/info.c:680
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Preneti paketi:\t%s\n"
 
-#: src/info.c:677
+#: src/info.c:681
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Prenosne greške:\t%s\n"
 
-#: src/info.c:678
+#: src/info.c:682
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Primljeni paketi:\t%s\n"
 
-#: src/info.c:679
+#: src/info.c:683
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Greške kod primanja:\t%s\n"
 
-#: src/info.c:680
+#: src/info.c:684
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Sudari:\t%s\n"
@@ -429,23 +397,28 @@ msgstr "Sudari:\t%s\n"
 msgid "not available"
 msgstr "nije dostupan"
 
-#: src/lookup.c:273
+#: src/lookup.c:79
+#, c-format
+msgid "Looking up %s"
+msgstr "Tražim %s"
+
+#: src/lookup.c:277
 msgid "Name"
 msgstr "Ime"
 
-#: src/lookup.c:281
+#: src/lookup.c:285
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:290
+#: src/lookup.c:294
 msgid "Address Type"
 msgstr "Vrsta adrese"
 
-#: src/lookup.c:300
+#: src/lookup.c:304
 msgid "Record Type"
 msgstr "Tip zapisa"
 
-#: src/lookup.c:309
+#: src/lookup.c:313
 msgid "Address"
 msgstr "Adresa"
 
@@ -455,7 +428,7 @@ msgstr "Adresa"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:337
+#: src/lookup.c:341
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Izvor\tTTL\tVrsta adrese\tZapis Vrste\tRezolucija\n"
 
@@ -526,142 +499,205 @@ msgstr ""
 "Datoteka %s ne postoji, molim vas proverite da li je gnome-netinfo pravilno "
 "instaliran "
 
-#: src/main.c:449 src/netstat.c:429
+#: src/main.c:314
+msgid ""
+"Enter the network address to ping.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Unesite mrežnu adresu za pingovanje.\n"
+"Na primer: www.domen.co.yu ili 192.168.2.1"
+
+#: src/main.c:393
+msgid ""
+"Enter the network address to trace a route to.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Unesite mrežnu adresu do koje da tražim putanju.\n"
+"Na primer: www.domen.co.yu ili 192.168.2.1"
+
+#: src/main.c:478 src/netstat.c:441
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/main.c:456
+#: src/main.c:485
 msgid "IP Address"
 msgstr "IP Adresa"
 
-#: src/main.c:463
-#, fuzzy
+#: src/main.c:492
 msgid "Netmask / Prefix"
-msgstr "Mrežna maska"
+msgstr "Mrežna maska/prefiks"
 
-#: src/main.c:470
-#, fuzzy
+#: src/main.c:499
 msgid "Broadcast"
-msgstr "Emitovanje:"
+msgstr "Emitovanje"
 
-#: src/main.c:477
-#, fuzzy
+#: src/main.c:506
 msgid "Scope"
-msgstr "Zaustavi"
+msgstr "Opseg"
 
-#: src/netstat.c:436
+#: src/main.c:654
+msgid ""
+"Enter the network address to scan for open ports.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Unesite mrežnu adresu na kojoj da traži otvorene portove.\n"
+"Na primer: www.domen.co.yu ili 192.168.2.1"
+
+#: src/main.c:782
+msgid ""
+"Enter the network address to lookup.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Unesite mrežnu adresu koju da potraži.\n"
+"Na primer: www.domen.co.yu ili 192.168.2.1"
+
+#: src/main.c:871
+msgid "Enter the user to finger."
+msgstr "Unesite korisnika za finger."
+
+#: src/main.c:898
+msgid ""
+"Enter the network address to finger that user.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Unesite mrežnu adresu za finger nekog korisnika.\n"
+"Na primer: www.domen.co.yu ili 192.168.2.1"
+
+#: src/main.c:985
+msgid ""
+"Enter a domain address to lookup its whois information.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Unesite adresu domena da pogledate njegove whois podatke.\n"
+"Na primer: www.domen.co.yu ili 192.168.2.1"
+
+#: src/netstat.c:120
+msgid "Getting routing table"
+msgstr "Dobavljam tabelu preusmeravanja"
+
+#: src/netstat.c:135
+msgid "Getting active Internet connections"
+msgstr "Dobavljam aktivne Internet veze"
+
+#: src/netstat.c:144
+msgid "Getting group memberships"
+msgstr "Dobavljam članstvo grupe"
+
+#: src/netstat.c:448
 msgid "IP Source"
 msgstr "Izvorni IP"
 
-#: src/netstat.c:444
+#: src/netstat.c:456
 msgid "Port/Service"
 msgstr "Port/usluga"
 
-#: src/netstat.c:452 src/scan.c:288
+#: src/netstat.c:464 src/scan.c:292
 msgid "State"
 msgstr "Stanje"
 
-#: src/netstat.c:594
+#: src/netstat.c:606
 msgid "Destination/Prefix"
 msgstr "Odredište/predmetak"
 
-#: src/netstat.c:596
+#: src/netstat.c:608
 msgid "Destination"
 msgstr "Odredište"
 
-#: src/netstat.c:603
+#: src/netstat.c:615
 msgid "Gateway"
 msgstr "Mrežni izlaz"
 
-#: src/netstat.c:611
+#: src/netstat.c:623
 msgid "Netmask"
 msgstr "Mrežna maska"
 
-#: src/netstat.c:619 src/netstat.c:725
+#: src/netstat.c:631 src/netstat.c:737
 msgid "Interface"
 msgstr "Uređaj"
 
-#: src/netstat.c:732
+#: src/netstat.c:744
 msgid "Member"
 msgstr "Član"
 
-#: src/netstat.c:740
+#: src/netstat.c:752
 msgid "Group"
 msgstr "Grupa"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:782
+#: src/netstat.c:794
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokol\tIzvorni IP\tPort/usluga\tStanje\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:788
+#: src/netstat.c:800
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Odredište\tMrežni izlaz\tMrežna maska\tUređaj\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:793
+#: src/netstat.c:805
 msgid "Interface\tMember\tGroup\n"
 msgstr "Uređaj\tČlan\tGrupa\n"
 
 #: src/nettool.c:206
-#, fuzzy
 msgid "A network address was not specified"
 msgstr "Mrežna adresa nije naznačena"
 
 #: src/nettool.c:207 src/nettool.c:216
-#, fuzzy
 msgid "Please enter a valid network address and try again."
-msgstr "Unesite mrežnu adresu da pingujete"
+msgstr "Unesite ispravnu mrežnu adresu pa pokušajte ponovo."
 
 #: src/nettool.c:214
-#, fuzzy, c-format
+#, c-format
 msgid "The address '%s' cannot be found"
-msgstr "Ne mogu da nađem računar „%s“."
+msgstr "Ne mogu da nađem adresu „%s“"
 
 #: src/nettool.c:243
-#, fuzzy
 msgid "A domain address was not specified"
-msgstr "Mrežna adresa nije naznačena"
+msgstr "Adresa domena nije naznačena"
 
 #: src/nettool.c:244
 msgid "Please enter a valid domain address and try again."
-msgstr ""
+msgstr "Unesite ispravnu adresu domena pa pokušajte ponovo"
 
 #: src/nettool.c:376
 msgid "Information not available"
 msgstr "Detalji nisu dostupni"
 
-#: src/nettool.c:486
+#: src/nettool.c:494
 msgid "Stop"
 msgstr "Zaustavi"
 
-#: src/nettool.c:492
+#: src/nettool.c:500
 msgid "Run"
 msgstr "Počni"
 
-#: src/ping.c:378
-msgid "Bytes"
-msgstr "Bajtovi"
+#: src/ping.c:73
+#, c-format
+msgid "Sending ping requests to %s"
+msgstr "Šaljem zahteve za ping na %s"
 
-#: src/ping.c:385
+#: src/ping.c:381
+msgid "Bytes"
+msgstr "Bajtova"
+
+#: src/ping.c:388
 msgid "Source"
 msgstr "Izvor"
 
-#: src/ping.c:393
+#: src/ping.c:396
 msgid "Seq"
 msgstr "Red"
 
-#: src/ping.c:403
+#: src/ping.c:406
 msgid "Time"
 msgstr "Vreme"
 
-#: src/ping.c:411
+#: src/ping.c:414
 msgid "Units"
 msgstr "Jedinice"
 
@@ -669,77 +705,87 @@ msgstr "Jedinice"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:437
+#: src/ping.c:440
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
-msgstr "Bajtovi\tIzvor\tRed\tVreme\tJedinice\n"
+msgstr "Bajtova\tIzvor\tRed\tVreme\tJedinice\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:452
+#: src/ping.c:455
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Najmanje vreme:\t%s ms\n"
 
-#: src/ping.c:453
+#: src/ping.c:456
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Srednje vreme:\t%s ms\n"
 
-#: src/ping.c:454
+#: src/ping.c:457
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Najveće vreme:\t%s ms\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Preneti paketi:\t%s\n"
 
-#: src/ping.c:458
+#: src/ping.c:461
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Primljeni paketi:\t%s\n"
 
-#: src/ping.c:460
+#: src/ping.c:463
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Izgubljeni paketi:\t%s\n"
 
-#: src/scan.c:151
+#: src/scan.c:80
+#, c-format
+msgid "Scanning %s for open ports"
+msgstr "Tražim otvorene portova na %s"
+
+#: src/scan.c:155
 msgid "unknown"
 msgstr "nepoznat"
 
-#: src/scan.c:280
+#: src/scan.c:284
 msgid "Port"
 msgstr "Port"
 
-#: src/scan.c:296
+#: src/scan.c:300
 msgid "Service"
 msgstr "Usluga"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:318
+#: src/scan.c:322
 msgid "Port\tState\tService\n"
 msgstr "Port\tStanje\tUsluga\n"
 
-#: src/traceroute.c:261
+#: src/traceroute.c:58
+#, c-format
+msgid "Tracing route to %s"
+msgstr "Tražim putanju do %s"
+
+#: src/traceroute.c:265
 msgid "Hop"
 msgstr "Čvor"
 
-#: src/traceroute.c:269
+#: src/traceroute.c:273
 msgid "Hostname"
 msgstr "Ime računara"
 
-#: src/traceroute.c:277
+#: src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:288
+#: src/traceroute.c:292
 msgid "Time 1"
 msgstr "Vreme 1"
 
-#: src/traceroute.c:298
+#: src/traceroute.c:302
 msgid "Time 2"
 msgstr "Vreme 2"
 
@@ -747,7 +793,7 @@ msgstr "Vreme 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:324
+#: src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Čvor\tIme računara\tIP\tVreme 1\tVreme 2\n"
 
@@ -757,1212 +803,24 @@ msgid "%s: Command not found"
 msgstr "%s: naredba nije nađena"
 
 #: src/gnome-nettool.desktop.in.h:1
-#, fuzzy
 msgid "Network Information Tools"
-msgstr "Podaci o mreži"
+msgstr "Alati za podatke o mreži"
 
 #: src/gnome-nettool.desktop.in.h:2
-#, fuzzy
 msgid "Network Tools"
-msgstr "Podaci o mreži"
-
-#~ msgid "This is an untranslated version of GNOME Network Information"
-#~ msgstr "Ovo je neprevedeno izdanje Gnomovih mrežnih podataka"
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "(eg. user@www.domain.com)"
-#~ msgstr "(npr. korisnik@domen.kom)"
-
-#~ msgid "(for example: domain.com)"
-#~ msgstr "(na primer: prevod.org)"
-
-#~ msgid "(for example: www.domain.com or 192.168.2.1)"
-#~ msgstr "(na primer: prevod.org ili 192.168.2.1)"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "<span weight=\"bold\">@</span>"
-#~ msgstr "<span weight=\"bold\">@</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
-#~ "information</span>"
-#~ msgstr "<span weight=\"bold\">Unesite domen za koji želite podatke</span>"
-
-#~ msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
-#~ msgstr "<span weight=\"bold\">Unesite mrežnu adresu koju tražite</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Enter a user name and network address to finger "
-#~ "that user</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">Unesite korisničko ime i mrežnu adresu da "
-#~ "pročačkate (finger) tog korisnika</span>"
-
-#~ msgid "<span weight=\"bold\">Enter the network address to ping</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">Unesite mrežnu adresu koju želite da pingujete</"
-#~ "span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Enter the network address to scan for open ports</"
-#~ "span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">Unesite mrežnu adresu na kojoj želite da tražite "
-#~ "otvorene portove</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Enter the network address to trace a route to</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">Unesite mrežnu adresu do koje želite da pronađete "
-#~ "putanju</span>"
-
-#~ msgid "<span weight=\"bold\">Information</span>"
-#~ msgstr "<span weight=\"bold\">Podaci</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Select the network device to get information on</"
-#~ "span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">Izaberite mrežni uređaj za koji želite podatke</"
-#~ "span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Select the type of information to display</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">Izaberite koju vrstu podataka želite da prikažete</"
-#~ "span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Select the type of information to lookup:</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">Izaberite koju vrstu podataka želite da pronađete:</"
-#~ "span>"
-
-#~ msgid "<span weight=\"bold\">Statistics</span>"
-#~ msgstr "<span weight=\"bold\">Statistika</span>"
-
-#~ msgid "Any / All Information"
-#~ msgstr "Bilo koji/svi podaci"
-
-#~ msgid "CPU / OS Type"
-#~ msgstr "Tip procesora i operativnog sistema"
-
-#~ msgid "Canonical Name"
-#~ msgstr "Kanonsko ime"
-
-#~ msgid "Host name for Address"
-#~ msgstr "Ime računara za adresu"
-
-#~ msgid "IP address:"
-#~ msgstr "IP adresa:"
-
-#~ msgid "Internet Address"
-#~ msgstr "Internet adresa"
-
-#~ msgid "Mailbox Exchange"
-#~ msgstr "Razmena pošte"
-
-#~ msgid "Mailbox Information"
-#~ msgstr "Podaci o e-pošti"
-
-#~ msgid "Name Server"
-#~ msgstr "DNS server"
-
-#~ msgid "Select network device from list"
-#~ msgstr "Izaberite mrežni uređaj iz spiska"
-
-#~ msgid "Send only"
-#~ msgstr "Samo šalji"
-
-#~ msgid "Start-of-authority"
-#~ msgstr "Početak-autoriteta (SOA)"
-
-#~ msgid "Text Information"
-#~ msgstr "Tekstualni podaci"
-
-#~ msgid "Well Known Services"
-#~ msgstr "Dobro poznate usluge"
-
-#~ msgid "_Finger"
-#~ msgstr "_Finger"
-
-#~ msgid "_Lookup"
-#~ msgstr "_Pronađi"
-
-#~ msgid "_Netstat"
-#~ msgstr "_Mrežna statistika"
-
-#~ msgid "_Ping"
-#~ msgstr "P_ing"
-
-#~ msgid "_Whois"
-#~ msgstr "_Ko-je (Whois)"
-
-#~ msgid "GNOME Remote Desktop Applet"
-#~ msgstr "Programče za Gnomovu udaljenu radnu površinu"
-
-#~ msgid "Connect to a remote desktop computer"
-#~ msgstr "Povezivanje sa udaljenom radnom površinom računara"
-
-#~ msgid "Remote Desktop Client"
-#~ msgstr "Pristup udaljenoj radnoj površini"
-
-#~ msgid "640 x 480 pixels"
-#~ msgstr "640 x 480 tačaka"
-
-#~ msgid "800 x 600 pixels"
-#~ msgstr "800 x 600 tačaka"
-
-#~ msgid "1024 x 768 pixels"
-#~ msgstr "1024 x 768 tačaka"
-
-#~ msgid "1152 x 864 pixels"
-#~ msgstr "1152 x 864 tačaka"
-
-#~ msgid "1280 x 960 pixels"
-#~ msgstr "1280 x 960 tačaka"
-
-#~ msgid "256 Colors"
-#~ msgstr "256 boja"
-
-#~ msgid "High Color (15 bit)"
-#~ msgstr "Puno boja (15 bita)"
-
-#~ msgid "High Color (16 bit)"
-#~ msgstr "Puno boja (16 bita)"
-
-#~ msgid "True Color (24 bit)"
-#~ msgstr "Prave boje (24 bita)"
-
-#~ msgid "GNOME Remote Desktop"
-#~ msgstr "Gnomova udaljena radna površina "
-
-#~ msgid "Compu_ter:"
-#~ msgstr "_Računar:"
-
-#~ msgid "Enter the name or address of the remote system."
-#~ msgstr "Unesite ime ili adresu udaljenog sistema."
-
-#~ msgid "Select the protocol to use for this connection."
-#~ msgstr "Izaberite protokol za ovu vezu."
-
-#~ msgid ""
-#~ "RDP protocol is used to connect to Microsoft Terminal Servers and Windows "
-#~ "XP systems with desktop sharing."
-#~ msgstr ""
-#~ "RDP protokol se koristi za povezivanje sa Mikrosoftovim terminalskim "
-#~ "serverima i Windows XP sistemima sa deljenom radnom površinom."
-
-#~ msgid ""
-#~ "VNC protocol is used to connect to systems sharing the desktop by using "
-#~ "VNC."
-#~ msgstr ""
-#~ "VNC protokol se koristi za povezivanje sa sistemima koji dele radnu "
-#~ "površinu pomoću VNC-a."
-
-#~ msgid "XDMCP protocol uses Xnest to connect to servers running X."
-#~ msgstr ""
-#~ "XDMCP protokol koristi Xnest za povezivanje sa serverima koji koriste X."
-
-#~ msgid "ICA protocol is used to connect to Citrix servers."
-#~ msgstr "ICA protokol se koristi za povezivanje sa Citrix serverima."
-
-#~ msgid "Prof_ile Launcher:"
-#~ msgstr "Pokretač skupa pod_ešavanja:"
-
-#~ msgid "Select a saved profile to launch it immediately."
-#~ msgstr "Izaberite sačuvan skup podešavanja da ga odmah pokrenete."
-
-#~ msgid "_More"
-#~ msgstr "_Više"
-
-#~ msgid "Co_nnect"
-#~ msgstr "Po_veži"
-
-#~ msgid "Connection Profile"
-#~ msgstr "Skup podešavanja veze"
-
-#~ msgid "Logon Settings"
-#~ msgstr "Podešavanja prijave"
-
-#~ msgid ""
-#~ "Type the name of the computer or choose a computer from the drop-down "
-#~ "list."
-#~ msgstr "Unesite ime računara ili izaberite računar iz padajuće liste."
-
-#~ msgid "Pro_tocol:"
-#~ msgstr "Pro_tokol:"
-
-#~ msgid "Pass_word:"
-#~ msgstr "_Lozinka:"
-
-#~ msgid "Do_main:"
-#~ msgstr "Do_men:"
-
-#~ msgid "C_lient Hostname:"
-#~ msgstr "Pr_istupajući računar:"
-
-#~ msgid "Prot_ocol File:"
-#~ msgstr "D_atoteka protokola:"
-
-#~ msgid ""
-#~ "Enter the username for the remote system.\n"
-#~ "For VNC, enter the path to your saved vnc password file."
-#~ msgstr ""
-#~ "Unesite korisničko ime za udaljeni sistem.\n"
-#~ "Za VNC, unesite putanju do vaše sačuvane datoteke sa VNC lozinkama."
-
-#~ msgid "Enter the password for the remote system."
-#~ msgstr "Unesite lozinku za udaljeni sistem."
-
-#~ msgid "Enter the domain for the remote system."
-#~ msgstr "Unesite domen za udaljeni sistem."
-
-#~ msgid "Enter the local hostname for this system."
-#~ msgstr "Unesite lokalno ime ovog sistema."
-
-#~ msgid ""
-#~ "Some protocols require a file containing settings. If required, enter the "
-#~ "path to the file here."
-#~ msgstr ""
-#~ "Neki protokoli zahtevaju datoteku sa podešavanjima. Ukoliko je neophodno, "
-#~ "ovde unesite putanju do datoteke."
-
-#~ msgid "Remote Desktop Size"
-#~ msgstr "Veličina udaljene radne površine"
-
-#~ msgid "Use default screen size"
-#~ msgstr "Koristi podrazumevanu veličinu ekrana"
-
-#~ msgid "Use the default screen size."
-#~ msgstr "Koristi podrazumevanu veličinu ekrana."
-
-#~ msgid "Use specified screen size"
-#~ msgstr "Koristi navedenu veličinu ekrana"
-
-#~ msgid "Use the list to choose the screen size to use."
-#~ msgstr "Pomoću ovog spiska izaberite koju veličinu ekrana želite."
-
-#~ msgid "Operate in full screen mode"
-#~ msgstr "Radi preko celog ekrana"
-
-#~ msgid "Work in full screen mode."
-#~ msgstr "Radi preko celog ekrana."
-
-#~ msgid "Use alternate full screen switch (-F)"
-#~ msgstr "Koristi dopunsko prebacivanje na ceo ekran (-F)"
-
-#~ msgid "Check this if you use rdesktop with the unified patches."
-#~ msgstr "Označite ovo ako koristite rdesktop sa sjedinjenim dopunama."
-
-#~ msgid "Colors"
-#~ msgstr "Boje"
-
-#~ msgid "Use default color depth"
-#~ msgstr "Koristi podrazumevanu dubinu boja"
-
-#~ msgid "Use the default color depth."
-#~ msgstr "Koristi podrazumevanu dubinu boja."
-
-#~ msgid "Use specified color depth"
-#~ msgstr "Koristi navedenu dubinu boja"
-
-#~ msgid "Use the list to choose the color depth to use."
-#~ msgstr "Pomoću ovog spiska izaberite koju dubinu boja želite."
-
-#~ msgid "Remote Computer _Sound"
-#~ msgstr "Zvuk udaljenog _računara"
-
-#~ msgid "Remote Computer Sound"
-#~ msgstr "Zvuk udaljenog računara"
-
-#~ msgid "On the local computer"
-#~ msgstr "Na lokalnom računaru"
-
-#~ msgid "On the remote computer"
-#~ msgstr "Na udaljenom računaru"
-
-#~ msgid "Do not play"
-#~ msgstr "Ne puštaj"
-
-#~ msgid "_Keyboard"
-#~ msgstr "_Tastatura"
-
-#~ msgid "Keyboard"
-#~ msgstr "Tastatura"
-
-#~ msgid "In full screen mode only"
-#~ msgstr "Samo preko celog ekrana"
-
-#~ msgid ""
-#~ "Use the following keyboard language\n"
-#~ "(2 char keycode)"
-#~ msgstr ""
-#~ "Koristi naredni jezik tastature\n"
-#~ "(dvoslovni kôd)"
-
-#~ msgid ""
-#~ "Apply Windows key combinations\n"
-#~ "(for example ALT+TAB) (unsupported)"
-#~ msgstr ""
-#~ "Prihvati Windows kombinacije tastera\n"
-#~ "(npr. ALT+TAB) (nepodržano)"
-
-#~ msgid "Start a Program"
-#~ msgstr "Pokreni program"
-
-#~ msgid "Start the following program on connection"
-#~ msgstr "Pokreni sledeći program po povezivanju"
-
-#~ msgid "Program path and filename"
-#~ msgstr "Putanja i datoteka programa"
-
-#~ msgid "Start in the following folder"
-#~ msgstr "Pokreni u sledećem direktorijumu"
-
-#~ msgid "Optimize Performance"
-#~ msgstr "Poboljšaj performanse"
-
-#~ msgid "Desktop background (u)"
-#~ msgstr "Pozadina radne površine"
-
-#~ msgid "Show content of window while dragging (u)"
-#~ msgstr "Prikaži sadržaj prozora pri prevlačenju"
-
-#~ msgid "Menu and window animation (u)"
-#~ msgstr "Animacije menija i prozora"
-
-#~ msgid "Themes (u)"
-#~ msgstr "Teme"
-
-#~ msgid "Enable bitmap caching"
-#~ msgstr "Uključi ostavu bitmapa"
-
-#~ msgid "Do not send motion events"
-#~ msgstr "Ne šalji događaje kretanja"
-
-#~ msgid "Enable window manager's key bindings"
-#~ msgstr "Uključi prečice upravnika prozora"
-
-#~ msgid "Options available for optimizing performance"
-#~ msgstr "Dostupne opcije za poboljšanje performansi"
-
-#~ msgid "_General"
-#~ msgstr "_Opšte"
-
-#~ msgid "_Display"
-#~ msgstr "_Ekran"
-
-#~ msgid "Local _Resources"
-#~ msgstr "Lokalni _resursi"
-
-#~ msgid "_Programs"
-#~ msgstr "_Programi"
-
-#~ msgid "Perf_ormance"
-#~ msgstr "Per_formanse"
-
-#~ msgid "_Less"
-#~ msgstr "_Manje"
-
-#~ msgid "Input a filename to save as..."
-#~ msgstr "Unesite ime datoteke u koju da sačuvam..."
-
-#~ msgid "Choose an RDP file to open..."
-#~ msgstr "Izaberite RDP datoteku radi otvaranja..."
-
-#~ msgid ""
-#~ "rdesktop was not found in your path.\n"
-#~ "Please verify your rdesktop installation."
-#~ msgstr ""
-#~ "rdesktop nije nađen u vašoj putanji.\n"
-#~ "Proverite vašu instalaciju rdesktop-a."
-
-#~ msgid ""
-#~ "vncviewer or xvncviewer were\n"
-#~ " not found in your path.\n"
-#~ "Please verify your vnc installation."
-#~ msgstr ""
-#~ "vncviewer ili xvncviewer nisu \n"
-#~ "nađeni u vašoj putanji.\n"
-#~ "Proverite vašu instalaciju vnc-a."
-
-#~ msgid ""
-#~ "Xnest was not found in your path.\n"
-#~ "Please verify your Xnest installation."
-#~ msgstr ""
-#~ "Xnest nije nađen u vašoj putanji.\n"
-#~ "Proverite vašu instalaciju Xnest-a."
-
-#~ msgid ""
-#~ "wfica was not found in your path.\n"
-#~ "Please verify your ICAClient installation."
-#~ msgstr ""
-#~ "wfica nije nađen u vašoj putanji.\n"
-#~ "Proverite vašu instalaciju ICAClient-a."
-
-#~ msgid ""
-#~ "Failed to spawn.\n"
-#~ "Please verify your installation."
-#~ msgstr ""
-#~ "Nisam uspeo da pokrenem.\n"
-#~ "Proverite vašu instalaciju."
-
-#~ msgid "GNOME Remote Desktop Error"
-#~ msgstr "Greška Gnomove udaljene radne površine"
-
-#~ msgid "An error has occurred."
-#~ msgstr "Dogodila se greška."
-
-#~ msgid "Check this to enable desktop sharing in GNOME"
-#~ msgstr "Označite ovo da biste uključili deljenje radne površine u Gnomu"
-
-#~ msgid "Password to connect to desktop sharing"
-#~ msgstr "Lozinka za deljenje radne površine"
-
-#~ msgid ""
-#~ "Set this to the password clients should use to connect to your desktop "
-#~ "remotely"
-#~ msgstr ""
-#~ "Postavite ovo na lozinku koju treba da koriste klijenti radi povezivanja "
-#~ "na vašu radnu površinu izdaleka"
-
-#~ msgid "Whether to enable desktop sharing"
-#~ msgstr "Da li da uključi deljenje radne površine"
-
-#~ msgid ""
-#~ "<b>Connection settings</b>\n"
-#~ "Type the name of the computer to open a new desktop session and/or the "
-#~ "display number to connect to an already running session."
-#~ msgstr ""
-#~ "<b>Podešavanja veze</b>\n"
-#~ "Ukucajte ime računara za otvaranje nove radne seanse i/ili brojprikaza da "
-#~ "biste se priključili na već postojeću seansu"
-
-#~ msgid ""
-#~ "<b>Desktop settings</b>\n"
-#~ "Select the size and color depth (not supported for all cases, so use with "
-#~ "care) of you remote desktop."
-#~ msgstr ""
-#~ "<b>Podešavanja radne površine</b>\n"
-#~ "Izaberite veličinu vaše udaljene radne površine i jačinu boje (nije "
-#~ "moguće za sve slučajeve, pa budite pažljivi)"
-
-#~ msgid ""
-#~ "<b>Method</b>\n"
-#~ "Select the method for connecting to the remote host. For Windows systems, "
-#~ "you want to choose VNC. For UNIX systems, usually X11, though VNC will "
-#~ "also work."
-#~ msgstr ""
-#~ "<b>Način priključenja</b>\n"
-#~ "Izaberite način priključenja na udaljeni server. Za Windows sisteme "
-#~ "izabraćete VNC. Za UNIX sisteme obično X11, iako će VNC takođe raditi "
-
-#~ msgid "Color depth"
-#~ msgstr "Dubina boje"
-
-#~ msgid "Connect Now ..."
-#~ msgstr "Poveži sada..."
-
-#~ msgid "Display size"
-#~ msgstr "Veličina prikaza"
-
-#~ msgid "VNC"
-#~ msgstr "VNC"
-
-#~ msgid "X11"
-#~ msgstr "X11"
-
-#~ msgid "by"
-#~ msgstr "po"
-
-#~ msgid "Desktop Sharing"
-#~ msgstr "Deljenje radne površine"
-
-#~ msgid "_Share my desktop with others"
-#~ msgstr "_Deli moju radnu površinu sa drugima"
-
-#~ msgid "Enable this option to allow others to view your desktop"
-#~ msgstr ""
-#~ "Uključite ovu opciju da biste dozvolili drugima da gledaju vašu radnu "
-#~ "površinu"
-
-#~ msgid ""
-#~ "The following information will need to be supplied by the user connecting "
-#~ "to your desktop"
-#~ msgstr ""
-#~ "Neophodno je da korisnik koji se povezuje na vašu radnu površinu prosledi "
-#~ "naredne podatke"
-
-#~ msgid "Password"
-#~ msgstr "Lozinka"
-
-#~ msgid "Couldn't find pixmap file: %s"
-#~ msgstr "Ne mogu da nađem datoteku slike: %s"
-
-#~ msgid "Orientation"
-#~ msgstr "Usmerenje"
-
-#~ msgid "The orientation of the tray."
-#~ msgstr "Usmerenje sličice."
-
-#~ msgid "/_Preferences"
-#~ msgstr "/_Postavke"
-
-#~ msgid "/_Clients"
-#~ msgstr "/_Klijenti"
-
-#~ msgid "/_About"
-#~ msgstr "/_O programu"
-
-#~ msgid "/_Quit"
-#~ msgstr "/_Izađi"
-
-#~ msgid "Your desktop is viewable to others"
-#~ msgstr "Vašu radnu površinu mogu da gledaju i drugi"
-
-#~ msgid "Remote Desktop Sharing"
-#~ msgstr "Deljenje udaljene radne površine"
-
-#~ msgid "Clients currently viewing your desktop"
-#~ msgstr "Klijenti koji upravo gledaju vašu radnu površinu"
-
-#~ msgid "Disconnect"
-#~ msgstr "Prekini vezu"
-
-#~ msgid "Receive"
-#~ msgstr "Primi"
-
-#~ msgid "Enter search string"
-#~ msgstr "Unesite reč za traženje"
-
-#~ msgid "Enter transmission string"
-#~ msgstr "Unesite reč za prenos"
-
-#~ msgid "Send User Name"
-#~ msgstr "Pošaljite ime korisnika"
-
-#~ msgid "Username taken from Authentication"
-#~ msgstr "Korisničko ime uzeto iz Provere"
-
-#~ msgid "Send User Password"
-#~ msgstr "Pošaljite korisničku lozinku"
-
-#~ msgid "Password taken from Authentication"
-#~ msgstr "Lozinka uzeta iz Provere"
-
-#~ msgid "Dialog Box Input"
-#~ msgstr "Prozorče za unos"
-
-#~ msgid "Enter text to be used as a dialog message when prompted for input"
-#~ msgstr ""
-#~ "Unesite tekst koji će se koristiti kao poruka kada budete upitani za unos"
-
-#~ msgid "open_account_window(): account=NULL with clone flag"
-#~ msgstr "open_account_window(): account=NULL sa kopiranom zastavicom"
-
-#~ msgid "open_account_window(): calling arguments invalid"
-#~ msgstr "open_account_window(): nepravilni pozivni argumenti"
-
-#~ msgid "Dial"
-#~ msgstr "Pozovi"
-
-#~ msgid "Authentication"
-#~ msgstr "Provera"
-
-#~ msgid "DNS"
-#~ msgstr "DNS"
-
-#~ msgid "Script"
-#~ msgstr "Skripta"
-
-#~ msgid "PPP"
-#~ msgstr "PPP"
-
-#~ msgid "Modem"
-#~ msgstr "Modem"
-
-#~ msgid "Account Name"
-#~ msgstr "Ime korisnika"
-
-#~ msgid "Redial Maximum"
-#~ msgstr "Najveći broj poziva"
-
-#~ msgid "Dial Timeout (sec)"
-#~ msgstr "Vremensko ograničenje poziva (sekunda)"
-
-#~ msgid "Phone Numbers"
-#~ msgstr "Telefonski brojevi"
-
-#~ msgid "#"
-#~ msgstr "#"
-
-#~ msgid "Add"
-#~ msgstr "Dodaj"
-
-#~ msgid "Remove"
-#~ msgstr "Ukloni"
-
-#~ msgid "PAP/CHAP"
-#~ msgstr "PAP/CHAP"
-
-#~ msgid "User Name"
-#~ msgstr "Ime korisnika"
-
-#~ msgid "Remote Name"
-#~ msgstr "Ime udaljenog korisnika"
-
-#~ msgid "Hidden Password"
-#~ msgstr "Sakrivena lozinka"
-
-#~ msgid "Dynamic"
-#~ msgstr "Dinamička"
-
-#~ msgid "Static"
-#~ msgstr "Statična"
-
-#~ msgid "Remote IP Address"
-#~ msgstr "Udaljena IP adresa"
-
-#~ msgid "DNS Servers"
-#~ msgstr "DNS serveri"
-
-#~ msgid "Search Domains"
-#~ msgstr "Traži domene"
-
-#~ msgid "Domain Name"
-#~ msgstr "Ime domena"
-
-#~ msgid "Action"
-#~ msgstr "Akcija"
-
-#~ msgid "Text"
-#~ msgstr "Tekst"
-
-#~ msgid "Login Script"
-#~ msgstr "Skripta za pristup"
-
-#~ msgid "Insert"
-#~ msgstr "Unesite"
-
-#~ msgid "Add Default Route"
-#~ msgstr "Dodajte podrazumevanu putanju"
-
-#~ msgid "Lock Dialout Device"
-#~ msgstr "Zaključajte uređaj za biranje"
-
-#~ msgid "Maximum Transmission Unit"
-#~ msgstr "Maksimalni prenosni paket"
-
-#~ msgid "Maximum Receive Unit"
-#~ msgstr "Maksimalni prihvatni paket"
-
-#~ msgid "Run Program After Connect"
-#~ msgstr "Pokrenite program nakon priključenja"
-
-#~ msgid "Run Program After Disconnect"
-#~ msgstr "Pokrenite program nakon odspajanja"
-
-#~ msgid "Modem Device"
-#~ msgstr "Modem"
-
-#~ msgid "Connection Speed"
-#~ msgstr "Brzina veze"
-
-#~ msgid "Flow Control"
-#~ msgstr "Kontrola protoka"
-
-#~ msgid "Line Termination"
-#~ msgstr "Završetak linije"
-
-#~ msgid "Modem Speaker Volume"
-#~ msgstr "Jačina zvuka modema"
-
-#~ msgid " Edit Modem Commands "
-#~ msgstr "Izmeni modemove komande"
-
-#~ msgid "**PASSWORD**"
-#~ msgstr "**LOZINKA**"
-
-#~ msgid "script_type_cb(): optionmenu data bad"
-#~ msgstr "script_type_cb(): nepravilni podaci na izbornom meniju"
-
-#~ msgid "_Debug Terminal"
-#~ msgstr "Pronađi _grešku na terminalu"
-
-#~ msgid "_New..."
-#~ msgstr "_Novi..."
-
-#~ msgid "D_uplicate..."
-#~ msgstr "Dup_likat..."
-
-#~ msgid "_Edit..."
-#~ msgstr "I_zmeni..."
-
-#~ msgid "_Delete..."
-#~ msgstr "U_kloni..."
-
-#~ msgid "_Account"
-#~ msgstr "N_alog"
-
-#~ msgid "gnome-ppp"
-#~ msgstr "gnome-ppp"
-
-#~ msgid "Dialing"
-#~ msgstr "Pozivam"
-
-#~ msgid "Connected"
-#~ msgstr "Priključen"
-
-#~ msgid "refresh_dial_app(): gtk_clist_append failed."
-#~ msgstr "refresh_dial_app(): gtk_clist_append neuspešan."
-
-#~ msgid "Connect"
-#~ msgstr "Priključi"
-
-#~ msgid "Cancel"
-#~ msgstr "Odustani"
-
-#~ msgid "You must disconnect before closing."
-#~ msgstr "Morate se odspojiti prije zatvaranja"
-
-#~ msgid "Are you sure you want to delete this account?\n"
-#~ msgstr "Da li ste sigurni da želite da uklonite ovaj nalog?\n"
-
-#~ msgid "The account cannot be deleted."
-#~ msgstr "Ovaj nalog se ne može ukloniti"
-
-#~ msgid "The account is in use and cannot be deleted."
-#~ msgstr "Ovaj nalog je u upotrebi i ne može se ukloniti"
-
-#~ msgid "GNOME Internet Dialer"
-#~ msgstr "Gnomovo povezivanje na Internet"
-
-#~ msgid "Raise PPP Link"
-#~ msgstr "Uspostavi PPP vezu"
-
-#~ msgid "About..."
-#~ msgstr "O ovome..."
-
-#~ msgid "Properties..."
-#~ msgstr "Osobine..."
-
-#~ msgid "Offline"
-#~ msgstr "Odspojen"
-
-#~ msgid "Connecting..."
-#~ msgstr "Priključujem..."
-
-#~ msgid "PPP Connected"
-#~ msgstr "PPP priključen"
-
-#~ msgid "PPP Error!"
-#~ msgstr "PPP greška!"
-
-#~ msgid "That account is already in use.\n"
-#~ msgstr "Ovaj nalog je već u upotrebi.\n"
-
-#~ msgid "GNOME PPP Dialer Applet"
-#~ msgstr "Gnomovo programče za PPP pozivanje"
-
-#~ msgid ""
-#~ "An unnecessarily nice looking applet for GNOME's panel for easy control "
-#~ "of PPP network links."
-#~ msgstr ""
-#~ "Programče nepotrebno lepog izgleda za Gnomov panel za jednostavnu "
-#~ "kontrolu PPP mrežnih veza"
-
-#~ msgid "PPP Applet Properties"
-#~ msgstr "Osobine PPP programčeta"
-
-#~ msgid "Animation"
-#~ msgstr "Animacija"
-
-#~ msgid "Small"
-#~ msgstr "Mali"
-
-#~ msgid "Large"
-#~ msgstr "Veliki"
-
-#~ msgid "None"
-#~ msgstr "Nijedan"
-
-#~ msgid "Options"
-#~ msgstr "Opcije"
-
-#~ msgid "Freeze Animation on Connect"
-#~ msgstr "Zaustavi animaciju prilikom priključenja"
-
-#~ msgid "Disconnect PPP on GNOME logout"
-#~ msgstr "Isključi PPP vezu prilikom odjavljivanja iz Gnoma"
-
-#~ msgid "Timer"
-#~ msgstr "Štoperica"
-
-#~ msgid "Label"
-#~ msgstr "Naziv"
-
-#~ msgid "Animation Speed"
-#~ msgstr "Brzina animacije"
-
-#~ msgid "PPP Applet"
-#~ msgstr "PPP programče"
-
-#~ msgid "---NEW CONNECTION---"
-#~ msgstr "---NOVA VEZA---"
-
-#~ msgid "Account already connected."
-#~ msgstr "Nalog je već povezan."
-
-#~ msgid "Starting PPP Connection."
-#~ msgstr "Počinjem PPP povezivanje."
-
-#~ msgid "You don't have permission to execute pppd."
-#~ msgstr "Nemate dozvolu za pokretanje pppd."
-
-#~ msgid "The modem is in use by another program."
-#~ msgstr "Drugi program koristi ovaj modem"
-
-#~ msgid "Running pppd."
-#~ msgstr "Pokrećem pppd."
-
-#~ msgid "Closing connection."
-#~ msgstr "Prekidam vezu."
-
-#~ msgid "The pppd program failed to run gnome-ppp-chat."
-#~ msgstr "Program pppd nije uspio da pokrene gnome-ppp-chat."
-
-#~ msgid "The modem could not be hung up."
-#~ msgstr "Modem ne može da prekine vezu."
-
-#~ msgid "Initalizing modem."
-#~ msgstr "Pokrećem modem."
-
-#~ msgid "Your modem is not responding to initalization."
-#~ msgstr "Vaš modem ne odgovara na naredbu za pokretanje."
-
-#~ msgid "The command to set the volume on your modem's speaker failed."
-#~ msgstr "Naredba za postavljanje jačine zvuka na modemu nije uspela."
-
-#~ msgid "No answer after maximum number of re-dial attempts."
-#~ msgstr "Nema odgovora nakon maksimalnog broja pokušaja pozivanja."
-
-#~ msgid "No phone numbers specified for this account."
-#~ msgstr "Nema naznačenih telefonskih brojeva za ovaj nalog."
-
-#~ msgid "Dialing."
-#~ msgstr "Pozivam"
-
-#~ msgid "Dialing timeout."
-#~ msgstr "Isteklo vreme pozivanja"
-
-#~ msgid "No dialtone."
-#~ msgstr "Nema pozivnog signala."
-
-#~ msgid "Number busy."
-#~ msgstr "Broj je zauzet."
-
-#~ msgid "Ring, but no answer."
-#~ msgstr "Zvoni, ali nema odgovora."
-
-#~ msgid "Connection failure, reason unknown."
-#~ msgstr "Neuspelo priključenje, razlog nepoznat."
-
-#~ msgid "Connected."
-#~ msgstr "Priključen."
-
-#~ msgid "The modem lost connection with remote host."
-#~ msgstr "Modem je izgubio vezu sa udaljenim serverom."
-
-#~ msgid "Running Script."
-#~ msgstr "Skripta se izvršava."
-
-#~ msgid "Script Complete."
-#~ msgstr "Skripta je završena."
-
-#~ msgid "PPP connection established."
-#~ msgstr "PPP veza je uspostavljena."
-
-#~ msgid "Failed to establish a PPP connection."
-#~ msgstr "Neuspešno uspostavljanje PPP veze."
-
-#~ msgid "The pppd daemon died unexpectedly."
-#~ msgstr "Pozadinski proces pppd je neočekivano zavšio "
-
-#~ msgid "open_modem_window(): account=NULL"
-#~ msgstr "open_modem_window(): account=NULL"
-
-#~ msgid "Commands"
-#~ msgstr "Komande"
-
-#~ msgid "Responses"
-#~ msgstr "Odgovori"
-
-#~ msgid "Initialization"
-#~ msgstr "Pokretanje"
-
-#~ msgid "Hangup"
-#~ msgstr "Zatvaranje veze"
-
-#~ msgid "Volume Mute"
-#~ msgstr "Zvuk utišan"
-
-#~ msgid "Volume Low"
-#~ msgstr "Zvuk nizak"
-
-#~ msgid "Volume High"
-#~ msgstr "Zvuk jak"
-
-#~ msgid "Connection"
-#~ msgstr "Priključenje"
-
-#~ msgid "Busy"
-#~ msgstr "Zauzet"
-
-#~ msgid "No Answer"
-#~ msgstr "Bez odgovora"
-
-#~ msgid "No Carrier"
-#~ msgstr "Nema nosača"
-
-#~ msgid "No Dialtone"
-#~ msgstr "Nema pozivnog signala"
-
-#~ msgid "GNOME Transfer Manager"
-#~ msgstr "Gnomovo upravljanje prenosima"
-
-#~ msgid "There is a connection error"
-#~ msgstr "Došlo je do greške pri povezivanju"
-
-#~ msgid "There is an error with displaying help"
-#~ msgstr "Došlo je do greške pri prikazivanju pomoći"
-
-#~ msgid "Graphical user interface for GNOME Remote Shell"
-#~ msgstr "Grafičko korisničko sučelje za Gnomovu udaljenu ljusku"
-
-#~ msgid "This is an untranslated version of GNOME Remote Shell"
-#~ msgstr "Ovo je neprevedeno izdanje Gnomove udaljene ljuske"
-
-#~ msgid "Failed to create a connection"
-#~ msgstr "Neuspešno uspostavljanje veze"
-
-#~ msgid "A hostname is required"
-#~ msgstr "Ime računara je obavezno"
-
-#~ msgid "A user name is required for SSH"
-#~ msgstr "Korisničko ime je obavezno za SSH"
-
-#~ msgid "There is a command line error"
-#~ msgstr "Postoji greška u redu naredbe"
-
-#~ msgid "The host cannot be found"
-#~ msgstr "Ne mogu da nađem ovaj računar"
-
-#~ msgid "<span weight=\"bold\">Connect to remote host</span>"
-#~ msgstr "<span weight=\"bold\">Poveži se sa udaljenim računarom</span>"
-
-#~ msgid "<span weight=\"bold\">Method</span>"
-#~ msgstr "<span weight=\"bold\">Način</span>"
-
-#~ msgid "<span weight=\"bold\">Window size</span>"
-#~ msgstr "<span weight=\"bold\">Veličina prozora</span>"
-
-#~ msgid "Connect to remote host"
-#~ msgstr "Povezivanje sa udaljenim računarom"
-
-#~ msgid "H_eight:"
-#~ msgstr "V_isina:"
-
-#~ msgid "H_ost:"
-#~ msgstr "R_ačunar:"
-
-#~ msgid "Regular shell (_Telnet)"
-#~ msgstr "Obična ljuska (_telnet)"
-
-#~ msgid "Use _default"
-#~ msgstr "Koristi po_drazumevano"
-
-#~ msgid "_Contents"
-#~ msgstr "_Sadržaj"
-
-#~ msgid "_Port:"
-#~ msgstr "_Port:"
-
-#~ msgid "_Secure shell (SSH)"
-#~ msgstr "_Bezbedna ljuska (ssh)"
-
-#~ msgid "_Shell"
-#~ msgstr "_Ljuska"
-
-#~ msgid "_Width:"
-#~ msgstr "_Širina:"
-
-#~ msgid "characters"
-#~ msgstr "znakova"
-
-#~ msgid "Expander Size"
-#~ msgstr "Veličina razgranika"
-
-#~ msgid "Size of the expander arrow"
-#~ msgstr "Veličina strelice razgranika"
-
-#~ msgid "Web folder:"
-#~ msgstr "Veb direktorijum:"
-
-#~ msgid "Select the folder to be published"
-#~ msgstr "Izaberite direktorijum koji želite da objavite"
-
-#~ msgid "Enable web server"
-#~ msgstr "Uključi veb server"
-
-#~ msgid "Additional options"
-#~ msgstr "Dodatne opcije"
-
-#~ msgid "Port number:"
-#~ msgstr "Broj porta:"
-
-#~ msgid "Time out:"
-#~ msgstr "Rok:"
-
-# nečisto
-#~ msgid "Keep alive"
-#~ msgstr "Drži u životu"
-
-#~ msgid "/_Open Web Folder"
-#~ msgstr "/_Otvori veb direktorijum"
-
-#~ msgid "Personal web server preferences"
-#~ msgstr "Postavke ličnog veb servera"
-
-#~ msgid "Personal Web Server Preferences"
-#~ msgstr "Postavke ličnog veb servera"
-
-#~ msgid "Setup the options for your personal web server."
-#~ msgstr "Postavite opcije za vaš lični veb server."
-
-#~ msgid "Could not load UI for entry configuration dialog"
-#~ msgstr "U nemogućnosti da pozove UI za unos konfiguracije"
-
-#~ msgid "Entry name"
-#~ msgstr "Ime unosa1"
-
-#~ msgid "Local path"
-#~ msgstr "Lokalna putanja"
-
-#~ msgid "Preserve group"
-#~ msgstr "Sačuvajte grupu"
-
-#~ msgid "Preserve permissions"
-#~ msgstr "Sačuvajte ovlašćenja"
-
-#~ msgid "Preserve times"
-#~ msgstr "Sačuvajte vremena"
-
-#~ msgid "Recurse into directories"
-#~ msgstr "Prođi kroz direktorije"
-
-#~ msgid "Remote host"
-#~ msgstr "Udaljeni server"
-
-#~ msgid "Remote path"
-#~ msgstr "Udaljena putanja"
-
-#~ msgid "Synchronization options"
-#~ msgstr "Opcije za sinhronizaciju"
-
-#~ msgid "Update only (don't overwrite newer files)"
-#~ msgstr "Samo obnovi (nemoj da prebrišeš novije datoteke)"
-
-#~ msgid "Use relative path names"
-#~ msgstr "Koristi relativnu putanju"
-
-#~ msgid "Use rsync"
-#~ msgstr "Koristi rsync"
-
-#~ msgid "Use unison"
-#~ msgstr "Koristi unison"
-
-#~ msgid "dialog1"
-#~ msgstr "dijalog 1"
-
-#~ msgid "rsync"
-#~ msgstr "rsync"
-
-#~ msgid "unison"
-#~ msgstr "unison"
-
-#~ msgid "Local"
-#~ msgstr "Lokalno"
-
-#~ msgid "Remote"
-#~ msgstr "Udaljeno"
-
-#~ msgid "Last sync"
-#~ msgstr "Zadnja sinhronizacija"
-
-#~ msgid "_Synchronize"
-#~ msgstr "Sinhroniziraj"
-
-#~ msgid "New entry..."
-#~ msgstr "Novi unos"
-
-#~ msgid "Edit..."
-#~ msgstr "Izmeni"
-
-#~ msgid "Synchronize"
-#~ msgstr "Sinhroniziraj"
-
-#~ msgid "Gnome Synchronize"
-#~ msgstr "Gnomovo usklađivanje"
-
-#~ msgid "The GNOME file synchronization program."
-#~ msgstr "Gnomov program za usklađivanje datoteka."
-
-#~ msgid "New"
-#~ msgstr "Novi"
-
-#~ msgid "Create new synchronization entry"
-#~ msgstr "Napravi novi unos za usklađivanje"
-
-#~ msgid "Start synchronization for selected entries"
-#~ msgstr "Počni usklađivanje odabranih unosa"
-
-#~ msgid "Edit"
-#~ msgstr "Izmeni"
-
-#~ msgid "Edit selected entry"
-#~ msgstr "Izmeni odabrane unose"
-
-#~ msgid "Delete"
-#~ msgstr "Obriši"
-
-#~ msgid "Delete selected entries"
-#~ msgstr "Obriši odabrane unose"
-
-#~ msgid "No host specified."
-#~ msgstr "Računar nije naznačen."
-
-#~ msgid "<b>Desktop Sharing</b>"
-#~ msgstr "<b>Deljenje radne površine</b>"
-
-#~ msgid "Document root:"
-#~ msgstr "Koren dokumenta:"
-
-#~ msgid "Enable logging"
-#~ msgstr "Vodi dnevnik"
-
-#~ msgid "You don't have the Xnest program installed in the system"
-#~ msgstr "Nemate instaliran Xnest program na ovom sistemu "
-
-#~ msgid "You have to specify at least a host or display name"
-#~ msgstr "Morate naznačiti barem server ili ime prikaza"
-
-#~ msgid "You don't have a VNC viewer installed in the system"
-#~ msgstr "Nemate instaliran VNC pregledač na ovom sistemu "
-
-#~ msgid "Could not load UI for remote desktop client"
-#~ msgstr "Ne mogu da pozovem korisnički pristup za udaljenog radnog klijenta"
+msgstr "Mrežni alati"
+
+#: src/finger.c:58
+#, c-format
+msgid "Getting information of %s on \"%s\""
+msgstr "Dobavlja podatke o %s na „%s“"
+
+#: src/finger.c:62
+#, c-format
+msgid "Getting information of all users on \"%s\""
+msgstr "Dobavlja podatke o svim korisnicima na „%s“"
+
+#: src/whois.c:56
+#, c-format
+msgid "Getting the whois information of %s"
+msgstr "Dobavlja whois podatke za „%s“"
