@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-15 01:10+0900\n"
+"POT-Creation-Date: 2004-08-20 11:34+0200\n"
 "PO-Revision-Date: 2004-06-15 01:08+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -15,14 +15,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:319
+#: src/callbacks.c:321
 msgid "translator_credits"
 msgstr ""
 "相花 毅 <aihana@gnome.gr.jp>\n"
 "Yuusuke Tahara <tahara@gnome.gr.jp>\n"
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp>"
 
-#: src/callbacks.c:347
+#: src/callbacks.c:349
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 "いろいろなネットワーク・ユーティリティに対するグラフィカルなインタフェースを"
@@ -77,10 +77,11 @@ msgid "Devices"
 msgstr "デバイス"
 
 #: src/gnome-nettool.glade.h:13
-msgid "Display: "
+#, fuzzy
+msgid "Display:"
 msgstr "表示する情報: "
 
-#: src/gnome-nettool.glade.h:14 src/main.c:772
+#: src/gnome-nettool.glade.h:14 src/main.c:837
 msgid "Finger"
 msgstr "Finger"
 
@@ -100,7 +101,7 @@ msgstr "IP-アドレス:"
 msgid "Link speed:"
 msgstr "リンク・スピード:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:701
+#: src/gnome-nettool.glade.h:19 src/main.c:751
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -128,7 +129,7 @@ msgstr "マルチキャスト:"
 msgid "Netmask:"
 msgstr "ネットマスク:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:416
+#: src/gnome-nettool.glade.h:26 src/main.c:442
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -156,7 +157,7 @@ msgstr "受信したパケット数:"
 msgid "Packets transmitted:"
 msgstr "送信したパケット数:"
 
-#: src/gnome-nettool.glade.h:33 src/main.c:279
+#: src/gnome-nettool.glade.h:33 src/main.c:281
 msgid "Ping"
 msgstr "Ping"
 
@@ -180,47 +181,49 @@ msgstr "受信エラー数:"
 msgid "Routing Table Information"
 msgstr "経路テーブル情報"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:595
+#: src/gnome-nettool.glade.h:39 src/main.c:632
 msgid "Scan"
 msgstr "スキャン"
 
 #: src/gnome-nettool.glade.h:40
-msgid "Send unlimited requests"
-msgstr "要求数は制限しない"
-
-#: src/gnome-nettool.glade.h:41
-msgid "Send: "
+#, fuzzy
+msgid "Send:"
 msgstr "送信数: "
 
-#: src/gnome-nettool.glade.h:42
+#: src/gnome-nettool.glade.h:41
 msgid "State:"
 msgstr "状態:"
 
-#: src/gnome-nettool.glade.h:43 src/main.c:351
+#: src/gnome-nettool.glade.h:42 src/main.c:366
 msgid "Trace"
 msgstr "トレース"
 
-#: src/gnome-nettool.glade.h:44
+#: src/gnome-nettool.glade.h:43
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: src/gnome-nettool.glade.h:45
+#: src/gnome-nettool.glade.h:44
 msgid "Transmission errors:"
 msgstr "転送エラー数:"
 
-#: src/gnome-nettool.glade.h:46
+#: src/gnome-nettool.glade.h:45
 msgid "Transmitted bytes:"
 msgstr "転送数:"
 
-#: src/gnome-nettool.glade.h:47
+#: src/gnome-nettool.glade.h:46
 msgid "Transmitted packets:"
 msgstr "転送パケット数:"
+
+#: src/gnome-nettool.glade.h:47
+#, fuzzy
+msgid "Unlimited requests"
+msgstr "要求数は制限しない"
 
 #: src/gnome-nettool.glade.h:48
 msgid "User"
 msgstr "ユーザ"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:869
+#: src/gnome-nettool.glade.h:49 src/main.c:953
 msgid "Whois"
 msgstr "Whois"
 
@@ -229,19 +232,23 @@ msgid "_Configure"
 msgstr "設定(_C)"
 
 #: src/gnome-nettool.glade.h:51
-msgid "_Domain Address: "
+#, fuzzy
+msgid "_Domain address:"
 msgstr "ドメインのアドレス(_D): "
 
 #: src/gnome-nettool.glade.h:52
-msgid "_Information Type: "
+#, fuzzy
+msgid "_Information type:"
 msgstr "情報の種類(_I): "
 
 #: src/gnome-nettool.glade.h:53
-msgid "_Network Address: "
+#, fuzzy
+msgid "_Network address:"
 msgstr "ネットワークのアドレス(_N): "
 
 #: src/gnome-nettool.glade.h:54
-msgid "_Network Device"
+#, fuzzy
+msgid "_Network device:"
 msgstr "ネットワーク・デバイス(_N)"
 
 #: src/gnome-nettool.glade.h:55
@@ -249,7 +256,8 @@ msgid "_Tool"
 msgstr "ツール(_T)"
 
 #: src/gnome-nettool.glade.h:56
-msgid "_Username: "
+#, fuzzy
+msgid "_Username:"
 msgstr "ユーザ名(_U): "
 
 #: src/gnome-nettool.glade.h:57
@@ -396,23 +404,28 @@ msgstr "衝突:\t%s\n"
 msgid "not available"
 msgstr "利用不可"
 
-#: src/lookup.c:273
+#: src/lookup.c:79
+#, fuzzy, c-format
+msgid "Looking up %s"
+msgstr "Lookup"
+
+#: src/lookup.c:277
 msgid "Name"
 msgstr "名前"
 
-#: src/lookup.c:281
+#: src/lookup.c:285
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:290
+#: src/lookup.c:294
 msgid "Address Type"
 msgstr "アドレスの種類"
 
-#: src/lookup.c:300
+#: src/lookup.c:304
 msgid "Record Type"
 msgstr "問い合わせの種類"
 
-#: src/lookup.c:309
+#: src/lookup.c:313
 msgid "Address"
 msgstr "アドレス"
 
@@ -422,7 +435,7 @@ msgstr "アドレス"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:337
+#: src/lookup.c:341
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "ソース\tTTL\tアドレス 種類\t問い合わせの種類１\tアドレス解決\n"
 
@@ -491,83 +504,135 @@ msgid ""
 msgstr ""
 "ファイル %s が存在しません。`gnome-netinfo` のインストールを確認して下さい"
 
-#: src/main.c:449 src/netstat.c:429
+#: src/main.c:314
+msgid ""
+"Enter the network address to ping.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/main.c:393
+msgid ""
+"Enter the network address to trace a route to.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/main.c:478 src/netstat.c:441
 msgid "Protocol"
 msgstr "プロトコル"
 
-#: src/main.c:456
+#: src/main.c:485
 msgid "IP Address"
 msgstr "IP-アドレス"
 
-#: src/main.c:463
+#: src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "ネットマスク/プレフィックス"
 
-#: src/main.c:470
+#: src/main.c:499
 msgid "Broadcast"
 msgstr "ブロードキャスト"
 
-#: src/main.c:477
+#: src/main.c:506
 msgid "Scope"
 msgstr "スコープ"
 
-#: src/netstat.c:436
+#: src/main.c:654
+msgid ""
+"Enter the network address to scan for open ports.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/main.c:782
+msgid ""
+"Enter the network address to lookup.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/main.c:871
+msgid "Enter the user to finger."
+msgstr ""
+
+#: src/main.c:898
+msgid ""
+"Enter the network address to finger that user.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/main.c:985
+msgid ""
+"Enter a domain address to lookup its whois information.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/netstat.c:120
+msgid "Getting routing table"
+msgstr ""
+
+#: src/netstat.c:135
+msgid "Getting active Internet connections"
+msgstr ""
+
+#: src/netstat.c:144
+msgid "Getting group memberships"
+msgstr ""
+
+#: src/netstat.c:448
 msgid "IP Source"
 msgstr "IP-ソース"
 
-#: src/netstat.c:444
+#: src/netstat.c:456
 msgid "Port/Service"
 msgstr "ポート/サービス"
 
-#: src/netstat.c:452 src/scan.c:288
+#: src/netstat.c:464 src/scan.c:292
 msgid "State"
 msgstr "状態"
 
-#: src/netstat.c:594
+#: src/netstat.c:606
 msgid "Destination/Prefix"
 msgstr "送信先/プレフィックス"
 
-#: src/netstat.c:596
+#: src/netstat.c:608
 msgid "Destination"
 msgstr "送信先"
 
-#: src/netstat.c:603
+#: src/netstat.c:615
 msgid "Gateway"
 msgstr "ゲートウェイ"
 
-#: src/netstat.c:611
+#: src/netstat.c:623
 msgid "Netmask"
 msgstr "ネットマスク"
 
-#: src/netstat.c:619 src/netstat.c:725
+#: src/netstat.c:631 src/netstat.c:737
 msgid "Interface"
 msgstr "インタフェース"
 
-#: src/netstat.c:732
+#: src/netstat.c:744
 msgid "Member"
 msgstr "メンバ"
 
-#: src/netstat.c:740
+#: src/netstat.c:752
 msgid "Group"
 msgstr "グループ"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:782
+#: src/netstat.c:794
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "プロトコル\tIP-ソース\tポート/サービス\t状態\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:788
+#: src/netstat.c:800
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "送信先\tゲートウェイ\tネットマスク\tインタフェース\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:793
+#: src/netstat.c:805
 msgid "Interface\tMember\tGroup\n"
 msgstr "インタフェース\tメンバ\tグループ\n"
 
@@ -596,31 +661,36 @@ msgstr "正しいドメイン・アドレスを入力して再試行して下さ
 msgid "Information not available"
 msgstr "情報が利用可能ではありません"
 
-#: src/nettool.c:486
+#: src/nettool.c:494
 msgid "Stop"
 msgstr "停止"
 
-#: src/nettool.c:492
+#: src/nettool.c:500
 msgid "Run"
 msgstr "実行"
 
-#: src/ping.c:378
+#: src/ping.c:73
+#, fuzzy, c-format
+msgid "Sending ping requests to %s"
+msgstr "要求数は制限しない"
+
+#: src/ping.c:381
 msgid "Bytes"
 msgstr "バイト数"
 
-#: src/ping.c:385
+#: src/ping.c:388
 msgid "Source"
 msgstr "IP-ソース"
 
-#: src/ping.c:393
+#: src/ping.c:396
 msgid "Seq"
 msgstr "icmp_seq"
 
-#: src/ping.c:403
+#: src/ping.c:406
 msgid "Time"
 msgstr "往復時間"
 
-#: src/ping.c:411
+#: src/ping.c:414
 msgid "Units"
 msgstr "単位"
 
@@ -628,77 +698,87 @@ msgstr "単位"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:437
+#: src/ping.c:440
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "バイト数\tIP-ソース\ticmp_seq\t往復時間\t単位\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:452
+#: src/ping.c:455
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "往復時間の最小:\t%s ミリ秒\n"
 
-#: src/ping.c:453
+#: src/ping.c:456
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "往復時間の平均:\t%s ミリ秒\n"
 
-#: src/ping.c:454
+#: src/ping.c:457
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "往復時間の最大:\t%s ミリ秒\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "送信パケット数:\t%s\n"
 
-#: src/ping.c:458
+#: src/ping.c:461
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "受信パケット数:\t%s\n"
 
-#: src/ping.c:460
+#: src/ping.c:463
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "パケットの消失:\t%s\n"
 
-#: src/scan.c:151
+#: src/scan.c:80
+#, c-format
+msgid "Scanning %s for open ports"
+msgstr ""
+
+#: src/scan.c:155
 msgid "unknown"
 msgstr "不明"
 
-#: src/scan.c:280
+#: src/scan.c:284
 msgid "Port"
 msgstr "ポート番号"
 
-#: src/scan.c:296
+#: src/scan.c:300
 msgid "Service"
 msgstr "サービス"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:318
+#: src/scan.c:322
 msgid "Port\tState\tService\n"
 msgstr "ポート番号\t状態\tサービス\n"
 
-#: src/traceroute.c:261
+#: src/traceroute.c:58
+#, fuzzy, c-format
+msgid "Tracing route to %s"
+msgstr "Traceroute"
+
+#: src/traceroute.c:265
 msgid "Hop"
 msgstr "ホップ"
 
-#: src/traceroute.c:269
+#: src/traceroute.c:273
 msgid "Hostname"
 msgstr "ホスト名"
 
-#: src/traceroute.c:277
+#: src/traceroute.c:281
 msgid "IP"
 msgstr "IP-ソース"
 
-#: src/traceroute.c:288
+#: src/traceroute.c:292
 msgid "Time 1"
 msgstr "時間１"
 
-#: src/traceroute.c:298
+#: src/traceroute.c:302
 msgid "Time 2"
 msgstr "時間２"
 
@@ -706,7 +786,7 @@ msgstr "時間２"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:324
+#: src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "ホップ\tホスト名\tIP-ソース\t時間１\t時間２\n"
 
@@ -722,3 +802,18 @@ msgstr "ネットワーク情報ツール"
 #: src/gnome-nettool.desktop.in.h:2
 msgid "Network Tools"
 msgstr "ネットワーク・ツール"
+
+#: src/finger.c:58
+#, c-format
+msgid "Getting information of %s on \"%s\""
+msgstr ""
+
+#: src/finger.c:62
+#, c-format
+msgid "Getting information of all users on \"%s\""
+msgstr ""
+
+#: src/whois.c:56
+#, fuzzy, c-format
+msgid "Getting the whois information of %s"
+msgstr "ネットワーク情報ツール"

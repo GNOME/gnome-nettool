@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-13 04:20+0200\n"
+"POT-Creation-Date: 2004-08-20 11:34+0200\n"
 "PO-Revision-Date: 2004-07-15 10:28+0530\n"
 "Last-Translator: Runa Bhattacharjee <runa@bengalinux.org>\n"
 "Language-Team: Bangla <gnome-translation@bengalinux.org>\n"
@@ -51,8 +51,8 @@ msgstr "<b>প্রেরণ সংক্রান্ত পরিসংখ্�
 #: src/gnome-nettool.glade.h:7
 msgid "Active Network Services"
 msgstr "সক্রিয় নেটওয়ার্ক পরিষেবা"
-#msgstr "সক্রিয় নেটওয়ার্ক পরিসেবা"
 
+# msgstr "সক্রিয় নেটওয়ার্ক পরিসেবা"
 #: src/gnome-nettool.glade.h:8
 msgid "Average:"
 msgstr "গড়:"
@@ -68,9 +68,9 @@ msgstr "হিস্ট্রি মুছে ফেলো (_হ)"
 #: src/gnome-nettool.glade.h:11
 msgid "Collisions:"
 msgstr "দ্বন্দ্ব (কলিশন):"
-#msgstr "দ্বন্দ্ব:"
-#Technical term - better keep it as it is
 
+# msgstr "দ্বন্দ্ব:"
+# Technical term - better keep it as it is
 #: src/gnome-nettool.glade.h:12
 msgid "Devices"
 msgstr "ডিভাইস"
@@ -78,13 +78,13 @@ msgstr "ডিভাইস"
 #: src/gnome-nettool.glade.h:13
 msgid "Display:"
 msgstr "প্রদর্শন করো:"
-# FIXME: Context check required
 
+# FIXME: Context check required
 #: src/gnome-nettool.glade.h:14 src/main.c:837
 msgid "Finger"
 msgstr "ফিঙ্গার"
-#msgstr "Finger"
 
+# msgstr "Finger"
 #: src/gnome-nettool.glade.h:15
 msgid "Hardware address:"
 msgstr "হার্ডওয়ার-এর ঠিকানা:"
@@ -108,8 +108,8 @@ msgstr "লুকআপ"
 #: src/gnome-nettool.glade.h:20
 msgid "MTU:"
 msgstr "এমটিইউ:"
-#msgstr "MTU:"
 
+# msgstr "MTU:"
 #: src/gnome-nettool.glade.h:21
 msgid "Maximum:"
 msgstr "সর্বোচ্চ:"
@@ -133,8 +133,8 @@ msgstr "নেটমাস্ক:"
 #: src/gnome-nettool.glade.h:26 src/main.c:442
 msgid "Netstat"
 msgstr "নেটস্ট্যাট"
-#msgstr "Netstat"
 
+# msgstr "Netstat"
 #: src/gnome-nettool.glade.h:27
 msgid "Network Tools - Devices"
 msgstr "নেটওয়ার্ক টুলসমূহ - ডিভাইসসমূহ"
@@ -230,8 +230,8 @@ msgstr "Whois"
 #: src/gnome-nettool.glade.h:50
 msgid "_Configure"
 msgstr "কনফিগার করুন (_ক)"
-#msgstr "কনফিগার করো (_ক)"
 
+# msgstr "কনফিগার করো (_ক)"
 #: src/gnome-nettool.glade.h:51
 msgid "_Domain address:"
 msgstr "ডোমেইনের ঠিকানা (_ড):"
@@ -284,8 +284,8 @@ msgstr "মোডেম-র ইন্টারফেস"
 #: src/info.c:60
 msgid "Parallel Line Interface"
 msgstr "প্যারালেল লাইন ইন্টারফেস"
-#msgstr "সমান্তরাল রেখার ইন্টারফেস"
 
+# msgstr "সমান্তরাল রেখার ইন্টারফেস"
 #: src/info.c:61
 msgid "Infrared Interface"
 msgstr "ইন্ফ্রারেড ইন্টারফেস"
@@ -435,8 +435,8 @@ msgstr "ঠিকানা"
 #: src/lookup.c:341
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
-#FIXME
 
+# FIXME
 #: src/main.c:78
 msgid "Load information for a network device"
 msgstr "নেটওয়ার্ক ডিভাইস সংক্রান্ত তথ্য লোড করো"
@@ -455,7 +455,8 @@ msgstr "HOST"
 
 #: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "netstat সংক্রান্ত তথ্য আহরণ করো.  বৈধ অপশন হলো: রুট (route), সক্রিয়, মাল্টিকাস্ট "
+msgstr ""
+"netstat সংক্রান্ত তথ্য আহরণ করো.  বৈধ অপশন হলো: রুট (route), সক্রিয়, মাল্টিকাস্ট "
 
 #: src/main.c:85
 msgid "COMMAND"
@@ -498,21 +499,24 @@ msgstr "নেটওয়ার্ক সংক্রান্ত তথ্য"
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
 "installed"
-msgstr "%s ফাইলটি উপস্থিত নেই, অনুগ্রহ করে পরীক্ষা করুন gnome-netinfo সঠিকভাবে "
-"ইনস্টল করা আছে কি না"
+msgstr ""
+"%s ফাইলটি উপস্থিত নেই, অনুগ্রহ করে পরীক্ষা করুন gnome-netinfo সঠিকভাবে ইনস্টল করা "
+"আছে কি না"
 
 #: src/main.c:314
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "যে নেটওয়ার্ক অ্যাড্রেস-এ পিঙ করা হবে তা লিখুন।\n"
+msgstr ""
+"যে নেটওয়ার্ক অ্যাড্রেস-এ পিঙ করা হবে তা লিখুন।\n"
 "উদাহরণ: www.domain.com অথবা 192.168.2.1"
 
 #: src/main.c:393
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "যে নেটওয়ার্ক অ্যাড্রেস-এর পথ অনুসরণ করা হবে তা লিখুন।\n"
+msgstr ""
+"যে নেটওয়ার্ক অ্যাড্রেস-এর পথ অনুসরণ করা হবে তা লিখুন।\n"
 "উদাহরণ: www.domain.com অথবা 192.168.2.1"
 
 #: src/main.c:478 src/netstat.c:441
@@ -526,13 +530,13 @@ msgstr "IP অ্যাড্রেস"
 #: src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "নেটমাস্ক / উপপদ (প্রেফিক্স)"
-#msgstr "নেটমাস্ক / উপপদ"
 
+# msgstr "নেটমাস্ক / উপপদ"
 #: src/main.c:499
 msgid "Broadcast"
 msgstr "সম্প্রচার (ব্রডকাস্ট)"
-#msgstr "সম্প্রচার"
 
+# msgstr "সম্প্রচার"
 #: src/main.c:506
 msgid "Scope"
 msgstr "পরিধি"
@@ -541,14 +545,16 @@ msgstr "পরিধি"
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "যে নেটওয়ার্ক অ্যাড্রেস-এ খোলা পোর্টের অনুসন্ধান করা হবে তা লিখুন।\n"
+msgstr ""
+"যে নেটওয়ার্ক অ্যাড্রেস-এ খোলা পোর্টের অনুসন্ধান করা হবে তা লিখুন।\n"
 "উদাহরণ: www.domain.com অথবা 192.168.2.1"
 
 #: src/main.c:782
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "যে নেটওয়ার্ক অ্যাড্রেসটির অনুসন্ধান করা হবে তা লিখুন।\n"
+msgstr ""
+"যে নেটওয়ার্ক অ্যাড্রেসটির অনুসন্ধান করা হবে তা লিখুন।\n"
 "উদাহরণ: www.domain.com অথবা 192.168.2.1"
 
 #: src/main.c:871
@@ -559,14 +565,16 @@ msgstr "যে ব্যবহারকারীকে finger করা হব�
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "কোনো ব্যবহারকারীকে finger করবার জন্য নেটওয়ার্ক-এর অ্যাড্রেস লিখুন।\n"
+msgstr ""
+"কোনো ব্যবহারকারীকে finger করবার জন্য নেটওয়ার্ক-এর অ্যাড্রেস লিখুন।\n"
 "উদাহরণ: www.domain.com অথবা 192.168.2.1"
 
 #: src/main.c:985
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr "whois সংক্রান্ত তথ্য পড়ার জন্য একটি ডোমেইন অ্যাড্রেস লিখুন।\n"
+msgstr ""
+"whois সংক্রান্ত তথ্য পড়ার জন্য একটি ডোমেইন অ্যাড্রেস লিখুন।\n"
 "উদাহরণ: www.domain.com অথবা 192.168.2.1"
 
 #: src/netstat.c:120
@@ -627,23 +635,23 @@ msgstr "দল"
 #: src/netstat.c:794
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protocol\tIP Source\tPort/Service\tState\n"
-#FIXME
 
+# FIXME
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
 #: src/netstat.c:800
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Destination\tGateway\tNetmask\tInterface\n"
-#FIXME
 
+# FIXME
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
 #: src/netstat.c:805
 msgid "Interface\tMember\tGroup\n"
 msgstr "Interface\tMember\tGroup\n"
-#FIXME
 
+# FIXME
 #: src/nettool.c:206
 msgid "A network address was not specified"
 msgstr "নেটওয়ার্ক-এর অ্যাড্রেস উল্লেখ করা হয় নি"
@@ -812,3 +820,17 @@ msgstr "নেটওয়ার্ক-এর তথ্য সংক্রান্
 msgid "Network Tools"
 msgstr "নেটওয়ার্ক সংক্রান্ত টুল"
 
+#: src/finger.c:58
+#, c-format
+msgid "Getting information of %s on \"%s\""
+msgstr ""
+
+#: src/finger.c:62
+#, c-format
+msgid "Getting information of all users on \"%s\""
+msgstr ""
+
+#: src/whois.c:56
+#, fuzzy, c-format
+msgid "Getting the whois information of %s"
+msgstr "নেটওয়ার্ক-এর তথ্য সংক্রান্ত টুল"
