@@ -36,6 +36,8 @@ typedef struct _Netinfo Netinfo;
 
 struct _Netinfo {
 	GtkWidget *main_window;
+	GtkWidget *progress_bar;
+	GtkWidget *page_label;
 	GtkWidget *user;
 	GtkWidget *host;
 	GtkWidget *count;
@@ -127,3 +129,7 @@ void netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 			   gpointer user_data);
 gboolean netinfo_io_text_buffer_dialog (GIOChannel * channel,
 					GIOCondition condition, gpointer data);
+
+void netinfo_progress_indicator_stop (Netinfo * netinfo);
+
+void netinfo_progress_indicator_start (Netinfo * netinfo);

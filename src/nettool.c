@@ -29,6 +29,8 @@
 #include "nettool.h"
 #include "utils.h"
 
+guint progress_timeout_id = 0;
+
 gushort
 netinfo_get_count (Netinfo * netinfo)
 {
@@ -368,9 +370,11 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 	}
 
 	if (state) {
+		netinfo_progress_indicator_stop (netinfo);
 		gdk_window_set_cursor ((netinfo->output)->window, NULL);
 		netinfo->child_pid = 0;
 	} else {
+		netinfo_progress_indicator_start (netinfo);
 		cursor = gdk_cursor_new (GDK_WATCH);
 		if (!GTK_WIDGET_REALIZED (netinfo->output))
 			gtk_widget_realize (GTK_WIDGET (netinfo->output));
@@ -442,4 +446,35 @@ netinfo_toggle_button (Netinfo * netinfo)
 			  netinfo->button_callback, (gpointer) netinfo);
 
 	netinfo->button = button;
+}
+
+
+void
+netinfo_progress_indicator_stop (Netinfo * netinfo)
+{
+	if (progress_timeout_id != 0) {
+		g_source_remove (progress_timeout_id);
+		progress_timeout_id = 0;
+		if (netinfo)
+			gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (netinfo->progress_bar), 0.0);
+	}
+}
+
+static gboolean
+update_progress_bar (gpointer data)
+{
+	gtk_progress_bar_pulse (GTK_PROGRESS_BAR (data));
+	return TRUE;
+}
+
+void
+netinfo_progress_indicator_start (Netinfo * netinfo)
+{
+	g_return_if_fail (netinfo != NULL);
+
+	if (progress_timeout_id != 0)
+		netinfo_progress_indicator_stop (netinfo);
+
+	progress_timeout_id = g_timeout_add (100, update_progress_bar,
+					     netinfo->progress_bar);
 }

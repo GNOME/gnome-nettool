@@ -26,3 +26,8 @@ void on_about_activate (GtkWidget * parent, gpointer data);
 void on_copy_activate (GtkWidget * notebook, gpointer data);
 
 void on_clear_history_activate (GtkWidget * notebook, gpointer data);
+
+void on_page_switch (GtkNotebook     * notebook,
+                     GtkNotebookPage * page,
+                     guint             page_num,
+                     gpointer          data);

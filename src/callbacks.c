@@ -172,6 +172,8 @@ gn_quit_app (GtkWidget * widget, gpointer data)
 		pid ++;
 	}
 
+	netinfo_progress_indicator_stop (NULL);
+
 	gtk_main_quit ();
 }
 
@@ -228,31 +230,23 @@ on_about_activate (GtkWidget * parent, gpointer data)
 	gtk_widget_show (about_box);
 }
 
-void
-on_copy_activate (GtkWidget * notebook, gpointer data)
+static Netinfo *
+get_netinfo_for_page (GtkNotebook * notebook, gint page_num)
 {
-	gint page;
-	Netinfo *netinfo;
+	Netinfo *netinfo = NULL;
 
-	g_return_if_fail (GTK_IS_NOTEBOOK (notebook));
-
-	page = gtk_notebook_get_current_page (GTK_NOTEBOOK (notebook));
-
-	switch (page) {
+	switch (page_num) {
 	case INFO:
 		netinfo = g_object_get_data (G_OBJECT (notebook), "info");
 		break;
 	case PING:
-		netinfo =
-		    g_object_get_data (G_OBJECT (notebook), "pinger");
+		netinfo = g_object_get_data (G_OBJECT (notebook), "pinger");
 		break;
 	case TRACEROUTE:
-		netinfo =
-		    g_object_get_data (G_OBJECT (notebook), "tracer");
+		netinfo = g_object_get_data (G_OBJECT (notebook), "tracer");
 		break;
 	case NETSTAT:
-		netinfo =
-		    g_object_get_data (G_OBJECT (notebook), "netstat");
+		netinfo = g_object_get_data (G_OBJECT (notebook), "netstat");
 		break;
 	case PORTSCAN:
 		netinfo = g_object_get_data (G_OBJECT (notebook), "scan");
@@ -267,9 +261,26 @@ on_copy_activate (GtkWidget * notebook, gpointer data)
 		netinfo = g_object_get_data (G_OBJECT (notebook), "whois");
 		break;
 	default:
-		g_print ("default notebook page?\n");
-		return;
+		g_warning ("Unknown notebook page");
 	}
+
+	return netinfo;
+}
+
+void
+on_copy_activate (GtkWidget * notebook, gpointer data)
+{
+	gint page;
+	Netinfo *netinfo;
+
+	g_return_if_fail (GTK_IS_NOTEBOOK (notebook));
+
+	page = gtk_notebook_get_current_page (GTK_NOTEBOOK (notebook));
+
+	netinfo = get_netinfo_for_page (GTK_NOTEBOOK (notebook), page);
+	if (!netinfo)
+		return;
+
 	if (netinfo->copy_output != NULL) {
 		(netinfo->copy_output) ((gpointer) netinfo, NULL);
 	}
@@ -290,4 +301,27 @@ on_clear_history_activate (GtkWidget * notebook, gpointer data)
 	netinfo = g_object_get_data (G_OBJECT (notebook), "whois");
 	gnome_entry_clear_history (GNOME_ENTRY (netinfo->host));
 
+}
+
+void
+on_page_switch (GtkNotebook     * notebook,
+		GtkNotebookPage * page,
+		guint             page_num,
+		gpointer          data)
+{
+	Netinfo *netinfo;
+	char *title;
+
+	netinfo = get_netinfo_for_page (notebook, page_num);
+	if (!netinfo)
+		return;
+
+	if (netinfo->running)
+		netinfo_progress_indicator_start (netinfo);
+	else
+		netinfo_progress_indicator_stop (netinfo);
+
+	title = g_strdup_printf ("Network Tools - %s", gtk_label_get_text (netinfo->page_label));
+	gtk_window_set_title (GTK_WINDOW (netinfo->main_window), title);
+	g_free (title);
 }

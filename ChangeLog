@@ -1,5 +1,23 @@
 2004-06-04  William Jon McCann  <mccann@jhu.edu>
 
+	* src/nettool.[ch] (netinfo_toggle_state, update_progress_bar)
+	(netinfo_progress_indicator_stop)
+	(netinfo_progress_indicator_start):
+
+	* src/main.c (main, load_ping_widgets_from_xml)
+	(load_traceroute_widgets_from_xml, load_netstat_widgets_from_xml)
+	(load_info_widgets_from_xml, load_scan_widgets_from_xml)
+	(load_lookup_widgets_from_xml, load_finger_widgets_from_xml)
+	(load_whois_widgets_from_xml):
+
+	* src/callbacks.[ch] (gn_quit_app, get_netinfo_for_page)
+	(on_copy_activate, on_page_switch):
+	Add progressbar and statusbar.  Pulse the progressbar when a
+	tool is in use.  Handle page switching.  Update window title
+	to reflect page label name.
+
+2004-06-04  William Jon McCann  <mccann@jhu.edu>
+
 	* src/gnome-nettool.glade: Use many of the label layout suggestions
 	of Luca Ferretti.  Add appbar.
 

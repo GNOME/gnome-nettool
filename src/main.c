@@ -204,6 +204,9 @@ main (int argc, char *argv[])
 	glade_xml_signal_autoconnect (xml);
 	g_object_unref (G_OBJECT (xml));
 
+	g_signal_connect (notebook, "switch_page",
+			  G_CALLBACK (on_page_switch), NULL);
+
 	gtk_notebook_set_current_page (GTK_NOTEBOOK (notebook), current_page);
 
 	gtk_widget_show_all (window);
@@ -248,6 +251,8 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	pinger = g_new0 (Netinfo, 1);
 
 	pinger->main_window = glade_xml_get_widget (xml, "main_window");
+	pinger->progress_bar = glade_xml_get_widget (xml, "progress_bar");
+	pinger->page_label = glade_xml_get_widget (xml, "ping");
 	pinger->running = FALSE;
 	pinger->child_pid = 0;
 	pinger->host = glade_xml_get_widget (xml, "ping_host");
@@ -296,6 +301,8 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	tracer = g_new0 (Netinfo, 1);
 
 	tracer->main_window = glade_xml_get_widget (xml, "main_window");
+	tracer->progress_bar = glade_xml_get_widget (xml, "progress_bar");
+	tracer->page_label = glade_xml_get_widget (xml, "traceroute");
 	tracer->running = FALSE;
 	tracer->child_pid = 0;
 	tracer->host = glade_xml_get_widget (xml, "traceroute_host");
@@ -337,6 +344,8 @@ load_netstat_widgets_from_xml (GladeXML * xml)
 	netstat = g_new0 (Netinfo, 1);
 
 	netstat->main_window = glade_xml_get_widget (xml, "main_window");
+	netstat->progress_bar = glade_xml_get_widget (xml, "progress_bar");
+	netstat->page_label = glade_xml_get_widget (xml, "netstat");
 	netstat->running = FALSE;
 	netstat->child_pid = 0;
 	netstat->host = NULL;
@@ -387,6 +396,8 @@ load_info_widgets_from_xml (GladeXML * xml)
 	info = g_malloc (sizeof (Netinfo));
 
 	info->main_window = glade_xml_get_widget (xml, "main_window");
+	info->progress_bar = glade_xml_get_widget (xml, "progress_bar");
+	info->page_label = glade_xml_get_widget (xml, "device");
 	info->hw_address = glade_xml_get_widget (xml, "info_hw_address");
 	info->ip_address = glade_xml_get_widget (xml, "info_ip_address");
 	info->netmask = glade_xml_get_widget (xml, "info_netmask");
@@ -435,6 +446,8 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	scan = g_new0 (Netinfo, 1);
 
 	scan->main_window = glade_xml_get_widget (xml, "main_window");
+	scan->progress_bar = glade_xml_get_widget (xml, "progress_bar");
+	scan->page_label = glade_xml_get_widget (xml, "scan");
 	scan->running = FALSE;
 	scan->child_pid = 0;
 	scan->host = glade_xml_get_widget (xml, "scan_host");
@@ -475,6 +488,8 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	lookup = g_new0 (Netinfo, 1);
 
 	lookup->main_window = glade_xml_get_widget (xml, "main_window");
+	lookup->progress_bar = glade_xml_get_widget (xml, "progress_bar");
+	lookup->page_label = glade_xml_get_widget (xml, "lookup");
 	lookup->running = FALSE;
 	lookup->child_pid = 0;
 	lookup->host = glade_xml_get_widget (xml, "lookup_host");
@@ -519,6 +534,8 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	finger = g_new0 (Netinfo, 1);
 
 	finger->main_window = glade_xml_get_widget (xml, "main_window");
+	finger->progress_bar = glade_xml_get_widget (xml, "progress_bar");
+	finger->page_label = glade_xml_get_widget (xml, "finger");
 	finger->running = FALSE;
 	finger->child_pid = 0;
 	finger->user = glade_xml_get_widget (xml, "finger_user");
@@ -572,6 +589,8 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	whois = g_new0 (Netinfo, 1);
 
 	whois->main_window = glade_xml_get_widget (xml, "main_window");
+	whois->progress_bar = glade_xml_get_widget (xml, "progress_bar");
+	whois->page_label = glade_xml_get_widget (xml, "whois");
 	whois->running = FALSE;
 	whois->child_pid = 0;
 	whois->host = glade_xml_get_widget (xml, "whois_host");
