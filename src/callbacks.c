@@ -303,7 +303,7 @@ gn_quit_app (GtkWidget * widget, gpointer data)
 
 	gtk_main_quit ();
 
-	return FALSE;
+	return TRUE;
 }
 
 void
