@@ -61,11 +61,12 @@ typedef struct {
 	   gchar *ip_scope;
 } InfoIpAddr;
 
-void info_do (const gchar * nic, Netinfo * info);
-void info_set_nic (Netinfo * info, const gchar *nic);
-void info_load_iface (Netinfo *info);
+void   info_do (const gchar * nic, Netinfo * info);
+void   info_set_nic (Netinfo * info, const gchar *nic);
+gchar *info_get_nic (Netinfo * info);
+void   info_load_iface (Netinfo *info);
 
-void info_nic_changed (GtkWidget *combo, gpointer data);
+void   info_nic_changed (GtkWidget *combo, gpointer data);
 
-void info_get_nic_information (const gchar *nic, Netinfo *info);
-void info_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);
+void   info_get_nic_information (const gchar *nic, Netinfo *info);
+void   info_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);

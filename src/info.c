@@ -102,6 +102,27 @@ info_set_nic (Netinfo * netinfo, const gchar *nic)
 	} while (gtk_tree_model_iter_next (GTK_TREE_MODEL (model), &iter));
 }
 
+gchar *
+info_get_nic (Netinfo * netinfo)
+{
+	GtkTreeModel    *model;
+	GtkTreeIter      iter;
+	gchar           *nic = NULL;
+
+	g_return_val_if_fail (netinfo != NULL, NULL);
+	
+	model = gtk_combo_box_get_model (GTK_COMBO_BOX (netinfo->combo));
+
+	if (gtk_combo_box_get_active_iter (GTK_COMBO_BOX (netinfo->combo), &iter))
+		gtk_tree_model_get (model, &iter, 2, &nic, -1);
+	else {
+		g_warning ("No network devices found.");
+		return NULL;
+	}
+
+	return nic;
+}
+
 static void
 info_get_interface_from_dev_name (const gchar *dev_name, gchar **iface, GdkPixbuf **pixbuf)
 {
@@ -191,7 +212,6 @@ info_nic_update_stats (gpointer data)
 {
 	Netinfo *info = data;
 	GtkTreeModel *model;
-	GtkTreeIter   iter;
 	/*
 	gchar mtu[10], met[10], rx[10], rx_error[10], rx_drop[10], rx_ovr[10];
 	gchar tx[10], tx_error[10], tx_drop[10], tx_ovr[10]; 
@@ -211,11 +231,9 @@ info_nic_update_stats (gpointer data)
 	g_return_val_if_fail (info != NULL, FALSE);
 
 	model = gtk_combo_box_get_model (GTK_COMBO_BOX (info->combo));
-	if (gtk_combo_box_get_active_iter (GTK_COMBO_BOX (info->combo), &iter))
-		gtk_tree_model_get (model, &iter, 2, &text, -1);
-	else
+	text = info_get_nic (info);
+	if (!text)
 		return FALSE;
-	/*text = gtk_entry_get_text (GTK_ENTRY (info->nic));*/
 	
 #if defined(__linux__)
 	io = g_io_channel_new_file ("/proc/net/dev", "r", NULL);
@@ -269,7 +287,6 @@ info_nic_changed (GtkWidget *combo, gpointer data)
 	gchar *text = NULL;
 	Netinfo *info = data;
 	GtkTreeModel *model;
-	GtkTreeIter   iter;
 		
 	static gint timeout_source = 0;
 	
@@ -279,23 +296,19 @@ info_nic_changed (GtkWidget *combo, gpointer data)
 	if (model)
 		gtk_list_store_clear (GTK_LIST_STORE (model));
 
-	model = gtk_combo_box_get_model (GTK_COMBO_BOX (combo));
-	if (gtk_combo_box_get_active_iter (GTK_COMBO_BOX (combo), &iter)) {
-		gtk_tree_model_get (model, &iter, 2, &text, -1);
-
-		if (!text)
-			return;
+	text = info_get_nic (info);
+	if (!text)
+		return;
 		
-		/* Fill the NIC configuration data */
-		info_get_nic_information (text, info);
-		info_nic_update_stats (info);
+	/* Fill the NIC configuration data */
+	info_get_nic_information (text, info);
+	info_nic_update_stats (info);
 	
-		if (timeout_source > 0) {
-			g_source_remove (timeout_source);
-		}
-	
-		timeout_source = g_timeout_add (DELAY_STATS, info_nic_update_stats, info);
+	if (timeout_source > 0) {
+		g_source_remove (timeout_source);
 	}
+	
+	timeout_source = g_timeout_add (DELAY_STATS, info_nic_update_stats, info);
 }
 
 static gint
@@ -660,7 +673,8 @@ info_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 	   It's a tabular output, and these belongs to the column titles */
 	result = g_string_new ("");
 
-	nic = gtk_entry_get_text (GTK_ENTRY (netinfo->nic));
+	nic = info_get_nic (netinfo);
+
 	hw_address = gtk_label_get_text (GTK_LABEL (netinfo->hw_address));
 	ip_address = gtk_label_get_text (GTK_LABEL (netinfo->ip_address));
 	netmask = gtk_label_get_text (GTK_LABEL (netinfo->netmask));
