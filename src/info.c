@@ -390,6 +390,10 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			continue;
 		}
 
+		if (ifr6->ifa_addr == NULL) {
+			continue;
+		}
+
 		switch (ifr6->ifa_addr->sa_family) {
 
 		case AF_INET6:
@@ -594,7 +598,7 @@ info_get_interfaces (Netinfo *info)
 	for (ifr = ifa0; ifr; ifr = ifr->ifa_next) {
 		iface = g_strdup (ifr->ifa_name);
 
-		if (((ifr->ifa_flags & IFF_UP) != 0) &&
+		if (((ifr->ifa_flags & IFF_UP) != 0) && ifr->ifa_addr &&
 		    (ifr->ifa_addr->sa_family == AF_INET6)) {
 			ipv6 = TRUE;
 		}
