@@ -1,737 +1,811 @@
-#
+# Traducció del mòdul gnome-nettool per l'equip de Softcatalà.
+# Copyright © 2004 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-nettool package.
 # Ivan Vilata i Balaguer <al011097@alumail.uji.es>, 2000
 # Softcatala <linux@softcatala.org>, 2000
+# Xavier Conde Rueda <xaviconde@eresmas.com>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-network 1.0.1\n"
+"Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-13 20:15+0200\n"
-"PO-Revision-Date: 2000-01-29 16:30+01:00\n"
-"Last-Translator: Softcatala <linux@softcatala.org>\n"
-"Language-Team: Catalan <linux-ca@chanae.alphanet.ch>\n"
+"POT-Creation-Date: 2004-07-06 20:40+0200\n"
+"PO-Revision-Date: 2004-07-02 16:30+01:00\n"
+"Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:319
+#: src/callbacks.c:321
 msgid "translator_credits"
 msgstr ""
+"Ivan Vilata i Balaguer <al011097@alumail.uji.es>\n"
+"Xavier Conde Rueda <xaviconde@eresmas.com>"
 
-#: src/callbacks.c:347
+#: src/callbacks.c:349
 msgid "Graphical user interface for common network utilities"
-msgstr ""
+msgstr "Interfície gràfica d'usuari per a utilitats de xarxa habituals"
 
 #: src/gnome-nettool.glade.h:1
 msgid "0.0"
-msgstr ""
+msgstr "0.0"
 
 #: src/gnome-nettool.glade.h:2
 msgid "<b>IP Information</b>"
-msgstr ""
+msgstr "<b>Informació d'IP</b>"
 
 #: src/gnome-nettool.glade.h:3
 msgid "<b>Interface Information</b>"
-msgstr ""
+msgstr "<b>Informació d'interfície</b>"
 
 #: src/gnome-nettool.glade.h:4
 msgid "<b>Interface Statistics</b>"
-msgstr ""
+msgstr "<b>Estadístiques de la interfície</b>"
 
 #: src/gnome-nettool.glade.h:5
 msgid "<b>Round Trip Time Statistics</b>"
-msgstr ""
+msgstr "<b>Estadístiques del temps d'anada i tornada</b>"
 
 #: src/gnome-nettool.glade.h:6
 msgid "<b>Transmision Statistics</b>"
-msgstr ""
+msgstr "<b>Estadístiques de la transmissió</b>"
 
 #: src/gnome-nettool.glade.h:7
 msgid "Active Network Services"
-msgstr ""
+msgstr "Serveis de xarxa actius"
 
 #: src/gnome-nettool.glade.h:8
 msgid "Average:"
-msgstr ""
+msgstr "Mitja:"
 
 #: src/gnome-nettool.glade.h:9
 msgid "Broadcast:"
-msgstr ""
+msgstr "Difusió:"
 
 #: src/gnome-nettool.glade.h:10
 msgid "Clear _History"
-msgstr ""
+msgstr "Neteja l'_historial"
 
 #: src/gnome-nettool.glade.h:11
 msgid "Collisions:"
-msgstr ""
+msgstr "Col·lisions:"
 
 #: src/gnome-nettool.glade.h:12
-#, fuzzy
 msgid "Devices"
-msgstr "Dispositiu de mòdem"
+msgstr "Dispositius"
 
 #: src/gnome-nettool.glade.h:13
-msgid "Display: "
-msgstr ""
+msgid "Display:"
+msgstr "Visualitza:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:772
+#: src/gnome-nettool.glade.h:14 src/main.c:837
 msgid "Finger"
-msgstr ""
+msgstr "Cerca usuaris"
 
 #: src/gnome-nettool.glade.h:15
-#, fuzzy
 msgid "Hardware address:"
-msgstr "Adreça IP"
+msgstr "Adreça del maquinari:"
 
 #: src/gnome-nettool.glade.h:16
-#, fuzzy
 msgid "Host"
-msgstr "Nom remot:"
+msgstr "Ordinador"
 
 #: src/gnome-nettool.glade.h:17
-#, fuzzy
 msgid "IP Address:"
-msgstr "Adreça IP"
+msgstr "Adreça IP:"
 
 #: src/gnome-nettool.glade.h:18
 msgid "Link speed:"
-msgstr ""
+msgstr "Velocitat de l'enllaç:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:701
+# Netscape_4.7->String:RESDLL.DLL
+#: src/gnome-nettool.glade.h:19 src/main.c:751
 msgid "Lookup"
-msgstr ""
+msgstr "Cerca"
 
 #: src/gnome-nettool.glade.h:20
 msgid "MTU:"
-msgstr ""
+msgstr "UTM:"
 
 #: src/gnome-nettool.glade.h:21
-#, fuzzy
 msgid "Maximum:"
-msgstr "Màxim de reintents"
+msgstr "Màxim:"
 
 #: src/gnome-nettool.glade.h:22
 msgid "Minimum:"
-msgstr ""
+msgstr "Mínim:"
 
 #: src/gnome-nettool.glade.h:23
 msgid "Multicast Information"
-msgstr ""
+msgstr "Informació de multidifusió"
 
 #: src/gnome-nettool.glade.h:24
 msgid "Multicast:"
-msgstr ""
+msgstr "Multidifusió:"
 
 #: src/gnome-nettool.glade.h:25
-#, fuzzy
 msgid "Netmask:"
-msgstr "Màscara de xarxa"
+msgstr "Màscara de xarxa:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:416
+#: src/gnome-nettool.glade.h:26 src/main.c:442
 msgid "Netstat"
-msgstr ""
+msgstr "Estat de la xarxa"
 
 #: src/gnome-nettool.glade.h:27
 msgid "Network Tools - Devices"
-msgstr ""
+msgstr "Eines de xarxa - Dispositius"
 
 #: src/gnome-nettool.glade.h:28
 msgid "Not Available"
-msgstr ""
+msgstr "No disponible"
 
 #: src/gnome-nettool.glade.h:29
 msgid "Only"
-msgstr ""
+msgstr "Només"
 
 #: src/gnome-nettool.glade.h:30
 msgid "Packets loss:"
-msgstr ""
+msgstr "Paquets perduts:"
 
 #: src/gnome-nettool.glade.h:31
 msgid "Packets received:"
-msgstr ""
+msgstr "Paquets rebuts:"
 
 #: src/gnome-nettool.glade.h:32
 msgid "Packets transmitted:"
-msgstr ""
+msgstr "Paquets transmessos:"
 
-#: src/gnome-nettool.glade.h:33 src/main.c:279
+#: src/gnome-nettool.glade.h:33 src/main.c:281
 msgid "Ping"
-msgstr ""
+msgstr "Ping"
 
 #: src/gnome-nettool.glade.h:34
 msgid "Port Scan"
-msgstr ""
+msgstr "Escanejador de ports"
 
 #: src/gnome-nettool.glade.h:35
-#, fuzzy
 msgid "Received bytes:"
-msgstr "Rebre"
+msgstr "Bytes rebuts:"
 
 #: src/gnome-nettool.glade.h:36
-#, fuzzy
 msgid "Received packets:"
-msgstr "Rebre"
+msgstr "Paquets rebuts:"
 
 #: src/gnome-nettool.glade.h:37
 msgid "Reception errors:"
-msgstr ""
+msgstr "Errors de recepció:"
 
 #: src/gnome-nettool.glade.h:38
 msgid "Routing Table Information"
-msgstr ""
+msgstr "Informació de la taula d'encaminament"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:595
+#: src/gnome-nettool.glade.h:39 src/main.c:632
 msgid "Scan"
-msgstr ""
+msgstr "Escaneja"
 
 #: src/gnome-nettool.glade.h:40
-msgid "Send unlimited requests"
-msgstr ""
+msgid "Send:"
+msgstr "Envia:"
 
 #: src/gnome-nettool.glade.h:41
-#, fuzzy
-msgid "Send: "
-msgstr "Enviar"
-
-#: src/gnome-nettool.glade.h:42
-#, fuzzy
 msgid "State:"
-msgstr "Estàtica"
+msgstr "Estat:"
 
-#: src/gnome-nettool.glade.h:43 src/main.c:351
+#: src/gnome-nettool.glade.h:42 src/main.c:366
 msgid "Trace"
-msgstr ""
+msgstr "Traça"
+
+#: src/gnome-nettool.glade.h:43
+msgid "Traceroute"
+msgstr "Traça una ruta"
 
 #: src/gnome-nettool.glade.h:44
-msgid "Traceroute"
-msgstr ""
+msgid "Transmission errors:"
+msgstr "Errors de transmissió:"
 
 #: src/gnome-nettool.glade.h:45
-#, fuzzy
-msgid "Transmission errors:"
-msgstr "Unitat Màxima de Transmissió"
+msgid "Transmitted bytes:"
+msgstr "Bytes transmessos:"
 
 #: src/gnome-nettool.glade.h:46
-msgid "Transmitted bytes:"
-msgstr ""
+msgid "Transmitted packets:"
+msgstr "Paquets transmessos:"
 
 #: src/gnome-nettool.glade.h:47
-#, fuzzy
-msgid "Transmitted packets:"
-msgstr "Rebre"
+msgid "Unlimited requests"
+msgstr "Peticions sense límit"
 
 #: src/gnome-nettool.glade.h:48
-#, fuzzy
 msgid "User"
-msgstr "Nom d'usuari"
+msgstr "Usuari"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:869
+#: src/gnome-nettool.glade.h:49 src/main.c:953
 msgid "Whois"
-msgstr ""
+msgstr "Qui és"
 
 #: src/gnome-nettool.glade.h:50
 msgid "_Configure"
-msgstr ""
+msgstr "_Configura"
 
 #: src/gnome-nettool.glade.h:51
-#, fuzzy
-msgid "_Domain Address: "
-msgstr "Adreça IP local"
+msgid "_Domain address:"
+msgstr "A_dreça del domini:"
 
 #: src/gnome-nettool.glade.h:52
-msgid "_Information Type: "
-msgstr ""
+msgid "_Information type:"
+msgstr "T_ipus d'informació:"
 
 #: src/gnome-nettool.glade.h:53
-#, fuzzy
-msgid "_Network Address: "
-msgstr "la resposta és usant una adreça no vàlida de xarxa"
+msgid "_Network address:"
+msgstr "Ad_reça de xarxa:"
 
 #: src/gnome-nettool.glade.h:54
-#, fuzzy
-msgid "_Network Device"
-msgstr "Dispositiu de mòdem"
+msgid "_Network device:"
+msgstr "Dis_positiu de xarxa:"
 
 #: src/gnome-nettool.glade.h:55
-#, fuzzy
 msgid "_Tool"
-msgstr "_Parlar"
+msgstr "_Eina"
 
 #: src/gnome-nettool.glade.h:56
-#, fuzzy
-msgid "_Username: "
-msgstr "Nom d'usuari"
+msgid "_Username:"
+msgstr "Nom d'_usuari:"
 
 #: src/gnome-nettool.glade.h:57
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: src/gnome-nettool.glade.h:58
 msgid "requests"
-msgstr ""
+msgstr "peticions"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: src/info.c:56
 msgid "Other type"
-msgstr ""
+msgstr "Altres tipus"
 
 #: src/info.c:57
 msgid "Ethernet Interface"
-msgstr ""
+msgstr "Interfície ethernet"
 
 #: src/info.c:58
 msgid "Wireless Interface"
-msgstr ""
+msgstr "Interfície sense fils"
 
 #: src/info.c:59
-#, fuzzy
 msgid "Modem Interface"
-msgstr "Dispositiu de mòdem"
+msgstr "Interfície del mòdem"
 
 #: src/info.c:60
 msgid "Parallel Line Interface"
-msgstr ""
+msgstr "Interfície de línia paral·lela"
 
 #: src/info.c:61
 msgid "Infrared Interface"
-msgstr ""
+msgstr "Interfície d'infrarojos"
 
 #: src/info.c:62
 msgid "Loopback Interface"
-msgstr ""
+msgstr "Interfície loopback"
 
 #: src/info.c:63
 msgid "Unknown Interface"
-msgstr ""
+msgstr "Interfície desconeguda"
 
 #: src/info.c:130
 msgid "<i>Network Devices Not Found</i>"
-msgstr ""
+msgstr "<i>No s'ha trobat cap interfície de xarxa</i>"
 
 #: src/info.c:344
 msgid "Unknown"
-msgstr ""
+msgstr "Desconegut"
 
-#: src/info.c:500
-#, fuzzy
+#: src/info.c:504
 msgid "Active"
-msgstr "Acció"
+msgstr "Activa"
 
-#: src/info.c:502
+#: src/info.c:506
 msgid "Inactive"
-msgstr ""
+msgstr "Inactiva"
 
-#: src/info.c:507
+#: src/info.c:511
 msgid "Loopback"
-msgstr ""
+msgstr "Loopback"
 
-#: src/info.c:524
+#: src/info.c:528
 msgid "Enabled"
-msgstr ""
+msgstr "Habilitada"
 
-#: src/info.c:526
-#, fuzzy
+#: src/info.c:530
 msgid "Disabled"
-msgstr "Marcatge"
+msgstr "Inhabilitada"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:666
-#, c-format
-msgid "Network device:\t%s\n"
-msgstr ""
-
-#: src/info.c:667
-#, fuzzy, c-format
-msgid "Hardware address:\t%s\n"
-msgstr "Adreça IP"
-
-#: src/info.c:668
-#, fuzzy, c-format
-msgid "IP address:\t%s\n"
-msgstr "Adreça IP"
-
-#: src/info.c:669
-#, fuzzy, c-format
-msgid "Netmask:\t%s\n"
-msgstr "Màscara de xarxa"
-
 #: src/info.c:670
 #, c-format
-msgid "Broadcast:\t%s\n"
-msgstr ""
+msgid "Network device:\t%s\n"
+msgstr "Dispositiu de xarxa:\t%s\n"
 
 #: src/info.c:671
 #, c-format
-msgid "Multicast:\t%s\n"
-msgstr ""
+msgid "Hardware address:\t%s\n"
+msgstr "Adreça del maquinari:\t%s\n"
 
 #: src/info.c:672
 #, c-format
-msgid "MTU:\t%s\n"
-msgstr ""
+msgid "IP address:\t%s\n"
+msgstr "Adreça IP:\t%s\n"
 
 #: src/info.c:673
 #, c-format
-msgid "Link speed:\t%s\n"
-msgstr ""
+msgid "Netmask:\t%s\n"
+msgstr "Màscara de xarxa:\t%s\n"
 
 #: src/info.c:674
-#, fuzzy, c-format
-msgid "State:\t%s\n"
-msgstr "Estàtica"
+#, c-format
+msgid "Broadcast:\t%s\n"
+msgstr "Difusió:\t%s\n"
+
+#: src/info.c:675
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr "Multidifusió:\t%s\n"
 
 #: src/info.c:676
 #, c-format
-msgid "Transmitted packets:\t%s\n"
-msgstr ""
+msgid "MTU:\t%s\n"
+msgstr "UTM:\t%s\n"
 
 #: src/info.c:677
-#, fuzzy, c-format
-msgid "Transmission errors:\t%s\n"
-msgstr "Unitat Màxima de Transmissió"
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr "Velocitat de l'enllaç:\t%s\n"
 
 #: src/info.c:678
-#, fuzzy, c-format
-msgid "Received packets:\t%s\n"
-msgstr "Rebre"
-
-#: src/info.c:679
 #, c-format
-msgid "Reception errors:\t%s\n"
-msgstr ""
+msgid "State:\t%s\n"
+msgstr "Estat:\t%s\n"
 
 #: src/info.c:680
 #, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr "Paquets transmessos:\t%s\n"
+
+#: src/info.c:681
+#, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Errors de transmissió:\t%s\n"
+
+#: src/info.c:682
+#, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Paquets rebuts:\t%s\n"
+
+#: src/info.c:683
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr "Errors de recepció:\t%s\n"
+
+#: src/info.c:684
+#, c-format
 msgid "Collisions:\t%s\n"
-msgstr ""
+msgstr "Col·lisions:\t%s\n"
 
 #: src/info.h:27
 msgid "not available"
-msgstr ""
+msgstr "no disponible"
 
-#: src/lookup.c:273
-#, fuzzy
+# Netscape_4.7->String:RESDLL.DLL
+#: src/lookup.c:79
+#, fuzzy, c-format
+msgid "Looking up %s"
+msgstr "Cerca"
+
+#: src/lookup.c:277
 msgid "Name"
-msgstr "Nom d'usuari"
+msgstr "Nom"
 
-#: src/lookup.c:281
+#: src/lookup.c:285
 msgid "TTL"
-msgstr ""
+msgstr "Temps de vida"
 
-#: src/lookup.c:290
-#, fuzzy
+#: src/lookup.c:294
 msgid "Address Type"
-msgstr "Adreça IP"
+msgstr "Tipus d'adreça"
 
-#: src/lookup.c:300
+#: src/lookup.c:304
 msgid "Record Type"
-msgstr ""
+msgstr "Tipus de registre"
 
-#: src/lookup.c:309
-#, fuzzy
+#: src/lookup.c:313
 msgid "Address"
-msgstr "Adreça IP"
+msgstr "Adreça"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The lookup output in text format:
 #. Source of query (hostname/ip address),
 #. Time To Live (TTL), Address Type,
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:337
+#: src/lookup.c:341
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
-msgstr ""
+msgstr "Origen\tTemps de vida\tTipus d'adreça\tTipus de registre\tResultat\n"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: src/main.c:78
 msgid "Load information for a network device"
-msgstr ""
+msgstr "Carrega informació per a un dispositiu de xarxa"
 
+# Gnome_2.6_Desktop [gnome-utils.HEAD.ca.po]
 #: src/main.c:79
 msgid "DEVICE"
-msgstr ""
+msgstr "Dispositiu"
 
 #: src/main.c:81
-#, fuzzy
 msgid "Send a ping to a network address"
-msgstr "la resposta és usant una adreça no vàlida de xarxa"
+msgstr "Envia un ping a una adreça de xarxa"
 
+# Gnome_2.6_Desktop [zenity.HEAD.ca.po]
 #: src/main.c:82 src/main.c:88 src/main.c:91 src/main.c:94
 msgid "HOST"
-msgstr ""
+msgstr "Ordinador"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
+"Obté la informació d'estat de xarxa. Les opcions vàlides són: ruta, actiu, "
+"multicast."
 
 #: src/main.c:85
 msgid "COMMAND"
-msgstr ""
+msgstr "Ordre"
 
 #: src/main.c:87
-#, fuzzy
 msgid "Trace a route to a network address"
-msgstr "la resposta és usant una adreça no vàlida de xarxa"
+msgstr "Segueix una ruta fins a una adreça de xarxa"
 
 #: src/main.c:90
-#, fuzzy
 msgid "Port scan a network address"
-msgstr "la resposta és usant una adreça no vàlida de xarxa"
+msgstr "Escaneja els ports d'una adreça de xarxa"
 
 #: src/main.c:93
-#, fuzzy
 msgid "Look up a network address"
-msgstr "la resposta és usant una adreça no vàlida de xarxa"
+msgstr "Fes una cerca d'una adreça de xarxa"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: src/main.c:96
 msgid "Finger command to run"
-msgstr ""
+msgstr "Ordre finger per cercar persones"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: src/main.c:97
 msgid "USER"
-msgstr ""
+msgstr "Usuari"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: src/main.c:99
 msgid "Perform a whois lookup for a network domain"
-msgstr ""
+msgstr "Realitza una cerca whois per a un domini de xarxa"
 
 #: src/main.c:100
 msgid "DOMAIN"
-msgstr ""
+msgstr "Domini"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: src/main.c:113
 msgid "Network Information"
-msgstr ""
+msgstr "Informació de xarxa"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: src/main.c:119
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
 "installed"
 msgstr ""
+"No existeix el fitxer %s. Comproveu que gnome-netinfo està instal·lat "
+"correctament"
 
-#: src/main.c:449 src/netstat.c:429
-msgid "Protocol"
+#: src/main.c:314
+msgid ""
+"Enter the network address to ping.\n"
+"For example: www.domain.com or 192.168.2.1"
 msgstr ""
 
-#: src/main.c:456
+#: src/main.c:393
+msgid ""
+"Enter the network address to trace a route to.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+# source\offapp\dialog\inetdlg.src pageitem RID_OFADLG_INTERNET.1 RID_SVXPAGE_INET_OTHER
+# Projecte_Open_Office_1.1 [offmgr.po]
+#: src/main.c:478 src/netstat.c:441
+msgid "Protocol"
+msgstr "Protocol"
+
+#: src/main.c:485
 msgid "IP Address"
 msgstr "Adreça IP"
 
-#: src/main.c:463
-#, fuzzy
+#: src/main.c:492
 msgid "Netmask / Prefix"
-msgstr "Màscara de xarxa"
+msgstr "Màscara de xarxa/prefix"
 
-#: src/main.c:470
+#: src/main.c:499
 msgid "Broadcast"
-msgstr ""
+msgstr "Difusió"
 
-#: src/main.c:477
+# Gnome_2.6_Extras [conglomerate.HEAD.ca.po]
+#: src/main.c:506
 msgid "Scope"
+msgstr "Abast"
+
+#: src/main.c:654
+msgid ""
+"Enter the network address to scan for open ports.\n"
+"For example: www.domain.com or 192.168.2.1"
 msgstr ""
 
-#: src/netstat.c:436
+#: src/main.c:782
+msgid ""
+"Enter the network address to lookup.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/main.c:871
+msgid "Enter the user to finger."
+msgstr ""
+
+#: src/main.c:898
+msgid ""
+"Enter the network address to finger that user.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/main.c:985
+msgid ""
+"Enter a domain address to lookup its whois information.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+
+#: src/netstat.c:120
+msgid "Getting routing table"
+msgstr ""
+
+#: src/netstat.c:135
+msgid "Getting active Internet connections"
+msgstr ""
+
+#: src/netstat.c:144
+msgid "Getting group memberships"
+msgstr ""
+
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
+#: src/netstat.c:448
 msgid "IP Source"
-msgstr ""
+msgstr "Origen IP"
 
-#: src/netstat.c:444
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
+#: src/netstat.c:456
 msgid "Port/Service"
-msgstr ""
+msgstr "Port/servei"
 
-#: src/netstat.c:452 src/scan.c:288
-#, fuzzy
+#: src/netstat.c:464 src/scan.c:292
 msgid "State"
-msgstr "Estàtica"
+msgstr "Estat"
 
-#: src/netstat.c:594
-#, fuzzy
+#: src/netstat.c:606
 msgid "Destination/Prefix"
-msgstr "Autenticació"
+msgstr "Destí/prefix"
 
-#: src/netstat.c:596
-#, fuzzy
+#: src/netstat.c:608
 msgid "Destination"
-msgstr "Autenticació"
+msgstr "Destí"
 
-#: src/netstat.c:603
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
+#: src/netstat.c:615
 msgid "Gateway"
-msgstr ""
+msgstr "Pasarel·la"
 
-#: src/netstat.c:611
+#: src/netstat.c:623
 msgid "Netmask"
 msgstr "Màscara de xarxa"
 
-#: src/netstat.c:619 src/netstat.c:725
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
+#: src/netstat.c:631 src/netstat.c:737
 msgid "Interface"
-msgstr ""
+msgstr "Interfície"
 
-#: src/netstat.c:732
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
+#: src/netstat.c:744
 msgid "Member"
-msgstr ""
+msgstr "Membre"
 
-#: src/netstat.c:740
+# Netscape_4.7->String:RESDLL.DLL
+#: src/netstat.c:752
 msgid "Group"
-msgstr ""
+msgstr "Grup"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:782
+#: src/netstat.c:794
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
-msgstr ""
+msgstr "Protocol\tOrigen IP\tPort/servei\tEstat\n"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:788
+#: src/netstat.c:800
 msgid "Destination\tGateway\tNetmask\tInterface\n"
-msgstr ""
+msgstr "Destí\tPasarel·la\tMàscara de xarxa\tInterfície\n"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:793
+#: src/netstat.c:805
 msgid "Interface\tMember\tGroup\n"
-msgstr ""
+msgstr "Interfície\tMembre\tGrup\n"
 
 #: src/nettool.c:206
 msgid "A network address was not specified"
-msgstr ""
+msgstr "No s'ha especificat cap adreça de xarxa"
 
 #: src/nettool.c:207 src/nettool.c:216
 msgid "Please enter a valid network address and try again."
-msgstr ""
+msgstr "Introduïu una adreça de xarxa vàlida i torneu-ho a provar."
 
 #: src/nettool.c:214
-#, fuzzy, c-format
+#, c-format
 msgid "The address '%s' cannot be found"
-msgstr "El compte no pot ser eliminat."
+msgstr "No s'ha trobat l'adreça '%s'"
 
 #: src/nettool.c:243
 msgid "A domain address was not specified"
-msgstr ""
+msgstr "No s'ha especificat cap adreça de domini"
 
 #: src/nettool.c:244
 msgid "Please enter a valid domain address and try again."
-msgstr ""
+msgstr "Introduïu una adreça de domini vàlida i torneu-ho a provar."
 
 #: src/nettool.c:376
 msgid "Information not available"
-msgstr ""
+msgstr "Informació no disponible"
 
-#: src/nettool.c:486
+#: src/nettool.c:494
 msgid "Stop"
-msgstr ""
+msgstr "Atura"
 
-#: src/nettool.c:492
+#: src/nettool.c:500
 msgid "Run"
-msgstr ""
+msgstr "Executa"
 
-#: src/ping.c:378
+#: src/ping.c:73
+#, c-format
+msgid "Sending ping requests to %s"
+msgstr "S'estan enviant peticions de ping a %s"
+
+#: src/ping.c:381
 msgid "Bytes"
-msgstr ""
+msgstr "Bytes"
 
-#: src/ping.c:385
+#: src/ping.c:388
 msgid "Source"
-msgstr ""
+msgstr "Origen"
 
-#: src/ping.c:393
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
+#: src/ping.c:396
 msgid "Seq"
-msgstr ""
+msgstr "Seqüència"
 
-#: src/ping.c:403
+#: src/ping.c:406
 msgid "Time"
-msgstr ""
+msgstr "Temps"
 
-#: src/ping.c:411
+#: src/ping.c:414
 msgid "Units"
-msgstr ""
+msgstr "Unitat"
 
+# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The ping output in text format:
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:437
+#: src/ping.c:440
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
-msgstr ""
+msgstr "Bytes\tOrigen\tSeqüència\tTemps\tUnitats\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:452
+#: src/ping.c:455
 #, c-format
 msgid "Time minimum:\t%s ms\n"
-msgstr ""
-
-#: src/ping.c:453
-#, c-format
-msgid "Time average:\t%s ms\n"
-msgstr ""
-
-#: src/ping.c:454
-#, c-format
-msgid "Time maximum:\t%s ms\n"
-msgstr ""
+msgstr "Temps mínim:\t%s ms\n"
 
 #: src/ping.c:456
 #, c-format
-msgid "Packets transmitted:\t%s\n"
-msgstr ""
+msgid "Time average:\t%s ms\n"
+msgstr "Temps promig:\t%s ms\n"
 
-#: src/ping.c:458
+#: src/ping.c:457
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr "Temps màxim:\t%s ms\n"
+
+#: src/ping.c:459
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr "Paquets transmessos:\t%s\n"
+
+#: src/ping.c:461
 #, c-format
 msgid "Packets received:\t%s\n"
-msgstr ""
+msgstr "Paquets rebuts:\t%s\n"
 
-#: src/ping.c:460
+#: src/ping.c:463
 #, c-format
 msgid "Packet loss:\t%s\n"
+msgstr "Paquets perduts:\t%s\n"
+
+#: src/scan.c:80
+#, c-format
+msgid "Scanning %s for open ports"
 msgstr ""
 
-#: src/scan.c:151
+#: src/scan.c:155
 msgid "unknown"
-msgstr ""
+msgstr "desconegut"
 
-#: src/scan.c:280
+#: src/scan.c:284
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
-#: src/scan.c:296
+#: src/scan.c:300
 msgid "Service"
-msgstr ""
+msgstr "Servei"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:318
+#: src/scan.c:322
 msgid "Port\tState\tService\n"
-msgstr ""
+msgstr "Port\tEstat\tServei\n"
 
-#: src/traceroute.c:261
+#: src/traceroute.c:58
+#, c-format
+msgid "Tracing route to %s"
+msgstr "S'està traçant la ruta a %s"
+
+#: src/traceroute.c:265
 msgid "Hop"
-msgstr ""
+msgstr "Salt"
 
-#: src/traceroute.c:269
-#, fuzzy
+#: src/traceroute.c:273
 msgid "Hostname"
-msgstr "Nom remot:"
+msgstr "Nom d'ordinador"
 
-#: src/traceroute.c:277
+#: src/traceroute.c:281
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
-#: src/traceroute.c:288
+#: src/traceroute.c:292
 msgid "Time 1"
-msgstr ""
+msgstr "Temps 1"
 
-#: src/traceroute.c:298
+#: src/traceroute.c:302
 msgid "Time 2"
-msgstr ""
+msgstr "Temps 2"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:324
+#: src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr ""
 
@@ -742,664 +816,8 @@ msgstr ""
 
 #: src/gnome-nettool.desktop.in.h:1
 msgid "Network Information Tools"
-msgstr ""
+msgstr "Eines d'informació de xarxa"
 
 #: src/gnome-nettool.desktop.in.h:2
 msgid "Network Tools"
-msgstr ""
-
-#, fuzzy
-#~ msgid "Host name for Address"
-#~ msgstr "Adreça IP remota"
-
-#, fuzzy
-#~ msgid "IP address:"
-#~ msgstr "Adreça IP"
-
-#, fuzzy
-#~ msgid "Internet Address"
-#~ msgstr "Adreça IP"
-
-#, fuzzy
-#~ msgid "Name Server"
-#~ msgstr "Servidors DNS"
-
-#, fuzzy
-#~ msgid "Send only"
-#~ msgstr "Enviar"
-
-#, fuzzy
-#~ msgid "Connect to a remote desktop computer"
-#~ msgstr "El mòdem ha perdut la connexió amb l'amfitrió remot."
-
-#, fuzzy
-#~ msgid "Remote Desktop Client"
-#~ msgstr "Remot"
-
-#, fuzzy
-#~ msgid "Enter the name or address of the remote system."
-#~ msgstr "Ha fallat la recerca de l'adreça de l'amfitrió remot"
-
-#, fuzzy
-#~ msgid "_More"
-#~ msgstr "Mòdem"
-
-#, fuzzy
-#~ msgid "Co_nnect"
-#~ msgstr "Connectar"
-
-#, fuzzy
-#~ msgid "Connection Profile"
-#~ msgstr "Connectar"
-
-#, fuzzy
-#~ msgid "Pass_word:"
-#~ msgstr "Contrasenya"
-
-#, fuzzy
-#~ msgid "Do_main:"
-#~ msgstr "Nom del domini"
-
-#, fuzzy
-#~ msgid "C_lient Hostname:"
-#~ msgstr "Nom remot:"
-
-#, fuzzy
-#~ msgid "Enter the password for the remote system."
-#~ msgstr "Ha fallat la recerca de l'adreça de l'amfitrió remot"
-
-#, fuzzy
-#~ msgid "Remote Desktop Size"
-#~ msgstr "Remot"
-
-#, fuzzy
-#~ msgid "Connect Now ..."
-#~ msgstr "Connectar"
-
-#~ msgid "Password"
-#~ msgstr "Contrasenya"
-
-#, fuzzy
-#~ msgid "Orientation"
-#~ msgstr "Autenticació"
-
-#, fuzzy
-#~ msgid "Remote Desktop Sharing"
-#~ msgstr "Remot"
-
-#~ msgid "Receive"
-#~ msgstr "Rebre"
-
-#~ msgid "Enter search string"
-#~ msgstr "Entrar la cadena a rebre"
-
-#~ msgid "Enter transmission string"
-#~ msgstr "Entrar la cadena a transmetre"
-
-#~ msgid "Send User Name"
-#~ msgstr "Identificador d'usuari"
-
-#~ msgid "Username taken from Authentication"
-#~ msgstr "Nom de l'usuari pres d'Autenticació"
-
-#~ msgid "Send User Password"
-#~ msgstr "Contrasenya d'usuari"
-
-#~ msgid "Password taken from Authentication"
-#~ msgstr "Contrasenya presa d'Autenticació"
-
-#~ msgid "Dialog Box Input"
-#~ msgstr "Entrada del diàleg"
-
-#~ msgid "Enter text to be used as a dialog message when prompted for input"
-#~ msgstr "Entreu el text que mostrarà el diàleg en demanar una entrada"
-
-#~ msgid "open_account_window(): account=NULL with clone flag"
-#~ msgstr "open_account_window(): account=NULL amb marca de clonar"
-
-#~ msgid "open_account_window(): calling arguments invalid"
-#~ msgstr "open_account_window(): els arguments no són vàlids"
-
-#~ msgid "Dial"
-#~ msgstr "Marcatge"
-
-#~ msgid "Authentication"
-#~ msgstr "Autenticació"
-
-#~ msgid "DNS"
-#~ msgstr "DNS"
-
-#~ msgid "Script"
-#~ msgstr "Guió"
-
-#~ msgid "PPP"
-#~ msgstr "PPP"
-
-#~ msgid "Modem"
-#~ msgstr "Mòdem"
-
-#~ msgid "Account Name"
-#~ msgstr "Nom del compte"
-
-#~ msgid "Redial Maximum"
-#~ msgstr "Màxim de reintents"
-
-#~ msgid "Dial Timeout (sec)"
-#~ msgstr "Expiració del marcatge (s)"
-
-#~ msgid "Phone Numbers"
-#~ msgstr "Números de telèfon"
-
-#~ msgid "#"
-#~ msgstr "#"
-
-#~ msgid "Add"
-#~ msgstr "Afegir"
-
-#~ msgid "Remove"
-#~ msgstr "Eliminar"
-
-#~ msgid "PAP/CHAP"
-#~ msgstr "PAP/CHAP"
-
-#~ msgid "User Name"
-#~ msgstr "Nom d'usuari"
-
-#~ msgid "Remote Name"
-#~ msgstr "Nom remot"
-
-#~ msgid "Hidden Password"
-#~ msgstr "Contrasenya amagada"
-
-#~ msgid "Dynamic"
-#~ msgstr "Dinàmica"
-
-#~ msgid "Static"
-#~ msgstr "Estàtica"
-
-#~ msgid "Remote IP Address"
-#~ msgstr "Adreça IP remota"
-
-#~ msgid "DNS Servers"
-#~ msgstr "Servidors DNS"
-
-#~ msgid "Search Domains"
-#~ msgstr "Dominis de recerca"
-
-#~ msgid "Domain Name"
-#~ msgstr "Nom del domini"
-
-#~ msgid "Action"
-#~ msgstr "Acció"
-
-#~ msgid "Text"
-#~ msgstr "Text"
-
-#~ msgid "Login Script"
-#~ msgstr "Guió d'entrada"
-
-#~ msgid "Insert"
-#~ msgstr "Inserir"
-
-#~ msgid "Add Default Route"
-#~ msgstr "Afegir ruta per defecte"
-
-#~ msgid "Lock Dialout Device"
-#~ msgstr "Blocar dispositiu de connexió"
-
-#~ msgid "Maximum Transmission Unit"
-#~ msgstr "Unitat Màxima de Transmissió"
-
-#~ msgid "Maximum Receive Unit"
-#~ msgstr "Unitat Màxima de Recepció"
-
-#~ msgid "Run Program After Connect"
-#~ msgstr "Programa a executar en connectar"
-
-#~ msgid "Run Program After Disconnect"
-#~ msgstr "Programa a executar en desconnectar"
-
-#~ msgid "Connection Speed"
-#~ msgstr "Velocitat de connexió"
-
-#~ msgid "Flow Control"
-#~ msgstr "Control de flux"
-
-#~ msgid "Line Termination"
-#~ msgstr "Terminació de línia"
-
-#~ msgid "Modem Speaker Volume"
-#~ msgstr "Volum de l'altaveu del mòdem"
-
-#~ msgid " Edit Modem Commands "
-#~ msgstr " Editar comandes del mòdem "
-
-#~ msgid "**PASSWORD**"
-#~ msgstr "**CONTRASENYA**"
-
-#~ msgid "script_type_cb(): optionmenu data bad"
-#~ msgstr "script_type_cb(): dades de l'opció incorrectes"
-
-#~ msgid "_Debug Terminal"
-#~ msgstr "_Terminal de depuració"
-
-#~ msgid "_New..."
-#~ msgstr "_Nou..."
-
-#~ msgid "D_uplicate..."
-#~ msgstr "_Duplicar..."
-
-#~ msgid "_Edit..."
-#~ msgstr "_Editar..."
-
-#~ msgid "_Delete..."
-#~ msgstr "Es_borrar..."
-
-#~ msgid "_Account"
-#~ msgstr "_Compte"
-
-#~ msgid "gnome-ppp"
-#~ msgstr "gnome-ppp"
-
-#~ msgid "Dialing"
-#~ msgstr "Marcant"
-
-#~ msgid "Connected"
-#~ msgstr "S'ha connectat"
-
-#~ msgid "refresh_dial_app(): gtk_clist_append failed."
-#~ msgstr "refresh_dial_app(): ha fallat gtk_clist_append."
-
-#~ msgid "Connect"
-#~ msgstr "Connectar"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel·lar"
-
-#~ msgid "Disconnect"
-#~ msgstr "Desconnectar"
-
-#~ msgid "You must disconnect before closing."
-#~ msgstr "Cal que desconnecteu abans de tancar."
-
-#~ msgid "Are you sure you want to delete this account?\n"
-#~ msgstr "De veres voleu eliminar aquest compte?\n"
-
-#~ msgid "The account cannot be deleted."
-#~ msgstr "El compte no pot ser eliminat."
-
-#~ msgid "The account is in use and cannot be deleted."
-#~ msgstr "El compte està sent usat i no pot ser eliminat."
-
-#~ msgid "About..."
-#~ msgstr "A propòsit de..."
-
-#, fuzzy
-#~ msgid "Connecting..."
-#~ msgstr "Connectar"
-
-#, fuzzy
-#~ msgid "PPP Connected"
-#~ msgstr "S'ha connectat"
-
-#, fuzzy
-#~ msgid "PPP Error!"
-#~ msgstr "Error"
-
-#, fuzzy
-#~ msgid "That account is already in use.\n"
-#~ msgstr "El compte ja està connectat."
-
-#, fuzzy
-#~ msgid "Animation"
-#~ msgstr "Autenticació"
-
-#, fuzzy
-#~ msgid "Options"
-#~ msgstr "Acció"
-
-#, fuzzy
-#~ msgid "Label"
-#~ msgstr "Local"
-
-#, fuzzy
-#~ msgid "Animation Speed"
-#~ msgstr "Velocitat de connexió"
-
-#, fuzzy
-#~ msgid "---NEW CONNECTION---"
-#~ msgstr ""
-#~ "\r\n"
-#~ "---NOVA CONNEXIÓ---\r\n"
-
-#~ msgid "Account already connected."
-#~ msgstr "El compte ja està connectat."
-
-#~ msgid "Starting PPP Connection."
-#~ msgstr "Iniciant la connexió PPP."
-
-#~ msgid "You don't have permission to execute pppd."
-#~ msgstr "No teniu permissos per executar pppd."
-
-#~ msgid "The modem is in use by another program."
-#~ msgstr "El mòdem està sent usat per altre programa."
-
-#~ msgid "Running pppd."
-#~ msgstr "Executant pppd."
-
-#~ msgid "Closing connection."
-#~ msgstr "Tancant la connexió."
-
-#~ msgid "The pppd program failed to run gnome-ppp-chat."
-#~ msgstr "El programa pppd no ha pogut executar gnome-ppp-chat."
-
-#~ msgid "The modem could not be hung up."
-#~ msgstr "No s'ha pogut penjar el mòdem."
-
-#~ msgid "Initalizing modem."
-#~ msgstr "Inicialitzant el mòdem."
-
-#~ msgid "Your modem is not responding to initalization."
-#~ msgstr "El vostre mòdem no respon a la inicialització."
-
-#~ msgid "The command to set the volume on your modem's speaker failed."
-#~ msgstr "Ha fallat la comanda per establir el volum del mòdem."
-
-#~ msgid "No answer after maximum number of re-dial attempts."
-#~ msgstr "No hi ha hagut resposta després del màxim nombre de reintents."
-
-#~ msgid "No phone numbers specified for this account."
-#~ msgstr "No s'ha especificat cap número de telèfon per aquest compte."
-
-#~ msgid "Dialing."
-#~ msgstr "Marcant."
-
-#~ msgid "Dialing timeout."
-#~ msgstr "El temps de marcatge ha expirat."
-
-#~ msgid "No dialtone."
-#~ msgstr "No hi ha tons de marcat."
-
-#~ msgid "Number busy."
-#~ msgstr "El número està ocupat."
-
-#~ msgid "Ring, but no answer."
-#~ msgstr "S'ha cridat, però no hi ha resposta."
-
-#~ msgid "Connection failure, reason unknown."
-#~ msgstr "Ha fallat la connexió per motius desconeguts."
-
-#~ msgid "Connected."
-#~ msgstr "S'ha connectat."
-
-#~ msgid "The modem lost connection with remote host."
-#~ msgstr "El mòdem ha perdut la connexió amb l'amfitrió remot."
-
-#~ msgid "Running Script."
-#~ msgstr "Executant guió."
-
-#~ msgid "Script Complete."
-#~ msgstr "S'ha completat el guió."
-
-#~ msgid "PPP connection established."
-#~ msgstr "S'ha establert la connexió PPP."
-
-#~ msgid "Failed to establish a PPP connection."
-#~ msgstr "No s'ha pogut establir la connexió PPP."
-
-#~ msgid "The pppd daemon died unexpectedly."
-#~ msgstr "El dimoni pppd ha mort inesperadament."
-
-#, fuzzy
-#~ msgid "open_modem_window(): account=NULL"
-#~ msgstr "open_account_window(): account=NULL amb marca de clonar"
-
-#, fuzzy
-#~ msgid "Initialization"
-#~ msgstr "Inicialitzant el mòdem."
-
-#, fuzzy
-#~ msgid "Connection"
-#~ msgstr "Connectar"
-
-#, fuzzy
-#~ msgid "No Dialtone"
-#~ msgstr "No hi ha tons de marcat."
-
-#, fuzzy
-#~ msgid "The host cannot be found."
-#~ msgstr "El compte no pot ser eliminat."
-
-#, fuzzy
-#~ msgid "Connect to remote host"
-#~ msgstr "El mòdem ha perdut la connexió amb l'amfitrió remot."
-
-#, fuzzy
-#~ msgid "Additional options"
-#~ msgstr "Sincronitzant..."
-
-#, fuzzy
-#~ msgid "Port number:"
-#~ msgstr "Números de telèfon"
-
-#, fuzzy
-#~ msgid "/_Quit"
-#~ msgstr "_Editar..."
-
-#, fuzzy
-#~ msgid "Local path"
-#~ msgstr "Nom local:"
-
-#, fuzzy
-#~ msgid "Remote host"
-#~ msgstr "Remot"
-
-#, fuzzy
-#~ msgid "Remote path"
-#~ msgstr "Nom remot"
-
-#, fuzzy
-#~ msgid "Synchronization options"
-#~ msgstr "Sincronitzant..."
-
-#~ msgid "Local"
-#~ msgstr "Local"
-
-#~ msgid "Remote"
-#~ msgstr "Remot"
-
-#~ msgid "_Synchronize"
-#~ msgstr "_Sincronitzar"
-
-#~ msgid "New entry..."
-#~ msgstr "Nova entrada..."
-
-#, fuzzy
-#~ msgid "Edit..."
-#~ msgstr "_Editar..."
-
-#~ msgid "Synchronize"
-#~ msgstr "Sincronitzar"
-
-#~ msgid "Gnome Synchronize"
-#~ msgstr "Sincronitzar de GNOME"
-
-#~ msgid "The GNOME file synchronization program."
-#~ msgstr "El programa de sincronització de GNOME."
-
-#, fuzzy
-#~ msgid "New"
-#~ msgstr "_Nou..."
-
-#, fuzzy
-#~ msgid "Edit"
-#~ msgstr "_Editar..."
-
-#, fuzzy
-#~ msgid "Delete"
-#~ msgstr "Es_borrar..."
-
-#, fuzzy
-#~ msgid "/_Help"
-#~ msgstr "A_juda"
-
-#, fuzzy
-#~ msgid "/Help/_About"
-#~ msgstr "_A propòsit de..."
-
-#, fuzzy
-#~ msgid "Statistics"
-#~ msgstr "Estàtica"
-
-#~ msgid "Talk to"
-#~ msgstr "Parlar amb"
-
-#~ msgid "Specify TTY"
-#~ msgstr "Especificar TTY"
-
-#~ msgid "Failed to find the address for this host"
-#~ msgstr "Ha fallat la recerca de l'adreça d'aquest amfitrió"
-
-#~ msgid "Talk progress"
-#~ msgstr "Progrés de la tertúlia"
-
-#~ msgid "could not create socket"
-#~ msgstr "no s'ha pogut crear un connector"
-
-#~ msgid "init_control_socket: could not bind()"
-#~ msgstr "init_control_socket: no s'ha pogut fer bind()"
-
-#~ msgid "getsockname() failed"
-#~ msgstr "ha fallat getsockname()"
-
-#~ msgid "could not bind ()"
-#~ msgstr "no s'ha pogut fer bind()"
-
-#~ msgid "Error sending"
-#~ msgstr "Error en enviar"
-
-#~ msgid "Error when reading from talk daemon"
-#~ msgstr "Error en llegir del dimoni de talk"
-
-#~ msgid "Error trying to listen for caller"
-#~ msgstr "Error en provar d'escoltar crides"
-
-#~ msgid "Trying to connect to your party's talk daemon"
-#~ msgstr "Provant de connectar amb el dimoni de talk del contertulià"
-
-#~ msgid "Lost connection"
-#~ msgstr "S'ha perdut la connexió"
-
-#~ msgid "Unable to connect with your party"
-#~ msgstr "No es pot connectar amb el contertulià"
-
-#~ msgid "Waiting for your party to respond"
-#~ msgstr "Esperant la resposta del contertulià"
-
-#~ msgid "CANCEL CALLBACK:Answer:%d\n"
-#~ msgstr "CANCEL·LAR RESPOSTA:Resposta:%d\n"
-
-#~ msgid "Your party is not logged on"
-#~ msgstr "El contertulià no és connectat"
-
-#~ msgid "Target machine is too confused to talk to us"
-#~ msgstr "La màquina destinació és massa marejada com per parlar-nos"
-
-#~ msgid "Target machine does not recognize us"
-#~ msgstr "La màquina destinació no ens reconeix"
-
-#~ msgid "Your party is refusing messages"
-#~ msgstr "El contertulià està refusant missatges"
-
-#~ msgid "Target machine can not handle remote talk"
-#~ msgstr "La màquina destinació no suporta tertúlies remotes"
-
-#~ msgid "Target machine indicates protocol mismatch"
-#~ msgstr "La màquina destinació indica que els protocols no fan joc"
-
-#~ msgid "Target machine indicates protocol botch (addr)"
-#~ msgstr "La màquina remota indica un protocol malmés (addr)"
-
-#~ msgid "Target machine indicates protocol botch (ctl_addr)"
-#~ msgstr "La màquina remota indica un protocol malmés (ctl_addr)"
-
-#~ msgid "GNOME Talk"
-#~ msgstr "GNOME Talk"
-
-#~ msgid "The GNOME talk program."
-#~ msgstr "El client de «talk» de GNOME."
-
-#~ msgid "Terminates this talk session"
-#~ msgstr "Termina aquesta sessió de tertúlia"
-
-#~ msgid "_Terminate"
-#~ msgstr "_Terminar"
-
-#~ msgid "Info about this program"
-#~ msgstr "Informació sobre aquest programa"
-
-#~ msgid "Talking to "
-#~ msgstr "Parlant amb "
-
-#~ msgid "Talk"
-#~ msgstr "Parlar"
-
-#~ msgid "Error while writing to remote file"
-#~ msgstr "Error en escriure al fitxer remot"
-
-#~ msgid "Error while writing to local file"
-#~ msgstr "Error en escriure al fitxer local"
-
-#~ msgid "Error while writing to database file"
-#~ msgstr "Error en escriure al fitxer base de dades"
-
-#~ msgid "Copying from local to remote"
-#~ msgstr "Copiant del local al remot"
-
-#~ msgid "Copying from remote to local"
-#~ msgstr "Copiant del remot al local"
-
-#~ msgid "Couldn't open file for writing: "
-#~ msgstr "No s'ha pogut obrir el fitxer per escriure: "
-
-#~ msgid "Error while reading database file"
-#~ msgstr "Error en llegir del fitxer base de dades"
-
-#~ msgid "Initial entry"
-#~ msgstr "Entrada inicial"
-
-#~ msgid "Retry"
-#~ msgstr "Reintentar"
-
-#~ msgid "Status"
-#~ msgstr "Estat"
-
-#~ msgid "Immediately synchronize with remote"
-#~ msgstr "Sincronitzar immediatament amb el remot"
-
-#~ msgid "Error while synchronizing database file"
-#~ msgstr "Error en sincronitzar el fitxer base de dades"
-
-#~ msgid "Browse..."
-#~ msgstr "Fullejar..."
-
-#~ msgid "New entry"
-#~ msgstr "Nova entrada"
-
-#~ msgid "Both files modified since last synchronization"
-#~ msgstr "Ambdós fitxers han estat modificats des de l'última sincronització"
-
-#~ msgid "Error while reading local file"
-#~ msgstr "Error en llegir el fitxer local"
-
-#~ msgid "Error while reading remote file"
-#~ msgstr "Error en llegir el fitxer remot"
-
-#~ msgid "Couldn't open remote file for reading"
-#~ msgstr "No s'ha pogut obrir el fitxer remot per llegir"
-
-#~ msgid "Couldn't open local file for reading"
-#~ msgstr "No s'ha pogut obrir el fitxer local per llegir"
-
-#~ msgid "Both local and remote files are missing"
-#~ msgstr "Manquen tant el fitxer local com el remot"
+msgstr "Eines de xarxa"
