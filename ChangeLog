@@ -1,3 +1,28 @@
+2004-06-29  William Jon McCann  <mccann@jhu.edu>
+
+	* src/callbacks.c (on_about_activate): Update copyright date.
+
+	* src/gnome-nettool.glade: Use sentence capitalization for combobox
+	labels.  Make network device combobox expand to fill space.  Make
+	statistics text not expand to fill space.  Remove redundant verb
+	from ping radio button label.  Fixes #144393.
+	
+	* src/gnome-nettool.glade: 
+	* src/main.c (load_ping_widgets_from_xml) 
+	(load_traceroute_widgets_from_xml, load_info_widgets_from_xml) 
+	(load_scan_widgets_from_xml, load_lookup_widgets_from_xml) 
+	(load_finger_widgets_from_xml, load_whois_widgets_from_xml):
+	Activate the combobox when the label mnemonic is used.
+
+	* src/callbacks.c (on_about_activate): 
+	* pixmaps/Makefile.am (pixmaps_DATA): Return the application
+	icon into the pixmap directory so the .desktop file can find it.
+
+2004-06-14  William Jon McCann  <mccann@jhu.edu>
+
+	* src/callbacks.c (gn_quit_app): Use gboolean type for
+	delete-event handler.
+
 2004-06-23  Carlos García Campos <carlosgc@gnome.org>
 
 	* src/callbacks.c (on_page_switch), src/finger.c (finger_do),

@@ -257,6 +257,7 @@ load_ping_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *pinger;
 	GtkWidget *vbox_ping;
+	GtkWidget *label;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
@@ -293,6 +294,9 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	pinger->stbar_text = NULL;
 
 	vbox_ping = glade_xml_get_widget (xml, "vbox_ping");
+
+	label = glade_xml_get_widget (xml, "ping_host_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), pinger->host);
 	
 	pinger->button_callback = G_CALLBACK (on_ping_activate);
 	pinger->process_line = NETINFO_FOREACH_FUNC (ping_foreach_with_tree);
@@ -338,6 +342,7 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *tracer;
 	GtkWidget *vbox_traceroute;
+	GtkWidget *label;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
@@ -368,6 +373,9 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	tracer->stbar_text = NULL;
 	
 	vbox_traceroute = glade_xml_get_widget (xml, "vbox_traceroute");
+
+	label = glade_xml_get_widget (xml, "traceroute_host_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), tracer->host);
 
 	tracer->button_callback = G_CALLBACK (on_traceroute_activate);
 	tracer->process_line = NETINFO_FOREACH_FUNC (traceroute_foreach_with_tree);
@@ -561,6 +569,9 @@ load_info_widgets_from_xml (GladeXML * xml)
 	gtk_size_group_add_widget (group, label2);
 	g_object_unref (group);
 
+	label1 = glade_xml_get_widget (xml, "info_combo_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label1), info->combo);
+
 /*
 #ifdef IFCONFIG_PROGRAM
 */
@@ -595,6 +606,7 @@ load_scan_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *scan;
 	GtkEntry  *entry_host;
+	GtkWidget *label;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
 	GtkTooltips *tips;
@@ -623,6 +635,9 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	scan->status_bar = glade_xml_get_widget (xml, "statusbar");
 	scan->stbar_text = NULL;
 	
+	label = glade_xml_get_widget (xml, "scan_host_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), scan->host);
+
 	scan->button_callback = G_CALLBACK (on_scan_activate);
 	scan->copy_output = NETINFO_COPY_FUNC (scan_copy_to_clipboard);
 	scan->process_line = NETINFO_FOREACH_FUNC (scan_foreach);
@@ -711,6 +726,7 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *lookup;
 	GtkWidget *vbox_lookup;
+	GtkWidget *label;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
@@ -742,6 +758,11 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	lookup->stbar_text = NULL;
 	
 	vbox_lookup = glade_xml_get_widget (xml, "vbox_lookup");
+
+	label = glade_xml_get_widget (xml, "lookup_host_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), lookup->host);
+	label = glade_xml_get_widget (xml, "lookup_type_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), lookup->type);
 
 	lookup->button_callback = G_CALLBACK (on_lookup_activate);
 	lookup->process_line = NETINFO_FOREACH_FUNC (lookup_foreach_with_tree);
@@ -789,6 +810,7 @@ load_finger_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *finger;
 	GtkWidget *vbox_finger;
+	GtkWidget *label;
 	PangoFontDescription *font_desc;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
@@ -822,6 +844,11 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	finger->stbar_text = NULL;
 	
 	vbox_finger = glade_xml_get_widget (xml, "vbox_finger");
+
+	label = glade_xml_get_widget (xml, "finger_user_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), finger->user);
+	label = glade_xml_get_widget (xml, "finger_host_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), finger->host);
 
 	font_desc = pango_font_description_new ();
 	pango_font_description_set_family (font_desc, "monospace");
@@ -900,6 +927,7 @@ load_whois_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo *whois;
 	GtkWidget *vbox_whois;
+	GtkWidget *label;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
@@ -932,6 +960,9 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	whois->stbar_text = NULL;
 
 	vbox_whois = glade_xml_get_widget (xml, "vbox_whois");
+
+	label = glade_xml_get_widget (xml, "whois_host_label");
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), whois->host);
 
 	font_desc = pango_font_description_new ();
 	pango_font_description_set_family (font_desc, "monospace");

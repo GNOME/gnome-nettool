@@ -287,7 +287,7 @@ on_whois_activate (GtkWidget * widget, gpointer data)
 	}
 }
 
-void
+gboolean
 gn_quit_app (GtkWidget * widget, gpointer data)
 {
 	gint status, pid;
@@ -302,6 +302,8 @@ gn_quit_app (GtkWidget * widget, gpointer data)
 	netinfo_progress_indicator_stop (NULL);
 
 	gtk_main_quit ();
+
+	return FALSE;
 }
 
 void
@@ -322,7 +324,7 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 
 	parent = (GtkWindow *) data;
 
-	g_sprintf (copyright, "Copyright \xc2\xa9 2003 %s", "Germán Poo Caamaño");
+	g_sprintf (copyright, "Copyright \xc2\xa9 2003-2004 %s", "Germán Poo Caamaño");
 	
 	if (about_box != NULL) {
 		gtk_window_present (GTK_WINDOW (about_box));
@@ -333,7 +335,7 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 	{
 		gchar *filename = NULL;
                                                                                 
-		filename = g_build_filename (PIXMAPS_DIR, "gnome-nettool.png", NULL);
+		filename = g_build_filename (GNOME_ICONDIR, "gnome-nettool.png", NULL);
 		if (filename != NULL) {
 			pixbuf = gdk_pixbuf_new_from_file (filename, NULL);
 			g_free (filename);
