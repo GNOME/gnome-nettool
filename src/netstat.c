@@ -338,7 +338,6 @@ netstat_protocol_tree_insert (GtkTreeView *widget, gchar *line)
 		gtk_tree_view_set_model (widget, model);
 		path = gtk_tree_model_get_path (model, &iter);
 		gtk_tree_view_set_cursor (widget, path, NULL, FALSE);
-		gtk_widget_grab_focus (GTK_WIDGET (widget));
 		gtk_tree_path_free (path);
 	}
 }
@@ -533,7 +532,6 @@ netstat_route_tree_insert (GtkTreeView *widget, gchar *line)
 		gtk_tree_view_set_model (widget, model);
 		path = gtk_tree_model_get_path (model, &iter);
 		gtk_tree_view_set_cursor (widget, path, NULL, FALSE);
-		gtk_widget_grab_focus (GTK_WIDGET (widget));
 		gtk_tree_path_free (path);
 	}
 }
@@ -694,7 +692,6 @@ netstat_multicast_tree_insert (GtkTreeView *widget, gchar *line)
 		gtk_tree_view_set_model (widget, model);
 		path = gtk_tree_model_get_path (model, &iter);
 		gtk_tree_view_set_cursor (widget, path, NULL, FALSE);
-		gtk_widget_grab_focus (GTK_WIDGET (widget));
 		gtk_tree_path_free (path);
 	}
 }

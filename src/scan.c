@@ -261,7 +261,6 @@ scan_define_model (Netinfo * netinfo, scan_data data)
 	path = gtk_tree_model_get_path (model, &iter);
 	gtk_tree_view_set_cursor (GTK_TREE_VIEW (widget),
 				  path, NULL, FALSE);
-	gtk_widget_grab_focus (GTK_WIDGET (widget));
 	gtk_tree_path_free (path);
 }
 

@@ -194,7 +194,6 @@ traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 			path = gtk_tree_model_get_path (model, &iter);
 			gtk_tree_view_set_cursor (GTK_TREE_VIEW (widget),
 						  path, NULL, FALSE);
-			gtk_widget_grab_focus (GTK_WIDGET (widget));
 			gtk_tree_path_free (path);
 		}
 	}

@@ -1,5 +1,16 @@
 2004-06-06  William Jon McCann  <mccann@jhu.edu>
 
+	* src/netstat.c (netstat_protocol_tree_insert)
+	(netstat_route_tree_insert, netstat_multicast_tree_insert):
+	* src/traceroute.c (traceroute_foreach_with_tree): 
+	* src/scan.c (scan_define_model): 
+	* src/lookup.c (lookup_foreach_with_tree): 
+	* src/ping.c (ping_foreach_with_tree):
+	Remove grab_focus calls.  They steal focus away from the user
+	who may be typing in another tab.
+
+2004-06-06  William Jon McCann  <mccann@jhu.edu>
+
 	* src/gnome-nettool.glade: Use GtkProgressBar and GtkStatusBar.
 
 2004-06-04  William Jon McCann  <mccann@jhu.edu>
