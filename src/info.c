@@ -60,7 +60,7 @@ static InfoInterfaceDescription info_iface_desc [] = {
 	{ N_("Parallel Line Interface"), INFO_INTERFACE_PLIP,    "16_plip.xpm",     "plip",       NULL },
 	{ N_("Infrared Interface"),      INFO_INTERFACE_IRLAN,   "irda-16.png",     "irlan",      NULL },
 	{ N_("Loopback Interface"),      INFO_INTERFACE_LO,      "16_loopback.xpm", "lo",         NULL },
-	{ N_("Unknown Interface"),       INFO_INTERFACE_UNKNOWN, "network.png",     NULL,         NULL },
+	{ N_("Unknown Interface"),       INFO_INTERFACE_UNKNOWN, "network.png",     "",         NULL },
 	{ NULL,                          INFO_INTERFACE_UNKNOWN,  NULL,             NULL,         NULL }
 };
 
