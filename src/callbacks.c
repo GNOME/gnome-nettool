@@ -22,7 +22,8 @@
 #  include <config.h>
 #endif
 
-#include <gnome.h>
+#include <gtk/gtk.h>
+#include <glib/gi18n.h>
 #include <glib/gprintf.h>
 
 #include <sys/wait.h>
@@ -299,8 +300,7 @@ gn_quit_app (GtkWidget * widget, gpointer data)
 void
 on_about_activate (GtkWidget *menu_item, gpointer data)
 {
-	static GtkWidget *about_box = NULL;
-	GdkPixbuf *pixbuf = NULL;
+	GdkPixbuf   *pixbuf = NULL;
 	const gchar *authors[] = { 
 		"Germán Poo Caamaño <gpoo@ubiobio.cl>", 
 		"William Jon McCann <mccann@jhu.edu>",
@@ -309,51 +309,36 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 	};
 	const gchar *documentors[] = { NULL };
 	const gchar *translator_credits = _("translator_credits");
-	gchar copyright[1024];
-	GtkWindow *parent;
+	gchar	     copyright[1024];
+	GtkWindow   *parent;
 
 	parent = (GtkWindow *) data;
 
 	g_sprintf (copyright, "Copyright \xc2\xa9 2003-2004 %s", "Germán Poo Caamaño");
 	
-	if (about_box != NULL) {
-		gtk_window_present (GTK_WINDOW (about_box));
-		return;
-	}
-
-
 	{
 		gchar *filename = NULL;
-                                                                                
+										
 		filename = g_build_filename (PIXMAPS_DIR, "gnome-nettool.png", NULL);
 		if (filename != NULL) {
 			pixbuf = gdk_pixbuf_new_from_file (filename, NULL);
 			g_free (filename);
 		}
 	}
-                                                                                
-	about_box = gnome_about_new (
-		"GNOME Network Tool",
-		VERSION,
-		copyright,
-		_("Graphical user interface for common network utilities"),
-		authors, documentors,
-		strcmp (translator_credits, "translator_credits") != 0 ? translator_credits : NULL,
-		pixbuf);
-	
-        if (pixbuf != NULL)
-                g_object_unref (pixbuf);
 
-	gtk_window_set_transient_for (GTK_WINDOW (about_box), parent);
-	
-	gtk_window_set_screen (GTK_WINDOW (about_box),
-			       gtk_widget_get_screen (GTK_WIDGET (parent)));
+	gtk_show_about_dialog (parent,
+			       "name", "Network Tools",
+			       "logo", pixbuf,
+			       "authors", authors,
+			       "documenters", documentors,
+			       "version", VERSION,
+			       "copyright", copyright,
+			       "comments", _("Graphical user interface for common network utilities"),
+			       "translator-credits", strcmp (translator_credits, "translator_credits") != 0 ? translator_credits : NULL,
+			       NULL);
 
-	g_signal_connect (G_OBJECT (about_box), "destroy",
-			  G_CALLBACK (gtk_widget_destroyed),
-			  &about_box);
-	
-	gtk_widget_show (about_box);
+	if (pixbuf != NULL)
+		g_object_unref (pixbuf);
 }
 
 static Netinfo *

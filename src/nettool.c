@@ -18,7 +18,8 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <gnome.h>
+#include <gtk/gtk.h>
+#include <glib/gi18n.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <signal.h>
@@ -164,27 +165,21 @@ netinfo_error_message (Netinfo     * netinfo,
 		       const gchar * secondary)
 {
 	GtkWidget *dialog;
-	gchar     *message;
  
 	g_return_if_fail (primary != NULL);
 
-	if (secondary)
-		message = g_strdup_printf ("<b><big>%s</big></b>\n\n%s",
-					   primary, secondary);
-	else
-		message = g_strdup_printf ("<b><big>%s</big></b>",
-					   primary);
+	dialog = gtk_message_dialog_new (GTK_WINDOW (netinfo->main_window),
+					 GTK_DIALOG_DESTROY_WITH_PARENT,
+					 GTK_MESSAGE_ERROR,
+					 GTK_BUTTONS_CLOSE,
+					 primary);
+	gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+						  secondary ? secondary : " ");
 
-	dialog = gtk_message_dialog_new_with_markup (GTK_WINDOW (netinfo->main_window),
-						     GTK_DIALOG_DESTROY_WITH_PARENT,
-						     GTK_MESSAGE_ERROR,
-						     GTK_BUTTONS_CLOSE,
-						     message);
         gtk_container_set_border_width (GTK_CONTAINER (dialog), 6);
 
 	gtk_dialog_run (GTK_DIALOG (dialog));
 	gtk_widget_destroy (dialog);
-	g_free (message);
 }
 
 gboolean
@@ -279,10 +274,11 @@ netinfo_text_buffer_insert (Netinfo * netinfo)
 
 		netinfo->child_pid = child_pid;
 		netinfo->pipe_out = pout;
-		/*netinfo->pipe_err = perr; */
 		fcntl (pout, F_SETFL, O_NONBLOCK);
 		fcntl (pout, F_SETFL, O_NONBLOCK);
 		netinfo->command_output = NULL;
+
+		/*netinfo->pipe_err = perr; */
 
 		channel = g_io_channel_unix_new (pout);
 		g_io_add_watch (channel,
@@ -373,7 +369,7 @@ netinfo_io_text_buffer_dialog (GIOChannel * channel,
 				g_string_append_c (netinfo->command_output, buf[0]);
 			}
 		} else if (status == G_IO_STATUS_EOF) {
-		} 
+		}
 
 		g_free (text);
 
