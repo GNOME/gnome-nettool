@@ -1,5 +1,5 @@
-#include <glib.h>
-#include <gtk/gtk.h>
+#include <gnome.h>
+
 typedef void* (* NetinfoActivateFn) (GtkWidget *widget, gpointer data);
 
 void on_ping_activate (GtkWidget * editable, gpointer data);

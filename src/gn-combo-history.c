@@ -1,6 +1,6 @@
 /* -*- Mode: C; indent-tabs-mode: t; tab-width: 8; c-basic-offset: 8 -*- */
 /* 
- * Copyright (C) 2004 by Carlos Garcï¿½a Campos
+ * Copyright (C) 2004 by Carlos García Campos
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,6 +18,7 @@
  */
 
 #include <gtk/gtk.h>
+#include <libgnome/gnome-program.h>
 #include <gconf/gconf-client.h>
 
 #include "gn-combo-history.h"
@@ -239,7 +240,7 @@ gn_combo_history_gconf_load (GnComboHistory *history)
 	}
 
 	key = g_strconcat ("/apps/gnome-settings/",
-			   "gnome-nettool",
+			   gnome_program_get_app_id (gnome_program_get ()),
 			   "/history-",
 			   history->priv->id,
 			   NULL);
@@ -269,7 +270,7 @@ gn_combo_history_gconf_save (GnComboHistory *history)
 	g_return_if_fail (history->priv->id != NULL);
 
 	key = g_strconcat ("/apps/gnome-settings/",
-			   "gnome-nettool",
+			   gnome_program_get_app_id (gnome_program_get ()),
 			   "/history-",
 			   history->priv->id,
 			   NULL);
@@ -388,7 +389,7 @@ gn_combo_history_gconf_register_id (GnComboHistory *history)
 		history->priv->gconf_client = gconf_client_get_default ();
 
 	key = g_strconcat ("/apps/gnome-settings/",
-			  "gnome-nettool",
+			   gnome_program_get_app_id (gnome_program_get ()),
 			   "/history-",
 			   history->priv->id,
 			   NULL);

@@ -23,8 +23,7 @@
 /* This is a backport of g_sprintf to allow compile gnome-netinfo
    on GNOME 2.0 */
  
-#include <glib.h>
-#include <gtk/gtk.h>
+#include <gnome.h>
 #ifdef HAVE_CONFIG_H
 #  include <config.h>
 #endif
