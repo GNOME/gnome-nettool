@@ -11,18 +11,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool 0.99.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 11:34+0200\n"
-"PO-Revision-Date: 2004-08-01 00:12+0200\n"
+"POT-Creation-Date: 2004-08-31 20:48+0200\n"
+"PO-Revision-Date: 2004-08-31 20:55+0200\n"
 "Last-Translator: Hendrik Brandt <eru@gmx.li>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: src/callbacks.c:321
 msgid "translator_credits"
-msgstr ""
-"Hendrik Brandt <eru@gmx.li>\n"
+msgstr "Hendrik Brandt <eru@gmx.li>\n"
 "Karl Eichwalder <ke@suse.de>\n"
 "Matthias Warkus <mawa@iname.com>\n"
 "Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>"
@@ -80,7 +79,6 @@ msgid "Devices"
 msgstr "Geräte"
 
 #: src/gnome-nettool.glade.h:13
-#, fuzzy
 msgid "Display:"
 msgstr "Anzeige:"
 
@@ -189,7 +187,6 @@ msgid "Scan"
 msgstr "Scannen"
 
 #: src/gnome-nettool.glade.h:40
-#, fuzzy
 msgid "Send:"
 msgstr "Senden:"
 
@@ -218,7 +215,6 @@ msgid "Transmitted packets:"
 msgstr "Übertragene Pakete:"
 
 #: src/gnome-nettool.glade.h:47
-#, fuzzy
 msgid "Unlimited requests"
 msgstr "Unbegrenzt Anfragen senden"
 
@@ -235,22 +231,18 @@ msgid "_Configure"
 msgstr "_Einrichten"
 
 #: src/gnome-nettool.glade.h:51
-#, fuzzy
 msgid "_Domain address:"
 msgstr "_Domänenadresse:"
 
 #: src/gnome-nettool.glade.h:52
-#, fuzzy
 msgid "_Information type:"
-msgstr "Art der _Informationen: "
+msgstr "Art der _Informationen:"
 
 #: src/gnome-nettool.glade.h:53
-#, fuzzy
 msgid "_Network address:"
 msgstr "_Netzwerkadresse:"
 
 #: src/gnome-nettool.glade.h:54
-#, fuzzy
 msgid "_Network device:"
 msgstr "_Netzwerkgerät:"
 
@@ -259,7 +251,6 @@ msgid "_Tool"
 msgstr "_Programm"
 
 #: src/gnome-nettool.glade.h:56
-#, fuzzy
 msgid "_Username:"
 msgstr "_Benutzername:"
 
@@ -410,9 +401,9 @@ msgid "not available"
 msgstr "nicht verfügbar"
 
 #: src/lookup.c:79
-#, fuzzy, c-format
+#, c-format
 msgid "Looking up %s"
-msgstr "Anzeigen %s"
+msgstr "%s durchsuchen"
 
 #: src/lookup.c:277
 msgid "Name"
@@ -481,9 +472,8 @@ msgid "Port scan a network address"
 msgstr "Die Ports einer Netzwerkadresse scannen"
 
 #: src/main.c:93
-#, fuzzy
 msgid "Look up a network address"
-msgstr "Eine Netzwerkadresse suchen"
+msgstr "Eine Netzwerkadresse durchsuchen"
 
 #: src/main.c:96
 msgid "Finger command to run"
@@ -550,7 +540,6 @@ msgid "Broadcast"
 msgstr "Senden"
 
 #: src/main.c:506
-#, fuzzy
 msgid "Scope"
 msgstr "Bereich"
 
@@ -586,7 +575,8 @@ msgstr ""
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
-msgstr ""
+msgstr "Bitte geben Sie die Adresse der Domäne ein, die nach Informationen durchsucht werden soll.\n"
+"z.B.: www.domain.de oder 10.0.2.1"
 
 #: src/netstat.c:120
 msgid "Getting routing table"
@@ -633,7 +623,6 @@ msgid "Interface"
 msgstr "Schnittstelle"
 
 #: src/netstat.c:744
-#, fuzzy
 msgid "Member"
 msgstr "Mitglied"
 
@@ -699,9 +688,9 @@ msgid "Run"
 msgstr "Starten"
 
 #: src/ping.c:73
-#, fuzzy, c-format
+#, c-format
 msgid "Sending ping requests to %s"
-msgstr "Unbegrenzt Anfragen senden"
+msgstr "Unbegrenzt Anfragen mit »ping« an %s senden"
 
 #: src/ping.c:381
 msgid "Bytes"
@@ -788,7 +777,7 @@ msgid "Port\tState\tService\n"
 msgstr "Port\tStatus\tDienst\n"
 
 #: src/traceroute.c:58
-#, fuzzy, c-format
+#, c-format
 msgid "Tracing route to %s"
 msgstr "Route zu %s finden"
 
@@ -805,12 +794,10 @@ msgid "IP"
 msgstr "IP"
 
 #: src/traceroute.c:292
-#, fuzzy
 msgid "Time 1"
 msgstr "Zeit 1"
 
 #: src/traceroute.c:302
-#, fuzzy
 msgid "Time 2"
 msgstr "Zeit 2"
 
@@ -838,14 +825,15 @@ msgstr "Netzwerkprogramme"
 #: src/finger.c:58
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr ""
+msgstr "Informationen zu %s von »%s« holen"
 
 #: src/finger.c:62
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr ""
+msgstr "Informationen zu allen Benutzer auf »%s« werden geholt"
 
 #: src/whois.c:56
-#, fuzzy, c-format
+#, c-format
 msgid "Getting the whois information of %s"
-msgstr "Netzwerkinformationsprogramme"
+msgstr "Die Benutzerinformationen von %s holen"
+
