@@ -12,15 +12,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 12:53+0200\n"
-"PO-Revision-Date: 2004-08-31 12:48+0200\n"
+"POT-Creation-Date: 2004-10-21 13:21+0200\n"
+"PO-Revision-Date: 2004-10-21 13:22+0200\n"
 "Last-Translator: Martin Willemoes Hansen <mwh@sysrq.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:321
+#: src/callbacks.c:311
 msgid "translator_credits"
 msgstr ""
 "Birger Langkjer <birger.langkjer@image.dk>\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Kenneth Christiansen <kenneth@ripen.dk>\n"
 "Martin Willemoes Hansen <mwh@sysrq.dk>"
 
-#: src/callbacks.c:349
+#: src/callbacks.c:339
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafisk brugergrænseflade for almindelige netværksværktøjer"
 
@@ -53,7 +53,7 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Statistik for tiden tur-retur</b>"
 
 #: src/gnome-nettool.glade.h:6
-msgid "<b>Transmision Statistics</b>"
+msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Transmissionsstatistik</b>"
 
 #: src/gnome-nettool.glade.h:7
@@ -84,7 +84,7 @@ msgstr "Enheder"
 msgid "Display:"
 msgstr "Vis:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:837
+#: src/gnome-nettool.glade.h:14 src/main.c:832
 msgid "Finger"
 msgstr "Finger"
 
@@ -104,7 +104,7 @@ msgstr "IP-adresse:"
 msgid "Link speed:"
 msgstr "Forbindelsens hastighed:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:751
+#: src/gnome-nettool.glade.h:19 src/main.c:746
 msgid "Lookup"
 msgstr "Opslag"
 
@@ -132,7 +132,7 @@ msgstr "Multisending:"
 msgid "Netmask:"
 msgstr "Netmaske:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:442
+#: src/gnome-nettool.glade.h:26 src/main.c:445
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -184,7 +184,7 @@ msgstr "Modtagelsesfejl:"
 msgid "Routing Table Information"
 msgstr "Rutetabel-information"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:632
+#: src/gnome-nettool.glade.h:39 src/main.c:627
 msgid "Scan"
 msgstr "Skan"
 
@@ -196,7 +196,7 @@ msgstr "Send:"
 msgid "State:"
 msgstr "Tilstand:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:366
+#: src/gnome-nettool.glade.h:42 src/main.c:369
 msgid "Trace"
 msgstr "Spor"
 
@@ -224,7 +224,7 @@ msgstr "Ubegrænset antal forespørgsler"
 msgid "User"
 msgstr "Bruger"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:953
+#: src/gnome-nettool.glade.h:49 src/main.c:948
 msgid "Whois"
 msgstr "Whois"
 
@@ -298,8 +298,8 @@ msgid "Unknown Interface"
 msgstr "Ukendt grænseflade"
 
 #: src/info.c:130
-msgid "<i>Network Devices Not Found</i>"
-msgstr "<i>Netværksenheder ikke fundet</i>"
+msgid "Network Devices Not Found"
+msgstr "Netværksenheder ikke fundet"
 
 #: src/info.c:344
 msgid "Unknown"
@@ -409,19 +409,20 @@ msgstr "Slår %s op"
 msgid "Name"
 msgstr "Navn"
 
-#: src/lookup.c:285
+#. Time To Live of a hostname in a name server
+#: src/lookup.c:286
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:294
+#: src/lookup.c:295
 msgid "Address Type"
 msgstr "Adressetype"
 
-#: src/lookup.c:304
+#: src/lookup.c:305
 msgid "Record Type"
 msgstr "Posttype"
 
-#: src/lookup.c:313
+#: src/lookup.c:314
 msgid "Address"
 msgstr "Adresse"
 
@@ -431,7 +432,7 @@ msgstr "Adresse"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:341
+#: src/lookup.c:342
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Kilde\tTTL\tAdressetype\tPosttype1\tOpløsning\n"
 
@@ -508,7 +509,7 @@ msgstr ""
 "Angiv netværksadressen der skal pinges.\n"
 "Fx www.domæne.dk eller 192.168.2.1"
 
-#: src/main.c:393
+#: src/main.c:396
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -516,27 +517,27 @@ msgstr ""
 "Angiv netværksadressen hvortil du vil spore en rute.\n"
 "Fx www.domæne.dk eller 192.168.2.1"
 
-#: src/main.c:478 src/netstat.c:441
+#: src/main.c:481 src/netstat.c:441
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/main.c:485
+#: src/main.c:488
 msgid "IP Address"
 msgstr "IP-adresse"
 
-#: src/main.c:492
+#: src/main.c:495
 msgid "Netmask / Prefix"
 msgstr "Netmaske / præfiks"
 
-#: src/main.c:499
+#: src/main.c:502
 msgid "Broadcast"
 msgstr "Rundsending"
 
-#: src/main.c:506
+#: src/main.c:509
 msgid "Scope"
 msgstr "Virkefelt"
 
-#: src/main.c:654
+#: src/main.c:649
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -544,7 +545,7 @@ msgstr ""
 "Angiv netværksadressen der skal skannes for åbne porte.\n"
 "Fx www.domæne.dk eller 192.168.2.1"
 
-#: src/main.c:782
+#: src/main.c:777
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -552,11 +553,11 @@ msgstr ""
 "Angiv netværksadressen for opslaget.\n"
 "Fx www.domæne.dk eller 192.168.2.1"
 
-#: src/main.c:871
+#: src/main.c:866
 msgid "Enter the user to finger."
 msgstr "Angiv brugeren du vil have information på."
 
-#: src/main.c:898
+#: src/main.c:893
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -564,7 +565,7 @@ msgstr ""
 "Angiv netværksadressen for at få informationer om brugeren.\n"
 "Fx www.domæne.dk eller 192.168.2.1"
 
-#: src/main.c:985
+#: src/main.c:980
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -592,7 +593,7 @@ msgstr "IP-kilde"
 msgid "Port/Service"
 msgstr "Port/tjeneste"
 
-#: src/netstat.c:464 src/scan.c:292
+#: src/netstat.c:464 src/scan.c:295
 msgid "State"
 msgstr "Tilstand"
 
@@ -644,61 +645,61 @@ msgstr "Destination\tAdgangspunkt\tNetmaske\tGrænseflade\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Grænseflade\tMedlem\tGruppe\n"
 
-#: src/nettool.c:206
+#: src/nettool.c:207
 msgid "A network address was not specified"
 msgstr "En netværksadresse blev ikke angivet"
 
-#: src/nettool.c:207 src/nettool.c:216
+#: src/nettool.c:208 src/nettool.c:217
 msgid "Please enter a valid network address and try again."
 msgstr "Angiv venligst en gyldig netværksadresse og prøv igen"
 
-#: src/nettool.c:214
+#: src/nettool.c:215
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "Adressen \"%s\" findes ikke."
 
-#: src/nettool.c:243
+#: src/nettool.c:244
 msgid "A domain address was not specified"
 msgstr "En domæneadresse blev ikke angivet"
 
-#: src/nettool.c:244
+#: src/nettool.c:245
 msgid "Please enter a valid domain address and try again."
 msgstr "Angiv venligst en gyldig domæneadresse og prøv igen."
 
-#: src/nettool.c:376
+#: src/nettool.c:377
 msgid "Information not available"
 msgstr "Information ikke tilgængelig"
 
-#: src/nettool.c:494
+#: src/nettool.c:495
 msgid "Stop"
 msgstr "Stop"
 
-#: src/nettool.c:500
+#: src/nettool.c:501
 msgid "Run"
 msgstr "Kør"
 
-#: src/ping.c:73
+#: src/ping.c:76
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Sender ping-forespørgsler til %s"
 
-#: src/ping.c:381
+#: src/ping.c:384
 msgid "Bytes"
 msgstr "Byte"
 
-#: src/ping.c:388
+#: src/ping.c:391
 msgid "Source"
 msgstr "Kilde"
 
-#: src/ping.c:396
+#: src/ping.c:399
 msgid "Seq"
 msgstr "Sekv"
 
-#: src/ping.c:406
+#: src/ping.c:409
 msgid "Time"
 msgstr "Tid"
 
-#: src/ping.c:414
+#: src/ping.c:417
 msgid "Units"
 msgstr "Enheder"
 
@@ -706,87 +707,87 @@ msgstr "Enheder"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:440
+#: src/ping.c:443
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Byte\tKilde\tSekvens\tTid\tEnheder\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:455
+#: src/ping.c:458
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimumstid:\t%s ms\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Gennemsnitstid:\t%s ms\n"
 
-#: src/ping.c:457
+#: src/ping.c:460
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maksimumstid:\t%s ms\n"
 
-#: src/ping.c:459
+#: src/ping.c:462
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Pakker sendt:\t%s\n"
 
-#: src/ping.c:461
+#: src/ping.c:464
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Pakker modtaget:\t%s\n"
 
-#: src/ping.c:463
+#: src/ping.c:466
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Pakketab:\t%s\n"
 
-#: src/scan.c:80
+#: src/scan.c:83
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Skanner %s for åbne porte"
 
-#: src/scan.c:155
+#: src/scan.c:158
 msgid "unknown"
 msgstr "ukendt"
 
-#: src/scan.c:284
+#: src/scan.c:287
 msgid "Port"
 msgstr "Port"
 
-#: src/scan.c:300
+#: src/scan.c:303
 msgid "Service"
 msgstr "Tjeneste"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:322
+#: src/scan.c:325
 msgid "Port\tState\tService\n"
 msgstr "Port\tTilstand\tTjeneste\n"
 
-#: src/traceroute.c:58
+#: src/traceroute.c:61
 #, c-format
 msgid "Tracing route to %s"
 msgstr "Sporer ruten til %s"
 
-#: src/traceroute.c:265
+#: src/traceroute.c:270
 msgid "Hop"
 msgstr "Hop"
 
-#: src/traceroute.c:273
+#: src/traceroute.c:278
 msgid "Hostname"
 msgstr "Værtsnavn"
 
-#: src/traceroute.c:281
+#: src/traceroute.c:286
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:292
+#: src/traceroute.c:297
 msgid "Time 1"
 msgstr "Tid 1"
 
-#: src/traceroute.c:302
+#: src/traceroute.c:307
 msgid "Time 2"
 msgstr "Tid 2"
 
@@ -794,7 +795,7 @@ msgstr "Tid 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:328
+#: src/traceroute.c:333
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tVærtsnavn\tIP\tTid 1\tTid 2\n"
 
