@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-04 14:49+0200\n"
+"POT-Creation-Date: 2004-06-13 20:15+0200\n"
 "PO-Revision-Date: 2004-06-04 22:41+0800\n"
 "Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
@@ -14,457 +14,425 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:190
+#: src/callbacks.c:319
 msgid "translator_credits"
 msgstr "开源软件国际化之简体中文组 http://i18n.linux.net.cn"
 
-#: src/callbacks.c:215
+#: src/callbacks.c:347
 msgid "Graphical user interface for common network utilities"
 msgstr "网络公共工具的图形用户界面"
 
 #: src/gnome-nettool.glade.h:1
-msgid "    "
-msgstr "    "
-
-#: src/gnome-nettool.glade.h:2
-msgid "(eg. user@www.domain.com)"
-msgstr "(如 user@www.domain.com)"
-
-#: src/gnome-nettool.glade.h:3
-msgid "(for example: domain.com)"
-msgstr "(例如：domain.com)"
-
-#: src/gnome-nettool.glade.h:4
-msgid "(for example: www.domain.com or 192.168.2.1)"
-msgstr "(例如：www.domain.com 或 192.168.2.1)"
-
-#: src/gnome-nettool.glade.h:5
-msgid "*"
-msgstr "*"
-
-#: src/gnome-nettool.glade.h:6
 msgid "0.0"
 msgstr "0.0"
 
-#: src/gnome-nettool.glade.h:7
-msgid "<span weight=\"bold\">@</span>"
-msgstr "<span weight=\"bold\">@</span>"
+#: src/gnome-nettool.glade.h:2
+#, fuzzy
+msgid "<b>IP Information</b>"
+msgstr "邮箱信息"
 
-#: src/gnome-nettool.glade.h:8
-msgid ""
-"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
-"information</span>"
-msgstr ""
-"<span weight=\"bold\">输入域名地址以便查阅其“whois”信息</span>"
+#: src/gnome-nettool.glade.h:3
+#, fuzzy
+msgid "<b>Interface Information</b>"
+msgstr "默认信息"
 
-#: src/gnome-nettool.glade.h:9
-msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
-msgstr "<span weight=\"bold\">输入网络地址以便查阅</span>"
-
-#: src/gnome-nettool.glade.h:10
-msgid ""
-"<span weight=\"bold\">Enter a user name and network address to finger that "
-"user</span>"
-msgstr ""
-"<span weight=\"bold\">输入用户名和网络地址以便标识用户</span>"
-
-#: src/gnome-nettool.glade.h:11
-msgid "<span weight=\"bold\">Enter the network address to ping</span>"
-msgstr "<span weight=\"bold\">输入要 ping 的网络地址</span>"
-
-#: src/gnome-nettool.glade.h:12
-msgid ""
-"<span weight=\"bold\">Enter the network address to scan for open ports</span>"
-msgstr "<span weight=\"bold\">输入要扫描开放端口的网络地址</span>"
-
-#: src/gnome-nettool.glade.h:13
-msgid ""
-"<span weight=\"bold\">Enter the network address to trace a route to</span>"
-msgstr ""
-"<span weight=\"bold\">输入要跟踪路由的网络地址</span>"
-
-#: src/gnome-nettool.glade.h:14
-msgid "<span weight=\"bold\">Information</span>"
-msgstr "<span weight=\"bold\">信息</span>"
-
-#: src/gnome-nettool.glade.h:15
-msgid "<span weight=\"bold\">Round trip time statistics</span>"
+#: src/gnome-nettool.glade.h:4
+msgid "<b>Interface Statistics</b>"
 msgstr ""
 
-#: src/gnome-nettool.glade.h:16
-msgid ""
-"<span weight=\"bold\">Select the network device to get information on</span>"
+#: src/gnome-nettool.glade.h:5
+msgid "<b>Round Trip Time Statistics</b>"
 msgstr ""
-"<span weight=\"bold\">选择要获取信息的网络设备</span>"
 
-#: src/gnome-nettool.glade.h:17
-msgid "<span weight=\"bold\">Select the type of information to display</span>"
-msgstr "<span weight=\"bold\">选择要显示的信息类型</span>"
-
-#: src/gnome-nettool.glade.h:18
-msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
-msgstr "<span weight=\"bold\">选择要查阅的信息类型：</span>"
-
-#: src/gnome-nettool.glade.h:19
-msgid "<span weight=\"bold\">Statistics</span>"
-msgstr "<span weight=\"bold\">统计</span>"
-
-#: src/gnome-nettool.glade.h:20
-msgid "<span weight=\"bold\">Transmission statistics</span>"
+#: src/gnome-nettool.glade.h:6
+#, fuzzy
+msgid "<b>Transmision Statistics</b>"
 msgstr "<span weight=\"bold\">传送统计</span>"
 
-#: src/gnome-nettool.glade.h:21
-msgid "Any / All Information"
-msgstr "任何/全部信息"
+#: src/gnome-nettool.glade.h:7
+#, fuzzy
+msgid "Active Network Services"
+msgstr "显示激活的网络服务"
 
-#: src/gnome-nettool.glade.h:22
+#: src/gnome-nettool.glade.h:8
 msgid "Average:"
 msgstr "平均："
 
-#: src/gnome-nettool.glade.h:23
+#: src/gnome-nettool.glade.h:9
 msgid "Broadcast:"
 msgstr "广播："
 
-#: src/gnome-nettool.glade.h:24
-msgid "CPU / OS Type"
-msgstr "CPU/操作系统类型"
-
-#: src/gnome-nettool.glade.h:25
-msgid "Canonical Name"
-msgstr ""
-
-#: src/gnome-nettool.glade.h:26
+#: src/gnome-nettool.glade.h:10
 msgid "Clear _History"
 msgstr "清除历史(_H)"
 
-#: src/gnome-nettool.glade.h:27
+#: src/gnome-nettool.glade.h:11
 msgid "Collisions:"
 msgstr ""
 
-#: src/gnome-nettool.glade.h:28
-msgid "Default Information"
-msgstr "默认信息"
+#: src/gnome-nettool.glade.h:12
+#, fuzzy
+msgid "Devices"
+msgstr "设备(_D)"
 
-#: src/gnome-nettool.glade.h:29
-msgid "Display active network services"
-msgstr "显示激活的网络服务"
+#: src/gnome-nettool.glade.h:13
+msgid "Display: "
+msgstr ""
 
-#: src/gnome-nettool.glade.h:30
-msgid "Display multicast information"
-msgstr "显示多播信息"
-
-#: src/gnome-nettool.glade.h:31
-msgid "Display routing table information"
-msgstr "显示路由表信息"
-
-#: src/gnome-nettool.glade.h:32
-msgid "Enter the network address to ping"
-msgstr "输入要 ping 的网络地址"
-
-#: src/gnome-nettool.glade.h:33 src/main.c:532
+#: src/gnome-nettool.glade.h:14 src/main.c:772
 msgid "Finger"
 msgstr ""
 
-#: src/gnome-nettool.glade.h:34
+#: src/gnome-nettool.glade.h:15
 msgid "Hardware address:"
 msgstr "硬件地址："
 
-#: src/gnome-nettool.glade.h:35
-msgid "Host name for Address"
-msgstr "地址的主机名"
+#: src/gnome-nettool.glade.h:16
+#, fuzzy
+msgid "Host"
+msgstr "主机名"
 
-#: src/gnome-nettool.glade.h:36
-msgid "IP address:"
+#: src/gnome-nettool.glade.h:17
+#, fuzzy
+msgid "IP Address:"
 msgstr "IP 地址："
 
-#: src/gnome-nettool.glade.h:37
-msgid "Internet Address"
-msgstr "Internet 地址"
-
-#: src/gnome-nettool.glade.h:38
+#: src/gnome-nettool.glade.h:18
 msgid "Link speed:"
 msgstr "链接速度："
 
-#: src/gnome-nettool.glade.h:39 src/main.c:487
+#: src/gnome-nettool.glade.h:19 src/main.c:701
 msgid "Lookup"
 msgstr "查阅"
 
-#: src/gnome-nettool.glade.h:40
+#: src/gnome-nettool.glade.h:20
 msgid "MTU:"
 msgstr "MTU："
 
-#: src/gnome-nettool.glade.h:41
-msgid "Mailbox Exchange"
-msgstr "邮箱交换(MX)"
-
-#: src/gnome-nettool.glade.h:42
-msgid "Mailbox Information"
-msgstr "邮箱信息"
-
-#: src/gnome-nettool.glade.h:43
+#: src/gnome-nettool.glade.h:21
 msgid "Maximum:"
 msgstr "最大："
 
-#: src/gnome-nettool.glade.h:44
+#: src/gnome-nettool.glade.h:22
 msgid "Minimum:"
 msgstr "最小："
 
-#: src/gnome-nettool.glade.h:45
+#: src/gnome-nettool.glade.h:23
+#, fuzzy
+msgid "Multicast Information"
+msgstr "显示多播信息"
+
+#: src/gnome-nettool.glade.h:24
 msgid "Multicast:"
 msgstr "多播："
 
-#: src/gnome-nettool.glade.h:46
-msgid "Name Server"
-msgstr "名称服务器"
-
-#: src/gnome-nettool.glade.h:47
+#: src/gnome-nettool.glade.h:25
 msgid "Netmask:"
 msgstr "网络掩码："
 
-#: src/gnome-nettool.glade.h:48 src/main.c:351
+#: src/gnome-nettool.glade.h:26 src/main.c:416
 msgid "Netstat"
 msgstr "网络统计"
 
-#: src/gnome-nettool.glade.h:49
-msgid "Network Tool"
+#: src/gnome-nettool.glade.h:27
+#, fuzzy
+msgid "Network Tools - Devices"
 msgstr "网络工具"
 
-#: src/gnome-nettool.glade.h:50
+#: src/gnome-nettool.glade.h:28
+#, fuzzy
+msgid "Not Available"
+msgstr "不可用"
+
+#: src/gnome-nettool.glade.h:29
+msgid "Only"
+msgstr ""
+
+#: src/gnome-nettool.glade.h:30
 msgid "Packets loss:"
 msgstr "丢失包数："
 
-#: src/gnome-nettool.glade.h:51
+#: src/gnome-nettool.glade.h:31
 msgid "Packets received:"
 msgstr "收到包数："
 
-#: src/gnome-nettool.glade.h:52
+#: src/gnome-nettool.glade.h:32
 msgid "Packets transmitted:"
 msgstr "传送包数："
 
-#: src/gnome-nettool.glade.h:53 src/main.c:259
+#: src/gnome-nettool.glade.h:33 src/main.c:279
 msgid "Ping"
 msgstr "Ping"
 
-#: src/gnome-nettool.glade.h:54
-msgid "Port _Scan"
+#: src/gnome-nettool.glade.h:34
+#, fuzzy
+msgid "Port Scan"
 msgstr "端口扫描(_S)"
 
-#: src/gnome-nettool.glade.h:55
+#: src/gnome-nettool.glade.h:35
 msgid "Received bytes:"
 msgstr "接收字节数："
 
-#: src/gnome-nettool.glade.h:56
+#: src/gnome-nettool.glade.h:36
 msgid "Received packets:"
 msgstr "接收包数："
 
-#: src/gnome-nettool.glade.h:57
+#: src/gnome-nettool.glade.h:37
 msgid "Reception errors:"
 msgstr "接受错误数："
 
-#: src/gnome-nettool.glade.h:58 src/main.c:449
+#: src/gnome-nettool.glade.h:38
+#, fuzzy
+msgid "Routing Table Information"
+msgstr "显示路由表信息"
+
+#: src/gnome-nettool.glade.h:39 src/main.c:595
 msgid "Scan"
 msgstr "扫描"
 
-#: src/gnome-nettool.glade.h:59
-msgid "Select network device from list"
-msgstr "从列表中选择网络设备"
-
-#: src/gnome-nettool.glade.h:60
-msgid "Send only"
-msgstr "只发送"
-
-#: src/gnome-nettool.glade.h:61
-msgid "Send unlimited requests (pings)"
+#: src/gnome-nettool.glade.h:40
+#, fuzzy
+msgid "Send unlimited requests"
 msgstr "发送无限制请求(ping)"
 
-#: src/gnome-nettool.glade.h:62
-msgid "Start-of-authority"
-msgstr "开始身份验证"
+#: src/gnome-nettool.glade.h:41
+#, fuzzy
+msgid "Send: "
+msgstr "只发送"
 
-#: src/gnome-nettool.glade.h:63
+#: src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "状态："
 
-#: src/gnome-nettool.glade.h:64
-msgid "Text Information"
-msgstr "文本信息"
-
-#: src/gnome-nettool.glade.h:65 src/main.c:307
+#: src/gnome-nettool.glade.h:43 src/main.c:351
 msgid "Trace"
 msgstr "跟踪"
 
-#: src/gnome-nettool.glade.h:66
+#: src/gnome-nettool.glade.h:44
+#, fuzzy
+msgid "Traceroute"
+msgstr "_Traceroute"
+
+#: src/gnome-nettool.glade.h:45
 msgid "Transmission errors:"
 msgstr "传送错误数："
 
-#: src/gnome-nettool.glade.h:67
+#: src/gnome-nettool.glade.h:46
 msgid "Transmitted bytes:"
 msgstr "传送字节数："
 
-#: src/gnome-nettool.glade.h:68
+#: src/gnome-nettool.glade.h:47
 msgid "Transmitted packets:"
 msgstr "传送包数："
 
-#: src/gnome-nettool.glade.h:69
-msgid "Well Known Services"
+#: src/gnome-nettool.glade.h:48
+msgid "User"
 msgstr ""
 
-#: src/gnome-nettool.glade.h:70 src/main.c:583
+#: src/gnome-nettool.glade.h:49 src/main.c:869
 msgid "Whois"
 msgstr "Whois"
 
-#: src/gnome-nettool.glade.h:71
-msgid "_Devices"
-msgstr "设备(_D)"
+#: src/gnome-nettool.glade.h:50
+msgid "_Configure"
+msgstr ""
 
-#: src/gnome-nettool.glade.h:72
-msgid "_Finger"
-msgstr "_Finger"
+#: src/gnome-nettool.glade.h:51
+msgid "_Domain Address: "
+msgstr ""
 
-#: src/gnome-nettool.glade.h:73
-msgid "_Lookup"
-msgstr "查阅(_L)"
+#: src/gnome-nettool.glade.h:52
+#, fuzzy
+msgid "_Information Type: "
+msgstr "文本信息"
 
-#: src/gnome-nettool.glade.h:74
-msgid "_Netstat"
-msgstr "_Netstat"
+#: src/gnome-nettool.glade.h:53
+#, fuzzy
+msgid "_Network Address: "
+msgstr "网络地址未指定"
 
-#: src/gnome-nettool.glade.h:75
-msgid "_Ping"
-msgstr "_Ping"
+#: src/gnome-nettool.glade.h:54
+#, fuzzy
+msgid "_Network Device"
+msgstr "网络设备：\t%s\n"
 
-#: src/gnome-nettool.glade.h:76
+#: src/gnome-nettool.glade.h:55
 msgid "_Tool"
 msgstr "工具(_T)"
 
-#: src/gnome-nettool.glade.h:77
-msgid "_Traceroute"
-msgstr "_Traceroute"
+#: src/gnome-nettool.glade.h:56
+msgid "_Username: "
+msgstr ""
 
-#: src/gnome-nettool.glade.h:78
-msgid "_Whois"
-msgstr "_Whois"
-
-#: src/gnome-nettool.glade.h:79
+#: src/gnome-nettool.glade.h:57
 msgid "ms"
 msgstr "毫秒"
 
-#: src/gnome-nettool.glade.h:80 src/info.h:27
-msgid "not available"
-msgstr "不可用"
-
-#: src/gnome-nettool.glade.h:81
-msgid "requests (pings)"
+#: src/gnome-nettool.glade.h:58
+#, fuzzy
+msgid "requests"
 msgstr "请求(pings)"
 
-#: src/info.c:277
+#. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
+#: src/info.c:56
+msgid "Other type"
+msgstr ""
+
+#: src/info.c:57
+#, fuzzy
+msgid "Ethernet Interface"
+msgstr "接口"
+
+#: src/info.c:58
+#, fuzzy
+msgid "Wireless Interface"
+msgstr "接口"
+
+#: src/info.c:59
+#, fuzzy
+msgid "Modem Interface"
+msgstr "接口"
+
+#: src/info.c:60
+msgid "Parallel Line Interface"
+msgstr ""
+
+#: src/info.c:61
+#, fuzzy
+msgid "Infrared Interface"
+msgstr "接口"
+
+#: src/info.c:62
+#, fuzzy
+msgid "Loopback Interface"
+msgstr "接口"
+
+#: src/info.c:63
+#, fuzzy
+msgid "Unknown Interface"
+msgstr "接口"
+
+#: src/info.c:130
+msgid "<i>Network Devices Not Found</i>"
+msgstr ""
+
+#: src/info.c:344
+#, fuzzy
+msgid "Unknown"
+msgstr "未知"
+
+#: src/info.c:500
 msgid "Active"
 msgstr "活动"
 
-#: src/info.c:279
+#: src/info.c:502
 msgid "Inactive"
 msgstr "不活动"
 
-#: src/info.c:284
+#: src/info.c:507
 msgid "Loopback"
 msgstr ""
 
-#: src/info.c:297
+#: src/info.c:524
 msgid "Enabled"
 msgstr "已启用"
 
-#: src/info.c:299
+#: src/info.c:526
 msgid "Disabled"
 msgstr "已禁用"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:419
+#: src/info.c:666
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "网络设备：\t%s\n"
 
-#: src/info.c:420
+#: src/info.c:667
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "硬件地址：\t%s\n"
 
-#: src/info.c:421
+#: src/info.c:668
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP 地址：\t%s\n"
 
-#: src/info.c:422
+#: src/info.c:669
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "网络掩码：\t%s\n"
 
-#: src/info.c:423
+#: src/info.c:670
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "广播：\t%s\n"
 
-#: src/info.c:424
+#: src/info.c:671
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "多播：\t%s\n"
 
-#: src/info.c:425
+#: src/info.c:672
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU：\t%s\n"
 
-#: src/info.c:426
+#: src/info.c:673
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "连接速度：\t%s\n"
 
-#: src/info.c:427
+#: src/info.c:674
 #, c-format
 msgid "State:\t%s\n"
 msgstr "状态：\t%s\n"
 
-#: src/info.c:429
+#: src/info.c:676
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "传送包数：\t%s\n"
 
-#: src/info.c:430
+#: src/info.c:677
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "传送错误数：\t%s\n"
 
-#: src/info.c:431
+#: src/info.c:678
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "接收包数：\t%s\n"
 
-#: src/info.c:432
+#: src/info.c:679
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "接收错误数：\t%s\n"
 
-#: src/info.c:433
+#: src/info.c:680
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr ""
 
-#: src/lookup.c:272
+#: src/info.h:27
+msgid "not available"
+msgstr "不可用"
+
+#: src/lookup.c:273
 msgid "Name"
 msgstr "名称"
 
-#: src/lookup.c:280
+#: src/lookup.c:281
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:289
+#: src/lookup.c:290
 msgid "Address Type"
 msgstr "地址类型"
 
-#: src/lookup.c:299
+#: src/lookup.c:300
 msgid "Record Type"
 msgstr "记录类型"
 
-#: src/lookup.c:308
+#: src/lookup.c:309
 msgid "Address"
 msgstr "地址"
 
@@ -474,156 +442,192 @@ msgstr "地址"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:336
+#: src/lookup.c:337
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "源\tTTL\t地址类型\t记录类型1\t解析\n"
 
-#: src/main.c:75
+#: src/main.c:78
 msgid "Load information for a network device"
 msgstr "从网络设备中装入信息"
 
-#: src/main.c:76
+#: src/main.c:79
 msgid "DEVICE"
 msgstr "设备"
 
-#: src/main.c:78
+#: src/main.c:81
 msgid "Send a ping to a network address"
 msgstr "向网络地址发送 ping"
 
-#: src/main.c:79 src/main.c:85 src/main.c:88 src/main.c:91
+#: src/main.c:82 src/main.c:88 src/main.c:91 src/main.c:94
 msgid "HOST"
 msgstr "主机"
 
-#: src/main.c:81
+#: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "获取 netstat 信息。可供选择的选项有：route、active、multicast。"
 
-#: src/main.c:82
+#: src/main.c:85
 msgid "COMMAND"
 msgstr "命令"
 
-#: src/main.c:84
+#: src/main.c:87
 msgid "Trace a route to a network address"
 msgstr "跟踪到网络地址的路由"
 
-#: src/main.c:87
+#: src/main.c:90
 msgid "Port scan a network address"
 msgstr "对网络地址进行端口扫描"
 
-#: src/main.c:90
+#: src/main.c:93
 msgid "Look up a network address"
 msgstr "查阅网络地址"
 
-#: src/main.c:93
+#: src/main.c:96
 msgid "Finger command to run"
 msgstr ""
 
-#: src/main.c:94
+#: src/main.c:97
 msgid "USER"
 msgstr "用户"
 
-#: src/main.c:96
+#: src/main.c:99
 msgid "Perform a whois lookup for a network domain"
 msgstr "执行网络域名的 whois 查阅"
 
-#: src/main.c:97
+#: src/main.c:100
 msgid "DOMAIN"
 msgstr "域"
 
-#: src/main.c:110
+#: src/main.c:113
 msgid "Network Information"
 msgstr "网络信息"
 
-#: src/main.c:116
+#: src/main.c:119
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
 "installed"
-msgstr ""
-"文件 %s 不存在，请检查 gnome-netinfo 是否安装正确"
+msgstr "文件 %s 不存在，请检查 gnome-netinfo 是否安装正确"
 
-#: src/netstat.c:430
+#: src/main.c:449 src/netstat.c:429
 msgid "Protocol"
 msgstr "协议"
 
-#: src/netstat.c:437
+#: src/main.c:456
+#, fuzzy
+msgid "IP Address"
+msgstr "IP 地址："
+
+#: src/main.c:463
+#, fuzzy
+msgid "Netmask / Prefix"
+msgstr "网络掩码"
+
+#: src/main.c:470
+#, fuzzy
+msgid "Broadcast"
+msgstr "广播："
+
+#: src/main.c:477
+#, fuzzy
+msgid "Scope"
+msgstr "停止"
+
+#: src/netstat.c:436
 msgid "IP Source"
 msgstr "IP 源"
 
-#: src/netstat.c:445
+#: src/netstat.c:444
 msgid "Port/Service"
 msgstr "端口/服务"
 
-#: src/netstat.c:453 src/scan.c:289
+#: src/netstat.c:452 src/scan.c:288
 msgid "State"
 msgstr "状态"
 
-#: src/netstat.c:596
+#: src/netstat.c:594
 msgid "Destination/Prefix"
 msgstr "目的/前缀"
 
-#: src/netstat.c:598
+#: src/netstat.c:596
 msgid "Destination"
 msgstr "目的"
 
-#: src/netstat.c:605
+#: src/netstat.c:603
 msgid "Gateway"
 msgstr "网关"
 
-#: src/netstat.c:613
+#: src/netstat.c:611
 msgid "Netmask"
 msgstr "网络掩码"
 
-#: src/netstat.c:621 src/netstat.c:728
+#: src/netstat.c:619 src/netstat.c:725
 msgid "Interface"
 msgstr "接口"
 
-#: src/netstat.c:735
+#: src/netstat.c:732
 msgid "Member"
 msgstr "成员"
 
-#: src/netstat.c:743
+#: src/netstat.c:740
 msgid "Group"
 msgstr "组"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:785
+#: src/netstat.c:782
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
-msgstr "协议\tIP 源\n端口/服务\t状态\n"
+msgstr ""
+"协议\tIP 源\n"
+"端口/服务\t状态\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:791
+#: src/netstat.c:788
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "目的\t网关\t网络掩码\t接口\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:796
+#: src/netstat.c:793
 msgid "Interface\tMember\tGroup\n"
 msgstr "接口\t成员\t组\n"
 
-#: src/nettool.c:178
-msgid "Network address not specified"
+#: src/nettool.c:206
+#, fuzzy
+msgid "A network address was not specified"
 msgstr "网络地址未指定"
 
-#: src/nettool.c:186
-#, c-format
-msgid "The host '%s' cannot be found"
+#: src/nettool.c:207 src/nettool.c:216
+#, fuzzy
+msgid "Please enter a valid network address and try again."
+msgstr "输入要 ping 的网络地址"
+
+#: src/nettool.c:214
+#, fuzzy, c-format
+msgid "The address '%s' cannot be found"
 msgstr "找不到主机“%s”"
 
-#: src/nettool.c:328
+#: src/nettool.c:243
+#, fuzzy
+msgid "A domain address was not specified"
+msgstr "网络地址未指定"
+
+#: src/nettool.c:244
+msgid "Please enter a valid domain address and try again."
+msgstr ""
+
+#: src/nettool.c:376
 msgid "Information not available"
 msgstr "信息不可用"
 
-#: src/nettool.c:424
+#: src/nettool.c:486
 msgid "Stop"
 msgstr "停止"
 
-#: src/nettool.c:430
+#: src/nettool.c:492
 msgid "Run"
 msgstr "运行"
 
@@ -690,38 +694,38 @@ msgstr "丢失包数：\t%s\n"
 msgid "unknown"
 msgstr "未知"
 
-#: src/scan.c:281
+#: src/scan.c:280
 msgid "Port"
 msgstr "端口"
 
-#: src/scan.c:297
+#: src/scan.c:296
 msgid "Service"
 msgstr "服务"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:319
+#: src/scan.c:318
 msgid "Port\tState\tService\n"
 msgstr "端口\t状态\t服务\n"
 
-#: src/traceroute.c:260
+#: src/traceroute.c:261
 msgid "Hop"
 msgstr ""
 
-#: src/traceroute.c:268
+#: src/traceroute.c:269
 msgid "Hostname"
 msgstr "主机名"
 
-#: src/traceroute.c:276
+#: src/traceroute.c:277
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:287
+#: src/traceroute.c:288
 msgid "Time 1"
 msgstr "时间 1"
 
-#: src/traceroute.c:297
+#: src/traceroute.c:298
 msgid "Time 2"
 msgstr "时间 2"
 
@@ -729,7 +733,7 @@ msgstr "时间 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:323
+#: src/traceroute.c:324
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr ""
 
@@ -738,3 +742,113 @@ msgstr ""
 msgid "%s: Command not found"
 msgstr "%s：命令未找到"
 
+#: src/gnome-nettool.desktop.in.h:1
+#, fuzzy
+msgid "Network Information Tools"
+msgstr "网络信息"
+
+#: src/gnome-nettool.desktop.in.h:2
+#, fuzzy
+msgid "Network Tools"
+msgstr "网络工具"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "(eg. user@www.domain.com)"
+#~ msgstr "(如 user@www.domain.com)"
+
+#~ msgid "(for example: domain.com)"
+#~ msgstr "(例如：domain.com)"
+
+#~ msgid "(for example: www.domain.com or 192.168.2.1)"
+#~ msgstr "(例如：www.domain.com 或 192.168.2.1)"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<span weight=\"bold\">@</span>"
+#~ msgstr "<span weight=\"bold\">@</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+#~ "information</span>"
+#~ msgstr "<span weight=\"bold\">输入域名地址以便查阅其“whois”信息</span>"
+
+#~ msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+#~ msgstr "<span weight=\"bold\">输入网络地址以便查阅</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter a user name and network address to finger "
+#~ "that user</span>"
+#~ msgstr "<span weight=\"bold\">输入用户名和网络地址以便标识用户</span>"
+
+#~ msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+#~ msgstr "<span weight=\"bold\">输入要 ping 的网络地址</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter the network address to scan for open ports</"
+#~ "span>"
+#~ msgstr "<span weight=\"bold\">输入要扫描开放端口的网络地址</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter the network address to trace a route to</span>"
+#~ msgstr "<span weight=\"bold\">输入要跟踪路由的网络地址</span>"
+
+#~ msgid "<span weight=\"bold\">Information</span>"
+#~ msgstr "<span weight=\"bold\">信息</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the network device to get information on</"
+#~ "span>"
+#~ msgstr "<span weight=\"bold\">选择要获取信息的网络设备</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the type of information to display</span>"
+#~ msgstr "<span weight=\"bold\">选择要显示的信息类型</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the type of information to lookup:</span>"
+#~ msgstr "<span weight=\"bold\">选择要查阅的信息类型：</span>"
+
+#~ msgid "<span weight=\"bold\">Statistics</span>"
+#~ msgstr "<span weight=\"bold\">统计</span>"
+
+#~ msgid "Any / All Information"
+#~ msgstr "任何/全部信息"
+
+#~ msgid "CPU / OS Type"
+#~ msgstr "CPU/操作系统类型"
+
+#~ msgid "Host name for Address"
+#~ msgstr "地址的主机名"
+
+#~ msgid "Internet Address"
+#~ msgstr "Internet 地址"
+
+#~ msgid "Mailbox Exchange"
+#~ msgstr "邮箱交换(MX)"
+
+#~ msgid "Name Server"
+#~ msgstr "名称服务器"
+
+#~ msgid "Select network device from list"
+#~ msgstr "从列表中选择网络设备"
+
+#~ msgid "Start-of-authority"
+#~ msgstr "开始身份验证"
+
+#~ msgid "_Finger"
+#~ msgstr "_Finger"
+
+#~ msgid "_Lookup"
+#~ msgstr "查阅(_L)"
+
+#~ msgid "_Netstat"
+#~ msgstr "_Netstat"
+
+#~ msgid "_Ping"
+#~ msgstr "_Ping"
+
+#~ msgid "_Whois"
+#~ msgstr "_Whois"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-02-11 16:35+0100\n"
+"POT-Creation-Date: 2004-06-13 20:15+0200\n"
 "PO-Revision-Date: 2004-01-12 03:01+0100\n"
 "Last-Translator: Danilo Šegan <danilo@prevod.org>\n"
 "Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
@@ -17,465 +17,435 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:212
+#: src/callbacks.c:319
+msgid "translator_credits"
+msgstr ""
+"Predrag Krtolica <predrag_k@optusnet.com.au>\n"
+"Danilo Šegan <dsegan@gmx.net>\n"
+"\n"
+"Prevod.org — prevod na srpski jezik."
+
+#: src/callbacks.c:347
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafičko korisničko sučelje za uobičajene mrežne alate"
 
-#: src/callbacks.c:214
-msgid "This is an untranslated version of GNOME Network Information"
-msgstr "Ovo je neprevedeno izdanje Gnomovih mrežnih podataka"
-
-#: src/gnome-netinfo.glade.h:1
-msgid "    "
-msgstr "    "
-
-#: src/gnome-netinfo.glade.h:2
-msgid "(eg. user@www.domain.com)"
-msgstr "(npr. korisnik@domen.kom)"
-
-#: src/gnome-netinfo.glade.h:3
-msgid "(for example: domain.com)"
-msgstr "(na primer: prevod.org)"
-
-#: src/gnome-netinfo.glade.h:4
-msgid "(for example: www.domain.com or 192.168.2.1)"
-msgstr "(na primer: prevod.org ili 192.168.2.1)"
-
-#: src/gnome-netinfo.glade.h:5
-msgid "*"
-msgstr "*"
-
-#: src/gnome-netinfo.glade.h:6
+#: src/gnome-nettool.glade.h:1
 msgid "0.0"
 msgstr "0,0"
 
-#: src/gnome-netinfo.glade.h:7
-msgid "<span weight=\"bold\">@</span>"
-msgstr "<span weight=\"bold\">@</span>"
+#: src/gnome-nettool.glade.h:2
+#, fuzzy
+msgid "<b>IP Information</b>"
+msgstr "_Detalji"
 
-#: src/gnome-netinfo.glade.h:8
-msgid ""
-"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
-"information</span>"
-msgstr "<span weight=\"bold\">Unesite domen za koji želite podatke</span>"
+#: src/gnome-nettool.glade.h:3
+#, fuzzy
+msgid "<b>Interface Information</b>"
+msgstr "Podrazumevani podaci"
 
-#: src/gnome-netinfo.glade.h:9
-msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
-msgstr "<span weight=\"bold\">Unesite mrežnu adresu koju tražite</span>"
-
-#: src/gnome-netinfo.glade.h:10
-msgid ""
-"<span weight=\"bold\">Enter a user name and network address to finger that "
-"user</span>"
+#: src/gnome-nettool.glade.h:4
+msgid "<b>Interface Statistics</b>"
 msgstr ""
-"<span weight=\"bold\">Unesite korisničko ime i mrežnu adresu da pročačkate "
-"(finger) tog korisnika</span>"
 
-#: src/gnome-netinfo.glade.h:11
-msgid "<span weight=\"bold\">Enter the network address to ping</span>"
-msgstr ""
-"<span weight=\"bold\">Unesite mrežnu adresu koju želite da pingujete</span>"
-
-#: src/gnome-netinfo.glade.h:12
-msgid ""
-"<span weight=\"bold\">Enter the network address to scan for open ports</span>"
-msgstr ""
-"<span weight=\"bold\">Unesite mrežnu adresu na kojoj želite da tražite "
-"otvorene portove</span>"
-
-#: src/gnome-netinfo.glade.h:13
-msgid ""
-"<span weight=\"bold\">Enter the network address to trace a route to</span>"
-msgstr ""
-"<span weight=\"bold\">Unesite mrežnu adresu do koje želite da pronađete "
-"putanju</span>"
-
-#: src/gnome-netinfo.glade.h:14
-msgid "<span weight=\"bold\">Information</span>"
-msgstr "<span weight=\"bold\">Podaci</span>"
-
-#: src/gnome-netinfo.glade.h:15
-msgid "<span weight=\"bold\">Round trip time statistics</span>"
+#: src/gnome-nettool.glade.h:5
+#, fuzzy
+msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<span weight=\"bold\">Statistika za povratni put</span>"
 
-#: src/gnome-netinfo.glade.h:16
-msgid ""
-"<span weight=\"bold\">Select the network device to get information on</span>"
-msgstr ""
-"<span weight=\"bold\">Izaberite mrežni uređaj za koji želite podatke</span>"
-
-#: src/gnome-netinfo.glade.h:17
-msgid "<span weight=\"bold\">Select the type of information to display</span>"
-msgstr ""
-"<span weight=\"bold\">Izaberite koju vrstu podataka želite da prikažete</"
-"span>"
-
-#: src/gnome-netinfo.glade.h:18
-msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
-msgstr ""
-"<span weight=\"bold\">Izaberite koju vrstu podataka želite da pronađete:</"
-"span>"
-
-#: src/gnome-netinfo.glade.h:19
-msgid "<span weight=\"bold\">Statistics</span>"
-msgstr "<span weight=\"bold\">Statistika</span>"
-
-#: src/gnome-netinfo.glade.h:20
-msgid "<span weight=\"bold\">Transmission statistics</span>"
+#: src/gnome-nettool.glade.h:6
+#, fuzzy
+msgid "<b>Transmision Statistics</b>"
 msgstr "<span weight=\"bold\">Statistika prenosa</span>"
 
-#: src/gnome-netinfo.glade.h:21
-msgid "Any / All Information"
-msgstr "Bilo koji/svi podaci"
+#: src/gnome-nettool.glade.h:7
+#, fuzzy
+msgid "Active Network Services"
+msgstr "Pogledajte aktivne internet servise"
 
-#: src/gnome-netinfo.glade.h:22
+#: src/gnome-nettool.glade.h:8
 msgid "Average:"
 msgstr "Prosek:"
 
-#: src/gnome-netinfo.glade.h:23
+#: src/gnome-nettool.glade.h:9
 msgid "Broadcast:"
 msgstr "Emitovanje:"
 
-#: src/gnome-netinfo.glade.h:24
-msgid "CPU / OS Type"
-msgstr "Tip procesora i operativnog sistema"
-
-#: src/gnome-netinfo.glade.h:25
-msgid "Canonical Name"
-msgstr "Kanonsko ime"
-
-#: src/gnome-netinfo.glade.h:26
+#: src/gnome-nettool.glade.h:10
 msgid "Clear _History"
 msgstr "Očisti _istorijat"
 
-#: src/gnome-netinfo.glade.h:27
+#: src/gnome-nettool.glade.h:11
 msgid "Collisions:"
 msgstr "Sudari:"
 
-#: src/gnome-netinfo.glade.h:28
-msgid "Default Information"
-msgstr "Podrazumevani podaci"
+#: src/gnome-nettool.glade.h:12
+#, fuzzy
+msgid "Devices"
+msgstr "U_ređaji"
 
-#: src/gnome-netinfo.glade.h:29
-msgid "Display active network services"
-msgstr "Pogledajte aktivne internet servise"
+#: src/gnome-nettool.glade.h:13
+#, fuzzy
+msgid "Display: "
+msgstr "Prikaz:"
 
-#: src/gnome-netinfo.glade.h:30
-msgid "Display multicast information"
-msgstr "Pogledajte detalje o višestrukom emitovanju"
-
-#: src/gnome-netinfo.glade.h:31
-msgid "Display routing table information"
-msgstr "Pogledajte podatke o tabeli preusmeravanja paketa"
-
-#: src/gnome-netinfo.glade.h:32
-msgid "Enter the network address to ping"
-msgstr "Unesite mrežnu adresu da pingujete"
-
-#: src/gnome-netinfo.glade.h:33 src/main.c:530
+#: src/gnome-nettool.glade.h:14 src/main.c:772
 msgid "Finger"
 msgstr "Finger"
 
-#: src/gnome-netinfo.glade.h:34
+#: src/gnome-nettool.glade.h:15
 msgid "Hardware address:"
 msgstr "Hardverska adresaL"
 
-#: src/gnome-netinfo.glade.h:35
-msgid "Host name for Address"
-msgstr "Ime računara za adresu"
+#: src/gnome-nettool.glade.h:16
+#, fuzzy
+msgid "Host"
+msgstr "Server:"
 
-#: src/gnome-netinfo.glade.h:36
-msgid "IP address:"
-msgstr "IP adresa:"
+#: src/gnome-nettool.glade.h:17
+#, fuzzy
+msgid "IP Address:"
+msgstr "IP Adresa"
 
-#: src/gnome-netinfo.glade.h:37
-msgid "Internet Address"
-msgstr "Internet adresa"
-
-#: src/gnome-netinfo.glade.h:38
+#: src/gnome-nettool.glade.h:18
 msgid "Link speed:"
 msgstr "Brzina veze:"
 
-#: src/gnome-netinfo.glade.h:39 src/main.c:485
+#: src/gnome-nettool.glade.h:19 src/main.c:701
 msgid "Lookup"
 msgstr "Pronađi"
 
-#: src/gnome-netinfo.glade.h:40
+#: src/gnome-nettool.glade.h:20
 msgid "MTU:"
 msgstr "MTU:"
 
-#: src/gnome-netinfo.glade.h:41
-msgid "Mailbox Exchange"
-msgstr "Razmena pošte"
-
-#: src/gnome-netinfo.glade.h:42
-msgid "Mailbox Information"
-msgstr "Podaci o e-pošti"
-
-#: src/gnome-netinfo.glade.h:43
+#: src/gnome-nettool.glade.h:21
 msgid "Maximum:"
 msgstr "Najviše:"
 
-#: src/gnome-netinfo.glade.h:44
+#: src/gnome-nettool.glade.h:22
 msgid "Minimum:"
 msgstr "Najmanje:"
 
-#: src/gnome-netinfo.glade.h:45
+#: src/gnome-nettool.glade.h:23
+#, fuzzy
+msgid "Multicast Information"
+msgstr "Pogledajte detalje o višestrukom emitovanju"
+
+#: src/gnome-nettool.glade.h:24
 msgid "Multicast:"
 msgstr "Višestruko emitovanje:"
 
-#: src/gnome-netinfo.glade.h:46
-msgid "Name Server"
-msgstr "DNS server"
-
-#: src/gnome-netinfo.glade.h:47
+#: src/gnome-nettool.glade.h:25
 msgid "Netmask:"
 msgstr "Mrežna maska:"
 
-#: src/gnome-netinfo.glade.h:48 src/main.c:349
+#: src/gnome-nettool.glade.h:26 src/main.c:416
 msgid "Netstat"
 msgstr "Mrežna statistika"
 
-#: src/gnome-netinfo.glade.h:49 src/main.c:110
-msgid "Network Information"
-msgstr "Podaci o mreži"
+#: src/gnome-nettool.glade.h:27
+#, fuzzy
+msgid "Network Tools - Devices"
+msgstr "Mrežni uređaj:\t%s\n"
 
-#: src/gnome-netinfo.glade.h:50
+#: src/gnome-nettool.glade.h:28
+#, fuzzy
+msgid "Not Available"
+msgstr "nije dostupan"
+
+#: src/gnome-nettool.glade.h:29
+msgid "Only"
+msgstr ""
+
+#: src/gnome-nettool.glade.h:30
 msgid "Packets loss:"
 msgstr "Izgubljeni paketi:"
 
-#: src/gnome-netinfo.glade.h:51
+#: src/gnome-nettool.glade.h:31
 msgid "Packets received:"
 msgstr "Primljeni paketi:"
 
-#: src/gnome-netinfo.glade.h:52
+#: src/gnome-nettool.glade.h:32
 msgid "Packets transmitted:"
 msgstr "Preneti paketi:"
 
-#: src/gnome-netinfo.glade.h:53 src/main.c:257
+#: src/gnome-nettool.glade.h:33 src/main.c:279
 msgid "Ping"
 msgstr "Ping"
 
-#: src/gnome-netinfo.glade.h:54
-msgid "Port _Scan"
+#: src/gnome-nettool.glade.h:34
+#, fuzzy
+msgid "Port Scan"
 msgstr "Traženje _portova"
 
-#: src/gnome-netinfo.glade.h:55
+#: src/gnome-nettool.glade.h:35
 msgid "Received bytes:"
 msgstr "Primljeni bajtovi:"
 
-#: src/gnome-netinfo.glade.h:56
+#: src/gnome-nettool.glade.h:36
 msgid "Received packets:"
 msgstr "Primljeni paketi:"
 
-#: src/gnome-netinfo.glade.h:57
+#: src/gnome-nettool.glade.h:37
 msgid "Reception errors:"
 msgstr "Greške kod primanja:"
 
-#: src/gnome-netinfo.glade.h:58 src/main.c:447
+#: src/gnome-nettool.glade.h:38
+#, fuzzy
+msgid "Routing Table Information"
+msgstr "Pogledajte podatke o tabeli preusmeravanja paketa"
+
+#: src/gnome-nettool.glade.h:39 src/main.c:595
 msgid "Scan"
 msgstr "Traži"
 
-#: src/gnome-netinfo.glade.h:59
-msgid "Select network device from list"
-msgstr "Izaberite mrežni uređaj iz spiska"
-
-#: src/gnome-netinfo.glade.h:60
-msgid "Send only"
-msgstr "Samo šalji"
-
-#: src/gnome-netinfo.glade.h:61
-msgid "Send unlimited requests (pings)"
+#: src/gnome-nettool.glade.h:40
+#, fuzzy
+msgid "Send unlimited requests"
 msgstr "Pošalji neograničen broj zahteva (pingova)"
 
-#: src/gnome-netinfo.glade.h:62
-msgid "Start-of-authority"
-msgstr "Početak-autoriteta (SOA)"
+#: src/gnome-nettool.glade.h:41
+#, fuzzy
+msgid "Send: "
+msgstr "Pošalji"
 
-#: src/gnome-netinfo.glade.h:63
+#: src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "Stanje:"
 
-#: src/gnome-netinfo.glade.h:64
-msgid "Text Information"
-msgstr "Tekstualni podaci"
-
-#: src/gnome-netinfo.glade.h:65 src/main.c:305
+#: src/gnome-nettool.glade.h:43 src/main.c:351
 msgid "Trace"
 msgstr "Put"
 
-#: src/gnome-netinfo.glade.h:66
+#: src/gnome-nettool.glade.h:44
+#, fuzzy
+msgid "Traceroute"
+msgstr "P_utanja"
+
+#: src/gnome-nettool.glade.h:45
 msgid "Transmission errors:"
 msgstr "Greške prenosa:"
 
-#: src/gnome-netinfo.glade.h:67
+#: src/gnome-nettool.glade.h:46
 msgid "Transmitted bytes:"
 msgstr "Preneti bajtovi:"
 
-#: src/gnome-netinfo.glade.h:68
+#: src/gnome-nettool.glade.h:47
 msgid "Transmitted packets:"
 msgstr "Preneti paketi:"
 
-#: src/gnome-netinfo.glade.h:69
-msgid "Well Known Services"
-msgstr "Dobro poznate usluge"
+#: src/gnome-nettool.glade.h:48
+#, fuzzy
+msgid "User"
+msgstr "_Korisnik:"
 
-#: src/gnome-netinfo.glade.h:70 src/main.c:581
+#: src/gnome-nettool.glade.h:49 src/main.c:869
 msgid "Whois"
 msgstr "Ko-je (Whois)"
 
-#: src/gnome-netinfo.glade.h:71
-msgid "_Devices"
-msgstr "U_ređaji"
+#: src/gnome-nettool.glade.h:50
+msgid "_Configure"
+msgstr ""
 
-#: src/gnome-netinfo.glade.h:72
-msgid "_Finger"
-msgstr "_Finger"
+#: src/gnome-nettool.glade.h:51
+#, fuzzy
+msgid "_Domain Address: "
+msgstr "Lokalna IP adresa"
 
-#: src/gnome-netinfo.glade.h:73
-msgid "_Information"
+#: src/gnome-nettool.glade.h:52
+#, fuzzy
+msgid "_Information Type: "
 msgstr "_Detalji"
 
-#: src/gnome-netinfo.glade.h:74
-msgid "_Lookup"
-msgstr "_Pronađi"
+#: src/gnome-nettool.glade.h:53
+#, fuzzy
+msgid "_Network Address: "
+msgstr "Mrežna adresa nije naznačena"
 
-#: src/gnome-netinfo.glade.h:75
-msgid "_Netstat"
-msgstr "_Mrežna statistika"
+#: src/gnome-nettool.glade.h:54
+#, fuzzy
+msgid "_Network Device"
+msgstr "Mrežni uređaj:\t%s\n"
 
-#: src/gnome-netinfo.glade.h:76
-msgid "_Ping"
-msgstr "P_ing"
+#: src/gnome-nettool.glade.h:55
+#, fuzzy
+msgid "_Tool"
+msgstr "Opis alatke"
 
-#: src/gnome-netinfo.glade.h:77
-msgid "_Traceroute"
-msgstr "P_utanja"
+#: src/gnome-nettool.glade.h:56
+#, fuzzy
+msgid "_Username: "
+msgstr "Ime _korisnika:"
 
-#: src/gnome-netinfo.glade.h:78
-msgid "_Whois"
-msgstr "_Ko-je (Whois)"
-
-#: src/gnome-netinfo.glade.h:79
+#: src/gnome-nettool.glade.h:57
 msgid "ms"
 msgstr "ms"
 
-#: src/gnome-netinfo.glade.h:80 src/info.h:27
-msgid "not available"
-msgstr "nije dostupan"
-
-#: src/gnome-netinfo.glade.h:81
-msgid "requests (pings)"
+#: src/gnome-nettool.glade.h:58
+#, fuzzy
+msgid "requests"
 msgstr "zahtevi (pingovi)"
 
-#: src/info.c:277
+#. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
+#: src/info.c:56
+msgid "Other type"
+msgstr ""
+
+#: src/info.c:57
+#, fuzzy
+msgid "Ethernet Interface"
+msgstr "Uređaj"
+
+#: src/info.c:58
+#, fuzzy
+msgid "Wireless Interface"
+msgstr "Uređaj"
+
+#: src/info.c:59
+#, fuzzy
+msgid "Modem Interface"
+msgstr "Uređaj"
+
+#: src/info.c:60
+msgid "Parallel Line Interface"
+msgstr ""
+
+#: src/info.c:61
+#, fuzzy
+msgid "Infrared Interface"
+msgstr "Uređaj"
+
+#: src/info.c:62
+#, fuzzy
+msgid "Loopback Interface"
+msgstr "Uređaj"
+
+#: src/info.c:63
+#, fuzzy
+msgid "Unknown Interface"
+msgstr "Uređaj"
+
+#: src/info.c:130
+msgid "<i>Network Devices Not Found</i>"
+msgstr ""
+
+#: src/info.c:344
+#, fuzzy
+msgid "Unknown"
+msgstr "nepoznat"
+
+#: src/info.c:500
 msgid "Active"
 msgstr "Aktivan"
 
-#: src/info.c:279
+#: src/info.c:502
 msgid "Inactive"
 msgstr "Neaktivan"
 
-#: src/info.c:284
+#: src/info.c:507
 msgid "Loopback"
 msgstr "Zatvorena petlja"
 
-#: src/info.c:297
+#: src/info.c:524
 msgid "Enabled"
 msgstr "Omogućen"
 
-#: src/info.c:299
+#: src/info.c:526
 msgid "Disabled"
 msgstr "Onemogućen"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:419
+#: src/info.c:666
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Mrežni uređaj:\t%s\n"
 
-#: src/info.c:420
+#: src/info.c:667
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardverska adresa:\t%s\n"
 
-#: src/info.c:421
+#: src/info.c:668
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP adresa:\t%s\n"
 
-#: src/info.c:422
+#: src/info.c:669
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Mrežna maska:\t%s\n"
 
-#: src/info.c:423
+#: src/info.c:670
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Emitovanje:\t%s\n"
 
-#: src/info.c:424
+#: src/info.c:671
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Višestruko emitovanje:\t%s\n"
 
-#: src/info.c:425
+#: src/info.c:672
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:426
+#: src/info.c:673
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Brzina veze:\t%s\n"
 
-#: src/info.c:427
+#: src/info.c:674
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stanje:\t%s\n"
 
-#: src/info.c:429
+#: src/info.c:676
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Preneti paketi:\t%s\n"
 
-#: src/info.c:430
+#: src/info.c:677
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Prenosne greške:\t%s\n"
 
-#: src/info.c:431
+#: src/info.c:678
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Primljeni paketi:\t%s\n"
 
-#: src/info.c:432
+#: src/info.c:679
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Greške kod primanja:\t%s\n"
 
-#: src/info.c:433
+#: src/info.c:680
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Sudari:\t%s\n"
 
-#: src/lookup.c:272
+#: src/info.h:27
+msgid "not available"
+msgstr "nije dostupan"
+
+#: src/lookup.c:273
 msgid "Name"
 msgstr "Ime"
 
-#: src/lookup.c:280
+#: src/lookup.c:281
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:289
+#: src/lookup.c:290
 msgid "Address Type"
 msgstr "Vrsta adrese"
 
-#: src/lookup.c:299
+#: src/lookup.c:300
 msgid "Record Type"
 msgstr "Tip zapisa"
 
-#: src/lookup.c:308
+#: src/lookup.c:309
 msgid "Address"
 msgstr "Adresa"
 
@@ -485,65 +455,69 @@ msgstr "Adresa"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:336
+#: src/lookup.c:337
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Izvor\tTTL\tVrsta adrese\tZapis Vrste\tRezolucija\n"
 
-#: src/main.c:75
+#: src/main.c:78
 msgid "Load information for a network device"
 msgstr "Učitaj podatke za mrežni uređaj"
 
-#: src/main.c:76
+#: src/main.c:79
 msgid "DEVICE"
 msgstr "UREĐAJ"
 
-#: src/main.c:78
+#: src/main.c:81
 msgid "Send a ping to a network address"
 msgstr "Pošalji ping na mrežnu adresu"
 
-#: src/main.c:79 src/main.c:85 src/main.c:88 src/main.c:91
+#: src/main.c:82 src/main.c:88 src/main.c:91 src/main.c:94
 msgid "HOST"
 msgstr "RAČUNAR"
 
-#: src/main.c:81
+#: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Preuzmi podatke o stanju mreže.  Dopuštene opcije su: route, active, "
 "multicast."
 
-#: src/main.c:82
+#: src/main.c:85
 msgid "COMMAND"
 msgstr "NAREDBA"
 
-#: src/main.c:84
+#: src/main.c:87
 msgid "Trace a route to a network address"
 msgstr "Prati rutu do mrežne adrese"
 
-#: src/main.c:87
+#: src/main.c:90
 msgid "Port scan a network address"
 msgstr "Pretraži portove mrežne adrese"
 
-#: src/main.c:90
+#: src/main.c:93
 msgid "Look up a network address"
 msgstr "Pronađi mrežnu adresu"
 
-#: src/main.c:93
+#: src/main.c:96
 msgid "Finger command to run"
 msgstr "Finger naredba za pokretanje"
 
-#: src/main.c:94
+#: src/main.c:97
 msgid "USER"
 msgstr "KORISNIK"
 
-#: src/main.c:96
+#: src/main.c:99
 msgid "Perform a whois lookup for a network domain"
 msgstr "Izvrši ko-je (whois) pretraživanje za mrežni domen"
 
-#: src/main.c:97
+#: src/main.c:100
 msgid "DOMAIN"
 msgstr "DOMEN"
 
-#: src/main.c:116
+#: src/main.c:113
+msgid "Network Information"
+msgstr "Podaci o mreži"
+
+#: src/main.c:119
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
@@ -552,90 +526,124 @@ msgstr ""
 "Datoteka %s ne postoji, molim vas proverite da li je gnome-netinfo pravilno "
 "instaliran "
 
-#: src/netinfo.c:157
-msgid "Network address not specified"
-msgstr "Mrežna adresa nije naznačena"
-
-#: src/netinfo.c:165
-#, c-format
-msgid "The host '%s' cannot be found"
-msgstr "Ne mogu da nađem računar „%s“."
-
-#: src/netinfo.c:309
-msgid "Information not available"
-msgstr "Detalji nisu dostupni"
-
-#: src/netinfo.c:395
-msgid "Stop"
-msgstr "Zaustavi"
-
-#: src/netinfo.c:401
-msgid "Run"
-msgstr "Počni"
-
-#: src/netstat.c:403
+#: src/main.c:449 src/netstat.c:429
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/netstat.c:410
+#: src/main.c:456
+msgid "IP Address"
+msgstr "IP Adresa"
+
+#: src/main.c:463
+#, fuzzy
+msgid "Netmask / Prefix"
+msgstr "Mrežna maska"
+
+#: src/main.c:470
+#, fuzzy
+msgid "Broadcast"
+msgstr "Emitovanje:"
+
+#: src/main.c:477
+#, fuzzy
+msgid "Scope"
+msgstr "Zaustavi"
+
+#: src/netstat.c:436
 msgid "IP Source"
 msgstr "Izvorni IP"
 
-#: src/netstat.c:418
+#: src/netstat.c:444
 msgid "Port/Service"
 msgstr "Port/usluga"
 
-#: src/netstat.c:426 src/scan.c:289
+#: src/netstat.c:452 src/scan.c:288
 msgid "State"
 msgstr "Stanje"
 
-#: src/netstat.c:549
+#: src/netstat.c:594
 msgid "Destination/Prefix"
 msgstr "Odredište/predmetak"
 
-#: src/netstat.c:551
+#: src/netstat.c:596
 msgid "Destination"
 msgstr "Odredište"
 
-#: src/netstat.c:558
+#: src/netstat.c:603
 msgid "Gateway"
 msgstr "Mrežni izlaz"
 
-#: src/netstat.c:566
+#: src/netstat.c:611
 msgid "Netmask"
 msgstr "Mrežna maska"
 
-#: src/netstat.c:574 src/netstat.c:680
+#: src/netstat.c:619 src/netstat.c:725
 msgid "Interface"
 msgstr "Uređaj"
 
-#: src/netstat.c:687
+#: src/netstat.c:732
 msgid "Member"
 msgstr "Član"
 
-#: src/netstat.c:695
+#: src/netstat.c:740
 msgid "Group"
 msgstr "Grupa"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:737
+#: src/netstat.c:782
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokol\tIzvorni IP\tPort/usluga\tStanje\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:743
+#: src/netstat.c:788
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Odredište\tMrežni izlaz\tMrežna maska\tUređaj\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:748
+#: src/netstat.c:793
 msgid "Interface\tMember\tGroup\n"
 msgstr "Uređaj\tČlan\tGrupa\n"
+
+#: src/nettool.c:206
+#, fuzzy
+msgid "A network address was not specified"
+msgstr "Mrežna adresa nije naznačena"
+
+#: src/nettool.c:207 src/nettool.c:216
+#, fuzzy
+msgid "Please enter a valid network address and try again."
+msgstr "Unesite mrežnu adresu da pingujete"
+
+#: src/nettool.c:214
+#, fuzzy, c-format
+msgid "The address '%s' cannot be found"
+msgstr "Ne mogu da nađem računar „%s“."
+
+#: src/nettool.c:243
+#, fuzzy
+msgid "A domain address was not specified"
+msgstr "Mrežna adresa nije naznačena"
+
+#: src/nettool.c:244
+msgid "Please enter a valid domain address and try again."
+msgstr ""
+
+#: src/nettool.c:376
+msgid "Information not available"
+msgstr "Detalji nisu dostupni"
+
+#: src/nettool.c:486
+msgid "Stop"
+msgstr "Zaustavi"
+
+#: src/nettool.c:492
+msgid "Run"
+msgstr "Počni"
 
 #: src/ping.c:378
 msgid "Bytes"
@@ -700,38 +708,38 @@ msgstr "Izgubljeni paketi:\t%s\n"
 msgid "unknown"
 msgstr "nepoznat"
 
-#: src/scan.c:281
+#: src/scan.c:280
 msgid "Port"
 msgstr "Port"
 
-#: src/scan.c:297
+#: src/scan.c:296
 msgid "Service"
 msgstr "Usluga"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:319
+#: src/scan.c:318
 msgid "Port\tState\tService\n"
 msgstr "Port\tStanje\tUsluga\n"
 
-#: src/traceroute.c:260
+#: src/traceroute.c:261
 msgid "Hop"
 msgstr "Čvor"
 
-#: src/traceroute.c:268
+#: src/traceroute.c:269
 msgid "Hostname"
 msgstr "Ime računara"
 
-#: src/traceroute.c:276
+#: src/traceroute.c:277
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:287
+#: src/traceroute.c:288
 msgid "Time 1"
 msgstr "Vreme 1"
 
-#: src/traceroute.c:297
+#: src/traceroute.c:298
 msgid "Time 2"
 msgstr "Vreme 2"
 
@@ -739,7 +747,7 @@ msgstr "Vreme 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:323
+#: src/traceroute.c:324
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Čvor\tIme računara\tIP\tVreme 1\tVreme 2\n"
 
@@ -747,6 +755,152 @@ msgstr "Čvor\tIme računara\tIP\tVreme 1\tVreme 2\n"
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: naredba nije nađena"
+
+#: src/gnome-nettool.desktop.in.h:1
+#, fuzzy
+msgid "Network Information Tools"
+msgstr "Podaci o mreži"
+
+#: src/gnome-nettool.desktop.in.h:2
+#, fuzzy
+msgid "Network Tools"
+msgstr "Podaci o mreži"
+
+#~ msgid "This is an untranslated version of GNOME Network Information"
+#~ msgstr "Ovo je neprevedeno izdanje Gnomovih mrežnih podataka"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "(eg. user@www.domain.com)"
+#~ msgstr "(npr. korisnik@domen.kom)"
+
+#~ msgid "(for example: domain.com)"
+#~ msgstr "(na primer: prevod.org)"
+
+#~ msgid "(for example: www.domain.com or 192.168.2.1)"
+#~ msgstr "(na primer: prevod.org ili 192.168.2.1)"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<span weight=\"bold\">@</span>"
+#~ msgstr "<span weight=\"bold\">@</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+#~ "information</span>"
+#~ msgstr "<span weight=\"bold\">Unesite domen za koji želite podatke</span>"
+
+#~ msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+#~ msgstr "<span weight=\"bold\">Unesite mrežnu adresu koju tražite</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter a user name and network address to finger "
+#~ "that user</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Unesite korisničko ime i mrežnu adresu da "
+#~ "pročačkate (finger) tog korisnika</span>"
+
+#~ msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Unesite mrežnu adresu koju želite da pingujete</"
+#~ "span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter the network address to scan for open ports</"
+#~ "span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Unesite mrežnu adresu na kojoj želite da tražite "
+#~ "otvorene portove</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter the network address to trace a route to</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Unesite mrežnu adresu do koje želite da pronađete "
+#~ "putanju</span>"
+
+#~ msgid "<span weight=\"bold\">Information</span>"
+#~ msgstr "<span weight=\"bold\">Podaci</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the network device to get information on</"
+#~ "span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Izaberite mrežni uređaj za koji želite podatke</"
+#~ "span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the type of information to display</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Izaberite koju vrstu podataka želite da prikažete</"
+#~ "span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the type of information to lookup:</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Izaberite koju vrstu podataka želite da pronađete:</"
+#~ "span>"
+
+#~ msgid "<span weight=\"bold\">Statistics</span>"
+#~ msgstr "<span weight=\"bold\">Statistika</span>"
+
+#~ msgid "Any / All Information"
+#~ msgstr "Bilo koji/svi podaci"
+
+#~ msgid "CPU / OS Type"
+#~ msgstr "Tip procesora i operativnog sistema"
+
+#~ msgid "Canonical Name"
+#~ msgstr "Kanonsko ime"
+
+#~ msgid "Host name for Address"
+#~ msgstr "Ime računara za adresu"
+
+#~ msgid "IP address:"
+#~ msgstr "IP adresa:"
+
+#~ msgid "Internet Address"
+#~ msgstr "Internet adresa"
+
+#~ msgid "Mailbox Exchange"
+#~ msgstr "Razmena pošte"
+
+#~ msgid "Mailbox Information"
+#~ msgstr "Podaci o e-pošti"
+
+#~ msgid "Name Server"
+#~ msgstr "DNS server"
+
+#~ msgid "Select network device from list"
+#~ msgstr "Izaberite mrežni uređaj iz spiska"
+
+#~ msgid "Send only"
+#~ msgstr "Samo šalji"
+
+#~ msgid "Start-of-authority"
+#~ msgstr "Početak-autoriteta (SOA)"
+
+#~ msgid "Text Information"
+#~ msgstr "Tekstualni podaci"
+
+#~ msgid "Well Known Services"
+#~ msgstr "Dobro poznate usluge"
+
+#~ msgid "_Finger"
+#~ msgstr "_Finger"
+
+#~ msgid "_Lookup"
+#~ msgstr "_Pronađi"
+
+#~ msgid "_Netstat"
+#~ msgstr "_Mrežna statistika"
+
+#~ msgid "_Ping"
+#~ msgstr "P_ing"
+
+#~ msgid "_Whois"
+#~ msgstr "_Ko-je (Whois)"
 
 #~ msgid "GNOME Remote Desktop Applet"
 #~ msgstr "Programče za Gnomovu udaljenu radnu površinu"
@@ -842,9 +996,6 @@ msgstr "%s: naredba nije nađena"
 
 #~ msgid "Pro_tocol:"
 #~ msgstr "Pro_tokol:"
-
-#~ msgid "_User Name:"
-#~ msgstr "Ime _korisnika:"
 
 #~ msgid "Pass_word:"
 #~ msgstr "_Lozinka:"
@@ -1120,12 +1271,6 @@ msgstr "%s: naredba nije nađena"
 #~ msgid "Display size"
 #~ msgstr "Veličina prikaza"
 
-#~ msgid "Display:"
-#~ msgstr "Prikaz:"
-
-#~ msgid "Host:"
-#~ msgstr "Server:"
-
 #~ msgid "VNC"
 #~ msgstr "VNC"
 
@@ -1195,9 +1340,6 @@ msgstr "%s: naredba nije nađena"
 #~ msgid "Enter search string"
 #~ msgstr "Unesite reč za traženje"
 
-#~ msgid "Send"
-#~ msgstr "Pošalji"
-
 #~ msgid "Enter transmission string"
 #~ msgstr "Unesite reč za prenos"
 
@@ -1231,9 +1373,6 @@ msgstr "%s: naredba nije nađena"
 
 #~ msgid "Authentication"
 #~ msgstr "Provera"
-
-#~ msgid "IP Address"
-#~ msgstr "IP Adresa"
 
 #~ msgid "DNS"
 #~ msgstr "DNS"
@@ -1279,9 +1418,6 @@ msgstr "%s: naredba nije nađena"
 
 #~ msgid "Hidden Password"
 #~ msgstr "Sakrivena lozinka"
-
-#~ msgid "Local IP Address"
-#~ msgstr "Lokalna IP adresa"
 
 #~ msgid "Dynamic"
 #~ msgstr "Dinamička"
@@ -1469,9 +1605,6 @@ msgstr "%s: naredba nije nađena"
 
 #~ msgid "Label"
 #~ msgstr "Naziv"
-
-#~ msgid "Tooltip"
-#~ msgstr "Opis alatke"
 
 #~ msgid "Animation Speed"
 #~ msgstr "Brzina animacije"
@@ -1665,9 +1798,6 @@ msgstr "%s: naredba nije nađena"
 #~ msgid "_Shell"
 #~ msgstr "_Ljuska"
 
-#~ msgid "_User:"
-#~ msgstr "_Korisnik:"
-
 #~ msgid "_Width:"
 #~ msgstr "_Širina:"
 
@@ -1812,13 +1942,6 @@ msgstr "%s: naredba nije nađena"
 
 #~ msgid "Delete selected entries"
 #~ msgstr "Obriši odabrane unose"
-
-#~ msgid "translator_credits"
-#~ msgstr ""
-#~ "Predrag Krtolica <predrag_k@optusnet.com.au>\n"
-#~ "Danilo Šegan <dsegan@gmx.net>\n"
-#~ "\n"
-#~ "Prevod.org — prevod na srpski jezik."
 
 #~ msgid "No host specified."
 #~ msgstr "Računar nije naznačen."

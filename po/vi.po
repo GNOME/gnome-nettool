@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network.HEAD.vi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-02-11 16:35+0100\n"
+"POT-Creation-Date: 2004-06-13 20:15+0200\n"
 "PO-Revision-Date: 2003-09-02 23:22+0700\n"
 "Last-Translator: Trinh Minh Thanh <tmthanh@yahoo.com>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -15,460 +15,431 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:212
+#: src/callbacks.c:319
+msgid "translator_credits"
+msgstr ""
+
+#: src/callbacks.c:347
 msgid "Graphical user interface for common network utilities"
 msgstr "Giao diện người dùng đồ hoạ cho các công cụ mạng hay dùng"
 
-#: src/callbacks.c:214
-msgid "This is an untranslated version of GNOME Network Information"
-msgstr "Đây là phiên bản chưa được dịch của Thông Tin Mạng GNOME"
-
-#: src/gnome-netinfo.glade.h:1
-msgid "    "
-msgstr "    "
-
-#: src/gnome-netinfo.glade.h:2
-msgid "(eg. user@www.domain.com)"
-msgstr "(ví dụ:  user@www.domain.com)"
-
-#: src/gnome-netinfo.glade.h:3
-#, fuzzy
-msgid "(for example: domain.com)"
-msgstr "(Ví dụ: www.domain.com hoặc 192.168.2.1)"
-
-#: src/gnome-netinfo.glade.h:4
-msgid "(for example: www.domain.com or 192.168.2.1)"
-msgstr "(Ví dụ: www.domain.com hoặc 192.168.2.1)"
-
-#: src/gnome-netinfo.glade.h:5
-msgid "*"
-msgstr "*"
-
-#: src/gnome-netinfo.glade.h:6
+#: src/gnome-nettool.glade.h:1
 msgid "0.0"
 msgstr "0.0"
 
-#: src/gnome-netinfo.glade.h:7
-msgid "<span weight=\"bold\">@</span>"
-msgstr "<span weight=\"bold\">@</span>"
-
-#: src/gnome-netinfo.glade.h:8
+#: src/gnome-nettool.glade.h:2
 #, fuzzy
-msgid ""
-"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
-"information</span>"
-msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để tìm kiếm</span>"
+msgid "<b>IP Information</b>"
+msgstr "Thô_ng tin"
 
-#: src/gnome-netinfo.glade.h:9
-msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
-msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để tìm kiếm</span>"
+#: src/gnome-nettool.glade.h:3
+#, fuzzy
+msgid "<b>Interface Information</b>"
+msgstr "Thông tin mặc định"
 
-#: src/gnome-netinfo.glade.h:10
-msgid ""
-"<span weight=\"bold\">Enter a user name and network address to finger that "
-"user</span>"
+#: src/gnome-nettool.glade.h:4
+msgid "<b>Interface Statistics</b>"
 msgstr ""
-"<span weight=\"bold\">Nhập tên người dùng và địa chỉ mạng để finger (tới) "
-"người dùng đó</span>"
 
-#: src/gnome-netinfo.glade.h:11
-msgid "<span weight=\"bold\">Enter the network address to ping</span>"
-msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để ping</span>"
-
-#: src/gnome-netinfo.glade.h:12
-msgid ""
-"<span weight=\"bold\">Enter the network address to scan for open ports</span>"
-msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để quét tìm cổng mở</span>"
-
-#: src/gnome-netinfo.glade.h:13
-msgid ""
-"<span weight=\"bold\">Enter the network address to trace a route to</span>"
-msgstr ""
-"<span weight=\"bold\">Nhập địa chỉ mạng để theo vết một tuyến (trace a route "
-"to)</span>"
-
-#: src/gnome-netinfo.glade.h:14
-msgid "<span weight=\"bold\">Information</span>"
-msgstr "<span weight=\"bold\">Thông Tin</span>"
-
-#: src/gnome-netinfo.glade.h:15
-msgid "<span weight=\"bold\">Round trip time statistics</span>"
+#: src/gnome-nettool.glade.h:5
+#, fuzzy
+msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<span weight=\"bold\">Thống kê thời gian Round trip</span>"
 
-#: src/gnome-netinfo.glade.h:16
-msgid ""
-"<span weight=\"bold\">Select the network device to get information on</span>"
-msgstr "<span weight=\"bold\">Hãy chọn giao tiếp mạng để nhận thông tin</span>"
-
-#: src/gnome-netinfo.glade.h:17
-msgid "<span weight=\"bold\">Select the type of information to display</span>"
-msgstr "<span weight=\"bold\">Chọn loại thông tin hiển thị</span>"
-
-#: src/gnome-netinfo.glade.h:18
-msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
-msgstr "<span weight=\"bold\">Chọn loại thông tin tìm kiếm:</span>"
-
-#: src/gnome-netinfo.glade.h:19
-msgid "<span weight=\"bold\">Statistics</span>"
-msgstr "<span weight=\"bold\">Thống kê</span>"
-
-#: src/gnome-netinfo.glade.h:20
-msgid "<span weight=\"bold\">Transmission statistics</span>"
+#: src/gnome-nettool.glade.h:6
+#, fuzzy
+msgid "<b>Transmision Statistics</b>"
 msgstr "<span weight=\"bold\">Thống kê việc truyền tải</span>"
 
-#: src/gnome-netinfo.glade.h:21
-msgid "Any / All Information"
-msgstr "Bất kỳ / Toàn bộ thông tin"
+#: src/gnome-nettool.glade.h:7
+#, fuzzy
+msgid "Active Network Services"
+msgstr "Hiển thị dịch vụ Internet hoạt động"
 
-#: src/gnome-netinfo.glade.h:22
+#: src/gnome-nettool.glade.h:8
 msgid "Average:"
 msgstr "Trung bình:"
 
-#: src/gnome-netinfo.glade.h:23
+#: src/gnome-nettool.glade.h:9
 msgid "Broadcast:"
 msgstr "Broadcast:"
 
-#: src/gnome-netinfo.glade.h:24
-msgid "CPU / OS Type"
-msgstr "Loại CPU / OS"
-
-#: src/gnome-netinfo.glade.h:25
-msgid "Canonical Name"
-msgstr "Tên theo tiêu chuẩn"
-
-#: src/gnome-netinfo.glade.h:26
+#: src/gnome-nettool.glade.h:10
 msgid "Clear _History"
 msgstr ""
 
-#: src/gnome-netinfo.glade.h:27
+#: src/gnome-nettool.glade.h:11
 msgid "Collisions:"
 msgstr "Xung đột:"
 
-#: src/gnome-netinfo.glade.h:28
-msgid "Default Information"
-msgstr "Thông tin mặc định"
+#: src/gnome-nettool.glade.h:12
+#, fuzzy
+msgid "Devices"
+msgstr "Dịch vụ"
 
-#: src/gnome-netinfo.glade.h:29
-msgid "Display active network services"
-msgstr "Hiển thị dịch vụ Internet hoạt động"
+#: src/gnome-nettool.glade.h:13
+#, fuzzy
+msgid "Display: "
+msgstr "Hiển Thị:"
 
-#: src/gnome-netinfo.glade.h:30
-msgid "Display multicast information"
-msgstr "Hiển thị  thông tin multicast"
-
-#: src/gnome-netinfo.glade.h:31
-msgid "Display routing table information"
-msgstr "Hiển thị thông tin bảng định tuyến (routing table)"
-
-#: src/gnome-netinfo.glade.h:32
-msgid "Enter the network address to ping"
-msgstr "Nhập địa chỉ mạng để ping"
-
-#: src/gnome-netinfo.glade.h:33 src/main.c:530
+#: src/gnome-nettool.glade.h:14 src/main.c:772
 msgid "Finger"
 msgstr "Finger"
 
-#: src/gnome-netinfo.glade.h:34
+#: src/gnome-nettool.glade.h:15
 msgid "Hardware address:"
 msgstr "Địa chỉ phần cứng:"
 
-#: src/gnome-netinfo.glade.h:35
-msgid "Host name for Address"
-msgstr "Host name cho địa chỉ"
+#: src/gnome-nettool.glade.h:16
+#, fuzzy
+msgid "Host"
+msgstr "Host:"
 
-#: src/gnome-netinfo.glade.h:36
-msgid "IP address:"
-msgstr "Địa chỉ IP:"
+#: src/gnome-nettool.glade.h:17
+#, fuzzy
+msgid "IP Address:"
+msgstr "Địa chỉ IP"
 
-#: src/gnome-netinfo.glade.h:37
-msgid "Internet Address"
-msgstr "Địa chỉ Internet"
-
-#: src/gnome-netinfo.glade.h:38
+#: src/gnome-nettool.glade.h:18
 msgid "Link speed:"
 msgstr "Tốc độ liên kết:"
 
-#: src/gnome-netinfo.glade.h:39 src/main.c:485
+#: src/gnome-nettool.glade.h:19 src/main.c:701
 msgid "Lookup"
 msgstr "Tra tìm"
 
-#: src/gnome-netinfo.glade.h:40
+#: src/gnome-nettool.glade.h:20
 msgid "MTU:"
 msgstr "MTU:"
 
-#: src/gnome-netinfo.glade.h:41
-msgid "Mailbox Exchange"
-msgstr "Mailbox Exchange"
-
-#: src/gnome-netinfo.glade.h:42
-msgid "Mailbox Information"
-msgstr "Thông tin Mailbox"
-
-#: src/gnome-netinfo.glade.h:43
+#: src/gnome-nettool.glade.h:21
 msgid "Maximum:"
 msgstr "Tối đa:"
 
-#: src/gnome-netinfo.glade.h:44
+#: src/gnome-nettool.glade.h:22
 msgid "Minimum:"
 msgstr "Tối thiểu:"
 
-#: src/gnome-netinfo.glade.h:45
+#: src/gnome-nettool.glade.h:23
+#, fuzzy
+msgid "Multicast Information"
+msgstr "Hiển thị  thông tin multicast"
+
+#: src/gnome-nettool.glade.h:24
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: src/gnome-netinfo.glade.h:46
-msgid "Name Server"
-msgstr "Tên Máy Chủ"
-
-#: src/gnome-netinfo.glade.h:47
+#: src/gnome-nettool.glade.h:25
 msgid "Netmask:"
 msgstr "Netmask:"
 
-#: src/gnome-netinfo.glade.h:48 src/main.c:349
+#: src/gnome-nettool.glade.h:26 src/main.c:416
 msgid "Netstat"
 msgstr "Netstat"
 
-#: src/gnome-netinfo.glade.h:49 src/main.c:110
-msgid "Network Information"
-msgstr "Thông tin mạng"
+#: src/gnome-nettool.glade.h:27
+#, fuzzy
+msgid "Network Tools - Devices"
+msgstr "Thiết bị mạng:\t%s\n"
 
-#: src/gnome-netinfo.glade.h:50
+#: src/gnome-nettool.glade.h:28
+#, fuzzy
+msgid "Not Available"
+msgstr "hiện không có"
+
+#: src/gnome-nettool.glade.h:29
+msgid "Only"
+msgstr ""
+
+#: src/gnome-nettool.glade.h:30
 msgid "Packets loss:"
 msgstr "Packets mất:"
 
-#: src/gnome-netinfo.glade.h:51
+#: src/gnome-nettool.glade.h:31
 msgid "Packets received:"
 msgstr "Packets đã nhận:"
 
-#: src/gnome-netinfo.glade.h:52
+#: src/gnome-nettool.glade.h:32
 msgid "Packets transmitted:"
 msgstr "Packets đã truyền:"
 
-#: src/gnome-netinfo.glade.h:53 src/main.c:257
+#: src/gnome-nettool.glade.h:33 src/main.c:279
 msgid "Ping"
 msgstr "Ping"
 
-#: src/gnome-netinfo.glade.h:54
-msgid "Port _Scan"
+#: src/gnome-nettool.glade.h:34
+#, fuzzy
+msgid "Port Scan"
 msgstr "Quét_Cổng"
 
-#: src/gnome-netinfo.glade.h:55
+#: src/gnome-nettool.glade.h:35
 msgid "Received bytes:"
 msgstr "Byte đã nhận:"
 
-#: src/gnome-netinfo.glade.h:56
+#: src/gnome-nettool.glade.h:36
 msgid "Received packets:"
 msgstr "Packets đã nhận:"
 
-#: src/gnome-netinfo.glade.h:57
+#: src/gnome-nettool.glade.h:37
 msgid "Reception errors:"
 msgstr "Lỗi tiếp nhận:"
 
-#: src/gnome-netinfo.glade.h:58 src/main.c:447
+#: src/gnome-nettool.glade.h:38
+#, fuzzy
+msgid "Routing Table Information"
+msgstr "Hiển thị thông tin bảng định tuyến (routing table)"
+
+#: src/gnome-nettool.glade.h:39 src/main.c:595
 msgid "Scan"
 msgstr "Quét"
 
-#: src/gnome-netinfo.glade.h:59
-msgid "Select network device from list"
-msgstr "Chọn thiết bị mạng từ danh sách"
-
-#: src/gnome-netinfo.glade.h:60
-msgid "Send only"
-msgstr "Chỉ gửi đi"
-
-#: src/gnome-netinfo.glade.h:61
-msgid "Send unlimited requests (pings)"
+#: src/gnome-nettool.glade.h:40
+#, fuzzy
+msgid "Send unlimited requests"
 msgstr "Gửi các yêu cầu vô hạn (pings)"
 
-#: src/gnome-netinfo.glade.h:62
-msgid "Start-of-authority"
-msgstr "Start-of-authority"
+#: src/gnome-nettool.glade.h:41
+#, fuzzy
+msgid "Send: "
+msgstr "Gửi đi"
 
-#: src/gnome-netinfo.glade.h:63
+#: src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "Trạng thái:"
 
-#: src/gnome-netinfo.glade.h:64
-msgid "Text Information"
-msgstr "Thông tin dạng text"
-
-#: src/gnome-netinfo.glade.h:65 src/main.c:305
+#: src/gnome-nettool.glade.h:43 src/main.c:351
 msgid "Trace"
 msgstr "Dấu vết"
 
-#: src/gnome-netinfo.glade.h:66
+#: src/gnome-nettool.glade.h:44
+#, fuzzy
+msgid "Traceroute"
+msgstr "_Traceroute"
+
+#: src/gnome-nettool.glade.h:45
 msgid "Transmission errors:"
 msgstr "Lỗi truyền:"
 
-#: src/gnome-netinfo.glade.h:67
+#: src/gnome-nettool.glade.h:46
 msgid "Transmitted bytes:"
 msgstr "Byte đã truyền:"
 
-#: src/gnome-netinfo.glade.h:68
+#: src/gnome-nettool.glade.h:47
 msgid "Transmitted packets:"
 msgstr "Packets đã truyền:"
 
-#: src/gnome-netinfo.glade.h:69
-msgid "Well Known Services"
-msgstr "Dịch vụ biết rõ"
+#: src/gnome-nettool.glade.h:48
+#, fuzzy
+msgid "User"
+msgstr "Người _dùng:"
 
-#: src/gnome-netinfo.glade.h:70 src/main.c:581
+#: src/gnome-nettool.glade.h:49 src/main.c:869
 msgid "Whois"
 msgstr ""
 
-#: src/gnome-netinfo.glade.h:71
-#, fuzzy
-msgid "_Devices"
-msgstr "Dịch vụ"
-
-#: src/gnome-netinfo.glade.h:72
-msgid "_Finger"
-msgstr "_Finger"
-
-#: src/gnome-netinfo.glade.h:73
-msgid "_Information"
-msgstr "Thô_ng tin"
-
-#: src/gnome-netinfo.glade.h:74
-msgid "_Lookup"
-msgstr "Tr_a tìm"
-
-#: src/gnome-netinfo.glade.h:75
-msgid "_Netstat"
-msgstr "_Netstat"
-
-#: src/gnome-netinfo.glade.h:76
-msgid "_Ping"
-msgstr "_Ping"
-
-#: src/gnome-netinfo.glade.h:77
-msgid "_Traceroute"
-msgstr "_Traceroute"
-
-#: src/gnome-netinfo.glade.h:78
-msgid "_Whois"
+#: src/gnome-nettool.glade.h:50
+msgid "_Configure"
 msgstr ""
 
-#: src/gnome-netinfo.glade.h:79
+#: src/gnome-nettool.glade.h:51
+#, fuzzy
+msgid "_Domain Address: "
+msgstr "Địa chỉ IP cục bộ"
+
+#: src/gnome-nettool.glade.h:52
+#, fuzzy
+msgid "_Information Type: "
+msgstr "Thô_ng tin"
+
+#: src/gnome-nettool.glade.h:53
+#, fuzzy
+msgid "_Network Address: "
+msgstr "Chưa chỉ định host."
+
+#: src/gnome-nettool.glade.h:54
+#, fuzzy
+msgid "_Network Device"
+msgstr "Thiết bị mạng:\t%s\n"
+
+#: src/gnome-nettool.glade.h:55
+#, fuzzy
+msgid "_Tool"
+msgstr "Gợi ý"
+
+#: src/gnome-nettool.glade.h:56
+#, fuzzy
+msgid "_Username: "
+msgstr "Tên ngươì dùng"
+
+#: src/gnome-nettool.glade.h:57
 msgid "ms"
 msgstr "ms"
 
-#: src/gnome-netinfo.glade.h:80 src/info.h:27
-msgid "not available"
-msgstr "hiện không có"
-
-#: src/gnome-netinfo.glade.h:81
-msgid "requests (pings)"
+#: src/gnome-nettool.glade.h:58
+#, fuzzy
+msgid "requests"
 msgstr "các yêu cầu (pings)"
 
-#: src/info.c:277
+#. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
+#: src/info.c:56
+msgid "Other type"
+msgstr ""
+
+#: src/info.c:57
+#, fuzzy
+msgid "Ethernet Interface"
+msgstr "Giao diện"
+
+#: src/info.c:58
+#, fuzzy
+msgid "Wireless Interface"
+msgstr "Giao diện"
+
+#: src/info.c:59
+#, fuzzy
+msgid "Modem Interface"
+msgstr "Giao diện"
+
+#: src/info.c:60
+msgid "Parallel Line Interface"
+msgstr ""
+
+#: src/info.c:61
+#, fuzzy
+msgid "Infrared Interface"
+msgstr "Giao diện"
+
+#: src/info.c:62
+#, fuzzy
+msgid "Loopback Interface"
+msgstr "Giao diện"
+
+#: src/info.c:63
+#, fuzzy
+msgid "Unknown Interface"
+msgstr "Giao diện"
+
+#: src/info.c:130
+msgid "<i>Network Devices Not Found</i>"
+msgstr ""
+
+#: src/info.c:344
+#, fuzzy
+msgid "Unknown"
+msgstr "không xác định"
+
+#: src/info.c:500
 msgid "Active"
 msgstr "Hoạt động"
 
-#: src/info.c:279
+#: src/info.c:502
 msgid "Inactive"
 msgstr "Không hoạt động"
 
-#: src/info.c:284
+#: src/info.c:507
 msgid "Loopback"
 msgstr "Loopback"
 
-#: src/info.c:297
+#: src/info.c:524
 msgid "Enabled"
 msgstr "Bật"
 
-#: src/info.c:299
+#: src/info.c:526
 msgid "Disabled"
 msgstr "Tắt"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:419
+#: src/info.c:666
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Thiết bị mạng:\t%s\n"
 
-#: src/info.c:420
+#: src/info.c:667
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Địa chỉ phần cứng: \t%s\n"
 
-#: src/info.c:421
+#: src/info.c:668
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "Địa chỉ IP: \t%s\n"
 
-#: src/info.c:422
+#: src/info.c:669
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Netmask: \t%s\n"
 
-#: src/info.c:423
+#: src/info.c:670
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: src/info.c:424
+#: src/info.c:671
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:425
+#: src/info.c:672
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:426
+#: src/info.c:673
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Tốc độ liên kết: \t%s\n"
 
-#: src/info.c:427
+#: src/info.c:674
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Trạng thái: \t%s\n"
 
-#: src/info.c:429
+#: src/info.c:676
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Các gói đã truyền: \t%s\n"
 
-#: src/info.c:430
+#: src/info.c:677
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Lỗi truyền: \t%s\n"
 
-#: src/info.c:431
+#: src/info.c:678
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Các gói đã nhận: \t%s\n"
 
-#: src/info.c:432
+#: src/info.c:679
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Lỗi tiếp nhận: \t%s\n"
 
-#: src/info.c:433
+#: src/info.c:680
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Xung đột: \t%s\n"
 
-#: src/lookup.c:272
+#: src/info.h:27
+msgid "not available"
+msgstr "hiện không có"
+
+#: src/lookup.c:273
 msgid "Name"
 msgstr "Tên"
 
-#: src/lookup.c:280
+#: src/lookup.c:281
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:289
+#: src/lookup.c:290
 msgid "Address Type"
 msgstr "Loại Địa Chỉ"
 
-#: src/lookup.c:299
+#: src/lookup.c:300
 msgid "Record Type"
 msgstr "Kiểu bản ghi"
 
-#: src/lookup.c:308
+#: src/lookup.c:309
 msgid "Address"
 msgstr "Địa chỉ"
 
@@ -478,64 +449,68 @@ msgstr "Địa chỉ"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:336
+#: src/lookup.c:337
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Nguồn\tTTL\tKiểu địa chỉ\tKiểu bản ghi 1\tSự phân tích\n"
 
-#: src/main.c:75
+#: src/main.c:78
 msgid "Load information for a network device"
 msgstr ""
 
-#: src/main.c:76
+#: src/main.c:79
 msgid "DEVICE"
 msgstr ""
 
-#: src/main.c:78
+#: src/main.c:81
 msgid "Send a ping to a network address"
 msgstr ""
 
-#: src/main.c:79 src/main.c:85 src/main.c:88 src/main.c:91
+#: src/main.c:82 src/main.c:88 src/main.c:91 src/main.c:94
 msgid "HOST"
 msgstr ""
 
-#: src/main.c:81
+#: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 
-#: src/main.c:82
+#: src/main.c:85
 msgid "COMMAND"
 msgstr ""
 
-#: src/main.c:84
+#: src/main.c:87
 msgid "Trace a route to a network address"
 msgstr ""
 
-#: src/main.c:87
+#: src/main.c:90
 #, fuzzy
 msgid "Port scan a network address"
 msgstr "Host name cho địa chỉ"
 
-#: src/main.c:90
+#: src/main.c:93
 msgid "Look up a network address"
 msgstr ""
 
-#: src/main.c:93
+#: src/main.c:96
 msgid "Finger command to run"
 msgstr ""
 
-#: src/main.c:94
+#: src/main.c:97
 msgid "USER"
 msgstr ""
 
-#: src/main.c:96
+#: src/main.c:99
 msgid "Perform a whois lookup for a network domain"
 msgstr ""
 
-#: src/main.c:97
+#: src/main.c:100
 msgid "DOMAIN"
 msgstr ""
 
-#: src/main.c:116
+#: src/main.c:113
+msgid "Network Information"
+msgstr "Thông tin mạng"
+
+#: src/main.c:119
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
@@ -544,92 +519,125 @@ msgstr ""
 "Tập tin %s không tồn tại, hãy kiểm tra xem việc cài đặt gnome-netinfo đúng "
 "chưa"
 
-#: src/netinfo.c:157
-#, fuzzy
-msgid "Network address not specified"
-msgstr "Chưa chỉ định host."
-
-#: src/netinfo.c:165
-#, fuzzy, c-format
-msgid "The host '%s' cannot be found"
-msgstr "Không thể tìm thấy host."
-
-#: src/netinfo.c:309
-msgid "Information not available"
-msgstr "Hiện không có thông tin"
-
-#: src/netinfo.c:395
-msgid "Stop"
-msgstr "Dừng"
-
-#: src/netinfo.c:401
-msgid "Run"
-msgstr "Chạy"
-
-#: src/netstat.c:403
+#: src/main.c:449 src/netstat.c:429
 msgid "Protocol"
 msgstr "Giao thức"
 
-#: src/netstat.c:410
+#: src/main.c:456
+msgid "IP Address"
+msgstr "Địa chỉ IP"
+
+#: src/main.c:463
+#, fuzzy
+msgid "Netmask / Prefix"
+msgstr "Netmask"
+
+#: src/main.c:470
+#, fuzzy
+msgid "Broadcast"
+msgstr "Broadcast:"
+
+#: src/main.c:477
+#, fuzzy
+msgid "Scope"
+msgstr "Dừng"
+
+#: src/netstat.c:436
 msgid "IP Source"
 msgstr "Nguồn IP"
 
-#: src/netstat.c:418
+#: src/netstat.c:444
 msgid "Port/Service"
 msgstr "Cổng/Dịch vụ"
 
-#: src/netstat.c:426 src/scan.c:289
+#: src/netstat.c:452 src/scan.c:288
 msgid "State"
 msgstr "Trạng thái"
 
-#: src/netstat.c:549
+#: src/netstat.c:594
 #, fuzzy
 msgid "Destination/Prefix"
 msgstr "Đích"
 
-#: src/netstat.c:551
+#: src/netstat.c:596
 msgid "Destination"
 msgstr "Đích"
 
-#: src/netstat.c:558
+#: src/netstat.c:603
 msgid "Gateway"
 msgstr "Gateway"
 
-#: src/netstat.c:566
+#: src/netstat.c:611
 msgid "Netmask"
 msgstr "Netmask"
 
-#: src/netstat.c:574 src/netstat.c:680
+#: src/netstat.c:619 src/netstat.c:725
 msgid "Interface"
 msgstr "Giao diện"
 
-#: src/netstat.c:687
+#: src/netstat.c:732
 msgid "Member"
 msgstr "Thành viên"
 
-#: src/netstat.c:695
+#: src/netstat.c:740
 msgid "Group"
 msgstr "Nhóm"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:737
+#: src/netstat.c:782
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Gaio thức\tNguồn IP\tCổng/Dịch vụ\tTrạng thái\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:743
+#: src/netstat.c:788
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Đích\tGateway\tNetmask\tGiao diện\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:748
+#: src/netstat.c:793
 msgid "Interface\tMember\tGroup\n"
 msgstr "Giao diện\tThành viên\tNhóm\n"
+
+#: src/nettool.c:206
+#, fuzzy
+msgid "A network address was not specified"
+msgstr "Chưa chỉ định host."
+
+#: src/nettool.c:207 src/nettool.c:216
+#, fuzzy
+msgid "Please enter a valid network address and try again."
+msgstr "Nhập địa chỉ mạng để ping"
+
+#: src/nettool.c:214
+#, fuzzy, c-format
+msgid "The address '%s' cannot be found"
+msgstr "Không thể tìm thấy host."
+
+#: src/nettool.c:243
+#, fuzzy
+msgid "A domain address was not specified"
+msgstr "Chưa chỉ định host."
+
+#: src/nettool.c:244
+msgid "Please enter a valid domain address and try again."
+msgstr ""
+
+#: src/nettool.c:376
+msgid "Information not available"
+msgstr "Hiện không có thông tin"
+
+#: src/nettool.c:486
+msgid "Stop"
+msgstr "Dừng"
+
+#: src/nettool.c:492
+msgid "Run"
+msgstr "Chạy"
 
 #: src/ping.c:378
 msgid "Bytes"
@@ -694,38 +702,38 @@ msgstr "Packet mất:\t%s\n"
 msgid "unknown"
 msgstr "không xác định"
 
-#: src/scan.c:281
+#: src/scan.c:280
 msgid "Port"
 msgstr "Cổng"
 
-#: src/scan.c:297
+#: src/scan.c:296
 msgid "Service"
 msgstr "Dịch vụ"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:319
+#: src/scan.c:318
 msgid "Port\tState\tService\n"
 msgstr "Cổng\tTrạng thái\tDịch vụ\n"
 
-#: src/traceroute.c:260
+#: src/traceroute.c:261
 msgid "Hop"
 msgstr "Hop"
 
-#: src/traceroute.c:268
+#: src/traceroute.c:269
 msgid "Hostname"
 msgstr "Hostname"
 
-#: src/traceroute.c:276
+#: src/traceroute.c:277
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:287
+#: src/traceroute.c:288
 msgid "Time 1"
 msgstr "Time 1"
 
-#: src/traceroute.c:297
+#: src/traceroute.c:298
 msgid "Time 2"
 msgstr "Time 2"
 
@@ -733,7 +741,7 @@ msgstr "Time 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:323
+#: src/traceroute.c:324
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 
@@ -741,6 +749,142 @@ msgstr "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: Không tìm thấy lệnh"
+
+#: src/gnome-nettool.desktop.in.h:1
+#, fuzzy
+msgid "Network Information Tools"
+msgstr "Thông tin mạng"
+
+#: src/gnome-nettool.desktop.in.h:2
+#, fuzzy
+msgid "Network Tools"
+msgstr "Thông tin mạng"
+
+#~ msgid "This is an untranslated version of GNOME Network Information"
+#~ msgstr "Đây là phiên bản chưa được dịch của Thông Tin Mạng GNOME"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "(eg. user@www.domain.com)"
+#~ msgstr "(ví dụ:  user@www.domain.com)"
+
+#, fuzzy
+#~ msgid "(for example: domain.com)"
+#~ msgstr "(Ví dụ: www.domain.com hoặc 192.168.2.1)"
+
+#~ msgid "(for example: www.domain.com or 192.168.2.1)"
+#~ msgstr "(Ví dụ: www.domain.com hoặc 192.168.2.1)"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<span weight=\"bold\">@</span>"
+#~ msgstr "<span weight=\"bold\">@</span>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+#~ "information</span>"
+#~ msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để tìm kiếm</span>"
+
+#~ msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+#~ msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để tìm kiếm</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter a user name and network address to finger "
+#~ "that user</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Nhập tên người dùng và địa chỉ mạng để finger (tới) "
+#~ "người dùng đó</span>"
+
+#~ msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+#~ msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để ping</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter the network address to scan for open ports</"
+#~ "span>"
+#~ msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để quét tìm cổng mở</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Enter the network address to trace a route to</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Nhập địa chỉ mạng để theo vết một tuyến (trace a "
+#~ "route to)</span>"
+
+#~ msgid "<span weight=\"bold\">Information</span>"
+#~ msgstr "<span weight=\"bold\">Thông Tin</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the network device to get information on</"
+#~ "span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Hãy chọn giao tiếp mạng để nhận thông tin</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the type of information to display</span>"
+#~ msgstr "<span weight=\"bold\">Chọn loại thông tin hiển thị</span>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\">Select the type of information to lookup:</span>"
+#~ msgstr "<span weight=\"bold\">Chọn loại thông tin tìm kiếm:</span>"
+
+#~ msgid "<span weight=\"bold\">Statistics</span>"
+#~ msgstr "<span weight=\"bold\">Thống kê</span>"
+
+#~ msgid "Any / All Information"
+#~ msgstr "Bất kỳ / Toàn bộ thông tin"
+
+#~ msgid "CPU / OS Type"
+#~ msgstr "Loại CPU / OS"
+
+#~ msgid "Canonical Name"
+#~ msgstr "Tên theo tiêu chuẩn"
+
+#~ msgid "Host name for Address"
+#~ msgstr "Host name cho địa chỉ"
+
+#~ msgid "IP address:"
+#~ msgstr "Địa chỉ IP:"
+
+#~ msgid "Internet Address"
+#~ msgstr "Địa chỉ Internet"
+
+#~ msgid "Mailbox Exchange"
+#~ msgstr "Mailbox Exchange"
+
+#~ msgid "Mailbox Information"
+#~ msgstr "Thông tin Mailbox"
+
+#~ msgid "Name Server"
+#~ msgstr "Tên Máy Chủ"
+
+#~ msgid "Select network device from list"
+#~ msgstr "Chọn thiết bị mạng từ danh sách"
+
+#~ msgid "Send only"
+#~ msgstr "Chỉ gửi đi"
+
+#~ msgid "Start-of-authority"
+#~ msgstr "Start-of-authority"
+
+#~ msgid "Text Information"
+#~ msgstr "Thông tin dạng text"
+
+#~ msgid "Well Known Services"
+#~ msgstr "Dịch vụ biết rõ"
+
+#~ msgid "_Finger"
+#~ msgstr "_Finger"
+
+#~ msgid "_Lookup"
+#~ msgstr "Tr_a tìm"
+
+#~ msgid "_Netstat"
+#~ msgstr "_Netstat"
+
+#~ msgid "_Ping"
+#~ msgstr "_Ping"
 
 #, fuzzy
 #~ msgid "GNOME Remote Desktop Applet"
@@ -775,10 +919,6 @@ msgstr "%s: Không tìm thấy lệnh"
 #, fuzzy
 #~ msgid "Pro_tocol:"
 #~ msgstr "Giao thức"
-
-#, fuzzy
-#~ msgid "_User Name:"
-#~ msgstr "Tên ngươì dùng"
 
 #, fuzzy
 #~ msgid "Pass_word:"
@@ -857,12 +997,6 @@ msgstr "%s: Không tìm thấy lệnh"
 #~ msgid "Display size"
 #~ msgstr "Kích cỡ hiển thị"
 
-#~ msgid "Display:"
-#~ msgstr "Hiển Thị:"
-
-#~ msgid "Host:"
-#~ msgstr "Host:"
-
 #~ msgid "VNC"
 #~ msgstr "VNC"
 
@@ -892,9 +1026,6 @@ msgstr "%s: Không tìm thấy lệnh"
 
 #~ msgid "Enter search string"
 #~ msgstr "Nhập chuỗi tìm kiếm"
-
-#~ msgid "Send"
-#~ msgstr "Gửi đi"
 
 #~ msgid "Enter transmission string"
 #~ msgstr "Nhập chuỗi truyền tin"
@@ -928,9 +1059,6 @@ msgstr "%s: Không tìm thấy lệnh"
 
 #~ msgid "Authentication"
 #~ msgstr "Chứng thực"
-
-#~ msgid "IP Address"
-#~ msgstr "Địa chỉ IP"
 
 #~ msgid "DNS"
 #~ msgstr "DNS"
@@ -976,9 +1104,6 @@ msgstr "%s: Không tìm thấy lệnh"
 
 #~ msgid "Hidden Password"
 #~ msgstr "Mật khẩu được giấu"
-
-#~ msgid "Local IP Address"
-#~ msgstr "Địa chỉ IP cục bộ"
 
 #~ msgid "Dynamic"
 #~ msgstr "Động"
@@ -1170,9 +1295,6 @@ msgstr "%s: Không tìm thấy lệnh"
 #~ msgid "Label"
 #~ msgstr "Nhãn"
 
-#~ msgid "Tooltip"
-#~ msgstr "Gợi ý"
-
 #~ msgid "Animation Speed"
 #~ msgstr "Tốc độ hoạt cảnh"
 
@@ -1337,9 +1459,6 @@ msgstr "%s: Không tìm thấy lệnh"
 
 #~ msgid "_Secure shell (SSH)"
 #~ msgstr "_Shell bảo mật (SSH)"
-
-#~ msgid "_User:"
-#~ msgstr "Người _dùng:"
 
 #~ msgid "_Width:"
 #~ msgstr "_Rộng:"

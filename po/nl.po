@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-10 03:53+0200\n"
+"POT-Creation-Date: 2004-06-13 20:15+0200\n"
 "PO-Revision-Date: 2004-06-11 18:28+0200\n"
 "Last-Translator: Tino Meinen <a.t.meinen@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -14,13 +14,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:278
+#: src/callbacks.c:319
 msgid "translator_credits"
 msgstr ""
 "Tino Meinen <a.t.meinen@chello.nl>\n"
 "Elros Cyriatan <cyriatan@fastmail.fm>"
 
-#: src/callbacks.c:306
+#: src/callbacks.c:347
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafische gebruikersinterface voor gewone netwerkgereedschappen"
 
@@ -77,7 +77,7 @@ msgstr "Apparaten"
 msgid "Display: "
 msgstr "Beeldscherm: "
 
-#: src/gnome-nettool.glade.h:14 src/main.c:764
+#: src/gnome-nettool.glade.h:14 src/main.c:772
 msgid "Finger"
 msgstr "Finger"
 
@@ -97,7 +97,7 @@ msgstr "IP-adres:"
 msgid "Link speed:"
 msgstr "Verbindingssnelheid:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:693
+#: src/gnome-nettool.glade.h:19 src/main.c:701
 msgid "Lookup"
 msgstr "Opzoeken"
 
@@ -125,7 +125,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Netmasker:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:415
+#: src/gnome-nettool.glade.h:26 src/main.c:416
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -153,7 +153,7 @@ msgstr "Pakketten ontvangen:"
 msgid "Packets transmitted:"
 msgstr "Pakketten verzonden:"
 
-#: src/gnome-nettool.glade.h:33 src/main.c:278
+#: src/gnome-nettool.glade.h:33 src/main.c:279
 msgid "Ping"
 msgstr "Ping"
 
@@ -177,7 +177,7 @@ msgstr "Ontvangstfouten:"
 msgid "Routing Table Information"
 msgstr "Routing tabelinformatie"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:587
+#: src/gnome-nettool.glade.h:39 src/main.c:595
 msgid "Scan"
 msgstr "Scannen"
 
@@ -194,7 +194,7 @@ msgstr "Verzenden:"
 msgid "State:"
 msgstr "Status:"
 
-#: src/gnome-nettool.glade.h:43 src/main.c:350
+#: src/gnome-nettool.glade.h:43 src/main.c:351
 msgid "Trace"
 msgstr "Traceren"
 
@@ -218,24 +218,28 @@ msgstr "Verzonden pakketten:"
 msgid "User"
 msgstr "Gebruiker"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:861
+#: src/gnome-nettool.glade.h:49 src/main.c:869
 msgid "Whois"
 msgstr "Whois"
 
-# _Lokaal IP-adres:
 #: src/gnome-nettool.glade.h:50
+msgid "_Configure"
+msgstr ""
+
+# _Lokaal IP-adres:
+#: src/gnome-nettool.glade.h:51
 msgid "_Domain Address: "
 msgstr "_Domeinadres: "
 
-#: src/gnome-nettool.glade.h:51
+#: src/gnome-nettool.glade.h:52
 msgid "_Information Type: "
 msgstr "_Informatietype: "
 
-#: src/gnome-nettool.glade.h:52
+#: src/gnome-nettool.glade.h:53
 msgid "_Network Address: "
 msgstr "_Netwerkadres: "
 
-#: src/gnome-nettool.glade.h:53
+#: src/gnome-nettool.glade.h:54
 msgid "_Network Device"
 msgstr "_Netwerkapparaat"
 
@@ -243,19 +247,19 @@ msgstr "_Netwerkapparaat"
 # gereedschap
 # hulpje
 # tool
-#: src/gnome-nettool.glade.h:54
+#: src/gnome-nettool.glade.h:55
 msgid "_Tool"
 msgstr "_Tool"
 
-#: src/gnome-nettool.glade.h:55
+#: src/gnome-nettool.glade.h:56
 msgid "_Username: "
 msgstr "_Gebruikersnaam: "
 
-#: src/gnome-nettool.glade.h:56
+#: src/gnome-nettool.glade.h:57
 msgid "ms"
 msgstr "ms"
 
-#: src/gnome-nettool.glade.h:57
+#: src/gnome-nettool.glade.h:58
 msgid "requests"
 msgstr "verzoeken"
 
@@ -301,93 +305,93 @@ msgstr "<i>Geen netwerkapparaten gevonden</i>"
 msgid "Unknown"
 msgstr "Onbekend"
 
-#: src/info.c:489
+#: src/info.c:500
 msgid "Active"
 msgstr "Actief"
 
-#: src/info.c:491
+#: src/info.c:502
 msgid "Inactive"
 msgstr "Inactief"
 
-#: src/info.c:496
+#: src/info.c:507
 msgid "Loopback"
 msgstr "Lus"
 
-#: src/info.c:510
+#: src/info.c:524
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: src/info.c:512
+#: src/info.c:526
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:652
+#: src/info.c:666
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Netwerkapparaat:\t%s\n"
 
-#: src/info.c:653
+#: src/info.c:667
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardware adres:\t%s\n"
 
-#: src/info.c:654
+#: src/info.c:668
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP-adres:\t%s\n"
 
-#: src/info.c:655
+#: src/info.c:669
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Netmasker:\t%s\n"
 
-#: src/info.c:656
+#: src/info.c:670
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: src/info.c:657
+#: src/info.c:671
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:658
+#: src/info.c:672
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:659
+#: src/info.c:673
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Verbindingssnelheid:\t%s\n"
 
-#: src/info.c:660
+#: src/info.c:674
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Status:\t%s\n"
 
-#: src/info.c:662
+#: src/info.c:676
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Verzonden pakketten:\t%s\n"
 
-#: src/info.c:663
+#: src/info.c:677
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Verzendfouten:\t%s\n"
 
-#: src/info.c:664
+#: src/info.c:678
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Ontvangen pakketten:\t%s\n"
 
-#: src/info.c:665
+#: src/info.c:679
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Ontvangstfouten:\t%s\n"
 
-#: src/info.c:666
+#: src/info.c:680
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Botsingen:\t%s\n"
@@ -426,64 +430,64 @@ msgstr "Adres"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Bron\tTTL\tSoort adres\tSoort ingang1\tResolutie\n"
 
-#: src/main.c:77
+#: src/main.c:78
 msgid "Load information for a network device"
 msgstr "Informatie over een netwerkapparaat laden"
 
-#: src/main.c:78
+#: src/main.c:79
 msgid "DEVICE"
 msgstr "APPARAAT"
 
-#: src/main.c:80
+#: src/main.c:81
 msgid "Send a ping to a network address"
 msgstr "Een ping naar een netwerkadres sturen"
 
-#: src/main.c:81 src/main.c:87 src/main.c:90 src/main.c:93
+#: src/main.c:82 src/main.c:88 src/main.c:91 src/main.c:94
 msgid "HOST"
 msgstr "HOST"
 
-#: src/main.c:83
+#: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Netstat-informatie opvragen.  Geldige opties zijn: route, active, multicast."
 
-#: src/main.c:84
+#: src/main.c:85
 msgid "COMMAND"
 msgstr "OPDRACHT"
 
-#: src/main.c:86
+#: src/main.c:87
 msgid "Trace a route to a network address"
 msgstr "Een route naar een netwerkadres traceren"
 
-#: src/main.c:89
+#: src/main.c:90
 msgid "Port scan a network address"
 msgstr "Een netwerkadres poortscannen"
 
-#: src/main.c:92
+#: src/main.c:93
 msgid "Look up a network address"
 msgstr "Een netwerkadres opzoeken"
 
-#: src/main.c:95
+#: src/main.c:96
 msgid "Finger command to run"
 msgstr "Finger-opdracht om uit te voeren"
 
-#: src/main.c:96
+#: src/main.c:97
 msgid "USER"
 msgstr "GEBRUIKER"
 
-#: src/main.c:98
+#: src/main.c:99
 msgid "Perform a whois lookup for a network domain"
 msgstr "Een whois-opzoekopdracht uitvoeren voor een netwerkdomein"
 
-#: src/main.c:99
+#: src/main.c:100
 msgid "DOMAIN"
 msgstr "DOMEIN"
 
-#: src/main.c:112
+#: src/main.c:113
 msgid "Network Information"
 msgstr "Netwerk informatie"
 
-#: src/main.c:118
+#: src/main.c:119
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
@@ -492,24 +496,24 @@ msgstr ""
 "Het bestand %s bestaat niet. Controleer a.u.b. of gnome-netinfo goed is "
 "geïnstalleerd"
 
-#: src/main.c:448 src/netstat.c:429
+#: src/main.c:449 src/netstat.c:429
 msgid "Protocol"
 msgstr "Protocol"
 
-#: src/main.c:455
+#: src/main.c:456
 msgid "IP Address"
 msgstr "IP-adres"
 
 # vertaling prefix?
-#: src/main.c:462
+#: src/main.c:463
 msgid "Netmask / Prefix"
 msgstr "Netmasker / voorzetsel"
 
-#: src/main.c:469
+#: src/main.c:470
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: src/main.c:476
+#: src/main.c:477
 msgid "Scope"
 msgstr "Bereik"
 
