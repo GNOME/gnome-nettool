@@ -39,6 +39,7 @@
 #include "lookup.h"
 #include "finger.h"
 #include "whois.h"
+#include "utils.h"
 #include "gn-combo-history.h"
 
 /* Ping callbacks */
@@ -127,6 +128,46 @@ on_info_nic_changed (GtkEntry * entry, gpointer info)
 	g_free (nic);
 }*/
 #endif
+
+void
+on_configure_button_clicked (GtkButton *button, gpointer data)
+{
+	GString *command_line;
+	GtkComboBox *combo;
+	GtkTreeModel *model;
+	GtkTreeIter iter;
+	GtkWidget *dialog;
+	Netinfo *info;
+	GError *error;
+	gchar *nic;
+
+	g_return_if_fail (data != NULL);
+	info = (Netinfo *) data;
+	g_return_if_fail (info->network_tool_path != NULL);
+
+	combo = GTK_COMBO_BOX (info->combo);
+	model = gtk_combo_box_get_model (combo);
+
+	if (gtk_combo_box_get_active_iter (combo, &iter)) {
+		gtk_tree_model_get (model, &iter, 2, &nic, -1);
+
+		command_line = g_string_new (info->network_tool_path);
+		g_string_append (command_line, " --configure ");
+		g_string_append (command_line, nic);
+
+		if (!g_spawn_command_line_async (command_line->str, &error)) {
+			dialog = gtk_message_dialog_new (GTK_WINDOW (info->main_window),
+							 GTK_DIALOG_DESTROY_WITH_PARENT,
+							 GTK_MESSAGE_ERROR,
+							 GTK_BUTTONS_CLOSE,
+							 error->message);
+			gtk_dialog_run (GTK_DIALOG (dialog));
+			gtk_widget_destroy (dialog);
+		}
+
+		g_string_free (command_line, TRUE);
+	}
+}
 
 /* Scan callbacks */
 void

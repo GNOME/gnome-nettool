@@ -357,6 +357,17 @@ info_ip6_construct_address (const struct ifaddrs *ifr6)
 	return (ip6);
 }
 
+static void
+info_setup_configure_button (Netinfo *info, gboolean enable)
+{
+	if (!info->network_tool_path)
+		gtk_widget_hide (info->configure_button);
+	else {
+		gtk_widget_show (info->configure_button);
+		gtk_widget_set_sensitive (info->configure_button, enable);
+	}
+}
+
 void
 info_get_nic_information (const gchar *nic, Netinfo *info)
 {
@@ -497,12 +508,15 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 				gtk_label_set_text (GTK_LABEL (info->broadcast), " ");
 				ip->ip_bcast = g_strdup ("");
 				gtk_label_set_text (GTK_LABEL (info->link_speed), " ");
+				info_setup_configure_button (info, FALSE);
 			} else {
 				if (data.has_data) {
 					gtk_label_set_text (GTK_LABEL (info->link_speed), data.media);
 				} else {
 					gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
 				}
+
+				info_setup_configure_button (info, TRUE);
 			}
 
 			/* Supports multicast */

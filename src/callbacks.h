@@ -18,6 +18,8 @@ void on_finger_activate (GtkWidget * editable, gpointer data);
 
 void on_whois_activate (GtkWidget * editable, gpointer data);
 
+void on_configure_button_clicked (GtkButton * widget, gpointer data);
+
 /* General stuff */
 void gn_quit_app (GtkWidget * widget, gpointer data);
 

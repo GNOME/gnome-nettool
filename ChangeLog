@@ -1,3 +1,19 @@
+2004-06-11  Carlos Garnacho Parro  <carlosg@gnome.org>
+
+	* src/callbacks.[ch] (on_configure_button_clicked): added, 
+	configures the interface calling network-admin from g-s-t
+
+	* src/gnome-nettool.glade: added the "configure" button
+
+	* src/nettool.h: added configure button and path to network-admin
+	in the struct
+
+	* src/main.c: loaded the button from the glade XML
+
+	* src/info.[ch]: added some logic for hiding/showing and turning
+	sensitive/unsensitive the button, added a define with network-admin
+	executable name
+
 2004-06-09  William Jon McCann  <mccann@jhu.edu>
 
 	* src/callbacks.c (on_clear_history_activate): Clear history in

@@ -34,6 +34,7 @@
 #include "lookup.h"
 #include "finger.h"
 #include "whois.h"
+#include "utils.h"
 #include "gn-combo-history.h"
 
 Netinfo *load_ping_widgets_from_xml (GladeXML * xml);
@@ -517,6 +518,9 @@ load_info_widgets_from_xml (GladeXML * xml)
 	info->rx_errors = glade_xml_get_widget (xml, "info_rx_errors");
 	info->collisions = glade_xml_get_widget (xml, "info_collisions");
 	info->list_ip_addr = glade_xml_get_widget (xml, "info_list_ip_addr");
+	info->configure_button = glade_xml_get_widget (xml, "info_configure_button");
+
+	info->network_tool_path = util_find_program_in_path (GST_NETWORK_TOOL, NULL);
 
 	model = GTK_TREE_MODEL (gtk_list_store_new (5, G_TYPE_STRING, G_TYPE_STRING,
 						    G_TYPE_STRING, G_TYPE_STRING,
@@ -542,7 +546,11 @@ load_info_widgets_from_xml (GladeXML * xml)
 	gtk_combo_box_set_model (GTK_COMBO_BOX (info->combo), model);
 
 	g_object_unref (model);
-	
+
+	g_signal_connect (G_OBJECT (info->configure_button), "clicked",
+			  G_CALLBACK (on_configure_button_clicked),
+			  info);
+
 	g_signal_connect (G_OBJECT (info->combo), "changed",
 			  G_CALLBACK (info_nic_changed),
 			  info);
