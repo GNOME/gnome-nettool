@@ -1,16 +1,16 @@
 # Czech translation of gnome-network.
 # Copyright (C) 2001 Free Software Foundation, Inc.
-# Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>
+# Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>
 # David Sauer <davids@penguin.cz> (David Šauer), 1999.
 # Updated by Stanislav Brabec <utx@penguin.cz>, 2001.
-# Miloslav Trmac <mitr@volny.cz>, 2003, 2004.
+# Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-24 14:59+0100\n"
-"PO-Revision-Date: 2004-10-20 21:38+0200\n"
+"POT-Creation-Date: 2005-03-31 05:57+0200\n"
+"PO-Revision-Date: 2005-03-31 10:53+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -77,7 +77,7 @@ msgstr "Zařízení"
 msgid "Display:"
 msgstr "Zobrazení:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:832
+#: src/gnome-nettool.glade.h:14 src/main.c:850
 msgid "Finger"
 msgstr "Finger"
 
@@ -97,7 +97,7 @@ msgstr "IP adresa:"
 msgid "Link speed:"
 msgstr "Rychlost spojení:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:746
+#: src/gnome-nettool.glade.h:19 src/main.c:764
 msgid "Lookup"
 msgstr "Vyhledat"
 
@@ -125,7 +125,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Síťová maska:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:445
+#: src/gnome-nettool.glade.h:26 src/main.c:463
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -153,7 +153,7 @@ msgstr "Přijaté pakety:"
 msgid "Packets transmitted:"
 msgstr "Odeslané pakety:"
 
-#: src/gnome-nettool.glade.h:33 src/main.c:281
+#: src/gnome-nettool.glade.h:33 src/main.c:299
 msgid "Ping"
 msgstr "Ping"
 
@@ -177,7 +177,7 @@ msgstr "Chyby příjmu:"
 msgid "Routing Table Information"
 msgstr "Informace o směrovací tabulce"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:627
+#: src/gnome-nettool.glade.h:39 src/main.c:645
 msgid "Scan"
 msgstr "Skenovat"
 
@@ -189,7 +189,7 @@ msgstr "Odesílat:"
 msgid "State:"
 msgstr "Stav:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:369
+#: src/gnome-nettool.glade.h:42 src/main.c:387
 msgid "Trace"
 msgstr "Stopa"
 
@@ -217,7 +217,7 @@ msgstr "Neomezeně požadavků"
 msgid "User"
 msgstr "Uživatel"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:948
+#: src/gnome-nettool.glade.h:49 src/main.c:966
 msgid "Whois"
 msgstr "Whois"
 
@@ -230,30 +230,38 @@ msgid "_Domain address:"
 msgstr "_Adresa domény:"
 
 #: src/gnome-nettool.glade.h:52
+msgid "_Edit"
+msgstr "_Upravit"
+
+#: src/gnome-nettool.glade.h:53
+msgid "_Help"
+msgstr "Nápo_věda"
+
+#: src/gnome-nettool.glade.h:54
 msgid "_Information type:"
 msgstr "_Typ informací:"
 
-#: src/gnome-nettool.glade.h:53
+#: src/gnome-nettool.glade.h:55
 msgid "_Network address:"
 msgstr "Síťová _adresa:"
 
-#: src/gnome-nettool.glade.h:54
+#: src/gnome-nettool.glade.h:56
 msgid "_Network device:"
 msgstr "_Síťové zařízení:"
 
-#: src/gnome-nettool.glade.h:55
+#: src/gnome-nettool.glade.h:57
 msgid "_Tool"
 msgstr "_Nástroj"
 
-#: src/gnome-nettool.glade.h:56
+#: src/gnome-nettool.glade.h:58
 msgid "_Username:"
 msgstr "_Jméno uživatele:"
 
-#: src/gnome-nettool.glade.h:57
+#: src/gnome-nettool.glade.h:59
 msgid "ms"
 msgstr "ms"
 
-#: src/gnome-nettool.glade.h:58
+#: src/gnome-nettool.glade.h:60
 msgid "requests"
 msgstr "požadavků"
 
@@ -290,101 +298,101 @@ msgstr "Rozhraní loopback"
 msgid "Unknown Interface"
 msgstr "Neznámé rozhraní"
 
-#: src/info.c:140
+#: src/info.c:161
 msgid "Network Devices Not Found"
 msgstr "Síťová zařízení nenalezena"
 
-#: src/info.c:354
+#: src/info.c:367
 msgid "Unknown"
 msgstr "Neznámé"
 
-#: src/info.c:514
+#: src/info.c:527
 msgid "Active"
 msgstr "Aktivní"
 
-#: src/info.c:516
+#: src/info.c:529
 msgid "Inactive"
 msgstr "Neaktivní"
 
-#: src/info.c:521
+#: src/info.c:534
 msgid "Loopback"
 msgstr "Loopback"
 
-#: src/info.c:538
+#: src/info.c:551
 msgid "Enabled"
 msgstr "Povoleno"
 
-#: src/info.c:540
+#: src/info.c:553
 msgid "Disabled"
 msgstr "Zakázáno"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:680
+#: src/info.c:694
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Síťové zařízení:\t%s\n"
 
-#: src/info.c:681
+#: src/info.c:695
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardwarová adresa:\t%s\n"
 
-#: src/info.c:682
+#: src/info.c:696
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP adresa:\t%s\n"
 
-#: src/info.c:683
+#: src/info.c:697
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Síťová maska:\t%s\n"
 
-#: src/info.c:684
+#: src/info.c:698
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: src/info.c:685
+#: src/info.c:699
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:686
+#: src/info.c:700
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:687
+#: src/info.c:701
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Rychlost spojení:\t%s\n"
 
-#: src/info.c:688
+#: src/info.c:702
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stav:\t%s\n"
 
-#: src/info.c:690
+#: src/info.c:704
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Odeslané pakety:\t%s\n"
 
-#: src/info.c:691
+#: src/info.c:705
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Chyby odesílání:\t%s\n"
 
-#: src/info.c:692
+#: src/info.c:706
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Přijaté pakety:\t%s\n"
 
-#: src/info.c:693
+#: src/info.c:707
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Chyby příjmu:\t%s\n"
 
-#: src/info.c:694
+#: src/info.c:708
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kolize:\t%s\n"
@@ -437,55 +445,51 @@ msgstr "Načíst informace o síťovém zařízení"
 msgid "DEVICE"
 msgstr "ZAŘÍZENÍ"
 
-#: src/main.c:81
+#: src/main.c:82
 msgid "Send a ping to a network address"
 msgstr "Poslat ping na síťovou adresu"
 
-#: src/main.c:82 src/main.c:88 src/main.c:91 src/main.c:94
+#: src/main.c:83 src/main.c:91 src/main.c:95 src/main.c:99
 msgid "HOST"
 msgstr "POČÍTAČ"
 
-#: src/main.c:84
+#: src/main.c:86
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "Získat informace netstat. Platné volby jsou: route, active, multicast."
 
-#: src/main.c:85
+#: src/main.c:87
 msgid "COMMAND"
 msgstr "PŘÍKAZ"
 
-#: src/main.c:87
+#: src/main.c:90
 msgid "Trace a route to a network address"
 msgstr "Sledovat směrování k síťové adrese"
 
-#: src/main.c:90
+#: src/main.c:94
 msgid "Port scan a network address"
 msgstr "Skenovat porty na síťové adrese"
 
-#: src/main.c:93
+#: src/main.c:98
 msgid "Look up a network address"
 msgstr "Vyhledat síťovou adresu"
 
-#: src/main.c:96
+#: src/main.c:102
 msgid "Finger command to run"
 msgstr "Příkaz finger, který spustit"
 
-#: src/main.c:97
+#: src/main.c:103
 msgid "USER"
 msgstr "UŽIVATEL"
 
-#: src/main.c:99
+#: src/main.c:106
 msgid "Perform a whois lookup for a network domain"
 msgstr "Provést dotaz whois na doménu v síti"
 
-#: src/main.c:100
+#: src/main.c:107
 msgid "DOMAIN"
 msgstr "DOMÉNA"
 
-#: src/main.c:113
-msgid "Network Information"
-msgstr "Informace o síti"
-
-#: src/main.c:119
+#: src/main.c:121
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
@@ -494,7 +498,7 @@ msgstr ""
 "Soubor %s neexistuje, zkontrolujte prosím, jestli je gnome-netinfo správně "
 "nainstalováno"
 
-#: src/main.c:314
+#: src/main.c:332
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -502,7 +506,7 @@ msgstr ""
 "Zadejte síťovou adresu, kam poslat ping.\n"
 "Například www.domain.com nebo 192.168.2.1"
 
-#: src/main.c:396
+#: src/main.c:414
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -510,27 +514,27 @@ msgstr ""
 "Zadejte síťovou adresu, ke které sledovat cestu.\n"
 "Například www.domain.com nebo 192.168.2.1"
 
-#: src/main.c:481 src/netstat.c:442
+#: src/main.c:499 src/netstat.c:442
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/main.c:488
+#: src/main.c:506
 msgid "IP Address"
 msgstr "IP adresa"
 
-#: src/main.c:495
+#: src/main.c:513
 msgid "Netmask / Prefix"
 msgstr "Síťová maska / prefix"
 
-#: src/main.c:502
+#: src/main.c:520
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: src/main.c:509
+#: src/main.c:527
 msgid "Scope"
 msgstr "Rozsah"
 
-#: src/main.c:649
+#: src/main.c:667
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -538,7 +542,7 @@ msgstr ""
 "Zadejte síťovou adresu, kde hledat otevřené porty.\n"
 "Například www.domain.com nebo 192.168.2.1"
 
-#: src/main.c:777
+#: src/main.c:795
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -547,11 +551,11 @@ msgstr ""
 "Například www.domain.com nebo 192.168.2.1"
 
 # "kterého finger"
-#: src/main.c:866
+#: src/main.c:884
 msgid "Enter the user to finger."
 msgstr "Zadejte uživatele, pro kterého spustit finger."
 
-#: src/main.c:893
+#: src/main.c:911
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -559,7 +563,7 @@ msgstr ""
 "Zadejte síťovou adresu pro spuštění finger o uživateli.\n"
 "Například www.domain.com nebo 192.168.2.1"
 
-#: src/main.c:980
+#: src/main.c:998
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -793,7 +797,7 @@ msgstr "Čas 2"
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tJméno počítače\tIP\tČas 1\tČas 2\n"
 
-#: src/utils.c:227
+#: src/utils.c:228
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: Příkaz nenalezen"
@@ -821,6 +825,9 @@ msgstr "Získávám informace o všech uživatelích na \"%s\""
 msgid "Getting the whois information of %s"
 msgstr "Získávám informace whois o %s"
 
+#~ msgid "Network Information"
+#~ msgstr "Informace o síti"
+
 #~ msgid "Any / All Information"
 #~ msgstr "Některé / všechny informace"
 
@@ -838,9 +845,6 @@ msgstr "Získávám informace whois o %s"
 
 #~ msgid "Mailbox Exchange"
 #~ msgstr "Příjemce pošty"
-
-#~ msgid "Name Server"
-#~ msgstr "Jmenný server"
 
 #~ msgid "Select network device from list"
 #~ msgstr "Vyberte síťové zařízení ze seznamu"
