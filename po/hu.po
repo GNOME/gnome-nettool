@@ -1,25 +1,28 @@
 # Hungarian translation of gnome-nettool.
 # Copyright (C) 2004 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
-# Laszlo Dvornik <dvornik@invitel.hu>, 2004.
+# Laszlo Dvornik <dvornik@gnome.hu>, 2004.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-24 04:47+0200\n"
-"PO-Revision-Date: 2004-06-26 17:30+0200\n"
-"Last-Translator: Laszlo Dvornik <dvornik@invitel.hu>\n"
+"POT-Creation-Date: 2004-08-10 11:44+0200\n"
+"PO-Revision-Date: 2004-08-10 12:20+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/callbacks.c:319
+#: src/callbacks.c:321
 msgid "translator_credits"
-msgstr "Dvornik László <dvornik@invitel.hu>"
+msgstr ""
+"Dvornik László <dvornik@gnome.hu>\n"
+"Kelemen Gábor <kelemeng@gnome.hu>"
 
-#: src/callbacks.c:347
+#: src/callbacks.c:349
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafikus felhasználói felület általános hálózati segédprogramokhoz"
 
@@ -72,10 +75,10 @@ msgid "Devices"
 msgstr "Eszközök"
 
 #: src/gnome-nettool.glade.h:13
-msgid "Display: "
-msgstr "Képernyő: "
+msgid "Display:"
+msgstr "Képernyő:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:772
+#: src/gnome-nettool.glade.h:14 src/main.c:837
 msgid "Finger"
 msgstr "Finger"
 
@@ -95,7 +98,7 @@ msgstr "IP-cím:"
 msgid "Link speed:"
 msgstr "Kapcsolat sebessége:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:701
+#: src/gnome-nettool.glade.h:19 src/main.c:751
 msgid "Lookup"
 msgstr "Keresés"
 
@@ -123,7 +126,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Hálózati maszk:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:416
+#: src/gnome-nettool.glade.h:26 src/main.c:442
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -151,7 +154,7 @@ msgstr "Fogadott csomagok:"
 msgid "Packets transmitted:"
 msgstr "Továbbított csomagok:"
 
-#: src/gnome-nettool.glade.h:33 src/main.c:279
+#: src/gnome-nettool.glade.h:33 src/main.c:281
 msgid "Ping"
 msgstr "Ping"
 
@@ -175,47 +178,47 @@ msgstr "Fogadási hibák:"
 msgid "Routing Table Information"
 msgstr "Útválasztási táblázat-információ"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:595
+#: src/gnome-nettool.glade.h:39 src/main.c:632
 msgid "Scan"
 msgstr "Vizsgálat"
 
 #: src/gnome-nettool.glade.h:40
-msgid "Send unlimited requests"
-msgstr "Végtelen számú kérelem küldése"
+msgid "Send:"
+msgstr "Küldés:"
 
 #: src/gnome-nettool.glade.h:41
-msgid "Send: "
-msgstr "Küldés: "
-
-#: src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "Állapot:"
 
-#: src/gnome-nettool.glade.h:43 src/main.c:351
+#: src/gnome-nettool.glade.h:42 src/main.c:366
 msgid "Trace"
 msgstr "Nyomkövetés"
 
-#: src/gnome-nettool.glade.h:44
+#: src/gnome-nettool.glade.h:43
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: src/gnome-nettool.glade.h:45
+#: src/gnome-nettool.glade.h:44
 msgid "Transmission errors:"
 msgstr "Adatátviteli hibák:"
 
-#: src/gnome-nettool.glade.h:46
+#: src/gnome-nettool.glade.h:45
 msgid "Transmitted bytes:"
 msgstr "Továbbított bájtok:"
 
-#: src/gnome-nettool.glade.h:47
+#: src/gnome-nettool.glade.h:46
 msgid "Transmitted packets:"
 msgstr "Továbbított csomagok:"
+
+#: src/gnome-nettool.glade.h:47
+msgid "Unlimited requests"
+msgstr "Végtelen számú kérelem"
 
 #: src/gnome-nettool.glade.h:48
 msgid "User"
 msgstr "Felhasználó"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:869
+#: src/gnome-nettool.glade.h:49 src/main.c:953
 msgid "Whois"
 msgstr "Whois"
 
@@ -224,28 +227,28 @@ msgid "_Configure"
 msgstr "_Beállítás"
 
 #: src/gnome-nettool.glade.h:51
-msgid "_Domain Address: "
-msgstr "_Tartománycím: "
+msgid "_Domain address:"
+msgstr "_Tartománycím:"
 
 #: src/gnome-nettool.glade.h:52
-msgid "_Information Type: "
-msgstr "_Információ típusa: "
+msgid "_Information type:"
+msgstr "_Információ típusa:"
 
 #: src/gnome-nettool.glade.h:53
-msgid "_Network Address: "
-msgstr "_Hálózati cím: "
+msgid "_Network address:"
+msgstr "_Hálózati cím:"
 
 #: src/gnome-nettool.glade.h:54
-msgid "_Network Device"
-msgstr "_Hálózati eszköz"
+msgid "_Network device:"
+msgstr "_Hálózati eszköz:"
 
 #: src/gnome-nettool.glade.h:55
 msgid "_Tool"
 msgstr "_Eszköz"
 
 #: src/gnome-nettool.glade.h:56
-msgid "_Username: "
-msgstr "_Felhasználónév: "
+msgid "_Username:"
+msgstr "_Felhasználónév:"
 
 #: src/gnome-nettool.glade.h:57
 msgid "ms"
@@ -391,23 +394,28 @@ msgstr "Ütközések:\t%s\n"
 msgid "not available"
 msgstr "nem elérhető"
 
-#: src/lookup.c:273
+#: src/lookup.c:79
+#, c-format
+msgid "Looking up %s"
+msgstr "%s kikeresése"
+
+#: src/lookup.c:277
 msgid "Name"
 msgstr "Név"
 
-#: src/lookup.c:281
+#: src/lookup.c:285
 msgid "TTL"
 msgstr "TTL"
 
-#: src/lookup.c:290
+#: src/lookup.c:294
 msgid "Address Type"
 msgstr "Cím típusa"
 
-#: src/lookup.c:300
+#: src/lookup.c:304
 msgid "Record Type"
 msgstr "Rekord típusa"
 
-#: src/lookup.c:309
+#: src/lookup.c:313
 msgid "Address"
 msgstr "Cím"
 
@@ -417,7 +425,7 @@ msgstr "Cím"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: src/lookup.c:337
+#: src/lookup.c:341
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Forrás\tTTL\tCím típusa\tRekord típusa\tFelbontás\n"
 
@@ -439,7 +447,8 @@ msgstr "HOST"
 
 #: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "Netstat információ megszerzése. Érvényes kapcsolók: route, active, multicast."
+msgstr ""
+"Netstat információ megszerzése. Érvényes kapcsolók: route, active, multicast."
 
 #: src/main.c:85
 msgid "COMMAND"
@@ -483,86 +492,152 @@ msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
 "installed"
 msgstr ""
-"A(z) %s fájl nem létezik, ellenőrizze, hogy a gnome-netinfo megfelelően "
-"van-e telepítve"
+"A(z) %s fájl nem létezik, ellenőrizze, hogy a gnome-netinfo megfelelően van-"
+"e telepítve"
 
-#: src/main.c:449 src/netstat.c:429
+#: src/main.c:314
+msgid ""
+"Enter the network address to ping.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Adja meg a pingelendő hálózat címét.\n"
+"Például: www.domain.com vagy 192.168.2.1"
+
+#: src/main.c:393
+msgid ""
+"Enter the network address to trace a route to.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Adja meg azt a hálózati címet, amelyhez az útvonalat követni kell.\n"
+"Például: www.domain.com vagy 192.168.2.1"
+
+#: src/main.c:478 src/netstat.c:441
 msgid "Protocol"
 msgstr "Protokoll"
 
-#: src/main.c:456
+#: src/main.c:485
 msgid "IP Address"
 msgstr "IP-cím"
 
-#: src/main.c:463
+#: src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "Hálózati maszk / Előtag"
 
-#: src/main.c:470
+#: src/main.c:499
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: src/main.c:477
+#: src/main.c:506
 msgid "Scope"
 msgstr "Címtartomány"
 
-#: src/netstat.c:436
+#: src/main.c:654
+msgid ""
+"Enter the network address to scan for open ports.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Adja meg azt a hálózati címet, amelyen nyitott portokat kell keresni.\n"
+"Például: www.domain.com vagy 192.168.2.1"
+
+#: src/main.c:782
+msgid ""
+"Enter the network address to lookup.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Adja meg azt a hálózati címet, amelyet ki kell keresni.\n"
+"Például: www.domain.com vagy 192.168.2.1"
+
+#: src/main.c:871
+msgid "Enter the user to finger."
+msgstr ""
+"Adja meg azt a felhasználót, akire a finger parancsot végre kell hajtani."
+
+#: src/main.c:898
+msgid ""
+"Enter the network address to finger that user.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Adja meg azon hálózat címét, melynek felhasználójára kiadja a finger "
+"parancsot.\n"
+"Például: www.domain.com vagy 192.168.2.1"
+
+#: src/main.c:985
+msgid ""
+"Enter a domain address to lookup its whois information.\n"
+"For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Adja meg azt a hálózati címet, melynek whois információját ki kell keresni.\n"
+"Például: www.domain.com vagy 192.168.2.1"
+
+#: src/netstat.c:120
+msgid "Getting routing table"
+msgstr "Útvonaltáblázat megszerzése"
+
+#: src/netstat.c:135
+msgid "Getting active Internet connections"
+msgstr "Aktív internetkapcsolat-információk megszerzése"
+
+#: src/netstat.c:144
+msgid "Getting group memberships"
+msgstr "Csoporttagság-információk megszerzése"
+
+#: src/netstat.c:448
 msgid "IP Source"
 msgstr "IP-forrás"
 
-#: src/netstat.c:444
+#: src/netstat.c:456
 msgid "Port/Service"
 msgstr "Port/Szolgáltatás"
 
-#: src/netstat.c:452 src/scan.c:288
+#: src/netstat.c:464 src/scan.c:292
 msgid "State"
 msgstr "Állapot"
 
-#: src/netstat.c:594
+#: src/netstat.c:606
 msgid "Destination/Prefix"
 msgstr "Cél/Előtag"
 
-#: src/netstat.c:596
+#: src/netstat.c:608
 msgid "Destination"
 msgstr "Cél"
 
-#: src/netstat.c:603
+#: src/netstat.c:615
 msgid "Gateway"
 msgstr "Átjáró"
 
-#: src/netstat.c:611
+#: src/netstat.c:623
 msgid "Netmask"
 msgstr "Hálózati maszk"
 
-#: src/netstat.c:619 src/netstat.c:725
+#: src/netstat.c:631 src/netstat.c:737
 msgid "Interface"
 msgstr "Felület"
 
-#: src/netstat.c:732
+#: src/netstat.c:744
 msgid "Member"
 msgstr "Tag"
 
-#: src/netstat.c:740
+#: src/netstat.c:752
 msgid "Group"
 msgstr "Csoport"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:782
+#: src/netstat.c:794
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokoll\tIP-forrás\tPort/Szolgáltatás\tÁllapot\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:788
+#: src/netstat.c:800
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Cél\tÁtjáró\tHálózati maszk\tFelület\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:793
+#: src/netstat.c:805
 msgid "Interface\tMember\tGroup\n"
 msgstr "Felület\tTag\tCsoport\n"
 
@@ -591,31 +666,36 @@ msgstr "Adjon meg egy érvényes tartománycímet és próbálja újra."
 msgid "Information not available"
 msgstr "Információ nem elérhető"
 
-#: src/nettool.c:486
+#: src/nettool.c:494
 msgid "Stop"
 msgstr "Leállítás"
 
-#: src/nettool.c:492
+#: src/nettool.c:500
 msgid "Run"
 msgstr "Futtatás"
 
-#: src/ping.c:378
+#: src/ping.c:73
+#, c-format
+msgid "Sending ping requests to %s"
+msgstr "Ping kérések küldése %s felé"
+
+#: src/ping.c:381
 msgid "Bytes"
 msgstr "Bájtok"
 
-#: src/ping.c:385
+#: src/ping.c:388
 msgid "Source"
 msgstr "Forrás"
 
-#: src/ping.c:393
+#: src/ping.c:396
 msgid "Seq"
 msgstr "Szekvencia"
 
-#: src/ping.c:403
+#: src/ping.c:406
 msgid "Time"
 msgstr "Idő"
 
-#: src/ping.c:411
+#: src/ping.c:414
 msgid "Units"
 msgstr "Mértékegységek"
 
@@ -623,77 +703,87 @@ msgstr "Mértékegységek"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: src/ping.c:437
+#: src/ping.c:440
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bájtok\tForrás\tSzekvencia\tIdő\tMértékegységek\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: src/ping.c:452
+#: src/ping.c:455
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimális idő:\t%s ms\n"
 
-#: src/ping.c:453
+#: src/ping.c:456
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Átlagidő:\t%s ms\n"
 
-#: src/ping.c:454
+#: src/ping.c:457
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maximális idő:\t%s ms\n"
 
-#: src/ping.c:456
+#: src/ping.c:459
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Továbbított csomagok:\t%s\n"
 
-#: src/ping.c:458
+#: src/ping.c:461
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Fogadott csomagok:\t%s\n"
 
-#: src/ping.c:460
+#: src/ping.c:463
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Csomagveszteség:\t%s\n"
 
-#: src/scan.c:151
+#: src/scan.c:80
+#, c-format
+msgid "Scanning %s for open ports"
+msgstr "Nyitott portok keresése a következőn: %s"
+
+#: src/scan.c:155
 msgid "unknown"
 msgstr "ismeretlen"
 
-#: src/scan.c:280
+#: src/scan.c:284
 msgid "Port"
 msgstr "Port"
 
-#: src/scan.c:296
+#: src/scan.c:300
 msgid "Service"
 msgstr "Szolgáltatás"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:318
+#: src/scan.c:322
 msgid "Port\tState\tService\n"
 msgstr "Port\tÁllapot\tSzolgáltatás\n"
 
-#: src/traceroute.c:261
+#: src/traceroute.c:58
+#, c-format
+msgid "Tracing route to %s"
+msgstr "Útvonal követése a következőhöz: %s"
+
+#: src/traceroute.c:265
 msgid "Hop"
 msgstr "Ugrás"
 
-#: src/traceroute.c:269
+#: src/traceroute.c:273
 msgid "Hostname"
 msgstr "Gépnév"
 
-#: src/traceroute.c:277
+#: src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: src/traceroute.c:288
+#: src/traceroute.c:292
 msgid "Time 1"
 msgstr "Idő 1"
 
-#: src/traceroute.c:298
+#: src/traceroute.c:302
 msgid "Time 2"
 msgstr "Idő 2"
 
@@ -701,7 +791,7 @@ msgstr "Idő 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: src/traceroute.c:324
+#: src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Ugrás\tGépnév\tIP\tIdő 1\tIdő 2\n"
 
@@ -717,3 +807,18 @@ msgstr "Hálózati információs segédeszközök"
 #: src/gnome-nettool.desktop.in.h:2
 msgid "Network Tools"
 msgstr "Hálózati segédeszközök"
+
+#: src/finger.c:58
+#, c-format
+msgid "Getting information of %s on \"%s\""
+msgstr "Információ szerzése %s felhasználóról \"%s\" gépen"
+
+#: src/finger.c:62
+#, c-format
+msgid "Getting information of all users on \"%s\""
+msgstr "Információ szerzése minden felhasználóról \"%s\" gépen"
+
+#: src/whois.c:56
+#, c-format
+msgid "Getting the whois information of %s"
+msgstr "%s whois információjának megszerzése"
