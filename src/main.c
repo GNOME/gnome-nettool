@@ -572,9 +572,6 @@ load_info_widgets_from_xml (GladeXML * xml)
 	label1 = glade_xml_get_widget (xml, "info_combo_label");
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label1), info->combo);
 
-/*
-#ifdef IFCONFIG_PROGRAM
-*/
 	model = GTK_TREE_MODEL (gtk_list_store_new (3, GDK_TYPE_PIXBUF,
 						    G_TYPE_STRING,
 						    G_TYPE_POINTER));
@@ -591,11 +588,6 @@ load_info_widgets_from_xml (GladeXML * xml)
 			  info);
 	
 	info_load_iface (info);
-/*
-#else
-	gtk_widget_set_sensitive (vbox_info, FALSE);
-#endif
-*/
 	info->copy_output = NETINFO_COPY_FUNC (info_copy_to_clipboard);
 
 	return info;

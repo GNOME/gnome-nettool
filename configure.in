@@ -39,21 +39,6 @@ PKG_CHECK_MODULES(NETTOOL,
 AC_SUBST(NETTOOL_CFLAGS)
 AC_SUBST(NETTOOL_LIBS)
 
-dnl Find ifconfig
-dnl
-AC_ARG_WITH(ifconfig, [  --with-ifconfig=PATH    Where ifconfig is.])
-if test "x$with_ifconfig" = "x" ; then
-	AC_PATH_PROG(IFCONFIG_PROGRAM, 
-		ifconfig,,
-		$PATH:/sbin:/usr/etc:/usr/sbin)
-	if test "x$IFCONFIG_PROGRAM" != "x" ; then
-		AC_DEFINE_UNQUOTED(IFCONFIG_PROGRAM, "$IFCONFIG_PROGRAM", [The ifconfig program])
-	fi
-else
-	AC_DEFINE_UNQUOTED(IFCONFIG_PROGRAM, "$with_ifconfig", [The ifconfig program])
-fi
-AM_CONDITIONAL(HAVE_IFCONFIG, test "x$IFCONFIG_PROGRAM" != "x")
-
 dnl
 dnl Translations
 dnl

@@ -111,24 +111,6 @@ on_netstat_activate (GtkWidget * widget, gpointer data)
 }
 
 /* Info callbacks */
-#ifdef IFCONFIG_PROGRAM
-/*void
-on_info_nic_changed (GtkEntry * entry, gpointer info)
-{
-	gchar *nic;
-
-	g_return_if_fail (info != NULL);
-
-	nic = g_strdup (gtk_entry_get_text (entry));
-
-	if (strlen (nic) > 0) {
-		info_do (nic, (Netinfo *) & info);
-	}
-
-	g_free (nic);
-}*/
-#endif
-
 void
 on_configure_button_clicked (GtkButton *button, gpointer data)
 {
