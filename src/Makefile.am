@@ -7,7 +7,7 @@ INCLUDES = 			\
 	@NETTOOL_CFLAGS@
 
 LDADD =				\
-	$(NETINFO_LIBS)	
+	$(NETTOOL_LIBS)	
 
 bin_PROGRAMS = gnome-nettool
 
