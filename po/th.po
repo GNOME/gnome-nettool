@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-24 14:59+0100\n"
-"PO-Revision-Date: 2005-01-21 20:21+0700\n"
+"POT-Creation-Date: 2005-02-21 23:42+0700\n"
+"PO-Revision-Date: 2005-02-21 23:44+0700\n"
 "Last-Translator: Ross Golder <ross@golder.org>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: src/callbacks.c:311
 msgid "translator_credits"
@@ -60,9 +60,8 @@ msgid "Broadcast:"
 msgstr "กระจายสัญญาณ:"
 
 #: src/gnome-nettool.glade.h:10
-#, fuzzy
 msgid "Clear _History"
-msgstr "_ล้างคำสั่งเก่า"
+msgstr "_ล้างข้อมูลเก่า"
 
 #: src/gnome-nettool.glade.h:11
 msgid "Collisions:"
@@ -289,102 +288,101 @@ msgstr "อินเทอร์เฟซแบบวนกลับ"
 msgid "Unknown Interface"
 msgstr "ไม่รู้ชนิดอินเทอร์เฟซ"
 
-#: src/info.c:140
+#: src/info.c:161
 msgid "Network Devices Not Found"
 msgstr "ไม่พบอุปกรณ์เครือข่าย"
 
-#: src/info.c:354
-#, fuzzy
+#: src/info.c:367
 msgid "Unknown"
 msgstr "ไม่รู้จัก"
 
-#: src/info.c:514
+#: src/info.c:527
 msgid "Active"
 msgstr "ทำงาน"
 
-#: src/info.c:516
+#: src/info.c:529
 msgid "Inactive"
 msgstr "ไม่ทำงาน"
 
-#: src/info.c:521
+#: src/info.c:534
 msgid "Loopback"
 msgstr "วนกลับ"
 
-#: src/info.c:538
+#: src/info.c:551
 msgid "Enabled"
 msgstr "เปิดใช้อยู่"
 
-#: src/info.c:540
+#: src/info.c:553
 msgid "Disabled"
 msgstr "ไม่ได้เปิดใช้"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:680
+#: src/info.c:694
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "อุปกรณ์เครือข่าย:\t%s\n"
 
-#: src/info.c:681
+#: src/info.c:695
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "หมายเลขฮาร์ดแวร์:\t%s\n"
 
-#: src/info.c:682
+#: src/info.c:696
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "หมายเลขไอพี:\t%s\n"
 
-#: src/info.c:683
+#: src/info.c:697
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "เน็ตแมสก์:\t%s\n"
 
-#: src/info.c:684
+#: src/info.c:698
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "กระจายสัญญาณ:\t%s\n"
 
-#: src/info.c:685
+#: src/info.c:699
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "มัลติแคสต์:\t%s\n"
 
-#: src/info.c:686
+#: src/info.c:700
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:687
+#: src/info.c:701
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "ความเร็วเชื่อมต่อ:\t%s\n"
 
-#: src/info.c:688
+#: src/info.c:702
 #, c-format
 msgid "State:\t%s\n"
 msgstr "สถานะ:\t%s\n"
 
-#: src/info.c:690
+#: src/info.c:704
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "จำนวนแพ็กเก็ตที่ส่ง:\t%s\n"
 
-#: src/info.c:691
+#: src/info.c:705
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "ส่งผิดพลาด:\t%s\n"
 
-#: src/info.c:692
+#: src/info.c:706
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "จำนวนแพ็กเก็ตที่รับ:\t%s\n"
 
-#: src/info.c:693
+#: src/info.c:707
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "รับผิดพลาด:\t%s\n"
 
-#: src/info.c:694
+#: src/info.c:708
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "การชน:\t%s\n"
@@ -486,11 +484,11 @@ msgid "Network Information"
 msgstr "ข้อมูลเครือข่าย"
 
 #: src/main.c:119
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-netinfo is correcly "
 "installed"
-msgstr "ไม่มีไฟล์ %s  กรุณาตรวจสอบการติดตั้งขอ gnome-nettool"
+msgstr "ไม่มีแฟ้ม %s  กรุณาตรวจสอบการติดตั้งของ gnome-nettool"
 
 #: src/main.c:314
 msgid ""
@@ -525,7 +523,6 @@ msgid "Broadcast"
 msgstr "กระจายสัญญาณ"
 
 #: src/main.c:509
-#, fuzzy
 msgid "Scope"
 msgstr "สโคป"
 
@@ -574,9 +571,8 @@ msgid "Getting active Internet connections"
 msgstr "กำลังตรวจหาการเชื่อมต่ออินเทอร์เน็ตที่ทำงานอยู่"
 
 #: src/netstat.c:145
-#, fuzzy
 msgid "Getting group memberships"
-msgstr "กำลังตรวจหาสมาชิกกลุ่ม"
+msgstr "กำลังตรวจหาการเป็นสมาชิกกลุ่ม"
 
 #: src/netstat.c:449
 msgid "IP Source"
@@ -611,12 +607,10 @@ msgid "Interface"
 msgstr "อินเทอร์เฟซ"
 
 #: src/netstat.c:745
-#, fuzzy
 msgid "Member"
 msgstr "สมาชิก"
 
 #: src/netstat.c:753
-#, fuzzy
 msgid "Group"
 msgstr "กลุ่ม"
 
@@ -637,7 +631,6 @@ msgstr "ปลายทาง\tเกตเวย์\tเน็ตแมสก�
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
 #: src/netstat.c:806
-#, fuzzy
 msgid "Interface\tMember\tGroup\n"
 msgstr "อินเทอร์เฟซ\tสมาชิก\tกลุ่ม\n"
 
@@ -822,3 +815,4 @@ msgstr "กำลังอ่านข้อมูลผู้ใช้ทุก
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "กำลังอ่านข้อมูล whois ของ %s"
+
