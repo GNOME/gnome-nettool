@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-20 11:34+0200\n"
-"PO-Revision-Date: 2004-06-15 01:08+0900\n"
+"POT-Creation-Date: 2004-08-23 17:30+0900\n"
+"PO-Revision-Date: 2004-08-23 17:29+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -77,9 +77,8 @@ msgid "Devices"
 msgstr "デバイス"
 
 #: src/gnome-nettool.glade.h:13
-#, fuzzy
 msgid "Display:"
-msgstr "表示する情報: "
+msgstr "表示する情報:"
 
 #: src/gnome-nettool.glade.h:14 src/main.c:837
 msgid "Finger"
@@ -186,9 +185,8 @@ msgid "Scan"
 msgstr "スキャン"
 
 #: src/gnome-nettool.glade.h:40
-#, fuzzy
 msgid "Send:"
-msgstr "送信数: "
+msgstr "送信する数:"
 
 #: src/gnome-nettool.glade.h:41
 msgid "State:"
@@ -215,9 +213,8 @@ msgid "Transmitted packets:"
 msgstr "転送パケット数:"
 
 #: src/gnome-nettool.glade.h:47
-#, fuzzy
 msgid "Unlimited requests"
-msgstr "要求数は制限しない"
+msgstr "送信要求の数を制限しない"
 
 #: src/gnome-nettool.glade.h:48
 msgid "User"
@@ -225,40 +222,35 @@ msgstr "ユーザ"
 
 #: src/gnome-nettool.glade.h:49 src/main.c:953
 msgid "Whois"
-msgstr "Whois"
+msgstr "WhoIs"
 
 #: src/gnome-nettool.glade.h:50
 msgid "_Configure"
 msgstr "設定(_C)"
 
 #: src/gnome-nettool.glade.h:51
-#, fuzzy
 msgid "_Domain address:"
-msgstr "ドメインのアドレス(_D): "
+msgstr "ドメインのアドレス(_D):"
 
 #: src/gnome-nettool.glade.h:52
-#, fuzzy
 msgid "_Information type:"
-msgstr "情報の種類(_I): "
+msgstr "情報の種類(_I):"
 
 #: src/gnome-nettool.glade.h:53
-#, fuzzy
 msgid "_Network address:"
-msgstr "ネットワークのアドレス(_N): "
+msgstr "ネットワークのアドレス(_N):"
 
 #: src/gnome-nettool.glade.h:54
-#, fuzzy
 msgid "_Network device:"
-msgstr "ネットワーク・デバイス(_N)"
+msgstr "ネットワーク・デバイス(_N):"
 
 #: src/gnome-nettool.glade.h:55
 msgid "_Tool"
 msgstr "ツール(_T)"
 
 #: src/gnome-nettool.glade.h:56
-#, fuzzy
 msgid "_Username:"
-msgstr "ユーザ名(_U): "
+msgstr "ユーザ名(_U):"
 
 #: src/gnome-nettool.glade.h:57
 msgid "ms"
@@ -405,9 +397,9 @@ msgid "not available"
 msgstr "利用不可"
 
 #: src/lookup.c:79
-#, fuzzy, c-format
+#, c-format
 msgid "Looking up %s"
-msgstr "Lookup"
+msgstr "%s の問い合わせ中..."
 
 #: src/lookup.c:277
 msgid "Name"
@@ -509,12 +501,16 @@ msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"Ping を送信する先のネットワーク・アドレスを入力して下さい\n"
+"(例: www.domain.com または 192.168.2.1)"
 
 #: src/main.c:393
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"経路情報を取得する先のネットワーク・アドレスを入力して下さい\n"
+"(例: www.domain.com または 192.168.2.1)"
 
 #: src/main.c:478 src/netstat.c:441
 msgid "Protocol"
@@ -541,40 +537,48 @@ msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"開いているポートをスキャンする先のネットワーク・アドレスを入力して下さい\n"
+"(例: www.domain.com または 192.168.2.1)"
 
 #: src/main.c:782
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"問い合わせするネットワーク・アドレスを入力して下さい\n"
+"(例: www.domain.com または 192.168.2.1)"
 
 #: src/main.c:871
 msgid "Enter the user to finger."
-msgstr ""
+msgstr "Finger を送信するユーザ名を入力して下さい"
 
 #: src/main.c:898
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"Finger を送信するユーザのネットワーク・アドレスを入力して下さい\n"
+"(例: www.domain.com または 192.168.2.1)"
 
 #: src/main.c:985
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
+"WhoIs 情報を問い合わせるドメイン・アドレスを入力して下さい\n"
+"(例: www.domain.com または 192.168.2.1)"
 
 #: src/netstat.c:120
 msgid "Getting routing table"
-msgstr ""
+msgstr "経路テーブルの取得中..."
 
 #: src/netstat.c:135
 msgid "Getting active Internet connections"
-msgstr ""
+msgstr "利用可能なインターネット接続情報の取得中..."
 
 #: src/netstat.c:144
 msgid "Getting group memberships"
-msgstr ""
+msgstr "グループのメンバシップ情報の取得中..."
 
 #: src/netstat.c:448
 msgid "IP Source"
@@ -670,9 +674,9 @@ msgid "Run"
 msgstr "実行"
 
 #: src/ping.c:73
-#, fuzzy, c-format
+#, c-format
 msgid "Sending ping requests to %s"
-msgstr "要求数は制限しない"
+msgstr "Ping を %s へ送信中..."
 
 #: src/ping.c:381
 msgid "Bytes"
@@ -736,7 +740,7 @@ msgstr "パケットの消失:\t%s\n"
 #: src/scan.c:80
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr ""
+msgstr "%s で開いているポートのスキャン中..."
 
 #: src/scan.c:155
 msgid "unknown"
@@ -758,9 +762,9 @@ msgid "Port\tState\tService\n"
 msgstr "ポート番号\t状態\tサービス\n"
 
 #: src/traceroute.c:58
-#, fuzzy, c-format
+#, c-format
 msgid "Tracing route to %s"
-msgstr "Traceroute"
+msgstr "%s に対する経路情報の追跡中..."
 
 #: src/traceroute.c:265
 msgid "Hop"
@@ -806,14 +810,14 @@ msgstr "ネットワーク・ツール"
 #: src/finger.c:58
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr ""
+msgstr "\"%2$s\" 上のユーザ %1$s の情報の取得中..."
 
 #: src/finger.c:62
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr ""
+msgstr "\"%s\" 上の全ユーザの情報の取得中..."
 
 #: src/whois.c:56
-#, fuzzy, c-format
+#, c-format
 msgid "Getting the whois information of %s"
-msgstr "ネットワーク情報ツール"
+msgstr "%s の WhoIs 情報の取得中..."
