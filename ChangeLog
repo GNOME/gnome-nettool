@@ -1,3 +1,24 @@
+2004-03-21  Carlos Garcia Campos <carlosgc@gnome.org>
+
+	* src/netinfo.c (toggle_state): change the cursor to GDK_WATCH when
+	a process is running
+
+	* src/netinfo.[ch] (is_ipv6_enable): added is_ipv6_enable function to
+	know if IPv6 is enabled in the system
+
+	* src/netstat.[ch] (get_active_option, strip_protocol_line, 
+	strip_route_line, *_tree_insert): IPv6 support
+
+	* src/netstat.[ch] (get_active_option): checks if IPv6 is enabled before
+	use inet6 protocol
+
+	* src/netstat.c (*_tree_insert): the tree_model doesn't change when
+	you toggle between protocol and route twice
+
+2004-03-14  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	Released 0.99.0
+
 2004-02-11  Rodrigo Moya <rodrigo@gnome-db.org>
 
 	* configure.in: set version to 0.99.0.

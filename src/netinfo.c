@@ -75,6 +75,27 @@ netinfo_set_host (Netinfo * netinfo, const gchar *host)
 			    host);
 }
 
+gboolean
+netinfo_is_ipv6_enable ()
+{
+	gint sock;
+	struct sockaddr_in6 sin6;
+	guint len;
+
+	if ((sock = socket (PF_INET6, SOCK_STREAM, 0)) == -1) {
+		return FALSE;
+	} else {
+		len = sizeof (struct sockaddr_in6);
+		if (getsockname (sock, (struct sockaddr *)&sin6, (void *)&len) < 0) {
+			close (sock);
+			return FALSE;
+		} else {
+			close (sock);
+			return TRUE;
+		}
+	}
+}
+
 const gchar *
 netinfo_get_user (Netinfo * netinfo)
 {
@@ -338,6 +359,8 @@ void
 netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 		      gpointer user_data)
 {
+	GdkCursor *cursor;
+	
 	g_assert (netinfo != NULL);
 	g_return_if_fail (netinfo != NULL);
 
@@ -347,8 +370,16 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 	}
 
 	if (state) {
+		gdk_window_set_cursor ((netinfo->output)->window, NULL);
 		netinfo->child_pid = 0;
+	} else {
+		cursor = gdk_cursor_new (GDK_WATCH);
+		if (!GTK_WIDGET_REALIZED (netinfo->output))
+			gtk_widget_realize (GTK_WIDGET (netinfo->output));
+		gdk_window_set_cursor ((netinfo->output)->window, cursor);
+		gdk_cursor_destroy (cursor);
 	}
+	
 	netinfo->running = !state;
 
 	netinfo_toggle_button (netinfo);

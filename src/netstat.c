@@ -109,14 +109,22 @@ netstat_get_active_option (Netinfo * netinfo)
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (netinfo->routing))) {
 		/* Works for Solaris and Linux */
-		option = g_strdup ("-r");
+		if (netinfo_is_ipv6_enable ()) {
+			option = g_strdup ("-rn -A inet -A inet6");
+		} else {
+			option = g_strdup ("-rn -A inet");
+		}
 	}
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (netinfo->protocol))) {
 		/* Only works for Solaris */
 #ifdef __FreeBSD__
 	    	option = g_strdup ("-a -f inet -ln");
 #else
-		option = g_strdup ("-A inet -ln");
+		if (netinfo_is_ipv6_enable ()) {
+			option = g_strdup ("-A inet -A inet6 -ln");
+		} else {
+			option = g_strdup ("-A inet -ln");
+		}
 #endif
 	}
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (netinfo->multicast))) {
@@ -273,7 +281,7 @@ netstat_protocol_tree_insert (GtkTreeView *widget, gchar *line)
 #ifdef __FreeBSD__
 	if (count == 5 || count == 6 || count == 9 || count == 10) {
 #else
-	if (count == 7 || count == 8) {
+	if (count == 5 || count == 6) {
 #endif
 #ifdef DEBUG
 		g_print ("%s\t%s:%s\t%s\n", data.protocol,
@@ -292,7 +300,7 @@ netstat_protocol_tree_insert (GtkTreeView *widget, gchar *line)
 		
 		model = gtk_tree_view_get_model (widget);
 		
-		if (protocol_model == NULL || gtk_tree_model_get_n_columns (model) != 4) {
+		if (protocol_model == NULL || protocol_model != model) {
 			clean_gtk_tree_view (widget);
 
 			protocol_model = GTK_TREE_MODEL (gtk_list_store_new
@@ -343,13 +351,16 @@ strip_protocol_line (gchar * line, netstat_protocol_data *data)
 	gint a1, a2, a3, a4;
 	gchar s9[30];
 #else
-	gchar s6[30], s7[30];
+	gchar s6[30], laddr[50];
+	gchar *port;
 #endif
 	gint n2, n3;
 
-	line = g_strdelimit (line, ":", ' ');
+	/*line = g_strdelimit (line, ":", ' ');*/
 
 #ifdef __FreeBSD__
+	line = g_strdelimit (line, ":", ' ');
+	
 	count = sscanf (line, NETSTAT_PROTOCOL_FORMAT,
 			data->protocol, &n2, &n3,
 			&a1, &a2, &a3, &a4, data->port_src,
@@ -375,12 +386,28 @@ strip_protocol_line (gchar * line, netstat_protocol_data *data)
 	}
 
 #else
-	count = sscanf (line, NETSTAT_PROTOCOL_FORMAT,
+	/*count = sscanf (line, NETSTAT_PROTOCOL_FORMAT,
 			data->protocol, &n2, &n3,
 			data->ip_src, data->port_src, 
 			s6, s7, data->state);
 	
 	if (count == 7) {
+		bzero (&(data)->state, 30);
+		}*/
+	count = sscanf (line, NETSTAT_PROTOCOL_FORMAT,
+			data->protocol, &n2, &n3,
+			laddr, s6, data->state);
+
+	port = g_strrstr (laddr, ":");
+
+	if (port != NULL) {
+		g_strlcpy (data->ip_src, laddr, 50 * sizeof (gchar));
+		data->ip_src[strlen (laddr) - strlen (port)] = '\0';
+		port ++;
+		g_strlcpy (data->port_src, port, 30 * sizeof (gchar));
+	}
+
+	if (count == 5) {
 		bzero (&(data)->state, 30);
 	}
 #endif
@@ -448,7 +475,7 @@ netstat_route_tree_insert (GtkTreeView *widget, gchar *line)
 #ifdef __FreeBSD__
 	if (count == 6) {
 #else
-	if (count == 8) {
+	if ((count == 8) || (count == 7)) {
 #endif
 #ifdef DEBUG
 		g_print ("%s\t%s:%s\t%d\t%s\n", data.destination,
@@ -468,7 +495,7 @@ netstat_route_tree_insert (GtkTreeView *widget, gchar *line)
 		
 		model = gtk_tree_view_get_model (widget);
 		
-		if (route_model == NULL || gtk_tree_model_get_n_columns (model) != 4) {
+		if (route_model == NULL || route_model != model) {
 			clean_gtk_tree_view (widget);
 			
 			route_model = GTK_TREE_MODEL (gtk_list_store_new
@@ -517,6 +544,10 @@ strip_route_line (gchar * line, netstat_route_data *data)
 	gint count = 0;
 	gchar flags[30];
 	gint ref, use;
+#ifndef __FreeBDD__
+	gchar dest[50];
+	gchar **items;
+#endif
 
 #ifdef __FreeBSD__
 	count = sscanf (line, NETSTAT_ROUTE_FORMAT,
@@ -524,14 +555,30 @@ strip_route_line (gchar * line, netstat_route_data *data)
 			data->gateway, flags,
 			&ref, &use, data->iface);
 #else
-
 	count = sscanf (line, NETSTAT_ROUTE_FORMAT,
 			data->destination,
-			data->gateway, data->netmask, 
-			flags, &(data)->metric, &ref, &use, 
+			data->gateway, data->netmask,
+			flags, &(data)->metric, &ref, &use,
 			data->iface);
-#endif
+
+	if (count == 6) {
+		count = sscanf (line, NETSTAT_ROUTE6_FORMAT,
+				dest, data->netmask,
+				flags, &(data)->metric,
+				&ref, &use, data->iface);
+
+		items = NULL;
+
+		items = g_strsplit (dest, "/", 2);
+		if (items != NULL) {
+			g_strlcpy (data->destination, items[0], 50 * sizeof (gchar));
+			g_strlcpy (data->netmask, items[1], 50 * sizeof (gchar));
+
+			g_strfreev (items);
+		}
+	}
 	
+#endif
 	return count;
 }
 
@@ -581,7 +628,6 @@ void
 netstat_multicast_tree_insert (GtkTreeView *widget, gchar *line)
 {
 	GtkTreeIter iter, sibling;
-	/*GList *columns;*/
 	GtkTreePath *path;
 	GtkTreeModel *model;
 	gint count;
@@ -591,6 +637,7 @@ netstat_multicast_tree_insert (GtkTreeView *widget, gchar *line)
 	g_return_if_fail (line != NULL);
 
 	count = strip_multicast_line (line, &data);
+
 	if (count == 3) {
 #ifdef DEBUG
 		g_print ("%s\t%s\t%s\n", data.iface,
@@ -609,7 +656,7 @@ netstat_multicast_tree_insert (GtkTreeView *widget, gchar *line)
 
 		model = gtk_tree_view_get_model (widget);
 		
-		if (multicast_model == NULL || gtk_tree_model_get_n_columns (model) != 3) {
+		if (multicast_model == NULL || multicast_model != model) {
 			clean_gtk_tree_view (widget);
 			
 			multicast_model = GTK_TREE_MODEL (gtk_list_store_new
@@ -661,6 +708,7 @@ strip_multicast_line (gchar * line, netstat_multicast_data *data)
 	count = sscanf (line, NETSTAT_MULTICAST_FORMAT,
 			data->iface,
 			&members, data->group);
+
 	snprintf ((data)->members, 30, "%d", members);
 	
 	return count;

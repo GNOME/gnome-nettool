@@ -25,9 +25,11 @@
 
 #if defined(__linux__)
 	/* proto 0 0 ip port ip port state */
-#   define NETSTAT_PROTOCOL_FORMAT "%s %d %d %s %s %s %s %s" 
-#   define NETSTAT_ROUTE_FORMAT "%s %s %s %s %d %d %d %s" 
-#   define NETSTAT_MULTICAST_FORMAT "%s %d %s" 
+#   define NETSTAT_PROTOCOL_FORMAT "%s %d %d %s %s %s"
+#   define NETSTAT_ROUTE_FORMAT "%s %s %s %s %d %d %d %s"
+#   define NETSTAT_ROUTE6_FORMAT "%s %s %s %d %d %d %s"
+#   define NETSTAT_MULTICAST_FORMAT "%s %d %s"
+
 #elif defined(__FreeBSD__)
 #   define NETSTAT_PROTOCOL_FORMAT "%s %d %d %d.%d.%d.%d.%s %s %s"
 #   define ALT_NETSTAT_PROTOCOL_FORMAT "%s %d %d *.%s %s %s"
@@ -47,7 +49,7 @@ typedef struct _netstat_protocol_data netstat_protocol_data;
 	
 struct _netstat_protocol_data {
 	gchar protocol[30];
-	gchar ip_src[30];
+	gchar ip_src[50];
 	gchar port_src[30];
 //	gint  port_src;
 	gchar state[30];
@@ -56,8 +58,8 @@ struct _netstat_protocol_data {
 typedef struct _netstat_route_data netstat_route_data;
 	
 struct _netstat_route_data {
-	gchar destination[30];
-	gchar gateway[30];
+	gchar destination[50];
+	gchar gateway[50];
 	gchar netmask[30];
 	gint metric;
 	gchar iface[30];
