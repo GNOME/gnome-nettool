@@ -209,7 +209,7 @@ on_about_activate (GtkWidget * parent, gpointer data)
 	}
                                                                                 
 	about_box = gnome_about_new (
-		"GNOME Netinfo",
+		"GNOME Network Tool",
 		VERSION,
 		copyright,
 		_("Graphical user interface for common network utilities"),
