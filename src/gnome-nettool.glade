@@ -64,7 +64,7 @@
 		    <widget class="GtkImageMenuItem" id="m_copy">
 		      <property name="visible">True</property>
 		      <property name="stock_item">GNOMEUIINFO_MENU_COPY_ITEM</property>
-		      <signal name="activate" handler="on_copy_activate" last_modification_time="Sun, 20 Jul 2003 22:11:25 GMT"/>
+		      <signal name="activate" handler="on_copy_activate" object="notebook" last_modification_time="Sun, 20 Jul 2003 22:11:25 GMT"/>
 		    </widget>
 		  </child>
 
@@ -79,7 +79,7 @@
 		      <property name="visible">True</property>
 		      <property name="label" translatable="yes">Clear _History</property>
 		      <property name="use_underline">True</property>
-		      <signal name="activate" handler="on_clear_history_activate" last_modification_time="Thu, 20 Nov 2003 22:11:25 GMT"/>
+		      <signal name="activate" handler="on_clear_history_activate" object="notebook" last_modification_time="Thu, 20 Nov 2003 22:11:25 GMT"/>
 
 		      <child internal-child="image">
 			<widget class="GtkImage" id="image12">
