@@ -1,5 +1,26 @@
 2005-03-22  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
+	* configure.in:
+	* src/callbacks.c:
+	* src/callbacks.h:
+	* src/finger.h:
+	* src/gn-combo-history.c:
+	* src/gnome-nettool.glade:
+	* src/info.h:
+	* src/lookup.h:
+	* src/main.c:
+	* src/netstat.h:
+	* src/nettool.h:
+	* src/ping.h:
+	* src/scan.h:
+	* src/traceroute.h:
+	* src/utils.c:
+	* src/utils.h:
+	* src/whois.h: removed libgnome* depedencies. Applied Kristof 
+	  Vansant's patches #38844 and #38893, from bug #167218.
+
+2005-03-22  German Poo-Caaman~o <gpoo@ubiobio.cl>
+
 	Reverted patch #38884 from bugzilla (#167218), becuase
 	it breaks GNOME 2.10 string freeze.
 

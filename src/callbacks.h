@@ -1,5 +1,5 @@
-#include <gnome.h>
-
+#include <glib.h>
+#include <gtk/gtk.h>
 typedef void* (* NetinfoActivateFn) (GtkWidget *widget, gpointer data);
 
 void on_ping_activate (GtkWidget * editable, gpointer data);
@@ -27,9 +27,9 @@ gboolean gn_quit_app (GtkWidget * widget, gpointer data);
 
 void on_about_activate (GtkWidget *menu_item, gpointer data);
 
-void on_copy_activate (GtkWidget * notebook, gpointer data);
+void on_copy_activate (GtkWidget *menu_item, gpointer data);
 
-void on_clear_history_activate (GtkWidget * notebook, gpointer data);
+void on_clear_history_activate (GtkWidget *menu_item, gpointer data);
 
 void on_page_switch (GtkNotebook     * notebook,
                      GtkNotebookPage * page,

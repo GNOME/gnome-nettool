@@ -379,10 +379,12 @@ get_netinfo_for_page (GtkNotebook * notebook, gint page_num)
 }
 
 void
-on_copy_activate (GtkWidget * notebook, gpointer data)
+on_copy_activate (GtkWidget *menu_item, gpointer data)
 {
 	gint page;
 	Netinfo *netinfo;
+
+	GtkNotebook *notebook = (GtkNotebook *) data;
 
 	g_return_if_fail (GTK_IS_NOTEBOOK (notebook));
 
@@ -398,9 +400,11 @@ on_copy_activate (GtkWidget * notebook, gpointer data)
 }
 
 void
-on_clear_history_activate (GtkWidget *notebook, gpointer data)
+on_clear_history_activate (GtkWidget *menu_item, gpointer data)
 {
 	Netinfo *netinfo;
+
+	GtkNotebook *notebook = (GtkNotebook *) data;
 
 	g_return_if_fail (GTK_IS_NOTEBOOK (notebook));
 

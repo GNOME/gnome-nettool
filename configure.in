@@ -24,15 +24,12 @@ dnl ******************************************
 dnl ** pkg-config dependacy checks          **
 dnl ******************************************
 
-LIBGNOMEUI_REQUIRED=2.0.0
-LIBGNOME_REQUIRED=2.0.0
+
 GTK_REQUIRED=2.5.4
 LIBGLADE_REQUIRED=2.0.0
 GCONF_REQUIRED=1.1.11
 
 PKG_CHECK_MODULES(NETTOOL, 
-		  libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED 
-		  libgnome-2.0   >= $LIBGNOME_REQUIRED 
 		  gtk+-2.0       >= $GTK_REQUIRED 
 		  libglade-2.0   >= $LIBGLADE_REQUIRED 
 		  gconf-2.0      >= $GCONF_REQUIRED)

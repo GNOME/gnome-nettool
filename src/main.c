@@ -22,7 +22,7 @@
 #  include <config.h>
 #endif
 
-#include <gnome.h>
+#include <glib/gi18n.h>
 #include <glade/glade.h>
 
 #include "callbacks.h"
@@ -51,7 +51,7 @@ int
 main (int argc, char *argv[])
 {
 	GtkWidget *window;
-	GtkWidget *menu_about;
+	GtkWidget *menu_about, *menu_copy, *menu_clear_history;
 	GladeXML *xml;
 	GtkWidget *notebook;
 	const gchar *dialog = DATADIR "gnome-nettool.glade";
@@ -73,33 +73,41 @@ main (int argc, char *argv[])
 	static gchar *lookup_input = NULL;
 	static gchar *finger_input = NULL;
 	static gchar *whois_input = NULL;
-	static const struct poptOption options[] = {
-		{ "info", 'i', POPT_ARG_STRING, &info_input, 0,
-		  N_("Load information for a network device"),
-		  N_("DEVICE") },
-		{ "ping", 'p', POPT_ARG_STRING, &ping_input, 0,
-		  N_("Send a ping to a network address"),
-		  N_("HOST") },
-		{ "netstat", 'n', POPT_ARG_STRING, &netstat_input, 0,
-		  N_("Get netstat information.  Valid options are: route, active, multicast."),
-		  N_("COMMAND") },
-		{ "traceroute", 't', POPT_ARG_STRING, &traceroute_input, 0,
-		  N_("Trace a route to a network address"),
-		  N_("HOST") },
-		{ "port-scan", 's', POPT_ARG_STRING, &scan_input, 0,
-		  N_("Port scan a network address"),
-		  N_("HOST") },
-		{ "lookup", 'l', POPT_ARG_STRING, &lookup_input, 0,
-		  N_("Look up a network address"),
-		  N_("HOST") },
-		{ "finger", 'f', POPT_ARG_STRING, &finger_input, 0,
-		  N_("Finger command to run"),
-		  N_("USER") },
-		{ "whois", 'w', POPT_ARG_STRING, &whois_input, 0,
-		  N_("Perform a whois lookup for a network domain"),
-		  N_("DOMAIN") },
-		{ NULL, '\0', 0, NULL, 0 }
-	};
+	GOptionEntry options[] = {
+		{ "info", 'i', 0, G_OPTION_ARG_STRING, &info_input,
+ 		  N_("Load information for a network device"),
+ 		  N_("DEVICE") },
+
+		{ "ping", 'p', 0, G_OPTION_ARG_STRING, &ping_input,
+ 		  N_("Send a ping to a network address"),
+ 		  N_("HOST") },
+
+		{ "netstat", 'n', 0, G_OPTION_ARG_STRING, &netstat_input,
+ 		  N_("Get netstat information.  Valid options are: route, active, multicast."),
+ 		  N_("COMMAND") },
+
+		{ "traceroute", 't', 0, G_OPTION_ARG_STRING, &traceroute_input,
+ 		  N_("Trace a route to a network address"),
+ 		  N_("HOST") },
+
+		{ "port-scan", 's', 0, G_OPTION_ARG_STRING, &scan_input,
+ 		  N_("Port scan a network address"),
+ 		  N_("HOST") },
+
+		{ "lookup", 'l', 0, G_OPTION_ARG_STRING, &lookup_input,
+ 		  N_("Look up a network address"),
+ 		  N_("HOST") },
+
+		{ "finger", 'f', 0, G_OPTION_ARG_STRING, &finger_input,
+ 		  N_("Finger command to run"),
+ 		  N_("USER") },
+
+		{ "whois", 'w', 0, G_OPTION_ARG_STRING, &whois_input,
+ 		  N_("Perform a whois lookup for a network domain"),
+ 		  N_("DOMAIN") },
+
+		{ NULL, '\0', 0, 0, NULL, NULL, NULL }
+ 	};
 
 #ifdef ENABLE_NLS
 	bindtextdomain (GETTEXT_PACKAGE, GNOME_NETTOOL_LOCALEDIR);
@@ -107,13 +115,7 @@ main (int argc, char *argv[])
 	textdomain (GETTEXT_PACKAGE);
 #endif
 
-	gnome_program_init (PACKAGE, VERSION, LIBGNOMEUI_MODULE,
-			    argc, argv,
-			    GNOME_PARAM_HUMAN_READABLE_NAME,
-			    _("Network Information"),
-			    GNOME_PARAM_POPT_TABLE, options,
-			    GNOME_PARAM_APP_DATADIR, DATADIR,
-			    GNOME_PARAM_NONE);
+	gtk_init_with_args (&argc, &argv,NULL,options,NULL,NULL);
 
 	if (!g_file_test (dialog, G_FILE_TEST_EXISTS)) {
 		g_critical (_("The file %s doesn't exist, "
@@ -133,12 +135,6 @@ main (int argc, char *argv[])
 
 	g_signal_connect (G_OBJECT (window), "delete-event",
 			  G_CALLBACK (gn_quit_app), NULL);
-	
-	menu_about = glade_xml_get_widget (xml, "m_about");
-
-	g_signal_connect (G_OBJECT (menu_about), "activate",
-			  G_CALLBACK (on_about_activate),
-			  (gpointer) window);
 	
 	pinger = load_ping_widgets_from_xml (xml);
 	tracer = load_traceroute_widgets_from_xml (xml);
@@ -212,6 +208,28 @@ main (int argc, char *argv[])
 	g_object_set_data (G_OBJECT (notebook), "lookup", lookup);
 	g_object_set_data (G_OBJECT (notebook), "finger", finger);
 	g_object_set_data (G_OBJECT (notebook), "whois", whois);
+	
+	
+	menu_about = glade_xml_get_widget (xml, "m_about");
+
+	g_signal_connect (G_OBJECT (menu_about), "activate",
+			  G_CALLBACK (on_about_activate),
+			  (gpointer) window);
+			  	
+	menu_copy = glade_xml_get_widget (xml, "m_copy");
+
+	g_signal_connect (G_OBJECT (menu_copy), "activate",
+			  G_CALLBACK (on_copy_activate),
+			  (gpointer) notebook);
+	
+	menu_clear_history = glade_xml_get_widget (xml, "m_clear_history");
+
+	g_signal_connect (G_OBJECT (menu_clear_history), "activate",
+			  G_CALLBACK (on_clear_history_activate),
+			  (gpointer) notebook);
+			  
+	
+	
 	
 	glade_xml_signal_autoconnect (xml);
 	g_object_unref (G_OBJECT (xml));
