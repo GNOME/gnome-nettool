@@ -1,20 +1,22 @@
 # translation of gnome-nettool.HEAD.po to Bangla
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# This file is distributed under the same license as the gnome-nettool package.
+# Copyright (C) 2004 Free Software Foundation.
 # Runa Bhattacharjee <runa@bengalinux.org>, 2004.
+
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool.HEAD\n"
+"Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-08-20 11:34+0200\n"
-"PO-Revision-Date: 2004-07-15 10:28+0530\n"
+"PO-Revision-Date: 2004-08-30 12:07+0530\n"
 "Last-Translator: Runa Bhattacharjee <runa@bengalinux.org>\n"
-"Language-Team: Bangla <gnome-translation@bengalinux.org>\n"
+"Language-Team: bangla <gnome-translation@bengalinux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 
 #: src/callbacks.c:321
 msgid "translator_credits"
@@ -46,11 +48,11 @@ msgstr "<b>রাউন্ড ট্রিপ সময় সংক্রান্
 
 #: src/gnome-nettool.glade.h:6
 msgid "<b>Transmision Statistics</b>"
-msgstr "<b>প্রেরণ সংক্রান্ত পরিসংখ্যান</b>"
+msgstr "<b>পরিবহন সংক্রান্ত পরিসংখ্যান</b>"
 
 #: src/gnome-nettool.glade.h:7
 msgid "Active Network Services"
-msgstr "সক্রিয় নেটওয়ার্ক পরিষেবা"
+msgstr "সক্রিয় নেটওয়ার্ক পরিসেবা"
 
 # msgstr "সক্রিয় নেটওয়ার্ক পরিসেবা"
 #: src/gnome-nettool.glade.h:8
@@ -82,12 +84,11 @@ msgstr "প্রদর্শন করো:"
 # FIXME: Context check required
 #: src/gnome-nettool.glade.h:14 src/main.c:837
 msgid "Finger"
-msgstr "ফিঙ্গার"
+msgstr "Finger"
 
-# msgstr "Finger"
 #: src/gnome-nettool.glade.h:15
 msgid "Hardware address:"
-msgstr "হার্ডওয়ার-এর ঠিকানা:"
+msgstr "হার্ডওয়ারের ঠিকানা:"
 
 #: src/gnome-nettool.glade.h:16
 msgid "Host"
@@ -161,7 +162,7 @@ msgstr "প্রেরিত প্যাকেট"
 
 #: src/gnome-nettool.glade.h:33 src/main.c:281
 msgid "Ping"
-msgstr "পিঙ"
+msgstr "Ping"
 
 #: src/gnome-nettool.glade.h:34
 msgid "Port Scan"
@@ -279,13 +280,12 @@ msgstr "বেতার (Wireless) ইন্টারফেস"
 
 #: src/info.c:59
 msgid "Modem Interface"
-msgstr "মোডেম-র ইন্টারফেস"
+msgstr "মোডেমের ইন্টারফেস"
 
 #: src/info.c:60
 msgid "Parallel Line Interface"
 msgstr "প্যারালেল লাইন ইন্টারফেস"
 
-# msgstr "সমান্তরাল রেখার ইন্টারফেস"
 #: src/info.c:61
 msgid "Infrared Interface"
 msgstr "ইন্ফ্রারেড ইন্টারফেস"
@@ -335,7 +335,7 @@ msgstr "নেটওয়ার্ক ডিভাইস:\t%s\n"
 #: src/info.c:671
 #, c-format
 msgid "Hardware address:\t%s\n"
-msgstr "হার্ডওয়ের-এর ঠিকানা:\t%s\n"
+msgstr "হার্ডওয়েরের ঠিকানা:\t%s\n"
 
 #: src/info.c:672
 #, c-format
@@ -420,7 +420,7 @@ msgstr "ঠিকানার ধরন"
 
 #: src/lookup.c:304
 msgid "Record Type"
-msgstr "রেকর্ড-এর ধরন"
+msgstr "রেকর্ডের ধরন"
 
 #: src/lookup.c:313
 msgid "Address"
@@ -447,7 +447,7 @@ msgstr "DEVICE"
 
 #: src/main.c:81
 msgid "Send a ping to a network address"
-msgstr "একটি নেটওয়ার্ক অ্যাড্রেস-এ পিঙ করো"
+msgstr "একটি নেটওয়ার্ক অ্যাড্রেসে পিং করো"
 
 #: src/main.c:82 src/main.c:88 src/main.c:91 src/main.c:94
 msgid "HOST"
@@ -455,8 +455,7 @@ msgstr "HOST"
 
 #: src/main.c:84
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"netstat সংক্রান্ত তথ্য আহরণ করো.  বৈধ অপশন হলো: রুট (route), সক্রিয়, মাল্টিকাস্ট "
+msgstr "netstat সংক্রান্ত তথ্য আহরণ করো.  বৈধ অপশন হলো: রুট (route), সক্রিয়, মাল্টিকাস্ট "
 
 #: src/main.c:85
 msgid "COMMAND"
@@ -464,11 +463,11 @@ msgstr "COMMAND"
 
 #: src/main.c:87
 msgid "Trace a route to a network address"
-msgstr "একটি নেটওয়ার্ক অ্যাড্রেস-র রুট অনুসরণ করো"
+msgstr "একটি নেটওয়ার্ক অ্যাড্রেসের রুট অনুসরণ করো"
 
 #: src/main.c:90
 msgid "Port scan a network address"
-msgstr "একটি নেটওয়ার্ক অ্যাড্রেস-এর পোর্ট স্ক্যান করো"
+msgstr "একটি নেটওয়ার্ক অ্যাড্রেসের পোর্ট স্ক্যান করো"
 
 #: src/main.c:93
 msgid "Look up a network address"
@@ -509,7 +508,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "যে নেটওয়ার্ক অ্যাড্রেস-এ পিঙ করা হবে তা লিখুন।\n"
-"উদাহরণ: www.domain.com অথবা 192.168.2.1"
+"উদাহরণ: www.domain.com অথবা ১৯২.১৬৮.২.১"
 
 #: src/main.c:393
 msgid ""
@@ -517,7 +516,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "যে নেটওয়ার্ক অ্যাড্রেস-এর পথ অনুসরণ করা হবে তা লিখুন।\n"
-"উদাহরণ: www.domain.com অথবা 192.168.2.1"
+"উদাহরণ: www.domain.com অথবা ১৯২.১৬৮.২.১"
 
 #: src/main.c:478 src/netstat.c:441
 msgid "Protocol"
@@ -531,10 +530,9 @@ msgstr "IP অ্যাড্রেস"
 msgid "Netmask / Prefix"
 msgstr "নেটমাস্ক / উপপদ (প্রেফিক্স)"
 
-# msgstr "নেটমাস্ক / উপপদ"
 #: src/main.c:499
 msgid "Broadcast"
-msgstr "সম্প্রচার (ব্রডকাস্ট)"
+msgstr "ব্রডকাস্ট"
 
 # msgstr "সম্প্রচার"
 #: src/main.c:506
@@ -546,8 +544,8 @@ msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"যে নেটওয়ার্ক অ্যাড্রেস-এ খোলা পোর্টের অনুসন্ধান করা হবে তা লিখুন।\n"
-"উদাহরণ: www.domain.com অথবা 192.168.2.1"
+"যে নেটওয়ার্ক অ্যাড্রেসে খোলা পোর্টের অনুসন্ধান করা হবে তা লিখুন।\n"
+"উদাহরণ: www.domain.com অথবা ১৯২.১৬৮.২.১"
 
 #: src/main.c:782
 msgid ""
@@ -555,7 +553,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "যে নেটওয়ার্ক অ্যাড্রেসটির অনুসন্ধান করা হবে তা লিখুন।\n"
-"উদাহরণ: www.domain.com অথবা 192.168.2.1"
+"উদাহরণ: www.domain.com অথবা ১৯২.১৬৮.২.১"
 
 #: src/main.c:871
 msgid "Enter the user to finger."
@@ -567,7 +565,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "কোনো ব্যবহারকারীকে finger করবার জন্য নেটওয়ার্ক-এর অ্যাড্রেস লিখুন।\n"
-"উদাহরণ: www.domain.com অথবা 192.168.2.1"
+"উদাহরণ: www.domain.com অথবা ১৯২.১৬৮.২.১"
 
 #: src/main.c:985
 msgid ""
@@ -575,7 +573,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "whois সংক্রান্ত তথ্য পড়ার জন্য একটি ডোমেইন অ্যাড্রেস লিখুন।\n"
-"উদাহরণ: www.domain.com অথবা 192.168.2.1"
+"উদাহরণ: www.domain.com অথবা ১৯২.১৬৮.২.১"
 
 #: src/netstat.c:120
 msgid "Getting routing table"
@@ -654,7 +652,7 @@ msgstr "Interface\tMember\tGroup\n"
 # FIXME
 #: src/nettool.c:206
 msgid "A network address was not specified"
-msgstr "নেটওয়ার্ক-এর অ্যাড্রেস উল্লেখ করা হয় নি"
+msgstr "নেটওয়ার্কের অ্যাড্রেস উল্লেখ করা হয় নি"
 
 #: src/nettool.c:207 src/nettool.c:216
 msgid "Please enter a valid network address and try again."
@@ -667,7 +665,7 @@ msgstr "'%s' ঠিকানাটি পাওয়া যায় নি"
 
 #: src/nettool.c:243
 msgid "A domain address was not specified"
-msgstr "ডোমেইন-এর অ্যাড্রেস উল্লেখ করা হয় নি"
+msgstr "ডোমেইনের অ্যাড্রেস উল্লেখ করা হয় নি"
 
 #: src/nettool.c:244
 msgid "Please enter a valid domain address and try again."
@@ -688,7 +686,7 @@ msgstr "চালাও"
 #: src/ping.c:73
 #, c-format
 msgid "Sending ping requests to %s"
-msgstr "%s -এ পিঙ-এর অনুরোধ প্রেরণ করা হচ্ছে"
+msgstr "%s -এ ping-এর অনুরোধ প্রেরণ করা হচ্ছে"
 
 #: src/ping.c:381
 msgid "Bytes"
@@ -752,7 +750,7 @@ msgstr "ক্ষতিগ্রস্ত প্যাকেট:\t%s\n"
 #: src/scan.c:80
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr "খোলা পোর্ট-এর সন্ধানে %s -এ অনুসন্ধান করা হচ্ছে"
+msgstr "খোলা পোর্টের সন্ধানে %s -এ অনুসন্ধান করা হচ্ছে"
 
 #: src/scan.c:155
 msgid "unknown"
@@ -779,9 +777,8 @@ msgid "Tracing route to %s"
 msgstr "%s অবধি রুট (route) অনুসরণ করা হচ্ছে"
 
 #: src/traceroute.c:265
-#, fuzzy
 msgid "Hop"
-msgstr "হপ করো"
+msgstr "হপ"
 
 #: src/traceroute.c:273
 msgid "Hostname"
@@ -789,7 +786,7 @@ msgstr "হোস্টেরনাম"
 
 #: src/traceroute.c:281
 msgid "IP"
-msgstr "আইপি"
+msgstr "IP (আইপি)"
 
 #: src/traceroute.c:292
 msgid "Time 1"
@@ -814,7 +811,7 @@ msgstr "%s: কমান্ড পাওয়া যায় নি"
 
 #: src/gnome-nettool.desktop.in.h:1
 msgid "Network Information Tools"
-msgstr "নেটওয়ার্ক-এর তথ্য সংক্রান্ত টুল"
+msgstr "নেটওয়ার্কের তথ্য সংক্রান্ত টুল"
 
 #: src/gnome-nettool.desktop.in.h:2
 msgid "Network Tools"
@@ -823,14 +820,15 @@ msgstr "নেটওয়ার্ক সংক্রান্ত টুল"
 #: src/finger.c:58
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr ""
+msgstr "%s সক্রান্ত তথ্য। যা \"%s\"-এ আছে, তা আহরণ করা হচ্ছে"
 
 #: src/finger.c:62
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr ""
+msgstr "\"%s\"-এ উপস্থিত সকল ব্যবহারকারী সংক্রান্ত তথ্য আহরণ করা হচ্ছে"
 
 #: src/whois.c:56
-#, fuzzy, c-format
+#, c-format
 msgid "Getting the whois information of %s"
-msgstr "নেটওয়ার্ক-এর তথ্য সংক্রান্ত টুল"
+msgstr "%s -এর জন্য whois তথ্য আহরণ করা হচ্ছে"
+
