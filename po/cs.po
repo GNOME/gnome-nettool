@@ -9,19 +9,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-09 03:50+0200\n"
-"PO-Revision-Date: 2004-06-09 10:30+0200\n"
+"POT-Creation-Date: 2004-06-10 14:58+0200\n"
+"PO-Revision-Date: 2004-06-10 17:37+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: src/callbacks.c:372
+#: src/callbacks.c:278
 msgid "translator_credits"
 msgstr "Miloslav Trmač <mitr@volny.cz>"
 
-#: src/callbacks.c:400
+#: src/callbacks.c:306
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafické uživatelské rozhraní pro základní síťové pomůcky"
 
@@ -125,7 +125,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Síťová maska:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:421
+#: src/gnome-nettool.glade.h:26 src/main.c:415
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -153,7 +153,7 @@ msgstr "Přijaté pakety:"
 msgid "Packets transmitted:"
 msgstr "Odeslané pakety:"
 
-#: src/gnome-nettool.glade.h:33 src/main.c:284
+#: src/gnome-nettool.glade.h:33 src/main.c:278
 msgid "Ping"
 msgstr "Ping"
 
@@ -193,7 +193,7 @@ msgstr "Odesílat: "
 msgid "State:"
 msgstr "Stav:"
 
-#: src/gnome-nettool.glade.h:43 src/main.c:356
+#: src/gnome-nettool.glade.h:43 src/main.c:350
 msgid "Trace"
 msgstr "Stopa"
 
@@ -484,23 +484,23 @@ msgstr ""
 "Soubor %s neexistuje, zkontrolujte prosím, jestli je gnome-netinfo správně "
 "nainstalováno"
 
-#: src/main.c:454 src/netstat.c:429
+#: src/main.c:448 src/netstat.c:429
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/main.c:461
+#: src/main.c:455
 msgid "IP Address"
 msgstr "IP adresa"
 
-#: src/main.c:468
+#: src/main.c:462
 msgid "Netmask / Prefix"
 msgstr "Síťová maska / prefix"
 
-#: src/main.c:475
+#: src/main.c:469
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: src/main.c:482
+#: src/main.c:476
 msgid "Scope"
 msgstr "Rozsah"
 
@@ -564,24 +564,36 @@ msgstr "Cíl\tBrána\tMaska\tRozhraní\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Rozhraní\tČlen\tSkupina\n"
 
-#: src/nettool.c:178
-msgid "Network address not specified"
-msgstr "Neurčena adresa sítě."
+#: src/nettool.c:206
+msgid "A network address was not specified"
+msgstr "Nebyla zadána adresa sítě"
 
-#: src/nettool.c:186
+#: src/nettool.c:207 src/nettool.c:216
+msgid "Please enter a valid network address and try again."
+msgstr "Zadejte prosím platnou adresu sítě a zkuste to znovu"
+
+#: src/nettool.c:214
 #, c-format
-msgid "The host '%s' cannot be found"
-msgstr "Počítač '%s' nebyl nalezen"
+msgid "The address '%s' cannot be found"
+msgstr "Adresa '%s' nebyla nalezena"
 
-#: src/nettool.c:328
+#: src/nettool.c:243
+msgid "A domain address was not specified"
+msgstr "Nebyla zadána adresa domény"
+
+#: src/nettool.c:244
+msgid "Please enter a valid domain address and try again."
+msgstr "Zadejte prosím platnou adresu domény a zkuste to znovu."
+
+#: src/nettool.c:376
 msgid "Information not available"
 msgstr "Informace není k dispozici"
 
-#: src/nettool.c:426
+#: src/nettool.c:486
 msgid "Stop"
 msgstr "Zastavit"
 
-#: src/nettool.c:432
+#: src/nettool.c:492
 msgid "Run"
 msgstr "Spustit"
 
@@ -712,9 +724,6 @@ msgstr "Nástroje pro síť"
 
 #~ msgid "Canonical Name"
 #~ msgstr "Kanonické jméno"
-
-#~ msgid "Enter the network address to ping"
-#~ msgstr "Zadejte síťovou adresu, kam poslat ping"
 
 #~ msgid "Host name for Address"
 #~ msgstr "Jméno počítače pro adresu"
