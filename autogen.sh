@@ -8,7 +8,7 @@ PKG_NAME="gnome-netinfo"
 
 (test -f $srcdir/configure.in \
   && test -d $srcdir/src \
-  && test -d $srcdir/src/ping.c) || {
+  && test -f $srcdir/src/ping.c) || {
     echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
     echo " top-level $PKG_NAME directory"
     exit 1
