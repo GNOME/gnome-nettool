@@ -182,9 +182,12 @@ on_about_activate (GtkWidget * parent, gpointer data)
 	GdkPixbuf *pixbuf = NULL;
 	const gchar *authors[] = { 
 		"Germán Poo Caamaño <gpoo@ubiobio.cl>", 
-		"William Jon McCann <mccann@jhu.edu>", NULL
+		"William Jon McCann <mccann@jhu.edu>",
+		"Carlos Garcia Campos <carlosgc@gnome.org>",
+		"Rodrigo Moya <rodrigo@gnome-db.org>", NULL
 	};
 	const gchar *documentors[] = { NULL };
+	const gchar *translator_credits = _("translator_credits");
 	const gchar copyright[1024];
 
 	g_sprintf (copyright, "Copyright \xc2\xa9 2003 %s", "Germán Poo Caamaño");
@@ -205,15 +208,15 @@ on_about_activate (GtkWidget * parent, gpointer data)
 		}
 	}
                                                                                 
-	about_box = gnome_about_new ("GNOME Network Information",
-				     VERSION,
-				     copyright,
-				     _
-				     ("Graphical user interface for common network utilities"),
-				     authors, documentors,
-				     _("This is an untranslated version of GNOME Network Information"),
-				     pixbuf);
-
+	about_box = gnome_about_new (
+		"GNOME Netinfo",
+		VERSION,
+		copyright,
+		_("Graphical user interface for common network utilities"),
+		authors, documentors,
+		strcmp (translator_credits, "translator_credits") != 0 ? translator_credits : NULL,
+		pixbuf);
+	
         if (pixbuf != NULL)
                 g_object_unref (pixbuf);
 
