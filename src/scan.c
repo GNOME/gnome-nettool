@@ -68,7 +68,10 @@ scan_do (Netinfo * netinfo)
 
 	g_return_if_fail (netinfo != NULL);
 
-	if (netinfo_validate_host (netinfo) == FALSE) {
+	/* Because of the delay, we can't check twice for a hostname/IP.
+	 * It was made before this function was called.  Anyway, we
+	 * check at least if we have a text as hostname */
+	if (netinfo_validate_domain (netinfo) == FALSE) {
 		netinfo_stop_process_command (netinfo);
 		return;
 	}

@@ -1,5 +1,28 @@
 2004-09-09  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
+	* TODO: Updated.
+
+	* src/nettool.c (netinfo_error_message): Free allocated message
+	  string.
+	  (netinfo_validate_host): Changed the order of dns querys, 
+	  It should be ask for IPv4 address at first, not IPv6.  Asking
+	  for IPv6 mostly would make two dns query.
+
+	* src/lookup.c (lookup_do):
+	* src/callbacks.c (on_lookup_activate): Changed netinfo_validate_host
+	  by netinfo_validate_domain.  It doesn't make sense to resolve an
+	  address that is suppossed to be resolved by dig.  i.e. now is 
+	  possible to ask for TLD's domains.
+
+	* src/ping.c (ping_do):
+	* src/traceroute.c (traceroute_do):
+	* src/scan.c (scan_do): Changed netinfo_validate_host by
+	  netinfo_validate_domain. We don't want to resolve a hostname 
+	  twice.  It was made on the callback (ouch!, we need a better
+	  solution for this)
+
+2004-09-09  German Poo-Caaman~o <gpoo@ubiobio.cl>
+
 	* configure.in:
 	* src/main.c:
 	* src/callbacks.c: Cleaned IFCONFIG dependencies.

@@ -191,6 +191,7 @@ netinfo_error_message (Netinfo     * netinfo,
 
 	gtk_dialog_run (GTK_DIALOG (dialog));
 	gtk_widget_destroy (dialog);
+	g_free (message);
 }
 
 gboolean
@@ -207,9 +208,9 @@ netinfo_validate_host (Netinfo * netinfo)
 		secondary = g_strdup (_("Please enter a valid network address and try again."));
 	}
 	else {
-		hostname = gethostbyname2 (host, PF_INET6);
+		hostname = gethostbyname2 (host, PF_INET);
 		if (hostname == NULL) {
-			hostname = gethostbyname2 (host, AF_INET);
+			hostname = gethostbyname2 (host, PF_INET6);
 			if (hostname == NULL) {
 				primary = g_strdup_printf (_("The address '%s' cannot be found"),
 							   host);

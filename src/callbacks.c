@@ -191,7 +191,7 @@ on_lookup_activate (GtkWidget * widget, gpointer data)
 	if (lookup->running) {
 		lookup_stop (lookup);
 	} else {
-		if (netinfo_validate_host (lookup)) {
+		if (netinfo_validate_domain (lookup)) {
 			entry_host = GTK_ENTRY (
 				gtk_bin_get_child (GTK_BIN (lookup->host)));
 			text = g_strdup (gtk_entry_get_text (entry_host));
