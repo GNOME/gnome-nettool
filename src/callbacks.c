@@ -68,6 +68,14 @@ on_ping_activate (GtkWidget * widget, gpointer data)
 		}
 	}
 }
+void
+on_ping_toggled (GtkToggleButton *button, gpointer data)
+{
+	Netinfo *info = data;
+
+	gtk_widget_set_sensitive (info->count,
+			gtk_toggle_button_get_active (button));
+}
 
 /* Traceroute callbacks */
 void

@@ -329,6 +329,9 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	g_signal_connect (G_OBJECT (entry_host), "activate",
 			  G_CALLBACK (on_ping_activate),
 			  pinger);
+	g_signal_connect (G_OBJECT (pinger->limited), "toggled",
+			  G_CALLBACK (on_ping_toggled),
+			  pinger);
 	g_signal_connect (G_OBJECT (pinger->button), "clicked",
 			  pinger->button_callback,
 			  pinger);

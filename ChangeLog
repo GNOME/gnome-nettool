@@ -1,3 +1,11 @@
+2004-10-18  Mario Fuentes <mario@gnome.cl>
+
+	* main.c (load_ping_widgets_from_xml): connected "toggled" signal
+	  of limited RadioButton to on_ping_toggled callback.
+	* callbacks.[ch]: Added on_ping_toggled callback for set sensitive
+	  property of count SpinButton to false when limited RadioButton
+	  isn't toggled.
+
 2004-09-21  Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>
 
 	* configure.in: Added "sk" to ALL_LINGUAS

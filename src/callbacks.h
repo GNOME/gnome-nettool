@@ -4,6 +4,8 @@ typedef void* (* NetinfoActivateFn) (GtkWidget *widget, gpointer data);
 
 void on_ping_activate (GtkWidget * editable, gpointer data);
 
+void on_ping_toggled (GtkToggleButton *button, gpointer data);
+
 void on_traceroute_activate (GtkWidget * editable, gpointer data);
 
 void on_netstat_activate (GtkWidget * widget, gpointer data);
