@@ -286,7 +286,7 @@ scan_create_model (GtkTreeView *widget)
 	column =
 	    gtk_tree_view_column_new_with_attributes
 	    (_("Port"), renderer, "text", 0, NULL);
-	g_object_set (G_OBJECT (renderer), "xalign", 1.0);
+	g_object_set (G_OBJECT (renderer), "xalign", 1.0, NULL);
 	gtk_tree_view_append_column (widget, column);
 
 	renderer = gtk_cell_renderer_text_new ();

@@ -1,3 +1,10 @@
+2005-02-01  meissner@suse.de
+
+	Fixes #165905
+
+	* src/scan.c (scan_create_model): NULL terminate the g_object_set
+	call.
+
 2005-01-27  William Jon McCann  <mccann@jhu.edu>
 
 	* src/info.c (info_get_nic, info_nic_update_stats) 
