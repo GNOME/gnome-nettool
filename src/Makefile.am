@@ -1,19 +1,19 @@
 dialogdir = $(datadir)/$(PACKAGE)/dialogs
-dialog_DATA = gnome-netinfo.glade
+dialog_DATA = gnome-nettool.glade
 
 INCLUDES = 			\
-	-DGNOME_NETINFO_LOCALEDIR=\""$(datadir)/locale"\" \
+	-DGNOME_NETTOOL_LOCALEDIR=\""$(datadir)/locale"\" \
 	-DDATADIR=\""$(dialogdir)/"\" \
-	@NETINFO_CFLAGS@
+	@NETTOOL_CFLAGS@
 
 LDADD =				\
 	$(NETINFO_LIBS)	
 
-bin_PROGRAMS = gnome-netinfo
+bin_PROGRAMS = gnome-nettool
 
-gnome_netinfo_SOURCES = \
+gnome_nettool_SOURCES = \
 	callbacks.c callbacks.h \
-	netinfo.c netinfo.h \
+	nettool.c nettool.h \
 	ping.c ping.h \
 	traceroute.c traceroute.h \
 	netstat.c netstat.h \
@@ -27,17 +27,17 @@ gnome_netinfo_SOURCES = \
 	util-mii-wireless.h \
 	main.c
 
-gnome_netinfo_LDADD = @NETINFO_LIBS@
+gnome_nettool_LDADD = @NETTOOL_LIBS@
 
 pixmapdir   = $(datadir)/pixmaps
-pixmap_DATA = gnome-netinfo.png
+pixmap_DATA = gnome-nettool.png
 EXTRA_DIST  = \
 	$(pixmap_DATA) \
-	gnome-netinfo.desktop.in \
+	gnome-nettool.desktop.in \
 	$(dialog_DATA)
 
 Applicationsdir = $(datadir)/applications
-Applications_in_files = gnome-netinfo.desktop.in
+Applications_in_files = gnome-nettool.desktop.in
 Applications_DATA = $(Applications_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
