@@ -132,7 +132,11 @@ void netinfo_set_host (Netinfo * netinfo, const gchar *host);
 gboolean netinfo_is_ipv6_enable (void);
 void netinfo_set_user (Netinfo * netinfo, const gchar *user);
 gint netinfo_get_ip_version (Netinfo * netinfo);
+void netinfo_error_message (Netinfo     * netinfo,
+			    const gchar * primary,
+			    const gchar * secondary);
 gboolean netinfo_validate_host (Netinfo * netinfo);
+gboolean netinfo_validate_domain (Netinfo * netinfo);
 void netinfo_toggle_button (Netinfo * netinfo);
 void netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 			   gpointer user_data);

@@ -232,7 +232,7 @@ on_whois_activate (GtkWidget * widget, gpointer data)
 	if (whois->running) {
 		whois_stop (whois);
 	} else {
-		if (netinfo_validate_host (whois)) {
+		if (netinfo_validate_domain (whois)) {
 			entry_host = GTK_ENTRY (
 				gtk_bin_get_child (GTK_BIN (whois->host)));
 			text = g_strdup (gtk_entry_get_text (entry_host));

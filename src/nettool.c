@@ -165,43 +165,91 @@ netinfo_get_ip_version (Netinfo * netinfo)
 	return -1;
 }
 
+void
+netinfo_error_message (Netinfo     * netinfo,
+		       const gchar * primary,
+		       const gchar * secondary)
+{
+	GtkWidget *dialog;
+	gchar     *message;
+ 
+	g_return_if_fail (primary != NULL);
+
+	if (secondary)
+		message = g_strdup_printf ("<b><big>%s</big></b>\n\n%s",
+					   primary, secondary);
+	else
+		message = g_strdup_printf ("<b><big>%s</big></b>",
+					   primary);
+
+	dialog = gtk_message_dialog_new_with_markup (GTK_WINDOW (netinfo->main_window),
+						     GTK_DIALOG_DESTROY_WITH_PARENT,
+						     GTK_MESSAGE_ERROR,
+						     GTK_BUTTONS_CLOSE,
+						     message);
+        gtk_container_set_border_width (GTK_CONTAINER (dialog), 6);
+
+	gtk_dialog_run (GTK_DIALOG (dialog));
+	gtk_widget_destroy (dialog);
+}
+
 gboolean
 netinfo_validate_host (Netinfo * netinfo)
 {
 	struct hostent *hostname;
-	const gchar *host;
-	GtkWidget *dialog;
-	gchar *message = NULL;
+	const gchar    *host;
+	gchar          *primary = NULL;
+	gchar          *secondary = NULL;
 
 	host = netinfo_get_host (netinfo);
 	if (! strcmp (host, "")) {
-		message = g_strdup (_("Network address not specified"));
+		primary = g_strdup (_("A network address was not specified"));
+		secondary = g_strdup (_("Please enter a valid network address and try again."));
 	}
 	else {
 		hostname = gethostbyname2 (host, PF_INET6);
 		if (hostname == NULL) {
 			hostname = gethostbyname2 (host, AF_INET);
 			if (hostname == NULL) {
-				message = g_strdup_printf 
-					(_("The host '%s' cannot be found"),
-					 host);
+				primary = g_strdup_printf (_("The address '%s' cannot be found"),
+							   host);
+				secondary = g_strdup (_("Please enter a valid network address and try again."));
 			}
 		}
 	}
 
-	if (message != NULL) {
-		dialog = gtk_message_dialog_new
-			(GTK_WINDOW (netinfo->main_window),
-			 GTK_DIALOG_DESTROY_WITH_PARENT,
-			 GTK_MESSAGE_ERROR,
-			 GTK_BUTTONS_CLOSE,
-			 "<span weight=\"bold\" size=\"larger\">%s</span>",
-			 message);
-		gtk_label_set_use_markup 
-			(GTK_LABEL (GTK_MESSAGE_DIALOG (dialog)->label), TRUE);
-		gtk_dialog_run (GTK_DIALOG (dialog));
-		gtk_widget_destroy (dialog);
-		g_free (message);
+	if (primary) {
+		netinfo_error_message (netinfo, primary, secondary);
+		g_free (primary);
+		if (secondary)
+			g_free (secondary);
+		return FALSE;
+	}
+
+	return TRUE;
+}
+
+gboolean
+netinfo_validate_domain (Netinfo * netinfo)
+{
+	gchar *domain;
+	gchar *primary = NULL;
+	gchar *secondary = NULL;
+
+	domain = g_strdup (netinfo_get_host (netinfo));
+	g_strstrip (domain);
+
+	if (! strcmp (domain, "")) {
+		primary = g_strdup (_("A domain address was not specified"));
+		secondary = g_strdup (_("Please enter a valid domain address and try again."));
+	}
+	g_free (domain);
+
+	if (primary) {
+		netinfo_error_message (netinfo, primary, secondary);
+		g_free (primary);
+		if (secondary)
+			g_free (secondary);
 		return FALSE;
 	}
 
@@ -358,7 +406,8 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 		      gpointer user_data)
 {
 	GdkCursor *cursor;
-	
+	PangoFontDescription *font_desc;
+
 	g_assert (netinfo != NULL);
 	g_return_if_fail (netinfo != NULL);
 
@@ -367,11 +416,19 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 					  state);
 	}
 
+	font_desc = pango_font_description_new ();
+
 	if (state) {
+		pango_font_description_set_weight (font_desc,
+						   PANGO_WEIGHT_NORMAL);
+
 		netinfo_progress_indicator_stop (netinfo);
 		gdk_window_set_cursor ((netinfo->output)->window, NULL);
 		netinfo->child_pid = 0;
 	} else {
+		pango_font_description_set_weight (font_desc,
+						   PANGO_WEIGHT_BOLD);
+
 		netinfo_progress_indicator_start (netinfo);
 		cursor = gdk_cursor_new (GDK_WATCH);
 		if (!GTK_WIDGET_REALIZED (netinfo->output))
@@ -379,7 +436,10 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 		gdk_window_set_cursor ((netinfo->output)->window, cursor);
 		gdk_cursor_destroy (cursor);
 	}
-	
+
+	gtk_widget_modify_font (netinfo->page_label, font_desc);
+	pango_font_description_free (font_desc);
+
 	netinfo->running = !state;
 
 	netinfo_toggle_button (netinfo);
