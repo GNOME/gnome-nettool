@@ -1,14 +1,14 @@
-# gnome-network ja.po.
+# gnome-nettool (gnome-network) ja.po.
 # Copyright (C) 1999-2003 Free Software Foundation, Inc.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 1999.
-# Takeshi AIHANA <aihana@gnome.gr.jp>, 2003.
+# Takeshi AIHANA <aihana@gnome.gr.jp>, 2003-2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-network HEAD\n"
+"Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-13 20:15+0200\n"
-"PO-Revision-Date: 2003-12-28 22:17+0900\n"
+"POT-Creation-Date: 2004-06-15 01:10+0900\n"
+"PO-Revision-Date: 2004-06-15 01:08+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -18,13 +18,14 @@ msgstr ""
 #: src/callbacks.c:319
 msgid "translator_credits"
 msgstr ""
-"Yuusuke Tahara <tahara@gnome.gr.jp>, 1999.\n"
-"Takeshi AIHANA <aihana@gnome.gr.jp>, 2003."
+"相花 毅 <aihana@gnome.gr.jp>\n"
+"Yuusuke Tahara <tahara@gnome.gr.jp>\n"
+"日本GNOMEユーザー会 <http://www.gnome.gr.jp>"
 
 #: src/callbacks.c:347
 msgid "Graphical user interface for common network utilities"
 msgstr ""
-"いろいろなネットワーク・ユーティリティに対してグラフィカルなインタフェースを"
+"いろいろなネットワーク・ユーティリティに対するグラフィカルなインタフェースを"
 "提供します。"
 
 #: src/gnome-nettool.glade.h:1
@@ -32,33 +33,28 @@ msgid "0.0"
 msgstr "0.0"
 
 #: src/gnome-nettool.glade.h:2
-#, fuzzy
 msgid "<b>IP Information</b>"
-msgstr "情報(_I)"
+msgstr "<b>IP 情報</b>"
 
 #: src/gnome-nettool.glade.h:3
-#, fuzzy
 msgid "<b>Interface Information</b>"
-msgstr "デフォルトの情報"
+msgstr "<b>インタフェースの情報</b>"
 
 #: src/gnome-nettool.glade.h:4
 msgid "<b>Interface Statistics</b>"
-msgstr ""
+msgstr "<b>インタフェースの統計情報</b>"
 
 #: src/gnome-nettool.glade.h:5
-#, fuzzy
 msgid "<b>Round Trip Time Statistics</b>"
-msgstr "<span weight=\"bold\">往復時間の統計情報</span>"
+msgstr "<b>往復遅延時間の統計情報</b>"
 
 #: src/gnome-nettool.glade.h:6
-#, fuzzy
 msgid "<b>Transmision Statistics</b>"
-msgstr "<span weight=\"bold\">消失パケットの統計情報</span>"
+msgstr "<b>転送の統計情報</b>"
 
 #: src/gnome-nettool.glade.h:7
-#, fuzzy
 msgid "Active Network Services"
-msgstr "利用可能なネットワーク・サービスを表示する"
+msgstr "利用可能なネットワーク・サービス"
 
 #: src/gnome-nettool.glade.h:8
 msgid "Average:"
@@ -77,14 +73,12 @@ msgid "Collisions:"
 msgstr "衝突:"
 
 #: src/gnome-nettool.glade.h:12
-#, fuzzy
 msgid "Devices"
-msgstr "デバイス(_D)"
+msgstr "デバイス"
 
 #: src/gnome-nettool.glade.h:13
-#, fuzzy
 msgid "Display: "
-msgstr "ディスプレイ:"
+msgstr "表示する情報: "
 
 #: src/gnome-nettool.glade.h:14 src/main.c:772
 msgid "Finger"
@@ -95,14 +89,12 @@ msgid "Hardware address:"
 msgstr "ハードウェア (MAC) アドレス:"
 
 #: src/gnome-nettool.glade.h:16
-#, fuzzy
 msgid "Host"
-msgstr "ホスト名:"
+msgstr "ホスト"
 
 #: src/gnome-nettool.glade.h:17
-#, fuzzy
 msgid "IP Address:"
-msgstr "IP アドレス"
+msgstr "IP-アドレス:"
 
 #: src/gnome-nettool.glade.h:18
 msgid "Link speed:"
@@ -125,9 +117,8 @@ msgid "Minimum:"
 msgstr "最小:"
 
 #: src/gnome-nettool.glade.h:23
-#, fuzzy
 msgid "Multicast Information"
-msgstr "マルチキャスト情報を表示する"
+msgstr "マルチキャストの情報"
 
 #: src/gnome-nettool.glade.h:24
 msgid "Multicast:"
@@ -142,18 +133,16 @@ msgid "Netstat"
 msgstr "Netstat"
 
 #: src/gnome-nettool.glade.h:27
-#, fuzzy
 msgid "Network Tools - Devices"
-msgstr "ネットワーク・デバイス:\t%s\n"
+msgstr "ネットワーク・ツール - デバイス"
 
 #: src/gnome-nettool.glade.h:28
-#, fuzzy
 msgid "Not Available"
 msgstr "利用不可"
 
 #: src/gnome-nettool.glade.h:29
 msgid "Only"
-msgstr ""
+msgstr "要求数は "
 
 #: src/gnome-nettool.glade.h:30
 msgid "Packets loss:"
@@ -172,9 +161,8 @@ msgid "Ping"
 msgstr "Ping"
 
 #: src/gnome-nettool.glade.h:34
-#, fuzzy
 msgid "Port Scan"
-msgstr "ポートスキャン(_S)"
+msgstr "ポートスキャン"
 
 #: src/gnome-nettool.glade.h:35
 msgid "Received bytes:"
@@ -189,23 +177,20 @@ msgid "Reception errors:"
 msgstr "受信エラー数:"
 
 #: src/gnome-nettool.glade.h:38
-#, fuzzy
 msgid "Routing Table Information"
-msgstr "経路テーブル情報を表示する"
+msgstr "経路テーブル情報"
 
 #: src/gnome-nettool.glade.h:39 src/main.c:595
 msgid "Scan"
-msgstr "Scan"
+msgstr "スキャン"
 
 #: src/gnome-nettool.glade.h:40
-#, fuzzy
 msgid "Send unlimited requests"
-msgstr "要求パケット数 (ping 数) を制限しない"
+msgstr "要求数は制限しない"
 
 #: src/gnome-nettool.glade.h:41
-#, fuzzy
 msgid "Send: "
-msgstr "送信"
+msgstr "送信数: "
 
 #: src/gnome-nettool.glade.h:42
 msgid "State:"
@@ -213,12 +198,11 @@ msgstr "状態:"
 
 #: src/gnome-nettool.glade.h:43 src/main.c:351
 msgid "Trace"
-msgstr "Trace"
+msgstr "トレース"
 
 #: src/gnome-nettool.glade.h:44
-#, fuzzy
 msgid "Traceroute"
-msgstr "Traceroute(_T)"
+msgstr "Traceroute"
 
 #: src/gnome-nettool.glade.h:45
 msgid "Transmission errors:"
@@ -233,9 +217,8 @@ msgid "Transmitted packets:"
 msgstr "転送パケット数:"
 
 #: src/gnome-nettool.glade.h:48
-#, fuzzy
 msgid "User"
-msgstr "ユーザ名(_U):"
+msgstr "ユーザ"
 
 #: src/gnome-nettool.glade.h:49 src/main.c:869
 msgid "Whois"
@@ -243,182 +226,168 @@ msgstr "Whois"
 
 #: src/gnome-nettool.glade.h:50
 msgid "_Configure"
-msgstr ""
+msgstr "設定(_C)"
 
 #: src/gnome-nettool.glade.h:51
-#, fuzzy
 msgid "_Domain Address: "
-msgstr "ホストの IP アドレス"
+msgstr "ドメインのアドレス(_D): "
 
 #: src/gnome-nettool.glade.h:52
-#, fuzzy
 msgid "_Information Type: "
-msgstr "情報(_I)"
+msgstr "情報の種類(_I): "
 
 #: src/gnome-nettool.glade.h:53
-#, fuzzy
 msgid "_Network Address: "
-msgstr "ネットワーク・アドレスが指定されていません"
+msgstr "ネットワークのアドレス(_N): "
 
 #: src/gnome-nettool.glade.h:54
-#, fuzzy
 msgid "_Network Device"
-msgstr "ネットワーク・デバイス:\t%s\n"
+msgstr "ネットワーク・デバイス(_N)"
 
 #: src/gnome-nettool.glade.h:55
-#, fuzzy
 msgid "_Tool"
-msgstr "Tooltip"
+msgstr "ツール(_T)"
 
 #: src/gnome-nettool.glade.h:56
-#, fuzzy
 msgid "_Username: "
-msgstr "ユーザ名(_U):"
+msgstr "ユーザ名(_U): "
 
 #: src/gnome-nettool.glade.h:57
 msgid "ms"
 msgstr "ミリ秒"
 
 #: src/gnome-nettool.glade.h:58
-#, fuzzy
 msgid "requests"
-msgstr "個"
+msgstr "個のみ"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: src/info.c:56
 msgid "Other type"
-msgstr ""
+msgstr "その他の種類"
 
 #: src/info.c:57
-#, fuzzy
 msgid "Ethernet Interface"
-msgstr "インタフェース"
+msgstr "Ethernet インタフェース"
 
 #: src/info.c:58
-#, fuzzy
 msgid "Wireless Interface"
-msgstr "インタフェース"
+msgstr "無線インタフェース"
 
 #: src/info.c:59
-#, fuzzy
 msgid "Modem Interface"
-msgstr "インタフェース"
+msgstr "モデム・インタフェース"
 
 #: src/info.c:60
 msgid "Parallel Line Interface"
-msgstr ""
+msgstr "パラレル・ライン・インタフェース"
 
 #: src/info.c:61
-#, fuzzy
 msgid "Infrared Interface"
-msgstr "インタフェース"
+msgstr "赤外線インタフェース"
 
 #: src/info.c:62
-#, fuzzy
 msgid "Loopback Interface"
-msgstr "インタフェース"
+msgstr "ループバック・インタフェース"
 
 #: src/info.c:63
-#, fuzzy
 msgid "Unknown Interface"
-msgstr "インタフェース"
+msgstr "不明なインタフェース"
 
 #: src/info.c:130
 msgid "<i>Network Devices Not Found</i>"
-msgstr ""
+msgstr "<i>ネットワーク・デバイスが見つかりませんでした</i>"
 
 #: src/info.c:344
-#, fuzzy
 msgid "Unknown"
 msgstr "不明"
 
-#: src/info.c:500
+#: src/info.c:504
 msgid "Active"
 msgstr "有効"
 
-#: src/info.c:502
+#: src/info.c:506
 msgid "Inactive"
 msgstr "無効"
 
-#: src/info.c:507
+#: src/info.c:511
 msgid "Loopback"
 msgstr "ループバック"
 
-#: src/info.c:524
+#: src/info.c:528
 msgid "Enabled"
 msgstr "利用可"
 
-#: src/info.c:526
+#: src/info.c:530
 msgid "Disabled"
 msgstr "利用不可"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:666
+#: src/info.c:670
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "ネットワーク・デバイス:\t%s\n"
 
-#: src/info.c:667
+#: src/info.c:671
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "ハードウェア (MAC) アドレス:\t%s\n"
 
-#: src/info.c:668
+#: src/info.c:672
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP-アドレス:\t%s\n"
 
-#: src/info.c:669
+#: src/info.c:673
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "ネットマスク:\t%s\n"
 
-#: src/info.c:670
+#: src/info.c:674
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "ブロードキャスト:\t%s\n"
 
-#: src/info.c:671
+#: src/info.c:675
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "マルチキャスト:\t%s\n"
 
-#: src/info.c:672
+#: src/info.c:676
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:673
+#: src/info.c:677
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "リンク・スピード:\t%s\n"
 
-#: src/info.c:674
+#: src/info.c:678
 #, c-format
 msgid "State:\t%s\n"
 msgstr "状態:\t%s\n"
 
-#: src/info.c:676
+#: src/info.c:680
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "転送パケット数:\t%s\n"
 
-#: src/info.c:677
+#: src/info.c:681
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "転送エラー数:\t%s\n"
 
-#: src/info.c:678
+#: src/info.c:682
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "受信パケット数:\t%s\n"
 
-#: src/info.c:679
+#: src/info.c:683
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "受信エラー数:\t%s\n"
 
-#: src/info.c:680
+#: src/info.c:684
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "衝突:\t%s\n"
@@ -528,22 +497,19 @@ msgstr "プロトコル"
 
 #: src/main.c:456
 msgid "IP Address"
-msgstr "IP アドレス"
+msgstr "IP-アドレス"
 
 #: src/main.c:463
-#, fuzzy
 msgid "Netmask / Prefix"
-msgstr "ネットマスク"
+msgstr "ネットマスク/プレフィックス"
 
 #: src/main.c:470
-#, fuzzy
 msgid "Broadcast"
-msgstr "ブロードキャスト:"
+msgstr "ブロードキャスト"
 
 #: src/main.c:477
-#, fuzzy
 msgid "Scope"
-msgstr "停止"
+msgstr "スコープ"
 
 #: src/netstat.c:436
 msgid "IP Source"
@@ -558,9 +524,8 @@ msgid "State"
 msgstr "状態"
 
 #: src/netstat.c:594
-#, fuzzy
 msgid "Destination/Prefix"
-msgstr "送信先"
+msgstr "送信先/プレフィックス"
 
 #: src/netstat.c:596
 msgid "Destination"
@@ -607,28 +572,25 @@ msgid "Interface\tMember\tGroup\n"
 msgstr "インタフェース\tメンバ\tグループ\n"
 
 #: src/nettool.c:206
-#, fuzzy
 msgid "A network address was not specified"
 msgstr "ネットワーク・アドレスが指定されていません"
 
 #: src/nettool.c:207 src/nettool.c:216
-#, fuzzy
 msgid "Please enter a valid network address and try again."
-msgstr "`ping` するネットワーク・アドレスを入力して下さい"
+msgstr "正しいネットワーク・アドレスを入力して再試行して下さい。"
 
 #: src/nettool.c:214
-#, fuzzy, c-format
+#, c-format
 msgid "The address '%s' cannot be found"
-msgstr "ホスト '%s' が見つかりません"
+msgstr "アドレス '%s' を見つけることができません"
 
 #: src/nettool.c:243
-#, fuzzy
 msgid "A domain address was not specified"
-msgstr "ネットワーク・アドレスが指定されていません"
+msgstr "ドメイン・アドレスが指定されていません"
 
 #: src/nettool.c:244
 msgid "Please enter a valid domain address and try again."
-msgstr ""
+msgstr "正しいドメイン・アドレスを入力して再試行して下さい。"
 
 #: src/nettool.c:376
 msgid "Information not available"
@@ -754,1157 +716,9 @@ msgid "%s: Command not found"
 msgstr "%s: コマンドがみつかりません"
 
 #: src/gnome-nettool.desktop.in.h:1
-#, fuzzy
 msgid "Network Information Tools"
-msgstr "ネットワーク情報"
+msgstr "ネットワーク情報ツール"
 
 #: src/gnome-nettool.desktop.in.h:2
-#, fuzzy
 msgid "Network Tools"
-msgstr "ネットワーク情報"
-
-#~ msgid "This is an untranslated version of GNOME Network Information"
-#~ msgstr "これは GNOME ネットワーク情報の未翻訳版です"
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "(eg. user@www.domain.com)"
-#~ msgstr "(例: user@www.domain.com)"
-
-#~ msgid "(for example: domain.com)"
-#~ msgstr "(例: domain.com)"
-
-#~ msgid "(for example: www.domain.com or 192.168.2.1)"
-#~ msgstr "(例: www.domain.com or 192.168.2.1)"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "<span weight=\"bold\">@</span>"
-#~ msgstr "<span weight=\"bold\">@</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
-#~ "information</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">\"whois\" 情報を問い合わせるドメインのアドレスを入力"
-#~ "して下さい:</span>"
-
-#~ msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">問い合わせるネットワーク・アドレスを入力して下さい:"
-#~ "</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Enter a user name and network address to finger "
-#~ "that user</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">\"finger\" で調査するユーザ名とネットワーク・アドレ"
-#~ "スを入力して下さい:</span>"
-
-#~ msgid "<span weight=\"bold\">Enter the network address to ping</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">パケットを送信する先のネットワーク・アドレスを入力し"
-#~ "て下さい:</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Enter the network address to scan for open ports</"
-#~ "span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">オープンしているポート番号をスキャンする先のネット"
-#~ "ワーク・アドレスを入力して下さい:</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Enter the network address to trace a route to</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">経路をトレースする先のネットワーク・アドレスを入力し"
-#~ "て下さい:</span>"
-
-#~ msgid "<span weight=\"bold\">Information</span>"
-#~ msgstr "<span weight=\"bold\">情報</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Select the network device to get information on</"
-#~ "span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">情報を取得するネットワーク・デバイスを選択して下さ"
-#~ "い:</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Select the type of information to display</span>"
-#~ msgstr "<span weight=\"bold\">表示する情報の種類を選択して下さい:</span>"
-
-#~ msgid ""
-#~ "<span weight=\"bold\">Select the type of information to lookup:</span>"
-#~ msgstr "<span weight=\"bold\">問い合わせる情報の種類の選択:</span>"
-
-#~ msgid "<span weight=\"bold\">Statistics</span>"
-#~ msgstr "<span weight=\"bold\">統計情報</span>"
-
-#~ msgid "Any / All Information"
-#~ msgstr "全ての情報"
-
-#~ msgid "CPU / OS Type"
-#~ msgstr "CPU / OS の種類"
-
-#~ msgid "Canonical Name"
-#~ msgstr "別名に対する正式名"
-
-#~ msgid "Host name for Address"
-#~ msgstr "アドレスに対するホスト名"
-
-#~ msgid "IP address:"
-#~ msgstr "IP-アドレス:"
-
-#~ msgid "Internet Address"
-#~ msgstr "インターネット・アドレス"
-
-#~ msgid "Mailbox Exchange"
-#~ msgstr "メール交換ホスト"
-
-#~ msgid "Mailbox Information"
-#~ msgstr "メールボックスの情報"
-
-#~ msgid "Name Server"
-#~ msgstr "ネーム・サーバ"
-
-#~ msgid "Select network device from list"
-#~ msgstr "このリストからネットワーク・デバイスを選択して下さい"
-
-#~ msgid "Send only"
-#~ msgstr "要求パケット数 (ping 数) を制限する:"
-
-#~ msgid "Start-of-authority"
-#~ msgstr "権威開始 (start-of-authority)"
-
-#~ msgid "Text Information"
-#~ msgstr "テキスト情報"
-
-#~ msgid "Well Known Services"
-#~ msgstr "Well Known サービス"
-
-#~ msgid "_Finger"
-#~ msgstr "Finger(_F)"
-
-#~ msgid "_Lookup"
-#~ msgstr "Lookup(_L)"
-
-#~ msgid "_Netstat"
-#~ msgstr "Netstat(_N)"
-
-#~ msgid "_Ping"
-#~ msgstr "Ping(_P)"
-
-#~ msgid "_Whois"
-#~ msgstr "Whois(_W)"
-
-#~ msgid "GNOME Remote Desktop Applet"
-#~ msgstr "GNOME リモート・デスクトップ・アプレット"
-
-#~ msgid "Connect to a remote desktop computer"
-#~ msgstr "リモート先のデスクトップ・コンピュータへ接続します"
-
-#~ msgid "Remote Desktop Client"
-#~ msgstr "リモート・デスクトップ・クライアント"
-
-#~ msgid "640 x 480 pixels"
-#~ msgstr "640 x 480 ピクセル"
-
-#~ msgid "800 x 600 pixels"
-#~ msgstr "800 x 600 ピクセル"
-
-#~ msgid "1024 x 768 pixels"
-#~ msgstr "1024 x 768 ピクセル"
-
-#~ msgid "1152 x 864 pixels"
-#~ msgstr "1152 x 864 ピクセル"
-
-#~ msgid "1280 x 960 pixels"
-#~ msgstr "1280 x 960 ピクセル"
-
-#~ msgid "256 Colors"
-#~ msgstr "256 色"
-
-#~ msgid "High Color (15 bit)"
-#~ msgstr "High カラー (15 ビット)"
-
-#~ msgid "High Color (16 bit)"
-#~ msgstr "High カラー (16 ビット)"
-
-#~ msgid "True Color (24 bit)"
-#~ msgstr "True カラー (24 ビット)"
-
-#~ msgid "GNOME Remote Desktop"
-#~ msgstr "GNOME リモート・デスクトップ"
-
-#~ msgid "Compu_ter:"
-#~ msgstr "接続先のコンピュータ(_T):"
-
-#~ msgid "Enter the name or address of the remote system."
-#~ msgstr "接続するリモート・システムの名前またはアドレスを入力して下さい"
-
-#~ msgid "Select the protocol to use for this connection."
-#~ msgstr "この接続で使用するプロトコルを選択して下さい"
-
-#~ msgid ""
-#~ "RDP protocol is used to connect to Microsoft Terminal Servers and Windows "
-#~ "XP systems with desktop sharing."
-#~ msgstr ""
-#~ "RDP は Microsoft ターミナル・サーバとデスクトップ共有による Windows XP シ"
-#~ "ステムへ接続する際に使用するプロトコルです"
-
-#~ msgid ""
-#~ "VNC protocol is used to connect to systems sharing the desktop by using "
-#~ "VNC."
-#~ msgstr ""
-#~ "VNC は VNC を利用してデスクトップを共有するシステムへ接続する際に使用する"
-#~ "プロトコルです"
-
-#~ msgid "XDMCP protocol uses Xnest to connect to servers running X."
-#~ msgstr ""
-#~ "XDMCP は Xnest が起動中の X サーバへ接続する際に使用するプロトコルです"
-
-#~ msgid "ICA protocol is used to connect to Citrix servers."
-#~ msgstr "ICA は Citrix サーバへ接続する際に使用するプロトコルです"
-
-#~ msgid "Prof_ile Launcher:"
-#~ msgstr "プロファイル(_I):"
-
-#~ msgid "Select a saved profile to launch it immediately."
-#~ msgstr "すぐに起動するために保存したプロファイルを選択して下さい"
-
-#~ msgid "_More"
-#~ msgstr "詳細(_M)"
-
-#~ msgid "Co_nnect"
-#~ msgstr "接続(_N)"
-
-#~ msgid "Connection Profile"
-#~ msgstr "接続プロファイル"
-
-#~ msgid "Logon Settings"
-#~ msgstr "ログイン設定"
-
-#~ msgid ""
-#~ "Type the name of the computer or choose a computer from the drop-down "
-#~ "list."
-#~ msgstr ""
-#~ "コンピュータ名を入力するか、またはリストをドロップ・ダウンしてコンピュータ"
-#~ "を選択して下さい:"
-
-#~ msgid "Pro_tocol:"
-#~ msgstr "プロトコル(_T):"
-
-#~ msgid "Pass_word:"
-#~ msgstr "パスワード(_W):"
-
-#~ msgid "Do_main:"
-#~ msgstr "ドメイン名(_M):"
-
-#~ msgid "C_lient Hostname:"
-#~ msgstr "クライアントのホスト名(_L):"
-
-#~ msgid "Prot_ocol File:"
-#~ msgstr "プロトコル・ファイル(_O):"
-
-#~ msgid ""
-#~ "Enter the username for the remote system.\n"
-#~ "For VNC, enter the path to your saved vnc password file."
-#~ msgstr ""
-#~ "リモート・システムのユーザ名を入力して下さい (VNC の場合、保存した VNC パ"
-#~ "スワード・ファイルへのパス名を入力して下さい)"
-
-#~ msgid "Enter the password for the remote system."
-#~ msgstr "ユーザ名のパスワードを入力して下さい"
-
-#~ msgid "Enter the domain for the remote system."
-#~ msgstr "リモート・システムのドメイン名を入力して下さい"
-
-#~ msgid "Enter the local hostname for this system."
-#~ msgstr "このクライアント・システムのホスト名を入力して下さい"
-
-#~ msgid ""
-#~ "Some protocols require a file containing settings. If required, enter the "
-#~ "path to the file here."
-#~ msgstr ""
-#~ "いくつかのプロトコルでは設定ファイルを要求するので、もし要求されたら、その"
-#~ "ファイルへのパス名をここに入力して下さい"
-
-#~ msgid "Remote Desktop Size"
-#~ msgstr "リモート・デスクトップのサイズ"
-
-#~ msgid "Use default screen size"
-#~ msgstr "デフォルトの画面サイズにする"
-
-#~ msgid "Use the default screen size."
-#~ msgstr "デフォルトの大きさにします"
-
-#~ msgid "Use specified screen size"
-#~ msgstr "画面サイズを指定する"
-
-#~ msgid "Use the list to choose the screen size to use."
-#~ msgstr "使用する画面サイズを↓のリストから選択して下さい"
-
-#~ msgid "Operate in full screen mode"
-#~ msgstr "フルスクリーンにする"
-
-#~ msgid "Work in full screen mode."
-#~ msgstr "フルスクリーン・モードで作業します"
-
-#~ msgid "Use alternate full screen switch (-F)"
-#~ msgstr "別のフルスクリーン・オプション (-F) を使用する"
-
-#~ msgid "Check this if you use rdesktop with the unified patches."
-#~ msgstr ""
-#~ "Unified パッチで rdesktop を使用する場合は、ここをチェックして下さい"
-
-#~ msgid "Colors"
-#~ msgstr "色"
-
-#~ msgid "Use default color depth"
-#~ msgstr "デフォルトの色数にする"
-
-#~ msgid "Use the default color depth."
-#~ msgstr "デフォルトの色の深さ (depth) にします"
-
-#~ msgid "Use specified color depth"
-#~ msgstr "色数を指定する"
-
-#~ msgid "Use the list to choose the color depth to use."
-#~ msgstr "使用する色の深さ (depth) を↓のリストから選択して下さい"
-
-#~ msgid "Remote Computer _Sound"
-#~ msgstr "リモート・コンピュータのサウンド(_S)"
-
-#~ msgid "Remote Computer Sound"
-#~ msgstr "リモート・コンピュータのサウンド"
-
-#~ msgid "On the local computer"
-#~ msgstr "ローカル・コンピュータのものを使用する"
-
-#~ msgid "On the remote computer"
-#~ msgstr "リモート・コンピュータののものを使用する"
-
-#~ msgid "Do not play"
-#~ msgstr "演奏しない"
-
-#~ msgid "_Keyboard"
-#~ msgstr "キーボード(_K)"
-
-#~ msgid "Keyboard"
-#~ msgstr "キーボード"
-
-#~ msgid "In full screen mode only"
-#~ msgstr "フルスクリーンの場合のみ"
-
-#~ msgid ""
-#~ "Use the following keyboard language\n"
-#~ "(2 char keycode)"
-#~ msgstr ""
-#~ "使用するキーボードの言語\n"
-#~ "(二文字のキーコード)"
-
-#~ msgid ""
-#~ "Apply Windows key combinations\n"
-#~ "(for example ALT+TAB) (unsupported)"
-#~ msgstr ""
-#~ "Windows キーの連携を適用する\n"
-#~ "(例) [ALT]+[TAB] (未サポート)"
-
-#~ msgid "Start a Program"
-#~ msgstr "プログラムの起動"
-
-#~ msgid "Start the following program on connection"
-#~ msgstr "接続時に次のプログラムを起動する"
-
-#~ msgid "Program path and filename"
-#~ msgstr "プログラムのパス名とファイル名"
-
-#~ msgid "Start in the following folder"
-#~ msgstr "プログラムを起動するフォルダ"
-
-#~ msgid "Optimize Performance"
-#~ msgstr "パフォーマンスの最適化"
-
-#~ msgid "Desktop background (u)"
-#~ msgstr "デスクトップの背景を有効にする (u)"
-
-#~ msgid "Show content of window while dragging (u)"
-#~ msgstr "ウィンドウをドラッグする際に内容を表示する (u)"
-
-#~ msgid "Menu and window animation (u)"
-#~ msgstr "メニューとウィンドウのアニメーションを有効にする (u)"
-
-#~ msgid "Themes (u)"
-#~ msgstr "テーマを有効にする (u)"
-
-#~ msgid "Enable bitmap caching"
-#~ msgstr "ビットマップのキャッシュを有効にする"
-
-#~ msgid "Do not send motion events"
-#~ msgstr "motion 関連のイベントを送信しない"
-
-#~ msgid "Enable window manager's key bindings"
-#~ msgstr "ウィンドウ・マネージャのキー割付けを有効にする"
-
-#~ msgid "Options available for optimizing performance"
-#~ msgstr "パフォーマンスを最適化するために利用可能なオプション:"
-
-#~ msgid "_General"
-#~ msgstr "全般(_G)"
-
-#~ msgid "_Display"
-#~ msgstr "表示(_D)"
-
-#~ msgid "Local _Resources"
-#~ msgstr "ローカルのリソース(_R)"
-
-#~ msgid "_Programs"
-#~ msgstr "プログラム(_P)"
-
-#~ msgid "Perf_ormance"
-#~ msgstr "パフォーマンス(_O)"
-
-#~ msgid "_Less"
-#~ msgstr "簡易(_L)"
-
-#~ msgid "Input a filename to save as..."
-#~ msgstr "別名で保存するファイル名の入力..."
-
-#~ msgid "Choose an RDP file to open..."
-#~ msgstr "オープンする RDP ファイルの選択..."
-
-#~ msgid ""
-#~ "rdesktop was not found in your path.\n"
-#~ "Please verify your rdesktop installation."
-#~ msgstr ""
-#~ "`rdesktop` が $PATH 内にありませんでした。\n"
-#~ "rdesktop のインストールを確認して下さい。"
-
-#~ msgid ""
-#~ "vncviewer or xvncviewer were\n"
-#~ " not found in your path.\n"
-#~ "Please verify your vnc installation."
-#~ msgstr ""
-#~ "`vncviewer` または `xvncviewer` が\n"
-#~ "$PATH 内にありませんでした。\n"
-#~ "vnc のインストールを確認して下さい。"
-
-#~ msgid ""
-#~ "Xnest was not found in your path.\n"
-#~ "Please verify your Xnest installation."
-#~ msgstr ""
-#~ "`Xnest` が $PATH 内にありませんでした。\n"
-#~ "Xnest のインストールを確認して下さい。"
-
-#~ msgid ""
-#~ "wfica was not found in your path.\n"
-#~ "Please verify your ICAClient installation."
-#~ msgstr ""
-#~ "`wfica` が $PATH 内にありませんでした。\n"
-#~ "ICAClient のインストールを確認して下さい。"
-
-#~ msgid ""
-#~ "Failed to spawn.\n"
-#~ "Please verify your installation."
-#~ msgstr ""
-#~ "子プロセスの生成 (spawn) に失敗しました。\n"
-#~ "gnome-network のインストールを確認して下さい。"
-
-#~ msgid "GNOME Remote Desktop Error"
-#~ msgstr "GNOME リモート・デスクトップのエラー"
-
-#~ msgid "An error has occurred."
-#~ msgstr "エラーが発生しました。"
-
-#~ msgid "Check this to enable desktop sharing in GNOME"
-#~ msgstr ""
-#~ "これをチェックすると、GNOME でデスクトップでの共有が可能になります。"
-
-#~ msgid "Whether to enable desktop sharing"
-#~ msgstr "デスクトップ共有の可否"
-
-#~ msgid ""
-#~ "<b>Connection settings</b>\n"
-#~ "Type the name of the computer to open a new desktop session and/or the "
-#~ "display number to connect to an already running session."
-#~ msgstr ""
-#~ "<b>接続の設定</b>\n"
-#~ "新しいデスクトップのセッションを開くコンピュータ名、または既に起動中のセッ"
-#~ "ションへ接続するディスプレイ番号を入力して下さい。"
-
-#~ msgid ""
-#~ "<b>Desktop settings</b>\n"
-#~ "Select the size and color depth (not supported for all cases, so use with "
-#~ "care) of you remote desktop."
-#~ msgstr ""
-#~ "<b>デスクトップの設定</b>\n"
-#~ "リモート・デスクトップのスクリーン・サイズと色数を選択して下さい (全ての"
-#~ "ケースをサポートしている訳ではないので、注意して設定して下さい)。"
-
-#~ msgid ""
-#~ "<b>Method</b>\n"
-#~ "Select the method for connecting to the remote host. For Windows systems, "
-#~ "you want to choose VNC. For UNIX systems, usually X11, though VNC will "
-#~ "also work."
-#~ msgstr ""
-#~ "<b>接続の方式</b>\n"
-#~ "リモート・ホストへ接続する方式を選択して下さい。Windows の場合、VNC を選択"
-#~ "することになります。UNIX の場合、通常は X11 を、もちろん VNC も動作しま"
-#~ "す。"
-
-#~ msgid "Color depth"
-#~ msgstr "色の深さ"
-
-#~ msgid "Connect Now ..."
-#~ msgstr "接続中..."
-
-#~ msgid "Display size"
-#~ msgstr "ディスプレイのサイズ"
-
-#~ msgid "VNC"
-#~ msgstr "VNC"
-
-#~ msgid "X11"
-#~ msgstr "X11"
-
-#~ msgid "by"
-#~ msgstr "by"
-
-#~ msgid "Desktop Sharing"
-#~ msgstr "デスクトップの共有"
-
-#~ msgid "_Share my desktop with others"
-#~ msgstr "自分のデスクトップを他の人達と共有する(_S)"
-
-#~ msgid "Enable this option to allow others to view your desktop"
-#~ msgstr ""
-#~ "このオプションを有効にすると、他の人達がお使いのデスクトップを見ることがで"
-#~ "きます"
-
-#~ msgid ""
-#~ "The following information will need to be supplied by the user connecting "
-#~ "to your desktop"
-#~ msgstr ""
-#~ "次は、他のユーザがお使いのデスクトップへ接続することで提供される必要がある"
-#~ "情報です:"
-
-#~ msgid "Password"
-#~ msgstr "パスワード"
-
-#~ msgid "Couldn't find pixmap file: %s"
-#~ msgstr "Pixmap ファイルが見つかりませんでした: %s"
-
-#~ msgid "Orientation"
-#~ msgstr "方向"
-
-#~ msgid "The orientation of the tray."
-#~ msgstr "トレイの向きです"
-
-#~ msgid "Your desktop is viewable to others"
-#~ msgstr "お使いのデスクトップが他の人達から表示できるようになりました"
-
-#~ msgid "Remote Desktop Sharing"
-#~ msgstr "リモート・デスクトップの共有"
-
-#~ msgid "Receive"
-#~ msgstr "受信"
-
-#~ msgid "Enter search string"
-#~ msgstr "検索する文字列を入力して下さい"
-
-#~ msgid "Enter transmission string"
-#~ msgstr "転送する文字列を入力して下さい"
-
-#~ msgid "Send User Name"
-#~ msgstr "ユーザ名の送信"
-
-#~ msgid "Username taken from Authentication"
-#~ msgstr "Username taken from Authentication"
-
-#~ msgid "Send User Password"
-#~ msgstr "ユーザ・パスワードの送信"
-
-#~ msgid "Password taken from Authentication"
-#~ msgstr "「認証」のパスワードを使用"
-
-#~ msgid "Dialog Box Input"
-#~ msgstr "ダイアログによる入力"
-
-#~ msgid "Enter text to be used as a dialog message when prompted for input"
-#~ msgstr "入力用ダイアログに表示されるメッセージ"
-
-#~ msgid "open_account_window(): account=NULL with clone flag"
-#~ msgstr "open_account_window(): 元となるアカウントが選択されていません"
-
-#~ msgid "open_account_window(): calling arguments invalid"
-#~ msgstr "open_account_window(): ダイアルのための引数が不正です"
-
-#~ msgid "Dial"
-#~ msgstr "ダイアル"
-
-#~ msgid "Authentication"
-#~ msgstr "認証"
-
-#~ msgid "DNS"
-#~ msgstr "DNS"
-
-#~ msgid "Script"
-#~ msgstr "スクリプト"
-
-#~ msgid "PPP"
-#~ msgstr "PPP"
-
-#~ msgid "Modem"
-#~ msgstr "モデム"
-
-#~ msgid "Account Name"
-#~ msgstr "接続名"
-
-#~ msgid "Redial Maximum"
-#~ msgstr "リダイアルの回数"
-
-#~ msgid "Dial Timeout (sec)"
-#~ msgstr "タイムアウト (秒)"
-
-#~ msgid "Phone Numbers"
-#~ msgstr "電話番号"
-
-#~ msgid "#"
-#~ msgstr "電話番号"
-
-#~ msgid "Add"
-#~ msgstr "追加"
-
-#~ msgid "Remove"
-#~ msgstr "削除"
-
-#~ msgid "PAP/CHAP"
-#~ msgstr "PAP/CHAP"
-
-#~ msgid "User Name"
-#~ msgstr "ユーザ名"
-
-#~ msgid "Remote Name"
-#~ msgstr "リモートホスト名"
-
-#~ msgid "Hidden Password"
-#~ msgstr "パスワード"
-
-#~ msgid "Dynamic"
-#~ msgstr "自動的に決定"
-
-#~ msgid "Static"
-#~ msgstr "指定する"
-
-#~ msgid "Remote IP Address"
-#~ msgstr "リモートIPアドレス"
-
-#~ msgid "DNS Servers"
-#~ msgstr "DNS サーバ"
-
-#~ msgid "Search Domains"
-#~ msgstr "使用するドメイン名"
-
-#~ msgid "Domain Name"
-#~ msgstr "ドメイン名"
-
-#~ msgid "Action"
-#~ msgstr "アクション"
-
-#~ msgid "Text"
-#~ msgstr "文字列"
-
-#~ msgid "Login Script"
-#~ msgstr "ログイン用"
-
-#~ msgid "Insert"
-#~ msgstr "挿入"
-
-#~ msgid "Add Default Route"
-#~ msgstr "デフォルトルートを設定"
-
-#~ msgid "Lock Dialout Device"
-#~ msgstr "デバイスをロックする"
-
-#~ msgid "Maximum Transmission Unit"
-#~ msgstr "最大データ転送長 (MTU)"
-
-#~ msgid "Maximum Receive Unit"
-#~ msgstr "最大データ受信長 (MRU)"
-
-#~ msgid "Run Program After Connect"
-#~ msgstr "接続後にプログラムを起動"
-
-#~ msgid "Run Program After Disconnect"
-#~ msgstr "切断後にプログラムを起動"
-
-#~ msgid "Modem Device"
-#~ msgstr "モデムのデバイス"
-
-#~ msgid "Connection Speed"
-#~ msgstr "接続スピード"
-
-#~ msgid "Flow Control"
-#~ msgstr "フローコントロール"
-
-#~ msgid "Line Termination"
-#~ msgstr "回線切断"
-
-#~ msgid "Modem Speaker Volume"
-#~ msgstr "モデム音量"
-
-#~ msgid " Edit Modem Commands "
-#~ msgstr " モデムコマンドの編集 "
-
-#~ msgid "**PASSWORD**"
-#~ msgstr "**PASSWORD**"
-
-#~ msgid "script_type_cb(): optionmenu data bad"
-#~ msgstr "script_type_db(): オプションメニューのデータが間違っています"
-
-#~ msgid "_Debug Terminal"
-#~ msgstr "デバッグ用コンソール(_D)"
-
-#~ msgid "_New..."
-#~ msgstr "新規(_N)..."
-
-#~ msgid "D_uplicate..."
-#~ msgstr "複製(_U)..."
-
-#~ msgid "_Edit..."
-#~ msgstr "編集(_E)..."
-
-#~ msgid "_Delete..."
-#~ msgstr "削除(_D)..."
-
-#~ msgid "_Account"
-#~ msgstr "アカウント(_A)"
-
-#~ msgid "gnome-ppp"
-#~ msgstr "GNOME PPP 接続ユーティリティ"
-
-#~ msgid "Dialing"
-#~ msgstr "ダイアル中"
-
-#~ msgid "Connected"
-#~ msgstr "接続完了"
-
-#~ msgid "refresh_dial_app(): gtk_clist_append failed."
-#~ msgstr "refresh_dial_app(): リストへの追加に失敗しました"
-
-#~ msgid "Connect"
-#~ msgstr "接続"
-
-#~ msgid "Cancel"
-#~ msgstr "中止"
-
-#~ msgid "Disconnect"
-#~ msgstr "切断"
-
-#~ msgid "You must disconnect before closing."
-#~ msgstr "閉じる前に切断してください."
-
-#~ msgid "Are you sure you want to delete this account?\n"
-#~ msgstr "このアカウントを削除してもよろしいですか?\n"
-
-#~ msgid "The account cannot be deleted."
-#~ msgstr "アカウントが削除できません."
-
-#~ msgid "The account is in use and cannot be deleted."
-#~ msgstr "このアカウントは使用中なので削除できません."
-
-#~ msgid "GNOME Internet Dialer"
-#~ msgstr "GNOME インターネット・ダイアラ"
-
-#~ msgid "Raise PPP Link"
-#~ msgstr "PPP リンクを起動する"
-
-#~ msgid "About..."
-#~ msgstr "情報..."
-
-#~ msgid "Properties..."
-#~ msgstr "プロパティ..."
-
-#~ msgid "Offline"
-#~ msgstr "オフライン"
-
-#~ msgid "Connecting..."
-#~ msgstr "Connecting..."
-
-#~ msgid "PPP Connected"
-#~ msgstr "PPP Connected"
-
-#~ msgid "PPP Error!"
-#~ msgstr "PPP Error!"
-
-#~ msgid "That account is already in use.\n"
-#~ msgstr "That account is already in use.\n"
-
-#~ msgid "GNOME PPP Dialer Applet"
-#~ msgstr "GNOME PPP ダイアラ・アプレット"
-
-#~ msgid ""
-#~ "An unnecessarily nice looking applet for GNOME's panel for easy control "
-#~ "of PPP network links."
-#~ msgstr ""
-#~ "An unnecessarily nice looking applet for GNOME's panel for easy control "
-#~ "of PPP network links."
-
-#~ msgid "PPP Applet Properties"
-#~ msgstr "PPP Applet Properties"
-
-#~ msgid "Animation"
-#~ msgstr "Animation"
-
-#~ msgid "Small"
-#~ msgstr "Small"
-
-#~ msgid "Large"
-#~ msgstr "Large"
-
-#~ msgid "None"
-#~ msgstr "None"
-
-#~ msgid "Options"
-#~ msgstr "Options"
-
-#~ msgid "Freeze Animation on Connect"
-#~ msgstr "Freeze Animation on Connect"
-
-#~ msgid "Disconnect PPP on GNOME logout"
-#~ msgstr "Disconnect PPP on GNOME logout"
-
-#~ msgid "Timer"
-#~ msgstr "Timer"
-
-#~ msgid "Label"
-#~ msgstr "Label"
-
-#~ msgid "Animation Speed"
-#~ msgstr "Animation Speed"
-
-#~ msgid "PPP Applet"
-#~ msgstr "PPP Applet"
-
-#~ msgid "---NEW CONNECTION---"
-#~ msgstr "---NEW CONNECTION---"
-
-#~ msgid "Account already connected."
-#~ msgstr "すでに接続しています."
-
-#~ msgid "Starting PPP Connection."
-#~ msgstr "PPP 接続を開始します."
-
-#~ msgid "You don't have permission to execute pppd."
-#~ msgstr "pppd を起動するための権限がありません."
-
-#~ msgid "The modem is in use by another program."
-#~ msgstr "他のプログラムがモデムを使用しています."
-
-#~ msgid "Running pppd."
-#~ msgstr "pppd を起動しています."
-
-#~ msgid "Closing connection."
-#~ msgstr "切断しています."
-
-#~ msgid "The pppd program failed to run gnome-ppp-chat."
-#~ msgstr "pppd は gnome-ppp-chat の起動に失敗しました."
-
-#~ msgid "The modem could not be hung up."
-#~ msgstr "モデムは電話を切ることができません."
-
-#~ msgid "Initalizing modem."
-#~ msgstr "モデムを初期化中."
-
-#~ msgid "Your modem is not responding to initalization."
-#~ msgstr "モデムが初期化コマンドに応答しません."
-
-#~ msgid "The command to set the volume on your modem's speaker failed."
-#~ msgstr "モデム音量の設定コマンドが失敗しました."
-
-#~ msgid "No answer after maximum number of re-dial attempts."
-#~ msgstr "リダイアルを試みましたが応答がありません."
-
-#~ msgid "No phone numbers specified for this account."
-#~ msgstr "このアカウントの電話番号が指定されていません."
-
-#~ msgid "Dialing."
-#~ msgstr "ダイアル中."
-
-#~ msgid "Dialing timeout."
-#~ msgstr "ダイアルのタイムアウト."
-
-#~ msgid "No dialtone."
-#~ msgstr "ダイアルトーンが検出できません."
-
-#~ msgid "Number busy."
-#~ msgstr "話し中です."
-
-#~ msgid "Ring, but no answer."
-#~ msgstr "呼び出し音は鳴っていますが応答がありません."
-
-#~ msgid "Connection failure, reason unknown."
-#~ msgstr "原因不明の理由で接続に失敗しました."
-
-#~ msgid "Connected."
-#~ msgstr "接続完了."
-
-#~ msgid "The modem lost connection with remote host."
-#~ msgstr "リモートホストから切断されました."
-
-#~ msgid "Running Script."
-#~ msgstr "スクリプト実行中."
-
-#~ msgid "Script Complete."
-#~ msgstr "スクリプト実行完了."
-
-#~ msgid "PPP connection established."
-#~ msgstr "PPP 接続が完了しました."
-
-#~ msgid "Failed to establish a PPP connection."
-#~ msgstr "PPP 接続に失敗しました."
-
-#~ msgid "The pppd daemon died unexpectedly."
-#~ msgstr "pppd デーモンが予期せずに終了しました."
-
-#~ msgid "open_modem_window(): account=NULL"
-#~ msgstr "open_modem_window(): account=NULL"
-
-#~ msgid "Commands"
-#~ msgstr "Commands"
-
-#~ msgid "Responses"
-#~ msgstr "Responses"
-
-#~ msgid "Initialization"
-#~ msgstr "Initialization"
-
-#~ msgid "Hangup"
-#~ msgstr "Hangup"
-
-#~ msgid "Volume Mute"
-#~ msgstr "Volume Mute"
-
-#~ msgid "Volume Low"
-#~ msgstr "Volume Low"
-
-#~ msgid "Volume High"
-#~ msgstr "Volume High"
-
-#~ msgid "Connection"
-#~ msgstr "Connection"
-
-#~ msgid "Busy"
-#~ msgstr "Busy"
-
-#~ msgid "No Answer"
-#~ msgstr "No Answer"
-
-#~ msgid "No Carrier"
-#~ msgstr "No Carrier"
-
-#~ msgid "No Dialtone"
-#~ msgstr "No Dialtone"
-
-#~ msgid "GNOME Transfer Manager"
-#~ msgstr "GNOME 転送マネージャ"
-
-#~ msgid "There is a connection error"
-#~ msgstr "接続エラーが発生しました"
-
-#~ msgid "There is an error with displaying help"
-#~ msgstr "ヘルプを表示する際にエラーが発生しました"
-
-#~ msgid "Failed to create a connection"
-#~ msgstr "接続の確率に失敗しました"
-
-#~ msgid "A hostname is required"
-#~ msgstr "ホスト名が必要です"
-
-#~ msgid "A user name is required for SSH"
-#~ msgstr "SSH にはユーザ名が必要です"
-
-#~ msgid "There is a command line error"
-#~ msgstr "コマンドライン・エラーが発生しました"
-
-#~ msgid "The host cannot be found"
-#~ msgstr "ホストが見つかりません"
-
-#~ msgid "<span weight=\"bold\">Connect to remote host</span>"
-#~ msgstr "<span weight=\"bold\">リモート・ホストへの接続</span>"
-
-#~ msgid "<span weight=\"bold\">Method</span>"
-#~ msgstr "<span weight=\"bold\">接続方法</span>"
-
-#~ msgid "<span weight=\"bold\">Window size</span>"
-#~ msgstr "<span weight=\"bold\">ウィンドウの大きさ</span>"
-
-#~ msgid "Connect to remote host"
-#~ msgstr "リモート・ホストへの接続"
-
-#~ msgid "H_eight:"
-#~ msgstr "高さ(_E):"
-
-#~ msgid "H_ost:"
-#~ msgstr "ホスト名(_O):"
-
-#~ msgid "Regular shell (_Telnet)"
-#~ msgstr "標準のシェル (Telnet)(_T)"
-
-#~ msgid "Use _default"
-#~ msgstr "デフォルトを使用する(_D)"
-
-#~ msgid "_Port:"
-#~ msgstr "ポート番号(_P):"
-
-#~ msgid "_Secure shell (SSH)"
-#~ msgstr "セキュアシェル (SSH)(_S)"
-
-#~ msgid "_Width:"
-#~ msgstr "幅(_W):"
-
-#~ msgid "characters"
-#~ msgstr "文字"
-
-#~ msgid "Expander Size"
-#~ msgstr "エキスパンダのサイズ"
-
-#~ msgid "Size of the expander arrow"
-#~ msgstr "エキスパンダの矢印のサイズです"
-
-#~ msgid "Web folder:"
-#~ msgstr "ウェブ・フォルダ:"
-
-#~ msgid "Select the folder to be published"
-#~ msgstr "公開するフォルダの選択"
-
-#~ msgid "Additional options"
-#~ msgstr "追加オプション"
-
-#~ msgid "Port number:"
-#~ msgstr "ポート番号:"
-
-#~ msgid "Time out:"
-#~ msgstr "タイムアウト:"
-
-#~ msgid "Keep alive"
-#~ msgstr "Keep alive"
-
-#~ msgid "/_Preferences"
-#~ msgstr "/設定(_P)"
-
-#~ msgid "/_Open Web Folder"
-#~ msgstr "ウェブ・フォルダを開く(_O)"
-
-#~ msgid "/_Quit"
-#~ msgstr "/終了(_Q)"
-
-#~ msgid "Personal web server preferences"
-#~ msgstr "個人ユースのウェブ・サーバの設定"
-
-#~ msgid "Personal Web Server Preferences"
-#~ msgstr "個人ユースのウェブサーバの設定"
-
-#~ msgid "Setup the options for your personal web server."
-#~ msgstr "個人ユースのウェブ・サーバのオプションを設定します"
-
-#~ msgid "Could not load UI for entry configuration dialog"
-#~ msgstr "エントリ設定ダイアログの UI を読み込めませんでした"
-
-#~ msgid "Entry name"
-#~ msgstr "Entry name"
-
-#~ msgid "Local path"
-#~ msgstr "Local path"
-
-#~ msgid "Preserve group"
-#~ msgstr "Preserve group"
-
-#~ msgid "Preserve permissions"
-#~ msgstr "Preserve permissions"
-
-#~ msgid "Preserve times"
-#~ msgstr "Preserve times"
-
-#~ msgid "Recurse into directories"
-#~ msgstr "Recurse into directories"
-
-#~ msgid "Remote host"
-#~ msgstr "Remote host"
-
-#~ msgid "Remote path"
-#~ msgstr "Remote path"
-
-#~ msgid "Synchronization options"
-#~ msgstr "Synchronization options"
-
-#~ msgid "Update only (don't overwrite newer files)"
-#~ msgstr "Update only (don't overwrite newer files)"
-
-#~ msgid "Use relative path names"
-#~ msgstr "Use relative path names"
-
-#~ msgid "Use rsync"
-#~ msgstr "Use rsync"
-
-#~ msgid "Use unison"
-#~ msgstr "Use unison"
-
-#~ msgid "dialog1"
-#~ msgstr "dialog1"
-
-#~ msgid "rsync"
-#~ msgstr "rsync"
-
-#~ msgid "unison"
-#~ msgstr "unison"
-
-#~ msgid "Local"
-#~ msgstr "Local"
-
-#~ msgid "Remote"
-#~ msgstr "Remote"
-
-#~ msgid "Last sync"
-#~ msgstr "Last sync"
-
-#~ msgid "_Synchronize"
-#~ msgstr "_Synchronize"
-
-#~ msgid "New entry..."
-#~ msgstr "New entry..."
-
-#~ msgid "Edit..."
-#~ msgstr "Edit..."
-
-#~ msgid "Synchronize"
-#~ msgstr "Synchronize"
-
-#~ msgid "Gnome Synchronize"
-#~ msgstr "Gnome Synchronize"
-
-#~ msgid "The GNOME file synchronization program."
-#~ msgstr "GNOME 対応のファイル同期プログラムです"
-
-#~ msgid "New"
-#~ msgstr "New"
-
-#~ msgid "Create new synchronization entry"
-#~ msgstr "Create new synchronization entry"
-
-#~ msgid "Start synchronization for selected entries"
-#~ msgstr "Start synchronization for selected entries"
-
-#~ msgid "Edit"
-#~ msgstr "Edit"
-
-#~ msgid "Edit selected entry"
-#~ msgstr "Edit selected entry"
-
-#~ msgid "Delete"
-#~ msgstr "Delete"
-
-#~ msgid "Delete selected entries"
-#~ msgstr "Delete selected entries"
+msgstr "ネットワーク・ツール"
