@@ -547,6 +547,7 @@ load_info_widgets_from_xml (GladeXML * xml)
 	info = g_malloc (sizeof (Netinfo));
 
 	info->main_window = glade_xml_get_widget (xml, "main_window");
+	info->running = FALSE;
 	info->combo = glade_xml_get_widget (xml, "info_combo");
 	info->ipv6_frame = glade_xml_get_widget (xml, "info_ipv6_frame");
 	info->ipv4_frame = glade_xml_get_widget (xml, "info_ipv4_frame");
