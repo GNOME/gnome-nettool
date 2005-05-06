@@ -24,11 +24,10 @@
    on GNOME 2.0 */
 
 #include "utils.h"
+#include <string.h>
 #include <glib/gi18n.h>
 
 #if (GLIB_MINOR_VERSION < 2)
-
-#include <string.h>
 
 gint
 g_sprintf (gchar	*str,

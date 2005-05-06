@@ -20,6 +20,8 @@
 
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
+#include <unistd.h>
+#include <string.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <signal.h>

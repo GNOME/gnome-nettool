@@ -21,6 +21,7 @@
 
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <signal.h>
 #include <errno.h>
@@ -29,6 +30,7 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #include <unistd.h>
+#include <string.h>
 
 #include "scan.h"
 #include "utils.h"

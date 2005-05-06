@@ -30,6 +30,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <signal.h>
+#include <string.h>
 
 #include "callbacks.h"
 #include "traceroute.h"
