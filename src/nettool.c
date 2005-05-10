@@ -177,6 +177,7 @@ netinfo_error_message (Netinfo     * netinfo,
 					 primary);
 	gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
 						  secondary ? secondary : " ");
+	gtk_window_set_title (GTK_WINDOW (dialog), "");
 
         gtk_container_set_border_width (GTK_CONTAINER (dialog), 6);
 
