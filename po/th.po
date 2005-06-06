@@ -7,19 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-21 23:42+0700\n"
-"PO-Revision-Date: 2005-02-21 23:44+0700\n"
-"Last-Translator: Ross Golder <ross@golder.org>\n"
+"POT-Creation-Date: 2005-06-06 08:37+0700\n"
+"PO-Revision-Date: 2005-06-06 08:38+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: src/callbacks.c:311
+#: src/callbacks.c:312
 msgid "translator_credits"
 msgstr "เทพพิทักษ์ การุญบุญญานันท์ <thep@linux.thai.net>"
 
-#: src/callbacks.c:336
+#: src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr "GUI สำหรับโปรแกรมอรรถประโยชน์สำหรับตรวจสอบเครือข่าย"
 
@@ -75,7 +75,7 @@ msgstr "อุปกรณ์"
 msgid "Display:"
 msgstr "แสดง:"
 
-#: src/gnome-nettool.glade.h:14 src/main.c:832
+#: src/gnome-nettool.glade.h:14 src/main.c:852
 msgid "Finger"
 msgstr "Finger"
 
@@ -95,7 +95,7 @@ msgstr "หมายเลขไอพี:"
 msgid "Link speed:"
 msgstr "ความเร็วเชื่อมต่อ:"
 
-#: src/gnome-nettool.glade.h:19 src/main.c:746
+#: src/gnome-nettool.glade.h:19 src/main.c:766
 msgid "Lookup"
 msgstr "ชื่อเครื่อง"
 
@@ -123,7 +123,7 @@ msgstr "มัลติแคสต์:"
 msgid "Netmask:"
 msgstr "เน็ตแมสก์:"
 
-#: src/gnome-nettool.glade.h:26 src/main.c:445
+#: src/gnome-nettool.glade.h:26 src/main.c:464
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -151,7 +151,7 @@ msgstr "จำนวนแพ็กเก็ตที่ได้รับ:"
 msgid "Packets transmitted:"
 msgstr "จำนวนแพ็กเก็ตที่ส่ง:"
 
-#: src/gnome-nettool.glade.h:33 src/main.c:281
+#: src/gnome-nettool.glade.h:33 src/main.c:300
 msgid "Ping"
 msgstr "Ping"
 
@@ -175,7 +175,7 @@ msgstr "รับผิดพลาด:"
 msgid "Routing Table Information"
 msgstr "ข้อมูลตารางเส้นทาง"
 
-#: src/gnome-nettool.glade.h:39 src/main.c:627
+#: src/gnome-nettool.glade.h:39 src/main.c:647
 msgid "Scan"
 msgstr "ตรวจ"
 
@@ -187,7 +187,7 @@ msgstr "ส่ง:"
 msgid "State:"
 msgstr "สถานะ:"
 
-#: src/gnome-nettool.glade.h:42 src/main.c:369
+#: src/gnome-nettool.glade.h:42 src/main.c:388
 msgid "Trace"
 msgstr "แกะรอย"
 
@@ -215,7 +215,7 @@ msgstr "ไม่จำกัดจำนวนครั้ง"
 msgid "User"
 msgstr "ผู้ใช้"
 
-#: src/gnome-nettool.glade.h:49 src/main.c:948
+#: src/gnome-nettool.glade.h:49 src/main.c:968
 msgid "Whois"
 msgstr "Whois"
 
@@ -228,30 +228,38 @@ msgid "_Domain address:"
 msgstr "_ที่อยู่โดเมน:"
 
 #: src/gnome-nettool.glade.h:52
+msgid "_Edit"
+msgstr "แ_ก้ไข"
+
+#: src/gnome-nettool.glade.h:53
+msgid "_Help"
+msgstr "_วิธีใช้"
+
+#: src/gnome-nettool.glade.h:54
 msgid "_Information type:"
 msgstr "ชนิด_ข้อมูล:"
 
-#: src/gnome-nettool.glade.h:53
+#: src/gnome-nettool.glade.h:55
 msgid "_Network address:"
 msgstr "_ที่อยู่เครือข่าย:"
 
-#: src/gnome-nettool.glade.h:54
+#: src/gnome-nettool.glade.h:56
 msgid "_Network device:"
 msgstr "_อุปกรณ์เครือข่าย"
 
-#: src/gnome-nettool.glade.h:55
+#: src/gnome-nettool.glade.h:57
 msgid "_Tool"
 msgstr "เ_ครื่องมือ"
 
-#: src/gnome-nettool.glade.h:56
+#: src/gnome-nettool.glade.h:58
 msgid "_Username:"
 msgstr "_ชื่อผู้ใช้:"
 
-#: src/gnome-nettool.glade.h:57
+#: src/gnome-nettool.glade.h:59
 msgid "ms"
 msgstr "ms"
 
-#: src/gnome-nettool.glade.h:58
+#: src/gnome-nettool.glade.h:60
 msgid "requests"
 msgstr "ครั้ง"
 
@@ -427,70 +435,66 @@ msgstr "ที่อยู่"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "แหล่ง\tTTL\tชนิดที่อยู่\tชนิดระเบียน\tผลลัพธ์\n"
 
-#: src/main.c:78
+#: src/main.c:79
 msgid "Load information for a network device"
 msgstr "แสดงข้อมูลของอุปกรณ์เครือข่าย"
 
-#: src/main.c:79
+#: src/main.c:80
 msgid "DEVICE"
 msgstr "อุปกรณ์"
 
-#: src/main.c:81
+#: src/main.c:83
 msgid "Send a ping to a network address"
 msgstr "ส่ง ping ไปยังที่อยู่เครือข่าย"
 
-#: src/main.c:82 src/main.c:88 src/main.c:91 src/main.c:94
+#: src/main.c:84 src/main.c:92 src/main.c:96 src/main.c:100
 msgid "HOST"
 msgstr "โฮสต์"
 
-#: src/main.c:84
+#: src/main.c:87
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "อ่านข้อมูล netstat  ตัวเลือกที่เป็นไปได้คือ: route, active, multicast"
 
-#: src/main.c:85
+#: src/main.c:88
 msgid "COMMAND"
 msgstr "คำสั่ง"
 
-#: src/main.c:87
+#: src/main.c:91
 msgid "Trace a route to a network address"
 msgstr "แกะรอยเส้นทางไปยังที่อยู่เครือข่าย"
 
-#: src/main.c:90
+#: src/main.c:95
 msgid "Port scan a network address"
 msgstr "ตรวจพอร์ตที่เปิดอยู่ในที่อยู่เครือข่าย"
 
-#: src/main.c:93
+#: src/main.c:99
 msgid "Look up a network address"
 msgstr "เปิดหาชื่อที่อยู่เครือข่าย"
 
-#: src/main.c:96
+#: src/main.c:103
 msgid "Finger command to run"
 msgstr "เรียกคำสั่ง finger"
 
-#: src/main.c:97
+#: src/main.c:104
 msgid "USER"
 msgstr "ผู้ใช้"
 
-#: src/main.c:99
+#: src/main.c:107
 msgid "Perform a whois lookup for a network domain"
 msgstr "เปิดหาข้อมูล whois ของโดเมนเครือข่าย"
 
-#: src/main.c:100
+#: src/main.c:108
 msgid "DOMAIN"
 msgstr "โดเมน"
 
-#: src/main.c:113
-msgid "Network Information"
-msgstr "ข้อมูลเครือข่าย"
-
-#: src/main.c:119
+#: src/main.c:122
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr "ไม่มีแฟ้ม %s  กรุณาตรวจสอบการติดตั้งของ gnome-nettool"
 
-#: src/main.c:314
+#: src/main.c:333
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -498,7 +502,7 @@ msgstr ""
 "ป้อนที่อยู่เครือข่ายที่จะ ping\n"
 "ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
 
-#: src/main.c:396
+#: src/main.c:415
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -506,27 +510,27 @@ msgstr ""
 "ป้อนที่อยู่เครือข่ายที่จะแกะเส้นทางไป\n"
 "ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
 
-#: src/main.c:481 src/netstat.c:442
+#: src/main.c:500 src/netstat.c:443
 msgid "Protocol"
 msgstr "โพรโทคอล"
 
-#: src/main.c:488
+#: src/main.c:507
 msgid "IP Address"
 msgstr "หมายเลขไอพี"
 
-#: src/main.c:495
+#: src/main.c:514
 msgid "Netmask / Prefix"
 msgstr "เน็ตแมสก์ / พรีฟิกซ์"
 
-#: src/main.c:502
+#: src/main.c:521
 msgid "Broadcast"
 msgstr "กระจายสัญญาณ"
 
-#: src/main.c:509
+#: src/main.c:528
 msgid "Scope"
 msgstr "สโคป"
 
-#: src/main.c:649
+#: src/main.c:669
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -534,7 +538,7 @@ msgstr ""
 "ป้อนที่อยู่เครือข่ายที่จะตรวจพอร์ตที่เปิดอยู่\n"
 "ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
 
-#: src/main.c:777
+#: src/main.c:797
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -542,11 +546,11 @@ msgstr ""
 "ป้อนที่อยู่เครือข่ายที่จะเปิดหาชื่อ\n"
 "ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
 
-#: src/main.c:866
+#: src/main.c:886
 msgid "Enter the user to finger."
 msgstr "ป้อนชื่อผู้ใช้ที่จะ finger"
 
-#: src/main.c:893
+#: src/main.c:913
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -554,7 +558,7 @@ msgstr ""
 "ป้อนที่อยู่เครือข่ายที่จะ finger ไปหาผู้ใช้นั้น\n"
 "ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
 
-#: src/main.c:980
+#: src/main.c:1000
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -562,108 +566,108 @@ msgstr ""
 "ป้อนที่อยู่โดเมนที่จะเปิดหาข้อมูล whois\n"
 "ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
 
-#: src/netstat.c:121
+#: src/netstat.c:122
 msgid "Getting routing table"
 msgstr "กำลังอ่านตารางเส้นทาง"
 
-#: src/netstat.c:136
+#: src/netstat.c:137
 msgid "Getting active Internet connections"
 msgstr "กำลังตรวจหาการเชื่อมต่ออินเทอร์เน็ตที่ทำงานอยู่"
 
-#: src/netstat.c:145
+#: src/netstat.c:146
 msgid "Getting group memberships"
 msgstr "กำลังตรวจหาการเป็นสมาชิกกลุ่ม"
 
-#: src/netstat.c:449
+#: src/netstat.c:450
 msgid "IP Source"
 msgstr "ไอพีต้นทาง"
 
-#: src/netstat.c:457
+#: src/netstat.c:458
 msgid "Port/Service"
 msgstr "พอร์ต/บริการ"
 
-#: src/netstat.c:465 src/scan.c:296
+#: src/netstat.c:466 src/scan.c:298
 msgid "State"
 msgstr "สถานะ"
 
-#: src/netstat.c:607
+#: src/netstat.c:608
 msgid "Destination/Prefix"
 msgstr "ปลายทาง/พรีฟิกซ์"
 
-#: src/netstat.c:609
+#: src/netstat.c:610
 msgid "Destination"
 msgstr "ปลายทาง"
 
-#: src/netstat.c:616
+#: src/netstat.c:617
 msgid "Gateway"
 msgstr "เกตเวย์"
 
-#: src/netstat.c:624
+#: src/netstat.c:625
 msgid "Netmask"
 msgstr "เน็ตแมสก์"
 
-#: src/netstat.c:632 src/netstat.c:738
+#: src/netstat.c:633 src/netstat.c:739
 msgid "Interface"
 msgstr "อินเทอร์เฟซ"
 
-#: src/netstat.c:745
+#: src/netstat.c:746
 msgid "Member"
 msgstr "สมาชิก"
 
-#: src/netstat.c:753
+#: src/netstat.c:754
 msgid "Group"
 msgstr "กลุ่ม"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:795
+#: src/netstat.c:796
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "โพรโตคอล\tไอพีต้นทาง\tพอร์ต/บริการ\tสถานะ\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:801
+#: src/netstat.c:802
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "ปลายทาง\tเกตเวย์\tเน็ตแมสก์\tอินเทอร์เฟซ\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: src/netstat.c:806
+#: src/netstat.c:807
 msgid "Interface\tMember\tGroup\n"
 msgstr "อินเทอร์เฟซ\tสมาชิก\tกลุ่ม\n"
 
-#: src/nettool.c:195
+#: src/nettool.c:198
 msgid "A network address was not specified"
 msgstr "ไม่ได้กำหนดที่อยู่เครือข่าย"
 
-#: src/nettool.c:196 src/nettool.c:205
+#: src/nettool.c:199 src/nettool.c:208
 msgid "Please enter a valid network address and try again."
 msgstr "กรุณาป้อนที่อยู่เครือข่ายที่ถูกต้องและลองอีกครั้ง"
 
-#: src/nettool.c:203
+#: src/nettool.c:206
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "ไม่พบที่อยู่ '%s'"
 
-#: src/nettool.c:232
+#: src/nettool.c:235
 msgid "A domain address was not specified"
 msgstr "ไม่ได้กำหนดที่อยู่โดเมน"
 
-#: src/nettool.c:233
+#: src/nettool.c:236
 msgid "Please enter a valid domain address and try again."
 msgstr "กรุณาป้อนที่อยู่โดเมนที่ถูกต้องแล้วลองใหม่อีกครั้ง"
 
-#: src/nettool.c:391
+#: src/nettool.c:394
 msgid "Information not available"
 msgstr "ไม่มีข้อมูล"
 
-#: src/nettool.c:509
+#: src/nettool.c:512
 msgid "Stop"
 msgstr "หยุด"
 
-#: src/nettool.c:515
+#: src/nettool.c:518
 msgid "Run"
 msgstr "ทำงาน"
 
@@ -731,27 +735,27 @@ msgstr "จำนวนแพ็กเก็ตที่ได้รับ:\t%s\
 msgid "Packet loss:\t%s\n"
 msgstr "จำนวนแพ็กเก็ตสูญหาย:\t%s\n"
 
-#: src/scan.c:84
+#: src/scan.c:86
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "กำลังตรวจ %s เพื่อหาพอร์ตที่เปิดอยู่"
 
-#: src/scan.c:159
+#: src/scan.c:161
 msgid "unknown"
 msgstr "ไม่รู้จัก"
 
-#: src/scan.c:288
+#: src/scan.c:290
 msgid "Port"
 msgstr "พอร์ต"
 
-#: src/scan.c:304
+#: src/scan.c:306
 msgid "Service"
 msgstr "บริการ"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: src/scan.c:326
+#: src/scan.c:328
 msgid "Port\tState\tService\n"
 msgstr "พอร์ต\tสถานะ\tบริการ\n"
 
@@ -801,18 +805,20 @@ msgstr "เครื่องมือตรวจสอบข้อมูลเ
 msgid "Network Tools"
 msgstr "ตรวจสอบเครือข่าย"
 
-#: src/finger.c:59
+#: src/finger.c:62
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "กำลังอ่านข้อมูลผู้ใช้ %s จาก \"%s\""
 
-#: src/finger.c:63
+#: src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "กำลังอ่านข้อมูลผู้ใช้ทุกคนจาก \"%s\""
 
-#: src/whois.c:57
+#: src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "กำลังอ่านข้อมูล whois ของ %s"
 
+#~ msgid "Network Information"
+#~ msgstr "ข้อมูลเครือข่าย"
