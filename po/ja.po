@@ -1,28 +1,28 @@
 # gnome-nettool (gnome-network) ja.po.
-# Copyright (C) 1999-2003 Free Software Foundation, Inc.
+# Copyright (C) 1999-2005 Free Software Foundation, Inc.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 1999.
-# Takeshi AIHANA <aihana@gnome.gr.jp>, 2003-2004.
+# Takeshi AIHANA <aihana@gnome.gr.jp>, 2003-2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-03 16:01+0900\n"
-"PO-Revision-Date: 2005-03-03 16:01+0900\n"
+"POT-Creation-Date: 2005-07-03 15:53+0900\n"
+"PO-Revision-Date: 2005-07-03 15:52+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:311
+#: ../src/callbacks.c:312
 msgid "translator_credits"
 msgstr ""
 "相花 毅 <aihana@gnome.gr.jp>\n"
 "Yuusuke Tahara <tahara@gnome.gr.jp>\n"
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp>"
 
-#: ../src/callbacks.c:336
+#: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 "いろいろなネットワーク・ユーティリティに対するグラフィカルなインタフェースを"
@@ -80,7 +80,7 @@ msgstr "デバイス"
 msgid "Display:"
 msgstr "表示する情報:"
 
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:832
+#: ../src/gnome-nettool.glade.h:14 ../src/main.c:852
 msgid "Finger"
 msgstr "Finger"
 
@@ -100,7 +100,7 @@ msgstr "IP-アドレス:"
 msgid "Link speed:"
 msgstr "リンク・スピード:"
 
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:746
+#: ../src/gnome-nettool.glade.h:19 ../src/main.c:766
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -128,7 +128,7 @@ msgstr "マルチキャスト:"
 msgid "Netmask:"
 msgstr "ネットマスク:"
 
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:445
+#: ../src/gnome-nettool.glade.h:26 ../src/main.c:464
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -156,7 +156,7 @@ msgstr "受信したパケット数:"
 msgid "Packets transmitted:"
 msgstr "送信したパケット数:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:281
+#: ../src/gnome-nettool.glade.h:33 ../src/main.c:300
 msgid "Ping"
 msgstr "Ping"
 
@@ -180,7 +180,7 @@ msgstr "受信エラー数:"
 msgid "Routing Table Information"
 msgstr "経路テーブル情報"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:627
+#: ../src/gnome-nettool.glade.h:39 ../src/main.c:647
 msgid "Scan"
 msgstr "スキャン"
 
@@ -192,7 +192,7 @@ msgstr "送信する数:"
 msgid "State:"
 msgstr "状態:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:369
+#: ../src/gnome-nettool.glade.h:42 ../src/main.c:388
 msgid "Trace"
 msgstr "トレース"
 
@@ -220,7 +220,7 @@ msgstr "送信要求の数を制限しない"
 msgid "User"
 msgstr "ユーザ"
 
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:948
+#: ../src/gnome-nettool.glade.h:49 ../src/main.c:968
 msgid "Whois"
 msgstr "WhoIs"
 
@@ -233,30 +233,38 @@ msgid "_Domain address:"
 msgstr "ドメインのアドレス(_D):"
 
 #: ../src/gnome-nettool.glade.h:52
+msgid "_Edit"
+msgstr "編集(_E)"
+
+#: ../src/gnome-nettool.glade.h:53
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Information type:"
 msgstr "情報の種類(_I):"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:55
 msgid "_Network address:"
 msgstr "ネットワークのアドレス(_N):"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:56
 msgid "_Network device:"
 msgstr "ネットワーク・デバイス(_N):"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Tool"
 msgstr "ツール(_T)"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Username:"
 msgstr "ユーザ名(_U):"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:59
 msgid "ms"
 msgstr "ミリ秒"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:60
 msgid "requests"
 msgstr "個のみ"
 
@@ -432,108 +440,105 @@ msgstr "アドレス"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "ソース\tTTL\tアドレス 種類\t問い合わせの種類１\tアドレス解決\n"
 
-#: ../src/main.c:78
+#: ../src/main.c:79
 msgid "Load information for a network device"
 msgstr "ネットワーク・デバイスの情報を読み込む"
 
-#: ../src/main.c:79
+#: ../src/main.c:80
 msgid "DEVICE"
 msgstr "DEVICE"
 
-#: ../src/main.c:81
+#: ../src/main.c:83
 msgid "Send a ping to a network address"
 msgstr "ネットワーク・アドレスへ ping を送信する"
 
-#: ../src/main.c:82 ../src/main.c:88 ../src/main.c:91 ../src/main.c:94
+#: ../src/main.c:84 ../src/main.c:92 ../src/main.c:96 ../src/main.c:100
 msgid "HOST"
 msgstr "HOST"
 
-#: ../src/main.c:84
+#: ../src/main.c:87
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "netstat 情報を取得する (利用可能なオプション: route, active, multicast)"
 
-#: ../src/main.c:85
+#: ../src/main.c:88
 msgid "COMMAND"
 msgstr "COMMAND"
 
-#: ../src/main.c:87
+#: ../src/main.c:91
 msgid "Trace a route to a network address"
 msgstr "ネットワーク・アドレスへの経路をトレースする"
 
-#: ../src/main.c:90
+#: ../src/main.c:95
 msgid "Port scan a network address"
 msgstr "ネットワーク・アドレスのポートをスキャンする"
 
-#: ../src/main.c:93
+#: ../src/main.c:99
 msgid "Look up a network address"
 msgstr "ネットワーク・アドレスを問い合わせる"
 
-#: ../src/main.c:96
+#: ../src/main.c:103
 msgid "Finger command to run"
 msgstr "実行する Finger コマンド"
 
-#: ../src/main.c:97
+#: ../src/main.c:104
 msgid "USER"
 msgstr "USER"
 
-#: ../src/main.c:99
+#: ../src/main.c:107
 msgid "Perform a whois lookup for a network domain"
 msgstr "ネットワーク・ドメインに対する whois 情報を取得する"
 
-#: ../src/main.c:100
+#: ../src/main.c:108
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:113
-msgid "Network Information"
-msgstr "ネットワーク情報"
-
-#: ../src/main.c:119
+#: ../src/main.c:122
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"ファイル %s が存在しません。`gnome-netinfo` のインストールを確認して下さい"
+"ファイル %s が存在しません。`gnome-nettool` が正しくインストールされているか"
+"確認して下さい。"
 
-#: ../src/main.c:314
+#: ../src/main.c:333
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Ping を送信する先のネットワーク・アドレスを入力して下さい\n"
+"Ping を送信する先のネットワーク・アドレスを入力して下さい。\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:396
+#: ../src/main.c:415
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"経路情報を取得する先のネットワーク・アドレスを入力して下さい\n"
+"経路情報を取得する先のネットワーク・アドレスを入力して下さい。\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:481 ../src/netstat.c:442
+#: ../src/main.c:500 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "プロトコル"
 
-#: ../src/main.c:488
+#: ../src/main.c:507
 msgid "IP Address"
 msgstr "IP-アドレス"
 
-#: ../src/main.c:495
+#: ../src/main.c:514
 msgid "Netmask / Prefix"
 msgstr "ネットマスク/プレフィックス"
 
-#: ../src/main.c:502
+#: ../src/main.c:521
 msgid "Broadcast"
 msgstr "ブロードキャスト"
 
-#: ../src/main.c:509
+#: ../src/main.c:528
 msgid "Scope"
 msgstr "スコープ"
 
-#: ../src/main.c:649
+#: ../src/main.c:669
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -541,7 +546,7 @@ msgstr ""
 "開いているポートをスキャンする先のネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:777
+#: ../src/main.c:797
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -549,11 +554,11 @@ msgstr ""
 "問い合わせするネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:866
+#: ../src/main.c:886
 msgid "Enter the user to finger."
 msgstr "Finger を送信するユーザ名を入力して下さい"
 
-#: ../src/main.c:893
+#: ../src/main.c:913
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -561,7 +566,7 @@ msgstr ""
 "Finger を送信するユーザのネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:980
+#: ../src/main.c:1000
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -569,108 +574,108 @@ msgstr ""
 "WhoIs 情報を問い合わせるドメイン・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/netstat.c:121
+#: ../src/netstat.c:122
 msgid "Getting routing table"
 msgstr "経路テーブルの取得中..."
 
-#: ../src/netstat.c:136
+#: ../src/netstat.c:137
 msgid "Getting active Internet connections"
 msgstr "利用可能なインターネット接続情報の取得中..."
 
-#: ../src/netstat.c:145
+#: ../src/netstat.c:146
 msgid "Getting group memberships"
 msgstr "グループのメンバシップ情報の取得中..."
 
-#: ../src/netstat.c:449
+#: ../src/netstat.c:450
 msgid "IP Source"
 msgstr "IP-ソース"
 
-#: ../src/netstat.c:457
+#: ../src/netstat.c:458
 msgid "Port/Service"
 msgstr "ポート/サービス"
 
-#: ../src/netstat.c:465 ../src/scan.c:296
+#: ../src/netstat.c:466 ../src/scan.c:298
 msgid "State"
 msgstr "状態"
 
-#: ../src/netstat.c:607
+#: ../src/netstat.c:608
 msgid "Destination/Prefix"
 msgstr "送信先/プレフィックス"
 
-#: ../src/netstat.c:609
+#: ../src/netstat.c:610
 msgid "Destination"
 msgstr "送信先"
 
-#: ../src/netstat.c:616
+#: ../src/netstat.c:617
 msgid "Gateway"
 msgstr "ゲートウェイ"
 
-#: ../src/netstat.c:624
+#: ../src/netstat.c:625
 msgid "Netmask"
 msgstr "ネットマスク"
 
-#: ../src/netstat.c:632 ../src/netstat.c:738
+#: ../src/netstat.c:633 ../src/netstat.c:739
 msgid "Interface"
 msgstr "インタフェース"
 
-#: ../src/netstat.c:745
+#: ../src/netstat.c:746
 msgid "Member"
 msgstr "メンバ"
 
-#: ../src/netstat.c:753
+#: ../src/netstat.c:754
 msgid "Group"
 msgstr "グループ"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:795
+#: ../src/netstat.c:796
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "プロトコル\tIP-ソース\tポート/サービス\t状態\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:801
+#: ../src/netstat.c:802
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "送信先\tゲートウェイ\tネットマスク\tインタフェース\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:806
+#: ../src/netstat.c:807
 msgid "Interface\tMember\tGroup\n"
 msgstr "インタフェース\tメンバ\tグループ\n"
 
-#: ../src/nettool.c:195
+#: ../src/nettool.c:198
 msgid "A network address was not specified"
 msgstr "ネットワーク・アドレスが指定されていません"
 
-#: ../src/nettool.c:196 ../src/nettool.c:205
+#: ../src/nettool.c:199 ../src/nettool.c:208
 msgid "Please enter a valid network address and try again."
 msgstr "正しいネットワーク・アドレスを入力して再試行して下さい。"
 
-#: ../src/nettool.c:203
+#: ../src/nettool.c:206
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "アドレス '%s' を見つけることができません"
 
-#: ../src/nettool.c:232
+#: ../src/nettool.c:235
 msgid "A domain address was not specified"
 msgstr "ドメイン・アドレスが指定されていません"
 
-#: ../src/nettool.c:233
+#: ../src/nettool.c:236
 msgid "Please enter a valid domain address and try again."
 msgstr "正しいドメイン・アドレスを入力して再試行して下さい。"
 
-#: ../src/nettool.c:391
+#: ../src/nettool.c:394
 msgid "Information not available"
 msgstr "情報が利用可能ではありません"
 
-#: ../src/nettool.c:509
+#: ../src/nettool.c:512
 msgid "Stop"
 msgstr "停止"
 
-#: ../src/nettool.c:515
+#: ../src/nettool.c:518
 msgid "Run"
 msgstr "実行"
 
@@ -738,27 +743,27 @@ msgstr "受信パケット数:\t%s\n"
 msgid "Packet loss:\t%s\n"
 msgstr "パケットの消失:\t%s\n"
 
-#: ../src/scan.c:84
+#: ../src/scan.c:86
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s で開いているポートのスキャン中..."
 
-#: ../src/scan.c:159
+#: ../src/scan.c:161
 msgid "unknown"
 msgstr "不明"
 
-#: ../src/scan.c:288
+#: ../src/scan.c:290
 msgid "Port"
 msgstr "ポート番号"
 
-#: ../src/scan.c:304
+#: ../src/scan.c:306
 msgid "Service"
 msgstr "サービス"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:326
+#: ../src/scan.c:328
 msgid "Port\tState\tService\n"
 msgstr "ポート番号\t状態\tサービス\n"
 
@@ -808,17 +813,17 @@ msgstr "ネットワーク情報ツールです"
 msgid "Network Tools"
 msgstr "ネットワーク・ツール"
 
-#: ../src/finger.c:59
+#: ../src/finger.c:62
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "\"%2$s\" 上のユーザ %1$s の情報の取得中..."
 
-#: ../src/finger.c:63
+#: ../src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "\"%s\" 上の全ユーザの情報の取得中..."
 
-#: ../src/whois.c:57
+#: ../src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s の WhoIs 情報の取得中..."
