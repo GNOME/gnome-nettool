@@ -2,18 +2,20 @@
 # This file is distributed under the same license as the gnome-nettool package.
 # Copyright © 2005 Gnome i18n Project for Vietnamese.
 # T.M.Thanh <tmthanh@yahoo.com>, 2003.
+# Clytie Siddall <clytie@riverland.net.au>, 2005.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-network Gnome 2.10\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-21 06:26+0000\n"
-"PO-Revision-Date: 2005-05-10 16:10+0930\n"
+"Project-Id-Version: gnome-network Gnome 2.12\n"
+"POT-Creation-Date: 2005-07-21 23:25+0000\n"
+"PO-Revision-Date: 2005-07-22 20:54+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: LocFactoryEditor 1.2.2\n"
 
 #: ../src/callbacks.c:312
 msgid "translator_credits"
@@ -33,11 +35,11 @@ msgstr "<b>Thông tin IP</b>"
 
 #: ../src/gnome-nettool.glade.h:3
 msgid "<b>Interface Information</b>"
-msgstr "<b>Thông tin Giao tiếp</b>"
+msgstr "<b>Thông tin Giao diện</b>"
 
 #: ../src/gnome-nettool.glade.h:4
 msgid "<b>Interface Statistics</b>"
-msgstr "<b>Thống kê Giao tiếp</b>"
+msgstr "<b>Thống kê Giao diện</b>"
 
 #: ../src/gnome-nettool.glade.h:5
 msgid "<b>Round Trip Time Statistics</b>"
@@ -129,7 +131,7 @@ msgstr "Netstat"
 
 #: ../src/gnome-nettool.glade.h:27
 msgid "Network Tools - Devices"
-msgstr "Công cụ mạng - Thiết bị"
+msgstr "Công cụ mạng — Thiết bị"
 
 #: ../src/gnome-nettool.glade.h:28
 msgid "Not Available"
@@ -185,7 +187,7 @@ msgstr "Gửi:"
 
 #: ../src/gnome-nettool.glade.h:41
 msgid "State:"
-msgstr "Trạng thái:"
+msgstr "Tính trạng:"
 
 #: ../src/gnome-nettool.glade.h:42 ../src/main.c:388
 msgid "Trace"
@@ -217,7 +219,7 @@ msgstr "Người dùng"
 
 #: ../src/gnome-nettool.glade.h:49 ../src/main.c:968
 msgid "Whois"
-msgstr "Whois"
+msgstr "Whois (là ai?)"
 
 #: ../src/gnome-nettool.glade.h:50
 msgid "_Configure"
@@ -228,9 +230,8 @@ msgid "_Domain address:"
 msgstr "Địa chỉ _miền:"
 
 #: ../src/gnome-nettool.glade.h:52
-#, fuzzy
 msgid "_Edit"
-msgstr "Biên soạn"
+msgstr "_Hiệu chỉnh"
 
 #: ../src/gnome-nettool.glade.h:53
 msgid "_Help"
@@ -258,7 +259,7 @@ msgstr "_Tên ngươì dùng:"
 
 #: ../src/gnome-nettool.glade.h:59
 msgid "ms"
-msgstr "miligiây"
+msgstr "mili-giây"
 
 #: ../src/gnome-nettool.glade.h:60
 msgid "requests"
@@ -283,7 +284,7 @@ msgstr "Giao diện Bộ điều giải"
 
 #: ../src/info.c:61
 msgid "Parallel Line Interface"
-msgstr "Giao diện Dây song song"
+msgstr "Giao diện dòng song song"
 
 #: ../src/info.c:62
 msgid "Infrared Interface"
@@ -369,7 +370,7 @@ msgstr "Tốc độ liên kết: \t%s\n"
 #: ../src/info.c:702
 #, c-format
 msgid "State:\t%s\n"
-msgstr "Trạng thái: \t%s\n"
+msgstr "Tính trạng: \t%s\n"
 
 #: ../src/info.c:704
 #, c-format
@@ -454,9 +455,10 @@ msgstr "MÁY"
 
 #: ../src/main.c:87
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"Lấy thông tin netstat. Tuy chọn hợp lệ là: route (đường), active (hoạt "
-"động), multicast (đa phát thanh)."
+msgstr "Lấy thông tin netstat. Tuy chọn hợp lệ là:\n"
+" • route (đường)\n"
+" • active (hoạt động)\n"
+" • multicast (đa phát thanh)."
 
 #: ../src/main.c:88
 msgid "COMMAND"
@@ -491,13 +493,11 @@ msgid "DOMAIN"
 msgstr "MIỀN"
 
 #: ../src/main.c:122
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
-msgstr ""
-"Tập tin %s không tồn tại, hãy kiểm tra xem bản cài đặt gnome-netinfo đúng "
-"chưa"
+msgstr "Tập tin « %s » không tồn tại, hãy kiểm tra xem bản cài đặt gnome-nettool đúng chưa."
 
 #: ../src/main.c:333
 msgid ""
@@ -505,7 +505,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Hãy nhập địa chỉ mạng cần ping.\n"
-"Ví dụ: www.miền.com hoặc 192.168.2.1"
+"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
 
 #: ../src/main.c:415
 msgid ""
@@ -513,7 +513,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Hãy nhập địa chỉ mạng cần dò đường.\n"
-"Ví dụ: www.miền.com hoặc 192.168.2.1"
+"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
 
 #: ../src/main.c:500 ../src/netstat.c:443
 msgid "Protocol"
@@ -541,7 +541,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Hãy nập địa chỉ mạng cần quét có cổng mở.\n"
-"Ví dụ: www.miền.com hoặc 192.168.2.1"
+"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
 
 #: ../src/main.c:797
 msgid ""
@@ -549,7 +549,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Hãy nập địa chỉ mạng cần tra tìm.\n"
-"Ví dụ: www.miền.com hoặc 192.168.2.1"
+"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
 
 #: ../src/main.c:886
 msgid "Enter the user to finger."
@@ -561,7 +561,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Hãy nhập địa chỉ mạng để finger người dùng đó.\n"
-"Ví dụ: www.miền.com hoặc 192.168.2.1"
+"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
 
 #: ../src/main.c:1000
 msgid ""
@@ -569,7 +569,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Hãy nhập địa chỉ miền để tìm kiếm thông tin whois.\n"
-"Ví dụ: www.domain.com hoặc 192.168.2.1"
+"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
@@ -593,7 +593,7 @@ msgstr "Cổng/Dịch vụ"
 
 #: ../src/netstat.c:466 ../src/scan.c:298
 msgid "State"
-msgstr "Trạng thái"
+msgstr "Tính trạng"
 
 #: ../src/netstat.c:608
 msgid "Destination/Prefix"
@@ -654,11 +654,11 @@ msgstr "Hãy nhập địa chỉ mạng hợp lệ và thử lại."
 #: ../src/nettool.c:206
 #, c-format
 msgid "The address '%s' cannot be found"
-msgstr "Không tìm thấy địa chỉ '%s'"
+msgstr "Không tìm thấy địa chỉ « %s »."
 
 #: ../src/nettool.c:235
 msgid "A domain address was not specified"
-msgstr "Chưa chỉ định địa chỉ miền"
+msgstr "Chưa chỉ định địa chỉ miền."
 
 #: ../src/nettool.c:236
 msgid "Please enter a valid domain address and try again."
@@ -679,7 +679,7 @@ msgstr "Chạy"
 #: ../src/ping.c:77
 #, c-format
 msgid "Sending ping requests to %s"
-msgstr "Gửi yêu cầu ping đến %s"
+msgstr "Đang gửi yêu cầu ping đến %s"
 
 #: ../src/ping.c:385
 msgid "Bytes"
@@ -743,7 +743,7 @@ msgstr "Số gói bị mất:\t%s\n"
 #: ../src/scan.c:86
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr "Đang quét %s tìm cổng mở"
+msgstr "Đang quét « %s » tìm cổng mở."
 
 #: ../src/scan.c:161
 msgid "unknown"
@@ -767,7 +767,7 @@ msgstr "Cổng\tTrạng thái\tDịch vụ\n"
 #: ../src/traceroute.c:62
 #, c-format
 msgid "Tracing route to %s"
-msgstr "Đang dò đường đến %s"
+msgstr "Đang dò đường đến « %s »"
 
 #: ../src/traceroute.c:271
 msgid "Hop"
@@ -813,826 +813,14 @@ msgstr "Công cụ mạng"
 #: ../src/finger.c:62
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr "Đang lấy thông tin của %s trên \"%s\""
+msgstr "Đang lấy thông tin của %s trên « %s »"
 
 #: ../src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "Đang lấy thông tin mọi người dùng trên \"%s\""
+msgstr "Đang lấy thông tin mọi người dùng trên « %s »"
 
 #: ../src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
-msgstr "Đang lấy thông tin whois (nhận biết) của %s"
-
-msgid "Network Information"
-msgstr "Thông tin mạng"
-
-msgid "This is an untranslated version of GNOME Network Information"
-msgstr "Đây là phiên bản chưa được dịch của Thông Tin Mạng GNOME"
-
-msgid "    "
-msgstr "    "
-
-msgid "(eg. user@www.domain.com)"
-msgstr "(ví dụ:  user@www.domain.com)"
-
-#, fuzzy
-msgid "(for example: domain.com)"
-msgstr "(Ví dụ: www.domain.com hoặc 192.168.2.1)"
-
-msgid "*"
-msgstr "*"
-
-msgid "<span weight=\"bold\">@</span>"
-msgstr "<span weight=\"bold\">@</span>"
-
-msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
-msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để tìm kiếm</span>"
-
-msgid ""
-"<span weight=\"bold\">Enter a user name and network address to finger that "
-"user</span>"
-msgstr ""
-"<span weight=\"bold\">Nhập tên người dùng và địa chỉ mạng để finger (tới) "
-"người dùng đó</span>"
-
-msgid "<span weight=\"bold\">Enter the network address to ping</span>"
-msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để ping</span>"
-
-msgid ""
-"<span weight=\"bold\">Enter the network address to scan for open ports</span>"
-msgstr "<span weight=\"bold\">Nhập địa chỉ mạng để quét tìm cổng mở</span>"
-
-msgid ""
-"<span weight=\"bold\">Enter the network address to trace a route to</span>"
-msgstr ""
-"<span weight=\"bold\">Nhập địa chỉ mạng để theo vết một tuyến (trace a route "
-"to)</span>"
-
-msgid "<span weight=\"bold\">Information</span>"
-msgstr "<span weight=\"bold\">Thông Tin</span>"
-
-msgid ""
-"<span weight=\"bold\">Select the network device to get information on</span>"
-msgstr "<span weight=\"bold\">Hãy chọn giao tiếp mạng để nhận thông tin</span>"
-
-msgid "<span weight=\"bold\">Select the type of information to display</span>"
-msgstr "<span weight=\"bold\">Chọn loại thông tin hiển thị</span>"
-
-msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
-msgstr "<span weight=\"bold\">Chọn loại thông tin tìm kiếm:</span>"
-
-msgid "<span weight=\"bold\">Statistics</span>"
-msgstr "<span weight=\"bold\">Thống kê</span>"
-
-msgid "Any / All Information"
-msgstr "Bất kỳ / Toàn bộ thông tin"
-
-msgid "CPU / OS Type"
-msgstr "Loại CPU / OS"
-
-msgid "Canonical Name"
-msgstr "Tên theo tiêu chuẩn"
-
-msgid "Host name for Address"
-msgstr "Host name cho địa chỉ"
-
-msgid "IP address:"
-msgstr "Địa chỉ IP:"
-
-msgid "Internet Address"
-msgstr "Địa chỉ Internet"
-
-msgid "Mailbox Exchange"
-msgstr "Mailbox Exchange"
-
-msgid "Mailbox Information"
-msgstr "Thông tin Mailbox"
-
-msgid "Name Server"
-msgstr "Tên Máy Chủ"
-
-msgid "Select network device from list"
-msgstr "Chọn thiết bị mạng từ danh sách"
-
-msgid "Send only"
-msgstr "Chỉ gửi đi"
-
-msgid "Start-of-authority"
-msgstr "Start-of-authority"
-
-msgid "Text Information"
-msgstr "Thông tin dạng text"
-
-msgid "Well Known Services"
-msgstr "Dịch vụ biết rõ"
-
-msgid "_Finger"
-msgstr "_Finger"
-
-msgid "_Lookup"
-msgstr "Tr_a tìm"
-
-msgid "_Netstat"
-msgstr "_Netstat"
-
-msgid "_Ping"
-msgstr "_Ping"
-
-#, fuzzy
-msgid "GNOME Remote Desktop Applet"
-msgstr "Màn Hình Nền Từ Xa GNOME"
-
-#, fuzzy
-msgid "Connect to a remote desktop computer"
-msgstr "Kết nối vơí máy chủ ở xa"
-
-#, fuzzy
-msgid "Remote Desktop Client"
-msgstr "Màn Hình Nền Từ Xa GNOME"
-
-msgid "GNOME Remote Desktop"
-msgstr "Màn Hình Nền Từ Xa GNOME"
-
-#, fuzzy
-msgid "Enter the name or address of the remote system."
-msgstr "Nhập địa chỉ mạng để ping"
-
-#, fuzzy
-msgid "_More"
-msgstr "Modem"
-
-msgid "Co_nnect"
-msgstr "Kết _nối"
-
-#, fuzzy
-msgid "Connection Profile"
-msgstr "Kết nối"
-
-#, fuzzy
-msgid "Pro_tocol:"
-msgstr "Giao thức"
-
-#, fuzzy
-msgid "Pass_word:"
-msgstr "Mật khẩu"
-
-#, fuzzy
-msgid "Do_main:"
-msgstr "Tên miền"
-
-#, fuzzy
-msgid "C_lient Hostname:"
-msgstr "Hostname"
-
-#, fuzzy
-msgid "Prot_ocol File:"
-msgstr "Giao thức"
-
-#, fuzzy
-msgid "Remote Desktop Size"
-msgstr "Màn Hình Nền Từ Xa GNOME"
-
-#, fuzzy
-msgid "Use default screen size"
-msgstr "Dùng _mặc định"
-
-#, fuzzy
-msgid "Use default color depth"
-msgstr "Dùng _mặc định"
-
-#, fuzzy
-msgid "_Display"
-msgstr "Hiển Thị:"
-
-#, fuzzy
-msgid "GNOME Remote Desktop Error"
-msgstr "Màn Hình Nền Từ Xa GNOME"
-
-#, fuzzy
-msgid "Whether to enable desktop sharing"
-msgstr "Màn Hình Nền Từ Xa GNOME"
-
-msgid ""
-"<b>Connection settings</b>\n"
-"Type the name of the computer to open a new desktop session and/or the "
-"display number to connect to an already running session."
-msgstr ""
-"<b>Các thiết lập kết nối</b>\n"
-"Hãy nhập tên máy tính để mở phiên màn hình nền mới và/hoặc số hiển thị để "
-"kết nối với phiên đang hoạt động"
-
-msgid ""
-"<b>Desktop settings</b>\n"
-"Select the size and color depth (not supported for all cases, so use with "
-"care) of you remote desktop."
-msgstr ""
-"<b>Các thiết lập Desktop</b>\n"
-"Hãy chọn kích cỡ và độ sâu màu cho màn hình nền từ xa của bạn (lưu ý: không "
-"phải mọi trường hợp đều được hỗ trợ)"
-
-msgid ""
-"<b>Method</b>\n"
-"Select the method for connecting to the remote host. For Windows systems, "
-"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
-"work."
-msgstr ""
-"<b>Phương pháp</b>\n"
-"Hãy chọn phương thức để kết nối với máy chủ ở xa. Chọn VNC cho các hệ thống "
-"Windows. Chọn X11 cho các hệ thống UNIX, và VNC cũng sẽ làm việc."
-
-msgid "Color depth"
-msgstr "Độ sâu màu"
-
-msgid "Connect Now ..."
-msgstr "Kết nối bây giờ ..."
-
-msgid "Display size"
-msgstr "Kích cỡ hiển thị"
-
-msgid "VNC"
-msgstr "VNC"
-
-msgid "X11"
-msgstr "X11"
-
-msgid "by"
-msgstr "bởi"
-
-#, fuzzy
-msgid "Desktop Sharing"
-msgstr "Màn Hình Nền Từ Xa GNOME"
-
-msgid "Password"
-msgstr "Mật khẩu"
-
-#, fuzzy
-msgid "Orientation"
-msgstr "Chứng thực"
-
-#, fuzzy
-msgid "Remote Desktop Sharing"
-msgstr "Màn Hình Nền Từ Xa GNOME"
-
-msgid "Receive"
-msgstr "Nhận"
-
-msgid "Enter transmission string"
-msgstr "Nhập chuỗi truyền tin"
-
-msgid "Send User Name"
-msgstr "Gửi tên ngươì dùng"
-
-msgid "Username taken from Authentication"
-msgstr "Tên người dùng lấy từ việc chứng thực"
-
-msgid "Send User Password"
-msgstr "Gửi mật khẩu người dùng"
-
-msgid "Password taken from Authentication"
-msgstr "Mật khẩu lấy từ việc chứng thực"
-
-msgid "Dialog Box Input"
-msgstr "Phần Nhập Hộp Thoại"
-
-msgid "Enter text to be used as a dialog message when prompted for input"
-msgstr "Hãy nhập chữ được dùng làm thông điệp thoại khi được nhắc nhập vào"
-
-msgid "open_account_window(): account=NULL with clone flag"
-msgstr "open_account_window(): account=NULL với clone flag"
-
-msgid "open_account_window(): calling arguments invalid"
-msgstr "open_account_window(): việc gọi đối số không hợp lệ"
-
-msgid "Dial"
-msgstr "Quay số"
-
-msgid "Authentication"
-msgstr "Chứng thực"
-
-msgid "DNS"
-msgstr "DNS"
-
-msgid "Script"
-msgstr "Script"
-
-msgid "PPP"
-msgstr "PPP"
-
-msgid "Modem"
-msgstr "Modem"
-
-msgid "Account Name"
-msgstr "Tên tài khoản"
-
-msgid "Redial Maximum"
-msgstr "Số lần quay lại tối đa"
-
-msgid "Dial Timeout (sec)"
-msgstr "Hạn thời gian quay số (giây)"
-
-msgid "Phone Numbers"
-msgstr "Số phone"
-
-msgid "#"
-msgstr "#"
-
-msgid "Add"
-msgstr "Thêm"
-
-msgid "Remove"
-msgstr "Bỏ"
-
-msgid "PAP/CHAP"
-msgstr "PAP/CHAP"
-
-msgid "User Name"
-msgstr "Tên ngươì dùng"
-
-msgid "Remote Name"
-msgstr "Tên từ xa"
-
-msgid "Hidden Password"
-msgstr "Mật khẩu được giấu"
-
-msgid "Dynamic"
-msgstr "Động"
-
-msgid "Static"
-msgstr "Tĩnh"
-
-msgid "Remote IP Address"
-msgstr "Địa chỉ IP ở xa"
-
-msgid "DNS Servers"
-msgstr "Máy chủ DNS"
-
-msgid "Search Domains"
-msgstr "Tìm miền"
-
-msgid "Domain Name"
-msgstr "Tên miền"
-
-msgid "Action"
-msgstr "Hành động"
-
-msgid "Text"
-msgstr "Text"
-
-msgid "Login Script"
-msgstr "Script đăng nhập"
-
-msgid "Insert"
-msgstr "Chèn"
-
-msgid "Add Default Route"
-msgstr "Thêm định tuyến mặc định"
-
-msgid "Lock Dialout Device"
-msgstr "Khóa thiết bị quay số ra"
-
-msgid "Maximum Transmission Unit"
-msgstr "Đơn vị truyền tin tối đa"
-
-msgid "Maximum Receive Unit"
-msgstr "Đơn vị nhận về tối đa"
-
-msgid "Run Program After Connect"
-msgstr "Chạy chương trình sau khi kết nối"
-
-msgid "Run Program After Disconnect"
-msgstr "Chạy chương trình sau khi ngắt kết nối"
-
-msgid "Modem Device"
-msgstr "Thiết bị modem"
-
-msgid "Connection Speed"
-msgstr "Tốc độ kết nối"
-
-msgid "Flow Control"
-msgstr "Điều khiển luồng"
-
-msgid "Line Termination"
-msgstr "Kết thúc dòng"
-
-msgid "Modem Speaker Volume"
-msgstr "Âm lượng loa modem"
-
-msgid " Edit Modem Commands "
-msgstr "Biên soạn lệnh modem"
-
-msgid "**PASSWORD**"
-msgstr "**MẬTKHẨU**"
-
-msgid "script_type_cb(): optionmenu data bad"
-msgstr "script_type_cb(): dữ liệu optionmenu hỏng"
-
-msgid "_Debug Terminal"
-msgstr "Terminal gỡ _rối"
-
-msgid "_New..."
-msgstr "_Mới..."
-
-msgid "D_uplicate..."
-msgstr "Sao _chép..."
-
-msgid "_Edit..."
-msgstr "_Biên soạn..."
-
-msgid "_Delete..."
-msgstr "_Xóa..."
-
-msgid "_Account"
-msgstr "Tài _khoản"
-
-msgid "gnome-ppp"
-msgstr "gnome-ppp"
-
-msgid "Dialing"
-msgstr "Quay số"
-
-msgid "Connected"
-msgstr "Đã kết nối"
-
-msgid "refresh_dial_app(): gtk_clist_append failed."
-msgstr "refresh_dial_app(): gtk_clist_append lỗi."
-
-msgid "Connect"
-msgstr "Kết nối"
-
-msgid "Cancel"
-msgstr "Bỏ qua"
-
-msgid "Disconnect"
-msgstr "Ngắt kết nối"
-
-msgid "You must disconnect before closing."
-msgstr "Phải ngắt kết nối trước khi đóng."
-
-msgid "Are you sure you want to delete this account?\n"
-msgstr "Bạn có chắc là muốn xóa tài khoản này không?\n"
-
-msgid "The account cannot be deleted."
-msgstr "Không thể xóa tài khoản này."
-
-msgid "The account is in use and cannot be deleted."
-msgstr "Tài khoản này đang được dùng và không thể xóa."
-
-msgid "GNOME Internet Dialer"
-msgstr "Trình quay số kết nối Internet GNOME"
-
-msgid "Raise PPP Link"
-msgstr "Hiện liên kết PPP"
-
-msgid "About..."
-msgstr "Giới thiệu"
-
-msgid "Properties..."
-msgstr "Thuộc tính..."
-
-msgid "Offline"
-msgstr "Ngoại tuyến"
-
-msgid "Connecting..."
-msgstr "Đang kết nối..."
-
-msgid "PPP Connected"
-msgstr "Đã kết nối PPP"
-
-msgid "PPP Error!"
-msgstr "Lỗi PPP!"
-
-msgid "That account is already in use.\n"
-msgstr "Tài khoản đó đang dùng rồi.\n"
-
-msgid "GNOME PPP Dialer Applet"
-msgstr "Applet trình quay số PPP GNOME"
-
-msgid ""
-"An unnecessarily nice looking applet for GNOME's panel for easy control of "
-"PPP network links."
-msgstr ""
-"Một applet đẹp mắt cho panel của Gnome để dễ dàng điều khiển các liên kết "
-"mạng PPP."
-
-msgid "PPP Applet Properties"
-msgstr "Thuộc tính applet PPP"
-
-msgid "Animation"
-msgstr "Hoạt cảnh"
-
-msgid "Small"
-msgstr "Nhỏ"
-
-msgid "Large"
-msgstr "To"
-
-msgid "None"
-msgstr "Không"
-
-msgid "Options"
-msgstr "Tùy chọn"
-
-msgid "Freeze Animation on Connect"
-msgstr "Ngừng hoạt cảnh khi Kết Nối"
-
-msgid "Disconnect PPP on GNOME logout"
-msgstr "Ngắt kết nối khi đăng xuất khỏi GNOME"
-
-msgid "Timer"
-msgstr "Bộ đếm thời gian"
-
-msgid "Label"
-msgstr "Nhãn"
-
-msgid "Animation Speed"
-msgstr "Tốc độ hoạt cảnh"
-
-msgid "PPP Applet"
-msgstr "PPP Applet"
-
-msgid "---NEW CONNECTION---"
-msgstr "---KẾT NỐI MỚI---"
-
-msgid "Account already connected."
-msgstr "Tài khoản đã kết nối rồi."
-
-msgid "Starting PPP Connection."
-msgstr "Đang khởi chạy kết nối PPP."
-
-msgid "You don't have permission to execute pppd."
-msgstr "Bạn không đủ quyền hạn để thực thi pppd."
-
-msgid "The modem is in use by another program."
-msgstr "Chương trình khác đang sử dụng modem."
-
-msgid "Running pppd."
-msgstr "Chạy pppd."
-
-msgid "Closing connection."
-msgstr "Đóng kết nối."
-
-msgid "The pppd program failed to run gnome-ppp-chat."
-msgstr "Chương trình pppd không chạy được gnome-ppp-chat."
-
-msgid "The modem could not be hung up."
-msgstr "Đã không ngắt được modem."
-
-msgid "Initalizing modem."
-msgstr "Khởi tạo modem."
-
-msgid "Your modem is not responding to initalization."
-msgstr "Modem không đáp ứng để thực hiện khởi tạo."
-
-msgid "The command to set the volume on your modem's speaker failed."
-msgstr "Lệnh thiết lập âm lượng loa modem bị lỗi."
-
-msgid "No answer after maximum number of re-dial attempts."
-msgstr "Không nhận được trả lời sau số lần quay số lại"
-
-msgid "No phone numbers specified for this account."
-msgstr "Chưa cấp số phone cho tài khoản này."
-
-msgid "Dialing."
-msgstr "Quay số."
-
-msgid "Dialing timeout."
-msgstr "Hạn thời gian quay số."
-
-msgid "No dialtone."
-msgstr "Không có tín hiệu quay số."
-
-msgid "Number busy."
-msgstr "Số đang bận."
-
-msgid "Ring, but no answer."
-msgstr "Có chuông nhưng không trả lời."
-
-msgid "Connection failure, reason unknown."
-msgstr "Lỗi kết nối không rõ lý do."
-
-msgid "Connected."
-msgstr "Đã kết nối."
-
-msgid "The modem lost connection with remote host."
-msgstr "Modem mất kết nối vơí máy chủ ở xa."
-
-msgid "Running Script."
-msgstr "Chạy script."
-
-msgid "Script Complete."
-msgstr "Hoàn thành script."
-
-msgid "PPP connection established."
-msgstr "Đã thiết lập kết nối PPP."
-
-msgid "Failed to establish a PPP connection."
-msgstr "Không lập được kết nối PPP."
-
-msgid "The pppd daemon died unexpectedly."
-msgstr "Daemon pppd chết ngoài ý muốn."
-
-msgid "open_modem_window(): account=NULL"
-msgstr "open_modem_window(): account=NULL"
-
-msgid "Commands"
-msgstr "Lệnh"
-
-msgid "Responses"
-msgstr "Đáp ứng"
-
-msgid "Initialization"
-msgstr "Khởi tạo"
-
-msgid "Hangup"
-msgstr "Ngắt"
-
-msgid "Volume Mute"
-msgstr "Tắt tiếng"
-
-msgid "Volume Low"
-msgstr "Tiếng nhỏ"
-
-msgid "Volume High"
-msgstr "Tiếng to"
-
-msgid "Connection"
-msgstr "Kết nối"
-
-msgid "Busy"
-msgstr "Bận"
-
-msgid "No Answer"
-msgstr "Không trả lời"
-
-msgid "No Carrier"
-msgstr "Không làm việc"
-
-msgid "No Dialtone"
-msgstr "Không có tín hiệu"
-
-msgid "No host specified."
-msgstr "Chưa chỉ định host."
-
-msgid "A user name is required for SSH"
-msgstr "Yêu cầu tên người dùng cho SSH"
-
-msgid "The host cannot be found."
-msgstr "Không thể tìm thấy host."
-
-msgid "<span weight=\"bold\">Connect to remote host</span>"
-msgstr "<span weight=\"bold\">Kết nối với host ở xa</span>"
-
-msgid "<span weight=\"bold\">Method</span>"
-msgstr "<span weight=\"bold\">Phương pháp</span>"
-
-msgid "<span weight=\"bold\">Window size</span>"
-msgstr "<span weight=\"bold\">Kích cỡ cửa sổ</span>"
-
-msgid "Connect to remote host"
-msgstr "Kết nối vơí máy chủ ở xa"
-
-msgid "H_eight:"
-msgstr "_Cao:"
-
-msgid "H_ost:"
-msgstr "H_ost:"
-
-msgid "Regular shell (_Telnet)"
-msgstr "Shell Chính Tắc (_Telnet)"
-
-msgid "Use _default"
-msgstr "Dùng _mặc định"
-
-msgid "_Port:"
-msgstr "_Port:"
-
-msgid "_Secure shell (SSH)"
-msgstr "_Shell bảo mật (SSH)"
-
-msgid "_Width:"
-msgstr "_Rộng:"
-
-msgid "characters"
-msgstr "Ký tự"
-
-#, fuzzy
-msgid "Additional options"
-msgstr "Tùy chọn đồng bộ hóa"
-
-#, fuzzy
-msgid "Port number:"
-msgstr "Số phone"
-
-#, fuzzy
-msgid "Time out:"
-msgstr "Time 2"
-
-msgid "Could not load UI for entry configuration dialog"
-msgstr "Không nạp được UI để nhập vào thoại cấu hình"
-
-msgid "Entry name"
-msgstr "Nhập tên"
-
-msgid "Local path"
-msgstr "Đường dẫn cục bộ"
-
-msgid "Preserve group"
-msgstr "Bảo tồn nhóm"
-
-msgid "Preserve permissions"
-msgstr "Bảo tồn quyền hạn"
-
-msgid "Preserve times"
-msgstr "Bảo tồn các lần thực hiện"
-
-msgid "Recurse into directories"
-msgstr "Đệ quy vào các thư mục"
-
-msgid "Remote host"
-msgstr "Máy chủ ở xa"
-
-msgid "Remote path"
-msgstr "Đường dẫn ở xa"
-
-msgid "Synchronization options"
-msgstr "Tùy chọn đồng bộ hóa"
-
-msgid "Update only (don't overwrite newer files)"
-msgstr "Chỉ cập nhật (không ghi đè tập tin mới hơn)"
-
-msgid "Use relative path names"
-msgstr "Dùng tên đường dẫn liên quan"
-
-msgid "Use rsync"
-msgstr "Dùng rsync"
-
-msgid "Use unison"
-msgstr "Dùng unison"
-
-msgid "dialog1"
-msgstr "thoại1"
-
-msgid "rsync"
-msgstr "rsync"
-
-msgid "unison"
-msgstr "unison"
-
-msgid "Local"
-msgstr "Cục bộ"
-
-msgid "Remote"
-msgstr "Ở xa"
-
-msgid "Last sync"
-msgstr "Lần Sync mới nhất"
-
-msgid "_Synchronize"
-msgstr "Đồng _bộ hóa"
-
-msgid "New entry..."
-msgstr "Mục nhập mới..."
-
-msgid "Edit..."
-msgstr "Biên soạn..."
-
-msgid "Synchronize"
-msgstr "Đồng bộ hóa"
-
-msgid "Gnome Synchronize"
-msgstr "Đồng bộ hóa GNOME"
-
-msgid "The GNOME file synchronization program."
-msgstr "Chương trình đồng bộ hóa tập tin GNOME."
-
-msgid "New"
-msgstr "Mới"
-
-msgid "Create new synchronization entry"
-msgstr "Tạo mục đồng bộ hóa mới"
-
-msgid "Start synchronization for selected entries"
-msgstr "Chạy đồng bộ hóa cho các mục được chọn"
-
-msgid "Edit selected entry"
-msgstr "Biên soạn mục nhập được chọn"
-
-msgid "Delete"
-msgstr "Xóa"
-
-msgid "Delete selected entries"
-msgstr "Xóa mục nhập được chọn"
-
-msgid "You don't have the Xnest program installed in the system"
-msgstr "Chương trình Xnetst chưa được cài đặt trong hệ thống"
-
-msgid "You have to specify at least a host or display name"
-msgstr "Bạn cần chỉ ra ít nhất một host hay tên hiển thị"
-
-msgid "You don't have a VNC viewer installed in the system"
-msgstr "Trình xem VNC chưa được cài đặt trong hệ thống"
-
-msgid "Could not load UI for remote desktop client"
-msgstr "Không nạp được UI cho máy khách màn hình nền từ xa"
+msgstr "Đang lấy thông tin whois (nhận biết) của « %s »"
