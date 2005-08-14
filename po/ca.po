@@ -1,30 +1,30 @@
 # Traducció del mòdul gnome-nettool per l'equip de Softcatalà.
-# Copyright © 2000, 2004 Free Software Foundation, Inc.
+# Copyright © 2000-2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
 # Ivan Vilata i Balaguer <al011097@alumail.uji.es>, 2000.
 # Softcatala <linux@softcatala.org>, 2000.
-# Xavier Conde Rueda <xaviconde@eresmas.com>, 2004.
-# Jordi Mallach <jordi@sindominio.net>, 2004.
+# Xavier Conde Rueda <xavi.conde@gmail.com>, 2004.
+# Jordi Mallach <jordi@sindominio.net>, 2004, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-18 23:44+0100\n"
-"PO-Revision-Date: 2005-03-18 23:44+0100\n"
-"Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
+"POT-Creation-Date: 2005-08-14 11:37+0200\n"
+"PO-Revision-Date: 2005-08-14 11:42+0200\n"
+"Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:311
+#: ../src/callbacks.c:312
 msgid "translator_credits"
 msgstr ""
 "Ivan Vilata i Balaguer <al011097@alumail.uji.es>\n"
-"Xavier Conde Rueda <xaviconde@eresmas.com>"
+"Xavier Conde Rueda <xavi.conde@gmail.com>"
 
-#: ../src/callbacks.c:336
+#: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr "Interfície gràfica d'usuari per a utilitats de xarxa habituals"
 
@@ -81,7 +81,7 @@ msgid "Display:"
 msgstr "Visualitza:"
 
 # FIXME: jo deixaria Finger (josep)
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:834
+#: ../src/gnome-nettool.glade.h:14 ../src/main.c:852
 msgid "Finger"
 msgstr "Cerca usuaris"
 
@@ -101,8 +101,7 @@ msgstr "Adreça IP:"
 msgid "Link speed:"
 msgstr "Velocitat de l'enllaç:"
 
-# Netscape_4.7->String:RESDLL.DLL
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:748
+#: ../src/gnome-nettool.glade.h:19 ../src/main.c:766
 msgid "Lookup"
 msgstr "Cerca"
 
@@ -131,7 +130,7 @@ msgid "Netmask:"
 msgstr "Màscara de xarxa:"
 
 # FIXME: jo deixaria Netstat
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:447
+#: ../src/gnome-nettool.glade.h:26 ../src/main.c:464
 msgid "Netstat"
 msgstr "Estat de la xarxa"
 
@@ -159,7 +158,7 @@ msgstr "Paquets rebuts:"
 msgid "Packets transmitted:"
 msgstr "Paquets transmessos:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:283
+#: ../src/gnome-nettool.glade.h:33 ../src/main.c:300
 msgid "Ping"
 msgstr "Ping"
 
@@ -183,7 +182,7 @@ msgstr "Errors de recepció:"
 msgid "Routing Table Information"
 msgstr "Informació de la taula d'encaminament"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:629
+#: ../src/gnome-nettool.glade.h:39 ../src/main.c:647
 msgid "Scan"
 msgstr "Escaneja"
 
@@ -195,7 +194,7 @@ msgstr "Envia:"
 msgid "State:"
 msgstr "Estat:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:371
+#: ../src/gnome-nettool.glade.h:42 ../src/main.c:388
 msgid "Trace"
 msgstr "Traça"
 
@@ -224,7 +223,7 @@ msgid "User"
 msgstr "Usuari"
 
 # FIXME: jo deixaria "Whois" (josep)
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:950
+#: ../src/gnome-nettool.glade.h:49 ../src/main.c:968
 msgid "Whois"
 msgstr "Qui és"
 
@@ -408,7 +407,6 @@ msgstr "Col·lisions:\t%s\n"
 msgid "not available"
 msgstr "no disponible"
 
-# Netscape_4.7->String:RESDLL.DLL
 #: ../src/lookup.c:80
 #, c-format
 msgid "Looking up %s"
@@ -435,7 +433,6 @@ msgstr "Tipus de registre"
 msgid "Address"
 msgstr "Adreça"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The lookup output in text format:
 #. Source of query (hostname/ip address),
 #. Time To Live (TTL), Address Type,
@@ -446,78 +443,70 @@ msgstr "Adreça"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Origen\tTemps de vida\tTipus d'adreça\tTipus de registre\tResultat\n"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:78
+#: ../src/main.c:79
 msgid "Load information for a network device"
 msgstr "Carrega informació per a un dispositiu de xarxa"
 
-# Gnome_2.6_Desktop [gnome-utils.HEAD.ca.po]
-#: ../src/main.c:79
+#: ../src/main.c:80
 msgid "DEVICE"
 msgstr "Dispositiu"
 
-#: ../src/main.c:82
+#: ../src/main.c:83
 msgid "Send a ping to a network address"
 msgstr "Envia un ping a una adreça de xarxa"
 
-# Gnome_2.6_Desktop [zenity.HEAD.ca.po]
-#: ../src/main.c:83 ../src/main.c:91 ../src/main.c:95 ../src/main.c:99
+#: ../src/main.c:84 ../src/main.c:92 ../src/main.c:96 ../src/main.c:100
 msgid "HOST"
 msgstr "Ordinador"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:86
+#: ../src/main.c:87
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Obté la informació d'estat de xarxa. Les opcions vàlides són: ruta, actiu, "
 "multicast."
 
-#: ../src/main.c:87
+#: ../src/main.c:88
 msgid "COMMAND"
 msgstr "Ordre"
 
-#: ../src/main.c:90
+#: ../src/main.c:91
 msgid "Trace a route to a network address"
 msgstr "Segueix una ruta fins a una adreça de xarxa"
 
-#: ../src/main.c:94
+#: ../src/main.c:95
 msgid "Port scan a network address"
 msgstr "Escaneja els ports d'una adreça de xarxa"
 
-#: ../src/main.c:98
+#: ../src/main.c:99
 msgid "Look up a network address"
 msgstr "Fes una cerca d'una adreça de xarxa"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:102
+#: ../src/main.c:103
 msgid "Finger command to run"
 msgstr "Ordre finger a executar"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:103
+#: ../src/main.c:104
 msgid "USER"
 msgstr "Usuari"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:106
+#: ../src/main.c:107
 msgid "Perform a whois lookup for a network domain"
 msgstr "Realitza una cerca whois per a un domini de xarxa"
 
-#: ../src/main.c:107
+#: ../src/main.c:108
 msgid "DOMAIN"
 msgstr "Domini"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/main.c:121
+#: ../src/main.c:122
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"No existeix el fitxer %s. Comproveu que gnome-netinfo està instal·lat "
+"El fitxer %s no existeix. Comproveu que el gnome-nettool estigui instal·lat "
 "correctament"
 
-#: ../src/main.c:316
+#: ../src/main.c:333
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -525,7 +514,7 @@ msgstr ""
 "Introduïu l'adreça de xarxa a on fer ping.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/main.c:398
+#: ../src/main.c:415
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -533,30 +522,27 @@ msgstr ""
 "Introduïu l'adreça de xarxa on traçar la ruta.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-# source\offapp\dialog\inetdlg.src pageitem RID_OFADLG_INTERNET.1 RID_SVXPAGE_INET_OTHER
-# Projecte_Open_Office_1.1 [offmgr.po]
-#: ../src/main.c:483 ../src/netstat.c:442
+#: ../src/main.c:500 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protocol"
 
-#: ../src/main.c:490
+#: ../src/main.c:507
 msgid "IP Address"
 msgstr "Adreça IP"
 
-#: ../src/main.c:497
+#: ../src/main.c:514
 msgid "Netmask / Prefix"
 msgstr "Màscara de xarxa/prefix"
 
-#: ../src/main.c:504
+#: ../src/main.c:521
 msgid "Broadcast"
 msgstr "Difusió"
 
-# Gnome_2.6_Extras [conglomerate.HEAD.ca.po]
-#: ../src/main.c:511
+#: ../src/main.c:528
 msgid "Scope"
 msgstr "Abast"
 
-#: ../src/main.c:651
+#: ../src/main.c:669
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -564,7 +550,7 @@ msgstr ""
 "Introduïu l'adreça de xarxa on escanejar els ports oberts.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/main.c:779
+#: ../src/main.c:797
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -572,11 +558,11 @@ msgstr ""
 "Introduïu l'adreça de xarxa a cercar.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/main.c:868
+#: ../src/main.c:886
 msgid "Enter the user to finger."
 msgstr "Introduïu l'usuari al qual fer finger."
 
-#: ../src/main.c:895
+#: ../src/main.c:913
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -584,7 +570,7 @@ msgstr ""
 "Introduïu l'adreça de xarxa on fer finger a aquest usuari.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/main.c:982
+#: ../src/main.c:1000
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -592,117 +578,108 @@ msgstr ""
 "Introduïu un nom de domini per cercar-ne la informació whois.\n"
 "Per exemple: www.domini.com o 192.168.2.1"
 
-#: ../src/netstat.c:121
+#: ../src/netstat.c:122
 msgid "Getting routing table"
 msgstr "S'està obtenint la taula de rutes"
 
-#: ../src/netstat.c:136
+#: ../src/netstat.c:137
 msgid "Getting active Internet connections"
 msgstr "S'estan obtenint les connexions d'Internet actives"
 
-#: ../src/netstat.c:145
+#: ../src/netstat.c:146
 msgid "Getting group memberships"
 msgstr "S'estan obtenint les pertenències de grups"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/netstat.c:449
+#: ../src/netstat.c:450
 msgid "IP Source"
 msgstr "IP d'origen"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/netstat.c:457
+#: ../src/netstat.c:458
 msgid "Port/Service"
 msgstr "Port/servei"
 
-#: ../src/netstat.c:465 ../src/scan.c:296
+#: ../src/netstat.c:466 ../src/scan.c:298
 msgid "State"
 msgstr "Estat"
 
-#: ../src/netstat.c:607
+#: ../src/netstat.c:608
 msgid "Destination/Prefix"
 msgstr "Destí/prefix"
 
-#: ../src/netstat.c:609
+#: ../src/netstat.c:610
 msgid "Destination"
 msgstr "Destí"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/netstat.c:616
+#: ../src/netstat.c:617
 msgid "Gateway"
 msgstr "Pasarel·la"
 
-#: ../src/netstat.c:624
+#: ../src/netstat.c:625
 msgid "Netmask"
 msgstr "Màscara de xarxa"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/netstat.c:632 ../src/netstat.c:738
+#: ../src/netstat.c:633 ../src/netstat.c:739
 msgid "Interface"
 msgstr "Interfície"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
-#: ../src/netstat.c:745
+#: ../src/netstat.c:746
 msgid "Member"
 msgstr "Membre"
 
-# Netscape_4.7->String:RESDLL.DLL
-#: ../src/netstat.c:753
+#: ../src/netstat.c:754
 msgid "Group"
 msgstr "Grup"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:795
+#: ../src/netstat.c:796
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protocol\tIP d'origen\tPort/servei\tEstat\n"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:801
+#: ../src/netstat.c:802
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Destí\tPasarel·la\tMàscara de xarxa\tInterfície\n"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:806
+#: ../src/netstat.c:807
 msgid "Interface\tMember\tGroup\n"
 msgstr "Interfície\tMembre\tGrup\n"
 
-#: ../src/nettool.c:195
+#: ../src/nettool.c:198
 msgid "A network address was not specified"
 msgstr "No s'ha especificat cap adreça de xarxa"
 
-#: ../src/nettool.c:196 ../src/nettool.c:205
+#: ../src/nettool.c:199 ../src/nettool.c:208
 msgid "Please enter a valid network address and try again."
 msgstr "Introduïu una adreça de xarxa vàlida i torneu-ho a provar."
 
-#: ../src/nettool.c:203
+#: ../src/nettool.c:206
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "No s'ha trobat l'adreça '%s'"
 
-#: ../src/nettool.c:232
+#: ../src/nettool.c:235
 msgid "A domain address was not specified"
 msgstr "No s'ha especificat cap adreça de domini"
 
-#: ../src/nettool.c:233
+#: ../src/nettool.c:236
 msgid "Please enter a valid domain address and try again."
 msgstr "Introduïu una adreça de domini vàlida i torneu-ho a provar."
 
-#: ../src/nettool.c:391
+#: ../src/nettool.c:394
 msgid "Information not available"
 msgstr "Informació no disponible"
 
-#: ../src/nettool.c:509
+#: ../src/nettool.c:512
 msgid "Stop"
 msgstr "Atura"
 
-#: ../src/nettool.c:515
+#: ../src/nettool.c:518
 msgid "Run"
 msgstr "Executa"
 
@@ -719,7 +696,6 @@ msgstr "Bytes"
 msgid "Source"
 msgstr "Origen"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #: ../src/ping.c:400
 msgid "Seq"
 msgstr "Seqüència"
@@ -732,7 +708,6 @@ msgstr "Temps"
 msgid "Units"
 msgstr "Unitat"
 
-# Gnome_2.6_Extras [gnome-network.HEAD.ca.po]
 #. The ping output in text format:
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
@@ -772,27 +747,27 @@ msgstr "Paquets rebuts:\t%s\n"
 msgid "Packet loss:\t%s\n"
 msgstr "Paquets perduts:\t%s\n"
 
-#: ../src/scan.c:84
+#: ../src/scan.c:86
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "S'està escanejant els ports oberts de %s"
 
-#: ../src/scan.c:159
+#: ../src/scan.c:161
 msgid "unknown"
 msgstr "desconegut"
 
-#: ../src/scan.c:288
+#: ../src/scan.c:290
 msgid "Port"
 msgstr "Port"
 
-#: ../src/scan.c:304
+#: ../src/scan.c:306
 msgid "Service"
 msgstr "Servei"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:326
+#: ../src/scan.c:328
 msgid "Port\tState\tService\n"
 msgstr "Port\tEstat\tServei\n"
 
@@ -829,7 +804,7 @@ msgstr "Temps 2"
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Salt\\tOrdinador\\tIP\\Temps 1\\tTemps 2\n"
 
-#: ../src/utils.c:228
+#: ../src/utils.c:227
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: No s'ha trobat l'ordre"
@@ -842,17 +817,17 @@ msgstr "Eines d'informació de xarxa"
 msgid "Network Tools"
 msgstr "Eines de xarxa"
 
-#: ../src/finger.c:59
+#: ../src/finger.c:62
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "S'està obtenint informació de l'usuari «%s» de «%s»"
 
-#: ../src/finger.c:63
+#: ../src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "S'està obtenint informació de tots els usuaris de «%s»"
 
-#: ../src/whois.c:57
+#: ../src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "S'està obtenint la informació whois de %s"
