@@ -9,19 +9,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-18 11:25+0200\n"
-"PO-Revision-Date: 2005-03-18 11:26+0200\n"
+"POT-Creation-Date: 2005-08-30 20:50+0300\n"
+"PO-Revision-Date: 2005-08-30 20:50+0300\n"
 "Last-Translator: Žygimantas Beručka <uid0@akl.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:311
+#: ../src/callbacks.c:312
 msgid "translator_credits"
 msgstr "Marius Karnauskas <marius@esga.lt>"
 
-#: ../src/callbacks.c:336
+#: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafinė vartotojo sąsaja paprastoms tinklų programoms"
 
@@ -77,7 +77,7 @@ msgstr "Įrenginiai"
 msgid "Display:"
 msgstr "Rodyti:"
 
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:834
+#: ../src/gnome-nettool.glade.h:14 ../src/main.c:852
 msgid "Finger"
 msgstr "Finger"
 
@@ -97,7 +97,7 @@ msgstr "IP adresas:"
 msgid "Link speed:"
 msgstr "Greitis:"
 
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:748
+#: ../src/gnome-nettool.glade.h:19 ../src/main.c:766
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -125,7 +125,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Potinklio kaukė:"
 
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:447
+#: ../src/gnome-nettool.glade.h:26 ../src/main.c:464
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -153,7 +153,7 @@ msgstr "Gauta paketų:"
 msgid "Packets transmitted:"
 msgstr "Perduota paketų:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:283
+#: ../src/gnome-nettool.glade.h:33 ../src/main.c:300
 msgid "Ping"
 msgstr "Ping"
 
@@ -177,7 +177,7 @@ msgstr "Priėmimo klaidos:"
 msgid "Routing Table Information"
 msgstr "Maršrutų lentelės informacija"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:629
+#: ../src/gnome-nettool.glade.h:39 ../src/main.c:647
 msgid "Scan"
 msgstr "Rasti"
 
@@ -189,7 +189,7 @@ msgstr "Siųsti užklausą:"
 msgid "State:"
 msgstr "Būsena:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:371
+#: ../src/gnome-nettool.glade.h:42 ../src/main.c:388
 msgid "Trace"
 msgstr "Sekti"
 
@@ -217,7 +217,7 @@ msgstr "Neribotai"
 msgid "User"
 msgstr "Vartotojas"
 
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:950
+#: ../src/gnome-nettool.glade.h:49 ../src/main.c:968
 msgid "Whois"
 msgstr "Whois"
 
@@ -437,67 +437,68 @@ msgstr "Adresas"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Šaltinis\tGyvavimo laikas\tAdreso tipas\tĮrašo tipas\tRezultatas\n"
 
-#: ../src/main.c:78
+#: ../src/main.c:79
 msgid "Load information for a network device"
 msgstr "Įkelti tinklo įrenginio informaciją"
 
-#: ../src/main.c:79
+#: ../src/main.c:80
 msgid "DEVICE"
 msgstr "ĮRENGINYS"
 
-#: ../src/main.c:82
+#: ../src/main.c:83
 msgid "Send a ping to a network address"
 msgstr "Siųsti ping užklausą adresui"
 
-#: ../src/main.c:83 ../src/main.c:91 ../src/main.c:95 ../src/main.c:99
+#: ../src/main.c:84 ../src/main.c:92 ../src/main.c:96 ../src/main.c:100
 msgid "HOST"
 msgstr "KOMPIUTERIS"
 
-#: ../src/main.c:86
+#: ../src/main.c:87
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Gauti netstat informaciją.  Taisyklingi parametrai: route, active, multicast."
 
-#: ../src/main.c:87
+#: ../src/main.c:88
 msgid "COMMAND"
 msgstr "KOMANDA"
 
-#: ../src/main.c:90
+#: ../src/main.c:91
 msgid "Trace a route to a network address"
 msgstr "Sekti kelią iki adreso"
 
-#: ../src/main.c:94
+#: ../src/main.c:95
 msgid "Port scan a network address"
 msgstr "Adreso prievadų tikrinimas"
 
-#: ../src/main.c:98
+#: ../src/main.c:99
 msgid "Look up a network address"
 msgstr "Informacija apie adresą"
 
-#: ../src/main.c:102
+#: ../src/main.c:103
 msgid "Finger command to run"
 msgstr "Finger komanda, kurią paleisti"
 
-#: ../src/main.c:103
+#: ../src/main.c:104
 msgid "USER"
 msgstr "VARTOTOJAS"
 
-#: ../src/main.c:106
+#: ../src/main.c:107
 msgid "Perform a whois lookup for a network domain"
 msgstr "Atlikti whois užklausą domenui"
 
-#: ../src/main.c:107
+#: ../src/main.c:108
 msgid "DOMAIN"
 msgstr "DOMENAS"
 
-#: ../src/main.c:121
+#: ../src/main.c:122
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
-msgstr "Nėra %s, patikrinkite ar teisingai įdiegtas gnome-netinfo"
+msgstr ""
+"Byla %s neegzistuoja, patikrinkite ar korektiškai įdiegtas gnome-nettool"
 
-#: ../src/main.c:316
+#: ../src/main.c:333
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -505,7 +506,7 @@ msgstr ""
 "Įveskite kompiuterio adresą, kuriam norite siųsti ping užklausą.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:398
+#: ../src/main.c:415
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -513,27 +514,27 @@ msgstr ""
 "Įveskite tinklo adresą, iki kurio seksite kelią.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:483 ../src/netstat.c:442
+#: ../src/main.c:500 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protokolas"
 
-#: ../src/main.c:490
+#: ../src/main.c:507
 msgid "IP Address"
 msgstr "IP adresas"
 
-#: ../src/main.c:497
+#: ../src/main.c:514
 msgid "Netmask / Prefix"
 msgstr "Potinklio kaukė / Ilgis"
 
-#: ../src/main.c:504
+#: ../src/main.c:521
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: ../src/main.c:511
+#: ../src/main.c:528
 msgid "Scope"
 msgstr "Scope"
 
-#: ../src/main.c:651
+#: ../src/main.c:669
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -541,7 +542,7 @@ msgstr ""
 "Įveskite tinklo adresą, kurio atvirus portus norite rasti.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:779
+#: ../src/main.c:797
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -549,11 +550,11 @@ msgstr ""
 "Įveskite kompiuterio adresą, kurio informaciją norite gauti.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:868
+#: ../src/main.c:886
 msgid "Enter the user to finger."
 msgstr "Informacija apie vartotoją."
 
-#: ../src/main.c:895
+#: ../src/main.c:913
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -561,7 +562,7 @@ msgstr ""
 "Įveskite kompiuterio adresą, kuriame ieškote vartotojo duomenų.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:982
+#: ../src/main.c:1000
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -569,108 +570,108 @@ msgstr ""
 "Įveskite kompiuterio adresą, kurio whois informacija norite gauti.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/netstat.c:121
+#: ../src/netstat.c:122
 msgid "Getting routing table"
 msgstr "Gaunama maršrutų lentelė"
 
-#: ../src/netstat.c:136
+#: ../src/netstat.c:137
 msgid "Getting active Internet connections"
 msgstr "Ieškomi aktyvūs prisijungimai prie interneto"
 
-#: ../src/netstat.c:145
+#: ../src/netstat.c:146
 msgid "Getting group memberships"
 msgstr "Gaunama informacija apie grupės narius"
 
-#: ../src/netstat.c:449
+#: ../src/netstat.c:450
 msgid "IP Source"
 msgstr "IP šaltinis"
 
-#: ../src/netstat.c:457
+#: ../src/netstat.c:458
 msgid "Port/Service"
 msgstr "Prievadas/paslauga"
 
-#: ../src/netstat.c:465 ../src/scan.c:296
+#: ../src/netstat.c:466 ../src/scan.c:298
 msgid "State"
 msgstr "Būsena"
 
-#: ../src/netstat.c:607
+#: ../src/netstat.c:608
 msgid "Destination/Prefix"
 msgstr "Kelionės tikslas/Priešdėlis"
 
-#: ../src/netstat.c:609
+#: ../src/netstat.c:610
 msgid "Destination"
 msgstr "Kelionės tikslas"
 
-#: ../src/netstat.c:616
+#: ../src/netstat.c:617
 msgid "Gateway"
 msgstr "Šliuzas"
 
-#: ../src/netstat.c:624
+#: ../src/netstat.c:625
 msgid "Netmask"
 msgstr "Potinklio kaukė"
 
-#: ../src/netstat.c:632 ../src/netstat.c:738
+#: ../src/netstat.c:633 ../src/netstat.c:739
 msgid "Interface"
 msgstr "Įrenginys"
 
-#: ../src/netstat.c:745
+#: ../src/netstat.c:746
 msgid "Member"
 msgstr "Priklauso"
 
-#: ../src/netstat.c:753
+#: ../src/netstat.c:754
 msgid "Group"
 msgstr "Grupė"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:795
+#: ../src/netstat.c:796
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokolas\tIP šaltinis\tPrievadas/Paslauga\tBūsena\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:801
+#: ../src/netstat.c:802
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Kelionės tikslas\tŠliuzas\tPotinklio kaukė\tĮrenginys\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:806
+#: ../src/netstat.c:807
 msgid "Interface\tMember\tGroup\n"
 msgstr "Įrenginys\tPriklauso\tGrupė\n"
 
-#: ../src/nettool.c:195
+#: ../src/nettool.c:198
 msgid "A network address was not specified"
 msgstr "Nenurodytas tinklo adresas"
 
-#: ../src/nettool.c:196 ../src/nettool.c:205
+#: ../src/nettool.c:199 ../src/nettool.c:208
 msgid "Please enter a valid network address and try again."
 msgstr "Nurodykite teisingą adresą ir pabandykite iš naujo."
 
-#: ../src/nettool.c:203
+#: ../src/nettool.c:206
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "%s nerastas"
 
-#: ../src/nettool.c:232
+#: ../src/nettool.c:235
 msgid "A domain address was not specified"
 msgstr "Nenurodytas domeno adresas"
 
-#: ../src/nettool.c:233
+#: ../src/nettool.c:236
 msgid "Please enter a valid domain address and try again."
 msgstr "Įveskite galiojantį tinklo adresą ir pabandykite iš naujo."
 
-#: ../src/nettool.c:391
+#: ../src/nettool.c:394
 msgid "Information not available"
 msgstr "Nėra informacijos"
 
-#: ../src/nettool.c:509
+#: ../src/nettool.c:512
 msgid "Stop"
 msgstr "Nutraukti"
 
-#: ../src/nettool.c:515
+#: ../src/nettool.c:518
 msgid "Run"
 msgstr "Leisti"
 
@@ -738,27 +739,27 @@ msgstr "Gauta paketų:\t%s\n"
 msgid "Packet loss:\t%s\n"
 msgstr "Paketų praradimas:\t%s\n"
 
-#: ../src/scan.c:84
+#: ../src/scan.c:86
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Tikrinami atviri %s portai"
 
-#: ../src/scan.c:159
+#: ../src/scan.c:161
 msgid "unknown"
 msgstr "nežinoma"
 
-#: ../src/scan.c:288
+#: ../src/scan.c:290
 msgid "Port"
 msgstr "Prievadas"
 
-#: ../src/scan.c:304
+#: ../src/scan.c:306
 msgid "Service"
 msgstr "Paslauga"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:326
+#: ../src/scan.c:328
 msgid "Port\tState\tService\n"
 msgstr "Prievadas\tBūsena\tPaslauga\n"
 
@@ -795,7 +796,7 @@ msgstr "Laikas 2"
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tKompiuterio vardas\tIP\tPirmas laikas\tAntras laikas\n"
 
-#: ../src/utils.c:228
+#: ../src/utils.c:227
 #, c-format
 msgid "%s: Command not found"
 msgstr "%s: nėra tokios komandos"
@@ -808,17 +809,17 @@ msgstr "Tinklų informacijos įrankiai"
 msgid "Network Tools"
 msgstr "Tinklų įrankiai"
 
-#: ../src/finger.c:59
+#: ../src/finger.c:62
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "Gaunama informacija apie %s iš „%s“"
 
-#: ../src/finger.c:63
+#: ../src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "Gaunama informacija apie visus vartotojus esančius „%s“"
 
-#: ../src/whois.c:57
+#: ../src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Gaunama informacija apie %s"
