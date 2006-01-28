@@ -19,7 +19,6 @@
   <property name="type_hint">GDK_WINDOW_TYPE_HINT_NORMAL</property>
   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
   <property name="focus_on_map">True</property>
-  <signal name="delete_event" handler="gn_quit_app" last_modification_time="Sun, 26 Oct 2003 10:04:54 GMT"/>
 
   <child>
     <widget class="GtkVBox" id="vbox_main">
@@ -45,7 +44,6 @@
 		      <property name="visible">True</property>
 		      <property name="label">gtk-quit</property>
 		      <property name="use_stock">True</property>
-		      <signal name="activate" handler="gn_quit_app" last_modification_time="Sun, 26 Oct 2003 10:05:12 GMT"/>
 		    </widget>
 		  </child>
 		</widget>

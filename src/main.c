@@ -52,7 +52,7 @@ int
 main (int argc, char *argv[])
 {
 	GtkWidget *window;
-	GtkWidget *menu_about, *menu_copy, *menu_clear_history;
+	GtkWidget *menu_quit, *menu_about, *menu_copy, *menu_clear_history;
 	GladeXML *xml;
 	GtkWidget *notebook;
 	const gchar *dialog = DATADIR "gnome-nettool.glade";
@@ -210,6 +210,11 @@ main (int argc, char *argv[])
 	g_object_set_data (G_OBJECT (notebook), "finger", finger);
 	g_object_set_data (G_OBJECT (notebook), "whois", whois);
 	
+	menu_quit = glade_xml_get_widget (xml, "m_quit");
+	
+	g_signal_connect (G_OBJECT (menu_quit), "activate",
+			  G_CALLBACK (gn_quit_app),
+			  NULL);
 	
 	menu_about = glade_xml_get_widget (xml, "m_about");
 
