@@ -1,14 +1,14 @@
-# gnome-nettool (gnome-network) ja.po.
-# Copyright (C) 1999-2005 Free Software Foundation, Inc.
+# gnome-nettool (a.k.a gnome-network) ja.po.
+# Copyright (C) 1999-2006 Free Software Foundation, Inc.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 1999.
-# Takeshi AIHANA <aihana@gnome.gr.jp>, 2003-2005.
+# Takeshi AIHANA <aihana@gnome.gr.jp>, 2003-2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-03 15:53+0900\n"
-"PO-Revision-Date: 2005-07-03 15:52+0900\n"
+"POT-Creation-Date: 2006-02-23 22:48+0900\n"
+"PO-Revision-Date: 2006-02-23 22:47+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -20,13 +20,13 @@ msgid "translator_credits"
 msgstr ""
 "相花 毅 <aihana@gnome.gr.jp>\n"
 "Yuusuke Tahara <tahara@gnome.gr.jp>\n"
-"日本GNOMEユーザー会 <http://www.gnome.gr.jp>"
+"日本GNOMEユーザー会 http://www.gnome.gr.jp"
 
 #: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr ""
-"いろいろなネットワーク・ユーティリティに対するグラフィカルなインタフェースを"
-"提供します。"
+"いろいろなネットワーク・ユーティリティに対応したグラフィカルなインタフェース"
+"を提供します。"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -34,7 +34,7 @@ msgstr "0.0"
 
 #: ../src/gnome-nettool.glade.h:2
 msgid "<b>IP Information</b>"
-msgstr "<b>IP 情報</b>"
+msgstr "<b>IP (インターネット・プロトコル) の情報</b>"
 
 #: ../src/gnome-nettool.glade.h:3
 msgid "<b>Interface Information</b>"
@@ -70,7 +70,7 @@ msgstr "履歴のクリア(_H)"
 
 #: ../src/gnome-nettool.glade.h:11
 msgid "Collisions:"
-msgstr "衝突:"
+msgstr "衝突した数:"
 
 #: ../src/gnome-nettool.glade.h:12
 msgid "Devices"
@@ -80,7 +80,7 @@ msgstr "デバイス"
 msgid "Display:"
 msgstr "表示する情報:"
 
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:852
+#: ../src/gnome-nettool.glade.h:14 ../src/main.c:857
 msgid "Finger"
 msgstr "Finger"
 
@@ -98,9 +98,9 @@ msgstr "IP-アドレス:"
 
 #: ../src/gnome-nettool.glade.h:18
 msgid "Link speed:"
-msgstr "リンク・スピード:"
+msgstr "リンクのスピード:"
 
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:766
+#: ../src/gnome-nettool.glade.h:19 ../src/main.c:771
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -128,7 +128,7 @@ msgstr "マルチキャスト:"
 msgid "Netmask:"
 msgstr "ネットマスク:"
 
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:464
+#: ../src/gnome-nettool.glade.h:26 ../src/main.c:469
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -156,7 +156,7 @@ msgstr "受信したパケット数:"
 msgid "Packets transmitted:"
 msgstr "送信したパケット数:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:300
+#: ../src/gnome-nettool.glade.h:33 ../src/main.c:305
 msgid "Ping"
 msgstr "Ping"
 
@@ -178,21 +178,21 @@ msgstr "受信エラー数:"
 
 #: ../src/gnome-nettool.glade.h:38
 msgid "Routing Table Information"
-msgstr "経路テーブル情報"
+msgstr "経路テーブルの情報"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:647
+#: ../src/gnome-nettool.glade.h:39 ../src/main.c:652
 msgid "Scan"
 msgstr "スキャン"
 
 #: ../src/gnome-nettool.glade.h:40
 msgid "Send:"
-msgstr "送信する数:"
+msgstr "送信要求の数:"
 
 #: ../src/gnome-nettool.glade.h:41
 msgid "State:"
 msgstr "状態:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:388
+#: ../src/gnome-nettool.glade.h:42 ../src/main.c:393
 msgid "Trace"
 msgstr "トレース"
 
@@ -214,13 +214,13 @@ msgstr "転送パケット数:"
 
 #: ../src/gnome-nettool.glade.h:47
 msgid "Unlimited requests"
-msgstr "送信要求の数を制限しない"
+msgstr "制限しない"
 
 #: ../src/gnome-nettool.glade.h:48
 msgid "User"
 msgstr "ユーザ"
 
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:968
+#: ../src/gnome-nettool.glade.h:49 ../src/main.c:973
 msgid "Whois"
 msgstr "WhoIs"
 
@@ -266,7 +266,7 @@ msgstr "ミリ秒"
 
 #: ../src/gnome-nettool.glade.h:60
 msgid "requests"
-msgstr "個のみ"
+msgstr "個だけ"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:57
@@ -398,7 +398,7 @@ msgstr "受信エラー数:\t%s\n"
 #: ../src/info.c:708
 #, c-format
 msgid "Collisions:\t%s\n"
-msgstr "衝突:\t%s\n"
+msgstr "衝突した数:\t%s\n"
 
 #: ../src/info.h:27
 msgid "not available"
@@ -502,43 +502,43 @@ msgstr ""
 "ファイル %s が存在しません。`gnome-nettool` が正しくインストールされているか"
 "確認して下さい。"
 
-#: ../src/main.c:333
+#: ../src/main.c:338
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Ping を送信する先のネットワーク・アドレスを入力して下さい。\n"
+"Ping を送信する先のネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:415
+#: ../src/main.c:420
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"経路情報を取得する先のネットワーク・アドレスを入力して下さい。\n"
+"経路情報を取得する先のネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:500 ../src/netstat.c:443
+#: ../src/main.c:505 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "プロトコル"
 
-#: ../src/main.c:507
+#: ../src/main.c:512
 msgid "IP Address"
 msgstr "IP-アドレス"
 
-#: ../src/main.c:514
+#: ../src/main.c:519
 msgid "Netmask / Prefix"
 msgstr "ネットマスク/プレフィックス"
 
-#: ../src/main.c:521
+#: ../src/main.c:526
 msgid "Broadcast"
 msgstr "ブロードキャスト"
 
-#: ../src/main.c:528
+#: ../src/main.c:533
 msgid "Scope"
 msgstr "スコープ"
 
-#: ../src/main.c:669
+#: ../src/main.c:674
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -546,7 +546,7 @@ msgstr ""
 "開いているポートをスキャンする先のネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:797
+#: ../src/main.c:802
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -554,11 +554,11 @@ msgstr ""
 "問い合わせするネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:886
+#: ../src/main.c:891
 msgid "Enter the user to finger."
 msgstr "Finger を送信するユーザ名を入力して下さい"
 
-#: ../src/main.c:913
+#: ../src/main.c:918
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -566,7 +566,7 @@ msgstr ""
 "Finger を送信するユーザのネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
 
-#: ../src/main.c:1000
+#: ../src/main.c:1005
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -652,7 +652,7 @@ msgstr "ネットワーク・アドレスが指定されていません"
 
 #: ../src/nettool.c:199 ../src/nettool.c:208
 msgid "Please enter a valid network address and try again."
-msgstr "正しいネットワーク・アドレスを入力して再試行して下さい。"
+msgstr "正しいネットワーク・アドレスを入力してもう一度実行して下さい。"
 
 #: ../src/nettool.c:206
 #, c-format
@@ -665,7 +665,7 @@ msgstr "ドメイン・アドレスが指定されていません"
 
 #: ../src/nettool.c:236
 msgid "Please enter a valid domain address and try again."
-msgstr "正しいドメイン・アドレスを入力して再試行して下さい。"
+msgstr "正しいドメイン・アドレスを入力してもう一度実行して下さい。"
 
 #: ../src/nettool.c:394
 msgid "Information not available"
@@ -690,7 +690,7 @@ msgstr "バイト数"
 
 #: ../src/ping.c:392
 msgid "Source"
-msgstr "IP-ソース"
+msgstr "開始点の IP-アドレス"
 
 #: ../src/ping.c:400
 msgid "Seq"
