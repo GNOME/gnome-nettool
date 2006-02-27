@@ -131,7 +131,7 @@ info_get_interface_from_dev_name (const gchar *dev_name, gchar **iface, GdkPixbu
 	
 	for (i = 0; info_iface_desc[i].name; i++)
 		if (strstr (dev_name, info_iface_desc[i].prefix) == dev_name) {
-			(*iface) = g_strdup_printf ("%s (%s)", info_iface_desc[i].name, dev_name);
+			(*iface) = g_strdup_printf ("%s (%s)", _(info_iface_desc[i].name), dev_name);
 			if (info_iface_desc[i].pixbuf == NULL) {
 				path = g_build_filename (PIXMAPS_DIR, info_iface_desc[i].icon, NULL);
 				info_iface_desc[i].pixbuf = gdk_pixbuf_new_from_file (path, NULL);
