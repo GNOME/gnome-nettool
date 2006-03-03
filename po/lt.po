@@ -1,17 +1,17 @@
 # Lithuanian translation of gnome-nettool.
-# Copyright (C) 2004-2005 Free Software Foundation, Inc.
+# Copyright (C) 2004-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
 # Marius Karnauskas <marius@esga.lt>, 2004.
-# Žygimantas Beručka <uid0@akl.lt>, 2005.
+# Žygimantas Beručka <zygis@gnome.org>, 2005-2006.
 # 
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-30 20:50+0300\n"
-"PO-Revision-Date: 2005-08-30 20:50+0300\n"
-"Last-Translator: Žygimantas Beručka <uid0@akl.lt>\n"
+"POT-Creation-Date: 2006-03-03 12:14+0200\n"
+"PO-Revision-Date: 2006-03-03 12:16+0200\n"
+"Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,9 @@ msgstr ""
 
 #: ../src/callbacks.c:312
 msgid "translator_credits"
-msgstr "Marius Karnauskas <marius@esga.lt>"
+msgstr ""
+"Marius Karnauskas <marius@esga.lt>,\n"
+"Žygimantas Beručka <zygis@gnome.org>"
 
 #: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
@@ -77,7 +79,7 @@ msgstr "Įrenginiai"
 msgid "Display:"
 msgstr "Rodyti:"
 
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:852
+#: ../src/gnome-nettool.glade.h:14 ../src/main.c:857
 msgid "Finger"
 msgstr "Finger"
 
@@ -97,7 +99,7 @@ msgstr "IP adresas:"
 msgid "Link speed:"
 msgstr "Greitis:"
 
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:766
+#: ../src/gnome-nettool.glade.h:19 ../src/main.c:771
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -125,7 +127,7 @@ msgstr "Multicast:"
 msgid "Netmask:"
 msgstr "Potinklio kaukė:"
 
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:464
+#: ../src/gnome-nettool.glade.h:26 ../src/main.c:469
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -153,7 +155,7 @@ msgstr "Gauta paketų:"
 msgid "Packets transmitted:"
 msgstr "Perduota paketų:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:300
+#: ../src/gnome-nettool.glade.h:33 ../src/main.c:305
 msgid "Ping"
 msgstr "Ping"
 
@@ -177,7 +179,7 @@ msgstr "Priėmimo klaidos:"
 msgid "Routing Table Information"
 msgstr "Maršrutų lentelės informacija"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:647
+#: ../src/gnome-nettool.glade.h:39 ../src/main.c:652
 msgid "Scan"
 msgstr "Rasti"
 
@@ -189,7 +191,7 @@ msgstr "Siųsti užklausą:"
 msgid "State:"
 msgstr "Būsena:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:388
+#: ../src/gnome-nettool.glade.h:42 ../src/main.c:393
 msgid "Trace"
 msgstr "Sekti"
 
@@ -217,7 +219,7 @@ msgstr "Neribotai"
 msgid "User"
 msgstr "Vartotojas"
 
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:968
+#: ../src/gnome-nettool.glade.h:49 ../src/main.c:973
 msgid "Whois"
 msgstr "Whois"
 
@@ -496,9 +498,9 @@ msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Byla %s neegzistuoja, patikrinkite ar korektiškai įdiegtas gnome-nettool"
+"Rinkmena %s neegzistuoja, patikrinkite ar korektiškai įdiegtas gnome-nettool"
 
-#: ../src/main.c:333
+#: ../src/main.c:338
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -506,35 +508,35 @@ msgstr ""
 "Įveskite kompiuterio adresą, kuriam norite siųsti ping užklausą.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:415
+#: ../src/main.c:420
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Įveskite tinklo adresą, iki kurio seksite kelią.\n"
-"Pvz.: www.domenas.lt ar 192.168.0.1"
+"Įveskite tinklo adresą, iki kurio seksite maršrutą.\n"
+"Pvz.: www.domenas.lt ar 192.168.2.1"
 
-#: ../src/main.c:500 ../src/netstat.c:443
+#: ../src/main.c:505 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protokolas"
 
-#: ../src/main.c:507
+#: ../src/main.c:512
 msgid "IP Address"
 msgstr "IP adresas"
 
-#: ../src/main.c:514
+#: ../src/main.c:519
 msgid "Netmask / Prefix"
 msgstr "Potinklio kaukė / Ilgis"
 
-#: ../src/main.c:521
+#: ../src/main.c:526
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: ../src/main.c:528
+#: ../src/main.c:533
 msgid "Scope"
 msgstr "Scope"
 
-#: ../src/main.c:669
+#: ../src/main.c:674
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -542,7 +544,7 @@ msgstr ""
 "Įveskite tinklo adresą, kurio atvirus portus norite rasti.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:797
+#: ../src/main.c:802
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -550,11 +552,11 @@ msgstr ""
 "Įveskite kompiuterio adresą, kurio informaciją norite gauti.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:886
+#: ../src/main.c:891
 msgid "Enter the user to finger."
 msgstr "Informacija apie vartotoją."
 
-#: ../src/main.c:913
+#: ../src/main.c:918
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -562,7 +564,7 @@ msgstr ""
 "Įveskite kompiuterio adresą, kuriame ieškote vartotojo duomenų.\n"
 "Pvz.: www.domenas.lt ar 192.168.0.1"
 
-#: ../src/main.c:1000
+#: ../src/main.c:1005
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
