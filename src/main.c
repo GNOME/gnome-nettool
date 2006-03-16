@@ -74,6 +74,8 @@ main (int argc, char *argv[])
 	static gchar *lookup_input = NULL;
 	static gchar *finger_input = NULL;
 	static gchar *whois_input = NULL;
+	GError *error = NULL;
+
 	GOptionEntry options[] = {
 		{ "info", 'i', 0, G_OPTION_ARG_STRING, &info_input,
  		  N_("Load information for a network device"),
@@ -116,7 +118,10 @@ main (int argc, char *argv[])
 	textdomain (GETTEXT_PACKAGE);
 #endif
 
-	gtk_init_with_args (&argc, &argv,NULL,options,NULL,NULL);
+	if (!gtk_init_with_args (&argc, &argv, NULL, options, NULL, &error)) {
+		g_print ("%s\n\n", error->message);
+		return -1;
+	}
 
 	if (!g_file_test (dialog, G_FILE_TEST_EXISTS)) {
 		g_critical (_("The file %s doesn't exist, "
