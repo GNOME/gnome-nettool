@@ -5,7 +5,7 @@ srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
 PKG_NAME="gnome-netinfo"
-REQUIRED_AUTOMAKE_VERSION=1.7
+REQUIRED_AUTOMAKE_VERSION=1.9
 
 if [ ! -f "$srcdir/src/nettool.c" ]; then
 	echo "$srcdir doesn't look like source directory for $PKG_NAME" >&2
