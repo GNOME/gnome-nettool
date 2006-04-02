@@ -309,7 +309,7 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 		"Rodrigo Moya <rodrigo@gnome-db.org>", NULL
 	};
 	const gchar *documentors[] = { NULL };
-	const gchar *translator_credits = _("translator_credits");
+	const gchar *translator_credits = _("translator-credits");
 	gchar	     copyright[1024];
 	GtkWindow   *parent;
 
