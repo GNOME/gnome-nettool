@@ -588,12 +588,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			gtk_label_set_text (GTK_LABEL (info->mtu), NOT_AVAILABLE);
 			gtk_label_set_text (GTK_LABEL (info->state), NOT_AVAILABLE);
 			gtk_label_set_text (GTK_LABEL (info->multicast), NOT_AVAILABLE);
-			
-			if (data.has_data) {
-				gtk_label_set_text (GTK_LABEL (info->link_speed), data.media);
-			} else {
-				gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
-			}
+			gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
 			
 			break;
 		}
