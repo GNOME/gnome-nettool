@@ -921,7 +921,7 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	tips = gtk_tooltips_new ();
 	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
 			      _("Enter the network address to finger that user.\n"
-				"For example: www.domain.com or 192.168.2.1"),
+			        "For example: auth.domain.com or 192.168.2.1"),
 			      NULL);
 
 	completion = gtk_entry_completion_new ();
