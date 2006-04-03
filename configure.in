@@ -13,7 +13,7 @@ AC_PROG_INTLTOOL([0.11])
 AC_ISC_POSIX
 AC_PROG_CC
 AC_STDC_HEADERS
-AC_CHECK_HEADERS(sys/sockio.h sys/socket.h)
+AC_CHECK_HEADERS(sys/sockio.h sys/socket.h ifaddrs.h)
 dnl AC_ARG_PROGRAM
 AM_PROG_LIBTOOL
 
