@@ -1,5 +1,10 @@
 2006-04-03  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
+	* src/info.c (info_get_nic_information): Fixed #333540
+	  (an unitialized variable was used, showing a weird text)
+
+2006-04-03  German Poo-Caaman~o  <gpoo@ubiobio.cl>
+
 	Fixes #328041
 
 	* src/gnome-nettool.desktop.in: Addes GNOME and GTK to
