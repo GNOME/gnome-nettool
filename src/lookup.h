@@ -25,8 +25,8 @@
 #include "nettool.h"
 
 #define LOOKUP_OPTIONS "+nocomments +search +nocmd +nostats +noadditional"
-#define LOOKUP_FORMAT "%s %d %s %s %s"
-#define LOOKUP_FORMAT_MX "%s %d %s MX %s %s"
+#define LOOKUP_FORMAT "%s %d %s %s %[^\n]"
+#define LOOKUP_FORMAT_MX "%s %d %s MX %s %[^\n]"
 #define LOOKUP_NUM_ARGS 5
 
 typedef struct _lookup_data lookup_data;
