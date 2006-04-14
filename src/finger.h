@@ -28,5 +28,5 @@
 
 void finger_do (Netinfo *netinfo);
 void finger_stop (Netinfo *netinfo);
-void finger_foreach (Netinfo * netinfo, gchar * line, gint len, gpointer user_data);
+void finger_foreach (Netinfo * netinfo, gchar * line, gssize len, gpointer user_data);
 void finger_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);

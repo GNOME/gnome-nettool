@@ -75,7 +75,7 @@ struct _netstat_multicast_data {
 
 void netstat_do (Netinfo *netinfo);
 void netstat_stop (Netinfo *netinfo);
-void netstat_foreach (Netinfo * netinfo, gchar * line, gint len, gpointer user_data);
+void netstat_foreach (Netinfo * netinfo, gchar * line, gsize len, gpointer user_data);
 void netstat_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len, gpointer user_data);
 void on_protocol_button_toggled (GtkToggleButton *togglebutton, gpointer user_data);
 void netstat_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);

@@ -196,10 +196,10 @@ netstat_do (Netinfo * netinfo)
 
 /* Process each line from netstat command */
 void 
-netstat_foreach (Netinfo * netinfo, gchar * line, gint len, gpointer user_data)
+netstat_foreach (Netinfo * netinfo, gchar * line, gsize len, gpointer user_data)
 {
 	gchar *text_utf8;
-	gssize bytes_written;
+	gsize bytes_written;
 	GtkTextBuffer *buffer = NULL;
 	GtkTextIter iter;
 	

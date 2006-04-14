@@ -150,8 +150,9 @@ info_load_iface (Netinfo *info)
 	GtkCellRenderer *renderer;
 	GList *items = NULL;
 	GList *p;
-	GdkPixbuf *pixbuf;
-	gchar *iface, *text;
+	GdkPixbuf *pixbuf = NULL;
+	gchar *iface = NULL;
+	gchar *text;
 
 	items = info_get_interfaces (info);
 	p = items;
@@ -607,7 +608,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			gtk_label_set_text (GTK_LABEL (info->state), NOT_AVAILABLE);
 			gtk_label_set_text (GTK_LABEL (info->multicast), NOT_AVAILABLE);
 			gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
-	
+			
 			break;
 		}
 	}

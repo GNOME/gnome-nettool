@@ -115,11 +115,11 @@ whois_do (Netinfo * netinfo)
 
 /* Process each line from whois command */
 void
-whois_foreach (Netinfo * netinfo, gchar * line, gint len,
+whois_foreach (Netinfo * netinfo, gchar * line, gssize len,
 		gpointer user_data)
 {
 	gchar *text_utf8;
-	gssize bytes_written;
+	gsize bytes_written;
 	GtkTextBuffer *buffer = NULL;
 	GtkTextIter iter;
 	

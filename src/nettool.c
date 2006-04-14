@@ -315,7 +315,7 @@ netinfo_io_text_buffer_dialog (GIOChannel * channel,
 			       GIOCondition condition, gpointer data)
 {
 	gchar *text = NULL;
-	gint len;
+	gsize len;
 	Netinfo *netinfo = (Netinfo *) data;
 
 	g_return_val_if_fail (channel != NULL, FALSE);

@@ -59,7 +59,7 @@ enum {
 
 void lookup_do (Netinfo *netinfo);
 void lookup_stop (Netinfo *netinfo);
-void lookup_foreach (Netinfo * netinfo, gchar * line, gint len, gpointer user_data);
+void lookup_foreach (Netinfo * netinfo, gchar * line, gssize len, gpointer user_data);
 void lookup_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 			      gpointer user_data);
 void lookup_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);
