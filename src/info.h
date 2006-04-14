@@ -54,13 +54,6 @@ typedef struct {
 	   GdkPixbuf         *pixbuf;
 } InfoInterfaceDescription;
 
-typedef struct {
-	   gchar *ip_addr;
-	   gchar *ip_prefix;
-	   gchar *ip_bcast;
-	   gchar *ip_scope;
-} InfoIpAddr;
-
 void   info_do (const gchar * nic, Netinfo * info);
 void   info_set_nic (Netinfo * info, const gchar *nic);
 gchar *info_get_nic (Netinfo * info);
