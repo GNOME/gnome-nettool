@@ -141,11 +141,11 @@ lookup_do (Netinfo * netinfo)
 
 /* Process each line from lookup command */
 void
-lookup_foreach (Netinfo * netinfo, gchar * line, gint len,
+lookup_foreach (Netinfo * netinfo, gchar * line, gssize len,
 		gpointer user_data)
 {
 	gchar *text_utf8;
-	gssize bytes_written;
+	gsize bytes_written;
 	GtkTextBuffer *buffer = NULL;
 	GtkTextIter iter;
 	

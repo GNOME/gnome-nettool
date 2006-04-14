@@ -172,11 +172,11 @@ ping_do (Netinfo * netinfo)
 
 /* Process each line from ping command */
 void
-ping_foreach (Netinfo * netinfo, gchar * line, gint len,
+ping_foreach (Netinfo * netinfo, gchar * line, gssize len,
 	      gpointer user_data)
 {
 	gchar *text_utf8;
-	gssize bytes_written;
+	gsize bytes_written;
 	GtkTextBuffer *buffer = NULL;
 	GtkTextIter iter;
 

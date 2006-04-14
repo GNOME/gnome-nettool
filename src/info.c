@@ -150,8 +150,9 @@ info_load_iface (Netinfo *info)
 	GtkCellRenderer *renderer;
 	GList *items = NULL;
 	GList *p;
-	GdkPixbuf *pixbuf;
-	gchar *iface, *text;
+	GdkPixbuf *pixbuf = NULL;
+	gchar *iface = NULL;
+	gchar *text;
 
 	items = info_get_interfaces (info);
 	p = items;

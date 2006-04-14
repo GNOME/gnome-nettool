@@ -64,6 +64,6 @@ enum {
 
 void traceroute_do (Netinfo *netinfo);
 void traceroute_stop (Netinfo *netinfo);
-void traceroute_foreach (Netinfo * netinfo, gchar * line, gint len, gpointer user_data);
+void traceroute_foreach (Netinfo * netinfo, gchar * line, gssize len, gpointer user_data);
 void traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len, gpointer user_data);
 void traceroute_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);

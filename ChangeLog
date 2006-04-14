@@ -1,5 +1,17 @@
 2006-04-14  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
+	* src/nettool.c (netinfo_io_text_buffer_dialog):
+	* src/ping.[ch] (ping_foreach): 
+	* src/netstat.[ch] (netstat_foreach): 
+	* src/lookup.[ch] (lookup_foreach): 
+	* src/finger.[ch] (finger_foreach): 
+	* src/traceroute.[ch] (traceroute_foreach): Fixed signedness compilation 
+	  warning
+	* src/info.c (info_load_iface): Fixed compilation warning due a
+	  variable unitialized
+
+2006-04-14  German Poo-Caaman~o  <gpoo@ubiobio.cl>
+
 	* COPYING, INSTALL: Added as files instead of trust in automake's
 	  options.
 
