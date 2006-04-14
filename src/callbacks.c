@@ -301,7 +301,6 @@ gn_quit_app (GtkWidget * widget, gpointer data)
 void
 on_about_activate (GtkWidget *menu_item, gpointer data)
 {
-	GdkPixbuf   *pixbuf = NULL;
 	const gchar *authors[] = { 
 		"Germán Poo Caamaño <gpoo@ubiobio.cl>", 
 		"William Jon McCann <mccann@jhu.edu>",
@@ -317,19 +316,9 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 
 	g_sprintf (copyright, "Copyright \xc2\xa9 2003-2004 %s", "Germán Poo Caamaño");
 	
-	{
-		gchar *filename = NULL;
-										
-		filename = g_build_filename (PIXMAPS_DIR, "gnome-nettool.png", NULL);
-		if (filename != NULL) {
-			pixbuf = gdk_pixbuf_new_from_file (filename, NULL);
-			g_free (filename);
-		}
-	}
-
 	gtk_show_about_dialog (parent,
 			       "name", "Network Tools",
-			       "logo", pixbuf,
+			       "logo-icon-name", "gnome-nettool",
 			       "authors", authors,
 			       "documenters", documentors,
 			       "version", VERSION,
@@ -337,9 +326,6 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 			       "comments", _("Graphical user interface for common network utilities"),
 			       "translator-credits", strcmp (translator_credits, "translator_credits") != 0 ? translator_credits : NULL,
 			       NULL);
-
-	if (pixbuf != NULL)
-		g_object_unref (pixbuf);
 }
 
 static Netinfo *

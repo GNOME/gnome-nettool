@@ -4,13 +4,23 @@ pixmaps_DATA = 			\
 	16_loopback.xpm	 	\
 	16_plip.xpm	 	\
 	16_ppp.xpm	 	\
-	gnome-nettool.png	\
 	irda-16.png	 	\
 	network.png	 	\
 	wavelan-16.png
 
-icondir = $(datadir)/pixmaps
+icondir = $(datadir)/icons/hicolor/48x48/apps
 icon_DATA = gnome-nettool.png
+
+gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor
+
+install-data-hook:
+	@-if test -z "$(DESTDIR)"; then \
+		echo "Updating Gtk icon cache."; \
+		$(gtk_update_icon_cache); \
+	else \
+		echo "*** Icon cache not updated.  After install, run this:"; \
+		echo "***   $(gtk_update_icon_cache)"; \
+	fi
 
 EXTRA_DIST = $(pixmaps_DATA)	 \
 	     $(icon_DATA)
