@@ -25,7 +25,12 @@
 
 /* The ping usage and output is different between Unix flavours */
 /* FIXME: Add BSD support */
-#if defined(__linux__) || defined(__OSF__) || defined(__FreeBSD__)
+#if defined(__linux__)
+#   define PING_PROGRAM_FORMAT "%s ping -b -c %d -n %s"
+#   define PING_PROGRAM_FORMAT_6 "%s ping6 -c %d -n %s"
+#   define PING_FORMAT "%d bytes from %s icmp_seq=%d ttl=%d time=%s %s"
+#   define PING_PARAMS_6
+#elif defined(__OSF__) || defined(__FreeBSD__)
 #   define PING_PROGRAM_FORMAT "%s ping -c %d -n %s"
 #   define PING_PROGRAM_FORMAT_6 "%s ping6 -c %d -n %s"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d ttl=%d time=%s %s"
