@@ -336,6 +336,23 @@ info_ip6_masklen (struct in6_addr netmask)
 	return len;
 }
 
+typedef struct {
+	   gchar *ip_addr;
+	   gchar *ip_prefix;
+	   gchar *ip_bcast;
+	   gchar *ip_scope;
+} InfoIpAddr;
+
+static void
+info_ip_addr_free (InfoIpAddr *ip)
+{
+	g_free (ip->ip_addr);
+	g_free (ip->ip_prefix);
+	g_free (ip->ip_bcast);
+	g_free (ip->ip_scope);
+	g_free (ip);
+}
+
 static InfoIpAddr *
 info_ip6_construct_address (const struct ifaddrs *ifr6)
 {
@@ -433,7 +450,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 					    3, ip->ip_bcast,
 					    4, ip->ip_scope,
 					    -1);
-			g_free (ip);
+			info_ip_addr_free (ip);
 
 			break;
 		case AF_INET:
@@ -576,7 +593,8 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 					    3, ip->ip_bcast,
 					    4, "",
 					    -1);
-			g_free (ip);
+
+			info_ip_addr_free (ip);
 
 			break;
 		default:
