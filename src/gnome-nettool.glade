@@ -5,7 +5,7 @@
 
 <widget class="GtkWindow" id="main_window">
   <property name="visible">True</property>
-  <property name="title" translatable="yes">Network Tools - Devices</property>
+  <property name="title" translatable="yes" comments="Dear Translator: This is the Window Title">Devices - Network Tools</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_NONE</property>
   <property name="modal">False</property>
@@ -19,6 +19,7 @@
   <property name="type_hint">GDK_WINDOW_TYPE_HINT_NORMAL</property>
   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
   <property name="focus_on_map">True</property>
+  <property name="urgency_hint">False</property>
 
   <child>
     <widget class="GtkVBox" id="vbox_main">
@@ -29,6 +30,8 @@
       <child>
 	<widget class="GtkMenuBar" id="menubar1">
 	  <property name="visible">True</property>
+	  <property name="pack_direction">GTK_PACK_DIRECTION_LTR</property>
+	  <property name="child_pack_direction">GTK_PACK_DIRECTION_LTR</property>
 
 	  <child>
 	    <widget class="GtkMenuItem" id="tool1">
@@ -79,6 +82,7 @@
 		      <property name="visible">True</property>
 		      <property name="label" translatable="yes">Clear _History</property>
 		      <property name="use_underline">True</property>
+
 		      <child internal-child="image">
 			<widget class="GtkImage" id="image14">
 			  <property name="visible">True</property>

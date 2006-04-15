@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-11 06:34+0100\n"
+"POT-Creation-Date: 2006-04-15 12:42-0400\n"
 "PO-Revision-Date: 2006-03-11 19:43+0530\n"
 "Last-Translator: Runa Bhattacharjee <runa@bengalinux.org>\n"
 "Language-Team: Bangla <gnome-translation@bengalinux.org>\n"
@@ -18,11 +18,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 
-#: ../src/callbacks.c:312
-msgid "translator_credits"
+#: ../src/callbacks.c:311
+#, fuzzy
+msgid "translator-credits"
 msgstr "রুণা ভট্টাচার্য্য (runa@bengalinux.org)"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:326
 msgid "Graphical user interface for common network utilities"
 msgstr "সাধারণ নেটওয়ার্ক ইউটিলিটির জন্য গ্রাফিক্যাল ইউজার ইন্টারফেস"
 
@@ -77,199 +78,200 @@ msgstr "দ্বন্দ্ব (কলিশন):"
 msgid "Devices"
 msgstr "ডিভাইস"
 
-#: ../src/gnome-nettool.glade.h:13
+#. Dear Translator: This is the Window Title
+#: ../src/gnome-nettool.glade.h:14
+#, fuzzy
+msgid "Devices - Network Tools"
+msgstr "নেটওয়ার্ক সংক্রান্ত টুল"
+
+#: ../src/gnome-nettool.glade.h:15
 msgid "Display:"
 msgstr "প্রদর্শন:"
 
 # FIXME: Context check required
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:857
+#: ../src/gnome-nettool.glade.h:16 ../src/main.c:857
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.glade.h:17
 msgid "Hardware address:"
 msgstr "হার্ডওয়্যার ঠিকানা:"
 
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:18
 msgid "Host"
 msgstr "হোস্ট"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:19
 msgid "IP Address:"
 msgstr "IP অ্যাড্রেস:"
 
-#: ../src/gnome-nettool.glade.h:18
+#: ../src/gnome-nettool.glade.h:20
 msgid "Link speed:"
 msgstr "সংযোগের গতি:"
 
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:771
+#: ../src/gnome-nettool.glade.h:21 ../src/main.c:771
 msgid "Lookup"
 msgstr "লুকআপ"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:22
 msgid "MTU:"
 msgstr "MTU:"
 
 # msgstr "MTU:"
-#: ../src/gnome-nettool.glade.h:21
+#: ../src/gnome-nettool.glade.h:23
 msgid "Maximum:"
 msgstr "সর্বোচ্চ:"
 
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:24
 msgid "Minimum:"
 msgstr "সর্বনিম্ন:"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:25
 msgid "Multicast Information"
 msgstr "মাল্টিকাস্ট সংক্রান্ত তথ্য"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:26
 msgid "Multicast:"
 msgstr "মাল্টিকাস্ট:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:27
 msgid "Netmask:"
 msgstr "নেটমাস্ক:"
 
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:469
+#: ../src/gnome-nettool.glade.h:28 ../src/main.c:469
 msgid "Netstat"
 msgstr "Netstat"
 
-# msgstr "Netstat"
-#: ../src/gnome-nettool.glade.h:27
-msgid "Network Tools - Devices"
-msgstr "নেটওয়ার্কের সরঞ্জাম - ডিভাইস"
-
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:29
 msgid "Not Available"
 msgstr "উপস্থিত নেই"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:30
 msgid "Only"
 msgstr "শুধুমাত্র"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:31
 msgid "Packets loss:"
 msgstr "ক্ষতিগ্রস্ত প্যাকেট:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:32
 msgid "Packets received:"
 msgstr "প্রাপ্ত প্যাকেট:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:33
 msgid "Packets transmitted:"
 msgstr "প্রেরিত প্যাকেট"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:305
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:305
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:35
 msgid "Port Scan"
 msgstr "Port Scan"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:36
 msgid "Received bytes:"
 msgstr "প্রাপ্ত বাইট:"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:37
 msgid "Received packets:"
 msgstr "প্রাপ্ত প্যাকেট:"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:38
 msgid "Reception errors:"
 msgstr "আহরণের সময়কার সমস্যা:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:39
 msgid "Routing Table Information"
 msgstr "রুটিং (routing) টেবিল সংক্রান্ত তথ্য"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:652
+#: ../src/gnome-nettool.glade.h:40 ../src/main.c:652
 msgid "Scan"
 msgstr "স্ক্যান করা হবে"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:41
 msgid "Send:"
 msgstr "প্রেরণ করুন:"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "অবস্থা:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:393
+#: ../src/gnome-nettool.glade.h:43 ../src/main.c:393
 msgid "Trace"
 msgstr "Trace"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:44
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:45
 msgid "Transmission errors:"
 msgstr "প্রেরণের সময়কার সমস্যা:"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:46
 msgid "Transmitted bytes:"
 msgstr "প্রেরিত বাইট:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:47
 msgid "Transmitted packets:"
 msgstr "প্রেরিত প্যাকেট"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:48
 msgid "Unlimited requests"
 msgstr "সীমাহীন অনুরোধ"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:49
 msgid "User"
 msgstr "ব্যবহারকারী"
 
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:973
+#: ../src/gnome-nettool.glade.h:50 ../src/main.c:973
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:51
 msgid "_Configure"
 msgstr "কনফিগার করুন (_C)"
 
 # msgstr "কনফিগার করো (_ক)"
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:52
 msgid "_Domain address:"
 msgstr "ডোমেইনের ঠিকানা: (_D)"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:53
 msgid "_Edit"
 msgstr "সম্পাদনা (_E)"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Help"
 msgstr "সাহায্য (_H)"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:55
 msgid "_Information type:"
 msgstr "তথ্যের ধরন:(_I)"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:56
 msgid "_Network address:"
 msgstr "নেটওয়ার্কের ঠিকানা:(_N)"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Network device:"
 msgstr "নেটওয়ার্ক ডিভাইস:(_N)"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Tool"
 msgstr "সরঞ্জাম (_T)"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:59
 msgid "_Username:"
 msgstr "ব্যবহারকারীর নাম:(_U)"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:60
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:61
 msgid "requests"
 msgstr "আবেদন"
 
@@ -306,101 +308,101 @@ msgstr "লুপব্যাক ইন্টারফেস"
 msgid "Unknown Interface"
 msgstr "অজানা ইন্টারফেস"
 
-#: ../src/info.c:161
+#: ../src/info.c:162
 msgid "Network Devices Not Found"
 msgstr "নেটওয়ার্ক ডিভাইস পাওয়া যায়নি"
 
-#: ../src/info.c:367
+#: ../src/info.c:385
 msgid "Unknown"
 msgstr "অজানা"
 
-#: ../src/info.c:527
+#: ../src/info.c:545
 msgid "Active"
 msgstr "সক্রিয়"
 
-#: ../src/info.c:529
+#: ../src/info.c:547
 msgid "Inactive"
 msgstr "নিষ্ক্রিয়"
 
-#: ../src/info.c:534
+#: ../src/info.c:552
 msgid "Loopback"
 msgstr "লুপব্যাক"
 
-#: ../src/info.c:551
+#: ../src/info.c:569
 msgid "Enabled"
 msgstr "সক্রিয়"
 
-#: ../src/info.c:553
+#: ../src/info.c:571
 msgid "Disabled"
 msgstr "নিষ্ক্রিয়"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:694
+#: ../src/info.c:708
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "নেটওয়ার্ক ডিভাইস:\t%s\n"
 
-#: ../src/info.c:695
+#: ../src/info.c:709
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "হার্ডওয়্যার ঠিকানা:\t%s\n"
 
-#: ../src/info.c:696
+#: ../src/info.c:710
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP অ্যাড্রেস:\t%s\n"
 
-#: ../src/info.c:697
+#: ../src/info.c:711
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "নেটমাস্ক:\t%s\n"
 
-#: ../src/info.c:698
+#: ../src/info.c:712
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "ব্রডকাস্ট:\t%s\n"
 
-#: ../src/info.c:699
+#: ../src/info.c:713
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "মাল্টিকাস্ট:\t%s\n"
 
-#: ../src/info.c:700
+#: ../src/info.c:714
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:701
+#: ../src/info.c:715
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "সংযোগের গতি:\t%s\n"
 
-#: ../src/info.c:702
+#: ../src/info.c:716
 #, c-format
 msgid "State:\t%s\n"
 msgstr "অবস্থা:\t%s\n"
 
-#: ../src/info.c:704
+#: ../src/info.c:718
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "প্রেরিত প্যাকেট:\t%s\n"
 
-#: ../src/info.c:705
+#: ../src/info.c:719
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "প্রেরণ করতে সমস্যা:\t%s\n"
 
-#: ../src/info.c:706
+#: ../src/info.c:720
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "প্রাপ্ত প্যাকেট:\t%s\n"
 
-#: ../src/info.c:707
+#: ../src/info.c:721
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "আহরণের সময়কার সমস্যা:\t%s\n"
 
-#: ../src/info.c:708
+#: ../src/info.c:722
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "দ্বন্দ্ব (কলিশন):\t%s\n"
@@ -446,59 +448,60 @@ msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 
 # FIXME
-#: ../src/main.c:79
+#: ../src/main.c:80
 msgid "Load information for a network device"
 msgstr "নেটওয়ার্ক ডিভাইস সংক্রান্ত তথ্য লোড করা হবে"
 
-#: ../src/main.c:80
+#: ../src/main.c:81
 msgid "DEVICE"
 msgstr "DEVICE"
 
-#: ../src/main.c:83
+#: ../src/main.c:84
 msgid "Send a ping to a network address"
 msgstr "একটি নেটওয়ার্ক অ্যাড্রেসে পিং করা হবে"
 
-#: ../src/main.c:84 ../src/main.c:92 ../src/main.c:96 ../src/main.c:100
+#: ../src/main.c:85 ../src/main.c:93 ../src/main.c:97 ../src/main.c:101
 msgid "HOST"
 msgstr "HOST"
 
-#: ../src/main.c:87
-msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "netstat সংক্রান্ত তথ্য আহরণ করা হবে।  বৈধ অপশন হল: route, active, multicast ।"
-
 #: ../src/main.c:88
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr ""
+"netstat সংক্রান্ত তথ্য আহরণ করা হবে।  বৈধ অপশন হল: route, active, multicast ।"
+
+#: ../src/main.c:89
 msgid "COMMAND"
 msgstr "COMMAND"
 
-#: ../src/main.c:91
+#: ../src/main.c:92
 msgid "Trace a route to a network address"
 msgstr "একটি নেটওয়ার্ক অ্যাড্রেসের রুট অনুসরণ করা হবে"
 
-#: ../src/main.c:95
+#: ../src/main.c:96
 msgid "Port scan a network address"
 msgstr "একটি নেটওয়ার্ক অ্যাড্রেসের পোর্ট স্ক্যান করা হবে"
 
-#: ../src/main.c:99
+#: ../src/main.c:100
 msgid "Look up a network address"
 msgstr "নেটওয়ার্ক অ্যাড্রেস অনুসন্ধান করা হবে"
 
-#: ../src/main.c:103
+#: ../src/main.c:104
 msgid "Finger command to run"
 msgstr "Finger কমান্ড চালানো হবে"
 
-#: ../src/main.c:104
+#: ../src/main.c:105
 msgid "USER"
 msgstr "USER"
 
-#: ../src/main.c:107
+#: ../src/main.c:108
 msgid "Perform a whois lookup for a network domain"
 msgstr "একটি নেটওয়ার্ক ডোমেইনে whois lookup করা হবে"
 
-#: ../src/main.c:108
+#: ../src/main.c:109
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:122
+#: ../src/main.c:126
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -565,9 +568,10 @@ msgid "Enter the user to finger."
 msgstr "finger করার জন্য ব্যবহারকারী উল্লেখ করুন।"
 
 #: ../src/main.c:918
+#, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
-"For example: www.domain.com or 192.168.2.1"
+"For example: auth.domain.com or 192.168.2.1"
 msgstr ""
 "ব্যবহারকারীকে finger করার জন্য নেটওয়ার্ক ঠিকানা লিখুন।\n"
 "উদাহরণস্বরূপ: www.domain.com অথবা 192.168.2.1"
@@ -837,3 +841,6 @@ msgstr "\"%s\"-এ উপস্থিত সকল ব্যবহারকা�
 msgid "Getting the whois information of %s"
 msgstr "%s-র জন্য whois তথ্য আহরণ করা হচ্ছে"
 
+# msgstr "Netstat"
+#~ msgid "Network Tools - Devices"
+#~ msgstr "নেটওয়ার্কের সরঞ্জাম - ডিভাইস"

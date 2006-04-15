@@ -432,7 +432,8 @@ on_page_switch (GtkNotebook     * notebook,
 		gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);
 	}
 
-	title = g_strdup_printf ("Network Tools - %s",
+	/* Dear Translator: This is the Window Title */
+	title = g_strdup_printf ("%s - Network Tools",
 				 gtk_label_get_text (GTK_LABEL (netinfo->page_label)));
 	gtk_window_set_title (GTK_WINDOW (netinfo->main_window), title);
 	g_free (title);

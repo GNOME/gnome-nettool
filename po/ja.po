@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-23 22:48+0900\n"
+"POT-Creation-Date: 2006-04-15 12:42-0400\n"
 "PO-Revision-Date: 2006-02-23 22:47+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -15,14 +15,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:312
-msgid "translator_credits"
+#: ../src/callbacks.c:311
+#, fuzzy
+msgid "translator-credits"
 msgstr ""
 "相花 毅 <aihana@gnome.gr.jp>\n"
 "Yuusuke Tahara <tahara@gnome.gr.jp>\n"
 "日本GNOMEユーザー会 http://www.gnome.gr.jp"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:326
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 "いろいろなネットワーク・ユーティリティに対応したグラフィカルなインタフェース"
@@ -76,195 +77,197 @@ msgstr "衝突した数:"
 msgid "Devices"
 msgstr "デバイス"
 
-#: ../src/gnome-nettool.glade.h:13
+#. Dear Translator: This is the Window Title
+#: ../src/gnome-nettool.glade.h:14
+#, fuzzy
+msgid "Devices - Network Tools"
+msgstr "ネットワーク・ツール"
+
+#: ../src/gnome-nettool.glade.h:15
 msgid "Display:"
 msgstr "表示する情報:"
 
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:857
+#: ../src/gnome-nettool.glade.h:16 ../src/main.c:857
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.glade.h:17
 msgid "Hardware address:"
 msgstr "ハードウェア (MAC) アドレス:"
 
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:18
 msgid "Host"
 msgstr "ホスト"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:19
 msgid "IP Address:"
 msgstr "IP-アドレス:"
 
-#: ../src/gnome-nettool.glade.h:18
+#: ../src/gnome-nettool.glade.h:20
 msgid "Link speed:"
 msgstr "リンクのスピード:"
 
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:771
+#: ../src/gnome-nettool.glade.h:21 ../src/main.c:771
 msgid "Lookup"
 msgstr "Lookup"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:22
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:21
+#: ../src/gnome-nettool.glade.h:23
 msgid "Maximum:"
 msgstr "最大:"
 
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:24
 msgid "Minimum:"
 msgstr "最小:"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:25
 msgid "Multicast Information"
 msgstr "マルチキャストの情報"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:26
 msgid "Multicast:"
 msgstr "マルチキャスト:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:27
 msgid "Netmask:"
 msgstr "ネットマスク:"
 
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:469
+#: ../src/gnome-nettool.glade.h:28 ../src/main.c:469
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:27
-msgid "Network Tools - Devices"
-msgstr "ネットワーク・ツール - デバイス"
-
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:29
 msgid "Not Available"
 msgstr "利用不可"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:30
 msgid "Only"
 msgstr "要求数は "
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:31
 msgid "Packets loss:"
 msgstr "パケットの消失:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:32
 msgid "Packets received:"
 msgstr "受信したパケット数:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:33
 msgid "Packets transmitted:"
 msgstr "送信したパケット数:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:305
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:305
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:35
 msgid "Port Scan"
 msgstr "ポートスキャン"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:36
 msgid "Received bytes:"
 msgstr "受信バイト数:"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:37
 msgid "Received packets:"
 msgstr "受信パケット数:"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:38
 msgid "Reception errors:"
 msgstr "受信エラー数:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:39
 msgid "Routing Table Information"
 msgstr "経路テーブルの情報"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:652
+#: ../src/gnome-nettool.glade.h:40 ../src/main.c:652
 msgid "Scan"
 msgstr "スキャン"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:41
 msgid "Send:"
 msgstr "送信要求の数:"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "状態:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:393
+#: ../src/gnome-nettool.glade.h:43 ../src/main.c:393
 msgid "Trace"
 msgstr "トレース"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:44
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:45
 msgid "Transmission errors:"
 msgstr "転送エラー数:"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:46
 msgid "Transmitted bytes:"
 msgstr "転送数:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:47
 msgid "Transmitted packets:"
 msgstr "転送パケット数:"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:48
 msgid "Unlimited requests"
 msgstr "制限しない"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:49
 msgid "User"
 msgstr "ユーザ"
 
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:973
+#: ../src/gnome-nettool.glade.h:50 ../src/main.c:973
 msgid "Whois"
 msgstr "WhoIs"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:51
 msgid "_Configure"
 msgstr "設定(_C)"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:52
 msgid "_Domain address:"
 msgstr "ドメインのアドレス(_D):"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:53
 msgid "_Edit"
 msgstr "編集(_E)"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:55
 msgid "_Information type:"
 msgstr "情報の種類(_I):"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:56
 msgid "_Network address:"
 msgstr "ネットワークのアドレス(_N):"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Network device:"
 msgstr "ネットワーク・デバイス(_N):"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Tool"
 msgstr "ツール(_T)"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:59
 msgid "_Username:"
 msgstr "ユーザ名(_U):"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:60
 msgid "ms"
 msgstr "ミリ秒"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:61
 msgid "requests"
 msgstr "個だけ"
 
@@ -301,101 +304,101 @@ msgstr "ループバック・インタフェース"
 msgid "Unknown Interface"
 msgstr "不明なインタフェース"
 
-#: ../src/info.c:161
+#: ../src/info.c:162
 msgid "Network Devices Not Found"
 msgstr "ネットワーク・デバイスが見つかりませんでした"
 
-#: ../src/info.c:367
+#: ../src/info.c:385
 msgid "Unknown"
 msgstr "不明"
 
-#: ../src/info.c:527
+#: ../src/info.c:545
 msgid "Active"
 msgstr "有効"
 
-#: ../src/info.c:529
+#: ../src/info.c:547
 msgid "Inactive"
 msgstr "無効"
 
-#: ../src/info.c:534
+#: ../src/info.c:552
 msgid "Loopback"
 msgstr "ループバック"
 
-#: ../src/info.c:551
+#: ../src/info.c:569
 msgid "Enabled"
 msgstr "利用可"
 
-#: ../src/info.c:553
+#: ../src/info.c:571
 msgid "Disabled"
 msgstr "利用不可"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:694
+#: ../src/info.c:708
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "ネットワーク・デバイス:\t%s\n"
 
-#: ../src/info.c:695
+#: ../src/info.c:709
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "ハードウェア (MAC) アドレス:\t%s\n"
 
-#: ../src/info.c:696
+#: ../src/info.c:710
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP-アドレス:\t%s\n"
 
-#: ../src/info.c:697
+#: ../src/info.c:711
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "ネットマスク:\t%s\n"
 
-#: ../src/info.c:698
+#: ../src/info.c:712
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "ブロードキャスト:\t%s\n"
 
-#: ../src/info.c:699
+#: ../src/info.c:713
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "マルチキャスト:\t%s\n"
 
-#: ../src/info.c:700
+#: ../src/info.c:714
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:701
+#: ../src/info.c:715
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "リンク・スピード:\t%s\n"
 
-#: ../src/info.c:702
+#: ../src/info.c:716
 #, c-format
 msgid "State:\t%s\n"
 msgstr "状態:\t%s\n"
 
-#: ../src/info.c:704
+#: ../src/info.c:718
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "転送パケット数:\t%s\n"
 
-#: ../src/info.c:705
+#: ../src/info.c:719
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "転送エラー数:\t%s\n"
 
-#: ../src/info.c:706
+#: ../src/info.c:720
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "受信パケット数:\t%s\n"
 
-#: ../src/info.c:707
+#: ../src/info.c:721
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "受信エラー数:\t%s\n"
 
-#: ../src/info.c:708
+#: ../src/info.c:722
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "衝突した数:\t%s\n"
@@ -440,60 +443,60 @@ msgstr "アドレス"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "ソース\tTTL\tアドレス 種類\t問い合わせの種類１\tアドレス解決\n"
 
-#: ../src/main.c:79
+#: ../src/main.c:80
 msgid "Load information for a network device"
 msgstr "ネットワーク・デバイスの情報を読み込む"
 
-#: ../src/main.c:80
+#: ../src/main.c:81
 msgid "DEVICE"
 msgstr "DEVICE"
 
-#: ../src/main.c:83
+#: ../src/main.c:84
 msgid "Send a ping to a network address"
 msgstr "ネットワーク・アドレスへ ping を送信する"
 
-#: ../src/main.c:84 ../src/main.c:92 ../src/main.c:96 ../src/main.c:100
+#: ../src/main.c:85 ../src/main.c:93 ../src/main.c:97 ../src/main.c:101
 msgid "HOST"
 msgstr "HOST"
 
-#: ../src/main.c:87
+#: ../src/main.c:88
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "netstat 情報を取得する (利用可能なオプション: route, active, multicast)"
 
-#: ../src/main.c:88
+#: ../src/main.c:89
 msgid "COMMAND"
 msgstr "COMMAND"
 
-#: ../src/main.c:91
+#: ../src/main.c:92
 msgid "Trace a route to a network address"
 msgstr "ネットワーク・アドレスへの経路をトレースする"
 
-#: ../src/main.c:95
+#: ../src/main.c:96
 msgid "Port scan a network address"
 msgstr "ネットワーク・アドレスのポートをスキャンする"
 
-#: ../src/main.c:99
+#: ../src/main.c:100
 msgid "Look up a network address"
 msgstr "ネットワーク・アドレスを問い合わせる"
 
-#: ../src/main.c:103
+#: ../src/main.c:104
 msgid "Finger command to run"
 msgstr "実行する Finger コマンド"
 
-#: ../src/main.c:104
+#: ../src/main.c:105
 msgid "USER"
 msgstr "USER"
 
-#: ../src/main.c:107
+#: ../src/main.c:108
 msgid "Perform a whois lookup for a network domain"
 msgstr "ネットワーク・ドメインに対する whois 情報を取得する"
 
-#: ../src/main.c:108
+#: ../src/main.c:109
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:122
+#: ../src/main.c:126
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -559,9 +562,10 @@ msgid "Enter the user to finger."
 msgstr "Finger を送信するユーザ名を入力して下さい"
 
 #: ../src/main.c:918
+#, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
-"For example: www.domain.com or 192.168.2.1"
+"For example: auth.domain.com or 192.168.2.1"
 msgstr ""
 "Finger を送信するユーザのネットワーク・アドレスを入力して下さい\n"
 "(例: www.domain.com または 192.168.2.1)"
@@ -827,3 +831,6 @@ msgstr "\"%s\" 上の全ユーザの情報の取得中..."
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s の WhoIs 情報の取得中..."
+
+#~ msgid "Network Tools - Devices"
+#~ msgstr "ネットワーク・ツール - デバイス"

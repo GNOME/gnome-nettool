@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-19 13:49+0000\n"
+"POT-Creation-Date: 2006-04-15 12:42-0400\n"
 "PO-Revision-Date: 2005-05-20 09:13+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
@@ -20,13 +20,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/callbacks.c:312
-msgid "translator_credits"
+#: ../src/callbacks.c:311
+#, fuzzy
+msgid "translator-credits"
 msgstr ""
 "Ivar Smolin <okul@linux.ee>, 2005, 2006.\n"
 "Priit Laes <amd@store20.com>, 2005"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:326
 msgid "Graphical user interface for common network utilities"
 msgstr "Graafiline kasutajaliides üldiste võrguutiliitide jaoks"
 
@@ -78,195 +79,197 @@ msgstr "Kollisioone:"
 msgid "Devices"
 msgstr "Seadmed"
 
-#: ../src/gnome-nettool.glade.h:13
+#. Dear Translator: This is the Window Title
+#: ../src/gnome-nettool.glade.h:14
+#, fuzzy
+msgid "Devices - Network Tools"
+msgstr "Võrgutööriistad"
+
+#: ../src/gnome-nettool.glade.h:15
 msgid "Display:"
 msgstr "Kuvatakse:"
 
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:852
+#: ../src/gnome-nettool.glade.h:16 ../src/main.c:857
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.glade.h:17
 msgid "Hardware address:"
 msgstr "Raudvaraline aadress:"
 
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:18
 msgid "Host"
 msgstr "Host"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:19
 msgid "IP Address:"
 msgstr "IP aadress:"
 
-#: ../src/gnome-nettool.glade.h:18
+#: ../src/gnome-nettool.glade.h:20
 msgid "Link speed:"
 msgstr "Ühenduskiirus:"
 
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:766
+#: ../src/gnome-nettool.glade.h:21 ../src/main.c:771
 msgid "Lookup"
 msgstr "Lahenda"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:22
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:21
+#: ../src/gnome-nettool.glade.h:23
 msgid "Maximum:"
 msgstr "Suurim:"
 
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:24
 msgid "Minimum:"
 msgstr "Vähim:"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:25
 msgid "Multicast Information"
 msgstr "Multicast'i andmed"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:26
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:27
 msgid "Netmask:"
 msgstr "Võrgumask:"
 
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:464
+#: ../src/gnome-nettool.glade.h:28 ../src/main.c:469
 msgid "Netstat"
 msgstr "Võrgustatistika"
 
-#: ../src/gnome-nettool.glade.h:27
-msgid "Network Tools - Devices"
-msgstr "Võrgutööriistad - Seadmed"
-
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:29
 msgid "Not Available"
 msgstr "Pole saadaval"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:30
 msgid "Only"
 msgstr "Ainult"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:31
 msgid "Packets loss:"
 msgstr "Kadunud pakette:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:32
 msgid "Packets received:"
 msgstr "Vastuvõetud pakette:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:33
 msgid "Packets transmitted:"
 msgstr "Edastatud pakette:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:300
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:305
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:35
 msgid "Port Scan"
 msgstr "Pordiskannimine"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:36
 msgid "Received bytes:"
 msgstr "Vastuvõetud baite:"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:37
 msgid "Received packets:"
 msgstr "Vastuvõetud pakette:"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:38
 msgid "Reception errors:"
 msgstr "Vastuvõtuvigu:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:39
 msgid "Routing Table Information"
 msgstr "Ruutingutabeli andmed"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:647
+#: ../src/gnome-nettool.glade.h:40 ../src/main.c:652
 msgid "Scan"
 msgstr "Skanni"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:41
 msgid "Send:"
 msgstr "Saadetakse:"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "Olek:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:388
+#: ../src/gnome-nettool.glade.h:43 ../src/main.c:393
 msgid "Trace"
 msgstr "Leia marsruut"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:44
 msgid "Traceroute"
 msgstr "Marsruudi leidmine"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:45
 msgid "Transmission errors:"
 msgstr "Ülekandevigu:"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:46
 msgid "Transmitted bytes:"
 msgstr "Ülekantud baite:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:47
 msgid "Transmitted packets:"
 msgstr "Ülekantud pakette:"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:48
 msgid "Unlimited requests"
 msgstr "Piiramatu arv päringuid"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:49
 msgid "User"
 msgstr "Kasutaja"
 
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:968
+#: ../src/gnome-nettool.glade.h:50 ../src/main.c:973
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:51
 msgid "_Configure"
 msgstr "_Seadista"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:52
 msgid "_Domain address:"
 msgstr "_Domeeni aadress:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:53
 msgid "_Edit"
 msgstr "_Redaktor"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Help"
 msgstr "_Abiteave"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:55
 msgid "_Information type:"
 msgstr "A_ndmete liik:"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:56
 msgid "_Network address:"
 msgstr "Võr_guaadress:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Network device:"
 msgstr "Võr_guseade:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Tool"
 msgstr "_Vahendid"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:59
 msgid "_Username:"
 msgstr "_Kasutajanimi:"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:60
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:61
 msgid "requests"
 msgstr "päringut"
 
@@ -303,101 +306,101 @@ msgstr "Loopback liides"
 msgid "Unknown Interface"
 msgstr "Tundmatu liides"
 
-#: ../src/info.c:161
+#: ../src/info.c:162
 msgid "Network Devices Not Found"
 msgstr "Võrguseadmeid ei leitud"
 
-#: ../src/info.c:367
+#: ../src/info.c:385
 msgid "Unknown"
 msgstr "Tundmatu"
 
-#: ../src/info.c:527
+#: ../src/info.c:545
 msgid "Active"
 msgstr "Aktiivne"
 
-#: ../src/info.c:529
+#: ../src/info.c:547
 msgid "Inactive"
 msgstr "Mitteaktiivne"
 
-#: ../src/info.c:534
+#: ../src/info.c:552
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:551
+#: ../src/info.c:569
 msgid "Enabled"
 msgstr "Lubatud"
 
-#: ../src/info.c:553
+#: ../src/info.c:571
 msgid "Disabled"
 msgstr "Keelatud"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:694
+#: ../src/info.c:708
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Võrguseade:\t%s\n"
 
-#: ../src/info.c:695
+#: ../src/info.c:709
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Raudvaraline aadress:\t%s\n"
 
-#: ../src/info.c:696
+#: ../src/info.c:710
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP aadress:\t%s\n"
 
-#: ../src/info.c:697
+#: ../src/info.c:711
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Võrgumask:\t%s\n"
 
-#: ../src/info.c:698
+#: ../src/info.c:712
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: ../src/info.c:699
+#: ../src/info.c:713
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:700
+#: ../src/info.c:714
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:701
+#: ../src/info.c:715
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Ühenduskiirus:\t%s\n"
 
-#: ../src/info.c:702
+#: ../src/info.c:716
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Olek:\t%s\n"
 
-#: ../src/info.c:704
+#: ../src/info.c:718
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Ülekantud pakette:\t%s\n"
 
-#: ../src/info.c:705
+#: ../src/info.c:719
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Ülekandevigu:\t%s\n"
 
-#: ../src/info.c:706
+#: ../src/info.c:720
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Vastuvõetud pakette:\t%s\n"
 
-#: ../src/info.c:707
+#: ../src/info.c:721
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Vastuvõtu vigu:\t%s\n"
 
-#: ../src/info.c:708
+#: ../src/info.c:722
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kollisioone:\t%s\n"
@@ -442,60 +445,60 @@ msgstr "Aadress"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Lähteaadress\tTTL\tAadressi tüüp\tKirje tüüp\tTulemus\n"
 
-#: ../src/main.c:79
+#: ../src/main.c:80
 msgid "Load information for a network device"
 msgstr "Võrguseadme kohta andmete laadimine"
 
-#: ../src/main.c:80
+#: ../src/main.c:81
 msgid "DEVICE"
 msgstr "SEADE"
 
-#: ../src/main.c:83
+#: ../src/main.c:84
 msgid "Send a ping to a network address"
 msgstr "Ping pakettide saatmine võrguaadressile"
 
-#: ../src/main.c:84 ../src/main.c:92 ../src/main.c:96 ../src/main.c:100
+#: ../src/main.c:85 ../src/main.c:93 ../src/main.c:97 ../src/main.c:101
 msgid "HOST"
 msgstr "HOST"
 
-#: ../src/main.c:87
+#: ../src/main.c:88
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Netstat andmete hankimine.  Lubatud võtmed on: route, active, multicast."
 
-#: ../src/main.c:88
+#: ../src/main.c:89
 msgid "COMMAND"
 msgstr "KÄSK"
 
-#: ../src/main.c:91
+#: ../src/main.c:92
 msgid "Trace a route to a network address"
 msgstr "Võrguaadressini viiva marsruudi jälgimine"
 
-#: ../src/main.c:95
+#: ../src/main.c:96
 msgid "Port scan a network address"
 msgstr "Võrguaadressi portide skannimine"
 
-#: ../src/main.c:99
+#: ../src/main.c:100
 msgid "Look up a network address"
 msgstr "Võrguaadressi lahendamine"
 
-#: ../src/main.c:103
+#: ../src/main.c:104
 msgid "Finger command to run"
 msgstr "Finger käsu täitmine"
 
-#: ../src/main.c:104
+#: ../src/main.c:105
 msgid "USER"
 msgstr "KASUTAJA"
 
-#: ../src/main.c:107
+#: ../src/main.c:108
 msgid "Perform a whois lookup for a network domain"
 msgstr "Võrgudomeeni lahendamiseks whois päringu teostamine"
 
-#: ../src/main.c:108
+#: ../src/main.c:109
 msgid "DOMAIN"
 msgstr "DOMEEN"
 
-#: ../src/main.c:122
+#: ../src/main.c:126
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -504,7 +507,7 @@ msgstr ""
 "Faili %s pole olemas, palun veendu, et gnome-nettool on korralikult "
 "paigaldatud"
 
-#: ../src/main.c:333
+#: ../src/main.c:338
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -512,7 +515,7 @@ msgstr ""
 "Sisesta võrguaadress, mida soovid pingida.\n"
 "Näiteks: www.domain.com või 192.168.2.1"
 
-#: ../src/main.c:415
+#: ../src/main.c:420
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -520,27 +523,27 @@ msgstr ""
 "Sisesta võrguaadress, milleni soovid marsruuti leida.\n"
 "Näiteks: www.domain.com või 192.168.2.1"
 
-#: ../src/main.c:500 ../src/netstat.c:443
+#: ../src/main.c:505 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protokoll"
 
-#: ../src/main.c:507
+#: ../src/main.c:512
 msgid "IP Address"
 msgstr "IP aadress"
 
-#: ../src/main.c:514
+#: ../src/main.c:519
 msgid "Netmask / Prefix"
 msgstr "Võrgumask / Eesliide"
 
-#: ../src/main.c:521
+#: ../src/main.c:526
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: ../src/main.c:528
+#: ../src/main.c:533
 msgid "Scope"
 msgstr "Skoop"
 
-#: ../src/main.c:669
+#: ../src/main.c:674
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -548,7 +551,7 @@ msgstr ""
 "Sisesta võrguaadress, millelt soovid skannida avatud porte.\n"
 "Näiteks: www.domain.com või 192.168.2.1"
 
-#: ../src/main.c:797
+#: ../src/main.c:802
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -556,19 +559,20 @@ msgstr ""
 "Sisesta võrguaadress, mida soovid lahendada.\n"
 "Näiteks: www.domain.com või 192.168.2.1"
 
-#: ../src/main.c:886
+#: ../src/main.c:891
 msgid "Enter the user to finger."
 msgstr "Sisesta kasutaja, kelle kohta soovid andmeid."
 
-#: ../src/main.c:913
+#: ../src/main.c:918
+#, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
-"For example: www.domain.com or 192.168.2.1"
+"For example: auth.domain.com or 192.168.2.1"
 msgstr ""
 "Sisesta võrguaadress, millelt soovid hankida kasutajaandmeid.\n"
 "Näiteks: www.domain.com või 192.168.2.1"
 
-#: ../src/main.c:1000
+#: ../src/main.c:1005
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -830,5 +834,8 @@ msgstr "\"%s\" kõikide kasutajate kohta andmete hankimine"
 msgid "Getting the whois information of %s"
 msgstr "Whois andmete hankimine %s kohta"
 
-msgid "Network Information"
-msgstr "Võrguteave"
+#~ msgid "Network Tools - Devices"
+#~ msgstr "Võrgutööriistad - Seadmed"
+
+#~ msgid "Network Information"
+#~ msgstr "Võrguteave"

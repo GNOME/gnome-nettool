@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.dz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-03 05:09+0200\n"
+"POT-Creation-Date: 2006-04-15 12:42-0400\n"
 "PO-Revision-Date: 2006-04-03 11:49+0530\n"
 "Last-Translator: \n"
 "Language-Team: DZONGKHA <pgeyleg@dit.gov.bt>\n"
@@ -19,11 +19,13 @@ msgstr ""
 "X-Poedit-Country: BHUTAN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/callbacks.c:312
+#: ../src/callbacks.c:311
 msgid "translator-credits"
-msgstr "ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: <pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>"
+msgstr ""
+"ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་"
+"དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: <pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:326
 msgid "Graphical user interface for common network utilities"
 msgstr "མཐུན་མོང་ཡོངས་འབྲེལ་གྱི་ སྤྱོད་ཆས་ཚུ་གི་དོན་ལུ་ ཚད་རིས་ལག་ལེན་པའི་ངོས་འདྲ་བ།"
 
@@ -75,202 +77,197 @@ msgstr "གདོང་ཐུག་:"
 msgid "Devices"
 msgstr "ཐབས་འཕྲུལ།"
 
-#: ../src/gnome-nettool.glade.h:13
+#. Dear Translator: This is the Window Title
+#: ../src/gnome-nettool.glade.h:14
+#, fuzzy
+msgid "Devices - Network Tools"
+msgstr "ཡོངས་འབྲེལ་ལག་ཆས།"
+
+#: ../src/gnome-nettool.glade.h:15
 msgid "Display:"
 msgstr "བཀྲམ་སྟོན་:"
 
-#: ../src/gnome-nettool.glade.h:14
-#: ../src/main.c:862
+#: ../src/gnome-nettool.glade.h:16 ../src/main.c:857
 msgid "Finger"
 msgstr "མཛུབ་མོ།"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.glade.h:17
 msgid "Hardware address:"
 msgstr "སྲ་ཆས་ཁ་བྱང་:"
 
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:18
 msgid "Host"
 msgstr "ཧོསིཊི།"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:19
 msgid "IP Address:"
 msgstr "ཨའི་པི་ཁ་བྱང་:"
 
-#: ../src/gnome-nettool.glade.h:18
+#: ../src/gnome-nettool.glade.h:20
 msgid "Link speed:"
 msgstr "འབྲེལ་ལམ་མགྱོགས་ཚད་:"
 
-#: ../src/gnome-nettool.glade.h:19
-#: ../src/main.c:776
+#: ../src/gnome-nettool.glade.h:21 ../src/main.c:771
 msgid "Lookup"
 msgstr "ཡར་བལྟ།"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:22
 msgid "MTU:"
 msgstr "ཨེམ་ཊི་ཡུ:"
 
-#: ../src/gnome-nettool.glade.h:21
+#: ../src/gnome-nettool.glade.h:23
 msgid "Maximum:"
 msgstr "མང་མཐའ་:"
 
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:24
 msgid "Minimum:"
 msgstr "ཉུང་མཐའ་:"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:25
 msgid "Multicast Information"
 msgstr "སྣ་མང་རྒྱང་བསྒྲགས་བརྡ་དོན།"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:26
 msgid "Multicast:"
 msgstr "སྣ་མང་རྒྱང་བསྒྲགས་:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:27
 msgid "Netmask:"
 msgstr "ནེཊི་མཱསིཀ་:"
 
-#: ../src/gnome-nettool.glade.h:26
-#: ../src/main.c:474
+#: ../src/gnome-nettool.glade.h:28 ../src/main.c:469
 msgid "Netstat"
 msgstr "ནེཊི་སིཊེཊི།"
 
-#: ../src/gnome-nettool.glade.h:27
-msgid "Network Tools - Devices"
-msgstr "ཡོངས་འབྲེལ་ལག་ཆས་ - ཐབས་འཕྲུལ།"
-
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:29
 msgid "Not Available"
 msgstr "མི་འཐོབ་པས།"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:30
 msgid "Only"
 msgstr "རྐྱངམ་གཅིག།"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:31
 msgid "Packets loss:"
 msgstr "འཕྲིན་ཚན་བརླག་སྟོར་:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:32
 msgid "Packets received:"
 msgstr "འཕྲིན་ཚན་ཐོབ་པ་:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:33
 msgid "Packets transmitted:"
 msgstr "འཕྲིན་ཚན་སྤེལ་བཀྲམ་འབད་ཡོདཔ་:"
 
-#: ../src/gnome-nettool.glade.h:33
-#: ../src/main.c:310
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:305
 msgid "Ping"
 msgstr "པིང་།"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:35
 msgid "Port Scan"
 msgstr "འདྲེན་ལམ་ཞིབ་ལྟ།"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:36
 msgid "Received bytes:"
 msgstr "ཐོབ་པའི་བཱའིཊིསི་:"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:37
 msgid "Received packets:"
 msgstr "ཐོབ་པའི་འཕྲིན་ཚན་:"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:38
 msgid "Reception errors:"
 msgstr "སྒྲ་འབྱོར་འཛོལ་བ་:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:39
 msgid "Routing Table Information"
 msgstr "འགྲུལ་ལམ་ཐིག་ཁྲམ་གི་ བརྡ་དོན་གཏང་དོ།"
 
-#: ../src/gnome-nettool.glade.h:39
-#: ../src/main.c:657
+#: ../src/gnome-nettool.glade.h:40 ../src/main.c:652
 msgid "Scan"
 msgstr "ཞིབ་ལྟ།"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:41
 msgid "Send:"
 msgstr "གཏང་:"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:42
 msgid "State:"
 msgstr "གནས་ལུགས་:"
 
-#: ../src/gnome-nettool.glade.h:42
-#: ../src/main.c:398
+#: ../src/gnome-nettool.glade.h:43 ../src/main.c:393
 msgid "Trace"
 msgstr "རྗེས་འཚོལ་འབད།"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:44
 msgid "Traceroute"
 msgstr "འཚོལ་ལམ།"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:45
 msgid "Transmission errors:"
 msgstr "སྤེལ་བཀྲམ་གྱི་འཛོལ་བ:"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:46
 msgid "Transmitted bytes:"
 msgstr "སྤེལ་བཀྲམ་འབད་ཡོད་པའི་བཱའིཊིསི་:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:47
 msgid "Transmitted packets:"
 msgstr "སྤེལ་བཀྲམ་འབད་ཡོད་པའི་འཕྲིན་ཚན་:"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:48
 msgid "Unlimited requests"
 msgstr "ཚད་མེད་ཀྱི་ཞུ་བ།"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:49
 msgid "User"
 msgstr "ལག་ལེན་པ།"
 
-#: ../src/gnome-nettool.glade.h:49
-#: ../src/main.c:978
+#: ../src/gnome-nettool.glade.h:50 ../src/main.c:973
 msgid "Whois"
 msgstr "ཝུཨིསི།"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:51
 msgid "_Configure"
 msgstr "རིམ་སྒྲིག་འབད།(_C)"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:52
 msgid "_Domain address:"
 msgstr "ཌོ་མཱེན་ཁ་བྱང་:(_D)"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:53
 msgid "_Edit"
 msgstr "ཞུན་དག(_E)"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Help"
 msgstr "གྲོགས་རམ།(_H)"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:55
 msgid "_Information type:"
 msgstr "བརྡ་དོན་དབྱེ་བ།:(_I)"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:56
 msgid "_Network address:"
 msgstr "ཡོངས་འབྲེལ་ཁ་བྱང:(_N)"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Network device:"
 msgstr "ཡོངས་འབྲེལ་ཐབས་འཕྲུལ།(_N)"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Tool"
 msgstr "ལག་ཆས།(_T)"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:59
 msgid "_Username:"
 msgstr "ལག་ལེན་པའི་མིང་:(_U)"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:60
 msgid "ms"
 msgstr "ཨེམ་ཨེསི།"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:61
 msgid "requests"
 msgstr "ཞུ་བ།"
 
@@ -307,101 +304,101 @@ msgstr "ལུཔ་བེཀ་གི་ ངོས་འདྲ་བ།"
 msgid "Unknown Interface"
 msgstr "མ་ཤེས་པའི་ངོས་འདྲ་བ།"
 
-#: ../src/info.c:161
+#: ../src/info.c:162
 msgid "Network Devices Not Found"
 msgstr "ཡོངས་འབྲེལ་ཐབས་འཕྲུལ་ ཐོབ་མ་ཚུགས།"
 
-#: ../src/info.c:367
+#: ../src/info.c:385
 msgid "Unknown"
 msgstr "མ་ཤེསཔ།"
 
-#: ../src/info.c:527
+#: ../src/info.c:545
 msgid "Active"
 msgstr "ཤུགས་ལྡན།"
 
-#: ../src/info.c:529
+#: ../src/info.c:547
 msgid "Inactive"
 msgstr "ཤུགས་མེད།"
 
-#: ../src/info.c:534
+#: ../src/info.c:552
 msgid "Loopback"
 msgstr "ལུཔ་བེཀ།"
 
-#: ../src/info.c:551
+#: ../src/info.c:569
 msgid "Enabled"
 msgstr "ལྕོགས་ཅན།"
 
-#: ../src/info.c:553
+#: ../src/info.c:571
 msgid "Disabled"
 msgstr "ལྕོགས་མིན།"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:694
+#: ../src/info.c:708
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "ཡོངས་འབྲེལ་ཐབས་འཕྲུལ་:\t%s\n"
 
-#: ../src/info.c:695
+#: ../src/info.c:709
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "སྲ་ཆས་ཁ་བྱང་:\t%s\n"
 
-#: ../src/info.c:696
+#: ../src/info.c:710
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "ཨའི་པི་ཁ་བྱང་:\t%s\n"
 
-#: ../src/info.c:697
+#: ../src/info.c:711
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "ནེཊི་མཱསིཀ་:\t%s\n"
 
-#: ../src/info.c:698
+#: ../src/info.c:712
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "རྒྱང་བསྒྲགས་:\t%s\n"
 
-#: ../src/info.c:699
+#: ../src/info.c:713
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "སྣ་མང་རྒྱང་བསྒྲགས་:\t%s\n"
 
-#: ../src/info.c:700
+#: ../src/info.c:714
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "ཨེམ་ཊི་ཡུ་:\t%s\n"
 
-#: ../src/info.c:701
+#: ../src/info.c:715
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "འབྲེལ་ལམ་མགྱོགས་ཚད་:\t%s\n"
 
-#: ../src/info.c:702
+#: ../src/info.c:716
 #, c-format
 msgid "State:\t%s\n"
 msgstr "གནས་ལུགས་:\t%s\n"
 
-#: ../src/info.c:704
+#: ../src/info.c:718
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "སྤེལ་བཀྲམ་འབད་བའི་འཕྲིན་ཚན་:\t%s\n"
 
-#: ../src/info.c:705
+#: ../src/info.c:719
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "སྤེལ་བཀྲམ་གྱི་འཛོལ་བ་:\t%s\n"
 
-#: ../src/info.c:706
+#: ../src/info.c:720
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "ཐོབ་པའི་འཕྲིན་ཚན་:\t%s\n"
 
-#: ../src/info.c:707
+#: ../src/info.c:721
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "སྒྲ་འབྱོར་འཛོལ་བ་:\t%s\n"
 
-#: ../src/info.c:708
+#: ../src/info.c:722
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "གདོང་ཐུག་:\t%s\n"
@@ -446,67 +443,67 @@ msgstr "ཁ་བྱང་།"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "འབྱུང་ཁུངས་\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 
-#: ../src/main.c:81
+#: ../src/main.c:80
 msgid "Load information for a network device"
 msgstr "ཡོངས་འབྲེལ་ཐབས་འཕྲུལ་ཅིག་གི་དོན་ལུ་ བརྡ་དོན་མངོན་གསལ་འབད།"
 
-#: ../src/main.c:82
+#: ../src/main.c:81
 msgid "DEVICE"
 msgstr "ཐབས་འཕྲུལ།"
 
-#: ../src/main.c:85
+#: ../src/main.c:84
 msgid "Send a ping to a network address"
 msgstr "ཡོངས་འབྲེལ་ཁ་བྱང་ཅིག་ནང་ པིང་ཅིག་གཏང་།"
 
-#: ../src/main.c:86
-#: ../src/main.c:94
-#: ../src/main.c:98
-#: ../src/main.c:102
+#: ../src/main.c:85 ../src/main.c:93 ../src/main.c:97 ../src/main.c:101
 msgid "HOST"
 msgstr "ཧོསིཊི"
 
-#: ../src/main.c:89
+#: ../src/main.c:88
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "ནེཊི་སིཊེཊི་བརྡ་དོན་ལེན། ནུས་ལྡན་གྱི་གདམ་ཁ་ཚུ་: འགྲུལ་ལམ་ ཤུགས་ལྡན་ སྣ་མང་རྒྱང་བསྒྲགས།"
 
-#: ../src/main.c:90
+#: ../src/main.c:89
 msgid "COMMAND"
 msgstr "བརྡ་བཀོད།"
 
-#: ../src/main.c:93
+#: ../src/main.c:92
 msgid "Trace a route to a network address"
 msgstr "ཡོངས་འབྲེལ་ཁ་བྱང་ཅིག་ལུ་འགྱོ་སའི་ འགྲུལ་ལམ་རྗེས་འཚོལ་འབད།"
 
-#: ../src/main.c:97
+#: ../src/main.c:96
 msgid "Port scan a network address"
 msgstr "ཡོངས་འབྲེལ་ཁ་བྱང་ཅིག་གི་འདྲེན་ལམ་ཞིབ་ལྟ་འབད།"
 
-#: ../src/main.c:101
+#: ../src/main.c:100
 msgid "Look up a network address"
 msgstr "ཡོངས་འབྲེལ་ཁ་བྱང་ཅིག་ལུ་བལྟ།"
 
-#: ../src/main.c:105
+#: ../src/main.c:104
 msgid "Finger command to run"
 msgstr "གཡོག་བཀོལ་ནིའི་ མཛུབ་མོའི་བརྡ་བཀོད།"
 
-#: ../src/main.c:106
+#: ../src/main.c:105
 msgid "USER"
 msgstr "ལག་ལེན་པ།"
 
-#: ../src/main.c:109
+#: ../src/main.c:108
 msgid "Perform a whois lookup for a network domain"
 msgstr "ཡོངས་འབྲེལ་ཌོ་མེན་ཅིག་གི་དོན་ལུ་ ཝུཨིསི་ ལུཀ་ཨཔ་ཅིག་ ལག་ལེན་འཐབ།"
 
-#: ../src/main.c:110
+#: ../src/main.c:109
 msgid "DOMAIN"
 msgstr "ཌོ་མེན་།"
 
-#: ../src/main.c:127
+#: ../src/main.c:126
 #, c-format
-msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
-msgstr "ཡིག་སྣོད་%sདེ་མིན་འདུག། ཇི་ནོམ་-ནེཊིཊུལ་དེ་ ངེས་བདེན་སྦེ་ གཞི་བཙུགས་འབད་མ་འབད་ ཞིབ་དཔྱད་འབད་གནང་།"
+msgid ""
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"installed"
+msgstr ""
+"ཡིག་སྣོད་%sདེ་མིན་འདུག། ཇི་ནོམ་-ནེཊིཊུལ་དེ་ ངེས་བདེན་སྦེ་ གཞི་བཙུགས་འབད་མ་འབད་ ཞིབ་དཔྱད་འབད་གནང་།"
 
-#: ../src/main.c:343
+#: ../src/main.c:338
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -514,7 +511,7 @@ msgstr ""
 "པིང་ལུ་ ཡོངས་འབྲེལ་ཁ་བྱང་བཙུགས།\n"
 "དཔེར་ན་: www.domain.com ཡང་ན་ ༡༩༢.༡༦༨.༢.༡"
 
-#: ../src/main.c:425
+#: ../src/main.c:420
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -522,28 +519,27 @@ msgstr ""
 "འགྲུལ་ལམ་རྗེས་འཚོལ་གྱི་དོན་ལུ་ ཡོངས་འབྲེལ་ཁ་བྱང་ཅིག་བཙུགས།\n"
 "དཔེར་ན་: www.domain.com ཡང་ན་ ༡༩༢.༡༦༨.༢.༡"
 
-#: ../src/main.c:510
-#: ../src/netstat.c:443
+#: ../src/main.c:505 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "གནད་སྤེལ་ལམ་ལུགས།"
 
-#: ../src/main.c:517
+#: ../src/main.c:512
 msgid "IP Address"
 msgstr "ཨའི་པི་ཁ་བྱང་།"
 
-#: ../src/main.c:524
+#: ../src/main.c:519
 msgid "Netmask / Prefix"
 msgstr "ནེཊི་མཱསིཀ་/སྔོན་ཚིག།"
 
-#: ../src/main.c:531
+#: ../src/main.c:526
 msgid "Broadcast"
 msgstr "རྒྱང་བསྒྲགས།"
 
-#: ../src/main.c:538
+#: ../src/main.c:533
 msgid "Scope"
 msgstr "འོས་སྐབས།"
 
-#: ../src/main.c:679
+#: ../src/main.c:674
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -551,7 +547,7 @@ msgstr ""
 "ཁ་ཕྱེ་ཡོད་མི་འདྲེན་ལམ་ཚུ་ ཞིབ་ལྟ་འབད་ནིའི་དོན་ལུ་ ཡོངས་འབྲེལ་གྱི་ ཁ་བྱང་བཙུགས།\n"
 "དཔེར་ན་: www.domain.com ཡང་ན་ ༡༩༢.༡༦༨.༢.༡"
 
-#: ../src/main.c:807
+#: ../src/main.c:802
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -559,19 +555,20 @@ msgstr ""
 "ལུཀ་ཨཔ་ལུ་ ཡོངས་འབྲེལ་ཁ་བྱང་བཙུགས།\n"
 "དཔེར་ན་: www.domain.com ཡང་ན་ ༡༩༢.༡༦༨.༢.༡"
 
-#: ../src/main.c:896
+#: ../src/main.c:891
 msgid "Enter the user to finger."
 msgstr "ལག་ལེན་པ་དེ་ མཛུབ་མོའི་ནང་བཙུགས།"
 
-#: ../src/main.c:923
+#: ../src/main.c:918
+#, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
-"For example: www.domain.com or 192.168.2.1"
+"For example: auth.domain.com or 192.168.2.1"
 msgstr ""
 "ལག་ལེན་པ་དེ་ལུ་ མཛུབ་མོ་དཔག་ནིའི་དོན་ལུ་ ཡོངས་འབྲེལ་ཁ་བྱང་དེ་བཙུགས།\n"
 "\"དཔེར་ན་:www.domain.com ཡང་ན་ ༡༩༢.༡༦༨.༢.༡"
 
-#: ../src/main.c:1010
+#: ../src/main.c:1005
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -599,8 +596,7 @@ msgstr "ཨའི་པི་འབྱུང་ཁུངས།"
 msgid "Port/Service"
 msgstr "འདྲེན་ལམ་/ཞབས་ཏོག།"
 
-#: ../src/netstat.c:466
-#: ../src/scan.c:298
+#: ../src/netstat.c:466 ../src/scan.c:298
 msgid "State"
 msgstr "གནས་ལུགས།"
 
@@ -620,8 +616,7 @@ msgstr "འཛུལ་སྒོ།"
 msgid "Netmask"
 msgstr "ནེཊི་མཱསིཀ།"
 
-#: ../src/netstat.c:633
-#: ../src/netstat.c:739
+#: ../src/netstat.c:633 ../src/netstat.c:739
 msgid "Interface"
 msgstr "ངོས་འདྲ་བ།"
 
@@ -657,8 +652,7 @@ msgstr "ངོས་འདྲ་བ་\tMember\tGroup\n"
 msgid "A network address was not specified"
 msgstr "ཡོངས་འབྲེལ་ཁ་བྱང་ཅིག་ གསལ་བཀོད་མ་འབད་བས།"
 
-#: ../src/nettool.c:199
-#: ../src/nettool.c:208
+#: ../src/nettool.c:199 ../src/nettool.c:208
 msgid "Please enter a valid network address and try again."
 msgstr "ནུས་ལྡན་གྱི་ ཡོངས་འབྲེལ་ཁ་བྱང་ཅིག་ བཙུགས་ཞིནམ་ལས་ ལོག་འབད་གནང་།"
 
@@ -836,6 +830,8 @@ msgstr "\"%s\"གི་སྐོར་ལས་ ལག་ལེན་པ་ཆ�
 msgid "Getting the whois information of %s"
 msgstr "%sགི་ ཝུ་ཨིསི་བརྡ་དོན་དེ་ལེན་དོ།"
 
+#~ msgid "Network Tools - Devices"
+#~ msgstr "ཡོངས་འབྲེལ་ལག་ཆས་ - ཐབས་འཕྲུལ།"
+
 #~ msgid "Network Information"
 #~ msgstr "ཡོངས་འབྲེལ་བརྡ་དོན།"
-
