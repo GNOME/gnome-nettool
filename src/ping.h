@@ -37,10 +37,12 @@
 #   define PING_PARAMS_6
 #elif defined(__sun__) 
 #   define PING_PROGRAM_FORMAT "%s ping -s -n %s 56 %d"
+#   define PING_PROGRAM_FORMAT_6 "%s ping -s -A inet6 -a -n %s 56 %d"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d. time=%f %s"
 #   define PING_PARAMS_5
 #elif defined(__hpux__)
 #   define PING_PROGRAM_FORMAT "%s ping %s -n %d"
+#   define PING_PROGRAM_FORMAT_6 "%s ping %s -f inet6 -n %d"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d. time=%f %s"
 #   define PING_PARAMS_5
 #else
