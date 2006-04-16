@@ -39,3 +39,4 @@ void scan_stop (Netinfo * netinfo);
 void scan_foreach (Netinfo * netinfo, gchar * line, gint len, gpointer user_data);
 void scan_define_model (Netinfo * netinfo, scan_data data);
 void scan_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);
+

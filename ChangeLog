@@ -1,5 +1,15 @@
 2006-04-15  Alejandro Andres <fuzzy.alej@gmail.com>
 
+	* src/scan.c (scan_do): Added a signal handler (wait_for_child).
+	Fixes #307529.
+
+2006-04-15  German Poo-Caaman~o  <gpoo@ubiobio.cl>
+
+	* configure.in: Fixed #333040.  Do not build gnome-nettool if
+	some header files does not exist.
+
+2006-04-15  Alejandro Andres <fuzzy.alej@gmail.com>
+
 	* src/ping.h: defines PING_PROGRAM_FORMAT_6 for sun and hpux
 	Fixes #316659
 

@@ -23,6 +23,7 @@
 #include <glib/gi18n.h>
 #include <stdlib.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 #include <signal.h>
 #include <errno.h>
 
@@ -39,6 +40,9 @@
 
 static GtkTreeModel *scan_create_model (GtkTreeView *widget);
 static gint strip_line (gchar * line, scan_data * data);
+
+/* Signal handler */
+static void wait_for_child (int sig);
 
 void
 scan_stop (Netinfo * netinfo)
@@ -78,6 +82,9 @@ scan_do (Netinfo * netinfo)
 		netinfo_stop_process_command (netinfo);
 		return;
 	}
+
+	/* signal handling */
+	signal (SIGCHLD, wait_for_child);
 
 	host = netinfo_get_host (netinfo);
 
@@ -173,7 +180,7 @@ scan_do (Netinfo * netinfo)
 	} else {
 		/* parent */
 		close (pfd[1]);
-		
+
 		netinfo->child_pid = pid;
 		netinfo->pipe_out = pfd[0];
 
@@ -185,6 +192,13 @@ scan_do (Netinfo * netinfo)
 	}
 	
 }
+
+static void 
+wait_for_child (int sig)
+{
+	while (waitpid(-1, NULL, WNOHANG) > 0);
+}
+
 
 /* Process each line from ping command */
 void
