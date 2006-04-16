@@ -1,13 +1,15 @@
 gnome-nettool 2.15.0, 2006-
 --------------------------------
 
+ - #307529: Fixed unclean exit of child processes (Alejandro Andres)
  - #338278: Fixed window title according the HIG
  - #316659: Fixed ping's compilation error on Solaris and HP/UX
    (Alejandro Andres)
  - #338272: Fixed ping to a broadcast address in Linux (Alejandro Andres)
  - Fixed compilation warnings (Germán Poó-Caamaño)
  - #334687: Fixed InfoIpAddr leakage (Paolo Borelli)
- - #333040: Fixed checking for ifaddrs.h
+ - #333040: Fixed checking for ifaddrs.h (Christian Lohmaier, 
+   Germán Poó-Caamaño)
  - #338080: Theme friendly icon patch applied for gnome-nettool
    (Brian Pepple)
  - #336941: Fixed bad formed define for DNS lookups (Alejandro Andres)
