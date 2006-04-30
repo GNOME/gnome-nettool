@@ -1,21 +1,20 @@
 # Norwegian (bokmål dialect) translation of the gnome-network module
 # Copyright (C) 1998, 1999 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@online.no>, 1998, 1999.
+# Kjartan Maraas <kmaraas@online.no>, 1998-2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-network 1.0.1\n"
+"Project-Id-Version: gnome-nettool 2.15.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-15 12:42-0400\n"
-"PO-Revision-Date: 2005-06-01 12:00+0200\n"
-"Last-Translator: Kjartan Maraas <kmaraas@online.no>\n"
-"Language-Team: Norwegian <no@li.org>\n"
+"POT-Creation-Date: 2006-04-30 15:30+0200\n"
+"PO-Revision-Date: 2006-04-30 15:31+0200\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
 #: ../src/callbacks.c:311
-#, fuzzy
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
@@ -73,9 +72,8 @@ msgstr "Enheter"
 
 #. Dear Translator: This is the Window Title
 #: ../src/gnome-nettool.glade.h:14
-#, fuzzy
 msgid "Devices - Network Tools"
-msgstr "Nettverksverktøy"
+msgstr "Enheter - Nettverksverktøy"
 
 #: ../src/gnome-nettool.glade.h:15
 msgid "Display:"
@@ -555,13 +553,12 @@ msgid "Enter the user to finger."
 msgstr "Oppgi en bruker å hente finger-informasjon for."
 
 #: ../src/main.c:918
-#, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
 msgstr ""
 "Oppgi nettverksadresse for å kjøre finger på denne brukeren.\n"
-"For eksempel www.domene.no eller 192.168.2.1"
+"For eksempel auth.domene.no eller 192.168.2.1"
 
 #: ../src/main.c:1005
 msgid ""
@@ -591,7 +588,7 @@ msgstr "IP-kilde"
 msgid "Port/Service"
 msgstr "Port/tjeneste"
 
-#: ../src/netstat.c:466 ../src/scan.c:298
+#: ../src/netstat.c:466 ../src/scan.c:312
 msgid "State"
 msgstr "Tilstand"
 
@@ -740,27 +737,27 @@ msgstr "Pakker mottatt:\t%s\n"
 msgid "Packet loss:\t%s\n"
 msgstr "Pakketap:\t%s\n"
 
-#: ../src/scan.c:86
+#: ../src/scan.c:93
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Skanner %s for åpne porter"
 
-#: ../src/scan.c:161
+#: ../src/scan.c:168
 msgid "unknown"
 msgstr "ukjent"
 
-#: ../src/scan.c:290
+#: ../src/scan.c:304
 msgid "Port"
 msgstr "Port"
 
-#: ../src/scan.c:306
+#: ../src/scan.c:320
 msgid "Service"
 msgstr "Tjeneste"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:328
+#: ../src/scan.c:342
 msgid "Port\tState\tService\n"
 msgstr "Port\tTilstand\tTjeneste\n"
 
@@ -824,6 +821,3 @@ msgstr "Henter informasjon om alle brukere på «%s»"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Henter whois-informasjon for %s"
-
-#~ msgid "Network Tools - Devices"
-#~ msgstr "Nettverksverktøy - enheter"
