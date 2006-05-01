@@ -76,8 +76,8 @@ ping_do (Netinfo * netinfo)
 		g_free (netinfo->stbar_text);
 	netinfo->stbar_text = g_strdup_printf (_("Sending ping requests to %s"), host);
 	
-	rttmin = rttavg = rttmax = packets_loss = 0.0;
-	packets_transmitted = packets_received = 0;
+	rttmin = rttavg = rttmax = 0.0;
+	packets_transmitted = packets_received = packets_loss = 0;
 
 	/* Clear the statistics before starting a ping */
 
@@ -319,9 +319,15 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 			count =
 			    strip_total_line (line, &packets_transmitted);
 		}
-		packets_loss =
-		    100 -
-		    ((float) packets_received / packets_transmitted * 100);
+
+		if (packets_transmitted == 0) {
+			packets_loss = 0;
+		} else {
+			packets_loss =
+				100 -
+				((float) packets_received / packets_transmitted * 100);
+		}
+
 		g_sprintf (stmp, "%d", packets_transmitted);
 		gtk_label_set_text (pkt_transmitted, stmp);
 		g_sprintf (stmp, "%d", packets_received);
