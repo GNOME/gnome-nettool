@@ -222,9 +222,9 @@ util_find_program_dialog (gchar * program, GtkWidget *parent) {
 		
 		dialog = gtk_message_dialog_new (GTK_WINDOW (parent),
 								  GTK_DIALOG_DESTROY_WITH_PARENT,
-								  GTK_MESSAGE_ERROR,
+								  GTK_MESSAGE_WARNING,
 								  GTK_BUTTONS_CLOSE,
-								  _("%s: Command not found"),
+								  _("In order to use this feature of the program, %s must be installed in your system"),
 								  program);
 		gtk_dialog_run (GTK_DIALOG (dialog));
 		gtk_widget_destroy (dialog);		
