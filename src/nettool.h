@@ -74,6 +74,7 @@ struct _Netinfo {
 	GtkWidget *packets_transmitted;
 	GtkWidget *packets_received;
 	GtkWidget *packets_loss;
+	gboolean has_beep;
 	/* extra definitions for info */
 	GtkWidget *combo;
 	GtkWidget *ipv6_frame;

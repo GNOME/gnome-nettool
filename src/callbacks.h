@@ -25,6 +25,8 @@ void on_configure_button_clicked (GtkButton * widget, gpointer data);
 /* General stuff */
 gboolean gn_quit_app (GtkWidget * widget, gpointer data);
 
+void on_beep_activate (GtkWidget *menu_item, gpointer data);
+
 void on_about_activate (GtkWidget *menu_item, gpointer data);
 
 void on_copy_activate (GtkWidget *menu_item, gpointer data);

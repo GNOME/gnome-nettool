@@ -299,6 +299,13 @@ gn_quit_app (GtkWidget * widget, gpointer data)
 }
 
 void
+on_beep_activate (GtkWidget *menu_item, gpointer data)
+{
+	Netinfo *ni_data = (Netinfo *) data;
+	ni_data->has_beep =! ni_data->has_beep;
+}
+
+void
 on_about_activate (GtkWidget *menu_item, gpointer data)
 {
 	const gchar *authors[] = { 

@@ -293,6 +293,12 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 				    (rttavg * data.icmp_seq +
 				     rtt) / (data.icmp_seq + 1.0);
 			}
+
+			/* Beep if user selected to */
+			if (netinfo->has_beep) {
+				gdk_beep ();
+			};
+
 			/* ICMP SEQuence tarts at 0, but we need to calculate it as count */
 			packets_transmitted = data.icmp_seq + 1;
 			packets_received++;

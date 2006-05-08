@@ -43,6 +43,21 @@
 		<widget class="GtkMenu" id="tool1_menu">
 
 		  <child>
+		    <widget class="GtkCheckMenuItem" id="m_beep">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">Beep on ping</property>
+		      <property name="use_underline">True</property>
+		      <property name="active">False</property>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkSeparatorMenuItem" id="separator2">
+		      <property name="visible">True</property>
+		    </widget>
+		  </child>
+
+		  <child>
 		    <widget class="GtkImageMenuItem" id="m_quit">
 		      <property name="visible">True</property>
 		      <property name="label">gtk-quit</property>
