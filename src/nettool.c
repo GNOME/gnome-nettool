@@ -29,6 +29,7 @@
 #include <sys/wait.h>
 #include <netdb.h>
 #include <fcntl.h>
+#include <netinet/in.h>
 
 #include "nettool.h"
 #include "utils.h"
