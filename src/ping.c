@@ -109,9 +109,7 @@ ping_do (Netinfo * netinfo)
 	buffer =
 	    gtk_text_view_get_buffer (GTK_TEXT_VIEW (netinfo->output));
 
-	gtk_text_buffer_get_start_iter (buffer, &start);
-	gtk_text_buffer_get_end_iter (buffer, &end);
-
+	gtk_text_buffer_get_bounds (buffer, &start, &end);
 	gtk_text_buffer_delete (buffer, &start, &end);
 */
 	parent = gtk_widget_get_toplevel (netinfo->output);
