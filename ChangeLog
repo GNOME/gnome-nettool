@@ -1,3 +1,8 @@
+2006-07-19  Thierry Randrianiriana  <thierryR@cvs.gnome.org>
+
+	* configure.in: Added the Malagasy code 'mg' to ALL_LINGUAS.
+	* po/mg.po: Added Malagasy translation.
+
 2006-07-03  Runa Bhattacharjee <runabh@gmail.com>
 
         * configure.in: Added Bengali India (bn_IN) to ALL_LINGUAS.
@@ -30,7 +35,7 @@
 
 2006-05-08  Alejandro Andres <fuzzy.alej@fsfe.org>
 
-	* src/callbacks.[ch] (on_beep_activate): 
+	* src/callbacks.[ch] (on_beep_activate):
 	* src/main.c (main):
 	* src/nettool.h:
 	* src/gnome-nettool.glade:
@@ -86,11 +91,11 @@
 2006-04-14  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
 	* src/nettool.c (netinfo_io_text_buffer_dialog):
-	* src/ping.[ch] (ping_foreach): 
-	* src/netstat.[ch] (netstat_foreach): 
-	* src/lookup.[ch] (lookup_foreach): 
-	* src/finger.[ch] (finger_foreach): 
-	* src/traceroute.[ch] (traceroute_foreach): Fixed signedness compilation 
+	* src/ping.[ch] (ping_foreach):
+	* src/netstat.[ch] (netstat_foreach):
+	* src/lookup.[ch] (lookup_foreach):
+	* src/finger.[ch] (finger_foreach):
+	* src/traceroute.[ch] (traceroute_foreach): Fixed signedness compilation
 	  warning
 	* src/info.c (info_load_iface): Fixed compilation warning due a
 	  variable unitialized
@@ -108,7 +113,7 @@
 
 2006-04-13  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
-	* NEWS: Updated with all the changes since the last 
+	* NEWS: Updated with all the changes since the last
 	  stable release.
 
 2006-04-13  German Poo-Caaman~o  <gpoo@ubiobio.cl>
@@ -119,9 +124,9 @@
 
 2006-04-11  Brian Pepple  <bdpepple@gmail.com>
 
-	* src/callbacks.c (on_about_activate): 
-	* pixmaps/Makefile.am (icondir): 
-	* src/main.c (main): 
+	* src/callbacks.c (on_about_activate):
+	* pixmaps/Makefile.am (icondir):
+	* src/main.c (main):
 	* src/gnome-nettool.desktop.in (Icon): Install theme-friendly
 	icons. See the wiki for more information:
 	http://live.gnome.org/GnomeGoals/AppIcon
@@ -145,7 +150,7 @@
 
 	* src/main.c (load_finger_widgets_from_xml): Changed example string
 	  for something more ad-hoc.  Fixed #151007.
-	
+
 2006-04-02  Tommi Vainikainen  <thv@iki.fi>
 
 	* m4/.cvsignore: Added.
@@ -155,18 +160,18 @@
 2006-04-02  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
 	* autogen.sh: Added restriction to require automake 1.9
-	
+
 2006-04-02  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
 	Fixes #328041
-	
+
 	* src/gnome-nettool.desktop.in: Addes GNOME and GTK to
 	  Categories.
 
 2006-04-02  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
 	Fixes #300962
-	
+
 	* src/callbacks.c: Fixed 'translation-credits'
 
 2006-04-02  German Poo-Caaman~o  <gpoo@ubiobio.cl>
@@ -188,7 +193,7 @@
 2006-03-16  Paolo Borelli <pborelli@katamail.com>
 
 	Fixes #326184
-	
+
 	* src/main.c (main): deal with errors from gtk_init_with_args.
 
 2006-02-27  Rodrigo Moya <rodrigo@novell.com>
@@ -256,12 +261,12 @@
 
 2005-05-06  William Jon McCann  <mccann@jhu.edu>
 
-	* src/netstat.c: 
-	* src/utils.c: 
-	* src/main.c: 
-	* src/finger.c: 
-	* src/scan.c: 
-	* src/nettool.c: 
+	* src/netstat.c:
+	* src/utils.c:
+	* src/main.c:
+	* src/finger.c:
+	* src/scan.c:
+	* src/nettool.c:
 	* src/callbacks.c: Add missing includes to fix compiler warnings.
 
 2005-05-06  William Jon McCann  <mccann@jhu.edu>
@@ -298,7 +303,7 @@
 	* src/traceroute.h:
 	* src/utils.c:
 	* src/utils.h:
-	* src/whois.h: removed libgnome* depedencies. Applied Kristof 
+	* src/whois.h: removed libgnome* depedencies. Applied Kristof
 	  Vansant's patches #38844 and #38893, from bug #167218.
 
 2005-03-22  German Poo-Caaman~o <gpoo@ubiobio.cl>
@@ -331,7 +336,7 @@
 
 2005-01-27  William Jon McCann  <mccann@jhu.edu>
 
-	* src/info.c (info_get_nic, info_nic_update_stats) 
+	* src/info.c (info_get_nic, info_nic_update_stats)
 	(info_nic_changed, info_copy_to_clipboard):
 	Add info_get_nic function.  Use it to replace obsolete
 	code in info_copy_to_clipboard().  Fixes #152296.
@@ -350,16 +355,16 @@
 
 2005-01-07  William Jon McCann  <mccann@jhu.edu>
 
-	* src/whois.c: 
-	* src/traceroute.c: 
-	* src/scan.c: 
-	* src/ping.c: 
-	* src/nettool.c: 
-	* src/netstat.c: 
-	* src/lookup.c: 
-	* src/info.c: 
-	* src/finger.c: 
-	* src/callbacks.c: 
+	* src/whois.c:
+	* src/traceroute.c:
+	* src/scan.c:
+	* src/ping.c:
+	* src/nettool.c:
+	* src/netstat.c:
+	* src/lookup.c:
+	* src/info.c:
+	* src/finger.c:
+	* src/callbacks.c:
 	* configure.in:
 	Replace gnome.h with gtk.h and gi18n.h.  Use gtk 2.5 about dialog
 	and HIG message dialog.
@@ -390,7 +395,7 @@
 
 2004-11-15  William Jon McCann  <mccann@jhu.edu>
 
-	* src/nettool.c (netinfo_set_user, netinfo_set_host): 
+	* src/nettool.c (netinfo_set_user, netinfo_set_host):
 	* src/info.c (info_set_nic): Fix to work with GtkComboBox.
 	Fixes #154070.
 
@@ -461,20 +466,20 @@
 
 	* src/nettool.c (netinfo_error_message): Free allocated message
 	  string.
-	  (netinfo_validate_host): Changed the order of dns querys, 
+	  (netinfo_validate_host): Changed the order of dns querys,
 	  It should be ask for IPv4 address at first, not IPv6.  Asking
 	  for IPv6 mostly would make two dns query.
 
 	* src/lookup.c (lookup_do):
 	* src/callbacks.c (on_lookup_activate): Changed netinfo_validate_host
 	  by netinfo_validate_domain.  It doesn't make sense to resolve an
-	  address that is suppossed to be resolved by dig.  i.e. now is 
+	  address that is suppossed to be resolved by dig.  i.e. now is
 	  possible to ask for TLD's domains.
 
 	* src/ping.c (ping_do):
 	* src/traceroute.c (traceroute_do):
 	* src/scan.c (scan_do): Changed netinfo_validate_host by
-	  netinfo_validate_domain. We don't want to resolve a hostname 
+	  netinfo_validate_domain. We don't want to resolve a hostname
 	  twice.  It was made on the callback (ouch!, we need a better
 	  solution for this)
 
@@ -557,7 +562,7 @@
 2004-08-01  Sayamindu Dasgupta <sayamindu@gnome.org>
 
 	* configure.in: Added bn to ALL_LINGUAS
-	
+
 2004-06-29  William Jon McCann  <mccann@jhu.edu>
 
 	* src/callbacks.c (on_about_activate): Update copyright date.
@@ -566,15 +571,15 @@
 	labels.  Make network device combobox expand to fill space.  Make
 	statistics text not expand to fill space.  Remove redundant verb
 	from ping radio button label.  Fixes #144393.
-	
-	* src/gnome-nettool.glade: 
-	* src/main.c (load_ping_widgets_from_xml) 
-	(load_traceroute_widgets_from_xml, load_info_widgets_from_xml) 
-	(load_scan_widgets_from_xml, load_lookup_widgets_from_xml) 
+
+	* src/gnome-nettool.glade:
+	* src/main.c (load_ping_widgets_from_xml)
+	(load_traceroute_widgets_from_xml, load_info_widgets_from_xml)
+	(load_scan_widgets_from_xml, load_lookup_widgets_from_xml)
 	(load_finger_widgets_from_xml, load_whois_widgets_from_xml):
 	Activate the combobox when the label mnemonic is used.
 
-	* src/callbacks.c (on_about_activate): 
+	* src/callbacks.c (on_about_activate):
 	* pixmaps/Makefile.am (pixmaps_DATA): Return the application
 	icon into the pixmap directory so the .desktop file can find it.
 
@@ -614,7 +619,7 @@
 
 2004-06-11  Carlos Garnacho Parro  <carlosg@gnome.org>
 
-	* src/callbacks.[ch] (on_configure_button_clicked): added, 
+	* src/callbacks.[ch] (on_configure_button_clicked): added,
 	configures the interface calling network-admin from g-s-t
 
 	* src/gnome-nettool.glade: added the "configure" button
@@ -686,25 +691,25 @@
 	enabled
 
 	* src/gnome-nettool.glade: s/GtkCombo/GtkComboBox and added a treeview
-	to show the IP information when there are IPv6 ips. 
+	to show the IP information when there are IPv6 ips.
 
 	* src/info.c (set_nic, load_iface, ip6_masklen,
 	ip6_construct_address, get_nic_information, get_interfaces),
-	src/info.h, src/main.c (list_ip_addr_add_columns, 
-	load_info_widgets_from_xml), src/nettol.h: IPv6 support. 
+	src/info.h, src/main.c (list_ip_addr_add_columns,
+	load_info_widgets_from_xml), src/nettol.h: IPv6 support.
 	When there are IPv6 addresses, a treeview is shown with
 	the information about all of the ip addresses, but if there aren't IPv6
 	addresses, the IPv4 information is shown in text labels.
 
-	* src/info.c (load_iface, nic_update_stats, nic_changed), src/info.h, 
+	* src/info.c (load_iface, nic_update_stats, nic_changed), src/info.h,
 	src/main.c (load_info_widgets_from_xml): Ported to GTK+ 2.4, uses
 	GtkComboBox instead of GtkCombo
 
-	* pixmaps, pixmaps/Makefile.am, configure.in: added a pixmap directory and 
+	* pixmaps, pixmaps/Makefile.am, configure.in: added a pixmap directory and
 	moved gnome-nettol.png from src to pixmaps. Added all of the pixmaps
 	needed to the new pixmap directory.
 
-	* configure.in: checks the libraries version because now 
+	* configure.in: checks the libraries version because now
 	nettool depends on gtk+ >= 2.4
 
 	* src/*.c, : ported to Gtk+ 2.4, uses GtkComboBox and GtkEntryCompletion
@@ -732,9 +737,9 @@
 
 	* src/netstat.c (netstat_protocol_tree_insert)
 	(netstat_route_tree_insert, netstat_multicast_tree_insert):
-	* src/traceroute.c (traceroute_foreach_with_tree): 
-	* src/scan.c (scan_define_model): 
-	* src/lookup.c (lookup_foreach_with_tree): 
+	* src/traceroute.c (traceroute_foreach_with_tree):
+	* src/scan.c (scan_define_model):
+	* src/lookup.c (lookup_foreach_with_tree):
 	* src/ping.c (ping_foreach_with_tree):
 	Remove grab_focus calls.  They steal focus away from the user
 	who may be typing in another tab.
@@ -770,7 +775,7 @@
 
 	Fixes #143691
 
-	* src/gnome-nettool.desktop.in: Add gettext marks for name 
+	* src/gnome-nettool.desktop.in: Add gettext marks for name
 	and description in the desktop file.
 
 2004-06-03  William Jon McCann  <mccann@jhu.edu>
@@ -840,7 +845,7 @@
 	* src/netinfo.[ch] (is_ipv6_enable): added is_ipv6_enable function to
 	know if IPv6 is enabled in the system
 
-	* src/netstat.[ch] (get_active_option, strip_protocol_line, 
+	* src/netstat.[ch] (get_active_option, strip_protocol_line,
 	strip_route_line, *_tree_insert): IPv6 support
 
 	* src/netstat.[ch] (get_active_option): checks if IPv6 is enabled before
@@ -889,14 +894,14 @@
 	  ping.[ch]:
 	  util-mii.c: Applied patch from Joe Marcus Clarke
 	    marcus@freebsd.org, Fixed bug #128719
-	  
+
 2004-01-05  Ulrich Neumann <U_Neumann@gne.de>
 
 	* Makefile.am: removed redundant includedir.
 
 2003-12-16  William Jon McCann  <mccann@jhu.edu>
 
-	* main.c (load_finger_widgets_from_xml) 
+	* main.c (load_finger_widgets_from_xml)
 	(load_whois_widgets_from_xml): Use monospace font instead of fixed.
 
 	* gnome-netinfo.desktop.in (Name): Capitalize name.
@@ -906,7 +911,7 @@
 	* netinfo.[ch] (netinfo_set_host): New function to set host field
 	in UI.
 	(netinfo_set_user): New function to set user field in UI.
-	
+
 	* main.c (start_initial_process_cb): New function to process
 	command line requests.
 	(main): Add command line options and set initial state.
@@ -937,41 +942,41 @@
 
 2003-11-20  William Jon McCann  <mccann@jhu.edu>
 
-	* callbacks.c (on_clear_history_activate): 
-	* callbacks.h: 
+	* callbacks.c (on_clear_history_activate):
+	* callbacks.h:
 	* gnome-netinfo.glade: Add a Clear History menu item.
 
-	* main.c (main, load_info_widgets_from_xml): 
-	* util-mii.c: 
-	* whois.c (whois_do, whois_foreach): 
-	* finger.c (finger_do, finger_foreach): 
-	* lookup.c (lookup_do, lookup_foreach, lookup_create_model): 
-	* scan.c (scan_do, scan_foreach): 
-	* info.c (info_load_iface, info_nic_update_stats) 
-	(info_copy_to_clipboard): 
-	* netstat.c (netstat_get_active_option2, netstat_do) 
-	(netstat_foreach, netstat_foreach_with_tree) 
-	(netstat_copy_to_clipboard, strip_protocol_line) 
-	(strip_multicast_line, strip_route_line): 
-	* traceroute.c (traceroute_do, traceroute_foreach): 
-	* ping.c (ping_do, ping_foreach_with_tree, strip_line): 
-	* netinfo.c (netinfo_get_count, netinfo_text_buffer_insert) 
-	(netinfo_io_text_buffer_dialog, netinfo_toggle_button): 
+	* main.c (main, load_info_widgets_from_xml):
+	* util-mii.c:
+	* whois.c (whois_do, whois_foreach):
+	* finger.c (finger_do, finger_foreach):
+	* lookup.c (lookup_do, lookup_foreach, lookup_create_model):
+	* scan.c (scan_do, scan_foreach):
+	* info.c (info_load_iface, info_nic_update_stats)
+	(info_copy_to_clipboard):
+	* netstat.c (netstat_get_active_option2, netstat_do)
+	(netstat_foreach, netstat_foreach_with_tree)
+	(netstat_copy_to_clipboard, strip_protocol_line)
+	(strip_multicast_line, strip_route_line):
+	* traceroute.c (traceroute_do, traceroute_foreach):
+	* ping.c (ping_do, ping_foreach_with_tree, strip_line):
+	* netinfo.c (netinfo_get_count, netinfo_text_buffer_insert)
+	(netinfo_io_text_buffer_dialog, netinfo_toggle_button):
 	* ping.h:
 	Clean up compiler warnings.  Mostly removed unused variables and
 	added prototypes.
-	
+
 2003-11-19  William Jon McCann  <mccann@jhu.edu>
 
-	* netinfo.h: 
-	* main.c (main): 
-	* gnome-netinfo.glade: 
-	* callbacks.h: 
+	* netinfo.h:
+	* main.c (main):
+	* gnome-netinfo.glade:
+	* callbacks.h:
 	* callbacks.c (on_copy_activate):
-	* Makefile.am (gnome_netinfo_SOURCES): 
+	* Makefile.am (gnome_netinfo_SOURCES):
 	Added whois function.
-	
-	* main.c (load_whois_widgets_from_xml): 
+
+	* main.c (load_whois_widgets_from_xml):
 	* callbacks.c (on_whois_activate): New functions for whois query.
 
 	* whois.[ch]: New files for whois query.
@@ -986,21 +991,21 @@
 	* netinfo.c (netinfo_validate_host): Add a more descriptive message
 	when network address is not specified.  Use markup per HIG.
 
-	* netinfo.h: 
-	* main.c (load_ping_widgets_from_xml) 
-	(load_traceroute_widgets_from_xml, load_netstat_widgets_from_xml) 
-	(load_info_widgets_from_xml, load_scan_widgets_from_xml) 
+	* netinfo.h:
+	* main.c (load_ping_widgets_from_xml)
+	(load_traceroute_widgets_from_xml, load_netstat_widgets_from_xml)
+	(load_info_widgets_from_xml, load_scan_widgets_from_xml)
 	(load_lookup_widgets_from_xml, load_finger_widgets_from_xml):
 	Added pointer to main window to the netinfo structure.
 
 	Based on changes sent by Carlos García Campos <carlosgc@gnome.org>
-	* callbacks.[ch] (gn_quit_app), gnome-netinfo.glade: 
+	* callbacks.[ch] (gn_quit_app), gnome-netinfo.glade:
 	  kill of all the children before exit
-	* netinfo.[ch] (validate_host): function to validate a host 
+	* netinfo.[ch] (validate_host): function to validate a host
 	  fixes bug #114894
 	* ping.c (ping_do), scan.c (scan_do), traceroute.c (traceroute_do):
 	  validates the host before doing the action, fixes bug #114894
-	  
+
 2003-11-18  William Jon McCann  <mccann@jhu.edu>
 
 	* scan.c (scan_do): Work around bug in RH9 where connect always
@@ -1009,28 +1014,28 @@
 
 2003-10-02  Carlos García Campos <carlosgc@gnome.org>
 
-	* netinfo.c (get_ip_version): added a function to get the 
+	* netinfo.c (get_ip_version): added a function to get the
 	  ip version (IPv4 or IPv6) of a host or ip address
 	* ping.c (ping_do, strip_line): IPv6 support
 	* scan.c (scan_do): IPv6 support
 	* traceroute.c (traceroute_do): IPv6 support
-	  
+
 2003-08-31  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
 	* lookup.c (lookup_create_model):
-	* netstat.c (netstat_create_protocol_model, 
+	* netstat.c (netstat_create_protocol_model,
 	  netstat_create_multicast_model):
 	* ping.c (ping_create_model):
-	* traceroute.c (traceroute_create_model): Fixed alignment of 
+	* traceroute.c (traceroute_create_model): Fixed alignment of
 	  columns
 
 2003-08-31  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
 	* traceroute.c (traceroute_create_model): Fixed alignmet of
 	  columns.
-	  (stip_line): Fixed return data when the traceroute answer 
+	  (stip_line): Fixed return data when the traceroute answer
 	  is error.
-	  (traceroute_foreach_with_tree): Fixed display of 
+	  (traceroute_foreach_with_tree): Fixed display of
 	  traceroute output.
 	* NEWS: Updated
 
@@ -1038,13 +1043,13 @@
 
 	* traceroute.c (traceroute_do): Fixed condition to guess
 	  where tcptraceroute/traceroute is installed.
-	  (traceroute_create_model): Commented lines where set 
+	  (traceroute_create_model): Commented lines where set
 	  alignment results in UTF-8 warnings.
-	
+
 2003-08-25  William Jon McCann  <mccann@jhu.edu>
 
 	* gnome-netinfo.png: Added new icon found by apg on jimmac's web.
-	
+
 	* Makefile.am (pixmap_DATA): Added new netinfo icon.
 
 	* traceroute.c (traceroute_create_model): Align IP address to the
@@ -1078,7 +1083,7 @@
 
 	* netinfo.[ch] (netinfo_get_user): New function.
 
-	* callbacks.c (on_finger_activate): 
+	* callbacks.c (on_finger_activate):
 	* main.c (load_finger_widgets_from_xml): New functions.  Added finger
 	support.
 
@@ -1155,13 +1160,13 @@
 
 2003-07-23  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
-	* scan.c (scan_do): Clean the anoying message (g_print), now 
+	* scan.c (scan_do): Clean the anoying message (g_print), now
 	  works only if DEBUG is defined.  (We need to work in
 	  feedback for error)
 
 2003-07-23  William Jon McCann  <mccann@jhu.edu>
 
-	* netinfo.c (netinfo_get_host): 
+	* netinfo.c (netinfo_get_host):
 	* gnome-netinfo.glade: Use GnomeEntry to keep history of
 	hostnames.
 
@@ -1171,14 +1176,14 @@
 
 2003-07-23  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
-	* netinfo.c (netinfo_io_text_buffer_dialog): 
+	* netinfo.c (netinfo_io_text_buffer_dialog):
 	* ping.c (ping_foreach_with_tree):
 	* netstat.c:
-	  Clean the anoying message (g_print), now works only 
+	  Clean the anoying message (g_print), now works only
 	  if DEBUG is defined
-	* main.c (load_netstat_widgets_from_xml): Commented 
+	* main.c (load_netstat_widgets_from_xml): Commented
 	  signals for on_protocol_button_toggled.
-	* util-mii.[ch] (mii_get_basic): Changed paramater to const 
+	* util-mii.[ch] (mii_get_basic): Changed paramater to const
 	  char *.
 
 2003-07-23  German Poo-Caaman~o  <gpoo@ubiobio.cl>
@@ -1192,16 +1197,16 @@
 	types.  Changed subprocess command line creation to avoid using
 	a strsplit.
 
-	* netinfo.h: 
+	* netinfo.h:
 	* gnome-netinfo.glade: Added DNS query type menu.
 
 	* lookup.h (LOOKUP_OPTIONS): Enable use of domain search list.
 
-	* netinfo.h: 
-	* main.c (main, load_info_widgets_from_xml): 
+	* netinfo.h:
+	* main.c (main, load_info_widgets_from_xml):
 	* info.h:
-	* info.c (info_do, info_load_iface, info_get_nic_information): 
-	* callbacks.c (on_info_nic_changed): 
+	* info.c (info_do, info_load_iface, info_get_nic_information):
+	* callbacks.c (on_info_nic_changed):
 	Consolidated netinfo_info structure into Netinfo structure to
 	support copy to clipboard for info tab.
 
@@ -1211,7 +1216,7 @@
 2003-07-23  German Poo-Caaman~o  <gpoo@ubiobio.cl>
 
 	* lookup.h: Added LOOKUP_FORMAT_MX.
-	* lookup.c (split_line): Split correctly the lines for MX 
+	* lookup.c (split_line): Split correctly the lines for MX
 	  records.
 
 2003-07-22  German Poo-Caaman~o <gpoo@ubiobio.cl>
@@ -1250,12 +1255,12 @@
 	* ping.c:
 	  	Remove conditionals defines.  Now everything is detected
 		on the fly, but info.c (ifconfig)
-		
+
 2003-07-21  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
 	* lookup.[ch] (lookup_do):
 	* lookup.c (lookup_copy_to_clipboard):
-	* main.c (load_lookup_widgets_from_xml): 
+	* main.c (load_lookup_widgets_from_xml):
 	* gnome-netinfo.glade (Lookup tab):
 		Added support for GtkTreeView.
 
@@ -1286,7 +1291,7 @@
 	  Added Autodetection of programs (ping, tcptraceroute, netstat).
 	* utils.[ch]: Added utilitities to find program in a path given.
 	    Most code stolen from gutils.c
-		util_find_program_dialog, util_tree_model_to_string, 
+		util_find_program_dialog, util_tree_model_to_string,
 		util_find_program_in_path, my_strchrnul.
 	* TODO: Updated.
 
@@ -1296,13 +1301,13 @@
 
 2003-07-20  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
-	* main.c (load_netstat_widgets_from_xml): Added 
+	* main.c (load_netstat_widgets_from_xml): Added
 	  netstat_copy_to_clipboard to copy_output properties.
 	* netstat.[ch]: Added netstat_copy_to_clipboard prototype.
 
 2003-07-20  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
-	* main.c (load_scan_widgets_from_xml): Added 
+	* main.c (load_scan_widgets_from_xml): Added
 	  scan_copy_to_clipboard to copy_output properties.
 	* scan.h: Added scan_copy_to_clipboard prototype.
 	* scan.c: Added scan_copy_to_clipboard prototype.
@@ -1320,7 +1325,7 @@
 	  GtkTreeModel.
 	  Added util_tree_model_to_string to convert a GtkTreeModel to
 	  a GString (text separated by tabs).
-	* main.c (load_traceroute_widgets_from_xml): Added 
+	* main.c (load_traceroute_widgets_from_xml): Added
 	  traceroute_copy_to_clipboard to copy_output properties.
 
 2003-07-20  German Poo-Caaman~o <gpoo@ubiobio.cl>
@@ -1331,7 +1336,7 @@
 	* ping.c: Added ping_copy_to_clipboard and ping_output_foreach.
 	  Process a GtkTreeModel gettings its values and put them into
 	  the clipboard as text separated by tabs.
-	* callbacks.c (on_copy_activate): Enable conditional 
+	* callbacks.c (on_copy_activate): Enable conditional
 	  copy_output only if a function is provided).
 
 2003-07-20  German Poo-Caaman~o <gpoo@ubiobio.cl>
@@ -1377,7 +1382,7 @@
 
 2003-07-08  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
-	* ping.c (ping_foreach_with_tree): Fixed calculation of packet 
+	* ping.c (ping_foreach_with_tree): Fixed calculation of packet
 	  transmitted.
 	  (strip_total_line): Fixed parameters in sscanf.
 
@@ -1387,12 +1392,12 @@
 	(strip_total_line): New function.
 	(ping_foreach_with_tree): Fixed calculation of packet loss.
 	Added packets transmitted information.
-	
+
 	* ping.h (PING_TOTAL): Uncomment sscanf template used to parse
 	ping results summary output.  This is used to get the total number of
 	packets transmitted.
 
-	* netinfo.h: 
+	* netinfo.h:
 	* main.c (load_ping_widgets_from_xml): Added support for packets
 	transmitted information.
 
@@ -1413,7 +1418,7 @@
 
 2003-06-29  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
-	* helpers: Added directory to host the helpers programs 
+	* helpers: Added directory to host the helpers programs
 	  for ping, tcptraceroute, etc.
 	* helpers/gnome-ping-helper.[ch]: First implementation of
 	  a ping.  It works on Linux, and compile on Solaris. It
@@ -1448,7 +1453,7 @@
 
 2003-02-21  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
-	* main.c: Added "activate" handle signal to 
+	* main.c: Added "activate" handle signal to
 	  load_scan_widgets_from_xml
 
 2003-02-20  German Poo-Caaman~o <gpoo@ubiobio.cl>
@@ -1503,7 +1508,7 @@
 2003-02-11  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
 	* info.h: Added conditional definition of ifr_mtu,
-	  because Solaris support SIOCGIFMTU ioctl call, 
+	  because Solaris support SIOCGIFMTU ioctl call,
 	  but store the MTU on ifr_metric.
 
 2003-02-11  German Poo-Caaman~o <gpoo@ubiobio.cl>
@@ -1528,7 +1533,7 @@
 	  when tcptraceroute starts (I'm not sure if it will
 	  be useful, yet)
 	  - Added enum to work with GtkTreeView
-	* traceroute.c: Added traceroute_foreach_with_tree to 
+	* traceroute.c: Added traceroute_foreach_with_tree to
 	  show the output of ping as GtkTreeView
 	  - Added strip_line to strip each line of tcptraceroute
 	  - Added traceroute_create_model to handle the
@@ -1568,7 +1573,7 @@
 
 2003-01-13  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
-	* traceroute.c: 
+	* traceroute.c:
 	* traceroute.h:
 	* callbacks.c:
 	* gnome-netinfo.glade:
@@ -1578,7 +1583,7 @@
 	* ping.c:
 	* main.c: Added conditional compilation if one of these programs
 	          were found it by configure (PING_PROGRAM.
-			  TCPTRACEROUTE_PROGRAM, NETSTAT_PROGRAM, 
+			  TCPTRACEROUTE_PROGRAM, NETSTAT_PROGRAM,
 			  IFCONFIG_PROGRAM)
 	* netinfo.c: Fixed warning in compilation
 			  (netinfo_io_text_buffer_dialog)
@@ -1589,7 +1594,7 @@
 
 2003-01-10  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
-	* netinfo.c: Add information when then channel is not 
+	* netinfo.c: Add information when then channel is not
 	  available (G_IO_NVAL)
 
 2003-01-08  German Poo-Caaman~o <gpoo@ubiobio.cl>
@@ -1620,20 +1625,20 @@
 	  called it from main
 
 	* info.[ch] Implemented info_load_iface
-	  Pseudo implemented info_nick_changed.  
+	  Pseudo implemented info_nick_changed.
 
 2002-12-17  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
 	* main.c: Added load_netstat_widgets_from_xml
 
 	* Makefile.am: Added netstat.[ch]
-	
+
 	* netstat.[ch]: Added implementation of netstat
 	  netstat_do
 	  netstat_stop
 	  netstat_foreach
 	  netstat_get_active_option
-	  
+
 2002-12-17  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
 	* main.c: Adapted load_traceroute_widgets_from_xml to work
@@ -1658,28 +1663,28 @@
 	  netinfo_process_command
 	  netinfo_stop_process_command
 	  netinfo_text_buffer_insert
-	  netinfo_get_count 
+	  netinfo_get_count
 	  netinfo_get_host
-	  netinfo_toggle_button 
+	  netinfo_toggle_button
 	  netinfo_toggle_state
 
-	* ping.c: Moved and renamed functions to netinfo.c, only 
+	* ping.c: Moved and renamed functions to netinfo.c, only
 	  ping_do left respect the previous one.
 	  Added ping_foreach to process each line from the output
 	  of command.
 	  Added ping_stop to stop the process when its running.
-	
+
 	* TODO: Updated todo list
-	
+
 2002-12-17  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
 	* glade-netinfo.glade: Fixed a minimal value for
 	  ping's count spin (min set to 1).
-	  
-	* TODO: Added To Do file with missing features to 
+
+	* TODO: Added To Do file with missing features to
 	  get an usable application
-	
-	* TEST_CASES: Added basics user test cases, to remind 
+
+	* TEST_CASES: Added basics user test cases, to remind
 	  me what do I need to test, after every change.
 
 2002-12-14  German Poo-Caaman~o <gpoo@ubiobio.cl>
@@ -1700,19 +1705,19 @@
 	* traceroute.c: Changed traceroute by tcptraceroute.
 	* ping.h: Added properties to netinfo_ping (button,
 	  running, child_pid and command_line)
-	* ping.c: 
-	  - Changed ping_do to work with netinfo_ping 
+	* ping.c:
+	  - Changed ping_do to work with netinfo_ping
 	    directly.
 	  - Added netinfo_get_count to get a value of a property
-	    of netinfo_ping (in the future, may be a generic 
+	    of netinfo_ping (in the future, may be a generic
 		structure netinfo).
 	  - Added ping_stop.  This function must stop the
 	    execution in any time that the user want.
-	* callbacks.c: 
-	  -Added toggle_button that change a the 
+	* callbacks.c:
+	  -Added toggle_button that change a the
 	   label and icon of a button (destroy and re-create)
 	   to be used by any callback.
-	  - Updated on_ping_* to use toggle_button. 
+	  - Updated on_ping_* to use toggle_button.
 
 2002-12-14  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
@@ -1738,7 +1743,7 @@
 	  a on*_host_activate.
 	  Added on_info_nic_changed with a definition about how
 	  must it work.
-	* gnome-netinfo.glade: Fixed some widgets names and 
+	* gnome-netinfo.glade: Fixed some widgets names and
 	  some properties (editable).
 	  The callbacks of ping_host and traceroute were deleted.
 	* main.c: Added:
@@ -1748,7 +1753,7 @@
 	  the signals.
 	* ping.c: End of funcionality.  Now the counts of ping
 	  are not hard coded.
-	  
+
 2002-12-12  German Poo-Caaman~o <gpoo@ubiobio.cl>
 
 	* ping.[ch]:
