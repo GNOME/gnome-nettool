@@ -23,7 +23,7 @@ msgstr ""
 #: ../src/callbacks.c:312
 msgid "translator_credits"
 msgstr ""
-"Ivar Smolin <okul@linux.ee>, 2005.\n"
+"Ivar Smolin <okul@linux.ee>, 2005, 2006.\n"
 "Priit Laes <amd@store20.com>, 2005"
 
 #: ../src/callbacks.c:337
@@ -36,11 +36,11 @@ msgstr "0.0"
 
 #: ../src/gnome-nettool.glade.h:2
 msgid "<b>IP Information</b>"
-msgstr "<b>IP teave</b>"
+msgstr "<b>IP andmed</b>"
 
 #: ../src/gnome-nettool.glade.h:3
 msgid "<b>Interface Information</b>"
-msgstr "<b>Liidese teave</b>"
+msgstr "<b>Liidese andmed</b>"
 
 #: ../src/gnome-nettool.glade.h:4
 msgid "<b>Interface Statistics</b>"
@@ -104,7 +104,7 @@ msgstr "Ühenduskiirus:"
 
 #: ../src/gnome-nettool.glade.h:19 ../src/main.c:766
 msgid "Lookup"
-msgstr "Lahendamine"
+msgstr "Lahenda"
 
 #: ../src/gnome-nettool.glade.h:20
 msgid "MTU:"
@@ -120,7 +120,7 @@ msgstr "Vähim:"
 
 #: ../src/gnome-nettool.glade.h:23
 msgid "Multicast Information"
-msgstr "Multicast teave"
+msgstr "Multicast'i andmed"
 
 #: ../src/gnome-nettool.glade.h:24
 msgid "Multicast:"
@@ -180,7 +180,7 @@ msgstr "Vastuvõtuvigu:"
 
 #: ../src/gnome-nettool.glade.h:38
 msgid "Routing Table Information"
-msgstr "Ruutingutabeli teave"
+msgstr "Ruutingutabeli andmed"
 
 #: ../src/gnome-nettool.glade.h:39 ../src/main.c:647
 msgid "Scan"
@@ -244,15 +244,15 @@ msgstr "_Abiteave"
 
 #: ../src/gnome-nettool.glade.h:54
 msgid "_Information type:"
-msgstr "_Teabe tüüp:"
+msgstr "A_ndmete liik:"
 
 #: ../src/gnome-nettool.glade.h:55
 msgid "_Network address:"
-msgstr "_Võrguaadress:"
+msgstr "Võr_guaadress:"
 
 #: ../src/gnome-nettool.glade.h:56
 msgid "_Network device:"
-msgstr "_Võrguseade:"
+msgstr "Võr_guseade:"
 
 #: ../src/gnome-nettool.glade.h:57
 msgid "_Tool"
@@ -444,7 +444,7 @@ msgstr "Lähteaadress\tTTL\tAadressi tüüp\tKirje tüüp\tTulemus\n"
 
 #: ../src/main.c:79
 msgid "Load information for a network device"
-msgstr "Võrguseadme kohta teabe laadimine"
+msgstr "Võrguseadme kohta andmete laadimine"
 
 #: ../src/main.c:80
 msgid "DEVICE"
@@ -460,7 +460,8 @@ msgstr "HOST"
 
 #: ../src/main.c:87
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "Netstat teabe hankimine.  Lubatud võtmed on: route, active, multicast."
+msgstr ""
+"Netstat andmete hankimine.  Lubatud võtmed on: route, active, multicast."
 
 #: ../src/main.c:88
 msgid "COMMAND"
@@ -557,14 +558,14 @@ msgstr ""
 
 #: ../src/main.c:886
 msgid "Enter the user to finger."
-msgstr "Sisesta kasutaja, kelle kohta soovid teavet."
+msgstr "Sisesta kasutaja, kelle kohta soovid andmeid."
 
 #: ../src/main.c:913
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Sisesta võrguaadress, millelt soovid hankida kasutajateavet.\n"
+"Sisesta võrguaadress, millelt soovid hankida kasutajaandmeid.\n"
 "Näiteks: www.domain.com või 192.168.2.1"
 
 #: ../src/main.c:1000
@@ -572,7 +573,7 @@ msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Sisesta võrguaadress, mille kohta soovid hankida whois teavet.\n"
+"Sisesta võrguaadress, mille kohta soovid hankida whois andmeid.\n"
 "Näiteks: www.domain.com või 192.168.2.1"
 
 #: ../src/netstat.c:122
@@ -670,7 +671,7 @@ msgstr "Palun sisesta korrektne domeeni aadress ja proovi uuesti."
 
 #: ../src/nettool.c:394
 msgid "Information not available"
-msgstr "Teave pole saadaval"
+msgstr "Andmed pole saadaval"
 
 #: ../src/nettool.c:512
 msgid "Stop"
@@ -808,7 +809,7 @@ msgstr "%s: Käsku ei leitud"
 
 #: ../src/gnome-nettool.desktop.in.h:1
 msgid "Network Information Tools"
-msgstr "Võrguteabe tööriistad"
+msgstr "Võrguandmete tööriistad"
 
 #: ../src/gnome-nettool.desktop.in.h:2
 msgid "Network Tools"
@@ -817,17 +818,17 @@ msgstr "Võrgutööriistad"
 #: ../src/finger.c:62
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr "\"%s\" teabe hankimine hostilt \"%s\""
+msgstr "\"%s\" andmete hankimine hostilt \"%s\""
 
 #: ../src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "\"%s\" kõikide kasutajate kohta teabe hankimine"
+msgstr "\"%s\" kõikide kasutajate kohta andmete hankimine"
 
 #: ../src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
-msgstr "Whois teabe hankimine %s kohta"
+msgstr "Whois andmete hankimine %s kohta"
 
 msgid "Network Information"
 msgstr "Võrguteave"
