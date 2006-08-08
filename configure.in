@@ -1,5 +1,5 @@
 AC_PREREQ(2.59)
-AC_INIT([GNOME Nettool], [2.15.4], [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool], [gnome-nettool])
+AC_INIT([GNOME Nettool], [2.15.91], [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool], [gnome-nettool])
 AC_CONFIG_SRCDIR([src/ping.c])
 
 dnl Useful to call aclocal after 'make'
@@ -10,7 +10,7 @@ AM_INIT_AUTOMAKE([1.9 foreign])
 AC_CONFIG_MACRO_DIR([m4])
 AM_MAINTAINER_MODE
 
-IT_PROG_INTLTOOL([0.11])
+IT_PROG_INTLTOOL([0.35])
 
 AC_ISC_POSIX
 AC_PROG_CC
@@ -45,7 +45,6 @@ dnl
 GETTEXT_PACKAGE=gnome-nettool
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The gettext package])
-ALL_LINGUAS="ar az bg bn bn_IN bs ca cs cy da de dz el en_CA en_GB es et eu fa fi fr ga gl gu he hi hr hu id it ja ka ko lt lv mg mk ml mn ms nb ne nl pa pl pt pt_BR ro ru rw sk sl sq sr sr@Latn sv ta th tr uk vi wa xh zh_CN zh_TW"
 AM_GLIB_GNU_GETTEXT
 
 AC_SUBST(CFLAGS)
