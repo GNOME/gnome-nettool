@@ -1,32 +1,27 @@
-# translation of eu.po to Basque
 # translation of gnome-nettool.po to Basque
-# translation of gnome-nettool-zuzenduta.HEAD.po to Basque
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Hizkuntza Politikarako Sailburuordetza <hps@ej-gv.es>, 2005.
+# Copyright (C) 1998-2006 Free Software Foundation, Inc.
 # Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-21 11:13+0200\n"
-"PO-Revision-Date: 2005-04-06 17:02+0200\n"
-"Last-Translator: Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>\n"
+"POT-Creation-Date: 2006-08-09 17:50+0000\n"
+"PO-Revision-Date: 2006-08-09 17:51+0000\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 
 #: ../src/callbacks.c:312
 msgid "translator_credits"
-msgstr ""
-"Hizkuntza Politikarako Sailburuordetza\n"
-"(<hizkpol@ej-gv.es>)"
+msgstr "Hizkuntza Politikarako Sailburuordetza (<hizkpol@ej-gv.es>)"
 
 #: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
@@ -84,7 +79,7 @@ msgstr "Gailuak"
 msgid "Display:"
 msgstr "Bistaratu:"
 
-#: ../src/gnome-nettool.glade.h:14 ../src/main.c:852
+#: ../src/gnome-nettool.glade.h:14 ../src/main.c:862
 msgid "Finger"
 msgstr "Finger"
 
@@ -104,7 +99,7 @@ msgstr "IP helbidea:"
 msgid "Link speed:"
 msgstr "Esteka-abiadura:"
 
-#: ../src/gnome-nettool.glade.h:19 ../src/main.c:766
+#: ../src/gnome-nettool.glade.h:19 ../src/main.c:776
 msgid "Lookup"
 msgstr "Bilatu"
 
@@ -132,7 +127,7 @@ msgstr "Multidifusioa:"
 msgid "Netmask:"
 msgstr "Sare-maskara:"
 
-#: ../src/gnome-nettool.glade.h:26 ../src/main.c:464
+#: ../src/gnome-nettool.glade.h:26 ../src/main.c:474
 msgid "Netstat"
 msgstr "Sareko estatistikak"
 
@@ -160,7 +155,7 @@ msgstr "Jasotako paketeak:"
 msgid "Packets transmitted:"
 msgstr "Transmititutako paketeak:"
 
-#: ../src/gnome-nettool.glade.h:33 ../src/main.c:300
+#: ../src/gnome-nettool.glade.h:33 ../src/main.c:310
 msgid "Ping"
 msgstr "Ping"
 
@@ -184,7 +179,7 @@ msgstr "Jasotze-erroreak:"
 msgid "Routing Table Information"
 msgstr "Bideratze-taulen informazioa"
 
-#: ../src/gnome-nettool.glade.h:39 ../src/main.c:647
+#: ../src/gnome-nettool.glade.h:39 ../src/main.c:657
 msgid "Scan"
 msgstr "Eskaneatu"
 
@@ -196,7 +191,7 @@ msgstr "Bidali:"
 msgid "State:"
 msgstr "Egoera:"
 
-#: ../src/gnome-nettool.glade.h:42 ../src/main.c:388
+#: ../src/gnome-nettool.glade.h:42 ../src/main.c:398
 msgid "Trace"
 msgstr "Aztarna"
 
@@ -224,7 +219,7 @@ msgstr "Mugarik gabeko eskaerak"
 msgid "User"
 msgstr "Erabiltzailea"
 
-#: ../src/gnome-nettool.glade.h:49 ../src/main.c:968
+#: ../src/gnome-nettool.glade.h:49 ../src/main.c:978
 msgid "Whois"
 msgstr "Whois"
 
@@ -305,101 +300,101 @@ msgstr "Atzera-begizta interfazea"
 msgid "Unknown Interface"
 msgstr "Interfaze ezezaguna"
 
-#: ../src/info.c:161
+#: ../src/info.c:162
 msgid "Network Devices Not Found"
 msgstr "Ez da sareko gailurik aurkitu"
 
-#: ../src/info.c:367
+#: ../src/info.c:385
 msgid "Unknown"
 msgstr "Ezezaguna"
 
-#: ../src/info.c:527
+#: ../src/info.c:545
 msgid "Active"
 msgstr "Aktibo"
 
-#: ../src/info.c:529
+#: ../src/info.c:547
 msgid "Inactive"
 msgstr "Inaktibo"
 
-#: ../src/info.c:534
+#: ../src/info.c:552
 msgid "Loopback"
 msgstr "Atzera-begizta"
 
-#: ../src/info.c:551
+#: ../src/info.c:569
 msgid "Enabled"
 msgstr "Gaituta"
 
-#: ../src/info.c:553
+#: ../src/info.c:571
 msgid "Disabled"
 msgstr "Desgaituta"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:694
+#: ../src/info.c:708
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Sareko gailua:\t%s\n"
 
-#: ../src/info.c:695
+#: ../src/info.c:709
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardwarearen helbidea:\t%s\n"
 
-#: ../src/info.c:696
+#: ../src/info.c:710
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP helbidea:\t%s\n"
 
-#: ../src/info.c:697
+#: ../src/info.c:711
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Sare-maskara:\t%s\n"
 
-#: ../src/info.c:698
+#: ../src/info.c:712
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Igorpena:\t%s\n"
 
-#: ../src/info.c:699
+#: ../src/info.c:713
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multidifusioa:\t%s\n"
 
-#: ../src/info.c:700
+#: ../src/info.c:714
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:701
+#: ../src/info.c:715
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Esteka-abiadura:\t%s\n"
 
-#: ../src/info.c:702
+#: ../src/info.c:716
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Egoera:\t%s\n"
 
-#: ../src/info.c:704
+#: ../src/info.c:718
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Transmititutako paketeak:\t%s\n"
 
-#: ../src/info.c:705
+#: ../src/info.c:719
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Transmisio-erroreak:\t%s\n"
 
-#: ../src/info.c:706
+#: ../src/info.c:720
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Jasotako paketeak:\t%s\n"
 
-#: ../src/info.c:707
+#: ../src/info.c:721
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Jasotze-erroreak:\t%s\n"
 
-#: ../src/info.c:708
+#: ../src/info.c:722
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Talkak:\t%s\n"
@@ -444,61 +439,61 @@ msgstr "Helbidea"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Iturburua\tTTL\tHelbide-mota\tErregistro-mota1\tBereizmena\n"
 
-#: ../src/main.c:79
+#: ../src/main.c:81
 msgid "Load information for a network device"
 msgstr "Kargatu informazioa sareko gailurako"
 
-#: ../src/main.c:80
+#: ../src/main.c:82
 msgid "DEVICE"
 msgstr "GAILUA"
 
-#: ../src/main.c:83
+#: ../src/main.c:85
 msgid "Send a ping to a network address"
 msgstr "Bidali ping bat sareko helbide batera"
 
-#: ../src/main.c:84 ../src/main.c:92 ../src/main.c:96 ../src/main.c:100
+#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
 msgid "HOST"
 msgstr "OSTALARIA"
 
-#: ../src/main.c:87
+#: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Eskuratu sareko estatistiken informazioa. Hauek dira baliozko aukerak: "
 "route, active, multicast."
 
-#: ../src/main.c:88
+#: ../src/main.c:90
 msgid "COMMAND"
 msgstr "KOMANDOA"
 
-#: ../src/main.c:91
+#: ../src/main.c:93
 msgid "Trace a route to a network address"
 msgstr "Egin bidea sareko helbide batera"
 
-#: ../src/main.c:95
+#: ../src/main.c:97
 msgid "Port scan a network address"
 msgstr "Sareko helbide bateko ataka-eskaneatzea"
 
-#: ../src/main.c:99
+#: ../src/main.c:101
 msgid "Look up a network address"
 msgstr "Bilatu sareko helbidea"
 
-#: ../src/main.c:103
+#: ../src/main.c:105
 msgid "Finger command to run"
 msgstr "Finger komandoa exekutatzeko"
 
-#: ../src/main.c:104
+#: ../src/main.c:106
 msgid "USER"
 msgstr "ERABILTZAILEA"
 
-#: ../src/main.c:107
+#: ../src/main.c:109
 msgid "Perform a whois lookup for a network domain"
 msgstr "Egin whois bilaketa sareko domeinu baterako"
 
-#: ../src/main.c:108
+#: ../src/main.c:110
 msgid "DOMAIN"
 msgstr "DOMEINUA"
 
-#: ../src/main.c:122
+#: ../src/main.c:127
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -507,7 +502,7 @@ msgstr ""
 "%s fitxategia ez da existitzen, begiratu gnome-nettool ondo instalatuta "
 "dagoen"
 
-#: ../src/main.c:333
+#: ../src/main.c:343
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -515,7 +510,7 @@ msgstr ""
 "Sartu sareko helbidea, ping egiteko.\n"
 "(adibidea: www.domeinua.com edo 192.168.2.1)"
 
-#: ../src/main.c:415
+#: ../src/main.c:425
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -523,27 +518,27 @@ msgstr ""
 "Sartu sareko helbidea, bidea egiteko.\n"
 "(adibidea: www.domeinua.com edo 192.168.2.1)"
 
-#: ../src/main.c:500 ../src/netstat.c:443
+#: ../src/main.c:510 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protokoloa"
 
-#: ../src/main.c:507
+#: ../src/main.c:517
 msgid "IP Address"
 msgstr "IP helbidea"
 
-#: ../src/main.c:514
+#: ../src/main.c:524
 msgid "Netmask / Prefix"
 msgstr "Sare-maskara / Aurrizkia"
 
-#: ../src/main.c:521
+#: ../src/main.c:531
 msgid "Broadcast"
 msgstr "Igorpena"
 
-#: ../src/main.c:528
+#: ../src/main.c:538
 msgid "Scope"
 msgstr "Esparrua"
 
-#: ../src/main.c:669
+#: ../src/main.c:679
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -551,7 +546,7 @@ msgstr ""
 "Sartu sareko helbidea, irekitako atakak eskaneatzeko.\n"
 "(adibidea: www.domeinua.com edo 192.168.2.1)"
 
-#: ../src/main.c:797
+#: ../src/main.c:807
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -559,11 +554,11 @@ msgstr ""
 "Sartu sareko helbidea, bilaketa egiteko.\n"
 "(adibidea: www.domeinua.com edo 192.168.2.1)"
 
-#: ../src/main.c:886
+#: ../src/main.c:896
 msgid "Enter the user to finger."
 msgstr "Sartu erabiltzailea, finger abiarazteko"
 
-#: ../src/main.c:913
+#: ../src/main.c:923
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -571,7 +566,7 @@ msgstr ""
 "Sartu sareko helbidea, erabiltzaile horri finger egiteko.\n"
 "(adibidea: www.domeinua.com edo 192.168.2.1)"
 
-#: ../src/main.c:1000
+#: ../src/main.c:1010
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -599,7 +594,7 @@ msgstr "IP iturburua"
 msgid "Port/Service"
 msgstr "Ataka/Zerbitzua"
 
-#: ../src/netstat.c:466 ../src/scan.c:298
+#: ../src/netstat.c:466 ../src/scan.c:312
 msgid "State"
 msgstr "Egoera"
 
@@ -651,36 +646,36 @@ msgstr "Helburua\tAtebidea\tSare-maskara\tInterfazea\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Interfazea\tKidea\tTaldea\n"
 
-#: ../src/nettool.c:198
+#: ../src/nettool.c:199
 msgid "A network address was not specified"
 msgstr "Sareko helbidea ez duzu zehaztu"
 
-#: ../src/nettool.c:199 ../src/nettool.c:208
+#: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
 msgstr "Sartu sareko helbidea eta saiatu berriro."
 
-#: ../src/nettool.c:206
+#: ../src/nettool.c:207
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "'%s' helbidea ezin da aurkitu"
 
-#: ../src/nettool.c:235
+#: ../src/nettool.c:236
 msgid "A domain address was not specified"
 msgstr "Domeinuaren helbidea ez duzu zehaztu"
 
-#: ../src/nettool.c:236
+#: ../src/nettool.c:237
 msgid "Please enter a valid domain address and try again."
 msgstr "Sartu domeinuaren helbidea eta saiatu berriro."
 
-#: ../src/nettool.c:394
+#: ../src/nettool.c:395
 msgid "Information not available"
 msgstr "Informazioa ez dago erabilgarri"
 
-#: ../src/nettool.c:512
+#: ../src/nettool.c:513
 msgid "Stop"
 msgstr "Gelditu"
 
-#: ../src/nettool.c:518
+#: ../src/nettool.c:519
 msgid "Run"
 msgstr "Exekutatu"
 
@@ -689,23 +684,23 @@ msgstr "Exekutatu"
 msgid "Sending ping requests to %s"
 msgstr "Ping eskaera hona bidaltzen: %s"
 
-#: ../src/ping.c:385
+#: ../src/ping.c:391
 msgid "Bytes"
 msgstr "Byteak"
 
-#: ../src/ping.c:392
+#: ../src/ping.c:398
 msgid "Source"
 msgstr "Iturburua"
 
-#: ../src/ping.c:400
+#: ../src/ping.c:406
 msgid "Seq"
 msgstr "Sekuentzia"
 
-#: ../src/ping.c:410
+#: ../src/ping.c:416
 msgid "Time"
 msgstr "Denbora"
 
-#: ../src/ping.c:418
+#: ../src/ping.c:424
 msgid "Units"
 msgstr "Unitateak"
 
@@ -713,62 +708,62 @@ msgstr "Unitateak"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:444
+#: ../src/ping.c:450
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Byte\tIturburua\tSekuentzia\tDenbora\tUnitate\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:459
+#: ../src/ping.c:465
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Gutxieneko denbora:\t%s ms\n"
 
-#: ../src/ping.c:460
+#: ../src/ping.c:466
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Batez besteko denbora:\t%s ms\n"
 
-#: ../src/ping.c:461
+#: ../src/ping.c:467
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Gehienezko denbora:\t%s ms\n"
 
-#: ../src/ping.c:463
+#: ../src/ping.c:469
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Transmititutako paketeak:\t%s\n"
 
-#: ../src/ping.c:465
+#: ../src/ping.c:471
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Jasotako paketeak:\t%s\n"
 
-#: ../src/ping.c:467
+#: ../src/ping.c:473
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Galdutako paketeak:\t%s\n"
 
-#: ../src/scan.c:86
+#: ../src/scan.c:93
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s eskaneatzen, irekitzako atakak aurkitzeko"
 
-#: ../src/scan.c:161
+#: ../src/scan.c:168
 msgid "unknown"
 msgstr "ezezaguna"
 
-#: ../src/scan.c:290
+#: ../src/scan.c:304
 msgid "Port"
 msgstr "Ataka"
 
-#: ../src/scan.c:306
+#: ../src/scan.c:320
 msgid "Service"
 msgstr "Zerbitzua"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:328
+#: ../src/scan.c:342
 msgid "Port\tState\tService\n"
 msgstr "Ataka\tEgoera\tZerbitzua\n"
 
@@ -832,3 +827,4 @@ msgstr "\"%s\"-(e)ko erabiltzaile guztien informazioa eskuratzen"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s-(r)en 'whois' informazioa eskuratzen"
+
