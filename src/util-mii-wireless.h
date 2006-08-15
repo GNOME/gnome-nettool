@@ -17,7 +17,7 @@
 
 /*#include <linux/if.h>*/			/* for IFNAMSIZ and co... */
 
-/* Some usefull constants */
+/* Some useful constants */
 #define KILO	1e3
 #define MEGA	1e6
 #define GIGA	1e9
