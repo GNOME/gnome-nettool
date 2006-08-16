@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-15 12:42-0400\n"
+"POT-Creation-Date: 2006-08-15 11:32+0200\n"
 "PO-Revision-Date: 2005-08-03 19:21+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
@@ -16,16 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=1; plural=0;\n"
+"Plural-Forms:   nplurals=2; plural=(n != 1);\n"
 
-#: ../src/callbacks.c:311
+#: ../src/callbacks.c:318
 #, fuzzy
 msgid "translator-credits"
 msgstr ""
 "Dvornik László <dvornik@gnome.hu>\n"
 "Kelemen Gábor <kelemeng@gnome.hu>"
 
-#: ../src/callbacks.c:326
+#: ../src/callbacks.c:333
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafikus felhasználói felület általános hálózati segédprogramokhoz"
 
@@ -62,212 +62,216 @@ msgid "Average:"
 msgstr "Átlag:"
 
 #: ../src/gnome-nettool.glade.h:9
+msgid "Beep on ping"
+msgstr ""
+
+#: ../src/gnome-nettool.glade.h:10
 msgid "Broadcast:"
 msgstr "Broadcast:"
 
-#: ../src/gnome-nettool.glade.h:10
+#: ../src/gnome-nettool.glade.h:11
 msgid "Clear _History"
 msgstr "_Előzmények törlése"
 
-#: ../src/gnome-nettool.glade.h:11
+#: ../src/gnome-nettool.glade.h:12
 msgid "Collisions:"
 msgstr "Ütközések:"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../src/gnome-nettool.glade.h:13
 msgid "Devices"
 msgstr "Eszközök"
 
 #. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:14
+#: ../src/gnome-nettool.glade.h:15
 #, fuzzy
 msgid "Devices - Network Tools"
 msgstr "Hálózati segédeszközök"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.glade.h:16
 msgid "Display:"
 msgstr "Képernyő:"
 
-#: ../src/gnome-nettool.glade.h:16 ../src/main.c:857
+#: ../src/gnome-nettool.glade.h:17 ../src/main.c:864
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:18
 msgid "Hardware address:"
 msgstr "Hardvercím:"
 
-#: ../src/gnome-nettool.glade.h:18
+#: ../src/gnome-nettool.glade.h:19
 msgid "Host"
 msgstr "Gép"
 
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.glade.h:20
 msgid "IP Address:"
 msgstr "IP-cím:"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:21
 msgid "Link speed:"
 msgstr "Kapcsolat sebessége:"
 
-#: ../src/gnome-nettool.glade.h:21 ../src/main.c:771
+#: ../src/gnome-nettool.glade.h:22 ../src/main.c:778
 msgid "Lookup"
 msgstr "Keresés"
 
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:23
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:24
 msgid "Maximum:"
 msgstr "Maximum:"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:25
 msgid "Minimum:"
 msgstr "Minimum:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:26
 msgid "Multicast Information"
 msgstr "Multicast-információ"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:27
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../src/gnome-nettool.glade.h:28
 msgid "Netmask:"
 msgstr "Hálózati maszk:"
 
-#: ../src/gnome-nettool.glade.h:28 ../src/main.c:469
+#: ../src/gnome-nettool.glade.h:29 ../src/main.c:476
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:30
 msgid "Not Available"
 msgstr "Nem érhető el"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:31
 msgid "Only"
 msgstr "Egyedül"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:32
 msgid "Packets loss:"
 msgstr "Csomagveszteség:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:33
 msgid "Packets received:"
 msgstr "Fogadott csomagok:"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:34
 msgid "Packets transmitted:"
 msgstr "Továbbított csomagok:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:305
+#: ../src/gnome-nettool.glade.h:35 ../src/main.c:312
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:36
 msgid "Port Scan"
 msgstr "Portvizsgálat"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:37
 msgid "Received bytes:"
 msgstr "Fogadott bájtok:"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:38
 msgid "Received packets:"
 msgstr "Fogadott csomagok:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:39
 msgid "Reception errors:"
 msgstr "Fogadási hibák:"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:40
 msgid "Routing Table Information"
 msgstr "Útválasztási táblázat-információ"
 
-#: ../src/gnome-nettool.glade.h:40 ../src/main.c:652
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:659
 msgid "Scan"
 msgstr "Vizsgálat"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:42
 msgid "Send:"
 msgstr "Küldés:"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:43
 msgid "State:"
 msgstr "Állapot:"
 
-#: ../src/gnome-nettool.glade.h:43 ../src/main.c:393
+#: ../src/gnome-nettool.glade.h:44 ../src/main.c:400
 msgid "Trace"
 msgstr "Nyomkövetés"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:45
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:46
 msgid "Transmission errors:"
 msgstr "Adatátviteli hibák:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:47
 msgid "Transmitted bytes:"
 msgstr "Továbbított bájtok:"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:48
 msgid "Transmitted packets:"
 msgstr "Továbbított csomagok:"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:49
 msgid "Unlimited requests"
 msgstr "Végtelen számú kérelem"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:50
 msgid "User"
 msgstr "Felhasználó"
 
-#: ../src/gnome-nettool.glade.h:50 ../src/main.c:973
+#: ../src/gnome-nettool.glade.h:51 ../src/main.c:980
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:52
 msgid "_Configure"
 msgstr "_Beállítás"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:53
 msgid "_Domain address:"
 msgstr "_Tartománycím:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Edit"
 msgstr "S_zerkesztés"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:55
 msgid "_Help"
 msgstr "_Súgó"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:56
 msgid "_Information type:"
 msgstr "_Információ típusa:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Network address:"
 msgstr "_Hálózati cím:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Network device:"
 msgstr "_Hálózati eszköz:"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:59
 msgid "_Tool"
 msgstr "_Eszköz"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:60
 msgid "_Username:"
 msgstr "_Felhasználónév:"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:61
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:62
 msgid "requests"
 msgstr "kérelem"
 
@@ -443,60 +447,60 @@ msgstr "Cím"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Forrás\tTTL\tCím típusa\tRekord típusa\tFelbontás\n"
 
-#: ../src/main.c:80
+#: ../src/main.c:81
 msgid "Load information for a network device"
 msgstr "Információk betöltése a hálózati eszközhöz"
 
-#: ../src/main.c:81
+#: ../src/main.c:82
 msgid "DEVICE"
 msgstr "DEVICE"
 
-#: ../src/main.c:84
+#: ../src/main.c:85
 msgid "Send a ping to a network address"
 msgstr "Ping küldése egy hálózati címnek"
 
-#: ../src/main.c:85 ../src/main.c:93 ../src/main.c:97 ../src/main.c:101
+#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
 msgid "HOST"
 msgstr "HOST"
 
-#: ../src/main.c:88
+#: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Netstat információ megszerzése. Érvényes kapcsolók: route, active, multicast."
 
-#: ../src/main.c:89
+#: ../src/main.c:90
 msgid "COMMAND"
 msgstr "COMMAND"
 
-#: ../src/main.c:92
+#: ../src/main.c:93
 msgid "Trace a route to a network address"
 msgstr "Egy hálózati cím útvonalának nyomkövetése"
 
-#: ../src/main.c:96
+#: ../src/main.c:97
 msgid "Port scan a network address"
 msgstr "Egy hálózati cím portvizsgálata"
 
-#: ../src/main.c:100
+#: ../src/main.c:101
 msgid "Look up a network address"
 msgstr "Hálózati cím keresése"
 
-#: ../src/main.c:104
+#: ../src/main.c:105
 msgid "Finger command to run"
 msgstr "A futtatandó finger parancs"
 
-#: ../src/main.c:105
+#: ../src/main.c:106
 msgid "USER"
 msgstr "USER"
 
-#: ../src/main.c:108
+#: ../src/main.c:109
 msgid "Perform a whois lookup for a network domain"
 msgstr "Whois keresés végrehajtása egy hálózati tartományban"
 
-#: ../src/main.c:109
+#: ../src/main.c:110
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:126
+#: ../src/main.c:127
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -505,7 +509,7 @@ msgstr ""
 "A(z) %s fájl nem létezik, ellenőrizze, hogy a gnome-nettool megfelelően van-"
 "e telepítve"
 
-#: ../src/main.c:338
+#: ../src/main.c:345
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -513,7 +517,7 @@ msgstr ""
 "Adja meg a pingelendő hálózat címét.\n"
 "Például: www.domain.com vagy 192.168.2.1"
 
-#: ../src/main.c:420
+#: ../src/main.c:427
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -521,27 +525,27 @@ msgstr ""
 "Adja meg azt a hálózati címet, amelyhez az útvonalat követni kell.\n"
 "Például: www.domain.com vagy 192.168.2.1"
 
-#: ../src/main.c:505 ../src/netstat.c:443
+#: ../src/main.c:512 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protokoll"
 
-#: ../src/main.c:512
+#: ../src/main.c:519
 msgid "IP Address"
 msgstr "IP-cím"
 
-#: ../src/main.c:519
+#: ../src/main.c:526
 msgid "Netmask / Prefix"
 msgstr "Hálózati maszk / Előtag"
 
-#: ../src/main.c:526
+#: ../src/main.c:533
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: ../src/main.c:533
+#: ../src/main.c:540
 msgid "Scope"
 msgstr "Címtartomány"
 
-#: ../src/main.c:674
+#: ../src/main.c:681
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -549,7 +553,7 @@ msgstr ""
 "Adja meg azt a hálózati címet, amelyen nyitott portokat kell keresni.\n"
 "Például: www.domain.com vagy 192.168.2.1"
 
-#: ../src/main.c:802
+#: ../src/main.c:809
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -557,12 +561,12 @@ msgstr ""
 "Adja meg azt a hálózati címet, amelyet ki kell keresni.\n"
 "Például: www.domain.com vagy 192.168.2.1"
 
-#: ../src/main.c:891
+#: ../src/main.c:898
 msgid "Enter the user to finger."
 msgstr ""
 "Adja meg azt a felhasználót, akire a finger parancsot végre kell hajtani."
 
-#: ../src/main.c:918
+#: ../src/main.c:925
 #, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
@@ -572,7 +576,7 @@ msgstr ""
 "parancsot.\n"
 "Például: www.domain.com vagy 192.168.2.1"
 
-#: ../src/main.c:1005
+#: ../src/main.c:1012
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -600,7 +604,7 @@ msgstr "IP-forrás"
 msgid "Port/Service"
 msgstr "Port/Szolgáltatás"
 
-#: ../src/netstat.c:466 ../src/scan.c:298
+#: ../src/netstat.c:466 ../src/scan.c:312
 msgid "State"
 msgstr "Állapot"
 
@@ -652,36 +656,36 @@ msgstr "Cél\tÁtjáró\tHálózati maszk\tFelület\n"
 msgid "Interface\tMember\tGroup\n"
 msgstr "Felület\tTag\tCsoport\n"
 
-#: ../src/nettool.c:198
+#: ../src/nettool.c:199
 msgid "A network address was not specified"
 msgstr "Hálózati cím nem lett megadva"
 
-#: ../src/nettool.c:199 ../src/nettool.c:208
+#: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
 msgstr "Adjon meg egy érvényes hálózati címet és próbálja újra."
 
-#: ../src/nettool.c:206
+#: ../src/nettool.c:207
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "A(z) \"%s\" cím nem található"
 
-#: ../src/nettool.c:235
+#: ../src/nettool.c:236
 msgid "A domain address was not specified"
 msgstr "Tartománycím nem lett megadva"
 
-#: ../src/nettool.c:236
+#: ../src/nettool.c:237
 msgid "Please enter a valid domain address and try again."
 msgstr "Adjon meg egy érvényes tartománycímet és próbálja újra."
 
-#: ../src/nettool.c:394
+#: ../src/nettool.c:395
 msgid "Information not available"
 msgstr "Nem érhető el információ"
 
-#: ../src/nettool.c:512
+#: ../src/nettool.c:513
 msgid "Stop"
 msgstr "Leállítás"
 
-#: ../src/nettool.c:518
+#: ../src/nettool.c:519
 msgid "Run"
 msgstr "Futtatás"
 
@@ -690,23 +694,23 @@ msgstr "Futtatás"
 msgid "Sending ping requests to %s"
 msgstr "Ping kérések küldése %s felé"
 
-#: ../src/ping.c:385
+#: ../src/ping.c:395
 msgid "Bytes"
 msgstr "Bájtok"
 
-#: ../src/ping.c:392
+#: ../src/ping.c:402
 msgid "Source"
 msgstr "Forrás"
 
-#: ../src/ping.c:400
+#: ../src/ping.c:410
 msgid "Seq"
 msgstr "Szekvencia"
 
-#: ../src/ping.c:410
+#: ../src/ping.c:420
 msgid "Time"
 msgstr "Idő"
 
-#: ../src/ping.c:418
+#: ../src/ping.c:428
 msgid "Units"
 msgstr "Mértékegységek"
 
@@ -714,62 +718,62 @@ msgstr "Mértékegységek"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:444
+#: ../src/ping.c:454
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bájtok\tForrás\tSzekvencia\tIdő\tMértékegységek\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:459
+#: ../src/ping.c:469
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimális idő:\t%s ms\n"
 
-#: ../src/ping.c:460
+#: ../src/ping.c:470
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Átlagidő:\t%s ms\n"
 
-#: ../src/ping.c:461
+#: ../src/ping.c:471
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maximális idő:\t%s ms\n"
 
-#: ../src/ping.c:463
+#: ../src/ping.c:473
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Továbbított csomagok:\t%s\n"
 
-#: ../src/ping.c:465
+#: ../src/ping.c:475
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Fogadott csomagok:\t%s\n"
 
-#: ../src/ping.c:467
+#: ../src/ping.c:477
 #, c-format
 msgid "Packet loss:\t%s\n"
 msgstr "Csomagveszteség:\t%s\n"
 
-#: ../src/scan.c:86
+#: ../src/scan.c:93
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Nyitott portok keresése a következőn: %s"
 
-#: ../src/scan.c:161
+#: ../src/scan.c:168
 msgid "unknown"
 msgstr "ismeretlen"
 
-#: ../src/scan.c:290
+#: ../src/scan.c:304
 msgid "Port"
 msgstr "Port"
 
-#: ../src/scan.c:306
+#: ../src/scan.c:320
 msgid "Service"
 msgstr "Szolgáltatás"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:328
+#: ../src/scan.c:342
 msgid "Port\tState\tService\n"
 msgstr "Port\tÁllapot\tSzolgáltatás\n"
 
@@ -808,8 +812,10 @@ msgstr "Ugrás\tGépnév\tIP\tIdő 1\tIdő 2\n"
 
 #: ../src/utils.c:227
 #, c-format
-msgid "%s: Command not found"
-msgstr "%s: A parancs nem található"
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
+msgstr ""
 
 #: ../src/gnome-nettool.desktop.in.h:1
 msgid "Network Information Tools"
@@ -833,6 +839,9 @@ msgstr "Információ szerzése minden felhasználóról \"%s\" gépen"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s whois információjának megszerzése"
+
+#~ msgid "%s: Command not found"
+#~ msgstr "%s: A parancs nem található"
 
 #~ msgid "Network Tools - Devices"
 #~ msgstr "Hálózati eszközök - Eszközök"
