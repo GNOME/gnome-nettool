@@ -1,4 +1,4 @@
-SUBDIRS = pixmaps src po help
+SUBDIRS = pixmaps src help po
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
 
