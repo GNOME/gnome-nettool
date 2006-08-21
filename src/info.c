@@ -478,8 +478,13 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 #ifdef HAVE_SOCKADDR_SA_LEN
 				if (ifr->ifr_addr.sa_len > len)
 					len = ifr->ifr_addr.sa_len;   /* length > 16 */
+				if((sizeof (ifr->ifr_name) + len)>sizeof(struct ifreq))
+				ptr += sizeof (ifr->ifr_name) + len;
+				else				
+				ptr += sizeof (struct ifreq);    /* for next one in buffer */
+#else
+				ptr += sizeof (struct ifreq);
 #endif
-				ptr += sizeof (ifr->ifr_name) + len;    /* for next one in buffer */
 
 				if (strcmp (ifr->ifr_name, nic) == 0) {
 					break;

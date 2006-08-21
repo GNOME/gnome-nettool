@@ -693,6 +693,7 @@ netstat_multicast_tree_insert (GtkTreeView *widget, gchar *line)
 							 (model),
 							 &iter,
 							 &sibling);
+			gtk_tree_path_free (path);
 		} else {
 			gtk_list_store_append (GTK_LIST_STORE
 						   (model), &iter);
