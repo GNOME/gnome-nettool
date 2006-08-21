@@ -1,3 +1,10 @@
+2006-08-14  Giribabu Bikki <giribabu_bikki@dell.com>
+
+	Fixes bug#347310
+
+	* src/info.c: (info_get_nic_information)
+	  shows correct hardware address on 64 bit machines
+
 2006-06-14  German Poo-Caamano <gpoo@ubiobio.cl>
 
 	* src/nettool.c: Added netinet/in.h to fix compilation on Mac OSX 10.3
