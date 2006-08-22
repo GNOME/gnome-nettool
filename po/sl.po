@@ -1,27 +1,30 @@
-# translation of gnome-applets-locations.gnome-2-12.po to Slovenian
-# -*- mode:po; coding:utf-8; -*- Slovenian message catalogue for dasher.gnome-2-12.
-# Copyright (C) 2005 Free Software Foundation, Inc.
+# Slovenian translation of gnome-nettool.
+# Copyright (C) 2005-2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-nettool package.
+#
 # Matej Urbančič <matej.urban@gmail.com>, 2005.
+# Matjaž Horvat <m@owca.info>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-applets-locations.gnome-2-12\n"
+"Project-Id-Version: gnome-nettool\n"
 "POT-Creation-Date: 2005-10-21 04:41+0200\n"
-"PO-Revision-Date: 2006-07-29 16:26+0100\n"
+"PO-Revision-Date: 2006-08-22 12:50+0100\n"
 "Last-Translator: Matic Žgur <mr.zgur@gmail.com>\n"
 "Language-Team: Slovenian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
-"X-Poedit-Language: Slovenian\n"
 "X-Poedit-Country: SLOVENIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: KBabel 1.10.2\n"
 
 #: ../src/callbacks.c:318
 msgid "translator-credits"
-msgstr "Matej Urbančič <matej.urban@gmail.com>"
+msgstr ""
+"Matej Urbančič <matej.urban@gmail.com>\n"
+"Matjaž Horvat <m@owca.info>"
 
 #: ../src/callbacks.c:333
 msgid "Graphical user interface for common network utilities"
@@ -61,7 +64,7 @@ msgstr "Povprečje:"
 
 #: ../src/gnome-nettool.glade.h:9
 msgid "Beep on ping"
-msgstr ""
+msgstr "Zapiskaj ob pingu"
 
 #: ../src/gnome-nettool.glade.h:10
 msgid "Broadcast:"
@@ -449,7 +452,7 @@ msgstr "Naslov"
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/lookup.c:343
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
-msgstr ""
+msgstr "Vir\tTTL\tVrsta naslova\tVrsta zapisa1\tLočljivost\n"
 
 #: ../src/main.c:81
 msgid "Load information for a network device"
@@ -573,6 +576,8 @@ msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
 msgstr ""
+"Vnesite omrežni naslov za dotik uporabnika.\n"
+"Na primer: auth.domain.com ali 192.168.2.1"
 
 #: ../src/main.c:1012
 msgid ""
@@ -641,20 +646,20 @@ msgstr "Skupina"
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/netstat.c:796
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
-msgstr ""
+msgstr "Protokol\tVir IP\tVrata/Storitev\tStanje\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/netstat.c:802
 msgid "Destination\tGateway\tNetmask\tInterface\n"
-msgstr ""
+msgstr "Cilj\tPrehod\tOmrežna maska\tVmesnik\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/netstat.c:807
 msgid "Interface\tMember\tGroup\n"
-msgstr ""
+msgstr "Vmesnik\tČlan\tSkupina\n"
 
 #: ../src/nettool.c:199
 msgid "A network address was not specified"
@@ -705,7 +710,7 @@ msgstr "Izvor"
 
 #: ../src/ping.c:410
 msgid "Seq"
-msgstr ""
+msgstr "Sekv"
 
 #: ../src/ping.c:420
 msgid "Time"
@@ -721,7 +726,7 @@ msgstr "Enote"
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/ping.c:454
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
-msgstr ""
+msgstr "Bajtov\tVir\tSekv\tČas\tEnote\n"
 
 #. The ping output in a text format (to copy on clipboard)
 #: ../src/ping.c:469
@@ -776,7 +781,7 @@ msgstr "Storitev"
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/scan.c:342
 msgid "Port\tState\tService\n"
-msgstr ""
+msgstr "Vrata\tStanje\tStoritev\n"
 
 #: ../src/traceroute.c:62
 #, c-format
@@ -809,12 +814,12 @@ msgstr "Čas 2"
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/traceroute.c:334
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr ""
+msgstr "Hop\tIme gostitelja\tIP\tČas 1\tČas 2\n"
 
 #: ../src/utils.c:227
 #, c-format
 msgid "In order to use this feature of the program, %s must be installed in your system"
-msgstr ""
+msgstr "Če želite uporabiti to možnost programa, morate namestiti %s"
 
 #: ../src/gnome-nettool.desktop.in.h:1
 msgid "Network Information Tools"
