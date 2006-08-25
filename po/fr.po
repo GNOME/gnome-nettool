@@ -8,14 +8,15 @@
 # Sébastien Bacher <seb128@debian.org>, 2004.
 # Audrey Simons <asimons@redhat.com>, 2004.
 # Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+# Damien Durand <splinux@fedoraproject.org>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool 2.15.4\n"
+"Project-Id-Version: gnome-nettool 2.15.92\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-23 13:43+0200\n"
-"PO-Revision-Date: 2006-07-23 13:43+0200\n"
-"Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
+"POT-Creation-Date: 2006-08-25 17:36+0200\n"
+"PO-Revision-Date: 2006-08-25 17:20+0200\n"
+"Last-Translator: Robert-André Mauchin <zebob.m@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +29,8 @@ msgstr ""
 "Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Sébastien Bacher <seb128@debian.org>\n"
 "Audrey Simons <asimons@redhat.com>\n"
-"Robert-André Mauchin <zebob.m@gmail.com>"
+"Robert-André Mauchin <zebob.m@gmail.com>\n"
+"Damien Durand <splinux@fedoraproject.org>"
 
 #: ../src/callbacks.c:333
 msgid "Graphical user interface for common network utilities"
@@ -68,7 +70,7 @@ msgstr "Moyenne :"
 
 #: ../src/gnome-nettool.glade.h:9
 msgid "Beep on ping"
-msgstr ""
+msgstr "Émettre un bip lors d'un ping"
 
 #: ../src/gnome-nettool.glade.h:10
 msgid "Broadcast:"
@@ -257,7 +259,7 @@ msgstr "Type d'_informations :"
 
 #: ../src/gnome-nettool.glade.h:57
 msgid "_Network address:"
-msgstr "Adresse _réseau"
+msgstr "Adresse _réseau :"
 
 #: ../src/gnome-nettool.glade.h:58
 msgid "_Network device:"
@@ -320,93 +322,93 @@ msgstr "Périphériques réseau non trouvés"
 msgid "Unknown"
 msgstr "Inconnu"
 
-#: ../src/info.c:545
+#: ../src/info.c:550
 msgid "Active"
 msgstr "Actif"
 
-#: ../src/info.c:547
+#: ../src/info.c:552
 msgid "Inactive"
 msgstr "Inactif"
 
-#: ../src/info.c:552
+#: ../src/info.c:557
 msgid "Loopback"
 msgstr "Bouclage"
 
-#: ../src/info.c:569
+#: ../src/info.c:574
 msgid "Enabled"
 msgstr "Activé"
 
-#: ../src/info.c:571
+#: ../src/info.c:576
 msgid "Disabled"
 msgstr "Désactivé"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:708
+#: ../src/info.c:713
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Périphérique réseau :\t%s\n"
 
-#: ../src/info.c:709
+#: ../src/info.c:714
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Adresse matérielle :\t%s\n"
 
-#: ../src/info.c:710
+#: ../src/info.c:715
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "Adresse IP :\t%s\n"
 
-#: ../src/info.c:711
+#: ../src/info.c:716
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Masque de réseau :\t%s\n"
 
-#: ../src/info.c:712
+#: ../src/info.c:717
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Diffusion :\t%s\n"
 
-#: ../src/info.c:713
+#: ../src/info.c:718
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast :\t%s\n"
 
-#: ../src/info.c:714
+#: ../src/info.c:719
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU :\t%s\n"
 
-#: ../src/info.c:715
+#: ../src/info.c:720
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Vitesse du lien :\t%s\n"
 
-#: ../src/info.c:716
+#: ../src/info.c:721
 #, c-format
 msgid "State:\t%s\n"
 msgstr "État :\t%s\n"
 
-#: ../src/info.c:718
+#: ../src/info.c:723
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Paquets transmis :\t%s\n"
 
-#: ../src/info.c:719
+#: ../src/info.c:724
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Erreurs de transmission :\t%s\n"
 
-#: ../src/info.c:720
+#: ../src/info.c:725
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Paquets reçus :\t%s\n"
 
-#: ../src/info.c:721
+#: ../src/info.c:726
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Erreurs de réception :\t%s\n"
 
-#: ../src/info.c:722
+#: ../src/info.c:727
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Collisions :\t%s\n"
@@ -575,7 +577,7 @@ msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
 msgstr ""
-"Saisissez l'adresse réseau sur laquelle lancer finger pour cet utilisateur."
+"Saisissez l'adresse réseau sur laquelle lancer finger pour cet utilisateur.\n"
 "Par exemple : auth.domain.com ou 192.168.2.1"
 
 #: ../src/main.c:1012
@@ -626,41 +628,41 @@ msgstr "Passerelle"
 msgid "Netmask"
 msgstr "Masque de réseau"
 
-#: ../src/netstat.c:633 ../src/netstat.c:739
+#: ../src/netstat.c:633 ../src/netstat.c:740
 msgid "Interface"
 msgstr "Interface"
 
-#: ../src/netstat.c:746
+#: ../src/netstat.c:747
 msgid "Member"
 msgstr "Membre"
 
-#: ../src/netstat.c:754
+#: ../src/netstat.c:755
 msgid "Group"
 msgstr "Groupe"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:796
+#: ../src/netstat.c:797
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
-msgstr "Protocole\tAdresse IP\tSource\tPort/Service\tÉtat\n"
+msgstr "Protocole\tIP Source\tPort/Service\tÉtat\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:802
+#: ../src/netstat.c:803
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Destination\tPasserelle\tMasque de réseau\tInterface\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:807
+#: ../src/netstat.c:808
 msgid "Interface\tMember\tGroup\n"
 msgstr "Interface\tMembre\tGroupe\n"
 
 #: ../src/nettool.c:199
 msgid "A network address was not specified"
-msgstr "L'adresse réseau n'a pas été spécifiée"
+msgstr "L'adresse réseau n'a pas été indiquée"
 
 #: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
@@ -669,7 +671,7 @@ msgstr "Veuillez saisir une adresse réseau valide et essayez à nouveau."
 #: ../src/nettool.c:207
 #, c-format
 msgid "The address '%s' cannot be found"
-msgstr "L'adresse « %s » ne peut être trouvée."
+msgstr "L'adresse « %s » ne peut pas être trouvée."
 
 #: ../src/nettool.c:236
 msgid "A domain address was not specified"
@@ -818,14 +820,14 @@ msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr ""
-"Afin d'utiliser cette fonction du programme, %s doit être installé sur "
-"votre système"
+"Afin d'utiliser cette fonction du programme, %s doit être installé sur votre "
+"système"
 
-#: ../src/gnome-nettool.desktop.in.h:1
+#: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Information Tools"
 msgstr "Outils d'informations sur le réseau"
 
-#: ../src/gnome-nettool.desktop.in.h:2
+#: ../src/gnome-nettool.desktop.in.in.h:2
 msgid "Network Tools"
 msgstr "Outils réseau"
 
