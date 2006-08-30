@@ -11,15 +11,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-29 22:38+0300\n"
-"PO-Revision-Date: 2006-08-29 23:07+0300\n"
+"POT-Creation-Date: 2006-08-30 15:28+0300\n"
+"PO-Revision-Date: 2006-08-30 15:27+0300\n"
 "Last-Translator: Gintautas Miliauskas <gintas@akl.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
+"100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/callbacks.c:318
 msgid "translator-credits"
@@ -29,7 +30,7 @@ msgstr ""
 
 #: ../src/callbacks.c:333
 msgid "Graphical user interface for common network utilities"
-msgstr "Grafinė vartotojo sąsaja paprastoms tinklų programoms"
+msgstr "Grafinė naudotojo sąsaja paprastoms tinklo programoms"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -85,9 +86,8 @@ msgstr "Įrenginiai"
 
 #. Dear Translator: This is the Window Title
 #: ../src/gnome-nettool.glade.h:15
-#, fuzzy
 msgid "Devices - Network Tools"
-msgstr "Tinklų įrankiai"
+msgstr "Įrenginiai - tinklo įrankiai"
 
 #: ../src/gnome-nettool.glade.h:16
 msgid "Display:"
@@ -227,7 +227,7 @@ msgstr "Neribotai"
 
 #: ../src/gnome-nettool.glade.h:50
 msgid "User"
-msgstr "Vartotojas"
+msgstr "Naudotojas"
 
 #: ../src/gnome-nettool.glade.h:51 ../src/main.c:980
 msgid "Whois"
@@ -267,7 +267,7 @@ msgstr "_Programa"
 
 #: ../src/gnome-nettool.glade.h:60
 msgid "_Username:"
-msgstr "_Vartotojo vardas:"
+msgstr "_Naudotojo vardas:"
 
 #: ../src/gnome-nettool.glade.h:61
 msgid "ms"
@@ -467,7 +467,8 @@ msgstr "KOMPIUTERIS"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "Gauti netstat informaciją.  Taisyklingi parametrai: route, active, multicast."
+msgstr ""
+"Gauti netstat informaciją.  Taisyklingi parametrai: route, active, multicast."
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -491,7 +492,7 @@ msgstr "Finger komanda, kurią paleisti"
 
 #: ../src/main.c:106
 msgid "USER"
-msgstr "VARTOTOJAS"
+msgstr "NAUDOTOJAS"
 
 #: ../src/main.c:109
 msgid "Perform a whois lookup for a network domain"
@@ -506,7 +507,8 @@ msgstr "DOMENAS"
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
-msgstr "Rinkmena %s neegzistuoja, patikrinkite ar korektiškai įdiegtas gnome-nettool"
+msgstr ""
+"Rinkmena %s neegzistuoja, patikrinkite ar korektiškai įdiegtas gnome-nettool"
 
 #: ../src/main.c:345
 msgid ""
@@ -562,16 +564,15 @@ msgstr ""
 
 #: ../src/main.c:898
 msgid "Enter the user to finger."
-msgstr "Informacija apie vartotoją."
+msgstr "Informacija apie naudotoją."
 
 #: ../src/main.c:925
-#, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
 msgstr ""
-"Įveskite kompiuterio adresą, kuriame ieškote vartotojo duomenų.\n"
-"Pvz.: www.domenas.lt ar 192.168.0.1"
+"Įveskite kompiuterio adresą, kuriame ieškote naudotojo duomenų.\n"
+"Pvz.: auth.domenas.lt arba 192.168.2.1"
 
 #: ../src/main.c:1012
 msgid ""
@@ -812,15 +813,15 @@ msgstr "Hop\tKompiuterio vardas\tIP\tPirmas laikas\tAntras laikas\n"
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
-msgstr ""
+msgstr "Jei norite naudoti šią funkciją, turite įdiegti %s."
 
 #: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Information Tools"
-msgstr "Tinklų informacijos įrankiai"
+msgstr "Tinklo informacijos įrankiai"
 
 #: ../src/gnome-nettool.desktop.in.in.h:2
 msgid "Network Tools"
-msgstr "Tinklų įrankiai"
+msgstr "Tinklo įrankiai"
 
 #: ../src/finger.c:62
 #, c-format
@@ -830,10 +831,9 @@ msgstr "Gaunama informacija apie %s iš „%s“"
 #: ../src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "Gaunama informacija apie visus vartotojus esančius „%s“"
+msgstr "Gaunama informacija apie visus naudotojus, esančius „%s“"
 
 #: ../src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Gaunama informacija apie %s"
-
