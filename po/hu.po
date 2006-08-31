@@ -1,25 +1,24 @@
 # Hungarian translation of gnome-nettool.
-# Copyright (C) 2004 Free Software Foundation, Inc.
+# Copyright (C) 2004, 2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
-# Laszlo Dvornik <dvornik@gnome.hu>, 2004.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2004, 2005.
 #
+# Laszlo Dvornik <dvornik@gnome.hu>, 2004.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2004, 2005, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-15 11:32+0200\n"
-"PO-Revision-Date: 2005-08-03 19:21+0200\n"
+"POT-Creation-Date: 2006-08-26 11:27+0200\n"
+"PO-Revision-Date: 2006-08-31 02:54+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:   nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/callbacks.c:318
-#, fuzzy
 msgid "translator-credits"
 msgstr ""
 "Dvornik László <dvornik@gnome.hu>\n"
@@ -63,7 +62,7 @@ msgstr "Átlag:"
 
 #: ../src/gnome-nettool.glade.h:9
 msgid "Beep on ping"
-msgstr ""
+msgstr "Csipogás pingeléskor"
 
 #: ../src/gnome-nettool.glade.h:10
 msgid "Broadcast:"
@@ -83,9 +82,8 @@ msgstr "Eszközök"
 
 #. Dear Translator: This is the Window Title
 #: ../src/gnome-nettool.glade.h:15
-#, fuzzy
 msgid "Devices - Network Tools"
-msgstr "Hálózati segédeszközök"
+msgstr "Eszközök - Hálózati eszközök"
 
 #: ../src/gnome-nettool.glade.h:16
 msgid "Display:"
@@ -316,93 +314,93 @@ msgstr "Hálózati eszközök nem találhatóak"
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: ../src/info.c:545
+#: ../src/info.c:550
 msgid "Active"
 msgstr "Aktív"
 
-#: ../src/info.c:547
+#: ../src/info.c:552
 msgid "Inactive"
 msgstr "Inaktív"
 
-#: ../src/info.c:552
+#: ../src/info.c:557
 msgid "Loopback"
 msgstr "Visszacsatolás"
 
-#: ../src/info.c:569
+#: ../src/info.c:574
 msgid "Enabled"
 msgstr "Engedélyezve"
 
-#: ../src/info.c:571
+#: ../src/info.c:576
 msgid "Disabled"
 msgstr "Tiltva"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:708
+#: ../src/info.c:713
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Hálózati eszköz:\t%s\n"
 
-#: ../src/info.c:709
+#: ../src/info.c:714
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardvercím:\t%s\n"
 
-#: ../src/info.c:710
+#: ../src/info.c:715
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP-cím:\t%s\n"
 
-#: ../src/info.c:711
+#: ../src/info.c:716
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Hálózati maszk:\t%s\n"
 
-#: ../src/info.c:712
+#: ../src/info.c:717
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Broadcast:\t%s\n"
 
-#: ../src/info.c:713
+#: ../src/info.c:718
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:714
+#: ../src/info.c:719
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:715
+#: ../src/info.c:720
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Kapcsolat sebessége:\t%s\n"
 
-#: ../src/info.c:716
+#: ../src/info.c:721
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Állapot:\t%s\n"
 
-#: ../src/info.c:718
+#: ../src/info.c:723
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Továbbított csomagok:\t%s\n"
 
-#: ../src/info.c:719
+#: ../src/info.c:724
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Adatátviteli hibák:\t%s\n"
 
-#: ../src/info.c:720
+#: ../src/info.c:725
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Fogadott csomagok:\t%s\n"
 
-#: ../src/info.c:721
+#: ../src/info.c:726
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Fogadási hibák:\t%s\n"
 
-#: ../src/info.c:722
+#: ../src/info.c:727
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Ütközések:\t%s\n"
@@ -453,7 +451,7 @@ msgstr "Információk betöltése a hálózati eszközhöz"
 
 #: ../src/main.c:82
 msgid "DEVICE"
-msgstr "DEVICE"
+msgstr "ESZKÖZ"
 
 #: ../src/main.c:85
 msgid "Send a ping to a network address"
@@ -461,16 +459,15 @@ msgstr "Ping küldése egy hálózati címnek"
 
 #: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
 msgid "HOST"
-msgstr "HOST"
+msgstr "GÉP"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"Netstat információ megszerzése. Érvényes kapcsolók: route, active, multicast."
+msgstr "Netstat információ megszerzése. Érvényes kapcsolók: route, active, multicast."
 
 #: ../src/main.c:90
 msgid "COMMAND"
-msgstr "COMMAND"
+msgstr "PARANCS"
 
 #: ../src/main.c:93
 msgid "Trace a route to a network address"
@@ -490,7 +487,7 @@ msgstr "A futtatandó finger parancs"
 
 #: ../src/main.c:106
 msgid "USER"
-msgstr "USER"
+msgstr "FELHASZNÁLÓ"
 
 #: ../src/main.c:109
 msgid "Perform a whois lookup for a network domain"
@@ -498,7 +495,7 @@ msgstr "Whois keresés végrehajtása egy hálózati tartományban"
 
 #: ../src/main.c:110
 msgid "DOMAIN"
-msgstr "DOMAIN"
+msgstr "TARTOMÁNY"
 
 #: ../src/main.c:127
 #, c-format
@@ -563,18 +560,15 @@ msgstr ""
 
 #: ../src/main.c:898
 msgid "Enter the user to finger."
-msgstr ""
-"Adja meg azt a felhasználót, akire a finger parancsot végre kell hajtani."
+msgstr "Adja meg azt a felhasználót, akire a finger parancsot végre kell hajtani."
 
 #: ../src/main.c:925
-#, fuzzy
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
 msgstr ""
-"Adja meg azon hálózat címét, melynek felhasználójára kiadja a finger "
-"parancsot.\n"
-"Például: www.domain.com vagy 192.168.2.1"
+"Adja meg azon hálózat címét, melynek felhasználójára kiadja a finger parancsot.\n"
+"Például: auth.domain.com vagy 192.168.2.1"
 
 #: ../src/main.c:1012
 msgid ""
@@ -624,35 +618,35 @@ msgstr "Átjáró"
 msgid "Netmask"
 msgstr "Hálózati maszk"
 
-#: ../src/netstat.c:633 ../src/netstat.c:739
+#: ../src/netstat.c:633 ../src/netstat.c:740
 msgid "Interface"
 msgstr "Felület"
 
-#: ../src/netstat.c:746
+#: ../src/netstat.c:747
 msgid "Member"
 msgstr "Tag"
 
-#: ../src/netstat.c:754
+#: ../src/netstat.c:755
 msgid "Group"
 msgstr "Csoport"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:796
+#: ../src/netstat.c:797
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokoll\tIP-forrás\tPort/Szolgáltatás\tÁllapot\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:802
+#: ../src/netstat.c:803
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Cél\tÁtjáró\tHálózati maszk\tFelület\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:807
+#: ../src/netstat.c:808
 msgid "Interface\tMember\tGroup\n"
 msgstr "Felület\tTag\tCsoport\n"
 
@@ -815,13 +809,13 @@ msgstr "Ugrás\tGépnév\tIP\tIdő 1\tIdő 2\n"
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
-msgstr ""
+msgstr "A program ezen szolgáltatásának használatához a(z) %s telepítve kell legyen a rendszerre"
 
-#: ../src/gnome-nettool.desktop.in.h:1
+#: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Information Tools"
 msgstr "Hálózati információs segédeszközök"
 
-#: ../src/gnome-nettool.desktop.in.h:2
+#: ../src/gnome-nettool.desktop.in.in.h:2
 msgid "Network Tools"
 msgstr "Hálózati segédeszközök"
 
@@ -840,8 +834,3 @@ msgstr "Információ szerzése minden felhasználóról \"%s\" gépen"
 msgid "Getting the whois information of %s"
 msgstr "%s whois információjának megszerzése"
 
-#~ msgid "%s: Command not found"
-#~ msgstr "%s: A parancs nem található"
-
-#~ msgid "Network Tools - Devices"
-#~ msgstr "Hálózati eszközök - Eszközök"
