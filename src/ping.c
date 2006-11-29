@@ -28,6 +28,14 @@
 #include "ping.h"
 #include "utils.h"
 
+enum {
+	BYTES_COLUMN = 0,
+	IP_COLUMN,
+	ICMP_SEQ_COLUMN,
+	SRTT_COLUMN,
+	UNIT_COLUMN,
+};
+
 static gint strip_line (gchar * line, ping_data * data, Netinfo * netinfo);
 static gint strip_total_line (gchar * line, gint * packet_total);
 static GtkTreeModel *ping_create_model (GtkTreeView * widget);
@@ -36,6 +44,174 @@ static gfloat rttmin, rttmax, rttavg;
 static gint packets_transmitted;
 static gint packets_received;
 static gint packets_loss;
+
+typedef struct {
+	gdouble value;
+	gboolean valid;
+} PingGraphBarData;
+
+static void
+draw_centered_text (GtkWidget *widget, gint x, gint y, gchar *text)
+{
+	int width;
+	PangoLayout *layout;
+
+	layout = gtk_widget_create_pango_layout (widget, text);
+
+	pango_layout_get_pixel_size (layout, &width, NULL);
+
+	x -= width/2;
+
+	gtk_paint_layout (widget->style, widget->window, 
+			  GTK_STATE_NORMAL, TRUE, 
+			  NULL, NULL, NULL, x, y,
+			  layout);
+	g_object_unref (layout);
+}
+
+static gdouble 
+get_bar_data (Netinfo *netinfo, PingGraphBarData *bar_data, int ntodisplay,
+	      gint rangemin, gint rangemax)
+{
+	gint i, index;
+	GtkTreeModel *results;
+	GtkTreeIter node;
+	gboolean nodeavailable;
+	gint seqnumber;
+	gchar *srtt_str;
+	gdouble max;
+
+	for (i = 0; i<ntodisplay; i++) {
+		bar_data[i].value = 0;
+		bar_data[i].valid = FALSE;
+	}
+	
+	results = gtk_tree_view_get_model (GTK_TREE_VIEW (netinfo->output));
+
+	if (results != NULL) {
+		nodeavailable = gtk_tree_model_get_iter_first (results, &node);
+		while (nodeavailable) {
+			gtk_tree_model_get (results, &node, 
+					    ICMP_SEQ_COLUMN, &seqnumber, -1);
+			index = seqnumber - rangemin - 1;
+			if (seqnumber > rangemin) {
+				gtk_tree_model_get (results, &node, 
+						    SRTT_COLUMN, &srtt_str, 
+						    -1);
+				bar_data[index].value = g_strtod (srtt_str, 
+								  NULL);
+				g_free (srtt_str);
+				bar_data[index].valid = TRUE;
+			}
+			nodeavailable = gtk_tree_model_iter_next (results, &node);
+		}
+
+	}
+
+	max = 0.0;
+	for (i = 0; i<ntodisplay; i++)
+		if (bar_data[i].valid && (bar_data[i].value > max))
+			max = bar_data[i].value;
+
+	return max;
+}
+
+static void 
+draw_ping_graph (Netinfo *netinfo)
+{
+	GdkWindow *window;
+	GtkStyle *style;
+	GtkWidget *widget;
+	PangoLayout *layout;
+	gint ntodisplay = 5;
+	gint rangemin, rangemax;
+	PingGraphBarData *bar_data;
+	gdouble max;
+	gint width, height;
+	gint font_height, offset;
+	gint bar_height, separator_height;
+	gdouble scale_factor;
+	gint line1h, line2h;
+	gint index;
+	gint step, x, h;
+	gchar *tmpstr;
+
+	widget = netinfo->graph;
+	window = widget->window;
+	style = widget->style;
+
+	rangemax = packets_transmitted;
+	rangemin = MAX (0, rangemax - ntodisplay);
+
+	bar_data = g_newa (PingGraphBarData, ntodisplay);
+	max = get_bar_data (netinfo, bar_data, ntodisplay, rangemin,
+			    rangemax);
+
+	/* Created up here so we can get the geometry info. */
+	layout = gtk_widget_create_pango_layout (widget, _("Time (ms):"));
+	/* We guess that the first label is representative. */
+	pango_layout_get_pixel_size (layout, NULL, &font_height);
+	gdk_drawable_get_size (window, &width, &height);
+
+	offset = 0.05*height;
+	bar_height = height - 2.5*font_height - offset;
+	scale_factor = bar_height / max;
+	separator_height = bar_height + offset;
+	line1h = bar_height + 0.125*font_height + offset;
+	line2h = bar_height + 1.25*font_height + offset;
+
+	gtk_paint_box (style, window, GTK_STATE_NORMAL, GTK_SHADOW_ETCHED_IN, 
+		       NULL, NULL, NULL, 0, 0, width, height);
+
+	gtk_paint_layout (style, window, GTK_STATE_NORMAL, TRUE, 
+			  NULL, NULL, NULL, 0.02*width, line1h,
+			  layout);
+	g_object_unref (layout);
+
+	layout = gtk_widget_create_pango_layout (widget, _("Seq. No.:"));
+	gtk_paint_layout (style, window, GTK_STATE_NORMAL, TRUE, 
+			  NULL, NULL, NULL, 0.02*width, line2h,
+			  layout);
+	g_object_unref (layout);
+
+	gtk_paint_hline (style, window, GTK_STATE_NORMAL, NULL, NULL, NULL,
+			 0.02*width, 0.98*width, separator_height);
+
+	index = 0;
+	step = width / (ntodisplay + 1.0);
+	for (x = 1.5*step; x < width; x += step) {
+		if (bar_data[index].valid) {
+			h = scale_factor*bar_data[index].value;
+			gtk_paint_flat_box (style, window, GTK_STATE_SELECTED,
+					    GTK_SHADOW_ETCHED_IN, NULL, 
+					    NULL, NULL, x - 0.4*step,
+					    offset + bar_height - h,
+					    0.8*step, h);
+			tmpstr = g_strdup_printf ("%.2f", bar_data[index].value);
+		} else {
+			tmpstr = g_strdup ("-");
+		}
+		draw_centered_text (widget, x, line1h, tmpstr);
+		g_free (tmpstr);
+		if (index + rangemin + 1 <= rangemax) {
+			tmpstr = g_strdup_printf ("%d", index + rangemin + 1);
+		} else {
+			tmpstr = g_strdup ("-");
+		}
+		draw_centered_text (widget, x, line2h, tmpstr);
+		g_free (tmpstr);
+		index++;
+	}
+}
+
+gint 
+on_ping_graph_expose (GtkWidget *widget, GdkEventExpose *event, 
+		      Netinfo *info)
+{
+	draw_ping_graph (info);
+
+	return TRUE;
+}
 
 void
 ping_stop (Netinfo * netinfo)
@@ -105,6 +281,9 @@ ping_do (Netinfo * netinfo)
 	if (GTK_IS_LIST_STORE (model)) {
 		gtk_list_store_clear (GTK_LIST_STORE (model));
 	}
+
+	draw_ping_graph (netinfo);
+
 /*
 	buffer =
 	    gtk_text_view_get_buffer (GTK_TEXT_VIEW (netinfo->output));
@@ -268,11 +447,11 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 			}
 
 			gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-					    0, data.bytes,
-					    1, data.ip,
-					    2, data.icmp_seq,
-					    3, data.srtt,
-					    4, data.unit, -1);
+					    BYTES_COLUMN, data.bytes,
+					    IP_COLUMN, data.ip,
+					    ICMP_SEQ_COLUMN, data.icmp_seq,
+					    SRTT_COLUMN, data.srtt,
+					    UNIT_COLUMN, data.unit, -1);
 
 			gtk_tree_view_set_model (GTK_TREE_VIEW (widget),
 						 model);
@@ -339,6 +518,7 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 		g_sprintf (stmp, "%d%%", packets_loss);
 		gtk_label_set_text (pkt_loss, stmp);
 	}
+	draw_ping_graph (netinfo);
 }
 
 static gint

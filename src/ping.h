@@ -71,3 +71,5 @@ void ping_stop (Netinfo * netinfo);
 void ping_foreach (Netinfo * netinfo, gchar * line, gssize len, gpointer user_data);
 void ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len, gpointer user_data);
 void ping_copy_to_clipboard (Netinfo * netinfo, gpointer user_data);
+gint on_ping_graph_expose (GtkWidget *widget, GdkEventExpose *event, 
+			   Netinfo *info);

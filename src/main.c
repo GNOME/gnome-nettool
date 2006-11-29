@@ -308,6 +308,7 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	pinger->output = glade_xml_get_widget (xml, "ping_output");
 	pinger->limited = glade_xml_get_widget (xml, "ping_limited");
 	pinger->button = glade_xml_get_widget (xml, "ping_button");
+	pinger->graph = glade_xml_get_widget (xml, "ping_graph");
 	pinger->sensitive = pinger->host;
 	pinger->label_run = _("Ping");
 	pinger->label_stop = NULL;
@@ -365,6 +366,9 @@ load_ping_widgets_from_xml (GladeXML * xml)
 			  pinger);
 	g_signal_connect (G_OBJECT (pinger->button), "clicked",
 			  pinger->button_callback,
+			  pinger);
+	g_signal_connect (G_OBJECT (pinger->graph), "expose-event",
+			  G_CALLBACK (on_ping_graph_expose),
 			  pinger);
 
 	return pinger;

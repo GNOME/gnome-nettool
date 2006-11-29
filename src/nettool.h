@@ -54,6 +54,7 @@ struct _Netinfo {
 	GtkWidget *routing;
 	GtkWidget *protocol;
 	GtkWidget *multicast;
+	GtkWidget *graph;
 	gboolean running;
 	gint child_pid;
 	gint pipe_out;
