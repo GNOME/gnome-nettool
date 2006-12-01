@@ -1,5 +1,19 @@
 2006-12-01  German Poo-Caamano <gpoo@ubiobio.cl>
 
+	* src/gn-combo-history.c:
+	* src/netstat.c:
+	  - Remember to free the strings in the list beside the list itself 
+	  - Avoid useless GSList -> GList conversion
+	  - Avoid unneeded allocations
+	  - Avoid quadratic behavior (appending to a list in a for loop 
+	    is not a good idea, better to prepend and then reverse, but here
+		we can get rid of the new list at all)
+	  Fixed #352148.
+
+	  Patch provided by Paolo Borelli <pborelli@katamail.com>
+
+2006-12-01  German Poo-Caamano <gpoo@ubiobio.cl>
+
 	* src/info.c: Fixes compilation in OpenBSD.  Fixes 
 	  #357839.
 

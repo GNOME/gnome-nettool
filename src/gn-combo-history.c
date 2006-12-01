@@ -36,7 +36,7 @@ struct _GnComboHistoryPrivate {
 	gchar       *id;
 	guint        max_history;
 
-	GList       *items;
+	GSList       *items;
 
 	GConfClient *gconf_client;
 	guint        gconf_notify;
@@ -124,6 +124,16 @@ gn_combo_history_class_init (GnComboHistoryClass *klass)
 }
 
 static void
+gn_combo_free_items (GnComboHistory *history)
+{
+	if (history->priv->items) {
+		g_slist_foreach (history->priv->items, (GFunc) g_free, NULL);
+		g_slist_free (history->priv->items);
+		history->priv->items = NULL;
+	}
+}
+
+static void
 gn_combo_history_finalize (GObject *object)
 {
 	GnComboHistory *history = GN_COMBO_HISTORY (object);
@@ -139,10 +149,7 @@ gn_combo_history_finalize (GObject *object)
 			history->priv->id = NULL;
 		}
 
-		if (history->priv->items) {
-			g_list_free (history->priv->items);
-			history->priv->items = NULL;
-		}
+		gn_combo_free_items (history);
 
 		if (history->priv->gconf_notify != 0) {
 			gconf_client_notify_remove (history->priv->gconf_client,
@@ -225,18 +232,13 @@ static void
 gn_combo_history_gconf_load (GnComboHistory *history)
 {
 	gchar  *key;
-	GSList *gconf_items, *items;
-	guint   i;
-	   
+	GSList *gconf_items, *last;
+
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
 	g_return_if_fail (history->priv->gconf_client != NULL);
 	g_return_if_fail (history->priv->id != NULL);
 
-	/* Free previous list */
-	if (history->priv->items) {
-		g_list_free (history->priv->items);
-		history->priv->items = NULL;
-	}
+	gn_combo_free_items (history);
 
 	key = g_strconcat ("/apps/gnome-settings/",
 			   "gnome-nettool",
@@ -248,22 +250,22 @@ gn_combo_history_gconf_load (GnComboHistory *history)
 					     key, GCONF_VALUE_STRING, NULL);
 	g_free (key);
 
-	for (items = gconf_items, i = 0;
-	     items && i < history->priv->max_history;
-	     items = items->next, i++) {
-		history->priv->items = g_list_append (history->priv->items, items->data);
+	/* truncate the list */
+	last = g_slist_nth (gconf_items, history->priv->max_history - 1);
+	if (last) {
+		g_slist_foreach (last->next, (GFunc) g_free, NULL);
+		g_slist_free (last->next);
+		last->next = NULL;
 	}
 
-	g_slist_free (gconf_items);
+	history->priv->items = gconf_items;
 }
 
 static void
 gn_combo_history_gconf_save (GnComboHistory *history)
 {
 	gchar  *key;
-	GSList *gconf_items;
-	GList  *items;
-	   
+   
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
 	g_return_if_fail (history->priv->gconf_client != NULL);
 	g_return_if_fail (history->priv->id != NULL);
@@ -274,14 +276,9 @@ gn_combo_history_gconf_save (GnComboHistory *history)
 			   history->priv->id,
 			   NULL);
 
-	gconf_items = NULL;
-	   
-	for (items = history->priv->items; items; items = items->next)
-		gconf_items = g_slist_append (gconf_items, items->data);
-
 	gconf_client_set_list (history->priv->gconf_client,
 			       key, GCONF_VALUE_STRING,
-			       gconf_items, NULL);
+			       history->priv->items, NULL);
 
 	g_free (key);
 }
@@ -291,7 +288,7 @@ gn_combo_history_set_popdown_strings (GnComboHistory *history)
 {
 	GtkTreeModel *model;
 	GtkTreeIter   iter;
-	GList  *items;
+	GSList *items;
 	gchar  *text;
 	gint    text_column, i;
 
@@ -317,13 +314,12 @@ gn_combo_history_set_popdown_strings (GnComboHistory *history)
 
 	i = 0;
 	for (items = history->priv->items; items; items = items->next) {
-		text = g_strdup (items->data);
+		text = items->data;
 
 		gtk_list_store_insert (GTK_LIST_STORE (model), &iter, i);
 		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
 				    text_column, text,
 				    -1);
-		g_free (text);
 
 		i ++;
 	}
@@ -436,24 +432,24 @@ compare (gconstpointer a, gconstpointer b)
 void
 gn_combo_history_add (GnComboHistory *history, const gchar *text)
 {
-	GList *item;
-	   
+	GSList *item;
+
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
 	g_return_if_fail (text != NULL);
 
-	if ((item = g_list_find_custom (history->priv->items, (gpointer) text, compare))) {
+	if ((item = g_slist_find_custom (history->priv->items, (gpointer) text, compare))) {
 		/* item is already in list, remove them */
-		history->priv->items = g_list_remove (history->priv->items, item->data);
+		history->priv->items = g_slist_remove (history->priv->items, item->data);
 	}
 
-	if (g_list_length (history->priv->items) >= history->priv->max_history) {
-		item = g_list_last (history->priv->items);
-		history->priv->items = g_list_remove (history->priv->items, item->data);
+	if (g_slist_length (history->priv->items) >= history->priv->max_history) {
+		item = g_slist_last (history->priv->items);
+		history->priv->items = g_slist_remove (history->priv->items, item->data);
 	}
-	   
-	history->priv->items = g_list_prepend (history->priv->items,
-					       g_strdup (text));
-			 
+
+	history->priv->items = g_slist_prepend (history->priv->items,
+						g_strdup (text));
+
 	gn_combo_history_set_popdown_strings (history);
 	   
 	gn_combo_history_gconf_save (history);
@@ -465,9 +461,7 @@ gn_combo_history_clear (GnComboHistory *history)
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
 
 	if (history->priv->items) {
-		g_list_free (history->priv->items);
-		history->priv->items = NULL;
-
+		gn_combo_free_items (history);
 		gn_combo_history_gconf_save (history);
 	}
 }
