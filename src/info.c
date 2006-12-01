@@ -422,7 +422,9 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 	struct sockaddr_in *sinptr;
 	InfoIpAddr *ip;
 	gint flags;
+	#ifdef __linux__
 	mii_data_result data;
+	#endif
 
 	getifaddrs (&ifa0);
 
@@ -470,7 +472,9 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			ifc.ifc_req = (struct ifreq *) buf;
 			ioctl (sockfd, SIOCGIFCONF, &ifc);
 
+#ifdef __linux__
 			data = mii_get_basic (nic);
+#endif
 
 			for (ptr = buf; ptr < buf + ifc.ifc_len;) {
 				ifr = (struct ifreq *) ptr;
@@ -559,6 +563,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 				ip->ip_bcast = g_strdup ("");
 				gtk_label_set_text (GTK_LABEL (info->link_speed), " ");
 				info_setup_configure_button (info, FALSE);
+#ifdef __linux__
 			} else {
 				if (data.has_data) {
 					gtk_label_set_text (GTK_LABEL (info->link_speed), data.media);
@@ -567,6 +572,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 				}
 
 				info_setup_configure_button (info, TRUE);
+#endif
 			}
 
 			/* Supports multicast */

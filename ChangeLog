@@ -1,5 +1,23 @@
 2006-12-01  German Poo-Caamano <gpoo@ubiobio.cl>
 
+	* src/info.c: Fixes compilation in OpenBSD.  Fixes 
+	  #357839.
+
+	  Patch provided by 
+	  Marc Brockschmidt <he+bugzilla.g@marcbrockschmidt.de>
+
+2006-12-01  German Poo-Caamano <gpoo@ubiobio.cl>
+
+	* src/netstat.[ch]:
+	* src/ping.h: Added support for OpenBSD trough defining
+	  __OpenBSD__ in the same places as __FreeBSD__. Fixed
+	  #357840.
+
+	  Patch provided by 
+	  Marc Brockschmidt <he+bugzilla.g@marcbrockschmidt.de>
+
+2006-12-01  German Poo-Caamano <gpoo@ubiobio.cl>
+
 	* src/gnome-nettool.glade:
 	* src/main.c:
 	* src/ping.c:

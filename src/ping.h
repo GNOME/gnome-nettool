@@ -30,7 +30,7 @@
 #   define PING_PROGRAM_FORMAT_6 "%s ping6 -c %d -n %s"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d ttl=%d time=%s %s"
 #   define PING_PARAMS_6
-#elif defined(__OSF__) || defined(__FreeBSD__)
+#elif defined(__OSF__) || defined(__FreeBSD__) || defined(__OpenBSD__)
 #   define PING_PROGRAM_FORMAT "%s ping -c %d -n %s"
 #   define PING_PROGRAM_FORMAT_6 "%s ping6 -c %d -n %s"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d ttl=%d time=%s %s"

@@ -123,7 +123,7 @@ netstat_get_active_option (Netinfo * netinfo)
 	}
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (netinfo->protocol))) {
 		/* Only works for Solaris */
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 	    	option = g_strdup ("-a -f inet -ln");
 #else
 		if (netinfo_is_ipv6_enable ()) {
@@ -292,7 +292,7 @@ netstat_protocol_tree_insert (GtkTreeView *widget, gchar *line)
 	g_return_if_fail (line != NULL);
 
 	count = strip_protocol_line (line, &data);
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 	if (count == 5 || count == 6 || count == 9 || count == 10) {
 #else
 	if (count == 5 || count == 6) {
@@ -360,7 +360,7 @@ static gint
 strip_protocol_line (gchar * line, netstat_protocol_data *data)
 {
 	gint count = 0;
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 	gint a1, a2, a3, a4;
 	gchar s9[30];
 #else
@@ -371,7 +371,7 @@ strip_protocol_line (gchar * line, netstat_protocol_data *data)
 
 	/*line = g_strdelimit (line, ":", ' ');*/
 
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 	line = g_strdelimit (line, ":", ' ');
 	
 	count = sscanf (line, NETSTAT_PROTOCOL_FORMAT,
@@ -485,7 +485,7 @@ netstat_route_tree_insert (GtkTreeView *widget, gchar *line)
 	g_return_if_fail (line != NULL);
 
 	count = strip_route_line (line, &data);
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 	if (count == 6) {
 #else
 	if ((count == 8) || (count == 7)) {
@@ -561,7 +561,7 @@ strip_route_line (gchar * line, netstat_route_data *data)
 	gchar **items;
 #endif
 
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 	count = sscanf (line, NETSTAT_ROUTE_FORMAT,
 			data->destination,
 			data->gateway, flags,
@@ -604,7 +604,7 @@ netstat_create_route_model (GtkTreeView *widget)
 	renderer = gtk_cell_renderer_text_new ();
 	column =
 	    gtk_tree_view_column_new_with_attributes
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 	    (_("Destination/Prefix"), renderer, "text", 0, NULL);
 #else
 	    (_("Destination"), renderer, "text", 0, NULL);
@@ -618,7 +618,7 @@ netstat_create_route_model (GtkTreeView *widget)
 	gtk_tree_view_column_set_alignment (column, 0.5);
 	gtk_tree_view_append_column (widget, column);
 
-#ifndef __FreeBSD__
+#if ! (defined(__FreeBSD__) || defined(__OpenBSD__))
 	renderer = gtk_cell_renderer_text_new ();
 	column =
 	    gtk_tree_view_column_new_with_attributes
