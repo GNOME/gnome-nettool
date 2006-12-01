@@ -320,7 +320,7 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	pinger->max = glade_xml_get_widget (xml, "ping_maximum");
 	pinger->packets_transmitted = glade_xml_get_widget (xml, "ping_packets_transmitted");
 	pinger->packets_received = glade_xml_get_widget (xml, "ping_packets_received");
-	pinger->packets_loss = glade_xml_get_widget (xml, "ping_packets_loss");
+	pinger->packets_success = glade_xml_get_widget (xml, "ping_packets_success");
 
 	pinger->status_bar = glade_xml_get_widget (xml, "statusbar");
 	pinger->stbar_text = NULL;

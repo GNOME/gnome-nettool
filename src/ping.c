@@ -43,7 +43,7 @@ static GtkTreeModel *ping_create_model (GtkTreeView * widget);
 static gfloat rttmin, rttmax, rttavg;
 static gint packets_transmitted;
 static gint packets_received;
-static gint packets_loss;
+static gint packets_success;
 
 typedef struct {
 	gdouble value;
@@ -229,7 +229,7 @@ ping_do (Netinfo * netinfo)
 	gchar *command = NULL;
 	GtkTreeModel *model;
 	GtkLabel *min, *avg, *max, *pkt_transmitted, *pkt_received,
-	    *pkt_loss;
+	    *pkt_success;
 	gchar stmp[128];
 	gchar *program = NULL;
 	GtkWidget *parent;
@@ -253,7 +253,7 @@ ping_do (Netinfo * netinfo)
 	netinfo->stbar_text = g_strdup_printf (_("Sending ping requests to %s"), host);
 	
 	rttmin = rttavg = rttmax = 0.0;
-	packets_transmitted = packets_received = packets_loss = 0;
+	packets_transmitted = packets_received = packets_success = 0;
 
 	/* Clear the statistics before starting a ping */
 
@@ -269,13 +269,13 @@ ping_do (Netinfo * netinfo)
 
 	pkt_transmitted = GTK_LABEL (netinfo->packets_transmitted);
 	pkt_received = GTK_LABEL (netinfo->packets_received);
-	pkt_loss = GTK_LABEL (netinfo->packets_loss);
+	pkt_success = GTK_LABEL (netinfo->packets_success);
 	g_sprintf (stmp, "%d", packets_transmitted);
 	gtk_label_set_text (pkt_transmitted, stmp);
 	g_sprintf (stmp, "%d", packets_received);
 	gtk_label_set_text (pkt_received, stmp);
-	g_sprintf (stmp, "%d%%", packets_loss);
-	gtk_label_set_text (pkt_loss, stmp);
+	g_sprintf (stmp, "%d%%", packets_success);
+	gtk_label_set_text (pkt_success, stmp);
 
 	model = gtk_tree_view_get_model (GTK_TREE_VIEW (netinfo->output));
 	if (GTK_IS_LIST_STORE (model)) {
@@ -388,7 +388,7 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 	ping_data data;
 	gdouble rtt;
 	GtkLabel *min, *avg, *max, *pkt_transmitted, *pkt_received,
-	    *pkt_loss;
+	    *pkt_success;
 	gchar stmp[128];
 
 	g_return_if_fail (netinfo != NULL);
@@ -400,7 +400,7 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 	max = GTK_LABEL (netinfo->max);
 	pkt_transmitted = GTK_LABEL (netinfo->packets_transmitted);
 	pkt_received = GTK_LABEL (netinfo->packets_received);
-	pkt_loss = GTK_LABEL (netinfo->packets_loss);
+	pkt_success = GTK_LABEL (netinfo->packets_success);
 
 	if (len > 0) {		/* there are data to show */
 		count = strip_line (line, &data, netinfo);
@@ -504,10 +504,9 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 		}
 
 		if (packets_transmitted == 0) {
-			packets_loss = 0;
+			packets_success = 0;
 		} else {
-			packets_loss =
-				100 -
+			packets_success =
 				((float) packets_received / packets_transmitted * 100);
 		}
 
@@ -515,8 +514,8 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 		gtk_label_set_text (pkt_transmitted, stmp);
 		g_sprintf (stmp, "%d", packets_received);
 		gtk_label_set_text (pkt_received, stmp);
-		g_sprintf (stmp, "%d%%", packets_loss);
-		gtk_label_set_text (pkt_loss, stmp);
+		g_sprintf (stmp, "%d%%", packets_success);
+		gtk_label_set_text (pkt_success, stmp);
 	}
 	draw_ping_graph (netinfo);
 }
@@ -623,7 +622,7 @@ ping_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 {
 	GString *result, *content;
 	const gchar *min, *avg, *max;
-	const gchar *pkt_transmitted, *pkt_received, *pkt_loss;
+	const gchar *pkt_transmitted, *pkt_received, *pkt_success;
 
 	g_return_if_fail (netinfo != NULL);
 
@@ -643,7 +642,7 @@ ping_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 	    gtk_label_get_text (GTK_LABEL (netinfo->packets_transmitted));
 	pkt_received =
 	    gtk_label_get_text (GTK_LABEL (netinfo->packets_received));
-	pkt_loss = gtk_label_get_text (GTK_LABEL (netinfo->packets_loss));
+	pkt_success = gtk_label_get_text (GTK_LABEL (netinfo->packets_success));
 
 	/* The ping output in a text format (to copy on clipboard) */
 	g_string_append_printf (result, _("Time minimum:\t%s ms\n"), min);
@@ -654,7 +653,8 @@ ping_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 				pkt_transmitted);
 	g_string_append_printf (result, _("Packets received:\t%s\n"),
 				pkt_received);
-	g_string_append_printf (result, _("Packet loss:\t%s\n"), pkt_loss);
+	g_string_append_printf (result, 
+	            _("Successful packets:\t%s\n"), pkt_success);
 
 	gtk_clipboard_set_text (gtk_clipboard_get (GDK_NONE), result->str,
 				result->len);
