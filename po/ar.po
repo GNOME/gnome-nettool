@@ -1,33 +1,35 @@
-# translation of gnome-nettool.po to Arabic
+# translation of gnome-nettool.gnome-2-16.ar.po to Arabic
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
 #
+# Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+# Djihed Afifi <djihed@gmail.com>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool\n"
+"Project-Id-Version: gnome-nettool.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-15 12:42-0400\n"
-"PO-Revision-Date: 2004-09-06 15:42+0300\n"
-"Last-Translator: Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>\n"
-"Language-Team: Arabic <doc@arabeyes.org>\n"
+"POT-Creation-Date: 2006-12-18 01:26+0000\n"
+"PO-Revision-Date: 2006-11-24 19:49+0200\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : "
-"3\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && "
+"n<=10 ? 2 : 3\n"
 
-#: ../src/callbacks.c:311
-#, fuzzy
+#: ../src/callbacks.c:318
 msgid "translator-credits"
 msgstr ""
-"عبدالعزيز العرفج، المملكة العربيّة السّعودية <alarfaj0@yahoo.com>\n"
-"تحت إشراف عرب آيز (http://www.arabeyes.org)"
+"فريق عربآيز للترجمة http://www.arabeyes.org :\n"
+"عبدالعزيز العرفج\t<alarfaj0@yahoo.com>\n"
+"جهاد عفيفي\t<djihed@gmail.com>"
 
-#: ../src/callbacks.c:326
+#: ../src/callbacks.c:333
 msgid "Graphical user interface for common network utilities"
-msgstr "واجهة مستخدم رسوميّة لأدواتٍ شبكيّة شائعة"
+msgstr "واجهة مستخدم رسوميّة لأدوات الشبكّة الشائعة"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -50,7 +52,6 @@ msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>إحصائيّات زمن الذّهاب و الإياب</b>"
 
 #: ../src/gnome-nettool.glade.h:6
-#, fuzzy
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>إحصائيّات الإرسال</b>"
 
@@ -63,212 +64,220 @@ msgid "Average:"
 msgstr "المعدّل:"
 
 #: ../src/gnome-nettool.glade.h:9
+msgid "Beep on ping"
+msgstr "صافرة عند الطرق"
+
+#: ../src/gnome-nettool.glade.h:10
 msgid "Broadcast:"
 msgstr "البث:"
 
-#: ../src/gnome-nettool.glade.h:10
-msgid "Clear _History"
-msgstr "مسح ال_تّاريخ"
-
 #: ../src/gnome-nettool.glade.h:11
+msgid "Clear _History"
+msgstr "امسح ال_تّاريخ"
+
+#: ../src/gnome-nettool.glade.h:12
 msgid "Collisions:"
 msgstr "التّصادمات:"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../src/gnome-nettool.glade.h:13
+msgid "Details"
+msgstr ""
+
+#: ../src/gnome-nettool.glade.h:14
 msgid "Devices"
 msgstr "الأجهزة"
 
 #. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:14
-#, fuzzy
+#: ../src/gnome-nettool.glade.h:16
 msgid "Devices - Network Tools"
-msgstr "أدوات الشّبكة"
+msgstr "أجهزة - أدوات الشّبكة"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.glade.h:17
 msgid "Display:"
 msgstr "العرض:"
 
-#: ../src/gnome-nettool.glade.h:16 ../src/main.c:857
+#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
 msgid "Finger"
 msgstr "جس"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:19
 msgid "Hardware address:"
 msgstr "عنوان العتاد:"
 
-#: ../src/gnome-nettool.glade.h:18
+#: ../src/gnome-nettool.glade.h:20
 msgid "Host"
 msgstr "مضيف"
 
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.glade.h:21
 msgid "IP Address:"
 msgstr "عنوان IP:"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:22
 msgid "Link speed:"
 msgstr "سرعة الوصلة:"
 
-#: ../src/gnome-nettool.glade.h:21 ../src/main.c:771
+#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
 msgid "Lookup"
 msgstr "البحث"
 
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:24
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:25
 msgid "Maximum:"
 msgstr "الحد الأقصى:"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:26
 msgid "Minimum:"
 msgstr "الحد الأدنى:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:27
 msgid "Multicast Information"
 msgstr "معلومات تعدّد البث"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:28
 msgid "Multicast:"
 msgstr "تعدّد البث:"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../src/gnome-nettool.glade.h:29
 msgid "Netmask:"
 msgstr "قناع الشّبكة:"
 
-#: ../src/gnome-nettool.glade.h:28 ../src/main.c:469
+#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
 msgid "Netstat"
-msgstr "Netstat (إحصائيّات الشّبكة)"
+msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:31
 msgid "Not Available"
 msgstr "غير موجود"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:32
 msgid "Only"
 msgstr "فقط"
 
-#: ../src/gnome-nettool.glade.h:31
-msgid "Packets loss:"
-msgstr "الحزم المفقودة:"
-
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:33
 msgid "Packets received:"
 msgstr "الحزم المستلَمة:"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:34
 msgid "Packets transmitted:"
 msgstr "الحزم المرسَلة:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:305
+#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
 msgid "Ping"
 msgstr "طرق"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:36
 msgid "Port Scan"
 msgstr "فحص المنفذ"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:37
 msgid "Received bytes:"
 msgstr "البايتات المستلَمة:"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:38
 msgid "Received packets:"
 msgstr "الحزم المستلَمة:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:39
 msgid "Reception errors:"
 msgstr "أخطاء الاستقبال:"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:40
 msgid "Routing Table Information"
 msgstr "معلومات جدول التّوجيه"
 
-#: ../src/gnome-nettool.glade.h:40 ../src/main.c:652
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
 msgid "Scan"
-msgstr "مسح"
-
-#: ../src/gnome-nettool.glade.h:41
-msgid "Send:"
-msgstr "إرسال:"
+msgstr "امسح"
 
 #: ../src/gnome-nettool.glade.h:42
+msgid "Send:"
+msgstr "أرسل:"
+
+#: ../src/gnome-nettool.glade.h:43
 msgid "State:"
 msgstr "الحالة:"
 
-#: ../src/gnome-nettool.glade.h:43 ../src/main.c:393
+#: ../src/gnome-nettool.glade.h:44
+#, fuzzy
+msgid "Successful packets:"
+msgstr "الحزم المستلَمة:"
+
+#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
 msgid "Trace"
 msgstr "تعقّب"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:46
 msgid "Traceroute"
-msgstr "Traceroute (تعقّب المسلك)"
+msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:47
 msgid "Transmission errors:"
 msgstr "أخطاء الإرسال:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:48
 msgid "Transmitted bytes:"
 msgstr "البايتات المرسَلة:"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:49
 msgid "Transmitted packets:"
 msgstr "الحزم المرسَلة:"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:50
 msgid "Unlimited requests"
 msgstr "طلبات غير محدودة"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:51
 msgid "User"
 msgstr "المستخدم"
 
-#: ../src/gnome-nettool.glade.h:50 ../src/main.c:973
+#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
 msgid "Whois"
-msgstr "من هو (whois)"
+msgstr "whois"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:53
 msgid "_Configure"
 msgstr "إ_عداد"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Domain address:"
 msgstr "عنوان ال_نّطاق:"
 
-#: ../src/gnome-nettool.glade.h:53
-msgid "_Edit"
-msgstr ""
-
-#: ../src/gnome-nettool.glade.h:54
-msgid "_Help"
-msgstr ""
-
 #: ../src/gnome-nettool.glade.h:55
+msgid "_Edit"
+msgstr "_حرّر"
+
+#: ../src/gnome-nettool.glade.h:56
+msgid "_Help"
+msgstr "_مساعدة"
+
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Information type:"
 msgstr "نوع ال_معلومات:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Network address:"
 msgstr "عنوان ال_شّبكة:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:59
 msgid "_Network device:"
 msgstr "جهاز ال_شّبكة:"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:60
 msgid "_Tool"
 msgstr "الأ_داة"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:61
 msgid "_Username:"
 msgstr "إ_سم المستخدم:"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:62
 msgid "ms"
 msgstr "ملّي ثانية"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:63
 msgid "requests"
 msgstr "الطّلبات"
 
@@ -306,101 +315,100 @@ msgid "Unknown Interface"
 msgstr "واجهة مجهولة"
 
 #: ../src/info.c:162
-#, fuzzy
 msgid "Network Devices Not Found"
-msgstr "<i>لم يعثر على أجهزة الشّبكة</i>"
+msgstr "لم يعثر على أجهزة الشّبكة"
 
 #: ../src/info.c:385
 msgid "Unknown"
 msgstr "مجهول"
 
-#: ../src/info.c:545
+#: ../src/info.c:554
 msgid "Active"
 msgstr "نشط"
 
-#: ../src/info.c:547
+#: ../src/info.c:556
 msgid "Inactive"
 msgstr "غير نشط"
 
-#: ../src/info.c:552
+#: ../src/info.c:561
 msgid "Loopback"
 msgstr "تحلّق خلفي"
 
-#: ../src/info.c:569
+#: ../src/info.c:580
 msgid "Enabled"
 msgstr "ممكّن"
 
-#: ../src/info.c:571
+#: ../src/info.c:582
 msgid "Disabled"
 msgstr "معطّل"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:708
+#: ../src/info.c:719
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "جهاز الشّبكة:\t%s\n"
 
-#: ../src/info.c:709
+#: ../src/info.c:720
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "عنوان العتاد:\t%s\n"
 
-#: ../src/info.c:710
+#: ../src/info.c:721
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "عنوان IP:\t%s\n"
 
-#: ../src/info.c:711
+#: ../src/info.c:722
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "قناع الشّبكة:\t%s\n"
 
-#: ../src/info.c:712
+#: ../src/info.c:723
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "البث:\t%s\n"
 
-#: ../src/info.c:713
+#: ../src/info.c:724
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "تعدّد البث:\t%s\n"
 
-#: ../src/info.c:714
+#: ../src/info.c:725
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:715
+#: ../src/info.c:726
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "سرعة الوصلة:\t%s\n"
 
-#: ../src/info.c:716
+#: ../src/info.c:727
 #, c-format
 msgid "State:\t%s\n"
 msgstr "الحالة:\t%s\n"
 
-#: ../src/info.c:718
+#: ../src/info.c:729
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "الحزم المرسَلة:\t%s\n"
 
-#: ../src/info.c:719
+#: ../src/info.c:730
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "أخطاء الإرسال:\t%s\n"
 
-#: ../src/info.c:720
+#: ../src/info.c:731
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "الحزم المستلَمة:\t%s\n"
 
-#: ../src/info.c:721
+#: ../src/info.c:732
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "أخطاء الاستلام:\t%s\n"
 
-#: ../src/info.c:722
+#: ../src/info.c:733
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "التّصادمات:\t%s\n"
@@ -443,71 +451,71 @@ msgstr "العنوان"
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/lookup.c:343
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
-msgstr "المسصدر\tTTL\tفئة العنوان\tفئة السّجل1\tالحل\n"
-
-#: ../src/main.c:80
-msgid "Load information for a network device"
-msgstr "تحميل المعلومات لجهاز شبكة"
+msgstr "المصدر\tTTL\tفئة العنوان\tفئة السّجل1\tالحل\n"
 
 #: ../src/main.c:81
+msgid "Load information for a network device"
+msgstr "حمّل المعلومات لجهاز شبكة"
+
+#: ../src/main.c:82
 msgid "DEVICE"
 msgstr "الجهاز"
 
-#: ../src/main.c:84
+#: ../src/main.c:85
 msgid "Send a ping to a network address"
-msgstr "إرسال طرقة إلى عنوان شبكة"
+msgstr "أرسل طرقة إلى عنوان شبكة"
 
-#: ../src/main.c:85 ../src/main.c:93 ../src/main.c:97 ../src/main.c:101
+#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
 msgid "HOST"
 msgstr "المضيف"
 
-#: ../src/main.c:88
+#: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
-"جلب معلومات إحصائيّات الشّبكة. الخيارات الممكنة هي: المسلك (route) و نشط "
+"اجلب معلومات إحصائيّات الشّبكة. الخيارات الممكنة هي: المسلك (route) و نشط "
 "(active) و تعدّد البث (multicast)."
 
-#: ../src/main.c:89
+#: ../src/main.c:90
 msgid "COMMAND"
 msgstr "الأمر"
 
-#: ../src/main.c:92
+#: ../src/main.c:93
 msgid "Trace a route to a network address"
 msgstr "تعقّب مسلك إلى عنوان شبكة"
 
-#: ../src/main.c:96
+#: ../src/main.c:97
 msgid "Port scan a network address"
-msgstr "فحص عنوان شبكة لمنفذ"
+msgstr "افحص عنوان شبكة لمنفذ"
 
-#: ../src/main.c:100
+#: ../src/main.c:101
 msgid "Look up a network address"
-msgstr "البحث عن عنوان شبكة"
+msgstr "ابحث عن عنوان شبكة"
 
-#: ../src/main.c:104
+#: ../src/main.c:105
 msgid "Finger command to run"
 msgstr "أمر الجس الذي سينفّذ"
 
-#: ../src/main.c:105
+#: ../src/main.c:106
 msgid "USER"
 msgstr "المستخدم"
 
-#: ../src/main.c:108
-msgid "Perform a whois lookup for a network domain"
-msgstr "القيام ببحث هويّة (whois) لنطاق شبكة"
-
 #: ../src/main.c:109
+msgid "Perform a whois lookup for a network domain"
+msgstr "قم ببحث هويّة (whois) لنطاق شبكة"
+
+#: ../src/main.c:110
 msgid "DOMAIN"
 msgstr "النّطاق"
 
-#: ../src/main.c:126
-#, fuzzy, c-format
+#: ../src/main.c:127
+#, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"الملف %s غير موجود. فضلاً تأكّد إن كانت حزمة gnome-netinfo مثبّتةً بشكلٍ صحيح"
+"الملف %s غير موجود. فضلاً تأكّد إن كانت حزمة gnome-nettool مثبّتةً بشكلٍ صحيح"
 
-#: ../src/main.c:338
+#: ../src/main.c:346
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -515,7 +523,7 @@ msgstr ""
 "أدخل عنوان الشّبكة الذي تريد طرقه.\n"
 "مثلاً: www.domain.com أو 192.168.2.1"
 
-#: ../src/main.c:420
+#: ../src/main.c:431
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -523,27 +531,27 @@ msgstr ""
 "أدخل عنوان الشّبكة الذي تريد تعقّب مسلكه.\n"
 "مثلاً: www.domain.com أو 192.168.2.1"
 
-#: ../src/main.c:505 ../src/netstat.c:443
+#: ../src/main.c:516 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "البرتوكول"
 
-#: ../src/main.c:512
+#: ../src/main.c:523
 msgid "IP Address"
 msgstr "عنوان IP"
 
-#: ../src/main.c:519
+#: ../src/main.c:530
 msgid "Netmask / Prefix"
 msgstr "قناع الشّبكة / السّابقة"
 
-#: ../src/main.c:526
+#: ../src/main.c:537
 msgid "Broadcast"
 msgstr "البثّ"
 
-#: ../src/main.c:533
+#: ../src/main.c:544
 msgid "Scope"
 msgstr "المجال"
 
-#: ../src/main.c:674
+#: ../src/main.c:685
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -551,7 +559,7 @@ msgstr ""
 "أدخل عنوان الشّبكة الذي تريد فحصه بحثاً عن منافذ مفتوحة.\n"
 "مثلاً: www.domain.com أو 192.168.2.1"
 
-#: ../src/main.c:802
+#: ../src/main.c:813
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -559,20 +567,19 @@ msgstr ""
 "أدخل عنوان الشّبكة الذي تريد البحث عنه.\n"
 "مثلاً: www.domain.com أو 192.168.2.1"
 
-#: ../src/main.c:891
+#: ../src/main.c:902
 msgid "Enter the user to finger."
 msgstr "أدخل المستخدم الذي تريد جسّه."
 
-#: ../src/main.c:918
-#, fuzzy
+#: ../src/main.c:929
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
 msgstr ""
 "أدخل عنوان الشّبكة لجس ذلك المستخدم.\n"
-"مثلاً: www.domain.com أو 192.168.2.1"
+"مثلاً: auth.domain.com أو 192.168.2.1"
 
-#: ../src/main.c:1005
+#: ../src/main.c:1016
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -600,113 +607,123 @@ msgstr "مصدر IP"
 msgid "Port/Service"
 msgstr "المنفذ/الخدمة"
 
-#: ../src/netstat.c:466 ../src/scan.c:298
+#: ../src/netstat.c:466 ../src/scan.c:312
 msgid "State"
 msgstr "الحالة"
 
-#: ../src/netstat.c:608
+#: ../src/netstat.c:609
 msgid "Destination/Prefix"
 msgstr "الوجهة/السّابقة"
 
-#: ../src/netstat.c:610
+#: ../src/netstat.c:611
 msgid "Destination"
 msgstr "الوجهة"
 
-#: ../src/netstat.c:617
+#: ../src/netstat.c:618
 msgid "Gateway"
 msgstr "البوّابة"
 
-#: ../src/netstat.c:625
+#: ../src/netstat.c:626
 msgid "Netmask"
 msgstr "قناع الشّبكة"
 
-#: ../src/netstat.c:633 ../src/netstat.c:739
+#: ../src/netstat.c:634 ../src/netstat.c:741
 msgid "Interface"
 msgstr "الواجهة"
 
-#: ../src/netstat.c:746
+#: ../src/netstat.c:748
 msgid "Member"
 msgstr "العضو"
 
-#: ../src/netstat.c:754
+#: ../src/netstat.c:756
 msgid "Group"
 msgstr "المجموعة"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:796
+#: ../src/netstat.c:798
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "البروتوكول\tمصدر IP\tالمنفذ/الخدمة\tالحالة\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:802
+#: ../src/netstat.c:804
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "الوجهة\tالبوّابة\tقناع الشّبكة\tالواجهة\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:807
+#: ../src/netstat.c:809
 msgid "Interface\tMember\tGroup\n"
 msgstr "الواجهة\tالعضو\tالمجموعة\n"
 
-#: ../src/nettool.c:198
+#: ../src/nettool.c:199
 msgid "A network address was not specified"
 msgstr "لم يحدّد عنوان شبكة"
 
-#: ../src/nettool.c:199 ../src/nettool.c:208
+#: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
 msgstr "فضلاً أدخل عنوان شبكةٍ سليم و حاول مجدّداً."
 
-#: ../src/nettool.c:206
+#: ../src/nettool.c:207
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "لا يمكن العثور على العنوان '%s'"
 
-#: ../src/nettool.c:235
+#: ../src/nettool.c:236
 msgid "A domain address was not specified"
 msgstr "لم يحدّد عنوان نطاق"
 
-#: ../src/nettool.c:236
+#: ../src/nettool.c:237
 msgid "Please enter a valid domain address and try again."
 msgstr "فضلاً أدخل عنوان نطاقٍ سليم و حاول مجدّداً."
 
-#: ../src/nettool.c:394
+#: ../src/nettool.c:395
 msgid "Information not available"
 msgstr "المعلومات غير متوفّرة"
 
-#: ../src/nettool.c:512
+#: ../src/nettool.c:513
 msgid "Stop"
-msgstr "توقّف"
+msgstr "قِّف"
 
-#: ../src/nettool.c:518
+#: ../src/nettool.c:519
 msgid "Run"
-msgstr "تشغيل"
+msgstr "شغّل"
 
-#: ../src/ping.c:77
+#. Created up here so we can get the geometry info.
+#: ../src/ping.c:151
+#, fuzzy
+msgid "Time (ms):"
+msgstr "الوقت 1"
+
+#: ../src/ping.c:171
+msgid "Seq. No.:"
+msgstr ""
+
+#: ../src/ping.c:253
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "جاري إرسال طلبات الطّرق إلى %s"
 
-#: ../src/ping.c:385
+#: ../src/ping.c:574
 msgid "Bytes"
 msgstr "بايتات"
 
-#: ../src/ping.c:392
+#: ../src/ping.c:581
 msgid "Source"
 msgstr "المصدر"
 
-#: ../src/ping.c:400
+#: ../src/ping.c:589
 msgid "Seq"
 msgstr "التّتابع"
 
-#: ../src/ping.c:410
+#: ../src/ping.c:599
 msgid "Time"
 msgstr "الوقت"
 
-#: ../src/ping.c:418
+#: ../src/ping.c:607
 msgid "Units"
 msgstr "الوحدات"
 
@@ -714,62 +731,62 @@ msgstr "الوحدات"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:444
+#: ../src/ping.c:633
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "بايتات\tالمصدر\tالتّتابع\tالوقت\tالوحدات\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:459
+#: ../src/ping.c:648
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "أدنى زمن:\t%s ملّي ثانية\n"
 
-#: ../src/ping.c:460
+#: ../src/ping.c:649
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "المعدّل الزّمني:\t%s ملّي ثانية\n"
 
-#: ../src/ping.c:461
+#: ../src/ping.c:650
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "أقصى زمن:\t%s ملّي ثانية\n"
 
-#: ../src/ping.c:463
+#: ../src/ping.c:652
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "الحزم المرسَلة:\t%s\n"
 
-#: ../src/ping.c:465
+#: ../src/ping.c:654
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "الحزم المستلَمة:\t%s\n"
 
-#: ../src/ping.c:467
-#, c-format
-msgid "Packet loss:\t%s\n"
-msgstr "الحزم المفقودة:\t%s\n"
+#: ../src/ping.c:657
+#, fuzzy, c-format
+msgid "Successful packets:\t%s\n"
+msgstr "الحزم المستلَمة:\t%s\n"
 
-#: ../src/scan.c:86
+#: ../src/scan.c:93
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "جاري فحص %s بحثاً عن منافذ مفتوحة"
 
-#: ../src/scan.c:161
+#: ../src/scan.c:168
 msgid "unknown"
 msgstr "مجهول"
 
-#: ../src/scan.c:290
+#: ../src/scan.c:304
 msgid "Port"
 msgstr "المنفذ"
 
-#: ../src/scan.c:306
+#: ../src/scan.c:320
 msgid "Service"
 msgstr "الخدمة"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:328
+#: ../src/scan.c:342
 msgid "Port\tState\tService\n"
 msgstr "المنفذ\tالحالة\tالخدمة\n"
 
@@ -788,7 +805,7 @@ msgstr "اسم المضيف"
 
 #: ../src/traceroute.c:287
 msgid "IP"
-msgstr "بروتوكول الإنترنت (IP)"
+msgstr "IP"
 
 #: ../src/traceroute.c:298
 msgid "Time 1"
@@ -808,14 +825,16 @@ msgstr "القفزة\tاسم المضيف\tالـIP\tالوقت 1\tالوقت 2\
 
 #: ../src/utils.c:227
 #, c-format
-msgid "%s: Command not found"
-msgstr "%s: لم يعثر على الأمر"
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
+msgstr "لاستعمال هذه الميزة في البرنامج، يجب تثبيت %s في النظام."
 
-#: ../src/gnome-nettool.desktop.in.h:1
+#: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Information Tools"
 msgstr "أدوات معلومات الشّبكة"
 
-#: ../src/gnome-nettool.desktop.in.h:2
+#: ../src/gnome-nettool.desktop.in.in.h:2
 msgid "Network Tools"
 msgstr "أدوات الشّبكة"
 
@@ -834,8 +853,8 @@ msgstr "جاري جلب معلومات كافّة المستخدمين على \"
 msgid "Getting the whois information of %s"
 msgstr "جاري جلب معلومات الهويّة (whois) على %s"
 
-#~ msgid "Network Tools - Devices"
-#~ msgstr "أدوات الشّبكة - الأجهزة"
+#~ msgid "Packets loss:"
+#~ msgstr "الحزم المفقودة:"
 
-#~ msgid "Network Information"
-#~ msgstr "معلومات الشّبكة"
+#~ msgid "Packet loss:\t%s\n"
+#~ msgstr "الحزم المفقودة:\t%s\n"
