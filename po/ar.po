@@ -10,22 +10,22 @@ msgstr ""
 "Project-Id-Version: gnome-nettool.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-12-27 16:32+0000\n"
-"PO-Revision-Date: 2006-11-24 19:49+0200\n"
-"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"PO-Revision-Date: 2006-12-29 13:32+0200\n"
+"Last-Translator: Mohamed Magdy <alnokta@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && "
-"n<=10 ? 2 : 3\n"
+"Plural-Forms: Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : 3\n"
 
 #: ../src/callbacks.c:318
 msgid "translator-credits"
 msgstr ""
 "فريق عربآيز للترجمة http://www.arabeyes.org :\n"
 "عبدالعزيز العرفج\t<alarfaj0@yahoo.com>\n"
-"جهاد عفيفي\t<djihed@gmail.com>"
+"جهاد عفيفي\t<djihed@gmail.com>\n"
+"محمد مجدى\t<alnokta@yahoo.com>"
 
 #: ../src/callbacks.c:333
 msgid "Graphical user interface for common network utilities"
@@ -81,7 +81,7 @@ msgstr "التّصادمات:"
 
 #: ../src/gnome-nettool.glade.h:13
 msgid "Details"
-msgstr ""
+msgstr "تفاصيل"
 
 #: ../src/gnome-nettool.glade.h:14
 msgid "Devices"
@@ -96,7 +96,8 @@ msgstr "أجهزة - أدوات الشّبكة"
 msgid "Display:"
 msgstr "العرض:"
 
-#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
+#: ../src/gnome-nettool.glade.h:18
+#: ../src/main.c:868
 msgid "Finger"
 msgstr "جس"
 
@@ -116,7 +117,8 @@ msgstr "عنوان IP:"
 msgid "Link speed:"
 msgstr "سرعة الوصلة:"
 
-#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
+#: ../src/gnome-nettool.glade.h:23
+#: ../src/main.c:782
 msgid "Lookup"
 msgstr "البحث"
 
@@ -144,7 +146,8 @@ msgstr "تعدّد البث:"
 msgid "Netmask:"
 msgstr "قناع الشّبكة:"
 
-#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
+#: ../src/gnome-nettool.glade.h:30
+#: ../src/main.c:480
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -164,7 +167,8 @@ msgstr "الحزم المستلَمة:"
 msgid "Packets transmitted:"
 msgstr "الحزم المرسَلة:"
 
-#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
+#: ../src/gnome-nettool.glade.h:35
+#: ../src/main.c:313
 msgid "Ping"
 msgstr "طرق"
 
@@ -188,7 +192,8 @@ msgstr "أخطاء الاستقبال:"
 msgid "Routing Table Information"
 msgstr "معلومات جدول التّوجيه"
 
-#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
+#: ../src/gnome-nettool.glade.h:41
+#: ../src/main.c:663
 msgid "Scan"
 msgstr "امسح"
 
@@ -201,11 +206,11 @@ msgid "State:"
 msgstr "الحالة:"
 
 #: ../src/gnome-nettool.glade.h:44
-#, fuzzy
 msgid "Successful packets:"
-msgstr "الحزم المستلَمة:"
+msgstr "الحزم الناجحة:"
 
-#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
+#: ../src/gnome-nettool.glade.h:45
+#: ../src/main.c:404
 msgid "Trace"
 msgstr "تعقّب"
 
@@ -233,7 +238,8 @@ msgstr "طلبات غير محدودة"
 msgid "User"
 msgstr "المستخدم"
 
-#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
+#: ../src/gnome-nettool.glade.h:52
+#: ../src/main.c:984
 msgid "Whois"
 msgstr "whois"
 
@@ -465,15 +471,16 @@ msgstr "الجهاز"
 msgid "Send a ping to a network address"
 msgstr "أرسل طرقة إلى عنوان شبكة"
 
-#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
+#: ../src/main.c:86
+#: ../src/main.c:94
+#: ../src/main.c:98
+#: ../src/main.c:102
 msgid "HOST"
 msgstr "المضيف"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"اجلب معلومات إحصائيّات الشّبكة. الخيارات الممكنة هي: المسلك (route) و نشط "
-"(active) و تعدّد البث (multicast)."
+msgstr "اجلب معلومات إحصائيّات الشّبكة. الخيارات الممكنة هي: المسلك (route) و نشط (active) و تعدّد البث (multicast)."
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -509,11 +516,8 @@ msgstr "النّطاق"
 
 #: ../src/main.c:127
 #, c-format
-msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
-"installed"
-msgstr ""
-"الملف %s غير موجود. فضلاً تأكّد إن كانت حزمة gnome-nettool مثبّتةً بشكلٍ صحيح"
+msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
+msgstr "الملف %s غير موجود. فضلاً تأكّد إن كانت حزمة gnome-nettool مثبّتةً بشكلٍ صحيح"
 
 #: ../src/main.c:346
 msgid ""
@@ -531,7 +535,8 @@ msgstr ""
 "أدخل عنوان الشّبكة الذي تريد تعقّب مسلكه.\n"
 "مثلاً: www.domain.com أو 192.168.2.1"
 
-#: ../src/main.c:516 ../src/netstat.c:443
+#: ../src/main.c:516
+#: ../src/netstat.c:443
 msgid "Protocol"
 msgstr "البرتوكول"
 
@@ -607,7 +612,8 @@ msgstr "مصدر IP"
 msgid "Port/Service"
 msgstr "المنفذ/الخدمة"
 
-#: ../src/netstat.c:466 ../src/scan.c:312
+#: ../src/netstat.c:466
+#: ../src/scan.c:312
 msgid "State"
 msgstr "الحالة"
 
@@ -627,7 +633,8 @@ msgstr "البوّابة"
 msgid "Netmask"
 msgstr "قناع الشّبكة"
 
-#: ../src/netstat.c:634 ../src/netstat.c:741
+#: ../src/netstat.c:634
+#: ../src/netstat.c:741
 msgid "Interface"
 msgstr "الواجهة"
 
@@ -663,7 +670,8 @@ msgstr "الواجهة\tالعضو\tالمجموعة\n"
 msgid "A network address was not specified"
 msgstr "لم يحدّد عنوان شبكة"
 
-#: ../src/nettool.c:200 ../src/nettool.c:209
+#: ../src/nettool.c:200
+#: ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
 msgstr "فضلاً أدخل عنوان شبكةٍ سليم و حاول مجدّداً."
 
@@ -694,13 +702,12 @@ msgstr "شغّل"
 
 #. Created up here so we can get the geometry info.
 #: ../src/ping.c:151
-#, fuzzy
 msgid "Time (ms):"
-msgstr "الوقت 1"
+msgstr "الوقت (بالملي ثانية):"
 
 #: ../src/ping.c:171
 msgid "Seq. No.:"
-msgstr ""
+msgstr "رقم التتابع:"
 
 #: ../src/ping.c:253
 #, c-format
@@ -762,9 +769,9 @@ msgid "Packets received:\t%s\n"
 msgstr "الحزم المستلَمة:\t%s\n"
 
 #: ../src/ping.c:657
-#, fuzzy, c-format
+#, c-format
 msgid "Successful packets:\t%s\n"
-msgstr "الحزم المستلَمة:\t%s\n"
+msgstr "الحزم الناجحة:\t%s\n"
 
 #: ../src/scan.c:93
 #, c-format
@@ -825,9 +832,7 @@ msgstr "القفزة\tاسم المضيف\tالـIP\tالوقت 1\tالوقت 2\
 
 #: ../src/utils.c:227
 #, c-format
-msgid ""
-"In order to use this feature of the program, %s must be installed in your "
-"system"
+msgid "In order to use this feature of the program, %s must be installed in your system"
 msgstr "لاستعمال هذه الميزة في البرنامج، يجب تثبيت %s في النظام."
 
 #: ../src/gnome-nettool.desktop.in.in.h:1
@@ -855,6 +860,6 @@ msgstr "جاري جلب معلومات الهويّة (whois) على %s"
 
 #~ msgid "Packets loss:"
 #~ msgstr "الحزم المفقودة:"
-
 #~ msgid "Packet loss:\t%s\n"
 #~ msgstr "الحزم المفقودة:\t%s\n"
+
