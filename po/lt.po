@@ -1,26 +1,25 @@
 # translation of lt.po to Lithuanian
 # Lithuanian translation of gnome-nettool.
-# Copyright (C) 2004-2006 Free Software Foundation, Inc.
+# Copyright (C) 2004-2006, 2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
 #
 #
 # Marius Karnauskas <marius@esga.lt>, 2004.
 # Žygimantas Beručka <zygis@gnome.org>, 2005-2006.
-# Gintautas Miliauskas <gintas@akl.lt>, 2006.
+# Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-27 15:47+0200\n"
-"PO-Revision-Date: 2006-08-30 15:27+0300\n"
+"POT-Creation-Date: 2007-03-09 21:42+0200\n"
+"PO-Revision-Date: 2007-03-09 21:43+0200\n"
 "Last-Translator: Gintautas Miliauskas <gintas@akl.lt>\n"
-"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
-"100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/callbacks.c:318
 msgid "translator-credits"
@@ -82,7 +81,7 @@ msgstr "Kolizijų:"
 
 #: ../src/gnome-nettool.glade.h:13
 msgid "Details"
-msgstr ""
+msgstr "Detalės"
 
 #: ../src/gnome-nettool.glade.h:14
 msgid "Devices"
@@ -202,9 +201,8 @@ msgid "State:"
 msgstr "Būsena:"
 
 #: ../src/gnome-nettool.glade.h:44
-#, fuzzy
 msgid "Successful packets:"
-msgstr "Gauta paketų:"
+msgstr "Sėkmingi paketai:"
 
 #: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
 msgid "Trace"
@@ -472,8 +470,7 @@ msgstr "KOMPIUTERIS"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"Gauti netstat informaciją.  Taisyklingi parametrai: route, active, multicast."
+msgstr "Gauti netstat informaciją.  Taisyklingi parametrai: route, active, multicast."
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -512,8 +509,7 @@ msgstr "DOMENAS"
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
-msgstr ""
-"Failas %s neegzistuoja, patikrinkite ar korektiškai įdiegtas gnome-nettool"
+msgstr "Failas %s neegzistuoja, patikrinkite ar korektiškai įdiegtas gnome-nettool"
 
 #: ../src/main.c:346
 msgid ""
@@ -694,13 +690,12 @@ msgstr "Leisti"
 
 #. Created up here so we can get the geometry info.
 #: ../src/ping.c:151
-#, fuzzy
 msgid "Time (ms):"
-msgstr "Laikas 1"
+msgstr "Laikas (ms):"
 
 #: ../src/ping.c:171
 msgid "Seq. No.:"
-msgstr ""
+msgstr "Eil. nr.:"
 
 #: ../src/ping.c:253
 #, c-format
@@ -762,9 +757,9 @@ msgid "Packets received:\t%s\n"
 msgstr "Gauta paketų:\t%s\n"
 
 #: ../src/ping.c:657
-#, fuzzy, c-format
+#, c-format
 msgid "Successful packets:\t%s\n"
-msgstr "Gauta paketų:\t%s\n"
+msgstr "Sėkmingų paketų:\t%s\n"
 
 #: ../src/scan.c:93
 #, c-format
@@ -853,8 +848,3 @@ msgstr "Gaunama informacija apie visus naudotojus, esančius „%s“"
 msgid "Getting the whois information of %s"
 msgstr "Gaunama informacija apie %s"
 
-#~ msgid "Packets loss:"
-#~ msgstr "Prarandama paketų:"
-
-#~ msgid "Packet loss:\t%s\n"
-#~ msgstr "Paketų praradimas:\t%s\n"
