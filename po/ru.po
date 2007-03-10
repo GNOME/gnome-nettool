@@ -5,12 +5,12 @@
 # Leonid Kanter <leon@asplinux.ru>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool.HEAD\n"
+"Project-Id-Version: gnome-nettool trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-26 05:35+0400\n"
-"PO-Revision-Date: 2006-08-26 15:58+0300\n"
+"POT-Creation-Date: 2007-03-10 15:17+0300\n"
+"PO-Revision-Date: 2007-03-10 15:58+0300\n"
 "Last-Translator: Nickolay V. Shmyrev <nshmyrev@yandex.ru>\n"
-"Language-Team:  <gnome-cyr@gnome.org>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -78,81 +78,81 @@ msgid "Collisions:"
 msgstr "Коллизии:"
 
 #: ../src/gnome-nettool.glade.h:13
+msgid "Details"
+msgstr "Детали"
+
+#: ../src/gnome-nettool.glade.h:14
 msgid "Devices"
 msgstr "Устройства"
 
 #. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.glade.h:16
 msgid "Devices - Network Tools"
 msgstr "Устройства - Сетевые утилиты"
 
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:17
 msgid "Display:"
 msgstr "Дисплей:"
 
-#: ../src/gnome-nettool.glade.h:17 ../src/main.c:864
+#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:18
+#: ../src/gnome-nettool.glade.h:19
 msgid "Hardware address:"
 msgstr "Аппаратный адрес"
 
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.glade.h:20
 msgid "Host"
 msgstr "Хост"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:21
 msgid "IP Address:"
 msgstr "IP адрес:"
 
-#: ../src/gnome-nettool.glade.h:21
+#: ../src/gnome-nettool.glade.h:22
 msgid "Link speed:"
 msgstr "Скорость соединения:"
 
-#: ../src/gnome-nettool.glade.h:22 ../src/main.c:778
+#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
 msgid "Lookup"
 msgstr "Преобразование имен"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:24
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:25
 msgid "Maximum:"
 msgstr "Наибольшее"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:26
 msgid "Minimum:"
 msgstr "Наименьшее"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:27
 msgid "Multicast Information"
 msgstr "Информация об multicast"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../src/gnome-nettool.glade.h:28
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:29
 msgid "Netmask:"
 msgstr "Маска подсети"
 
-#: ../src/gnome-nettool.glade.h:29 ../src/main.c:476
+#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
 msgid "Netstat"
 msgstr "Сеть"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:31
 msgid "Not Available"
 msgstr "Нет данных"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:32
 msgid "Only"
 msgstr "Только"
-
-#: ../src/gnome-nettool.glade.h:32
-msgid "Packets loss:"
-msgstr "Потерянные пакеты:"
 
 #: ../src/gnome-nettool.glade.h:33
 msgid "Packets received:"
@@ -162,7 +162,7 @@ msgstr "Полученные пакеты:"
 msgid "Packets transmitted:"
 msgstr "Переданные пакеты"
 
-#: ../src/gnome-nettool.glade.h:35 ../src/main.c:312
+#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
 msgid "Ping"
 msgstr "Пинг"
 
@@ -186,7 +186,7 @@ msgstr "Ошибки приёма:"
 msgid "Routing Table Information"
 msgstr "Информация об таблице маршрутизации"
 
-#: ../src/gnome-nettool.glade.h:41 ../src/main.c:659
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
 msgid "Scan"
 msgstr "Сканирование"
 
@@ -198,79 +198,83 @@ msgstr "Послано:"
 msgid "State:"
 msgstr "Состояние:"
 
-#: ../src/gnome-nettool.glade.h:44 ../src/main.c:400
+#: ../src/gnome-nettool.glade.h:44
+msgid "Successful packets:"
+msgstr "Успешных пакетов:"
+
+#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
 msgid "Trace"
 msgstr "Трассировка"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:46
 msgid "Traceroute"
 msgstr "Трассировка маршрута"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:47
 msgid "Transmission errors:"
 msgstr "Ошибки передачи:"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:48
 msgid "Transmitted bytes:"
 msgstr "Переданные байты:"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:49
 msgid "Transmitted packets:"
 msgstr "Переданные пакеты"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:50
 msgid "Unlimited requests"
 msgstr "Неограниченное число запросов"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:51
 msgid "User"
 msgstr "Пользователь"
 
-#: ../src/gnome-nettool.glade.h:51 ../src/main.c:980
+#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:53
 msgid "_Configure"
 msgstr "_Настроить"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:54
 msgid "_Domain address:"
 msgstr "_Доменный адрес:"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:55
 msgid "_Edit"
 msgstr "_Правка"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:56
 msgid "_Help"
 msgstr "_Справка"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:57
 msgid "_Information type:"
 msgstr "_Тип информации:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:58
 msgid "_Network address:"
 msgstr "Сетевой _адрес"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:59
 msgid "_Network device:"
 msgstr "Сетевое _устройство:"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:60
 msgid "_Tool"
 msgstr "_Утилиты"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:61
 msgid "_Username:"
 msgstr "Имя _пользователя:"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:62
 msgid "ms"
 msgstr "мс"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.glade.h:63
 msgid "requests"
 msgstr "запросов"
 
@@ -315,93 +319,93 @@ msgstr "Не обнаружено ни одно сетевое устройст�
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: ../src/info.c:550
+#: ../src/info.c:554
 msgid "Active"
 msgstr "Активен"
 
-#: ../src/info.c:552
+#: ../src/info.c:556
 msgid "Inactive"
 msgstr "Неактивен"
 
-#: ../src/info.c:557
+#: ../src/info.c:561
 msgid "Loopback"
 msgstr "Локальный"
 
-#: ../src/info.c:574
+#: ../src/info.c:580
 msgid "Enabled"
 msgstr "Включено"
 
-#: ../src/info.c:576
+#: ../src/info.c:582
 msgid "Disabled"
 msgstr "Выключено"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:713
+#: ../src/info.c:719
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Сетевое устройство:\t%s\n"
 
-#: ../src/info.c:714
+#: ../src/info.c:720
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Аппаратный адрес:\t%s\n"
 
-#: ../src/info.c:715
+#: ../src/info.c:721
 #, c-format
 msgid "IP address:\t%s\n"
 msgstr "IP адрес:\t%s\n"
 
-#: ../src/info.c:716
+#: ../src/info.c:722
 #, c-format
 msgid "Netmask:\t%s\n"
 msgstr "Маска сети:\t%s\n"
 
-#: ../src/info.c:717
+#: ../src/info.c:723
 #, c-format
 msgid "Broadcast:\t%s\n"
 msgstr "Широковещательный:\t%s\n"
 
-#: ../src/info.c:718
+#: ../src/info.c:724
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:719
+#: ../src/info.c:725
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:720
+#: ../src/info.c:726
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Скорость соединения:\t%s\n"
 
-#: ../src/info.c:721
+#: ../src/info.c:727
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Состояние:\t%s\n"
 
-#: ../src/info.c:723
+#: ../src/info.c:729
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Переданные пакеты:\t%s\n"
 
-#: ../src/info.c:724
+#: ../src/info.c:730
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Ошибки передачи:\t%s\n"
 
-#: ../src/info.c:725
+#: ../src/info.c:731
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Принятые пакеты:\t%s\n"
 
-#: ../src/info.c:726
+#: ../src/info.c:732
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Ошибки приёма:\t%s\n"
 
-#: ../src/info.c:727
+#: ../src/info.c:733
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Коллизии:\t%s\n"
@@ -508,7 +512,7 @@ msgstr ""
 "Файл %s отсутствует, пожалуйста, удостоверьтесь в корректной инсталяции "
 "gnome-nettool"
 
-#: ../src/main.c:345
+#: ../src/main.c:346
 msgid ""
 "Enter the network address to ping.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -516,7 +520,7 @@ msgstr ""
 "Введите сетевой адрес для пинга.\n"
 "Например: www.domain.com или 192.168.2.1"
 
-#: ../src/main.c:427
+#: ../src/main.c:431
 msgid ""
 "Enter the network address to trace a route to.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -524,27 +528,27 @@ msgstr ""
 "Введите сетевой адрес для трассировки маршрута.\n"
 "Например: www.domain.com или 192.168.2.1"
 
-#: ../src/main.c:512 ../src/netstat.c:443
+#: ../src/main.c:516 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Протокол"
 
-#: ../src/main.c:519
+#: ../src/main.c:523
 msgid "IP Address"
 msgstr "IP адрес"
 
-#: ../src/main.c:526
+#: ../src/main.c:530
 msgid "Netmask / Prefix"
 msgstr "Маска подсети / префикс"
 
-#: ../src/main.c:533
+#: ../src/main.c:537
 msgid "Broadcast"
 msgstr "Широковещательный"
 
-#: ../src/main.c:540
+#: ../src/main.c:544
 msgid "Scope"
 msgstr "Область"
 
-#: ../src/main.c:681
+#: ../src/main.c:685
 msgid ""
 "Enter the network address to scan for open ports.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -552,7 +556,7 @@ msgstr ""
 "Введите сетевой адрес для сканирования открытых портов.\n"
 "Например: www.domain.com или 192.168.2.1"
 
-#: ../src/main.c:809
+#: ../src/main.c:813
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -560,11 +564,11 @@ msgstr ""
 "Введите сетевой адрес для поиска в базе ДНС его реверсного имени.\n"
 "Например: www.domain.com или 192.168.2.1"
 
-#: ../src/main.c:898
+#: ../src/main.c:902
 msgid "Enter the user to finger."
 msgstr "Введите имя пользователя для фингера"
 
-#: ../src/main.c:925
+#: ../src/main.c:929
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
@@ -573,7 +577,7 @@ msgstr ""
 "finger этого пользователя.\n"
 "Например: auth.domain.com или 192.168.2.1"
 
-#: ../src/main.c:1012
+#: ../src/main.c:1016
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -605,51 +609,51 @@ msgstr "Порт/Сервис"
 msgid "State"
 msgstr "Состояние"
 
-#: ../src/netstat.c:608
+#: ../src/netstat.c:609
 msgid "Destination/Prefix"
 msgstr "Назначение/Префикс"
 
-#: ../src/netstat.c:610
+#: ../src/netstat.c:611
 msgid "Destination"
 msgstr "Назначение"
 
-#: ../src/netstat.c:617
+#: ../src/netstat.c:618
 msgid "Gateway"
 msgstr "Шлюз"
 
-#: ../src/netstat.c:625
+#: ../src/netstat.c:626
 msgid "Netmask"
 msgstr "Маска"
 
-#: ../src/netstat.c:633 ../src/netstat.c:740
+#: ../src/netstat.c:634 ../src/netstat.c:741
 msgid "Interface"
 msgstr "Интерфейс"
 
-#: ../src/netstat.c:747
+#: ../src/netstat.c:748
 msgid "Member"
 msgstr "Участник"
 
-#: ../src/netstat.c:755
+#: ../src/netstat.c:756
 msgid "Group"
 msgstr "Группа"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:797
+#: ../src/netstat.c:798
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Протокол\tИсходный IP\tПорт/Сервис\tСостояние\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:803
+#: ../src/netstat.c:804
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Получатель\tШлюз\tМаска\tИнтерфейс\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:808
+#: ../src/netstat.c:809
 msgid "Interface\tMember\tGroup\n"
 msgstr "Интерфейс\tУчастник\tГруппа\n"
 
@@ -688,28 +692,37 @@ msgstr "Остановить"
 msgid "Run"
 msgstr "Запустить"
 
-#: ../src/ping.c:77
+#. Created up here so we can get the geometry info.
+#: ../src/ping.c:151
+msgid "Time (ms):"
+msgstr "Время (мс)"
+
+#: ../src/ping.c:171
+msgid "Seq. No.:"
+msgstr "Номер:"
+
+#: ../src/ping.c:253
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Посылаю пинг-запросы на %s"
 
-#: ../src/ping.c:395
+#: ../src/ping.c:574
 msgid "Bytes"
 msgstr "Байты"
 
-#: ../src/ping.c:402
+#: ../src/ping.c:581
 msgid "Source"
 msgstr "Цель"
 
-#: ../src/ping.c:410
+#: ../src/ping.c:589
 msgid "Seq"
 msgstr "Запрос"
 
-#: ../src/ping.c:420
+#: ../src/ping.c:599
 msgid "Time"
 msgstr "Время"
 
-#: ../src/ping.c:428
+#: ../src/ping.c:607
 msgid "Units"
 msgstr "Единицы измерения"
 
@@ -717,40 +730,40 @@ msgstr "Единицы измерения"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:454
+#: ../src/ping.c:633
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Байты\tЦель\tЗапрос\tВремя\tЕдиницы измерения\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:469
+#: ../src/ping.c:648
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Минимальное время:\t%s мс\n"
 
-#: ../src/ping.c:470
+#: ../src/ping.c:649
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Среднее время:\t%s мс\n"
 
-#: ../src/ping.c:471
+#: ../src/ping.c:650
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Максимальное время:\t%s мс\n"
 
-#: ../src/ping.c:473
+#: ../src/ping.c:652
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Передано пакетов:\t%s\n"
 
-#: ../src/ping.c:475
+#: ../src/ping.c:654
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Принято пакетов:\t%s\n"
 
-#: ../src/ping.c:477
+#: ../src/ping.c:657
 #, c-format
-msgid "Packet loss:\t%s\n"
-msgstr "Потеряно пакетов:\t%s\n"
+msgid "Successful packets:\t%s\n"
+msgstr "Успешные пакеты:\t%s\n"
 
 #: ../src/scan.c:93
 #, c-format
