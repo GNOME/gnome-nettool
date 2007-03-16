@@ -265,6 +265,8 @@ netinfo_text_buffer_insert (Netinfo * netinfo)
 	gchar *dir = g_get_current_dir ();
 	gint child_pid, pout; /* , perr; */
 	GIOChannel *channel;
+	const gchar *charset;
+	GIOStatus status;
 	GError *err = NULL;
 
 	g_return_if_fail (netinfo != NULL);
@@ -284,17 +286,26 @@ netinfo_text_buffer_insert (Netinfo * netinfo)
 
 		/*netinfo->pipe_err = perr; */
 
+		g_get_charset(&charset);
 		channel = g_io_channel_unix_new (pout);
-		g_io_add_watch (channel,
-				G_IO_IN | G_IO_HUP | G_IO_ERR | G_IO_NVAL,
-				netinfo_io_text_buffer_dialog, netinfo);
-		g_io_channel_unref (channel);
-
-		/*channel = g_io_channel_unix_new (perr);
-		   g_io_add_watch (channel,
-		   G_IO_IN | G_IO_HUP | G_IO_ERR | G_IO_NVAL,
-		   netinfo_io_text_buffer_dialog, netinfo);
-		   g_io_channel_unref (channel); */
+		status = g_io_channel_set_encoding(channel,
+						   charset,
+						   &err);
+		if (G_IO_STATUS_NORMAL == status) {
+			g_io_add_watch (channel,
+					G_IO_IN | G_IO_HUP | G_IO_ERR | G_IO_NVAL,
+					netinfo_io_text_buffer_dialog, netinfo);
+			g_io_channel_unref (channel);
+	
+			/*channel = g_io_channel_unix_new (perr);
+			   g_io_add_watch (channel,
+			   G_IO_IN | G_IO_HUP | G_IO_ERR | G_IO_NVAL,
+			   netinfo_io_text_buffer_dialog, netinfo);
+			   g_io_channel_unref (channel); */
+		} else {
+			g_warning ("Error: %s\n", err->message);
+			g_error_free (err);
+		}
 	} else {
 		gint len = strlen (err->message);
 

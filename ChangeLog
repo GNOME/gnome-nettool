@@ -1,3 +1,9 @@
+2007-03-16  Loïc Minier  <lminier@svn.gnome.org>
+
+	* src/nettool.c: (netinfo_text_buffer_insert):
+	Set the I/O channel's encoding to the current locale and add some
+	error handling; fixes bug #311350.
+
 2007-03-12  German Poo-Caamano <gpoo@ubiobio.cl>
 
 	Released 2.18.0.
