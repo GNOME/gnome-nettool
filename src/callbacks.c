@@ -324,7 +324,7 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 	g_sprintf (copyright, "Copyright \xc2\xa9 2003-2004 %s", "Germán Poo Caamaño");
 	
 	gtk_show_about_dialog (parent,
-			       "name", "Network Tools",
+			       "name", _("Network Tools"),
 			       "logo-icon-name", "gnome-nettool",
 			       "authors", authors,
 			       "documenters", documentors,
@@ -440,7 +440,7 @@ on_page_switch (GtkNotebook     * notebook,
 	}
 
 	/* Dear Translator: This is the Window Title */
-	title = g_strdup_printf ("%s - Network Tools",
+	title = g_strdup_printf (_("%s - Network Tools"),
 				 gtk_label_get_text (GTK_LABEL (netinfo->page_label)));
 	gtk_window_set_title (GTK_WINDOW (netinfo->main_window), title);
 	g_free (title);
