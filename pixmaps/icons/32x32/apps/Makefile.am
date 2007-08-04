@@ -1,7 +1,8 @@
 themedir = $(datadir)/icons/hicolor
-size = 22x22
+size = 32x32
+context = apps
 
-iconsdir = $(themedir)/$(size)
+iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA = \
 	gnome-nettool.png

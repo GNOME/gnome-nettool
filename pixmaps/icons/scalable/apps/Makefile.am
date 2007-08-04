@@ -1,7 +1,8 @@
 themedir = $(datadir)/icons/hicolor
 size = scalable
+context = apps
 
-iconsdir = $(themedir)/$(size)
+iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA = \
 	gnome-nettool.svg
