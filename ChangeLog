@@ -1,8 +1,27 @@
+2007-08-04  German Poo-Caamano <gpoo@ubiobio.cl>
+
+	Fixed #401076.
+
+	* pixmaps/Makefile.am: 
+	* pixmaps/icons/16x16/gnome-nettool.png
+	* pixmaps/icons/16x16/Makefile.am
+	* pixmaps/icons/22x22/gnome-nettool.png
+	* pixmaps/icons/22x22/Makefile.am
+	* pixmaps/icons/32x32/gnome-nettool.png
+	* pixmaps/icons/32x32/Makefile.am
+	* pixmaps/icons/scalable/gnome-nettool.svg
+	* pixmaps/icons/scalable/Makefile.am
+	* pixmaps/icons/Makefile.am: Added (tango) icons and rules for
+	  various sizes.  Icons made by Hylke Bons.
+	* pixmaps/gnome-nettool.png: Updated to a Tango logo by Hylke Bons.
+	* src/gnome-nettool.png: Deleted duplicated logo.
+	* configure.in: Added Makefiles' from pixmaps/icons directory.
+
 2007-03-12  German Poo-Caamano <gpoo@ubiobio.cl>
 
 	* NEWS: Updated 
 
-2007-03-16  Loïc Minier  <lminier@svn.gnome.org>
+2007-03-16  LoÃ¯c Minier  <lminier@svn.gnome.org>
 
 	* src/nettool.c: (netinfo_text_buffer_insert):
 	Set the I/O channel's encoding to the current locale and add some
@@ -547,7 +566,7 @@
 	* src/gn-combo-history.c (gn_on_gconf_history_changed): Don't unset the
 	active item when gconf changes.
 
-2004-11-03  German Poo-Caamaño <gpoo@ubiobio.cl>
+2004-11-03  German Poo-CaamaÃ±o <gpoo@ubiobio.cl>
 
 	* pixmaps/network.png: Resized of network icon to 16x16.
 
@@ -560,7 +579,7 @@
 	* configure.in: Added "id" (Indonesian) to ALL_LINGUAS
 	* po/id.po: Added Indonesian translation
 
-2004-09-20  German Poo-Caamaño <gpoo@ubiobio.cl>
+2004-09-20  German Poo-CaamaÃ±o <gpoo@ubiobio.cl>
 
 	* src/gnome-nettool.glade: Fixed a typo in ping. bug #151913
 
@@ -662,7 +681,7 @@
 
 	* configure.in: Added ta to ALL_LINGUAS.
 
-2004-08-25  Iñaki Larrañaga  <dooteo@euskalgnu.org>
+2004-08-25  IÃ±aki LarraÃ±aga  <dooteo@euskalgnu.org>
 
 	* configure.in: Added "eu" (Basque) to ALL_LINGUAS.
 
@@ -672,7 +691,7 @@
 
 2004-08-24  Kjartan Maraas  <kmaraas@gnome.org>
 
-	* configure.in: Add «nb» to ALL_LINGUAS.
+	* configure.in: Add Â«nbÂ» to ALL_LINGUAS.
 
 2004-08-23  William Jon McCann  <mccann@jhu.edu>
 
@@ -733,7 +752,7 @@
 	* src/callbacks.c (gn_quit_app): Use gboolean type for
 	delete-event handler.
 
-2004-06-23  Carlos García Campos <carlosgc@gnome.org>
+2004-06-23  Carlos GarcÃ­a Campos <carlosgc@gnome.org>
 
 	* src/callbacks.c (on_page_switch), src/finger.c (finger_do),
 	src/lookup.c (lookup_do), src/netstat.c (get_active_option),
@@ -751,7 +770,7 @@
 	* src/info.c: (info_get_nic_information), (info_get_interfaces):
 	check if ifa_addr is NULL before trying to access it. Bug #144300
 
-2004-06-13 JÃ¼rg Billeter  <j@bitron.ch>
+2004-06-13 JÃƒÂ¼rg Billeter  <j@bitron.ch>
 
 	Fixes #144278
 
@@ -794,7 +813,7 @@
 	(netinfo_error_message): New HIGish error dialog.
 	(netinfo_validate_host): use netinfo_error_message function.
 
-2004-06-09  Carlos García Campos <carlosgc@gnome.org>
+2004-06-09  Carlos GarcÃ­a Campos <carlosgc@gnome.org>
 
 	* src/callbacks.c (on_finger_activate): s/strcmp/g_strcasecmp/
 
@@ -830,7 +849,7 @@
 	* src/gnome-nettool.glade: Revert change that adds underscores to
 	notebook tab labels.
 
-2004-06-08  Carlos García Campos <carlosgc@gnome.org>
+2004-06-08  Carlos GarcÃ­a Campos <carlosgc@gnome.org>
 
 	* src/info.c (load_iface): checks if there is no network devices
 	enabled
@@ -977,7 +996,7 @@
 	* src/callbacks.c (on_about_activate): added Carlos and myself to list
 	of authors.
 
-2004-03-21  Carlos García Campos <carlosgc@gnome.org>
+2004-03-21  Carlos GarcÃ­a Campos <carlosgc@gnome.org>
 
 	* src/callbacks.c (on_about_activate): updated the name of the tool using
 	GNOME Netinfo. Removed the "untranslated version" message.
@@ -1065,7 +1084,7 @@
 
 	* callbacks.h: Add typedef for activate callback functions.
 
-2003-12-15  Carlos García Campos <carlosgc@gnome.org>
+2003-12-15  Carlos GarcÃ­a Campos <carlosgc@gnome.org>
 
 	* info.c (info_get_nic_information): removed invalid g_free()
 
@@ -1143,7 +1162,7 @@
 	(load_lookup_widgets_from_xml, load_finger_widgets_from_xml):
 	Added pointer to main window to the netinfo structure.
 
-	Based on changes sent by Carlos García Campos <carlosgc@gnome.org>
+	Based on changes sent by Carlos GarcÃ­a Campos <carlosgc@gnome.org>
 	* callbacks.[ch] (gn_quit_app), gnome-netinfo.glade:
 	  kill of all the children before exit
 	* netinfo.[ch] (validate_host): function to validate a host
@@ -1157,7 +1176,7 @@
 	returns zero for IPv6.  Also reduces the number of system calls
 	performed.
 
-2003-10-02  Carlos García Campos <carlosgc@gnome.org>
+2003-10-02  Carlos GarcÃ­a Campos <carlosgc@gnome.org>
 
 	* netinfo.c (get_ip_version): added a function to get the
 	  ip version (IPv4 or IPv6) of a host or ip address
