@@ -1,31 +1,46 @@
 # Spanish translation of gnome-network.
-# Copyright © 1999-2003 Free Software Foundation, Inc.
+# Copyright © 1999-2003, 2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-network package.
+#
 # Pablo Saratxaga <srtxg@chanae.alphanet.ch>, 1999-2000.
 # Germán Poo-Caamaño <gpoo@ubiobio.cl>, 2003.
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2006.
-#
+# Jorge González <jorgegonz@svn.gnome.org>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool-2.16\n"
+"Project-Id-Version: gnome-nettool.HEAD.es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-11 11:00+0100\n"
-"PO-Revision-Date: 2006-12-11 11:01+0100\n"
-"Last-Translator: Francisco Javier F. Serrador <serrador@cvs.gnome.org>\n"
+"POT-Creation-Date: 2007-08-05 03:31+0100\n"
+"PO-Revision-Date: 2007-08-05 12:14+0200\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/callbacks.c:318
 msgid "translator-credits"
-msgstr "Francisco F. Serrador <serrador@cvs.gnome.org>"
+msgstr ""
+"Jorge González <jorgegonz@svn.gnome.org>, 2007\n"
+"Francisco F. Serrador <serrador@cvs.gnome.org>, 2004-2006"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:2
+msgid "Network Tools"
+msgstr "Herramientas de red"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Interfaz gráfico de usuario para utilidades comunes de red"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - Herramientas de red"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -676,15 +691,15 @@ msgstr "No se especificó una dirección de dominio"
 msgid "Please enter a valid domain address and try again."
 msgstr "Introduzca una dirección de dominio válida e inténtelo otra vez."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Información no disponible"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Detener"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Ejecutar"
 
@@ -823,16 +838,11 @@ msgstr "Salto\thost\tIP\tTiempo1\tTiempo 2\n"
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
-msgstr ""
-"Para usar esta característica del programa, debe instalarse %s en su sistema"
+msgstr "Para usar esta característica del programa, debe instalarse %s en su sistema"
 
 #: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Information Tools"
 msgstr "Herramientas de información de red"
-
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Herramientas de red"
 
 #: ../src/finger.c:62
 #, c-format
@@ -849,14 +859,3 @@ msgstr "Obteniendo la información de todos los usuarios en «%s»"
 msgid "Getting the whois information of %s"
 msgstr "Obteniendo la información whois de %s"
 
-#~ msgid "Packets loss:"
-#~ msgstr "Pérdida de paquetes:"
-
-#~ msgid "Packet loss:\t%s\n"
-#~ msgstr "Pérdida de paquetes:\t%s\n"
-
-#~ msgid "Network Tools - Devices"
-#~ msgstr "Herramientas de red - Dispositivos"
-
-#~ msgid "%s: Command not found"
-#~ msgstr "%s: Comando no encontrado"
