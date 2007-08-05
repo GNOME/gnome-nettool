@@ -379,7 +379,7 @@ void
 ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 			gpointer user_data)
 {
-	GtkTreeIter iter, sibling;
+	GtkTreeIter iter;
 	GList *columns;
 	GtkTreePath *path;
 	GtkTreeModel *model;
@@ -434,17 +434,8 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 				 data.srtt, data.unit);
 #endif /* DEBUG */
 
-			if (path != NULL) {
-				gtk_tree_model_get_iter (model, &sibling,
-							 path);
-				gtk_list_store_insert_after (GTK_LIST_STORE
-							     (model),
-							     &iter,
-							     &sibling);
-			} else {
-				gtk_list_store_append (GTK_LIST_STORE
-						       (model), &iter);
-			}
+			gtk_list_store_append (GTK_LIST_STORE
+					       (model), &iter);
 
 			gtk_list_store_set (GTK_LIST_STORE (model), &iter,
 					    BYTES_COLUMN, data.bytes,
@@ -455,10 +446,13 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 
 			gtk_tree_view_set_model (GTK_TREE_VIEW (widget),
 						 model);
-			path = gtk_tree_model_get_path (model, &iter);
-			gtk_tree_view_set_cursor (GTK_TREE_VIEW (widget),
-						  path, NULL, FALSE);
-			gtk_tree_path_free (path);
+
+			if (path) {
+				gtk_tree_view_set_cursor (
+						GTK_TREE_VIEW (widget),
+						path, NULL, FALSE);
+				gtk_tree_path_free (path);
+			}
 
 			rtt = g_ascii_strtod (data.srtt, NULL);
 			rttmin = (rttmin > 0.0) ? MIN (rttmin, rtt) : rtt;

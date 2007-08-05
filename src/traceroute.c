@@ -139,7 +139,7 @@ void
 traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 			      gpointer user_data)
 {
-	GtkTreeIter iter, sibling;
+	GtkTreeIter iter;
 	GList *columns;
 	GtkTreePath *path;
 	GtkTreeModel *model;
@@ -181,17 +181,8 @@ traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 			gtk_tree_view_get_cursor (GTK_TREE_VIEW (widget),
 						  &path, NULL);
 
-			if (path != NULL) {
-				gtk_tree_model_get_iter (model, &sibling,
-							 path);
-				gtk_list_store_insert_after (GTK_LIST_STORE
-							     (model),
-							     &iter,
-							     &sibling);
-			} else {
-				gtk_list_store_append (GTK_LIST_STORE
-						       (model), &iter);
-			}
+			gtk_list_store_append (GTK_LIST_STORE
+						  (model), &iter);
 
 			gtk_list_store_set (GTK_LIST_STORE (model), &iter,
 					    TRACE_HOP, data.hop_count,
@@ -203,10 +194,13 @@ traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 
 			gtk_tree_view_set_model (GTK_TREE_VIEW (widget),
 						 model);
-			path = gtk_tree_model_get_path (model, &iter);
-			gtk_tree_view_set_cursor (GTK_TREE_VIEW (widget),
-						  path, NULL, FALSE);
-			gtk_tree_path_free (path);
+
+			if (path) {
+				gtk_tree_view_set_cursor (
+					GTK_TREE_VIEW (widget),
+					path, NULL, FALSE);
+				gtk_tree_path_free (path);
+			}
 		}
 	}
 	while (gtk_events_pending ()) {
