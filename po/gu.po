@@ -5,15 +5,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-02 04:19+0000\n"
-"PO-Revision-Date: 2007-03-05 19:58+0530\n"
+"POT-Creation-Date: 2007-08-05 11:45+0100\n"
+"PO-Revision-Date: 2007-08-06 16:14+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -24,9 +25,21 @@ msgstr ""
 msgid "translator-credits"
 msgstr "અંકિત પટેલ <ankit644@yahoo.com>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "નેટવર્ક સાધનો"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "સામાન્ય નેટવર્ક ઉપયોગિતાઓ માટે ગ્રાફિકવાળું વપરાશકર્તા ઈન્ટરફેસ"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - નેટવર્ક સાધનો"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -675,15 +688,15 @@ msgstr "ડોમેઈન સરનામુ સ્પષ્ટ કરેલ �
 msgid "Please enter a valid domain address and try again."
 msgstr "મહેરબાની કરીને માન્ય ડોમેઈન સરનામુ દાખલ કરો અને ફરીથી પ્રયત્ન કરો."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "જાણકારી ઉપ્લબ્ધ નથી"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "બંધ કરો"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "ચલાવો"
 
@@ -701,23 +714,23 @@ msgstr "અનુક્રમ નંબર:"
 msgid "Sending ping requests to %s"
 msgstr "%s ને પીંગ મંજૂરી મોકલી રહ્યા છીએ"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "બાઈટો"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "સ્રોત"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Seq"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "સમય"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "એકમો"
 
@@ -725,37 +738,37 @@ msgstr "એકમો"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "બાઈટો\tસ્રોત\tSeq\tસમય\tએકમો\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "ન્યુનતમ સમય:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "સરેરાશ સમય:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "મહત્તમ સમય:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "મોકલાયેલ પેકેટો:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "મેળવેલ પેકેટો:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "સફળ પેકેટો:\t%s\n"
@@ -789,23 +802,23 @@ msgstr "પોર્ટ\tસ્થિતિ\tસેવા\n"
 msgid "Tracing route to %s"
 msgstr "%s નો રુટ ટ્રેસ કરી રહ્યા છીએ"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "યજમાનનામ"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "સમય ૧"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "સમય ૨"
 
@@ -813,7 +826,7 @@ msgstr "સમય ૨"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tયજમાનનામ\tIP\tસમય ૧\tસમય ૨\n"
 
@@ -824,13 +837,9 @@ msgid ""
 "system"
 msgstr "કાર્યક્રમનું આ લક્ષણ વાપરવા માટે, %s તમારી સિસ્ટમમાં સ્થાપિત થયેલ હોવું જ જોઈએ"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "નેટવર્ક જાણકારી સાધનો"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "નેટવર્ક સાધનો"
+msgid "View information about your network"
+msgstr "તમારા નેટવર્ક વિશેની જાણકારી જુઓ"
 
 #: ../src/finger.c:62
 #, c-format
