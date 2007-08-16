@@ -1,18 +1,18 @@
 # gnome-nettool eesti keele tõlge.
 # Estonian translation for gnome-nettool.
 #
-# Copyright (C) 2005, 2006 The Free Software Foundation
+# Copyright (C) 2005-2007 The Free Software Foundation
 # This file is distributed under the same license as the gnome-nettool package.
 #
-# Ivar Smolin <okul@linux.ee>, 2005, 2006.
+# Ivar Smolin <okul@linux.ee>, 2005-2007.
 # Priit Laes <amd@store20.com>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-20 18:52+0100\n"
-"PO-Revision-Date: 2006-12-21 00:08+0200\n"
+"POT-Creation-Date: 2007-08-05 11:45+0100\n"
+"PO-Revision-Date: 2007-08-13 22:15+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -23,12 +23,24 @@ msgstr ""
 #: ../src/callbacks.c:318
 msgid "translator-credits"
 msgstr ""
-"Ivar Smolin <okul@linux.ee>, 2005, 2006.\n"
+"Ivar Smolin <okul@linux.ee>, 2005-2007.\n"
 "Priit Laes <amd@store20.com>, 2005"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Võrgutööriistad"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Graafiline kasutajaliides üldiste võrguutiliitide jaoks"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - Võrgutööriistad"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -678,15 +690,15 @@ msgstr "Domeeniaadressi poel määratud"
 msgid "Please enter a valid domain address and try again."
 msgstr "Palun sisesta korrektne domeeni aadress ja proovi uuesti."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Andmed pole saadaval"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Seiska"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Käivita"
 
@@ -704,23 +716,23 @@ msgstr "Jrk Nr:"
 msgid "Sending ping requests to %s"
 msgstr "Ping päringu saatmine aadressile %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Baiti"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Allikas"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Jrk"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Aeg"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Ühik"
 
@@ -728,37 +740,37 @@ msgstr "Ühik"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Baiti\tAllikas\tJrk\tAeg\tÜhik\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Vähim aeg:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Keskmine aeg:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Suurim aeg:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Ülekantud pakette:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Vastuvõetud pakette:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Vigadeta pakette:\t%s\n"
@@ -792,23 +804,23 @@ msgstr "Port\tOlek\tTeenus\n"
 msgid "Tracing route to %s"
 msgstr "Otsin marsruuti hostini %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Hostinimi"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Aeg 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Aeg 2"
 
@@ -816,7 +828,7 @@ msgstr "Aeg 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tHostinimi\tIP\tAeg 1\tAeg 2\n"
 
@@ -829,13 +841,9 @@ msgstr ""
 "Programmi selle võimaluse kasutamiseks peab sinu süsteemi olema paigaldatud %"
 "s"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Võrguandmete tööriistad"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Võrgutööriistad"
+msgid "View information about your network"
+msgstr "Sinu võrku puudutavate andmete vaatamine"
 
 #: ../src/finger.c:62
 #, c-format
