@@ -3,15 +3,15 @@
 # Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
 # Raphael Higino <raphaelh@uai.com.br>, 2004.
 # Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2006.
-# Og Maciel <ogmaciel@ubuntu.com>, 2007.
+# Og Maciel <ogmaciel@gnome.org>, 2007.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-06 03:41-0200\n"
-"PO-Revision-Date: 2007-02-06 03:44-0200\n"
-"Last-Translator: Og Maciel <ogmaciel@ubuntu.com>\n"
+"POT-Creation-Date: 2007-08-19 20:51-0300\n"
+"PO-Revision-Date: 2007-08-19 20:56-0300\n"
+"Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,11 +23,23 @@ msgstr ""
 "Ariel Bressan da Silva <ariel@conectiva.com.br>\n"
 "Raphael Higino <raphaelh@uai.com.br>\n"
 "Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>\n"
-"Og Maciel <ogmaciel@ubuntu.com>"
+"Og Maciel <ogmaciel@gnome.org>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Ferramentas de Rede"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Interface gráfica com o usuário para utilitários comuns de rede"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - Ferramentas de Rede"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -676,15 +688,15 @@ msgstr "Não foi especificado um domínio de rede"
 msgid "Please enter a valid domain address and try again."
 msgstr "Favor digitar um endereço de domínio válido e tentar novamente."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Informação não disponível"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Parar"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Executar"
 
@@ -702,23 +714,23 @@ msgstr "Núm. Seq.:"
 msgid "Sending ping requests to %s"
 msgstr "Enviando solicitações de ping para %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Bytes"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Origem"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Seq"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Tempo"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Unidades"
 
@@ -726,37 +738,37 @@ msgstr "Unidades"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bytes\tOrigem\tSeq\tTempo\tUnidades\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Tempo mínimo:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Tempo médio:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Tempo máximo:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Pacotes transmitidos:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Pacotes recebidos:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Pacotes recebidos:\t%s\n"
@@ -790,23 +802,23 @@ msgstr "Porta\tCondição\tServiço\n"
 msgid "Tracing route to %s"
 msgstr "Rastreando rota para %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Nome da máquina"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Tempo 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Tempo 2"
 
@@ -814,7 +826,7 @@ msgstr "Tempo 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tNome da máquina\tIP\tTempo 1\tTempo 2\n"
 
@@ -826,13 +838,9 @@ msgid ""
 msgstr ""
 "Para usar esse recurso do programa, é necessário instalar %s em seu sistema"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Ferramentas de Informações de Rede"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Ferramentas de Rede"
+msgid "View information about your network"
+msgstr "Veja informação sobre sua rede"
 
 #: ../src/finger.c:62
 #, c-format
@@ -848,6 +856,9 @@ msgstr "Obtendo informações de todos os usuários em \"%s\""
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Obtendo as informações whois de %s"
+
+#~ msgid "Network Information Tools"
+#~ msgstr "Ferramentas de Informações de Rede"
 
 #~ msgid "Packets loss:"
 #~ msgstr "Perda de pacotes:"
