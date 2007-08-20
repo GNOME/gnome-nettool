@@ -62,7 +62,7 @@ scan_do (Netinfo * netinfo)
 	struct sockaddr_in6 addr6;
 	struct hostent *hp = NULL;
 	struct servent *service = NULL;
-	gint i, sock, start_port = 1, end_port = 7000;
+	gint i, sock, start_port = 1, end_port = 65535;
 	GIOChannel *channel;
 	GIOChannel *channel2;
 	gint pfd[2];
