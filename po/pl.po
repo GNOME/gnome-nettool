@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-28 20:35+0100\n"
-"PO-Revision-Date: 2007-02-27 01:11+0100\n"
-"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
+"POT-Creation-Date: 2007-08-23 18:42+0200\n"
+"PO-Revision-Date: 2007-08-22 17:00+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <translators@gnomepl.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,10 +27,22 @@ msgstr ""
 msgid "translator-credits"
 msgstr "GNOME PL Team <translators@gnomepl.org>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Narzędzia sieciowe"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 "Graficzny interfejs użytkownika dla często używanych narzędzi sieciowych"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "Narzędzia sieciowe - %s"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -680,15 +692,15 @@ msgstr "Nie określono adresu domeny"
 msgid "Please enter a valid domain address and try again."
 msgstr "Podaj poprawny adres domeny i spróbuj jeszcze raz."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Informacje nie są dostępne"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Zatrzymaj"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Uruchom"
 
@@ -706,23 +718,23 @@ msgstr "Seq. No.:"
 msgid "Sending ping requests to %s"
 msgstr "Wysyłanie odpytania do %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Bajty"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Źródło"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Sek"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Czas"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Jednostki"
 
@@ -730,37 +742,37 @@ msgstr "Jednostki"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bajty\tŹródło\tSeq\tCzas\tJednostki\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimalny czas:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Średni czas:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maksymalny czas:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Przesłane pakiety:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Odebrane pakiety:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Udane pakiety:\t%s\n"
@@ -794,23 +806,23 @@ msgstr "Port\tStan\tUsługa\n"
 msgid "Tracing route to %s"
 msgstr "Wyszukiwanie trasy do %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Skok"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Nazwa komputera"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Czas 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Czas 2"
 
@@ -818,7 +830,7 @@ msgstr "Czas 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Skok\tKomputer\tIP\tCzas 1\tCzas 2\n"
 
@@ -829,13 +841,9 @@ msgid ""
 "system"
 msgstr "Aby użyć tej funkcji programu, należy zainstalować %s w systemie"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Narzędzia informujące o sieci"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Narzędzia sieciowe"
+msgid "View information about your network"
+msgstr "Wyświetlanie informacji na temat twojej sieci"
 
 #: ../src/finger.c:62
 #, c-format
@@ -851,6 +859,9 @@ msgstr "Pobieranie informacji o wszystkich użytkownikach z \"%s\""
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Pobieranie informacji whois o %s"
+
+#~ msgid "Network Information Tools"
+#~ msgstr "Narzędzia informujące o sieci"
 
 #~ msgid "Packets loss:"
 #~ msgstr "Utracone pakiety:"
