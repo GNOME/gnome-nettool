@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool 2.15.92\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-05 22:57+0100\n"
-"PO-Revision-Date: 2007-01-30 22:53+0100\n"
+"POT-Creation-Date: 2007-09-06 10:38+0200\n"
+"PO-Revision-Date: 2007-09-03 10:54+0200\n"
 "Last-Translator: Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -31,11 +31,24 @@ msgstr ""
 "Sébastien Bacher <seb128@debian.org>\n"
 "Audrey Simons <asimons@redhat.com>\n"
 "Robert-André Mauchin <zebob.m@gmail.com>\n"
-"Damien Durand <splinux@fedoraproject.org>"
+"Damien Durand <splinux@fedoraproject.org>\n"
+"Stéphane Raimbault <stephane.raimbault@gmail.com>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Network Tools"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Interface graphique utilisateur pour les outils réseau courants"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - Network Tools"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -96,7 +109,7 @@ msgstr "Périphériques"
 #. Dear Translator: This is the Window Title
 #: ../src/gnome-nettool.glade.h:16
 msgid "Devices - Network Tools"
-msgstr "Périphériques - Outils réseau"
+msgstr "Périphériques - Network Tools"
 
 #: ../src/gnome-nettool.glade.h:17
 msgid "Display:"
@@ -460,7 +473,7 @@ msgstr "Source\tTTL\tType d'adresse\tType d'enregistrement\tRésolution\n"
 
 #: ../src/main.c:81
 msgid "Load information for a network device"
-msgstr "Charger les informations d'un périphérique réseau"
+msgstr "Charge les informations d'un périphérique réseau"
 
 #: ../src/main.c:82
 msgid "DEVICE"
@@ -468,7 +481,7 @@ msgstr "PÉRIPHÉRIQUE"
 
 #: ../src/main.c:85
 msgid "Send a ping to a network address"
-msgstr "Envoyer un ping à l'adresse réseau"
+msgstr "Envoie un ping à l'adresse réseau"
 
 #: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
 msgid "HOST"
@@ -477,8 +490,8 @@ msgstr "HÔTE"
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
-"Obtenir les informations netstat. Les options valides sont : route, active, "
-"multicast."
+"Obtient les informations netstat. Les options valides sont : route, active "
+"et multicast."
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -486,19 +499,19 @@ msgstr "COMMANDE"
 
 #: ../src/main.c:93
 msgid "Trace a route to a network address"
-msgstr "Tracer une route vers une adresse réseau"
+msgstr "Trace une route vers une adresse réseau"
 
 #: ../src/main.c:97
 msgid "Port scan a network address"
-msgstr "Scanner les ports d'une adresse réseau"
+msgstr "Scanne les ports d'une adresse réseau"
 
 #: ../src/main.c:101
 msgid "Look up a network address"
-msgstr "Chercher une adresse réseau"
+msgstr "Recherche une adresse réseau"
 
 #: ../src/main.c:105
 msgid "Finger command to run"
-msgstr "Commande finger à lancer"
+msgstr "Commande « finger » à lancer"
 
 #: ../src/main.c:106
 msgid "USER"
@@ -506,7 +519,7 @@ msgstr "UTILISATEUR"
 
 #: ../src/main.c:109
 msgid "Perform a whois lookup for a network domain"
-msgstr "Effectuer une recherche whois pour un domaine réseau"
+msgstr "Effectue une recherche « whois » pour un domaine réseau"
 
 #: ../src/main.c:110
 msgid "DOMAIN"
@@ -518,8 +531,8 @@ msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Le fichier %s n'existe pas, veuillez vérifier si gnome-nettool est "
-"correctement installé"
+"Le fichier %s n'existe pas, vérifiez que gnome-nettool est correctement "
+"installé"
 
 #: ../src/main.c:346
 msgid ""
@@ -575,14 +588,15 @@ msgstr ""
 
 #: ../src/main.c:902
 msgid "Enter the user to finger."
-msgstr "Saisissez l'utilisateur pour lequel lancer finger."
+msgstr "Saisissez l'utilisateur pour lequel lancer « finger »."
 
 #: ../src/main.c:929
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
 msgstr ""
-"Saisissez l'adresse réseau sur laquelle lancer finger pour cet utilisateur.\n"
+"Saisissez l'adresse réseau sur laquelle lancer « finger » pour cet "
+"utilisateur.\n"
 "Par exemple : auth.domain.com ou 192.168.2.1"
 
 #: ../src/main.c:1016
@@ -590,20 +604,20 @@ msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Saisissez l'adresse d'un domaine pour obtenir ses informations whois.\n"
+"Saisissez l'adresse d'un domaine pour obtenir ses informations « whois ».\n"
 "Par exemple : www.domaine.com ou 192.168.2.1"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
-msgstr "Obtenir la table de routage"
+msgstr "Obtention de la table de routage"
 
 #: ../src/netstat.c:137
 msgid "Getting active Internet connections"
-msgstr "Obtenir les connexions Internet actives"
+msgstr "Obtention des connexions Internet actives"
 
 #: ../src/netstat.c:146
 msgid "Getting group memberships"
-msgstr "Obtenir les appartenances de groupes"
+msgstr "Obtention des appartenances de groupes"
 
 #: ../src/netstat.c:450
 msgid "IP Source"
@@ -671,7 +685,7 @@ msgstr "L'adresse réseau n'a pas été indiquée"
 
 #: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
-msgstr "Veuillez saisir une adresse réseau valide et essayez à nouveau."
+msgstr "Saisissez une adresse réseau valide et essayez à nouveau."
 
 #: ../src/nettool.c:207
 #, c-format
@@ -684,17 +698,17 @@ msgstr "L'adresse de domaine n'a pas été indiquée"
 
 #: ../src/nettool.c:237
 msgid "Please enter a valid domain address and try again."
-msgstr "Veuillez saisir une adresse de domaine valide et essayez à nouveau."
+msgstr "Saisissez une adresse de domaine valide et essayez à nouveau."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Information non disponible"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Arrêter"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Lancer"
 
@@ -712,23 +726,23 @@ msgstr "N° séq. :"
 msgid "Sending ping requests to %s"
 msgstr "Envoyer des requêtes ping à %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Octets"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Source"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Séq"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Temps"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Unités"
 
@@ -736,37 +750,37 @@ msgstr "Unités"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Octets\tSource\tSeq\tTemps\tUnités\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Temps minimum :\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Temps moyen :\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Temps maximum :\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Paquets transmis :\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Paquets reçus :\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Paquets reçus avec succès :\t%s\n"
@@ -800,23 +814,23 @@ msgstr "Port\tÉtat\tService\n"
 msgid "Tracing route to %s"
 msgstr "Traçage d'une route vers %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Saut"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Nom d'hôte"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Temps 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Temps 2"
 
@@ -824,7 +838,7 @@ msgstr "Temps 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tNom d'hôte\tAdresse IP\tTemps 1\tTemps 2\n"
 
@@ -837,25 +851,21 @@ msgstr ""
 "Afin d'utiliser cette fonction du programme, %s doit être installé sur votre "
 "système"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Outils d'informations sur le réseau"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Outils réseau"
+msgid "View information about your network"
+msgstr "Affiche des informations sur votre réseau"
 
 #: ../src/finger.c:62
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr "Obtenir des informations concernant %s sur « %s »"
+msgstr "Obtention d'informations concernant %s sur « %s »"
 
 #: ../src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "Obtenir des informations concernant tous les utilisateurs sur « %s »"
+msgstr "Obtention d'informations concernant tous les utilisateurs sur « %s »"
 
 #: ../src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
-msgstr "Obtenir les informations whois de %s"
+msgstr "Obtention des informations « whois » de %s"
