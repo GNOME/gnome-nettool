@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-25 21:35+0200\n"
-"PO-Revision-Date: 2007-02-25 21:42+0200\n"
+"POT-Creation-Date: 2007-09-09 02:43+0200\n"
+"PO-Revision-Date: 2007-09-08 17:16+0200\n"
 "Last-Translator: Peter Bach <bach.peter@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -33,9 +33,21 @@ msgstr ""
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Netværksværktøjer"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafisk brugergrænseflade for almindelige netværksværktøjer"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - Netværksværktøjer"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -102,8 +114,7 @@ msgstr "Enheder - Netværksværktøjer"
 msgid "Display:"
 msgstr "Vis:"
 
-#: ../src/gnome-nettool.glade.h:18
-#: ../src/main.c:868
+#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
 msgid "Finger"
 msgstr "Finger"
 
@@ -123,8 +134,7 @@ msgstr "IP-adresse:"
 msgid "Link speed:"
 msgstr "Forbindelsens hastighed:"
 
-#: ../src/gnome-nettool.glade.h:23
-#: ../src/main.c:782
+#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
 msgid "Lookup"
 msgstr "Opslag"
 
@@ -152,8 +162,7 @@ msgstr "Multisending:"
 msgid "Netmask:"
 msgstr "Netmaske:"
 
-#: ../src/gnome-nettool.glade.h:30
-#: ../src/main.c:480
+#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -173,8 +182,7 @@ msgstr "Pakker modtaget:"
 msgid "Packets transmitted:"
 msgstr "Pakker sendt:"
 
-#: ../src/gnome-nettool.glade.h:35
-#: ../src/main.c:313
+#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
 msgid "Ping"
 msgstr "Ping"
 
@@ -198,8 +206,7 @@ msgstr "Modtagelsesfejl:"
 msgid "Routing Table Information"
 msgstr "Rutetabel-information"
 
-#: ../src/gnome-nettool.glade.h:41
-#: ../src/main.c:663
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
 msgid "Scan"
 msgstr "Skan"
 
@@ -215,8 +222,7 @@ msgstr "Tilstand:"
 msgid "Successful packets:"
 msgstr "Pakker modtaget:"
 
-#: ../src/gnome-nettool.glade.h:45
-#: ../src/main.c:404
+#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
 msgid "Trace"
 msgstr "Spor"
 
@@ -244,8 +250,7 @@ msgstr "Ubegrænset antal forespørgsler"
 msgid "User"
 msgstr "Bruger"
 
-#: ../src/gnome-nettool.glade.h:52
-#: ../src/main.c:984
+#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
 msgid "Whois"
 msgstr "Whois"
 
@@ -477,16 +482,14 @@ msgstr "ENHED"
 msgid "Send a ping to a network address"
 msgstr "\"Ping\" en netværksadresse"
 
-#: ../src/main.c:86
-#: ../src/main.c:94
-#: ../src/main.c:98
-#: ../src/main.c:102
+#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
 msgid "HOST"
 msgstr "VÆRT"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "Hent netstat-information. Gyldige muligheder er: route, active, multicast."
+msgstr ""
+"Hent netstat-information. Gyldige muligheder er: route, active, multicast."
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -522,8 +525,11 @@ msgstr "DOMÆNE"
 
 #: ../src/main.c:127
 #, c-format
-msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
-msgstr "Filen %s findes ikke, kontrollér at gnome-nettool er korrekt installeret"
+msgid ""
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"installed"
+msgstr ""
+"Filen %s findes ikke, kontrollér at gnome-nettool er korrekt installeret"
 
 #: ../src/main.c:346
 msgid ""
@@ -541,8 +547,7 @@ msgstr ""
 "Angiv netværksadressen hvortil du vil spore en rute.\n"
 "Fx www.domæne.dk eller 192.168.2.1"
 
-#: ../src/main.c:516
-#: ../src/netstat.c:443
+#: ../src/main.c:516 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protokol"
 
@@ -618,8 +623,7 @@ msgstr "IP-kilde"
 msgid "Port/Service"
 msgstr "Port/tjeneste"
 
-#: ../src/netstat.c:466
-#: ../src/scan.c:312
+#: ../src/netstat.c:466 ../src/scan.c:312
 msgid "State"
 msgstr "Tilstand"
 
@@ -639,8 +643,7 @@ msgstr "Adgangspunkt"
 msgid "Netmask"
 msgstr "Netmaske"
 
-#: ../src/netstat.c:634
-#: ../src/netstat.c:741
+#: ../src/netstat.c:634 ../src/netstat.c:741
 msgid "Interface"
 msgstr "Grænseflade"
 
@@ -676,8 +679,7 @@ msgstr "Grænseflade\tMedlem\tGruppe\n"
 msgid "A network address was not specified"
 msgstr "En netværksadresse blev ikke angivet"
 
-#: ../src/nettool.c:200
-#: ../src/nettool.c:209
+#: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
 msgstr "Angiv venligst en gyldig netværksadresse og prøv igen"
 
@@ -694,15 +696,15 @@ msgstr "En domæneadresse blev ikke angivet"
 msgid "Please enter a valid domain address and try again."
 msgstr "Angiv venligst en gyldig domæneadresse og prøv igen."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Information ikke tilgængelig"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Kør"
 
@@ -720,23 +722,23 @@ msgstr "Sek. Nr.:"
 msgid "Sending ping requests to %s"
 msgstr "Sender ping-forespørgsler til %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Byte"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Kilde"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Sekv"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Tid"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Enheder"
 
@@ -744,37 +746,37 @@ msgstr "Enheder"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Byte\tKilde\tSekvens\tTid\tEnheder\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimumstid:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Gennemsnitstid:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maksimumstid:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Pakker sendt:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Pakker modtaget:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Pakker modtaget:\t%s\n"
@@ -808,23 +810,23 @@ msgstr "Port\tTilstand\tTjeneste\n"
 msgid "Tracing route to %s"
 msgstr "Sporer ruten til %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Værtsnavn"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Tid 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Tid 2"
 
@@ -832,22 +834,22 @@ msgstr "Tid 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tVærtsnavn\tIP\tTid 1\tTid 2\n"
 
 #: ../src/utils.c:227
 #, c-format
-msgid "In order to use this feature of the program, %s must be installed in your system"
-msgstr "For at bruge denne funktion af programmet, skal %s være installeret i dit system"
-
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Værktøjer til visning af netværksoplysninger"
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
+msgstr ""
+"For at bruge denne funktion af programmet, skal %s være installeret i dit "
+"system"
 
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Netværksværktøjer"
+msgid "View information about your network"
+msgstr "Vis information om dit netværk"
 
 #: ../src/finger.c:62
 #, c-format
@@ -864,14 +866,20 @@ msgstr "Henter information om alle brugere på \"%s\""
 msgid "Getting the whois information of %s"
 msgstr "Henter whois-informationen for %s"
 
+#~ msgid "Network Information Tools"
+#~ msgstr "Værktøjer til visning af netværksoplysninger"
+
 #~ msgid "Packets loss:"
 #~ msgstr "Pakketab:"
+
 #~ msgid "Packet loss:\t%s\n"
 #~ msgstr "Pakketab:\t%s\n"
+
 #~ msgid "%s: Command not found"
 #~ msgstr "%s: Kommando ikke fundet"
+
 #~ msgid "Network Tools - Devices"
 #~ msgstr "Netværksværktøj - Enheder"
+
 #~ msgid "Network Information"
 #~ msgstr "Netværksinformation"
-
