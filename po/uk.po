@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-netool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-05 08:08+0200\n"
-"PO-Revision-Date: 2007-03-03 16:33+0300\n"
+"POT-Creation-Date: 2007-09-11 17:16+0300\n"
+"PO-Revision-Date: 2007-09-11 16:33+0300\n"
 "Last-Translator: Maxim Dizumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,9 +19,21 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Максим Дзюманенко <dziumanenko@gmail.com>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Мережні утиліти"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Графічний інтерфейс для поширених мережних утиліт"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "Мережні утиліти - %s"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -669,15 +681,15 @@ msgstr "Не вказано доменну адресу"
 msgid "Please enter a valid domain address and try again."
 msgstr "Введіть правильну домену адресу та спробуйте знову."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Інформація недоступна"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Зупинити"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Запустити"
 
@@ -695,23 +707,23 @@ msgstr "Ном. сегм:"
 msgid "Sending ping requests to %s"
 msgstr "Надсилається ping запити до %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Байтів"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Джерело"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Посл"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Час"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Одиниці"
 
@@ -719,37 +731,37 @@ msgstr "Одиниці"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Байти\tДжерело\tПосл\tЧас\tОдиниці\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Мінімальний час:\t%s мс\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Середній час:\t%s мс\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Максимальний час:\t%s мс\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Передано пакетів:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Отримано пакетів:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Успішних пакетів:\t%s\n"
@@ -783,23 +795,23 @@ msgstr "Порт\tСтан\tСлужба\n"
 msgid "Tracing route to %s"
 msgstr "Трасування маршруту до %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Вузол"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Час 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Час 2"
 
@@ -807,7 +819,7 @@ msgstr "Час 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tВузол\tIP\tЧас 1\tЧас 2\n"
 
@@ -819,13 +831,9 @@ msgid ""
 msgstr ""
 "Для використання цієї функції програми, у системі має бути встановлено %s"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Утиліти інформації про мережу"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Мережні утиліти"
+msgid "View information about your network"
+msgstr "Отримати інформацію про мережний пристрій"
 
 #: ../src/finger.c:62
 #, c-format
@@ -841,3 +849,6 @@ msgstr "Отримання інформації про всіх користув
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Отримання whois інформації про %s"
+
+#~ msgid "Network Information Tools"
+#~ msgstr "Утиліти інформації про мережу"
