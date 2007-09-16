@@ -7,27 +7,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-10 15:17+0300\n"
+"POT-Creation-Date: 2007-09-16 20:19+0400\n"
 "PO-Revision-Date: 2007-03-10 15:58+0300\n"
 "Last-Translator: Nickolay V. Shmyrev <nshmyrev@yandex.ru>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/callbacks.c:318
 msgid "translator-credits"
 msgstr ""
-"Валек Филиппов <val@comptek.ru>\n"
+"Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2007Валек Филиппов <val@comptek."
+"ru>\n"
 "Сергей Панов <sipan@mit.edu>\n"
 "Сергей Квято <kvantos@plotinka.ru>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Сетевые утилиты"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Графический пользовательский интерфейс для сетевых утилит"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - Сетевые утилиты"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -680,15 +692,15 @@ msgid "Please enter a valid domain address and try again."
 msgstr ""
 "Пожалуйста введине корректный доменный адрес, а затем попробуйте ещё раз."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Информация не доступна"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Остановить"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Запустить"
 
@@ -706,23 +718,23 @@ msgstr "Номер:"
 msgid "Sending ping requests to %s"
 msgstr "Посылаю пинг-запросы на %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Байты"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Цель"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Запрос"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Время"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Единицы измерения"
 
@@ -730,37 +742,37 @@ msgstr "Единицы измерения"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Байты\tЦель\tЗапрос\tВремя\tЕдиницы измерения\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Минимальное время:\t%s мс\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Среднее время:\t%s мс\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Максимальное время:\t%s мс\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Передано пакетов:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Принято пакетов:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Успешные пакеты:\t%s\n"
@@ -794,23 +806,23 @@ msgstr "Порт\tСостояние\tСервис\n"
 msgid "Tracing route to %s"
 msgstr "Трассировка маршрута к %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Шаг"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Имя хоста"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Время 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Время 2"
 
@@ -818,7 +830,7 @@ msgstr "Время 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Хоп\tХост\tIP\tВремя 1\tВремя 2\n"
 
@@ -831,13 +843,9 @@ msgstr ""
 "Необходимо установить %s для того, чтобы использовать эту возможность "
 "программы"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Сетевые информационные утилиты"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Сетевые утилиты"
+msgid "View information about your network"
+msgstr "Просмотреть информацию о сети"
 
 #: ../src/finger.c:62
 #, c-format
