@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-11 11:56+0900\n"
-"PO-Revision-Date: 2007-03-11 11:56+0900\n"
+"POT-Creation-Date: 2007-09-16 23:17+0900\n"
+"PO-Revision-Date: 2007-08-19 16:15+0900\n"
 "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -18,15 +18,27 @@ msgstr ""
 #: ../src/callbacks.c:318
 msgid "translator-credits"
 msgstr ""
-"相花 毅 <aihana@gnome.gr.jp>\n"
+"相花 毅 <takeshi.aihana@gmail.com>\n"
 "Yuusuke Tahara <tahara@gnome.gr.jp>\n"
 "日本GNOMEユーザー会 http://www.gnome.gr.jp"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "ネットワーク・ツール"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 "いろいろなネットワーク・ユーティリティに対応したグラフィカルなインタフェース"
 "を提供します。"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - ネットワーク・ツール"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -467,8 +479,7 @@ msgstr "HOST"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"netstat 情報を取得する (利用可能なオプション: route, active, multicast)"
+msgstr "netstat 情報を取得する (利用可能なコマンド: route, active, multicast)"
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -488,7 +499,7 @@ msgstr "ネットワーク・アドレスを問い合わせる"
 
 #: ../src/main.c:105
 msgid "Finger command to run"
-msgstr "実行する Finger コマンド"
+msgstr "指定したユーザに対して Finger を実行する"
 
 #: ../src/main.c:106
 msgid "USER"
@@ -676,15 +687,15 @@ msgstr "ドメイン・アドレスが指定されていません"
 msgid "Please enter a valid domain address and try again."
 msgstr "正しいドメイン・アドレスを入力してもう一度実行して下さい。"
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "情報が利用可能ではありません"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "停止"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "実行"
 
@@ -702,23 +713,23 @@ msgstr "ICMP番号:"
 msgid "Sending ping requests to %s"
 msgstr "Ping を %s へ送信中..."
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "バイト数"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "要求元"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "ICMP番号"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "往復時間"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "単位"
 
@@ -726,37 +737,37 @@ msgstr "単位"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "バイト数\tIP-ソース\tICMP番号\t往復時間\t単位\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "往復時間の最小:\t%s ミリ秒\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "往復時間の平均:\t%s ミリ秒\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "往復時間の最大:\t%s ミリ秒\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "送信パケット数:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "受信パケット数:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "到達したパケットの割合:\t%s\n"
@@ -790,23 +801,23 @@ msgstr "ポート番号\t状態\tサービス\n"
 msgid "Tracing route to %s"
 msgstr "%s に対する経路情報の追跡中..."
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "ホップ"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "ホスト名"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP-ソース"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "時間１"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "時間２"
 
@@ -814,7 +825,7 @@ msgstr "時間２"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "ホップ\tホスト名\tIP-ソース\t時間１\t時間２\n"
 
@@ -825,23 +836,19 @@ msgid ""
 "system"
 msgstr "この機能を利用するために %s をお使いのシステムにインストールして下さい"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "ネットワーク情報ツールです"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "ネットワーク・ツール"
+msgid "View information about your network"
+msgstr "お使いのネットワークに関する情報を表示します"
 
 #: ../src/finger.c:62
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr "\"%2$s\" 上のユーザ %1$s の情報の取得中..."
+msgstr "\"%2$s\" 上のユーザ %1$s の情報を取得しています..."
 
 #: ../src/finger.c:66
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "\"%s\" 上の全ユーザの情報の取得中..."
+msgstr "\"%s\" 上の全ユーザの情報を取得しています..."
 
 #: ../src/whois.c:58
 #, c-format
