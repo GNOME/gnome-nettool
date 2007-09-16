@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-09 21:42+0200\n"
-"PO-Revision-Date: 2007-03-09 21:43+0200\n"
+"POT-Creation-Date: 2007-09-16 14:19+0300\n"
+"PO-Revision-Date: 2007-09-16 14:20+0300\n"
 "Last-Translator: Gintautas Miliauskas <gintas@akl.lt>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
 "MIME-Version: 1.0\n"
@@ -27,9 +27,21 @@ msgstr ""
 "Marius Karnauskas <marius@esga.lt>,\n"
 "Žygimantas Beručka <zygis@gnome.org>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Tinklo įrankiai"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafinė naudotojo sąsaja paprastoms tinklo programoms"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - Tinklo įrankiai"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -676,15 +688,15 @@ msgstr "Nenurodytas domeno adresas"
 msgid "Please enter a valid domain address and try again."
 msgstr "Įveskite galiojantį tinklo adresą ir pabandykite iš naujo."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Nėra informacijos"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Nutraukti"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Leisti"
 
@@ -702,23 +714,23 @@ msgstr "Eil. nr.:"
 msgid "Sending ping requests to %s"
 msgstr "Siunčiamos ping užklausos į %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Baitai"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Šaltinis"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Seka"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Laikas"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Vienetai"
 
@@ -726,37 +738,37 @@ msgstr "Vienetai"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Baitai\tŠaltinis\tSeka\tLaikas\tVienetai\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Trumpiausias laikas:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Vidurkis:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Ilgiausias laikas:\t%s·ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Persiųsta paketų:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Gauta paketų:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Sėkmingų paketų:\t%s\n"
@@ -790,23 +802,23 @@ msgstr "Prievadas\tBūsena\tPaslauga\n"
 msgid "Tracing route to %s"
 msgstr "Sekamas kelias iki %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Kompiuterio vardas"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Laikas 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Laikas 2"
 
@@ -814,7 +826,7 @@ msgstr "Laikas 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tKompiuterio vardas\tIP\tPirmas laikas\tAntras laikas\n"
 
@@ -825,13 +837,9 @@ msgid ""
 "system"
 msgstr "Jei norite naudoti šią funkciją, turite įdiegti %s."
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Tinklo informacijos įrankiai"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Tinklo įrankiai"
+msgid "View information about your network"
+msgstr "Rodyti informaciją apie tinklą"
 
 #: ../src/finger.c:62
 #, c-format
