@@ -1,16 +1,20 @@
-# Dutch translation of gnome-network
-# Copyright (C) 2003-2004 Free Software Foundation, Inc.
+# Gnome Network Tools
+# Dutch translation
+#
+# This file is distributed under the same license as the gnome-nettool package.
+#
 # Tino Meinen <a.t.meinen@chello.nl>, 2004.
 # Taco Witte <tcwitte@cs.uu.nl>, 2003-2004.
 # Ronald van Engelen <ronalde@lacocina.nl>, 2005.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2007
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-network HEAD\n"
+"Project-Id-Version: gnome-network\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-31 23:55+0100\n"
-"PO-Revision-Date: 2006-06-27 04:24+0200\n"
-"Last-Translator: Ronald van Engelen <ronalde@lacocina.nl>\n"
+"POT-Creation-Date: 2007-09-17 19:18+0200\n"
+"PO-Revision-Date: 2007-09-17 19:20+0200\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,9 +29,21 @@ msgstr ""
 "\n"
 "Kijk voor meer informatie op http://nl.gnome.org/"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Netwerkhulpmiddelen"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafische gebruikersinterface voor gewone netwerkgereedschappen"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - Netwerkhulpmiddelen"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -85,14 +101,10 @@ msgstr "Details"
 msgid "Devices"
 msgstr "Apparaten"
 
-# netwerkprogramma's/netwerkhulpjes/netwerktoepassingen
-# (het gaat om ping, trace, netstat finger, whois etc, en de 
-# netwerkapparaten eth0, lo ra0 etc.)
-#
 #. Dear Translator: This is the Window Title
 #: ../src/gnome-nettool.glade.h:16
 msgid "Devices - Network Tools"
-msgstr "Apparaten - Netwerkprogramma's"
+msgstr "Apparaten - Netwerkhulpmiddelen"
 
 #: ../src/gnome-nettool.glade.h:17
 msgid "Display:"
@@ -692,15 +704,15 @@ msgstr "Er is geen domeinadres opgegeven"
 msgid "Please enter a valid domain address and try again."
 msgstr "Geef een geldig domeinadres en probeer opnieuw."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "Informatie niet beschikbaar"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "Stoppen"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "Uitvoeren"
 
@@ -719,23 +731,23 @@ msgstr "Volgnummer:"
 msgid "Sending ping requests to %s"
 msgstr "Bezig met verzenden ping-verzoeken naar %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "Bytes"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "Bron"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "Reeks"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "Tijd"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "Eenheden"
 
@@ -743,37 +755,37 @@ msgstr "Eenheden"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bytes\tBron\tReeks\tTijd\tEenheden\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Tijd minimum:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Tijd gemiddelde:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Tijd maximum:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Pakketten verzonden:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Pakketten ontvangen:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Ontvangen pakketten:\t%s\n"
@@ -807,23 +819,23 @@ msgstr "Poort\tStatus\tDienst\n"
 msgid "Tracing route to %s"
 msgstr "Bezig met traceren van route naar %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "Hostnaam"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "Tijd 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "Tijd 2"
 
@@ -831,7 +843,7 @@ msgstr "Tijd 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tHostnaam\tIP\tTijd 1\tTijd 2\n"
 
@@ -844,16 +856,9 @@ msgstr ""
 "Om deze functie van het programma te gebruiken moet %s op uw computer "
 "geïnstalleerd zijn"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "Netwerkinformatie tools"
-
-# netwerk programma's 
-# netwerk hulpjes
-# netwerk toepassingen
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "Netwerk tools"
+msgid "View information about your network"
+msgstr "Informatie over het netwerk tonen"
 
 #: ../src/finger.c:62
 #, c-format
@@ -869,6 +874,9 @@ msgstr "Bezig met opvragen informatie over alle gebruikers op ‘%s’"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Bezig met opvragen whois-informatie van %s"
+
+#~ msgid "Network Information Tools"
+#~ msgstr "Netwerkinformatie tools"
 
 #~ msgid "Packets loss:"
 #~ msgstr "Pakketten verloren:"
