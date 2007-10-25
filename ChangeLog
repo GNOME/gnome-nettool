@@ -1,3 +1,9 @@
+2007-10-25  German Poo-Caamano <gpoo@ubiobio.cl>
+
+	* src/mii.h: Replaced SIOCGMIIPHY definitions by including
+	  linux/sockios.h, which can keep more updated than our
+	  definitions. Fixed #451925 (Patch by Narenda K).
+
 2007-09-18  German Poo-Caamano <gpoo@ubiobio.cl>
 
 	* configure.in:

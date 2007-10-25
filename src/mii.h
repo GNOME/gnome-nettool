@@ -10,14 +10,7 @@
 #define _LINUX_MII_H
 
 /* network interface ioctl's for MII commands */
-#ifndef SIOCGMIIPHY
-#define SIOCGMIIPHY (SIOCDEVPRIVATE)	/* Read from current PHY */
-#define SIOCGMIIREG (SIOCDEVPRIVATE+1) 	/* Read any PHY register */
-#define SIOCSMIIREG (SIOCDEVPRIVATE+2) 	/* Write any PHY register */
-#define SIOCGPARAMS (SIOCDEVPRIVATE+3) 	/* Read operational parameters */
-#define SIOCSPARAMS (SIOCDEVPRIVATE+4) 	/* Set operational parameters */
-#endif
-
+#include <linux/sockios.h>
 #include <linux/types.h>
 
 /* This data structure is used for all the MII ioctl's */
