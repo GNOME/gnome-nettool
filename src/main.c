@@ -715,18 +715,18 @@ nettool_lookup_setup_combo_type (Netinfo *lookup)
 	GtkTreeIter   iter;
 	GtkCellRenderer *renderer;
 	gchar *types[] = {
-		"Default Information",
-		"Internet Address",
-		"Canonical Name",
-		"CPU / OS Type",
-		"Mailbox Exchange",
-		"Mailbox Information",
-		"Name Server",
-		"Host name for Address",
-		"Start-of-authority",
-		"Text Information",
-		"Well Known Services",
-		"Any / All Information",
+		N_("Default Information"),
+		N_("Internet Address"),
+		N_("Canonical Name"),
+		N_("CPU / OS Type"),
+		N_("Mailbox Exchange"),
+		N_("Mailbox Information"),
+		N_("Name Server"),
+		N_("Host name for Address"),
+		N_("Start-of-authority"),
+		N_("Text Information"),
+		N_("Well Known Services"),
+		N_("Any / All Information"),
 		NULL
 	};
 
@@ -735,7 +735,7 @@ nettool_lookup_setup_combo_type (Netinfo *lookup)
 	for (i=0; types[i]; i++) {
 		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
 		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-				    0, types[i], -1);
+				    0, _(types[i]), -1);
 	}
 	
 	gtk_combo_box_set_model (GTK_COMBO_BOX (lookup->type), model);
