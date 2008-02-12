@@ -1,15 +1,16 @@
 # Hungarian translation of gnome-nettool.
-# Copyright (C) 2004, 2006, 2007 Free Software Foundation, Inc.
+# Copyright (C) 2004, 2006, 2007, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
 #
 # Laszlo Dvornik <dvornik@gnome.hu>, 2004.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2004, 2005, 2006, 2007.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2004, 2005, 2006, 2007, 2008.
+# Nyitrai István <sianis@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool\n"
+"Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-05 11:45+0100\n"
-"PO-Revision-Date: 2007-09-13 19:58+0200\n"
+"POT-Creation-Date: 2008-01-11 07:36+0000\n"
+"PO-Revision-Date: 2008-02-12 23:33+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +23,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Dvornik László <dvornik@gnome.hu>\n"
-"Kelemen Gábor <kelemeng@gnome.hu>"
+"Kelemen Gábor <kelemeng@gnome.hu>\n"
+"Nyitrai István <sianis@gmail.com>"
 
 #. Dear translator: This is the name of the application
 #: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
@@ -99,7 +101,7 @@ msgstr "Eszközök"
 #. Dear Translator: This is the Window Title
 #: ../src/gnome-nettool.glade.h:16
 msgid "Devices - Network Tools"
-msgstr "Eszközök - Hálózati eszközök"
+msgstr "Eszközök - Hálózati segédeszközök"
 
 #: ../src/gnome-nettool.glade.h:17
 msgid "Display:"
@@ -324,7 +326,7 @@ msgstr "Ismeretlen felület"
 
 #: ../src/info.c:162
 msgid "Network Devices Not Found"
-msgstr "Hálózati eszközök nem találhatóak"
+msgstr "Nem találhatók hálózati eszközök"
 
 #: ../src/info.c:385
 msgid "Unknown"
@@ -479,7 +481,7 @@ msgstr "GÉP"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "Netstat információ megszerzése. Érvényes kapcsolók: route, active, multicast."
+msgstr "Netstat információk lekérése. Érvényes kapcsolók: route, active, multicast."
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -565,6 +567,54 @@ msgid ""
 msgstr ""
 "Adja meg azt a hálózati címet, amelyen nyitott portokat kell keresni.\n"
 "Például: www.domain.com vagy 192.168.2.1"
+
+#: ../src/main.c:718
+msgid "Default Information"
+msgstr "Alapértelmezett információk"
+
+#: ../src/main.c:719
+msgid "Internet Address"
+msgstr "Internet cím"
+
+#: ../src/main.c:720
+msgid "Canonical Name"
+msgstr "Kanonikus név"
+
+#: ../src/main.c:721
+msgid "CPU / OS Type"
+msgstr "CPU / OS típusa"
+
+#: ../src/main.c:722
+msgid "Mailbox Exchange"
+msgstr "Postafiók-csere (MX)"
+
+#: ../src/main.c:723
+msgid "Mailbox Information"
+msgstr "Postafiók-információk"
+
+#: ../src/main.c:724
+msgid "Name Server"
+msgstr "Névkiszolgáló"
+
+#: ../src/main.c:725
+msgid "Host name for Address"
+msgstr "A cím gépneve"
+
+#: ../src/main.c:726
+msgid "Start-of-authority"
+msgstr "Zóna kezdete (SOA)"
+
+#: ../src/main.c:727
+msgid "Text Information"
+msgstr "Szöveges információk"
+
+#: ../src/main.c:728
+msgid "Well Known Services"
+msgstr "Ismert szolgáltatások"
+
+#: ../src/main.c:729
+msgid "Any / All Information"
+msgstr "Bármely / minden információ"
 
 #: ../src/main.c:813
 msgid ""
@@ -703,7 +753,7 @@ msgstr "Futtatás"
 #. Created up here so we can get the geometry info.
 #: ../src/ping.c:151
 msgid "Time (ms):"
-msgstr "Idő (ezredmásodperc):"
+msgstr "Idő (em):"
 
 #: ../src/ping.c:171
 msgid "Seq. No.:"
