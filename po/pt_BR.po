@@ -3,16 +3,18 @@
 # Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
 # Raphael Higino <phhigino@gmail.com>, 2004.
 # Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2006.
-# Og Maciel <ogmaciel@ubuntu.com>, 2007.
+# Og Maciel <ogmaciel@ubuntu.com>, 2007, 2008
+# Jonh Wendell <wendell@bani.com.br>, 2008
+#
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool\n"
+"Project-Id-Version: gnome-nettool 2.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-20 14:54+0100\n"
-"PO-Revision-Date: 2007-02-06 03:44-0200\n"
-"Last-Translator: Og Maciel <ogmaciel@ubuntu.com>\n"
-"Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
+"POT-Creation-Date: 2008-02-22 20:04-0300\n"
+"PO-Revision-Date: 2008-02-22 20:03-0300\n"
+"Last-Translator: Jonh Wendell <wendell@bani.com.br>\n"
+"Language-Team: Portuguese/Brazil <gnome-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,9 +23,10 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Ariel Bressan da Silva <ariel@conectiva.com.br>\n"
-"Raphael Higino <phhigino@gmail.com>\n"
+"Raphael Higino <In memoriam>\n"
 "Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>\n"
-"Og Maciel <ogmaciel@ubuntu.com>"
+"Og Maciel <ogmaciel@ubuntu.com>\n"
+"Jonh Wendell <wendell@bani.com.br>"
 
 #. Dear translator: This is the name of the application
 #: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
@@ -567,6 +570,54 @@ msgstr ""
 "Digite o endereço de rede onde varrer por portas abertas.\n"
 "Por exemplo: www.dominio.com.br ou 192.168.2.1"
 
+#: ../src/main.c:718
+msgid "Default Information"
+msgstr "Informações Padrão"
+
+#: ../src/main.c:719
+msgid "Internet Address"
+msgstr "Endereço IP"
+
+#: ../src/main.c:720
+msgid "Canonical Name"
+msgstr "Nome Canônico"
+
+#: ../src/main.c:721
+msgid "CPU / OS Type"
+msgstr "CPU / Tipo de S.O."
+
+#: ../src/main.c:722
+msgid "Mailbox Exchange"
+msgstr "E-Mail Exchange (Registro MX)"
+
+#: ../src/main.c:723
+msgid "Mailbox Information"
+msgstr "Informações de E-Mail"
+
+#: ../src/main.c:724
+msgid "Name Server"
+msgstr "Servidor de Nomes"
+
+#: ../src/main.c:725
+msgid "Host name for Address"
+msgstr "Nomes para Endereços"
+
+#: ../src/main.c:726
+msgid "Start-of-authority"
+msgstr "Início-da-autoridade"
+
+#: ../src/main.c:727
+msgid "Text Information"
+msgstr "Informações Texto"
+
+#: ../src/main.c:728
+msgid "Well Known Services"
+msgstr "Serviços Conhecidos"
+
+#: ../src/main.c:729
+msgid "Any / All Information"
+msgstr "Todas as Informações"
+
 #: ../src/main.c:813
 msgid ""
 "Enter the network address to lookup.\n"
@@ -856,21 +907,3 @@ msgstr "Obtendo informações de todos os usuários em \"%s\""
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Obtendo as informações whois de %s"
-
-#~ msgid "Network Information Tools"
-#~ msgstr "Ferramentas de Informações de Rede"
-
-#~ msgid "Packets loss:"
-#~ msgstr "Perda de pacotes:"
-
-#~ msgid "Packet loss:\t%s\n"
-#~ msgstr "Perda de pacotes:\t%s\n"
-
-#~ msgid "%s: Command not found"
-#~ msgstr "%s: Comando não encontrado"
-
-#~ msgid "Network Tools - Devices"
-#~ msgstr "Ferramentas de Rede - Dispositivos"
-
-#~ msgid "Network Information"
-#~ msgstr "Informações de rede"
