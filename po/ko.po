@@ -1,13 +1,13 @@
 # gnome-nettool ko.po
 #
-# Changwoo Ryu <cwryu@debian.org>, 1999, 2006.
+# Changwoo Ryu <cwryu@debian.org>, 1999, 2006, 2008.
 # Young-Ho Cha <ganadist at gmail dot com>, 2003, 2005, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool 2.15.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-09 23:32+0900\n"
-"PO-Revision-Date: 2007-02-09 23:36+0900\n"
+"POT-Creation-Date: 2008-02-28 11:30+0900\n"
+"PO-Revision-Date: 2008-02-28 11:42+0900\n"
 "Last-Translator: Young-Ho Cha <ganadist@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
 "MIME-Version: 1.0\n"
@@ -20,9 +20,21 @@ msgstr ""
 "류창우 <cwryu@debian.org>\n"
 "차영호 <ganadist@gmail.com>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "네트워크 도구"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "일반 네트워크 도구의 그래픽 사용자 인터페이스"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - 네트워크 도구"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -550,6 +562,54 @@ msgstr ""
 "열린 포트를 검색할 네트워크 주소를 입력하십시오.\n"
 "예: www.domain.com 또는 192.168.2.1"
 
+#: ../src/main.c:718
+msgid "Default Information"
+msgstr "기본 정보"
+
+#: ../src/main.c:719
+msgid "Internet Address"
+msgstr "인터넷 주소"
+
+#: ../src/main.c:720
+msgid "Canonical Name"
+msgstr "공식 이름"
+
+#: ../src/main.c:721
+msgid "CPU / OS Type"
+msgstr "CPU / OS 종류"
+
+#: ../src/main.c:722
+msgid "Mailbox Exchange"
+msgstr "메일함 교환"
+
+#: ../src/main.c:723
+msgid "Mailbox Information"
+msgstr "메일함 정보"
+
+#: ../src/main.c:724
+msgid "Name Server"
+msgstr "네임 서버"
+
+#: ../src/main.c:725
+msgid "Host name for Address"
+msgstr "주소의 호스트 이름"
+
+#: ../src/main.c:726
+msgid "Start-of-authority"
+msgstr "권한 시작부분"
+
+#: ../src/main.c:727
+msgid "Text Information"
+msgstr "텍스트 정보"
+
+#: ../src/main.c:728
+msgid "Well Known Services"
+msgstr "알려진 서비스"
+
+#: ../src/main.c:729
+msgid "Any / All Information"
+msgstr "모든 정보"
+
 #: ../src/main.c:813
 msgid ""
 "Enter the network address to lookup.\n"
@@ -671,15 +731,15 @@ msgstr "도메인 주소가 지정되지 않았습니다."
 msgid "Please enter a valid domain address and try again."
 msgstr "올바른 도메인 주소를 입력하고 다시 시도하십시오."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "정보를 얻을 수 없습니다"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "그만두기"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "실행"
 
@@ -697,23 +757,23 @@ msgstr "순서:"
 msgid "Sending ping requests to %s"
 msgstr "%s(으)로 핑 요청을 보내는 중"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "바이트"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "소스"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "번호"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "시간"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "단위"
 
@@ -721,37 +781,37 @@ msgstr "단위"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "바이트\t소스\t번호\t시간\t단위\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "최소 시간:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "평균 시간:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "최대 시간:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "패킷 보냄:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "패킷 받음:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "성공한 패킷 수:\t%s\n"
@@ -785,23 +845,23 @@ msgstr "포트\t상태\t서비스\n"
 msgid "Tracing route to %s"
 msgstr "%s을(를) 추적합니다"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "호스트이름"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "시간 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "시간 2"
 
@@ -809,7 +869,7 @@ msgstr "시간 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\t호스트이름\tIP\t시간 1\t시간 2\n"
 
@@ -821,13 +881,9 @@ msgid ""
 msgstr ""
 "프로그램의 이 기능을 사용하려면, 시스템에 %s 프로그램을 설치해야 합니다."
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "네트워크 정보 도구"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "네트워크 도구"
+msgid "View information about your network"
+msgstr "네트워크의 정보를 봅니다."
 
 #: ../src/finger.c:62
 #, c-format
@@ -844,6 +900,9 @@ msgstr "\"%s\"에 있는 모든 사용자의 정보를 얻는 중"
 msgid "Getting the whois information of %s"
 msgstr "%s의 whois정보를 얻는 중"
 
+#~ msgid "Network Information Tools"
+#~ msgstr "네트워크 정보 도구"
+
 #~ msgid "Packets loss:"
 #~ msgstr "잃어버린 패킷:"
 
@@ -855,6 +914,3 @@ msgstr "%s의 whois정보를 얻는 중"
 
 #~ msgid "Network Tools - Devices"
 #~ msgstr "네트워크 도구 - 장치"
-
-#~ msgid "Network Information"
-#~ msgstr "네트워크 정보"
