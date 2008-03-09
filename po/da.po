@@ -1,11 +1,12 @@
 # Danish translation of gnome-nettool
-# Copyright (C) 1999-2007 Free Software Foundation, Inc.
+# Copyright (C) 1999-2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
 # Henrik Hansen <hh@mailserver.dk>, 1999.
 # Kenneth Christiansen <kenneth@ripen.dk>, 1999
 # Birger Langkjer <birger.langkjer@image.dk>, 1999
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004-2005.
 # Peter Bach <bach.peter@gmail.com>, 2007.
+# Kenneth Nielsen <k.nielsen81@gmail.com>, 2008.
 #
 # Husk at tilføje dig i credit-listen (besked id "translator_credits")
 #
@@ -13,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-09 02:43+0200\n"
-"PO-Revision-Date: 2007-09-08 17:16+0200\n"
-"Last-Translator: Peter Bach <bach.peter@gmail.com>\n"
+"POT-Creation-Date: 2008-03-09 22:56+0100\n"
+"PO-Revision-Date: 2008-03-09 21:48+0100\n"
+"Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,6 +30,7 @@ msgstr ""
 "Kenneth Christiansen\n"
 "Martin Willemoes Hansen\n"
 "Peter Bach\n"
+"Kenneth Nielsen\n"
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
@@ -120,7 +122,7 @@ msgstr "Finger"
 
 #: ../src/gnome-nettool.glade.h:19
 msgid "Hardware address:"
-msgstr "Udstyrsadresse"
+msgstr "Hardwareadresse:"
 
 #: ../src/gnome-nettool.glade.h:20
 msgid "Host"
@@ -280,7 +282,7 @@ msgstr "_Netværksadresse:"
 
 #: ../src/gnome-nettool.glade.h:59
 msgid "_Network device:"
-msgstr "_Netværksenhed"
+msgstr "_Netværksenhed:"
 
 #: ../src/gnome-nettool.glade.h:60
 msgid "_Tool"
@@ -368,7 +370,7 @@ msgstr "Netværksenhed:\t%s\n"
 #: ../src/info.c:720
 #, c-format
 msgid "Hardware address:\t%s\n"
-msgstr "Udstyrsadresse:\t%s\n"
+msgstr "Hardwareadresse:\t%s\n"
 
 #: ../src/info.c:721
 #, c-format
@@ -575,6 +577,54 @@ msgstr ""
 "Angiv netværksadressen der skal skannes for åbne porte.\n"
 "Fx www.domæne.dk eller 192.168.2.1"
 
+#: ../src/main.c:718
+msgid "Default Information"
+msgstr "Standardinformation"
+
+#: ../src/main.c:719
+msgid "Internet Address"
+msgstr "Internet-adresse"
+
+#: ../src/main.c:720
+msgid "Canonical Name"
+msgstr "Kanonisk navn"
+
+#: ../src/main.c:721
+msgid "CPU / OS Type"
+msgstr "CPU / OS-type"
+
+#: ../src/main.c:722
+msgid "Mailbox Exchange"
+msgstr "E-postkasse Exchange"
+
+#: ../src/main.c:723
+msgid "Mailbox Information"
+msgstr "E-postkasse-information"
+
+#: ../src/main.c:724
+msgid "Name Server"
+msgstr "Navneserver"
+
+#: ../src/main.c:725
+msgid "Host name for Address"
+msgstr "Værtsnavn for adresse"
+
+#: ../src/main.c:726
+msgid "Start-of-authority"
+msgstr "Start-af-autoritet"
+
+#: ../src/main.c:727
+msgid "Text Information"
+msgstr "Tekstinformation"
+
+#: ../src/main.c:728
+msgid "Well Known Services"
+msgstr "Velkendte tjenester"
+
+#: ../src/main.c:729
+msgid "Any / All Information"
+msgstr "Eventuel information"
+
 #: ../src/main.c:813
 msgid ""
 "Enter the network address to lookup.\n"
@@ -681,12 +731,12 @@ msgstr "En netværksadresse blev ikke angivet"
 
 #: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
-msgstr "Angiv venligst en gyldig netværksadresse og prøv igen"
+msgstr "Angiv venligst en gyldig netværksadresse og prøv igen."
 
 #: ../src/nettool.c:207
 #, c-format
 msgid "The address '%s' cannot be found"
-msgstr "Adressen \"%s\" findes ikke."
+msgstr "Adressen \"%s\" findes ikke"
 
 #: ../src/nettool.c:236
 msgid "A domain address was not specified"
@@ -880,6 +930,3 @@ msgstr "Henter whois-informationen for %s"
 
 #~ msgid "Network Tools - Devices"
 #~ msgstr "Netværksværktøj - Enheder"
-
-#~ msgid "Network Information"
-#~ msgstr "Netværksinformation"
