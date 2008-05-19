@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-17 10:08+0000\n"
+"POT-Creation-Date: 2008-02-26 09:56+0000\n"
 "PO-Revision-Date: 2008-02-24 14:55-0000\n"
 "Last-Translator: Abou Manal <aboumanal@gmail.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -19,7 +19,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : 3\n"
+"Plural-Forms: Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && "
+"n<=10 ? 2 : 3\n"
 
 #: ../src/callbacks.c:318
 msgid "translator-credits"
@@ -32,8 +33,7 @@ msgstr ""
 "أبو منال\t<aboumanal@gmail.com>"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:328
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "أدوات الشّبكة"
 
@@ -113,8 +113,7 @@ msgstr "أجهزة - أدوات الشّبكة"
 msgid "Display:"
 msgstr "العرض:"
 
-#: ../src/gnome-nettool.glade.h:18
-#: ../src/main.c:868
+#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
 msgid "Finger"
 msgstr "جس"
 
@@ -134,8 +133,7 @@ msgstr "عنوان IP:"
 msgid "Link speed:"
 msgstr "سرعة الوصلة:"
 
-#: ../src/gnome-nettool.glade.h:23
-#: ../src/main.c:782
+#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
 msgid "Lookup"
 msgstr "البحث"
 
@@ -163,8 +161,7 @@ msgstr "تعدّد البث:"
 msgid "Netmask:"
 msgstr "قناع الشّبكة:"
 
-#: ../src/gnome-nettool.glade.h:30
-#: ../src/main.c:480
+#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
 msgid "Netstat"
 msgstr "Netstat"
 
@@ -184,8 +181,7 @@ msgstr "الحزم المستلَمة:"
 msgid "Packets transmitted:"
 msgstr "الحزم المرسَلة:"
 
-#: ../src/gnome-nettool.glade.h:35
-#: ../src/main.c:313
+#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
 msgid "Ping"
 msgstr "طرق"
 
@@ -209,8 +205,7 @@ msgstr "أخطاء الاستقبال:"
 msgid "Routing Table Information"
 msgstr "معلومات جدول التّوجيه"
 
-#: ../src/gnome-nettool.glade.h:41
-#: ../src/main.c:663
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
 msgid "Scan"
 msgstr "امسح"
 
@@ -226,8 +221,7 @@ msgstr "الحالة:"
 msgid "Successful packets:"
 msgstr "الحزم الناجحة:"
 
-#: ../src/gnome-nettool.glade.h:45
-#: ../src/main.c:404
+#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
 msgid "Trace"
 msgstr "تعقّب"
 
@@ -255,8 +249,7 @@ msgstr "طلبات غير محدودة"
 msgid "User"
 msgstr "المستخدم"
 
-#: ../src/gnome-nettool.glade.h:52
-#: ../src/main.c:984
+#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
 msgid "Whois"
 msgstr "whois"
 
@@ -488,16 +481,15 @@ msgstr "الجهاز"
 msgid "Send a ping to a network address"
 msgstr "أرسل طرقة إلى عنوان شبكة"
 
-#: ../src/main.c:86
-#: ../src/main.c:94
-#: ../src/main.c:98
-#: ../src/main.c:102
+#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
 msgid "HOST"
 msgstr "المضيف"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "اجلب معلومات إحصائيّات الشّبكة. الخيارات الممكنة هي: المسلك (route) و نشط (active) و تعدّد البث (multicast)."
+msgstr ""
+"اجلب معلومات إحصائيّات الشّبكة. الخيارات الممكنة هي: المسلك (route) و نشط "
+"(active) و تعدّد البث (multicast)."
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -533,8 +525,11 @@ msgstr "النّطاق"
 
 #: ../src/main.c:127
 #, c-format
-msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
-msgstr "الملف %s غير موجود. فضلاً تأكّد إن كانت حزمة gnome-nettool مثبّتةً بشكلٍ صحيح"
+msgid ""
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"installed"
+msgstr ""
+"الملف %s غير موجود. فضلاً تأكّد إن كانت حزمة gnome-nettool مثبّتةً بشكلٍ صحيح"
 
 #: ../src/main.c:346
 msgid ""
@@ -552,8 +547,7 @@ msgstr ""
 "أدخل عنوان الشّبكة الذي تريد تعقّب مسلكه.\n"
 "مثلاً: www.domain.com أو 192.168.2.1"
 
-#: ../src/main.c:516
-#: ../src/netstat.c:443
+#: ../src/main.c:516 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "البرتوكول"
 
@@ -677,8 +671,7 @@ msgstr "مصدر IP"
 msgid "Port/Service"
 msgstr "المنفذ/الخدمة"
 
-#: ../src/netstat.c:466
-#: ../src/scan.c:312
+#: ../src/netstat.c:466 ../src/scan.c:312
 msgid "State"
 msgstr "الحالة"
 
@@ -698,8 +691,7 @@ msgstr "البوّابة"
 msgid "Netmask"
 msgstr "قناع الشّبكة"
 
-#: ../src/netstat.c:634
-#: ../src/netstat.c:741
+#: ../src/netstat.c:634 ../src/netstat.c:741
 msgid "Interface"
 msgstr "الواجهة"
 
@@ -735,8 +727,7 @@ msgstr "الواجهة\tالعضو\tالمجموعة\n"
 msgid "A network address was not specified"
 msgstr "لم يحدّد عنوان شبكة"
 
-#: ../src/nettool.c:200
-#: ../src/nettool.c:209
+#: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
 msgstr "فضلاً أدخل عنوان شبكةٍ سليم و حاول مجدّداً."
 
@@ -897,7 +888,9 @@ msgstr "القفزة\tاسم المضيف\tالـIP\tالوقت 1\tالوقت 2\
 
 #: ../src/utils.c:227
 #, c-format
-msgid "In order to use this feature of the program, %s must be installed in your system"
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
 msgstr "لاستعمال هذه الميزة في البرنامج، يجب تثبيت %s في النظام."
 
 #: ../src/gnome-nettool.desktop.in.in.h:2
@@ -921,8 +914,9 @@ msgstr "جاري جلب معلومات الهويّة (whois) على %s"
 
 #~ msgid "Network Information Tools"
 #~ msgstr "أدوات معلومات الشّبكة"
+
 #~ msgid "Packets loss:"
 #~ msgstr "الحزم المفقودة:"
+
 #~ msgid "Packet loss:\t%s\n"
 #~ msgstr "الحزم المفقودة:\t%s\n"
-
