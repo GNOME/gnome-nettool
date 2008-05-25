@@ -1,21 +1,21 @@
 # Vietnamese Translation for gnome-nettool.
-# Copyright © 2007 Gnome i18n Project for Vietnamese.
+# Copyright © 2008 Gnome i18n Project for Vietnamese.
 # T.M.Thanh <tmthanh@yahoo.com>, 2003.
-# Clytie Siddall <clytie@riverland.net.au>, 2005-2007.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2008.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-network Gnome HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-05 11:45+0100\n"
-"PO-Revision-Date: 2007-09-03 17:22+0930\n"
+"POT-Creation-Date: 2008-01-11 07:36+0000\n"
+"PO-Revision-Date: 2008-05-25 23:36+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
-"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: LocFactoryEditor 1.7b1\n"
+"X-Generator: LocFactoryEditor 1.7b3\n"
 
 #: ../src/callbacks.c:318
 msgid "translator-credits"
@@ -579,13 +579,61 @@ msgstr ""
 "Hãy nập địa chỉ mạng cần quét có cổng mở.\n"
 "Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
 
+#: ../src/main.c:718
+msgid "Default Information"
+msgstr "Thông tin Mặc định"
+
+#: ../src/main.c:719
+msgid "Internet Address"
+msgstr "Địa chỉ Internet"
+
+#: ../src/main.c:720
+msgid "Canonical Name"
+msgstr "Tên tiêu chuẩn"
+
+#: ../src/main.c:721
+msgid "CPU / OS Type"
+msgstr "Kiểu CPU/HĐH"
+
+#: ../src/main.c:722
+msgid "Mailbox Exchange"
+msgstr "Trao đổi Hộp thư"
+
+#: ../src/main.c:723
+msgid "Mailbox Information"
+msgstr "Thông tin Hộp thư"
+
+#: ../src/main.c:724
+msgid "Name Server"
+msgstr "Máy phục vụ tên"
+
+#: ../src/main.c:725
+msgid "Host name for Address"
+msgstr "Tên máy cho địa chỉ"
+
+#: ../src/main.c:726
+msgid "Start-of-authority"
+msgstr "Bắt đầu cho phép"
+
+#: ../src/main.c:727
+msgid "Text Information"
+msgstr "Thông tin Văn bản"
+
+#: ../src/main.c:728
+msgid "Well Known Services"
+msgstr "Dịch vụ ai cũng biết"
+
+#: ../src/main.c:729
+msgid "Any / All Information"
+msgstr "Bất kỳ/Mọi thông tin"
+
 #: ../src/main.c:813
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Hãy nập địa chỉ mạng cần tra tìm.\n"
-"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
+"Hãy nhập địa chỉ mạng cần tra tìm.\n"
+"Ví dụ: « www.miền.com » hoặc « 192.168.2.1 »"
 
 #: ../src/main.c:902
 msgid "Enter the user to finger."
@@ -597,7 +645,7 @@ msgid ""
 "For example: auth.domain.com or 192.168.2.1"
 msgstr ""
 "Hãy nhập địa chỉ mạng để finger người dùng đó.\n"
-"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
+"Ví dụ: « www.miền.com » hoặc « 192.168.2.1 »"
 
 #: ../src/main.c:1016
 msgid ""
@@ -605,7 +653,7 @@ msgid ""
 "For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Hãy nhập địa chỉ miền để tìm kiếm thông tin whois.\n"
-"Ví dụ: <www.miền.com> hoặc <192.168.2.1>"
+"Ví dụ: « www.miền.com » hoặc « 192.168.2.1 »"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
@@ -722,7 +770,7 @@ msgstr "Thời gian (mili-giây):"
 
 #: ../src/ping.c:171
 msgid "Seq. No.:"
-msgstr "Số hiệu dãy:"
+msgstr "Số thứ tự dãy:"
 
 #: ../src/ping.c:253
 #, c-format
@@ -795,7 +843,7 @@ msgstr "Đang quét « %s » tìm cổng mở."
 
 #: ../src/scan.c:168
 msgid "unknown"
-msgstr "không biết"
+msgstr "không rõ"
 
 #: ../src/scan.c:304
 msgid "Port"
@@ -815,11 +863,11 @@ msgstr "Cổng\tTrạng thái\tDịch vụ\n"
 #: ../src/traceroute.c:62
 #, c-format
 msgid "Tracing route to %s"
-msgstr "Đang dò đường đến « %s »"
+msgstr "Đang tìm đường đến « %s »"
 
 #: ../src/traceroute.c:265
 msgid "Hop"
-msgstr "Nhảy"
+msgstr "Bước"
 
 #: ../src/traceroute.c:273
 msgid "Hostname"
@@ -870,6 +918,3 @@ msgstr "Đang lấy thông tin mọi người dùng trên « %s »"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Đang lấy thông tin whois (nhận biết) của « %s »"
-
-#~ msgid "Network Information Tools"
-#~ msgstr "Công cụ thông tin mạng"
