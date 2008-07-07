@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-network.txt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-02 04:19+0000\n"
+"POT-Creation-Date: 2008-01-11 07:36+0000\n"
 "PO-Revision-Date: 2003-03-12 20:57+0200\n"
 "Last-Translator: Gil 'Dolfin' Osher <dolfin@rpg.org.il>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -22,9 +22,22 @@ msgstr ""
 "גיל אשר <dolfin@rgp.org.il>\n"
 "יאיר הרשקוביץ <yairhr@gmail.com>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "כלי רשת"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "ממשק משתמש גרפי לשרותי רשת נפוצים"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr ""
+"‏%s - כלי רשת"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -552,6 +565,55 @@ msgstr ""
 "הכנס את כתובת הרשת בה לחפש שערים פתוחים.\n"
 "לדוגמא: www.domain.com או 192.168.2.1"
 
+#: ../src/main.c:718
+msgid "Default Information"
+msgstr "מידע ברירת המחדל"
+
+#: ../src/main.c:719
+msgid "Internet Address"
+msgstr "כתובת אינטרנת"
+
+#: ../src/main.c:720
+msgid "Canonical Name"
+msgstr "שם קנוני"
+
+#: ../src/main.c:721
+msgid "CPU / OS Type"
+msgstr "מעבד / סוג מערכת הפעלה"
+
+#: ../src/main.c:722
+msgid "Mailbox Exchange"
+msgstr ""
+
+#: ../src/main.c:723
+msgid "Mailbox Information"
+msgstr "מידע תיבת דואר"
+
+#: ../src/main.c:724
+msgid "Name Server"
+msgstr "שרת שמות מתחם"
+
+#: ../src/main.c:725
+msgid "Host name for Address"
+msgstr "שם מארח עבור הכתובת"
+
+#: ../src/main.c:726
+msgid "Start-of-authority"
+msgstr ""
+
+#: ../src/main.c:727
+msgid "Text Information"
+msgstr "מידע טקסט"
+
+#: ../src/main.c:728
+msgid "Well Known Services"
+msgstr "שירותים ידועים"
+
+#: ../src/main.c:729
+#, fuzzy
+msgid "Any / All Information"
+msgstr "מידע"
+
 #: ../src/main.c:813
 msgid ""
 "Enter the network address to lookup.\n"
@@ -673,15 +735,15 @@ msgstr "לא צויינה כתובת מתחם"
 msgid "Please enter a valid domain address and try again."
 msgstr "אנא הכנס כתובת מתחם תקינה ונסה שוב."
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "מידע לא זמין"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "הפסק"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "הפעל"
 
@@ -699,23 +761,23 @@ msgstr "מספר רצף:"
 msgid "Sending ping requests to %s"
 msgstr "שולח בקשת ping אל %s"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "בתים"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "מקור"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "מס'"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "זמן"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "יחידות"
 
@@ -723,37 +785,37 @@ msgstr "יחידות"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bytes\tSource\tSeq\tTime\tUnits\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Time minimum:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Time average:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Time maximum:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Packets transmitted:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Packets received:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Successful packets:\t%s\n"
@@ -787,23 +849,23 @@ msgstr "Port\tState\tService\n"
 msgid "Tracing route to %s"
 msgstr "מחפש נתיב אל %s"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "מס'"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "שם מארח"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "זמן 1"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "זמן 2"
 
@@ -811,7 +873,7 @@ msgstr "זמן 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 
@@ -822,13 +884,9 @@ msgid ""
 "system"
 msgstr ""
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "כלי מידע רשת"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "כלי רשת"
+msgid "View information about your network"
+msgstr "צפה במידע אודות הרשת שלך"
 
 #: ../src/finger.c:62
 #, c-format
@@ -844,6 +902,9 @@ msgstr "מקבל מידע עבור כל המשתמשים ב-\"%s\""
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "מקבל מידע whois עבור %s"
+
+#~ msgid "Network Information Tools"
+#~ msgstr "כלי מידע רשת"
 
 #~ msgid "Network Tools - Devices"
 #~ msgstr "כלי רשת - התקנים"
@@ -874,36 +935,12 @@ msgstr "מקבל מידע whois עבור %s"
 #~ msgstr "קבע את ממשק הרשת לקבלת המידע"
 
 #, fuzzy
-#~ msgid "Any / All Information"
-#~ msgstr "מידע"
-
-#, fuzzy
-#~ msgid "Host name for Address"
-#~ msgstr "כתובת IP מרוחקת"
-
-#, fuzzy
 #~ msgid "IP address:"
 #~ msgstr "כתובת IP"
 
 #, fuzzy
-#~ msgid "Internet Address"
-#~ msgstr "כתובת IP"
-
-#, fuzzy
-#~ msgid "Mailbox Information"
-#~ msgstr "מידע"
-
-#, fuzzy
-#~ msgid "Name Server"
-#~ msgstr "שרתי DNS"
-
-#, fuzzy
 #~ msgid "Send only"
 #~ msgstr "שליחה בלבד"
-
-#, fuzzy
-#~ msgid "Text Information"
-#~ msgstr "מידע"
 
 #, fuzzy
 #~ msgid "GNOME Remote Desktop Applet"
