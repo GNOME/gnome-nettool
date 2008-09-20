@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-12 01:23+0200\n"
-"PO-Revision-Date: 2007-09-12 01:25+0200\n"
-"Last-Translator: Igor Nestorović <igor@prevod.org>\n"
+"POT-Creation-Date: 2008-09-20 03:36+0200\n"
+"PO-Revision-Date: 2008-09-20 03:38+0100\n"
+"Last-Translator: Goran Rakić <grakic@devbase.net>\n"
 "Language-Team: Serbian (sr) <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +27,8 @@ msgstr ""
 "Prevod.org — prevod na srpski jezik."
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:328
+#: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Mrežni alati"
 
@@ -107,7 +108,8 @@ msgstr "Uređaji — Mrežni alati"
 msgid "Display:"
 msgstr "Prikaz:"
 
-#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
+#: ../src/gnome-nettool.glade.h:18
+#: ../src/main.c:868
 msgid "Finger"
 msgstr "Finger"
 
@@ -127,7 +129,8 @@ msgstr "IP adresa:"
 msgid "Link speed:"
 msgstr "Brzina veze:"
 
-#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
+#: ../src/gnome-nettool.glade.h:23
+#: ../src/main.c:782
 msgid "Lookup"
 msgstr "Pronađi"
 
@@ -155,7 +158,8 @@ msgstr "Višestruko emitovanje:"
 msgid "Netmask:"
 msgstr "Mrežna maska:"
 
-#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
+#: ../src/gnome-nettool.glade.h:30
+#: ../src/main.c:480
 msgid "Netstat"
 msgstr "Mrežna statistika"
 
@@ -175,7 +179,8 @@ msgstr "Primljeni paketi:"
 msgid "Packets transmitted:"
 msgstr "Preneti paketi:"
 
-#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
+#: ../src/gnome-nettool.glade.h:35
+#: ../src/main.c:313
 msgid "Ping"
 msgstr "Ping"
 
@@ -199,7 +204,8 @@ msgstr "Greške kod primanja:"
 msgid "Routing Table Information"
 msgstr "Podaci o tabeli preusmeravanja"
 
-#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
+#: ../src/gnome-nettool.glade.h:41
+#: ../src/main.c:663
 msgid "Scan"
 msgstr "Traži"
 
@@ -215,7 +221,8 @@ msgstr "Stanje:"
 msgid "Successful packets:"
 msgstr "Uspešni paketi:"
 
-#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
+#: ../src/gnome-nettool.glade.h:45
+#: ../src/main.c:404
 msgid "Trace"
 msgstr "Put"
 
@@ -243,7 +250,8 @@ msgstr "Neograničeno zahteva"
 msgid "User"
 msgstr "Korisnik"
 
-#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
+#: ../src/gnome-nettool.glade.h:52
+#: ../src/main.c:984
 msgid "Whois"
 msgstr "Ko-je (Whois)"
 
@@ -475,15 +483,16 @@ msgstr "UREĐAJ"
 msgid "Send a ping to a network address"
 msgstr "Pošalji ping na mrežnu adresu"
 
-#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
+#: ../src/main.c:86
+#: ../src/main.c:94
+#: ../src/main.c:98
+#: ../src/main.c:102
 msgid "HOST"
 msgstr "RAČUNAR"
 
 #: ../src/main.c:89
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"Preuzmi podatke o stanju mreže.  Dopuštene opcije su: route, active, "
-"multicast."
+msgstr "Preuzmi podatke o stanju mreže.  Dopuštene opcije su: route, active, multicast."
 
 #: ../src/main.c:90
 msgid "COMMAND"
@@ -519,11 +528,8 @@ msgstr "DOMEN"
 
 #: ../src/main.c:127
 #, c-format
-msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
-"installed"
-msgstr ""
-"Datoteka %s ne postoji, proverite da li je gnome-netinfo pravilno instaliran "
+msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
+msgstr "Datoteka %s ne postoji, proverite da li je gnome-netinfo pravilno instaliran "
 
 #: ../src/main.c:346
 msgid ""
@@ -541,7 +547,8 @@ msgstr ""
 "Unesite mrežnu adresu do koje da tražim putanju.\n"
 "Na primer: www.domen.co.yu ili 192.168.2.1"
 
-#: ../src/main.c:516 ../src/netstat.c:443
+#: ../src/main.c:516
+#: ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protokol"
 
@@ -568,6 +575,54 @@ msgid ""
 msgstr ""
 "Unesite mrežnu adresu na kojoj da traži otvorene portove.\n"
 "Na primer: www.domen.co.yu ili 192.168.2.1"
+
+#: ../src/main.c:718
+msgid "Default Information"
+msgstr "Podrazumevani podaci"
+
+#: ../src/main.c:719
+msgid "Internet Address"
+msgstr "Internet adresa"
+
+#: ../src/main.c:720
+msgid "Canonical Name"
+msgstr "Kanoničko ime"
+
+#: ../src/main.c:721
+msgid "CPU / OS Type"
+msgstr "Tip procesora / sistem"
+
+#: ../src/main.c:722
+msgid "Mailbox Exchange"
+msgstr "Razmena e-pošte"
+
+#: ../src/main.c:723
+msgid "Mailbox Information"
+msgstr "Podaci o e-pošti"
+
+#: ../src/main.c:724
+msgid "Name Server"
+msgstr "Server imena"
+
+#: ../src/main.c:725
+msgid "Host name for Address"
+msgstr "Ime računara i adresa"
+
+#: ../src/main.c:726
+msgid "Start-of-authority"
+msgstr "Zaglavlje autoriteta"
+
+#: ../src/main.c:727
+msgid "Text Information"
+msgstr "Tekstualne podaci"
+
+#: ../src/main.c:728
+msgid "Well Known Services"
+msgstr "Poznati servisi"
+
+#: ../src/main.c:729
+msgid "Any / All Information"
+msgstr "Svi podaci"
 
 #: ../src/main.c:813
 msgid ""
@@ -617,7 +672,8 @@ msgstr "Izvorni IP"
 msgid "Port/Service"
 msgstr "Port/usluga"
 
-#: ../src/netstat.c:466 ../src/scan.c:312
+#: ../src/netstat.c:466
+#: ../src/scan.c:312
 msgid "State"
 msgstr "Stanje"
 
@@ -637,7 +693,8 @@ msgstr "Mrežni izlaz"
 msgid "Netmask"
 msgstr "Mrežna maska"
 
-#: ../src/netstat.c:634 ../src/netstat.c:741
+#: ../src/netstat.c:634
+#: ../src/netstat.c:741
 msgid "Interface"
 msgstr "Uređaj"
 
@@ -673,7 +730,8 @@ msgstr "Uređaj\tČlan\tGrupa\n"
 msgid "A network address was not specified"
 msgstr "Mrežna adresa nije naznačena"
 
-#: ../src/nettool.c:200 ../src/nettool.c:209
+#: ../src/nettool.c:200
+#: ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
 msgstr "Unesite ispravnu mrežnu adresu pa pokušajte ponovo."
 
@@ -834,9 +892,7 @@ msgstr "Čvor\tIme računara\tIP\tVreme 1\tVreme 2\n"
 
 #: ../src/utils.c:227
 #, c-format
-msgid ""
-"In order to use this feature of the program, %s must be installed in your "
-"system"
+msgid "In order to use this feature of the program, %s must be installed in your system"
 msgstr "Da biste koristili ovu mogućnost programa, %s mora biti instaliran na sistemu"
 
 #: ../src/gnome-nettool.desktop.in.in.h:2
@@ -860,18 +916,12 @@ msgstr "Dobavlja whois podatke za „%s“"
 
 #~ msgid "Packets loss:"
 #~ msgstr "Izgubljeni paketi:"
-
 #~ msgid "Packet loss:\t%s\n"
 #~ msgstr "Izgubljeni paketi:\t%s\n"
-
 #~ msgid "%s: Command not found"
 #~ msgstr "%s: naredba nije nađena"
-
 #~ msgid "Network Information Tools"
 #~ msgstr "Alati za podatke o mreži"
-
 #~ msgid "Network Tools - Devices"
 #~ msgstr "Mrežni alati — uređaji"
 
-#~ msgid "Network Information"
-#~ msgstr "Podaci o mreži"
