@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.dz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-02 04:19+0000\n"
-"PO-Revision-Date: 2007-05-30 00:02+0530\n"
-"Last-Translator: Tshewang Norbu <bumthap2006@hotmail.com>\n"
+"POT-Creation-Date: 2008-05-02 23:19+0000\n"
+"PO-Revision-Date: 2008-09-23 10:39+0530\n"
+"Last-Translator: Dawa pemo <daws_403@hotmail.com>\n"
 "Language-Team: DZONGKHA <pgeyleg@dit.gov.bt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,9 +22,22 @@ msgstr ""
 msgid "translator-credits"
 msgstr "ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: <pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>"
 
-#: ../src/callbacks.c:333
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:328
+#: ../src/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "ཡོངས་འབྲེལ་ལག་ཆས།"
+
+#: ../src/callbacks.c:334
 msgid "Graphical user interface for common network utilities"
 msgstr "མཐུན་མོང་ཡོངས་འབྲེལ་གྱི་ སྤྱོད་ཆས་ཚུ་གི་དོན་ལུ་ ཚད་རིས་ལག་ལེན་པའི་ངོས་འདྲ་བ།"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:445
+#, c-format
+msgid "%s - Network Tools"
+msgstr "%s - ཡོངས་འབྲེལ་ལག་ཆས་ "
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0.0"
@@ -280,7 +293,7 @@ msgstr "ཨེམ་ཨེསི།"
 
 #: ../src/gnome-nettool.glade.h:63
 msgid "requests"
-msgstr "ཞུ་བ།"
+msgstr "ཞུ་བ་ "
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:57
@@ -559,6 +572,54 @@ msgstr ""
 "ཁ་ཕྱེ་ཡོད་མི་འདྲེན་ལམ་ཚུ་ ཞིབ་ལྟ་འབད་ནིའི་དོན་ལུ་ ཡོངས་འབྲེལ་གྱི་ ཁ་བྱང་བཙུགས།\n"
 "དཔེར་ན་: www.domain.com ཡང་ན་ ༡༩༢.༡༦༨.༢.༡"
 
+#: ../src/main.c:718
+msgid "Default Information"
+msgstr "སྔོན་སྒྲིག་ བརྡ་དོན་ "
+
+#: ../src/main.c:719
+msgid "Internet Address"
+msgstr "ཨིན་ཊར་ནེཊི་ བརྡ་དོན་ "
+
+#: ../src/main.c:720
+msgid "Canonical Name"
+msgstr "ཀེ་ནོ་ནི་ཀཱལ་ མིང་ "
+
+#: ../src/main.c:721
+msgid "CPU / OS Type"
+msgstr "སི་པུ་ཡུ་ / ཨོ་ཨེསི་  དབྱེ་བ་ "
+
+#: ../src/main.c:722
+msgid "Mailbox Exchange"
+msgstr "ཡིག་སྒྲོམ་ བརྗེ་སོར་ "
+
+#: ../src/main.c:723
+msgid "Mailbox Information"
+msgstr "ཡིག་སྒྲོམ་ བརྡ་དོན་ "
+
+#: ../src/main.c:724
+msgid "Name Server"
+msgstr "མིང་གི་ སར་བར་"
+
+#: ../src/main.c:725
+msgid "Host name for Address"
+msgstr "ཁ་བྱང་གི་དོན་ལུ་ ཧོསིཊི་གི་མིང་ "
+
+#: ../src/main.c:726
+msgid "Start-of-authority"
+msgstr "དབང་འཛིན་གྱི་ འགོ་བཙུགས་ "
+
+#: ../src/main.c:727
+msgid "Text Information"
+msgstr "ཚིག་ཡིག་ བརྡ་དོན་ "
+
+#: ../src/main.c:728
+msgid "Well Known Services"
+msgstr "ཡོགས་གྲགས་ཅན་གྱི་ ཞབསཏོག་ཚུ་ "
+
+#: ../src/main.c:729
+msgid "Any / All Information"
+msgstr "བརྡ་དོན་ གང་རུང་/ ག་ར་ "
+
 #: ../src/main.c:813
 msgid ""
 "Enter the network address to lookup.\n"
@@ -683,15 +744,15 @@ msgstr "ཌོ་མེན་གྱི་ཁ་བྱང་ཅིག་ གས�
 msgid "Please enter a valid domain address and try again."
 msgstr "ནུས་ལྡན་གྱི་ ཌོ་མེན་ཁ་བྱང་ཅིག་བཙུགས་ཞིནམ་ལས་ ལོག་སྟེ་འབད་རྩོལ་བསྐྱེད་གནང་།"
 
-#: ../src/nettool.c:395
+#: ../src/nettool.c:406
 msgid "Information not available"
 msgstr "བརྡ་དོན་མི་འཐོབ་པས།"
 
-#: ../src/nettool.c:513
+#: ../src/nettool.c:524
 msgid "Stop"
 msgstr "བཀག།"
 
-#: ../src/nettool.c:519
+#: ../src/nettool.c:530
 msgid "Run"
 msgstr "གཡོག་བཀོལ།"
 
@@ -709,23 +770,23 @@ msgstr "རིམ་ཨང.:"
 msgid "Sending ping requests to %s"
 msgstr "%s ལུ་ པིང་གི་ཞུ་བ་གཏང་དོ།"
 
-#: ../src/ping.c:574
+#: ../src/ping.c:568
 msgid "Bytes"
 msgstr "བཱའིཊིསི།"
 
-#: ../src/ping.c:581
+#: ../src/ping.c:575
 msgid "Source"
 msgstr "འབྱུང་ཁུངས།"
 
-#: ../src/ping.c:589
+#: ../src/ping.c:583
 msgid "Seq"
 msgstr "འབྱུང་རིམ།"
 
-#: ../src/ping.c:599
+#: ../src/ping.c:593
 msgid "Time"
 msgstr "དུས་ཚོད།"
 
-#: ../src/ping.c:607
+#: ../src/ping.c:601
 msgid "Units"
 msgstr "ཆ་ཕྲན།"
 
@@ -733,37 +794,37 @@ msgstr "ཆ་ཕྲན།"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:633
+#: ../src/ping.c:627
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "བའིཊིསི་\tSource\tSeq\tTime\tUnits\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:648
+#: ../src/ping.c:642
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "ཉུང་མཐའི་དུས་ཚོད་:\t%s ms\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:643
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "ཆ་སྙོམས་དུས་ཚོད་:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:644
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "མང་མཐའི་དུས་ཚོད་:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:646
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "འཕྲིན་ཚན་སྤེལ་བཀྲམ་འབད་ཡོདཔ་:\t%s\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:648
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "འཕྲིན་ཚན་ཐོབ་ཡོདཔ་:\t%s\n"
 
-#: ../src/ping.c:657
+#: ../src/ping.c:651
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "མཐར་འཁྱོལ་ཅན་གྱི་འཕྲིན་ཚན་ཚུ:\t%s\n"
@@ -797,23 +858,23 @@ msgstr "འདྲེན་ལམ་\tState\tService\n"
 msgid "Tracing route to %s"
 msgstr "%sལུ་ འགྲུལ་ལམ་རྗེས་འཚོལ་འབད་དོ།"
 
-#: ../src/traceroute.c:271
+#: ../src/traceroute.c:265
 msgid "Hop"
 msgstr "ཧོཔ།"
 
-#: ../src/traceroute.c:279
+#: ../src/traceroute.c:273
 msgid "Hostname"
 msgstr "ཧོསིཊི་ནེམ"
 
-#: ../src/traceroute.c:287
+#: ../src/traceroute.c:281
 msgid "IP"
 msgstr "ཨའི་པི།"
 
-#: ../src/traceroute.c:298
+#: ../src/traceroute.c:292
 msgid "Time 1"
 msgstr "དུས་ཚོད་ ༡།"
 
-#: ../src/traceroute.c:308
+#: ../src/traceroute.c:302
 msgid "Time 2"
 msgstr "དུས་ཚོད་ ༢།"
 
@@ -821,7 +882,7 @@ msgstr "དུས་ཚོད་ ༢།"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
+#: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "ཧོཔ་\tHostname\tIP\tTime 1\tTime 2\n"
 
@@ -830,13 +891,9 @@ msgstr "ཧོཔ་\tHostname\tIP\tTime 1\tTime 2\n"
 msgid "In order to use this feature of the program, %s must be installed in your system"
 msgstr "ལས་རིམ་འདི་གི་ཁྱད་རྣམ་འདི་ ལག་ལེན་འཐབ་ནིའི་དོན་ལུ་ ཁྱོད་ཀྱི་རིམ་ལུགས་ནང་%s གཞི་བཙུགས་འབད་དགོ"
 
-#: ../src/gnome-nettool.desktop.in.in.h:1
-msgid "Network Information Tools"
-msgstr "ཡོངས་འབྲེལ་བརྡ་དོན་ལག་ཆས།"
-
 #: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "Network Tools"
-msgstr "ཡོངས་འབྲེལ་ལག་ཆས།"
+msgid "View information about your network"
+msgstr "ཁྱོད་རའི་ ཡོངས་འབྲེལ་གྱི་དོན་ལུ་ བརྡ་དོན་ བལྟ་ "
 
 #: ../src/finger.c:62
 #, c-format
@@ -853,6 +910,8 @@ msgstr "\"%s\"གི་སྐོར་ལས་ ལག་ལེན་པ་ཆ�
 msgid "Getting the whois information of %s"
 msgstr "%sགི་ ཝུ་ཨིསི་བརྡ་དོན་དེ་ལེན་དོ།"
 
+#~ msgid "Network Information Tools"
+#~ msgstr "ཡོངས་འབྲེལ་བརྡ་དོན་ལག་ཆས།"
 #~ msgid "Packets loss:"
 #~ msgstr "འཕྲིན་ཚན་བརླག་སྟོར་:"
 #~ msgid "Packet loss:\t%s\n"
@@ -861,6 +920,4 @@ msgstr "%sགི་ ཝུ་ཨིསི་བརྡ་དོན་དེ་ལ
 #~ msgstr "%s: བརྡ་བཀོད་མ་ཐོབ།"
 #~ msgid "Network Tools - Devices"
 #~ msgstr "ཡོངས་འབྲེལ་ལག་ཆས་ - ཐབས་འཕྲུལ།"
-#~ msgid "Network Information"
-#~ msgstr "ཡོངས་འབྲེལ་བརྡ་དོན།"
 
