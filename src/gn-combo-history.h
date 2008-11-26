@@ -20,7 +20,7 @@
 #define __GN_COMBO_HISTORY_H__
 
 #include <glib-object.h>
-#include <gtk/gtkcombobox.h>
+#include <gtk/gtk.h>
 
 #define GN_TYPE_COMBO_HISTORY            (gn_combo_history_get_type ())
 #define GN_COMBO_HISTORY(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GN_TYPE_COMBO_HISTORY, GnComboHistory))
