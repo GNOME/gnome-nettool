@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-10 10:22+0100\n"
-"PO-Revision-Date: 2008-02-10 10:28+0100\n"
+"POT-Creation-Date: 2008-12-03 03:07+0100\n"
+"PO-Revision-Date: 2008-12-03 03:07+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -107,7 +107,7 @@ msgid "Display:"
 msgstr "Display:"
 
 #: ../src/gnome-nettool.glade.h:18
-#: ../src/main.c:868
+#: ../src/main.c:870
 msgid "Finger"
 msgstr "Finger"
 
@@ -128,7 +128,7 @@ msgid "Link speed:"
 msgstr "Länkhastighet:"
 
 #: ../src/gnome-nettool.glade.h:23
-#: ../src/main.c:782
+#: ../src/main.c:784
 msgid "Lookup"
 msgstr "Uppslagning"
 
@@ -251,7 +251,7 @@ msgid "User"
 msgstr "Användare"
 
 #: ../src/gnome-nettool.glade.h:52
-#: ../src/main.c:984
+#: ../src/main.c:986
 msgid "Whois"
 msgstr "Whois"
 
@@ -595,39 +595,41 @@ msgstr "Kanoniskt namn"
 msgid "CPU / OS Type"
 msgstr "Processor / Operativsystemstyp"
 
-#: ../src/main.c:722
-msgid "Mailbox Exchange"
-msgstr "Postlådeutväxling"
-
+#. When asking for MX record in DNS context
 #: ../src/main.c:723
-msgid "Mailbox Information"
-msgstr "Postlådeinformation"
+msgid "Mailbox Exchange"
+msgstr "Mailbox Exchange"
 
 #: ../src/main.c:724
+msgid "Mailbox Information"
+msgstr "Mailbox Information"
+
+#. When asking for NS record in DNS context
+#: ../src/main.c:726
 msgid "Name Server"
 msgstr "Namnserver"
 
-#: ../src/main.c:725
+#: ../src/main.c:727
 msgid "Host name for Address"
 msgstr "Värdnamn för adress"
 
-#: ../src/main.c:726
+#: ../src/main.c:728
 msgid "Start-of-authority"
 msgstr "SOA-post"
 
-#: ../src/main.c:727
+#: ../src/main.c:729
 msgid "Text Information"
 msgstr "Textinformation"
 
-#: ../src/main.c:728
+#: ../src/main.c:730
 msgid "Well Known Services"
 msgstr "Välkända tjänster"
 
-#: ../src/main.c:729
+#: ../src/main.c:731
 msgid "Any / All Information"
 msgstr "Viss / All information"
 
-#: ../src/main.c:813
+#: ../src/main.c:815
 msgid ""
 "Enter the network address to lookup.\n"
 "For example: www.domain.com or 192.168.2.1"
@@ -635,11 +637,11 @@ msgstr ""
 "Ange nätverksadressen att slå upp.\n"
 "Till exempel www.domän.se eller 192.168.2.1"
 
-#: ../src/main.c:902
+#: ../src/main.c:904
 msgid "Enter the user to finger."
 msgstr "Ange användaren att söka efter fingerinformation om."
 
-#: ../src/main.c:929
+#: ../src/main.c:931
 msgid ""
 "Enter the network address to finger that user.\n"
 "For example: auth.domain.com or 192.168.2.1"
@@ -647,7 +649,7 @@ msgstr ""
 "Ange nätverksadressen för att hämta fingerinformation om användaren.\n"
 "Till exempel: www.domän.se eller 192.168.2.1"
 
-#: ../src/main.c:1016
+#: ../src/main.c:1018
 msgid ""
 "Enter a domain address to lookup its whois information.\n"
 "For example: www.domain.com or 192.168.2.1"
