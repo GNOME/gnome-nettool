@@ -719,8 +719,10 @@ nettool_lookup_setup_combo_type (Netinfo *lookup)
 		N_("Internet Address"),
 		N_("Canonical Name"),
 		N_("CPU / OS Type"),
+		/* When asking for MX record in DNS context */
 		N_("Mailbox Exchange"),
 		N_("Mailbox Information"),
+		/* When asking for NS record in DNS context */
 		N_("Name Server"),
 		N_("Host name for Address"),
 		N_("Start-of-authority"),
