@@ -321,7 +321,8 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 
 	parent = (GtkWindow *) data;
 
-	g_sprintf (copyright, "Copyright \xc2\xa9 2003-2004 %s", "Germán Poo Caamaño");
+	/* Translators: %s is the name of the copyright holder */
+	g_sprintf (copyright, _("Copyright \xc2\xa9 2003-2008 %s"), "Germán Poo Caamaño");
 	
 	gtk_show_about_dialog (parent,
 			       /* Dear translator: This is the name of the application */
