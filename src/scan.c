@@ -21,6 +21,7 @@
 
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
+#include <glib/gprintf.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -168,7 +169,8 @@ scan_do (Netinfo * netinfo)
 					service_name = g_strdup (_("unknown"));
 				}
 
-				sprintf (buf, "%d open %s\n", i, service_name);
+				/* Translators: "open" is a network status and should be one word. */
+				g_sprintf (buf, "%d %s %s\n", i, _("open"), service_name);
 				g_free (service_name);
 				write (pfd[1], buf, strlen (buf));
 			}
