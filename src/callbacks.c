@@ -233,7 +233,7 @@ on_finger_activate (GtkWidget * widget, gpointer data)
 		text = g_strdup (gtk_entry_get_text (entry_host));
 		g_strstrip (text);
 
-		if (g_strcasecmp (text, "") != 0)
+		if (strlen(text) > 0)
 			gn_combo_history_add (finger->history, text);
 		
 		g_free (text);
@@ -243,7 +243,7 @@ on_finger_activate (GtkWidget * widget, gpointer data)
 		text = g_strdup (gtk_entry_get_text (entry_host));
 		g_strstrip (text);
 		
-		if (g_strcasecmp (text, "") != 0)
+		if (strlen(text) > 0)
 			gn_combo_history_add (finger->history_user, text);
 		
 		g_free (text);
