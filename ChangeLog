@@ -1,5 +1,10 @@
 2008-12-03  German Poo-Caamano <gpoo@gnome.org>
 
+	* src/finger.c: Fixed #549588.  Try to use pinky instead of finger. Use
+	  finger as fallback. It reduces one dependency on Linux systems.
+
+2008-12-03  German Poo-Caamano <gpoo@gnome.org>
+
 	* src/callbacks.c: Fixed #560435.  Removed deprecated symbols
 	  from glib (Maxim Ermilov).
 

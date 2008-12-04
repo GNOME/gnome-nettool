@@ -43,6 +43,7 @@ finger_do (Netinfo * netinfo)
 	const gchar *user = NULL;
 	gchar *command = NULL;
 	gchar *program = NULL;
+	gchar *program_name = NULL;
 	GtkWidget *parent;
 
 	gchar **command_line;
@@ -79,7 +80,14 @@ finger_do (Netinfo * netinfo)
 
 	parent = gtk_widget_get_toplevel (netinfo->output);
 	
-	program = util_find_program_dialog ("finger", parent);
+	program = util_find_program_in_path ("pinky", NULL);
+
+	if (program != NULL) {
+		program_name = g_strdup ("pinky");
+	} else {
+		program = util_find_program_dialog ("finger", parent);
+		program_name = g_strdup ("finger");
+	}
 
 	if (program != NULL) {
 		/* possible arguments are:
@@ -108,7 +116,7 @@ finger_do (Netinfo * netinfo)
 		command_line = g_new (gchar *, num_terms + 1);
 		i = 0;
 		command_line[i++] = g_strdup (program);
-		command_line[i++] = g_strdup ("finger");
+		command_line[i++] = g_strdup (program_name);
 		if (command_options != NULL) {
 			for (j = 0; command_options[j] != NULL; j++)
 				command_line[i++] = g_strdup (command_options[j]);
