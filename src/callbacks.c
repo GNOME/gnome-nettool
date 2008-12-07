@@ -312,7 +312,12 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 		"Germán Poo Caamaño <gpoo@ubiobio.cl>", 
 		"William Jon McCann <mccann@jhu.edu>",
 		"Carlos Garcia Campos <carlosgc@gnome.org>",
-		"Rodrigo Moya <rodrigo@gnome-db.org>", NULL
+		"Rodrigo Moya <rodrigo@gnome-db.org>", 
+		NULL
+	};
+	const gchar *artists[] = { 
+		"Hylke Bons <h.bons@student.rug.nl>", 
+		NULL
 	};
 	const gchar *documentors[] = { NULL };
 	const gchar *translator_credits = _("translator-credits");
@@ -326,14 +331,20 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 	
 	gtk_show_about_dialog (parent,
 			       /* Dear translator: This is the name of the application */
+			       "program-name", _("Network Tools"),
 			       "name", _("Network Tools"),
-			       "logo-icon-name", "gnome-nettool",
 			       "authors", authors,
-			       "documenters", documentors,
-			       "version", VERSION,
-			       "copyright", copyright,
 			       "comments", _("Graphical user interface for common network utilities"),
-			       "translator-credits", strcmp (translator_credits, "translator_credits") != 0 ? translator_credits : NULL,
+			       "copyright", copyright,
+			       "artists", artists,
+			       "documenters", documentors,
+			       "license", "GPL 2+",
+			       "logo-icon-name", "gnome-nettool",
+			       "translator-credits", translator_credits,
+			       "version", VERSION,
+			       /* FIXME:  website should be updated, it's even yet named gnome-network */
+			       "website", "http://www.gnome.org/projects/gnome-network/",
+			       "wrap-license", TRUE,
 			       NULL);
 }
 
