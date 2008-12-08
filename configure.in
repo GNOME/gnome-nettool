@@ -36,7 +36,8 @@ PKG_CHECK_MODULES(NETTOOL,
 		  gtk+-2.0       >= $GTK_REQUIRED 
 		  libglade-2.0   >= $LIBGLADE_REQUIRED 
 		  gconf-2.0      >= $GCONF_REQUIRED
-		  gnome-doc-utils)
+		  gnome-doc-utils
+		  libgtop-2.0)
 AC_SUBST(NETTOOL_CFLAGS)
 AC_SUBST(NETTOOL_LIBS)
 

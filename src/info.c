@@ -34,10 +34,13 @@
 #include <sys/socket.h>	/* basic socket definitions */
 #include <arpa/inet.h>	/* inet(3) functions */
 #include <sys/un.h>	/* for Unix domain sockets */
-#include <ifaddrs.h> /* getifaddrs () funtion */
 #include <sys/ioctl.h>
 #include <stdlib.h>
 #include <net/if.h>
+
+#include <glibtop.h>
+#include <glibtop/netlist.h>
+#include <glibtop/netload.h>
 
 #include "info.h"
 #include "utils.h"
@@ -213,71 +216,44 @@ info_nic_update_stats (gpointer data)
 {
 	Netinfo *info = data;
 	GtkTreeModel *model;
-	/*
-	gchar mtu[10], met[10], rx[10], rx_error[10], rx_drop[10], rx_ovr[10];
-	gchar tx[10], tx_error[10], tx_drop[10], tx_ovr[10]; 
-	*/
-	gchar iface[30]; /*, flags[30]; */
-	gchar rx_bytes[16], rx_pkt[10], rx_error[10], rx_drop[10], rx_fifo[10];
-	gchar frame[10], compressed[10], multicast[10]; 
-	gchar tx_bytes[16], tx_pkt[10], tx_error[10], tx_drop[10], tx_fifo[10];
-	gchar collissions[10];
-
-	GIOChannel *io = NULL;
-	gchar *line;
-	gboolean title = TRUE;
-	const gchar *text;
+	gchar rx_pkt[10], rx_error[10];
+	gchar tx_pkt[10], tx_error[10];
+	gchar collisions[10];
+	const gchar *nic;
 	gchar *text_tx_bytes, *text_rx_bytes;
-		
+
+	glibtop_netload netload;
+
 	g_return_val_if_fail (info != NULL, FALSE);
 
 	model = gtk_combo_box_get_model (GTK_COMBO_BOX (info->combo));
-	text = info_get_nic (info);
-	if (!text)
+	nic = info_get_nic (info);
+	if (!nic)
 		return FALSE;
-	
-#if defined(__linux__)
-	io = g_io_channel_new_file ("/proc/net/dev", "r", NULL);
-	
-	while (g_io_channel_read_line (io, &line, NULL, NULL, NULL) == G_IO_STATUS_NORMAL) {
-		if (title) {
-			title = FALSE;
-			g_free (line);
-			continue;
-		}
-		line = g_strdelimit (line, ":", ' ');
-		sscanf (line, "%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s", iface,
-			rx_bytes, rx_pkt, rx_error, rx_drop, rx_fifo, frame, 
-		    compressed, multicast, 
-		    tx_bytes, tx_pkt, tx_error, tx_drop, tx_fifo, collissions);
 
-		if (g_ascii_strcasecmp (iface, text) == 0) {
-			/*
-			gtk_label_set_text (GTK_LABEL (info->tx), tx);
-			gtk_label_set_text (GTK_LABEL (info->tx_errors), tx_error);
-			gtk_label_set_text (GTK_LABEL (info->rx), rx);
-			gtk_label_set_text (GTK_LABEL (info->rx_errors), rx_error);
-			*/
-			text_tx_bytes = util_legible_bytes (tx_bytes);
-			text_rx_bytes = util_legible_bytes (rx_bytes);
-			
-			gtk_label_set_text (GTK_LABEL (info->tx_bytes), text_tx_bytes);
-			gtk_label_set_text (GTK_LABEL (info->tx), tx_pkt);
-			gtk_label_set_text (GTK_LABEL (info->tx_errors), tx_error);
-			gtk_label_set_text (GTK_LABEL (info->rx_bytes), text_rx_bytes);
-			gtk_label_set_text (GTK_LABEL (info->rx), rx_pkt);
-			gtk_label_set_text (GTK_LABEL (info->rx_errors), rx_error);
-			gtk_label_set_text (GTK_LABEL (info->collisions), collissions);
-			
-			g_free (text_tx_bytes);
-			g_free (text_rx_bytes);
-			}
-		g_free (line);
-		/*info_free_nic_info (ninfo);*/
-	}
+	glibtop_get_netload (&netload, nic);
+
+	text_rx_bytes = util_legible_bytes (netload.bytes_in);
+	text_tx_bytes = util_legible_bytes (netload.bytes_out);
+
+	g_sprintf (rx_pkt, "%lld", netload.packets_in);
+	g_sprintf (tx_pkt, "%lld", netload.packets_out);
+
+	g_sprintf (rx_error, "%lld", netload.errors_in);
+	g_sprintf (tx_error, "%lld", netload.errors_out);
+
+	g_sprintf (collisions, "%lld", netload.collisions);
 	
-	g_io_channel_unref (io);
-#endif /* defined(__linux__) */
+	gtk_label_set_text (GTK_LABEL (info->tx_bytes), text_tx_bytes);
+	gtk_label_set_text (GTK_LABEL (info->tx), tx_pkt);
+	gtk_label_set_text (GTK_LABEL (info->tx_errors), tx_error);
+	gtk_label_set_text (GTK_LABEL (info->rx_bytes), text_rx_bytes);
+	gtk_label_set_text (GTK_LABEL (info->rx), rx_pkt);
+	gtk_label_set_text (GTK_LABEL (info->rx_errors), rx_error);
+	gtk_label_set_text (GTK_LABEL (info->collisions), collisions);
+	
+	g_free (text_tx_bytes);
+	g_free (text_rx_bytes);
 
 	return TRUE;
 }
@@ -313,13 +289,13 @@ info_nic_changed (GtkWidget *combo, gpointer data)
 }
 
 static gint
-info_ip6_masklen (struct in6_addr netmask)
+info_ip6_masklen (guint8 *netmask)
 {
 	gint len = 0;
 	guchar val;
 	guchar *pnt;
 
-	pnt = (guchar *) & netmask;
+	pnt = (guchar *) netmask;
 
 	while ((*pnt == 0xff) && len < 128) {
 		len += 8;
@@ -354,50 +330,6 @@ info_ip_addr_free (InfoIpAddr *ip)
 	g_free (ip);
 }
 
-static InfoIpAddr *
-info_ip6_construct_address (const struct ifaddrs *ifr6)
-{
-	struct sockaddr_in6 *sinptr6;
-	gchar ip_addr[INFO_ADDRSTRLEN], *scope;
-	gint prefix;
-	InfoIpAddr *ip6;
-
-	sinptr6 = (struct sockaddr_in6 *) ifr6->ifa_addr;
-	inet_ntop (AF_INET6, &sinptr6->sin6_addr, ip_addr, INFO_ADDRSTRLEN);
-
-	if (IN6_IS_ADDR_LINKLOCAL (&sinptr6->sin6_addr))
-		scope = g_strdup ("Link");
-	else if (IN6_IS_ADDR_SITELOCAL (&sinptr6->sin6_addr))
-		scope = g_strdup ("Site");
-	else if (IN6_IS_ADDR_GLOBAL (&sinptr6->sin6_addr))
-		scope = g_strdup ("Global");
-	else if (IN6_IS_ADDR_MC_ORGLOCAL (&sinptr6->sin6_addr))
-		scope = g_strdup ("Global");
-	else if (IN6_IS_ADDR_V4COMPAT (&sinptr6->sin6_addr))
-		scope = g_strdup ("Global");
-	else if (IN6_IS_ADDR_MULTICAST (&sinptr6->sin6_addr))
-		scope = g_strdup ("Global");
-	else if (IN6_IS_ADDR_UNSPECIFIED (&sinptr6->sin6_addr))
-		scope = g_strdup ("Global");
-	else if (IN6_IS_ADDR_LOOPBACK (&sinptr6->sin6_addr))
-		scope = g_strdup ("Host");
-	else
-		scope = g_strdup (_("Unknown"));
-
-	sinptr6 = (struct sockaddr_in6 *) ifr6->ifa_netmask;
-	prefix = info_ip6_masklen (sinptr6->sin6_addr);
-
-	ip6 = g_new0 (InfoIpAddr, 1);
-	ip6->ip_addr = g_strdup (ip_addr);
-	ip6->ip_prefix = g_strdup_printf ("%d", prefix);
-	ip6->ip_bcast = g_strdup ("");
-	ip6->ip_scope = g_strdup (scope);
-
-	g_free (scope);
-
-	return (ip6);
-}
-
 static void
 info_setup_configure_button (Netinfo *info, gboolean enable)
 {
@@ -414,191 +346,85 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 {
 	GtkTreeModel *model;
 	GtkTreeIter   iter;
-	gint sockfd, len;
-	gchar *ptr, buf[2048], dst[INFO_ADDRSTRLEN];
-	struct ifconf ifc;
-	struct ifreq *ifr = NULL, ifrcopy;
-	struct ifaddrs *ifa0, *ifr6;
-	struct sockaddr_in *sinptr;
+	gchar dst[INFO_ADDRSTRLEN];
 	InfoIpAddr *ip;
-	gint flags;
-	#ifdef __linux__
+	gint prefix;
+	struct in_addr addr, subnet;
+	gchar *address_string, *subnet_string;
+	gchar address6_string[INET6_ADDRSTRLEN];
+	glibtop_netload netload;
+#ifdef __linux__
 	mii_data_result data;
-	#endif
+#endif
 
-	getifaddrs (&ifa0);
+	gtk_label_set_text (GTK_LABEL (info->hw_address), NOT_AVAILABLE);
+	gtk_label_set_text (GTK_LABEL (info->mtu), NOT_AVAILABLE);
+	gtk_label_set_text (GTK_LABEL (info->state), NOT_AVAILABLE);
+	gtk_label_set_text (GTK_LABEL (info->multicast), NOT_AVAILABLE);
+	gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
 
-	for (ifr6 = ifa0; ifr6; ifr6 = ifr6->ifa_next) {
-		if (strcmp (ifr6->ifa_name, nic) != 0) {
-			continue;
-		}
+	glibtop_get_netload (&netload, nic);
 
-		if (ifr6->ifa_addr == NULL) {
-			continue;
-		}
+	/* IPv6 */
+	/* FIXME: It shows only one IPv6 address. Bug #563768 */
+	inet_ntop (AF_INET6, netload.address6, address6_string, INET6_ADDRSTRLEN);
+	prefix = info_ip6_masklen (netload.prefix6);
 
-		switch (ifr6->ifa_addr->sa_family) {
+	ip = g_new0 (InfoIpAddr, 1);
+	ip->ip_addr = g_strdup (address6_string);
+	ip->ip_prefix = g_strdup_printf ("%d", prefix);
+	ip->ip_bcast = g_strdup ("");
 
-		case AF_INET6:
-			ip = info_ip6_construct_address (ifr6);
+	switch (netload.scope6) {
+		case GLIBTOP_IF_IN6_SCOPE_LINK:
+			ip->ip_scope = g_strdup ("Link");
+			break;
+		case GLIBTOP_IF_IN6_SCOPE_SITE:
+			ip->ip_scope = g_strdup ("Site");
+			break;
+		case GLIBTOP_IF_IN6_SCOPE_GLOBAL:
+			ip->ip_scope = g_strdup ("Global");
+			break;
+		case GLIBTOP_IF_IN6_SCOPE_HOST:
+			ip->ip_scope = g_strdup ("Host");
+			break;
+		case GLIBTOP_IF_IN6_SCOPE_UNKNOWN:
+			ip->ip_scope = g_strdup (_("Unknown"));
+			break;
+		default:
+			ip->ip_scope = g_strdup (_("Unknown"));
+			break;
+	}
 
-			model = gtk_tree_view_get_model (
-				GTK_TREE_VIEW (info->list_ip_addr));
+	model = gtk_tree_view_get_model (GTK_TREE_VIEW (info->list_ip_addr));
 
-			gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-			gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+	gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+	gtk_list_store_set (GTK_LIST_STORE (model), &iter,
 					    0, "IPv6",
 					    1, ip->ip_addr,
 					    2, ip->ip_prefix,
 					    3, ip->ip_bcast,
 					    4, ip->ip_scope,
 					    -1);
-			info_ip_addr_free (ip);
+	info_ip_addr_free (ip);
 
-			break;
-		case AF_INET:
-			/* Get the IPv4 address */
-			ip = g_new0 (InfoIpAddr, 1);
+	/* IPv4 */
+	addr.s_addr = netload.address;
+	subnet.s_addr = netload.subnet;
 
-			sinptr = (struct sockaddr_in *) ifr6->ifa_addr;
-			inet_ntop (AF_INET, &sinptr->sin_addr, dst, INFO_ADDRSTRLEN);
+	address_string = g_strdup (inet_ntoa (addr));
+	subnet_string  = g_strdup (inet_ntoa (subnet));	
+	
+	ip = g_new0 (InfoIpAddr, 1);
+	ip->ip_addr = g_strdup (address_string);
+	ip->ip_prefix = g_strdup (subnet_string);
+	/* FIXME: Get the broadcast address: Bug #563765 */
+	ip->ip_bcast = g_strdup ("");
 
-			ip->ip_addr = g_strdup (dst);
-			gtk_label_set_text (GTK_LABEL (info->ip_address), ip->ip_addr);
-			bzero (dst, INFO_ADDRSTRLEN);
+	model = gtk_tree_view_get_model (GTK_TREE_VIEW (info->list_ip_addr));
 
-			sockfd = socket (AF_INET, SOCK_DGRAM, 0);
-			ifc.ifc_len = sizeof (buf);
-			ifc.ifc_req = (struct ifreq *) buf;
-			ioctl (sockfd, SIOCGIFCONF, &ifc);
-
-#ifdef __linux__
-			data = mii_get_basic (nic);
-#endif
-
-			for (ptr = buf; ptr < buf + ifc.ifc_len;) {
-				ifr = (struct ifreq *) ptr;
-				len = sizeof (struct sockaddr);
-#ifdef HAVE_SOCKADDR_SA_LEN
-				if (ifr->ifr_addr.sa_len > len)
-					len = ifr->ifr_addr.sa_len;   /* length > 16 */
-				if((sizeof (ifr->ifr_name) + len)>sizeof(struct ifreq))
-				ptr += sizeof (ifr->ifr_name) + len;
-				else				
-				ptr += sizeof (struct ifreq);    /* for next one in buffer */
-#else
-				ptr += sizeof (struct ifreq);
-#endif
-
-				if (strcmp (ifr->ifr_name, nic) == 0) {
-					break;
-				}
-			}
-
-			ifrcopy = *ifr;
-			flags = ifrcopy.ifr_flags;
-
-			/*Get the Hardware Address */
-#ifdef SIOCGIFHWADDR
-			ioctl (sockfd, SIOCGIFHWADDR, &ifrcopy);
-			sinptr =
-				(struct sockaddr_in *) &ifrcopy.ifr_dstaddr;
-			g_sprintf (dst, "%02x:%02x:%02x:%02x:%02x:%02x",
-				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[0],
-				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[1],
-				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[2],
-				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[3],
-				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[4],
-				   (int) ((guchar *) &ifrcopy.ifr_hwaddr.sa_data)[5]);
-#else
-			g_sprintf (dst, NOT_AVAILABLE);
-#endif /* SIOCGIFHWADDR */
-
-			gtk_label_set_text (GTK_LABEL (info->hw_address), dst);
-
-			/* Get the netMask address */
-#ifdef SIOCGIFNETMASK
-			ioctl (sockfd, SIOCGIFNETMASK, &ifrcopy);
-
-			sinptr = (struct sockaddr_in *) &ifrcopy.ifr_addr;
-
-			/* sinptr =  (struct sockaddr_in *) &ifrcopy.ifr_netmask;*/
-			inet_ntop (AF_INET, &sinptr->sin_addr, dst, INFO_ADDRSTRLEN);
-#else
-			g_sprintf (dst, NOT_AVAILABLE);
-#endif /* SIOCGIFNETMASK */
-			ip->ip_prefix = g_strdup (dst);
-			gtk_label_set_text (GTK_LABEL (info->netmask), ip->ip_prefix);
-			bzero (dst, INFO_ADDRSTRLEN);
-
-			/* Get the broadcast address */
-			ioctl (sockfd, SIOCGIFBRDADDR, &ifrcopy);
-			sinptr = (struct sockaddr_in *) &ifrcopy.ifr_broadaddr;
-			inet_ntop (AF_INET, &sinptr->sin_addr, dst, INFO_ADDRSTRLEN);
-			ip->ip_bcast = g_strdup (dst);
-			gtk_label_set_text (GTK_LABEL (info->broadcast), ip->ip_bcast);
-			bzero (dst, INFO_ADDRSTRLEN);
-
-			/* Get the MTU */
-			ioctl (sockfd, SIOCGIFMTU, &ifrcopy);
-			g_sprintf (dst, "%d", ifrcopy.ifr_mtu);
-			gtk_label_set_text (GTK_LABEL (info->mtu), dst);
-			bzero (dst, INFO_ADDRSTRLEN);
-
-			/* Get Flags to determine other properties */
-			ioctl (sockfd, SIOCGIFFLAGS, &ifrcopy);
-			flags = ifrcopy.ifr_flags;
-
-			/* Interface is up */
-			if (flags & IFF_UP) {
-				gtk_label_set_text (GTK_LABEL (info->state), _("Active"));
-			} else {
-				gtk_label_set_text (GTK_LABEL (info->state), _("Inactive"));
-			}
-
-			/* Is a loopback device */
-			if ((flags & IFF_LOOPBACK)) {
-				gtk_label_set_text (GTK_LABEL (info->hw_address), _("Loopback"));
-				gtk_label_set_text (GTK_LABEL (info->broadcast), " ");
-				ip->ip_bcast = g_strdup ("");
-				gtk_label_set_text (GTK_LABEL (info->link_speed), " ");
-				info_setup_configure_button (info, FALSE);
-#ifdef __linux__
-			} else {
-				if (data.has_data) {
-					gtk_label_set_text (GTK_LABEL (info->link_speed), data.media);
-				} else {
-					gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
-				}
-
-				info_setup_configure_button (info, TRUE);
-#endif
-			}
-
-			/* Supports multicast */
-			if (flags & IFF_MULTICAST) {
-				gtk_label_set_text (GTK_LABEL (info->multicast), _("Enabled"));
-			} else {
-				gtk_label_set_text (GTK_LABEL (info->multicast), _("Disabled"));
-			}
-
-			/* Interface is a point to point link */
-			if (flags & IFF_POINTOPOINT) {
-				ioctl (sockfd, SIOCGIFDSTADDR, &ifrcopy);
-				sinptr = (struct sockaddr_in *) &ifrcopy.ifr_dstaddr;
-
-				printf ("\tP-t-P: %s\n",
-					inet_ntop (AF_INET,
-						   &sinptr->sin_addr, dst,
-						   INFO_ADDRSTRLEN));
-			}
-			bzero (dst, INFO_ADDRSTRLEN);
-
-			model = gtk_tree_view_get_model (
-				GTK_TREE_VIEW (info->list_ip_addr));
-
-			gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-			gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+	gtk_list_store_append (GTK_LIST_STORE (model), &iter);
+	gtk_list_store_set (GTK_LIST_STORE (model), &iter,
 					    0, "IPv4",
 					    1, ip->ip_addr,
 					    2, ip->ip_prefix,
@@ -606,25 +432,72 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 					    4, "",
 					    -1);
 
-			info_ip_addr_free (ip);
+	g_free (address_string);
+	g_free (subnet_string);
+	info_ip_addr_free (ip);
 
-			break;
-		default:
-			gtk_label_set_text (GTK_LABEL (info->hw_address), NOT_AVAILABLE);
-			gtk_label_set_text (GTK_LABEL (info->ip_address), NOT_AVAILABLE);
-			gtk_label_set_text (GTK_LABEL (info->broadcast), NOT_AVAILABLE);
-			gtk_label_set_text (GTK_LABEL (info->netmask), NOT_AVAILABLE);
-			/*gtk_label_set_text (GTK_LABEL (info->dst_address), NOT_AVAILABLE);*/
-			gtk_label_set_text (GTK_LABEL (info->mtu), NOT_AVAILABLE);
-			gtk_label_set_text (GTK_LABEL (info->state), NOT_AVAILABLE);
-			gtk_label_set_text (GTK_LABEL (info->multicast), NOT_AVAILABLE);
-			gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
-			
-			break;
-		}
+
+	/* Get general information about the interface */
+
+	/* Get the Hardware Address */
+	if (netload.flags & (1L << GLIBTOP_NETLOAD_HWADDRESS)) {
+		g_sprintf (dst, "%02x:%02x:%02x:%02x:%02x:%02x",
+			   (int) ((guchar *) &netload.hwaddress)[0],
+			   (int) ((guchar *) &netload.hwaddress)[1],
+			   (int) ((guchar *) &netload.hwaddress)[2],
+			   (int) ((guchar *) &netload.hwaddress)[3],
+			   (int) ((guchar *) &netload.hwaddress)[4],
+			   (int) ((guchar *) &netload.hwaddress)[5]);
+	} else {
+		g_sprintf (dst, NOT_AVAILABLE);
+	}
+	gtk_label_set_text (GTK_LABEL (info->hw_address), dst);
+
+	/* Get the interface's Maximum Transfer Unit */
+	g_sprintf (dst, "%d", netload.mtu);
+	gtk_label_set_text (GTK_LABEL (info->mtu), dst);
+	bzero (dst, strlen(dst));
+
+
+	/* Get Flags to determine other properties */
+
+	/* Is the interface up? */
+	if (netload.if_flags & (1L << GLIBTOP_IF_FLAGS_UP)) {
+		gtk_label_set_text (GTK_LABEL (info->state), _("Active"));
+	} else {
+		gtk_label_set_text (GTK_LABEL (info->state), _("Inactive"));
 	}
 
-	freeifaddrs (ifa0);
+	/* Is this a loopback device? */
+	if (netload.if_flags & (1L << GLIBTOP_IF_FLAGS_LOOPBACK)) {
+		gtk_label_set_text (GTK_LABEL (info->hw_address), _("Loopback"));
+		ip->ip_bcast = g_strdup ("");
+		info_setup_configure_button (info, FALSE);
+	} else {
+		info_setup_configure_button (info, TRUE);
+	}
+
+	/* Does this interface supports multicast? */
+	if (netload.if_flags & (1L << GLIBTOP_IF_FLAGS_MULTICAST)) {
+		gtk_label_set_text (GTK_LABEL (info->multicast), _("Enabled"));
+	} else {
+		gtk_label_set_text (GTK_LABEL (info->multicast), _("Disabled"));
+	}
+
+	/* Get the Point-To-Point address if any */
+	/* FIXME: Bug #563767 */
+
+	/* Get the link negotiation speed.  Only available on Linux
+	 * systems, and lately only for with super user privileges
+	 * See Bug #387198 */
+#ifdef __linux__
+	data = mii_get_basic (nic);
+	if (data.has_data) {
+		gtk_label_set_text (GTK_LABEL (info->link_speed), data.media);
+	}
+#else
+	gtk_label_set_text (GTK_LABEL (info->link_speed), NOT_AVAILABLE);
+#endif
 }
 
 static gint *
@@ -637,35 +510,22 @@ static GList *
 info_get_interfaces (Netinfo *info)
 {
 	GList *items = NULL;
+	glibtop_netlist netlist;
+	gchar **devices;
 	gchar *iface;
-	struct ifaddrs *ifa0, *ifr;
-	gboolean ipv6 = FALSE;
+	gint i;
 
-	getifaddrs (&ifa0);
+	devices = glibtop_get_netlist(&netlist);
 
-	for (ifr = ifa0; ifr; ifr = ifr->ifa_next) {
-		iface = g_strdup (ifr->ifa_name);
-
-		if (((ifr->ifa_flags & IFF_UP) != 0) && ifr->ifa_addr &&
-		    (ifr->ifa_addr->sa_family == AF_INET6)) {
-			ipv6 = TRUE;
-		}
-
-		if (((ifr->ifa_flags & IFF_UP) != 0) &&
-		    (g_list_find_custom (items, iface, (GCompareFunc) compare) == NULL)) {
+	for(i = 0; i < netlist.number; ++i) {
+		iface = g_strdup (devices[i]);
+		if (g_list_find_custom (items, iface, 
+					           (GCompareFunc) compare) == NULL) {
 			items = g_list_append (items, iface);
 		}
 	}
 
-	freeifaddrs (ifa0);
-
-	if (ipv6) {
-		gtk_widget_show (info->ipv6_frame);
-		gtk_widget_hide (info->ipv4_frame);
-	} else {
-		gtk_widget_hide (info->ipv6_frame);
-		gtk_widget_show (info->ipv4_frame);
-	}
+	g_strfreev(devices);
 
 	return items;
 }
@@ -677,9 +537,6 @@ info_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 	GString *result;
 	const gchar *nic;
 	const gchar *hw_address;
-	const gchar *ip_address;
-	const gchar *broadcast;
-	const gchar *netmask;
 	const gchar *multicast;
 	const gchar *link_speed;
 	const gchar *state;
@@ -701,9 +558,6 @@ info_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 	nic = info_get_nic (netinfo);
 
 	hw_address = gtk_label_get_text (GTK_LABEL (netinfo->hw_address));
-	ip_address = gtk_label_get_text (GTK_LABEL (netinfo->ip_address));
-	netmask = gtk_label_get_text (GTK_LABEL (netinfo->netmask));
-	broadcast = gtk_label_get_text (GTK_LABEL (netinfo->broadcast));
 	multicast = gtk_label_get_text (GTK_LABEL (netinfo->multicast));
 	mtu = gtk_label_get_text (GTK_LABEL (netinfo->mtu));
 	link_speed = gtk_label_get_text (GTK_LABEL (netinfo->link_speed));
@@ -718,9 +572,6 @@ info_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 	/* The info output in a text format (to copy on clipboard) */
 	g_string_append_printf (result, _("Network device:\t%s\n"), nic);
 	g_string_append_printf (result, _("Hardware address:\t%s\n"), hw_address);
-	g_string_append_printf (result, _("IP address:\t%s\n"), ip_address);
-	g_string_append_printf (result, _("Netmask:\t%s\n"), netmask);
-	g_string_append_printf (result, _("Broadcast:\t%s\n"), broadcast);
 	g_string_append_printf (result, _("Multicast:\t%s\n"), multicast);
 	g_string_append_printf (result, _("MTU:\t%s\n"), mtu);
 	g_string_append_printf (result, _("Link speed:\t%s\n"), link_speed);

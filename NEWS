@@ -2,8 +2,11 @@ gnome-nettool 2.26.0,
 ---------------------------------
 
  - Removed warnings from the Glade UI (Diego Escalante)
- - #341070. Updated About dialog (Alejandro Andrés)
- - #549588. Use pinky instead of finger to reduce one dependency in
+ - #156176: Removed Linux-dependency on NIC Information through the
+            use of ligbtop instead of ioctl calls and reading from
+            /proc/net.
+ - #341070: Updated About dialog (Alejandro Andrés)
+ - #549588: Use pinky instead of finger to reduce one dependency in
             Linux systems (Germán Póo-Caamaño)
  - #560435: Removed deprecated symbols from glib (Maxim Ermilov)
  - #559852: Fixed unlocalized string in copyright (Claude Paroz)

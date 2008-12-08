@@ -26,6 +26,8 @@
 #include <glib/gi18n.h>
 #include <glade/glade.h>
 
+#include <glibtop.h>
+
 #include "callbacks.h"
 #include "ping.h"
 #include "traceroute.h"
@@ -254,7 +256,11 @@ main (int argc, char *argv[])
 
 	gtk_widget_show (window);
 
+	glibtop_init ();
+
 	gtk_main ();
+
+	glibtop_close ();
 
 	g_free (pinger);
 	g_free (tracer);
@@ -556,8 +562,7 @@ load_info_widgets_from_xml (GladeXML * xml)
 {
 	Netinfo      *info;
 	GtkTreeModel *model;
-	GtkSizeGroup *group;
-	GtkWidget    *label1, *label2;
+	GtkWidget    *label1;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -567,7 +572,6 @@ load_info_widgets_from_xml (GladeXML * xml)
 	info->running = FALSE;
 	info->combo = glade_xml_get_widget (xml, "info_combo");
 	info->ipv6_frame = glade_xml_get_widget (xml, "info_ipv6_frame");
-	info->ipv4_frame = glade_xml_get_widget (xml, "info_ipv4_frame");
 	info->progress_bar = glade_xml_get_widget (xml, "progress_bar");
 	info->page_label = glade_xml_get_widget (xml, "device");
 	info->hw_address = glade_xml_get_widget (xml, "info_hw_address");
@@ -600,13 +604,6 @@ load_info_widgets_from_xml (GladeXML * xml)
 	g_object_unref (model);
 	
 	info_list_ip_addr_add_columns (info->list_ip_addr);
-
-	label1 = glade_xml_get_widget (xml, "label_ip_address");
-	label2 = glade_xml_get_widget (xml, "label_hw_address");
-	group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
-	gtk_size_group_add_widget (group, label1);
-	gtk_size_group_add_widget (group, label2);
-	g_object_unref (group);
 
 	label1 = glade_xml_get_widget (xml, "info_combo_label");
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label1), info->combo);

@@ -79,7 +79,7 @@ struct _Netinfo {
 	/* extra definitions for info */
 	GtkWidget *combo;
 	GtkWidget *ipv6_frame;
-	GtkWidget *ipv4_frame;
+	/* GkWidget *ipv4_frame; */
 	GtkWidget *list_ip_addr;
 	GtkWidget *nic;
 	GtkWidget *hw_address;

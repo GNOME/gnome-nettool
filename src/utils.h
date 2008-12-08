@@ -40,4 +40,4 @@ gint g_sprintf (gchar *str, gchar const *fmt, ...);
 GString * util_tree_model_to_string (GtkTreeView *treeview);
 gchar * util_find_program_in_path (const gchar * program, const gchar * path);
 gchar * util_find_program_dialog (gchar * program, GtkWidget *parent);
-gchar * util_legible_bytes (gchar *bytes);
+gchar * util_legible_bytes (guint64 bytes);

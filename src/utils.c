@@ -234,13 +234,13 @@ util_find_program_dialog (gchar * program, GtkWidget *parent) {
 }
 
 gchar *
-util_legible_bytes (gchar *bytes)
+util_legible_bytes (guint64 bytes)
 {
-	unsigned long long rx, short_rx;
+	guint64 rx, short_rx;
 	const gchar *unit = "B";
 	gchar *result;
 	
-	sscanf (bytes, "%lld", &rx);
+	rx = bytes;
 	short_rx = rx * 10;  
 
 	if (rx > 1125899906842624ull) {

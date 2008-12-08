@@ -1,3 +1,26 @@
+2008-12-08  German Poo-Caamano <gpoo@gnome.org>
+
+	* configure.in: Fixed #156176 and #340195. Added dependency of 
+	  libgtop-2.0 for Net information (load and statistics).
+	* src/main.c (main): Added initialization of libgtop, removed 
+	  IPv4 only frame and related groups.
+	* src/info.c: Removed dependency of ifaddrs (Linux specific).
+	  (info_nic_update_stats): Use of netload (libgtop) instead of
+	  reading the output from /proc/net.
+	  (info_ip6_masklen): Adapted the argument according the use
+	  of libgtop instead of struct in6_addr.
+	  (info_ip6_construct_address): Dropped function, IPv6 information
+	  now is read from glibtop_netload.
+	  (info_get_nic_information): Replaced ioctl's call by information
+	  provided by glibtop_netload.  Still there are some minor regressions.
+	  Fixed compilation error for non-Linux platforms.
+	  (info_get_interfaces): Replaced getifaddrs call by 
+	  glibtop_get_netlist, which is multiplatform.
+	* src/utils.[ch] (util_legible_bytes): Changed argument's type, 
+	  from gchar to guint64.
+	* src/gnome-nettool.glade: Remove frame 'IPv4 only'.
+	* src/nettool.h: Removed widget ipv4_frame.
+
 2008-12-07  German Poo-Caamano <gpoo@gnome.org>
 
 	* configure.in: version 2.25.3.  Updated requirment for
