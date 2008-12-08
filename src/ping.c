@@ -326,10 +326,12 @@ ping_do (Netinfo * netinfo)
 				g_strdup_printf (PING_PROGRAM_FORMAT, program, count,
 	//	    g_strdup_printf (PING_PROGRAM_FORMAT, PING_PROGRAM, count,
 						 host);
+  #if defined(PING_PROGRAM_FORMAT_6)
 		else
 			command =
 				g_strdup_printf (PING_PROGRAM_FORMAT_6, program, count,
 						 host);
+  #endif
 #endif
 
 /*	command =
