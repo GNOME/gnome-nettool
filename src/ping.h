@@ -24,29 +24,32 @@
 #include "nettool.h"
 
 /* The ping usage and output is different between Unix flavours */
-/* FIXME: Add BSD support */
 #if defined(__linux__)
-#   define PING_PROGRAM_FORMAT "%s ping -b -c %d -n %s"
-#   define PING_PROGRAM_FORMAT_6 "%s ping6 -c %d -n %s"
+    /*  <path to program> ping -b [-c <count>] -n <host> */
+#   define PING_PROGRAM_FORMAT "%s ping -b%s-n %s"
+#   define PING_PROGRAM_FORMAT_6 "%s ping6%s-n %s"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d ttl=%d time=%s %s"
 #   define PING_PARAMS_6
 #elif defined(__OSF__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__NetBSD__)
-#   define PING_PROGRAM_FORMAT "%s ping -c %d -n %s"
-#   define PING_PROGRAM_FORMAT_6 "%s ping6 -c %d -n %s"
+    /*  <path to program> ping [-c <count>] -n <host> */
+#   define PING_PROGRAM_FORMAT "%s ping%s-n %s"
+#   define PING_PROGRAM_FORMAT_6 "%s ping6%s-n %s"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d ttl=%d time=%s %s"
 #   define PING_PARAMS_6
 #elif defined(__sun__) 
-#   define PING_PROGRAM_FORMAT "%s ping -s -n %s 56 %d"
-#   define PING_PROGRAM_FORMAT_6 "%s ping -s -A inet6 -a -n %s 56 %d"
+    /*  <path to program> ping -s -n <host> [<count>] */
+#   define PING_PROGRAM_FORMAT "%s ping -s -n %s 56%s"
+#   define PING_PROGRAM_FORMAT_6 "%s ping -s -A inet6 -a -n %s 56%s"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d. time=%f %s"
 #   define PING_PARAMS_5
 #elif defined(__hpux__)
-#   define PING_PROGRAM_FORMAT "%s ping %s -n %d"
-#   define PING_PROGRAM_FORMAT_6 "%s ping %s -f inet6 -n %d"
+#   define PING_PROGRAM_FORMAT "%s ping %s -n%s"
+#   define PING_PROGRAM_FORMAT_6 "%s ping %s -f inet6 -n%s"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d. time=%f %s"
 #   define PING_PARAMS_5
 #else
-#   define PING_PROGRAM_FORMAT "%s ping -c %d -n %s"
+#   define PING_PROGRAM_FORMAT "%s ping %s -n %s"
+#   define PING_PROGRAM_FORMAT_6 "%s ping6 %s -n %s"
 #   define PING_FORMAT "%d bytes from %s icmp_seq=%d. time=%f %s"
 #   define PING_PARAMS_5
 #endif

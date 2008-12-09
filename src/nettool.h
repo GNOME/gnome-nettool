@@ -133,7 +133,7 @@ void netinfo_process_command (Netinfo * netinfo);
 void netinfo_stop_process_command (Netinfo * netinfo);
 void netinfo_text_buffer_insert (Netinfo * netinfo);
 
-gushort netinfo_get_count (Netinfo * netinfo);
+gint netinfo_get_count (Netinfo * netinfo);
 const gchar * netinfo_get_host (Netinfo * netinfo);
 const gchar * netinfo_get_user (Netinfo * netinfo);
 void netinfo_set_host (Netinfo * netinfo, const gchar *host);

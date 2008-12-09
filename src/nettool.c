@@ -36,7 +36,7 @@
 
 guint progress_timeout_id = 0;
 
-gushort
+gint
 netinfo_get_count (Netinfo * netinfo)
 {
 
@@ -50,7 +50,7 @@ netinfo_get_count (Netinfo * netinfo)
 					       (netinfo->count));
 
 	} else {
-		return 999;
+		return -1;
 	}
 }
 

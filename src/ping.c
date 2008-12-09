@@ -224,7 +224,7 @@ ping_stop (Netinfo * netinfo)
 void
 ping_do (Netinfo * netinfo)
 {
-	gushort count;
+	gint count;
 	const gchar *host = NULL;
 	gchar *command = NULL;
 	GtkTreeModel *model;
@@ -232,6 +232,7 @@ ping_do (Netinfo * netinfo)
 	    *pkt_success;
 	gchar stmp[128];
 	gchar *program = NULL;
+	gchar *count_string = NULL;
 	GtkWidget *parent;
 	gint ip_version;
 
@@ -284,13 +285,6 @@ ping_do (Netinfo * netinfo)
 
 	draw_ping_graph (netinfo);
 
-/*
-	buffer =
-	    gtk_text_view_get_buffer (GTK_TEXT_VIEW (netinfo->output));
-
-	gtk_text_buffer_get_bounds (buffer, &start, &end);
-	gtk_text_buffer_delete (buffer, &start, &end);
-*/
 	parent = gtk_widget_get_toplevel (netinfo->output);
 
 	ip_version = netinfo_get_ip_version (netinfo);
@@ -310,33 +304,37 @@ ping_do (Netinfo * netinfo)
 	}
 	
 	if (program != NULL) {
+		/* unlimited or limited ping? */
+		if (count == -1) {
+			count_string = g_strdup_printf(" ");
+		} else {
 #if defined(__sun__) || defined(__hpux__)
-		if (ip_version == IPV4)
-			command =
-				g_strdup_printf (PING_PROGRAM_FORMAT, program, host,
-	 //	    g_strdup_printf (PING_PROGRAM_FORMAT, PING_PROGRAM, host,	
-						 count);
-		else
-			command =
-				g_strdup_printf (PING_PROGRAM_FORMAT_6, program, host,
-						 count);
+			count_string = g_strdup_printf("%d", count);
 #else
-		if (ip_version == IPV4)
-			command =
-				g_strdup_printf (PING_PROGRAM_FORMAT, program, count,
-	//	    g_strdup_printf (PING_PROGRAM_FORMAT, PING_PROGRAM, count,
-						 host);
-  #if defined(PING_PROGRAM_FORMAT_6)
-		else
-			command =
-				g_strdup_printf (PING_PROGRAM_FORMAT_6, program, count,
-						 host);
-  #endif
+			count_string = g_strdup_printf(" -c %d ", count);
 #endif
+		}
 
-/*	command =
-	    g_strdup_printf ("%s ping -c %d %s", PING_PROGRAM, count,
-			     host);*/
+		if (ip_version == IPV4) {
+			command =
+#if defined(__sun__) || defined(__hpux__)
+				g_strdup_printf (PING_PROGRAM_FORMAT, program, 
+						host, count_string);
+#else
+				g_strdup_printf (PING_PROGRAM_FORMAT, program, 
+						count_string, host);
+#endif
+		} else {
+			command =
+#if defined(__sun__) || defined(__hpux__)
+				g_strdup_printf (PING_PROGRAM_FORMAT_6, program, 
+						host, count_string);
+#else
+				g_strdup_printf (PING_PROGRAM_FORMAT_6, program, 
+						count_string, host);
+#endif
+		}
+		g_print("command: %s\n", command);
 
 		netinfo->command_line = g_strsplit (command, " ", -1);
 	
@@ -345,6 +343,7 @@ ping_do (Netinfo * netinfo)
 		g_strfreev (netinfo->command_line);
 	}
 	
+	g_free (count_string);
 	g_free (command);
 	g_free (program);
 }
