@@ -55,7 +55,7 @@ main (int argc, char *argv[])
 {
 	GtkWidget *window;
 	GtkWidget *menu_quit, *menu_about, *menu_copy, *menu_clear_history;
-	GtkWidget *menu_beep;
+	GtkWidget *menu_beep, *menu_help;
 	GladeXML *xml;
 	GtkWidget *notebook;
 	const gchar *dialog = DATADIR "gnome-nettool.glade";
@@ -243,8 +243,12 @@ main (int argc, char *argv[])
 			  G_CALLBACK (on_clear_history_activate),
 			  (gpointer) notebook);
 			  
-	
-	
+	menu_help = glade_xml_get_widget (xml, "m_help_contents");
+
+	g_signal_connect (G_OBJECT (menu_help), "activate",
+			  G_CALLBACK (on_help_activate),
+			  (gpointer) window);
+
 	
 	glade_xml_signal_autoconnect (xml);
 	g_object_unref (G_OBJECT (xml));

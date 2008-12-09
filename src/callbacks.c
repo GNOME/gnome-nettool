@@ -152,7 +152,7 @@ on_configure_button_clicked (GtkButton *button, gpointer data)
 							 GTK_DIALOG_DESTROY_WITH_PARENT,
 							 GTK_MESSAGE_ERROR,
 							 GTK_BUTTONS_CLOSE,
-							 error->message);
+							 "%s", error->message);
 			gtk_dialog_run (GTK_DIALOG (dialog));
 			gtk_widget_destroy (dialog);
 		}
@@ -458,4 +458,32 @@ on_page_switch (GtkNotebook     * notebook,
 				 gtk_label_get_text (GTK_LABEL (netinfo->page_label)));
 	gtk_window_set_title (GTK_WINDOW (netinfo->main_window), title);
 	g_free (title);
+}
+
+void
+on_help_activate (GtkWidget *menu_item, gpointer window)
+{
+	GdkScreen *screen;
+	GError *error = NULL;
+
+	screen = gtk_widget_get_screen (window);
+	gtk_show_uri (screen, "ghelp:gnome-nettool",
+			      gtk_get_current_event_time (), &error);
+
+	if (error) {
+		GtkWidget *dialog;
+		dialog = gtk_message_dialog_new (
+			      GTK_WINDOW (window), 
+		              GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
+		              GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, 
+			      "%s", _("Unable to open help file"));
+		gtk_message_dialog_format_secondary_text (
+			      GTK_MESSAGE_DIALOG (dialog),
+			      "%s", error->message);
+		g_signal_connect (dialog, "response", 
+				  G_CALLBACK (gtk_widget_destroy), NULL);
+		gtk_window_present (GTK_WINDOW (dialog));
+
+		g_error_free (error);
+	}
 }

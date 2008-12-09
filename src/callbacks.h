@@ -27,8 +27,6 @@ gboolean gn_quit_app (GtkWidget * widget, gpointer data);
 
 void on_beep_activate (GtkWidget *menu_item, gpointer data);
 
-void on_about_activate (GtkWidget *menu_item, gpointer data);
-
 void on_copy_activate (GtkWidget *menu_item, gpointer data);
 
 void on_clear_history_activate (GtkWidget *menu_item, gpointer data);
@@ -37,3 +35,7 @@ void on_page_switch (GtkNotebook     * notebook,
                      GtkNotebookPage * page,
                      guint             page_num,
                      gpointer          data);
+
+void on_about_activate (GtkWidget *menu_item, gpointer data);
+
+void on_help_activate (GtkWidget *menu_item, gpointer data);
