@@ -175,9 +175,9 @@ netinfo_error_message (Netinfo     * netinfo,
 					 GTK_DIALOG_DESTROY_WITH_PARENT,
 					 GTK_MESSAGE_ERROR,
 					 GTK_BUTTONS_CLOSE,
-					 primary);
+					 "%s", primary);
 	gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
-						  secondary ? secondary : " ");
+						  "%s", secondary ? secondary : " ");
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 
         gtk_container_set_border_width (GTK_CONTAINER (dialog), 6);
@@ -457,6 +457,8 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 		netinfo->child_pid = 0;
 		
 		gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);
+		gtk_statusbar_push (GTK_STATUSBAR (netinfo->status_bar),
+					    0, _("Idle"));
 	} else {
 		pango_font_description_set_weight (font_desc,
 						   PANGO_WEIGHT_BOLD);

@@ -54,10 +54,10 @@ int
 main (int argc, char *argv[])
 {
 	GtkWidget *window;
-	GtkWidget *menu_quit, *menu_about, *menu_copy, *menu_clear_history;
-	GtkWidget *menu_beep, *menu_help;
+	GtkWidget *menu_beep;
 	GladeXML *xml;
 	GtkWidget *notebook;
+	GtkWidget *statusbar;
 	const gchar *dialog = DATADIR "gnome-nettool.glade";
 	Netinfo *pinger;
 	Netinfo *tracer;
@@ -136,6 +136,8 @@ main (int argc, char *argv[])
 	
 	xml = glade_xml_new (dialog, "main_window", NULL);
 	window = glade_xml_get_widget (xml, "main_window");
+	statusbar = glade_xml_get_widget (xml, "statusbar");
+	gtk_statusbar_push (GTK_STATUSBAR (statusbar), 0, _("Idle"));
 
 	g_signal_connect (G_OBJECT (window), "delete-event",
 			  G_CALLBACK (gn_quit_app), NULL);
@@ -213,48 +215,14 @@ main (int argc, char *argv[])
 	g_object_set_data (G_OBJECT (notebook), "finger", finger);
 	g_object_set_data (G_OBJECT (notebook), "whois", whois);
 	
-	menu_quit = glade_xml_get_widget (xml, "m_quit");
-	
-	g_signal_connect (G_OBJECT (menu_quit), "activate",
-			  G_CALLBACK (gn_quit_app),
-			  NULL);
-
 	menu_beep = glade_xml_get_widget (xml, "m_beep");
 
 	g_signal_connect (G_OBJECT (menu_beep), "activate",
 			  G_CALLBACK (on_beep_activate),
 			  (gpointer) pinger); 
 	
-	menu_about = glade_xml_get_widget (xml, "m_about");
-
-	g_signal_connect (G_OBJECT (menu_about), "activate",
-			  G_CALLBACK (on_about_activate),
-			  (gpointer) window);
-			  	
-	menu_copy = glade_xml_get_widget (xml, "m_copy");
-
-	g_signal_connect (G_OBJECT (menu_copy), "activate",
-			  G_CALLBACK (on_copy_activate),
-			  (gpointer) notebook);
-	
-	menu_clear_history = glade_xml_get_widget (xml, "m_clear_history");
-
-	g_signal_connect (G_OBJECT (menu_clear_history), "activate",
-			  G_CALLBACK (on_clear_history_activate),
-			  (gpointer) notebook);
-			  
-	menu_help = glade_xml_get_widget (xml, "m_help_contents");
-
-	g_signal_connect (G_OBJECT (menu_help), "activate",
-			  G_CALLBACK (on_help_activate),
-			  (gpointer) window);
-
-	
 	glade_xml_signal_autoconnect (xml);
 	g_object_unref (G_OBJECT (xml));
-
-	g_signal_connect (notebook, "switch_page",
-			  G_CALLBACK (on_page_switch), NULL);
 
 	gtk_notebook_set_current_page (GTK_NOTEBOOK (notebook), current_page);
 
@@ -302,7 +270,6 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
-	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -351,11 +318,6 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (pinger->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (pinger->host)));
-	tips = gtk_tooltips_new ();
-	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
-			      _("Enter the network address to ping.\n"
-				"For example: www.domain.com or 192.168.2.1"),
-			      NULL);
 	
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -394,7 +356,6 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
-	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -436,11 +397,6 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (tracer->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (tracer->host)));
-	tips = gtk_tooltips_new ();
-	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
-			      _("Enter the network address to trace a route to.\n"
-				"For example: www.domain.com or 192.168.2.1"),
-			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -641,7 +597,6 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	GtkWidget *label;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
-	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -681,11 +636,6 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (scan->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (scan->host)));
-	tips = gtk_tooltips_new ();
-	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
-			      _("Enter the network address to scan for open ports.\n"
-				"For example: www.domain.com or 192.168.2.1"),
-			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -764,7 +714,6 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
-	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -811,11 +760,6 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (lookup->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (lookup->host)));
-	tips = gtk_tooltips_new ();
-	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
-			      _("Enter the network address to lookup.\n"
-				"For example: www.domain.com or 192.168.2.1"),
-			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -849,7 +793,6 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
-	GtkTooltips *tips;
 
 	g_return_val_if_fail (xml != NULL, NULL);
 
@@ -900,10 +843,6 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->user), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->user)));
-	tips = gtk_tooltips_new ();
-	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
-			      _("Enter the user to finger."),
-			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -927,11 +866,6 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->host), 0);*/
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->host)));
-	tips = gtk_tooltips_new ();
-	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
-			      _("Enter the network address to finger that user.\n"
-			        "For example: auth.domain.com or 192.168.2.1"),
-			      NULL);
 
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
@@ -965,7 +899,6 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
-	GtkTooltips *tips;
 	PangoFontDescription *font_desc;
 	
 
@@ -1014,11 +947,6 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (whois->host), 0);*/
 	
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (whois->host)));
-	tips = gtk_tooltips_new ();
-	gtk_tooltips_set_tip (tips, GTK_WIDGET (entry_host),
-			      _("Enter a domain address to lookup its whois information.\n"
-				"For example: www.domain.com or 192.168.2.1"),
-			      NULL);
 	
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);

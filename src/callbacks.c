@@ -306,10 +306,10 @@ on_beep_activate (GtkWidget *menu_item, gpointer data)
 }
 
 void
-on_about_activate (GtkWidget *menu_item, gpointer data)
+on_about_activate (gpointer window, GtkWidget *menu_item)
 {
 	const gchar *authors[] = { 
-		"Germán Poo Caamaño <gpoo@ubiobio.cl>", 
+		"Germán Poo Caamaño <gpoo@gnome.org>", 
 		"William Jon McCann <mccann@jhu.edu>",
 		"Carlos Garcia Campos <carlosgc@gnome.org>",
 		"Rodrigo Moya <rodrigo@gnome-db.org>", 
@@ -324,7 +324,7 @@ on_about_activate (GtkWidget *menu_item, gpointer data)
 	gchar	     copyright[1024];
 	GtkWindow   *parent;
 
-	parent = (GtkWindow *) data;
+	parent = (GtkWindow *) window;
 
 	/* Translators: %s is the name of the copyright holder */
 	g_sprintf (copyright, _("Copyright \xc2\xa9 2003-2008 %s"), "Germán Poo Caamaño");
@@ -386,12 +386,10 @@ get_netinfo_for_page (GtkNotebook * notebook, gint page_num)
 }
 
 void
-on_copy_activate (GtkWidget *menu_item, gpointer data)
+on_copy_activate (gpointer notebook, GtkWidget *menu_item)
 {
 	gint page;
 	Netinfo *netinfo;
-
-	GtkNotebook *notebook = (GtkNotebook *) data;
 
 	g_return_if_fail (GTK_IS_NOTEBOOK (notebook));
 
@@ -407,11 +405,9 @@ on_copy_activate (GtkWidget *menu_item, gpointer data)
 }
 
 void
-on_clear_history_activate (GtkWidget *menu_item, gpointer data)
+on_clear_history_activate (gpointer notebook, GtkWidget *menu_item)
 {
 	Netinfo *netinfo;
-
-	GtkNotebook *notebook = (GtkNotebook *) data;
 
 	g_return_if_fail (GTK_IS_NOTEBOOK (notebook));
 
@@ -450,6 +446,8 @@ on_page_switch (GtkNotebook     * notebook,
 	} else {
 		netinfo_progress_indicator_stop (netinfo);
 		gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);
+		gtk_statusbar_push (GTK_STATUSBAR (netinfo->status_bar),
+					    0, _("Idle"));
 	}
 
 	/* Dear Translator: This is the Window Title. 'Network Tools' is the
@@ -461,10 +459,12 @@ on_page_switch (GtkNotebook     * notebook,
 }
 
 void
-on_help_activate (GtkWidget *menu_item, gpointer window)
+on_help_activate (gpointer window, GtkWidget *menu_item)
 {
 	GdkScreen *screen;
 	GError *error = NULL;
+
+	g_return_if_fail (GTK_IS_WINDOW (window));
 
 	screen = gtk_widget_get_screen (window);
 	gtk_show_uri (screen, "ghelp:gnome-nettool",
