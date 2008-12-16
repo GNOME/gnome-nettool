@@ -1,5 +1,5 @@
 # French translation of gnome-nettool.
-# Copyright (C) 1998-2007 Free Software Foundation, Inc.
+# Copyright (C) 1998-2008 Free Software Foundation, Inc.
 # This file is distributed under the GNU General Public License 2.0.
 #
 # Vincent Renardias <vincent@ldsol.com>, 1998-1999.
@@ -10,20 +10,21 @@
 # Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
 # Damien Durand <splinux@fedoraproject.org>, 2006.
 # Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+# Claude Paroz <claude@2xlibre.net>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-05 23:20+0100\n"
-"PO-Revision-Date: 2008-03-05 23:21+0100\n"
-"Last-Translator: Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
+"POT-Creation-Date: 2008-12-16 21:13+0100\n"
+"PO-Revision-Date: 2008-12-16 21:14+0100\n"
+"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:318
+#: ../src/callbacks.c:323
 msgid "translator-credits"
 msgstr ""
 "Laurent Richard <laurent.richard@lilit.be>\n"
@@ -32,402 +33,465 @@ msgstr ""
 "Audrey Simons <asimons@redhat.com>\n"
 "Robert-André Mauchin <zebob.m@pengzone.org>\n"
 "Damien Durand <splinux@fedoraproject.org>\n"
-"Stéphane Raimbault <stephane.raimbault@gmail.com>"
+"Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
+"Claude Paroz <claude@2xlibre.net>"
+
+#. Translators: %s is the name of the copyright holder
+#: ../src/callbacks.c:330
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr "Copyright © 2003-2008 %s"
 
 # Chers développeurs, votre nom manque d'imagination et nous le préférons en français (Stéphane).
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:334 ../src/callbacks.c:335
+#: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Outils réseau"
 
-#: ../src/callbacks.c:334
+#: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr "Interface graphique utilisateur pour les outils réseau usuels"
 
+#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+msgid "Idle"
+msgstr "Inactif"
+
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:445
+#: ../src/callbacks.c:455
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - Outils réseau"
 
+#: ../src/callbacks.c:479
+msgid "Unable to open help file"
+msgstr "Impossible d'ouvrir le fichier d'aide"
+
 #: ../src/gnome-nettool.glade.h:1
+msgid "0"
+msgstr "0"
+
+#: ../src/gnome-nettool.glade.h:3
+#, no-c-format
+msgid "0%"
+msgstr "0 %"
+
+#: ../src/gnome-nettool.glade.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.glade.h:2
+#: ../src/gnome-nettool.glade.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>Informations sur l'IP</b>"
 
-#: ../src/gnome-nettool.glade.h:3
+#: ../src/gnome-nettool.glade.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>Informations sur l'interface</b>"
 
-#: ../src/gnome-nettool.glade.h:4
+#: ../src/gnome-nettool.glade.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>Statistiques de l'interface</b>"
 
-#: ../src/gnome-nettool.glade.h:5
+#: ../src/gnome-nettool.glade.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Statistiques de temps de latence</b>"
 
-#: ../src/gnome-nettool.glade.h:6
+#: ../src/gnome-nettool.glade.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Statistiques de transmission</b>"
 
-#: ../src/gnome-nettool.glade.h:7
+#: ../src/gnome-nettool.glade.h:10
 msgid "Active Network Services"
 msgstr "Services réseau actifs"
 
-#: ../src/gnome-nettool.glade.h:8
+#: ../src/gnome-nettool.glade.h:11
 msgid "Average:"
 msgstr "Moyenne :"
 
-#: ../src/gnome-nettool.glade.h:9
+#: ../src/gnome-nettool.glade.h:12
 msgid "Beep on ping"
 msgstr "Émettre un bip lors d'un ping"
 
-#: ../src/gnome-nettool.glade.h:10
-msgid "Broadcast:"
-msgstr "Diffusion :"
-
-#: ../src/gnome-nettool.glade.h:11
+#: ../src/gnome-nettool.glade.h:13
 msgid "Clear _History"
 msgstr "Purger l'_historique"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../src/gnome-nettool.glade.h:14
 msgid "Collisions:"
 msgstr "Collisions :"
 
-#: ../src/gnome-nettool.glade.h:13
+#: ../src/gnome-nettool.glade.h:15
+msgid "Copy as text _report"
+msgstr "Copier comme _rapport textuel"
+
+#: ../src/gnome-nettool.glade.h:16
 msgid "Details"
 msgstr "Détails"
 
-#: ../src/gnome-nettool.glade.h:14
+#: ../src/gnome-nettool.glade.h:17
 msgid "Devices"
 msgstr "Périphériques"
 
 #. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:19
 msgid "Devices - Network Tools"
 msgstr "Périphériques - Outils réseau"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:20
 msgid "Display:"
 msgstr "Affichage :"
 
-#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
+#: ../src/gnome-nettool.glade.h:21
+msgid "Domain address"
+msgstr "Adresse du domaine"
+
+#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.glade.h:23
+msgid "Finger output"
+msgstr "Sortie finger"
+
+#: ../src/gnome-nettool.glade.h:24
 msgid "Hardware address:"
 msgstr "Adresse matérielle :"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:25
 msgid "Host"
 msgstr "Hôte"
 
-#: ../src/gnome-nettool.glade.h:21
-msgid "IP Address:"
-msgstr "Adresse IP :"
-
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:26
 msgid "Link speed:"
 msgstr "Vitesse du lien :"
 
-#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
+#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
 msgid "Lookup"
-msgstr "Recherche"
+msgstr "Lookup"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:28
+msgid "Lookup output"
+msgstr "Sortie lookup"
+
+#: ../src/gnome-nettool.glade.h:29
 msgid "MTU:"
 msgstr "MTU :"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:30
 msgid "Maximum:"
 msgstr "Maximum :"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:31
 msgid "Minimum:"
 msgstr "Minimum :"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../src/gnome-nettool.glade.h:32
 msgid "Multicast Information"
 msgstr "Informations multicast"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:33
 msgid "Multicast:"
 msgstr "Multicast :"
 
-#: ../src/gnome-nettool.glade.h:29
-msgid "Netmask:"
-msgstr "Masque de réseau :"
-
-#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
 msgid "Netstat"
 msgstr "Statistiques réseau"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:35
+msgid "Netstat output"
+msgstr "Sortie statistiques réseau"
+
+#: ../src/gnome-nettool.glade.h:36
+msgid "Network address"
+msgstr "Adresse réseau"
+
+#: ../src/gnome-nettool.glade.h:37
 msgid "Not Available"
 msgstr "Non disponible"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:38
 msgid "Only"
 msgstr "Uniquement"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:39
+msgid "Output for finger"
+msgstr "Résultats de finger"
+
+#: ../src/gnome-nettool.glade.h:40
+msgid "Output for lookup"
+msgstr "Résultats de lookup"
+
+#: ../src/gnome-nettool.glade.h:41
+msgid "Output for net stat"
+msgstr "Résultats des statistiques réseau"
+
+#: ../src/gnome-nettool.glade.h:42
+msgid "Output for port scan"
+msgstr "Résultats du scan de ports"
+
+#: ../src/gnome-nettool.glade.h:43
+msgid "Output for traceroute"
+msgstr "Résultats de traceroute"
+
+#: ../src/gnome-nettool.glade.h:44
+msgid "Output for whois"
+msgstr "Résultats de whois"
+
+#: ../src/gnome-nettool.glade.h:45
 msgid "Packets received:"
 msgstr "Paquets reçus :"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:46
 msgid "Packets transmitted:"
 msgstr "Paquets transmis :"
 
-#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
+#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:48
 msgid "Port Scan"
 msgstr "Scan de ports"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:49
+msgid "Port scan output"
+msgstr "Sortie de scan de ports"
+
+#: ../src/gnome-nettool.glade.h:50
 msgid "Received bytes:"
 msgstr "Octets reçus :"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:51
 msgid "Received packets:"
 msgstr "Paquets reçus :"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:52
 msgid "Reception errors:"
 msgstr "Erreurs de réception :"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:53
 msgid "Routing Table Information"
 msgstr "Informations de la table de routage"
 
-#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
 msgid "Scan"
 msgstr "Scanner"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:55
 msgid "Send:"
 msgstr "Envoyer :"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:56
 msgid "State:"
 msgstr "État :"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:57
 msgid "Successful packets:"
 msgstr "Paquets reçus avec succès :"
 
-#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
+#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
 msgid "Trace"
 msgstr "Tracer"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:59
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:60
+msgid "Traceroute output"
+msgstr "Sortie de traceroute"
+
+#: ../src/gnome-nettool.glade.h:61
 msgid "Transmission errors:"
 msgstr "Erreurs de transmission :"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:62
 msgid "Transmitted bytes:"
 msgstr "Octets transmis :"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:63
 msgid "Transmitted packets:"
 msgstr "Paquets transmis :"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:64
 msgid "Unlimited requests"
 msgstr "Requêtes non limitées"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:65
 msgid "User"
 msgstr "Utilisateur"
 
-#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
+#: ../src/gnome-nettool.glade.h:66
+msgid "User name"
+msgstr "Nom d'utilisateur"
+
+#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:68
+msgid "Whois output"
+msgstr "Sortie de whois"
+
+#: ../src/gnome-nettool.glade.h:69
 msgid "_Configure"
 msgstr "_Configurer"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:70
 msgid "_Domain address:"
 msgstr "Adresse du _domaine :"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:71
 msgid "_Edit"
 msgstr "É_dition"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:72
 msgid "_Help"
 msgstr "Aid_e"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:73
 msgid "_Information type:"
 msgstr "Type d'_informations :"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:74
 msgid "_Network address:"
 msgstr "Adresse _réseau :"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:75
 msgid "_Network device:"
 msgstr "Périphérique _réseau :"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Tool"
 msgstr "_Outil"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Username:"
 msgstr "Nom d'_utilisateur :"
 
-#: ../src/gnome-nettool.glade.h:62
+#. Translators: this is the abbreviation for milliseconds
+#: ../src/gnome-nettool.glade.h:79
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:80
 msgid "requests"
 msgstr "requêtes"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
-#: ../src/info.c:57
+#: ../src/info.c:60
 msgid "Other type"
 msgstr "Autre type"
 
-#: ../src/info.c:58
+#: ../src/info.c:61
 msgid "Ethernet Interface"
 msgstr "Interface ethernet"
 
-#: ../src/info.c:59
+#: ../src/info.c:62
 msgid "Wireless Interface"
 msgstr "Interface sans fil"
 
-#: ../src/info.c:60
+#: ../src/info.c:63
 msgid "Modem Interface"
 msgstr "Interface de modem"
 
-#: ../src/info.c:61
+#: ../src/info.c:64
 msgid "Parallel Line Interface"
 msgstr "Interface parallèle"
 
-#: ../src/info.c:62
+#: ../src/info.c:65
 msgid "Infrared Interface"
 msgstr "Interface infrarouge"
 
-#: ../src/info.c:63
+#: ../src/info.c:66
 msgid "Loopback Interface"
 msgstr "Interface loopback"
 
-#: ../src/info.c:64
+#: ../src/info.c:67
 msgid "Unknown Interface"
 msgstr "Interface inconnue"
 
-#: ../src/info.c:162
+#: ../src/info.c:165
 msgid "Network Devices Not Found"
 msgstr "Périphériques réseau non trouvés"
 
-#: ../src/info.c:385
+#: ../src/info.c:392 ../src/info.c:395
 msgid "Unknown"
 msgstr "Inconnu"
 
-#: ../src/info.c:554
+#: ../src/info.c:466
 msgid "Active"
 msgstr "Actif"
 
-#: ../src/info.c:556
+#: ../src/info.c:468
 msgid "Inactive"
 msgstr "Inactif"
 
-#: ../src/info.c:561
+#: ../src/info.c:473
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:580
+#: ../src/info.c:482
 msgid "Enabled"
 msgstr "Activé"
 
-#: ../src/info.c:582
+#: ../src/info.c:484
 msgid "Disabled"
 msgstr "Désactivé"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:719
+#: ../src/info.c:573
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Périphérique réseau :\t%s\n"
 
-#: ../src/info.c:720
+#: ../src/info.c:574
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Adresse matérielle :\t%s\n"
 
-#: ../src/info.c:721
-#, c-format
-msgid "IP address:\t%s\n"
-msgstr "Adresse IP :\t%s\n"
-
-#: ../src/info.c:722
-#, c-format
-msgid "Netmask:\t%s\n"
-msgstr "Masque de réseau :\t%s\n"
-
-#: ../src/info.c:723
-#, c-format
-msgid "Broadcast:\t%s\n"
-msgstr "Diffusion :\t%s\n"
-
-#: ../src/info.c:724
+#: ../src/info.c:575
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast :\t%s\n"
 
-#: ../src/info.c:725
+#: ../src/info.c:576
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU :\t%s\n"
 
-#: ../src/info.c:726
+#: ../src/info.c:577
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Vitesse du lien :\t%s\n"
 
-#: ../src/info.c:727
+#: ../src/info.c:578
 #, c-format
 msgid "State:\t%s\n"
 msgstr "État :\t%s\n"
 
-#: ../src/info.c:729
+#: ../src/info.c:580
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Paquets transmis :\t%s\n"
 
-#: ../src/info.c:730
+#: ../src/info.c:581
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Erreurs de transmission :\t%s\n"
 
-#: ../src/info.c:731
+#: ../src/info.c:582
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Paquets reçus :\t%s\n"
 
-#: ../src/info.c:732
+#: ../src/info.c:583
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Erreurs de réception :\t%s\n"
 
-#: ../src/info.c:733
+#: ../src/info.c:584
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Collisions :\t%s\n"
@@ -472,61 +536,61 @@ msgstr "Adresse"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Source\tTTL\tType d'adresse\tType d'enregistrement\tRésolution\n"
 
-#: ../src/main.c:81
+#: ../src/main.c:83
 msgid "Load information for a network device"
 msgstr "Charge les informations d'un périphérique réseau"
 
-#: ../src/main.c:82
+#: ../src/main.c:84
 msgid "DEVICE"
 msgstr "PÉRIPHÉRIQUE"
 
-#: ../src/main.c:85
+#: ../src/main.c:87
 msgid "Send a ping to a network address"
 msgstr "Envoie un ping à l'adresse réseau"
 
-#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
+#: ../src/main.c:88 ../src/main.c:96 ../src/main.c:100 ../src/main.c:104
 msgid "HOST"
 msgstr "HÔTE"
 
-#: ../src/main.c:89
+#: ../src/main.c:91
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Obtient les informations netstat. Les options valides sont : route, active "
 "et multicast."
 
-#: ../src/main.c:90
+#: ../src/main.c:92
 msgid "COMMAND"
 msgstr "COMMANDE"
 
-#: ../src/main.c:93
+#: ../src/main.c:95
 msgid "Trace a route to a network address"
 msgstr "Trace une route vers une adresse réseau"
 
-#: ../src/main.c:97
+#: ../src/main.c:99
 msgid "Port scan a network address"
 msgstr "Scanne les ports d'une adresse réseau"
 
-#: ../src/main.c:101
+#: ../src/main.c:103
 msgid "Look up a network address"
 msgstr "Recherche une adresse réseau"
 
-#: ../src/main.c:105
+#: ../src/main.c:107
 msgid "Finger command to run"
 msgstr "Commande « finger » à lancer"
 
-#: ../src/main.c:106
+#: ../src/main.c:108
 msgid "USER"
 msgstr "UTILISATEUR"
 
-#: ../src/main.c:109
+#: ../src/main.c:111
 msgid "Perform a whois lookup for a network domain"
 msgstr "Effectue une recherche « whois » pour un domaine réseau"
 
-#: ../src/main.c:110
+#: ../src/main.c:112
 msgid "DOMAIN"
 msgstr "DOMAINE"
 
-#: ../src/main.c:127
+#: ../src/main.c:129
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -535,126 +599,75 @@ msgstr ""
 "Le fichier %s n'existe pas, vérifiez que gnome-nettool est correctement "
 "installé"
 
-#: ../src/main.c:346
-msgid ""
-"Enter the network address to ping.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Saisissez l'adresse réseau à laquelle envoyer un ping.\n"
-"Par exemple : www.domaine.com ou 192.168.2.1"
-
-#: ../src/main.c:431
-msgid ""
-"Enter the network address to trace a route to.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Saisissez l'adresse réseau vers laquelle tracer une route.\n"
-"Par exemple : www.domaine.com ou 192.168.2.1"
-
-#: ../src/main.c:516 ../src/netstat.c:443
+#: ../src/main.c:482 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Protocole"
 
-#: ../src/main.c:523
+#: ../src/main.c:489
 msgid "IP Address"
 msgstr "Adresse IP"
 
-#: ../src/main.c:530
+#: ../src/main.c:496
 msgid "Netmask / Prefix"
 msgstr "Masque de réseau / Préfixe"
 
-#: ../src/main.c:537
+#: ../src/main.c:503
 msgid "Broadcast"
 msgstr "Diffusion"
 
-#: ../src/main.c:544
+#: ../src/main.c:510
 msgid "Scope"
 msgstr "Portée"
 
-#: ../src/main.c:685
-msgid ""
-"Enter the network address to scan for open ports.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Saisissez l'adresse réseau sur laquelle scanner les ports ouverts.\n"
-"Par exemple : www.domaine.com ou 192.168.2.1"
-
-#: ../src/main.c:718
+#: ../src/main.c:669
 msgid "Default Information"
 msgstr "Informations par défaut"
 
-#: ../src/main.c:719
+#: ../src/main.c:670
 msgid "Internet Address"
 msgstr "Adresse Internet"
 
-#: ../src/main.c:720
+#: ../src/main.c:671
 msgid "Canonical Name"
 msgstr "Nom canonique"
 
-#: ../src/main.c:721
+#: ../src/main.c:672
 msgid "CPU / OS Type"
 msgstr "Type de CPU/OS"
 
-#: ../src/main.c:722
+#. When asking for MX record in DNS context
+#: ../src/main.c:674
 msgid "Mailbox Exchange"
 msgstr "Mailbox Exchange"
 
-#: ../src/main.c:723
+#: ../src/main.c:675
 msgid "Mailbox Information"
 msgstr "Informations Mailbox"
 
-#: ../src/main.c:724
+#. When asking for NS record in DNS context
+#: ../src/main.c:677
 msgid "Name Server"
 msgstr "Serveur de noms"
 
-#: ../src/main.c:725
+#: ../src/main.c:678
 msgid "Host name for Address"
 msgstr "Nom d'hôte pour l'adresse"
 
-#: ../src/main.c:726
+#: ../src/main.c:679
 msgid "Start-of-authority"
 msgstr "Start-of-authority"
 
-#: ../src/main.c:727
+#: ../src/main.c:680
 msgid "Text Information"
 msgstr "Informations texte"
 
-#: ../src/main.c:728
+#: ../src/main.c:681
 msgid "Well Known Services"
 msgstr "Services bien connus"
 
-#: ../src/main.c:729
+#: ../src/main.c:682
 msgid "Any / All Information"
 msgstr "N'importe quelle / toute les informations"
-
-#: ../src/main.c:813
-msgid ""
-"Enter the network address to lookup.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Saisissez l'adresse réseau à rechercher.\n"
-"Par exemple : www.domaine.com ou 192.168.2.1"
-
-#: ../src/main.c:902
-msgid "Enter the user to finger."
-msgstr "Saisissez l'utilisateur pour lequel lancer « finger »."
-
-#: ../src/main.c:929
-msgid ""
-"Enter the network address to finger that user.\n"
-"For example: auth.domain.com or 192.168.2.1"
-msgstr ""
-"Saisissez l'adresse réseau sur laquelle lancer « finger » pour cet "
-"utilisateur.\n"
-"Par exemple : auth.domain.com ou 192.168.2.1"
-
-#: ../src/main.c:1016
-msgid ""
-"Enter a domain address to lookup its whois information.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Saisissez l'adresse d'un domaine pour obtenir ses informations « whois ».\n"
-"Par exemple : www.domaine.com ou 192.168.2.1"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
@@ -676,7 +689,7 @@ msgstr "Source IP"
 msgid "Port/Service"
 msgstr "Port/Service"
 
-#: ../src/netstat.c:466 ../src/scan.c:312
+#: ../src/netstat.c:466 ../src/scan.c:314
 msgid "State"
 msgstr "État"
 
@@ -753,11 +766,11 @@ msgstr "Saisissez une adresse de domaine valide et essayez à nouveau."
 msgid "Information not available"
 msgstr "Information non disponible"
 
-#: ../src/nettool.c:524
+#: ../src/nettool.c:526
 msgid "Stop"
 msgstr "Arrêter"
 
-#: ../src/nettool.c:530
+#: ../src/nettool.c:532
 msgid "Run"
 msgstr "Lancer"
 
@@ -770,28 +783,28 @@ msgstr "Temps (en ms) :"
 msgid "Seq. No.:"
 msgstr "N° séq. :"
 
-#: ../src/ping.c:253
+#: ../src/ping.c:254
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Envoyer des requêtes ping à %s"
 
-#: ../src/ping.c:568
+#: ../src/ping.c:569
 msgid "Bytes"
 msgstr "Octets"
 
-#: ../src/ping.c:575
+#: ../src/ping.c:576
 msgid "Source"
 msgstr "Source"
 
-#: ../src/ping.c:583
+#: ../src/ping.c:584
 msgid "Seq"
 msgstr "Séq"
 
-#: ../src/ping.c:593
+#: ../src/ping.c:594
 msgid "Time"
 msgstr "Temps"
 
-#: ../src/ping.c:601
+#: ../src/ping.c:602
 msgid "Units"
 msgstr "Unités"
 
@@ -799,62 +812,67 @@ msgstr "Unités"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:627
+#: ../src/ping.c:628
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Octets\tSource\tSeq\tTemps\tUnités\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:642
+#: ../src/ping.c:643
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Temps minimum :\t%s ms\n"
 
-#: ../src/ping.c:643
+#: ../src/ping.c:644
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Temps moyen :\t%s ms\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:645
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Temps maximum :\t%s ms\n"
 
-#: ../src/ping.c:646
+#: ../src/ping.c:647
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Paquets transmis :\t%s\n"
 
-#: ../src/ping.c:648
+#: ../src/ping.c:649
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Paquets reçus :\t%s\n"
 
-#: ../src/ping.c:651
+#: ../src/ping.c:652
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Paquets reçus avec succès :\t%s\n"
 
-#: ../src/scan.c:93
+#: ../src/scan.c:94
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Recherche de ports ouverts sur %s"
 
-#: ../src/scan.c:168
+#: ../src/scan.c:169
 msgid "unknown"
 msgstr "inconnu"
 
-#: ../src/scan.c:304
+#. Translators: "open" is a network status and should be one word.
+#: ../src/scan.c:173
+msgid "open"
+msgstr "ouvert"
+
+#: ../src/scan.c:306
 msgid "Port"
 msgstr "Port"
 
-#: ../src/scan.c:320
+#: ../src/scan.c:322
 msgid "Service"
 msgstr "Service"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:342
+#: ../src/scan.c:344
 msgid "Port\tState\tService\n"
 msgstr "Port\tÉtat\tService\n"
 
@@ -905,12 +923,12 @@ msgstr ""
 msgid "View information about your network"
 msgstr "Afficher des informations sur votre réseau"
 
-#: ../src/finger.c:62
+#: ../src/finger.c:63
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "Obtention d'informations concernant %s sur « %s »"
 
-#: ../src/finger.c:66
+#: ../src/finger.c:67
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "Obtention d'informations concernant tous les utilisateurs sur « %s »"
@@ -919,3 +937,67 @@ msgstr "Obtention d'informations concernant tous les utilisateurs sur « %s »
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Obtention des informations « whois » de %s"
+
+#~ msgid "Broadcast:"
+#~ msgstr "Diffusion :"
+
+#~ msgid "IP Address:"
+#~ msgstr "Adresse IP :"
+
+#~ msgid "Netmask:"
+#~ msgstr "Masque de réseau :"
+
+#~ msgid "IP address:\t%s\n"
+#~ msgstr "Adresse IP :\t%s\n"
+
+#~ msgid "Netmask:\t%s\n"
+#~ msgstr "Masque de réseau :\t%s\n"
+
+#~ msgid "Broadcast:\t%s\n"
+#~ msgstr "Diffusion :\t%s\n"
+
+#~ msgid ""
+#~ "Enter the network address to ping.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "Saisissez l'adresse réseau à laquelle envoyer un ping.\n"
+#~ "Par exemple : www.domaine.com ou 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to trace a route to.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "Saisissez l'adresse réseau vers laquelle tracer une route.\n"
+#~ "Par exemple : www.domaine.com ou 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to scan for open ports.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "Saisissez l'adresse réseau sur laquelle scanner les ports ouverts.\n"
+#~ "Par exemple : www.domaine.com ou 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to lookup.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "Saisissez l'adresse réseau à rechercher.\n"
+#~ "Par exemple : www.domaine.com ou 192.168.2.1"
+
+#~ msgid "Enter the user to finger."
+#~ msgstr "Saisissez l'utilisateur pour lequel lancer « finger »."
+
+#~ msgid ""
+#~ "Enter the network address to finger that user.\n"
+#~ "For example: auth.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "Saisissez l'adresse réseau sur laquelle lancer « finger » pour cet "
+#~ "utilisateur.\n"
+#~ "Par exemple : auth.domain.com ou 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter a domain address to lookup its whois information.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "Saisissez l'adresse d'un domaine pour obtenir ses informations « whois ».\n"
+#~ "Par exemple : www.domaine.com ou 192.168.2.1"
