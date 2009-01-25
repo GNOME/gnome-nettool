@@ -1,419 +1,481 @@
 # gnome-nettool ko.po
+# This file is distributed under the same license as the gnome-netstatus package
 #
-# Changwoo Ryu <cwryu@debian.org>, 1999, 2006, 2008.
+# Changwoo Ryu <cwryu@debian.org>, 1999, 2006, 2008, 2009.
 # Young-Ho Cha <ganadist at gmail dot com>, 2003, 2005, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool 2.15.4\n"
+"Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-28 11:30+0900\n"
-"PO-Revision-Date: 2008-02-28 11:42+0900\n"
-"Last-Translator: Young-Ho Cha <ganadist@gmail.com>\n"
+"POT-Creation-Date: 2009-01-25 19:57+0900\n"
+"PO-Revision-Date: 2009-01-25 20:04+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:318
+#: ../src/callbacks.c:323
 msgid "translator-credits"
 msgstr ""
 "류창우 <cwryu@debian.org>\n"
 "차영호 <ganadist@gmail.com>"
 
+#. Translators: %s is the name of the copyright holder
+#: ../src/callbacks.c:330
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr "Copyright © 2003-2008 %s"
+
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:334 ../src/callbacks.c:335
+#: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "네트워크 도구"
 
-#: ../src/callbacks.c:334
+#: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr "일반 네트워크 도구의 그래픽 사용자 인터페이스"
 
+#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+msgid "Idle"
+msgstr "활동 없음"
+
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:445
+#: ../src/callbacks.c:455
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - 네트워크 도구"
 
+#: ../src/callbacks.c:479
+msgid "Unable to open help file"
+msgstr "도움말 파일을 열 수 없습니다"
+
 #: ../src/gnome-nettool.glade.h:1
+msgid "0"
+msgstr "0"
+
+#: ../src/gnome-nettool.glade.h:3
+#, no-c-format
+msgid "0%"
+msgstr "0%"
+
+#: ../src/gnome-nettool.glade.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.glade.h:2
+#: ../src/gnome-nettool.glade.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>IP 정보</b>"
 
-#: ../src/gnome-nettool.glade.h:3
+#: ../src/gnome-nettool.glade.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>인터페이스 정보</b>"
 
-#: ../src/gnome-nettool.glade.h:4
+#: ../src/gnome-nettool.glade.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>인터페이스 통계</b>"
 
-#: ../src/gnome-nettool.glade.h:5
+#: ../src/gnome-nettool.glade.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>왕복 시간 통계</b>"
 
-#: ../src/gnome-nettool.glade.h:6
+#: ../src/gnome-nettool.glade.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>전송 통계</b>"
 
-#: ../src/gnome-nettool.glade.h:7
+#: ../src/gnome-nettool.glade.h:10
 msgid "Active Network Services"
 msgstr "활성 네트워크 서비스"
 
-#: ../src/gnome-nettool.glade.h:8
+#: ../src/gnome-nettool.glade.h:11
 msgid "Average:"
 msgstr "평균:"
 
-#: ../src/gnome-nettool.glade.h:9
+#: ../src/gnome-nettool.glade.h:12
 msgid "Beep on ping"
 msgstr "핑에 삑소리"
 
-#: ../src/gnome-nettool.glade.h:10
-msgid "Broadcast:"
-msgstr "브로드캐스트:"
-
-#: ../src/gnome-nettool.glade.h:11
+#: ../src/gnome-nettool.glade.h:13
 msgid "Clear _History"
-msgstr "기록 비우기(_H)"
+msgstr "기록 지우기(_H)"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../src/gnome-nettool.glade.h:14
 msgid "Collisions:"
 msgstr "충돌:"
 
-#: ../src/gnome-nettool.glade.h:13
+#: ../src/gnome-nettool.glade.h:15
+msgid "Copy as text _report"
+msgstr "보고서로 복사(_R)"
+
+#: ../src/gnome-nettool.glade.h:16
 msgid "Details"
 msgstr "자세히"
 
-#: ../src/gnome-nettool.glade.h:14
+#: ../src/gnome-nettool.glade.h:17
 msgid "Devices"
 msgstr "장치"
 
 #. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:19
 msgid "Devices - Network Tools"
 msgstr "장치 - 네트워크 도구"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:20
 msgid "Display:"
 msgstr "보기:"
 
-#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
+#: ../src/gnome-nettool.glade.h:21
+msgid "Domain address"
+msgstr "도메인 주소"
+
+#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
 msgid "Finger"
 msgstr "핑거"
 
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.glade.h:23
+msgid "Finger output"
+msgstr "핑거 출력"
+
+#: ../src/gnome-nettool.glade.h:24
 msgid "Hardware address:"
 msgstr "하드웨어 주소:"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:25
 msgid "Host"
 msgstr "호스트"
 
-#: ../src/gnome-nettool.glade.h:21
-msgid "IP Address:"
-msgstr "IP 주소:"
-
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:26
 msgid "Link speed:"
 msgstr "연결 속도:"
 
-#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
+#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
 msgid "Lookup"
 msgstr "찾아보기"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:28
+msgid "Lookup output"
+msgstr "찾아보기 출력"
+
+#: ../src/gnome-nettool.glade.h:29
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:30
 msgid "Maximum:"
 msgstr "최대:"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:31
 msgid "Minimum:"
 msgstr "최소:"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../src/gnome-nettool.glade.h:32
 msgid "Multicast Information"
 msgstr "멀티 캐스트 정보 보기"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:33
 msgid "Multicast:"
 msgstr "멀티캐스트:"
 
-#: ../src/gnome-nettool.glade.h:29
-msgid "Netmask:"
-msgstr "넷마스크:"
-
-#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
 msgid "Netstat"
-msgstr "Netstat"
+msgstr "네트워크 통계"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:35
+msgid "Netstat output"
+msgstr "네트워크 통계 출력"
+
+#: ../src/gnome-nettool.glade.h:36
+msgid "Network address"
+msgstr "네트워크 주소"
+
+#: ../src/gnome-nettool.glade.h:37
 msgid "Not Available"
 msgstr "쓸 수 없음"
 
-# FIXME 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:38
 msgid "Only"
 msgstr " "
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:39
+msgid "Output for finger"
+msgstr "핑거 출력"
+
+#: ../src/gnome-nettool.glade.h:40
+msgid "Output for lookup"
+msgstr "찾아보기 출력"
+
+#: ../src/gnome-nettool.glade.h:41
+msgid "Output for net stat"
+msgstr "네트워크 통계 출력"
+
+#: ../src/gnome-nettool.glade.h:42
+msgid "Output for port scan"
+msgstr "포트 검색 출력"
+
+#: ../src/gnome-nettool.glade.h:43
+msgid "Output for traceroute"
+msgstr "호스트 추적 출력"
+
+#: ../src/gnome-nettool.glade.h:44
+msgid "Output for whois"
+msgstr "도메인네임 등록정보 출력"
+
+#: ../src/gnome-nettool.glade.h:45
 msgid "Packets received:"
 msgstr "받은 패킷:"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:46
 msgid "Packets transmitted:"
 msgstr "보낸 패킷:"
 
-#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
+#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
 msgid "Ping"
-msgstr "Ping"
+msgstr "핑"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:48
 msgid "Port Scan"
 msgstr "포트 검색"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:49
+msgid "Port scan output"
+msgstr "포트 검색 출력"
+
+#: ../src/gnome-nettool.glade.h:50
 msgid "Received bytes:"
 msgstr "받은 바이트 수:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:51
 msgid "Received packets:"
 msgstr "받은 패킷 수:"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:52
 msgid "Reception errors:"
 msgstr "받기 에러 횟수:"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:53
 msgid "Routing Table Information"
 msgstr "라우팅 테이블 정보 보기"
 
-#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
 msgid "Scan"
 msgstr "검색"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:55
 msgid "Send:"
 msgstr "보내기:"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:56
 msgid "State:"
 msgstr "상태:"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:57
 msgid "Successful packets:"
 msgstr "성공한 패킷 수:"
 
-#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
+#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
 msgid "Trace"
 msgstr "따라가기"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:59
 msgid "Traceroute"
 msgstr "호스트 추적"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:60
+msgid "Traceroute output"
+msgstr "호스트 추적 출력"
+
+#: ../src/gnome-nettool.glade.h:61
 msgid "Transmission errors:"
 msgstr "보내기 오류:"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:62
 msgid "Transmitted bytes:"
 msgstr "보낸 바이트 수:"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:63
 msgid "Transmitted packets:"
 msgstr "보낸 패킷 수:"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:64
 msgid "Unlimited requests"
 msgstr "무제한 요청"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:65
 msgid "User"
 msgstr "사용자"
 
-#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
+#: ../src/gnome-nettool.glade.h:66
+msgid "User name"
+msgstr "사용자 이름"
+
+#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
 msgid "Whois"
 msgstr "도메인네임 등록정보"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:68
+msgid "Whois output"
+msgstr "도메인네임 등록정보 출력"
+
+#: ../src/gnome-nettool.glade.h:69
 msgid "_Configure"
 msgstr "설정(_C)"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:70
 msgid "_Domain address:"
 msgstr "도메인 주소(_D):"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:71
 msgid "_Edit"
 msgstr "편집(_E)"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:72
 msgid "_Help"
 msgstr "도움말(_H)"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:73
 msgid "_Information type:"
 msgstr "정보 형식(_I):"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:74
 msgid "_Network address:"
 msgstr "네트워크 주소(_N):"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:75
 msgid "_Network device:"
 msgstr "네트워크 장치(_N):"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Tool"
 msgstr "도구(_T)"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Username:"
 msgstr "사용자 이름(_U):"
 
-#: ../src/gnome-nettool.glade.h:62
+#. Translators: this is the abbreviation for milliseconds
+#: ../src/gnome-nettool.glade.h:79
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:80
 msgid "requests"
 msgstr "번만 요청"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
-#: ../src/info.c:57
+#: ../src/info.c:60
 msgid "Other type"
 msgstr "다른 형식"
 
-#: ../src/info.c:58
+#: ../src/info.c:61
 msgid "Ethernet Interface"
 msgstr "이더넷 인터페이스"
 
-#: ../src/info.c:59
+#: ../src/info.c:62
 msgid "Wireless Interface"
 msgstr "무선 인터페이스"
 
-#: ../src/info.c:60
+#: ../src/info.c:63
 msgid "Modem Interface"
 msgstr "모뎀 인터페이스"
 
-#: ../src/info.c:61
+#: ../src/info.c:64
 msgid "Parallel Line Interface"
 msgstr "병렬 인터페이스"
 
-#: ../src/info.c:62
+#: ../src/info.c:65
 msgid "Infrared Interface"
 msgstr "적외선 인터페이스"
 
-#: ../src/info.c:63
+#: ../src/info.c:66
 msgid "Loopback Interface"
 msgstr "루프백 인터페이스"
 
-#: ../src/info.c:64
+#: ../src/info.c:67
 msgid "Unknown Interface"
 msgstr "알 수 없는 인터페이스"
 
-#: ../src/info.c:162
+#: ../src/info.c:165
 msgid "Network Devices Not Found"
 msgstr "네트워크 장치를 찾을 수 없습니다"
 
-#: ../src/info.c:385
+#: ../src/info.c:392 ../src/info.c:395
 msgid "Unknown"
 msgstr "알 수 없음"
 
-#: ../src/info.c:554
+#: ../src/info.c:466
 msgid "Active"
 msgstr "사용중"
 
-#: ../src/info.c:556
+#: ../src/info.c:468
 msgid "Inactive"
 msgstr "사용안함"
 
-#: ../src/info.c:561
+#: ../src/info.c:473
 msgid "Loopback"
 msgstr "루프백"
 
-#: ../src/info.c:580
+#: ../src/info.c:482
 msgid "Enabled"
-msgstr "쓰기"
+msgstr "사용"
 
-#: ../src/info.c:582
+#: ../src/info.c:484
 msgid "Disabled"
-msgstr "쓰지 않기"
+msgstr "사용 않음"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:719
+#: ../src/info.c:573
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "네트워크 장치:\t%s\n"
 
-#: ../src/info.c:720
+#: ../src/info.c:574
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "하드웨어 주소:\t%s\n"
 
-#: ../src/info.c:721
-#, c-format
-msgid "IP address:\t%s\n"
-msgstr "IP 주소:\t%s\n"
-
-#: ../src/info.c:722
-#, c-format
-msgid "Netmask:\t%s\n"
-msgstr "넷마스크:\t%s\n"
-
-#: ../src/info.c:723
-#, c-format
-msgid "Broadcast:\t%s\n"
-msgstr "브로드캐스트:\t%s\n"
-
-#: ../src/info.c:724
+#: ../src/info.c:575
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "멀티캐스트:\t%s\n"
 
-#: ../src/info.c:725
+#: ../src/info.c:576
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:726
+#: ../src/info.c:577
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "연결 속도:\t%s\n"
 
-#: ../src/info.c:727
+#: ../src/info.c:578
 #, c-format
 msgid "State:\t%s\n"
 msgstr "상태:\t%s\n"
 
-#: ../src/info.c:729
+#: ../src/info.c:580
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "보낸 패킷 수:\t%s\n"
 
-#: ../src/info.c:730
+#: ../src/info.c:581
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "보내기 오류 횟수:\t%s\n"
 
-#: ../src/info.c:731
+#: ../src/info.c:582
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "받은 패킷 수:\t%s\n"
 
-#: ../src/info.c:732
+#: ../src/info.c:583
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "받기 오류 횟수:\t%s\n"
 
-#: ../src/info.c:733
+#: ../src/info.c:584
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "충돌:\t%s\n"
@@ -458,59 +520,59 @@ msgstr "주소"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "소스\tTTL\t주소 종류\t레코드 종류\t결과\n"
 
-#: ../src/main.c:81
+#: ../src/main.c:83
 msgid "Load information for a network device"
 msgstr "네트워크 장치의 정보를 읽습니다"
 
-#: ../src/main.c:82
+#: ../src/main.c:84
 msgid "DEVICE"
 msgstr "장치"
 
-#: ../src/main.c:85
+#: ../src/main.c:87
 msgid "Send a ping to a network address"
 msgstr "네트워크 주소로 핑을 보냅니다"
 
-#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
+#: ../src/main.c:88 ../src/main.c:96 ../src/main.c:100 ../src/main.c:104
 msgid "HOST"
 msgstr "호스트"
 
-#: ../src/main.c:89
+#: ../src/main.c:91
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "netstat 정보를 가져옵니다. 올바른 옵션은: route, active multicast."
 
-#: ../src/main.c:90
+#: ../src/main.c:92
 msgid "COMMAND"
 msgstr "명령"
 
-#: ../src/main.c:93
+#: ../src/main.c:95
 msgid "Trace a route to a network address"
 msgstr "네트워크 주소를 추적합니다"
 
-#: ../src/main.c:97
+#: ../src/main.c:99
 msgid "Port scan a network address"
 msgstr "네트워크 주소의 포트를 검색합니다"
 
-#: ../src/main.c:101
+#: ../src/main.c:103
 msgid "Look up a network address"
 msgstr "네트워크 주소를 찾아봅니다"
 
-#: ../src/main.c:105
+#: ../src/main.c:107
 msgid "Finger command to run"
 msgstr "실행할 Finger 명령"
 
-#: ../src/main.c:106
+#: ../src/main.c:108
 msgid "USER"
 msgstr "사용자"
 
-#: ../src/main.c:109
+#: ../src/main.c:111
 msgid "Perform a whois lookup for a network domain"
 msgstr "네트워크 도메인을 찾는 whois를 실행합니다"
 
-#: ../src/main.c:110
+#: ../src/main.c:112
 msgid "DOMAIN"
 msgstr "도메인"
 
-#: ../src/main.c:127
+#: ../src/main.c:129
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -518,125 +580,75 @@ msgid ""
 msgstr ""
 "파일 %s(이)가 없습니다, gnome-netinfo가 올바르게 설치되었는 지 확인하십시오"
 
-#: ../src/main.c:346
-msgid ""
-"Enter the network address to ping.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"핑신호를 보낼 네트워크 주소를 입력하십시오.\n"
-"예: www.domain.com 또는 192.168.2.1"
-
-#: ../src/main.c:431
-msgid ""
-"Enter the network address to trace a route to.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"추적할 네트워크 주소를 입력하십시오.\n"
-"예: www.domain.com 또는 192.168.2.1"
-
-#: ../src/main.c:516 ../src/netstat.c:443
+#: ../src/main.c:482 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "프로토콜"
 
-#: ../src/main.c:523
+#: ../src/main.c:489
 msgid "IP Address"
 msgstr "IP 주소"
 
-#: ../src/main.c:530
+#: ../src/main.c:496
 msgid "Netmask / Prefix"
 msgstr "넷마스크 / 접두어"
 
-#: ../src/main.c:537
+#: ../src/main.c:503
 msgid "Broadcast"
 msgstr "브로드캐스트"
 
-#: ../src/main.c:544
+#: ../src/main.c:510
 msgid "Scope"
 msgstr "범위"
 
-#: ../src/main.c:685
-msgid ""
-"Enter the network address to scan for open ports.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"열린 포트를 검색할 네트워크 주소를 입력하십시오.\n"
-"예: www.domain.com 또는 192.168.2.1"
-
-#: ../src/main.c:718
+#: ../src/main.c:669
 msgid "Default Information"
 msgstr "기본 정보"
 
-#: ../src/main.c:719
+#: ../src/main.c:670
 msgid "Internet Address"
 msgstr "인터넷 주소"
 
-#: ../src/main.c:720
+#: ../src/main.c:671
 msgid "Canonical Name"
 msgstr "공식 이름"
 
-#: ../src/main.c:721
+#: ../src/main.c:672
 msgid "CPU / OS Type"
 msgstr "CPU / OS 종류"
 
-#: ../src/main.c:722
+#. When asking for MX record in DNS context
+#: ../src/main.c:674
 msgid "Mailbox Exchange"
 msgstr "메일함 교환"
 
-#: ../src/main.c:723
+#: ../src/main.c:675
 msgid "Mailbox Information"
 msgstr "메일함 정보"
 
-#: ../src/main.c:724
+#. When asking for NS record in DNS context
+#: ../src/main.c:677
 msgid "Name Server"
 msgstr "네임 서버"
 
-#: ../src/main.c:725
+#: ../src/main.c:678
 msgid "Host name for Address"
 msgstr "주소의 호스트 이름"
 
-#: ../src/main.c:726
+#: ../src/main.c:679
 msgid "Start-of-authority"
 msgstr "권한 시작부분"
 
-#: ../src/main.c:727
+#: ../src/main.c:680
 msgid "Text Information"
 msgstr "텍스트 정보"
 
-#: ../src/main.c:728
+#: ../src/main.c:681
 msgid "Well Known Services"
 msgstr "알려진 서비스"
 
-#: ../src/main.c:729
+#: ../src/main.c:682
 msgid "Any / All Information"
 msgstr "모든 정보"
-
-#: ../src/main.c:813
-msgid ""
-"Enter the network address to lookup.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"정보를 찾아볼 네트워크 주소를 입력하십시오.\n"
-"예: www.domain.com 또는 192.168.2.1"
-
-#: ../src/main.c:902
-msgid "Enter the user to finger."
-msgstr "finger명령을 내릴 사용자를 입력하십시오."
-
-#: ../src/main.c:929
-msgid ""
-"Enter the network address to finger that user.\n"
-"For example: auth.domain.com or 192.168.2.1"
-msgstr ""
-"핑거 정보를 볼 사용자의 네트워크 주소를 입력하십시오.\n"
-"예: auth.domain.com 또는 192.168.2.1"
-
-#: ../src/main.c:1016
-msgid ""
-"Enter a domain address to lookup its whois information.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"whois정보를 찾아볼 도메인 주소를 입력하십시오.\n"
-"예: www.domain.com 또는 192.168.2.1"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
@@ -658,7 +670,7 @@ msgstr "IP 주소"
 msgid "Port/Service"
 msgstr "포트/서비스"
 
-#: ../src/netstat.c:466 ../src/scan.c:312
+#: ../src/netstat.c:466 ../src/scan.c:314
 msgid "State"
 msgstr "상태"
 
@@ -735,11 +747,11 @@ msgstr "올바른 도메인 주소를 입력하고 다시 시도하십시오."
 msgid "Information not available"
 msgstr "정보를 얻을 수 없습니다"
 
-#: ../src/nettool.c:524
+#: ../src/nettool.c:526
 msgid "Stop"
 msgstr "그만두기"
 
-#: ../src/nettool.c:530
+#: ../src/nettool.c:532
 msgid "Run"
 msgstr "실행"
 
@@ -752,28 +764,28 @@ msgstr "시간 (ms):"
 msgid "Seq. No.:"
 msgstr "순서:"
 
-#: ../src/ping.c:253
+#: ../src/ping.c:254
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "%s(으)로 핑 요청을 보내는 중"
 
-#: ../src/ping.c:568
+#: ../src/ping.c:569
 msgid "Bytes"
 msgstr "바이트"
 
-#: ../src/ping.c:575
+#: ../src/ping.c:576
 msgid "Source"
 msgstr "소스"
 
-#: ../src/ping.c:583
+#: ../src/ping.c:584
 msgid "Seq"
 msgstr "번호"
 
-#: ../src/ping.c:593
+#: ../src/ping.c:594
 msgid "Time"
 msgstr "시간"
 
-#: ../src/ping.c:601
+#: ../src/ping.c:602
 msgid "Units"
 msgstr "단위"
 
@@ -781,62 +793,68 @@ msgstr "단위"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:627
+#: ../src/ping.c:628
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "바이트\t소스\t번호\t시간\t단위\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:642
+#: ../src/ping.c:643
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "최소 시간:\t%s ms\n"
 
-#: ../src/ping.c:643
+#: ../src/ping.c:644
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "평균 시간:\t%s ms\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:645
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "최대 시간:\t%s ms\n"
 
-#: ../src/ping.c:646
+#: ../src/ping.c:647
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "패킷 보냄:\t%s\n"
 
-#: ../src/ping.c:648
+#: ../src/ping.c:649
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "패킷 받음:\t%s\n"
 
-#: ../src/ping.c:651
+#: ../src/ping.c:652
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "성공한 패킷 수:\t%s\n"
 
-#: ../src/scan.c:93
+#: ../src/scan.c:94
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s에서 열린 포트 검색중"
 
-#: ../src/scan.c:168
+#: ../src/scan.c:169
 msgid "unknown"
 msgstr "알 수 없음"
 
-#: ../src/scan.c:304
+# 주의: 상태 정보이므로 "열림"으로 번역
+#. Translators: "open" is a network status and should be one word.
+#: ../src/scan.c:173
+msgid "open"
+msgstr "열림"
+
+#: ../src/scan.c:306
 msgid "Port"
 msgstr "포트"
 
-#: ../src/scan.c:320
+#: ../src/scan.c:322
 msgid "Service"
 msgstr "서비스"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:342
+#: ../src/scan.c:344
 msgid "Port\tState\tService\n"
 msgstr "포트\t상태\t서비스\n"
 
@@ -885,12 +903,12 @@ msgstr ""
 msgid "View information about your network"
 msgstr "네트워크의 정보를 봅니다."
 
-#: ../src/finger.c:62
+#: ../src/finger.c:63
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "\"%2$s\"에 있는 %1$s의 정보를 얻는 중"
 
-#: ../src/finger.c:66
+#: ../src/finger.c:67
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "\"%s\"에 있는 모든 사용자의 정보를 얻는 중"
@@ -899,6 +917,69 @@ msgstr "\"%s\"에 있는 모든 사용자의 정보를 얻는 중"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s의 whois정보를 얻는 중"
+
+#~ msgid "Broadcast:"
+#~ msgstr "브로드캐스트:"
+
+#~ msgid "IP Address:"
+#~ msgstr "IP 주소:"
+
+#~ msgid "Netmask:"
+#~ msgstr "넷마스크:"
+
+#~ msgid "IP address:\t%s\n"
+#~ msgstr "IP 주소:\t%s\n"
+
+#~ msgid "Netmask:\t%s\n"
+#~ msgstr "넷마스크:\t%s\n"
+
+#~ msgid "Broadcast:\t%s\n"
+#~ msgstr "브로드캐스트:\t%s\n"
+
+#~ msgid ""
+#~ "Enter the network address to ping.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "핑신호를 보낼 네트워크 주소를 입력하십시오.\n"
+#~ "예: www.domain.com 또는 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to trace a route to.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "추적할 네트워크 주소를 입력하십시오.\n"
+#~ "예: www.domain.com 또는 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to scan for open ports.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "열린 포트를 검색할 네트워크 주소를 입력하십시오.\n"
+#~ "예: www.domain.com 또는 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to lookup.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "정보를 찾아볼 네트워크 주소를 입력하십시오.\n"
+#~ "예: www.domain.com 또는 192.168.2.1"
+
+#~ msgid "Enter the user to finger."
+#~ msgstr "finger명령을 내릴 사용자를 입력하십시오."
+
+#~ msgid ""
+#~ "Enter the network address to finger that user.\n"
+#~ "For example: auth.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "핑거 정보를 볼 사용자의 네트워크 주소를 입력하십시오.\n"
+#~ "예: auth.domain.com 또는 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter a domain address to lookup its whois information.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "whois정보를 찾아볼 도메인 주소를 입력하십시오.\n"
+#~ "예: www.domain.com 또는 192.168.2.1"
 
 #~ msgid "Network Information Tools"
 #~ msgstr "네트워크 정보 도구"
