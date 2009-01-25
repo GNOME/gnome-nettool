@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-25 19:57+0900\n"
-"PO-Revision-Date: 2009-01-25 20:04+0900\n"
+"PO-Revision-Date: 2009-01-25 20:13+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "네트워크 도구"
 
 #: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
-msgstr "일반 네트워크 도구의 그래픽 사용자 인터페이스"
+msgstr "일반적인 네트워크 프로그램들의 그래픽 인터페이스"
 
 #: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
 msgid "Idle"
@@ -194,6 +194,7 @@ msgstr "네트워크 주소"
 msgid "Not Available"
 msgstr "쓸 수 없음"
 
+# "Only" ___ "requests"
 #: ../src/gnome-nettool.glade.h:38
 msgid "Only"
 msgstr " "
@@ -359,6 +360,7 @@ msgstr "사용자 이름(_U):"
 msgid "ms"
 msgstr "ms"
 
+# "Only" ___ "requests"
 #: ../src/gnome-nettool.glade.h:80
 msgid "requests"
 msgstr "번만 요청"
@@ -749,7 +751,7 @@ msgstr "정보를 얻을 수 없습니다"
 
 #: ../src/nettool.c:526
 msgid "Stop"
-msgstr "그만두기"
+msgstr "중지"
 
 #: ../src/nettool.c:532
 msgid "Run"
@@ -833,9 +835,10 @@ msgstr "성공한 패킷 수:\t%s\n"
 msgid "Scanning %s for open ports"
 msgstr "%s에서 열린 포트 검색중"
 
+# 주의: 한 단어로 번역해야 함
 #: ../src/scan.c:169
 msgid "unknown"
-msgstr "알 수 없음"
+msgstr "알수없음"
 
 # 주의: 상태 정보이므로 "열림"으로 번역
 #. Translators: "open" is a network status and should be one word.
@@ -869,7 +872,7 @@ msgstr "Hop"
 
 #: ../src/traceroute.c:273
 msgid "Hostname"
-msgstr "호스트이름"
+msgstr "호스트 이름"
 
 #: ../src/traceroute.c:281
 msgid "IP"
@@ -911,12 +914,12 @@ msgstr "\"%2$s\"에 있는 %1$s의 정보를 얻는 중"
 #: ../src/finger.c:67
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "\"%s\"에 있는 모든 사용자의 정보를 얻는 중"
+msgstr "\"%s\"에 있는 모든 사용자의 정보를 가져오는 중"
 
 #: ../src/whois.c:58
 #, c-format
 msgid "Getting the whois information of %s"
-msgstr "%s의 whois정보를 얻는 중"
+msgstr "%s의 whois 정보를 가져오는 중"
 
 #~ msgid "Broadcast:"
 #~ msgstr "브로드캐스트:"
