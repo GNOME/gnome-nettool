@@ -468,7 +468,7 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 		if (!GTK_WIDGET_REALIZED (netinfo->output))
 			gtk_widget_realize (GTK_WIDGET (netinfo->output));
 		gdk_window_set_cursor ((netinfo->output)->window, cursor);
-		gdk_cursor_destroy (cursor);
+		gdk_cursor_unref (cursor);
 
 		if (netinfo->stbar_text) {
 			gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);

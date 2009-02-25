@@ -60,7 +60,7 @@ on_protocol_button_toggled (GtkToggleButton *togglebutton, gpointer user_data)
 	g_print ("name: %s\n", gtk_widget_get_name (parent));
 	child = gtk_bin_get_child (GTK_BIN (parent));
 	
-	gtk_widget_ref (child);
+	g_object_ref (child);
 	
 	gtk_container_remove (GTK_CONTAINER (parent), child);
 	*/
@@ -80,7 +80,7 @@ on_protocol_button_toggled (GtkToggleButton *togglebutton, gpointer user_data)
 		gtk_tree_view_set_model (widget, multicast_model); */
 	}
 	
-	/* gtk_widget_unref (child); */
+	/* g_object_unref (child); */
 }
 
 static NetstatOption

@@ -158,7 +158,7 @@ main (int argc, char *argv[])
 	if (ping_input) {
 		current_page = PING;
 		netinfo_set_host (pinger, ping_input);
-		gtk_idle_add (start_initial_process_cb, pinger);
+		g_idle_add (start_initial_process_cb, pinger);
 	}
 	if (netstat_input) {
 		current_page = NETSTAT;
@@ -171,22 +171,22 @@ main (int argc, char *argv[])
 		else if (! strcmp (netstat_input, "multicast"))
 			gtk_toggle_button_set_active
 				(GTK_TOGGLE_BUTTON (netstat->multicast), TRUE);
-		gtk_idle_add (start_initial_process_cb, netstat);
+		g_idle_add (start_initial_process_cb, netstat);
 	}
 	if (traceroute_input) {
 		current_page = TRACEROUTE;
 		netinfo_set_host (tracer, traceroute_input);
-		gtk_idle_add (start_initial_process_cb, tracer);
+		g_idle_add (start_initial_process_cb, tracer);
 	}
 	if (scan_input) {
 		current_page = PORTSCAN;
 		netinfo_set_host (scan, scan_input);
-		gtk_idle_add (start_initial_process_cb, scan);
+		g_idle_add (start_initial_process_cb, scan);
 	}
 	if (lookup_input) {
 		current_page = LOOKUP;
 		netinfo_set_host (lookup, lookup_input);
-		gtk_idle_add (start_initial_process_cb, lookup);
+		g_idle_add (start_initial_process_cb, lookup);
 	}
 	if (finger_input) {
 		gchar **split_input = NULL;
@@ -197,12 +197,12 @@ main (int argc, char *argv[])
 		if (split_input[1])
 			netinfo_set_host (finger, split_input[1]);
 		g_strfreev (split_input);
-		gtk_idle_add (start_initial_process_cb, finger);
+		g_idle_add (start_initial_process_cb, finger);
 	}
 	if (whois_input) {
 		current_page = WHOIS;
 		netinfo_set_host (whois, whois_input);
-		gtk_idle_add (start_initial_process_cb, whois);
+		g_idle_add (start_initial_process_cb, whois);
 	}
 
 	notebook = glade_xml_get_widget (xml, "notebook");

@@ -89,10 +89,6 @@ lookup_do (Netinfo * netinfo)
 		gtk_list_store_clear (GTK_LIST_STORE (model));
 	}
 
-	/*option_menu = netinfo->type;
-	menu = gtk_option_menu_get_menu (GTK_OPTION_MENU (option_menu));
-	active_item = gtk_menu_get_active (GTK_MENU (menu));
-	active_index = g_list_index (GTK_MENU_SHELL (menu)->children, active_item);*/
 	active_index = gtk_combo_box_get_active (GTK_COMBO_BOX (netinfo->type));
 
 	parent = gtk_widget_get_toplevel (netinfo->output);
