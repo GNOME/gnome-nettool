@@ -4,426 +4,485 @@
 # This file is distributed under the same license as the gnome-nettool package.
 #
 # Amanpreet Singh Alam <amanlinux@netscape.net>, 2004.
-# Amanpreet Singh Alam <aalam@redhat.com>, 2004.
-# Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
-# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# A S Alam <aalam@users.sf.net>, 2007.
-# Amanpreet Singh Alam <apreet.alam@gmail.com>, 2008.
+# A S Alam <aalam@users.sf.net>, 2004, 2005, 2006, 2007, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-11 07:36+0000\n"
-"PO-Revision-Date: 2008-01-14 19:54+0530\n"
-"Last-Translator: Amanpreet Singh Alam <apreet.alam@gmail.com>\n"
-"Language-Team: Punjabi/Panjabi <punjabi-users@llist.sf.net>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=gnome-nettool&amp;component=general\n"
+"POT-Creation-Date: 2008-12-16 20:17+0000\n"
+"PO-Revision-Date: 2009-03-14 22:38+0000\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjab-l10n@list.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KAider 0.1\n"
+"X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 
-#: ../src/callbacks.c:318
+#: ../src/callbacks.c:323
 msgid "translator-credits"
 msgstr ""
 "ਅਮਨਪਰੀਤ ਸਿੰਘ ਬਰਾੜ ਆਲਮਵਾਲਾ\n"
 "Punjab Open Source Team\n"
-"http://www.satluj.org/"
+"http://www.satluj.com/"
+
+#. Translators: %s is the name of the copyright holder
+#: ../src/callbacks.c:330
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr "Copyright © ੨੦੦੩-੨੦੦੮ %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:334 ../src/callbacks.c:335
+#: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "ਨੈੱਟਵਰਕ ਟੂਲ"
 
-#: ../src/callbacks.c:334
+#: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr "ਆਮ ਨੈੱਟਵਰਕ ਵਰਤੋਂ ਲਈ ਗਰਾਫਿਕਲ ਯੂਜ਼ਰ ਇੰਟਰਫੇਸ"
 
+#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+msgid "Idle"
+msgstr "ਵੇਹਲਾ"
+
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:445
+#: ../src/callbacks.c:455
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - ਨੈੱਟਵਰਕ ਟੂਲ"
 
-#: ../src/gnome-nettool.glade.h:1
-msgid "0.0"
-msgstr "0.0"
+#: ../src/callbacks.c:479
+msgid "Unable to open help file"
+msgstr "ਮੱਦਦ ਫਾਇਲ ਖੋਲ੍ਹਣ ਲਈ ਅਸਮਰੱਥ"
 
-#: ../src/gnome-nettool.glade.h:2
+#: ../src/gnome-nettool.glade.h:1
+msgid "0"
+msgstr "੦"
+
+#: ../src/gnome-nettool.glade.h:3
+#, no-c-format
+msgid "0%"
+msgstr "੦%"
+
+#: ../src/gnome-nettool.glade.h:4
+msgid "0.0"
+msgstr "੦.੦"
+
+#: ../src/gnome-nettool.glade.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>IP ਜਾਣਕਾਰੀ</b>"
 
-#: ../src/gnome-nettool.glade.h:3
+#: ../src/gnome-nettool.glade.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>ਇੰਟਰਫੇਸ ਜਾਣਕਾਰੀ</b>"
 
-#: ../src/gnome-nettool.glade.h:4
+#: ../src/gnome-nettool.glade.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>ਇੰਟਰਫੇਸ ਅੰਕੜੇ</b>"
 
-#: ../src/gnome-nettool.glade.h:5
+#: ../src/gnome-nettool.glade.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>ਪੂਰੇ ਚੱਕਰ ਟਾਈਮ ਅੰਕੜਾ</b>"
 
-#: ../src/gnome-nettool.glade.h:6
+#: ../src/gnome-nettool.glade.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>ਟਰਾਂਸਮਿਸ਼ਨ ਅੰਕੜੇ</b>"
 
-#: ../src/gnome-nettool.glade.h:7
+#: ../src/gnome-nettool.glade.h:10
 msgid "Active Network Services"
 msgstr "ਐਕਟਿਵ ਨੈੱਟਵਰਕ ਸਰਵਿਸਾਂ"
 
-#: ../src/gnome-nettool.glade.h:8
+#: ../src/gnome-nettool.glade.h:11
 msgid "Average:"
 msgstr "ਔਸਤ:"
 
-#: ../src/gnome-nettool.glade.h:9
+#: ../src/gnome-nettool.glade.h:12
 msgid "Beep on ping"
 msgstr "ਪਿੰਗ ਉੱਤੇ ਆਵਾਜ਼"
 
-#: ../src/gnome-nettool.glade.h:10
-msgid "Broadcast:"
-msgstr "ਬਰਾਡਕਾਸਟ:"
-
-#: ../src/gnome-nettool.glade.h:11
+#: ../src/gnome-nettool.glade.h:13
 msgid "Clear _History"
 msgstr "ਅਤੀਤ ਸਾਫ਼(_H)"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../src/gnome-nettool.glade.h:14
 msgid "Collisions:"
 msgstr "ਟੱਕਰਾਂ:"
 
-#: ../src/gnome-nettool.glade.h:13
+#: ../src/gnome-nettool.glade.h:15
+msgid "Copy as text _report"
+msgstr "ਟੈਕਸਟ ਰਿਪੋਰਟ  ਵਜੋਂ ਕਾਪੀ ਕਰੋ(_r)"
+
+#: ../src/gnome-nettool.glade.h:16
 msgid "Details"
 msgstr "ਵੇਰਵਾ"
 
-#: ../src/gnome-nettool.glade.h:14
+#: ../src/gnome-nettool.glade.h:17
 msgid "Devices"
 msgstr "ਜੰਤਰ"
 
 #. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:19
 msgid "Devices - Network Tools"
 msgstr "ਜੰਤਰ - ਨੈੱਟਵਰਕ ਟੂਲ"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:20
 msgid "Display:"
 msgstr "ਡਿਸਪਲੇਅ:"
 
-#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
+#: ../src/gnome-nettool.glade.h:21
+msgid "Domain address"
+msgstr "ਡੋਮੇਨ ਐਡਰੈੱਸ"
+
+#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
 msgid "Finger"
 msgstr "ਫਿੰਗਰ"
 
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.glade.h:23
+msgid "Finger output"
+msgstr "ਫਿੰਗਰ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:24
 msgid "Hardware address:"
 msgstr "ਹਾਰਡਵੇਅਰ ਐਡਰੈੱਸ:"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:25
 msgid "Host"
 msgstr "ਹੋਸਟ"
 
-#: ../src/gnome-nettool.glade.h:21
-msgid "IP Address:"
-msgstr "IP ਐਡਰੈੱਸ:"
-
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:26
 msgid "Link speed:"
 msgstr "ਲਿੰਕ ਸਪੀਡ:"
 
-#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
+#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
 msgid "Lookup"
 msgstr "ਖੋਜ"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:28
+msgid "Lookup output"
+msgstr "ਖੋਜ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:29
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:30
 msgid "Maximum:"
 msgstr "ਵੱਧ ਤੋਂ ਵੱਧ:"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:31
 msgid "Minimum:"
 msgstr "ਘੱਟੋ-ਘੱਟ:"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../src/gnome-nettool.glade.h:32
 msgid "Multicast Information"
 msgstr "ਮਲਟੀਕਾਸਟ ਜਾਣਕਾਰੀ"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:33
 msgid "Multicast:"
 msgstr "ਮਲਟੀਕਾਸਟ:"
 
-#: ../src/gnome-nettool.glade.h:29
-msgid "Netmask:"
-msgstr "ਨੈੱਟਮਾਸਕ:"
-
-#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:35
+msgid "Netstat output"
+msgstr "Netstat ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:36
+msgid "Network address"
+msgstr "ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ"
+
+#: ../src/gnome-nettool.glade.h:37
 msgid "Not Available"
 msgstr "ਉਪਲੱਬਧ ਨਹੀਂ"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:38
 msgid "Only"
 msgstr "ਸਿਰਫ਼"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:39
+msgid "Output for finger"
+msgstr "ਫਿੰਗਰ (finger) ਲਈ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:40
+msgid "Output for lookup"
+msgstr "ਖੋਜ (lookup) ਲਈ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:41
+msgid "Output for net stat"
+msgstr "net stat ਲਈ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:42
+msgid "Output for port scan"
+msgstr "ਪੋਰਟ ਸਕੈਨ ਲਈ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:43
+msgid "Output for traceroute"
+msgstr "traceroute ਲਈ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:44
+msgid "Output for whois"
+msgstr "whois ਲਈ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:45
 msgid "Packets received:"
 msgstr "ਮਿਲੇ ਪੈਕਟ:"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:46
 msgid "Packets transmitted:"
 msgstr "ਭੇਜੇ ਪੈਕਟ:"
 
-#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
+#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
 msgid "Ping"
 msgstr "ਪਿੰਗ"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:48
 msgid "Port Scan"
 msgstr "ਪੋਰਟ ਸਕੈਨ"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:49
+msgid "Port scan output"
+msgstr "ਪੋਰਟ ਸਕੈਨ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:50
 msgid "Received bytes:"
 msgstr "ਮਿਲੇ ਬਾਈਟ:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:51
 msgid "Received packets:"
 msgstr "ਮਿਲੇ ਪੈਕਟ:"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:52
 msgid "Reception errors:"
 msgstr "ਲੈਣ ਗਲਤੀਆਂ:"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:53
 msgid "Routing Table Information"
 msgstr "ਰੂਟਿੰਗ ਟੇਬਲ ਜਾਣਕਾਰੀ"
 
-#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
 msgid "Scan"
 msgstr "ਸਕੈਨ"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:55
 msgid "Send:"
 msgstr "ਭੇਜੇ:"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:56
 msgid "State:"
 msgstr "ਹਾਲਤ:"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:57
 msgid "Successful packets:"
 msgstr "ਠੀਕ ਪੈਕਟ:"
 
-#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
+#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
 msgid "Trace"
 msgstr "ਟਰੇਸ"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:59
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:60
+msgid "Traceroute output"
+msgstr "ਟਰੇਸ-ਰੂਟ ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:61
 msgid "Transmission errors:"
 msgstr "ਟਰਾਂਸਮਿਸ਼ਨ ਗਲਤੀ:"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:62
 msgid "Transmitted bytes:"
 msgstr "ਟਰਾਂਸਮਿਟ ਕੀਤੇ ਬਾਈਟ:"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:63
 msgid "Transmitted packets:"
 msgstr "ਟਰਾਂਸਮਿਟ ਕੀਤੇ ਪੈਕੇਟ:"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:64
 msgid "Unlimited requests"
 msgstr "ਬੇਹਿਸਾਬ ਬੇਨਤੀਆਂ"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:65
 msgid "User"
 msgstr "ਯੂਜ਼ਰ"
 
-#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
+#: ../src/gnome-nettool.glade.h:66
+msgid "User name"
+msgstr "ਯੂਜ਼ਰ ਨਾਂ"
+
+#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:68
+msgid "Whois output"
+msgstr "Whois ਆਉਟਪੁੱਟ"
+
+#: ../src/gnome-nettool.glade.h:69
 msgid "_Configure"
 msgstr "ਸੰਰਚਨਾ(_C)"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:70
 msgid "_Domain address:"
 msgstr "ਡੋਮੇਨ ਐਡਰੈੱਸ(_D):"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:71
 msgid "_Edit"
 msgstr "ਸੋਧ(_E)"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:72
 msgid "_Help"
 msgstr "ਮੱਦਦ(_H)"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:73
 msgid "_Information type:"
 msgstr "ਜਾਣਕਾਰੀ ਟਾਈਮ(_I):"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:74
 msgid "_Network address:"
 msgstr "ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ(_N):"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:75
 msgid "_Network device:"
 msgstr "ਨੈੱਟਵਰਕ ਜੰਤਰ(_N):"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Tool"
 msgstr "ਟੂਲ(_T)"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Username:"
 msgstr "ਯੂਜ਼ਰ ਨਾਂ(_U):"
 
-#: ../src/gnome-nettool.glade.h:62
+#. Translators: this is the abbreviation for milliseconds
+#: ../src/gnome-nettool.glade.h:79
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:80
 msgid "requests"
 msgstr "ਬੇਨਤੀ"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
-#: ../src/info.c:57
+#: ../src/info.c:60
 msgid "Other type"
 msgstr "ਹੋਰ ਟਾਈਪ"
 
-#: ../src/info.c:58
+#: ../src/info.c:61
 msgid "Ethernet Interface"
 msgstr "ਈਥਰਨੈਟ ਇੰਟਰਫੇਸ"
 
-#: ../src/info.c:59
+#: ../src/info.c:62
 msgid "Wireless Interface"
 msgstr "ਬੇਤਾਰ ਇੰਟਰਫੇਸ"
 
-#: ../src/info.c:60
+#: ../src/info.c:63
 msgid "Modem Interface"
 msgstr "ਮਾਡਮ ਇੰਟਰਫੇਸ"
 
-#: ../src/info.c:61
+#: ../src/info.c:64
 msgid "Parallel Line Interface"
 msgstr "ਪੈਰਲਰ ਲਾਈਨ ਇੰਟਰਫੇਸ"
 
-#: ../src/info.c:62
+#: ../src/info.c:65
 msgid "Infrared Interface"
 msgstr "ਇੰਫਰਾਰੈੱਡ ਇੰਟਰਫੇਸ"
 
-#: ../src/info.c:63
+#: ../src/info.c:66
 msgid "Loopback Interface"
 msgstr "ਲੂਪਬੈਕ ਇੰਟਰਫੇਸ"
 
-#: ../src/info.c:64
+#: ../src/info.c:67
 msgid "Unknown Interface"
 msgstr "ਅਣਜਾਣ ਇੰਟਰਫੇਸ"
 
-#: ../src/info.c:162
+#: ../src/info.c:165
 msgid "Network Devices Not Found"
 msgstr "ਨੈੱਟਵਰਕ ਜੰਤਰ ਨਹੀ ਲੱਭਾ"
 
-#: ../src/info.c:385
+#: ../src/info.c:392 ../src/info.c:395
 msgid "Unknown"
 msgstr "ਅਣਜਾਣ"
 
-#: ../src/info.c:554
+#: ../src/info.c:466
 msgid "Active"
 msgstr "ਐਕਟਿਵ"
 
-#: ../src/info.c:556
+#: ../src/info.c:468
 msgid "Inactive"
 msgstr "ਗ਼ੈਰ-ਐਕਟਿਵ"
 
-#: ../src/info.c:561
+#: ../src/info.c:473
 msgid "Loopback"
 msgstr "ਲੂਪਬੈਕ"
 
-#: ../src/info.c:580
+#: ../src/info.c:482
 msgid "Enabled"
 msgstr "ਯੋਗ"
 
-#: ../src/info.c:582
+#: ../src/info.c:484
 msgid "Disabled"
 msgstr "ਅਯੋਗ"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:719
+#: ../src/info.c:573
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "ਨੈੱਟਵਰਕ ਜੰਤਰ:\t%s\n"
 
-#: ../src/info.c:720
+#: ../src/info.c:574
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "ਹਾਰਡਵੇਅਰ ਐਡਰੈੱਸ:\t%s\n"
 
-#: ../src/info.c:721
-#, c-format
-msgid "IP address:\t%s\n"
-msgstr "IP ਐਡਰੈੱਸ:\t%s\n"
-
-#: ../src/info.c:722
-#, c-format
-msgid "Netmask:\t%s\n"
-msgstr "ਨੈੱਟਮਾਸਕ:\t%s\n"
-
-#: ../src/info.c:723
-#, c-format
-msgid "Broadcast:\t%s\n"
-msgstr "ਬਰਾਡਕਾਸਟ:\t%s\n"
-
-#: ../src/info.c:724
+#: ../src/info.c:575
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "ਮਲਟੀਕਾਸਟ:\t%s\n"
 
-#: ../src/info.c:725
+#: ../src/info.c:576
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:726
+#: ../src/info.c:577
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "ਲਿੰਕ ਗਤੀ:\t%s\n"
 
-#: ../src/info.c:727
+#: ../src/info.c:578
 #, c-format
 msgid "State:\t%s\n"
 msgstr "ਹਾਲਤ:\t%s\n"
 
-#: ../src/info.c:729
+#: ../src/info.c:580
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "ਟਰਾਂਸਮਿਟ ਕੀਤੇ ਪੈਕਟ:\t%s\n"
 
-#: ../src/info.c:730
+#: ../src/info.c:581
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "ਟਰਾਂਸਮਿਸ਼ਨ ਗਲਤੀਆਂ\t%s\n"
 
-#: ../src/info.c:731
+#: ../src/info.c:582
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "ਮਿਲੇ ਪੈਕਟ:\t%s\n"
 
-#: ../src/info.c:732
+#: ../src/info.c:583
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "ਲੈਣ ਗਲਤੀਆਂ:\t%s\n"
 
-#: ../src/info.c:733
+#: ../src/info.c:584
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "ਟੱਕਰ:\t%s\n"
@@ -468,184 +527,134 @@ msgstr "ਐਡਰੈੱਸ"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "ਸਰੋਤ\tTTL\tਐਡਰੈੱਸ ਟਾਈਪ\tਰਿਕਾਰਡ ਟਾਈਪ1\tਰੈਜ਼ੋਲੈਸ਼ਨ\n"
 
-#: ../src/main.c:81
+#: ../src/main.c:83
 msgid "Load information for a network device"
 msgstr "ਨੈੱਟਵਰਕ ਜੰਤਰ ਲਈ ਜਾਣਕਾਰੀ ਲੋਡ ਕਰੋ"
 
-#: ../src/main.c:82
+#: ../src/main.c:84
 msgid "DEVICE"
 msgstr "ਜੰਤਰ"
 
-#: ../src/main.c:85
+#: ../src/main.c:87
 msgid "Send a ping to a network address"
 msgstr "ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਨੂੰ ping ਕਰੋ"
 
-#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
+#: ../src/main.c:88 ../src/main.c:96 ../src/main.c:100 ../src/main.c:104
 msgid "HOST"
 msgstr "ਹੋਸਟ"
 
-#: ../src/main.c:89
+#: ../src/main.c:91
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "netstat ਜਾਣਕਾਰੀ ਲੈਣ ਲਈ ਹੈ।  ਠੀਕ ਚੋਣ ਹੈ: route, active, multicast"
 
-#: ../src/main.c:90
+#: ../src/main.c:92
 msgid "COMMAND"
 msgstr "ਕਮਾਂਡ"
 
-#: ../src/main.c:93
+#: ../src/main.c:95
 msgid "Trace a route to a network address"
 msgstr "ਮਾਰਗ ਖੋਜਣ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ"
 
-#: ../src/main.c:97
+#: ../src/main.c:99
 msgid "Port scan a network address"
 msgstr "ਪੋਰਟ ਖੋਜਣ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ"
 
-#: ../src/main.c:101
+#: ../src/main.c:103
 msgid "Look up a network address"
 msgstr "ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਲਈ ਖੋਜ"
 
-#: ../src/main.c:105
+#: ../src/main.c:107
 msgid "Finger command to run"
 msgstr "ਚਲਾਉਣ ਲਈ Finger ਕਮਾਂਡ"
 
-#: ../src/main.c:106
+#: ../src/main.c:108
 msgid "USER"
 msgstr "ਯੂਜ਼ਰ"
 
-#: ../src/main.c:109
+#: ../src/main.c:111
 msgid "Perform a whois lookup for a network domain"
 msgstr "ਨੈੱਟਵਰਕ ਡੋਮੇਨ ਲਈ whois ਖੋਜ ਕਰੋ"
 
-#: ../src/main.c:110
+#: ../src/main.c:112
 msgid "DOMAIN"
 msgstr "ਡੋਮੇਨ"
 
-#: ../src/main.c:127
+#: ../src/main.c:129
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr "ਫਾਇਲ਼ %s ਮੌਜੂਦ ਨਹੀਂ ਹੈ, ਜਾਂਚ ਕਰੋ ਕਿ gnome-netinfo ਠੀਕ ਤਰਾਂ ਇੰਸਟਾਲ ਹੈ"
 
-#: ../src/main.c:346
-msgid ""
-"Enter the network address to ping.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"ping ਕਰਨ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
-"ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
-
-#: ../src/main.c:431
-msgid ""
-"Enter the network address to trace a route to.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"ਖੋਜ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
-"ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
-
-#: ../src/main.c:516 ../src/netstat.c:443
+#: ../src/main.c:482 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "ਪਰੋਟੋਕਾਲ"
 
-#: ../src/main.c:523
+#: ../src/main.c:489
 msgid "IP Address"
 msgstr "IP ਐਡਰੈੱਸ"
 
-#: ../src/main.c:530
+#: ../src/main.c:496
 msgid "Netmask / Prefix"
 msgstr "ਨੈਟਮਾਸਕ / ਪ੍ਰੀ-ਫਿਕਸ"
 
-#: ../src/main.c:537
+#: ../src/main.c:503
 msgid "Broadcast"
 msgstr "ਬਰਾਡਕਾਸਟ"
 
-#: ../src/main.c:544
+#: ../src/main.c:510
 msgid "Scope"
 msgstr "ਸਕੋਪ"
 
-#: ../src/main.c:685
-msgid ""
-"Enter the network address to scan for open ports.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"ਖੁੱਲੀਆਂ ਪੋਰਟਾਂ ਦੀ ਜਾਂਚ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
-"ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
-
-#: ../src/main.c:718
+#: ../src/main.c:669
 msgid "Default Information"
 msgstr "ਡਿਫਾਲਟ ਜਾਣਕਾਰੀ"
 
-#: ../src/main.c:719
+#: ../src/main.c:670
 msgid "Internet Address"
 msgstr "ਇੰਟਰਨੈੱਟ ਐਡਰੈੱਸ"
 
-#: ../src/main.c:720
+#: ../src/main.c:671
 msgid "Canonical Name"
 msgstr "ਕੋਨੀਕਲ ਨਾਂ"
 
-#: ../src/main.c:721
+#: ../src/main.c:672
 msgid "CPU / OS Type"
 msgstr "CPU / OS ਟਾਈਪ"
 
-#: ../src/main.c:722
+#. When asking for MX record in DNS context
+#: ../src/main.c:674
 msgid "Mailbox Exchange"
 msgstr "ਮੇਲਬਾਕਸ ਐਕਸਚੇਜ਼"
 
-#: ../src/main.c:723
+#: ../src/main.c:675
 msgid "Mailbox Information"
 msgstr "ਮੇਲਬਾਕਸ ਜਾਣਕਾਰੀ"
 
-#: ../src/main.c:724
+#. When asking for NS record in DNS context
+#: ../src/main.c:677
 msgid "Name Server"
 msgstr "ਨੇਮ ਸਰਵਰ"
 
-#: ../src/main.c:725
+#: ../src/main.c:678
 msgid "Host name for Address"
 msgstr "ਹੋਸਟ ਨਾਂ ਲਈ ਐਡਰੈੱਸ"
 
-#: ../src/main.c:726
+#: ../src/main.c:679
 msgid "Start-of-authority"
 msgstr "ਸਟਾਰਟ-ਆਫ਼-ਅਥਾਰਟੀ"
 
-#: ../src/main.c:727
+#: ../src/main.c:680
 msgid "Text Information"
 msgstr "ਟੈਕਸਟ ਜਾਣਕਾਰੀ"
 
-#: ../src/main.c:728
+#: ../src/main.c:681
 msgid "Well Known Services"
 msgstr "ਜਾਣੀਆਂ ਸਰਵਿਸਾਂ"
 
-#: ../src/main.c:729
+#: ../src/main.c:682
 msgid "Any / All Information"
 msgstr "ਕੋਈ / ਸਭ ਜਾਣਕਾਰੀ"
-
-#: ../src/main.c:813
-msgid ""
-"Enter the network address to lookup.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"ਖੋਜ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
-"ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
-
-#: ../src/main.c:902
-msgid "Enter the user to finger."
-msgstr "finger ਲਈ ਯੂਜ਼ਰ ਦਿਓ।"
-
-#: ../src/main.c:929
-msgid ""
-"Enter the network address to finger that user.\n"
-"For example: auth.domain.com or 192.168.2.1"
-msgstr ""
-"ਉਸ ਯੂਜ਼ਰ ਦੇ finger ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
-"ਉਦਾਹਰਨ ਲਈ: auth.domain.com ਜਾਂ 192.168.2.1"
-
-#: ../src/main.c:1016
-msgid ""
-"Enter a domain address to lookup its whois information.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"ਇੱਕ ਡੋਮੇਨ ਦੀ whois ਜਾਣਕਾਰੀ ਲਈ ਇਸ ਦਾ ਐਡਰੈੱਸ ਦਿਓ।\n"
-"ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
@@ -667,7 +676,7 @@ msgstr "IP ਸਰੋਤ"
 msgid "Port/Service"
 msgstr "ਪੋਰਟ/ਸਰਵਿਸ"
 
-#: ../src/netstat.c:466 ../src/scan.c:312
+#: ../src/netstat.c:466 ../src/scan.c:314
 msgid "State"
 msgstr "ਹਾਲਤ"
 
@@ -744,11 +753,11 @@ msgstr "ਇੱਕ ਠੀਕ ਡੋਮੇਨ ਐਡਰੈੱਸ ਦੇ ਕੇ ਮ
 msgid "Information not available"
 msgstr "ਜਾਣਕਾਰੀ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: ../src/nettool.c:524
+#: ../src/nettool.c:526
 msgid "Stop"
 msgstr "ਰੋਕੋ"
 
-#: ../src/nettool.c:530
+#: ../src/nettool.c:532
 msgid "Run"
 msgstr "ਚਲਾਓ"
 
@@ -761,28 +770,28 @@ msgstr "ਟਾਈਮ (ਮਿਸਕਿੰਟ):"
 msgid "Seq. No.:"
 msgstr "ਲੜੀ ਨੰਬਰ:"
 
-#: ../src/ping.c:253
+#: ../src/ping.c:254
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "%s ਨੂੰ ਪਿੰਗ (ping) ਬੇਨਤੀ ਭੇਜੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: ../src/ping.c:568
+#: ../src/ping.c:569
 msgid "Bytes"
 msgstr "ਬਾਇਟ"
 
-#: ../src/ping.c:575
+#: ../src/ping.c:576
 msgid "Source"
 msgstr "ਸਰੋਤ"
 
-#: ../src/ping.c:583
+#: ../src/ping.c:584
 msgid "Seq"
 msgstr "ਕ੍ਰਮ"
 
-#: ../src/ping.c:593
+#: ../src/ping.c:594
 msgid "Time"
 msgstr "ਟਾਈਮ"
 
-#: ../src/ping.c:601
+#: ../src/ping.c:602
 msgid "Units"
 msgstr "ਯੂਨਿਟ"
 
@@ -790,62 +799,67 @@ msgstr "ਯੂਨਿਟ"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:627
+#: ../src/ping.c:628
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "ਬਾਈਟ\tਸਰੋਤ\tਕ੍ਰਮ\tਟਾਈਮ\tਯੂਨਿਟ\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:642
+#: ../src/ping.c:643
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "ਘੱਟੋ-ਘੱਟ ਟਾਈਮ:\t%s ms\n"
 
-#: ../src/ping.c:643
+#: ../src/ping.c:644
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "ਔਸਤ ਟਾਈਮ:\t%s ms\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:645
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "ਵੱਧ ਤੋਂ ਵੱਧ ਟਾਈਮ:\t%s ms\n"
 
-#: ../src/ping.c:646
+#: ../src/ping.c:647
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "ਟਰਾਂਸਮਿਟ ਕੀਤੇ ਪੈਕੇਟ:\t%s\n"
 
-#: ../src/ping.c:648
+#: ../src/ping.c:649
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "ਮਿਲੇ ਪੈਕੇਟ:\t%s\n"
 
-#: ../src/ping.c:651
+#: ../src/ping.c:652
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "ਠੀਕ ਪੈਕੇਜ:\t%s\n"
 
-#: ../src/scan.c:93
+#: ../src/scan.c:94
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s ਉੱਤੇ ਖੁੱਲੀਆਂ ਪੋਰਟਾਂ ਦੀ ਖੋਜ ਜਾਰੀ ਹੈ"
 
-#: ../src/scan.c:168
+#: ../src/scan.c:169
 msgid "unknown"
 msgstr "ਅਣਜਾਣ"
 
-#: ../src/scan.c:304
+#. Translators: "open" is a network status and should be one word.
+#: ../src/scan.c:173
+msgid "open"
+msgstr "ਖੋਲ੍ਹੋ"
+
+#: ../src/scan.c:306
 msgid "Port"
 msgstr "ਪੋਰਟ"
 
-#: ../src/scan.c:320
+#: ../src/scan.c:322
 msgid "Service"
 msgstr "ਸਰਵਿਸ"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:342
+#: ../src/scan.c:344
 msgid "Port\tState\tService\n"
 msgstr "ਪੋਰਟ\tਹਾਲਤ\tਸਰਵਿਸ\n"
 
@@ -868,11 +882,11 @@ msgstr "IP"
 
 #: ../src/traceroute.c:292
 msgid "Time 1"
-msgstr "ਟਾਈਮ 1"
+msgstr "ਟਾਈਮ ੧"
 
 #: ../src/traceroute.c:302
 msgid "Time 2"
-msgstr "ਟਾਈਮ 2"
+msgstr "ਟਾਈਮ ੨"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
@@ -880,7 +894,7 @@ msgstr "ਟਾਈਮ 2"
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/traceroute.c:328
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "Hop\tਹੋਸਟ-ਨਾਂ\tIP\tਟਾਈਮ 1\tਟਾਈਮ 2\n"
+msgstr "Hop\tਹੋਸਟ-ਨਾਂ\tIP\tਟਾਈਮ ੧\tਟਾਈਮ ੨\n"
 
 #: ../src/utils.c:227
 #, c-format
@@ -893,12 +907,12 @@ msgstr "ਪ੍ਰੋਗਰਾਮ ਦਾ ਇਹ ਫੀਚਰ ਵਰਤਣ ਲਈ,
 msgid "View information about your network"
 msgstr "ਆਪਣੇ ਨੈੱਟਵਰਕ ਬਾਰੇ ਜਾਣਕਾਰੀ ਲਵੋ"
 
-#: ../src/finger.c:62
+#: ../src/finger.c:63
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr " \"%2$s\" ਉੱਤੇ %1$s ਦੀ ਜਾਣਕਾਰੀ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: ../src/finger.c:66
+#: ../src/finger.c:67
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "\"%s\" ਦੇ ਸਭ ਯੂਜ਼ਰਾਂ ਦੀ ਜਾਣਕਾਰੀ ਲਈ ਜਾ ਰਹੀ ਹੈ"
@@ -908,6 +922,68 @@ msgstr "\"%s\" ਦੇ ਸਭ ਯੂਜ਼ਰਾਂ ਦੀ ਜਾਣਕਾਰੀ 
 msgid "Getting the whois information of %s"
 msgstr "%s ਬਾਰੇ whois ਜਾਣਕਾਰੀ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
+#~ msgid "Broadcast:"
+#~ msgstr "ਬਰਾਡਕਾਸਟ:"
+
+#~ msgid "IP Address:"
+#~ msgstr "IP ਐਡਰੈੱਸ:"
+
+#~ msgid "Netmask:"
+#~ msgstr "ਨੈੱਟਮਾਸਕ:"
+
+#~ msgid "IP address:\t%s\n"
+#~ msgstr "IP ਐਡਰੈੱਸ:\t%s\n"
+
+#~ msgid "Netmask:\t%s\n"
+#~ msgstr "ਨੈੱਟਮਾਸਕ:\t%s\n"
+
+#~ msgid "Broadcast:\t%s\n"
+#~ msgstr "ਬਰਾਡਕਾਸਟ:\t%s\n"
+
+#~ msgid ""
+#~ "Enter the network address to ping.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "ping ਕਰਨ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
+#~ "ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to trace a route to.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "ਖੋਜ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
+#~ "ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to scan for open ports.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "ਖੁੱਲੀਆਂ ਪੋਰਟਾਂ ਦੀ ਜਾਂਚ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
+#~ "ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter the network address to lookup.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "ਖੋਜ ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
+#~ "ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
+
+#~ msgid "Enter the user to finger."
+#~ msgstr "finger ਲਈ ਯੂਜ਼ਰ ਦਿਓ।"
+
+#~ msgid ""
+#~ "Enter the network address to finger that user.\n"
+#~ "For example: auth.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "ਉਸ ਯੂਜ਼ਰ ਦੇ finger ਲਈ ਨੈੱਟਵਰਕ ਐਡਰੈੱਸ ਦਿਓ।\n"
+#~ "ਉਦਾਹਰਨ ਲਈ: auth.domain.com ਜਾਂ 192.168.2.1"
+
+#~ msgid ""
+#~ "Enter a domain address to lookup its whois information.\n"
+#~ "For example: www.domain.com or 192.168.2.1"
+#~ msgstr ""
+#~ "ਇੱਕ ਡੋਮੇਨ ਦੀ whois ਜਾਣਕਾਰੀ ਲਈ ਇਸ ਦਾ ਐਡਰੈੱਸ ਦਿਓ।\n"
+#~ "ਉਦਾਹਰਨ ਲਈ: www.domain.com ਜਾਂ 192.168.2.1"
+
 #~ msgid "Network Information Tools"
 #~ msgstr "ਨੈੱਟਵਰਕ ਜਾਣਕਾਰੀ ਸੰਦ"
-
