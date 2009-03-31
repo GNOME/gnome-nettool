@@ -120,6 +120,8 @@ main (int argc, char *argv[])
 	textdomain (GETTEXT_PACKAGE);
 #endif
 
+	glibtop_init ();
+
 	if (!gtk_init_with_args (&argc, &argv, NULL, options, NULL, &error)) {
 		g_print ("%s\n\n", error->message);
 		return -1;
@@ -227,8 +229,6 @@ main (int argc, char *argv[])
 	gtk_notebook_set_current_page (GTK_NOTEBOOK (notebook), current_page);
 
 	gtk_widget_show (window);
-
-	glibtop_init ();
 
 	gtk_main ();
 
