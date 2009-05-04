@@ -329,6 +329,8 @@ netinfo_io_text_buffer_dialog (GIOChannel * channel,
 	gchar *text = NULL;
 	gsize len;
 	Netinfo *netinfo = (Netinfo *) data;
+	GError *err = NULL;
+	const gchar *encoding;
 
 	g_return_val_if_fail (channel != NULL, FALSE);
 	g_return_val_if_fail (netinfo != NULL, FALSE);
@@ -357,7 +359,7 @@ netinfo_io_text_buffer_dialog (GIOChannel * channel,
 	if (condition & G_IO_IN) {
 		GIOStatus status;
 
-		status = g_io_channel_read_line (channel, &text, &len, NULL, NULL);
+		status = g_io_channel_read_line (channel, &text, &len, NULL, &err);
 
 		if (status == G_IO_STATUS_NORMAL) {
 			if (netinfo->command_output) {
@@ -384,6 +386,26 @@ netinfo_io_text_buffer_dialog (GIOChannel * channel,
 				g_string_append_c (netinfo->command_output, buf[0]);
 			}
 		} else if (status == G_IO_STATUS_EOF) {
+			
+		} else if (status == G_IO_STATUS_ERROR) {
+			encoding = g_io_channel_get_encoding (channel);
+
+			if (err->code == G_CONVERT_ERROR_ILLEGAL_SEQUENCE) {
+				g_warning ("Warning: change of encoding: %s. The encoding "
+						   "was changed from %s to ISO-8859-1 only "
+						   "for this string\n", 
+						   err->message,
+						   encoding);
+		
+				g_io_channel_set_encoding (channel, "ISO-8859-1", NULL);
+				g_io_channel_read_line (channel, &text, &len, NULL, NULL);
+
+			} else {
+				g_warning ("Error: %s\n", err->message);
+				g_free (text);
+				g_free (err);
+			}
+
 		}
 
 		g_free (text);
