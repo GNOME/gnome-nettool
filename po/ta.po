@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.ta\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&amp;component=general\n"
-"POT-Creation-Date: 2008-12-16 20:17+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-05-08 04:49+0530\n"
 "PO-Revision-Date: 2009-03-12 06:11+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../src/callbacks.c:323
 msgid "translator-credits"
-msgstr "Tirumurthi Vasudevan, 2008"
+msgstr "Tirumurthi Vasudevan, 2008, 2009"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:330
@@ -44,7 +44,7 @@ msgstr "வலைப்பின்னல் கருவிகள்"
 msgid "Graphical user interface for common network utilities"
 msgstr "பொதுவான வலைப்பின்னல் பயன்பாடுகளுக்கன சித்திர பயனீட்டாளர் இடைமுகம்"
 
-#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "வெறுமை"
 
@@ -137,236 +137,281 @@ msgstr "காட்சி:"
 msgid "Domain address"
 msgstr "டொமைன் முகவரி"
 
-#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
+#: ../src/gnome-nettool.glade.h:22
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr "யார் இது தகவலை  பார்க்க ஒரு களப்பெயரை உள்ளிடவும். உதாரணமாக  : www."
+"domain.com அல்லது 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:23
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr "பயனரை தொட ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www."
+"domain.com அல்லது 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:24
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr "ஆராய்ச்சிக்கு (லுக்அப்) ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www."
+"domain.com அல்லது 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:25
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr "சீண்டிப்பார்க்க (பிங்) ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www."
+"domain.com அல்லது 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:26
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr "திறந்த துறைகளை காண ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www."
+"domain.com அல்லது 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:27
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr "தடத்தை தேடிப்பார்க்க  ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www."
+"domain.com அல்லது 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:28
+msgid "Enter the user to finger"
+msgstr "தொடுவதற்கு ஒரு பயனரை   உள்ளிடுக"
+
+#: ../src/gnome-nettool.glade.h:29 ../src/main.c:814
 msgid "Finger"
 msgstr "விரல்"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:30
 msgid "Finger output"
 msgstr "விரல் வெளியீடு"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:31
 msgid "Hardware address:"
 msgstr "வன்பொருள் முகவரி"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:32
 msgid "Host"
 msgstr "புரவலம்"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:33
 msgid "Link speed:"
 msgstr "இணைப்பு வேகம்:"
 
-#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:734
 msgid "Lookup"
 msgstr "பார்வை"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:35
 msgid "Lookup output"
 msgstr "வெளிப்பாட்டை தேடு"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:36
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:37
 msgid "Maximum:"
 msgstr "அதிக பட்ச:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:38
 msgid "Minimum:"
 msgstr "குறைந்தபட்ச"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:39
 msgid "Multicast Information"
 msgstr "தொலை ஒலிபரப்புத்தகவல்"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:40
 msgid "Multicast:"
 msgstr "தொலை ஒலிபரப்பு"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:446
 msgid "Netstat"
 msgstr "வலைபுள்ளிவிவரம்"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:42
 msgid "Netstat output"
 msgstr "Netstat வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:43
 msgid "Network address"
 msgstr "பிணைய முகவரி"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:44
 msgid "Not Available"
 msgstr "கிடைக்கவில்லை"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:45
 msgid "Only"
 msgstr "மட்டும்"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:46
 msgid "Output for finger"
 msgstr "விரலுக்கான வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:47
 msgid "Output for lookup"
 msgstr "தேடுதலுக்கான வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:48
 msgid "Output for net stat"
 msgstr "net statக்கான வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:49
 msgid "Output for port scan"
 msgstr "port scanக்கான வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:50
 msgid "Output for traceroute"
 msgstr "tracerouteக்கான வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:51
 msgid "Output for whois"
 msgstr "whoisக்கான வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:52
 msgid "Packets received:"
 msgstr "பெறப்பட்ட கட்டுகள்:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:53
 msgid "Packets transmitted:"
 msgstr "அனுப்பப்பட்ட கட்டுகள்:"
 
-#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:290
 msgid "Ping"
 msgstr "அழை"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:55
 msgid "Port Scan"
 msgstr "வழி தேடல்"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:56
 msgid "Port scan output"
 msgstr "Port scan வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:57
 msgid "Received bytes:"
 msgstr "பெறப்பட்ட பைட்கள்"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:58
 msgid "Received packets:"
 msgstr "பெறப்பட்ட கட்டுகள்:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:59
 msgid "Reception errors:"
 msgstr "பெறுதல் பிழை"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:60
 msgid "Routing Table Information"
 msgstr "வழிகாட்டி அட்டவணை தகவல்"
 
-#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
+#: ../src/gnome-nettool.glade.h:61 ../src/main.c:619
 msgid "Scan"
 msgstr "தேடு"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:62
 msgid "Send:"
 msgstr "அனுப்பு:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:63
 msgid "State:"
 msgstr "நிலை:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:64
 msgid "Successful packets:"
 msgstr "வெற்றிகரமான கட்டுகள்:"
 
-#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
+#: ../src/gnome-nettool.glade.h:65 ../src/main.c:375
 msgid "Trace"
 msgstr "தடத்தை தேடு"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:66
 msgid "Traceroute"
 msgstr "தடம்"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:67
 msgid "Traceroute output"
 msgstr "Traceroute வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:68
 msgid "Transmission errors:"
 msgstr "அனுப்பல் பிழை"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.glade.h:69
 msgid "Transmitted bytes:"
 msgstr "அனுப்பப்பட்ட பைட்கள்"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:70
 msgid "Transmitted packets:"
 msgstr "அனுப்பப்பட்ட கட்டுகள்"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../src/gnome-nettool.glade.h:71
 msgid "Unlimited requests"
 msgstr "கணக்கில்லா கோரிக்கைகள்"
 
-#: ../src/gnome-nettool.glade.h:65
+#: ../src/gnome-nettool.glade.h:72
 msgid "User"
 msgstr "பயனீட்டாளர்"
 
-#: ../src/gnome-nettool.glade.h:66
+#: ../src/gnome-nettool.glade.h:73
 msgid "User name"
 msgstr "பயனர் பெயர்"
 
-#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
+#: ../src/gnome-nettool.glade.h:74 ../src/main.c:920
 msgid "Whois"
 msgstr "யாரது"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../src/gnome-nettool.glade.h:75
 msgid "Whois output"
 msgstr "Whois வெளிப்பாடு"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Configure"
 msgstr "(_C)அமைப்பு"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Domain address:"
 msgstr "(_D)டொமைன் முகவரி:"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../src/gnome-nettool.glade.h:78
 msgid "_Edit"
 msgstr "தொகுக்கவும் (_E)"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../src/gnome-nettool.glade.h:79
 msgid "_Help"
 msgstr "உதவி (_H)"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../src/gnome-nettool.glade.h:80
 msgid "_Information type:"
 msgstr "(_I)தகவல் வகை:"
 
-#: ../src/gnome-nettool.glade.h:74
+#: ../src/gnome-nettool.glade.h:81
 msgid "_Network address:"
 msgstr "(_N)வலைப்பின்னல் முகவரி:"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../src/gnome-nettool.glade.h:82
 msgid "_Network device:"
 msgstr "(_N)வலைப்பின்னல் சாதனம்:"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../src/gnome-nettool.glade.h:83
 msgid "_Tool"
 msgstr "(_T)கருவி"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../src/gnome-nettool.glade.h:84
 msgid "_Username:"
 msgstr "(_U)பயனீட்டாளர் பெயர்:"
 
 #. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:79
+#: ../src/gnome-nettool.glade.h:86
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../src/gnome-nettool.glade.h:87
 msgid "requests"
 msgstr "அழைப்புகள்"
 
@@ -496,24 +541,24 @@ msgstr "கிடைக்கவில்லை"
 msgid "Looking up %s"
 msgstr "மேலே பார்க்கிறது %s"
 
-#: ../src/lookup.c:278
+#: ../src/lookup.c:274
 msgid "Name"
 msgstr "பெயர்"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: ../src/lookup.c:283
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:296
+#: ../src/lookup.c:292
 msgid "Address Type"
 msgstr "முகவரி வகை"
 
-#: ../src/lookup.c:306
+#: ../src/lookup.c:302
 msgid "Record Type"
 msgstr "பதிப்பு வகை"
 
-#: ../src/lookup.c:315
+#: ../src/lookup.c:311
 msgid "Address"
 msgstr "முகவரி"
 
@@ -523,7 +568,7 @@ msgstr "முகவரி"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: ../src/lookup.c:339
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "மூலம்\tTTL\tமுகவரிவகை\tபதிப்பு வகை1\tதெளிவுத்திறன்\n"
 
@@ -581,7 +626,7 @@ msgstr "வலைப்பின்னல் டொமைனுக்கான �
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:129
+#: ../src/main.c:131
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -751,15 +796,15 @@ msgstr "டொமைன் முகவரி குறிப்பிடப்�
 msgid "Please enter a valid domain address and try again."
 msgstr "சரியான டொமைன் முகவரியை உள்ளிட்டு மீண்டும் முயற்சிக்கவும்"
 
-#: ../src/nettool.c:406
+#: ../src/nettool.c:428
 msgid "Information not available"
 msgstr "தகவல் இல்லை"
 
-#: ../src/nettool.c:526
+#: ../src/nettool.c:548
 msgid "Stop"
 msgstr "நிறுத்து"
 
-#: ../src/nettool.c:532
+#: ../src/nettool.c:554
 msgid "Run"
 msgstr "இயக்கு"
 
@@ -923,4 +968,3 @@ msgstr "\"%s\" க்கான தகவலை பெறுகிறது"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s க்கான யாரது தகவலை பெறுகிறது."
-
