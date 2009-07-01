@@ -1,417 +1,530 @@
 # Ukrainian translation of the gnome-nettool module.
 # Copyright (C) 2004 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
-# Maxim Dizumanenko <dziumanenko@gmail.com>, 2004-2008
+# Maxim Dizumanenko <dziumanenko@gmail.com>, 2004-2009
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-netool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-07 15:33+0200\n"
-"PO-Revision-Date: 2008-03-07 16:33+0300\n"
+"POT-Creation-Date: 2009-07-01 23:03+0300\n"
+"PO-Revision-Date: 2009-07-01 16:33+0300\n"
 "Last-Translator: Maxim Dizumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:318
+#: ../src/callbacks.c:323
 msgid "translator-credits"
 msgstr "Максим Дзюманенко <dziumanenko@gmail.com>"
 
+#. Translators: %s is the name of the copyright holder
+#: ../src/callbacks.c:330
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr "Авторське право © 2003-2008 %s"
+
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:328 ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:334 ../src/callbacks.c:335
+#: ../src/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Мережні утиліти"
 
-#: ../src/callbacks.c:334
+#: ../src/callbacks.c:337
 msgid "Graphical user interface for common network utilities"
 msgstr "Графічний інтерфейс для поширених мережних утиліт"
 
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
+msgid "Idle"
+msgstr "Бездіяльний"
+
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:445
+#: ../src/callbacks.c:455
 #, c-format
 msgid "%s - Network Tools"
 msgstr "Мережні утиліти - %s"
 
+#: ../src/callbacks.c:479
+msgid "Unable to open help file"
+msgstr "Не вдається відкрити файл довідки"
+
 #: ../src/gnome-nettool.glade.h:1
+msgid "0"
+msgstr "0"
+
+#: ../src/gnome-nettool.glade.h:3
+#, no-c-format
+msgid "0%"
+msgstr "0%"
+
+#: ../src/gnome-nettool.glade.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.glade.h:2
+#: ../src/gnome-nettool.glade.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>Інформація про IP</b>"
 
-#: ../src/gnome-nettool.glade.h:3
+#: ../src/gnome-nettool.glade.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>Інформація про інтерфейс</b>"
 
-#: ../src/gnome-nettool.glade.h:4
+#: ../src/gnome-nettool.glade.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>Статистика інтерфейсу</b>"
 
-#: ../src/gnome-nettool.glade.h:5
+#: ../src/gnome-nettool.glade.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Статистика часу відкликання</b>"
 
-#: ../src/gnome-nettool.glade.h:6
+#: ../src/gnome-nettool.glade.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Статистика передавання</b>"
 
-#: ../src/gnome-nettool.glade.h:7
+#: ../src/gnome-nettool.glade.h:10
 msgid "Active Network Services"
 msgstr "Активні мережні служби"
 
-#: ../src/gnome-nettool.glade.h:8
+#: ../src/gnome-nettool.glade.h:11
 msgid "Average:"
 msgstr "Середній:"
 
-#: ../src/gnome-nettool.glade.h:9
+#: ../src/gnome-nettool.glade.h:12
 msgid "Beep on ping"
 msgstr "Звуковий сигнал при ping"
 
-#: ../src/gnome-nettool.glade.h:10
-msgid "Broadcast:"
-msgstr "Широкомовна:"
-
-#: ../src/gnome-nettool.glade.h:11
+#: ../src/gnome-nettool.glade.h:13
 msgid "Clear _History"
 msgstr "Очистити _історію"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../src/gnome-nettool.glade.h:14
 msgid "Collisions:"
 msgstr "Колізії:"
 
-#: ../src/gnome-nettool.glade.h:13
+#: ../src/gnome-nettool.glade.h:15
+msgid "Copy as text _report"
+msgstr "Копіювати як текстовий _звіт"
+
+#: ../src/gnome-nettool.glade.h:16
 msgid "Details"
 msgstr "Подробиці"
 
-#: ../src/gnome-nettool.glade.h:14
+#: ../src/gnome-nettool.glade.h:17
 msgid "Devices"
 msgstr "Пристрої"
 
 #. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.glade.h:19
 msgid "Devices - Network Tools"
 msgstr "Пристрої - Мережні утиліти"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.glade.h:20
 msgid "Display:"
-msgstr "Відображувати:"
+msgstr "Показати:"
 
-#: ../src/gnome-nettool.glade.h:18 ../src/main.c:868
+#: ../src/gnome-nettool.glade.h:21
+msgid "Domain address"
+msgstr "Адресу домену"
+
+#: ../src/gnome-nettool.glade.h:22
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Введіть адресу домену для отриманні інформації whois. "
+"Наприклад: www.domain.com або 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:23
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Введіть мережну адресу finger для цього користувача. "
+"Наприклад: auth.domain.com або 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:24
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"Введіть мережну адресу для пошуку. "
+"Наприклад: www.domain.com або 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:25
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Введіть мережну адресу для ping. "
+"Наприклад: www.domain.com або 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:26
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Введіть мережну адресу для сканування відкритих портів. "
+"Наприклад: www.domain.com або 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:27
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Наприклад: www.domain.com або 192.168.2.1"
+"Введіть мережну адресу для виводу маршруту. "
+
+#: ../src/gnome-nettool.glade.h:28
+msgid "Enter the user to finger"
+msgstr "Введіть ім'я користувача для finger."
+
+#: ../src/gnome-nettool.glade.h:29 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.glade.h:30
+msgid "Finger output"
+msgstr "Вивід finger"
+
+#: ../src/gnome-nettool.glade.h:31
 msgid "Hardware address:"
 msgstr "Апаратна адреса:"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.glade.h:32
 msgid "Host"
 msgstr "Вузол"
 
-#: ../src/gnome-nettool.glade.h:21
-msgid "IP Address:"
-msgstr "IP адреса:"
-
-#: ../src/gnome-nettool.glade.h:22
+#: ../src/gnome-nettool.glade.h:33
 msgid "Link speed:"
 msgstr "Швидкість зв'язку:"
 
-#: ../src/gnome-nettool.glade.h:23 ../src/main.c:782
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:734
 msgid "Lookup"
 msgstr "Пошук"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:35
+msgid "Lookup output"
+msgstr "Результат перетворення імен"
+
+#: ../src/gnome-nettool.glade.h:36
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:37
 msgid "Maximum:"
 msgstr "Максимальний:"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:38
 msgid "Minimum:"
 msgstr "Мінімальний:"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../src/gnome-nettool.glade.h:39
 msgid "Multicast Information"
 msgstr "Інформація про групову передачу"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:40
 msgid "Multicast:"
 msgstr "Групова:"
 
-#: ../src/gnome-nettool.glade.h:29
-msgid "Netmask:"
-msgstr "Маска мережі:"
-
-#: ../src/gnome-nettool.glade.h:30 ../src/main.c:480
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:42
+msgid "Netstat output"
+msgstr "Вивід netstat"
+
+#: ../src/gnome-nettool.glade.h:43
+msgid "Network address"
+msgstr "Мережна адреса"
+
+#: ../src/gnome-nettool.glade.h:44
 msgid "Not Available"
 msgstr "Не доступний"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:45
 msgid "Only"
 msgstr "Лише"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:46
+msgid "Output for finger"
+msgstr "Вивід команди finger"
+
+#: ../src/gnome-nettool.glade.h:47
+msgid "Output for lookup"
+msgstr "Вивід команди lookup"
+
+#: ../src/gnome-nettool.glade.h:48
+msgid "Output for net stat"
+msgstr "Вивід команди netstat"
+
+#: ../src/gnome-nettool.glade.h:49
+msgid "Output for port scan"
+msgstr "Вивід сканування портів"
+
+#: ../src/gnome-nettool.glade.h:50
+msgid "Output for traceroute"
+msgstr "Вивід команди traceroute"
+
+#: ../src/gnome-nettool.glade.h:51
+msgid "Output for whois"
+msgstr "Вивід команди whois"
+
+#: ../src/gnome-nettool.glade.h:52
 msgid "Packets received:"
 msgstr "Отримано пакетів:"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:53
 msgid "Packets transmitted:"
 msgstr "Передано пакетів:"
 
-#: ../src/gnome-nettool.glade.h:35 ../src/main.c:313
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:55
 msgid "Port Scan"
 msgstr "Сканування портів"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:56
+msgid "Port scan output"
+msgstr "Результат сканування портів"
+
+#: ../src/gnome-nettool.glade.h:57
 msgid "Received bytes:"
 msgstr "Отримано байтів:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:58
 msgid "Received packets:"
 msgstr "Отримано пакетів:"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:59
 msgid "Reception errors:"
 msgstr "Помилок прийому:"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:60
 msgid "Routing Table Information"
 msgstr "Інформація про таблицю маршрутизації"
 
-#: ../src/gnome-nettool.glade.h:41 ../src/main.c:663
+#: ../src/gnome-nettool.glade.h:61 ../src/main.c:619
 msgid "Scan"
 msgstr "Сканувати"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:62
 msgid "Send:"
 msgstr "Надсилати:"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:63
 msgid "State:"
 msgstr "Стан:"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:64
 msgid "Successful packets:"
 msgstr "Успішних пакетів:"
 
-#: ../src/gnome-nettool.glade.h:45 ../src/main.c:404
+#: ../src/gnome-nettool.glade.h:65 ../src/main.c:375
 msgid "Trace"
 msgstr "Трасувати"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:66
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:67
+msgid "Traceroute output"
+msgstr "Результат трасування маршруту"
+
+#: ../src/gnome-nettool.glade.h:68
 msgid "Transmission errors:"
 msgstr "Помилок передавання:"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:69
 msgid "Transmitted bytes:"
 msgstr "Передано байтів:"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:70
 msgid "Transmitted packets:"
 msgstr "Передано пакетів:"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:71
 msgid "Unlimited requests"
 msgstr "Необмежена кількість пакетів"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:72
 msgid "User"
 msgstr "Користувач"
 
-#: ../src/gnome-nettool.glade.h:52 ../src/main.c:984
+#: ../src/gnome-nettool.glade.h:73
+msgid "User name"
+msgstr "Ім'я користувача"
+
+#: ../src/gnome-nettool.glade.h:74 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:75
+msgid "Whois output"
+msgstr "Результат запиту інформації про мережне ім'я"
+
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Configure"
 msgstr "Н_алаштувати"
 
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Domain address:"
 msgstr "Д_оменна адреса:"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:78
 msgid "_Edit"
 msgstr "_Правка"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:79
 msgid "_Help"
 msgstr "_Довідка"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:80
 msgid "_Information type:"
 msgstr "_Тип інформації"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:81
 msgid "_Network address:"
 msgstr "_Мережна адреса:"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:82
 msgid "_Network device:"
 msgstr "_Мережний пристрій"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:83
 msgid "_Tool"
 msgstr "_Утиліта"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:84
 msgid "_Username:"
 msgstr "_Користувач:"
 
-#: ../src/gnome-nettool.glade.h:62
+#. Translators: this is the abbreviation for milliseconds
+#: ../src/gnome-nettool.glade.h:86
 msgid "ms"
 msgstr "мс"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:87
 msgid "requests"
 msgstr "запитів"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
-#: ../src/info.c:57
+#: ../src/info.c:60
 msgid "Other type"
 msgstr "Іншого типу"
 
-#: ../src/info.c:58
+#: ../src/info.c:61
 msgid "Ethernet Interface"
 msgstr "Інтерфейс Ethernet"
 
-#: ../src/info.c:59
+#: ../src/info.c:62
 msgid "Wireless Interface"
 msgstr "Бездротовий інтерфейс "
 
-#: ../src/info.c:60
+#: ../src/info.c:63
 msgid "Modem Interface"
 msgstr "Модемний інтерфейс"
 
-#: ../src/info.c:61
+#: ../src/info.c:64
 msgid "Parallel Line Interface"
 msgstr "Інтерфейс паралельного порту"
 
-#: ../src/info.c:62
+#: ../src/info.c:65
 msgid "Infrared Interface"
 msgstr "Інфрачервоний інтерфейс"
 
-#: ../src/info.c:63
+#: ../src/info.c:66
 msgid "Loopback Interface"
 msgstr "Loopback інтерфейс"
 
-#: ../src/info.c:64
+#: ../src/info.c:67
 msgid "Unknown Interface"
 msgstr "Невідомий інтерфейс"
 
-#: ../src/info.c:162
+#: ../src/info.c:165
 msgid "Network Devices Not Found"
 msgstr "Мережні пристрої не знайдені"
 
-#: ../src/info.c:385
+#: ../src/info.c:392 ../src/info.c:395
 msgid "Unknown"
 msgstr "Невідомо"
 
-#: ../src/info.c:554
+#: ../src/info.c:466
 msgid "Active"
 msgstr "Активний"
 
-#: ../src/info.c:556
+#: ../src/info.c:468
 msgid "Inactive"
 msgstr "Неактивний"
 
-#: ../src/info.c:561
+#: ../src/info.c:473
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:580
+#: ../src/info.c:482
 msgid "Enabled"
 msgstr "Увімкнено"
 
-#: ../src/info.c:582
+#: ../src/info.c:484
 msgid "Disabled"
 msgstr "Вимкнено"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:719
+#: ../src/info.c:573
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Мережний пристрій:\t%s\n"
 
-#: ../src/info.c:720
+#: ../src/info.c:574
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Апаратна адреса:\t%s\n"
 
-#: ../src/info.c:721
-#, c-format
-msgid "IP address:\t%s\n"
-msgstr "IP адреса:\t%s\n"
-
-#: ../src/info.c:722
-#, c-format
-msgid "Netmask:\t%s\n"
-msgstr "Мережна маска:\t%s\n"
-
-#: ../src/info.c:723
-#, c-format
-msgid "Broadcast:\t%s\n"
-msgstr "Широкомовна:\t%s\n"
-
-#: ../src/info.c:724
+#: ../src/info.c:575
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Групова:\t%s\n"
 
-#: ../src/info.c:725
+#: ../src/info.c:576
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:726
+#: ../src/info.c:577
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Швидкість зв'язку:\t%s\n"
 
-#: ../src/info.c:727
+#: ../src/info.c:578
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Стан:\t%s\n"
 
-#: ../src/info.c:729
+#: ../src/info.c:580
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Передано пакетів:\t%s\n"
 
-#: ../src/info.c:730
+#: ../src/info.c:581
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Помилок при передаванні:\t%s\n"
 
-#: ../src/info.c:731
+#: ../src/info.c:582
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Отримано пакетів:\t%s\n"
 
-#: ../src/info.c:732
+#: ../src/info.c:583
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Помилок прийому:\t%s\n"
 
-#: ../src/info.c:733
+#: ../src/info.c:584
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Колізій:\t%s\n"
@@ -425,24 +538,24 @@ msgstr "недоступний"
 msgid "Looking up %s"
 msgstr "Шукається %s"
 
-#: ../src/lookup.c:278
+#: ../src/lookup.c:274
 msgid "Name"
 msgstr "Назва"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: ../src/lookup.c:283
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:296
+#: ../src/lookup.c:292
 msgid "Address Type"
 msgstr "Тип адреси"
 
-#: ../src/lookup.c:306
+#: ../src/lookup.c:302
 msgid "Record Type"
 msgstr "Тип запису"
 
-#: ../src/lookup.c:315
+#: ../src/lookup.c:311
 msgid "Address"
 msgstr "Адреса"
 
@@ -452,189 +565,139 @@ msgstr "Адреса"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: ../src/lookup.c:339
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Джерело\tTTL\tТип адреси\tТип запису\tРозв'язання\n"
 
-#: ../src/main.c:81
+#: ../src/main.c:83
 msgid "Load information for a network device"
 msgstr "Отримати інформацію про мережний пристрій"
 
-#: ../src/main.c:82
+#: ../src/main.c:84
 msgid "DEVICE"
 msgstr "ПРИСТРІЙ"
 
-#: ../src/main.c:85
+#: ../src/main.c:87
 msgid "Send a ping to a network address"
 msgstr "Надіслати ping за мережною адресою"
 
-#: ../src/main.c:86 ../src/main.c:94 ../src/main.c:98 ../src/main.c:102
+#: ../src/main.c:88 ../src/main.c:96 ../src/main.c:100 ../src/main.c:104
 msgid "HOST"
 msgstr "ВУЗОЛ"
 
-#: ../src/main.c:89
+#: ../src/main.c:91
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Отримати інформацію netstat. Допустимі параметри: route, active, multicast."
 
-#: ../src/main.c:90
+#: ../src/main.c:92
 msgid "COMMAND"
 msgstr "КОМАНДА"
 
-#: ../src/main.c:93
+#: ../src/main.c:95
 msgid "Trace a route to a network address"
 msgstr "Вивести трасу до мережної адреси"
 
-#: ../src/main.c:97
+#: ../src/main.c:99
 msgid "Port scan a network address"
 msgstr "Сканувати порти мережної адреси"
 
-#: ../src/main.c:101
+#: ../src/main.c:103
 msgid "Look up a network address"
 msgstr "Шукати мережну адресу"
 
-#: ../src/main.c:105
+#: ../src/main.c:107
 msgid "Finger command to run"
 msgstr "Виконати команду Finger"
 
-#: ../src/main.c:106
+#: ../src/main.c:108
 msgid "USER"
 msgstr "КОРИСТУВАЧ"
 
-#: ../src/main.c:109
+#: ../src/main.c:111
 msgid "Perform a whois lookup for a network domain"
 msgstr "Виконати пошук у whois за доменом мережі"
 
-#: ../src/main.c:110
+#: ../src/main.c:112
 msgid "DOMAIN"
 msgstr "ДОМЕН"
 
-#: ../src/main.c:127
+#: ../src/main.c:131
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr "Файл %s не існує, перевірте чи gnome-nettool встановлено коректно"
 
-#: ../src/main.c:346
-msgid ""
-"Enter the network address to ping.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Введіть мережну адресу для ping.\n"
-"Наприклад: www.domain.com або 192.168.2.1"
-
-#: ../src/main.c:431
-msgid ""
-"Enter the network address to trace a route to.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Введіть мережну адресу для виводу маршруту.\n"
-"Наприклад: www.domain.com або 192.168.2.1"
-
-#: ../src/main.c:516 ../src/netstat.c:443
+#: ../src/main.c:482 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Протокол"
 
-#: ../src/main.c:523
+#: ../src/main.c:489
 msgid "IP Address"
 msgstr "IP адреса"
 
-#: ../src/main.c:530
+#: ../src/main.c:496
 msgid "Netmask / Prefix"
 msgstr "Маска мережі / Префікс"
 
-#: ../src/main.c:537
+#: ../src/main.c:503
 msgid "Broadcast"
 msgstr "Широкомовний"
 
-#: ../src/main.c:544
+#: ../src/main.c:510
 msgid "Scope"
 msgstr "Область"
 
-#: ../src/main.c:685
-msgid ""
-"Enter the network address to scan for open ports.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Введіть мережну адресу для сканування відкритих портів.\n"
-"Наприклад: www.domain.com або 192.168.2.1"
-
-#: ../src/main.c:718
+#: ../src/main.c:669
 msgid "Default Information"
 msgstr "Типова інформація"
 
-#: ../src/main.c:719
+#: ../src/main.c:670
 msgid "Internet Address"
 msgstr "IP адреса"
 
-#: ../src/main.c:720
+#: ../src/main.c:671
 msgid "Canonical Name"
 msgstr "Канонічна назва"
 
-#: ../src/main.c:721
+#: ../src/main.c:672
 msgid "CPU / OS Type"
 msgstr "Тип ЦП та операційна система"
 
-#: ../src/main.c:722
+#. When asking for MX record in DNS context
+#: ../src/main.c:674
 msgid "Mailbox Exchange"
 msgstr "Запис MX поштової служби"
 
-#: ../src/main.c:723
+#: ../src/main.c:675
 msgid "Mailbox Information"
 msgstr "Інформація про поштову скриньку"
 
-#: ../src/main.c:724
+#. When asking for NS record in DNS context
+#: ../src/main.c:677
 msgid "Name Server"
 msgstr "Сервер назв"
 
-#: ../src/main.c:725
+#: ../src/main.c:678
 msgid "Host name for Address"
 msgstr "Назва вузла для адреси IP"
 
-#: ../src/main.c:726
+#: ../src/main.c:679
 msgid "Start-of-authority"
 msgstr "Авторитетний вузол"
 
-#: ../src/main.c:727
+#: ../src/main.c:680
 msgid "Text Information"
 msgstr "Текстова інформація"
 
-#: ../src/main.c:728
+#: ../src/main.c:681
 msgid "Well Known Services"
 msgstr "Доступні служби"
 
-#: ../src/main.c:729
+#: ../src/main.c:682
 msgid "Any / All Information"
 msgstr "Вся інформація"
-
-#: ../src/main.c:813
-msgid ""
-"Enter the network address to lookup.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Введіть мережну адресу для пошуку.\n"
-"Наприклад: www.domain.com або 192.168.2.1"
-
-#: ../src/main.c:902
-msgid "Enter the user to finger."
-msgstr "Введіть ім'я користувача finger."
-
-#: ../src/main.c:929
-msgid ""
-"Enter the network address to finger that user.\n"
-"For example: auth.domain.com or 192.168.2.1"
-msgstr ""
-"Введіть мережну адресу finger для цього користувача.\n"
-"Наприклад: auth.domain.com або 192.168.2.1"
-
-#: ../src/main.c:1016
-msgid ""
-"Enter a domain address to lookup its whois information.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"Введіть мережну адресу для отриманні інформації whois.\n"
-"Наприклад: www.domain.com або 192.168.2.1"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
@@ -656,7 +719,7 @@ msgstr "IP джерело"
 msgid "Port/Service"
 msgstr "Порт/служба"
 
-#: ../src/netstat.c:466 ../src/scan.c:312
+#: ../src/netstat.c:466 ../src/scan.c:314
 msgid "State"
 msgstr "Стан"
 
@@ -729,15 +792,15 @@ msgstr "Не вказано доменну адресу"
 msgid "Please enter a valid domain address and try again."
 msgstr "Введіть правильну домену адресу та спробуйте знову."
 
-#: ../src/nettool.c:406
+#: ../src/nettool.c:428
 msgid "Information not available"
 msgstr "Інформація недоступна"
 
-#: ../src/nettool.c:524
+#: ../src/nettool.c:548
 msgid "Stop"
 msgstr "Зупинити"
 
-#: ../src/nettool.c:530
+#: ../src/nettool.c:554
 msgid "Run"
 msgstr "Запустити"
 
@@ -750,28 +813,28 @@ msgstr "Час (мс):"
 msgid "Seq. No.:"
 msgstr "Ном. сегм:"
 
-#: ../src/ping.c:253
+#: ../src/ping.c:254
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Надсилається ping запити до %s"
 
-#: ../src/ping.c:568
+#: ../src/ping.c:569
 msgid "Bytes"
 msgstr "Байтів"
 
-#: ../src/ping.c:575
+#: ../src/ping.c:576
 msgid "Source"
 msgstr "Джерело"
 
-#: ../src/ping.c:583
+#: ../src/ping.c:584
 msgid "Seq"
 msgstr "Посл"
 
-#: ../src/ping.c:593
+#: ../src/ping.c:594
 msgid "Time"
 msgstr "Час"
 
-#: ../src/ping.c:601
+#: ../src/ping.c:602
 msgid "Units"
 msgstr "Одиниці"
 
@@ -779,62 +842,67 @@ msgstr "Одиниці"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:627
+#: ../src/ping.c:628
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Байти\tДжерело\tПосл\tЧас\tОдиниці\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:642
+#: ../src/ping.c:643
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Мінімальний час:\t%s мс\n"
 
-#: ../src/ping.c:643
+#: ../src/ping.c:644
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Середній час:\t%s мс\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:645
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Максимальний час:\t%s мс\n"
 
-#: ../src/ping.c:646
+#: ../src/ping.c:647
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Передано пакетів:\t%s\n"
 
-#: ../src/ping.c:648
+#: ../src/ping.c:649
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Отримано пакетів:\t%s\n"
 
-#: ../src/ping.c:651
+#: ../src/ping.c:652
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Успішних пакетів:\t%s\n"
 
-#: ../src/scan.c:93
+#: ../src/scan.c:94
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Сканування %s на відкриті порти"
 
-#: ../src/scan.c:168
+#: ../src/scan.c:169
 msgid "unknown"
 msgstr "невідомо"
 
-#: ../src/scan.c:304
+#. Translators: "open" is a network status and should be one word.
+#: ../src/scan.c:173
+msgid "open"
+msgstr "відкритий"
+
+#: ../src/scan.c:306
 msgid "Port"
 msgstr "Порт"
 
-#: ../src/scan.c:320
+#: ../src/scan.c:322
 msgid "Service"
 msgstr "Служба"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:342
+#: ../src/scan.c:344
 msgid "Port\tState\tService\n"
 msgstr "Порт\tСтан\tСлужба\n"
 
@@ -883,12 +951,12 @@ msgstr ""
 msgid "View information about your network"
 msgstr "Отримати інформацію про мережний пристрій"
 
-#: ../src/finger.c:62
+#: ../src/finger.c:63
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "Отримання інформації від %s про \"%s\""
 
-#: ../src/finger.c:66
+#: ../src/finger.c:67
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "Отримання інформації про всіх користувачів від \"%s\""
@@ -897,6 +965,24 @@ msgstr "Отримання інформації про всіх користув
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Отримання whois інформації про %s"
+
+#~ msgid "Broadcast:"
+#~ msgstr "Широкомовна:"
+
+#~ msgid "IP Address:"
+#~ msgstr "IP адреса:"
+
+#~ msgid "Netmask:"
+#~ msgstr "Маска мережі:"
+
+#~ msgid "IP address:\t%s\n"
+#~ msgstr "IP адреса:\t%s\n"
+
+#~ msgid "Netmask:\t%s\n"
+#~ msgstr "Мережна маска:\t%s\n"
+
+#~ msgid "Broadcast:\t%s\n"
+#~ msgstr "Широкомовна:\t%s\n"
 
 #~ msgid "Network Information Tools"
 #~ msgstr "Утиліти інформації про мережу"
