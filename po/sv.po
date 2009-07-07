@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-10 01:13+0100\n"
-"PO-Revision-Date: 2009-02-10 01:16+0100\n"
+"POT-Creation-Date: 2009-07-07 12:29+0200\n"
+"PO-Revision-Date: 2009-07-07 19:48+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Christian Rose\n"
 "\n"
 "Skicka synpunkter på översättningen till\n"
-"tp-sv@listor.tp-sv.se"
+"<tp-sv@listor.tp-sv.se>"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:330
@@ -42,8 +42,8 @@ msgid "Graphical user interface for common network utilities"
 msgstr "Grafiskt användargränssnitt för vanliga nätverksverktyg"
 
 #: ../src/callbacks.c:450
-#: ../src/main.c:140
-#: ../src/nettool.c:461
+#: ../src/main.c:142
+#: ../src/nettool.c:483
 msgid "Idle"
 msgstr "Overksam"
 
@@ -137,246 +137,274 @@ msgid "Domain address"
 msgstr "Domänadress"
 
 #: ../src/gnome-nettool.glade.h:22
+msgid "Enter a domain address to lookup its whois information. For example: www.domain.com or 192.168.2.1"
+msgstr "Ange en domänadress för att slå upp dess \"whois\"-information. Till exempel www.domän.se eller 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:23
+msgid "Enter the network address to finger that user. For example: www.domain.com or 192.168.2.1"
+msgstr "Ange nätverksadressen för att hämta fingerinformation om användaren. Till exempel: www.domän.se eller 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:24
+msgid "Enter the network address to lookup. For example: www.domain.com or 192.168.2.1"
+msgstr "Ange nätverksadressen att slå upp. Till exempel www.domän.se eller 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:25
+msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr "Ange nätverksadressen att pinga. Till exempel www.domän.se eller 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:26
+msgid "Enter the network address to scan for open ports. For example: www.domain.com or 192.168.2.1"
+msgstr "Ange nätverksadressen att genomsöka för öppna portar. Till exempel www.domän.se eller 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:27
+msgid "Enter the network address to trace a route to. For example: www.domain.com or 192.168.2.1"
+msgstr "Ange nätverksadressen att spåra en väg till. Till exempel www.domän.se eller 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:28
+msgid "Enter the user to finger"
+msgstr "Ange användaren att söka efter fingerinformation om"
+
+#: ../src/gnome-nettool.glade.h:29
 #: ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:30
 msgid "Finger output"
 msgstr "Utdata för finger"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:31
 msgid "Hardware address:"
 msgstr "Hårdvaruadress:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:32
 msgid "Host"
 msgstr "Värd"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:33
 msgid "Link speed:"
 msgstr "Länkhastighet:"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../src/gnome-nettool.glade.h:34
 #: ../src/main.c:734
 msgid "Lookup"
 msgstr "Uppslagning"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:35
 msgid "Lookup output"
 msgstr "Utdata för uppslagning"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:36
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:37
 msgid "Maximum:"
 msgstr "Maximum:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:38
 msgid "Minimum:"
 msgstr "Minimum:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:39
 msgid "Multicast Information"
 msgstr "Multicast-information"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:40
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../src/gnome-nettool.glade.h:34
+#: ../src/gnome-nettool.glade.h:41
 #: ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:42
 msgid "Netstat output"
 msgstr "Utdata för netstat"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:43
 msgid "Network address"
 msgstr "Nätverksadress"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:44
 msgid "Not Available"
 msgstr "Inte tillgänglig"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:45
 msgid "Only"
 msgstr "Endast"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:46
 msgid "Output for finger"
 msgstr "Utdata för finger"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:47
 msgid "Output for lookup"
 msgstr "Utdata för uppslagning"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:48
 msgid "Output for net stat"
 msgstr "Utdata för netstat"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:49
 msgid "Output for port scan"
 msgstr "Utdata för portavsökning"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:50
 msgid "Output for traceroute"
 msgstr "Utdata för traceroute"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:51
 msgid "Output for whois"
 msgstr "Utdata för whois"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:52
 msgid "Packets received:"
 msgstr "Mottagna paket:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:53
 msgid "Packets transmitted:"
 msgstr "Överförda paket:"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../src/gnome-nettool.glade.h:54
 #: ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
 # Osäker
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:55
 msgid "Port Scan"
 msgstr "Sök av portar"
 
 # Osäker
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:56
 msgid "Port scan output"
 msgstr "Utdata för portavsökning"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:57
 msgid "Received bytes:"
 msgstr "Mottagna byte:"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:58
 msgid "Received packets:"
 msgstr "Mottagna paket:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:59
 msgid "Reception errors:"
 msgstr "Mottagningsfel:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:60
 msgid "Routing Table Information"
 msgstr "Routingtabellinformation"
 
 # Osäker
-#: ../src/gnome-nettool.glade.h:54
+#: ../src/gnome-nettool.glade.h:61
 #: ../src/main.c:619
 msgid "Scan"
 msgstr "Sök av"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:62
 msgid "Send:"
 msgstr "Skicka:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:63
 msgid "State:"
 msgstr "Tillstånd:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:64
 msgid "Successful packets:"
 msgstr "Lyckade paket:"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../src/gnome-nettool.glade.h:65
 #: ../src/main.c:375
 msgid "Trace"
 msgstr "Spår"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:66
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:67
 msgid "Traceroute output"
 msgstr "Utdata för traceroute"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:68
 msgid "Transmission errors:"
 msgstr "Överföringsfel:"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.glade.h:69
 msgid "Transmitted bytes:"
 msgstr "Överförda byte:"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:70
 msgid "Transmitted packets:"
 msgstr "Överförda paket:"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../src/gnome-nettool.glade.h:71
 msgid "Unlimited requests"
 msgstr "Obegränsade begäranden"
 
-#: ../src/gnome-nettool.glade.h:65
+#: ../src/gnome-nettool.glade.h:72
 msgid "User"
 msgstr "Användare"
 
-#: ../src/gnome-nettool.glade.h:66
+#: ../src/gnome-nettool.glade.h:73
 msgid "User name"
 msgstr "Användarnamn"
 
-#: ../src/gnome-nettool.glade.h:67
+#: ../src/gnome-nettool.glade.h:74
 #: ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../src/gnome-nettool.glade.h:75
 msgid "Whois output"
 msgstr "Utdata för whois"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Configure"
 msgstr "_Konfigurera"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Domain address:"
 msgstr "_Domänadress:"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../src/gnome-nettool.glade.h:78
 msgid "_Edit"
 msgstr "_Redigera"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../src/gnome-nettool.glade.h:79
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../src/gnome-nettool.glade.h:80
 msgid "_Information type:"
 msgstr "_Informationstyp:"
 
-#: ../src/gnome-nettool.glade.h:74
+#: ../src/gnome-nettool.glade.h:81
 msgid "_Network address:"
 msgstr "_Nätverksadress:"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../src/gnome-nettool.glade.h:82
 msgid "_Network device:"
 msgstr "_Nätverksenhet:"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../src/gnome-nettool.glade.h:83
 msgid "_Tool"
 msgstr "_Verktyg"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../src/gnome-nettool.glade.h:84
 msgid "_Username:"
 msgstr "_Användarnamn:"
 
 # millisekunder
 #. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:79
+#: ../src/gnome-nettool.glade.h:86
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../src/gnome-nettool.glade.h:87
 msgid "requests"
 msgstr "begäranden"
 
@@ -508,25 +536,25 @@ msgstr "inte tillgänglig"
 msgid "Looking up %s"
 msgstr "Slår upp %s"
 
-#: ../src/lookup.c:278
+#: ../src/lookup.c:274
 msgid "Name"
 msgstr "Namn"
 
 # Time To Live antar jag
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: ../src/lookup.c:283
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:296
+#: ../src/lookup.c:292
 msgid "Address Type"
 msgstr "Adresstyp"
 
-#: ../src/lookup.c:306
+#: ../src/lookup.c:302
 msgid "Record Type"
 msgstr "Posttyp"
 
-#: ../src/lookup.c:315
+#: ../src/lookup.c:311
 msgid "Address"
 msgstr "Adress"
 
@@ -536,7 +564,7 @@ msgstr "Adress"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: ../src/lookup.c:339
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Källa\tTTL\tAdresstyp\tPosttyp1\tUpplösning\n"
 
@@ -595,7 +623,7 @@ msgstr "Utför en \"whois\"-uppslagning för en nätverksdomän"
 msgid "DOMAIN"
 msgstr "DOMÄN"
 
-#: ../src/main.c:129
+#: ../src/main.c:131
 #, c-format
 msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
 msgstr "Filen %s finns inte, kontrollera om gnome-nettool är korrekt installerat"
@@ -767,15 +795,15 @@ msgstr "En domänadress angavs inte"
 msgid "Please enter a valid domain address and try again."
 msgstr "Ange en giltig domänadress och försök igen."
 
-#: ../src/nettool.c:406
+#: ../src/nettool.c:428
 msgid "Information not available"
 msgstr "Information inte tillgänglig"
 
-#: ../src/nettool.c:526
+#: ../src/nettool.c:548
 msgid "Stop"
 msgstr "Stoppa"
 
-#: ../src/nettool.c:532
+#: ../src/nettool.c:554
 msgid "Run"
 msgstr "Kör"
 
@@ -950,44 +978,6 @@ msgstr "Hämtar \"whois\"-informationen om %s"
 #~ msgstr "Nätmask:\t%s\n"
 #~ msgid "Broadcast:\t%s\n"
 #~ msgstr "Broadcast:\t%s\n"
-#~ msgid ""
-#~ "Enter the network address to ping.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Ange nätverksadressen att pinga.\n"
-#~ "Till exempel www.domän.se eller 192.168.2.1"
-#~ msgid ""
-#~ "Enter the network address to trace a route to.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Ange nätverksadressen att spåra en väg till.\n"
-#~ "Till exempel www.domän.se eller 192.168.2.1"
-#~ msgid ""
-#~ "Enter the network address to scan for open ports.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Ange nätverksadressen att genomsöka för öppna portar.\n"
-#~ "Till exempel www.domän.se eller 192.168.2.1"
-#~ msgid ""
-#~ "Enter the network address to lookup.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Ange nätverksadressen att slå upp.\n"
-#~ "Till exempel www.domän.se eller 192.168.2.1"
-#~ msgid "Enter the user to finger."
-#~ msgstr "Ange användaren att söka efter fingerinformation om."
-#~ msgid ""
-#~ "Enter the network address to finger that user.\n"
-#~ "For example: auth.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Ange nätverksadressen för att hämta fingerinformation om användaren.\n"
-#~ "Till exempel: www.domän.se eller 192.168.2.1"
-#~ msgid ""
-#~ "Enter a domain address to lookup its whois information.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Ange en domänadress för att slå upp dess \"whois\"-information\n"
-#~ "Till exempel www.domän.se eller 192.168.2.1"
 #~ msgid "Network Information Tools"
 #~ msgstr "Nätverksinformationsverktyg"
 #~ msgid "Packets loss:"
