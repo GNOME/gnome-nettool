@@ -28,13 +28,11 @@ dnl ** pkg-config dependacy checks          **
 dnl ******************************************
 
 
-GTK_REQUIRED=2.6.0
-LIBGLADE_REQUIRED=2.0.0
+GTK_REQUIRED=2.12.0
 GCONF_REQUIRED=1.1.11
 
 PKG_CHECK_MODULES(NETTOOL, 
 		  gtk+-2.0       >= $GTK_REQUIRED 
-		  libglade-2.0   >= $LIBGLADE_REQUIRED 
 		  gconf-2.0      >= $GCONF_REQUIRED
 		  gmodule-export-2.0
 		  gnome-doc-utils

@@ -1,5 +1,5 @@
 dialogdir = $(datadir)/$(PACKAGE)/dialogs
-dialog_DATA = gnome-nettool.glade
+dialog_DATA = gnome-nettool.ui
 
 INCLUDES = 							\
 	-DGNOME_NETTOOL_LOCALEDIR=\""$(datadir)/locale"\" 	\

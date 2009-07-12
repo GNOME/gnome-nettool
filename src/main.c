@@ -24,7 +24,6 @@
 
 #include <string.h>
 #include <glib/gi18n.h>
-#include <glade/glade.h>
 
 #include <glibtop.h>
 
@@ -40,14 +39,14 @@
 #include "utils.h"
 #include "gn-combo-history.h"
 
-Netinfo *load_ping_widgets_from_xml (GladeXML * xml);
-Netinfo *load_traceroute_widgets_from_xml (GladeXML * xml);
-Netinfo *load_netstat_widgets_from_xml (GladeXML * xml);
-Netinfo *load_scan_widgets_from_xml (GladeXML * xml);
-Netinfo *load_lookup_widgets_from_xml (GladeXML * xml);
-Netinfo *load_finger_widgets_from_xml (GladeXML * xml);
-Netinfo *load_whois_widgets_from_xml (GladeXML * xml);
-Netinfo *load_info_widgets_from_xml (GladeXML * xml);
+Netinfo *load_ping_widgets_from_builder (GtkBuilder * builder);
+Netinfo *load_traceroute_widgets_from_builder (GtkBuilder * builder);
+Netinfo *load_netstat_widgets_from_builder (GtkBuilder * builder);
+Netinfo *load_scan_widgets_from_builder (GtkBuilder * builder);
+Netinfo *load_lookup_widgets_from_builder (GtkBuilder * builder);
+Netinfo *load_finger_widgets_from_builder (GtkBuilder * builder);
+Netinfo *load_whois_widgets_from_builder (GtkBuilder * builder);
+Netinfo *load_info_widgets_from_builder (GtkBuilder * builder);
 static gboolean start_initial_process_cb (gpointer data);
 
 int
@@ -55,10 +54,10 @@ main (int argc, char *argv[])
 {
 	GtkWidget *window;
 	GtkWidget *menu_beep;
-	GladeXML *xml;
+	GtkBuilder *builder;
 	GtkWidget *notebook;
 	GtkWidget *statusbar;
-	const gchar *dialog = DATADIR "gnome-nettool.glade";
+	const gchar *dialog = DATADIR "gnome-nettool.ui";
 	Netinfo *pinger;
 	Netinfo *tracer;
 	Netinfo *netstat;
@@ -136,22 +135,23 @@ main (int argc, char *argv[])
 
 	gtk_window_set_default_icon_name ("gnome-nettool");
 	
-	xml = glade_xml_new (dialog, "main_window", NULL);
-	window = glade_xml_get_widget (xml, "main_window");
-	statusbar = glade_xml_get_widget (xml, "statusbar");
+	builder = gtk_builder_new ();
+        gtk_builder_add_from_file (builder, dialog, NULL);
+	window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
+	statusbar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	gtk_statusbar_push (GTK_STATUSBAR (statusbar), 0, _("Idle"));
 
 	g_signal_connect (G_OBJECT (window), "delete-event",
 			  G_CALLBACK (gn_quit_app), NULL);
 	
-	pinger = load_ping_widgets_from_xml (xml);
-	tracer = load_traceroute_widgets_from_xml (xml);
-	netstat = load_netstat_widgets_from_xml (xml);
-	info = load_info_widgets_from_xml (xml);
-	scan = load_scan_widgets_from_xml (xml);
-	lookup = load_lookup_widgets_from_xml (xml);
-	finger = load_finger_widgets_from_xml (xml);
-	whois = load_whois_widgets_from_xml (xml);
+	pinger = load_ping_widgets_from_builder (builder);
+	tracer = load_traceroute_widgets_from_builder (builder);
+	netstat = load_netstat_widgets_from_builder (builder);
+	info = load_info_widgets_from_builder (builder);
+	scan = load_scan_widgets_from_builder (builder);
+	lookup = load_lookup_widgets_from_builder (builder);
+	finger = load_finger_widgets_from_builder (builder);
+	whois = load_whois_widgets_from_builder (builder);
 
 	if (info_input) {
 		current_page = INFO;
@@ -207,7 +207,7 @@ main (int argc, char *argv[])
 		g_idle_add (start_initial_process_cb, whois);
 	}
 
-	notebook = glade_xml_get_widget (xml, "notebook");
+	notebook = GTK_WIDGET (gtk_builder_get_object (builder, "notebook"));
 	g_object_set_data (G_OBJECT (notebook), "pinger", pinger);
 	g_object_set_data (G_OBJECT (notebook), "tracer", tracer);
 	g_object_set_data (G_OBJECT (notebook), "netstat", netstat);
@@ -217,14 +217,14 @@ main (int argc, char *argv[])
 	g_object_set_data (G_OBJECT (notebook), "finger", finger);
 	g_object_set_data (G_OBJECT (notebook), "whois", whois);
 	
-	menu_beep = glade_xml_get_widget (xml, "m_beep");
+	menu_beep = GTK_WIDGET (gtk_builder_get_object (builder, "m_beep"));
 
 	g_signal_connect (G_OBJECT (menu_beep), "activate",
 			  G_CALLBACK (on_beep_activate),
 			  (gpointer) pinger); 
 	
-	glade_xml_signal_autoconnect (xml);
-	g_object_unref (G_OBJECT (xml));
+	gtk_builder_connect_signals (builder, NULL);
+	g_object_unref (G_OBJECT (builder));
 
 	gtk_notebook_set_current_page (GTK_NOTEBOOK (notebook), current_page);
 
@@ -262,7 +262,7 @@ start_initial_process_cb (gpointer data)
 
 /* The value returned must be released from memory */
 Netinfo *
-load_ping_widgets_from_xml (GladeXML * xml)
+load_ping_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *pinger;
 	GtkWidget *vbox_ping;
@@ -271,40 +271,40 @@ load_ping_widgets_from_xml (GladeXML * xml)
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
 
-	g_return_val_if_fail (xml != NULL, NULL);
+	g_return_val_if_fail (builder != NULL, NULL);
 
 	pinger = g_new0 (Netinfo, 1);
 
-	pinger->main_window = glade_xml_get_widget (xml, "main_window");
-	pinger->progress_bar = glade_xml_get_widget (xml, "progress_bar");
-	pinger->page_label = glade_xml_get_widget (xml, "ping");
+	pinger->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
+	pinger->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
+	pinger->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "ping"));
 	pinger->running = FALSE;
 	pinger->child_pid = 0;
-	pinger->host = glade_xml_get_widget (xml, "ping_host");
-	pinger->count = glade_xml_get_widget (xml, "ping_count");
-	pinger->output = glade_xml_get_widget (xml, "ping_output");
-	pinger->limited = glade_xml_get_widget (xml, "ping_limited");
-	pinger->button = glade_xml_get_widget (xml, "ping_button");
-	pinger->graph = glade_xml_get_widget (xml, "ping_graph");
+	pinger->host = GTK_WIDGET (gtk_builder_get_object (builder, "ping_host"));
+	pinger->count = GTK_WIDGET (gtk_builder_get_object (builder, "ping_count"));
+	pinger->output = GTK_WIDGET (gtk_builder_get_object (builder, "ping_output"));
+	pinger->limited = GTK_WIDGET (gtk_builder_get_object (builder, "ping_limited"));
+	pinger->button = GTK_WIDGET (gtk_builder_get_object (builder, "ping_button"));
+	pinger->graph = GTK_WIDGET (gtk_builder_get_object (builder, "ping_graph"));
 	pinger->sensitive = pinger->host;
 	pinger->label_run = _("Ping");
 	pinger->label_stop = NULL;
 	pinger->routing = NULL;
 	pinger->protocol = NULL;
 	pinger->multicast = NULL;
-	pinger->min = glade_xml_get_widget (xml, "ping_minimum");
-	pinger->avg = glade_xml_get_widget (xml, "ping_average");
-	pinger->max = glade_xml_get_widget (xml, "ping_maximum");
-	pinger->packets_transmitted = glade_xml_get_widget (xml, "ping_packets_transmitted");
-	pinger->packets_received = glade_xml_get_widget (xml, "ping_packets_received");
-	pinger->packets_success = glade_xml_get_widget (xml, "ping_packets_success");
+	pinger->min = GTK_WIDGET (gtk_builder_get_object (builder, "ping_minimum"));
+	pinger->avg = GTK_WIDGET (gtk_builder_get_object (builder, "ping_average"));
+	pinger->max = GTK_WIDGET (gtk_builder_get_object (builder, "ping_maximum"));
+	pinger->packets_transmitted = GTK_WIDGET (gtk_builder_get_object (builder, "ping_packets_transmitted"));
+	pinger->packets_received = GTK_WIDGET (gtk_builder_get_object (builder, "ping_packets_received"));
+	pinger->packets_success = GTK_WIDGET (gtk_builder_get_object (builder, "ping_packets_success"));
 
-	pinger->status_bar = glade_xml_get_widget (xml, "statusbar");
+	pinger->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	pinger->stbar_text = NULL;
 
-	vbox_ping = glade_xml_get_widget (xml, "vbox_ping");
+	vbox_ping = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_ping"));
 
-	label = glade_xml_get_widget (xml, "ping_host_label");
+	label = GTK_WIDGET (gtk_builder_get_object (builder, "ping_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), pinger->host);
 	
 	pinger->button_callback = G_CALLBACK (on_ping_activate);
@@ -348,7 +348,7 @@ load_ping_widgets_from_xml (GladeXML * xml)
 
 /* The value returned must be released from memory */
 Netinfo *
-load_traceroute_widgets_from_xml (GladeXML * xml)
+load_traceroute_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *tracer;
 	GtkWidget *vbox_traceroute;
@@ -357,18 +357,18 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
 
-	g_return_val_if_fail (xml != NULL, NULL);
+	g_return_val_if_fail (builder != NULL, NULL);
 
 	tracer = g_new0 (Netinfo, 1);
 
-	tracer->main_window = glade_xml_get_widget (xml, "main_window");
-	tracer->progress_bar = glade_xml_get_widget (xml, "progress_bar");
-	tracer->page_label = glade_xml_get_widget (xml, "traceroute");
+	tracer->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
+	tracer->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
+	tracer->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute"));
 	tracer->running = FALSE;
 	tracer->child_pid = 0;
-	tracer->host = glade_xml_get_widget (xml, "traceroute_host");
-	tracer->output = glade_xml_get_widget (xml, "traceroute_output");
-	tracer->button = glade_xml_get_widget (xml, "traceroute_button");
+	tracer->host = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_host"));
+	tracer->output = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_output"));
+	tracer->button = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_button"));
 	tracer->count = NULL;
 	tracer->limited = NULL;
 	tracer->sensitive = tracer->host;
@@ -378,12 +378,12 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 	tracer->protocol = NULL;
 	tracer->multicast = NULL;
 
-	tracer->status_bar = glade_xml_get_widget (xml, "statusbar");
+	tracer->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	tracer->stbar_text = NULL;
 	
-	vbox_traceroute = glade_xml_get_widget (xml, "vbox_traceroute");
+	vbox_traceroute = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_traceroute"));
 
-	label = glade_xml_get_widget (xml, "traceroute_host_label");
+	label = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), tracer->host);
 
 	tracer->button_callback = G_CALLBACK (on_traceroute_activate);
@@ -420,36 +420,36 @@ load_traceroute_widgets_from_xml (GladeXML * xml)
 }
 
 Netinfo *
-load_netstat_widgets_from_xml (GladeXML * xml)
+load_netstat_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *netstat;
 	GtkWidget *vbox_netstat;
 
-	g_return_val_if_fail (xml != NULL, NULL);
+	g_return_val_if_fail (builder != NULL, NULL);
 
 	netstat = g_new0 (Netinfo, 1);
 
-	netstat->main_window = glade_xml_get_widget (xml, "main_window");
-	netstat->progress_bar = glade_xml_get_widget (xml, "progress_bar");
-	netstat->page_label = glade_xml_get_widget (xml, "netstat");
+	netstat->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
+	netstat->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
+	netstat->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "netstat"));
 	netstat->running = FALSE;
 	netstat->child_pid = 0;
 	netstat->host = NULL;
 	netstat->count = NULL;
-	netstat->output = glade_xml_get_widget (xml, "netstat_output");
+	netstat->output = GTK_WIDGET (gtk_builder_get_object (builder, "netstat_output"));
 	netstat->limited = NULL;
-	netstat->button = glade_xml_get_widget (xml, "netstat_button");
-	netstat->routing = glade_xml_get_widget (xml, "netstat_routing");
-	netstat->protocol = glade_xml_get_widget (xml, "netstat_protocol");
-	netstat->multicast = glade_xml_get_widget (xml, "netstat_multicast");
+	netstat->button = GTK_WIDGET (gtk_builder_get_object (builder, "netstat_button"));
+	netstat->routing = GTK_WIDGET (gtk_builder_get_object (builder, "netstat_routing"));
+	netstat->protocol = GTK_WIDGET (gtk_builder_get_object (builder, "netstat_protocol"));
+	netstat->multicast = GTK_WIDGET (gtk_builder_get_object (builder, "netstat_multicast"));
 	netstat->sensitive = NULL;
 	netstat->label_run = _("Netstat");
 	netstat->label_stop = NULL;
 
-	netstat->status_bar = glade_xml_get_widget (xml, "statusbar");
+	netstat->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	netstat->stbar_text = NULL;
 	
-	vbox_netstat = glade_xml_get_widget (xml, "vbox_netstat");
+	vbox_netstat = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_netstat"));
 	
 	netstat->button_callback = G_CALLBACK (on_netstat_activate);
 	netstat->process_line = NETINFO_FOREACH_FUNC (netstat_foreach_with_tree);
@@ -518,41 +518,41 @@ info_list_ip_addr_add_columns (GtkWidget *list_ip_addr)
 
 /* The value returned must be released from memory */
 Netinfo *
-load_info_widgets_from_xml (GladeXML * xml)
+load_info_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo      *info;
 	GtkTreeModel *model;
 	GtkWidget    *label1;
 
-	g_return_val_if_fail (xml != NULL, NULL);
+	g_return_val_if_fail (builder != NULL, NULL);
 
 	info = g_malloc (sizeof (Netinfo));
 
-	info->main_window = glade_xml_get_widget (xml, "main_window");
+	info->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
 	info->running = FALSE;
-	info->combo = glade_xml_get_widget (xml, "info_combo");
-	info->ipv6_frame = glade_xml_get_widget (xml, "info_ipv6_frame");
-	info->progress_bar = glade_xml_get_widget (xml, "progress_bar");
-	info->page_label = glade_xml_get_widget (xml, "device");
-	info->hw_address = glade_xml_get_widget (xml, "info_hw_address");
-	info->ip_address = glade_xml_get_widget (xml, "info_ip_address");
-	info->netmask = glade_xml_get_widget (xml, "info_netmask");
-	info->broadcast = glade_xml_get_widget (xml, "info_broadcast");
-	info->multicast = glade_xml_get_widget (xml, "info_multicast");
-	info->link_speed = glade_xml_get_widget (xml, "info_link_speed");
-	info->state = glade_xml_get_widget (xml, "info_state");
-	info->mtu = glade_xml_get_widget (xml, "info_mtu");
-	info->tx_bytes = glade_xml_get_widget (xml, "info_tx_bytes");
-	info->tx = glade_xml_get_widget (xml, "info_tx");
-	info->tx_errors = glade_xml_get_widget (xml, "info_tx_errors");
-	info->rx_bytes = glade_xml_get_widget (xml, "info_rx_bytes");
-	info->rx = glade_xml_get_widget (xml, "info_rx");
-	info->rx_errors = glade_xml_get_widget (xml, "info_rx_errors");
-	info->collisions = glade_xml_get_widget (xml, "info_collisions");
-	info->list_ip_addr = glade_xml_get_widget (xml, "info_list_ip_addr");
-	info->configure_button = glade_xml_get_widget (xml, "info_configure_button");
+	info->combo = GTK_WIDGET (gtk_builder_get_object (builder, "info_combo"));
+	info->ipv6_frame = GTK_WIDGET (gtk_builder_get_object (builder, "info_ipv6_frame"));
+	info->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
+	info->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "device"));
+	info->hw_address = GTK_WIDGET (gtk_builder_get_object (builder, "info_hw_address"));
+	info->ip_address = GTK_WIDGET (gtk_builder_get_object (builder, "info_ip_address"));
+	info->netmask = GTK_WIDGET (gtk_builder_get_object (builder, "info_netmask"));
+	info->broadcast = GTK_WIDGET (gtk_builder_get_object (builder, "info_broadcast"));
+	info->multicast = GTK_WIDGET (gtk_builder_get_object (builder, "info_multicast"));
+	info->link_speed = GTK_WIDGET (gtk_builder_get_object (builder, "info_link_speed"));
+	info->state = GTK_WIDGET (gtk_builder_get_object (builder, "info_state"));
+	info->mtu = GTK_WIDGET (gtk_builder_get_object (builder, "info_mtu"));
+	info->tx_bytes = GTK_WIDGET (gtk_builder_get_object (builder, "info_tx_bytes"));
+	info->tx = GTK_WIDGET (gtk_builder_get_object (builder, "info_tx"));
+	info->tx_errors = GTK_WIDGET (gtk_builder_get_object (builder, "info_tx_errors"));
+	info->rx_bytes = GTK_WIDGET (gtk_builder_get_object (builder, "info_rx_bytes"));
+	info->rx = GTK_WIDGET (gtk_builder_get_object (builder, "info_rx"));
+	info->rx_errors = GTK_WIDGET (gtk_builder_get_object (builder, "info_rx_errors"));
+	info->collisions = GTK_WIDGET (gtk_builder_get_object (builder, "info_collisions"));
+	info->list_ip_addr = GTK_WIDGET (gtk_builder_get_object (builder, "info_list_ip_addr"));
+	info->configure_button = GTK_WIDGET (gtk_builder_get_object (builder, "info_configure_button"));
 
-	info->status_bar = glade_xml_get_widget (xml, "statusbar");
+	info->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	info->stbar_text = NULL;
 
 	info->network_tool_path = util_find_program_in_path (GST_NETWORK_TOOL, NULL);
@@ -565,7 +565,7 @@ load_info_widgets_from_xml (GladeXML * xml)
 	
 	info_list_ip_addr_add_columns (info->list_ip_addr);
 
-	label1 = glade_xml_get_widget (xml, "info_combo_label");
+	label1 = GTK_WIDGET (gtk_builder_get_object (builder, "info_combo_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label1), info->combo);
 
 	model = GTK_TREE_MODEL (gtk_list_store_new (3, GDK_TYPE_PIXBUF,
@@ -590,7 +590,7 @@ load_info_widgets_from_xml (GladeXML * xml)
 }
 
 Netinfo *
-load_scan_widgets_from_xml (GladeXML * xml)
+load_scan_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *scan;
 	GtkEntry  *entry_host;
@@ -598,20 +598,20 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
 
-	g_return_val_if_fail (xml != NULL, NULL);
+	g_return_val_if_fail (builder != NULL, NULL);
 
 	scan = g_new0 (Netinfo, 1);
 
-	scan->main_window = glade_xml_get_widget (xml, "main_window");
-	scan->progress_bar = glade_xml_get_widget (xml, "progress_bar");
-	scan->page_label = glade_xml_get_widget (xml, "scan");
+	scan->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
+	scan->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
+	scan->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "scan"));
 	scan->running = FALSE;
 	scan->child_pid = 0;
-	scan->host = glade_xml_get_widget (xml, "scan_host");
+	scan->host = GTK_WIDGET (gtk_builder_get_object (builder, "scan_host"));
 	scan->count = NULL;
-	scan->output = glade_xml_get_widget (xml, "scan_output");
+	scan->output = GTK_WIDGET (gtk_builder_get_object (builder, "scan_output"));
 	scan->limited = NULL;
-	scan->button = glade_xml_get_widget (xml, "scan_button");
+	scan->button = GTK_WIDGET (gtk_builder_get_object (builder, "scan_button"));
 	scan->routing = NULL;
 	scan->protocol = NULL;
 	scan->multicast = NULL;
@@ -619,10 +619,10 @@ load_scan_widgets_from_xml (GladeXML * xml)
 	scan->label_run = _("Scan");
 	scan->label_stop = NULL;
 
-	scan->status_bar = glade_xml_get_widget (xml, "statusbar");
+	scan->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	scan->stbar_text = NULL;
 	
-	label = glade_xml_get_widget (xml, "scan_host_label");
+	label = GTK_WIDGET (gtk_builder_get_object (builder, "scan_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), scan->host);
 
 	scan->button_callback = G_CALLBACK (on_scan_activate);
@@ -706,7 +706,7 @@ nettool_lookup_setup_combo_type (Netinfo *lookup)
 
 /* The value returned must be released from memory */
 Netinfo *
-load_lookup_widgets_from_xml (GladeXML * xml)
+load_lookup_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *lookup;
 	GtkWidget *vbox_lookup;
@@ -715,19 +715,19 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
 
-	g_return_val_if_fail (xml != NULL, NULL);
+	g_return_val_if_fail (builder != NULL, NULL);
 
 	lookup = g_new0 (Netinfo, 1);
 
-	lookup->main_window = glade_xml_get_widget (xml, "main_window");
-	lookup->progress_bar = glade_xml_get_widget (xml, "progress_bar");
-	lookup->page_label = glade_xml_get_widget (xml, "lookup");
+	lookup->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
+	lookup->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
+	lookup->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "lookup"));
 	lookup->running = FALSE;
 	lookup->child_pid = 0;
-	lookup->host = glade_xml_get_widget (xml, "lookup_host");
-	lookup->output = glade_xml_get_widget (xml, "lookup_output");
-	lookup->button = glade_xml_get_widget (xml, "lookup_button");
-	lookup->type = glade_xml_get_widget (xml, "lookup_type");
+	lookup->host = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_host"));
+	lookup->output = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_output"));
+	lookup->button = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_button"));
+	lookup->type = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_type"));
 	lookup->count = NULL;
 	lookup->limited = NULL;
 	lookup->sensitive = lookup->host;
@@ -737,14 +737,14 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 	lookup->protocol = NULL;
 	lookup->multicast = NULL;
 
-	lookup->status_bar = glade_xml_get_widget (xml, "statusbar");
+	lookup->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	lookup->stbar_text = NULL;
 	
-	vbox_lookup = glade_xml_get_widget (xml, "vbox_lookup");
+	vbox_lookup = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_lookup"));
 
-	label = glade_xml_get_widget (xml, "lookup_host_label");
+	label = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), lookup->host);
-	label = glade_xml_get_widget (xml, "lookup_type_label");
+	label = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_type_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), lookup->type);
 
 	lookup->button_callback = G_CALLBACK (on_lookup_activate);
@@ -784,7 +784,7 @@ load_lookup_widgets_from_xml (GladeXML * xml)
 
 /* The value returned must be released from memory */
 Netinfo *
-load_finger_widgets_from_xml (GladeXML * xml)
+load_finger_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *finger;
 	GtkWidget *vbox_finger;
@@ -794,37 +794,37 @@ load_finger_widgets_from_xml (GladeXML * xml)
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
 
-	g_return_val_if_fail (xml != NULL, NULL);
+	g_return_val_if_fail (builder != NULL, NULL);
 
 	finger = g_new0 (Netinfo, 1);
 
-	finger->main_window = glade_xml_get_widget (xml, "main_window");
-	finger->progress_bar = glade_xml_get_widget (xml, "progress_bar");
-	finger->page_label = glade_xml_get_widget (xml, "finger");
+	finger->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
+	finger->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
+	finger->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "finger"));
 	finger->running = FALSE;
 	finger->child_pid = 0;
-	finger->user = glade_xml_get_widget (xml, "finger_user");
-	finger->host = glade_xml_get_widget (xml, "finger_host");
-	finger->output = glade_xml_get_widget (xml, "finger_output");
-	finger->button = glade_xml_get_widget (xml, "finger_button");
-	finger->type = glade_xml_get_widget (xml, "finger_type");
+	finger->user = GTK_WIDGET (gtk_builder_get_object (builder, "finger_user"));
+	finger->host = GTK_WIDGET (gtk_builder_get_object (builder, "finger_host"));
+	finger->output = GTK_WIDGET (gtk_builder_get_object (builder, "finger_output"));
+	finger->button = GTK_WIDGET (gtk_builder_get_object (builder, "finger_button"));
+	finger->type = GTK_WIDGET (gtk_builder_get_object (builder, "finger_type"));
 	finger->count = NULL;
 	finger->limited = NULL;
-	finger->sensitive = glade_xml_get_widget (xml, "finger_input_box");
+	finger->sensitive = GTK_WIDGET (gtk_builder_get_object (builder, "finger_input_box"));
 	finger->label_run = _("Finger");
 	finger->label_stop = NULL;
 	finger->routing = NULL;
 	finger->protocol = NULL;
 	finger->multicast = NULL;
 
-	finger->status_bar = glade_xml_get_widget (xml, "statusbar");
+	finger->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	finger->stbar_text = NULL;
 	
-	vbox_finger = glade_xml_get_widget (xml, "vbox_finger");
+	vbox_finger = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_finger"));
 
-	label = glade_xml_get_widget (xml, "finger_user_label");
+	label = GTK_WIDGET (gtk_builder_get_object (builder, "finger_user_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), finger->user);
-	label = glade_xml_get_widget (xml, "finger_host_label");
+	label = GTK_WIDGET (gtk_builder_get_object (builder, "finger_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), finger->host);
 
 	font_desc = pango_font_description_new ();
@@ -891,7 +891,7 @@ load_finger_widgets_from_xml (GladeXML * xml)
 
 /* The value returned must be released from memory */
 Netinfo *
-load_whois_widgets_from_xml (GladeXML * xml)
+load_whois_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *whois;
 	GtkWidget *vbox_whois;
@@ -902,33 +902,33 @@ load_whois_widgets_from_xml (GladeXML * xml)
 	PangoFontDescription *font_desc;
 	
 
-	g_return_val_if_fail (xml != NULL, NULL);
+	g_return_val_if_fail (builder != NULL, NULL);
 
 	whois = g_new0 (Netinfo, 1);
 
-	whois->main_window = glade_xml_get_widget (xml, "main_window");
-	whois->progress_bar = glade_xml_get_widget (xml, "progress_bar");
-	whois->page_label = glade_xml_get_widget (xml, "whois");
+	whois->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
+	whois->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
+	whois->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "whois"));
 	whois->running = FALSE;
 	whois->child_pid = 0;
-	whois->host = glade_xml_get_widget (xml, "whois_host");
-	whois->output = glade_xml_get_widget (xml, "whois_output");
-	whois->button = glade_xml_get_widget (xml, "whois_button");
+	whois->host = GTK_WIDGET (gtk_builder_get_object (builder, "whois_host"));
+	whois->output = GTK_WIDGET (gtk_builder_get_object (builder, "whois_output"));
+	whois->button = GTK_WIDGET (gtk_builder_get_object (builder, "whois_button"));
 	whois->count = NULL;
 	whois->limited = NULL;
-	whois->sensitive = glade_xml_get_widget (xml, "whois_input_box");
+	whois->sensitive = GTK_WIDGET (gtk_builder_get_object (builder, "whois_input_box"));
 	whois->label_run = _("Whois");
 	whois->label_stop = NULL;
 	whois->routing = NULL;
 	whois->protocol = NULL;
 	whois->multicast = NULL;
 
-	whois->status_bar = glade_xml_get_widget (xml, "statusbar");
+	whois->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	whois->stbar_text = NULL;
 
-	vbox_whois = glade_xml_get_widget (xml, "vbox_whois");
+	vbox_whois = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_whois"));
 
-	label = glade_xml_get_widget (xml, "whois_host_label");
+	label = GTK_WIDGET (gtk_builder_get_object (builder, "whois_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), whois->host);
 
 	font_desc = pango_font_description_new ();
