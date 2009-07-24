@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Gnome-network.txt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&component=general\n"
-"POT-Creation-Date: 2009-03-10 06:33+0000\n"
-"PO-Revision-Date: 2009-03-10 17:42+0200\n"
-"Last-Translator: Gil 'Dolfin' Osher <dolfin@rpg.org.il>\n"
+"POT-Creation-Date: 2009-07-15 16:03+0000\n"
+"PO-Revision-Date: 2009-07-17 17:23+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgstr "כלי רשת"
 msgid "Graphical user interface for common network utilities"
 msgstr "ממשק משתמש גרפי לשרותי רשת נפוצים"
 
-#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "בהמתנה"
 
@@ -57,314 +57,361 @@ msgstr "‏%s - כלי רשת"
 msgid "Unable to open help file"
 msgstr "לא ניתן לפתוח קובץ עזרה"
 
-#: ../src/gnome-nettool.glade.h:1
+#: ../src/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "0"
 
-#: ../src/gnome-nettool.glade.h:3
+#: ../src/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "0%"
 
-#: ../src/gnome-nettool.glade.h:4
+#: ../src/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.glade.h:5
+#: ../src/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "‏<b>מידע IP</b>"
 
-#: ../src/gnome-nettool.glade.h:6
+#: ../src/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "‏<b>מידע התקן</b>"
 
-#: ../src/gnome-nettool.glade.h:7
+#: ../src/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>סטטיסטיקות התקן</b>"
 
-#: ../src/gnome-nettool.glade.h:8
+#: ../src/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "‏<b>סטטיסטיקות זמן Round Trip</b>"
 
-#: ../src/gnome-nettool.glade.h:9
+#: ../src/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "‏<b>סטטיסטיקות שליחה</b>"
 
-#: ../src/gnome-nettool.glade.h:10
+#: ../src/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "שירותי רשת פעילים"
 
-#: ../src/gnome-nettool.glade.h:11
+#: ../src/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "ממוצע:"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../src/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "צפצוף עם פינג"
 
-#: ../src/gnome-nettool.glade.h:13
+#: ../src/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "_נקה היסטוריה"
 
-#: ../src/gnome-nettool.glade.h:14
+#: ../src/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "התנגשויות:"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "העתק כ_דוח טקסטואלי"
 
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "פרטים"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "התקנים"
 
-#. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "התקנים - כלי רשת"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "תצוגה:"
 
-#: ../src/gnome-nettool.glade.h:21
+#: ../src/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "כתובת מתחם"
 
-#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
+#: ../src/gnome-nettool.ui.h:21
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"הכנס את כתובת המתחם עבורה לחפש את מידע whois. לדוגמה: www.domain.com או "
+"192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:22
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"הכנס את כתובת הרשת בה לבצע finger עבור משתמש זה. לדוגמה: auth.domain.com או "
+"192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:23
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"הכנס את כתובת הרשת עבורה לבצע lookup. לדוגמה: www.domain.com או 192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:24
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"הכנס את כתובת הרשת עבורה לבצע ping. לדוגמה: www.domain.com או 192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:25
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"הכנס את כתובת הרשת בה לחפש שערים פתוחים. לדוגמה: www.domain.com או "
+"192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:26
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"הכנס את כתובת הרשת עבורה יש למצוא את הנתיב. לדוגמה: www.domain.com או "
+"192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:27
+msgid "Enter the user to finger"
+msgstr "הכנס את שם המשתמש עבורו לבצע finger"
+
+#: ../src/gnome-nettool.ui.h:28 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "פלט Finger"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "כתובת חומרה:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "מארח"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "מהירות ערוץ:"
 
-#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
+#: ../src/gnome-nettool.ui.h:33 ../src/main.c:734
 msgid "Lookup"
 msgstr "Lookup"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "פלט Lookup"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "‏MTU:"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "מקסימום:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "מינימום:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "מידע Multicast"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "‏Multicast:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
+#: ../src/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "פלט Netstat"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "כתובת רשת"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "לא זמין"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "רק"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "פלט עבור finger"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "פלט עבור lookup"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "פלט עבור net stat"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "פלט עבור port scan"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "פלט עבור traceroute"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "פלט עבור whois"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "חבילות שנתקבלו:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "חבילות שנשלחו"
 
-#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
+#: ../src/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "סריקת שערים"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "פלט סריקת שערים"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "בתים שנתקבלו:"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "חבילות שנתקבלו:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "שגיאות קבלה:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "מידע טבלת ניתוב"
 
-#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
+#: ../src/gnome-nettool.ui.h:60 ../src/main.c:619
 msgid "Scan"
 msgstr "סרוק"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "שלח:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "מצב:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "חבילות מוצלחות:"
 
-#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
+#: ../src/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "Trace"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "פלט Traceroute"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "שגיאות שליחה:"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "בתים שנשלחו:"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "חבילות שנשלחו:"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../src/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "בקשות ללא הגבלה"
 
-#: ../src/gnome-nettool.glade.h:65
+#: ../src/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "משתמש"
 
-#: ../src/gnome-nettool.glade.h:66
+#: ../src/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "שם משתמש"
 
-#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
+#: ../src/gnome-nettool.ui.h:73 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../src/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "פלט Whois"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../src/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "_הגדר"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../src/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "_כתובת מתחם:"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../src/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "_עריכה"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../src/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "_עזרה"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../src/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "_סוג מידע:"
 
-#: ../src/gnome-nettool.glade.h:74
+#: ../src/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "_כתובת רשת:"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../src/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "התקן _רשת:"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../src/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "_כלי"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../src/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "שם _משתמש:"
 
-#. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:79
+#: ../src/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "מילי-שניות"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../src/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "בקשות"
 
@@ -494,24 +541,24 @@ msgstr "לא זמין"
 msgid "Looking up %s"
 msgstr "מחפש את %s"
 
-#: ../src/lookup.c:278
+#: ../src/lookup.c:274
 msgid "Name"
 msgstr "שם"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: ../src/lookup.c:283
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:296
+#: ../src/lookup.c:292
 msgid "Address Type"
 msgstr "סוג כתובת"
 
-#: ../src/lookup.c:306
+#: ../src/lookup.c:302
 msgid "Record Type"
 msgstr "סוג רשומה"
 
-#: ../src/lookup.c:315
+#: ../src/lookup.c:311
 msgid "Address"
 msgstr "כתובת"
 
@@ -521,63 +568,63 @@ msgstr "כתובת"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: ../src/lookup.c:339
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 
-#: ../src/main.c:83
+#: ../src/main.c:82
 msgid "Load information for a network device"
 msgstr "Load information for a network device"
 
-#: ../src/main.c:84
+#: ../src/main.c:83
 msgid "DEVICE"
 msgstr "DEVICE"
 
-#: ../src/main.c:87
+#: ../src/main.c:86
 msgid "Send a ping to a network address"
 msgstr "Send a ping to a network address"
 
-#: ../src/main.c:88 ../src/main.c:96 ../src/main.c:100 ../src/main.c:104
+#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
 msgid "HOST"
 msgstr "HOST"
 
-#: ../src/main.c:91
+#: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "Get netstat information.  Valid options are: route, active, multicast."
 
-#: ../src/main.c:92
+#: ../src/main.c:91
 msgid "COMMAND"
 msgstr "COMMAND"
 
-#: ../src/main.c:95
+#: ../src/main.c:94
 msgid "Trace a route to a network address"
 msgstr "Trace a route to a network address"
 
-#: ../src/main.c:99
+#: ../src/main.c:98
 msgid "Port scan a network address"
 msgstr "Port scan a network address"
 
-#: ../src/main.c:103
+#: ../src/main.c:102
 msgid "Look up a network address"
 msgstr "Look up a network address"
 
-#: ../src/main.c:107
+#: ../src/main.c:106
 msgid "Finger command to run"
 msgstr "Finger command to run"
 
-#: ../src/main.c:108
+#: ../src/main.c:107
 msgid "USER"
 msgstr "USER"
 
-#: ../src/main.c:111
+#: ../src/main.c:110
 msgid "Perform a whois lookup for a network domain"
 msgstr "Perform a whois lookup for a network domain"
 
-#: ../src/main.c:112
+#: ../src/main.c:111
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:129
+#: ../src/main.c:130
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -749,15 +796,15 @@ msgstr "לא צויינה כתובת מתחם"
 msgid "Please enter a valid domain address and try again."
 msgstr "אנא הכנס כתובת מתחם תקינה ונסה שוב."
 
-#: ../src/nettool.c:406
+#: ../src/nettool.c:428
 msgid "Information not available"
 msgstr "מידע לא זמין"
 
-#: ../src/nettool.c:526
+#: ../src/nettool.c:548
 msgid "Stop"
 msgstr "הפסק"
 
-#: ../src/nettool.c:532
+#: ../src/nettool.c:554
 msgid "Run"
 msgstr "הפעל"
 
@@ -901,8 +948,7 @@ msgstr "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
-msgstr ""
-"על מנת להשתמש בתכונה זו של התוכנה, על החבילה %s להיות מותקנת במחשבך"
+msgstr "על מנת להשתמש בתכונה זו של התוכנה, על החבילה %s להיות מותקנת במחשבך"
 
 #: ../src/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
@@ -940,51 +986,6 @@ msgstr "מקבל מידע whois עבור %s"
 
 #~ msgid "Broadcast:\t%s\n"
 #~ msgstr "Broadcast:\t%s\n"
-
-#~ msgid ""
-#~ "Enter the network address to ping.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "הכנס את כתובת הרשת עבורה לבצע ping.\n"
-#~ "לדוגמא: www.domain.com או 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to trace a route to.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "הכנס את כתובת הרשת עבורה יש למצוא את הנתיב.\n"
-#~ "לדוגמא: www.domain.com או 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to scan for open ports.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "הכנס את כתובת הרשת בה לחפש שערים פתוחים.\n"
-#~ "לדוגמא: www.domain.com או 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to lookup.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "הכנס את כתובת הרשת עבורה לבצע lookup.\n"
-#~ "לדוגמא: www.domain.com או 192.168.2.1"
-
-#~ msgid "Enter the user to finger."
-#~ msgstr "הכנס את שם המשתמש עבורו לבצע finger."
-
-#~ msgid ""
-#~ "Enter the network address to finger that user.\n"
-#~ "For example: auth.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "הכנס את כתובת הרשת בה לבצע finger עבור משתמש זה.\n"
-#~ "לדוגמא: auth.domain.com או 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter a domain address to lookup its whois information.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "הכנס את כתובת המתחם עבורה לחפש את מידע whois.\n"
-#~ "לדוגמא: www.domain.com או 192.168.2.1"
 
 #~ msgid "Network Information Tools"
 #~ msgstr "כלי מידע רשת"
