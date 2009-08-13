@@ -1,8 +1,9 @@
 # Brazilian Portuguese translation of gnome-nettool.
-# Copyright (C) 2000-2007 Free Software Foundation, Inc.
+# Copyright (C) 2000, 2004, 2006-2009 the gnome-nettool.
+# This file is distributed under the same license as the gnome-nettool package.
 # Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
 # Raphael Higino <In memoriam>, 2004.
-# Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2006.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2009.
 # Og Maciel <ogmaciel@ubuntu.com>, 2007, 2008.
 # Jonh Wendell <wendell@bani.com.br>, 2008.
 # Djavan Fagundes <dnoway@gmail.com>, 2008.
@@ -10,12 +11,13 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool 2.22\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 21:27-0300\n"
+"Project-Id-Version: gnome-nettool 2.28\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&component=general\n"
+"POT-Creation-Date: 2009-05-04 03:50+0000\n"
 "PO-Revision-Date: 2009-01-20 12:24-0300\n"
-"Last-Translator: Djavan Fagundes <dnoway@gmail.com>\n"
-"Language-Team: Portuguese/Brazil <gnome-l10n-br@listas.cipsga.org.br>\n"
+"Last-Translator: Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
+"Language-Team: Portuguese/Brazil <gnome-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,7 +27,7 @@ msgid "translator-credits"
 msgstr ""
 "Ariel Bressan da Silva <ariel@conectiva.com.br>\n"
 "Raphael Higino <In memoriam>\n"
-"Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>\n"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
 "Og Maciel <ogmaciel@ubuntu.com>\n"
 "Jonh Wendell <wendell@bani.com.br>\n"
 "Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
@@ -47,7 +49,7 @@ msgstr "Ferramentas de Rede"
 msgid "Graphical user interface for common network utilities"
 msgstr "Interface gráfica com o usuário para utilitários comuns de rede"
 
-#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:461
 msgid "Idle"
 msgstr "Ocioso"
 
@@ -140,236 +142,287 @@ msgstr "Exibir:"
 msgid "Domain address"
 msgstr "Endereço do domínio"
 
-#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
+#: ../src/gnome-nettool.glade.h:22
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Digite um nome de domínio cujas informações whois devem ser consultadas. Por "
+"exemplo: www.dominio.com.br ou 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:23
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Digite o endereço de rede onde fazer um finger naquele usuário. Por exemplo: "
+"www.dominio.com.br ou 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:24
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"Digite o endereço de rede a ser consultado. Por exemplo: www.dominio.com.br "
+"ou 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:25
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Digite o endereço de rede a ser pingado. Por exemplo: www.dominio.com.br ou "
+"192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:26
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Digite o endereço de rede onde varrer por portas abertas. Por exemplo: www."
+"dominio.com.br ou 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:27
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Digite o endereço de rede cuja rota deve ser rastreada. Por exemplo: www."
+"dominio.com.br ou 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:28
+msgid "Enter the user to finger"
+msgstr "Digite o usuário em quem fazer um finger"
+
+#: ../src/gnome-nettool.glade.h:29 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:30
 msgid "Finger output"
-msgstr "Saída do Finger"
+msgstr "Saída do finger"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:31
 msgid "Hardware address:"
 msgstr "Endereço de hardware:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:32
 msgid "Host"
 msgstr "Máquina"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:33
 msgid "Link speed:"
 msgstr "Velocidade do link:"
 
-#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:734
 msgid "Lookup"
 msgstr "Consultar"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:35
 msgid "Lookup output"
 msgstr "Saída da consulta"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:36
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:37
 msgid "Maximum:"
 msgstr "Máximo:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:38
 msgid "Minimum:"
 msgstr "Mínimo:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:39
 msgid "Multicast Information"
 msgstr "Informações de multicast"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:40
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:42
 msgid "Netstat output"
-msgstr "Saída do Netstat"
+msgstr "Saída do netstat"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:43
 msgid "Network address"
 msgstr "Endereço de rede"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:44
 msgid "Not Available"
 msgstr "Não disponível"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:45
 msgid "Only"
 msgstr "Apenas"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:46
 msgid "Output for finger"
 msgstr "Saída para finger"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:47
 msgid "Output for lookup"
 msgstr "Saída para consulta"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:48
 msgid "Output for net stat"
 msgstr "Saída para net stat"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:49
 msgid "Output for port scan"
 msgstr "Saída para varredura de porta"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:50
 msgid "Output for traceroute"
 msgstr "Saída para traceroute"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:51
 msgid "Output for whois"
 msgstr "Saída para o whois"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:52
 msgid "Packets received:"
 msgstr "Pacotes recebidos:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:53
 msgid "Packets transmitted:"
 msgstr "Pacotes transmitidos:"
 
-#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:55
 msgid "Port Scan"
 msgstr "Varredura de portas"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:56
 msgid "Port scan output"
 msgstr "Saída da varredura de portas"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:57
 msgid "Received bytes:"
 msgstr "Bytes recebidos:"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:58
 msgid "Received packets:"
 msgstr "Pacotes recebidos:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:59
 msgid "Reception errors:"
 msgstr "Erros de recepção:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:60
 msgid "Routing Table Information"
 msgstr "Informações da tabela de roteamento"
 
-#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
+#: ../src/gnome-nettool.glade.h:61 ../src/main.c:619
 msgid "Scan"
 msgstr "Varrer"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:62
 msgid "Send:"
 msgstr "Enviar:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:63
 msgid "State:"
 msgstr "Estado:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:64
 msgid "Successful packets:"
 msgstr "Pacotes recebidos:"
 
-#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
+#: ../src/gnome-nettool.glade.h:65 ../src/main.c:375
 msgid "Trace"
 msgstr "Rastrear"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:66
 msgid "Traceroute"
 msgstr "Rastrear rota"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:67
 msgid "Traceroute output"
 msgstr "Saída da rota rastreada"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:68
 msgid "Transmission errors:"
 msgstr "Erros de transmissão:"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.glade.h:69
 msgid "Transmitted bytes:"
 msgstr "Bytes transmitidos:"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:70
 msgid "Transmitted packets:"
 msgstr "Pacotes transmitidos:"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../src/gnome-nettool.glade.h:71
 msgid "Unlimited requests"
 msgstr "Solicitações ilimitadas"
 
-#: ../src/gnome-nettool.glade.h:65
+#: ../src/gnome-nettool.glade.h:72
 msgid "User"
 msgstr "Usuário"
 
-#: ../src/gnome-nettool.glade.h:66
+#: ../src/gnome-nettool.glade.h:73
 msgid "User name"
 msgstr "Nome do usuário"
 
-#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
+#: ../src/gnome-nettool.glade.h:74 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../src/gnome-nettool.glade.h:75
 msgid "Whois output"
 msgstr "Saída do whois"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Configure"
 msgstr "_Configurar"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Domain address:"
 msgstr "Endereço do _domínio:"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../src/gnome-nettool.glade.h:78
 msgid "_Edit"
 msgstr "_Editar"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../src/gnome-nettool.glade.h:79
 msgid "_Help"
 msgstr "Aj_uda"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../src/gnome-nettool.glade.h:80
 msgid "_Information type:"
 msgstr "Tipo de _informação:"
 
-#: ../src/gnome-nettool.glade.h:74
+#: ../src/gnome-nettool.glade.h:81
 msgid "_Network address:"
 msgstr "Endereço de _rede:"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../src/gnome-nettool.glade.h:82
 msgid "_Network device:"
 msgstr "Dispositivo de _rede:"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../src/gnome-nettool.glade.h:83
 msgid "_Tool"
 msgstr "Ferramen_ta"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../src/gnome-nettool.glade.h:84
 msgid "_Username:"
 msgstr "Nome do _usuário:"
 
 #. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:79
+#: ../src/gnome-nettool.glade.h:86
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../src/gnome-nettool.glade.h:87
 msgid "requests"
 msgstr "solicitações"
 
@@ -388,7 +441,7 @@ msgstr "Interface sem fio"
 
 #: ../src/info.c:63
 msgid "Modem Interface"
-msgstr "Interface por Modem"
+msgstr "Interface por modem"
 
 #: ../src/info.c:64
 msgid "Parallel Line Interface"
@@ -499,24 +552,24 @@ msgstr "não disponível"
 msgid "Looking up %s"
 msgstr "Consultando %s"
 
-#: ../src/lookup.c:278
+#: ../src/lookup.c:274
 msgid "Name"
 msgstr "Nome"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: ../src/lookup.c:283
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:296
+#: ../src/lookup.c:292
 msgid "Address Type"
 msgstr "Tipo de endereço"
 
-#: ../src/lookup.c:306
+#: ../src/lookup.c:302
 msgid "Record Type"
 msgstr "Tipo de registro"
 
-#: ../src/lookup.c:315
+#: ../src/lookup.c:311
 msgid "Address"
 msgstr "Endereço"
 
@@ -526,7 +579,7 @@ msgstr "Endereço"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: ../src/lookup.c:339
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Origem\tTTL\tTipo de endereço\tRegistro tipo1\tResolução\n"
 
@@ -582,7 +635,7 @@ msgstr "Realiza uma consulta whois para um domínio de rede"
 msgid "DOMAIN"
 msgstr "DOMÍNIO"
 
-#: ../src/main.c:129
+#: ../src/main.c:131
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -625,7 +678,7 @@ msgstr "Nome canônico"
 
 #: ../src/main.c:672
 msgid "CPU / OS Type"
-msgstr "CPU / Tipo de S.O."
+msgstr "CPU / tipo de S.O."
 
 #. When asking for MX record in DNS context
 #: ../src/main.c:674
@@ -651,7 +704,7 @@ msgstr "Início-da-autoridade"
 
 #: ../src/main.c:680
 msgid "Text Information"
-msgstr "Informações Texto"
+msgstr "Informações de texto"
 
 #: ../src/main.c:681
 msgid "Well Known Services"
@@ -659,7 +712,7 @@ msgstr "Serviços conhecidos"
 
 #: ../src/main.c:682
 msgid "Any / All Information"
-msgstr "Todas as Informações"
+msgstr "Todas as informações"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
@@ -773,7 +826,7 @@ msgstr "Duração (ms):"
 
 #: ../src/ping.c:171
 msgid "Seq. No.:"
-msgstr "Núm. Seq.:"
+msgstr "Núm. seq.:"
 
 #: ../src/ping.c:254
 #, c-format
@@ -945,48 +998,3 @@ msgstr "Obtendo as informações whois de %s"
 
 #~ msgid "Broadcast:\t%s\n"
 #~ msgstr "Broadcast:\t%s\n"
-
-#~ msgid ""
-#~ "Enter the network address to ping.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Digite o endereço de rede a ser pingado.\n"
-#~ "Por exemplo: www.dominio.com.br ou 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to trace a route to.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Digite o endereço de rede cuja rota deve ser rastreada.\n"
-#~ "Por exemplo: www.dominio.com.br ou 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to scan for open ports.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Digite o endereço de rede onde varrer por portas abertas.\n"
-#~ "Por exemplo: www.dominio.com.br ou 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to lookup.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Digite o endereço de rede a ser consultado.\n"
-#~ "Por exemplo: www.dominio.com.br ou 192.168.2.1"
-
-#~ msgid "Enter the user to finger."
-#~ msgstr "Digite o usuário em quem fazer um finger."
-
-#~ msgid ""
-#~ "Enter the network address to finger that user.\n"
-#~ "For example: auth.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Digite o endereço de rede onde fazer um finger naquele usuário.\n"
-#~ "Por exemplo: www.dominio.com.br ou 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter a domain address to lookup its whois information.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Digite um nome de domínio cujas informações whois devem ser consultadas.\n"
-#~ "Por exemplo: www.dominio.com.br ou 192.168.2.1"
