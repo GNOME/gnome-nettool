@@ -1,22 +1,24 @@
-# translation of hi.po to Oriya
+# translation of gnome-nettool.gnome-2-26.po to Hindi
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006.
-# Manoj Kumar Giri <mgiri@redhat.com>, 2009.
+# Rajesh Ranjan <rajesh672@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: hi\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&component=general\n"
-"POT-Creation-Date: 2009-05-04 03:50+0000\n"
-"PO-Revision-Date: 2009-06-10 19:31+0530\n"
-"Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
-"Language-Team: Oriya <oriya-it@googlegroups.com>\n"
+"Project-Id-Version: gnome-nettool.gnome-2-26\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&component=general\n"
+"POT-Creation-Date: 2009-06-19 16:58+0000\n"
+"PO-Revision-Date: 2009-06-10 14:33+0530\n"
+"Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
+"Language-Team: Hindi <hindi.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 
@@ -40,15 +42,14 @@ msgstr "संजाल उपकरण"
 msgid "Graphical user interface for common network utilities"
 msgstr "सामान्य संजाल उपयोगिता के लिये आलेखीय उपयोक्ता अंतरफलक"
 
-#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:461
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "निष्क्रिय"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
 #: ../src/callbacks.c:455
-#, fuzzy, c-format
-#| msgid "Network Tools"
+#, c-format
 msgid "%s - Network Tools"
 msgstr "%s - संजाल उपकरण"
 
@@ -131,8 +132,6 @@ msgid "Display:"
 msgstr "दिखायें"
 
 #: ../src/gnome-nettool.glade.h:21
-#, fuzzy
-#| msgid "_Domain address:"
 msgid "Domain address"
 msgstr "डोमेन पता"
 
@@ -177,7 +176,8 @@ msgstr ""
 #| msgid ""
 #| "Enter the network address to ping.\n"
 #| "For example: www.domain.com or 192.168.2.1"
-msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "पिंग करने के लिये संजाल पता डालें.\n"
 "उदाहरण के लिये: www.domain.com या 192.168.2.1"
@@ -217,8 +217,6 @@ msgid "Finger"
 msgstr "फिंगर"
 
 #: ../src/gnome-nettool.glade.h:30
-#, fuzzy
-#| msgid "Finger"
 msgid "Finger output"
 msgstr "फिंगर आउटपुट"
 
@@ -239,8 +237,6 @@ msgid "Lookup"
 msgstr "देखें"
 
 #: ../src/gnome-nettool.glade.h:35
-#, fuzzy
-#| msgid "Lookup"
 msgid "Lookup output"
 msgstr "लुकअप आउटपुट"
 
@@ -269,14 +265,10 @@ msgid "Netstat"
 msgstr "नेटस्टेट"
 
 #: ../src/gnome-nettool.glade.h:42
-#, fuzzy
-#| msgid "Netstat"
 msgid "Netstat output"
 msgstr "नेटस्टेट आउटपुट"
 
 #: ../src/gnome-nettool.glade.h:43
-#, fuzzy
-#| msgid "_Network address:"
 msgid "Network address"
 msgstr "संजाल पता"
 
@@ -329,8 +321,6 @@ msgid "Port Scan"
 msgstr "पोर्ट स्कैन"
 
 #: ../src/gnome-nettool.glade.h:56
-#, fuzzy
-#| msgid "Port Scan"
 msgid "Port scan output"
 msgstr "पोर्ट स्कैन आउटपुट"
 
@@ -363,8 +353,6 @@ msgid "State:"
 msgstr "स्थिति:"
 
 #: ../src/gnome-nettool.glade.h:64
-#, fuzzy
-#| msgid "Received packets:"
 msgid "Successful packets:"
 msgstr "सफल पैकेट:"
 
@@ -377,8 +365,6 @@ msgid "Traceroute"
 msgstr "ट्रेसरूट"
 
 #: ../src/gnome-nettool.glade.h:67
-#, fuzzy
-#| msgid "Traceroute"
 msgid "Traceroute output"
 msgstr "ट्रेसरूट आउटपुट"
 
@@ -403,8 +389,6 @@ msgid "User"
 msgstr "उपयोक्ता"
 
 #: ../src/gnome-nettool.glade.h:73
-#, fuzzy
-#| msgid "_Username:"
 msgid "User name"
 msgstr "उपयोक्ता नाम"
 
@@ -698,14 +682,10 @@ msgid "Scope"
 msgstr "स्कोप"
 
 #: ../src/main.c:669
-#, fuzzy
-#| msgid "Multicast Information"
 msgid "Default Information"
 msgstr "तयशुदा सूचना"
 
 #: ../src/main.c:670
-#, fuzzy
-#| msgid "IP Address"
 msgid "Internet Address"
 msgstr "इंटरनेट पता"
 
@@ -723,8 +703,6 @@ msgid "Mailbox Exchange"
 msgstr "मेलबॉक्स एक्चेंज"
 
 #: ../src/main.c:675
-#, fuzzy
-#| msgid "Multicast Information"
 msgid "Mailbox Information"
 msgstr "मेलबॉक्स सूचना"
 
@@ -734,8 +712,6 @@ msgid "Name Server"
 msgstr "नाम सर्वर"
 
 #: ../src/main.c:678
-#, fuzzy
-#| msgid "Port scan a network address"
 msgid "Host name for Address"
 msgstr "पता के लिए मेजबान नाम"
 
@@ -744,8 +720,6 @@ msgid "Start-of-authority"
 msgstr "Start-of-authority"
 
 #: ../src/main.c:680
-#, fuzzy
-#| msgid "Multicast Information"
 msgid "Text Information"
 msgstr "पाठ सूचना"
 
@@ -754,8 +728,6 @@ msgid "Well Known Services"
 msgstr "सुविख्यात सेवा"
 
 #: ../src/main.c:682
-#, fuzzy
-#| msgid "Routing Table Information"
 msgid "Any / All Information"
 msgstr "कोई / सभी सूचना"
 
@@ -852,22 +824,20 @@ msgstr "डोमेन नाम निर्दिष्ट नहीं थ�
 msgid "Please enter a valid domain address and try again."
 msgstr "मान्य डोमेन पता दाकिल करें और फिर कोशिश करें"
 
-#: ../src/nettool.c:406
+#: ../src/nettool.c:428
 msgid "Information not available"
 msgstr "सूचना उपलब्ध नहीं"
 
-#: ../src/nettool.c:526
+#: ../src/nettool.c:548
 msgid "Stop"
 msgstr "रोकें"
 
-#: ../src/nettool.c:532
+#: ../src/nettool.c:554
 msgid "Run"
 msgstr "चलाएँ"
 
 #. Created up here so we can get the geometry info.
 #: ../src/ping.c:151
-#, fuzzy
-#| msgid "Time 1"
 msgid "Time (ms):"
 msgstr "समय (ms):"
 
@@ -935,8 +905,7 @@ msgid "Packets received:\t%s\n"
 msgstr "पैकेट प्राप्त:\t%s\n"
 
 #: ../src/ping.c:652
-#, fuzzy, c-format
-#| msgid "Received packets:\t%s\n"
+#, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "सफल पैकेट:\t%s\n"
 
@@ -951,8 +920,6 @@ msgstr "अज्ञात"
 
 #. Translators: "open" is a network status and should be one word.
 #: ../src/scan.c:173
-#, fuzzy
-#| msgid "Scope"
 msgid "open"
 msgstr "खोलें"
 
@@ -1009,11 +976,10 @@ msgstr "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
-msgstr "प्रोग्राम के इस गुण को प्रयोग के लिये, %s को आपके सिस्टम पर जरूर अधिष्ठापित होना चाहिये"
+msgstr ""
+"प्रोग्राम के इस गुण को प्रयोग के लिये, %s को आपके सिस्टम पर जरूर अधिष्ठापित होना चाहिये"
 
 #: ../src/gnome-nettool.desktop.in.in.h:2
-#, fuzzy
-#| msgid "Load information for a network device"
 msgid "View information about your network"
 msgstr "अपने संजाल के बारे में सूचना देखें"
 
@@ -1031,4 +997,3 @@ msgstr "\"%s\" पर सभी उपयोक्ता का सूचना 
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s का whois सूचना ले रहा है"
-
