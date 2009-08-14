@@ -1,16 +1,16 @@
 # gnome-nettool Finnish translation.
 # Copyright (C) 2004-2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
-# Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2004-2005.
+# Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2004-2005, 2009.
 # Ilkka Tuohela <hile@iki.fi>, 2005-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-18 19:53+0300\n"
-"PO-Revision-Date: 2009-02-18 19:55+0300\n"
-"Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
+"POT-Creation-Date: 2009-08-14 15:16+0300\n"
+"PO-Revision-Date: 2009-08-14 15:17+0300\n"
+"Last-Translator: Tommi Vainikainen <thv@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +41,7 @@ msgstr "Verkkotyökalut"
 msgid "Graphical user interface for common network utilities"
 msgstr "Graafinen käyttöliittymä yleisille verkkotyökaluille"
 
-#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "Jouten"
 
@@ -56,314 +56,351 @@ msgstr "%s - verkkotyökalut"
 msgid "Unable to open help file"
 msgstr "Ohjetiedostoa ei voi avata"
 
-#: ../src/gnome-nettool.glade.h:1
+#: ../src/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "0"
 
-#: ../src/gnome-nettool.glade.h:3
+#: ../src/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "0 %"
 
-#: ../src/gnome-nettool.glade.h:4
+#: ../src/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.glade.h:5
+#: ../src/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>IP-tiedot</b>"
 
-#: ../src/gnome-nettool.glade.h:6
+#: ../src/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>Liitännän tiedot</b>"
 
-#: ../src/gnome-nettool.glade.h:7
+#: ../src/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>Liitännän tilastot</b>"
 
-#: ../src/gnome-nettool.glade.h:8
+#: ../src/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Edestakaisen ajan tilastot</b>"
 
-#: ../src/gnome-nettool.glade.h:9
+#: ../src/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Siirtotilastot</b>"
 
-#: ../src/gnome-nettool.glade.h:10
+#: ../src/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "Toimivat verkkopalvelut"
 
-#: ../src/gnome-nettool.glade.h:11
+#: ../src/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "Keskiarvo:"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../src/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Piippaa pingatessa"
 
-#: ../src/gnome-nettool.glade.h:13
+#: ../src/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "Tyhjennä _historia"
 
-#: ../src/gnome-nettool.glade.h:14
+#: ../src/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "Törmäykset:"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../src/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "Kopioi teksti_raportiksi"
 
-#: ../src/gnome-nettool.glade.h:16
+#: ../src/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "Yksityiskohdat"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../src/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "Laitteet"
 
-#. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:19
+#: ../src/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "Laitteet - Verkkotyökalut"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../src/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "Näyttö:"
 
-#: ../src/gnome-nettool.glade.h:21
+#: ../src/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "Tomialueen osoite"
 
-#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
+#: ../src/gnome-nettool.ui.h:21
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr "Syötä toimialueosoite, jonka whois-tiedot selvitetään. Esimerkiksi: www.jotain.fi tai 192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:22
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr "Syötä verkko-osoite, josta käyttäjää fingeröidään. Esimerkiksi: www.jotain.fi tai 192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:23
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr "Syötä selvitettävä verkko-osoite. Esimerkiksi: www.jotain.fi tai 192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:24
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr "Syötä pingattava verkko-osoite. Esimerkiksi: www.jotain.fi tai 192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:25
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr "Syötä verkko-osoite, jonka avoimet portit skannataan. Esimerkiksi: www.jotain.fi tai 192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:26
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr "Syötä verkko-osoite, jonne reitti jäljitetään. Esimerkiksi: www.jotain.fi tai 192.168.2.1"
+
+#: ../src/gnome-nettool.ui.h:27
+msgid "Enter the user to finger"
+msgstr "Syötä fingeröitävä käyttäjä"
+
+#: ../src/gnome-nettool.ui.h:28 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "Finger-tuloste"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "Laiteosoite:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "Verkkonimi"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "Yhteysnopeus:"
 
-#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
+#: ../src/gnome-nettool.ui.h:33 ../src/main.c:734
 msgid "Lookup"
 msgstr "Nimen haku"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "Haun tuloste"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "Maksimi:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "Minimi:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "Monilähetystiedot"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "Monilähetys:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
+#: ../src/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "Verkkotilastot"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "Netstat-tuloste"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "Verkko-osoite"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "Ei käytettävissä"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "Vain"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "Finger-komennon tuloste"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "Hakukomennon tuloste"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "Netstat-komennon tuloste"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "Porttiskannauksen tuloste"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "Traceroute-komennon tuloste"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "Whois-komennon tuloste"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "Paketteja vastaanotettu:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "Paketteja lähetetty:"
 
-#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
+#: ../src/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "Porttiskannaus"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "Porttiskannauksen tuloste"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "Vastaanotetut tavut:"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "Vastaanotetut paketit:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "Vastaanottovirheet:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "Reititystaulun tiedot"
 
-#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
+#: ../src/gnome-nettool.ui.h:60 ../src/main.c:619
 msgid "Scan"
 msgstr "Skannaa"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "Lähetä:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "Tila:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "Onnistuneet paketit:"
 
-#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
+#: ../src/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "Jäljitä"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "Reitinjäljitys"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "Traceroute-tuloste"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "Lähetysvirheitä:"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "Lähetettyjä tavuja:"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "Lähetettyjä paketteja:"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../src/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "Rajattomasti pyyntöjä"
 
-#: ../src/gnome-nettool.glade.h:65
+#: ../src/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "Käyttäjä"
 
-#: ../src/gnome-nettool.glade.h:66
+#: ../src/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "Käyttäjätunnus"
 
-#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
+#: ../src/gnome-nettool.ui.h:73 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../src/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "Whois-tuloste"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../src/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "_Asetukset"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../src/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "_Toimialueosoite:"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../src/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "_Muokkaa"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../src/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "O_hje"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../src/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "_Tietojen tyyppi:"
 
-#: ../src/gnome-nettool.glade.h:74
+#: ../src/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "_Verkko-osoite:"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../src/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "_Verkkolaite:"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../src/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "_Työkalu"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../src/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "Käyttäjät_unnus:"
 
-#. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:79
+#: ../src/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../src/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "pyyntöä"
 
@@ -493,25 +530,25 @@ msgstr "ei saatavilla"
 msgid "Looking up %s"
 msgstr "Selvitetään verkkonimeä %s"
 
-#: ../src/lookup.c:278
+#: ../src/lookup.c:274
 msgid "Name"
 msgstr "Nimi"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: ../src/lookup.c:283
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:296
+#: ../src/lookup.c:292
 msgid "Address Type"
 msgstr "Osoitetyyppi"
 
 #
-#: ../src/lookup.c:306
+#: ../src/lookup.c:302
 msgid "Record Type"
 msgstr "Tietuetyyppi"
 
-#: ../src/lookup.c:315
+#: ../src/lookup.c:311
 msgid "Address"
 msgstr "Osoite"
 
@@ -521,64 +558,64 @@ msgstr "Osoite"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: ../src/lookup.c:339
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Lähde\tTTL\tOsoitetyyppi\tTietuetyyppi1\tVastaus\n"
 
-#: ../src/main.c:83
+#: ../src/main.c:82
 msgid "Load information for a network device"
 msgstr "Lataa verkkolaitteen tiedot"
 
-#: ../src/main.c:84
+#: ../src/main.c:83
 msgid "DEVICE"
 msgstr "ASEMA"
 
-#: ../src/main.c:87
+#: ../src/main.c:86
 msgid "Send a ping to a network address"
 msgstr "Lähetä ping verkko-osoitteeseen"
 
-#: ../src/main.c:88 ../src/main.c:96 ../src/main.c:100 ../src/main.c:104
+#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
 msgid "HOST"
 msgstr "ISÄNTÄ"
 
-#: ../src/main.c:91
+#: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Hae netstat-tiedot. Sallitut vaihtoehdot ovat: route, active ja multicast."
 
-#: ../src/main.c:92
+#: ../src/main.c:91
 msgid "COMMAND"
 msgstr "KOMENTO"
 
-#: ../src/main.c:95
+#: ../src/main.c:94
 msgid "Trace a route to a network address"
 msgstr "Jäljitä reitti verkko-osoitteeseen"
 
-#: ../src/main.c:99
+#: ../src/main.c:98
 msgid "Port scan a network address"
 msgstr "Porttiskannaa verkko-osoite"
 
-#: ../src/main.c:103
+#: ../src/main.c:102
 msgid "Look up a network address"
 msgstr "Selvitä verkko-osoite"
 
-#: ../src/main.c:107
+#: ../src/main.c:106
 msgid "Finger command to run"
 msgstr "Suoritettava finger-komento"
 
-#: ../src/main.c:108
+#: ../src/main.c:107
 msgid "USER"
 msgstr "KÄYTTÄJÄ"
 
-#: ../src/main.c:111
+#: ../src/main.c:110
 msgid "Perform a whois lookup for a network domain"
 msgstr "Suorita whois-selvitys verkon toimialueelle"
 
-#: ../src/main.c:112
+#: ../src/main.c:111
 msgid "DOMAIN"
 msgstr "TOIMIALUE"
 
-#: ../src/main.c:129
+#: ../src/main.c:130
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -750,15 +787,15 @@ msgstr "Toimialueosoitetta ei määritetty"
 msgid "Please enter a valid domain address and try again."
 msgstr "Syötä kelvollinen toimialueosoite ja yritä uudelleen."
 
-#: ../src/nettool.c:406
+#: ../src/nettool.c:428
 msgid "Information not available"
 msgstr "Tietoja ei saatavilla"
 
-#: ../src/nettool.c:526
+#: ../src/nettool.c:548
 msgid "Stop"
 msgstr "Pysäytä"
 
-#: ../src/nettool.c:532
+#: ../src/nettool.c:554
 msgid "Run"
 msgstr "Suorita"
 
@@ -941,51 +978,6 @@ msgstr "Haetaan toimialueen %s whois-tiedot"
 
 #~ msgid "Broadcast:\t%s\n"
 #~ msgstr "Yleislähetys:\t%s\n"
-
-#~ msgid ""
-#~ "Enter the network address to ping.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Syötä pingattava verkko-osoite.\n"
-#~ "Esimerkiksi: www.jotain.fi tai 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to trace a route to.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Syötä verkko-osoite, jonne reitti jäljitetään.\n"
-#~ "Esimerkiksi: www.jotain.fi tai 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to scan for open ports.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Syötä verkko-osoite, jonka avoimet portit skannataan.\n"
-#~ "Esimerkiksi: www.jotain.fi tai 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to lookup.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Syötä selvitettävä verkko-osoite.\n"
-#~ "Esimerkiksi: www.jotain.fi tai 192.168.2.1"
-
-#~ msgid "Enter the user to finger."
-#~ msgstr "Syötä fingeröitävä käyttäjä."
-
-#~ msgid ""
-#~ "Enter the network address to finger that user.\n"
-#~ "For example: auth.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Syötä verkko-osoite, josta käyttäjää fingeröidään.\n"
-#~ "Esimerkiksi: www.jotain.fi tai 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter a domain address to lookup its whois information.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "Syötä toimialueosoite, jonka whois-tiedot selvitetään.\n"
-#~ "Esimerkiksi: www.jotain.fi tai 192.168.2.1"
 
 #~ msgid "Network Information Tools"
 #~ msgstr "Verkkotietotyökalut"
