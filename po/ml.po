@@ -1,4 +1,4 @@
-# translation of gnome-nettool.HEAD.ml.po to Malayalam
+# translation of gnome-nettool.master.ml.po to
 # This file is distributed under the same license as the gnome-nettool package.
 # Copyright (C) 2003-2008 gnome-nettool'S COPYRIGHT HOLDER.
 # FSF-India <locale@gnu.org.in>, 2003.
@@ -6,31 +6,29 @@
 # Hari Vishnu <harivishnu@gmail.com>, 2008
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool.HEAD.ml\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"nettool&component=general\n"
-"POT-Creation-Date: 2009-02-22 17:24+0000\n"
-"PO-Revision-Date: 2008-09-27 02:47+0530\n"
-"Last-Translator: Hari Vishnu <harivishnu@gmail.com>\n"
-"Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ്  <smc-"
-"discuss@googlegroups.com>\n"
+"Project-Id-Version: gnome-nettool.master.ml\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&component=general\n"
+"POT-Creation-Date: 2009-05-04 03:50+0000\n"
+"PO-Revision-Date: 2009-09-12 17:58+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Malayalam\n"
 "X-Poedit-Country: INDIA\n"
 
 #: ../src/callbacks.c:323
 msgid "translator-credits"
-msgstr "അനി പീറ്റര്‍ <peter.ani@gmail.com>"
+msgstr "അനി പീറ്റര്‍ <apeter@redhat.com>"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:330
 #, c-format
 msgid "Copyright © 2003-2008 %s"
-msgstr ""
+msgstr "പകര്‍പ്പവകാശം © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
 #: ../src/callbacks.c:334 ../src/callbacks.c:335
@@ -42,9 +40,9 @@ msgstr "നെറ്റ്‍വര്‍ക്ക് പ്രയോഗങ്�
 msgid "Graphical user interface for common network utilities"
 msgstr "സാധാരണയായുളള നെറ്റ്‍വര്‍ക്ക് ഉപയോഗങ്ങള്‍ക്ക് വേണ്ടിയുളള ഗ്രാഫിക്കല്‍ യൂസര്‍ ഇന്‍റര്‍ഫെയിസ്"
 
-#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:461
 msgid "Idle"
-msgstr ""
+msgstr "നിശ്ചലം"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
@@ -55,16 +53,16 @@ msgstr "%s - നെറ്റ്‍വര്‍ക്ക് ഉപകരണങ്
 
 #: ../src/callbacks.c:479
 msgid "Unable to open help file"
-msgstr ""
+msgstr "സഹായത്തിനുള്ള ഫയല്‍ തുറക്കുവാന്‍ സാധ്യമല്ല"
 
 #: ../src/gnome-nettool.glade.h:1
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: ../src/gnome-nettool.glade.h:3
 #, no-c-format
 msgid "0%"
-msgstr ""
+msgstr "0%"
 
 #: ../src/gnome-nettool.glade.h:4
 msgid "0.0"
@@ -112,7 +110,7 @@ msgstr "കൂട്ടിമുട്ടലുകള്‍:"
 
 #: ../src/gnome-nettool.glade.h:15
 msgid "Copy as text _report"
-msgstr ""
+msgstr "ടെക്സ്റ്റ് _റിപോര്‍ട്ടായി പകര്‍ത്തുക"
 
 #: ../src/gnome-nettool.glade.h:16
 msgid "Details"
@@ -132,247 +130,308 @@ msgid "Display:"
 msgstr "പ്രദര്‍ശനം:"
 
 #: ../src/gnome-nettool.glade.h:21
-#, fuzzy
 msgid "Domain address"
-msgstr "ഡൊമെന്‍റെ മേല്‍വിലാസം: (_D)"
+msgstr "ഡൊമെന്‍റെ മേല്‍വിലാസം"
 
-#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
+#: ../src/gnome-nettool.glade.h:22
+#| msgid ""
+#| "Enter a domain address to lookup its whois information.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"whois വിവരങ്ങള്‍ കണ്ടുപിടിക്കുന്നതിനായി നെറ്റ്‌വര്‍ക്ക് വിലാസം നല്‍കുക."
+"ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:23
+#| msgid ""
+#| "Enter the network address to finger that user.\n"
+#| "For example: auth.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"പറഞ്ഞിരിക്കുന്ന ഉപയോക്താവിനെ finger ചെയ്യുന്നതിനായി നെറ്റ്‌വര്‍ക്ക് വിലാസം നല്‍കുക."
+"ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:24
+#| msgid ""
+#| "Enter the network address to lookup.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"തിരയുന്നതിനായുളള നെറ്റ്‌വര്‍ക്ക് വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com "
+"അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:25
+#| msgid ""
+#| "Enter the network address to ping.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"പിങ് ചെയ്യുന്നതിനായുളള നെറ്റ്‌വര്‍ക്ക് വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com "
+"അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:26
+#| msgid ""
+#| "Enter the network address to scan for open ports.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"തുറന്നുകിടക്കുന്ന പോര്‍ട്ടുകള്‍ പരിശോധിക്കുന്നതിനുളള നെറ്റ്‌വര്‍ക്ക് വിലാസം നല്‍കുക."
+"ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:27
+#| msgid ""
+#| "Enter the network address to trace a route to.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"ഒരു വഴി തിരയുന്നതിനായുളള നെറ്റ്‌വര്‍ക്ക് വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com "
+"അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:28
+#| msgid "Enter the user to finger."
+msgid "Enter the user to finger"
+msgstr "finger ചെയ്യുന്നതിനായുളള ഉപയോക്താവ് ഏതെന്ന് പറയുക"
+
+#: ../src/gnome-nettool.glade.h:29 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:23
-#, fuzzy
+#: ../src/gnome-nettool.glade.h:30
 msgid "Finger output"
-msgstr "Finger"
+msgstr "Finger ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:31
 msgid "Hardware address:"
 msgstr "ഹാര്‍ഡ്‍വയര്‍ വിലാസം:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:32
 msgid "Host"
 msgstr "ഹോസ്റ്റ്"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:33
 msgid "Link speed:"
 msgstr "ലിങ്കിന്‍റെ വേഗത:"
 
-#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:734
 msgid "Lookup"
 msgstr "തിരയുക"
 
-#: ../src/gnome-nettool.glade.h:28
-#, fuzzy
+#: ../src/gnome-nettool.glade.h:35
 msgid "Lookup output"
-msgstr "തിരയുക"
+msgstr "തെരച്ചില്‍ ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:36
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:37
 msgid "Maximum:"
 msgstr "ഏറ്റവും കൂടുതല്‍:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:38
 msgid "Minimum:"
 msgstr "ഏറ്റവും കുറഞ്ഞത്:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:39
 msgid "Multicast Information"
 msgstr "മള്‍ട്ടികാസ്റ്റിന്‍റെ വിവരങ്ങള്‍"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:40
 msgid "Multicast:"
 msgstr "മള്‍ട്ടികാസ്റ്റ്:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.glade.h:35
-#, fuzzy
+#: ../src/gnome-nettool.glade.h:42
 msgid "Netstat output"
-msgstr "Netstat"
+msgstr "Netstat ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:36
-#, fuzzy
+#: ../src/gnome-nettool.glade.h:43
 msgid "Network address"
-msgstr "നെറ്റ്‍വര്‍ക്ക് വിലാസം: (_N)"
+msgstr "നെറ്റ്‌വര്‍ക്ക് വിലാസം"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:44
 msgid "Not Available"
 msgstr "ലഭ്യമല്ല"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:45
 msgid "Only"
 msgstr "മാത്രം"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:46
 msgid "Output for finger"
-msgstr ""
+msgstr "finger-നുള്ള ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:47
 msgid "Output for lookup"
-msgstr ""
+msgstr "lookup-നുള്ള ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:48
 msgid "Output for net stat"
-msgstr ""
+msgstr "net stat-നുള്ള ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:49
 msgid "Output for port scan"
-msgstr ""
+msgstr "port scan-നുള്ള ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:50
 msgid "Output for traceroute"
-msgstr ""
+msgstr "traceroute-നുള്ള ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:51
 msgid "Output for whois"
-msgstr ""
+msgstr "whois-നുള്ള ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:52
 msgid "Packets received:"
 msgstr "വന്ന പാക്കറ്റുകള്‍:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:53
 msgid "Packets transmitted:"
 msgstr "അയച്ച പാക്കറ്റുകള്‍:"
 
-#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:290
 msgid "Ping"
 msgstr "പിങ്"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:55
 msgid "Port Scan"
 msgstr "Port Scan"
 
-#: ../src/gnome-nettool.glade.h:49
-#, fuzzy
+#: ../src/gnome-nettool.glade.h:56
 msgid "Port scan output"
-msgstr "Port Scan"
+msgstr "Port scan ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:57
 msgid "Received bytes:"
 msgstr "അയച്ച ബൈറ്റ്സ്:"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:58
 msgid "Received packets:"
 msgstr "വന്ന പാക്കറ്റുകള്‍:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:59
 msgid "Reception errors:"
 msgstr "സ്വീകരിക്കുന്നതിലുളള പിശകുകള്‍:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:60
 msgid "Routing Table Information"
 msgstr "റൌട്ടിങ് ടേബിളിന്‍റെ വിവരങ്ങള്‍"
 
-#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
+#: ../src/gnome-nettool.glade.h:61 ../src/main.c:619
 msgid "Scan"
 msgstr "പരിശോധിക്കുക"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:62
 msgid "Send:"
 msgstr "അയയ്ക്കുക:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:63
 msgid "State:"
 msgstr "അവസ്ഥ:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:64
 msgid "Successful packets:"
 msgstr "ശരിയായി വന്ന പാക്കറ്റുകള്‍:"
 
-#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
+#: ../src/gnome-nettool.glade.h:65 ../src/main.c:375
 msgid "Trace"
 msgstr "Trace"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:66
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.glade.h:60
-#, fuzzy
+#: ../src/gnome-nettool.glade.h:67
 msgid "Traceroute output"
-msgstr "Traceroute"
+msgstr "Traceroute ഔട്ട്പുട്ട്"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:68
 msgid "Transmission errors:"
 msgstr "സംപ്രേക്ഷണത്തിലുളള പിശകുകള്‍:"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.glade.h:69
 msgid "Transmitted bytes:"
 msgstr "സംപ്രേക്ഷണം ചെയ്ത ബൈറ്റ്സ്:"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:70
 msgid "Transmitted packets:"
 msgstr "സംപ്രേക്ഷണം ചെയ്ത പാക്കറ്റുകള്‍:"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../src/gnome-nettool.glade.h:71
 msgid "Unlimited requests"
 msgstr "പരിധിയില്ലാത്ത ആവശ്യങ്ങള്‍"
 
-#: ../src/gnome-nettool.glade.h:65
+#: ../src/gnome-nettool.glade.h:72
 msgid "User"
 msgstr "ഉപയോക്താവ്"
 
-#: ../src/gnome-nettool.glade.h:66
-#, fuzzy
+#: ../src/gnome-nettool.glade.h:73
 msgid "User name"
-msgstr "ഉപയോക്തൃനാമം : (_U)"
+msgstr "ഉപയോക്തൃനാമം"
 
-#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
+#: ../src/gnome-nettool.glade.h:74 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../src/gnome-nettool.glade.h:75
 msgid "Whois output"
-msgstr ""
+msgstr "Whois output"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Configure"
 msgstr "ക്രമീകരിക്കുക (_C)"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Domain address:"
 msgstr "ഡൊമെന്‍റെ മേല്‍വിലാസം: (_D)"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../src/gnome-nettool.glade.h:78
 msgid "_Edit"
 msgstr "മാറ്റം വരുത്തുക (_E)"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../src/gnome-nettool.glade.h:79
 msgid "_Help"
 msgstr "സഹായം (_H)"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../src/gnome-nettool.glade.h:80
 msgid "_Information type:"
 msgstr "ഏത് തരത്തിലുളള വിവരം: (_I)"
 
-#: ../src/gnome-nettool.glade.h:74
+#: ../src/gnome-nettool.glade.h:81
 msgid "_Network address:"
 msgstr "നെറ്റ്‍വര്‍ക്ക് വിലാസം: (_N)"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../src/gnome-nettool.glade.h:82
 msgid "_Network device:"
 msgstr "നെറ്റ്‍വര്‍ക്ക് ഉപകരണം: (_N)"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../src/gnome-nettool.glade.h:83
 msgid "_Tool"
 msgstr "പ്രയോഗം (_T)"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../src/gnome-nettool.glade.h:84
 msgid "_Username:"
 msgstr "ഉപയോക്തൃനാമം : (_U)"
 
 #. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:79
+#: ../src/gnome-nettool.glade.h:86
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../src/gnome-nettool.glade.h:87
 msgid "requests"
 msgstr "ആവശ്യങ്ങള്‍"
 
@@ -502,24 +561,24 @@ msgstr "ലഭ്യമല്ല"
 msgid "Looking up %s"
 msgstr "%s-നായി തിരയുന്നു"
 
-#: ../src/lookup.c:278
+#: ../src/lookup.c:274
 msgid "Name"
 msgstr "പേര്"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: ../src/lookup.c:283
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:296
+#: ../src/lookup.c:292
 msgid "Address Type"
 msgstr "ഏത് തരം വിലാസം"
 
-#: ../src/lookup.c:306
+#: ../src/lookup.c:302
 msgid "Record Type"
 msgstr "ഏത് തരം റിക്കോര്‍ഡ്"
 
-#: ../src/lookup.c:315
+#: ../src/lookup.c:311
 msgid "Address"
 msgstr "വിലാസം"
 
@@ -529,7 +588,7 @@ msgstr "വിലാസം"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: ../src/lookup.c:339
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 
@@ -587,7 +646,7 @@ msgstr "ഒരു നെറ്റ്‍വര്‍ക്ക് ഡൊമെയ�
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:129
+#: ../src/main.c:131
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -855,9 +914,8 @@ msgstr "അറിയാത്ത"
 
 #. Translators: "open" is a network status and should be one word.
 #: ../src/scan.c:173
-#, fuzzy
 msgid "open"
-msgstr "ചെയ്യുവാനുളള ജോലിയുടെ പരിധി നിര്‍ണ്ണയം (സ്കോപ്പ്)"
+msgstr "open"
 
 #: ../src/scan.c:306
 msgid "Port"
@@ -935,74 +993,3 @@ msgstr "\"%s\"-ലുളള എല്ലാ ഉപയോക്താക്കള
 msgid "Getting the whois information of %s"
 msgstr "%s-ന്‍റെ whois വിവരങ്ങള്‍ ലഭ്യമാകുന്നു"
 
-#~ msgid "Broadcast:"
-#~ msgstr "സംപ്രേക്ഷിക്കുക:"
-
-#~ msgid "IP Address:"
-#~ msgstr "IP വിലാസം:"
-
-#~ msgid "Netmask:"
-#~ msgstr "നെറ്റ്മാസ്ക്:"
-
-#~ msgid "IP address:\t%s\n"
-#~ msgstr "IP വിലാസം:\t%s\n"
-
-#~ msgid "Netmask:\t%s\n"
-#~ msgstr "നെറ്റ്മാസ്ക്:\t%s\n"
-
-#~ msgid "Broadcast:\t%s\n"
-#~ msgstr "സംപ്രേക്ഷണം :\t%s\n"
-
-#~ msgid ""
-#~ "Enter the network address to ping.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "പിങ് ചെയ്യുന്നതിനായുളള നെറ്റ്‍വര്‍ക്ക് വിലാസം നല്‍കുക.\n"
-#~ "ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to trace a route to.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "ഒരു വഴി തിരയുന്നതിനായുളള നെറ്റ്‍വര്‍ക്ക് വിലാസം നല്‍കുക.\n"
-#~ "ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to scan for open ports.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "തുറന്നുകിടക്കുന്ന പോര്‍ട്ടുകള്‍ പരിശോധിക്കുന്നതിനുളള നെറ്റ്‍വര്‍ക്ക് വിലാസം നല്‍കുക.\n"
-#~ "ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter the network address to lookup.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "തിരയുന്നതിനായുളള നെറ്റ്‍വര്‍ക്ക് വിലാസം നല്‍കുക.\n"
-#~ "ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
-
-#~ msgid "Enter the user to finger."
-#~ msgstr "finger ചെയ്യുന്നതിനായുളള ഉപയോക്താവ് ഏതെന്ന് പറയുക."
-
-#~ msgid ""
-#~ "Enter the network address to finger that user.\n"
-#~ "For example: auth.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "പറഞ്ഞിരിക്കുന്ന ഉപയോക്താവിനെ finger ചെയ്യുന്നതിനായി നെറ്റ്‍വര്‍ക്ക് വിലാസം നല്‍കുക.\n"
-#~ "ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
-
-#~ msgid ""
-#~ "Enter a domain address to lookup its whois information.\n"
-#~ "For example: www.domain.com or 192.168.2.1"
-#~ msgstr ""
-#~ "whois വിവരങ്ങള്‍ കണ്ടുപിടിക്കുന്നതിനായി നെറ്റ്‍വര്‍ക്ക് വിലാസം നല്‍കുക.\n"
-#~ "ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
-
-#~ msgid "Packets loss:"
-#~ msgstr "നഷ്ടമായ പാക്കറ്റുകള്‍:"
-
-#~ msgid "Packet loss:\t%s\n"
-#~ msgstr "നഷ്ടമായ പാക്കറ്റുകള്‍:\t%s\n"
-
-#~ msgid "Network Information Tools"
-#~ msgstr "നെറ്റ്‍വര്‍ക്ക് വിവരങ്ങള്‍ക്കായുളള പ്രയോഗങ്ങള്‍"
