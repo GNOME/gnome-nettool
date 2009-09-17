@@ -1,4 +1,4 @@
-# translation of te.po to Telugu
+# translation of gnome-nettool.master.te.po to Telugu
 # Telugu translation of gnome-nettool.
 # Copyright (C) Swecha Telugu Localisation Team <localisation@swecha.org>
 # This file is distributed under the same license as the gnome-nettool package.
@@ -7,10 +7,10 @@
 # Krishna Babu K <kkrothap@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: te\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&amp;component=general\n"
-"POT-Creation-Date: 2008-12-16 20:17+0000\n"
-"PO-Revision-Date: 2009-03-06 19:20+0530\n"
+"Project-Id-Version: gnome-nettool.master.te\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&component=general\n"
+"POT-Creation-Date: 2009-05-04 03:50+0000\n"
+"PO-Revision-Date: 2009-09-17 15:22+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,10 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"\n"
 
 #: ../src/callbacks.c:323
 msgid "translator-credits"
-msgstr "Pramod <pramod@swecha.net>"
+msgstr ""
+"Pramod <pramod@swecha.net> "
+"కృష్ణబాబు కె <kkrothap@redhat.com> "
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:330
@@ -39,7 +42,7 @@ msgstr "అల్లిక పనిముట్లు"
 msgid "Graphical user interface for common network utilities"
 msgstr "సాధారణమైన అల్లిక సౌలభ్యాల కొరకు చిత్రరూప వినియోగదారు సంవిధానం"
 
-#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:461
 msgid "Idle"
 msgstr "స్థిరమైన"
 
@@ -132,236 +135,284 @@ msgstr "ప్రదర్శించు:"
 msgid "Domain address"
 msgstr "డొమైన్ చిరునామా"
 
-#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
+#: ../src/gnome-nettool.glade.h:22
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"whois సమాచారమును చూడుటకు డొమైన్ చిరునామాను ప్రవేశపెట్టండి. ఉదాహరణకు: www."
+"domain.com లేదా 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:23
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"వినియోగదారిని చూపుటకు నెట్వర్కు చిరునామాను ప్రవేశపెట్టండి. ఉదాహరణకు: www.domain.com "
+"లేదా 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:24
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"చూడుటకు నెట్వర్కు చిరునామాను ప్రవేశపెట్టుము. ఉదాహరణకు: www.domain.com లేదా "
+"192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:25
+msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"పింగ్ చేయుటకు నెట్వర్కు చిరునామాను ప్రవేశపెట్టుము. ఉదాహరణకు: www.domain.com లేదా "
+"192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:26
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr "తెరిచిన పోర్టులను స్కానుచేయుటకు నెట్వర్కు చిరునామాను ప్రవేశపెట్టండి. ఉదాహరణకు: www.domain.com లేదా 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:27
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"దీనికి రూట్‌ను ట్రేస్ చేయుటకు నెట్వర్కు చిరునామాను ప్రవేశపెట్టుము. ఉదాహరణకు: www.domain.com లేదా "
+"192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:28
+msgid "Enter the user to finger"
+msgstr "చూపుటకు వినియోగదారిని ప్రవేశపెట్టుము"
+
+#: ../src/gnome-nettool.glade.h:29 ../src/main.c:814
 msgid "Finger"
 msgstr "వేలు"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:30
 msgid "Finger output"
 msgstr "వేలు అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:31
 msgid "Hardware address:"
 msgstr "గట్టిసరుకు సమాచారము:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:32
 msgid "Host"
 msgstr "ఆతిథ్యం"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:33
 msgid "Link speed:"
 msgstr "జోడి వేగము:"
 
-#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:734
 msgid "Lookup"
 msgstr "వెతుకుటకై"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../src/gnome-nettool.glade.h:35
 msgid "Lookup output"
 msgstr "లుకప్ అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:36
 msgid "MTU:"
 msgstr "ఎంటియు:"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:37
 msgid "Maximum:"
 msgstr "అత్యధిక:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:38
 msgid "Minimum:"
 msgstr "అత్యల్ప:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:39
 msgid "Multicast Information"
 msgstr "జంటచేయు సమాచారము"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:40
 msgid "Multicast:"
 msgstr "జంటచేయు:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:446
 msgid "Netstat"
 msgstr "నెట్ స్టాట్"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../src/gnome-nettool.glade.h:42
 msgid "Netstat output"
 msgstr "నెట్‌స్టాట్ అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../src/gnome-nettool.glade.h:43
 msgid "Network address"
 msgstr "నెట్వర్కు చిరునామా"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:44
 msgid "Not Available"
 msgstr "లభించలేదు"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:45
 msgid "Only"
 msgstr "మాత్రమే"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:46
 msgid "Output for finger"
 msgstr "వేలు కొరకు అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:47
 msgid "Output for lookup"
 msgstr "లుకప్ కొరకు అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:48
 msgid "Output for net stat"
 msgstr "నెట్ స్టాట్ కొరకు అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:49
 msgid "Output for port scan"
 msgstr "పోర్టు స్కాన్ కొరకు అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:50
 msgid "Output for traceroute"
 msgstr "ట్రేస్‌రూట్ కొరకు అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:51
 msgid "Output for whois"
 msgstr "హూఈజ్ కొరకు అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:52
 msgid "Packets received:"
 msgstr "పొట్లాలు తీసుకొనబడినవి:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:53
 msgid "Packets transmitted:"
 msgstr "పొట్లాలు ప్రసరింపబడినవి:"
 
-#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:290
 msgid "Ping"
 msgstr "పింగ్"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:55
 msgid "Port Scan"
 msgstr "రేవు సంశోధన"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../src/gnome-nettool.glade.h:56
 msgid "Port scan output"
 msgstr "పోర్టు స్కాన్ అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:57
 msgid "Received bytes:"
 msgstr "తీసుకొనబడిన బైట్స్:"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:58
 msgid "Received packets:"
 msgstr "తీసుకొనబడిన పొట్లాలు:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:59
 msgid "Reception errors:"
 msgstr "స్వీకరించిన దోషాలు:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:60
 msgid "Routing Table Information"
 msgstr "త్రోవచూపు పట్టిక సమాచారము"
 
-#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
+#: ../src/gnome-nettool.glade.h:61 ../src/main.c:619
 msgid "Scan"
 msgstr "సంశోధన"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:62
 msgid "Send:"
 msgstr "పంపు:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:63
 msgid "State:"
 msgstr "స్థితి:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:64
 msgid "Successful packets:"
 msgstr "విజయవంతమైన పొట్లాలు:"
 
-#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
+#: ../src/gnome-nettool.glade.h:65 ../src/main.c:375
 msgid "Trace"
 msgstr "జాడ"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:66
 msgid "Traceroute"
 msgstr "జాడ త్రోవ వెతుకు"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:67
 msgid "Traceroute output"
 msgstr "ట్రేస్‌రూట్ అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:68
 msgid "Transmission errors:"
 msgstr "ప్రసరణ దోషము:"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.glade.h:69
 msgid "Transmitted bytes:"
 msgstr "ప్రసరించబడిన బైట్స్:"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:70
 msgid "Transmitted packets:"
 msgstr "ప్రసరించబడిన పొట్లాలు:"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../src/gnome-nettool.glade.h:71
 msgid "Unlimited requests"
 msgstr "హద్దులులేని మనవిలు"
 
-#: ../src/gnome-nettool.glade.h:65
+#: ../src/gnome-nettool.glade.h:72
 msgid "User"
 msgstr "వినియోగదారు"
 
-#: ../src/gnome-nettool.glade.h:66
+#: ../src/gnome-nettool.glade.h:73
 msgid "User name"
 msgstr "వినియోగదారి నామము"
 
-#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
+#: ../src/gnome-nettool.glade.h:74 ../src/main.c:920
 msgid "Whois"
 msgstr "హూయిస్"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../src/gnome-nettool.glade.h:75
 msgid "Whois output"
 msgstr "హూఈజ్ అవుట్‌పుట్"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Configure"
 msgstr "_రూపకరణ"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Domain address:"
 msgstr "_అధికారక్షేత్ర చిరునామా:"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../src/gnome-nettool.glade.h:78
 msgid "_Edit"
 msgstr "_సరిచేయు"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../src/gnome-nettool.glade.h:79
 msgid "_Help"
 msgstr "_సహాయము"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../src/gnome-nettool.glade.h:80
 msgid "_Information type:"
 msgstr "_సమాచార రకము:"
 
-#: ../src/gnome-nettool.glade.h:74
+#: ../src/gnome-nettool.glade.h:81
 msgid "_Network address:"
 msgstr "_అల్లిక చిరునామా:"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../src/gnome-nettool.glade.h:82
 msgid "_Network device:"
 msgstr "_అల్లిక పరికరం:"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../src/gnome-nettool.glade.h:83
 msgid "_Tool"
 msgstr "_పనిముట్లు"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../src/gnome-nettool.glade.h:84
 msgid "_Username:"
 msgstr "_వినియోగదారు నామము:"
 
 #. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:79
+#: ../src/gnome-nettool.glade.h:86
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../src/gnome-nettool.glade.h:87
 msgid "requests"
 msgstr "మనవిలు"
 
@@ -491,24 +542,24 @@ msgstr "లభించలేదు"
 msgid "Looking up %s"
 msgstr "%s వెతుకుటకై"
 
-#: ../src/lookup.c:278
+#: ../src/lookup.c:274
 msgid "Name"
 msgstr "నామము"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: ../src/lookup.c:283
 msgid "TTL"
 msgstr "టిటియల్"
 
-#: ../src/lookup.c:296
+#: ../src/lookup.c:292
 msgid "Address Type"
 msgstr "చిరునామా విధము"
 
-#: ../src/lookup.c:306
+#: ../src/lookup.c:302
 msgid "Record Type"
 msgstr "రికార్డు రకము"
 
-#: ../src/lookup.c:315
+#: ../src/lookup.c:311
 msgid "Address"
 msgstr "చిరునామా"
 
@@ -518,7 +569,7 @@ msgstr "చిరునామా"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: ../src/lookup.c:339
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "వనరు\tటిటియల్\tచిరునామా రకము\tరికార్డు రకము1\tనిశ్చయము\n"
 
@@ -574,7 +625,7 @@ msgstr "ఒక అల్లిక అధికారక్షేత్రం క
 msgid "DOMAIN"
 msgstr "అథికారక్షేత్రం"
 
-#: ../src/main.c:129
+#: ../src/main.c:131
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
