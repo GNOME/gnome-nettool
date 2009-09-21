@@ -1,14 +1,14 @@
-# translation of gnome-nettool.gnome-2-26.kn.po to Kannada
+# translation of gnome-nettool.master.kn.po to Kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Shankar Prasad <svenkate@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool.gnome-2-26.kn\n"
+"Project-Id-Version: gnome-nettool.master.kn\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&component=general\n"
-"POT-Creation-Date: 2009-03-17 08:12+0000\n"
-"PO-Revision-Date: 2009-03-23 14:00+0530\n"
+"POT-Creation-Date: 2009-05-04 03:50+0000\n"
+"PO-Revision-Date: 2009-09-18 22:18+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgstr "ಜಾಲಬಂಧ ಉಪಕರಣಗಳು"
 msgid "Graphical user interface for common network utilities"
 msgstr "ಸಾಮಾನ್ಯ ಜಾಲಬಂಧ ಸವಲತ್ತುಗಳಿಗಾಗಿನ ಚಿತ್ರಾತ್ಮಕ ಬಳಕೆದಾರ ಸಂಪರ್ಕಸಾಧನ"
 
-#: ../src/callbacks.c:450 ../src/main.c:140 ../src/nettool.c:461
+#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:461
 msgid "Idle"
 msgstr "ಜಡ"
 
@@ -127,244 +127,279 @@ msgid "Display:"
 msgstr "ಪ್ರದರ್ಶಕ:"
 
 #: ../src/gnome-nettool.glade.h:21
-#| msgid "_Domain address:"
 msgid "Domain address"
 msgstr "ಡೊಮೈನಿನ ವಿಳಾಸ"
 
-#: ../src/gnome-nettool.glade.h:22 ../src/main.c:814
+#: ../src/gnome-nettool.glade.h:22
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr "ಯಾವ ಡೊಮೈನಿನ whois ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಬೇಕೊ ಅದರ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ. ಉದಾಹರಣೆಗೆ: www.domain.com ಅಥವ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:23
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"ಯಾವ ಬಳಕೆದಾರರಿಗೆ ಫಿಂಗರ್ ಮಾಡಬೇಕೊ ಅದರ ಜಾಲಬಂಧ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ. ಉದಾಹರಣೆಗೆ: "
+"www.domain.com ಅಥವ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:24
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr "ಯಾವ ಜಾಲಬಂಧ ವಿಳಾಸವನ್ನು ಹುಡುಕಬೇಕೊ(ಲುಕ್ಅಪ್) ಅದನ್ನು ನಮೂದಿಸಿ. ಉದಾಹರಣೆಗೆ: www.domain.com ಅಥವ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:25
+msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr "ಯಾವ ಜಾಲಬಂಧ ವಿಳಾಸವನ್ನು ಪಿಂಗ್‌ ಮಾಡಬೇಕೊ ಅದನ್ನು ನಮೂದಿಸಿ. ಉದಾಹರಣೆಗೆ: www.domain.com ಅಥವ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:26
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr "ಮುಕ್ತ ಸಂಪರ್ಕಸ್ಥಾನಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಬೇಕಿರುವ ಜಾಲಬಂಧ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ. ಉದಾಹರಣೆಗೆ: www.domain.com ಅಥವ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:27
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr "ಒಂದು ರೌಟ್‌ನ ಜಾಡನ್ನು ಅನುಸರಿಸಲು ಜಾಲಬಂಧ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ. ಉದಾಹರಣೆಗೆ: www.domain.com ಅಥವ 192.168.2.1"
+
+#: ../src/gnome-nettool.glade.h:28
+msgid "Enter the user to finger"
+msgstr "ಫಿಂಗರ್ ಮಾಡಬೇಕಿರುವ ಬಳಕೆದಾರನನ್ನು ನಮೂದಿಸಿ"
+
+#: ../src/gnome-nettool.glade.h:29 ../src/main.c:814
 msgid "Finger"
 msgstr "ಬೆರಳು"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../src/gnome-nettool.glade.h:30
 msgid "Finger output"
 msgstr "ಬೆರಳಿನ ಔಟ್‌ಪುಟ್"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../src/gnome-nettool.glade.h:31
 msgid "Hardware address:"
 msgstr "ಯಂತ್ರಾಂಶ ವಿಳಾಸ:"
 
-#: ../src/gnome-nettool.glade.h:25
+#: ../src/gnome-nettool.glade.h:32
 msgid "Host"
 msgstr "ಅತಿಥೇಯ"
 
-#: ../src/gnome-nettool.glade.h:26
+#: ../src/gnome-nettool.glade.h:33
 msgid "Link speed:"
 msgstr "ಕೊಂಡಿ ವೇಗ:"
 
-#: ../src/gnome-nettool.glade.h:27 ../src/main.c:734
+#: ../src/gnome-nettool.glade.h:34 ../src/main.c:734
 msgid "Lookup"
-msgstr "ಲುಕ್ಅಪ್"
+msgstr "ಹುಡುಕಾಟ(ಲುಕ್ಅಪ್)"
 
-#: ../src/gnome-nettool.glade.h:28
-#| msgid "Lookup"
+#: ../src/gnome-nettool.glade.h:35
 msgid "Lookup output"
-msgstr "ಲುಕ್ಅಪ್ ಔಟ್‌ಪುಟ್‌"
+msgstr "ಹುಡುಕಾಟದ(ಲುಕ್ಅಪ್) ಔಟ್‌ಪುಟ್‌"
 
-#: ../src/gnome-nettool.glade.h:29
+#: ../src/gnome-nettool.glade.h:36
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../src/gnome-nettool.glade.h:37
 msgid "Maximum:"
 msgstr "ಗರಿಷ್ಟ:"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../src/gnome-nettool.glade.h:38
 msgid "Minimum:"
 msgstr "ಕನಿಷ್ಟ:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../src/gnome-nettool.glade.h:39
 msgid "Multicast Information"
 msgstr "ಮಲ್ಟಿಕಾಸ್ಟ್‍ ಮಾಹಿತಿ"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../src/gnome-nettool.glade.h:40
 msgid "Multicast:"
 msgstr "ಮಲ್ಟಿಕಾಸ್ಟ್‍:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:446
+#: ../src/gnome-nettool.glade.h:41 ../src/main.c:446
 msgid "Netstat"
 msgstr "ನೆಟ್‍ಸ್ಟಾಟ್"
 
-#: ../src/gnome-nettool.glade.h:35
-#| msgid "Netstat"
+#: ../src/gnome-nettool.glade.h:42
 msgid "Netstat output"
 msgstr "ನೆಟ್‍ಸ್ಟಾಟ್ ಔಟ್‌ಪುಟ್‌"
 
-#: ../src/gnome-nettool.glade.h:36
-#| msgid "_Network address:"
+#: ../src/gnome-nettool.glade.h:43
 msgid "Network address"
 msgstr "ಜಾಲಬಂಧ ವಿಳಾಸ"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../src/gnome-nettool.glade.h:44
 msgid "Not Available"
 msgstr "ಲಭ್ಯವಿಲ್ಲ"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../src/gnome-nettool.glade.h:45
 msgid "Only"
 msgstr "ಕೇವಲ"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../src/gnome-nettool.glade.h:46
 msgid "Output for finger"
 msgstr "ಬೆರಳಿಗಾಗಿ ಔಟ್‌ಪುಟ್‌"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../src/gnome-nettool.glade.h:47
 msgid "Output for lookup"
-msgstr "ಲುಕ್‌ಅಪ್‌ಗಾಗಿನ ಔಟ್‌ಪುಟ್‌"
+msgstr "ಹುಡುಕಾಟಕ್ಕಾಗಿ(ಲುಕ್‌ಅಪ್‌) ಔಟ್‌ಪುಟ್‌"
 
-#: ../src/gnome-nettool.glade.h:41
+#: ../src/gnome-nettool.glade.h:48
 msgid "Output for net stat"
 msgstr "ನೆಟ್‌ ಸ್ಟ್ಯಾಟ್‌ಗಾಗಿನ ಔಟ್‌ಪುಟ್‌"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../src/gnome-nettool.glade.h:49
 msgid "Output for port scan"
 msgstr "ಸಂಪರ್ಕಸ್ಥಾನದ ಶೋಧನೆಗಾಗಿನ ಔಟ್‌ಪುಟ್"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../src/gnome-nettool.glade.h:50
 msgid "Output for traceroute"
 msgstr "ಮಾರ್ಗದ ಜಾಡಿಗಾಗಿನ(traceroute) ಔಟ್‌ಪುಟ್"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../src/gnome-nettool.glade.h:51
 msgid "Output for whois"
 msgstr "whois ಗಾಗಿನ ಔಟ್‌ಪುಟ್‌"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../src/gnome-nettool.glade.h:52
 msgid "Packets received:"
 msgstr "ಪಡೆಯಲಾದ ಪ್ಯಾಕೆಟ್‍ಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../src/gnome-nettool.glade.h:53
 msgid "Packets transmitted:"
 msgstr "ವರ್ಗಾಯಿಸಲಾದ ಪ್ಯಾಕೆಟ್‍ಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:47 ../src/main.c:290
+#: ../src/gnome-nettool.glade.h:54 ../src/main.c:290
 msgid "Ping"
 msgstr "ಪಿಂಗ್"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../src/gnome-nettool.glade.h:55
 msgid "Port Scan"
 msgstr "ಸಂಪರ್ಕ ಸ್ಥಾನ ಶೋಧನೆ"
 
-#: ../src/gnome-nettool.glade.h:49
-#| msgid "Port Scan"
+#: ../src/gnome-nettool.glade.h:56
 msgid "Port scan output"
 msgstr "ಸಂಪರ್ಕಸ್ಥಾನ ಶೋಧನೆಯ ಔಟ್‌ಪುಟ್"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../src/gnome-nettool.glade.h:57
 msgid "Received bytes:"
 msgstr "ಪಡೆಯಲಾದ ಬೈಟ್‍ಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../src/gnome-nettool.glade.h:58
 msgid "Received packets:"
 msgstr "ಪಡೆಯಲಾದ ಪ್ಯಾಕೆಟ್‍ಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../src/gnome-nettool.glade.h:59
 msgid "Reception errors:"
 msgstr "ಪಡೆಯುವಾಗಿನ ದೋಷಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../src/gnome-nettool.glade.h:60
 msgid "Routing Table Information"
 msgstr "ರೌಟಿಂಗ್ ಟೇಬಲ್ ಮಾಹಿತಿ"
 
-#: ../src/gnome-nettool.glade.h:54 ../src/main.c:619
+#: ../src/gnome-nettool.glade.h:61 ../src/main.c:619
 msgid "Scan"
 msgstr "ಶೋಧನೆ"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../src/gnome-nettool.glade.h:62
 msgid "Send:"
 msgstr "ಕಳುಹಿಸು:"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../src/gnome-nettool.glade.h:63
 msgid "State:"
 msgstr "ಸ್ಥಿತಿ:"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../src/gnome-nettool.glade.h:64
 msgid "Successful packets:"
 msgstr "ಯಶಸ್ವಿ ಪ್ಯಾಕೆಟ್‍ಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:58 ../src/main.c:375
+#: ../src/gnome-nettool.glade.h:65 ../src/main.c:375
 msgid "Trace"
 msgstr "ಜಾಡು(Trace)"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../src/gnome-nettool.glade.h:66
 msgid "Traceroute"
 msgstr "ಮಾರ್ಗದ ಜಾಡು(Traceroute)"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../src/gnome-nettool.glade.h:67
 msgid "Traceroute output"
 msgstr "ಮಾರ್ಗದ ಜಾಡಿನ(Traceroute) ಔಟ್‌ಪುಟ್"
 
-#: ../src/gnome-nettool.glade.h:61
+#: ../src/gnome-nettool.glade.h:68
 msgid "Transmission errors:"
 msgstr "ವರ್ಗಾವಣೆಯ ದೋಷಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../src/gnome-nettool.glade.h:69
 msgid "Transmitted bytes:"
 msgstr "ವರ್ಗಾಯಿಸಲಾದ ಬೈಟ್‍ಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../src/gnome-nettool.glade.h:70
 msgid "Transmitted packets:"
 msgstr "ವರ್ಗಾಯಿಸಲಾದ ಪ್ಯಾಕೆಟ್‍ಗಳು:"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../src/gnome-nettool.glade.h:71
 msgid "Unlimited requests"
 msgstr "ಅಪರಿಮಿತವಾದ ಮನವಿಗಳು"
 
-#: ../src/gnome-nettool.glade.h:65
+#: ../src/gnome-nettool.glade.h:72
 msgid "User"
 msgstr "ಬಳಕೆದಾರ"
 
-#: ../src/gnome-nettool.glade.h:66
+#: ../src/gnome-nettool.glade.h:73
 msgid "User name"
 msgstr "ಬಳಕೆದಾರನ ಹೆಸರು"
 
-#: ../src/gnome-nettool.glade.h:67 ../src/main.c:920
+#: ../src/gnome-nettool.glade.h:74 ../src/main.c:920
 msgid "Whois"
 msgstr "ಯಾರಿದು"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../src/gnome-nettool.glade.h:75
 msgid "Whois output"
 msgstr "Whois ಔಟ್‌ಪುಟ್‌"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../src/gnome-nettool.glade.h:76
 msgid "_Configure"
 msgstr "ಸಂರಚಿಸು(_C)"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../src/gnome-nettool.glade.h:77
 msgid "_Domain address:"
 msgstr "ಕ್ಷೇತ್ರದ ವಿಳಾಸ(_D):"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../src/gnome-nettool.glade.h:78
 msgid "_Edit"
 msgstr "ಸಂಪಾದಿಸು(_E)"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../src/gnome-nettool.glade.h:79
 msgid "_Help"
 msgstr "ಸಹಾಯ(_H)"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../src/gnome-nettool.glade.h:80
 msgid "_Information type:"
 msgstr "ಮಾಹಿತಿಯ ಬಗೆ(_I):"
 
-#: ../src/gnome-nettool.glade.h:74
+#: ../src/gnome-nettool.glade.h:81
 msgid "_Network address:"
 msgstr "ಜಾಲಬಂಧ ವಿಳಾಸ(_N):"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../src/gnome-nettool.glade.h:82
 msgid "_Network device:"
 msgstr "ಜಾಲಬಂಧ ಸಾಧನ(_N):"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../src/gnome-nettool.glade.h:83
 msgid "_Tool"
 msgstr "ಉಪಕರಣ(_T)"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../src/gnome-nettool.glade.h:84
 msgid "_Username:"
 msgstr "ಬಳಕೆದಾರ ಹೆಸರು(_U):"
 
 #. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:79
+#: ../src/gnome-nettool.glade.h:86
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../src/gnome-nettool.glade.h:87
 msgid "requests"
 msgstr "ಮನವಿಗಳು"
 
@@ -571,13 +606,13 @@ msgstr "USER"
 
 #: ../src/main.c:111
 msgid "Perform a whois lookup for a network domain"
-msgstr "ಜಾಲಬಂಧ ಡೊಮೈನಿಗಾಗಿ whois ಹುಡುಕಾಟವನ್ನು ನಿರ್ವಹಿಸು"
+msgstr "ಜಾಲಬಂಧ ಡೊಮೈನಿಗಾಗಿ whois ಹುಡುಕಾಟವನ್ನು(ಲುಕ್ಅಪ್) ನಿರ್ವಹಿಸು"
 
 #: ../src/main.c:112
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:129
+#: ../src/main.c:131
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -845,7 +880,6 @@ msgstr "ಗೊತ್ತಿರದ"
 
 #. Translators: "open" is a network status and should be one word.
 #: ../src/scan.c:173
-#| msgid "Scope"
 msgid "open"
 msgstr "ತೆರೆ"
 
