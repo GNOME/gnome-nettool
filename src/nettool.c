@@ -475,7 +475,7 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 						   PANGO_WEIGHT_NORMAL);
 
 		netinfo_progress_indicator_stop (netinfo);
-		gdk_window_set_cursor ((netinfo->output)->window, NULL);
+		gdk_window_set_cursor (gtk_widget_get_window(netinfo->output), NULL);
 		netinfo->child_pid = 0;
 		
 		gtk_statusbar_pop (GTK_STATUSBAR (netinfo->status_bar), 0);
@@ -487,9 +487,9 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 
 		netinfo_progress_indicator_start (netinfo);
 		cursor = gdk_cursor_new (GDK_WATCH);
-		if (!GTK_WIDGET_REALIZED (netinfo->output))
+		if (!gtk_widget_get_realized (netinfo->output))
 			gtk_widget_realize (GTK_WIDGET (netinfo->output));
-		gdk_window_set_cursor ((netinfo->output)->window, cursor);
+		gdk_window_set_cursor (gtk_widget_get_window(netinfo->output), cursor);
 		gdk_cursor_unref (cursor);
 
 		if (netinfo->stbar_text) {
@@ -529,7 +529,7 @@ netinfo_toggle_button (Netinfo * netinfo)
 	button = gtk_button_new ();
 	gtk_widget_show (GTK_WIDGET (button));
 	gtk_container_add (GTK_CONTAINER (parent), button);
-	GTK_WIDGET_SET_FLAGS (button, GTK_CAN_DEFAULT);
+	gtk_widget_set_can_default (GTK_WIDGET (button), TRUE);
 
 	alignment = gtk_alignment_new (0.5, 0.5, 0, 0);
 	gtk_widget_show (alignment);

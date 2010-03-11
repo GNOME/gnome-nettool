@@ -62,7 +62,7 @@ draw_centered_text (GtkWidget *widget, gint x, gint y, gchar *text)
 
 	x -= width/2;
 
-	gtk_paint_layout (widget->style, widget->window, 
+	gtk_paint_layout (gtk_widget_get_style(widget), gtk_widget_get_window(widget), 
 			  GTK_STATE_NORMAL, TRUE, 
 			  NULL, NULL, NULL, x, y,
 			  layout);
@@ -137,8 +137,8 @@ draw_ping_graph (Netinfo *netinfo)
 	gchar *tmpstr;
 
 	widget = netinfo->graph;
-	window = widget->window;
-	style = widget->style;
+	window = gtk_widget_get_window(widget);
+	style = gtk_widget_get_style(widget);
 
 	rangemax = packets_transmitted;
 	rangemin = MAX (0, rangemax - ntodisplay);
