@@ -341,9 +341,8 @@ on_about_activate (gpointer window, GtkWidget *menu_item)
 			       "license", "GPL 2+",
 			       "logo-icon-name", "gnome-nettool",
 			       "translator-credits", translator_credits,
-			       "version", VERSION,
-			       /* FIXME:  website should be updated, it's even yet named gnome-network */
-			       "website", "http://www.gnome.org/projects/gnome-network/",
+			       "version", PACKAGE_VERSION,
+			       "website", PACKAGE_URL,
 			       "wrap-license", TRUE,
 			       NULL);
 }

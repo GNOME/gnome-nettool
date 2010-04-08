@@ -1,3 +1,5 @@
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
+
 SUBDIRS = pixmaps src help po
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper

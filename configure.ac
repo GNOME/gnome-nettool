@@ -1,38 +1,40 @@
-AC_PREREQ(2.59)
-AC_INIT([GNOME Nettool], [2.30.0], [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool], [gnome-nettool])
-AC_CONFIG_SRCDIR([src/ping.c])
-
-dnl Useful to call aclocal after 'make'
-AC_SUBST(ACLOCAL_AMFLAGS, "$ACLOCAL_FLAGS")
+AC_PREREQ([2.64])
+AC_INIT([GNOME Nettool],
+        [2.30.0],
+        [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool],
+        [gnome-nettool],
+        [http://projects.gnome.org/gnome-network/]) #FIXME: website should be updated, it is even yet named gnome-network
 
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE([1.9 foreign])
+AC_CONFIG_SRCDIR([src/ping.c])
 AC_CONFIG_MACRO_DIR([m4])
-AM_MAINTAINER_MODE
 
-IT_PROG_INTLTOOL([0.35.0])
+AM_INIT_AUTOMAKE([1.11.1 foreign])
+AM_MAINTAINER_MODE([enable])
+# Support silent build rules, requires at least automake-1.11. Disable
+# by either passing --disable-silent-rules to configure or passing V=1
+# to make
+AM_SILENT_RULES([yes])
 
-AC_ISC_POSIX
+# Check for programs
 AC_PROG_CC
-AC_HEADER_STDC([])
+
+# Initialize libtool
+LT_PREREQ([2.2])
+LT_INIT
+
+# Check headers
 AC_CHECK_HEADERS(sys/sockio.h)
 AC_CHECK_HEADERS(sys/socket.h ifaddrs.h,,AC_MSG_ERROR(Required header not found: $ac_header))
-dnl AC_ARG_PROGRAM
-AM_PROG_LIBTOOL
-
-GNOME_COMPILE_WARNINGS(yes)
-CFLAGS="$CFLAGS $WARN_CFLAGS"
 
 dnl ******************************************
 dnl ** pkg-config dependacy checks          **
 dnl ******************************************
-
-
 GTK_REQUIRED=2.19.7
 GCONF_REQUIRED=1.1.11
 
-PKG_CHECK_MODULES(NETTOOL, 
-		  gtk+-2.0       >= $GTK_REQUIRED 
+PKG_CHECK_MODULES(NETTOOL,
+		  gtk+-2.0       >= $GTK_REQUIRED
 		  gconf-2.0      >= $GCONF_REQUIRED
 		  gmodule-export-2.0
 		  gnome-doc-utils
@@ -43,20 +45,31 @@ AC_SUBST(NETTOOL_LIBS)
 dnl
 dnl Translations
 dnl
+IT_PROG_INTLTOOL([0.40.0])
+
 GETTEXT_PACKAGE=gnome-nettool
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The gettext package])
 AM_GLIB_GNU_GETTEXT
 
-AC_SUBST(CFLAGS)
-AC_SUBST(CPPFLAGS)
-AC_SUBST(LDFLAGS)
-
 GNOME_DOC_INIT
+
+dnl
+dnl GConf stuff
+dnl
+AC_PATH_PROG(GCONFTOOL, gconftool-2, no)
+if test x"$GCONFTOOL" = xno; then
+        AC_MSG_ERROR([gconftool-2 executable not found in your path - should be installed with GConf])
+fi
+AM_GCONF_SOURCE_2
+
 
 dnl
 dnl Debugging flags
 dnl
+GNOME_COMPILE_WARNINGS([maximum])
+CFLAGS="$CFLAGS $WARN_CFLAGS"
+
 set_debug=no
 AC_ARG_ENABLE(debug,
 [  --enable-debug       Lots of noisy debug messages],
@@ -70,9 +83,13 @@ else
         AC_MSG_RESULT(no)
 fi
 
+AC_SUBST(CFLAGS)
+AC_SUBST(CPPFLAGS)
+AC_SUBST(LDFLAGS)
+
 AC_CONFIG_FILES([
 Makefile
-po/Makefile.in
+help/Makefile
 pixmaps/Makefile
 pixmaps/icons/Makefile
 pixmaps/icons/16x16/Makefile
@@ -85,7 +102,7 @@ pixmaps/icons/32x32/Makefile
 pixmaps/icons/32x32/apps/Makefile
 pixmaps/icons/scalable/Makefile
 pixmaps/icons/scalable/apps/Makefile
-help/Makefile
-src/Makefile
-src/gnome-nettool.desktop.in])
+po/Makefile.in
+src/gnome-nettool.desktop.in
+src/Makefile])
 AC_OUTPUT
