@@ -1,9 +1,6 @@
-dialogdir = $(datadir)/$(PACKAGE)/dialogs
-dialog_DATA = gnome-nettool.ui
-
 INCLUDES = 							\
 	-DGNOME_NETTOOL_LOCALEDIR=\""$(datadir)/locale"\" 	\
-	-DDATADIR=\""$(dialogdir)/"\" 				\
+	-DUI_DIR=\""$(pkgdatadir)/ui/"\" 			\
 	-DPIXMAPS_DIR=\""$(datadir)/gnome-nettool/pixmaps"\"	\
 	@NETTOOL_CFLAGS@
 
@@ -30,17 +27,3 @@ gnome_nettool_SOURCES = \
 	main.c
 
 gnome_nettool_LDADD = @NETTOOL_LIBS@
-
-EXTRA_DIST  = \
-	gnome-nettool.desktop.in \
-	$(dialog_DATA)
-
-DISTCLEANFILES = gnome-nettool.desktop
-
-Applicationsdir = $(datadir)/applications
-Applications_in_files = gnome-nettool.desktop.in
-Applications_DATA = $(Applications_in_files:.desktop.in=.desktop)
-@INTLTOOL_DESKTOP_RULE@
-
-install-data-local:
-	@$(NORMAL_INSTALL)

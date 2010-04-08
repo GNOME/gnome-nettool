@@ -89,6 +89,8 @@ AC_SUBST(LDFLAGS)
 
 AC_CONFIG_FILES([
 Makefile
+data/Makefile
+data/gnome-nettool.desktop.in
 help/Makefile
 pixmaps/Makefile
 pixmaps/icons/Makefile
@@ -103,6 +105,5 @@ pixmaps/icons/32x32/apps/Makefile
 pixmaps/icons/scalable/Makefile
 pixmaps/icons/scalable/apps/Makefile
 po/Makefile.in
-src/gnome-nettool.desktop.in
 src/Makefile])
 AC_OUTPUT

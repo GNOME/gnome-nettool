@@ -57,7 +57,7 @@ main (int argc, char *argv[])
 	GtkBuilder *builder;
 	GtkWidget *notebook;
 	GtkWidget *statusbar;
-	const gchar *dialog = DATADIR "gnome-nettool.ui";
+	const gchar *dialog = UI_DIR "gnome-nettool.ui";
 	Netinfo *pinger;
 	Netinfo *tracer;
 	Netinfo *netstat;
