@@ -1,4 +1,4 @@
-uidir = $(pkgdatadir)/$(PACKAGE)/ui
+uidir = $(pkgdatadir)/ui
 ui_DATA = gnome-nettool.ui
 
 desktopdir = $(datadir)/applications
