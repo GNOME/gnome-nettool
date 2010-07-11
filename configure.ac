@@ -30,11 +30,11 @@ AC_CHECK_HEADERS(sys/socket.h ifaddrs.h,,AC_MSG_ERROR(Required header not found:
 dnl ******************************************
 dnl ** pkg-config dependacy checks          **
 dnl ******************************************
-GTK_REQUIRED=2.19.7
+GTK_REQUIRED=2.90.0
 GCONF_REQUIRED=1.1.11
 
 PKG_CHECK_MODULES(NETTOOL,
-		  gtk+-2.0       >= $GTK_REQUIRED
+		  gtk+-3.0       >= $GTK_REQUIRED
 		  gconf-2.0      >= $GCONF_REQUIRED
 		  gmodule-export-2.0
 		  gnome-doc-utils
