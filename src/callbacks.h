@@ -32,7 +32,7 @@ void on_copy_activate (gpointer notebook, GtkWidget *menu_item);
 void on_clear_history_activate (gpointer notebook, GtkWidget *menu_item);
 
 void on_page_switch (GtkNotebook     *notebook,
-                     GtkNotebookPage *page,
+                     gpointer         page,
                      guint            page_num,
                      gpointer         data);
 
