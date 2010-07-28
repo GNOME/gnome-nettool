@@ -33,8 +33,27 @@ dnl ******************************************
 GTK_REQUIRED=2.90.0
 GCONF_REQUIRED=1.1.11
 
+AC_MSG_CHECKING([which gtk+ version to compile against])
+AC_ARG_WITH([gtk],
+  [AS_HELP_STRING([--with-gtk=2.0|3.0],[which gtk+ version to compile against (default: 2.0)])],
+  [case "$with_gtk" in
+     2.0|3.0) ;;
+     *) AC_MSG_ERROR([invalid gtk version specified]) ;;
+   esac],
+  [with_gtk=2.0])
+AC_MSG_RESULT([$with_gtk])
+
+case "$with_gtk" in
+  2.0) GTK_API_VERSION=2.0
+       GTK_REQUIRED=2.19.7
+       ;;
+  3.0) GTK_API_VERSION=3.0
+       GTK_REQUIRED=2.90.4
+       ;;
+esac
+
 PKG_CHECK_MODULES(NETTOOL,
-		  gtk+-3.0       >= $GTK_REQUIRED
+		  gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
 		  gconf-2.0      >= $GCONF_REQUIRED
 		  gmodule-export-2.0
 		  gnome-doc-utils
