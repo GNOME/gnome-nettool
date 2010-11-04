@@ -315,7 +315,7 @@ load_ping_widgets_from_builder (GtkBuilder * builder)
 	gtk_combo_box_set_model (GTK_COMBO_BOX (pinger->host), model);
 	g_object_unref (model);
 
-	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (pinger->host), 0);*/
+	gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (pinger->host), 0);
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (pinger->host)));
 	
@@ -394,7 +394,7 @@ load_traceroute_widgets_from_builder (GtkBuilder * builder)
 	gtk_combo_box_set_model (GTK_COMBO_BOX (tracer->host), model);
 	g_object_unref (model);
 
-	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (tracer->host), 0);*/
+	gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (tracer->host), 0);
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (tracer->host)));
 
@@ -633,7 +633,7 @@ load_scan_widgets_from_builder (GtkBuilder * builder)
 	gtk_combo_box_set_model (GTK_COMBO_BOX (scan->host), model);
 	g_object_unref (model);
 
-	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (scan->host), 0);*/
+	gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (scan->host), 0);
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (scan->host)));
 
@@ -757,7 +757,7 @@ load_lookup_widgets_from_builder (GtkBuilder * builder)
 	gtk_combo_box_set_model (GTK_COMBO_BOX (lookup->host), model);
 	g_object_unref (model);
 
-	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (lookup->host), 0);*/
+	gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (lookup->host), 0);
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (lookup->host)));
 
@@ -840,7 +840,7 @@ load_finger_widgets_from_builder (GtkBuilder * builder)
 	gtk_combo_box_set_model (GTK_COMBO_BOX (finger->user), model);
 	g_object_unref (model);
 
-	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->user), 0);*/
+	gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->user), 0);
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->user)));
 
@@ -863,7 +863,7 @@ load_finger_widgets_from_builder (GtkBuilder * builder)
 	gtk_combo_box_set_model (GTK_COMBO_BOX (finger->host), model);
 	g_object_unref (model);
 
-	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->host), 0);*/
+	gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (finger->host), 0);
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (finger->host)));
 
@@ -944,7 +944,7 @@ load_whois_widgets_from_builder (GtkBuilder * builder)
 	gtk_combo_box_set_model (GTK_COMBO_BOX (whois->host), model);
 	g_object_unref (model);
 
-	/*gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (whois->host), 0);*/
+	gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (whois->host), 0);
 	
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (whois->host)));
 	
