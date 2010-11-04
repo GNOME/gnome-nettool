@@ -134,7 +134,7 @@ main (int argc, char *argv[])
 	}
 
 	gtk_window_set_default_icon_name ("gnome-nettool");
-	
+
 	builder = gtk_builder_new ();
         gtk_builder_add_from_file (builder, dialog, NULL);
 	window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
