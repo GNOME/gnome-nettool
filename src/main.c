@@ -327,7 +327,7 @@ load_ping_widgets_from_builder (GtkBuilder * builder)
 	g_object_unref (model);
 
 	pinger->history = gn_combo_history_new ();
-	gn_combo_history_set_id (pinger->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_id (pinger->history, "hostnames");
 	gn_combo_history_set_combo (pinger->history, GTK_COMBO_BOX (pinger->host));
 
 	g_signal_connect (G_OBJECT (entry_host), "activate",
@@ -406,7 +406,7 @@ load_traceroute_widgets_from_builder (GtkBuilder * builder)
 	g_object_unref (model);
 
 	tracer->history = gn_combo_history_new ();
-	gn_combo_history_set_id (tracer->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_id (tracer->history, "hostnames");
 	gn_combo_history_set_combo (tracer->history, GTK_COMBO_BOX (tracer->host));
 
 	g_signal_connect (G_OBJECT (entry_host), "activate",
@@ -645,7 +645,7 @@ load_scan_widgets_from_builder (GtkBuilder * builder)
 	g_object_unref (model);
 
 	scan->history = gn_combo_history_new ();
-	gn_combo_history_set_id (scan->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_id (scan->history, "hostnames");
 	gn_combo_history_set_combo (scan->history, GTK_COMBO_BOX (scan->host));
 
 	g_signal_connect (G_OBJECT (entry_host), "activate",
@@ -769,7 +769,7 @@ load_lookup_widgets_from_builder (GtkBuilder * builder)
 	g_object_unref (model);
 
 	lookup->history = gn_combo_history_new ();
-	gn_combo_history_set_id (lookup->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_id (lookup->history, "hostnames");
 	gn_combo_history_set_combo (lookup->history, GTK_COMBO_BOX (lookup->host));
 
 	g_signal_connect (G_OBJECT (entry_host), "activate",
@@ -852,7 +852,7 @@ load_finger_widgets_from_builder (GtkBuilder * builder)
 	g_object_unref (model);
 
 	finger->history_user = gn_combo_history_new ();
-	gn_combo_history_set_id (finger->history_user, "GNOME_Network_netinfo_user");
+	gn_combo_history_set_id (finger->history_user, "usernames");
 	gn_combo_history_set_combo (finger->history_user, GTK_COMBO_BOX (finger->user));
 
 	g_signal_connect (G_OBJECT (entry_host), "activate",
@@ -875,7 +875,7 @@ load_finger_widgets_from_builder (GtkBuilder * builder)
 	g_object_unref (model);
 
 	finger->history = gn_combo_history_new ();
-	gn_combo_history_set_id (finger->history, "GNOME_Network_netinfo_host");
+	gn_combo_history_set_id (finger->history, "hostnames");
 	gn_combo_history_set_combo (finger->history, GTK_COMBO_BOX (finger->host));
 
 	g_signal_connect (G_OBJECT (entry_host), "activate",
@@ -956,7 +956,7 @@ load_whois_widgets_from_builder (GtkBuilder * builder)
 	g_object_unref (model);
 
 	whois->history = gn_combo_history_new ();
-	gn_combo_history_set_id (whois->history, "GNOME_Network_netinfo_domain");
+	gn_combo_history_set_id (whois->history, "domains");
 	gn_combo_history_set_combo (whois->history, GTK_COMBO_BOX (whois->host));
 
 	g_signal_connect (G_OBJECT (entry_host), "activate",

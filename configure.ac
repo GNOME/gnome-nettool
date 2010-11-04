@@ -30,8 +30,8 @@ AC_CHECK_HEADERS(sys/socket.h ifaddrs.h,,AC_MSG_ERROR(Required header not found:
 dnl ******************************************
 dnl ** pkg-config dependacy checks          **
 dnl ******************************************
+GIO_REQUIRED=2.25.10
 GTK_REQUIRED=2.90.0
-GCONF_REQUIRED=1.1.11
 
 AC_MSG_CHECKING([which gtk+ version to compile against])
 AC_ARG_WITH([gtk],
@@ -54,7 +54,7 @@ esac
 
 PKG_CHECK_MODULES(NETTOOL,
 		  gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
-		  gconf-2.0      >= $GCONF_REQUIRED
+		  gio-2.0 >= $GIO_REQUIRED
 		  gmodule-export-2.0
 		  gnome-doc-utils
 		  libgtop-2.0)
@@ -74,14 +74,9 @@ AM_GLIB_GNU_GETTEXT
 GNOME_DOC_INIT
 
 dnl
-dnl GConf stuff
+dnl GSettings stuff
 dnl
-AC_PATH_PROG(GCONFTOOL, gconftool-2, no)
-if test x"$GCONFTOOL" = xno; then
-        AC_MSG_ERROR([gconftool-2 executable not found in your path - should be installed with GConf])
-fi
-AM_GCONF_SOURCE_2
-
+GLIB_GSETTINGS
 
 dnl
 dnl Debugging flags

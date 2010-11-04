@@ -18,7 +18,6 @@
  */
 
 #include <gtk/gtk.h>
-#include <gconf/gconf-client.h>
 
 #include "gn-combo-history.h"
 
@@ -38,8 +37,7 @@ struct _GnComboHistoryPrivate {
 
 	GSList       *items;
 
-	GConfClient *gconf_client;
-	guint        gconf_notify;
+	GSettings   *settings;
 };
 
 static void     gn_combo_history_init         (GnComboHistory      *history);
@@ -55,9 +53,9 @@ static void     gn_combo_history_get_property (GObject             *object,
 					       GValue              *value,
 					       GParamSpec          *pspec);
 
-static void     gn_combo_history_gconf_register_id   (GnComboHistory *history);
-static void     gn_combo_history_gconf_load          (GnComboHistory *history);
-static void     gn_combo_history_gconf_save          (GnComboHistory *history);
+static void     gn_combo_history_settings_register_id   (GnComboHistory *history);
+static void     gn_combo_history_settings_load       (GnComboHistory *history);
+static void     gn_combo_history_settings_save       (GnComboHistory *history);
 static void     gn_combo_history_set_popdown_strings (GnComboHistory *history);
 
 static GObjectClass *parent_class = NULL;
@@ -95,8 +93,7 @@ gn_combo_history_init (GnComboHistory *history)
 	history->priv->id = NULL;
 	history->priv->max_history = 10;
 	history->priv->items = NULL;
-	history->priv->gconf_client = gconf_client_get_default ();
-	history->priv->gconf_notify = 0;
+	history->priv->settings = g_settings_new ("org.gnome.gnome-nettool");
 }
 
 static void
@@ -151,16 +148,8 @@ gn_combo_history_finalize (GObject *object)
 
 		gn_combo_free_items (history);
 
-		if (history->priv->gconf_notify != 0) {
-			gconf_client_notify_remove (history->priv->gconf_client,
-						    history->priv->gconf_notify);
-			history->priv->gconf_notify = 0;
-		}
-
-		if (history->priv->gconf_client) {
-			g_object_unref (G_OBJECT (history->priv->gconf_client));
-			history->priv->gconf_client = NULL;
-		}
+		g_object_unref (G_OBJECT (history->priv->settings));
+		history->priv->settings = NULL;
 	}
 
 	if (G_OBJECT_CLASS (parent_class)->finalize)
@@ -229,58 +218,40 @@ gn_combo_history_new (void)
 }
 
 static void
-gn_combo_history_gconf_load (GnComboHistory *history)
+gn_combo_history_settings_load (GnComboHistory *history)
 {
-	gchar  *key;
-	GSList *gconf_items, *last;
+	gchar **items;
+	gint i;
 
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
-	g_return_if_fail (history->priv->gconf_client != NULL);
 	g_return_if_fail (history->priv->id != NULL);
 
 	gn_combo_free_items (history);
+	history->priv->items = NULL;
 
-	key = g_strconcat ("/apps/gnome-settings/",
-			   "gnome-nettool",
-			   "/history-",
-			   history->priv->id,
-			   NULL);
-	   
-	gconf_items = gconf_client_get_list (history->priv->gconf_client,
-					     key, GCONF_VALUE_STRING, NULL);
-	g_free (key);
+	items = g_settings_get_strv (history->priv->settings, history->priv->id);
 
-	/* truncate the list */
-	last = g_slist_nth (gconf_items, history->priv->max_history - 1);
-	if (last) {
-		g_slist_foreach (last->next, (GFunc) g_free, NULL);
-		g_slist_free (last->next);
-		last->next = NULL;
-	}
-
-	history->priv->items = gconf_items;
+	for (i = 0; items[i] && i < history->priv->max_history; i++)
+		history->priv->items = g_slist_append (history->priv->items, g_strdup (items[i]));
+	g_strfreev (items);
 }
 
 static void
-gn_combo_history_gconf_save (GnComboHistory *history)
+gn_combo_history_settings_save (GnComboHistory *history)
 {
-	gchar  *key;
-   
+	const gchar **items;
+	GSList *item;
+	gint i;
+
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
-	g_return_if_fail (history->priv->gconf_client != NULL);
 	g_return_if_fail (history->priv->id != NULL);
 
-	key = g_strconcat ("/apps/gnome-settings/",
-			   "gnome-nettool",
-			   "/history-",
-			   history->priv->id,
-			   NULL);
-
-	gconf_client_set_list (history->priv->gconf_client,
-			       key, GCONF_VALUE_STRING,
-			       history->priv->items, NULL);
-
-	g_free (key);
+	items = g_malloc (sizeof (gchar *) * (g_slist_length (history->priv->items) + 1));
+	for (item = history->priv->items, i = 0; item; item = item->next, i++)
+		items[i] = item->data;
+	items[i] = NULL;
+	g_settings_set_strv (history->priv->settings, history->priv->id, items);
+	g_free (items);
 }
 
 static void
@@ -339,7 +310,7 @@ gn_combo_history_set_combo (GnComboHistory *history, GtkComboBox *combo)
 
 	history->priv->combo = combo;
 
-	gn_combo_history_gconf_load (history);
+	gn_combo_history_settings_load (history);
 	   
 	gn_combo_history_set_popdown_strings (history);
 
@@ -362,43 +333,24 @@ gn_combo_history_get_combo (GnComboHistory *history)
 }
 
 static void
-gn_on_gconf_history_changed (GConfClient *client, guint cnxn_id,
-			     GConfEntry *entry, gpointer gdata)
+gn_on_settings_history_changed (GSettings *settings, gchar *key, gpointer gdata)
 {
 	GnComboHistory *history;
 
 	history = GN_COMBO_HISTORY (gdata);
 
-	gn_combo_history_gconf_load (history);
+	if (!g_str_equal (key, history->priv->id))
+		return;
+
+	gn_combo_history_settings_load (history);
 	gn_combo_history_set_popdown_strings (history);
 }
 
 static void
-gn_combo_history_gconf_register_id (GnComboHistory *history)
+gn_combo_history_settings_register_id (GnComboHistory *history)
 {
-	gchar *key;
-	   
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
-
-	if (!history->priv->gconf_client)
-		history->priv->gconf_client = gconf_client_get_default ();
-
-	key = g_strconcat ("/apps/gnome-settings/",
-			  "gnome-nettool",
-			   "/history-",
-			   history->priv->id,
-			   NULL);
-
-	gconf_client_add_dir (history->priv->gconf_client,
-			      key,	GCONF_CLIENT_PRELOAD_NONE,
-			      NULL);
-	   
-	history->priv->gconf_notify = gconf_client_notify_add (
-							       history->priv->gconf_client, key,
-							       gn_on_gconf_history_changed,
-							       (gpointer) history, NULL, NULL);
-
-	g_free (key);
+	g_signal_connect (history->priv->settings, "changed", G_CALLBACK (gn_on_settings_history_changed), history);
 }
 
 void
@@ -412,7 +364,7 @@ gn_combo_history_set_id (GnComboHistory *history, const gchar *history_id)
 
 	history->priv->id = g_strdup (history_id);
 
-	gn_combo_history_gconf_register_id (history);
+	gn_combo_history_settings_register_id (history);
 }
 
 const gchar *
@@ -452,7 +404,7 @@ gn_combo_history_add (GnComboHistory *history, const gchar *text)
 
 	gn_combo_history_set_popdown_strings (history);
 	   
-	gn_combo_history_gconf_save (history);
+	gn_combo_history_settings_save (history);
 }
 
 void
@@ -462,7 +414,7 @@ gn_combo_history_clear (GnComboHistory *history)
 
 	if (history->priv->items) {
 		gn_combo_free_items (history);
-		gn_combo_history_gconf_save (history);
+		gn_combo_history_settings_save (history);
 	}
 }
 
