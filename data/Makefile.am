@@ -17,7 +17,8 @@ EXTRA_DIST =                    		\
 	$(ui_DATA)
 
 DISTCLEANFILES =                \
-	$(desktop_in_files)
+	$(desktop_in_files)	\
+	$(gsettings_SCHEMAS)
 
 CLEANFILES =                    \
 	$(desktop_DATA)
