@@ -62,7 +62,6 @@ struct _Netinfo {
 	gchar **command_line;
 	gchar *label_run;
 	gchar *label_stop;
-	gchar *network_tool_path;
 	GString *command_output;
 	NetinfoForeachFunc process_line;
 	NetinfoCopyFunc copy_output;

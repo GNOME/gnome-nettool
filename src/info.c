@@ -333,11 +333,19 @@ info_ip_addr_free (InfoIpAddr *ip)
 static void
 info_setup_configure_button (Netinfo *info, gboolean enable)
 {
-	if (!info->network_tool_path)
+	gchar *network_tool_path;
+
+	network_tool_path = util_find_program_in_path ("nm-connection-editor", NULL);
+	if (!network_tool_path)
+		network_tool_path = util_find_program_in_path ("network-admin", NULL);
+
+	if (!network_tool_path)
 		gtk_widget_hide (info->configure_button);
 	else {
 		gtk_widget_show (info->configure_button);
 		gtk_widget_set_sensitive (info->configure_button, enable);
+
+		g_free (network_tool_path);
 	}
 }
 

@@ -135,17 +135,25 @@ on_configure_button_clicked (GtkButton *button, gpointer data)
 
 	g_return_if_fail (data != NULL);
 	info = (Netinfo *) data;
-	g_return_if_fail (info->network_tool_path != NULL);
 
 	combo = GTK_COMBO_BOX (info->combo);
 	model = gtk_combo_box_get_model (combo);
 
 	if (gtk_combo_box_get_active_iter (combo, &iter)) {
+		gchar *network_tool_path;
+
 		gtk_tree_model_get (model, &iter, 2, &nic, -1);
 
-		command_line = g_string_new (info->network_tool_path);
-		g_string_append (command_line, " --configure ");
-		g_string_append (command_line, nic);
+		network_tool_path = util_find_program_in_path ("nm-connection-editor", NULL);
+		if (network_tool_path != NULL) {
+			command_line = g_string_new ("nm-connection-editor");
+		} else {
+			network_tool_path = util_find_program_in_path ("network-admin", NULL);
+
+			command_line = g_string_new (network_tool_path);
+			g_string_append (command_line, " --configure ");
+			g_string_append (command_line, nic);
+		}
 
 		if (!g_spawn_command_line_async (command_line->str, &error)) {
 			dialog = gtk_message_dialog_new (GTK_WINDOW (info->main_window),
@@ -157,6 +165,7 @@ on_configure_button_clicked (GtkButton *button, gpointer data)
 			gtk_widget_destroy (dialog);
 		}
 
+		g_free (network_tool_path);
 		g_string_free (command_line, TRUE);
 	}
 }

@@ -27,8 +27,6 @@
 #define NOT_AVAILABLE _("not available")
 #define DELAY_STATS 1000  /* 1 second */
 
-#define GST_NETWORK_TOOL "network-admin"
-
 /* Solaris store the MTU in ifr_metric, and doesn't have 
    ifr_mtu define */
 #if !defined(ifr_mtu)

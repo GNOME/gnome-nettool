@@ -555,8 +555,6 @@ load_info_widgets_from_builder (GtkBuilder * builder)
 	info->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	info->stbar_text = NULL;
 
-	info->network_tool_path = util_find_program_in_path (GST_NETWORK_TOOL, NULL);
-
 	model = GTK_TREE_MODEL (gtk_list_store_new (5, G_TYPE_STRING, G_TYPE_STRING,
 						    G_TYPE_STRING, G_TYPE_STRING,
 						    G_TYPE_STRING));
