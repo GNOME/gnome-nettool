@@ -405,7 +405,7 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 
 	if (len > 0) {		/* there are data to show */
 		count = strip_line (line, &data, netinfo);
-		if ((count == 5) || (count == 6)) {
+		if ((count == 5) || (count == 7)) {
 
 			/* Creation of GtkTreeView */
 			gtk_tree_view_set_rules_hint (GTK_TREE_VIEW
@@ -519,6 +519,7 @@ static gint
 strip_line (gchar * line, ping_data * data, Netinfo * netinfo)
 {
 	gint count;
+	gchar dummy_buf[3];
 
 	if (netinfo_get_ip_version (netinfo) == IPV4)
 		line = g_strdelimit (line, ":", ' ');
@@ -530,9 +531,9 @@ strip_line (gchar * line, ping_data * data, Netinfo * netinfo)
 			&(data)->bytes, data->ip, &(data)->icmp_seq,
 			data->srtt, data->unit);
 #endif
-#ifdef PING_PARAMS_6
+#ifdef PING_PARAMS_7
 	count = sscanf (line, PING_FORMAT,
-			&(data)->bytes, data->ip, &(data)->icmp_seq,
+			&(data)->bytes, data->ip, dummy_buf, &(data)->icmp_seq,
 			&(data)->ttl, data->srtt, data->unit);
 #endif
 	if (count != 5 && count != 6) {
