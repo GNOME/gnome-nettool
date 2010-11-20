@@ -1,400 +1,441 @@
 # Norwegian (bokmål dialect) translation of the gnome-network module
 # Copyright (C) 1998, 1999 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@online.no>, 1998-2009.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2010.
 # Eskild Hustvedt <i18n@zerodogg.org>, 2007
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool 2.27.x\n"
-"Report-Msgid-Bugs-To:\n"
-"POT-Creation-Date: 2009-08-04 18:15+0200\n"
-"PO-Revision-Date: 2009-08-04 18:19+0200\n"
-"Last-Translator: Eskild Hustvedt <i18n@zerodogg.org>\n"
+"Project-Id-Version: gnome-nettool 2.92.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-20 14:24+0100\n"
+"PO-Revision-Date: 2010-11-20 14:25+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
+"Language: no\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: ../src/callbacks.c:323
+#: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
 #. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:330
+#: ../src/callbacks.c:339
 #, c-format
 msgid "Copyright © 2003-2008 %s"
 msgstr "Opphavsrett © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:334 ../src/callbacks.c:335
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
+#: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Nettverksverktøy"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:346
 msgid "Graphical user interface for common network utilities"
 msgstr "Grafisk brukergrensesnitt for vanlige nettverksverktøy"
 
-#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "Ledig"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:455
+#: ../src/callbacks.c:463
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - Nettverksverktøy"
 
-#: ../src/callbacks.c:479
+#: ../src/callbacks.c:487
 msgid "Unable to open help file"
 msgstr "Kan ikke åpne hjelpfil"
 
-#: ../src/gnome-nettool.ui.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:2
+msgid "View information about your network"
+msgstr "Vis informasjon om ditt nettverk"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "A list of domains previously used"
+msgstr "En liste med tidligere brukte domener"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr "En liste med tidligere brukte vertsnavn"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "A list of usernames previously used"
+msgstr "En liste med tidligere brukte brukernavn"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "Historically used domains"
+msgstr "Historikk for domener"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used hostnames"
+msgstr "Historikk for vertsnavn"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "Historically used usernames"
+msgstr "Historikk for brukernavn"
+
+#: ../data/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "0"
 
-#: ../src/gnome-nettool.ui.h:3
+#: ../data/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "0%"
 
-#: ../src/gnome-nettool.ui.h:4
+#: ../data/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.ui.h:5
+#: ../data/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>IP-informasjon</b>"
 
-#: ../src/gnome-nettool.ui.h:6
+#: ../data/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>Informasjon om grensesnitt</b>"
 
-#: ../src/gnome-nettool.ui.h:7
+#: ../data/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>Statistikk for grensesnitt</b>"
 
-#: ../src/gnome-nettool.ui.h:8
+#: ../data/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Statistikk for rundturtid</b>"
 
-#: ../src/gnome-nettool.ui.h:9
+#: ../data/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Statistikk for overføring</b>"
 
-#: ../src/gnome-nettool.ui.h:10
+#: ../data/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "Aktive nettverkstjenester"
 
-#: ../src/gnome-nettool.ui.h:11
+#: ../data/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "Gjennomsnitt:"
 
-#: ../src/gnome-nettool.ui.h:12
+#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Pip ved ping"
 
-#: ../src/gnome-nettool.ui.h:13
+#: ../data/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "Tøm _historikk"
 
-#: ../src/gnome-nettool.ui.h:14
+#: ../data/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "Kollisjoner:"
 
-#: ../src/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "Kopier som tekst_rapport"
 
-#: ../src/gnome-nettool.ui.h:16
+#: ../data/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "Detaljer"
 
-#: ../src/gnome-nettool.ui.h:17
+#: ../data/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "Enheter"
 
-#: ../src/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "Enheter - Nettverksverktøy"
 
-#: ../src/gnome-nettool.ui.h:19
+#: ../data/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "Vis:"
 
-#: ../src/gnome-nettool.ui.h:20
+#: ../data/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "Domene-adresse"
 
-#: ../src/gnome-nettool.ui.h:21
+#: ../data/gnome-nettool.ui.h:21
 msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
-msgstr "Oppgi en domeneadresse for å slå opp whois-informasjon for denne. For eksempel: www.domene.no eller 192.168.2.1"
+msgstr ""
+"Oppgi en domeneadresse for å slå opp whois-informasjon for denne. For "
+"eksempel: www.domene.no eller 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:22
+#: ../data/gnome-nettool.ui.h:22
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
-msgstr "Oppgi nettverksadresse for å kjøre «finger» på denne brukeren. For eksemel: www.domene.no eller 192.168.2.1"
+msgstr ""
+"Oppgi nettverksadresse for å kjøre «finger» på denne brukeren. For eksemel: "
+"www.domene.no eller 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:23
+#: ../data/gnome-nettool.ui.h:23
 msgid ""
 "Enter the network address to lookup. For example: www.domain.com or "
 "192.168.2.1"
-msgstr "Oppgi nettverksadresse for oppslag. For eksempel: www.domene.no eller 192.168.2.1"
+msgstr ""
+"Oppgi nettverksadresse for oppslag. For eksempel: www.domene.no eller "
+"192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:24
+#: ../data/gnome-nettool.ui.h:24
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
-msgstr "Oppgi nettverksadresse du vil kjøre «ping» mot. For eksempel: www.domene.no eller 192.168.2.1"
+msgstr ""
+"Oppgi nettverksadresse du vil kjøre «ping» mot. For eksempel: www.domene.no "
+"eller 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:25
+#: ../data/gnome-nettool.ui.h:25
 msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
-msgstr "Oppgi nettverksadresse du vil søke etter åpne porter på. For eksempel: www.domene.no eller 192.168.2.1"
+msgstr ""
+"Oppgi nettverksadresse du vil søke etter åpne porter på. For eksempel: www."
+"domene.no eller 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:26
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
-msgstr "Oppgi nettverksadresse du vil søke opp ruten til. For eksempel: www.domene.no eller 192.168.2.1"
+msgstr ""
+"Oppgi nettverksadresse du vil søke opp ruten til. For eksempel: www.domene."
+"no eller 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:27
 msgid "Enter the user to finger"
 msgstr "Oppgi bruker du vil hente «finger»-informasjon om"
 
-#: ../src/gnome-nettool.ui.h:28 ../src/main.c:814
+#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "Utdata fra finger"
 
-#: ../src/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "Maskinvare-adresse:"
 
-#: ../src/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "Vert"
 
-#: ../src/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "Hastighet på link:"
 
-#: ../src/gnome-nettool.ui.h:33 ../src/main.c:734
+#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
 msgid "Lookup"
 msgstr "Oppslag"
 
-#: ../src/gnome-nettool.ui.h:34
+#: ../data/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "Utskrift av oppslag"
 
-#: ../src/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "Maksimum:"
 
-#: ../src/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "Minimum:"
 
-#: ../src/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "Multicast-informasjon"
 
-#: ../src/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../src/gnome-nettool.ui.h:40 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "Utskrift fra netstat"
 
-#: ../src/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "Nettverksadresse"
 
-#: ../src/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "Ikke tilgjengelig"
 
-#: ../src/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "Kun"
 
-#: ../src/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "Utskrift fra finger"
 
-#: ../src/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "Utskrift fra oppslag"
 
-#: ../src/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "Utskrift fra netstat"
 
-#: ../src/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "Utskrift fra portskanning"
 
-#: ../src/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "Utskrift fra traceroute"
 
-#: ../src/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "Utskrift fra whois"
 
-#: ../src/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "Pakker mottatt:"
 
-#: ../src/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "Pakker sendt:"
 
-#: ../src/gnome-nettool.ui.h:53 ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "Portskanning"
 
-#: ../src/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "Utskrift fra portskanning"
 
-#: ../src/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "Bytes mottatt:"
 
-#: ../src/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "Pakker mottatt:"
 
-#: ../src/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "Feil ved mottak:"
 
-#: ../src/gnome-nettool.ui.h:59
+#: ../data/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "Informasjon om rutingtabeller"
 
-#: ../src/gnome-nettool.ui.h:60 ../src/main.c:619
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
 msgid "Scan"
 msgstr "Søk"
 
-#: ../src/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "Send:"
 
-#: ../src/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "Tilstand:"
 
-#: ../src/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "Pakker mottatt:"
 
-#: ../src/gnome-nettool.ui.h:64 ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "Spor"
 
-#: ../src/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "Utskrift fra traceroute"
 
-#: ../src/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "Overføringsfeil:"
 
-#: ../src/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "Bytes sendt:"
 
-#: ../src/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "Pakker sendt:"
 
-#: ../src/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "Ubegrenset antall forespørsler"
 
-#: ../src/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "Bruker"
 
-#: ../src/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "Bruker_navn"
 
-#: ../src/gnome-nettool.ui.h:73 ../src/main.c:920
+#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "Utdata fra Whois"
 
-#: ../src/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "_Konfigurer"
 
-#: ../src/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "_Domene-adresse:"
 
-#: ../src/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "R_ediger"
 
-#: ../src/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "_Hjelp"
 
-#: ../src/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "_Informasjonstype:"
 
-#: ../src/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "_Nettverksadresse:"
 
-#: ../src/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "_Nettverksenhet:"
 
-#: ../src/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "Verk_tøy"
 
-#: ../src/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "Br_ukernavn:"
 
-#: ../src/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "forespørsler"
 
@@ -435,82 +476,82 @@ msgstr "Ukjent grensesnitt"
 msgid "Network Devices Not Found"
 msgstr "Nettverksenheter ikke funnet"
 
-#: ../src/info.c:392 ../src/info.c:395
+#: ../src/info.c:400 ../src/info.c:403
 msgid "Unknown"
 msgstr "Ukjent"
 
-#: ../src/info.c:466
+#: ../src/info.c:474
 msgid "Active"
 msgstr "Aktiv"
 
-#: ../src/info.c:468
+#: ../src/info.c:476
 msgid "Inactive"
 msgstr "Inaktiv"
 
-#: ../src/info.c:473
+#: ../src/info.c:481
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:482
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Aktivert"
 
-#: ../src/info.c:484
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Deaktivert"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:573
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Nettverksenhet:\t%s\n"
 
-#: ../src/info.c:574
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Maskinvare-adresse:\t%s\n"
 
-#: ../src/info.c:575
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:576
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:577
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Hastighet på link:\t%s\n"
 
-#: ../src/info.c:578
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Tilstand:\t%s\n"
 
-#: ../src/info.c:580
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Pakker sendt:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Overføringsfeil:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Pakker mottatt:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Feil ved mottak:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kollisjoner:\t%s\n"
@@ -636,53 +677,53 @@ msgstr "Kringkast:"
 msgid "Scope"
 msgstr "Område"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Default Information"
 msgstr "Forvalgt informasjon"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "Internet Address"
 msgstr "Internettadresse"
 
-#: ../src/main.c:671
+#: ../src/main.c:669
 msgid "Canonical Name"
 msgstr "Absolutt navn"
 
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "CPU / OS Type"
 msgstr "CPU / type OS"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:674
+#: ../src/main.c:672
 msgid "Mailbox Exchange"
 msgstr "Postboksutveksling"
 
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Mailbox Information"
 msgstr "Postboksinformasjon"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:677
+#: ../src/main.c:675
 msgid "Name Server"
 msgstr "Navnetjener"
 
-#: ../src/main.c:678
+#: ../src/main.c:676
 msgid "Host name for Address"
 msgstr "Vertsnavn for adresse"
 
-#: ../src/main.c:679
+#: ../src/main.c:677
 msgid "Start-of-authority"
 msgstr "Start på autoritet"
 
-#: ../src/main.c:680
+#: ../src/main.c:678
 msgid "Text Information"
 msgstr "Tekstinformasjon"
 
-#: ../src/main.c:681
+#: ../src/main.c:679
 msgid "Well Known Services"
 msgstr "Velkjente tjenester"
 
-#: ../src/main.c:682
+#: ../src/main.c:680
 msgid "Any / All Information"
 msgstr "Informasjon om any / all"
 
@@ -932,10 +973,6 @@ msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr "For å bruke denne funksjonen må %s være installert på ditt system"
-
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "Vis informasjon om ditt nettverk"
 
 #: ../src/finger.c:63
 #, c-format
