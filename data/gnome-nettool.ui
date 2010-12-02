@@ -939,9 +939,10 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBoxEntry" id="ping_host">
+                          <object class="GtkComboBox" id="ping_host">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="has_entry">True</property>
                             <accessibility>
                               <relation target="ping_host_label" type="labelled-by"/>
                             </accessibility>
@@ -1638,9 +1639,10 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBoxEntry" id="traceroute_host">
+                          <object class="GtkComboBox" id="traceroute_host">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="has_entry">True</property>
                             <child internal-child="entry">
                               <object class="GtkEntry" id="comboboxentry-entry2">
                                 <property name="has_tooltip">True</property>
@@ -1789,9 +1791,10 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBoxEntry" id="scan_host">
+                          <object class="GtkComboBox" id="scan_host">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="has_entry">True</property>
                             <child internal-child="entry">
                               <object class="GtkEntry" id="comboboxentry-entry3">
                                 <property name="has_tooltip">True</property>
@@ -1963,9 +1966,10 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBoxEntry" id="lookup_host">
+                          <object class="GtkComboBox" id="lookup_host">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="has_entry">True</property>
                             <child internal-child="entry">
                               <object class="GtkEntry" id="comboboxentry-entry4">
                                 <property name="has_tooltip">True</property>
@@ -2126,9 +2130,10 @@
                         <property name="column_spacing">6</property>
                         <property name="row_spacing">6</property>
                         <child>
-                          <object class="GtkComboBoxEntry" id="finger_host">
+                          <object class="GtkComboBox" id="finger_host">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="has_entry">True</property>
                             <child internal-child="entry">
                               <object class="GtkEntry" id="comboboxentry-entry6">
                                 <property name="has_tooltip">True</property>
@@ -2161,9 +2166,10 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBoxEntry" id="finger_user">
+                          <object class="GtkComboBox" id="finger_user">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="has_entry">True</property>
                             <child internal-child="entry">
                               <object class="GtkEntry" id="comboboxentry-entry5">
                                 <property name="has_tooltip">True</property>
@@ -2347,9 +2353,10 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBoxEntry" id="whois_host">
+                          <object class="GtkComboBox" id="whois_host">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="has_entry">True</property>
                             <child internal-child="entry">
                               <object class="GtkEntry" id="comboboxentry-entry7">
                                 <property name="has_tooltip">True</property>

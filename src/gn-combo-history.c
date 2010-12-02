@@ -271,8 +271,8 @@ gn_combo_history_set_popdown_strings (GnComboHistory *history)
 	if (!model)
 		return;
 
-	text_column = gtk_combo_box_entry_get_text_column (
-							   GTK_COMBO_BOX_ENTRY (history->priv->combo));
+	text_column = gtk_combo_box_get_entry_text_column (
+							   GTK_COMBO_BOX (history->priv->combo));
 
 	gtk_list_store_clear (GTK_LIST_STORE (model));
 	   

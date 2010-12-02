@@ -51,7 +51,7 @@ typedef struct {
 } PingGraphBarData;
 
 static void
-draw_centered_text (GtkWidget *widget, gint x, gint y, gchar *text)
+draw_centered_text (GtkWidget *widget, cairo_t *cr, gint x, gint y, gchar *text)
 {
 	int width;
 	PangoLayout *layout;
@@ -62,9 +62,9 @@ draw_centered_text (GtkWidget *widget, gint x, gint y, gchar *text)
 
 	x -= width/2;
 
-	gtk_paint_layout (gtk_widget_get_style(widget), gtk_widget_get_window(widget), 
+	gtk_paint_layout (gtk_widget_get_style(widget), cr,
 			  GTK_STATE_NORMAL, TRUE, 
-			  NULL, NULL, NULL, x, y,
+			  widget, NULL, x, y,
 			  layout);
 	g_object_unref (layout);
 }
@@ -119,7 +119,7 @@ get_bar_data (Netinfo *netinfo, PingGraphBarData *bar_data, int ntodisplay,
 static void 
 draw_ping_graph (Netinfo *netinfo)
 {
-	GdkWindow *window;
+	cairo_t *cr;
 	GtkStyle *style;
 	GtkWidget *widget;
 	PangoLayout *layout;
@@ -137,7 +137,7 @@ draw_ping_graph (Netinfo *netinfo)
 	gchar *tmpstr;
 
 	widget = netinfo->graph;
-	window = gtk_widget_get_window(widget);
+	cr = gdk_cairo_create (gtk_widget_get_window(widget));
 	style = gtk_widget_get_style(widget);
 
 	rangemax = packets_transmitted;
@@ -151,7 +151,8 @@ draw_ping_graph (Netinfo *netinfo)
 	layout = gtk_widget_create_pango_layout (widget, _("Time (ms):"));
 	/* We guess that the first label is representative. */
 	pango_layout_get_pixel_size (layout, NULL, &font_height);
-	gdk_drawable_get_size (window, &width, &height);
+	width = gtk_widget_get_allocated_width (widget);
+	height = gtk_widget_get_allocated_height (widget);
 
 	offset = 0.05*height;
 	bar_height = height - 2.5*font_height - offset;
@@ -160,21 +161,21 @@ draw_ping_graph (Netinfo *netinfo)
 	line1h = bar_height + 0.125*font_height + offset;
 	line2h = bar_height + 1.25*font_height + offset;
 
-	gtk_paint_box (style, window, GTK_STATE_NORMAL, GTK_SHADOW_ETCHED_IN, 
-		       NULL, NULL, NULL, 0, 0, width, height);
+	gtk_paint_box (style, cr, GTK_STATE_NORMAL, GTK_SHADOW_ETCHED_IN, 
+		       widget, NULL, 0, 0, width, height);
 
-	gtk_paint_layout (style, window, GTK_STATE_NORMAL, TRUE, 
-			  NULL, NULL, NULL, 0.02*width, line1h,
+	gtk_paint_layout (style, cr, GTK_STATE_NORMAL, TRUE, 
+			  widget, NULL, 0.02*width, line1h,
 			  layout);
 	g_object_unref (layout);
 
 	layout = gtk_widget_create_pango_layout (widget, _("Seq. No.:"));
-	gtk_paint_layout (style, window, GTK_STATE_NORMAL, TRUE, 
-			  NULL, NULL, NULL, 0.02*width, line2h,
+	gtk_paint_layout (style, cr, GTK_STATE_NORMAL, TRUE, 
+			  widget, NULL, 0.02*width, line2h,
 			  layout);
 	g_object_unref (layout);
 
-	gtk_paint_hline (style, window, GTK_STATE_NORMAL, NULL, NULL, NULL,
+	gtk_paint_hline (style, cr, GTK_STATE_NORMAL, widget, NULL,
 			 0.02*width, 0.98*width, separator_height);
 
 	index = 0;
@@ -182,30 +183,32 @@ draw_ping_graph (Netinfo *netinfo)
 	for (x = 1.5*step; x < width; x += step) {
 		if (bar_data[index].valid) {
 			h = scale_factor*bar_data[index].value;
-			gtk_paint_flat_box (style, window, GTK_STATE_SELECTED,
-					    GTK_SHADOW_ETCHED_IN, NULL, 
-					    NULL, NULL, x - 0.4*step,
+			gtk_paint_flat_box (style, cr, GTK_STATE_SELECTED,
+					    GTK_SHADOW_ETCHED_IN, widget,
+					    NULL, x - 0.4*step,
 					    offset + bar_height - h,
 					    0.8*step, h);
 			tmpstr = g_strdup_printf ("%.2f", bar_data[index].value);
 		} else {
 			tmpstr = g_strdup ("-");
 		}
-		draw_centered_text (widget, x, line1h, tmpstr);
+		draw_centered_text (widget, cr, x, line1h, tmpstr);
 		g_free (tmpstr);
 		if (index + rangemin + 1 <= rangemax) {
 			tmpstr = g_strdup_printf ("%d", index + rangemin + 1);
 		} else {
 			tmpstr = g_strdup ("-");
 		}
-		draw_centered_text (widget, x, line2h, tmpstr);
+		draw_centered_text (widget, cr, x, line2h, tmpstr);
 		g_free (tmpstr);
 		index++;
 	}
+
+	cairo_destroy (cr);
 }
 
 gint 
-on_ping_graph_expose (GtkWidget *widget, GdkEventExpose *event, 
+on_ping_graph_draw (GtkWidget *widget, cairo_t *cr,
 		      Netinfo *info)
 {
 	draw_ping_graph (info);
