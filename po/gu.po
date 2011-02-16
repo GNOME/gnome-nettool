@@ -1,13 +1,13 @@
-# translation of gnome-nettool.master.gu.po to Gujarati
+# translation of gu.po to Gujarati
 # Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
 # Ankit Patel <ankit@redhat.com>, 2007, 2008.
-# Sweta Kothari <swkothar@redhat.com>, 2009.
+# Sweta Kothari <swkothar@redhat.com>, 2009, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool.master.gu\n"
+"Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&component=general\n"
-"POT-Creation-Date: 2009-05-04 03:50+0000\n"
-"PO-Revision-Date: 2009-08-25 12:45+0530\n"
+"POT-Creation-Date: 2010-11-10 22:40+0000\n"
+"PO-Revision-Date: 2011-02-16 15:44+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr "Copyright © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
 #: ../src/callbacks.c:334 ../src/callbacks.c:335
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "નેટવર્ક સાધનો"
 
@@ -44,128 +44,155 @@ msgstr "નેટવર્ક સાધનો"
 msgid "Graphical user interface for common network utilities"
 msgstr "સામાન્ય નેટવર્ક ઉપયોગિતાઓ માટે ગ્રાફિકવાળું વપરાશકર્તા ઈન્ટરફેસ"
 
-#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:461
+#: ../src/callbacks.c:449 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "નિષ્ક્રિય"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:455
+#: ../src/callbacks.c:454
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - નેટવર્ક સાધનો"
 
-#: ../src/callbacks.c:479
+#: ../src/callbacks.c:478
 msgid "Unable to open help file"
 msgstr "મદદ ફાઇલને ખોલવામાં અસમર્થ"
 
-#: ../src/gnome-nettool.glade.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:2
+msgid "View information about your network"
+msgstr "તમારા નેટવર્ક વિશેની જાણકારી જુઓ"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "A list of domains previously used"
+msgstr "પહેલાં વપરાયેલ ડોમેઇનની યાદી"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr "પહેલાં વપરાયેલ યજમાનોની યાદી"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "A list of usernames previously used"
+msgstr "પહેલાં વપરાયેલ વપરાશકર્તાઓની યાદી"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "Historically used domains"
+msgstr "ઐતિહાસિક રીતે વપરાયેલ ડોમેઇન"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used hostnames"
+msgstr "ઐતિહાસિક રીતે વપરાયેલ યજમાનનામો"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "Historically used usernames"
+msgstr "ઐતિહાસિક રીતે વપરાયેલ વપરાશકર્તાનામો"
+
+#: ../data/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "૦"
 
-#: ../src/gnome-nettool.glade.h:3
+#: ../data/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "૦%"
 
-#: ../src/gnome-nettool.glade.h:4
+#: ../data/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "૦.૦"
 
-#: ../src/gnome-nettool.glade.h:5
+#: ../data/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>IP જાણકારી</b>"
 
-#: ../src/gnome-nettool.glade.h:6
+#: ../data/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>ઈન્ટરફેસ જાણકારી</b>"
 
-#: ../src/gnome-nettool.glade.h:7
+#: ../data/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>ઈન્ટરફેસ પરીસ્થિતીઓ</b>"
 
-#: ../src/gnome-nettool.glade.h:8
+#: ../data/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>સમય સ્થિતિનું પરિભ્રમણ</b>"
 
-#: ../src/gnome-nettool.glade.h:9
+#: ../data/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>પરિવહન સ્થિતિઓ</b>"
 
-#: ../src/gnome-nettool.glade.h:10
+#: ../data/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "સક્રિય નેટવર્ક સેવાઓ"
 
-#: ../src/gnome-nettool.glade.h:11
+#: ../data/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "સરેરાશ:"
 
-#: ../src/gnome-nettool.glade.h:12
+#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "પીંગ પર બીપ"
 
-#: ../src/gnome-nettool.glade.h:13
+#: ../data/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "ઈતિહાસ ભૂંસી નાખો (_H)"
 
-#: ../src/gnome-nettool.glade.h:14
+#: ../data/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "તકરાર:"
 
-#: ../src/gnome-nettool.glade.h:15
+#: ../data/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "લખાણ અહેવાલ તરીકે નકલ કરો (_r)"
 
-#: ../src/gnome-nettool.glade.h:16
+#: ../data/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "વિગતો"
 
-#: ../src/gnome-nettool.glade.h:17
+#: ../data/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "ઉપકરણો"
 
-#. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:19
+#: ../data/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "ઉપકરણો - નેટવર્ક સાધનો"
 
-#: ../src/gnome-nettool.glade.h:20
+#: ../data/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "ડિસ્પ્લે:"
 
-#: ../src/gnome-nettool.glade.h:21
+#: ../data/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "ડોમેઈન સરનામું"
 
-#: ../src/gnome-nettool.glade.h:22
+#: ../data/gnome-nettool.ui.h:21
 msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
 msgstr ""
-"તેની whois જાણકારી મેળવવા માટે ડોમેઇન સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www."
-"domain.com અથવા 192.168.2.1"
+"તેની whois જાણકારી મેળવવા માટે ડોમેઇન સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www.domain."
+"com અથવા 192.168.2.1"
 
-#: ../src/gnome-nettool.glade.h:23
+#: ../data/gnome-nettool.ui.h:22
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
-"પેલાં વપરાશકર્તા પર આંગળી ચીંધવા માટે નેટવર્ક સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www.domain.com "
-"અથવા 192.168.2.1"
+"પેલાં વપરાશકર્તા પર આંગળી ચીંધવા માટે નેટવર્ક સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www."
+"domain.com અથવા 192.168.2.1"
 
-#: ../src/gnome-nettool.glade.h:24
+#: ../data/gnome-nettool.ui.h:23
 msgid ""
 "Enter the network address to lookup. For example: www.domain.com or "
 "192.168.2.1"
+msgstr "જોવા માટે નેટવર્ક સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www.domain.com અથવા 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:24
+msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"જોવા માટે નેટવર્ક સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www.domain.com અથવા "
+"પિંગ કરવા માટે નેટવર્ક સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www.domain.com અથવા "
 "192.168.2.1"
 
-#: ../src/gnome-nettool.glade.h:25
-msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
-msgstr "પિંગ કરવા માટે નેટવર્ક સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www.domain.com અથવા 192.168.2.1"
-
-#: ../src/gnome-nettool.glade.h:26
+#: ../data/gnome-nettool.ui.h:25
 msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
@@ -173,7 +200,7 @@ msgstr ""
 "ખુલ્લા પોર્ટો માટે સ્કેન કરવા માટે નેટવર્ક સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www.domain."
 "com અથવા 192.168.2.1"
 
-#: ../src/gnome-nettool.glade.h:27
+#: ../data/gnome-nettool.ui.h:26
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -181,240 +208,239 @@ msgstr ""
 "તેમાં રસ્તાને ટ્રેસ કરવા માટે નેટવર્ક સરનામાંને દાખલ કરો. ઉદાહરણ માટે: www.domain.com "
 "અથવા 192.168.2.1"
 
-#: ../src/gnome-nettool.glade.h:28
+#: ../data/gnome-nettool.ui.h:27
 msgid "Enter the user to finger"
 msgstr "આંગળી ચીંધવા માટે વપરાશકર્તાને દાખલ કરો"
 
-#: ../src/gnome-nettool.glade.h:29 ../src/main.c:814
+#: ../data/gnome-nettool.ui.h:28 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.glade.h:30
+#: ../data/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "Finger આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:31
+#: ../data/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "હાર્ડવેર સરનામું:"
 
-#: ../src/gnome-nettool.glade.h:32
+#: ../data/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "યજમાન"
 
-#: ../src/gnome-nettool.glade.h:33
+#: ../data/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "કડીની ઝડપ:"
 
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:734
+#: ../data/gnome-nettool.ui.h:33 ../src/main.c:734
 msgid "Lookup"
 msgstr "દેખાવ"
 
-#: ../src/gnome-nettool.glade.h:35
+#: ../data/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "દેખાવ આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:36
+#: ../data/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.glade.h:37
+#: ../data/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "મહત્તમ:"
 
-#: ../src/gnome-nettool.glade.h:38
+#: ../data/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "ન્યુનતમ:"
 
-#: ../src/gnome-nettool.glade.h:39
+#: ../data/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "મલ્ટીકાસ્ટ જાણકારી"
 
-#: ../src/gnome-nettool.glade.h:40
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "મલ્ટીકાસ્ટ:"
 
-#: ../src/gnome-nettool.glade.h:41 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "નેટસ્ટેટ"
 
-#: ../src/gnome-nettool.glade.h:42
+#: ../data/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "નેટસ્ટેટ આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:43
+#: ../data/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "નેટવર્ક સરનામું"
 
-#: ../src/gnome-nettool.glade.h:44
+#: ../data/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "ઉપ્લબ્ધ નથી"
 
-#: ../src/gnome-nettool.glade.h:45
+#: ../data/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "માત્ર"
 
-#: ../src/gnome-nettool.glade.h:46
+#: ../data/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "finger માટે આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:47
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "જોવા માટે આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:48
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "નેટ સ્થિતિ માટે આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:49
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "પોર્ટ સ્કેન માટે આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:50
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "ટ્રેસરુટ માટે આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:51
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "કોણ છે તે માટે આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:52
+#: ../data/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "પેકેટો મળ્યા:"
 
-#: ../src/gnome-nettool.glade.h:53
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "પેકેટો મોકલાયા:"
 
-#: ../src/gnome-nettool.glade.h:54 ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "પીંગ"
 
-#: ../src/gnome-nettool.glade.h:55
+#: ../data/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "પોર્ટ સ્કેન"
 
-#: ../src/gnome-nettool.glade.h:56
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "પોર્ટ સ્કેન આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:57
+#: ../data/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "મળેલ બાઈટો:"
 
-#: ../src/gnome-nettool.glade.h:58
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "મળેલ પેકેટો:"
 
-#: ../src/gnome-nettool.glade.h:59
+#: ../data/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "મેળવવામાં ભૂલ:"
 
-#: ../src/gnome-nettool.glade.h:60
+#: ../data/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "રાઉટીંગ કોષ્ટકની જાણકારી"
 
-#: ../src/gnome-nettool.glade.h:61 ../src/main.c:619
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:619
 msgid "Scan"
 msgstr "સ્કેન"
 
-#: ../src/gnome-nettool.glade.h:62
+#: ../data/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "મોકલો:"
 
-#: ../src/gnome-nettool.glade.h:63
+#: ../data/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "સ્થિતિ:"
 
-#: ../src/gnome-nettool.glade.h:64
+#: ../data/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "સફળ પેકેટો:"
 
-#: ../src/gnome-nettool.glade.h:65 ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "ટ્રેસ"
 
-#: ../src/gnome-nettool.glade.h:66
+#: ../data/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "ટ્રેસરુટ"
 
-#: ../src/gnome-nettool.glade.h:67
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "ટ્રેસરુટ આઉટપુટ"
 
-#: ../src/gnome-nettool.glade.h:68
+#: ../data/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "પરિવહન ભૂલો:"
 
-#: ../src/gnome-nettool.glade.h:69
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "મોકલાયેલ બાઈટો:"
 
-#: ../src/gnome-nettool.glade.h:70
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "મોકલાયેલ પેકેટો:"
 
-#: ../src/gnome-nettool.glade.h:71
+#: ../data/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "અમર્યાદિત મંજૂરીઓ"
 
-#: ../src/gnome-nettool.glade.h:72
+#: ../data/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "વપરાશકર્તા"
 
-#: ../src/gnome-nettool.glade.h:73
+#: ../data/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "વપરાશકર્તા નામ"
 
-#: ../src/gnome-nettool.glade.h:74 ../src/main.c:920
+#: ../data/gnome-nettool.ui.h:73 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.glade.h:75
+#: ../data/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "કોણ આઉટપુટ છે"
 
-#: ../src/gnome-nettool.glade.h:76
+#: ../data/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "રુપરેખાંકિત કરો (_C)"
 
-#: ../src/gnome-nettool.glade.h:77
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "ડોમેઈન સરનામું (_D):"
 
-#: ../src/gnome-nettool.glade.h:78
+#: ../data/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "ફેરફાર (_E)"
 
-#: ../src/gnome-nettool.glade.h:79
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "મદદ (_H)"
 
-#: ../src/gnome-nettool.glade.h:80
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "જાણકારીનો પ્રકાર (_I):"
 
-#: ../src/gnome-nettool.glade.h:81
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "નેટવર્ક સરનામું (_N):"
 
-#: ../src/gnome-nettool.glade.h:82
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "નેટવર્ક ઉપકરણ (_N):"
 
-#: ../src/gnome-nettool.glade.h:83
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "સાધન (_T)"
 
-#: ../src/gnome-nettool.glade.h:84
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "વપરાશકર્તા (_U):"
 
-#. Translators: this is the abbreviation for milliseconds
-#: ../src/gnome-nettool.glade.h:86
+#: ../data/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.glade.h:87
+#: ../data/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "મંજૂરીઓ"
 
@@ -575,59 +601,59 @@ msgstr "સરનામુ"
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "સ્રોત\tTTL\tસરનામા પ્રકાર\tRecord Type1\tરીઝોલ્યુશન\n"
 
-#: ../src/main.c:83
+#: ../src/main.c:82
 msgid "Load information for a network device"
 msgstr "નેટવર્ક ઉપકરણ માટે જાણકારી લાવો"
 
-#: ../src/main.c:84
+#: ../src/main.c:83
 msgid "DEVICE"
 msgstr "ઉપકરણ"
 
-#: ../src/main.c:87
+#: ../src/main.c:86
 msgid "Send a ping to a network address"
 msgstr "નેટવર્ક સરનામાને પીંગ મોકલો"
 
-#: ../src/main.c:88 ../src/main.c:96 ../src/main.c:100 ../src/main.c:104
+#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
 msgid "HOST"
 msgstr "યજમાન"
 
-#: ../src/main.c:91
+#: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "નેટસ્ટેટ જાણકારી મેળવો. માન્ય વિકલ્પો છે: રુટ, સક્રિય, મલ્ટીકાસ્ટ."
 
-#: ../src/main.c:92
+#: ../src/main.c:91
 msgid "COMMAND"
 msgstr "આદેશ"
 
-#: ../src/main.c:95
+#: ../src/main.c:94
 msgid "Trace a route to a network address"
 msgstr "નેટવર્ક સરનામાનો રુટ ટ્રેસ કરો"
 
-#: ../src/main.c:99
+#: ../src/main.c:98
 msgid "Port scan a network address"
 msgstr "નેટવર્ક સરનામાનો પોર્ટ સ્કેન કરો"
 
-#: ../src/main.c:103
+#: ../src/main.c:102
 msgid "Look up a network address"
 msgstr "નેટવર્ક સરનામુ જુઓ"
 
-#: ../src/main.c:107
+#: ../src/main.c:106
 msgid "Finger command to run"
 msgstr "ચલાવવા માટેનો finger આદેશ"
 
-#: ../src/main.c:108
+#: ../src/main.c:107
 msgid "USER"
 msgstr "વપરાશકર્તા"
 
-#: ../src/main.c:111
+#: ../src/main.c:110
 msgid "Perform a whois lookup for a network domain"
 msgstr "નેટવર્ક ડોમેઈન માટે whois કરીને જુઓ"
 
-#: ../src/main.c:112
+#: ../src/main.c:111
 msgid "DOMAIN"
 msgstr "ડોમેઈન"
 
-#: ../src/main.c:131
+#: ../src/main.c:130
 #, c-format
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
@@ -799,15 +825,15 @@ msgstr "ડોમેઈન સરનામુ સ્પષ્ટ કરેલ �
 msgid "Please enter a valid domain address and try again."
 msgstr "મહેરબાની કરીને માન્ય ડોમેઈન સરનામુ દાખલ કરો અને ફરીથી પ્રયત્ન કરો."
 
-#: ../src/nettool.c:406
+#: ../src/nettool.c:428
 msgid "Information not available"
 msgstr "જાણકારી ઉપ્લબ્ધ નથી"
 
-#: ../src/nettool.c:526
+#: ../src/nettool.c:548
 msgid "Stop"
 msgstr "બંધ કરો"
 
-#: ../src/nettool.c:532
+#: ../src/nettool.c:554
 msgid "Run"
 msgstr "ચલાવો"
 
@@ -952,10 +978,6 @@ msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr "કાર્યક્રમનું આ લક્ષણ વાપરવા માટે, %s તમારી સિસ્ટમમાં સ્થાપિત થયેલ હોવું જ જોઈએ"
-
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "તમારા નેટવર્ક વિશેની જાણકારી જુઓ"
 
 #: ../src/finger.c:63
 #, c-format
