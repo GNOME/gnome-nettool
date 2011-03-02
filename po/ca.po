@@ -5,134 +5,166 @@
 # Softcatala <linux@softcatala.org>, 2000.
 # Xavier Conde Rueda <xavi.conde@gmail.com>, 2004.
 # Jordi Mallach <jordi@sindominio.net>, 2004, 2005, 2006, 2007.
+# Joan Duran <jodufi@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-21 01:28+0200\n"
-"PO-Revision-Date: 2009-09-15 00:01+0200\n"
-"Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&component=general\n"
+"POT-Creation-Date: 2011-02-27 08:14+0000\n"
+"PO-Revision-Date: 2011-02-27 20:28+0100\n"
+"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../src/callbacks.c:323
+#: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
 "Ivan Vilata i Balaguer <al011097@alumail.uji.es>\n"
-"Xavier Conde Rueda <xavi.conde@gmail.com>"
+"Xavier Conde Rueda <xavi.conde@gmail.com>\n"
+"Joan Duran <jodufi@gmail.com>"
 
 #. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:330
+#: ../src/callbacks.c:339
 #, c-format
 msgid "Copyright © 2003-2008 %s"
 msgstr "Copyright © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:334 ../src/callbacks.c:335
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
+#: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Eines de xarxa"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:346
 msgid "Graphical user interface for common network utilities"
 msgstr "Interfície gràfica d'usuari per a utilitats de xarxa habituals"
 
-#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "Inactiu"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:455
+#: ../src/callbacks.c:463
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - Eines de xarxa"
 
-#: ../src/callbacks.c:479
+#: ../src/callbacks.c:487
 msgid "Unable to open help file"
 msgstr "No s'ha pogut obrir el fitxer d'ajuda"
 
-#: ../src/gnome-nettool.ui.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:2
+msgid "View information about your network"
+msgstr "Visualitzeu informació sobre la xarxa"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "A list of domains previously used"
+msgstr "Una llista de dominis utilitzats anteriorment"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr "Una llista de noms d'ordinador utilitzats anteriorment"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "A list of usernames previously used"
+msgstr "Una llista de noms d'usuari utilitzats anteriorment"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "Historically used domains"
+msgstr "Historial dels dominis utilitzats"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used hostnames"
+msgstr "Historial dels noms d'ordinador utilitzats"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "Historically used usernames"
+msgstr "Historial dels noms d'usuari utilitzats"
+
+#: ../data/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "0"
 
-#: ../src/gnome-nettool.ui.h:3
+#: ../data/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "0%"
 
-#: ../src/gnome-nettool.ui.h:4
+#: ../data/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.ui.h:5
+#: ../data/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>Informació IP</b>"
 
-#: ../src/gnome-nettool.ui.h:6
+#: ../data/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>Informació de la interfície</b>"
 
-#: ../src/gnome-nettool.ui.h:7
+#: ../data/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>Estadístiques de la interfície</b>"
 
-#: ../src/gnome-nettool.ui.h:8
+#: ../data/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Estadístiques del temps d'anada i tornada</b>"
 
-#: ../src/gnome-nettool.ui.h:9
+#: ../data/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Estadístiques de la transmissió</b>"
 
-#: ../src/gnome-nettool.ui.h:10
+#: ../data/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "Serveis de xarxa actius"
 
-#: ../src/gnome-nettool.ui.h:11
+#: ../data/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "Mitjana:"
 
-#: ../src/gnome-nettool.ui.h:12
+#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Fes un so en fer ping"
 
-#: ../src/gnome-nettool.ui.h:13
+#: ../data/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "Neteja l'_historial"
 
-#: ../src/gnome-nettool.ui.h:14
+#: ../data/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "Col·lisions:"
 
-#: ../src/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "Copia com a _informe de text"
 
-#: ../src/gnome-nettool.ui.h:16
+#: ../data/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "Detalls"
 
-#: ../src/gnome-nettool.ui.h:17
+#: ../data/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "Dispositius"
 
-#: ../src/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "Dispositius - Eines de xarxa"
 
-#: ../src/gnome-nettool.ui.h:19
+#: ../data/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "Visualitza:"
 
-#: ../src/gnome-nettool.ui.h:20
+#: ../data/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "Adreça del domini"
 
-#: ../src/gnome-nettool.ui.h:21
+#: ../data/gnome-nettool.ui.h:21
 msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
@@ -140,7 +172,7 @@ msgstr ""
 "Introduïu un nom de domini per cercar-ne la informació whois. Per exemple: "
 "www.domini.com o 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:22
+#: ../data/gnome-nettool.ui.h:22
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
@@ -148,7 +180,7 @@ msgstr ""
 "Introduïu l'adreça de xarxa on fer un finger a l'usuari. Per exemple: www."
 "domini.com o 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:23
+#: ../data/gnome-nettool.ui.h:23
 msgid ""
 "Enter the network address to lookup. For example: www.domain.com or "
 "192.168.2.1"
@@ -156,14 +188,14 @@ msgstr ""
 "Introduïu l'adreça de xarxa a cercar. Per exemple: www.domini.com o "
 "192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:24
+#: ../data/gnome-nettool.ui.h:24
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Introduïu l'adreça de xarxa a on fer ping. Per exemple: www.domini.com o "
 "192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:25
+#: ../data/gnome-nettool.ui.h:25
 msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
@@ -171,7 +203,7 @@ msgstr ""
 "Introduïu l'adreça de xarxa on escanejar els ports oberts. Per exemple: www."
 "domini.com o 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:26
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -179,242 +211,242 @@ msgstr ""
 "Introduïu l'adreça de xarxa fins on traçar la ruta. Per exemple: www.domini."
 "com o 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:27
 msgid "Enter the user to finger"
 msgstr "Introduïu l'usuari al qual fer un finger"
 
-#: ../src/gnome-nettool.ui.h:28 ../src/main.c:814
+#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "Sortida del «finger»"
 
-#: ../src/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "Adreça del maquinari:"
 
-#: ../src/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "Ordinador"
 
-#: ../src/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "Velocitat de l'enllaç:"
 
-#: ../src/gnome-nettool.ui.h:33 ../src/main.c:734
+#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
 msgid "Lookup"
 msgstr "Cerca"
 
-#: ../src/gnome-nettool.ui.h:34
+#: ../data/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "Sortida del «lookup»"
 
-#: ../src/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "UTM:"
 
-#: ../src/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "Màxim:"
 
-#: ../src/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "Mínim:"
 
-#: ../src/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "Informació de multidifusió"
 
-#: ../src/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "Multidifusió:"
 
 # FIXME: jo deixaria Netstat
-#: ../src/gnome-nettool.ui.h:40 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "Estat de la xarxa"
 
 # FIXME: jo deixaria Netstat
-#: ../src/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "Sortida del «netstat»"
 
-#: ../src/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "Adreça de xarxa"
 
-#: ../src/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "No disponible"
 
-#: ../src/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "Només"
 
-#: ../src/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "Sortida del «finger»"
 
-#: ../src/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "Sortida del «lookup»"
 
-#: ../src/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "Sortida del «net stat»"
 
-#: ../src/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "Sortida de l'escaneig de ports"
 
-#: ../src/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "Sortida del «traceroute»"
 
-#: ../src/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "Sortida del «whois»"
 
-#: ../src/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "Paquets rebuts:"
 
-#: ../src/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "Paquets transmesos:"
 
-#: ../src/gnome-nettool.ui.h:53 ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "Escanejador de ports"
 
-#: ../src/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "Sortida de l'escaneig de ports"
 
-#: ../src/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "Bytes rebuts:"
 
-#: ../src/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "Paquets rebuts:"
 
-#: ../src/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "Errors de recepció:"
 
-#: ../src/gnome-nettool.ui.h:59
+#: ../data/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "Informació de la taula d'encaminament"
 
-#: ../src/gnome-nettool.ui.h:60 ../src/main.c:619
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
 msgid "Scan"
 msgstr "Escaneja"
 
-#: ../src/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "Envia:"
 
-#: ../src/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "Estat:"
 
-#: ../src/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "Paquets correctes:"
 
-#: ../src/gnome-nettool.ui.h:64 ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "Traça"
 
-#: ../src/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "Traça una ruta"
 
-#: ../src/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "Sortida del «traceroute»"
 
-#: ../src/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "Errors de transmissió:"
 
-#: ../src/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "Bytes transmesos:"
 
-#: ../src/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "Paquets transmesos:"
 
-#: ../src/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "Peticions sense límit"
 
-#: ../src/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "Usuari"
 
-#: ../src/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "Nom d'usuari"
 
 # FIXME: jo deixaria "Whois" (josep)
-#: ../src/gnome-nettool.ui.h:73 ../src/main.c:920
+#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "Sortida del «whois»"
 
-#: ../src/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "_Configura"
 
-#: ../src/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "A_dreça del domini:"
 
-#: ../src/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "_Edita"
 
-#: ../src/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "A_juda"
 
-#: ../src/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "T_ipus d'informació:"
 
-#: ../src/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "Ad_reça de xarxa:"
 
-#: ../src/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "Dis_positiu de xarxa:"
 
-#: ../src/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "_Eina"
 
-#: ../src/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "Nom d'_usuari:"
 
-#: ../src/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "peticions"
 
@@ -441,7 +473,7 @@ msgstr "Interfície de línia paral·lela"
 
 #: ../src/info.c:65
 msgid "Infrared Interface"
-msgstr "Interfície d'infrarojos"
+msgstr "Interfície d'infraroigs"
 
 #: ../src/info.c:66
 msgid "Loopback Interface"
@@ -455,82 +487,82 @@ msgstr "Interfície desconeguda"
 msgid "Network Devices Not Found"
 msgstr "No s'ha trobat cap dispositiu de xarxa"
 
-#: ../src/info.c:392 ../src/info.c:395
+#: ../src/info.c:400 ../src/info.c:403
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: ../src/info.c:466
+#: ../src/info.c:474
 msgid "Active"
 msgstr "Activa"
 
-#: ../src/info.c:468
+#: ../src/info.c:476
 msgid "Inactive"
 msgstr "Inactiva"
 
-#: ../src/info.c:473
+#: ../src/info.c:481
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:482
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Habilitada"
 
-#: ../src/info.c:484
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Inhabilitada"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:573
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Dispositiu de xarxa:\t%s\n"
 
-#: ../src/info.c:574
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Adreça del maquinari:\t%s\n"
 
-#: ../src/info.c:575
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multidifusió:\t%s\n"
 
-#: ../src/info.c:576
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "UTM:\t%s\n"
 
-#: ../src/info.c:577
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Velocitat de l'enllaç:\t%s\n"
 
-#: ../src/info.c:578
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Estat:\t%s\n"
 
-#: ../src/info.c:580
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Paquets transmesos:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Errors de transmissió:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Paquets rebuts:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Errors de recepció:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Col·lisions:\t%s\n"
@@ -658,54 +690,54 @@ msgstr "Difusió"
 msgid "Scope"
 msgstr "Abast"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Default Information"
 msgstr "Informació predeterminada"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "Internet Address"
 msgstr "Adreça d'Internet"
 
-#: ../src/main.c:671
+#: ../src/main.c:669
 msgid "Canonical Name"
 msgstr "Nom canònic"
 
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "CPU / OS Type"
-msgstr "UCP / Tipus de SO"
+msgstr "CPU / Tipus de SO"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:674
+#: ../src/main.c:672
 msgid "Mailbox Exchange"
 msgstr "Bústia Exchange"
 
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Mailbox Information"
 msgstr "Informació de la bústia"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:677
+#: ../src/main.c:675
 msgid "Name Server"
 msgstr "Nom del servidor"
 
-#: ../src/main.c:678
+#: ../src/main.c:676
 msgid "Host name for Address"
 msgstr "Nom de l'ordinador de l'adreça"
 
-#: ../src/main.c:679
+#: ../src/main.c:677
 msgid "Start-of-authority"
 msgstr "Inici-d'autoritat"
 
-#: ../src/main.c:680
+#: ../src/main.c:678
 msgid "Text Information"
 msgstr "Informació de text"
 
 # FIXME
-#: ../src/main.c:681
+#: ../src/main.c:679
 msgid "Well Known Services"
 msgstr "Servei ben conegut"
 
-#: ../src/main.c:682
+#: ../src/main.c:680
 msgid "Any / All Information"
 msgstr "Cap / tota informació"
 
@@ -819,32 +851,32 @@ msgstr "Executa"
 msgid "Time (ms):"
 msgstr "Temps (ms):"
 
-#: ../src/ping.c:171
+#: ../src/ping.c:172
 msgid "Seq. No.:"
 msgstr "Num. seq.:"
 
-#: ../src/ping.c:254
+#: ../src/ping.c:257
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "S'estan enviant peticions de ping a %s"
 
-#: ../src/ping.c:569
+#: ../src/ping.c:572
 msgid "Bytes"
 msgstr "Bytes"
 
-#: ../src/ping.c:576
+#: ../src/ping.c:579
 msgid "Source"
 msgstr "Origen"
 
-#: ../src/ping.c:584
+#: ../src/ping.c:587
 msgid "Seq"
 msgstr "Seqüència"
 
-#: ../src/ping.c:594
+#: ../src/ping.c:597
 msgid "Time"
 msgstr "Temps"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:605
 msgid "Units"
 msgstr "Unitat"
 
@@ -852,37 +884,37 @@ msgstr "Unitat"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:628
+#: ../src/ping.c:631
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bytes\tOrigen\tSeqüència\tTemps\tUnitats\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:643
+#: ../src/ping.c:646
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Temps mínim:\t%s ms\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:647
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Temps mitjà:\t%s ms\n"
 
-#: ../src/ping.c:645
+#: ../src/ping.c:648
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Temps màxim:\t%s ms\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:650
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Paquets transmesos:\t%s\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:652
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Paquets rebuts:\t%s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:655
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Paquets correctes:\t%s\n"
@@ -957,10 +989,6 @@ msgid ""
 msgstr ""
 "Per a poder fer servir aquesta característica del programa, heu de tenir "
 "instal·lat %s al sistema."
-
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "Visualitzeu informació sobre la xarxa"
 
 #: ../src/finger.c:63
 #, c-format
