@@ -5,19 +5,20 @@
 # Linux localization project <viesturs.zarins@mii.lu.lv>, 2006.
 # Raivis Dejus <orvils@gmail.com>, 2006, 2009.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010.
+# Rudolfs <rudolfs.mazurs@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gnome-nettool&component=general\n"
-"POT-Creation-Date: 2009-12-14 20:18+0000\n"
-"PO-Revision-Date: 2010-06-13 10:14+0300\n"
-"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
-"Language-Team: Latviešu <kde-i18n-doc@kde.org>\n"
+"POT-Creation-Date: 2010-11-10 22:40+0000\n"
+"PO-Revision-Date: 2011-02-07 00:42+0200\n"
+"Last-Translator: Rudolfs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.1\n"
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
@@ -33,7 +34,7 @@ msgstr "Autortiesības © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
 #: ../src/callbacks.c:334 ../src/callbacks.c:335
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Tīkla rīki"
 
@@ -41,99 +42,127 @@ msgstr "Tīkla rīki"
 msgid "Graphical user interface for common network utilities"
 msgstr "Izplatītāko tīkla utilītprogrammu grafiska lietotāja saskarne"
 
-#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:449 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "Dīkstāvē"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:455
+#: ../src/callbacks.c:454
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - Tīkla rīki"
 
-#: ../src/callbacks.c:479
+#: ../src/callbacks.c:478
 msgid "Unable to open help file"
 msgstr "Nevar atvērt palīdzības failu"
 
-#: ../src/gnome-nettool.ui.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:2
+msgid "View information about your network"
+msgstr "Aplūkot informāciju par jūsu tīklu"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "A list of domains previously used"
+msgstr "Saraksts ar iepriekš izmantotiem domēniem"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr "Saraksts ar iepriekš izmantotiem datoru nosaukumiem"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "A list of usernames previously used"
+msgstr "Saraksts ar iepriekš izmantotiem lietotājvārdiem"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "Historically used domains"
+msgstr "Vēsturiski izmantotie domēni"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used hostnames"
+msgstr "Vēsturiski izmantotie datoru nosaukumi"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "Historically used usernames"
+msgstr "Vēsturiski izmantotie lietotājvārdi"
+
+#: ../data/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "0"
 
-#: ../src/gnome-nettool.ui.h:3
+#: ../data/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "0%"
 
-#: ../src/gnome-nettool.ui.h:4
+#: ../data/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.ui.h:5
+#: ../data/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>IP informācija</b>"
 
-#: ../src/gnome-nettool.ui.h:6
+#: ../data/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>Interfeisa informācija</b>"
 
-#: ../src/gnome-nettool.ui.h:7
+#: ../data/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>Interfeisa statistika</b>"
 
-#: ../src/gnome-nettool.ui.h:8
+#: ../data/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Apceļošanas laika statistika </b>"
 
-#: ../src/gnome-nettool.ui.h:9
+#: ../data/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Pārraides statistika</b>"
 
-#: ../src/gnome-nettool.ui.h:10
+#: ../data/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "Aktīvie tīkla pakalpojumi"
 
-#: ../src/gnome-nettool.ui.h:11
+#: ../data/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "Vidējais:"
 
-#: ../src/gnome-nettool.ui.h:12
+#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Pīkstiens pie kļūdas"
 
-#: ../src/gnome-nettool.ui.h:13
+#: ../data/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "Attīrīt _vēsturi"
 
-#: ../src/gnome-nettool.ui.h:14
+#: ../data/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "Sadursmes:"
 
-#: ../src/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "Kopēt kā teksta _ziņojumu"
 
-#: ../src/gnome-nettool.ui.h:16
+#: ../data/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "Informācija"
 
-#: ../src/gnome-nettool.ui.h:17
+#: ../data/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "Ierīces"
 
-#: ../src/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "Ierīces - Tīkla rīki"
 
-#: ../src/gnome-nettool.ui.h:19
+#: ../data/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "Rādīt:"
 
-#: ../src/gnome-nettool.ui.h:20
+#: ../data/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "Domēna adrese:"
 
-#: ../src/gnome-nettool.ui.h:21
+#: ../data/gnome-nettool.ui.h:21
 msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
@@ -141,278 +170,276 @@ msgstr ""
 "Ievadiet domēna adresi, lai uzmeklētu tā whois informāciju. Piemēram, www."
 "domain.com vai 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:22
+#: ../data/gnome-nettool.ui.h:22
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
-"Ievadiet tīkla adresi, lai finger to lietotāju. Piemēram: www.domain.com "
-"vai 192.168.2.1"
+"Ievadiet tīkla adresi, lai finger to lietotāju. Piemēram: www.domain.com vai "
+"192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:23
+#: ../data/gnome-nettool.ui.h:23
 msgid ""
 "Enter the network address to lookup. For example: www.domain.com or "
 "192.168.2.1"
 msgstr ""
-"Ievadiet tīkla adresi, ko uzmeklēt. Piemēram: www.domain.com vai "
-"192.168.2.1"
+"Ievadiet tīkla adresi, ko uzmeklēt. Piemēram: www.domain.com vai 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:24
+#: ../data/gnome-nettool.ui.h:24
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Ievadiet tīkla adresei, kuru ping. Piemēram: www.domain.com vai 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:25
+#: ../data/gnome-nettool.ui.h:25
 msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
 msgstr ""
-"Ievadiet tīkla adresi, lai skenētu portus. Piemēram: www.domain.com "
-"vai 192.168.2.1"
+"Ievadiet tīkla adresi, lai skenētu portus. Piemēram: www.domain.com vai "
+"192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:26
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
 "Ievadiet tīkla adresi, lai izsekotu maršrutu līdz tai. Piemēram: www.domain."
-"com "
-"vai 192.168.2.1"
+"com vai 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:27
 msgid "Enter the user to finger"
 msgstr "Ievadiet lietotāju, kuru finger"
 
-#: ../src/gnome-nettool.ui.h:28 ../src/main.c:814
+#: ../data/gnome-nettool.ui.h:28 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "Finger izvads"
 
-#: ../src/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "Aparatūras adrese:"
 
-#: ../src/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "Saimnieks"
 
-#: ../src/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "Savienojuma ātrums:"
 
-#: ../src/gnome-nettool.ui.h:33 ../src/main.c:734
+#: ../data/gnome-nettool.ui.h:33 ../src/main.c:734
 msgid "Lookup"
 msgstr "Lookup"
 
-#: ../src/gnome-nettool.ui.h:34
+#: ../data/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "Lookup izvads"
 
-#: ../src/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "MPB:"
 
-#: ../src/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "Maksimums:"
 
-#: ../src/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "Minimums:"
 
-#: ../src/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "Multiraides informācija"
 
-#: ../src/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "Multiraide:"
 
-#: ../src/gnome-nettool.ui.h:40 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "Netstat izvads"
 
-#: ../src/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "Tīkla adrese"
 
-#: ../src/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "Nav pieejams"
 
-#: ../src/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "Tikai"
 
-#: ../src/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "Finger izvads"
 
-#: ../src/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "Lookup izvads"
 
-#: ../src/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "Net stat izvads"
 
-#: ../src/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "Portu skanēšanas izvads"
 
-#: ../src/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "Traceroute izvads"
 
-#: ../src/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "Whois izvads"
 
-#: ../src/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "Saņemtās paketes:"
 
-#: ../src/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "Nosūtītās paketes:"
 
-#: ../src/gnome-nettool.ui.h:53 ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "Portu skanēšana"
 
-#: ../src/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "Portu skanēšanas izvads"
 
-#: ../src/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "Saņemti baiti:"
 
-#: ../src/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "Saņemtas paketes:"
 
-#: ../src/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "Saņemšanas kļūdas:"
 
-#: ../src/gnome-nettool.ui.h:59
+#: ../data/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "Maršrutēšanas tabulas informācija"
 
-#: ../src/gnome-nettool.ui.h:60 ../src/main.c:619
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:619
 msgid "Scan"
 msgstr "Skanēt"
 
-#: ../src/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "Nosūtīt:"
 
-#: ../src/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "Stāvoklis:"
 
-#: ../src/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "Veiksmīgās paketes:"
 
-#: ../src/gnome-nettool.ui.h:64 ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "Izsekot"
 
-#: ../src/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "Izsekot maršrutu"
 
-#: ../src/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "Traceroute izvads"
 
-#: ../src/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "Nosūtīšanas kļūdas:"
 
-#: ../src/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "Nosūtīti baiti:"
 
-#: ../src/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "Nosūtītas paketes:"
 
-#: ../src/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "Neierobežoti daudz pieprasījumus"
 
-#: ../src/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "Lietotājs"
 
-#: ../src/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "Lietotāja vārds"
 
-#: ../src/gnome-nettool.ui.h:73 ../src/main.c:920
+#: ../data/gnome-nettool.ui.h:73 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "Whois izvads"
 
-#: ../src/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "_Konfigurēt"
 
-#: ../src/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "_Domēna adrese:"
 
-#: ../src/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "R_ediģēt"
 
-#: ../src/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "_Palīdzība"
 
-#: ../src/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "_Informācijas tips:"
 
-#: ../src/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "_Tīkla adrese:"
 
-#: ../src/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "_Tīkla ierīce:"
 
-#: ../src/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "_Rīks"
 
-#: ../src/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "_Lietotājvārds:"
 
-#: ../src/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "pieprasījumus"
 
@@ -953,10 +980,6 @@ msgid ""
 "system"
 msgstr ""
 "Lai izmantotu šo programmas iespēju, uz jūsu datora ir jābūt uzinstalētai %s"
-
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "Aplūkot informāciju par jūsu tīklu"
 
 #: ../src/finger.c:63
 #, c-format
