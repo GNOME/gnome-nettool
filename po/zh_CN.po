@@ -1,402 +1,436 @@
 # Simplified Chinese translation for gnome-network
-# Copyright (C) YEAR Free Software Foundation, Inc.
+# Copyright (C) 2011 Free Software Foundation, Inc.
 # Funda Wang <fundawang@linux.net.cn>, 2004
 # 甘露(Gan Lu) <rhythm.gan@gmail.com>, 2009
+# 李炜 <lw124124@gmail.com>, 2011
+# YunQiang Su <wzssyqa@gmail.com>, 2011.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool\n"
+"Project-Id-Version: gnome-nettool master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&component=general\n"
-"POT-Creation-Date: 2009-11-21 08:53+0000\n"
-"PO-Revision-Date: 2009-11-29 10:25+0100\n"
-"Last-Translator: Tao Wei <weitao1979@gmail.com>\n"
-"Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
+"POT-Creation-Date: 2011-02-28 13:39+0000\n"
+"PO-Revision-Date: 2011-03-03 20:51+0800\n"
+"Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../src/callbacks.c:323
+#: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
-"开源软件国际化之简体中文组 http://i18n.linux.net.cn, 甘露 (Gan Lu) <rhythm."
-"gan@gmail.com>"
+"Funda Wang <fundawang@linux.net.cn>, 2004\n"
+"甘露 (Gan Lu) <rhythm.gan@gmail.com>, 2009\n"
+"李炜 <lw124124@gmail.com>, 2011\n"
+"YunQiang Su <wzssyqa@gmail.com>, 2011"
 
 #. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:330
+#: ../src/callbacks.c:339
 #, c-format
 msgid "Copyright © 2003-2008 %s"
 msgstr "版权所有 © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:334 ../src/callbacks.c:335
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
+#: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "网络工具"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:346
 msgid "Graphical user interface for common network utilities"
 msgstr "网络公共工具的图形用户界面"
 
-#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "空闲"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:455
+#: ../src/callbacks.c:463
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - 网络工具"
 
-#: ../src/callbacks.c:479
+#: ../src/callbacks.c:487
 msgid "Unable to open help file"
 msgstr "无法打开帮助文件"
 
-#: ../src/gnome-nettool.ui.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:2
+msgid "View information about your network"
+msgstr "查看您的网络的信息"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "A list of domains previously used"
+msgstr "曾用域名列表"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr "曾用主机名列表"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "A list of usernames previously used"
+msgstr "曾用用户名列表"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "Historically used domains"
+msgstr "以前曾经使用过的域名"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used hostnames"
+msgstr "以前曾经使用过的主机名"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "Historically used usernames"
+msgstr "以前曾经使用过的用户名"
+
+#: ../data/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "0"
 
-#: ../src/gnome-nettool.ui.h:3
+#: ../data/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "0%"
 
-#: ../src/gnome-nettool.ui.h:4
+#: ../data/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.ui.h:5
+#: ../data/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>IP 信息</b>"
 
-#: ../src/gnome-nettool.ui.h:6
+#: ../data/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>接口信息</b>"
 
-#: ../src/gnome-nettool.ui.h:7
+#: ../data/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>接口统计</b>"
 
-#: ../src/gnome-nettool.ui.h:8
+#: ../data/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>往返时间统计</b>"
 
-#: ../src/gnome-nettool.ui.h:9
+#: ../data/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>传送统计</b>"
 
-#: ../src/gnome-nettool.ui.h:10
+#: ../data/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "活跃的网络服务"
 
-#: ../src/gnome-nettool.ui.h:11
+#: ../data/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "平均："
 
-#: ../src/gnome-nettool.ui.h:12
+#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "ping 时响铃"
 
-#: ../src/gnome-nettool.ui.h:13
+#: ../data/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "清除历史(_H)"
 
-#: ../src/gnome-nettool.ui.h:14
+#: ../data/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "冲突："
 
-#: ../src/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "复制为文本报告(_R)"
 
-#: ../src/gnome-nettool.ui.h:16
+#: ../data/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "细节"
 
-#: ../src/gnome-nettool.ui.h:17
+#: ../data/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "设备"
 
-#: ../src/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "设备 - 网络工具"
 
-#: ../src/gnome-nettool.ui.h:19
+#: ../data/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "显示："
 
-#: ../src/gnome-nettool.ui.h:20
+#: ../data/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "域地址"
 
-#: ../src/gnome-nettool.ui.h:21
+#: ../data/gnome-nettool.ui.h:21
 msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
 msgstr "输入要查阅 whois 信息的域地址。例如：www.domain.com 或 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:22
+#: ../data/gnome-nettool.ui.h:22
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr "输入要 finger 用户的网络地址。例如：www.domain.com 或 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:23
+#: ../data/gnome-nettool.ui.h:23
 msgid ""
 "Enter the network address to lookup. For example: www.domain.com or "
 "192.168.2.1"
 msgstr "输入要查阅的网络地址。例如：www.domain.com 或 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:24
+#: ../data/gnome-nettool.ui.h:24
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr "输入要 ping 的网络地址。例如：www.domain.com 或 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:25
+#: ../data/gnome-nettool.ui.h:25
 msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
 msgstr "输入要扫描开放端口的网络地址。例如：www.domain.com 或 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:26
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr "输入要跟踪路由的网络地址。例如：www.domain.com 或 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:27
 msgid "Enter the user to finger"
 msgstr "输入要 finger 的用户。"
 
-#: ../src/gnome-nettool.ui.h:28 ../src/main.c:814
+#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "Finger 输出"
 
-#: ../src/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "硬件地址："
 
-#: ../src/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "主机"
 
-#: ../src/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "链接速度："
 
-#: ../src/gnome-nettool.ui.h:33 ../src/main.c:734
+#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
 msgid "Lookup"
 msgstr "查找"
 
-#: ../src/gnome-nettool.ui.h:34
+#: ../data/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "查找输出"
 
-#: ../src/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "MTU："
 
-#: ../src/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "最大："
 
-#: ../src/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "最小："
 
-#: ../src/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "多播信息"
 
-#: ../src/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "多播："
 
-#: ../src/gnome-nettool.ui.h:40 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "网络统计"
 
-#: ../src/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "网络统计输出"
 
-#: ../src/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "网络地址"
 
-#: ../src/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "不可用"
 
-#: ../src/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "仅"
 
-#: ../src/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "finger 的输出"
 
-#: ../src/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "查找的输出"
 
-#: ../src/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "网络统计的输出"
 
-#: ../src/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "端口扫描的输出"
 
-#: ../src/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "traceroute 的输出"
 
-#: ../src/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "whois 的输出"
 
-#: ../src/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "收到包数："
 
-#: ../src/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "传送包数："
 
-#: ../src/gnome-nettool.ui.h:53 ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "端口扫描"
 
-#: ../src/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "端口扫描输出"
 
-#: ../src/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "接收字节数："
 
-#: ../src/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "接收包数："
 
-#: ../src/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "接收错误数："
 
-#: ../src/gnome-nettool.ui.h:59
+#: ../data/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "路由表信息"
 
-#: ../src/gnome-nettool.ui.h:60 ../src/main.c:619
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
 msgid "Scan"
 msgstr "扫描"
 
-#: ../src/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "发送："
 
-#: ../src/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "状态："
 
-#: ../src/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "成功传送的包数："
 
-#: ../src/gnome-nettool.ui.h:64 ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "跟踪"
 
-#: ../src/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "Traceroute 输出"
 
-#: ../src/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "传送错误数："
 
-#: ../src/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "传送字节数："
 
-#: ../src/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "传送包数："
 
-#: ../src/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "发送无限制请求"
 
-#: ../src/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "用户"
 
-#: ../src/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "用户名"
 
-#: ../src/gnome-nettool.ui.h:73 ../src/main.c:920
+#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "Whois 输出"
 
-#: ../src/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "配置(_C)"
 
-#: ../src/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "域地址(_D)："
 
-#: ../src/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "编辑(_E)"
 
-#: ../src/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: ../src/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "信息类型(_I)："
 
-#: ../src/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "网络地址(_N)："
 
-#: ../src/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "网络设备(_N)："
 
-#: ../src/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "工具(_T)"
 
-#: ../src/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "用户名(_U)："
 
-#: ../src/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "毫秒"
 
-#: ../src/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "请求"
 
@@ -437,82 +471,82 @@ msgstr "未知接口"
 msgid "Network Devices Not Found"
 msgstr "网络设备未找到"
 
-#: ../src/info.c:392 ../src/info.c:395
+#: ../src/info.c:400 ../src/info.c:403
 msgid "Unknown"
 msgstr "未知"
 
-#: ../src/info.c:466
+#: ../src/info.c:474
 msgid "Active"
 msgstr "活动"
 
-#: ../src/info.c:468
+#: ../src/info.c:476
 msgid "Inactive"
 msgstr "不活动"
 
-#: ../src/info.c:473
+#: ../src/info.c:481
 msgid "Loopback"
 msgstr "回环"
 
-#: ../src/info.c:482
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "已启用"
 
-#: ../src/info.c:484
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "已禁用"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:573
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "网络设备：\t%s\n"
 
-#: ../src/info.c:574
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "硬件地址：\t%s\n"
 
-#: ../src/info.c:575
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "多播：\t%s\n"
 
-#: ../src/info.c:576
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU：\t%s\n"
 
-#: ../src/info.c:577
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "连接速度：\t%s\n"
 
-#: ../src/info.c:578
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "状态：\t%s\n"
 
-#: ../src/info.c:580
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "传送包数：\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "传送错误数：\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "接收包数：\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "接收错误数：\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "冲突：\t%s\n"
@@ -636,53 +670,53 @@ msgstr "广播"
 msgid "Scope"
 msgstr "范围"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Default Information"
 msgstr "默认信息"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "Internet Address"
 msgstr "Internet 地址"
 
-#: ../src/main.c:671
+#: ../src/main.c:669
 msgid "Canonical Name"
 msgstr "规范名称"
 
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "CPU / OS Type"
 msgstr "CPU/OS 类型"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:674
+#: ../src/main.c:672
 msgid "Mailbox Exchange"
 msgstr "邮箱交换"
 
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Mailbox Information"
 msgstr "邮箱信息"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:677
+#: ../src/main.c:675
 msgid "Name Server"
 msgstr "名字服务器"
 
-#: ../src/main.c:678
+#: ../src/main.c:676
 msgid "Host name for Address"
 msgstr "地址对应的主机名"
 
-#: ../src/main.c:679
+#: ../src/main.c:677
 msgid "Start-of-authority"
 msgstr "开始授权"
 
-#: ../src/main.c:680
+#: ../src/main.c:678
 msgid "Text Information"
 msgstr "文本信息"
 
-#: ../src/main.c:681
+#: ../src/main.c:679
 msgid "Well Known Services"
 msgstr "常用服务"
 
-#: ../src/main.c:682
+#: ../src/main.c:680
 msgid "Any / All Information"
 msgstr "任一/所有表信息"
 
@@ -798,32 +832,32 @@ msgstr "运行"
 msgid "Time (ms):"
 msgstr "时间(毫秒)："
 
-#: ../src/ping.c:171
+#: ../src/ping.c:172
 msgid "Seq. No.:"
 msgstr "序号："
 
-#: ../src/ping.c:254
+#: ../src/ping.c:257
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "向 %s 发送 ping 请求"
 
-#: ../src/ping.c:569
+#: ../src/ping.c:572
 msgid "Bytes"
 msgstr "字节"
 
-#: ../src/ping.c:576
+#: ../src/ping.c:579
 msgid "Source"
 msgstr "源"
 
-#: ../src/ping.c:584
+#: ../src/ping.c:587
 msgid "Seq"
 msgstr "序列"
 
-#: ../src/ping.c:594
+#: ../src/ping.c:597
 msgid "Time"
 msgstr "时间"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:605
 msgid "Units"
 msgstr "单位"
 
@@ -831,37 +865,37 @@ msgstr "单位"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:628
+#: ../src/ping.c:631
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "字节\t源\t序列\t时间\t单位\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:643
+#: ../src/ping.c:646
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "最小时间：\t%s 毫秒\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:647
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "平均时间：\t%s 毫秒\n"
 
-#: ../src/ping.c:645
+#: ../src/ping.c:648
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "最大时间：\t%s 毫秒\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:650
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "传送包数：\t%s\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:652
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "接收包数：\t%s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:655
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "成功传送的包数：\t%s\n"
@@ -934,10 +968,6 @@ msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr "为了使用此程序的功能，您的系统中必须安装 %s"
-
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "查看您的网络的信息"
 
 #: ../src/finger.c:63
 #, c-format
