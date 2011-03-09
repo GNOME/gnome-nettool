@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-25 13:42+0100\n"
-"PO-Revision-Date: 2010-02-25 01:58+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"POT-Creation-Date: 2011-03-09 20:56+0100\n"
+"PO-Revision-Date: 2011-03-09 20:57+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,120 +21,148 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../src/callbacks.c:323
+#: ../src/callbacks.c:332
 msgid "translator-credits"
-msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010"
+msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010, 2011"
 
 #. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:330
+#: ../src/callbacks.c:339
 #, c-format
 msgid "Copyright © 2003-2008 %s"
 msgstr "Copyright © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:334 ../src/callbacks.c:335
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
+#: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Narzędzia sieciowe"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:346
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 "Graficzny interfejs użytkownika dla często używanych narzędzi sieciowych"
 
-#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "Bezczynny"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:455
+#: ../src/callbacks.c:463
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - narzędzia sieciowe"
 
-#: ../src/callbacks.c:479
+#: ../src/callbacks.c:487
 msgid "Unable to open help file"
 msgstr "Nie można otworzyć pliku pomocy"
 
-#: ../src/gnome-nettool.ui.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:2
+msgid "View information about your network"
+msgstr "Wyświetlanie informacji na temat własnej sieci"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "A list of domains previously used"
+msgstr "Lista poprzednio użytych domen"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr "Lista poprzednio użytych nazw komputerów"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "A list of usernames previously used"
+msgstr "Lista poprzednio użytych nazw użytkowników"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "Historically used domains"
+msgstr "Poprzednio użyte domeny"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used hostnames"
+msgstr "Poprzednio użyte nazwy komputerów"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "Historically used usernames"
+msgstr "Poprzednio użyte nazwy użytkowników"
+
+#: ../data/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "0"
 
-#: ../src/gnome-nettool.ui.h:3
+#: ../data/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "0%"
 
-#: ../src/gnome-nettool.ui.h:4
+#: ../data/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.ui.h:5
+#: ../data/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>Adres IP</b>"
 
-#: ../src/gnome-nettool.ui.h:6
+#: ../data/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>Interfejs</b>"
 
-#: ../src/gnome-nettool.ui.h:7
+#: ../data/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>Statystyki interfejsu</b>"
 
-#: ../src/gnome-nettool.ui.h:8
+#: ../data/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Statystyki czasu powrotu</b>"
 
-#: ../src/gnome-nettool.ui.h:9
+#: ../data/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Statystyki transmisji</b>"
 
-#: ../src/gnome-nettool.ui.h:10
+#: ../data/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "Aktywne usługi sieciowe"
 
-#: ../src/gnome-nettool.ui.h:11
+#: ../data/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "Średnio:"
 
-#: ../src/gnome-nettool.ui.h:12
+#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Dźwięk podczas pingowania"
 
-#: ../src/gnome-nettool.ui.h:13
+#: ../data/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "Wyczyść _historię"
 
-#: ../src/gnome-nettool.ui.h:14
+#: ../data/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "Kolizje:"
 
-#: ../src/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "Skopiuj jako _raport tekstowy"
 
-#: ../src/gnome-nettool.ui.h:16
+#: ../data/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "Szczegóły"
 
-#: ../src/gnome-nettool.ui.h:17
+#: ../data/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "Urządzenia"
 
-#: ../src/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "Urządzenia - narzędzia sieciowe"
 
-#: ../src/gnome-nettool.ui.h:19
+#: ../data/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "Wyświetlanie:"
 
-#: ../src/gnome-nettool.ui.h:20
+#: ../data/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "Adres domeny"
 
-#: ../src/gnome-nettool.ui.h:21
+#: ../data/gnome-nettool.ui.h:21
 msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
@@ -141,7 +170,7 @@ msgstr ""
 "Proszę wprowadzić adres sieciowy do wyszukania jego informacji whois. Na "
 "przykład: www.domena.com lub 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:22
+#: ../data/gnome-nettool.ui.h:22
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
@@ -149,7 +178,7 @@ msgstr ""
 "Proszę wprowadzić adres sieciowy użytkownika dla polecenia finger. Na "
 "przykład: auth.domena.com lub 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:23
+#: ../data/gnome-nettool.ui.h:23
 msgid ""
 "Enter the network address to lookup. For example: www.domain.com or "
 "192.168.2.1"
@@ -157,14 +186,14 @@ msgstr ""
 "Proszę wprowadzić adres sieciowy do wyszukania. Na przykład: www.domena.com "
 "lub 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:24
+#: ../data/gnome-nettool.ui.h:24
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Proszę wprowadzić adres sieciowy do odpytania. Na przykład: www.domena.com "
 "lub 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:25
+#: ../data/gnome-nettool.ui.h:25
 msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
@@ -172,7 +201,7 @@ msgstr ""
 "Proszę wprowadzić adres sieciowy do wyszukania otwartych portów. Na "
 "przykład: www.domena.com lub 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:26
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -180,239 +209,239 @@ msgstr ""
 "Proszę wprowadzić adres sieciowy do śledzenia trasy. Na przykład: www.domena."
 "com lub 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:27
 msgid "Enter the user to finger"
 msgstr "Proszę wprowadzić użytkownika dla polecenia finger"
 
-#: ../src/gnome-nettool.ui.h:28 ../src/main.c:814
+#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "Wyjście finger"
 
-#: ../src/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "Adres sprzętowy:"
 
-#: ../src/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "Komputer"
 
-#: ../src/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "Prędkość połączenia:"
 
-#: ../src/gnome-nettool.ui.h:33 ../src/main.c:734
+#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
 msgid "Lookup"
 msgstr "Przeszukanie"
 
-#: ../src/gnome-nettool.ui.h:34
+#: ../data/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "Wyjście przeszukania"
 
-#: ../src/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "Maksimum:"
 
-#: ../src/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "Minimum:"
 
-#: ../src/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "Informacja multicast"
 
-#: ../src/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../src/gnome-nettool.ui.h:40 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "Wyjście netstat"
 
-#: ../src/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "Adres sieciowy"
 
-#: ../src/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "Niedostępne"
 
-#: ../src/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "Tylko"
 
-#: ../src/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "Wyjście dla finger"
 
-#: ../src/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "Wyjście dla przeszukania"
 
-#: ../src/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "Wyjście dla net stat"
 
-#: ../src/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "Wyjście dla skanowania portów"
 
-#: ../src/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "Wyjście dla traceroute"
 
-#: ../src/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "Wyjścia dla whois"
 
-#: ../src/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "Odebrane pakiety:"
 
-#: ../src/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "Przesłane pakiety:"
 
-#: ../src/gnome-nettool.ui.h:53 ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "Skanowanie portów"
 
-#: ../src/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "Wyjście skanowania portów"
 
-#: ../src/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "Odebrane bajty:"
 
-#: ../src/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "Odebrane pakiety:"
 
-#: ../src/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "Błędy odbioru:"
 
-#: ../src/gnome-nettool.ui.h:59
+#: ../data/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "Tablicy routingu"
 
-#: ../src/gnome-nettool.ui.h:60 ../src/main.c:619
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
 msgid "Scan"
 msgstr "Skanuj"
 
-#: ../src/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "Wyślij:"
 
-#: ../src/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "Stan:"
 
-#: ../src/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "Udane pakiety:"
 
-#: ../src/gnome-nettool.ui.h:64 ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "Ślad"
 
-#: ../src/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "Wyjście traceroute"
 
-#: ../src/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "Błędy przesyłania:"
 
-#: ../src/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "Przesłane bajty:"
 
-#: ../src/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "Przesłane pakiety:"
 
-#: ../src/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "Nieograniczona liczba żądań"
 
-#: ../src/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "Użytkownik"
 
-#: ../src/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "Nazwa użytkownika"
 
-#: ../src/gnome-nettool.ui.h:73 ../src/main.c:920
+#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "Wyjście whois"
 
-#: ../src/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "S_konfiguruj"
 
-#: ../src/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "_Nazwa domeny:"
 
-#: ../src/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "_Edycja"
 
-#: ../src/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "Pomo_c"
 
-#: ../src/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "Typ _informacji:"
 
-#: ../src/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "_Adres sieciowy:"
 
-#: ../src/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "_Urządzenie sieciowe:"
 
-#: ../src/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "_Narzędzie"
 
-#: ../src/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "_Nazwa użytkownika:"
 
-#: ../src/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "żądań"
 
@@ -453,82 +482,82 @@ msgstr "Nieznany interfejs"
 msgid "Network Devices Not Found"
 msgstr "Nie odnaleziono urządzeń sieciowych"
 
-#: ../src/info.c:392 ../src/info.c:395
+#: ../src/info.c:400 ../src/info.c:403
 msgid "Unknown"
 msgstr "Nieznane"
 
-#: ../src/info.c:466
+#: ../src/info.c:474
 msgid "Active"
 msgstr "Aktywny"
 
-#: ../src/info.c:468
+#: ../src/info.c:476
 msgid "Inactive"
 msgstr "Nieaktywny"
 
-#: ../src/info.c:473
+#: ../src/info.c:481
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:482
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Włączony"
 
-#: ../src/info.c:484
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Wyłączony"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:573
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Urządzenie sieciowe:\t%s\n"
 
-#: ../src/info.c:574
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Adres sprzętowy:\t%s\n"
 
-#: ../src/info.c:575
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:576
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:577
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Prędkość połączenia:\t$%s\n"
 
-#: ../src/info.c:578
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stan:\t%s\n"
 
-#: ../src/info.c:580
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Przesłane pakiety:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Błędy przesyłania:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Odebrane pakiety:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Błędy odbioru:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kolizje:\t%s\n"
@@ -632,7 +661,7 @@ msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Plik \"%s\" nie istnieje, proszę sprawdzić, czy program gnome-nettool jest "
+"Plik \"%s\" nie istnieje. Proszę sprawdzić, czy program gnome-nettool jest "
 "poprawnie zainstalowany"
 
 #: ../src/main.c:482 ../src/netstat.c:443
@@ -645,7 +674,7 @@ msgstr "Adres IP"
 
 #: ../src/main.c:496
 msgid "Netmask / Prefix"
-msgstr "Maska sieci / Prefiks"
+msgstr "Maska sieci/przedrostek"
 
 #: ../src/main.c:503
 msgid "Broadcast"
@@ -655,55 +684,55 @@ msgstr "Rozgłoszenie"
 msgid "Scope"
 msgstr "Zakres"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Default Information"
 msgstr "Informacje domyślne"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "Internet Address"
 msgstr "Adres internetowy"
 
-#: ../src/main.c:671
+#: ../src/main.c:669
 msgid "Canonical Name"
 msgstr "Nazwa kanoniczna (CNAME)"
 
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "CPU / OS Type"
 msgstr "Procesor / System operacyjny"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:674
+#: ../src/main.c:672
 msgid "Mailbox Exchange"
 msgstr "Mailbox Exchange"
 
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Mailbox Information"
 msgstr "Informacje o skrzynce pocztowej"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:677
+#: ../src/main.c:675
 msgid "Name Server"
 msgstr "Serwer nazw"
 
-#: ../src/main.c:678
+#: ../src/main.c:676
 msgid "Host name for Address"
 msgstr "Nazwa komputera dla adresu"
 
-#: ../src/main.c:679
+#: ../src/main.c:677
 msgid "Start-of-authority"
 msgstr "Start-of-authority (SOA)"
 
-#: ../src/main.c:680
+#: ../src/main.c:678
 msgid "Text Information"
 msgstr "Informacje tekstowe"
 
-#: ../src/main.c:681
+#: ../src/main.c:679
 msgid "Well Known Services"
 msgstr "Dobrze znane usługi"
 
-#: ../src/main.c:682
+#: ../src/main.c:680
 msgid "Any / All Information"
-msgstr "Jakiekolwiek / Wszystkie informacje"
+msgstr "Jakiekolwiek/wszystkie informacje"
 
 #: ../src/netstat.c:122
 msgid "Getting routing table"
@@ -723,7 +752,7 @@ msgstr "Źródło IP"
 
 #: ../src/netstat.c:458
 msgid "Port/Service"
-msgstr "Port/Usługa"
+msgstr "Port/usługa"
 
 #: ../src/netstat.c:466 ../src/scan.c:314
 msgid "State"
@@ -815,32 +844,32 @@ msgstr "Uruchom"
 msgid "Time (ms):"
 msgstr "Czas (ms):"
 
-#: ../src/ping.c:171
+#: ../src/ping.c:172
 msgid "Seq. No.:"
 msgstr "Seq. No.:"
 
-#: ../src/ping.c:254
+#: ../src/ping.c:257
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Wysyłanie żądania ping do %s"
 
-#: ../src/ping.c:569
+#: ../src/ping.c:572
 msgid "Bytes"
 msgstr "Bajty"
 
-#: ../src/ping.c:576
+#: ../src/ping.c:579
 msgid "Source"
 msgstr "Źródło"
 
-#: ../src/ping.c:584
+#: ../src/ping.c:587
 msgid "Seq"
 msgstr "Sek"
 
-#: ../src/ping.c:594
+#: ../src/ping.c:597
 msgid "Time"
 msgstr "Czas"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:605
 msgid "Units"
 msgstr "Jednostki"
 
@@ -848,37 +877,37 @@ msgstr "Jednostki"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:628
+#: ../src/ping.c:631
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bajty\tŹródło\tSekwencje\tCzas\tJednostki\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:643
+#: ../src/ping.c:646
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimalny czas:\t%s ms\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:647
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Średni czas:\t%s ms\n"
 
-#: ../src/ping.c:645
+#: ../src/ping.c:648
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maksymalny czas:\t%s ms\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:650
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Przesłane pakiety:\t%s\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:652
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Odebrane pakiety:\t%s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:655
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Udane pakiety:\t%s\n"
@@ -951,10 +980,6 @@ msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr "Aby użyć tej funkcji programu, należy zainstalować program %s"
-
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "Wyświetlanie informacji na temat własnej sieci"
 
 #: ../src/finger.c:63
 #, c-format
