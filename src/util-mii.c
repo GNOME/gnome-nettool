@@ -39,6 +39,10 @@
  * http://www.national.com/pf/DP/DP83840.html
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifdef __linux__
 #include <glib.h>
 #include <glib/gprintf.h>

@@ -25,9 +25,6 @@
  
 #include <glib.h>
 #include <gtk/gtk.h>
-#ifdef HAVE_CONFIG_H
-#  include <config.h>
-#endif
 
 #if (GLIB_MINOR_VERSION < 2)
 
