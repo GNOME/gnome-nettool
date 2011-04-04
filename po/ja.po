@@ -1,66 +1,95 @@
 # gnome-nettool (a.k.a gnome-network) ja.po.
-# Copyright (C) 1999-2010 Free Software Foundation, Inc.
+# Copyright (C) 1999-2011 gnome-nettool's COPYRIGHT HOLDER
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 1999.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2011.
+# Takayoshi OKANO <kano@na.rim.or.jp>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"nettool&component=general\n"
-"POT-Creation-Date: 2010-09-16 16:24+0000\n"
-"PO-Revision-Date: 2010-08-12 14:39+0900\n"
-"Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-03 03:14+0000\n"
+"PO-Revision-Date: 2011-04-03 14:03+0900\n"
+"Last-Translator: Takayoshi OKANO <kano@na.rim.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 
-#: ../src/callbacks.c:323
+#: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
 "相花 毅 <takeshi.aihana@gmail.com>\n"
 "Yuusuke Tahara <tahara@gnome.gr.jp>\n"
 "やまねひでき <henrich@debian.or.jp>\n"
+"Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>\n"
+"Takayoshi OKANO <kano@na.rim.or.jp>\n"
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp/>"
 
 #. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:330
+#: ../src/callbacks.c:339
 #, c-format
 msgid "Copyright © 2003-2008 %s"
 msgstr "Copyright © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:334 ../src/callbacks.c:335
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
 #: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "ネットワーク・ツール"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:346
 msgid "Graphical user interface for common network utilities"
 msgstr ""
 "いろいろなネットワーク・ユーティリティに対応したグラフィカルなインタフェース"
 "を提供します。"
 
-#: ../src/callbacks.c:449 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "待機中です"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:454
+#: ../src/callbacks.c:463
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - ネットワーク・ツール"
 
-#: ../src/callbacks.c:478
+#: ../src/callbacks.c:487
 msgid "Unable to open help file"
 msgstr "ヘルプ・ファイルを開けません"
 
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
 msgstr "お使いのネットワークに関する情報を表示します"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "A list of domains previously used"
+msgstr "前に使われたドメインの一覧"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr "前に使われたホスト名の一覧"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "A list of usernames previously used"
+msgstr "前に使われたユーザ名の一覧"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "Historically used domains"
+msgstr "かつて使われたドメイン"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used hostnames"
+msgstr "かつて使われたホスト名"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "Historically used usernames"
+msgstr "かつて使われたユーザ名"
 
 #: ../data/gnome-nettool.ui.h:1
 msgid "0"
@@ -190,7 +219,7 @@ msgstr ""
 msgid "Enter the user to finger"
 msgstr "finger するユーザを入力してください"
 
-#: ../data/gnome-nettool.ui.h:28 ../src/main.c:814
+#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
 msgid "Finger"
 msgstr "Finger"
 
@@ -210,7 +239,7 @@ msgstr "ホスト"
 msgid "Link speed:"
 msgstr "リンクのスピード:"
 
-#: ../data/gnome-nettool.ui.h:33 ../src/main.c:734
+#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -318,7 +347,7 @@ msgstr "受信エラーの総数:"
 msgid "Routing Table Information"
 msgstr "経路テーブルの情報"
 
-#: ../data/gnome-nettool.ui.h:60 ../src/main.c:619
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
 msgid "Scan"
 msgstr "スキャン"
 
@@ -370,7 +399,7 @@ msgstr "ユーザ"
 msgid "User name"
 msgstr "ユーザ名"
 
-#: ../data/gnome-nettool.ui.h:73 ../src/main.c:920
+#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
 msgid "Whois"
 msgstr "Whois"
 
@@ -459,82 +488,82 @@ msgstr "不明なインタフェース"
 msgid "Network Devices Not Found"
 msgstr "ネットワーク・デバイスが見つかりませんでした"
 
-#: ../src/info.c:392 ../src/info.c:395
+#: ../src/info.c:400 ../src/info.c:403
 msgid "Unknown"
 msgstr "不明"
 
-#: ../src/info.c:466
+#: ../src/info.c:474
 msgid "Active"
 msgstr "有効"
 
-#: ../src/info.c:468
+#: ../src/info.c:476
 msgid "Inactive"
 msgstr "無効"
 
-#: ../src/info.c:473
+#: ../src/info.c:481
 msgid "Loopback"
 msgstr "ループバック"
 
-#: ../src/info.c:482
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "利用可"
 
-#: ../src/info.c:484
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "利用不可"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:573
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "ネットワーク・デバイス:\t%s\n"
 
-#: ../src/info.c:574
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "ハードウェア (MAC) アドレス:\t%s\n"
 
-#: ../src/info.c:575
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "マルチキャスト:\t%s\n"
 
-#: ../src/info.c:576
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:577
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "リンク・スピード:\t%s\n"
 
-#: ../src/info.c:578
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "状態:\t%s\n"
 
-#: ../src/info.c:580
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "転送パケット数:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "転送エラー数:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "受信パケット数:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "受信エラー数:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "衝突した回数:\t%s\n"
@@ -597,7 +626,8 @@ msgstr "HOST"
 
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "netstat 情報を取得する (利用可能なコマンド: route, active, multicast)"
+msgstr ""
+"netstat 情報を取得する (利用可能なコマンド: route, active, multicast)。"
 
 #: ../src/main.c:91
 msgid "COMMAND"
@@ -660,53 +690,53 @@ msgstr "ブロードキャスト"
 msgid "Scope"
 msgstr "スコープ"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Default Information"
 msgstr "デフォルトの情報"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "Internet Address"
 msgstr "インターネット・アドレス (A)"
 
-#: ../src/main.c:671
+#: ../src/main.c:669
 msgid "Canonical Name"
 msgstr "カノニカル名 (CNAME)"
 
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "CPU / OS Type"
 msgstr "CPU / OS の種類"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:674
+#: ../src/main.c:672
 msgid "Mailbox Exchange"
-msgstr "メール受信箱の Exhange (MX)"
+msgstr "メール受信箱の Exchange (MX)"
 
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Mailbox Information"
 msgstr "メール受信箱の情報 (MINFO)"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:677
+#: ../src/main.c:675
 msgid "Name Server"
 msgstr "ネーム・サーバ (NS)"
 
-#: ../src/main.c:678
+#: ../src/main.c:676
 msgid "Host name for Address"
 msgstr "アドレスに対するホスト名 (HINFO)"
 
-#: ../src/main.c:679
+#: ../src/main.c:677
 msgid "Start-of-authority"
 msgstr "Start-Of-Authority (SOA)"
 
-#: ../src/main.c:680
+#: ../src/main.c:678
 msgid "Text Information"
 msgstr "文字列の情報 (T)"
 
-#: ../src/main.c:681
+#: ../src/main.c:679
 msgid "Well Known Services"
 msgstr "既知のサービス (WKS)"
 
-#: ../src/main.c:682
+#: ../src/main.c:680
 msgid "Any / All Information"
 msgstr "任意/すべての情報"
 
@@ -820,32 +850,32 @@ msgstr "実行"
 msgid "Time (ms):"
 msgstr "時間 (ミリ秒):"
 
-#: ../src/ping.c:171
+#: ../src/ping.c:172
 msgid "Seq. No.:"
 msgstr "ICMP番号:"
 
-#: ../src/ping.c:254
+#: ../src/ping.c:257
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Ping を %s へ送信中..."
 
-#: ../src/ping.c:569
+#: ../src/ping.c:572
 msgid "Bytes"
 msgstr "バイト数"
 
-#: ../src/ping.c:576
+#: ../src/ping.c:579
 msgid "Source"
 msgstr "要求元"
 
-#: ../src/ping.c:584
+#: ../src/ping.c:587
 msgid "Seq"
 msgstr "ICMP番号"
 
-#: ../src/ping.c:594
+#: ../src/ping.c:597
 msgid "Time"
 msgstr "往復時間"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:605
 msgid "Units"
 msgstr "単位"
 
@@ -853,37 +883,37 @@ msgstr "単位"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:628
+#: ../src/ping.c:631
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "バイト数\tIP-ソース\tICMP番号\t往復時間\t単位\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:643
+#: ../src/ping.c:646
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "往復時間の最小:\t%s ミリ秒\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:647
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "往復時間の平均:\t%s ミリ秒\n"
 
-#: ../src/ping.c:645
+#: ../src/ping.c:648
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "往復時間の最大:\t%s ミリ秒\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:650
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "送信パケット数:\t%s\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:652
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "受信パケット数:\t%s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:655
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "到達したパケットの割合:\t%s\n"
