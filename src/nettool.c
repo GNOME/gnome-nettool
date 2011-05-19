@@ -24,6 +24,7 @@
 #include <string.h>
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <netinet/in.h>
 #include <signal.h>
 #include <errno.h>
 #include <sys/wait.h>
@@ -137,21 +138,21 @@ netinfo_get_ip_version (Netinfo * netinfo)
 				   (GTK_BIN (netinfo->host)))));
 
 	if (strlen (ip) > 0) {
-		host = gethostbyname2 (ip, AF_INET6);
+		host = gethostbyname2 (ip, AF_INET);
 		if (host == NULL) {
-			host = gethostbyname2 (ip, AF_INET);
+			host = gethostbyname2 (ip, AF_INET6);
 			if (host == NULL)
 				return -1;
 			else {
 				g_free (ip);
-				return IPV4;
+				return IPV6;
 			}
 			
 			return -1;
 		}
 		else {
 			g_free (ip);
-			return IPV6;
+			return IPV4;
 		}
 
 	}
