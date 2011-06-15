@@ -21,6 +21,7 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <glib/gprintf.h>
+#include <sys/types.h>
 
 #include "lookup.h"
 #include "utils.h"
