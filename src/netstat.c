@@ -485,8 +485,10 @@ netstat_route_tree_insert (GtkTreeView *widget, gchar *line)
 	g_return_if_fail (line != NULL);
 
 	count = strip_route_line (line, &data);
-#if defined(__FreeBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__DragonFly__)
+#if defined(__FreeBSD__) || defined(__FreeBSD_kernel__) || defined(__NetBSD__) || defined(__DragonFly__)
 	if (count == 6) {
+#elif defined(__OpenBSD__)
+	if (count == 8) {
 #else
 	if ((count == 8) || (count == 7)) {
 #endif
@@ -557,16 +559,25 @@ strip_route_line (gchar * line, netstat_route_data *data)
 	gint count = 0;
 	gchar flags[30];
 	gint ref, use;
-#ifndef __FreeBDD__
+#if !defined (__FreeBSD__) && !defined(__OpenBSD__)
 	gchar dest[50];
 	gchar **items;
 #endif
+#if defined(__OpenBSD__)
+	gint mtu, prio;
+#endif
 
-#if defined(__FreeBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__DragonFly__)
+#if defined(__FreeBSD__) || defined(__FreeBSD_kernel__) || defined(__NetBSD__) || defined(__DragonFly__)
 	count = sscanf (line, NETSTAT_ROUTE_FORMAT,
 			data->destination,
 			data->gateway, flags,
 			&ref, &use, data->iface);
+#elif defined(__OpenBSD__)
+	count = sscanf (line, NETSTAT_ROUTE_FORMAT,
+			data->destination,
+			data->gateway, flags,
+			&ref, &use, &mtu, &prio,
+			data->iface);
 #else
 	count = sscanf (line, NETSTAT_ROUTE_FORMAT,
 			data->destination,
