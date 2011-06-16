@@ -110,12 +110,20 @@ netstat_get_active_option (Netinfo * netinfo)
 	g_return_val_if_fail (netinfo != NULL, NULL);
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (netinfo->routing))) {
+#if defined (__OpenBSD__)
+		if (netinfo_is_ipv6_enable ()) {
+			option = g_strdup ("-rn");
+		} else {
+			option = g_strdup ("-rn -f inet");
+		}
+#else
 		/* Works for Solaris and Linux */
 		if (netinfo_is_ipv6_enable ()) {
 			option = g_strdup ("-rn -A inet -A inet6");
 		} else {
 			option = g_strdup ("-rn -A inet");
 		}
+#endif
 
 		if (netinfo->stbar_text)
 			g_free (netinfo->stbar_text);
