@@ -43,7 +43,6 @@ finger_do (Netinfo * netinfo)
 	const gchar *user = NULL;
 	gchar *command = NULL;
 	gchar *program = NULL;
-	gchar *program_name = NULL;
 	GtkWidget *parent;
 
 	gchar **command_line;
@@ -60,8 +59,8 @@ finger_do (Netinfo * netinfo)
 
 	if (g_ascii_strcasecmp (user, "") != 0)
 		netinfo->stbar_text =
-			g_strdup_printf (_("Getting information of %s on \"%s\""), user,	
-					 g_ascii_strcasecmp (host, "") != 0 ? host : "localhost");	
+			g_strdup_printf (_("Getting information of %s on \"%s\""), user,
+					 g_ascii_strcasecmp (host, "") != 0 ? host : "localhost");
 	else
 		netinfo->stbar_text =
 			g_strdup_printf (_("Getting information of all users on \"%s\""),
@@ -82,11 +81,8 @@ finger_do (Netinfo * netinfo)
 
 	program = util_find_program_in_path ("finger", NULL);
 
-	if (program != NULL) {
-		program_name = g_strdup ("finger");
-	} else {
-		program = util_find_program_dialog ("pinky", parent);
-		program_name = g_strdup ("pinky");
+	if (program == NULL) {
+		program = util_find_program_dialog ("pinky", NULL);
 	}
 
 	if (program != NULL) {
@@ -103,7 +99,7 @@ finger_do (Netinfo * netinfo)
 		} else if (! user_is_set && host_is_set) {
 			command_arg = g_strdup_printf ("@%s", host);
 		}
-		
+
 		num_terms = 3;
 		if (command_arg != NULL)
 			num_terms++;
@@ -116,7 +112,7 @@ finger_do (Netinfo * netinfo)
 		command_line = g_new (gchar *, num_terms + 1);
 		i = 0;
 		command_line[i++] = g_strdup (program);
-		command_line[i++] = g_strdup (program_name);
+		command_line[i++] = g_strdup (program);
 		if (command_options != NULL) {
 			for (j = 0; command_options[j] != NULL; j++)
 				command_line[i++] = g_strdup (command_options[j]);
@@ -147,7 +143,7 @@ finger_foreach (Netinfo * netinfo, gchar * line, gssize len,
 	gsize bytes_written;
 	GtkTextBuffer *buffer = NULL;
 	GtkTextIter iter;
-	
+
 	g_return_if_fail (netinfo != NULL);
 	g_return_if_fail (line != NULL);
 
