@@ -290,7 +290,8 @@ gn_combo_history_set_popdown_strings (GnComboHistory *history)
 	GtkTreeIter   iter;
 	GSList *items;
 	gchar  *text;
-	gint    text_column, i;
+	gint    i;
+	gint    text_column = 0;
 
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
 	g_return_if_fail (GTK_IS_COMBO_BOX (history->priv->combo));
@@ -300,15 +301,14 @@ gn_combo_history_set_popdown_strings (GnComboHistory *history)
 	if (!model)
 		return;
 
-	text_column = gtk_combo_box_entry_get_text_column (
-							   GTK_COMBO_BOX_ENTRY (history->priv->combo));
+	gtk_combo_box_entry_set_text_column (GTK_COMBO_BOX_ENTRY (history->priv->combo), text_column);
 
 	gtk_list_store_clear (GTK_LIST_STORE (model));
-	   
+
 	if (! history->priv->items) {
-             
+
 		gtk_combo_box_set_active (GTK_COMBO_BOX (history->priv->combo), -1);
-			 
+
 		return;
 	}
 
