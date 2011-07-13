@@ -79,14 +79,14 @@ finger_do (Netinfo * netinfo)
 	gtk_text_buffer_delete (buffer, &start, &end);
 
 	parent = gtk_widget_get_toplevel (netinfo->output);
-	
-	program = util_find_program_in_path ("pinky", NULL);
+
+	program = util_find_program_in_path ("finger", NULL);
 
 	if (program != NULL) {
-		program_name = g_strdup ("pinky");
-	} else {
-		program = util_find_program_dialog ("finger", parent);
 		program_name = g_strdup ("finger");
+	} else {
+		program = util_find_program_dialog ("pinky", parent);
+		program_name = g_strdup ("pinky");
 	}
 
 	if (program != NULL) {
