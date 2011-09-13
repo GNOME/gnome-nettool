@@ -4,21 +4,23 @@
 #
 # Jayaradha N <jaya@pune.redhat.com>, 2004.
 # Felix <ifelix@redhat.com>, 2006.
-# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2011.
 # I. Felix <ifelix@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-02 05:12+0530\n"
-"PO-Revision-Date: 2009-03-12 06:11+0530\n"
-"Last-Translator: I. Felix <ifelix@redhat.com>\n"
+"POT-Creation-Date: 2011-09-13 19:57+0530\n"
+"PO-Revision-Date: 2011-09-13 20:02+0530\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -26,7 +28,7 @@ msgstr ""
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
-msgstr "Tirumurthi Vasudevan, 2008, 2009"
+msgstr "Tirumurthi Vasudevan, 2008, 2009,2010,2011"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -44,7 +46,7 @@ msgstr "வலைப்பின்னல் கருவிகள்"
 msgid "Graphical user interface for common network utilities"
 msgstr "பொதுவான வலைப்பின்னல் பயன்பாடுகளுக்கன சித்திர பயனீட்டாளர் இடைமுகம்"
 
-#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:488
 msgid "Idle"
 msgstr "வெறுமை"
 
@@ -65,27 +67,27 @@ msgstr "வலைப்பின்னல் குறித்த தகவல�
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
 msgid "A list of domains previously used"
-msgstr ""
+msgstr "முன்பு பயன்படுத்திய டொமெய்ன்களின் பட்டியல்"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
-msgstr ""
+msgstr "முன்பு பயன்படுத்திய புரவலன் பெயர்களின் பட்டியல்"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
 msgid "A list of usernames previously used"
-msgstr ""
+msgstr "முன்பு பயன்படுத்திய பயனர் பெயர்களின் பட்டியல்"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
 msgid "Historically used domains"
-msgstr ""
+msgstr "இது வரை பயன்படுத்திய டொமெய்ன்கள்"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
 msgid "Historically used hostnames"
-msgstr ""
+msgstr "இது வரை பயன்படுத்திய புரவலன் பெயர்கள்"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
-msgstr ""
+msgstr "இது வரை பயன்படுத்திய பயனர் பெயர்கள்"
 
 #: ../data/gnome-nettool.ui.h:1
 msgid "0"
@@ -189,8 +191,7 @@ msgstr ""
 "com அல்லது 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:24
-msgid ""
-"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "சீண்டிப்பார்க்க (பிங்) ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www.domain.com "
 "அல்லது 192.168.2.1"
@@ -564,33 +565,33 @@ msgstr "பெற்றுக்கொள்ளும் போது பிழ�
 msgid "Collisions:\t%s\n"
 msgstr "மோதல்:\t%s\n"
 
-#: ../src/info.h:27
+#: ../src/info.h:24
 msgid "not available"
 msgstr "கிடைக்கவில்லை"
 
-#: ../src/lookup.c:80
+#: ../src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "மேலே பார்க்கிறது %s"
 
-#: ../src/lookup.c:274
+#: ../src/lookup.c:279
 msgid "Name"
 msgstr "பெயர்"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:283
+#: ../src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:292
+#: ../src/lookup.c:297
 msgid "Address Type"
 msgstr "முகவரி வகை"
 
-#: ../src/lookup.c:302
+#: ../src/lookup.c:307
 msgid "Record Type"
 msgstr "பதிப்பு வகை"
 
-#: ../src/lookup.c:311
+#: ../src/lookup.c:316
 msgid "Address"
 msgstr "முகவரி"
 
@@ -600,7 +601,7 @@ msgstr "முகவரி"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:339
+#: ../src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "மூலம்\tTTL\tமுகவரிவகை\tபதிப்பு வகை1\tதெளிவுத்திறன்\n"
 
@@ -665,7 +666,7 @@ msgid ""
 "installed"
 msgstr "கோப்பு %sஐ காணவில்லை, gnome-netinfo சரியாக நிறுவப்பட்டதா என்பதை சரிபார்க்கவும்"
 
-#: ../src/main.c:482 ../src/netstat.c:443
+#: ../src/main.c:482 ../src/netstat.c:455
 msgid "Protocol"
 msgstr "விதிமுறைகள்"
 
@@ -735,142 +736,142 @@ msgstr "நன்கு தெரிந்த சேவைகள்"
 msgid "Any / All Information"
 msgstr "ஏதாவது / அனைத்து தகவல்"
 
-#: ../src/netstat.c:122
+#: ../src/netstat.c:134
 msgid "Getting routing table"
 msgstr "பாதை அட்டவணையை பெறுகிறது"
 
-#: ../src/netstat.c:137
+#: ../src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "செயல்பாட்டில் உள்ள இணைய இணைப்பை பெறுகிறது"
 
-#: ../src/netstat.c:146
+#: ../src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "குழு உறுப்பினர் தகவலை பெறுகிறது"
 
-#: ../src/netstat.c:450
+#: ../src/netstat.c:462
 msgid "IP Source"
 msgstr "IP மூலம்"
 
-#: ../src/netstat.c:458
+#: ../src/netstat.c:470
 msgid "Port/Service"
 msgstr "பாதை/சேவை"
 
-#: ../src/netstat.c:466 ../src/scan.c:314
+#: ../src/netstat.c:478 ../src/scan.c:318
 msgid "State"
 msgstr "நிலை"
 
-#: ../src/netstat.c:609
+#: ../src/netstat.c:632
 msgid "Destination/Prefix"
 msgstr "இலக்கு/முன் ஒட்டு"
 
-#: ../src/netstat.c:611
+#: ../src/netstat.c:634
 msgid "Destination"
 msgstr "இலக்கு"
 
-#: ../src/netstat.c:618
+#: ../src/netstat.c:641
 msgid "Gateway"
 msgstr "நுழைவாயில்"
 
-#: ../src/netstat.c:626
+#: ../src/netstat.c:649
 msgid "Netmask"
 msgstr "நெட்மாஸ்க்"
 
-#: ../src/netstat.c:634 ../src/netstat.c:741
+#: ../src/netstat.c:657 ../src/netstat.c:764
 msgid "Interface"
 msgstr "இடைமுகம்"
 
-#: ../src/netstat.c:748
+#: ../src/netstat.c:771
 msgid "Member"
 msgstr "உறுப்பினர்"
 
-#: ../src/netstat.c:756
+#: ../src/netstat.c:779
 msgid "Group"
 msgstr "குழு"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:798
+#: ../src/netstat.c:821
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "விதிமுறை\tIP மூலம்\tவழி/சேவை\tநிலை\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:804
+#: ../src/netstat.c:827
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "இலக்கு\tநுழைவாயில்\tநெட்மாஸ்க்\tஇடைமுகம்\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:809
+#: ../src/netstat.c:832
 msgid "Interface\tMember\tGroup\n"
 msgstr "இடைமுகம்\tஉறுப்பினர்\tகுழு\n"
 
-#: ../src/nettool.c:199
+#: ../src/nettool.c:204
 msgid "A network address was not specified"
 msgstr "வலைப்பின்னல் முகவரி குறிப்பிடப்படவில்லை"
 
-#: ../src/nettool.c:200 ../src/nettool.c:209
+#: ../src/nettool.c:205 ../src/nettool.c:214
 msgid "Please enter a valid network address and try again."
 msgstr "சரியான வலைப்பின்னல் முகவரியை உள்ளிட்டு மீண்டும் முயற்சிக்கவும்"
 
-#: ../src/nettool.c:207
+#: ../src/nettool.c:212
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "முகவரி '%s' ஐ காணவில்லை"
 
-#: ../src/nettool.c:236
+#: ../src/nettool.c:241
 msgid "A domain address was not specified"
 msgstr "டொமைன் முகவரி குறிப்பிடப்படவில்லை"
 
-#: ../src/nettool.c:237
+#: ../src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
 msgstr "சரியான டொமைன் முகவரியை உள்ளிட்டு மீண்டும் முயற்சிக்கவும்"
 
-#: ../src/nettool.c:428
+#: ../src/nettool.c:433
 msgid "Information not available"
 msgstr "தகவல் இல்லை"
 
-#: ../src/nettool.c:548
+#: ../src/nettool.c:553
 msgid "Stop"
 msgstr "நிறுத்து"
 
-#: ../src/nettool.c:554
+#: ../src/nettool.c:559
 msgid "Run"
 msgstr "இயக்கு"
 
 #. Created up here so we can get the geometry info.
-#: ../src/ping.c:151
+#: ../src/ping.c:155
 msgid "Time (ms):"
 msgstr "நேரம் (மில்லி.செகண்ட்):"
 
-#: ../src/ping.c:172
+#: ../src/ping.c:176
 msgid "Seq. No.:"
 msgstr "வரிசை எண்:"
 
-#: ../src/ping.c:257
+#: ../src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "பிங் கோரிக்கையை %s க்கு அனுப்புகிறது"
 
-#: ../src/ping.c:572
+#: ../src/ping.c:577
 msgid "Bytes"
 msgstr "பைட்கள்"
 
-#: ../src/ping.c:579
+#: ../src/ping.c:584
 msgid "Source"
 msgstr "மூலம்"
 
-#: ../src/ping.c:587
+#: ../src/ping.c:592
 msgid "Seq"
 msgstr "Seq"
 
-#: ../src/ping.c:597
+#: ../src/ping.c:602
 msgid "Time"
 msgstr "நேரம்"
 
-#: ../src/ping.c:605
+#: ../src/ping.c:610
 msgid "Units"
 msgstr "அலகுகள்"
 
@@ -878,92 +879,92 @@ msgstr "அலகுகள்"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:631
+#: ../src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "பைட்கள்\tமூலம்\tவரிசை\tநேரம்\tஅலகு\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:646
+#: ../src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "குறைந்தபட்ச நேரம்:\t%s ms\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "சராசரி நேரம்:\t%s ms\n"
 
-#: ../src/ping.c:648
+#: ../src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "அதிகபட்ச நேரம்:\t%s ms\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "அனுப்பபட்ட கட்டுகள்:\t%s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "பெறப்பட்ட கட்டுகள்:\t%s\n"
 
-#: ../src/ping.c:655
+#: ../src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "வெற்றிகரமான கட்டுகள்:\t%s\n"
 
-#: ../src/scan.c:94
+#: ../src/scan.c:98
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s ஐ திறந்த வழிக்காக தேடுகிறது"
 
-#: ../src/scan.c:169
+#: ../src/scan.c:173
 msgid "unknown"
 msgstr "தெரியாத"
 
 #. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:173
+#: ../src/scan.c:177
 msgid "open"
 msgstr "திற"
 
-#: ../src/scan.c:306
+#: ../src/scan.c:310
 msgid "Port"
 msgstr "வழி"
 
-#: ../src/scan.c:322
+#: ../src/scan.c:326
 msgid "Service"
 msgstr "சேவை"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:344
+#: ../src/scan.c:348
 msgid "Port\tState\tService\n"
 msgstr "வழி\tநிலை\tசேவை\n"
 
-#: ../src/traceroute.c:62
+#: ../src/traceroute.c:66
 #, c-format
 msgid "Tracing route to %s"
 msgstr "பாதையை தேடுகிறது %s"
 
-#: ../src/traceroute.c:265
+#: ../src/traceroute.c:269
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:273
+#: ../src/traceroute.c:277
 msgid "Hostname"
 msgstr "புரவலன் பெயர்"
 
-#: ../src/traceroute.c:281
+#: ../src/traceroute.c:285
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:292
+#: ../src/traceroute.c:296
 msgid "Time 1"
 msgstr "நேரம் 1"
 
-#: ../src/traceroute.c:302
+#: ../src/traceroute.c:306
 msgid "Time 2"
 msgstr "நேரம் 2"
 
@@ -971,28 +972,29 @@ msgstr "நேரம் 2"
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:328
+#: ../src/traceroute.c:332
 msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgstr "Hop\tபுரவலன் பெயர்\tIP\tநேரம் 1\tநேரம் 2\n"
 
-#: ../src/utils.c:227
+#: ../src/utils.c:231
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr "இந்த நிரலின் வசதிகளை பயன்படுத்த, %s உங்கள் கணினியில் நிறுவ வேண்டும்"
 
-#: ../src/finger.c:63
+#: ../src/finger.c:66
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "%s இல் \"%s\" க்கான தகவலை பெறுகிறது"
 
-#: ../src/finger.c:67
+#: ../src/finger.c:70
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "\"%s\" க்கான தகவலை பெறுகிறது"
 
-#: ../src/whois.c:58
+#: ../src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s க்கான யாரது தகவலை பெறுகிறது."
+
