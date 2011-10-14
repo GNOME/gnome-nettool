@@ -9,19 +9,22 @@
 # Kostas Papadimas <pkst@gnome.org>, 2003, 2004, 2006.
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2004.
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
+# Ioannis Zampoukas <ioza1964@yahoo.gr>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 18:36+0300\n"
-"PO-Revision-Date: 2009-10-14 18:38+0200\n"
-"Last-Translator: Kostas Papadimas <pkst@gnome.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&component=general\n"
+"POT-Creation-Date: 2010-11-10 22:40+0000\n"
+"PO-Revision-Date: 2011-10-14 21:34+0300\n"
+"Last-Translator: Ioannis Zampoukas <ioza1964@yahoo.gr>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../src/callbacks.c:323
 msgid "translator-credits"
@@ -34,9 +37,8 @@ msgid "Copyright © 2003-2008 %s"
 msgstr "Copyright © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:334
-#: ../src/callbacks.c:335
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: ../src/callbacks.c:334 ../src/callbacks.c:335
+#: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Εργαλεία δικτύου"
 
@@ -44,364 +46,406 @@ msgstr "Εργαλεία δικτύου"
 msgid "Graphical user interface for common network utilities"
 msgstr "Γραφική διεπαφή χρήστη για κοινές εφαρμογές δικτύου"
 
-#: ../src/callbacks.c:450
-#: ../src/main.c:142
-#: ../src/nettool.c:483
+#: ../src/callbacks.c:449 ../src/main.c:142 ../src/nettool.c:483
 msgid "Idle"
 msgstr "Αδρανής"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:455
+#: ../src/callbacks.c:454
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - Εργαλεία δικτύου"
 
-#: ../src/callbacks.c:479
+#: ../src/callbacks.c:478
 msgid "Unable to open help file"
 msgstr "Αδύνατο το άνοιγμα του αρχείου βοήθειας."
 
-#: ../src/gnome-nettool.ui.h:1
+#: ../data/gnome-nettool.desktop.in.in.h:2
+msgid "View information about your network"
+msgstr "Προβολή πληροφοριών για το δίκτυο σας"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "A list of domains previously used"
+msgstr "Μια λίστα με τομείς που χρησιμοποιούνταν"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr "Μια λίστα από ονόματα υπολογιστών που χρησιμοποιούνταν"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "A list of usernames previously used"
+msgstr "Μία λίστα των ονομάτων χρήστη που χρησιμοποιούνταν"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "Historically used domains"
+msgstr "Ιστορικά χρησιμοποιηθέντες τομείς"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used hostnames"
+msgstr "Ιστορικά χρησιμοποιηθέντες τομείς"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "Historically used usernames"
+msgstr "Ιστορικά χρησιμοποιηθέντα ονόματα χρηστών"
+
+#: ../data/gnome-nettool.ui.h:1
 msgid "0"
 msgstr "0"
 
-#: ../src/gnome-nettool.ui.h:3
+#: ../data/gnome-nettool.ui.h:3
 #, no-c-format
 msgid "0%"
 msgstr "0%"
 
-#: ../src/gnome-nettool.ui.h:4
+#: ../data/gnome-nettool.ui.h:4
 msgid "0.0"
 msgstr "0.0"
 
-#: ../src/gnome-nettool.ui.h:5
+#: ../data/gnome-nettool.ui.h:5
 msgid "<b>IP Information</b>"
 msgstr "<b>Πληροφορία IP</b>"
 
-#: ../src/gnome-nettool.ui.h:6
+#: ../data/gnome-nettool.ui.h:6
 msgid "<b>Interface Information</b>"
 msgstr "<b>Πληροφορία Διεπαφής</b>"
 
-#: ../src/gnome-nettool.ui.h:7
+#: ../data/gnome-nettool.ui.h:7
 msgid "<b>Interface Statistics</b>"
 msgstr "<b>Στατιστικά Διεπαφής</b>"
 
-#: ../src/gnome-nettool.ui.h:8
+#: ../data/gnome-nettool.ui.h:8
 msgid "<b>Round Trip Time Statistics</b>"
 msgstr "<b>Στατιστικά Round Trip Time</b>"
 
-#: ../src/gnome-nettool.ui.h:9
+#: ../data/gnome-nettool.ui.h:9
 msgid "<b>Transmission Statistics</b>"
 msgstr "<b>Στατιστικά Μετάδοσης</b>"
 
-#: ../src/gnome-nettool.ui.h:10
+#: ../data/gnome-nettool.ui.h:10
 msgid "Active Network Services"
 msgstr "Ενεργές Υπηρεσίες Δικτύου"
 
-#: ../src/gnome-nettool.ui.h:11
+#: ../data/gnome-nettool.ui.h:11
 msgid "Average:"
 msgstr "Μέσος όρος:"
 
-#: ../src/gnome-nettool.ui.h:12
+#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Κουδούνισμα στο ping"
 
-#: ../src/gnome-nettool.ui.h:13
+#: ../data/gnome-nettool.ui.h:13
 msgid "Clear _History"
 msgstr "Εκκαθάριση Ι_στορικού"
 
-#: ../src/gnome-nettool.ui.h:14
+#: ../data/gnome-nettool.ui.h:14
 msgid "Collisions:"
 msgstr "Συγκρούσεις:"
 
-#: ../src/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:15
 msgid "Copy as text _report"
 msgstr "Αντιγραφή ως αναφο_ρά κειμένου"
 
-#: ../src/gnome-nettool.ui.h:16
+#: ../data/gnome-nettool.ui.h:16
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../src/gnome-nettool.ui.h:17
+#: ../data/gnome-nettool.ui.h:17
 msgid "Devices"
 msgstr "Συσκευές"
 
-#: ../src/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:18
 msgid "Devices - Network Tools"
 msgstr "Συσκευές - Εργαλεία δικτύου"
 
-#: ../src/gnome-nettool.ui.h:19
+#: ../data/gnome-nettool.ui.h:19
 msgid "Display:"
 msgstr "Εμφάνιση:"
 
-#: ../src/gnome-nettool.ui.h:20
+#: ../data/gnome-nettool.ui.h:20
 msgid "Domain address"
 msgstr "Διεύθυνση τομέα"
 
-#: ../src/gnome-nettool.ui.h:21
-msgid "Enter a domain address to lookup its whois information. For example: www.domain.com or 192.168.2.1"
-msgstr "Εισάγετε μια διεύθυνση δικτύου για αναζήτηση πληροφοριών whois. Για παράδειγμα: www.domain.com ή 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:21
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Εισάγετε μια διεύθυνση δικτύου για αναζήτηση πληροφοριών whois. Για "
+"παράδειγμα: www.domain.com ή 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:22
-msgid "Enter the network address to finger that user. For example: www.domain.com or 192.168.2.1"
-msgstr "Εισάγετε τη διεύθυνση δικτύου για να κάνετε finger αυτό το χρήστη. Για παράδειγμα: auth.domain.com ή 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:22
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Εισάγετε τη διεύθυνση δικτύου για να κάνετε finger αυτό το χρήστη. Για "
+"παράδειγμα: auth.domain.com ή 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:23
-msgid "Enter the network address to lookup. For example: www.domain.com or 192.168.2.1"
-msgstr "Εισάγετε τη διεύθυνση δικτύου για lookup. Για παράδειγμα: www.domain.com ή 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:23
+msgid ""
+"Enter the network address to lookup. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"Εισάγετε τη διεύθυνση δικτύου για lookup. Για παράδειγμα: www.domain.com ή "
+"192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:24
-msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
-msgstr "Εισάγετε τη διεύθυνση δικτύου για ping. Για παράδειγμα: www.domain.com ή 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:24
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Εισάγετε τη διεύθυνση δικτύου για ping. Για παράδειγμα: www.domain.com ή "
+"192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:25
-msgid "Enter the network address to scan for open ports. For example: www.domain.com or 192.168.2.1"
-msgstr "Εισάγετε τη διεύθυνση δικτύου για σάρωση ανοικτών θυρών. Για παράδειγμα: www.domain.com ή 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:25
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Εισάγετε τη διεύθυνση δικτύου για σάρωση ανοικτών θυρών. Για παράδειγμα: www."
+"domain.com ή 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:26
-msgid "Enter the network address to trace a route to. For example: www.domain.com or 192.168.2.1"
-msgstr "Εισάγετε τη διεύθυνση δικτύου για  trace a route to. Για παράδειγμα: www.domain.com ή 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:26
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Εισάγετε τη διεύθυνση δικτύου για  trace a route to. Για παράδειγμα: www."
+"domain.com ή 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:27
 msgid "Enter the user to finger"
 msgstr "Εισάγετε το χρήστη για finger "
 
-#: ../src/gnome-nettool.ui.h:28
-#: ../src/main.c:814
+#: ../data/gnome-nettool.ui.h:28 ../src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../src/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:29
 msgid "Finger output"
 msgstr "αποτέλεσμα finger"
 
-#: ../src/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:30
 msgid "Hardware address:"
 msgstr "Διεύθυνση υλικού:"
 
-#: ../src/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:31
 msgid "Host"
 msgstr "Σύστημα"
 
-#: ../src/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:32
 msgid "Link speed:"
 msgstr "Ταχύτητα σύνδεσης:"
 
-#: ../src/gnome-nettool.ui.h:33
-#: ../src/main.c:734
+#: ../data/gnome-nettool.ui.h:33 ../src/main.c:734
 msgid "Lookup"
 msgstr "Lookup"
 
-#: ../src/gnome-nettool.ui.h:34
+#: ../data/gnome-nettool.ui.h:34
 msgid "Lookup output"
 msgstr "αποτέλεσμα lookup"
 
-#: ../src/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:35
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../src/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:36
 msgid "Maximum:"
 msgstr "Μέγιστο:"
 
-#: ../src/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:37
 msgid "Minimum:"
 msgstr "Ελάχιστο:"
 
-#: ../src/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:38
 msgid "Multicast Information"
 msgstr "Πληροφορίες Multicast "
 
-#: ../src/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../src/gnome-nettool.ui.h:40
-#: ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../src/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:41
 msgid "Netstat output"
 msgstr "Αποτέλεσμα netstat"
 
-#: ../src/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:42
 msgid "Network address"
 msgstr "Διεύθυνση δικτύου"
 
-#: ../src/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:43
 msgid "Not Available"
 msgstr "Μη Διαθέσιμη"
 
-#: ../src/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:44
 msgid "Only"
 msgstr "Μόνο"
 
-#: ../src/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:45
 msgid "Output for finger"
 msgstr "Αποτέλεσμα finger"
 
-#: ../src/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for lookup"
 msgstr "Αποτέλεσμα lookup"
 
-#: ../src/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for net stat"
 msgstr "Αποτέλεσμα net stat"
 
-#: ../src/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for port scan"
 msgstr "Αποτέλεσμα σάρωσης θύρας"
 
-#: ../src/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for traceroute"
 msgstr "Αποτέλεσμα traceroute"
 
-#: ../src/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for whois"
 msgstr "Αποτέλεσμα whois"
 
-#: ../src/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:51
 msgid "Packets received:"
 msgstr "Εισερχόμενα πακέτα:"
 
-#: ../src/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets transmitted:"
 msgstr "Εξερχόμενα πακέτα:"
 
-#: ../src/gnome-nettool.ui.h:53
-#: ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../src/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:54
 msgid "Port Scan"
 msgstr "Σάρωση θύρας"
 
-#: ../src/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port scan output"
 msgstr "Αποτέλεσμα σάρωσης θύρας"
 
-#: ../src/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:56
 msgid "Received bytes:"
 msgstr "Εισερχόμενα bytes:"
 
-#: ../src/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received packets:"
 msgstr "Εισερχόμενα πακέτα:"
 
-#: ../src/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:58
 msgid "Reception errors:"
 msgstr "Σφάλματα λήψης:"
 
-#: ../src/gnome-nettool.ui.h:59
+#: ../data/gnome-nettool.ui.h:59
 msgid "Routing Table Information"
 msgstr "Πληροφορίες routing table "
 
-#: ../src/gnome-nettool.ui.h:60
-#: ../src/main.c:619
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:619
 msgid "Scan"
 msgstr "Σάρωση"
 
-#: ../src/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:61
 msgid "Send:"
 msgstr "Αποστολή:"
 
-#: ../src/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:62
 msgid "State:"
 msgstr "Κατάσταση:"
 
-#: ../src/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:63
 msgid "Successful packets:"
 msgstr "Επιτυχημένα πακέτα:"
 
-#: ../src/gnome-nettool.ui.h:64
-#: ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
 msgid "Trace"
 msgstr "Trace"
 
-#: ../src/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:65
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute output"
 msgstr "Αποτέλεσμα traceroute"
 
-#: ../src/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:67
 msgid "Transmission errors:"
 msgstr "Σφάλματα μετάδοσης:"
 
-#: ../src/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmitted bytes:"
 msgstr "Εξερχόμενα Bytes:"
 
-#: ../src/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted packets:"
 msgstr "Εξερχόμενα πακέτα:"
 
-#: ../src/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:70
 msgid "Unlimited requests"
 msgstr "Απεριόριστες αιτήσεις"
 
-#: ../src/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:71
 msgid "User"
 msgstr "Χρήστης"
 
-#: ../src/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:72
 msgid "User name"
 msgstr "Όνομα Χρήστη"
 
-#: ../src/gnome-nettool.ui.h:73
-#: ../src/main.c:920
+#: ../data/gnome-nettool.ui.h:73 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
-#: ../src/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:74
 msgid "Whois output"
 msgstr "Αποτέλεσμα whois"
 
-#: ../src/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:75
 msgid "_Configure"
 msgstr "_Ρύθμιση"
 
-#: ../src/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Domain address:"
 msgstr "Διεύθυνση το_μέα:"
 
-#: ../src/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:77
 msgid "_Edit"
 msgstr "_Επεξεργασία"
 
-#: ../src/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: ../src/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "Τύπος Πληρο_φοριών:"
 
-#: ../src/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Network address:"
 msgstr "Διεύθυνση _δικτύου:"
 
-#: ../src/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Network device:"
 msgstr "Συσκευή _δίκτυου:"
 
-#: ../src/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Tool"
 msgstr "_Εργαλείο"
 
-#: ../src/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Username:"
 msgstr "_Όνομα Χρήστη:"
 
-#: ../src/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:84
 msgid "ms"
 msgstr "ms"
 
-#: ../src/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:85
 msgid "requests"
 msgstr "αιτήσεις"
 
@@ -442,8 +486,7 @@ msgstr "Άγνωστη Διεπαφή"
 msgid "Network Devices Not Found"
 msgstr "Δεν βρέθηκαν συσκευές δικτύου"
 
-#: ../src/info.c:392
-#: ../src/info.c:395
+#: ../src/info.c:392 ../src/info.c:395
 msgid "Unknown"
 msgstr "Άγνωστο"
 
@@ -575,16 +618,14 @@ msgstr "ΣΥΣΚΕΥΗ"
 msgid "Send a ping to a network address"
 msgstr "Αποστολή ping σε μια διεύθυνση δικτύου"
 
-#: ../src/main.c:87
-#: ../src/main.c:95
-#: ../src/main.c:99
-#: ../src/main.c:103
+#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
 msgid "HOST"
 msgstr "HOST"
 
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "Λήψη πληροφοριών netstat. Έγκυρες επιλογές είναι: route, active, multicast."
+msgstr ""
+"Λήψη πληροφοριών netstat. Έγκυρες επιλογές είναι: route, active, multicast."
 
 #: ../src/main.c:91
 msgid "COMMAND"
@@ -620,11 +661,13 @@ msgstr "ΤΟΜΕΑΣ"
 
 #: ../src/main.c:130
 #, c-format
-msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
-msgstr "Το αρχείο %s δεν υπάρχει, ελέγξτε αν το gnome-nettool έχει εγκατασταθεί σωστά"
+msgid ""
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"installed"
+msgstr ""
+"Το αρχείο %s δεν υπάρχει, ελέγξτε αν το gnome-nettool έχει εγκατασταθεί σωστά"
 
-#: ../src/main.c:482
-#: ../src/netstat.c:443
+#: ../src/main.c:482 ../src/netstat.c:443
 msgid "Protocol"
 msgstr "Πρωτόκολλο"
 
@@ -714,8 +757,7 @@ msgstr "Πηγή IP"
 msgid "Port/Service"
 msgstr "Θύρα/Υπηρεσία"
 
-#: ../src/netstat.c:466
-#: ../src/scan.c:314
+#: ../src/netstat.c:466 ../src/scan.c:314
 msgid "State"
 msgstr "Κατάσταση"
 
@@ -735,8 +777,7 @@ msgstr "Gateway"
 msgid "Netmask"
 msgstr "Netmask"
 
-#: ../src/netstat.c:634
-#: ../src/netstat.c:741
+#: ../src/netstat.c:634 ../src/netstat.c:741
 msgid "Interface"
 msgstr "Διεπαφή"
 
@@ -772,8 +813,7 @@ msgstr "Διεπαφή\tΜέλος\tΟμάδα\n"
 msgid "A network address was not specified"
 msgstr "Δεν καθορίστηκε μια διεύθυνση δικτύου"
 
-#: ../src/nettool.c:200
-#: ../src/nettool.c:209
+#: ../src/nettool.c:200 ../src/nettool.c:209
 msgid "Please enter a valid network address and try again."
 msgstr "Παρακαλώ εισάγετε μιά έγκυρη διεύθυνση δικτύου και δοκιμάστε ξανά."
 
@@ -939,12 +979,12 @@ msgstr "Hop\tΌνομα συστήματος\tIP\tTime 1\tTime 2\n"
 
 #: ../src/utils.c:227
 #, c-format
-msgid "In order to use this feature of the program, %s must be installed in your system"
-msgstr "Για να χρησιμοποιήσετε αυτή τη λειτουργιού του προγράμματος, θα πρέπει να είναι εγκατεστημένο στο σύστημα σας το %s."
-
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "Προβολή πληροφοριών για το δίκτυο σας"
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
+msgstr ""
+"Για να χρησιμοποιήσετε αυτή τη λειτουργιού του προγράμματος, θα πρέπει να "
+"είναι εγκατεστημένο στο σύστημα σας το %s."
 
 #: ../src/finger.c:63
 #, c-format
@@ -963,20 +1003,27 @@ msgstr "Λήψη πληροφοριών whois του %s"
 
 #~ msgid "Broadcast:"
 #~ msgstr "Μετάδοση:"
+
 #~ msgid "IP Address:"
 #~ msgstr "Διεύθυνση IP:"
+
 #~ msgid "Netmask:"
 #~ msgstr "Netmask:"
+
 #~ msgid "IP address:\t%s\n"
 #~ msgstr "Διεύθυνση IP:\t%s\n"
+
 #~ msgid "Netmask:\t%s\n"
 #~ msgstr "Netmask:\t%s\n"
+
 #~ msgid "Broadcast:\t%s\n"
 #~ msgstr "Μετάδοση:\t%s\n"
+
 #~ msgid "Packets loss:"
 #~ msgstr "Χαμένα πακέτα:"
+
 #~ msgid "Packet loss:\t%s\n"
 #~ msgstr "Πακέτα που χάθηκαν:\t%s\n"
+
 #~ msgid "Network Information Tools"
 #~ msgstr "Εργαλεία πληροφορίων δικτύου"
-
