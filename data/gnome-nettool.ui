@@ -281,6 +281,7 @@
                         <property name="left_padding">12</property>
                         <child>
                           <object class="GtkScrolledWindow" id="scrolledwindow8">
+                            <property name="height_request">120</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="border_width">6</property>
@@ -289,7 +290,6 @@
                             <property name="shadow_type">GTK_SHADOW_IN</property>
                             <child>
                               <object class="GtkTreeView" id="info_list_ip_addr">
-                                <property name="height_request">120</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="rules_hint">True</property>
@@ -1044,6 +1044,11 @@
                               </object>
                             </child>
                           </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
                         </child>
                       </object>
                       <packing>
@@ -1380,9 +1385,12 @@
                 </child>
                 <child>
                   <object class="GtkDrawingArea" id="ping_graph">
+                    <property name="height_request">160</property>
                     <property name="visible">True</property>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">3</property>
                   </packing>
                 </child>
@@ -1392,6 +1400,7 @@
                     <property name="can_focus">True</property>
                     <child>
                       <object class="GtkScrolledWindow" id="scrolledwindow">
+                        <property name="height_request">160</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="border_width">6</property>
@@ -1416,7 +1425,7 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
+                    <property name="expand">True</property>
                     <property name="pack_type">GTK_PACK_END</property>
                     <property name="position">1</property>
                   </packing>
@@ -1513,7 +1522,10 @@
                         </child>
                       </object>
                       <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
                         <property name="padding">4</property>
+                        <property name="position">0</property>
                       </packing>
                     </child>
                     <child>
@@ -1561,9 +1573,16 @@
                               </object>
                             </child>
                           </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
                         </child>
                       </object>
                       <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
@@ -1598,6 +1617,8 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -1749,6 +1770,8 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -1907,6 +1930,8 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -1975,7 +2000,7 @@
                             <child internal-child="entry">
                               <object class="GtkEntry" id="comboboxentry-entry4">
                                 <property name="has_tooltip">True</property>
-                                <property name="tooltip_text" translatable="yes">Enter the network address to lookup. For example: www.domain.com or 192.168.2.1</property>
+                                <property name="tooltip_text" translatable="yes">Enter the domain to lookup. For example: domain.com or ftp.domain.com.</property>
                                 <accessibility>
 
                                 </accessibility>
@@ -2063,9 +2088,16 @@
                               </object>
                             </child>
                           </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
                         </child>
                       </object>
                       <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
@@ -2099,6 +2131,8 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -2277,9 +2311,16 @@
                               </object>
                             </child>
                           </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
                         </child>
                       </object>
                       <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
@@ -2314,6 +2355,8 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -2472,6 +2515,8 @@
                     </child>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
