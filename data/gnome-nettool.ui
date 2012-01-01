@@ -836,12 +836,12 @@
                 <property name="border_width">6</property>
                 <property name="spacing">6</property>
                 <child>
-                  <object class="GtkVBox" id="vbox18">
+                  <object class="GtkVBox" id="vbox_ping_top">
                     <property name="visible">True</property>
                     <property name="border_width">6</property>
                     <property name="spacing">12</property>
                     <child>
-                      <object class="GtkTable" id="table6">
+                      <object class="GtkTable" id="table_ping_options">
                         <property name="visible">True</property>
                         <property name="n_rows">2</property>
                         <property name="n_columns">2</property>
@@ -898,6 +898,7 @@
                               </object>
                               <packing>
                                 <property name="expand">False</property>
+                                <property name="fill">False</property>
                               </packing>
                             </child>
                             <child>
@@ -922,7 +923,7 @@
                             <property name="top_attach">1</property>
                             <property name="bottom_attach">2</property>
                             <property name="x_options">GTK_FILL</property>
-                            <property name="y_options">GTK_FILL</property>
+                            <property name="y_options"/>
                           </packing>
                         </child>
                         <child>
@@ -976,7 +977,7 @@
                           <packing>
                             <property name="left_attach">1</property>
                             <property name="right_attach">2</property>
-                            <property name="y_options">GTK_FILL</property>
+                            <property name="y_options"/>
                           </packing>
                         </child>
                         <child>
@@ -1000,7 +1001,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkHButtonBox" id="hbuttonbox2">
+                      <object class="GtkHButtonBox" id="hbuttonbox_ping_button">
                         <property name="visible">True</property>
                         <property name="layout_style">GTK_BUTTONBOX_END</property>
                         <child>
@@ -1046,26 +1047,29 @@
                           </object>
                           <packing>
                             <property name="expand">False</property>
-                            <property name="fill">True</property>
+                            <property name="fill">False</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
                       </object>
                       <packing>
                         <property name="position">1</property>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
                       </packing>
                     </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
+                    <property name="fill">False</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkHBox" id="hbox35">
+                  <object class="GtkHBox" id="hbox_ping_details">
                     <property name="visible">True</property>
                     <property name="spacing">6</property>
                     <child>
-                      <object class="GtkFrame" id="frame8">
+                      <object class="GtkFrame" id="frame_rtt_stats">
                         <property name="visible">True</property>
                         <property name="label_xalign">0</property>
                         <property name="shadow_type">GTK_SHADOW_NONE</property>
@@ -1239,10 +1243,11 @@
                       </object>
                       <packing>
                         <property name="expand">False</property>
+                        <property name="fill">False</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkFrame" id="frame9">
+                      <object class="GtkFrame" id="frame_transmission_stats">
                         <property name="visible">True</property>
                         <property name="label_xalign">0</property>
                         <property name="shadow_type">GTK_SHADOW_NONE</property>
@@ -1373,6 +1378,7 @@
                       </object>
                       <packing>
                         <property name="expand">False</property>
+                        <property name="fill">False</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
@@ -1380,7 +1386,7 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
-                    <property name="position">2</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
@@ -1389,13 +1395,13 @@
                     <property name="visible">True</property>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">3</property>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkExpander" id="expander1">
+                  <object class="GtkExpander" id="expander_ping">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <child>
@@ -1426,8 +1432,9 @@
                   </object>
                   <packing>
                     <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="pack_type">GTK_PACK_END</property>
-                    <property name="position">1</property>
+                    <property name="position">3</property>
                   </packing>
                 </child>
               </object>
