@@ -341,8 +341,9 @@ ping_do (Netinfo * netinfo)
 						count_string, host);
 #endif
 		}
+#ifdef DEBUG
 		g_print("command: %s\n", command);
-
+#endif
 		netinfo->command_line = g_strsplit (command, " ", -1);
 	
 		netinfo_process_command (netinfo);
