@@ -225,7 +225,7 @@ static void
 gn_combo_history_settings_load (GnComboHistory *history)
 {
 	gchar **items;
-	gint i;
+	guint i;
 
 	g_return_if_fail (GN_IS_COMBO_HISTORY (history));
 	g_return_if_fail (history->priv->id != NULL);

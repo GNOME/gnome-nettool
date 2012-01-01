@@ -47,7 +47,6 @@ finger_do (Netinfo * netinfo)
 	const gchar *user = NULL;
 	gchar *command = NULL;
 	gchar *program = NULL;
-	GtkWidget *parent;
 
 	gchar **command_line;
 	gchar **command_options;
@@ -80,8 +79,6 @@ finger_do (Netinfo * netinfo)
 
 	gtk_text_buffer_get_bounds (buffer, &start, &end);
 	gtk_text_buffer_delete (buffer, &start, &end);
-
-	parent = gtk_widget_get_toplevel (netinfo->output);
 
 	program = util_find_program_in_path ("finger", NULL);
 

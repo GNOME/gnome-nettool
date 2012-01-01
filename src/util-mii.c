@@ -48,7 +48,8 @@
 #include <glib/gprintf.h>
 
 #include <errno.h>
-#include <net/if.h>
+#include <sys/socket.h>
+
 #ifndef __GLIBC__
 #include <linux/if_arp.h>
 #include <linux/if_ether.h>
@@ -85,7 +86,7 @@ mdio_read (int skfd, int location)
 
 const struct {
 	char *name;
-	u_short value;
+	unsigned short value;
 } media[] = {
 	/* The order through 100baseT4 matches bits in the BMSR */
 	{
@@ -174,8 +175,6 @@ mii_get_basic (const char *ifname)
 	int bmcr, bmsr, advert, lkpar;
 	unsigned short autonegotiate = 0;
 	mii_data_result data;
-	struct mii_data *mii = (struct mii_data *) &ifr.ifr_data;
-	int phy_id;
 	int sock;
 
 	memset (data.iface, 0, 100);
@@ -203,7 +202,6 @@ mii_get_basic (const char *ifname)
 		close (sock);
 		return data;
 	}
-	phy_id = mii->phy_id;
 	data.has_data = 1;
 	
 	/* Some bits in the BMSR are latched, but we can't rely on being

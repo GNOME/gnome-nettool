@@ -54,7 +54,6 @@ struct _netstat_protocol_data {
 	gchar protocol[30];
 	gchar ip_src[50];
 	gchar port_src[30];
-//	gint  port_src;
 	gchar state[30];
 };
 

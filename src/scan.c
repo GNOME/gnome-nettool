@@ -36,7 +36,7 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #include <unistd.h>
-#include <string.h>
+#include <strings.h>
 
 #include "scan.h"
 #include "utils.h"
@@ -77,6 +77,7 @@ scan_do (Netinfo * netinfo)
 	gint ip_version, pf;
 	struct sockaddr *addr_ptr;
 	gint size;
+	gint ret;
 
 	g_return_if_fail (netinfo != NULL);
 
@@ -150,7 +151,7 @@ scan_do (Netinfo * netinfo)
 
 			if (ip_version == IPV4) {
 				addr.sin_family = PF_INET;
-				bcopy (hp->h_addr, &addr.sin_addr, hp->h_length);
+				bcopy (hp->h_addr_list[0], &addr.sin_addr, hp->h_length);
 				addr.sin_port = htons (i);
 				addr_ptr = (struct sockaddr *) &addr;
 				size = sizeof (addr);
@@ -158,7 +159,7 @@ scan_do (Netinfo * netinfo)
 			else {
 				addr6.sin6_family = PF_INET6;
 				addr6.sin6_flowinfo = 0;
-				bcopy (hp->h_addr, &addr6.sin6_addr, hp->h_length);
+				bcopy (hp->h_addr_list[0], &addr6.sin6_addr, hp->h_length);
 				addr6.sin6_port = htons (i);
 				addr_ptr = (struct sockaddr *) &addr6;
 				size = sizeof (addr6);
@@ -176,7 +177,8 @@ scan_do (Netinfo * netinfo)
 				/* Translators: "open" is a network status and should be one word. */
 				g_sprintf (buf, "%d %s %s\n", i, _("open"), service_name);
 				g_free (service_name);
-				write (pfd[1], buf, strlen (buf));
+				ret = write (pfd[1], buf, strlen (buf));
+				g_warn_if_fail (ret != -1);
 			}
 			/* close (sock); */
 			g_io_channel_shutdown (channel, FALSE, NULL);

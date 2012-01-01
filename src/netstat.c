@@ -20,8 +20,8 @@
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
- 
-#include <string.h>
+
+#include <strings.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include "netstat.h"
@@ -52,14 +52,14 @@ void clean_gtk_tree_view (GtkTreeView *widget);
 void
 on_protocol_button_toggled (GtkToggleButton *togglebutton, gpointer user_data)
 {
-	GtkTreeView *widget;
 	Netinfo *netinfo = user_data;
-	/* GtkWidget *parent, *child; */
+	/* GtkWidget *parent, *child, *widget; */
 	
 	g_return_if_fail (GTK_IS_TREE_VIEW (netinfo->output));
+
+	/*
 	widget = GTK_TREE_VIEW (netinfo->output);
 	
-	/*
 	parent = gtk_widget_get_parent (GTK_WIDGET (widget));
 	g_print ("name: %s\n", gtk_widget_get_name (parent));
 	child = gtk_bin_get_child (GTK_BIN (parent));
@@ -232,19 +232,19 @@ netstat_foreach (Netinfo * netinfo, gchar * line, gsize len, gpointer user_data)
 	buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (netinfo->output));
 	gtk_text_buffer_get_end_iter (buffer, &iter);
 
+#ifdef DEBUG
 	if (netstat_get_active_option2 (netinfo) == PROTOCOL) {
 		netstat_protocol_data data;
 		gint count;
 		
 		count = strip_protocol_line (line, &data);
-#ifdef DEBUG
 		if (count == 7 || count == 8) {
 
 			g_print ("%s\t%s:%s\t%s\n", data.protocol,
 				data.ip_src, data.port_src, data.state);
 		}
-#endif /* DEBUG */
 	}
+#endif /* DEBUG */
 
 	if (len > 0) {
 		text_utf8 = g_locale_to_utf8 (line, len,
@@ -277,7 +277,6 @@ netstat_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 	GtkTreeView *widget;
 
 	g_return_if_fail (netinfo != NULL);
-	//g_return_if_fail (line != NULL);
 
 	widget = (GTK_TREE_VIEW (netinfo->output));
 
@@ -629,7 +628,6 @@ strip_route_line (gchar * line, netstat_route_data *data)
 	return count;
 }
 
-//static GtkTreeModel *
 void
 netstat_create_route_model (GtkTreeView *widget)
 {
@@ -756,12 +754,11 @@ strip_multicast_line (gchar * line, netstat_multicast_data *data)
 			data->iface,
 			&members, data->group);
 
-	snprintf ((data)->members, 30, "%d", members);
+	g_snprintf ((data)->members, 30, "%d", members);
 	
 	return count;
 }
 
-//static GtkTreeModel *
 void 
 netstat_create_multicast_model (GtkTreeView *widget)
 {
@@ -796,14 +793,12 @@ netstat_create_multicast_model (GtkTreeView *widget)
 void
 clean_gtk_tree_view (GtkTreeView *widget)
 {
-	GList *columns, *list;
+	GList *columns;
 	gint n, i;
 	GtkTreeViewColumn *column;
 	
 	columns = gtk_tree_view_get_columns (widget);
-	
-	list = columns;
-	
+
 	n = g_list_length (columns);
 	
 	for (i = n; i > 0; i--) {

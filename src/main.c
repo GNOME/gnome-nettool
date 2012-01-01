@@ -265,7 +265,6 @@ Netinfo *
 load_ping_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *pinger;
-	GtkWidget *vbox_ping;
 	GtkWidget *label;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
@@ -302,8 +301,6 @@ load_ping_widgets_from_builder (GtkBuilder * builder)
 
 	pinger->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	pinger->stbar_text = NULL;
-
-	vbox_ping = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_ping"));
 
 	label = GTK_WIDGET (gtk_builder_get_object (builder, "ping_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), pinger->host);
@@ -352,7 +349,6 @@ Netinfo *
 load_traceroute_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *tracer;
-	GtkWidget *vbox_traceroute;
 	GtkWidget *label;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
@@ -382,8 +378,6 @@ load_traceroute_widgets_from_builder (GtkBuilder * builder)
 
 	tracer->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	tracer->stbar_text = NULL;
-	
-	vbox_traceroute = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_traceroute"));
 
 	label = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), tracer->host);
@@ -425,7 +419,6 @@ Netinfo *
 load_netstat_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *netstat;
-	GtkWidget *vbox_netstat;
 
 	g_return_val_if_fail (builder != NULL, NULL);
 
@@ -451,8 +444,6 @@ load_netstat_widgets_from_builder (GtkBuilder * builder)
 
 	netstat->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	netstat->stbar_text = NULL;
-	
-	vbox_netstat = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_netstat"));
 	
 	netstat->button_callback = G_CALLBACK (on_netstat_activate);
 	netstat->process_line = NETINFO_FOREACH_FUNC (netstat_foreach_with_tree);
@@ -715,7 +706,6 @@ Netinfo *
 load_lookup_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *lookup;
-	GtkWidget *vbox_lookup;
 	GtkWidget *label;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
@@ -746,8 +736,6 @@ load_lookup_widgets_from_builder (GtkBuilder * builder)
 
 	lookup->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	lookup->stbar_text = NULL;
-	
-	vbox_lookup = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_lookup"));
 
 	label = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), lookup->host);
@@ -794,7 +782,6 @@ Netinfo *
 load_finger_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *finger;
-	GtkWidget *vbox_finger;
 	GtkWidget *label;
 	PangoFontDescription *font_desc;
 	GtkEntry  *entry_host;
@@ -827,8 +814,6 @@ load_finger_widgets_from_builder (GtkBuilder * builder)
 
 	finger->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	finger->stbar_text = NULL;
-	
-	vbox_finger = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_finger"));
 
 	label = GTK_WIDGET (gtk_builder_get_object (builder, "finger_user_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), finger->user);
@@ -902,7 +887,6 @@ Netinfo *
 load_whois_widgets_from_builder (GtkBuilder * builder)
 {
 	Netinfo *whois;
-	GtkWidget *vbox_whois;
 	GtkWidget *label;
 	GtkEntry  *entry_host;
 	GtkTreeModel *model;
@@ -934,8 +918,6 @@ load_whois_widgets_from_builder (GtkBuilder * builder)
 
 	whois->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	whois->stbar_text = NULL;
-
-	vbox_whois = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_whois"));
 
 	label = GTK_WIDGET (gtk_builder_get_object (builder, "whois_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), whois->host);

@@ -213,7 +213,6 @@ static gboolean
 info_nic_update_stats (gpointer data)
 {
 	Netinfo *info = data;
-	GtkTreeModel *model;
 	gchar rx_pkt[10], rx_error[10];
 	gchar tx_pkt[10], tx_error[10];
 	gchar collisions[10];
@@ -224,7 +223,6 @@ info_nic_update_stats (gpointer data)
 
 	g_return_val_if_fail (info != NULL, FALSE);
 
-	model = gtk_combo_box_get_model (GTK_COMBO_BOX (info->combo));
 	nic = info_get_nic (info);
 	if (!nic)
 		return FALSE;
@@ -522,7 +520,7 @@ info_get_interfaces (Netinfo *info)
 	glibtop_netlist netlist;
 	gchar **devices;
 	gchar *iface;
-	gint i;
+	guint i;
 
 	devices = glibtop_get_netlist(&netlist);
 

@@ -10,12 +10,10 @@
  * Copyright (c) 1997-2002 Jean Tourrilhes, All Rights Reserved.
  */
 
-//#ifndef _LINUX_WIRELESS_H
-//#define _LINUX_WIRELESS_H
-
 #include <sys/ioctl.h>
 
-/*#include <linux/if.h>*/			/* for IFNAMSIZ and co... */
+#ifdef __linux__
+#include <linux/if.h>		/* for IFNAMSIZ and co... */
 
 /* Some useful constants */
 #define KILO	1e3
@@ -56,7 +54,7 @@ struct	iw_param
  */
 struct	iw_point
 {
-  caddr_t	pointer;	/* Pointer to the data  (in user space) */
+  void  *	pointer;	/* Pointer to the data  (in user space) */
   __u16		length;		/* number of fields or size in bytes */
   __u16		flags;		/* Optional params */
 };
@@ -148,3 +146,5 @@ struct	iwreq
 	/* Data part (defined just above) */
 	union	iwreq_data	u;
 };
+
+#endif

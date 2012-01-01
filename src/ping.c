@@ -37,7 +37,7 @@ enum {
 	IP_COLUMN,
 	ICMP_SEQ_COLUMN,
 	SRTT_COLUMN,
-	UNIT_COLUMN,
+	UNIT_COLUMN
 };
 
 static gint strip_line (gchar * line, ping_data * data, Netinfo * netinfo);

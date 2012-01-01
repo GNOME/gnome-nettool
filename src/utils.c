@@ -148,7 +148,7 @@ output_foreach (GtkTreeModel * model, GtkTreePath * path,
 
 	/* Get values from each colum */
 	for (j = 0; j < columns; j++) {
-		GValue value = { 0, };
+		GValue value = G_VALUE_INIT;
 		gchar *svalue;
 		gint ivalue;
 
