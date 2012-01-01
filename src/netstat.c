@@ -171,15 +171,23 @@ netstat_stop (Netinfo * netinfo)
 void
 netstat_do (Netinfo * netinfo)
 {
+	gboolean toggle;
 	gchar *command = NULL;
 	gchar *option = NULL;
 	gchar *program = NULL;
 	GtkTreeModel *model;
 	GtkWidget *parent;
+	NetstatOption noption;
 
 	g_return_if_fail (netinfo != NULL);
 
+	toggle = netinfo->toggle;
 	option = netstat_get_active_option (netinfo);
+	noption = netstat_get_active_option2 (netinfo);
+
+	if (noption == ROUTE || noption == PROTOCOL) {
+		netinfo->toggle = FALSE;
+	}
 
 	model = gtk_tree_view_get_model (GTK_TREE_VIEW (netinfo->output));
 	if (GTK_IS_LIST_STORE (model)) {
@@ -200,7 +208,10 @@ netstat_do (Netinfo * netinfo)
 	
 		g_strfreev (netinfo->command_line);
 	}
-	
+
+	/* Restore previous state */
+	netinfo->toggle = toggle;
+
 	g_free (command);
 	g_free (option);
 	g_free (program);

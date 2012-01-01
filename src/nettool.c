@@ -468,6 +468,11 @@ netinfo_toggle_state (Netinfo * netinfo, gboolean state,
 	g_assert (netinfo != NULL);
 	g_return_if_fail (netinfo != NULL);
 
+	if (! netinfo->toggle) {
+		netinfo->running = !state;
+		return;
+	}
+
 	if (GTK_IS_WIDGET (netinfo->sensitive)) {
 		gtk_widget_set_sensitive (GTK_WIDGET (netinfo->sensitive),
 					  state);

@@ -279,6 +279,7 @@ load_ping_widgets_from_builder (GtkBuilder * builder)
 	pinger->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
 	pinger->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "ping"));
 	pinger->running = FALSE;
+	pinger->toggle = TRUE;
 	pinger->child_pid = 0;
 	pinger->host = GTK_WIDGET (gtk_builder_get_object (builder, "ping_host"));
 	pinger->count = GTK_WIDGET (gtk_builder_get_object (builder, "ping_count"));
@@ -365,6 +366,7 @@ load_traceroute_widgets_from_builder (GtkBuilder * builder)
 	tracer->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
 	tracer->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute"));
 	tracer->running = FALSE;
+	tracer->toggle = TRUE;
 	tracer->child_pid = 0;
 	tracer->host = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_host"));
 	tracer->output = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_output"));
@@ -433,6 +435,7 @@ load_netstat_widgets_from_builder (GtkBuilder * builder)
 	netstat->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
 	netstat->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "netstat"));
 	netstat->running = FALSE;
+	netstat->toggle = TRUE;
 	netstat->child_pid = 0;
 	netstat->host = NULL;
 	netstat->count = NULL;
@@ -530,6 +533,7 @@ load_info_widgets_from_builder (GtkBuilder * builder)
 
 	info->main_window = GTK_WIDGET (gtk_builder_get_object (builder, "main_window"));
 	info->running = FALSE;
+	info->toggle = TRUE;
 	info->combo = GTK_WIDGET (gtk_builder_get_object (builder, "info_combo"));
 	info->ipv6_frame = GTK_WIDGET (gtk_builder_get_object (builder, "info_ipv6_frame"));
 	info->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
@@ -604,6 +608,7 @@ load_scan_widgets_from_builder (GtkBuilder * builder)
 	scan->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
 	scan->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "scan"));
 	scan->running = FALSE;
+	scan->toggle = TRUE;
 	scan->child_pid = 0;
 	scan->host = GTK_WIDGET (gtk_builder_get_object (builder, "scan_host"));
 	scan->count = NULL;
@@ -724,6 +729,7 @@ load_lookup_widgets_from_builder (GtkBuilder * builder)
 	lookup->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
 	lookup->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "lookup"));
 	lookup->running = FALSE;
+	lookup->toggle = TRUE;
 	lookup->child_pid = 0;
 	lookup->host = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_host"));
 	lookup->output = GTK_WIDGET (gtk_builder_get_object (builder, "lookup_output"));
@@ -803,6 +809,7 @@ load_finger_widgets_from_builder (GtkBuilder * builder)
 	finger->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
 	finger->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "finger"));
 	finger->running = FALSE;
+	finger->toggle = TRUE;
 	finger->child_pid = 0;
 	finger->user = GTK_WIDGET (gtk_builder_get_object (builder, "finger_user"));
 	finger->host = GTK_WIDGET (gtk_builder_get_object (builder, "finger_host"));
@@ -911,6 +918,7 @@ load_whois_widgets_from_builder (GtkBuilder * builder)
 	whois->progress_bar = GTK_WIDGET (gtk_builder_get_object (builder, "progress_bar"));
 	whois->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "whois"));
 	whois->running = FALSE;
+	whois->toggle = TRUE;
 	whois->child_pid = 0;
 	whois->host = GTK_WIDGET (gtk_builder_get_object (builder, "whois_host"));
 	whois->output = GTK_WIDGET (gtk_builder_get_object (builder, "whois_output"));
