@@ -20,7 +20,6 @@
 
 #include "nettool.h"
 
-#define INFO_ADDRSTRLEN 128
 #define NOT_AVAILABLE _("not available")
 #define DELAY_STATS 1000  /* 1 second */
 

@@ -352,7 +352,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 {
 	GtkTreeModel *model;
 	GtkTreeIter   iter;
-	gchar dst[INFO_ADDRSTRLEN];
+	gchar *dst;
 	InfoIpAddr *ip;
 	gint prefix;
 	struct in_addr addr, subnet;
@@ -447,7 +447,7 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 
 	/* Get the Hardware Address */
 	if (netload.flags & (1L << GLIBTOP_NETLOAD_HWADDRESS)) {
-		g_sprintf (dst, "%02x:%02x:%02x:%02x:%02x:%02x",
+		dst = g_strdup_printf ("%02x:%02x:%02x:%02x:%02x:%02x",
 			   (int) ((guchar *) &netload.hwaddress)[0],
 			   (int) ((guchar *) &netload.hwaddress)[1],
 			   (int) ((guchar *) &netload.hwaddress)[2],
@@ -455,14 +455,15 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 			   (int) ((guchar *) &netload.hwaddress)[4],
 			   (int) ((guchar *) &netload.hwaddress)[5]);
 	} else {
-		g_sprintf (dst, NOT_AVAILABLE);
+		dst = g_strdup_printf ("%s", NOT_AVAILABLE);
 	}
 	gtk_label_set_text (GTK_LABEL (info->hw_address), dst);
+	g_free (dst);
 
 	/* Get the interface's Maximum Transfer Unit */
-	g_sprintf (dst, "%d", netload.mtu);
+	dst = g_strdup_printf ("%d", netload.mtu);
 	gtk_label_set_text (GTK_LABEL (info->mtu), dst);
-	bzero (dst, strlen(dst));
+	g_free (dst);
 
 
 	/* Get Flags to determine other properties */
@@ -476,7 +477,9 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 
 	/* Is this a loopback device? */
 	if (netload.if_flags & (1L << GLIBTOP_IF_FLAGS_LOOPBACK)) {
-		gtk_label_set_text (GTK_LABEL (info->hw_address), _("Loopback"));
+		dst = g_strdup_printf ("%s", _("Loopback"));
+		gtk_label_set_text (GTK_LABEL (info->hw_address), dst);
+		g_free (dst);
 		ip->ip_bcast = g_strdup ("");
 		info_setup_configure_button (info, FALSE);
 	} else {
