@@ -200,13 +200,11 @@ info_load_iface (Netinfo *info)
 	gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (info->combo), renderer, TRUE);
 	gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (info->combo), renderer,
 					"pixbuf", 0, NULL);
-	g_object_unref (renderer);
 
 	renderer = gtk_cell_renderer_text_new ();
 	gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (info->combo), renderer, TRUE);
 	gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (info->combo), renderer,
 					"markup", 1, NULL);
-	g_object_unref (renderer);
 
 	gtk_combo_box_set_active (GTK_COMBO_BOX (info->combo), 0);
 }
