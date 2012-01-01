@@ -674,7 +674,10 @@ nettool_lookup_setup_combo_type (Netinfo *lookup)
 		/* When asking for NS record in DNS context */
 		N_("Name Server"),
 		N_("Host name for Address"),
-		N_("Start-of-authority"),
+		/* When asking for SOA record in DNS context.
+		   It defines which server is the primary nameserver
+		   for a domain */
+		N_("Start of Authority"),
 		N_("Text Information"),
 		N_("Well Known Services"),
 		N_("Any / All Information"),
