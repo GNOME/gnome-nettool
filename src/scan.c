@@ -26,28 +26,12 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <glib/gprintf.h>
-#include <stdlib.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <signal.h>
-#include <errno.h>
-
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netdb.h>
-#include <unistd.h>
-#include <strings.h>
 
 #include "scan.h"
 #include "utils.h"
 
-#define SIZE 1024
-
 static GtkTreeModel *scan_create_model (GtkTreeView *widget);
 static gint strip_line (gchar * line, scan_data * data);
-
-/* Signal handler */
-static void wait_for_child (int sig);
 
 void
 scan_stop (Netinfo * netinfo)
@@ -62,22 +46,10 @@ scan_do (Netinfo * netinfo)
 {
 	const gchar *host = NULL;
 	GtkTreeModel *model;
-	
-	struct sockaddr_in addr;
-	struct sockaddr_in6 addr6;
-	struct hostent *hp = NULL;
-	struct servent *service = NULL;
-	gint i, sock, start_port = 1, end_port = 65535;
-	GIOChannel *channel;
-	GIOChannel *channel2;
-	gint pfd[2];
-	gint pid;
-	gchar buf[SIZE];
-	gchar *service_name = NULL;
-	gint ip_version, pf;
-	struct sockaddr *addr_ptr;
-	gint size;
-	gint ret;
+	gint ip_version;
+	gchar *program = NULL;
+	gchar *command = NULL;
+	GtkWidget *parent;
 
 	g_return_if_fail (netinfo != NULL);
 
@@ -88,9 +60,6 @@ scan_do (Netinfo * netinfo)
 		netinfo_stop_process_command (netinfo);
 		return;
 	}
-
-	/* signal handling */
-	signal (SIGCHLD, wait_for_child);
 
 	host = netinfo_get_host (netinfo);
 
@@ -103,110 +72,31 @@ scan_do (Netinfo * netinfo)
 	if (GTK_IS_LIST_STORE (model)) {
 		gtk_list_store_clear (GTK_LIST_STORE (model));
 	}
-	
-	switch (ip_version = netinfo_get_ip_version (netinfo))
-	{
-	case IPV4:
-		pf = PF_INET;
-		break;
-	case IPV6:
-		pf = PF_INET6;
-		break;
-	case -1:
-	default:
-#ifdef DEBUG
-		g_print ("Error: Host unkown\n");
-#endif /* DEBUG */
-		return;
-		/*g_return_if_fail (hp != NULL);*/
-		break;
-	}
 
-	hp = gethostbyname2 (host, pf);
+	parent = gtk_widget_get_toplevel (netinfo->output);
+	program = util_find_program_dialog ("nmap", parent);
 
-	if (pipe (pfd) == -1) {
-		perror ("pipe failed");
-		return;
-	}
+	if (program != NULL) {
+		ip_version = netinfo_get_ip_version (netinfo);
 
-        netinfo_toggle_state (netinfo, INACTIVE, NULL);
-
-	if ((pid = fork ()) < 0) {
-		perror ("fork failed");
-		return;
-	}
-
-	if (pid == 0) {
-		/* child */
-		close (pfd[0]);
-		for (i = start_port; i <= end_port; i++) {
-			if ((sock = socket (pf, SOCK_STREAM, 0)) == -1) {
-#ifdef DEBUG			
-				g_print ("Unable to create socket\n");
-#endif /* DEBUG */
-				continue;
-			}
-
-			channel = g_io_channel_unix_new (sock);
-
-			if (ip_version == IPV4) {
-				addr.sin_family = PF_INET;
-				bcopy (hp->h_addr_list[0], &addr.sin_addr, hp->h_length);
-				addr.sin_port = htons (i);
-				addr_ptr = (struct sockaddr *) &addr;
-				size = sizeof (addr);
-			}
-			else {
-				addr6.sin6_family = PF_INET6;
-				addr6.sin6_flowinfo = 0;
-				bcopy (hp->h_addr_list[0], &addr6.sin6_addr, hp->h_length);
-				addr6.sin6_port = htons (i);
-				addr_ptr = (struct sockaddr *) &addr6;
-				size = sizeof (addr6);
-			}
-			
-			if (connect (sock, addr_ptr, size) == 0) {
-				service = getservbyport (htons (i), "tcp");
-
-				if (service != NULL) {
-					service_name = g_strdup (service->s_name);
-				} else {
-					service_name = g_strdup (_("unknown"));
-				}
-
-				/* Translators: "open" is a network status and should be one word. */
-				g_sprintf (buf, "%d %s %s\n", i, _("open"), service_name);
-				g_free (service_name);
-				ret = write (pfd[1], buf, strlen (buf));
-				g_warn_if_fail (ret != -1);
-			}
-			/* close (sock); */
-			g_io_channel_shutdown (channel, FALSE, NULL);
+		if (ip_version == IPV6) {
+			command = g_strdup_printf ("%s %s %s %s", program,
+						   "nmap", "-6", host);
+		} else {
+			command = g_strdup_printf ("%s %s %s", program,
+						   "nmap", host);
 		}
-		close (pfd[1]);
-		exit (0);
-	} else {
-		/* parent */
-		close (pfd[1]);
 
-		netinfo->child_pid = pid;
-		netinfo->pipe_out = pfd[0];
-
-		channel2 = g_io_channel_unix_new (pfd[0]);
-		g_io_add_watch (channel2,
-				G_IO_IN | G_IO_HUP | G_IO_ERR | G_IO_NVAL,
-				netinfo_io_text_buffer_dialog, netinfo);
-		g_io_channel_unref (channel2);
-	}
+		netinfo->command_line = g_strsplit (command, " ", -1);
 	
-}
+		netinfo_process_command (netinfo);
+	
+		g_strfreev (netinfo->command_line);
+	}
 
-static void 
-wait_for_child (int sig)
-{
-	while (waitpid (-1, NULL, WNOHANG) > 0);
+	g_free (command);
+	g_free (program);
 }
-
 
 /* Process each line from ping command */
 void
@@ -230,8 +120,12 @@ strip_line (gchar * line, scan_data * data)
 {
 	gint count;
 
+	if (! g_regex_match_simple ("^\\d+/\\w", line, 0, 0)) {
+		return 0;
+	}
+
 	count = sscanf (line, SCAN_FORMAT,
-			&(data)->port, data->state, data->service);
+			data->port, data->state, data->service);
 
 	return count;
 }
@@ -330,7 +224,7 @@ scan_create_model (GtkTreeView *widget)
 
 	model = GTK_TREE_MODEL (gtk_list_store_new
 				(3,
-				 G_TYPE_INT,
+				 G_TYPE_STRING,
 				 G_TYPE_STRING,
 				 G_TYPE_STRING));
 	return model;

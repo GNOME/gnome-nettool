@@ -20,12 +20,12 @@
 
 #include "nettool.h"
 
-#define SCAN_FORMAT "%d %s %s"
+#define SCAN_FORMAT "%s %s %s"
 
 typedef struct _scan_data scan_data;
 	
 struct _scan_data {
-	gint port;
+	gchar port[128];
 	gchar state[128];
 	gchar service[128];
 };
