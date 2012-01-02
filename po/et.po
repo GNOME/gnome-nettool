@@ -7,21 +7,22 @@
 #
 # Ivar Smolin <okul@linux.ee>, 2005–2010.
 # Priit Laes <amd@store20.com>, 2005.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"nettool&component=general\n"
-"POT-Creation-Date: 2010-11-28 14:42+0000\n"
-"PO-Revision-Date: 2010-11-11 08:26+0200\n"
-"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
-"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-01-01 21:38+0000\n"
+"PO-Revision-Date: 2012-01-02 01:13+0200\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 msgid "translator-credits"
 msgstr ""
@@ -138,19 +139,16 @@ msgstr ""
 "Sisesta domeen või aadress, mille kohta soovid whois-päringut teha. Näiteks: "
 "www.domain.com või 192.168.2.1"
 
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Sisesta domeen, mida soovid lahendada. Näiteks: domeen.ee või ftp.domeen.ee"
+
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
 "Sisesta domeen või aadress, millelt soovid finger-päringut teha. Näiteks: "
 "www.domain.com või 192.168.2.1"
-
-msgid ""
-"Enter the network address to lookup. For example: www.domain.com or "
-"192.168.2.1"
-msgstr ""
-"Sisesta võrguaadress, mida soovid lahendada. Näiteks: www.domain.com või "
-"192.168.2.1"
 
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
@@ -164,6 +162,13 @@ msgid ""
 msgstr ""
 "Sisesta võrguaadress, mille avatud porte soovid kontrollida. Näiteks: www."
 "domain.com või 192.168.2.1"
+
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"Sisesta võrguaadress, kuhu sa soovid pakettide liikumisrada tuvastada. "
+"Näiteks: www.domeen.ee või 192.168.2.1"
 
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
@@ -318,6 +323,9 @@ msgstr "Whoisi väljund"
 
 msgid "_Configure"
 msgstr "_Seadista"
+
+msgid "_Contents"
+msgstr "_Sisukord"
 
 msgid "_Domain address:"
 msgstr "_Domeeni aadress:"
@@ -561,7 +569,11 @@ msgstr "Nimeserver"
 msgid "Host name for Address"
 msgstr "Aadressi hostinimi"
 
-msgid "Start-of-authority"
+# see on väga spetsiifiline erialatermin http://searchnetworking.techtarget.com/definition/start-of-authority-record
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
+msgid "Start of Authority"
 msgstr "Tsooni algusblokk (SOA)"
 
 msgid "Text Information"
