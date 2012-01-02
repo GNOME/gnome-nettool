@@ -123,8 +123,8 @@
           </object>
         </child>
         <child>
-          <object class="GtkAction" id="help1">
-            <property name="name">help1</property>
+          <object class="GtkAction" id="help">
+            <property name="name">help</property>
             <property name="label" translatable="yes">_Help</property>
           </object>
         </child>
@@ -134,6 +134,7 @@
             <property name="name">m_help_contents</property>
             <signal handler="on_help_activate" name="activate" object="main_window"/>
           </object>
+          <accelerator key="F1" modifiers=""/>
         </child>
         <child>
           <object class="GtkAction" id="m_about">
@@ -156,7 +157,7 @@
           <separator/>
           <menuitem action="m_clear_history"/>
         </menu>
-        <menu action="help1">
+        <menu action="help">
           <menuitem action="m_help_contents"/>
           <menuitem action="m_about"/>
         </menu>
