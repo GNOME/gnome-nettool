@@ -20,16 +20,15 @@
 
 #include "nettool.h"
 
-#define TRACE_FORMAT "%d %s %s %s ms %s ms"
-#define TRACE_FORMAT_CLOSE "%d %s %s [closed] %s ms %s ms"
-#define TRACE_FORMAT_OPEN "%d %s %s [open] %s ms %s ms"
-#define TRACE_SELECT_DEVICE "Selected device %s address %s port %d for outgoing packets"
-#define TRACE_TRACE_PATH "Tracing the path to %s (146.83.195.14) on TCP port 80 %d hops max"
-#define TRACE_NUM_ARGS 5
-#define TRACE_NUM_ERR  3
+#define TRACE_FORMAT "%d %s %s %s ms"
+#define TRACE_PATH_FORMAT "%d: %s %s %sms"
+#define TRACE_NUM_ARGS 4
+#define TRACE_NUM_ERR  2
 
 /* Try 40 hops maximum and send only 1 packet */
-#define TCPTRACEROUTE_OPTIONS "-q 2 -m 40"
+#define TCPTRACEROUTE_OPTIONS "-q 1 -N -m 40"
+#define TRACEROUTE_OPTIONS "-q 1 -m 40"
+#define TRACEPATH_OPTIONS "-b"
 
 typedef struct _traceroute_data traceroute_data;
 typedef struct _trace_source_data trace_source_data;
@@ -55,7 +54,6 @@ enum {
 	TRACE_HOSTNAME,
 	TRACE_IP,
 	TRACE_RTT1,
-	TRACE_RTT2,
 	TRACE_NUM_COLUMNS
 };
 

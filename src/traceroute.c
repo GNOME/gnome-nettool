@@ -28,7 +28,7 @@
 #include "traceroute.h"
 #include "utils.h"
 
-static gint strip_line (gchar * line, traceroute_data * data);
+static gint strip_line (gchar *line, traceroute_data *data, Netinfo *netinfo);
 static GtkTreeModel *traceroute_create_model (GtkTreeView *widget);
 
 void
@@ -46,9 +46,10 @@ traceroute_do (Netinfo * netinfo)
 	gchar *command = NULL;
 	gchar *program = NULL;
 	gchar *program_name = NULL;
+	gchar *program_options = NULL;
 	GtkTreeModel *model;
 	GtkWidget *parent;
-        
+
 	g_return_if_fail (netinfo != NULL);
 
 	/* Because of the delay, we can't check twice for a hostname/IP.
@@ -71,24 +72,44 @@ traceroute_do (Netinfo * netinfo)
 	}
 
 	parent = gtk_widget_get_toplevel (netinfo->output);
-	
+
 	switch (netinfo_get_ip_version (netinfo))
 	{
 	case IPV4:
-		program = util_find_program_in_path ("tcptraceroute", NULL);
+		program = util_find_program_in_path ("tracepath", NULL);
 #ifdef DEBUG
 		g_print ("tcptraceroute: %s\n", program);
 #endif
 		if (program != NULL) {
+			program_name = g_strdup ("tracepath");
+			program_options = g_strdup (TRACEPATH_OPTIONS);
+			netinfo->use_tracepath = TRUE;
+			break;
+		}
+
+		netinfo->use_tracepath = FALSE;
+		program = util_find_program_in_path ("tcptraceroute", NULL);
+		if (program != NULL) {
 			program_name = g_strdup ("tcptraceroute");
+			program_options = g_strdup (TCPTRACEROUTE_OPTIONS);
 		} else {
 			program = util_find_program_dialog ("traceroute", parent);
 			program_name = g_strdup ("traceroute");
+			program_options = g_strdup (TRACEROUTE_OPTIONS);
 		}
 		break;
 	case IPV6:
-		program = util_find_program_in_path ("traceroute6", NULL);
-		program_name = g_strdup ("traceroute6");
+		program = util_find_program_in_path ("tracepath6", NULL);
+		if (program != NULL) {
+			program_name = g_strdup ("tracepath6");
+			program_options = g_strdup (TRACEPATH_OPTIONS);
+			netinfo->use_tracepath = TRUE;
+		} else {
+			program = util_find_program_dialog ("traceroute6", parent);
+			program_name = g_strdup ("traceroute6");
+			program_options = g_strdup (TRACEROUTE_OPTIONS);
+			netinfo->use_tracepath = FALSE;
+		}
 		break;
 	default:
 		program = NULL;
@@ -96,18 +117,19 @@ traceroute_do (Netinfo * netinfo)
 	}
 
 	if (program != NULL) {
-		command =
-                  g_strdup_printf ("%s %s %s %s", program, program_name,
-                                   TCPTRACEROUTE_OPTIONS, host);
-	
+		command = g_strdup_printf ("%s %s %s %s", program,
+		                           program_name, program_options,
+		                           host);
+
 		netinfo->command_line = g_strsplit (command, " ", -1);
-	
+
 		netinfo_process_command (netinfo);
 
 		g_strfreev (netinfo->command_line);
 		g_free (command);
 		g_free (program);
 		g_free (program_name);
+		g_free (program_options);
 	}
 }
 
@@ -159,7 +181,7 @@ traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 	if (len > 0) {		/* there are data to show */
 		/* count = traceroute_strip_line (line, &data); */
 
-		count = strip_line (line, &data);
+		count = strip_line (line, &data, netinfo);
 
 		if (count == TRACE_NUM_ARGS) {
 
@@ -181,7 +203,7 @@ traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 			model =
 			    gtk_tree_view_get_model (GTK_TREE_VIEW
 						     (widget));
-			
+
 			gtk_tree_view_get_cursor (GTK_TREE_VIEW (widget),
 						  &path, NULL);
 
@@ -193,8 +215,7 @@ traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 					    TRACE_HOSTNAME, data.hostname,
 					    TRACE_IP, data.ip,
 					    TRACE_RTT1, data.rtt1,
-					    TRACE_RTT2, data.rtt2,
-/*					    TRACE_RTT3, data.rtt3,*/ -1);
+					    -1);
 
 			gtk_tree_view_set_model (GTK_TREE_VIEW (widget),
 						 model);
@@ -213,41 +234,60 @@ traceroute_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 }
 
 static gint
-strip_line (gchar * line, traceroute_data * data)
+strip_line (gchar *line, traceroute_data *data, Netinfo *netinfo)
 {
 	gint count;
+	gchar *wline;
+	GRegex *regex;
 
-	line = g_strdelimit (line, "()", ' ');
-	
-	count = sscanf (line, TRACE_FORMAT,
-			&(data)->hop_count, data->hostname, data->ip,
-			data->rtt1, data->rtt2/*, data->rtt3*/);
-	
+	if (g_regex_match_simple ("^(Selected|Tracing) ", line, 0, 0)) {
+		return 0;
+	}
+
+	/* tcptraceroute printsan extra [open] or [close] in the last line,
+	   which is irrelevant to us
+	 */
+	regex = g_regex_new ("\\[.*\\]", 0, 0, NULL);
+	wline = g_regex_replace_literal (regex, line, -1, 0, "", 0, NULL);
+	g_regex_unref (regex);
+
+	if (wline) {
+		line = wline;
+	}
+
+	regex = g_regex_new ("(\\d)ms", 0, 0, NULL);
+	wline = g_regex_replace (regex, line, -1, 0, "\\1 ms", 0, NULL);
+	g_regex_unref (regex);
+
+	if (wline) {
+		line = wline;
+	}
+
+	line = g_strdelimit (line, "( )", ' ');
+
+	if (netinfo->use_tracepath) {
+		count = sscanf (line, TRACE_PATH_FORMAT,
+				&(data)->hop_count, data->hostname, data->ip,
+				data->rtt1);
+	} else {
+		count = sscanf (line, TRACE_FORMAT,
+				&(data)->hop_count, data->hostname, data->ip,
+				data->rtt1);
+	}
+
 	if (count == TRACE_NUM_ARGS) {
+		if (g_strcmp0 (data->rtt1, "ms") == 0) {
+			g_sprintf (data->rtt1, "%s", data->ip);
+			g_sprintf (data->ip, "%s", data->hostname);
+		}
 		return count;
 	}
 
 	if (count == TRACE_NUM_ERR) {
+		bzero (&(data)->ip, 128);
+		g_sprintf (data->ip, "*");
 		g_sprintf (data->rtt1, "*");
-		g_sprintf (data->rtt2, "*");
 		return TRACE_NUM_ARGS;
-	}
-	/* The last line is different, because it has a 
-	   extra [open] or [close] string. That string it 
-	   does not matter to us 
-	 */
-
-	count = sscanf (line, TRACE_FORMAT_OPEN,
-			&(data)->hop_count, data->hostname, data->ip,
-			data->rtt1, data->rtt2/*, data->rtt3*/);
-
-	if (count == TRACE_NUM_ARGS) {
-		return count;
-	} else {
-		count = sscanf (line, TRACE_FORMAT_CLOSE,
-				&(data)->hop_count, data->hostname,
-				data->ip, data->rtt1, data->rtt2 /*,
-				data->rtt3*/);
 	}
 
 	return count;
@@ -261,7 +301,7 @@ traceroute_create_model (GtkTreeView *widget)
 	GtkTreeModel *model;
 
 	/*FIXME: Set correctly the align for each renderer */
-	
+
 	renderer = gtk_cell_renderer_text_new ();
 	/* Number of sequence of each hop in a traceroute output */
 	column =
@@ -293,24 +333,13 @@ traceroute_create_model (GtkTreeView *widget)
 	   when was received its reply (1st sample) */
 	column =
 	    gtk_tree_view_column_new_with_attributes
-	    (_("Time 1"), renderer, "text", TRACE_RTT1, NULL);
-	g_object_set (G_OBJECT (renderer), "xalign", 1.0, NULL);
-	gtk_tree_view_append_column (widget, column);
-
-
-	renderer = gtk_cell_renderer_text_new ();
-	/* Time elapsed between a packets was sent and
-	   when was received its reply (2nd sample) */
-	column =
-	    gtk_tree_view_column_new_with_attributes
-	    (_("Time 2"), renderer, "text", TRACE_RTT2, NULL);
+	    (_("Time"), renderer, "text", TRACE_RTT1, NULL);
 	g_object_set (G_OBJECT (renderer), "xalign", 1.0, NULL);
 	gtk_tree_view_append_column (widget, column);
 
 	model = GTK_TREE_MODEL (gtk_list_store_new
 				(TRACE_NUM_COLUMNS,
 				 G_TYPE_INT,
-				 G_TYPE_STRING,
 				 G_TYPE_STRING,
 				 G_TYPE_STRING,
 				 G_TYPE_STRING));
@@ -329,12 +358,12 @@ traceroute_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 	   Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 	   Round Trip Time 2 (Time2),
 	   It's a tabular output, and these belongs to the column titles */
-	result = g_string_new (_("Hop\tHostname\tIP\tTime 1\tTime 2\n"));
+	result = g_string_new (_("Hop\tHostname\tIP\tTime 1\n"));
 
 	content = util_tree_model_to_string (GTK_TREE_VIEW (netinfo->output));
-	
+
 	g_string_append_printf (result, "%s", content->str);
-	
+
 	gtk_clipboard_set_text (gtk_clipboard_get (GDK_NONE), result->str,
 				result->len);
 

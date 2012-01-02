@@ -363,6 +363,8 @@ load_traceroute_widgets_from_builder (GtkBuilder * builder)
 	tracer->page_label = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute"));
 	tracer->running = FALSE;
 	tracer->toggle = TRUE;
+	tracer->use_tracepath = FALSE; /* It might be overriden on runtime
+	                                  if tracepath is installed */
 	tracer->child_pid = 0;
 	tracer->host = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_host"));
 	tracer->output = GTK_WIDGET (gtk_builder_get_object (builder, "traceroute_output"));

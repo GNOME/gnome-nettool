@@ -54,6 +54,7 @@ struct _Netinfo {
 	GtkWidget *graph;
 	gboolean running;
 	gboolean toggle;
+	gboolean use_tracepath;
 	gint child_pid;
 	gint pipe_out;
 	gint pipe_err;
