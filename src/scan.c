@@ -86,12 +86,11 @@ scan_do (Netinfo * netinfo)
 			command = g_strdup_printf ("%s %s %s", program,
 						   "nmap", host);
 		}
-
+	
+		g_strfreev (netinfo->command_line);
 		netinfo->command_line = g_strsplit (command, " ", -1);
 	
 		netinfo_process_command (netinfo);
-	
-		g_strfreev (netinfo->command_line);
 	}
 
 	g_free (command);

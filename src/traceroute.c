@@ -121,11 +121,11 @@ traceroute_do (Netinfo * netinfo)
 		                           program_name, program_options,
 		                           host);
 
+		g_strfreev (netinfo->command_line);
 		netinfo->command_line = g_strsplit (command, " ", -1);
 
 		netinfo_process_command (netinfo);
 
-		g_strfreev (netinfo->command_line);
 		g_free (command);
 		g_free (program);
 		g_free (program_name);

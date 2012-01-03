@@ -344,11 +344,10 @@ ping_do (Netinfo * netinfo)
 #ifdef DEBUG
 		g_print("command: %s\n", command);
 #endif
+		g_strfreev (netinfo->command_line);
 		netinfo->command_line = g_strsplit (command, " ", -1);
 	
 		netinfo_process_command (netinfo);
-	
-		g_strfreev (netinfo->command_line);
 	}
 	
 	g_free (count_string);

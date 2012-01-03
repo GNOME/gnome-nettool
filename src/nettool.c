@@ -264,11 +264,46 @@ netinfo_process_command (Netinfo * netinfo)
 	netinfo_text_buffer_insert (netinfo);
 }
 
+/* read child output on child termination event */
+static void
+netinfo_reap_child (GPid pid, gint status, gpointer user_data)
+{
+	Netinfo *netinfo = (Netinfo *) user_data;
+	gchar *primary = NULL;
+	gchar *secondary = NULL;
+	const gchar *page_label;
+	gchar *cmd;
+
+	g_spawn_close_pid (pid);
+
+	g_return_if_fail (netinfo != NULL);
+	g_return_if_fail (netinfo->command_line != NULL);
+
+	page_label = gtk_label_get_text (GTK_LABEL (netinfo->page_label));
+	
+	if (WEXITSTATUS(status) > 0) {
+		cmd = g_strjoinv (" ", netinfo->command_line);
+
+		/* '%s' is the task name to run
+		   (e.g. Traceroute, Port Scan, Finger, etc.) */
+		primary = g_strdup_printf (
+				_("An error occurred when try to run '%s'"),
+				page_label);
+		secondary = g_strdup_printf ("%s", cmd);
+
+		netinfo_error_message (netinfo, primary, secondary);
+
+		g_free (cmd);
+		g_free (primary);
+		g_free (secondary);
+	}
+}
+
 void
 netinfo_text_buffer_insert (Netinfo * netinfo)
 {
 	gchar *dir = g_get_current_dir ();
-	gint child_pid, pout; /* , perr; */
+	gint child_pid, pout;
 	GIOChannel *channel;
 	const gchar *charset;
 	GIOStatus status;
@@ -278,9 +313,10 @@ netinfo_text_buffer_insert (Netinfo * netinfo)
 	g_return_if_fail (netinfo->command_line != NULL);
 
 	if (g_spawn_async_with_pipes (dir, netinfo->command_line, NULL,
-				      G_SPAWN_FILE_AND_ARGV_ZERO, NULL,
+				      G_SPAWN_FILE_AND_ARGV_ZERO |
+				      G_SPAWN_DO_NOT_REAP_CHILD, NULL,
 				      NULL, &child_pid, NULL, &pout,
-				      NULL /* &perr */ ,
+				      NULL,
 				      &err)) {
 
 		netinfo->child_pid = child_pid;
@@ -289,7 +325,7 @@ netinfo_text_buffer_insert (Netinfo * netinfo)
 		fcntl (pout, F_SETFL, O_NONBLOCK);
 		netinfo->command_output = NULL;
 
-		/*netinfo->pipe_err = perr; */
+		g_child_watch_add (child_pid, netinfo_reap_child, netinfo);
 
 		g_get_charset(&charset);
 		channel = g_io_channel_unix_new (pout);
@@ -298,15 +334,10 @@ netinfo_text_buffer_insert (Netinfo * netinfo)
 						   &err);
 		if (G_IO_STATUS_NORMAL == status) {
 			g_io_add_watch (channel,
-					G_IO_IN | G_IO_HUP | G_IO_ERR | G_IO_NVAL,
+					G_IO_IN | G_IO_HUP |
+					G_IO_ERR | G_IO_NVAL,
 					netinfo_io_text_buffer_dialog, netinfo);
 			g_io_channel_unref (channel);
-	
-			/*channel = g_io_channel_unix_new (perr);
-			   g_io_add_watch (channel,
-			   G_IO_IN | G_IO_HUP | G_IO_ERR | G_IO_NVAL,
-			   netinfo_io_text_buffer_dialog, netinfo);
-			   g_io_channel_unref (channel); */
 		} else {
 			g_warning ("Error: %s\n", err->message);
 			g_error_free (err);

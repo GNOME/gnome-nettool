@@ -122,13 +122,13 @@ finger_do (Netinfo * netinfo)
 			command_line[i++] = g_strdup (command_arg);
 		command_line[i++] = NULL;
 
+		g_strfreev (netinfo->command_line);
 		netinfo->command_line = command_line;
 
 		netinfo_process_command (netinfo);
 
 		g_free (command_arg);
 		g_strfreev (command_options);
-		g_strfreev (netinfo->command_line);
 	}
 
 	g_free (command);
