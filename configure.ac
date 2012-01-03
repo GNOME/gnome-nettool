@@ -1,6 +1,6 @@
 AC_PREREQ([2.64])
 AC_INIT([GNOME Nettool],
-        [3.0.0],
+        [3.0.1],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool],
         [gnome-nettool],
         [http://projects.gnome.org/gnome-network/]) #FIXME: website should be updated, it is even yet named gnome-network
