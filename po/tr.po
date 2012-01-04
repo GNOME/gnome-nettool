@@ -1,7 +1,5 @@
-# translation of gnome-nettool.HEAD.tr.po to Turkish
 # translation of gnome-nettool to Turkish
 # Copyright (C) 1999, 2004, 2005, 2008 Free Software Foundation, Inc.
-#
 #
 # Onur Can ÇAKMAK <onur.cakmak@gmail.com>, 2006.
 # Baris Cicek <baris@teamforce.name.tr>, 2008, 2009.
@@ -12,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.tr\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-01-01 04:57+0000\n"
-"PO-Revision-Date: 2012-01-02 09:01+0000\n"
+"POT-Creation-Date: 2012-01-03 17:53+0000\n"
+"PO-Revision-Date: 2012-01-04 10:02+0000\n"
 "Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +23,9 @@ msgstr ""
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
-msgstr "Barış Çiçek <baris@teamforce.name.tr>"
+msgstr ""
+"Barış Çiçek <baris@teamforce.name.tr>\n"
+"Muhammet Kara <muhammet.k@gmail.com>"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -43,7 +43,7 @@ msgstr "Ağ Araçları"
 msgid "Graphical user interface for common network utilities"
 msgstr "Ortak ağ araçları için grafik kullanıcı arabirimi"
 
-#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:488
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
 msgstr "Atıl"
 
@@ -172,9 +172,6 @@ msgstr ""
 "192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:22
-#| msgid ""
-#| "Enter the network address to lookup. For example: www.domain.com or "
-#| "192.168.2.1"
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
 "Çözümlenecek alan adını girin. Örneğin: alanadi.com.tr ya da ftp.alanadi.com."
@@ -203,9 +200,6 @@ msgstr ""
 "192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:26
-#| msgid ""
-#| "Enter the network address to trace a route to. For example: www.domain."
-#| "com or 192.168.2.1"
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
@@ -225,7 +219,7 @@ msgstr ""
 msgid "Enter the user to finger"
 msgstr "Finger yapılacak kullanıcıyı girin"
 
-#: ../data/gnome-nettool.ui.h:29 ../src/main.c:815
+#: ../data/gnome-nettool.ui.h:29 ../src/main.c:811
 msgid "Finger"
 msgstr "Finger"
 
@@ -245,7 +239,7 @@ msgstr "Makine"
 msgid "Link speed:"
 msgstr "Bağlantı hızı:"
 
-#: ../data/gnome-nettool.ui.h:34 ../src/main.c:735
+#: ../data/gnome-nettool.ui.h:34 ../src/main.c:733
 msgid "Lookup"
 msgstr "Ara"
 
@@ -273,7 +267,7 @@ msgstr "Çoklu Yayın Bilgisi"
 msgid "Multicast:"
 msgstr "Çoklu Yayın:"
 
-#: ../data/gnome-nettool.ui.h:41 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:41 ../src/main.c:444
 msgid "Netstat"
 msgstr "Ağ Durumu"
 
@@ -353,7 +347,7 @@ msgstr "Alım hataları:"
 msgid "Routing Table Information"
 msgstr "Yönlendirme Tablosu Bilgisi"
 
-#: ../data/gnome-nettool.ui.h:61 ../src/main.c:617
+#: ../data/gnome-nettool.ui.h:61 ../src/main.c:615
 msgid "Scan"
 msgstr "Tara"
 
@@ -405,7 +399,7 @@ msgstr "Kullanıcı"
 msgid "User name"
 msgstr "Kullanıcı adı"
 
-#: ../data/gnome-nettool.ui.h:74 ../src/main.c:921
+#: ../data/gnome-nettool.ui.h:74 ../src/main.c:915
 msgid "Whois"
 msgstr "Whois"
 
@@ -498,82 +492,82 @@ msgstr "Bilinmeyen Arabirim"
 msgid "Network Devices Not Found"
 msgstr "Ağ Aygıtları Bulunamadı"
 
-#: ../src/info.c:398 ../src/info.c:401
+#: ../src/info.c:396 ../src/info.c:399
 msgid "Unknown"
 msgstr "Bilinmiyor"
 
-#: ../src/info.c:473
+#: ../src/info.c:471
 msgid "Active"
 msgstr "Aktif"
 
-#: ../src/info.c:475
+#: ../src/info.c:473
 msgid "Inactive"
 msgstr "Aktif Değil"
 
-#: ../src/info.c:480
+#: ../src/info.c:478
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:491
+#: ../src/info.c:489
 msgid "Enabled"
 msgstr "Etkin"
 
-#: ../src/info.c:493
+#: ../src/info.c:491
 msgid "Disabled"
 msgstr "Etkin Değil"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:582
+#: ../src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Ağ aygıtı:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Donanım adresi:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Çoklu yayın:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:586
+#: ../src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Bağlantı hızı:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Durum:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "İletilen paketler:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "İletim hataları:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Alınan paketler:\t%s\n"
 
-#: ../src/info.c:592
+#: ../src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Alım hataları:\t%s\n"
 
-#: ../src/info.c:593
+#: ../src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Çakışmalar:\t%s\n"
@@ -679,77 +673,76 @@ msgid ""
 msgstr ""
 "Dosya %s yok, lütfen gnome-nettool paketinin doğru kurulduğundan emin olun"
 
-#: ../src/main.c:482 ../src/netstat.c:455
+#: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
 msgstr "Protokol"
 
-#: ../src/main.c:489
+#: ../src/main.c:485
 msgid "IP Address"
 msgstr "IP adresi"
 
-#: ../src/main.c:496
+#: ../src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "Ağ Maskesi / Ön eki"
 
-#: ../src/main.c:503
+#: ../src/main.c:499
 msgid "Broadcast"
 msgstr "Yayın"
 
-#: ../src/main.c:510
+#: ../src/main.c:506
 msgid "Scope"
 msgstr "Kapsam"
 
-#: ../src/main.c:667
+#: ../src/main.c:665
 msgid "Default Information"
 msgstr "Öntanımlı Bilgi"
 
-#: ../src/main.c:668
+#: ../src/main.c:666
 msgid "Internet Address"
 msgstr "İnternet Adresi"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Canonical Name"
 msgstr "Eşlenik İsim"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "CPU / OS Type"
 msgstr "MİB / OS Türü"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "Mailbox Exchange"
 msgstr "Posta Kutusu Değiş Tokuş"
 
-#: ../src/main.c:673
+#: ../src/main.c:671
 msgid "Mailbox Information"
 msgstr "Posta Kutusu Bilgisi"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Name Server"
 msgstr "İsim Sunucusu"
 
-#: ../src/main.c:676
+#: ../src/main.c:674
 msgid "Host name for Address"
 msgstr "Adres İçin Makine İsmi"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:680
-#| msgid "Start-of-authority"
+#: ../src/main.c:678
 msgid "Start of Authority"
 msgstr "Yetki Başlangıcı"
 
-#: ../src/main.c:681
+#: ../src/main.c:679
 msgid "Text Information"
 msgstr "Metin Bilgisi"
 
-#: ../src/main.c:682
+#: ../src/main.c:680
 msgid "Well Known Services"
 msgstr "İyi Bilinen Servisler"
 
-#: ../src/main.c:683
+#: ../src/main.c:681
 msgid "Any / All Information"
 msgstr "Bazı / Hepsi Bilgi"
 
@@ -765,63 +758,63 @@ msgstr "Etkin İnternet bağlantıları alınıyor"
 msgid "Getting group memberships"
 msgstr "Grup üyelikleri alınıyor"
 
-#: ../src/netstat.c:462
+#: ../src/netstat.c:471
 msgid "IP Source"
 msgstr "Kaynak IP"
 
-#: ../src/netstat.c:470
+#: ../src/netstat.c:479
 msgid "Port/Service"
 msgstr "Port/Servis"
 
-#: ../src/netstat.c:478 ../src/scan.c:318
+#: ../src/netstat.c:487 ../src/scan.c:213
 msgid "State"
 msgstr "Durum"
 
-#: ../src/netstat.c:632
+#: ../src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "Hedef/Ön ek"
 
-#: ../src/netstat.c:634
+#: ../src/netstat.c:642
 msgid "Destination"
 msgstr "Hedef"
 
-#: ../src/netstat.c:641
+#: ../src/netstat.c:649
 msgid "Gateway"
 msgstr "Geçit"
 
-#: ../src/netstat.c:649
+#: ../src/netstat.c:657
 msgid "Netmask"
 msgstr "Ağ maskesi"
 
-#: ../src/netstat.c:657 ../src/netstat.c:764
+#: ../src/netstat.c:665 ../src/netstat.c:771
 msgid "Interface"
 msgstr "Arabirim"
 
-#: ../src/netstat.c:771
+#: ../src/netstat.c:778
 msgid "Member"
 msgstr "Üye"
 
-#: ../src/netstat.c:779
+#: ../src/netstat.c:786
 msgid "Group"
 msgstr "Grup"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:821
+#: ../src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokol\tKaynak IP\tPort/Servis\tDurum\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:827
+#: ../src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Hedef\t\tGeçit\tAğ Maskesi\tArabirim\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:832
+#: ../src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "Arabirim\tÜye\tGrup\n"
 
@@ -846,15 +839,20 @@ msgstr "Alan adresi belirtilmedi"
 msgid "Please enter a valid domain address and try again."
 msgstr "Lütfen geçerli bir alan adı girip tekrar deneyin."
 
-#: ../src/nettool.c:433
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr "'%s' çalıştırılmaya çalışılırken bir hata oluştu"
+
+#: ../src/nettool.c:464
 msgid "Information not available"
 msgstr "Bilgi yok"
 
-#: ../src/nettool.c:553
+#: ../src/nettool.c:589
 msgid "Stop"
 msgstr "Dur"
 
-#: ../src/nettool.c:559
+#: ../src/nettool.c:595
 msgid "Run"
 msgstr "Çalıştır"
 
@@ -872,23 +870,23 @@ msgstr "Seq. No.:"
 msgid "Sending ping requests to %s"
 msgstr "%s adresine ping isteği gönderiliyor"
 
-#: ../src/ping.c:578
+#: ../src/ping.c:577
 msgid "Bytes"
 msgstr "Bayt"
 
-#: ../src/ping.c:585
+#: ../src/ping.c:584
 msgid "Source"
 msgstr "Kaynak"
 
-#: ../src/ping.c:593
+#: ../src/ping.c:592
 msgid "Seq"
 msgstr "Seq"
 
-#: ../src/ping.c:603
+#: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
 msgstr "Zaman"
 
-#: ../src/ping.c:611
+#: ../src/ping.c:610
 msgid "Units"
 msgstr "Birim"
 
@@ -896,102 +894,86 @@ msgstr "Birim"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:637
+#: ../src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bayt\tKaynak\tSeq\tZaman\tBirim\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:652
+#: ../src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Minimum zaman:\t%s ms\n"
 
-#: ../src/ping.c:653
+#: ../src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Ortalama zaman:\t%s ms\n"
 
-#: ../src/ping.c:654
+#: ../src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Maksimum zaman:\t%s ms\n"
 
-#: ../src/ping.c:656
+#: ../src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Gönderilen paketler:\t%s\n"
 
-#: ../src/ping.c:658
+#: ../src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Alınan paketler:\t%s\n"
 
-#: ../src/ping.c:661
+#: ../src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Başarılı paketler:\t%s\n"
 
-#: ../src/scan.c:98
+#: ../src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s açık portlar için taranıyor"
 
-#: ../src/scan.c:173
-msgid "unknown"
-msgstr "bilinmiyor"
-
-#. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:177
-msgid "open"
-msgstr "açık"
-
-#: ../src/scan.c:310
+#: ../src/scan.c:205
 msgid "Port"
 msgstr "Port"
 
-#: ../src/scan.c:326
+#: ../src/scan.c:221
 msgid "Service"
 msgstr "Servis"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:348
+#: ../src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "Port\tDurum\tServis\n"
 
-#: ../src/traceroute.c:66
+#: ../src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "%s adresine giden yol izleniyor"
 
-#: ../src/traceroute.c:269
+#: ../src/traceroute.c:309
 msgid "Hop"
 msgstr "Sekme"
 
-#: ../src/traceroute.c:277
+#: ../src/traceroute.c:317
 msgid "Hostname"
 msgstr "Makine adı"
 
-#: ../src/traceroute.c:285
+#: ../src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
-
-#: ../src/traceroute.c:296
-msgid "Time 1"
-msgstr "Zaman 1"
-
-#: ../src/traceroute.c:306
-msgid "Time 2"
-msgstr "Zaman 2"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:332
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "Sekme\tMakine Adı\tIP\tZaman 1\tZaman2\n"
+#: ../src/traceroute.c:361
+#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Atlama\tMakine Adı\tIP\tZaman 1\n"
 
 #: ../src/utils.c:231
 #, c-format
@@ -1000,12 +982,12 @@ msgid ""
 "system"
 msgstr "Bu programı kullanabilmek için, sisteminizde %s kurulu olmalıdır"
 
-#: ../src/finger.c:66
+#: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "%s için \"%s\" adresinden bilgi alınıyor"
 
-#: ../src/finger.c:70
+#: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "\"%s\" üstündeki tüm kullanıcıların bilgileri alınıyor"
@@ -1014,6 +996,18 @@ msgstr "\"%s\" üstündeki tüm kullanıcıların bilgileri alınıyor"
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s için whois bilgisi alınıyor"
+
+#~ msgid "unknown"
+#~ msgstr "bilinmiyor"
+
+#~ msgid "open"
+#~ msgstr "açık"
+
+#~ msgid "Time 1"
+#~ msgstr "Zaman 1"
+
+#~ msgid "Time 2"
+#~ msgstr "Zaman 2"
 
 #~ msgid "Broadcast:"
 #~ msgstr "Yayın:"
