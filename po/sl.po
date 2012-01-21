@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the gnome-nettool package.
 #
 # Matjaž Horvat <m@owca.info>, 2006.
-# Matej Urbančič <mateju@svn.gnome.org>, 2005 - 2010.
+# Matej Urbančič <mateju@svn.gnome.org>, 2005 - 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&component=general\n"
-"POT-Creation-Date: 2010-11-13 00:44+0000\n"
-"PO-Revision-Date: 2010-11-13 11:18+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-01-18 08:57+0000\n"
+"PO-Revision-Date: 2012-01-21 20:55+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
@@ -47,7 +47,7 @@ msgstr "Grafični vmesnik splošnih omrežnih orodij"
 
 #: ../src/callbacks.c:458
 #: ../src/main.c:142
-#: ../src/nettool.c:483
+#: ../src/nettool.c:524
 msgid "Idle"
 msgstr "Nedejavno"
 
@@ -172,12 +172,12 @@ msgid "Enter a domain address to lookup its whois information. For example: www.
 msgstr "Vnesite omrežni naslov za poizvedbo whois podatkov. Primer: www.domena.si ali 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:22
-msgid "Enter the network address to finger that user. For example: www.domain.com or 192.168.2.1"
-msgstr "Vnesite omrežni naslov za poizvedbo finger uporabnika. Primer: www.domena.si ali 192.168.2.1"
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr "Vnesite omrežni naslov za poizvedbo. Primer: domena.si ali ftp.domena.si"
 
 #: ../data/gnome-nettool.ui.h:23
-msgid "Enter the network address to lookup. For example: www.domain.com or 192.168.2.1"
-msgstr "Vnesite omrežni naslov za poizvedbo. Primer: www.domena.si ali 192.168.2.1"
+msgid "Enter the network address to finger that user. For example: www.domain.com or 192.168.2.1"
+msgstr "Vnesite omrežni naslov za poizvedbo finger uporabnika. Primer: www.domena.si ali 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:24
 msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
@@ -188,249 +188,257 @@ msgid "Enter the network address to scan for open ports. For example: www.domain
 msgstr "Vnesite omrežni naslov za preiskovanje odprtih vrat. Primer: www.domena.si ali 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:26
-msgid "Enter the network address to trace a route to. For example: www.domain.com or 192.168.2.1"
+msgid "Enter the network address to trace a path to. For example: www.domain.com or 192.168.2.1"
 msgstr "Vnesite omrežni naslov za sledenje poti. Primer: www.domena.si ali 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:27
+msgid "Enter the network address to trace a route to. For example: www.domain.com or 192.168.2.1"
+msgstr "Vnesite omrežni naslov za sledenje poti. Primer: www.domena.si ali 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:28
 msgid "Enter the user to finger"
 msgstr "Vnesite uporabnika za finger poizvedbo."
 
-#: ../data/gnome-nettool.ui.h:28
-#: ../src/main.c:812
+#: ../data/gnome-nettool.ui.h:29
+#: ../src/main.c:811
 msgid "Finger"
 msgstr "Finger"
 
-#: ../data/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:30
 msgid "Finger output"
 msgstr "Finger odvod"
 
-#: ../data/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:31
 msgid "Hardware address:"
 msgstr "Naslov strojne opreme:"
 
-#: ../data/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:32
 msgid "Host"
 msgstr "Gost"
 
-#: ../data/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:33
 msgid "Link speed:"
 msgstr "Hitrost povezave:"
 
-#: ../data/gnome-nettool.ui.h:33
-#: ../src/main.c:732
-msgid "Lookup"
-msgstr "Iskalna preglednica"
-
 #: ../data/gnome-nettool.ui.h:34
+#: ../src/main.c:733
+msgid "Lookup"
+msgstr "Iskalna razpredelnica"
+
+#: ../data/gnome-nettool.ui.h:35
 msgid "Lookup output"
 msgstr "Lookup odvod"
 
-#: ../data/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:36
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../data/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:37
 msgid "Maximum:"
 msgstr "Največ:"
 
-#: ../data/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:38
 msgid "Minimum:"
 msgstr "Najmanj:"
 
-#: ../data/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast Information"
 msgstr "Podrobnosti oddajanja več prejemnikom"
 
-#: ../data/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:40
 msgid "Multicast:"
 msgstr "Oddajanje več prejemnikom:"
 
-#: ../data/gnome-nettool.ui.h:40
-#: ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:41
+#: ../src/main.c:444
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../data/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:42
 msgid "Netstat output"
 msgstr "Netstat odvod"
 
-#: ../data/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:43
 msgid "Network address"
 msgstr "Omrežni naslov"
 
-#: ../data/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:44
 msgid "Not Available"
 msgstr "Ni na voljo"
 
-#: ../data/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:45
 msgid "Only"
 msgstr "Samo"
 
-#: ../data/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for finger"
 msgstr "Odvod ukaza finger"
 
-#: ../data/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for lookup"
 msgstr "Odvod ukaza lookup"
 
-#: ../data/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for net stat"
 msgstr "Odvod ukaza net stat"
 
-#: ../data/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for port scan"
 msgstr "Odvod ukaza preiskovanja vrat"
 
-#: ../data/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for traceroute"
 msgstr "Odvod ukaza traceroute"
 
-#: ../data/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:51
 msgid "Output for whois"
 msgstr "Odvod ukaza whois"
 
-#: ../data/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets received:"
 msgstr "Prejeti paketi:"
 
-#: ../data/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:53
 msgid "Packets transmitted:"
 msgstr "Oddani paketi:"
 
-#: ../data/gnome-nettool.ui.h:53
+#: ../data/gnome-nettool.ui.h:54
 #: ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../data/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port Scan"
 msgstr "Preiskovanje vrat"
 
-#: ../data/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:56
 msgid "Port scan output"
 msgstr "Odvod ukaza preiskovanja vrat"
 
-#: ../data/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received bytes:"
 msgstr "Prejeti bajti:"
 
-#: ../data/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:58
 msgid "Received packets:"
 msgstr "Prejeti paketi:"
 
-#: ../data/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:59
 msgid "Reception errors:"
 msgstr "Napake med sprejemanjem:"
 
-#: ../data/gnome-nettool.ui.h:59
-msgid "Routing Table Information"
-msgstr "Podatki usmerjevalne preglednice"
-
 #: ../data/gnome-nettool.ui.h:60
-#: ../src/main.c:617
+msgid "Routing Table Information"
+msgstr "Podatki usmerjevalne razpredelnice"
+
+#: ../data/gnome-nettool.ui.h:61
+#: ../src/main.c:615
 msgid "Scan"
 msgstr "Preišči"
 
-#: ../data/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:62
 msgid "Send:"
 msgstr "Poslano:"
 
-#: ../data/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:63
 msgid "State:"
 msgstr "Stanje:"
 
-#: ../data/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:64
 msgid "Successful packets:"
 msgstr "Uspešno poslani paketi:"
 
-#: ../data/gnome-nettool.ui.h:64
+#: ../data/gnome-nettool.ui.h:65
 #: ../src/main.c:375
 msgid "Trace"
 msgstr "Sledenje"
 
-#: ../data/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute"
 msgstr "Sledenje poti"
 
-#: ../data/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:67
 msgid "Traceroute output"
 msgstr "Odvod ukaza traceroute"
 
-#: ../data/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmission errors:"
 msgstr "Napake med oddajanjem:"
 
-#: ../data/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted bytes:"
 msgstr "Oddani bajti:"
 
-#: ../data/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:70
 msgid "Transmitted packets:"
 msgstr "Oddani paketi:"
 
-#: ../data/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:71
 msgid "Unlimited requests"
 msgstr "Neomejene zahteve"
 
-#: ../data/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:72
 msgid "User"
 msgstr "Uporabnik"
 
-#: ../data/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:73
 msgid "User name"
 msgstr "Uporabniško ime"
 
-#: ../data/gnome-nettool.ui.h:73
-#: ../src/main.c:918
+#: ../data/gnome-nettool.ui.h:74
+#: ../src/main.c:915
 msgid "Whois"
 msgstr "Whois"
 
-#: ../data/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:75
 msgid "Whois output"
 msgstr "Odvod ukaza whois"
 
-#: ../data/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Configure"
 msgstr "_Nastavitve"
 
-#: ../data/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:77
+msgid "_Contents"
+msgstr "_Vsebina"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Domain address:"
 msgstr "Naslov _domene:"
 
-#: ../data/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Edit"
 msgstr "_Uredi"
 
-#: ../data/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Help"
 msgstr "Pomo_č"
 
-#: ../data/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Information type:"
 msgstr "Vrsta _podrobnosti:"
 
-#: ../data/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Network address:"
 msgstr "_Mrežni naslov:"
 
-#: ../data/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Network device:"
 msgstr "Mrežna _naprava:"
 
-#: ../data/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:84
 msgid "_Tool"
 msgstr "_Orodje"
 
-#: ../data/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:85
 msgid "_Username:"
 msgstr "_Uporabniško ime:"
 
-#: ../data/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:86
 msgid "ms"
 msgstr "ms"
 
-#: ../data/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:87
 msgid "requests"
 msgstr "zahteve"
 
@@ -471,114 +479,114 @@ msgstr "Neznan vmesnik"
 msgid "Network Devices Not Found"
 msgstr "Mrežne naprave ni mogoče najti."
 
-#: ../src/info.c:400
-#: ../src/info.c:403
+#: ../src/info.c:396
+#: ../src/info.c:399
 msgid "Unknown"
 msgstr "Neznano"
 
-#: ../src/info.c:474
+#: ../src/info.c:471
 msgid "Active"
 msgstr "dejavno"
 
-#: ../src/info.c:476
+#: ../src/info.c:473
 msgid "Inactive"
 msgstr "ni dejavno"
 
-#: ../src/info.c:481
+#: ../src/info.c:478
 msgid "Loopback"
 msgstr "Povratna zanka"
 
-#: ../src/info.c:490
+#: ../src/info.c:489
 msgid "Enabled"
 msgstr "omogočeno"
 
-#: ../src/info.c:492
+#: ../src/info.c:491
 msgid "Disabled"
 msgstr "ni omogočeno"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:581
+#: ../src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Mrežna naprava:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Strojni naslov:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Oddajanje več prejemnikom:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Hitrost povezave:\t%s\n"
 
-#: ../src/info.c:586
+#: ../src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stanje:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Oddani paketi:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Napake med oddajanjem:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Prejeti paketi:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Napake med prejemanjem:\t%s\n"
 
-#: ../src/info.c:592
+#: ../src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Trki:\t%s\n"
 
-#: ../src/info.h:27
+#: ../src/info.h:23
 msgid "not available"
 msgstr "ni na voljo"
 
-#: ../src/lookup.c:80
+#: ../src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "Iskanje %s"
 
-#: ../src/lookup.c:274
+#: ../src/lookup.c:279
 msgid "Name"
 msgstr "Ime"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:283
+#: ../src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:292
+#: ../src/lookup.c:297
 msgid "Address Type"
 msgstr "Vrsta naslova"
 
-#: ../src/lookup.c:302
+#: ../src/lookup.c:307
 msgid "Record Type"
 msgstr "Vrsta zapisa"
 
-#: ../src/lookup.c:311
+#: ../src/lookup.c:316
 msgid "Address"
 msgstr "Naslov"
 
@@ -588,7 +596,7 @@ msgstr "Naslov"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:339
+#: ../src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Vir\tTTL\tVrsta naslova\tVrsta zapisa1\tLočljivost\n"
 
@@ -652,216 +660,225 @@ msgstr "DOMENA"
 msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
 msgstr "Datoteka %s ne obstaja. Preverite, da je program gnome-nettool pravilno nameščen"
 
-#: ../src/main.c:482
-#: ../src/netstat.c:443
+#: ../src/main.c:478
+#: ../src/netstat.c:464
 msgid "Protocol"
 msgstr "Protokol"
 
-#: ../src/main.c:489
+#: ../src/main.c:485
 msgid "IP Address"
 msgstr "Naslov IP"
 
-#: ../src/main.c:496
+#: ../src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "Omrežna maska / Predpona"
 
-#: ../src/main.c:503
+#: ../src/main.c:499
 msgid "Broadcast"
 msgstr "Razpršeno oddajanje"
 
-#: ../src/main.c:510
+#: ../src/main.c:506
 msgid "Scope"
 msgstr "Obseg"
 
-#: ../src/main.c:667
+#: ../src/main.c:665
 msgid "Default Information"
 msgstr "Privzete podrobnosti"
 
-#: ../src/main.c:668
+#: ../src/main.c:666
 msgid "Internet Address"
 msgstr "Spletni naslov"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Canonical Name"
 msgstr "Kanonsko ime"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "CPU / OS Type"
 msgstr "CPE / Vrsta OS"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "Mailbox Exchange"
 msgstr "Exchange poštni predal"
 
-#: ../src/main.c:673
+#: ../src/main.c:671
 msgid "Mailbox Information"
 msgstr "Podrobnosti poštnega predala"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Name Server"
 msgstr "Imenski strežnik"
 
-#: ../src/main.c:676
+#: ../src/main.c:674
 msgid "Host name for Address"
 msgstr "Ime gostitelja za naslov"
 
-#: ../src/main.c:677
-msgid "Start-of-authority"
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
+#: ../src/main.c:678
+msgid "Start of Authority"
 msgstr "Zapis SOA (Start-of-authority)"
 
-#: ../src/main.c:678
+#: ../src/main.c:679
 msgid "Text Information"
 msgstr "Besedilne podrobnosti"
 
-#: ../src/main.c:679
+#: ../src/main.c:680
 msgid "Well Known Services"
 msgstr "Dobro znane storitve"
 
-#: ../src/main.c:680
+#: ../src/main.c:681
 msgid "Any / All Information"
 msgstr "Katerekoli / Vse podrobnosti"
 
-#: ../src/netstat.c:122
+#: ../src/netstat.c:134
 msgid "Getting routing table"
-msgstr "Branje usmerjevalne preglednice"
+msgstr "Branje usmerjevalne razpredelnice"
 
-#: ../src/netstat.c:137
+#: ../src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "Zbiranje podatkov o dejavnih spletnih povezavah"
 
-#: ../src/netstat.c:146
+#: ../src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "Zbiranje podatkov o članstvu skupin"
 
-#: ../src/netstat.c:450
+#: ../src/netstat.c:471
 msgid "IP Source"
 msgstr "IP Izvor"
 
-#: ../src/netstat.c:458
+#: ../src/netstat.c:479
 msgid "Port/Service"
 msgstr "Vrata/Storitev"
 
-#: ../src/netstat.c:466
-#: ../src/scan.c:314
+#: ../src/netstat.c:487
+#: ../src/scan.c:213
 msgid "State"
 msgstr "Stanje"
 
-#: ../src/netstat.c:609
+#: ../src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "Cilj/Predpona"
 
-#: ../src/netstat.c:611
+#: ../src/netstat.c:642
 msgid "Destination"
 msgstr "Cilj"
 
-#: ../src/netstat.c:618
+#: ../src/netstat.c:649
 msgid "Gateway"
 msgstr "Prehod"
 
-#: ../src/netstat.c:626
+#: ../src/netstat.c:657
 msgid "Netmask"
 msgstr "Omrežna maska"
 
-#: ../src/netstat.c:634
-#: ../src/netstat.c:741
+#: ../src/netstat.c:665
+#: ../src/netstat.c:771
 msgid "Interface"
 msgstr "Vmesnik"
 
-#: ../src/netstat.c:748
+#: ../src/netstat.c:778
 msgid "Member"
 msgstr "Član"
 
-#: ../src/netstat.c:756
+#: ../src/netstat.c:786
 msgid "Group"
 msgstr "Skupina"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:798
+#: ../src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokol\tVir IP\tVrata/Storitev\tStanje\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:804
+#: ../src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Cilj\tPrehod\tOmrežna maska\tVmesnik\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:809
+#: ../src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "Vmesnik\tČlan\tSkupina\n"
 
-#: ../src/nettool.c:199
+#: ../src/nettool.c:204
 msgid "A network address was not specified"
 msgstr "Omrežni naslov ni določen"
 
-#: ../src/nettool.c:200
-#: ../src/nettool.c:209
+#: ../src/nettool.c:205
+#: ../src/nettool.c:214
 msgid "Please enter a valid network address and try again."
 msgstr "Vnesite veljaven omrežni naslov in poskusite znova."
 
-#: ../src/nettool.c:207
+#: ../src/nettool.c:212
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "Ni mogoče najti naslova '%s'"
 
-#: ../src/nettool.c:236
+#: ../src/nettool.c:241
 msgid "A domain address was not specified"
 msgstr "Ime domene ni določeno"
 
-#: ../src/nettool.c:237
+#: ../src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
 msgstr "Vnesite veljavni naslov domene in poskusite znova."
 
-#: ../src/nettool.c:428
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr "Prišlo je do napake med zaganjanjem '%s'."
+
+#: ../src/nettool.c:464
 msgid "Information not available"
 msgstr "Podrobnosti niso na voljo"
 
-#: ../src/nettool.c:548
+#: ../src/nettool.c:589
 msgid "Stop"
 msgstr "Zaustavi"
 
-#: ../src/nettool.c:554
+#: ../src/nettool.c:595
 msgid "Run"
 msgstr "Zaženi"
 
 #. Created up here so we can get the geometry info.
-#: ../src/ping.c:151
+#: ../src/ping.c:155
 msgid "Time (ms):"
 msgstr "Čas (ms):"
 
-#: ../src/ping.c:171
+#: ../src/ping.c:176
 msgid "Seq. No.:"
 msgstr "Zap. št.:"
 
-#: ../src/ping.c:254
+#: ../src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Pošiljanje ping zahteve na %s"
 
-#: ../src/ping.c:569
+#: ../src/ping.c:577
 msgid "Bytes"
 msgstr "Bajti"
 
-#: ../src/ping.c:576
+#: ../src/ping.c:584
 msgid "Source"
 msgstr "Izvor"
 
-#: ../src/ping.c:584
+#: ../src/ping.c:592
 msgid "Seq"
 msgstr "Zap"
 
-#: ../src/ping.c:594
+#: ../src/ping.c:602
+#: ../src/traceroute.c:336
 msgid "Time"
 msgstr "Čas"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:610
 msgid "Units"
 msgstr "Enote"
 
@@ -869,133 +886,132 @@ msgstr "Enote"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:628
+#: ../src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bajtov\tVir\tSekv\tČas\tEnote\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:643
+#: ../src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Najkrajši čas:\t%s ms\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Povprečni čas:\t%s ms\n"
 
-#: ../src/ping.c:645
+#: ../src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Najdaljši čas:\t%s ms\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Poslani paketi:\t%s\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Prejeti paketi:\t%s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Uspešno prejeti paketi:\t%s\n"
 
-#: ../src/scan.c:94
+#: ../src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Preiskovanje %s za odprta vrata"
 
-#: ../src/scan.c:169
-msgid "unknown"
-msgstr "neznano"
-
-#. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:173
-msgid "open"
-msgstr "odpri"
-
-#: ../src/scan.c:306
+#: ../src/scan.c:205
 msgid "Port"
 msgstr "Vrata"
 
-#: ../src/scan.c:322
+#: ../src/scan.c:221
 msgid "Service"
 msgstr "Storitev"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:344
+#: ../src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "Vrata\tStanje\tStoritev\n"
 
-#: ../src/traceroute.c:62
+#: ../src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "Sledi pot do %s"
 
-#: ../src/traceroute.c:265
+#: ../src/traceroute.c:309
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:273
+#: ../src/traceroute.c:317
 msgid "Hostname"
 msgstr "Ime gostitelja"
 
-#: ../src/traceroute.c:281
+#: ../src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
-
-#: ../src/traceroute.c:292
-msgid "Time 1"
-msgstr "Čas 1"
-
-#: ../src/traceroute.c:302
-msgid "Time 2"
-msgstr "Čas 2"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:328
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "Hop\tIme gostitelja\tIP\tČas 1\tČas 2\n"
+#: ../src/traceroute.c:361
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Hop\tIme gostitelja\tIP\tČas 1\n"
 
-#: ../src/utils.c:227
+#: ../src/utils.c:231
 #, c-format
 msgid "In order to use this feature of the program, %s must be installed in your system"
 msgstr "Za uporabo možnosti, mora biti nameščen %s"
 
-#: ../src/finger.c:63
+#: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "Zbiranje podrobnosti o %s na \"%s\""
 
-#: ../src/finger.c:67
+#: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "Zbiranje podrobnosti o vseh uporabnikih na \"%s\""
 
-#: ../src/whois.c:58
+#: ../src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Zbiranje podrobnosti whois poizvedbe o %s"
 
+#~ msgid "unknown"
+#~ msgstr "neznano"
+
+#~ msgid "open"
+#~ msgstr "odpri"
+
+#~ msgid "Time 1"
+#~ msgstr "Čas 1"
+
+#~ msgid "Time 2"
+#~ msgstr "Čas 2"
+
 #~ msgid "Broadcast:"
 #~ msgstr "Razpršeno oddajanje:"
+
 #~ msgid "IP Address:"
 #~ msgstr "IP naslov:"
+
 #~ msgid "Netmask:"
 #~ msgstr "Omrežna maska:"
+
 #~ msgid "IP address:\t%s\n"
 #~ msgstr "IP naslov:\t%s\n"
+
 #~ msgid "Netmask:\t%s\n"
 #~ msgstr "Omrežna maska:\t%s\n"
+
 #~ msgid "Broadcast:\t%s\n"
 #~ msgstr "Razpršeno oddajanje:\t%s\n"
-
