@@ -7,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool 2.91.5\n"
+"Project-Id-Version: gnome-nettool 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-04 12:57+0800\n"
-"PO-Revision-Date: 2011-02-04 12:57+0800\n"
+"POT-Creation-Date: 2012-01-30 19:22+0800\n"
+"PO-Revision-Date: 2012-01-30 19:22+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
 "Language: \n"
@@ -44,7 +44,7 @@ msgstr "網絡工具"
 msgid "Graphical user interface for common network utilities"
 msgstr "圖形使用者介面的一般網絡工具"
 
-#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
 msgstr "閒置"
 
@@ -171,16 +171,14 @@ msgid ""
 msgstr "輸入一個主機名稱來查詢它的 whois 資訊。例如：www.domain.com 或 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:22
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr "輸入一個網域名稱來進行查詢。例如：domain.com 或 ftp.domain.com。"
+
+#: ../data/gnome-nettool.ui.h:23
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr "輸入一個網絡位址來 finger 使用者。例如：www.domain.com 或 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to lookup. For example: www.domain.com or "
-"192.168.2.1"
-msgstr "輸入一個網絡位址來進行查詢。例如：www.domain.com 或 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:24
 msgid ""
@@ -195,244 +193,254 @@ msgstr "輸入網絡位址以掃描開啟的通訊埠。例如：www.domain.com 
 
 #: ../data/gnome-nettool.ui.h:26
 msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr "輸入一個網絡位址來追蹤路徑。例如：www.domain.com 或 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr "輸入一個網絡位址來追蹤路由。例如：www.domain.com 或 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:28
 msgid "Enter the user to finger"
 msgstr "輸入要 finger 的使用者"
 
-#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
+#: ../data/gnome-nettool.ui.h:29 ../src/main.c:811
 msgid "Finger"
 msgstr "Finger"
 
-#: ../data/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:30
 msgid "Finger output"
 msgstr "Finger 輸出"
 
-#: ../data/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:31
 msgid "Hardware address:"
 msgstr "硬件位址："
 
-#: ../data/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:32
 msgid "Host"
 msgstr "主機"
 
-#: ../data/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:33
 msgid "Link speed:"
 msgstr "連線速度："
 
-#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
+#: ../data/gnome-nettool.ui.h:34 ../src/main.c:733
 msgid "Lookup"
 msgstr "反查"
 
-#: ../data/gnome-nettool.ui.h:34
+#: ../data/gnome-nettool.ui.h:35
 msgid "Lookup output"
 msgstr "Lookup 輸出"
 
-#: ../data/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:36
 msgid "MTU:"
 msgstr "MTU："
 
-#: ../data/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:37
 msgid "Maximum:"
 msgstr "最大："
 
-#: ../data/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:38
 msgid "Minimum:"
 msgstr "最小："
 
-#: ../data/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast Information"
 msgstr "多址傳送資訊"
 
-#: ../data/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:40
 msgid "Multicast:"
 msgstr "多址傳送："
 
-#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:41 ../src/main.c:444
 msgid "Netstat"
 msgstr "網絡狀態"
 
-#: ../data/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:42
 msgid "Netstat output"
 msgstr "Netstat 輸出"
 
-#: ../data/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:43
 msgid "Network address"
 msgstr "網絡位址"
 
-#: ../data/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:44
 msgid "Not Available"
 msgstr "無法使用"
 
 # Need to know where this message been used.
-#: ../data/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:45
 msgid "Only"
 msgstr "僅"
 
-#: ../data/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for finger"
 msgstr "finger 的輸出"
 
-#: ../data/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for lookup"
 msgstr "lookup 的輸出"
 
-#: ../data/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for net stat"
 msgstr "net stat 的輸出"
 
-#: ../data/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for port scan"
 msgstr "掃描網絡位址的輸出"
 
-#: ../data/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for traceroute"
 msgstr "traceroute 的輸出"
 
-#: ../data/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:51
 msgid "Output for whois"
 msgstr "whois 的輸出"
 
-#: ../data/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets received:"
 msgstr "收到的封包："
 
-#: ../data/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:53
 msgid "Packets transmitted:"
 msgstr "送出的封包："
 
-#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:54 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../data/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port Scan"
 msgstr "掃描連接埠"
 
-#: ../data/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:56
 msgid "Port scan output"
 msgstr "Port scan 輸出"
 
-#: ../data/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received bytes:"
 msgstr "收到的位元組："
 
-#: ../data/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:58
 msgid "Received packets:"
 msgstr "收到的封包："
 
-#: ../data/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:59
 msgid "Reception errors:"
 msgstr "接收錯誤："
 
-#: ../data/gnome-nettool.ui.h:59
+#: ../data/gnome-nettool.ui.h:60
 msgid "Routing Table Information"
 msgstr "路由表資訊"
 
-#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
+#: ../data/gnome-nettool.ui.h:61 ../src/main.c:615
 msgid "Scan"
 msgstr "掃描"
 
-#: ../data/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:62
 msgid "Send:"
 msgstr "送出："
 
-#: ../data/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:63
 msgid "State:"
 msgstr "狀態："
 
-#: ../data/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:64
 msgid "Successful packets:"
 msgstr "成功傳送的封包："
 
-#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:65 ../src/main.c:375
 msgid "Trace"
 msgstr "追蹤"
 
-#: ../data/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute"
 msgstr "路由追蹤"
 
-#: ../data/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:67
 msgid "Traceroute output"
 msgstr "Traceroute 輸出"
 
-#: ../data/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmission errors:"
 msgstr "傳送錯誤："
 
-#: ../data/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted bytes:"
 msgstr "送出的位元組："
 
-#: ../data/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:70
 msgid "Transmitted packets:"
 msgstr "送出的封包："
 
-#: ../data/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:71
 msgid "Unlimited requests"
 msgstr "無限制的請求"
 
-#: ../data/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:72
 msgid "User"
 msgstr "使用者"
 
-#: ../data/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:73
 msgid "User name"
 msgstr "使用者名稱"
 
-#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
+#: ../data/gnome-nettool.ui.h:74 ../src/main.c:915
 msgid "Whois"
 msgstr "Whois"
 
-#: ../data/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:75
 msgid "Whois output"
 msgstr "Whois 輸出"
 
-#: ../data/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Configure"
 msgstr "設定(_C)"
 
-#: ../data/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:77
+msgid "_Contents"
+msgstr "內容(_C)"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Domain address:"
 msgstr "網域位址(_D)："
 
-#: ../data/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Edit"
 msgstr "編輯(_E)"
 
-#: ../data/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Help"
 msgstr "求助(_H)"
 
-#: ../data/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Information type:"
 msgstr "資訊型態(_I)："
 
-#: ../data/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Network address:"
 msgstr "網絡位址(_N)："
 
-#: ../data/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Network device:"
 msgstr "網絡裝置(_N)："
 
-#: ../data/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:84
 msgid "_Tool"
 msgstr "工具(_T)"
 
-#: ../data/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:85
 msgid "_Username:"
 msgstr "使用者名稱(_U)："
 
-#: ../data/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:86
 msgid "ms"
 msgstr "毫秒"
 
-#: ../data/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:87
 msgid "requests"
 msgstr "請求"
 
@@ -473,113 +481,113 @@ msgstr "未知的介面"
 msgid "Network Devices Not Found"
 msgstr "找不到網絡裝置"
 
-#: ../src/info.c:400 ../src/info.c:403
+#: ../src/info.c:396 ../src/info.c:399
 msgid "Unknown"
 msgstr "不明"
 
-#: ../src/info.c:474
+#: ../src/info.c:471
 msgid "Active"
 msgstr "使用中"
 
-#: ../src/info.c:476
+#: ../src/info.c:473
 msgid "Inactive"
 msgstr "未使用"
 
-#: ../src/info.c:481
+#: ../src/info.c:478
 msgid "Loopback"
 msgstr "本地迴路"
 
-#: ../src/info.c:490
+#: ../src/info.c:489
 msgid "Enabled"
 msgstr "已啟用"
 
-#: ../src/info.c:492
+#: ../src/info.c:491
 msgid "Disabled"
 msgstr "已停用"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:581
+#: ../src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "網絡裝置：\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "硬件位址：\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "多址傳送：\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU：\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "連線速度：\t%s\n"
 
-#: ../src/info.c:586
+#: ../src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "狀態：\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "送出的封包：\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "傳送錯誤：\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "收到的封包：\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "接收錯誤：\t%s\n"
 
-#: ../src/info.c:592
+#: ../src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "碰撞：\t%s\n"
 
-#: ../src/info.h:27
+#: ../src/info.h:23
 msgid "not available"
 msgstr "無法使用"
 
-#: ../src/lookup.c:80
+#: ../src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "查尋 %s"
 
-#: ../src/lookup.c:274
+#: ../src/lookup.c:279
 msgid "Name"
 msgstr "名稱"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:283
+#: ../src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:292
+#: ../src/lookup.c:297
 msgid "Address Type"
 msgstr "位址型態"
 
-#: ../src/lookup.c:302
+#: ../src/lookup.c:307
 msgid "Record Type"
 msgstr "記錄型態"
 
-#: ../src/lookup.c:311
+#: ../src/lookup.c:316
 msgid "Address"
 msgstr "位址"
 
@@ -589,7 +597,7 @@ msgstr "位址"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:339
+#: ../src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "來源\tTTL\t位址型態\t紀錄型態\t解析結果\n"
 
@@ -652,212 +660,220 @@ msgid ""
 "installed"
 msgstr "檔案 %s 不存在，請檢查 gnome-nettool 是否已正確安裝"
 
-#: ../src/main.c:482 ../src/netstat.c:443
+#: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
 msgstr "通訊協定"
 
-#: ../src/main.c:489
+#: ../src/main.c:485
 msgid "IP Address"
 msgstr "IP 位址"
 
-#: ../src/main.c:496
+#: ../src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "網絡遮罩 / 前置字"
 
-#: ../src/main.c:503
+#: ../src/main.c:499
 msgid "Broadcast"
 msgstr "廣播"
 
-#: ../src/main.c:510
+#: ../src/main.c:506
 msgid "Scope"
 msgstr "範圍"
 
-#: ../src/main.c:667
+#: ../src/main.c:665
 msgid "Default Information"
 msgstr "預設資訊"
 
-#: ../src/main.c:668
+#: ../src/main.c:666
 msgid "Internet Address"
 msgstr "IP 位址"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Canonical Name"
 msgstr "CNAME"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "CPU / OS Type"
 msgstr "CPU / OS 類型"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "Mailbox Exchange"
 msgstr "郵件箱交換"
 
-#: ../src/main.c:673
+#: ../src/main.c:671
 msgid "Mailbox Information"
 msgstr "郵件箱資訊"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Name Server"
 msgstr "名稱伺服器"
 
-#: ../src/main.c:676
+#: ../src/main.c:674
 msgid "Host name for Address"
 msgstr "網絡位址的主機名稱"
 
-#: ../src/main.c:677
-msgid "Start-of-authority"
-msgstr "SOA"
-
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
 #: ../src/main.c:678
+msgid "Start of Authority"
+msgstr "開始的授權"
+
+#: ../src/main.c:679
 msgid "Text Information"
 msgstr "文字資訊"
 
-#: ../src/main.c:679
+#: ../src/main.c:680
 msgid "Well Known Services"
 msgstr "公認的服務"
 
-#: ../src/main.c:680
+#: ../src/main.c:681
 msgid "Any / All Information"
 msgstr "任何 / 所有資訊"
 
-#: ../src/netstat.c:122
+#: ../src/netstat.c:134
 msgid "Getting routing table"
 msgstr "取得路由表"
 
-#: ../src/netstat.c:137
+#: ../src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "取得作用中的互聯網連線"
 
-#: ../src/netstat.c:146
+#: ../src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "取得羣組成員資格"
 
-#: ../src/netstat.c:450
+#: ../src/netstat.c:471
 msgid "IP Source"
 msgstr "IP 來源"
 
-#: ../src/netstat.c:458
+#: ../src/netstat.c:479
 msgid "Port/Service"
 msgstr "通訊埠/服務"
 
-#: ../src/netstat.c:466 ../src/scan.c:314
+#: ../src/netstat.c:487 ../src/scan.c:213
 msgid "State"
 msgstr "狀態"
 
-#: ../src/netstat.c:609
+#: ../src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "目的地 / 前置字"
 
-#: ../src/netstat.c:611
+#: ../src/netstat.c:642
 msgid "Destination"
 msgstr "目的地"
 
-#: ../src/netstat.c:618
+#: ../src/netstat.c:649
 msgid "Gateway"
 msgstr "通訊閘"
 
-#: ../src/netstat.c:626
+#: ../src/netstat.c:657
 msgid "Netmask"
 msgstr "網絡遮罩"
 
-#: ../src/netstat.c:634 ../src/netstat.c:741
+#: ../src/netstat.c:665 ../src/netstat.c:771
 msgid "Interface"
 msgstr "介面"
 
-#: ../src/netstat.c:748
+#: ../src/netstat.c:778
 msgid "Member"
 msgstr "成員"
 
-#: ../src/netstat.c:756
+#: ../src/netstat.c:786
 msgid "Group"
 msgstr "羣組"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:798
+#: ../src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "通訊協定\tIP 來源\t通訊埠/服務\t狀態\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:804
+#: ../src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "目的地位址\t閘道位址\t網絡遮罩\t網絡介面\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:809
+#: ../src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "介面\t成員\t羣組\n"
 
-#: ../src/nettool.c:199
+#: ../src/nettool.c:204
 msgid "A network address was not specified"
 msgstr "沒有指定網絡位址"
 
-#: ../src/nettool.c:200 ../src/nettool.c:209
+#: ../src/nettool.c:205 ../src/nettool.c:214
 msgid "Please enter a valid network address and try again."
 msgstr "請輸入一個有效的網絡位址並重試一次。"
 
-#: ../src/nettool.c:207
+#: ../src/nettool.c:212
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "找不到位址‘%s’"
 
-#: ../src/nettool.c:236
+#: ../src/nettool.c:241
 msgid "A domain address was not specified"
 msgstr "沒有指定主機位址"
 
-#: ../src/nettool.c:237
+#: ../src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
 msgstr "請輸入一個有效的主機位址並重試一次。"
 
-#: ../src/nettool.c:428
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr "當嘗試執行「%s」時發生錯誤"
+
+#: ../src/nettool.c:464
 msgid "Information not available"
 msgstr "無法提供資訊"
 
-#: ../src/nettool.c:548
+#: ../src/nettool.c:589
 msgid "Stop"
 msgstr "停止"
 
-#: ../src/nettool.c:554
+#: ../src/nettool.c:595
 msgid "Run"
 msgstr "執行"
 
 #. Created up here so we can get the geometry info.
-#: ../src/ping.c:151
+#: ../src/ping.c:155
 msgid "Time (ms):"
 msgstr "時間（毫秒）"
 
-#: ../src/ping.c:172
+#: ../src/ping.c:176
 msgid "Seq. No.:"
 msgstr "序號："
 
-#: ../src/ping.c:257
+#: ../src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "送出 Ping 的請求到 %s"
 
-#: ../src/ping.c:572
+#: ../src/ping.c:577
 msgid "Bytes"
 msgstr "位元組"
 
-#: ../src/ping.c:579
+#: ../src/ping.c:584
 msgid "Source"
 msgstr "來源"
 
-#: ../src/ping.c:587
+#: ../src/ping.c:592
 msgid "Seq"
 msgstr "序號"
 
-#: ../src/ping.c:597
+#: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
 msgstr "時間"
 
-#: ../src/ping.c:605
+#: ../src/ping.c:610
 msgid "Units"
 msgstr "單位"
 
@@ -865,155 +881,105 @@ msgstr "單位"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:631
+#: ../src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "位元組\t來源\t序號\t往返時間\t單位\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:646
+#: ../src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "最短時間：\t%s 毫秒\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "平均時間：\t%s 毫秒\n"
 
-#: ../src/ping.c:648
+#: ../src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "最大時間：\t%s 毫秒\n"
 
-#: ../src/ping.c:650
+#: ../src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "送出的封包：\t%s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "收到的封包：\t%s\n"
 
-#: ../src/ping.c:655
+#: ../src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "成功傳送的封包：\t%s\n"
 
-#: ../src/scan.c:94
+#: ../src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "掃描 %s 開啟的連接埠"
 
-#: ../src/scan.c:169
-msgid "unknown"
-msgstr "不明"
-
-#. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:173
-msgid "open"
-msgstr "開"
-
-#: ../src/scan.c:306
+#: ../src/scan.c:205
 msgid "Port"
 msgstr "連接埠"
 
-#: ../src/scan.c:322
+#: ../src/scan.c:221
 msgid "Service"
 msgstr "服務"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:344
+#: ../src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "通訊埠\t狀態\t服務\n"
 
-#: ../src/traceroute.c:62
+#: ../src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "追蹤到 %s 的路由"
 
 #  Hop 有跳躍之意，多以英文直稱，少人使用其中文
-#: ../src/traceroute.c:265
+#: ../src/traceroute.c:309
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:273
+#: ../src/traceroute.c:317
 msgid "Hostname"
 msgstr "主機名稱"
 
-#: ../src/traceroute.c:281
+#: ../src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
-
-#: ../src/traceroute.c:292
-msgid "Time 1"
-msgstr "時間 1"
-
-#: ../src/traceroute.c:302
-msgid "Time 2"
-msgstr "時間 2"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:328
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "Hop\t主機名稱\tIP 位址\t往返時間 1\t往返時間 2\n"
+#: ../src/traceroute.c:361
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Hop\t主機名稱\tIP\t時間 1\n"
 
-#: ../src/utils.c:227
+#: ../src/utils.c:231
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr "要在本程式中使用此功能，必須安裝 %s 在你的系統中"
 
-#: ../src/finger.c:63
+#: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "取得在“%2$s”上 %1$s 的資訊"
 
-#: ../src/finger.c:67
+#: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "取得在“%s”上所有使用者的資訊"
 
-#: ../src/whois.c:58
+#: ../src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "取得 %s 的 Whois 資訊"
-
-#~ msgid "Broadcast:"
-#~ msgstr "廣播："
-
-#~ msgid "IP Address:"
-#~ msgstr "IP 位址："
-
-#~ msgid "Netmask:"
-#~ msgstr "網路遮罩："
-
-#~ msgid "IP address:\t%s\n"
-#~ msgstr "IP 位址：\t%s\n"
-
-#~ msgid "Netmask:\t%s\n"
-#~ msgstr "網路遮罩：\t%s\n"
-
-#~ msgid "Broadcast:\t%s\n"
-#~ msgstr "廣播：\t%s\n"
-
-#~ msgid "Network Information Tools"
-#~ msgstr "網路資訊工具"
-
-#~ msgid "Packets loss:"
-#~ msgstr "遺失的封包："
-
-#~ msgid "Packet loss:\t%s\n"
-#~ msgstr "丟失的封包：\t%s\n"
-
-#~ msgid "%s: Command not found"
-#~ msgstr "沒有找到命令： %s"
-
-#~ msgid "Network Tools - Devices"
-#~ msgstr "網路工具 - 裝置"
