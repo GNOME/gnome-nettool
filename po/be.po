@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-16 02:02+0300\n"
-"PO-Revision-Date: 2011-11-16 02:02+0300\n"
+"POT-Creation-Date: 2012-02-12 20:30+0300\n"
+"PO-Revision-Date: 2012-02-12 20:32+0300\n"
 "Last-Translator: Yuri Matsuk <yuri@matsuk.net>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
@@ -40,7 +40,7 @@ msgstr "Сеткавыя прылады"
 msgid "Graphical user interface for common network utilities"
 msgstr "Графічны інтэрфейс карыстальніка для папулярных сеткавых прылад"
 
-#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:488
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
 msgstr "Бяздзейнасць"
 
@@ -60,145 +60,282 @@ msgid "View information about your network"
 msgstr "Прагляд звестак пра вашу сетку"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "A list of domains previously used"
-msgstr "Спіс папярэдніх даменаў"
+msgid "Historically used hostnames"
+msgstr "Раней выкарыстаныя назвы машын"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
 msgstr "Спіс папярэдніх назваў машын"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "A list of usernames previously used"
-msgstr "Спіс папярэдніх імёнаў карыстальнікаў"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "Historically used domains"
-msgstr "Раней выкарыстаныя дамены"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used hostnames"
-msgstr "Раней выкарыстаныя назвы машын"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
 msgstr "Раней выкарыстаныя імёны карыстальнікаў"
 
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr "Спіс папярэдніх імёнаў карыстальнікаў"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr "Раней выкарыстаныя дамены"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr "Спіс папярэдніх даменаў"
+
 #: ../data/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "0"
+msgid "Host"
+msgstr "Машына"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "Карыстальнік"
 
 #: ../data/gnome-nettool.ui.h:3
-#, no-c-format
-msgid "0%"
-msgstr "0%"
+msgid "_Tool"
+msgstr "Пры_лада"
 
 #: ../data/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "0.0"
-
-#: ../data/gnome-nettool.ui.h:5
-msgid "<b>IP Information</b>"
-msgstr "<b>Звесткі пра IP</b>"
-
-#: ../data/gnome-nettool.ui.h:6
-msgid "<b>Interface Information</b>"
-msgstr "<b>Звесткі аб інтэрфейсе</b>"
-
-#: ../data/gnome-nettool.ui.h:7
-msgid "<b>Interface Statistics</b>"
-msgstr "<b>Статыстыка інтэрфейсу</b>"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "<b>Round Trip Time Statistics</b>"
-msgstr "<b>Статыстыка затрымак (RTT)</b>"
-
-#: ../data/gnome-nettool.ui.h:9
-msgid "<b>Transmission Statistics</b>"
-msgstr "<b>Статыстыка перадачы</b>"
-
-#: ../data/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "Актыўныя сеткавыя службы"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "Сярэдняе:"
-
-#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Гукавы сігнал пры запыце ping"
 
-#: ../data/gnome-nettool.ui.h:13
-msgid "Clear _History"
-msgstr "Ачысціць _гісторыю"
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr "_Праўка"
 
-#: ../data/gnome-nettool.ui.h:14
-msgid "Collisions:"
-msgstr "Калізій:"
-
-#: ../data/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:6
 msgid "Copy as text _report"
 msgstr "Скапіраваць як тэкставую _справаздачу"
 
-#: ../data/gnome-nettool.ui.h:16
-msgid "Details"
-msgstr "Падрабязнасці"
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "Ачысціць _гісторыю"
 
-#: ../data/gnome-nettool.ui.h:17
-msgid "Devices"
-msgstr "Прыстасаванні"
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr "_Дапамога"
 
-#: ../data/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr "_Змест"
+
+#: ../data/gnome-nettool.ui.h:10
 msgid "Devices - Network Tools"
 msgstr "Прыстасаванні - Сеткавыя прылады"
 
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "С_еткавае прыстасаванне:"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "_Настроіць"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "<b>IP Information</b>"
+msgstr "<b>Звесткі пра IP</b>"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "Апаратны адрас:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "Мультыкаст:"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "Хуткасць злучэння:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "Стан:"
+
 #: ../data/gnome-nettool.ui.h:19
-msgid "Display:"
-msgstr "Паказаць:"
+msgid "Not Available"
+msgstr "Недаступна"
 
 #: ../data/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "Даменны адрас"
+msgid "<b>Interface Information</b>"
+msgstr "<b>Звесткі аб інтэрфейсе</b>"
 
 #: ../data/gnome-nettool.ui.h:21
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"Увядзіце даменны адрас для пошуку whois-звестак аб ім. Напрыклад: www.domain."
-"com ці 192.168.2.1"
+msgid "Transmitted bytes:"
+msgstr "Перададзена байтаў:"
 
 #: ../data/gnome-nettool.ui.h:22
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"Увядзіце сеткавы адрас для finger-апытання гэтага карыстальніка. Напрыклад: "
-"www.domain.com ці 192.168.2.1"
+msgid "Received bytes:"
+msgstr "Атрымана байтаў:"
 
 #: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to lookup. For example: www.domain.com or "
-"192.168.2.1"
-msgstr ""
-"Увядзіце сеткавы адрас для пошуку. Напрыклад: www.domain.com ці 192.168.2.1"
+msgid "Transmission errors:"
+msgstr "Памылак перадачы:"
 
 #: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "Перададзена пакетаў:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "Атрымана пакетаў:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "Памылак прыёму:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "Калізій:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "<b>Interface Statistics</b>"
+msgstr "<b>Статыстыка інтэрфейсу</b>"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "Прыстасаванні"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "Толькі"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "запытаў"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "Неабмежаваную колькасць запытаў"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "Паслаць:"
+
+#: ../data/gnome-nettool.ui.h:34
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Увядзіце сеткавы адрас для пінгавання. Напрыклад: www.domain.com ці "
 "192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:25
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr ""
-"Увядзіце сеткавы адрас для сканавання адкрытых партоў. Напрыклад: www.domain."
-"com ці 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:35
+msgid "Network address"
+msgstr "Сеткавы адрас"
 
-#: ../data/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "_Сеткавы адрас:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "Ping"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "мс"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "Максімум:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "Сярэдняе:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "Мінімум:"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "<b>Round Trip Time Statistics</b>"
+msgstr "<b>Статыстыка затрымак (RTT)</b>"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "Перададзена пакетаў:"
+
+#: ../data/gnome-nettool.ui.h:46
+#, no-c-format
+msgid "0%"
+msgstr "0%"
+
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr "0"
+
+#: ../data/gnome-nettool.ui.h:48
+msgid "Successful packets:"
+msgstr "Паспяховых пакетаў:"
+
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "Атрымана пакетаў:"
+
+#: ../data/gnome-nettool.ui.h:50
+msgid "<b>Transmission Statistics</b>"
+msgstr "<b>Статыстыка перадачы</b>"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr "Падрабязнасці"
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "Паказаць:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "Звесткі аб табліцы маршрутызацыі"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "Актыўныя сеткавыя службы"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "Звесткі аб мультыкаст-трансляцыі"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "Netstat"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr "Вывад net stat"
+
+#: ../data/gnome-nettool.ui.h:58
+msgid "Netstat output"
+msgstr "Вывад netstat"
+
+#: ../data/gnome-nettool.ui.h:59
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"Увядзіце сеткавы адрас для трасіравання маршруту. Напрыклад: www.domain.com "
+"ці 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "Трасіраваць"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr "Вывад traceroute"
+
+#: ../data/gnome-nettool.ui.h:62
+msgid "Traceroute output"
+msgstr "Вывад трасіравання маршруту"
+
+#: ../data/gnome-nettool.ui.h:63
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -206,241 +343,114 @@ msgstr ""
 "Увядзіце сеткавы адрас для трасіравання маршруту. Напрыклад: www.domain.com "
 "ці 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
-msgid "Enter the user to finger"
-msgstr "Увядзіце імя карыстальніка для finger-апытання"
-
-#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
-msgid "Finger"
-msgstr "Finger"
-
-#: ../data/gnome-nettool.ui.h:29
-msgid "Finger output"
-msgstr "Вывад finger"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Hardware address:"
-msgstr "Апаратны адрас:"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "Host"
-msgstr "Машына"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Link speed:"
-msgstr "Хуткасць злучэння:"
-
-#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
-msgid "Lookup"
-msgstr "Пошук"
-
-#: ../data/gnome-nettool.ui.h:34
-msgid "Lookup output"
-msgstr "Вынікі пошуку"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "Maximum:"
-msgstr "Максімум:"
-
-#: ../data/gnome-nettool.ui.h:37
-msgid "Minimum:"
-msgstr "Мінімум:"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "Multicast Information"
-msgstr "Звесткі аб мультыкаст-трансляцыі"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "Multicast:"
-msgstr "Мультыкаст:"
-
-#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
-msgid "Netstat"
-msgstr "Netstat"
-
-#: ../data/gnome-nettool.ui.h:41
-msgid "Netstat output"
-msgstr "Вывад netstat"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Network address"
-msgstr "Сеткавы адрас"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Not Available"
-msgstr "Недаступна"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Only"
-msgstr "Толькі"
-
-#: ../data/gnome-nettool.ui.h:45
-msgid "Output for finger"
-msgstr "Вывад finger"
-
-#: ../data/gnome-nettool.ui.h:46
-msgid "Output for lookup"
-msgstr "Вывад lookup"
-
-#: ../data/gnome-nettool.ui.h:47
-msgid "Output for net stat"
-msgstr "Вывад net stat"
-
-#: ../data/gnome-nettool.ui.h:48
-msgid "Output for port scan"
-msgstr "Вывад сканавання партоў"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Output for traceroute"
-msgstr "Вывад traceroute"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Output for whois"
-msgstr "Вывад whois"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Packets received:"
-msgstr "Атрымана пакетаў:"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Packets transmitted:"
-msgstr "Перададзена пакетаў:"
-
-#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
-msgid "Ping"
-msgstr "Ping"
-
-#: ../data/gnome-nettool.ui.h:54
-msgid "Port Scan"
-msgstr "Сканаванне партоў"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Port scan output"
-msgstr "Вывад сканавання партоў"
-
-#: ../data/gnome-nettool.ui.h:56
-msgid "Received bytes:"
-msgstr "Атрымана байтаў:"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Received packets:"
-msgstr "Атрымана пакетаў:"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Reception errors:"
-msgstr "Памылак прыёму:"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid "Routing Table Information"
-msgstr "Звесткі аб табліцы маршрутызацыі"
-
-#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
-msgid "Scan"
-msgstr "Сканаваць"
-
-#: ../data/gnome-nettool.ui.h:61
-msgid "Send:"
-msgstr "Паслаць:"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "State:"
-msgstr "Стан:"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid "Successful packets:"
-msgstr "Паспяховых пакетаў:"
-
-#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
-msgid "Trace"
-msgstr "Трасіраваць"
-
-#: ../data/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:64
 msgid "Traceroute"
 msgstr "Трасіраванне маршруту"
 
-#: ../data/gnome-nettool.ui.h:66
-msgid "Traceroute output"
-msgstr "Вывад трасіравання маршруту"
+#: ../data/gnome-nettool.ui.h:65
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Увядзіце сеткавы адрас для сканавання адкрытых партоў. Напрыклад: www.domain."
+"com ці 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "Сканаваць"
 
 #: ../data/gnome-nettool.ui.h:67
-msgid "Transmission errors:"
-msgstr "Памылак перадачы:"
+msgid "Output for port scan"
+msgstr "Вывад сканавання партоў"
 
 #: ../data/gnome-nettool.ui.h:68
-msgid "Transmitted bytes:"
-msgstr "Перададзена байтаў:"
+msgid "Port scan output"
+msgstr "Вывад сканавання партоў"
 
 #: ../data/gnome-nettool.ui.h:69
-msgid "Transmitted packets:"
-msgstr "Перададзена пакетаў:"
+msgid "Port Scan"
+msgstr "Сканаванне партоў"
 
 #: ../data/gnome-nettool.ui.h:70
-msgid "Unlimited requests"
-msgstr "Неабмежаваную колькасць запытаў"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "User"
-msgstr "Карыстальнік"
-
-#: ../data/gnome-nettool.ui.h:72
-msgid "User name"
-msgstr "Імя карыстальніка"
-
-#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
-msgid "Whois"
-msgstr "Whois"
-
-#: ../data/gnome-nettool.ui.h:74
-msgid "Whois output"
-msgstr "Вывад Whois"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid "_Configure"
-msgstr "_Настроіць"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "_Domain address:"
-msgstr "_Даменны адрас:"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "_Edit"
-msgstr "_Праўка"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Help"
-msgstr "_Дапамога"
-
-#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "_Тып звестак:"
 
-#: ../data/gnome-nettool.ui.h:80
-msgid "_Network address:"
-msgstr "_Сеткавы адрас:"
+#: ../data/gnome-nettool.ui.h:71
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Увядзіце дамен для пошуку. Напрыклад: www.domain.com ці ftp.domain.com."
 
-#: ../data/gnome-nettool.ui.h:81
-msgid "_Network device:"
-msgstr "С_еткавае прыстасаванне:"
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "Пошук"
 
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Tool"
-msgstr "Пры_лада"
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr "Вывад lookup"
 
-#: ../data/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:74
+msgid "Lookup output"
+msgstr "Вынікі пошуку"
+
+#: ../data/gnome-nettool.ui.h:75
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Увядзіце сеткавы адрас для finger-апытання гэтага карыстальніка. Напрыклад: "
+"www.domain.com ці 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+msgid "Enter the user to finger"
+msgstr "Увядзіце імя карыстальніка для finger-апытання"
+
+#: ../data/gnome-nettool.ui.h:77
+msgid "User name"
+msgstr "Імя карыстальніка"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Username:"
 msgstr "І_мя карыстальніка:"
 
-#: ../data/gnome-nettool.ui.h:84
-msgid "ms"
-msgstr "мс"
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
 
-#: ../data/gnome-nettool.ui.h:85
-msgid "requests"
-msgstr "запытаў"
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr "Вывад finger"
+
+#: ../data/gnome-nettool.ui.h:81
+msgid "Finger output"
+msgstr "Вывад finger"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "_Даменны адрас:"
+
+#: ../data/gnome-nettool.ui.h:83
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Увядзіце даменны адрас для пошуку whois-звестак аб ім. Напрыклад: www.domain."
+"com ці 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+msgid "Domain address"
+msgstr "Даменны адрас"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Whois"
+
+#: ../data/gnome-nettool.ui.h:86
+msgid "Output for whois"
+msgstr "Вывад whois"
+
+#: ../data/gnome-nettool.ui.h:87
+msgid "Whois output"
+msgstr "Вывад Whois"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:60
@@ -479,87 +489,87 @@ msgstr "Невядомы інтэрфейс"
 msgid "Network Devices Not Found"
 msgstr "Сеткавыя прыстасаванні не знойдзены"
 
-#: ../src/info.c:400 ../src/info.c:403
+#: ../src/info.c:396 ../src/info.c:399
 msgid "Unknown"
 msgstr "Невядома"
 
-#: ../src/info.c:474
+#: ../src/info.c:471
 msgid "Active"
 msgstr "Актыўны"
 
-#: ../src/info.c:476
+#: ../src/info.c:473
 msgid "Inactive"
 msgstr "Неактыўны"
 
-#: ../src/info.c:481
+#: ../src/info.c:478
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:490
+#: ../src/info.c:489
 msgid "Enabled"
 msgstr "Уключаны"
 
-#: ../src/info.c:492
+#: ../src/info.c:491
 msgid "Disabled"
 msgstr "Выключаны"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:581
+#: ../src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Сеткавае прыстасаванне:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Апаратны адрас:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Мультыкаст-трансляцыя:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Хуткасць злучэння:\t%s\n"
 
-#: ../src/info.c:586
+#: ../src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Стан:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Перададзена пакетаў:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Памылак перадачы:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Атрымана пакетаў:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Памылак прыёму:\t%s\n"
 
-#: ../src/info.c:592
+#: ../src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Калізій:\t%s\n"
 
-#: ../src/info.h:24
+#: ../src/info.h:23
 msgid "not available"
 msgstr "недаступна"
 
@@ -656,75 +666,78 @@ msgstr "ДАМЕН"
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
-msgstr "Файл %s не існуе. Праверце правільнасць усталёўкі gnome-nettool"
+msgstr "Файл %s не існуе. Праверце правільнасць усталявання gnome-nettool"
 
-#: ../src/main.c:482 ../src/netstat.c:455
+#: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
 msgstr "Пратакол"
 
-#: ../src/main.c:489
+#: ../src/main.c:485
 msgid "IP Address"
 msgstr "IP-адрас"
 
-#: ../src/main.c:496
+#: ../src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "Сеткавая маска / прэфікс"
 
-#: ../src/main.c:503
+#: ../src/main.c:499
 msgid "Broadcast"
 msgstr "Трансляцыя"
 
-#: ../src/main.c:510
+#: ../src/main.c:506
 msgid "Scope"
 msgstr "Абшар"
 
-#: ../src/main.c:667
+#: ../src/main.c:665
 msgid "Default Information"
 msgstr "Прадвызначаныя звесткі"
 
-#: ../src/main.c:668
+#: ../src/main.c:666
 msgid "Internet Address"
 msgstr "Інтэрнэт-адрас (A)"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Canonical Name"
 msgstr "Кананічная назва (CNAME)"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "CPU / OS Type"
 msgstr "Тып працэсара і аперацыйнай сістэмы (HINFO)"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "Mailbox Exchange"
 msgstr "Запіс паштовай скрыні (MX)"
 
-#: ../src/main.c:673
+#: ../src/main.c:671
 msgid "Mailbox Information"
 msgstr "Звесткі аб паштовай скрыні (MINFO)"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Name Server"
 msgstr "Сервер назваў (NS)"
 
-#: ../src/main.c:676
+#: ../src/main.c:674
 msgid "Host name for Address"
 msgstr "Назва машыны для адрасу (PTR)"
 
-#: ../src/main.c:677
-msgid "Start-of-authority"
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
+#: ../src/main.c:678
+msgid "Start of Authority"
 msgstr "Крыніца ўпаўнажаванняў (SOA)"
 
-#: ../src/main.c:678
+#: ../src/main.c:679
 msgid "Text Information"
 msgstr "Звесткі (TXT)"
 
-#: ../src/main.c:679
+#: ../src/main.c:680
 msgid "Well Known Services"
 msgstr "Добра вядомыя службы (WKS)"
 
-#: ../src/main.c:680
+#: ../src/main.c:681
 msgid "Any / All Information"
 msgstr "Усе звесткі"
 
@@ -740,63 +753,63 @@ msgstr "Атрыманне спіса актыўных Інтэрнэт-злуч
 msgid "Getting group memberships"
 msgstr "Атрыманне звестак пра групы"
 
-#: ../src/netstat.c:462
+#: ../src/netstat.c:471
 msgid "IP Source"
 msgstr "IP-адрас крыніцы"
 
-#: ../src/netstat.c:470
+#: ../src/netstat.c:479
 msgid "Port/Service"
 msgstr "Порт/служба"
 
-#: ../src/netstat.c:478 ../src/scan.c:318
+#: ../src/netstat.c:487 ../src/scan.c:213
 msgid "State"
 msgstr "Стан"
 
-#: ../src/netstat.c:632
+#: ../src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "Месца прызначэння/прэфікс"
 
-#: ../src/netstat.c:634
+#: ../src/netstat.c:642
 msgid "Destination"
 msgstr "Месца прызначэння"
 
-#: ../src/netstat.c:641
+#: ../src/netstat.c:649
 msgid "Gateway"
 msgstr "Сеткавая брама"
 
-#: ../src/netstat.c:649
+#: ../src/netstat.c:657
 msgid "Netmask"
 msgstr "Сеткавая маска"
 
-#: ../src/netstat.c:657 ../src/netstat.c:764
+#: ../src/netstat.c:665 ../src/netstat.c:771
 msgid "Interface"
 msgstr "Інтэрфейс"
 
-#: ../src/netstat.c:771
+#: ../src/netstat.c:778
 msgid "Member"
 msgstr "Удзельнік"
 
-#: ../src/netstat.c:779
+#: ../src/netstat.c:786
 msgid "Group"
 msgstr "Група"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:821
+#: ../src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Пратакол\tIP-адрас крыніцы\tПорт/служба\tСтан\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:827
+#: ../src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Месца прызначэння\tСеткавая брама\tСеткавая маска\tІнтэрфейс\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:832
+#: ../src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "Інтэрфейс\tУдзельнік\tГрупа\n"
 
@@ -821,15 +834,20 @@ msgstr "Даменны адрас не быў вызначаны"
 msgid "Please enter a valid domain address and try again."
 msgstr "Увядзіце карэктны даменны адрас і паўтарыце спробу."
 
-#: ../src/nettool.c:433
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr "Пры запуску \"%s\" узнікла памылка"
+
+#: ../src/nettool.c:464
 msgid "Information not available"
 msgstr "Звесткі адсутнічаюць"
 
-#: ../src/nettool.c:553
+#: ../src/nettool.c:589
 msgid "Stop"
 msgstr "Спыніць"
 
-#: ../src/nettool.c:559
+#: ../src/nettool.c:595
 msgid "Run"
 msgstr "Запусціць"
 
@@ -859,7 +877,7 @@ msgstr "Крыніца"
 msgid "Seq"
 msgstr "Нумар"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
 msgstr "Час"
 
@@ -906,67 +924,50 @@ msgstr "Атрымана пакетаў:\t%s\n"
 msgid "Successful packets:\t%s\n"
 msgstr "Паспяховых пакетаў:\t%s\n"
 
-#: ../src/scan.c:98
+#: ../src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Сканаванне адкрытых партоў %s"
 
-#: ../src/scan.c:173
-msgid "unknown"
-msgstr "невядома"
-
-#. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:177
-msgid "open"
-msgstr "адкрыты"
-
-#: ../src/scan.c:310
+#: ../src/scan.c:205
 msgid "Port"
 msgstr "Порт"
 
-#: ../src/scan.c:326
+#: ../src/scan.c:221
 msgid "Service"
 msgstr "Служба"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:348
+#: ../src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "Порт\tСтан\tСлужба\n"
 
-#: ../src/traceroute.c:66
+#: ../src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "Трасіраванне маршруту да %s"
 
-#: ../src/traceroute.c:269
+#: ../src/traceroute.c:309
 msgid "Hop"
 msgstr "Крок"
 
-#: ../src/traceroute.c:277
+#: ../src/traceroute.c:317
 msgid "Hostname"
 msgstr "Назва машыны"
 
-#: ../src/traceroute.c:285
+#: ../src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
-
-#: ../src/traceroute.c:296
-msgid "Time 1"
-msgstr "Час 1"
-
-#: ../src/traceroute.c:306
-msgid "Time 2"
-msgstr "Час 2"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:332
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "Крок\tНазва машыны\tIP\tЧас 1\tЧас 2\n"
+#: ../src/traceroute.c:361
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Крок\tНазва хоста\tIP\tЧас 1\n"
 
 #: ../src/utils.c:231
 #, c-format
@@ -975,12 +976,12 @@ msgid ""
 "system"
 msgstr "Каб змагчы карыстацца гэтай функцыяй праграмы, трэба ўсталяваць %s"
 
-#: ../src/finger.c:66
+#: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "Атрыманне звестак пра %s на \"%s\""
 
-#: ../src/finger.c:70
+#: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "Атрыманне звестак пра ўсіх карыстальнікаў на \"%s\""
