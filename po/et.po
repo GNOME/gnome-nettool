@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-01-01 21:38+0000\n"
-"PO-Revision-Date: 2012-01-02 01:13+0200\n"
+"POT-Creation-Date: 2012-02-24 08:38+0000\n"
+"PO-Revision-Date: 2012-02-27 11:48+0200\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
@@ -56,11 +56,14 @@ msgstr "Abiteabe faili pole võimalik avada"
 msgid "View information about your network"
 msgstr "Sinu võrgu kohta andmete vaatamine"
 
-msgid "A list of domains previously used"
-msgstr "Varem kasutatud domeenide loetelu"
+msgid "Historically used hostnames"
+msgstr "Varasemalt kasutatud hostinimed"
 
 msgid "A list of hostnames previously used"
 msgstr "Varem kasutatud hostinimede loetelu"
+
+msgid "Historically used usernames"
+msgstr "Varasemalt kasutatud kasutajanimed"
 
 msgid "A list of usernames previously used"
 msgstr "Varem kasutatud kasutajanimede loetelu"
@@ -68,87 +71,107 @@ msgstr "Varem kasutatud kasutajanimede loetelu"
 msgid "Historically used domains"
 msgstr "Varasemalt kasutatud domeenid"
 
-msgid "Historically used hostnames"
-msgstr "Varasemalt kasutatud hostinimed"
+msgid "A list of domains previously used"
+msgstr "Varem kasutatud domeenide loetelu"
 
-msgid "Historically used usernames"
-msgstr "Varasemalt kasutatud kasutajanimed"
+msgid "Host"
+msgstr "Host"
 
-msgid "0"
-msgstr "0"
+msgid "User"
+msgstr "Kasutaja"
 
-#, no-c-format
-msgid "0%"
-msgstr "0%"
-
-msgid "0.0"
-msgstr "0.0"
-
-msgid "<b>IP Information</b>"
-msgstr "<b>IP andmed</b>"
-
-msgid "<b>Interface Information</b>"
-msgstr "<b>Liidese andmed</b>"
-
-msgid "<b>Interface Statistics</b>"
-msgstr "<b>Liidese statistika</b>"
-
-msgid "<b>Round Trip Time Statistics</b>"
-msgstr "<b>Ringi läbimise ajaline statistika</b>"
-
-msgid "<b>Transmission Statistics</b>"
-msgstr "<b>Ülekandestatistika</b>"
-
-msgid "Active Network Services"
-msgstr "Aktiivsed võrguteenused"
-
-msgid "Average:"
-msgstr "Keskmine:"
+msgid "_Tool"
+msgstr "_Vahendid"
 
 msgid "Beep on ping"
 msgstr "Piiksumine pingimisel"
 
-msgid "Clear _History"
-msgstr "Puhasta _ajalugu"
-
-msgid "Collisions:"
-msgstr "Kollisioone:"
+msgid "_Edit"
+msgstr "_Redaktor"
 
 msgid "Copy as text _report"
 msgstr "Kopeeri teksti_raportina"
 
-msgid "Details"
-msgstr "Üksikasjad"
+msgid "Clear _History"
+msgstr "Puhasta _ajalugu"
 
-msgid "Devices"
-msgstr "Seadmed"
+msgid "_Help"
+msgstr "A_bi"
+
+msgid "_Contents"
+msgstr "_Sisukord"
 
 msgid "Devices - Network Tools"
 msgstr "Seadmed - Võrgutööriistad"
 
-msgid "Display:"
-msgstr "Kuvatakse:"
+msgid "_Network device:"
+msgstr "Võr_guseade:"
 
-msgid "Domain address"
-msgstr "Domeeni aadress"
+msgid "_Configure"
+msgstr "_Seadista"
 
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"Sisesta domeen või aadress, mille kohta soovid whois-päringut teha. Näiteks: "
-"www.domain.com või 192.168.2.1"
+msgid "<b>IP Information</b>"
+msgstr "<b>IP andmed</b>"
 
-msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr ""
-"Sisesta domeen, mida soovid lahendada. Näiteks: domeen.ee või ftp.domeen.ee"
+msgid "Hardware address:"
+msgstr "Riistvaraline aadress:"
 
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"Sisesta domeen või aadress, millelt soovid finger-päringut teha. Näiteks: "
-"www.domain.com või 192.168.2.1"
+msgid "Multicast:"
+msgstr "Multicast:"
+
+msgid "MTU:"
+msgstr "MTU:"
+
+msgid "Link speed:"
+msgstr "Ühenduskiirus:"
+
+msgid "State:"
+msgstr "Olek:"
+
+msgid "Not Available"
+msgstr "Pole saadaval"
+
+msgid "<b>Interface Information</b>"
+msgstr "<b>Liidese andmed</b>"
+
+msgid "Transmitted bytes:"
+msgstr "Ülekantud baite:"
+
+msgid "Received bytes:"
+msgstr "Vastuvõetud baite:"
+
+msgid "Transmission errors:"
+msgstr "Ülekandevigu:"
+
+msgid "Transmitted packets:"
+msgstr "Ülekantud pakette:"
+
+msgid "Received packets:"
+msgstr "Vastuvõetud pakette:"
+
+msgid "Reception errors:"
+msgstr "Vastuvõtuvigu:"
+
+msgid "Collisions:"
+msgstr "Kollisioone:"
+
+msgid "<b>Interface Statistics</b>"
+msgstr "<b>Liidese statistika</b>"
+
+msgid "Devices"
+msgstr "Seadmed"
+
+msgid "Only"
+msgstr "Ainult"
+
+msgid "requests"
+msgstr "päringut"
+
+msgid "Unlimited requests"
+msgstr "Piiramatu arv päringuid"
+
+msgid "Send:"
+msgstr "Saadetakse:"
 
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
@@ -156,12 +179,75 @@ msgstr ""
 "Sisesta võrguaadress, millele soovid ping-päringut saata. Näiteks: www."
 "domain.com või 192.168.2.1"
 
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr ""
-"Sisesta võrguaadress, mille avatud porte soovid kontrollida. Näiteks: www."
-"domain.com või 192.168.2.1"
+msgid "Network address"
+msgstr "Võrguaadress"
+
+msgid "_Network address:"
+msgstr "Võr_guaadress:"
+
+msgid "Ping"
+msgstr "Ping"
+
+msgid "0.0"
+msgstr "0.0"
+
+msgid "ms"
+msgstr "ms"
+
+msgid "Maximum:"
+msgstr "Suurim:"
+
+msgid "Average:"
+msgstr "Keskmine:"
+
+msgid "Minimum:"
+msgstr "Vähim:"
+
+msgid "<b>Round Trip Time Statistics</b>"
+msgstr "<b>Ringi läbimise ajaline statistika</b>"
+
+msgid "Packets transmitted:"
+msgstr "Edastatud pakette:"
+
+#, no-c-format
+msgid "0%"
+msgstr "0%"
+
+msgid "0"
+msgstr "0"
+
+msgid "Successful packets:"
+msgstr "Vigadeta pakette:"
+
+msgid "Packets received:"
+msgstr "Vastuvõetud pakette:"
+
+msgid "<b>Transmission Statistics</b>"
+msgstr "<b>Ülekandestatistika</b>"
+
+msgid "Details"
+msgstr "Üksikasjad"
+
+msgid "Display:"
+msgstr "Kuvatakse:"
+
+msgid "Routing Table Information"
+msgstr "Ruutingutabeli andmed"
+
+msgid "Active Network Services"
+msgstr "Aktiivsed võrguteenused"
+
+msgid "Multicast Information"
+msgstr "Multicast'i andmed"
+
+msgid "Netstat"
+msgstr "Võrgustatistika"
+
+msgid "Output for net stat"
+msgstr "Võrgustatistika väljund"
+
+msgid "Netstat output"
+msgstr "Võrgustatistika väljund"
 
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
@@ -170,6 +256,15 @@ msgstr ""
 "Sisesta võrguaadress, kuhu sa soovid pakettide liikumisrada tuvastada. "
 "Näiteks: www.domeen.ee või 192.168.2.1"
 
+msgid "Trace"
+msgstr "Leia marsruut"
+
+msgid "Output for traceroute"
+msgstr "Marsruudi leidmise väljund"
+
+msgid "Traceroute output"
+msgstr "Marsruudi leidmise väljund"
+
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -177,185 +272,90 @@ msgstr ""
 "Sisesta võrguaadress, kuhu sa soovid pakettide liikumisdada tuvastada. "
 "Näiteks: www.domain.com või 192.168.2.1"
 
-msgid "Enter the user to finger"
-msgstr "Sisesta kasutaja, kelle kohta soovid finger-päringut teha"
+msgid "Traceroute"
+msgstr "Marsruudi leidmine"
 
-msgid "Finger"
-msgstr "Finger"
-
-msgid "Finger output"
-msgstr "Fingeri väljund"
-
-msgid "Hardware address:"
-msgstr "Riistvaraline aadress:"
-
-msgid "Host"
-msgstr "Host"
-
-msgid "Link speed:"
-msgstr "Ühenduskiirus:"
-
-msgid "Lookup"
-msgstr "Nimelahendus"
-
-msgid "Lookup output"
-msgstr "Nimelahenduse väljund"
-
-msgid "MTU:"
-msgstr "MTU:"
-
-msgid "Maximum:"
-msgstr "Suurim:"
-
-msgid "Minimum:"
-msgstr "Vähim:"
-
-msgid "Multicast Information"
-msgstr "Multicast'i andmed"
-
-msgid "Multicast:"
-msgstr "Multicast:"
-
-msgid "Netstat"
-msgstr "Võrgustatistika"
-
-msgid "Netstat output"
-msgstr "Võrgustatistika väljund"
-
-msgid "Network address"
-msgstr "Võrguaadress"
-
-msgid "Not Available"
-msgstr "Pole saadaval"
-
-msgid "Only"
-msgstr "Ainult"
-
-msgid "Output for finger"
-msgstr "Fingeri väljund"
-
-msgid "Output for lookup"
-msgstr "Nimelahenduse väljund"
-
-msgid "Output for net stat"
-msgstr "Võrgustatistika väljund"
-
-msgid "Output for port scan"
-msgstr "Pordiskannimise väljund"
-
-msgid "Output for traceroute"
-msgstr "Marsruudi leidmise väljund"
-
-msgid "Output for whois"
-msgstr "Whoisi väljund"
-
-msgid "Packets received:"
-msgstr "Vastuvõetud pakette:"
-
-msgid "Packets transmitted:"
-msgstr "Edastatud pakette:"
-
-msgid "Ping"
-msgstr "Ping"
-
-msgid "Port Scan"
-msgstr "Pordiskannimine"
-
-msgid "Port scan output"
-msgstr "Pordiskannimise väljund"
-
-msgid "Received bytes:"
-msgstr "Vastuvõetud baite:"
-
-msgid "Received packets:"
-msgstr "Vastuvõetud pakette:"
-
-msgid "Reception errors:"
-msgstr "Vastuvõtuvigu:"
-
-msgid "Routing Table Information"
-msgstr "Ruutingutabeli andmed"
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Sisesta võrguaadress, mille avatud porte soovid kontrollida. Näiteks: www."
+"domain.com või 192.168.2.1"
 
 msgid "Scan"
 msgstr "Skanni"
 
-msgid "Send:"
-msgstr "Saadetakse:"
+msgid "Output for port scan"
+msgstr "Pordiskannimise väljund"
 
-msgid "State:"
-msgstr "Olek:"
+msgid "Port scan output"
+msgstr "Pordiskannimise väljund"
 
-msgid "Successful packets:"
-msgstr "Vigadeta pakette:"
-
-msgid "Trace"
-msgstr "Leia marsruut"
-
-msgid "Traceroute"
-msgstr "Marsruudi leidmine"
-
-msgid "Traceroute output"
-msgstr "Marsruudi leidmise väljund"
-
-msgid "Transmission errors:"
-msgstr "Ülekandevigu:"
-
-msgid "Transmitted bytes:"
-msgstr "Ülekantud baite:"
-
-msgid "Transmitted packets:"
-msgstr "Ülekantud pakette:"
-
-msgid "Unlimited requests"
-msgstr "Piiramatu arv päringuid"
-
-msgid "User"
-msgstr "Kasutaja"
-
-msgid "User name"
-msgstr "Kasutaja nimi"
-
-msgid "Whois"
-msgstr "Whois"
-
-msgid "Whois output"
-msgstr "Whoisi väljund"
-
-msgid "_Configure"
-msgstr "_Seadista"
-
-msgid "_Contents"
-msgstr "_Sisukord"
-
-msgid "_Domain address:"
-msgstr "_Domeeni aadress:"
-
-msgid "_Edit"
-msgstr "_Redaktor"
-
-msgid "_Help"
-msgstr "A_bi"
+msgid "Port Scan"
+msgstr "Pordiskannimine"
 
 msgid "_Information type:"
 msgstr "A_ndmete liik:"
 
-msgid "_Network address:"
-msgstr "Võr_guaadress:"
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Sisesta domeen, mida soovid lahendada. Näiteks: domeen.ee või ftp.domeen.ee"
 
-msgid "_Network device:"
-msgstr "Võr_guseade:"
+msgid "Lookup"
+msgstr "Nimelahendus"
 
-msgid "_Tool"
-msgstr "_Vahendid"
+msgid "Output for lookup"
+msgstr "Nimelahenduse väljund"
+
+msgid "Lookup output"
+msgstr "Nimelahenduse väljund"
+
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Sisesta domeen või aadress, millelt soovid finger-päringut teha. Näiteks: "
+"www.domain.com või 192.168.2.1"
+
+msgid "Enter the user to finger"
+msgstr "Sisesta kasutaja, kelle kohta soovid finger-päringut teha"
+
+msgid "User name"
+msgstr "Kasutaja nimi"
 
 msgid "_Username:"
 msgstr "_Kasutajanimi:"
 
-msgid "ms"
-msgstr "ms"
+msgid "Finger"
+msgstr "Finger"
 
-msgid "requests"
-msgstr "päringut"
+msgid "Output for finger"
+msgstr "Fingeri väljund"
+
+msgid "Finger output"
+msgstr "Fingeri väljund"
+
+msgid "_Domain address:"
+msgstr "_Domeeni aadress:"
+
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Sisesta domeen või aadress, mille kohta soovid whois-päringut teha. Näiteks: "
+"www.domain.com või 192.168.2.1"
+
+msgid "Domain address"
+msgstr "Domeeni aadress"
+
+msgid "Whois"
+msgstr "Whois"
+
+msgid "Output for whois"
+msgstr "Whoisi väljund"
+
+msgid "Whois output"
+msgstr "Whoisi väljund"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 msgid "Other type"
@@ -657,6 +657,10 @@ msgstr "Domeeniaadress on määramata"
 msgid "Please enter a valid domain address and try again."
 msgstr "Palun sisesta korrektne domeeni aadress ja proovi uuesti."
 
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr "'%s' käivitamisel esines viga"
+
 msgid "Information not available"
 msgstr "Andmed pole saadaval"
 
@@ -728,13 +732,6 @@ msgstr "Vigadeta pakette:\t%s\n"
 msgid "Scanning %s for open ports"
 msgstr "Avatud portide skannimine aadressil %s"
 
-msgid "unknown"
-msgstr "tundmatu"
-
-#. Translators: "open" is a network status and should be one word.
-msgid "open"
-msgstr "avatud"
-
 msgid "Port"
 msgstr "Port"
 
@@ -760,18 +757,12 @@ msgstr "Hostinimi"
 msgid "IP"
 msgstr "IP"
 
-msgid "Time 1"
-msgstr "Aeg 1"
-
-msgid "Time 2"
-msgstr "Aeg 2"
-
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "Hop\tHostinimi\tIP\tAeg 1\tAeg 2\n"
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Hop\tHostinimi\tIP\tAeg 1\n"
 
 #, c-format
 msgid ""
