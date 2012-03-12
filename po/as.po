@@ -4,16 +4,16 @@
 #
 # Amitakhya Phukan <amitakhya@svn.gnome.org>, 2008.
 # Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
-# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011.
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-07-13 08:50+0000\n"
-"PO-Revision-Date: 2011-03-14 15:01+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=gnome-nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-01-03 04:23+0000\n"
+"PO-Revision-Date: 2012-03-12 11:58+0530\n"
 "Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
-"Language-Team: Assamese <kde-i18n-doc@kde.org>\n"
+"Language-Team: as_IN <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +22,9 @@ msgstr ""
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
-msgstr "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী (ngoswami@redhat.com)"
+msgstr ""
+"অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী (ngoswami@redhat."
+"com)"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -40,7 +42,7 @@ msgstr "নেটৱাৰ্ক  সঁজুলি"
 msgid "Graphical user interface for common network utilities"
 msgstr "সাধাৰণ নেটৱাৰ্ক সঁজুলিসমূহৰ বাবে গ্ৰাফীয় ব্যৱহাৰকাৰী আন্তঃপৃষ্ট"
 
-#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:488
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
 msgstr "অলস"
 
@@ -169,20 +171,19 @@ msgstr ""
 "উদাহৰণস্বৰূপ: www.domain.com অথবা 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:22
+#| msgid ""
+#| "Enter the network address to lookup. For example: www.domain.com or "
+#| "192.168.2.1"
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr "লুকআপৰ বাবে ডমেইন সুমুৱাওক। উদাহৰণস্বৰূপ: domain.com অথবা ftp.domain.com।"
+
+#: ../data/gnome-nettool.ui.h:23
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
 "ব্যৱহাৰকাৰীক finger কৰাৰ বাবে নেটৱাৰ্ক ঠিকনা লিখক।\n"
 "উদাহৰণস্বৰূপ: auth.domain.com অথবা 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to lookup. For example: www.domain.com or "
-"192.168.2.1"
-msgstr ""
-"lookup কৰাৰ বাবে নেটৱাৰ্ক ঠিকনা লিখক।\n"
-"উদাহৰণস্বৰূপ: www.domain.com অথবা 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:24
 msgid ""
@@ -200,6 +201,18 @@ msgstr ""
 "উদাহৰণস্বৰূপ: www.domain.com অথবা 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:26
+#| msgid ""
+#| "Enter the network address to trace a route to. For example: www.domain."
+#| "com or 192.168.2.1"
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"এটা পথ অনুকৰণ কৰিবলে এটা নেটৱাৰ্ক ঠিকনা সুমুৱাওক। উদাহৰণস্বৰূপ: www.domain.com "
+"অথবা "
+"192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:27
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -207,239 +220,243 @@ msgstr ""
 "route trace কৰাৰ বাবে নেটৱাৰ্ক ঠিকনা লিখক।\n"
 "উদাহৰণস্বৰূপ: www.domain.com অথবা 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:28
 msgid "Enter the user to finger"
 msgstr "finger কৰাৰ বাবে ব্যৱহাৰকাৰী উল্লেখ কৰক।"
 
-#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
+#: ../data/gnome-nettool.ui.h:29 ../src/main.c:811
 msgid "Finger"
 msgstr "Finger"
 
-#: ../data/gnome-nettool.ui.h:29
+#: ../data/gnome-nettool.ui.h:30
 msgid "Finger output"
 msgstr "Finger  -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:30
+#: ../data/gnome-nettool.ui.h:31
 msgid "Hardware address:"
 msgstr "হাৰ্ডৱেৰ ঠিকনা:"
 
-#: ../data/gnome-nettool.ui.h:31
+#: ../data/gnome-nettool.ui.h:32
 msgid "Host"
 msgstr "হস্ট"
 
-#: ../data/gnome-nettool.ui.h:32
+#: ../data/gnome-nettool.ui.h:33
 msgid "Link speed:"
 msgstr "লিঙ্ক গতি:"
 
-#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
+#: ../data/gnome-nettool.ui.h:34 ../src/main.c:733
 msgid "Lookup"
 msgstr "Lookup"
 
-#: ../data/gnome-nettool.ui.h:34
+#: ../data/gnome-nettool.ui.h:35
 msgid "Lookup output"
 msgstr "Lookup  -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:35
+#: ../data/gnome-nettool.ui.h:36
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../data/gnome-nettool.ui.h:36
+#: ../data/gnome-nettool.ui.h:37
 msgid "Maximum:"
 msgstr "সৰ্বোচ্চ:"
 
-#: ../data/gnome-nettool.ui.h:37
+#: ../data/gnome-nettool.ui.h:38
 msgid "Minimum:"
 msgstr "সৰ্বনিম্ন:"
 
-#: ../data/gnome-nettool.ui.h:38
+#: ../data/gnome-nettool.ui.h:39
 msgid "Multicast Information"
 msgstr "মাল্টিকাস্ট  তথ্য"
 
-#: ../data/gnome-nettool.ui.h:39
+#: ../data/gnome-nettool.ui.h:40
 msgid "Multicast:"
 msgstr "মাল্টিকাস্ট:"
 
-#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
+#: ../data/gnome-nettool.ui.h:41 ../src/main.c:444
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../data/gnome-nettool.ui.h:41
+#: ../data/gnome-nettool.ui.h:42
 msgid "Netstat output"
 msgstr "Netstat  -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:42
+#: ../data/gnome-nettool.ui.h:43
 msgid "Network address"
 msgstr "নেটৱাৰ্কৰ ঠিকনা"
 
-#: ../data/gnome-nettool.ui.h:43
+#: ../data/gnome-nettool.ui.h:44
 msgid "Not Available"
 msgstr "উপস্থিত নাই"
 
-#: ../data/gnome-nettool.ui.h:44
+#: ../data/gnome-nettool.ui.h:45
 msgid "Only"
 msgstr "কেৱল"
 
-#: ../data/gnome-nettool.ui.h:45
+#: ../data/gnome-nettool.ui.h:46
 msgid "Output for finger"
 msgstr "finger -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:46
+#: ../data/gnome-nettool.ui.h:47
 msgid "Output for lookup"
 msgstr "lookup -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:47
+#: ../data/gnome-nettool.ui.h:48
 msgid "Output for net stat"
 msgstr "net stat -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:48
+#: ../data/gnome-nettool.ui.h:49
 msgid "Output for port scan"
 msgstr "port scan -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:49
+#: ../data/gnome-nettool.ui.h:50
 msgid "Output for traceroute"
 msgstr "traceroute -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:50
+#: ../data/gnome-nettool.ui.h:51
 msgid "Output for whois"
 msgstr "whois -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:51
+#: ../data/gnome-nettool.ui.h:52
 msgid "Packets received:"
 msgstr "প্ৰাপ্ত পেকেটসমূহ:"
 
-#: ../data/gnome-nettool.ui.h:52
+#: ../data/gnome-nettool.ui.h:53
 msgid "Packets transmitted:"
 msgstr "প্ৰেৰিত পেকেট"
 
-#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:54 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
-#: ../data/gnome-nettool.ui.h:54
+#: ../data/gnome-nettool.ui.h:55
 msgid "Port Scan"
 msgstr "Port Scan"
 
-#: ../data/gnome-nettool.ui.h:55
+#: ../data/gnome-nettool.ui.h:56
 msgid "Port scan output"
 msgstr "Port scan  -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:56
+#: ../data/gnome-nettool.ui.h:57
 msgid "Received bytes:"
 msgstr "প্ৰাপ্ত বাইটসমূহ:"
 
-#: ../data/gnome-nettool.ui.h:57
+#: ../data/gnome-nettool.ui.h:58
 msgid "Received packets:"
 msgstr "প্ৰাপ্ত পেকেটসমূহ:"
 
-#: ../data/gnome-nettool.ui.h:58
+#: ../data/gnome-nettool.ui.h:59
 msgid "Reception errors:"
 msgstr "গ্ৰহণ ত্ৰুটিসমূহ:"
 
-#: ../data/gnome-nettool.ui.h:59
+#: ../data/gnome-nettool.ui.h:60
 msgid "Routing Table Information"
 msgstr "ৰুটিং (routing) টেবুল  তথ্য"
 
-#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
+#: ../data/gnome-nettool.ui.h:61 ../src/main.c:615
 msgid "Scan"
 msgstr "স্কেন কৰক"
 
-#: ../data/gnome-nettool.ui.h:61
+#: ../data/gnome-nettool.ui.h:62
 msgid "Send:"
 msgstr "প্ৰেৰণ কৰক:"
 
-#: ../data/gnome-nettool.ui.h:62
+#: ../data/gnome-nettool.ui.h:63
 msgid "State:"
 msgstr "অবস্থা:"
 
-#: ../data/gnome-nettool.ui.h:63
+#: ../data/gnome-nettool.ui.h:64
 msgid "Successful packets:"
 msgstr "সফং পেকেটসমূহ:"
 
-#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:65 ../src/main.c:375
 msgid "Trace"
 msgstr "অনুসৰণ কৰক"
 
-#: ../data/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../data/gnome-nettool.ui.h:66
+#: ../data/gnome-nettool.ui.h:67
 msgid "Traceroute output"
 msgstr "Traceroute -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:68
 msgid "Transmission errors:"
 msgstr "প্ৰেৰণৰ ত্ৰুটিসমূহ:"
 
-#: ../data/gnome-nettool.ui.h:68
+#: ../data/gnome-nettool.ui.h:69
 msgid "Transmitted bytes:"
 msgstr "প্ৰেৰিত বাইটসমূহ:"
 
-#: ../data/gnome-nettool.ui.h:69
+#: ../data/gnome-nettool.ui.h:70
 msgid "Transmitted packets:"
 msgstr "প্ৰেৰিত পেকেটসমূহ"
 
-#: ../data/gnome-nettool.ui.h:70
+#: ../data/gnome-nettool.ui.h:71
 msgid "Unlimited requests"
 msgstr "সীমাহীন অনুৰোধসমূহ"
 
-#: ../data/gnome-nettool.ui.h:71
+#: ../data/gnome-nettool.ui.h:72
 msgid "User"
 msgstr "ব্যৱহাৰকাৰী"
 
-#: ../data/gnome-nettool.ui.h:72
+#: ../data/gnome-nettool.ui.h:73
 msgid "User name"
 msgstr "ব্যৱহাৰকাৰীৰ নাম"
 
-#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
+#: ../data/gnome-nettool.ui.h:74 ../src/main.c:915
 msgid "Whois"
 msgstr "Whois"
 
-#: ../data/gnome-nettool.ui.h:74
+#: ../data/gnome-nettool.ui.h:75
 msgid "Whois output"
 msgstr "Whois -ৰ আউটপুট"
 
-#: ../data/gnome-nettool.ui.h:75
+#: ../data/gnome-nettool.ui.h:76
 msgid "_Configure"
 msgstr "সংৰূপণ কৰক (_C)"
 
-#: ../data/gnome-nettool.ui.h:76
+#: ../data/gnome-nettool.ui.h:77
+msgid "_Contents"
+msgstr "সমলসমূহ (_C)"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Domain address:"
 msgstr "ডোমেইনৰ ঠিকনা: (_D)"
 
-#: ../data/gnome-nettool.ui.h:77
+#: ../data/gnome-nettool.ui.h:79
 msgid "_Edit"
 msgstr "সম্পাদনা কৰক (_E)"
 
-#: ../data/gnome-nettool.ui.h:78
+#: ../data/gnome-nettool.ui.h:80
 msgid "_Help"
 msgstr "সহায় (_H)"
 
-#: ../data/gnome-nettool.ui.h:79
+#: ../data/gnome-nettool.ui.h:81
 msgid "_Information type:"
 msgstr "তথ্যৰ ধৰণ:(_I)"
 
-#: ../data/gnome-nettool.ui.h:80
+#: ../data/gnome-nettool.ui.h:82
 msgid "_Network address:"
 msgstr "নেটৱাৰ্কৰ ঠিকনা:(_N)"
 
-#: ../data/gnome-nettool.ui.h:81
+#: ../data/gnome-nettool.ui.h:83
 msgid "_Network device:"
 msgstr "নেটৱাৰ্ক ডিভাইচ:(_N)"
 
-#: ../data/gnome-nettool.ui.h:82
+#: ../data/gnome-nettool.ui.h:84
 msgid "_Tool"
 msgstr "সঁজুলি (_T)"
 
-#: ../data/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:85
 msgid "_Username:"
 msgstr "ব্যৱহাৰকাৰীৰ নাম:(_U)"
 
-#: ../data/gnome-nettool.ui.h:84
+#: ../data/gnome-nettool.ui.h:86
 msgid "ms"
 msgstr "ms"
 
-#: ../data/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:87
 msgid "requests"
 msgstr "অনুৰোধসমূহ"
 
@@ -480,87 +497,87 @@ msgstr "অজ্ঞাত আন্তঃপৃষ্ট"
 msgid "Network Devices Not Found"
 msgstr "নেটৱাৰ্ক ডিভাইচ পোৱা নগল"
 
-#: ../src/info.c:400 ../src/info.c:403
+#: ../src/info.c:396 ../src/info.c:399
 msgid "Unknown"
 msgstr "অজ্ঞাত"
 
-#: ../src/info.c:474
+#: ../src/info.c:471
 msgid "Active"
 msgstr "সক্ৰিয়"
 
-#: ../src/info.c:476
+#: ../src/info.c:473
 msgid "Inactive"
 msgstr "নিষ্ক্ৰিয়"
 
-#: ../src/info.c:481
+#: ../src/info.c:478
 msgid "Loopback"
 msgstr "লুপব্যাক"
 
-#: ../src/info.c:490
+#: ../src/info.c:489
 msgid "Enabled"
 msgstr "সামৰ্থবান"
 
-#: ../src/info.c:492
+#: ../src/info.c:491
 msgid "Disabled"
 msgstr "অসামৰ্থবান"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:581
+#: ../src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "নেটৱাৰ্ক ডিভাইচ:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "হাৰ্ডৱেৰ ঠিকনা:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "মাল্টিকাস্ট:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "লিঙ্কৰ গতি:\t%s\n"
 
-#: ../src/info.c:586
+#: ../src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "অবস্থা:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "প্ৰেৰিত পেকেটসমূহ:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "প্ৰেৰণ ত্ৰুটিসমূহ:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "প্ৰাপ্ত পেকেটসমূহ:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "গ্ৰহণৰ ত্ৰুটিসমূহ:\t%s\n"
 
-#: ../src/info.c:592
+#: ../src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "দ্বন্দ্বসমূহ:\t%s\n"
 
-#: ../src/info.h:24
+#: ../src/info.h:23
 msgid "not available"
 msgstr "উপস্থিত নাই"
 
@@ -618,8 +635,7 @@ msgstr "HOST"
 
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"netstat  তথ্য প্ৰাপ্ত কৰক।  বৈধ বিকল্পসমূহ হল: পথ, সক্ৰিয়, মাল্টিকাস্ট।"
+msgstr "netstat  তথ্য প্ৰাপ্ত কৰক।  বৈধ বিকল্পসমূহ হল: পথ, সক্ৰিয়, মাল্টিকাস্ট।"
 
 #: ../src/main.c:91
 msgid "COMMAND"
@@ -659,76 +675,80 @@ msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"%s নথিপত্ৰটো উপস্থিত নাই, অনুগ্ৰহ কৰি পৰীক্ষা কৰক gnome-nettool সঠিকভাবে ইনস্টল কৰা "
-"আছে নে নাই"
+"%s নথিপত্ৰটো উপস্থিত নাই, অনুগ্ৰহ কৰি পৰীক্ষা কৰক gnome-nettool সঠিকভাবে ইনস্টল "
+"কৰা আছে নে নাই"
 
-#: ../src/main.c:482 ../src/netstat.c:455
+#: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
 msgstr "প্ৰোটোকল"
 
-#: ../src/main.c:489
+#: ../src/main.c:485
 msgid "IP Address"
 msgstr "IP ঠিকনা"
 
-#: ../src/main.c:496
+#: ../src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "নেটমাস্ক / উপসৰ্গ"
 
-#: ../src/main.c:503
+#: ../src/main.c:499
 msgid "Broadcast"
 msgstr "সম্প্ৰচাৰ কৰক"
 
-#: ../src/main.c:510
+#: ../src/main.c:506
 msgid "Scope"
 msgstr "পৰিধি"
 
-#: ../src/main.c:667
+#: ../src/main.c:665
 msgid "Default Information"
 msgstr "অবিকল্পিত তথ্য"
 
-#: ../src/main.c:668
+#: ../src/main.c:666
 msgid "Internet Address"
 msgstr "ইন্টাৰনেট ঠিকনা"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Canonical Name"
 msgstr "নাম"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "CPU / OS Type"
 msgstr "CPU / OS ধৰণ"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "Mailbox Exchange"
 msgstr "মেইলবাকচ অদল বদল"
 
-#: ../src/main.c:673
+#: ../src/main.c:671
 msgid "Mailbox Information"
 msgstr "মেইলবাকচতথ্য"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Name Server"
 msgstr "নাম চাৰ্ভাৰ"
 
-#: ../src/main.c:676
+#: ../src/main.c:674
 msgid "Host name for Address"
 msgstr "ঠিকনাৰ বাবে হস্টনাম"
 
-#: ../src/main.c:677
-msgid "Start-of-authority"
-msgstr "কতৃপক্ষ-ৰ-আৰম্ভ"
-
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
 #: ../src/main.c:678
+#| msgid "Start-of-authority"
+msgid "Start of Authority"
+msgstr "কতৃপক্ষৰ আৰম্ভণি"
+
+#: ../src/main.c:679
 msgid "Text Information"
 msgstr "লিখনী তথ্য"
 
-#: ../src/main.c:679
+#: ../src/main.c:680
 msgid "Well Known Services"
 msgstr "ভালদৰে জ্ঞাত সেৱাসমূহ"
 
-#: ../src/main.c:680
+#: ../src/main.c:681
 msgid "Any / All Information"
 msgstr "যিকোনো / সকলো তথ্য"
 
@@ -744,63 +764,63 @@ msgstr "সক্ৰিয় ইন্টাৰনেট সংযোগসমূ�
 msgid "Getting group memberships"
 msgstr "দলৰ সদস্যতা প্ৰাপ্ত কৰা হৈ আছে"
 
-#: ../src/netstat.c:462
+#: ../src/netstat.c:471
 msgid "IP Source"
 msgstr "IP -ৰ উৎস"
 
-#: ../src/netstat.c:470
+#: ../src/netstat.c:479
 msgid "Port/Service"
 msgstr "পোৰ্ট/সেৱা"
 
-#: ../src/netstat.c:478 ../src/scan.c:318
+#: ../src/netstat.c:487 ../src/scan.c:213
 msgid "State"
 msgstr "অবস্থা"
 
-#: ../src/netstat.c:632
+#: ../src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "গন্তব্য/উপসৰ্গ"
 
-#: ../src/netstat.c:634
+#: ../src/netstat.c:642
 msgid "Destination"
 msgstr "গন্তব্য"
 
-#: ../src/netstat.c:641
+#: ../src/netstat.c:649
 msgid "Gateway"
 msgstr "গেটৱে"
 
-#: ../src/netstat.c:649
+#: ../src/netstat.c:657
 msgid "Netmask"
 msgstr "নেটমাস্ক"
 
-#: ../src/netstat.c:657 ../src/netstat.c:764
+#: ../src/netstat.c:665 ../src/netstat.c:771
 msgid "Interface"
 msgstr "আন্তঃপৃষ্ট"
 
-#: ../src/netstat.c:771
+#: ../src/netstat.c:778
 msgid "Member"
 msgstr "সদস্য"
 
-#: ../src/netstat.c:779
+#: ../src/netstat.c:786
 msgid "Group"
 msgstr "দল"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:821
+#: ../src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "প্ৰটোকল\tIP উৎস\tপোৰ্ট/সেৱা\tঅৱস্থা\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:827
+#: ../src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "গন্তব্য\tগেটৱে\tনেটমাস্ক\tআন্তঃপৃষ্ট\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:832
+#: ../src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "আন্তঃপৃষ্ট\tসদস্য\tদল\n"
 
@@ -825,15 +845,20 @@ msgstr "এটা ডোমেইন ঠিকনা ধাৰ্য্য ক�
 msgid "Please enter a valid domain address and try again."
 msgstr "অনুগ্ৰহ কৰি এটা বৈধ ডোমেইন ঠিকনা লিখি পুনৰ চেষ্টা কৰক।"
 
-#: ../src/nettool.c:433
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr "'%s' চলোৱাৰ চেষ্টা কৰোতে এটা ত্ৰুটি দেখা দিলে"
+
+#: ../src/nettool.c:464
 msgid "Information not available"
 msgstr "তথ্য উপলব্ধ নয়"
 
-#: ../src/nettool.c:553
+#: ../src/nettool.c:589
 msgid "Stop"
 msgstr "বন্ধ কৰক"
 
-#: ../src/nettool.c:559
+#: ../src/nettool.c:595
 msgid "Run"
 msgstr "চলাওক"
 
@@ -863,7 +888,7 @@ msgstr "উৎস"
 msgid "Seq"
 msgstr "Seq"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
 msgstr "সময়"
 
@@ -910,67 +935,51 @@ msgstr "প্ৰাপ্ত পেকেটসমূহ:\t%s\n"
 msgid "Successful packets:\t%s\n"
 msgstr "সফল পেকেটসমূহ:\t%s\n"
 
-#: ../src/scan.c:98
+#: ../src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "খোলা পোৰ্টেৰ সন্ধানত %s -ত অনুসন্ধান কৰা হৈ আছে"
 
-#: ../src/scan.c:173
-msgid "unknown"
-msgstr "অজ্ঞাত"
-
-#. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:177
-msgid "open"
-msgstr "খোলক"
-
-#: ../src/scan.c:310
+#: ../src/scan.c:205
 msgid "Port"
 msgstr "পোৰ্ট"
 
-#: ../src/scan.c:326
+#: ../src/scan.c:221
 msgid "Service"
 msgstr "সেৱা"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:348
+#: ../src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "পোৰ্ট\tঅৱস্থা\tসেৱা\n"
 
-#: ../src/traceroute.c:66
+#: ../src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "%s লৈ পথ অনুসৰণ কৰা হৈ আছে"
 
-#: ../src/traceroute.c:269
+#: ../src/traceroute.c:309
 msgid "Hop"
 msgstr "হপ"
 
-#: ../src/traceroute.c:277
+#: ../src/traceroute.c:317
 msgid "Hostname"
 msgstr "হস্টনাম"
 
-#: ../src/traceroute.c:285
+#: ../src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
-
-#: ../src/traceroute.c:296
-msgid "Time 1"
-msgstr "সময় ১"
-
-#: ../src/traceroute.c:306
-msgid "Time 2"
-msgstr "সময় ২"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:332
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "হপ\tহস্টনাম\tIP\tসময় ১\tসময় ২\n"
+#: ../src/traceroute.c:361
+#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Hop\tHostname\tIP\tTime 1\n"
 
 #: ../src/utils.c:231
 #, c-format
@@ -979,12 +988,12 @@ msgid ""
 "system"
 msgstr "প্ৰোগ্ৰামৰ এই বৈশিষ্ট্য ব্যৱহাৰেৰ বাবে চিস্টেম %s ইনস্টল থাকিব লাগিব"
 
-#: ../src/finger.c:66
+#: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "\"%s\" -ত %s -ৰ তথ্য প্ৰাপ্ত কৰা হৈ আছে"
 
-#: ../src/finger.c:70
+#: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "\"%s\" -ত উপস্থিত সকলো ব্যৱহাৰকাৰী  তথ্য প্ৰাপ্ত কৰা হৈ আছে"
@@ -993,6 +1002,18 @@ msgstr "\"%s\" -ত উপস্থিত সকলো ব্যৱহাৰক�
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s -ৰ বাবে whois তথ্য প্ৰাপ্ত কৰা হৈ আছে"
+
+#~ msgid "unknown"
+#~ msgstr "অজ্ঞাত"
+
+#~ msgid "open"
+#~ msgstr "খোলক"
+
+#~ msgid "Time 1"
+#~ msgstr "সময় ১"
+
+#~ msgid "Time 2"
+#~ msgstr "সময় ২"
 
 #~ msgid "Broadcast:"
 #~ msgstr "ব্ৰডকাস্ট:"
