@@ -1,6 +1,6 @@
 AC_PREREQ([2.64])
 AC_INIT([GNOME Nettool],
-        [3.1.1],
+        [3.2.0],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool],
         [gnome-nettool],
         [http://projects.gnome.org/gnome-network/]) #FIXME: website should be updated, it is even yet named gnome-network
@@ -30,8 +30,8 @@ AC_CHECK_HEADERS(sys/socket.h ifaddrs.h,,AC_MSG_ERROR(Required header not found:
 dnl ******************************************
 dnl ** pkg-config dependacy checks          **
 dnl ******************************************
-GIO_REQUIRED=2.25.10
-GTK_REQUIRED=2.90.4
+GIO_REQUIRED=2.26.0
+GTK_REQUIRED=3.0.0
 
 PKG_CHECK_MODULES(NETTOOL,
 		  gtk+-3.0 >= $GTK_REQUIRED
