@@ -31,6 +31,8 @@
 #include <string.h>
 #include <glib/gi18n.h>
 
+#define EXTRA_PATH "/sbin:/usr/sbin:/usr/etc:/usr/local/bin:/usr/local/sbin:/usr/ucb"
+
 #if (GLIB_MINOR_VERSION < 2)
 
 gint
@@ -63,13 +65,14 @@ my_strchrnul (const gchar *str, gchar c)
 }
 
 /* Based on g_find_program_in_path, stolen from glib/gutils.c
- * It allow to ask in a specific PATH, if fail then as in the user PATH. 
+ * It allow to ask in a specific PATH, if fail then as in the user PATH with
+ * EXTRA_PATH appended.
  */
 gchar *
 util_find_program_in_path (const gchar * program, const gchar * path)
 {
 	const gchar *p;
-	gchar *name, *freeme;
+	gchar *name, *freeme, *user_path = NULL;
 	size_t len;
 	size_t pathlen;
 
@@ -92,6 +95,10 @@ util_find_program_in_path (const gchar * program, const gchar * path)
 		if (path == NULL) {
 			path = "/bin:/usr/bin:.";
 		}
+
+		/* /sbin and /usr/sbin might not be in the user's path */
+		user_path = g_strconcat (path, ":", EXTRA_PATH, NULL);
+		path = user_path;
 	}
 	
 	len = strlen (program) + 1;
@@ -124,12 +131,14 @@ util_find_program_in_path (const gchar * program, const gchar * path)
 			gchar *ret;
 			ret = g_strdup (startp);
 			g_free (freeme);
+			g_free (user_path);
 			return ret;
 		}
 	}
 	while (*p++ != '\0');
 
 	g_free (freeme);
+	g_free (user_path);
 
 	return NULL;
 }
@@ -202,7 +211,6 @@ util_tree_model_to_string (GtkTreeView *treeview)
 	return result;
 }
 
-#define EXTRA_PATH "/sbin:/usr/sbin:/usr/etc:/usr/local/bin:/usr/local/sbin:/usr/ucb"
 /*
  * Find a program in PATH and EXTRA_PATH.  If fail, show a dialog box.
  * Returns the abosulet path and program.
