@@ -255,7 +255,7 @@ strip_line (gchar * line, lookup_data * data)
 	
 	if (count == LOOKUP_NUM_ARGS) {
 		g_sprintf (data->record_type, "MX");
-		g_sprintf (data->destination, "%s (%s)", host_mx, priority);
+		g_snprintf (data->destination, 128,"%s (%s)", host_mx, priority);
 	} else {
 		count = sscanf (line, LOOKUP_FORMAT,
 				data->source, &(data)->ttl, data->addr_type,
