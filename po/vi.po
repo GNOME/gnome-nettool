@@ -2,15 +2,15 @@
 # Copyright © 2009 GNOME i18n Project for Vietnamese.
 # T.M.Thanh <tmthanh@yahoo.com>, 2003.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
-#
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool 2.24.0\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-05-15 20:01+0000\n"
-"PO-Revision-Date: 2012-09-01 22:10+0700\n"
-"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"PO-Revision-Date: 2012-09-01 22:15+0700\n"
+"Last-Translator: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,27 +59,27 @@ msgstr "Xem thông tin về mạng của bạn"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
 msgid "Historically used hostnames"
-msgstr ""
+msgstr "Tên máy đã dùng trong quá khứ"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
-msgstr ""
+msgstr "Danh sách tên máy từng dùng"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
 msgid "Historically used usernames"
-msgstr ""
+msgstr "Tên người dùng đã dùng trong quá khứ"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
 msgid "A list of usernames previously used"
-msgstr ""
+msgstr "Danh sách tên người dùng từng dùng"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
 msgid "Historically used domains"
-msgstr ""
+msgstr "Tên miền đã dùng trong quá khứ"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "A list of domains previously used"
-msgstr ""
+msgstr "Danh sách tên miền từng dùng"
 
 #: ../data/gnome-nettool.ui.h:1
 msgid "Host"
@@ -115,7 +115,7 @@ msgstr "Trợ g_iúp"
 
 #: ../data/gnome-nettool.ui.h:9
 msgid "_Contents"
-msgstr ""
+msgstr "_Nội dung"
 
 #: ../data/gnome-nettool.ui.h:10
 msgid "Devices - Network Tools"
@@ -216,7 +216,7 @@ msgstr "Gửi:"
 #: ../data/gnome-nettool.ui.h:34
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
-msgstr ""
+msgstr "Nhập địa chỉ mạng để ping. Ví dụ: www.domain.com hoặc 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:35
 msgid "Network address"
@@ -315,7 +315,7 @@ msgstr "Kết xuất thống kê chạy mạng (netstat)"
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
-msgstr ""
+msgstr "Nhập địa chỉ mạng để dò đường. Ví dụ: www.domain.com hoặc 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
 msgid "Trace"
@@ -333,7 +333,7 @@ msgstr "Kết xuất tìm đường"
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
-msgstr ""
+msgstr "Nhập địa chỉ mạng để dò đường. Ví dụ: www.domain.com hoặc 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:64
 msgid "Traceroute"
@@ -344,6 +344,8 @@ msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
 msgstr ""
+"Nhập địa chỉ mạng để quét tìm cổng đang mở. Ví dụ: www.domain.com hoặc "
+"192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
 msgid "Scan"
@@ -367,7 +369,7 @@ msgstr "K_iểu thông tin:"
 
 #: ../data/gnome-nettool.ui.h:71
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr ""
+msgstr "Nhập tên miền để tra cứu. Ví dụ: www.domain.com hoặc ftp.domain.com."
 
 #: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
 msgid "Lookup"
@@ -386,10 +388,12 @@ msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
+"Nhập địa chỉ mạng để 'finger' người dùng đó. Ví dụ: www.domain.com hoặc "
+"192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:76
 msgid "Enter the user to finger"
-msgstr ""
+msgstr "Nhập người dùng cần 'finger'"
 
 #: ../data/gnome-nettool.ui.h:77
 msgid "User name"
@@ -420,6 +424,8 @@ msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
 msgstr ""
+"Nhập tên miền để để tra thông tin whois. Ví dụ: www.domain.com hoặc "
+"192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:84
 msgid "Domain address"
@@ -717,7 +723,6 @@ msgstr "Tên máy cho địa chỉ"
 #. It defines which server is the primary nameserver
 #. for a domain
 #: ../src/main.c:678
-#, fuzzy
 #| msgid "Start-of-authority"
 msgid "Start of Authority"
 msgstr "Bắt đầu cho phép"
@@ -830,7 +835,7 @@ msgstr "Hãy nhập địa chỉ miền hợp lệ và thử lại."
 #: ../src/nettool.c:290
 #, c-format
 msgid "An error occurred when try to run '%s'"
-msgstr ""
+msgstr "Lỗi khi chạy '%s'"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
@@ -959,10 +964,9 @@ msgstr "IP"
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/traceroute.c:361
-#, fuzzy
 #| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgid "Hop\tHostname\tIP\tTime 1\n"
-msgstr "Nhảy\tTên máy\tIP\tThời gian 1\tThời gian 2\n"
+msgstr "Nhảy\tTên máy\tIP\tThời gian 1\n"
 
 #: ../src/utils.c:231
 #, c-format
