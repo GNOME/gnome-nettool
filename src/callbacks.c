@@ -475,7 +475,7 @@ on_help_activate (gpointer window, GtkWidget *menu_item)
 	g_return_if_fail (GTK_IS_WINDOW (window));
 
 	screen = gtk_widget_get_screen (window);
-	gtk_show_uri (screen, "ghelp:gnome-nettool",
+	gtk_show_uri (screen, "help:gnome-nettool",
 			      gtk_get_current_event_time (), &error);
 
 	if (error) {

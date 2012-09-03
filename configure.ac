@@ -37,7 +37,6 @@ PKG_CHECK_MODULES(NETTOOL,
 		  gtk+-3.0 >= $GTK_REQUIRED
 		  gio-2.0 >= $GIO_REQUIRED
 		  gmodule-export-2.0
-		  gnome-doc-utils
 		  libgtop-2.0)
 AC_SUBST(NETTOOL_CFLAGS)
 AC_SUBST(NETTOOL_LIBS)
@@ -52,7 +51,8 @@ AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The gettext package])
 AM_GLIB_GNU_GETTEXT
 
-GNOME_DOC_INIT
+#User Documentation
+YELP_HELP_INIT
 
 dnl
 dnl GSettings stuff

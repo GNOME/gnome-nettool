@@ -1,9 +1,13 @@
-include $(top_srcdir)/gnome-doc-utils.make
-dist-hook: doc-dist-hook
+@YELP_HELP_RULES@
 
-DOC_MODULE = gnome-nettool
-DOC_ENTITIES = legal.xml
-DOC_INCLUDES = 
-DOC_FIGURES = 
+HELP_ID = gnome-nettool
 
-DOC_LINGUAS = ca cs da de el en_GB es fr oc pa pt_BR ru sv uk vi zh_CN
+HELP_FILES = \
+	index.docbook \
+	legal.xml
+
+HELP_MEDIA =
+
+HELP_EXTRA =
+
+HELP_LINGUAS = ca cs da de el en_GB es fr oc pa pt_BR ru sv uk vi zh_CN
