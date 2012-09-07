@@ -1,53 +1,53 @@
 # Thai translation of gnome-nettool.
-# Copyright (C) 2005-2010 Free Software Foundation, Inc.
+# Copyright (C) 2005-2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2010.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool 2.23.3\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"nettool&component=general\n"
-"POT-Creation-Date: 2010-11-10 22:40+0000\n"
-"PO-Revision-Date: 2010-11-28 21:41+0700\n"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-05-15 20:01+0000\n"
+"PO-Revision-Date: 2012-09-07 22:11+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:323
+#: ../src/callbacks.c:332
 msgid "translator-credits"
-msgstr "เทพพิทักษ์ การุญบุญญานันท์ <thep@linux.thai.net>"
+msgstr "Theppitak Karoonboonyanan <thep@linux.thai.net>"
 
 #. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:330
+#: ../src/callbacks.c:339
 #, c-format
 msgid "Copyright © 2003-2008 %s"
 msgstr "Copyright © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:334 ../src/callbacks.c:335
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
 #: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "เครื่องมือตรวจสอบเครือข่าย"
 
-#: ../src/callbacks.c:337
+#: ../src/callbacks.c:346
 msgid "Graphical user interface for common network utilities"
 msgstr "เครื่องมือตรวจสอบเครือข่ายในแบบกราฟิก"
 
-#: ../src/callbacks.c:449 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
 msgstr "ไม่ใช้งาน"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:454
+#: ../src/callbacks.c:463
 #, c-format
 msgid "%s - Network Tools"
 msgstr "%s - เครื่องมือตรวจสอบเครือข่าย"
 
-#: ../src/callbacks.c:478
+#: ../src/callbacks.c:487
 msgid "Unable to open help file"
 msgstr "ไม่สามารถเปิดแฟ้มเอกสารวิธีใช้"
 
@@ -56,380 +56,389 @@ msgid "View information about your network"
 msgstr "ดูข้อมูลเกี่ยวกับเครือข่ายของคุณ"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "A list of domains previously used"
-msgstr "รายชื่อโดเมนที่ใช้ก่อนหน้านี้"
+msgid "Historically used hostnames"
+msgstr "ชื่อโฮสต์ที่ใช้ก่อนหน้านี้"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
 msgstr "รายชื่อโฮสต์ที่ใช้ก่อนหน้านี้"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "A list of usernames previously used"
-msgstr "รายชื่อผู้ใช้ที่ใช้ก่อนหน้านี้"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "Historically used domains"
-msgstr "โดเมนที่ใช้ก่อนหน้านี้"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used hostnames"
-msgstr "ชื่อโฮสต์ที่ใช้ก่อนหน้านี้"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
 msgstr "ชื่อผู้ใช้ที่ใช้ก่อนหน้านี้"
 
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr "รายชื่อผู้ใช้ที่ใช้ก่อนหน้านี้"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr "โดเมนที่ใช้ก่อนหน้านี้"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr "รายชื่อโดเมนที่ใช้ก่อนหน้านี้"
+
 #: ../data/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "0"
+msgid "Host"
+msgstr "โฮสต์"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "ผู้ใช้"
 
 #: ../data/gnome-nettool.ui.h:3
-#, no-c-format
-msgid "0%"
-msgstr "0%"
+msgid "_Tool"
+msgstr "เ_ครื่องมือ"
 
 #: ../data/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "0.0"
-
-#: ../data/gnome-nettool.ui.h:5
-msgid "IP Information"
-msgstr "ข้อมูลไอพี"
-
-#: ../data/gnome-nettool.ui.h:6
-msgid "Interface Information"
-msgstr "ข้อมูลอินเทอร์เฟซ"
-
-#: ../data/gnome-nettool.ui.h:7
-msgid "Interface Statistics"
-msgstr "สถิติของอินเทอร์เฟซ"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "Round Trip Time Statistics"
-msgstr "สถิติเวลาไป-กลับ"
-
-#: ../data/gnome-nettool.ui.h:9
-msgid "Transmission Statistics"
-msgstr "สถิติการส่ง"
-
-#: ../data/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "บริการเครือข่ายที่ทำงานอยู่"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "เฉลี่ย:"
-
-#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "ส่งเสียงบี๊ปเมื่อ ping"
 
-#: ../data/gnome-nettool.ui.h:13
-msgid "Clear _History"
-msgstr "_ล้างข้อมูลเก่า"
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr "แ_ก้ไข"
 
-#: ../data/gnome-nettool.ui.h:14
-msgid "Collisions:"
-msgstr "การชน:"
-
-#: ../data/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:6
 msgid "Copy as text _report"
 msgstr "คัดลอก_รายงานแบบข้อความเปล่า"
 
-#: ../data/gnome-nettool.ui.h:16
-msgid "Details"
-msgstr "รายละเอียด"
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "_ล้างข้อมูลเก่า"
 
-#: ../data/gnome-nettool.ui.h:17
-msgid "Devices"
-msgstr "อุปกรณ์"
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr "_วิธีใช้"
 
-#: ../data/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr "เนื้อ_หา"
+
+#: ../data/gnome-nettool.ui.h:10
 msgid "Devices - Network Tools"
 msgstr "อุปกรณ์ - เครื่องมือตรวจสอบเครือข่าย"
 
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "_อุปกรณ์เครือข่าย"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "_ตั้งค่า"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "ข้อมูลไอพี"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "หมายเลขฮาร์ดแวร์:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "มัลติแคสต์:"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "ความเร็วเชื่อมต่อ:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "สถานะ:"
+
 #: ../data/gnome-nettool.ui.h:19
-msgid "Display:"
-msgstr "แสดง:"
+msgid "Not Available"
+msgstr "ไม่มีข้อมูล"
 
 #: ../data/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "ที่อยู่โดเมน"
+msgid "Interface Information"
+msgstr "ข้อมูลอินเทอร์เฟซ"
 
 #: ../data/gnome-nettool.ui.h:21
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"ป้อนที่อยู่โดเมนที่จะเปิดหาข้อมูล whois ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
+msgid "Transmitted bytes:"
+msgstr "จำนวนไบต์ที่ส่ง:"
 
 #: ../data/gnome-nettool.ui.h:22
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"ป้อนที่อยู่เครือข่ายที่จะ finger ไปหาผู้ใช้นั้น ตัวอย่างเช่น: auth.domain.com หรือ 192.168.2.1"
+msgid "Received bytes:"
+msgstr "จำนวนไบต์ที่รับ:"
 
 #: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to lookup. For example: www.domain.com or "
-"192.168.2.1"
-msgstr "ป้อนที่อยู่เครือข่ายที่จะเปิดหาชื่อ ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
+msgid "Transmission errors:"
+msgstr "ส่งผิดพลาด:"
 
 #: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "จำนวนแพ็กเก็ตที่ส่ง:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "จำนวนแพ็กเก็ตที่รับ:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "รับผิดพลาด:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "การชน:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "สถิติของอินเทอร์เฟซ"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "อุปกรณ์"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "เพียง"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "ครั้ง"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "ไม่จำกัดจำนวนครั้ง"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "ส่ง:"
+
+#: ../data/gnome-nettool.ui.h:34
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr "ป้อนที่อยู่เครือข่ายที่จะ ping ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:25
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr ""
-"ป้อนที่อยู่เครือข่ายที่จะตรวจพอร์ตที่เปิดอยู่ ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:35
+msgid "Network address"
+msgstr "ที่อยู่เครือข่าย"
 
-#: ../data/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "_ที่อยู่เครือข่าย:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "Ping"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "ms"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "สูงสุด:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "เฉลี่ย:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "ต่ำสุด:"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "สถิติเวลาไป-กลับ"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "จำนวนแพ็กเก็ตที่ส่ง:"
+
+#: ../data/gnome-nettool.ui.h:46
+#, no-c-format
+msgid "0%"
+msgstr "0%"
+
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr "0"
+
+#: ../data/gnome-nettool.ui.h:48
+msgid "Successful packets:"
+msgstr "จำนวนแพ็กเก็ตที่สำเร็จ:"
+
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "จำนวนแพ็กเก็ตที่ได้รับ:"
+
+#: ../data/gnome-nettool.ui.h:50
+msgid "Transmission Statistics"
+msgstr "สถิติการส่ง"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr "รายละเอียด"
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "แสดง:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "ข้อมูลตารางเส้นทาง"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "บริการเครือข่ายที่ทำงานอยู่"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "ข้อมูลมัลติแคสต์"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "Netstat"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr "ผลลัพธ์ของ netstat"
+
+#: ../data/gnome-nettool.ui.h:58
+msgid "Netstat output"
+msgstr "ผลลัพธ์ของ netstat"
+
+#: ../data/gnome-nettool.ui.h:59
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"ป้อนที่อยู่เครือข่ายที่จะแกะรอยเส้นทางไป ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "แกะรอย"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr "ผลลัพธ์ของ traceroute"
+
+#: ../data/gnome-nettool.ui.h:62
+msgid "Traceroute output"
+msgstr "ผลลัพธ์ของ traceroute"
+
+#: ../data/gnome-nettool.ui.h:63
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
 "ป้อนที่อยู่เครือข่ายที่จะแกะรอยเส้นทางไป ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
-msgid "Enter the user to finger"
-msgstr "ป้อนชื่อผู้ใช้ที่จะ finger"
-
-#: ../data/gnome-nettool.ui.h:28 ../src/main.c:814
-msgid "Finger"
-msgstr "Finger"
-
-#: ../data/gnome-nettool.ui.h:29
-msgid "Finger output"
-msgstr "ผลลัพธ์ของ finger"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Hardware address:"
-msgstr "หมายเลขฮาร์ดแวร์:"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "Host"
-msgstr "โฮสต์"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Link speed:"
-msgstr "ความเร็วเชื่อมต่อ:"
-
-#: ../data/gnome-nettool.ui.h:33 ../src/main.c:734
-msgid "Lookup"
-msgstr "ชื่อเครื่อง"
-
-#: ../data/gnome-nettool.ui.h:34
-msgid "Lookup output"
-msgstr "ผลลัพธ์การเปิดหาที่อยู่ชื่อเครื่อง"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "Maximum:"
-msgstr "สูงสุด:"
-
-#: ../data/gnome-nettool.ui.h:37
-msgid "Minimum:"
-msgstr "ต่ำสุด:"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "Multicast Information"
-msgstr "ข้อมูลมัลติแคสต์"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "Multicast:"
-msgstr "มัลติแคสต์:"
-
-#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
-msgid "Netstat"
-msgstr "Netstat"
-
-#: ../data/gnome-nettool.ui.h:41
-msgid "Netstat output"
-msgstr "ผลลัพธ์ของ netstat"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Network address"
-msgstr "ที่อยู่เครือข่าย"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Not Available"
-msgstr "ไม่มีข้อมูล"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Only"
-msgstr "เพียง"
-
-#: ../data/gnome-nettool.ui.h:45
-msgid "Output for finger"
-msgstr "ผลลัพธ์ของ finger"
-
-#: ../data/gnome-nettool.ui.h:46
-msgid "Output for lookup"
-msgstr "ผลลัพธ์การเปิดหาที่อยู่ชื่อเครื่อง"
-
-#: ../data/gnome-nettool.ui.h:47
-msgid "Output for net stat"
-msgstr "ผลลัพธ์ของ netstat"
-
-#: ../data/gnome-nettool.ui.h:48
-msgid "Output for port scan"
-msgstr "ผลลัพธ์ของการตรวจพอร์ต"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Output for traceroute"
-msgstr "ผลลัพธ์ของ traceroute"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Output for whois"
-msgstr "ผลลัพธ์ของ whois"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Packets received:"
-msgstr "จำนวนแพ็กเก็ตที่ได้รับ:"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Packets transmitted:"
-msgstr "จำนวนแพ็กเก็ตที่ส่ง:"
-
-#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
-msgid "Ping"
-msgstr "Ping"
-
-#: ../data/gnome-nettool.ui.h:54
-msgid "Port Scan"
-msgstr "ตรวจพอร์ต"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Port scan output"
-msgstr "ผลลัพธ์ของการตรวจพอร์ต"
-
-#: ../data/gnome-nettool.ui.h:56
-msgid "Received bytes:"
-msgstr "จำนวนไบต์ที่รับ:"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Received packets:"
-msgstr "จำนวนแพ็กเก็ตที่รับ:"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Reception errors:"
-msgstr "รับผิดพลาด:"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid "Routing Table Information"
-msgstr "ข้อมูลตารางเส้นทาง"
-
-#: ../data/gnome-nettool.ui.h:60 ../src/main.c:619
-msgid "Scan"
-msgstr "ตรวจ"
-
-#: ../data/gnome-nettool.ui.h:61
-msgid "Send:"
-msgstr "ส่ง:"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "State:"
-msgstr "สถานะ:"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid "Successful packets:"
-msgstr "จำนวนแพ็กเก็ตที่สำเร็จ:"
-
-#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
-msgid "Trace"
-msgstr "แกะรอย"
-
-#: ../data/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:64
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../data/gnome-nettool.ui.h:66
-msgid "Traceroute output"
-msgstr "ผลลัพธ์ของ traceroute"
+#: ../data/gnome-nettool.ui.h:65
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"ป้อนที่อยู่เครือข่ายที่จะตรวจพอร์ตที่เปิดอยู่ ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "ตรวจ"
 
 #: ../data/gnome-nettool.ui.h:67
-msgid "Transmission errors:"
-msgstr "ส่งผิดพลาด:"
+msgid "Output for port scan"
+msgstr "ผลลัพธ์ของการตรวจพอร์ต"
 
 #: ../data/gnome-nettool.ui.h:68
-msgid "Transmitted bytes:"
-msgstr "จำนวนไบต์ที่ส่ง:"
+msgid "Port scan output"
+msgstr "ผลลัพธ์ของการตรวจพอร์ต"
 
 #: ../data/gnome-nettool.ui.h:69
-msgid "Transmitted packets:"
-msgstr "จำนวนแพ็กเก็ตที่ส่ง:"
+msgid "Port Scan"
+msgstr "ตรวจพอร์ต"
 
 #: ../data/gnome-nettool.ui.h:70
-msgid "Unlimited requests"
-msgstr "ไม่จำกัดจำนวนครั้ง"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "User"
-msgstr "ผู้ใช้"
-
-#: ../data/gnome-nettool.ui.h:72
-msgid "User name"
-msgstr "ชื่อผู้ใช้"
-
-#: ../data/gnome-nettool.ui.h:73 ../src/main.c:920
-msgid "Whois"
-msgstr "Whois"
-
-#: ../data/gnome-nettool.ui.h:74
-msgid "Whois output"
-msgstr "ผลลัพธ์ของ whois"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid "_Configure"
-msgstr "_ตั้งค่า"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "_Domain address:"
-msgstr "_ที่อยู่โดเมน:"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "_Edit"
-msgstr "แ_ก้ไข"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Help"
-msgstr "_วิธีใช้"
-
-#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "ชนิด_ข้อมูล:"
 
-#: ../data/gnome-nettool.ui.h:80
-msgid "_Network address:"
-msgstr "_ที่อยู่เครือข่าย:"
+#: ../data/gnome-nettool.ui.h:71
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr "ป้อนชื่อโดเมนที่จะเปิดหา ตัวอย่างเช่น: www.domain.com หรือ ftp.domain.com"
 
-#: ../data/gnome-nettool.ui.h:81
-msgid "_Network device:"
-msgstr "_อุปกรณ์เครือข่าย"
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "ชื่อเครื่อง"
 
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Tool"
-msgstr "เ_ครื่องมือ"
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr "ผลลัพธ์การเปิดหาที่อยู่ชื่อเครื่อง"
 
-#: ../data/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:74
+msgid "Lookup output"
+msgstr "ผลลัพธ์การเปิดหาที่อยู่ชื่อเครื่อง"
+
+#: ../data/gnome-nettool.ui.h:75
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"ป้อนที่อยู่เครือข่ายที่จะ finger ไปหาผู้ใช้นั้น ตัวอย่างเช่น: auth.domain.com หรือ 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+msgid "Enter the user to finger"
+msgstr "ป้อนชื่อผู้ใช้ที่จะ finger"
+
+#: ../data/gnome-nettool.ui.h:77
+msgid "User name"
+msgstr "ชื่อผู้ใช้"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Username:"
 msgstr "_ชื่อผู้ใช้:"
 
-#: ../data/gnome-nettool.ui.h:84
-msgid "ms"
-msgstr "ms"
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
 
-#: ../data/gnome-nettool.ui.h:85
-msgid "requests"
-msgstr "ครั้ง"
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr "ผลลัพธ์ของ finger"
+
+#: ../data/gnome-nettool.ui.h:81
+msgid "Finger output"
+msgstr "ผลลัพธ์ของ finger"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "_ที่อยู่โดเมน:"
+
+#: ../data/gnome-nettool.ui.h:83
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"ป้อนที่อยู่โดเมนที่จะเปิดหาข้อมูล whois ตัวอย่างเช่น: www.domain.com หรือ 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+msgid "Domain address"
+msgstr "ที่อยู่โดเมน"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Whois"
+
+#: ../data/gnome-nettool.ui.h:86
+msgid "Output for whois"
+msgstr "ผลลัพธ์ของ whois"
+
+#: ../data/gnome-nettool.ui.h:87
+msgid "Whois output"
+msgstr "ผลลัพธ์ของ whois"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:60
@@ -468,113 +477,113 @@ msgstr "ไม่รู้ชนิดอินเทอร์เฟซ"
 msgid "Network Devices Not Found"
 msgstr "ไม่พบอุปกรณ์เครือข่าย"
 
-#: ../src/info.c:392 ../src/info.c:395
+#: ../src/info.c:396 ../src/info.c:399
 msgid "Unknown"
 msgstr "ไม่รู้จัก"
 
-#: ../src/info.c:466
+#: ../src/info.c:471
 msgid "Active"
 msgstr "ทำงาน"
 
-#: ../src/info.c:468
+#: ../src/info.c:473
 msgid "Inactive"
 msgstr "ไม่ทำงาน"
 
-#: ../src/info.c:473
+#: ../src/info.c:478
 msgid "Loopback"
 msgstr "วนกลับ"
 
-#: ../src/info.c:482
+#: ../src/info.c:489
 msgid "Enabled"
 msgstr "เปิดใช้อยู่"
 
-#: ../src/info.c:484
+#: ../src/info.c:491
 msgid "Disabled"
 msgstr "ไม่ได้เปิดใช้"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:573
+#: ../src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "อุปกรณ์เครือข่าย:\t%s\n"
 
-#: ../src/info.c:574
+#: ../src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "หมายเลขฮาร์ดแวร์:\t%s\n"
 
-#: ../src/info.c:575
+#: ../src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "มัลติแคสต์:\t%s\n"
 
-#: ../src/info.c:576
+#: ../src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:577
+#: ../src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "ความเร็วเชื่อมต่อ:\t%s\n"
 
-#: ../src/info.c:578
+#: ../src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "สถานะ:\t%s\n"
 
-#: ../src/info.c:580
+#: ../src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "จำนวนแพ็กเก็ตที่ส่ง:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "ส่งผิดพลาด:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "จำนวนแพ็กเก็ตที่รับ:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "รับผิดพลาด:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "การชน:\t%s\n"
 
-#: ../src/info.h:27
+#: ../src/info.h:23
 msgid "not available"
 msgstr "ไม่มีข้อมูล"
 
-#: ../src/lookup.c:80
+#: ../src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "กำลังเปิดข้อมูลชื่อเครื่อง %s"
 
-#: ../src/lookup.c:274
+#: ../src/lookup.c:279
 msgid "Name"
 msgstr "ชื่อ"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:283
+#: ../src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:292
+#: ../src/lookup.c:297
 msgid "Address Type"
 msgstr "ชนิดที่อยู่"
 
-#: ../src/lookup.c:302
+#: ../src/lookup.c:307
 msgid "Record Type"
 msgstr "ชนิดระเบียน"
 
-#: ../src/lookup.c:311
+#: ../src/lookup.c:316
 msgid "Address"
 msgstr "ที่อยู่"
 
@@ -584,7 +593,7 @@ msgstr "ที่อยู่"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:339
+#: ../src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "แหล่ง\tTTL\tชนิดที่อยู่\tชนิดระเบียน\tผลลัพธ์\n"
 
@@ -647,212 +656,220 @@ msgid ""
 "installed"
 msgstr "ไม่มีแฟ้ม %s  กรุณาตรวจสอบการติดตั้งของ gnome-nettool"
 
-#: ../src/main.c:482 ../src/netstat.c:443
+#: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
 msgstr "โพรโทคอล"
 
-#: ../src/main.c:489
+#: ../src/main.c:485
 msgid "IP Address"
 msgstr "หมายเลขไอพี"
 
-#: ../src/main.c:496
+#: ../src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "เน็ตแมสก์ / พรีฟิกซ์"
 
-#: ../src/main.c:503
+#: ../src/main.c:499
 msgid "Broadcast"
 msgstr "กระจายสัญญาณ"
 
-#: ../src/main.c:510
+#: ../src/main.c:506
 msgid "Scope"
 msgstr "สโคป"
 
-#: ../src/main.c:669
+#: ../src/main.c:665
 msgid "Default Information"
 msgstr "ข้อมูลปริยาย"
 
-#: ../src/main.c:670
+#: ../src/main.c:666
 msgid "Internet Address"
 msgstr "ที่อยู่อินเทอร์เน็ต"
 
-#: ../src/main.c:671
+#: ../src/main.c:667
 msgid "Canonical Name"
 msgstr "ชื่อแบบแผน"
 
-#: ../src/main.c:672
+#: ../src/main.c:668
 msgid "CPU / OS Type"
 msgstr "ชนิดซีพียู/ระบบปฏิบัติการ"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:674
+#: ../src/main.c:670
 msgid "Mailbox Exchange"
 msgstr "การแลกเปลี่ยนเมล"
 
-#: ../src/main.c:675
+#: ../src/main.c:671
 msgid "Mailbox Information"
 msgstr "ข้อมูลกล่องเมล"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:677
+#: ../src/main.c:673
 msgid "Name Server"
 msgstr "เซิร์ฟเวอร์ชื่อเครื่อง"
 
-#: ../src/main.c:678
+#: ../src/main.c:674
 msgid "Host name for Address"
 msgstr "ชื่อเครื่องสำหรับหมายเลขไอพี"
 
-#: ../src/main.c:679
-msgid "Start-of-authority"
-msgstr "Start-of-authority"
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
+#: ../src/main.c:678
+msgid "Start of Authority"
+msgstr "Start of Authority"
 
-#: ../src/main.c:680
+#: ../src/main.c:679
 msgid "Text Information"
 msgstr "ข้อมูลข้อความ"
 
-#: ../src/main.c:681
+#: ../src/main.c:680
 msgid "Well Known Services"
 msgstr "บริการที่รู้จัก"
 
-#: ../src/main.c:682
+#: ../src/main.c:681
 msgid "Any / All Information"
 msgstr "ข้อมูลทั้งหมด"
 
-#: ../src/netstat.c:122
+#: ../src/netstat.c:134
 msgid "Getting routing table"
 msgstr "กำลังอ่านตารางเส้นทาง"
 
-#: ../src/netstat.c:137
+#: ../src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "กำลังตรวจหาการเชื่อมต่ออินเทอร์เน็ตที่ทำงานอยู่"
 
-#: ../src/netstat.c:146
+#: ../src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "กำลังตรวจหาการเป็นสมาชิกกลุ่ม"
 
-#: ../src/netstat.c:450
+#: ../src/netstat.c:471
 msgid "IP Source"
 msgstr "ไอพีต้นทาง"
 
-#: ../src/netstat.c:458
+#: ../src/netstat.c:479
 msgid "Port/Service"
 msgstr "พอร์ต/บริการ"
 
-#: ../src/netstat.c:466 ../src/scan.c:314
+#: ../src/netstat.c:487 ../src/scan.c:213
 msgid "State"
 msgstr "สถานะ"
 
-#: ../src/netstat.c:609
+#: ../src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "ปลายทาง/พรีฟิกซ์"
 
-#: ../src/netstat.c:611
+#: ../src/netstat.c:642
 msgid "Destination"
 msgstr "ปลายทาง"
 
-#: ../src/netstat.c:618
+#: ../src/netstat.c:649
 msgid "Gateway"
 msgstr "เกตเวย์"
 
-#: ../src/netstat.c:626
+#: ../src/netstat.c:657
 msgid "Netmask"
 msgstr "เน็ตแมสก์"
 
-#: ../src/netstat.c:634 ../src/netstat.c:741
+#: ../src/netstat.c:665 ../src/netstat.c:771
 msgid "Interface"
 msgstr "อินเทอร์เฟซ"
 
-#: ../src/netstat.c:748
+#: ../src/netstat.c:778
 msgid "Member"
 msgstr "สมาชิก"
 
-#: ../src/netstat.c:756
+#: ../src/netstat.c:786
 msgid "Group"
 msgstr "กลุ่ม"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:798
+#: ../src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "โพรโทคอล\tไอพีต้นทาง\tพอร์ต/บริการ\tสถานะ\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:804
+#: ../src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "ปลายทาง\tเกตเวย์\tเน็ตแมสก์\tอินเทอร์เฟซ\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:809
+#: ../src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "อินเทอร์เฟซ\tสมาชิก\tกลุ่ม\n"
 
-#: ../src/nettool.c:199
+#: ../src/nettool.c:204
 msgid "A network address was not specified"
 msgstr "ไม่ได้กำหนดที่อยู่เครือข่าย"
 
-#: ../src/nettool.c:200 ../src/nettool.c:209
+#: ../src/nettool.c:205 ../src/nettool.c:214
 msgid "Please enter a valid network address and try again."
 msgstr "กรุณาป้อนที่อยู่เครือข่ายที่ถูกต้องและลองอีกครั้ง"
 
-#: ../src/nettool.c:207
+#: ../src/nettool.c:212
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "ไม่พบที่อยู่ '%s'"
 
-#: ../src/nettool.c:236
+#: ../src/nettool.c:241
 msgid "A domain address was not specified"
 msgstr "ไม่ได้กำหนดที่อยู่โดเมน"
 
-#: ../src/nettool.c:237
+#: ../src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
 msgstr "กรุณาป้อนที่อยู่โดเมนที่ถูกต้องแล้วลองใหม่อีกครั้ง"
 
-#: ../src/nettool.c:428
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr "เกิดข้อผิดพลาดขณะเรียกทำงาน '%s'"
+
+#: ../src/nettool.c:464
 msgid "Information not available"
 msgstr "ไม่มีข้อมูล"
 
-#: ../src/nettool.c:548
+#: ../src/nettool.c:589
 msgid "Stop"
 msgstr "หยุด"
 
-#: ../src/nettool.c:554
+#: ../src/nettool.c:595
 msgid "Run"
 msgstr "ทำงาน"
 
 #. Created up here so we can get the geometry info.
-#: ../src/ping.c:151
+#: ../src/ping.c:155
 msgid "Time (ms):"
 msgstr "เวลา (ms)"
 
-#: ../src/ping.c:171
+#: ../src/ping.c:176
 msgid "Seq. No.:"
 msgstr "ลำดับที่:"
 
-#: ../src/ping.c:254
+#: ../src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "กำลังส่งข้อความ ping ไปยัง %s"
 
-#: ../src/ping.c:569
+#: ../src/ping.c:577
 msgid "Bytes"
 msgstr "จำนวนไบต์"
 
-#: ../src/ping.c:576
+#: ../src/ping.c:584
 msgid "Source"
 msgstr "ต้นทาง"
 
-#: ../src/ping.c:584
+#: ../src/ping.c:592
 msgid "Seq"
 msgstr "ลำดับ"
 
-#: ../src/ping.c:594
+#: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
 msgstr "เวลา"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:610
 msgid "Units"
 msgstr "หน่วย"
 
@@ -860,124 +877,116 @@ msgstr "หน่วย"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:628
+#: ../src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "จำนวนไบต์\tต้นทาง\tลำดับ\tเวลา\tหน่วย\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:643
+#: ../src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "เวลาต่ำสุด:\t%s ms\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "เวลาเฉลี่ย:\t%s ms\n"
 
-#: ../src/ping.c:645
+#: ../src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "เวลาสูงสุด:\t%s ms\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "จำนวนแพ็กเก็ตที่ส่ง:\t%s\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "จำนวนแพ็กเก็ตที่ได้รับ:\t%s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "จำนวนแพ็กเก็ตที่สำเร็จ:\t%s\n"
 
-#: ../src/scan.c:94
+#: ../src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "กำลังตรวจ %s เพื่อหาพอร์ตที่เปิดอยู่"
 
-#: ../src/scan.c:169
-msgid "unknown"
-msgstr "ไม่ทราบ"
-
-#. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:173
-msgid "open"
-msgstr "เปิด"
-
-#: ../src/scan.c:306
+#: ../src/scan.c:205
 msgid "Port"
 msgstr "พอร์ต"
 
-#: ../src/scan.c:322
+#: ../src/scan.c:221
 msgid "Service"
 msgstr "บริการ"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:344
+#: ../src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "พอร์ต\tสถานะ\tบริการ\n"
 
-#: ../src/traceroute.c:62
+#: ../src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "กำลังแกะรอยเส้นทางไปยัง %s"
 
-#: ../src/traceroute.c:265
+#: ../src/traceroute.c:309
 msgid "Hop"
 msgstr "ฮ็อป"
 
-#: ../src/traceroute.c:273
+#: ../src/traceroute.c:317
 msgid "Hostname"
 msgstr "ชื่อเครื่อง"
 
-#: ../src/traceroute.c:281
+#: ../src/traceroute.c:325
 msgid "IP"
 msgstr "ไอพี"
-
-#: ../src/traceroute.c:292
-msgid "Time 1"
-msgstr "เวลา 1"
-
-#: ../src/traceroute.c:302
-msgid "Time 2"
-msgstr "เวลา 2"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:328
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "ฮ็อป\tชื่อเครื่อง\tไอพี\tเวลา 1\tเวลา 2\n"
+#: ../src/traceroute.c:361
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "ฮ็อป\tชื่อเครื่อง\tไอพี\tเวลา 1\n"
 
-#: ../src/utils.c:227
+#: ../src/utils.c:231
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr "หากจะใช้ความสามารถนี้ของโปรแกรม จะต้องติดตั้ง %s ในระบบของคุณด้วย"
 
-#: ../src/finger.c:63
+#: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "กำลังอ่านข้อมูลผู้ใช้ %s จาก \"%s\""
 
-#: ../src/finger.c:67
+#: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
 msgstr "กำลังอ่านข้อมูลผู้ใช้ทุกคนจาก \"%s\""
 
-#: ../src/whois.c:58
+#: ../src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "กำลังอ่านข้อมูล whois ของ %s"
+
+#~ msgid "unknown"
+#~ msgstr "ไม่ทราบ"
+
+#~ msgid "open"
+#~ msgstr "เปิด"
+
+#~ msgid "Time 1"
+#~ msgstr "เวลา 1"
 
 #~ msgid "Broadcast:"
 #~ msgstr "กระจายสัญญาณ:"
