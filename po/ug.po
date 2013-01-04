@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&component=general\n"
-"POT-Creation-Date: 2010-12-23 18:03+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-05-15 20:01+0000\n"
 "PO-Revision-Date: 2010-10-28 11:06+0600\n"
 "Last-Translator: Sahran <sahran@live.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -20,7 +20,13 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
 "Sahran<sahran@live.com>\n"
-"Muhemmed Erdem <misran_erdem@hotmail.com>"
+"Muhemmed Erdem <misran_erdem@hotmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Abdumomin.Kadir https://launchpad.net/~abdumomin-kadir\n"
+"  Gheyret T.Kenji https://launchpad.net/~gheyret\n"
+"  Gheyret T.Kenji https://launchpad.net/~gheyretkenji\n"
+"  Sahran https://launchpad.net/~sahran"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -38,9 +44,9 @@ msgstr "تور قورالى"
 msgid "Graphical user interface for common network utilities"
 msgstr "تور ئاممىۋى قورالىنىڭ گرافىكىلىق ئىشلەتكۈچى ئارايۈزى"
 
-#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:483
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
-msgstr "بوش"
+msgstr "بىكار"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
@@ -51,383 +57,397 @@ msgstr "%s - تور قورالى"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
-msgstr "ياردەم ھۆججىتىنى ئاچالمىدى"
+msgstr "ياردەم ھۆججىتىنى ئاچقىلى بولمىدى"
 
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
-msgstr "تور ئۇچۇرلىرىڭىزنى كۆرسىتىدۇ"
+msgstr "تور ئۇچۇرلىرىنى كۆرسىتىش پروگراممىسى"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "A list of domains previously used"
-msgstr "بۇرۇن ئىشلىتىلگەن دائىرىلەرنىڭ تىزىملىكى"
+msgid "Historically used hostnames"
+msgstr "تارىختا ئىشلىتىلگەن ماشىنىلارنىڭ تىزىملىكى"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
 msgstr "بۇرۇن ئىشلىتىلگەن ماشىنىلارنىڭ تىزىملىكى"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "A list of usernames previously used"
-msgstr "بۇرۇن ئىشلىتىلگەن ئىشلەتكۈچىلەرنىڭ تىزىملىكى"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "Historically used domains"
-msgstr "تارىختا ئىشلىتىلگەن دائىرىلەرنىڭ تىزىملىكى"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used hostnames"
-msgstr "تارىختا ئىشلىتىلگەن ماشىنىلارنىڭ تىزىملىكى"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
 msgstr "تارىختا ئىشلىتىلگەن ئىشلەتكۈچىلەرنىڭ تىزىملىكى"
 
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr "بۇرۇن ئىشلىتىلگەن ئىشلەتكۈچىلەرنىڭ تىزىملىكى"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr "تارىختا ئىشلىتىلگەن دائىرىلەرنىڭ تىزىملىكى"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr "بۇرۇن ئىشلىتىلگەن دائىرىلەرنىڭ تىزىملىكى"
+
 #: ../data/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "0"
+msgid "Host"
+msgstr "ماشىنا"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "ئىشلەتكۈچى"
 
 #: ../data/gnome-nettool.ui.h:3
-#, no-c-format
-msgid "0%"
-msgstr "0%"
+msgid "_Tool"
+msgstr "قورال(_T)"
 
 #: ../data/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "0.0"
-
-#: ../data/gnome-nettool.ui.h:5
-msgid "IP Information"
-msgstr "IP ئۇچۇرى"
-
-#: ../data/gnome-nettool.ui.h:6
-msgid "Interface Information"
-msgstr "ئارايۈز ئۇچۇرى"
-
-#: ../data/gnome-nettool.ui.h:7
-msgid "Interface Statistics"
-msgstr "ئارايۈز ستاتىستىكىسى"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "Round Trip Time Statistics"
-msgstr "بېرىپ كېلىش ۋاقىت ستاتىستىكىسى"
-
-#: ../data/gnome-nettool.ui.h:9
-msgid "Transmission Statistics"
-msgstr "يوللاش ستاتىستىكىسى"
-
-#: ../data/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "ئاكتىپ تور مۇلازىمەتلىرى"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "ئوتتۇرىچە:"
-
-#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Ping دا جىرىڭلات"
 
-#: ../data/gnome-nettool.ui.h:13
-msgid "Clear _History"
-msgstr "تارىخنى تازىلا(&H)"
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr "تەھرىر(_E)"
 
-#: ../data/gnome-nettool.ui.h:14
-msgid "Collisions:"
-msgstr "توقۇنۇش:"
-
-#: ../data/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:6
 msgid "Copy as text _report"
 msgstr "تېكىست دوكلاتى سۈپىتىدە كۆچۈر(_R)"
 
-#: ../data/gnome-nettool.ui.h:16
-msgid "Details"
-msgstr "تەپسىلاتى"
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "تارىخنى تازىلا(&H)"
 
-#: ../data/gnome-nettool.ui.h:17
-msgid "Devices"
-msgstr "ئۈسكۈنىلەر"
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr "ياردەم(_H)"
 
-#: ../data/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr "مەزمۇنلار(_C)"
+
+#: ../data/gnome-nettool.ui.h:10
 msgid "Devices - Network Tools"
 msgstr "ئۈسكۈنە - تور قوراللىرى"
 
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "تور ئۈسكۈنىسى(_N):"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "سەپلە(_C)"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "IP ئۇچۇرى"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "قاتتىق دېتال ئادرېسى:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "ھەممىگە ئاڭلىتىش"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "ئۇلىنىش سۈرئىتى:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "ھالەت:"
+
 #: ../data/gnome-nettool.ui.h:19
-msgid "Display:"
-msgstr "كۆرسەت:"
+msgid "Not Available"
+msgstr "ئىشلەتكىلى بولمايدۇ"
 
 #: ../data/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "دائىرە مەنزىل"
+msgid "Interface Information"
+msgstr "ئارايۈز ئۇچۇرى"
 
 #: ../data/gnome-nettool.ui.h:21
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr "ئىزدەيدىغان whois ئۇچۇرىنىڭ دائىرە مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: www.domain.com ياكى192.168.2.1"
+msgid "Transmitted bytes:"
+msgstr "يوللانغان بايت سانى:"
 
 #: ../data/gnome-nettool.ui.h:22
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr "finger ئىشلەتكۈچىنىڭ تور مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: www.domain.com ياكى192.168.2.1"
+msgid "Received bytes:"
+msgstr "قوبۇللىغان بايت سانى:"
 
 #: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to lookup. For example: www.domain.com or "
-"192.168.2.1"
-msgstr "ئىزدەيدىغان تور مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: www.domain.com ياكى192.168.2.1"
+msgid "Transmission errors:"
+msgstr "يوللاش خاتالىقى:"
 
 #: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "يوللانغان بوغچا:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "قوبۇللىغان بوغچا:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "قوبۇللاش خاتالىقى:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "توقۇنۇش:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "ئارايۈز ستاتىستىكىسى"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "ئۈسكۈنىلەر"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "پەقەتلا"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "ئىلتىماس"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "چەكلىمىسىز ئىلتىماس"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "ئەۋەت:"
+
+#: ../data/gnome-nettool.ui.h:34
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr "ping دا تەكشۈرىدىغان تور مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: www.domain.com ياكى192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:25
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr "ئوچۇق ئېغىزنى تەكشۈرىدىغان تور مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: مەسىلەن: www.domain.com ياكى192.168.2.1"
+#: ../data/gnome-nettool.ui.h:35
+msgid "Network address"
+msgstr "تور مەنزىلى"
 
-#: ../data/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "تور مەنزىلى(_N):"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "Ping"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "ms"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "ئەڭ چوڭ:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "ئوتتۇرىچە:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "ئەڭ كىچىك:"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "بېرىپ كېلىش ۋاقىت ستاتىستىكىسى"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "يوللىغان بوغچا:"
+
+#: ../data/gnome-nettool.ui.h:46
+#, no-c-format
+msgid "0%"
+msgstr "0%"
+
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr "0"
+
+#: ../data/gnome-nettool.ui.h:48
+msgid "Successful packets:"
+msgstr "مۇۋەپپەقىيەتلىك ئەۋەتىلگەن بوغچا:"
+
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "تاپشۇرۇۋالغان بوغچا:"
+
+#: ../data/gnome-nettool.ui.h:50
+msgid "Transmission Statistics"
+msgstr "يوللاش ستاتىستىكىسى"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr "تەپسىلاتلار"
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "كۆرسەت:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "يول تاللىغۇچ جەدۋەل ئۇچۇرى"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "ئاكتىپ تور مۇلازىمەتلىرى"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "ھەممىگە ئاڭلىتىش ئۇچۇرى"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "تور ستاتىستىكا"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr "تور ستاتىستىكا چىقىرىش"
+
+#: ../data/gnome-nettool.ui.h:58
+msgid "Netstat output"
+msgstr "تور ستاتىستىكا چىقار"
+
+#: ../data/gnome-nettool.ui.h:59
+#| msgid ""
+#| "Enter the network address to trace a route to. For example: www.domain."
+#| "com or 192.168.2.1"
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr "يولنى ئىزلايدىغان تور ئادرېسىنى كىرگۈزۈڭ. مەسىلەن: www.domain.com ياكى192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "ئىزلا"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr "traceroute نىڭ چىقىرىشى"
+
+#: ../data/gnome-nettool.ui.h:62
+msgid "Traceroute output"
+msgstr "Traceroute چىقار"
+
+#: ../data/gnome-nettool.ui.h:63
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr "يولنى ئىز قوغلايدىغان تور مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: www.domain.com ياكى192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
-msgid "Enter the user to finger"
-msgstr "finger ئىشلەتكۈچىنى كىرگۈزۈڭ"
-
-#: ../data/gnome-nettool.ui.h:28 ../src/main.c:812
-msgid "Finger"
-msgstr "Finger"
-
-#: ../data/gnome-nettool.ui.h:29
-msgid "Finger output"
-msgstr "Finger چىقىرىش"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Hardware address:"
-msgstr "قاتتىق دېتال ئادرېسى:"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "Host"
-msgstr "باش ئاپپارات"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Link speed:"
-msgstr "ئۇلىنىش سۈرئىتى:"
-
-#: ../data/gnome-nettool.ui.h:33 ../src/main.c:732
-msgid "Lookup"
-msgstr "ئىزدە"
-
-#: ../data/gnome-nettool.ui.h:34
-msgid "Lookup output"
-msgstr "چىقىرىش ئىزدە"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "Maximum:"
-msgstr "ئەڭ چوڭ:"
-
-#: ../data/gnome-nettool.ui.h:37
-msgid "Minimum:"
-msgstr "ئەڭ كىچىك:"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "Multicast Information"
-msgstr "ھەممىگە ئاڭلىتىش ئۇچۇرى"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "Multicast:"
-msgstr "ھەممىگە ئاڭلىتىش"
-
-#: ../data/gnome-nettool.ui.h:40 ../src/main.c:446
-msgid "Netstat"
-msgstr "تور ستاتىستىكا"
-
-#: ../data/gnome-nettool.ui.h:41
-msgid "Netstat output"
-msgstr "تور ستاتىستىكا چىقار"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Network address"
-msgstr "تور مەنزىلى"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Not Available"
-msgstr "ئىشلەتكىلى بولمايدۇ"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Only"
-msgstr "پەقەتلا"
-
-#: ../data/gnome-nettool.ui.h:45
-msgid "Output for finger"
-msgstr "finger نىڭ چىقىرىشى"
-
-#: ../data/gnome-nettool.ui.h:46
-msgid "Output for lookup"
-msgstr "ئىزدەشنىڭ چىقىرىشى"
-
-#: ../data/gnome-nettool.ui.h:47
-msgid "Output for net stat"
-msgstr "تور ستاتىستىكا چىقىرىش"
-
-#: ../data/gnome-nettool.ui.h:48
-msgid "Output for port scan"
-msgstr "ئېغىز تەكشۈرۈشنىڭ چىقىرىشى"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Output for traceroute"
-msgstr "traceroute نىڭ چىقىرىشى"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Output for whois"
-msgstr "Output نىڭ چىقىرىشى"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Packets received:"
-msgstr "تاپشۇرۇۋالغان بوغچا:"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Packets transmitted:"
-msgstr "يوللىغان بوغچا:"
-
-#: ../data/gnome-nettool.ui.h:53 ../src/main.c:290
-msgid "Ping"
-msgstr "Ping"
-
-#: ../data/gnome-nettool.ui.h:54
-msgid "Port Scan"
-msgstr "ئېغىز تەكشۈر"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Port scan output"
-msgstr "ئېغىز تەكشۈرۈپ چىقار"
-
-#: ../data/gnome-nettool.ui.h:56
-msgid "Received bytes:"
-msgstr "قوبۇللىغان بايت سانى:"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Received packets:"
-msgstr "قوبۇللىغان بوغچا:"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Reception errors:"
-msgstr "قوبۇللاش خاتالىقى:"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid "Routing Table Information"
-msgstr "يول تاللىغۇچ جەدۋەل ئۇچۇرى"
-
-#: ../data/gnome-nettool.ui.h:60 ../src/main.c:617
-msgid "Scan"
-msgstr "تەكشۈر"
-
-#: ../data/gnome-nettool.ui.h:61
-msgid "Send:"
-msgstr "ئەۋەت:"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "State:"
-msgstr "ھالەت:"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid "Successful packets:"
-msgstr "مۇۋەپپەقىيەتلىك ئەۋەتىلگەن بوغچا:"
-
-#: ../data/gnome-nettool.ui.h:64 ../src/main.c:375
-msgid "Trace"
-msgstr "ئىزلا"
-
-#: ../data/gnome-nettool.ui.h:65
+#: ../data/gnome-nettool.ui.h:64
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../data/gnome-nettool.ui.h:66
-msgid "Traceroute output"
-msgstr "Traceroute چىقار"
+#: ../data/gnome-nettool.ui.h:65
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr "ئوچۇق ئېغىزنى تەكشۈرىدىغان تور مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: مەسىلەن: www.domain.com ياكى192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "تەكشۈر"
 
 #: ../data/gnome-nettool.ui.h:67
-msgid "Transmission errors:"
-msgstr "يوللاش خاتالىقى:"
+msgid "Output for port scan"
+msgstr "ئېغىز تەكشۈرۈشنىڭ چىقىرىشى"
 
 #: ../data/gnome-nettool.ui.h:68
-msgid "Transmitted bytes:"
-msgstr "يوللانغان بايت سانى:"
+msgid "Port scan output"
+msgstr "ئېغىز تەكشۈرۈپ چىقار"
 
 #: ../data/gnome-nettool.ui.h:69
-msgid "Transmitted packets:"
-msgstr "يوللانغان بوغچا:"
+msgid "Port Scan"
+msgstr "ئېغىز تەكشۈر"
 
 #: ../data/gnome-nettool.ui.h:70
-msgid "Unlimited requests"
-msgstr "چەكلىمىسىز ئىلتىماس"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "User"
-msgstr "ئىشلەتكۈچى"
-
-#: ../data/gnome-nettool.ui.h:72
-msgid "User name"
-msgstr "ئىشلەتكۈچى ئاتى"
-
-#: ../data/gnome-nettool.ui.h:73 ../src/main.c:918
-msgid "Whois"
-msgstr "Whois"
-
-#: ../data/gnome-nettool.ui.h:74
-msgid "Whois output"
-msgstr "Whois چىقار"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid "_Configure"
-msgstr "سەپلە(_C)"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "_Domain address:"
-msgstr "دائىرە مەنزىل(_D):"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "_Edit"
-msgstr "تەھرىر(_E)"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Help"
-msgstr "ياردەم(_H)"
-
-#: ../data/gnome-nettool.ui.h:79
 msgid "_Information type:"
 msgstr "ئۇچۇر تىپى(_I):"
 
-#: ../data/gnome-nettool.ui.h:80
-msgid "_Network address:"
-msgstr "تور مەنزىلى(_N):"
+#: ../data/gnome-nettool.ui.h:71
+#| msgid ""
+#| "Enter the network address to lookup. For example: www.domain.com or "
+#| "192.168.2.1"
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr "سۈرۈشتۈرىدىغان دائىرە ئاتىنى كىرگۈزۈڭ. مەسىلەن: domain.com ياكى ftp.domain.com."
 
-#: ../data/gnome-nettool.ui.h:81
-msgid "_Network device:"
-msgstr "تور ئۈسكۈنىسى(_N):"
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "ئىزدە"
 
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Tool"
-msgstr "قورال(_T)"
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr "ئىزدەشنىڭ چىقىرىشى"
 
-#: ../data/gnome-nettool.ui.h:83
+#: ../data/gnome-nettool.ui.h:74
+msgid "Lookup output"
+msgstr "چىقىرىش ئىزدە"
+
+#: ../data/gnome-nettool.ui.h:75
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr "finger ئىشلەتكۈچىنىڭ تور مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: www.domain.com ياكى192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+msgid "Enter the user to finger"
+msgstr "finger ئىشلەتكۈچىنى كىرگۈزۈڭ"
+
+#: ../data/gnome-nettool.ui.h:77
+msgid "User name"
+msgstr "ئىشلەتكۈچى ئاتى"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Username:"
 msgstr "ئىشلەتكۈچى ئاتى(_U):"
 
-#: ../data/gnome-nettool.ui.h:84
-msgid "ms"
-msgstr "ms"
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
 
-#: ../data/gnome-nettool.ui.h:85
-msgid "requests"
-msgstr "ئىلتىماس"
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr "finger نىڭ چىقىرىشى"
+
+#: ../data/gnome-nettool.ui.h:81
+msgid "Finger output"
+msgstr "Finger چىقىرىش"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "دائىرە مەنزىل(_D):"
+
+#: ../data/gnome-nettool.ui.h:83
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr "ئىزدەيدىغان whois ئۇچۇرىنىڭ دائىرە مەنزىلىنى كىرگۈزۈڭ. مەسىلەن: www.domain.com ياكى192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+msgid "Domain address"
+msgstr "دائىرە مەنزىل"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Whois"
+
+#: ../data/gnome-nettool.ui.h:86
+msgid "Output for whois"
+msgstr "Output نىڭ چىقىرىشى"
+
+#: ../data/gnome-nettool.ui.h:87
+msgid "Whois output"
+msgstr "Whois چىقار"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:60
@@ -466,113 +486,113 @@ msgstr "نامەلۇم ئېغىز"
 msgid "Network Devices Not Found"
 msgstr "تور ئۈسكۈنىسى تېپىلمىدى"
 
-#: ../src/info.c:400 ../src/info.c:403
+#: ../src/info.c:396 ../src/info.c:399
 msgid "Unknown"
 msgstr "نامەلۇم"
 
-#: ../src/info.c:474
+#: ../src/info.c:471
 msgid "Active"
 msgstr "ئاكتىپ"
 
-#: ../src/info.c:476
+#: ../src/info.c:473
 msgid "Inactive"
 msgstr "ئاكتىپسىز"
 
-#: ../src/info.c:481
+#: ../src/info.c:478
 msgid "Loopback"
 msgstr "ھالقا"
 
-#: ../src/info.c:490
+#: ../src/info.c:489
 msgid "Enabled"
-msgstr "قوزغىتىلغان"
+msgstr "ئىناۋەتلىك قىلىنغان"
 
-#: ../src/info.c:492
+#: ../src/info.c:491
 msgid "Disabled"
-msgstr "چەكلەنگەن"
+msgstr "ئىناۋەتسىز قىلىنغان"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:581
+#: ../src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "%s تور ئۈسكۈنىسى:\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "قاتتىق دېتال ئادرېسى:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "ھەممىگە ئاڭلىتىش: %s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "ئۇلىنىش سۈرئىتى: %s\n"
 
-#: ../src/info.c:586
+#: ../src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "ھالىتى: %s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "يوللىغان بوغچا: %s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "يوللاش خاتالىقى: %s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "قوبۇللىغان بوغچا: %s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "قوبۇللاش خاتالىقى: %s\n"
 
-#: ../src/info.c:592
+#: ../src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "توقۇنۇش: %s\n"
 
-#: ../src/info.h:27
+#: ../src/info.h:23
 msgid "not available"
 msgstr "ئىشلەتكىلى بولمايدۇ"
 
-#: ../src/lookup.c:80
+#: ../src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "%s نى ئىزدەۋاتىدۇ"
 
-#: ../src/lookup.c:274
+#: ../src/lookup.c:279
 msgid "Name"
 msgstr "ئاتى"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:283
+#: ../src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:292
+#: ../src/lookup.c:297
 msgid "Address Type"
 msgstr "مەنزىل تىپى:"
 
-#: ../src/lookup.c:302
+#: ../src/lookup.c:307
 msgid "Record Type"
 msgstr "خاتىرە تىپى"
 
-#: ../src/lookup.c:311
+#: ../src/lookup.c:316
 msgid "Address"
 msgstr "ئادرېس"
 
@@ -582,7 +602,7 @@ msgstr "ئادرېس"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:339
+#: ../src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "خاتىرە تىپى 1 مەنزىل تىپى TTL مەنبە تەھلىل\n"
 
@@ -604,7 +624,7 @@ msgstr "باش ئاپپارات"
 
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "netstat ئۇچۇرىغا ئېرىش. تاللاشچان تۈرلەر:route, active, multicast."
+msgstr "netstat ئۇچۇرىغا ئېرىش. تاللاشچان تۈرلەر:route، active، multicast."
 
 #: ../src/main.c:91
 msgid "COMMAND"
@@ -645,212 +665,221 @@ msgid ""
 "installed"
 msgstr "%s ھۆججەت مەۋجۇت ئەمەس، gnome-nettool نىڭ توغرا ئورنىتىلغانلىقىنى تەكشۈرۈڭ"
 
-#: ../src/main.c:482 ../src/netstat.c:443
+#: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
 msgstr "كېلىشىم"
 
-#: ../src/main.c:489
+#: ../src/main.c:485
 msgid "IP Address"
-msgstr "IP ئادرېس:"
+msgstr "‍IP ئادرېس:"
 
-#: ../src/main.c:496
+#: ../src/main.c:492
 msgid "Netmask / Prefix"
 msgstr "تور ماسكىسى/ئالدى قوشۇلغۇچى"
 
-#: ../src/main.c:503
+#: ../src/main.c:499
 msgid "Broadcast"
 msgstr "ئاڭلىتىش"
 
-#: ../src/main.c:510
+#: ../src/main.c:506
 msgid "Scope"
 msgstr "دائىرە"
 
-#: ../src/main.c:667
+#: ../src/main.c:665
 msgid "Default Information"
 msgstr "كۆڭۈلدىكى ئۇچۇر"
 
-#: ../src/main.c:668
+#: ../src/main.c:666
 msgid "Internet Address"
 msgstr "ئىنتېرنېت ئادرېسى"
 
-#: ../src/main.c:669
+#: ../src/main.c:667
 msgid "Canonical Name"
 msgstr "ئۆلچەملىك ئات"
 
-#: ../src/main.c:670
+#: ../src/main.c:668
 msgid "CPU / OS Type"
 msgstr "CPU / OS تىپى"
 
 #. When asking for MX record in DNS context
-#: ../src/main.c:672
+#: ../src/main.c:670
 msgid "Mailbox Exchange"
 msgstr "خەت ساندۇق ئالماشتۇرۇش"
 
-#: ../src/main.c:673
+#: ../src/main.c:671
 msgid "Mailbox Information"
 msgstr "خەت ساندۇق ئۇچۇرى"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:675
+#: ../src/main.c:673
 msgid "Name Server"
 msgstr "ئات مۇلازىمېتىر"
 
-#: ../src/main.c:676
+#: ../src/main.c:674
 msgid "Host name for Address"
 msgstr "مەنزىلنىڭ باش ئاپپارات ئاتى"
 
-#: ../src/main.c:677
-msgid "Start-of-authority"
-msgstr "ئىجازەتنى باشلا"
-
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
 #: ../src/main.c:678
+#| msgid "Start-of-authority"
+msgid "Start of Authority"
+msgstr "ھوقۇقىنى باشلا"
+
+#: ../src/main.c:679
 msgid "Text Information"
 msgstr "تېكىست ئۇچۇرى"
 
-#: ../src/main.c:679
+#: ../src/main.c:680
 msgid "Well Known Services"
 msgstr "كۆپ ئىشلىتىلىدىغان مۇلازىمەتلەر"
 
-#: ../src/main.c:680
+#: ../src/main.c:681
 msgid "Any / All Information"
 msgstr "خالىغان/ھەممە ئۇچۇر"
 
-#: ../src/netstat.c:122
+#: ../src/netstat.c:134
 msgid "Getting routing table"
 msgstr "يول تاللاش جەدۋىلىگە ئېرىش"
 
-#: ../src/netstat.c:137
+#: ../src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "ئاكتىپ ئىنتېرنېت باغلىنىشىغا ئېرىشىۋاتىدۇ"
 
-#: ../src/netstat.c:146
+#: ../src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "گۇرۇپپا ئەزاسىغا ئېرىشىۋاتىدۇ"
 
-#: ../src/netstat.c:450
+#: ../src/netstat.c:471
 msgid "IP Source"
 msgstr "IP مەنبە"
 
-#: ../src/netstat.c:458
+#: ../src/netstat.c:479
 msgid "Port/Service"
 msgstr "ئېغىز/مۇلازىمەت"
 
-#: ../src/netstat.c:466 ../src/scan.c:314
+#: ../src/netstat.c:487 ../src/scan.c:213
 msgid "State"
 msgstr "ھالەت"
 
-#: ../src/netstat.c:609
+#: ../src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "نىشان/ئالدى قوشۇلغۇچى"
 
-#: ../src/netstat.c:611
+#: ../src/netstat.c:642
 msgid "Destination"
 msgstr "نىشان"
 
-#: ../src/netstat.c:618
+#: ../src/netstat.c:649
 msgid "Gateway"
 msgstr "تور ئۆتكىلى"
 
-#: ../src/netstat.c:626
+#: ../src/netstat.c:657
 msgid "Netmask"
 msgstr "تور ماسكىسى"
 
-#: ../src/netstat.c:634 ../src/netstat.c:741
+#: ../src/netstat.c:665 ../src/netstat.c:771
 msgid "Interface"
 msgstr "ئارايۈز"
 
-#: ../src/netstat.c:748
+#: ../src/netstat.c:778
 msgid "Member"
 msgstr "ئەزا"
 
-#: ../src/netstat.c:756
+#: ../src/netstat.c:786
 msgid "Group"
 msgstr "گۇرۇپپا"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:798
+#: ../src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "ھالەت ئېغىز/مۇلازىمەت IP مەنبە كېلىشىم\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:804
+#: ../src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "نىشان تور ئۆتكىلى تور ماسكىسى ئېغىز\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:809
+#: ../src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "ئېغىز ئەزا گۇرۇپپا\n"
 
-#: ../src/nettool.c:199
+#: ../src/nettool.c:204
 msgid "A network address was not specified"
 msgstr "تور مەنزىلى بەلگىلەنمىگەن"
 
-#: ../src/nettool.c:200 ../src/nettool.c:209
+#: ../src/nettool.c:205 ../src/nettool.c:214
 msgid "Please enter a valid network address and try again."
 msgstr "ئىناۋەتلىك تور مەنزىلىنى كىرگۈزۈپ ئاندىن قايتا سىناڭ."
 
-#: ../src/nettool.c:207
+#: ../src/nettool.c:212
 #, c-format
 msgid "The address '%s' cannot be found"
 msgstr "'%s'  مەنزىلنى تاپالمىدى."
 
-#: ../src/nettool.c:236
+#: ../src/nettool.c:241
 msgid "A domain address was not specified"
 msgstr "دائىرە مەنزىلى بەلگىلەنمىگەن"
 
-#: ../src/nettool.c:237
+#: ../src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
 msgstr "ئىناۋەتلىك دائىرە مەنزىلىنى كىرگۈزۈپ ئاندىن قايتا سىناڭ."
 
-#: ../src/nettool.c:428
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr "‹%s› نى ئىجرا قىلىشنى سىنىغاندا خاتالىق كۆرۈلدى"
+
+#: ../src/nettool.c:464
 msgid "Information not available"
 msgstr "ئۇچۇرنى ئىشلەتكىلى بولمايدۇ"
 
-#: ../src/nettool.c:548
+#: ../src/nettool.c:589
 msgid "Stop"
 msgstr "توختا"
 
-#: ../src/nettool.c:554
+#: ../src/nettool.c:595
 msgid "Run"
-msgstr "ئىجرا قىل"
+msgstr "ئىجرا"
 
 #. Created up here so we can get the geometry info.
-#: ../src/ping.c:151
+#: ../src/ping.c:155
 msgid "Time (ms):"
 msgstr "ۋاقىت (ms):"
 
-#: ../src/ping.c:171
+#: ../src/ping.c:176
 msgid "Seq. No.:"
 msgstr "تەرتىپ نومۇر:"
 
-#: ../src/ping.c:254
+#: ../src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "%s غا ping ئىلتىماسى يوللاۋاتىدۇ"
 
-#: ../src/ping.c:569
+#: ../src/ping.c:577
 msgid "Bytes"
 msgstr "بايت"
 
-#: ../src/ping.c:576
+#: ../src/ping.c:584
 msgid "Source"
 msgstr "مەنبە"
 
-#: ../src/ping.c:584
+#: ../src/ping.c:592
 msgid "Seq"
 msgstr "تەرتىپ"
 
-#: ../src/ping.c:594
+#: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
 msgstr "ۋاقىت"
 
-#: ../src/ping.c:602
+#: ../src/ping.c:610
 msgid "Units"
 msgstr "بىرلىكى"
 
@@ -858,121 +887,117 @@ msgstr "بىرلىكى"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:628
+#: ../src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "بايت مەنبە تەرتىپ ۋاقىت بىرلىك\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:643
+#: ../src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "ئەڭ ئاز ۋاقىت: %s ms\n"
 
-#: ../src/ping.c:644
+#: ../src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "ئوتتۇرىچە ۋاقىت: %s ms\n"
 
-#: ../src/ping.c:645
+#: ../src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "ئەڭ كۆپ ۋاقىت: %s ms\n"
 
-#: ../src/ping.c:647
+#: ../src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "يوللىغان بوغچا: %s\n"
 
-#: ../src/ping.c:649
+#: ../src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "قوبۇللىغان بوغچا: %s\n"
 
-#: ../src/ping.c:652
+#: ../src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "مۇۋەپپەقىيەتلىك يوللانغان بوغچا: %s\n"
 
-#: ../src/scan.c:94
+#: ../src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "%s نىڭ ئوچۇق ئېغىزىنى تەكشۈرۈۋاتىدۇ"
 
-#: ../src/scan.c:169
-msgid "unknown"
-msgstr "نامەلۇم"
-
-#. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:173
-msgid "open"
-msgstr "ئاچ"
-
-#: ../src/scan.c:306
+#: ../src/scan.c:205
 msgid "Port"
 msgstr "ئېغىز"
 
-#: ../src/scan.c:322
+#: ../src/scan.c:221
 msgid "Service"
 msgstr "مۇلازىمەت"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:344
+#: ../src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "ئېغىز ھالەت مۇلازىمەت\n"
 
-#: ../src/traceroute.c:62
+#: ../src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "%s نىڭ يول تاللىشىنى ئىزلاۋاتىدۇ"
 
-#: ../src/traceroute.c:265
+#: ../src/traceroute.c:309
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:273
+#: ../src/traceroute.c:317
 msgid "Hostname"
 msgstr "كومپيۇتېر ئاتى"
 
-#: ../src/traceroute.c:281
+#: ../src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
-
-#: ../src/traceroute.c:292
-msgid "Time 1"
-msgstr "ۋاقىت 1"
-
-#: ../src/traceroute.c:302
-msgid "Time 2"
-msgstr "ۋاقىت 2"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:328
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "Hop ئاساسىي ئاپپارات ئاتى  IP ۋاقىت 1 ۋاقىت 2\n"
+#: ../src/traceroute.c:361
+#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Hop\t باش ئاپپارات\tIPۋاقىت\n"
 
-#: ../src/utils.c:227
+#: ../src/utils.c:231
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr "بۇ پروگراممىنىڭ ئىقتىدارىنى ئىشلىتىش ئۈچۈن، سىستېمىڭىزغا %s ئورنىتىلىشى لازىم."
 
-#: ../src/finger.c:63
+#: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
 msgstr "\"%2$s\" دىكى %1$s ئۇچۇرغا ئېرىشىۋاتىدۇ"
 
-#: ../src/finger.c:67
+#: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "\"%s\" دىكى ھەممە ئىشلەتكۈچىنىڭ ئۇچۇرىغا ئېرىشىۋاتىدۇ"
+msgstr "«%s» دىكى ھەممە ئىشلەتكۈچىنىڭ ئۇچۇرىغا ئېرىشىۋاتىدۇ"
 
-#: ../src/whois.c:58
+#: ../src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s نىڭ whois ئۇچۇرىغا ئېرىشىۋاتىدۇ"
+
+#~ msgid "unknown"
+#~ msgstr "نامەلۇم"
+
+#~ msgid "open"
+#~ msgstr "ئاچ"
+
+#~ msgid "Time 1"
+#~ msgstr "ۋاقىت 1"
+
+#~ msgid "Time 2"
+#~ msgstr "ۋاقىت 2"
