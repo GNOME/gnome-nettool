@@ -355,8 +355,7 @@ traceroute_copy_to_clipboard (Netinfo * netinfo, gpointer user_data)
 	g_return_if_fail (netinfo != NULL);
 
 	/* The traceroute output in text format:
-	   Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-	   Round Trip Time 2 (Time2),
+	   Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 	   It's a tabular output, and these belongs to the column titles */
 	result = g_string_new (_("Hop\tHostname\tIP\tTime 1\n"));
 
