@@ -3,15 +3,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2005.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2006, 2008, 2009, 2011, 2012.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2006, 2007, 2008, 2009.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-04 17:58+0100\n"
-"PO-Revision-Date: 2012-03-04 18:00+0100\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"POT-Creation-Date: 2013-03-04 21:58+0100\n"
+"PO-Revision-Date: 2013-03-03 20:52+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <kde-i18n-doc@kde.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
@@ -19,14 +19,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"\n"
-"\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
 "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>\n"
-"Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>"
+"Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -63,144 +61,267 @@ msgstr "Ezin da laguntzako fitxategia ireki"
 msgid "View information about your network"
 msgstr "Ikusi sareari buruzko informazioa"
 
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "sarea;monitorizazioa;urrunekoa;"
+
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "A list of domains previously used"
-msgstr "Aurrez erabilitako domeinuen zerrenda"
+msgid "Historically used hostnames"
+msgstr "Erabilitako ostalari-izenen historia"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
 msgstr "Aurrez erabilitako ostalari-izenen zerrenda"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "A list of usernames previously used"
-msgstr "Aurrez erabilitako erabiltzaile-izenen zerrenda"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "Historically used domains"
-msgstr "Erabilitako domeinuen historia"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used hostnames"
-msgstr "Erabilitako ostalari-izenen historia"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
 msgstr "Erabilitako erabiltzaile-izenen historia"
 
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr "Aurrez erabilitako erabiltzaile-izenen zerrenda"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr "Erabilitako domeinuen historia"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr "Aurrez erabilitako domeinuen zerrenda"
+
 #: ../data/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "0"
+msgid "Host"
+msgstr "Ostalaria"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "Erabiltzailea"
 
 #: ../data/gnome-nettool.ui.h:3
-#, no-c-format
-msgid "0%"
-msgstr "% 0"
+msgid "_Tool"
+msgstr "_Tresna"
 
 #: ../data/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "0.0"
-
-#: ../data/gnome-nettool.ui.h:5
-msgid "IP Information"
-msgstr "IP informazioa"
-
-#: ../data/gnome-nettool.ui.h:6
-msgid "Interface Information"
-msgstr "Interfazearen informazioa"
-
-#: ../data/gnome-nettool.ui.h:7
-msgid "Interface Statistics"
-msgstr "Interfazearen estatistikak"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "Round Trip Time Statistics"
-msgstr "Joan-etorriko denboraren estatistikak"
-
-#: ../data/gnome-nettool.ui.h:9
-msgid "Transmission Statistics"
-msgstr "Transmisio-estatistikak"
-
-#: ../data/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "Sareko zerbitzu aktiboak"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "Batez bestekoa:"
-
-#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Egin soinu-seinalea ping egitean"
 
-#: ../data/gnome-nettool.ui.h:13
-msgid "Clear _History"
-msgstr "Garbitu _historia"
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr "_Editatu"
 
-#: ../data/gnome-nettool.ui.h:14
-msgid "Collisions:"
-msgstr "Talkak:"
-
-#: ../data/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:6
 msgid "Copy as text _report"
 msgstr "Kopiatu _testu-txosten gisa"
 
-#: ../data/gnome-nettool.ui.h:16
-msgid "Details"
-msgstr "Xehetasunak"
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "Garbitu _historia"
 
-#: ../data/gnome-nettool.ui.h:17
-msgid "Devices"
-msgstr "Gailuak"
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr "_Laguntza"
 
-#: ../data/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr "_Edukia"
+
+#: ../data/gnome-nettool.ui.h:10
 msgid "Devices - Network Tools"
 msgstr "Gailuak - Sareko tresnak"
 
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "_Sareko gailua:"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "_Konfiguratu"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "IP informazioa"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "Hardwarearen helbidea:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "Multidifusioa:"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "Esteka-abiadura:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "Egoera:"
+
 #: ../data/gnome-nettool.ui.h:19
-msgid "Display:"
-msgstr "Bistaratu:"
+msgid "Not Available"
+msgstr "Ez dago erabilgarri"
 
 #: ../data/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "Domeinuaren helbidea"
+msgid "Interface Information"
+msgstr "Interfazearen informazioa"
 
 #: ../data/gnome-nettool.ui.h:21
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"Sartu domeinuaren helbidea bere 'whois' informazioa bilatzeko. Adibidez, www."
-"domeinua.com edo 192.168.2.1"
+msgid "Transmitted bytes:"
+msgstr "Transmititutako byteak:"
 
 #: ../data/gnome-nettool.ui.h:22
-msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr ""
-"Sartu domeinua bilaketa egiteko. Adibidez, domeinua.com edo ftp.domeinua.com"
+msgid "Received bytes:"
+msgstr "Jasotako byteak:"
 
 #: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"Sartu sarearen helbidea erabiltzaileari 'finger' egiteko. Adibidez, www."
-"domeinua.com edo 192.168.2.1"
+msgid "Transmission errors:"
+msgstr "Transmisio-erroreak:"
 
 #: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "Transmititutako paketeak:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "Jasotako paketeak:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "Jasotze-erroreak:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "Talkak:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "Interfazearen estatistikak"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "Gailuak"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "Soilik"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "eskaerak"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "Mugarik gabeko eskaerak"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "Bidali:"
+
+#: ../data/gnome-nettool.ui.h:34
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Sartu sarearen helbidea 'ping' egiteko. Adibidez, www.domeinua.com edo "
 "192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:25
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr ""
-"Sartu sarearen helbidea irekitako atakak eskaneatzeko. Adibidez, www."
-"domeinua.com edo 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:35
+msgid "Network address"
+msgstr "Sareko helbidea"
 
-#: ../data/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "_Sareko helbidea:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "Ping"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "ms"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "Gehienezkoa:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "Batez bestekoa:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "Gutxienekoa:"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "Joan-etorriko denboraren estatistikak"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "Transmititutako paketeak:"
+
+#: ../data/gnome-nettool.ui.h:46
+#, no-c-format
+msgid "0%"
+msgstr "% 0"
+
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr "0"
+
+#: ../data/gnome-nettool.ui.h:48
+msgid "Successful packets:"
+msgstr "Pakete arrakastatsuak:"
+
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "Jasotako paketeak:"
+
+#: ../data/gnome-nettool.ui.h:50
+msgid "Transmission Statistics"
+msgstr "Transmisio-estatistikak"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr "Xehetasunak"
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "Bistaratu:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "Bideratze-taulen informazioa"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "Sareko zerbitzu aktiboak"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "Multidifusioko informazioa"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "Sareko estatistikak"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr "Sare-estatistiken irteera"
+
+#: ../data/gnome-nettool.ui.h:58
+msgid "Netstat output"
+msgstr "Sareko estatistiken irteera"
+
+#: ../data/gnome-nettool.ui.h:59
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
@@ -208,7 +329,19 @@ msgstr ""
 "Sartu sarearen helbidea bidea egiteko. Adibidez, www.domeinua.com edo "
 "192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "Aztarna"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr "Bide-aztarnariaren irteera"
+
+#: ../data/gnome-nettool.ui.h:62
+msgid "Traceroute output"
+msgstr "Bide-aztarnariaren irteera"
+
+#: ../data/gnome-nettool.ui.h:63
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -216,245 +349,114 @@ msgstr ""
 "Sartu sarearen helbidea bidea egiteko. Adibidez, www.domeinua.com edo "
 "192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:28
-msgid "Enter the user to finger"
-msgstr "Sartu erabiltzailea 'finger' egiteko"
-
-#: ../data/gnome-nettool.ui.h:29 ../src/main.c:811
-msgid "Finger"
-msgstr "Finger"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Finger output"
-msgstr "Finger-en irteera"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "Hardware address:"
-msgstr "Hardwarearen helbidea:"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Host"
-msgstr "Ostalaria"
-
-#: ../data/gnome-nettool.ui.h:33
-msgid "Link speed:"
-msgstr "Esteka-abiadura:"
-
-#: ../data/gnome-nettool.ui.h:34 ../src/main.c:733
-msgid "Lookup"
-msgstr "Bilatu"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "Lookup output"
-msgstr "Bilaketaren irteera"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:37
-msgid "Maximum:"
-msgstr "Gehienezkoa:"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "Minimum:"
-msgstr "Gutxienekoa:"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "Multicast Information"
-msgstr "Multidifusioko informazioa"
-
-#: ../data/gnome-nettool.ui.h:40
-msgid "Multicast:"
-msgstr "Multidifusioa:"
-
-#: ../data/gnome-nettool.ui.h:41 ../src/main.c:444
-msgid "Netstat"
-msgstr "Sareko estatistikak"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Netstat output"
-msgstr "Sareko estatistiken irteera"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Network address"
-msgstr "Sareko helbidea"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Not Available"
-msgstr "Ez dago erabilgarri"
-
-#: ../data/gnome-nettool.ui.h:45
-msgid "Only"
-msgstr "Soilik"
-
-#: ../data/gnome-nettool.ui.h:46
-msgid "Output for finger"
-msgstr "Finger-en irteera"
-
-#: ../data/gnome-nettool.ui.h:47
-msgid "Output for lookup"
-msgstr "Bilaketaren irteera"
-
-#: ../data/gnome-nettool.ui.h:48
-msgid "Output for net stat"
-msgstr "Sare-estatistiken irteera"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Output for port scan"
-msgstr "Ataka eskaneatzearen irteera"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Output for traceroute"
-msgstr "Bide-aztarnariaren irteera"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Output for whois"
-msgstr "whois-en irteera"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Packets received:"
-msgstr "Jasotako paketeak:"
-
-#: ../data/gnome-nettool.ui.h:53
-msgid "Packets transmitted:"
-msgstr "Transmititutako paketeak:"
-
-#: ../data/gnome-nettool.ui.h:54 ../src/main.c:290
-msgid "Ping"
-msgstr "Ping"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Port Scan"
-msgstr "Ataka-eskaneatzea"
-
-#: ../data/gnome-nettool.ui.h:56
-msgid "Port scan output"
-msgstr "Ataka-eskaneatzearen irteera"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Received bytes:"
-msgstr "Jasotako byteak:"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Received packets:"
-msgstr "Jasotako paketeak:"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid "Reception errors:"
-msgstr "Jasotze-erroreak:"
-
-#: ../data/gnome-nettool.ui.h:60
-msgid "Routing Table Information"
-msgstr "Bideratze-taulen informazioa"
-
-#: ../data/gnome-nettool.ui.h:61 ../src/main.c:615
-msgid "Scan"
-msgstr "Eskaneatu"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "Send:"
-msgstr "Bidali:"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid "State:"
-msgstr "Egoera:"
-
 #: ../data/gnome-nettool.ui.h:64
-msgid "Successful packets:"
-msgstr "Pakete arrakastatsuak:"
-
-#: ../data/gnome-nettool.ui.h:65 ../src/main.c:375
-msgid "Trace"
-msgstr "Aztarna"
-
-#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute"
 msgstr "Bide-aztarnaria"
 
+#: ../data/gnome-nettool.ui.h:65
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Sartu sarearen helbidea irekitako atakak eskaneatzeko. Adibidez, www."
+"domeinua.com edo 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "Eskaneatu"
+
 #: ../data/gnome-nettool.ui.h:67
-msgid "Traceroute output"
-msgstr "Bide-aztarnariaren irteera"
+msgid "Output for port scan"
+msgstr "Ataka eskaneatzearen irteera"
 
 #: ../data/gnome-nettool.ui.h:68
-msgid "Transmission errors:"
-msgstr "Transmisio-erroreak:"
+msgid "Port scan output"
+msgstr "Ataka-eskaneatzearen irteera"
 
 #: ../data/gnome-nettool.ui.h:69
-msgid "Transmitted bytes:"
-msgstr "Transmititutako byteak:"
+msgid "Port Scan"
+msgstr "Ataka-eskaneatzea"
 
 #: ../data/gnome-nettool.ui.h:70
-msgid "Transmitted packets:"
-msgstr "Transmititutako paketeak:"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "Unlimited requests"
-msgstr "Mugarik gabeko eskaerak"
-
-#: ../data/gnome-nettool.ui.h:72
-msgid "User"
-msgstr "Erabiltzailea"
-
-#: ../data/gnome-nettool.ui.h:73
-msgid "User name"
-msgstr "Erabiltzaile-izena"
-
-#: ../data/gnome-nettool.ui.h:74 ../src/main.c:915
-msgid "Whois"
-msgstr "Whois"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid "Whois output"
-msgstr "Whois-en irteera"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "_Configure"
-msgstr "_Konfiguratu"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "_Contents"
-msgstr "_Edukia"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Domain address:"
-msgstr "_Domeinuaren helbidea:"
-
-#: ../data/gnome-nettool.ui.h:79
-msgid "_Edit"
-msgstr "_Editatu"
-
-#: ../data/gnome-nettool.ui.h:80
-msgid "_Help"
-msgstr "_Laguntza"
-
-#: ../data/gnome-nettool.ui.h:81
 msgid "_Information type:"
 msgstr "_Informazio mota:"
 
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Network address:"
-msgstr "_Sareko helbidea:"
+#: ../data/gnome-nettool.ui.h:71
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Sartu domeinua bilaketa egiteko. Adibidez, domeinua.com edo ftp.domeinua.com"
 
-#: ../data/gnome-nettool.ui.h:83
-msgid "_Network device:"
-msgstr "_Sareko gailua:"
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "Bilatu"
 
-#: ../data/gnome-nettool.ui.h:84
-msgid "_Tool"
-msgstr "_Tresna"
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr "Bilaketaren irteera"
 
-#: ../data/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:74
+msgid "Lookup output"
+msgstr "Bilaketaren irteera"
+
+#: ../data/gnome-nettool.ui.h:75
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Sartu sarearen helbidea erabiltzaileari 'finger' egiteko. Adibidez, www."
+"domeinua.com edo 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+msgid "Enter the user to finger"
+msgstr "Sartu erabiltzailea 'finger' egiteko"
+
+#: ../data/gnome-nettool.ui.h:77
+msgid "User name"
+msgstr "Erabiltzaile-izena"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Username:"
 msgstr "_Erabiltzaile-izena"
 
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
+
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr "Finger-en irteera"
+
+#: ../data/gnome-nettool.ui.h:81
+msgid "Finger output"
+msgstr "Finger-en irteera"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "_Domeinuaren helbidea:"
+
+#: ../data/gnome-nettool.ui.h:83
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Sartu domeinuaren helbidea bere 'whois' informazioa bilatzeko. Adibidez, www."
+"domeinua.com edo 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+msgid "Domain address"
+msgstr "Domeinuaren helbidea"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Whois"
+
 #: ../data/gnome-nettool.ui.h:86
-msgid "ms"
-msgstr "ms"
+msgid "Output for whois"
+msgstr "whois-en irteera"
 
 #: ../data/gnome-nettool.ui.h:87
-msgid "requests"
-msgstr "eskaerak"
+msgid "Whois output"
+msgstr "Whois-en irteera"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:60
@@ -970,14 +972,13 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Saltoa\tOstalari-izena\tIPa\t1. denbora\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
