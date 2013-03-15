@@ -5,20 +5,21 @@
 # Laszlo Dvornik <dvornik at gnome dot hu>, 2004.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2005, 2006, 2007, 2008, 2009, 2011, 2012.
 # Nyitrai István <sianis at gmail dot com>, 2008.
+# Balázs Úr <urbalazs at gmail dot com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=gnome-nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-01-03 04:23+0000\n"
-"PO-Revision-Date: 2012-03-03 16:55+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
-"Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-21 20:00+0000\n"
+"PO-Revision-Date: 2013-03-15 11:14+0100\n"
+"Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
+"Language-Team: Hungarian <kde-i18n-doc@kde.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/callbacks.c:332
@@ -63,151 +64,267 @@ msgstr "A súgófájl nem nyitható meg"
 msgid "View information about your network"
 msgstr "Információk megjelenítése a hálózatáról"
 
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "hálózat;figyelő;távoli;"
+
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "A list of domains previously used"
-msgstr "Korábban használt tartományok listája"
+msgid "Historically used hostnames"
+msgstr "Korábbi gépnevek"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
 msgstr "Korábban használt gépnevek listája"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "A list of usernames previously used"
-msgstr "Korábban használt felhasználónevek listája"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "Historically used domains"
-msgstr "Korábbi tartományok"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used hostnames"
-msgstr "Korábbi gépnevek"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
 msgstr "Korábbi felhasználónevek"
 
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr "Korábban használt felhasználónevek listája"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr "Korábbi tartományok"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr "Korábban használt tartományok listája"
+
 #: ../data/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "0"
+msgid "Host"
+msgstr "Gép"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "Felhasználó"
 
 #: ../data/gnome-nettool.ui.h:3
-#, no-c-format
-msgid "0%"
-msgstr "0%"
+msgid "_Tool"
+msgstr "_Eszköz"
 
 #: ../data/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "0.0"
-
-#: ../data/gnome-nettool.ui.h:5
-msgid "IP Information"
-msgstr "IP-információ"
-
-#: ../data/gnome-nettool.ui.h:6
-msgid "Interface Information"
-msgstr "Felületinformáció"
-
-#: ../data/gnome-nettool.ui.h:7
-msgid "Interface Statistics"
-msgstr "Felületstatisztika"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "Round Trip Time Statistics"
-msgstr "Körbejárási idő statisztikája"
-
-#: ../data/gnome-nettool.ui.h:9
-msgid "Transmission Statistics"
-msgstr "Adatátvitel statisztikája"
-
-#: ../data/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "Aktív hálózati szolgáltatások"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "Átlag:"
-
-#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Csipogás pingeléskor"
 
-#: ../data/gnome-nettool.ui.h:13
-msgid "Clear _History"
-msgstr "_Előzmények törlése"
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr "S_zerkesztés"
 
-#: ../data/gnome-nettool.ui.h:14
-msgid "Collisions:"
-msgstr "Ütközések:"
-
-#: ../data/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:6
 msgid "Copy as text _report"
 msgstr "Másolás s_zöveges jelentésként"
 
-#: ../data/gnome-nettool.ui.h:16
-msgid "Details"
-msgstr "Részletek"
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "_Előzmények törlése"
 
-#: ../data/gnome-nettool.ui.h:17
-msgid "Devices"
-msgstr "Eszközök"
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr "_Súgó"
 
-#: ../data/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr "_Tartalom"
+
+#: ../data/gnome-nettool.ui.h:10
 msgid "Devices - Network Tools"
 msgstr "Eszközök – Hálózati segédeszközök"
 
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "_Hálózati eszköz:"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "_Beállítás"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "IP-információ"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "Hardvercím:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "Multicast:"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "Kapcsolat sebessége:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "Állapot:"
+
 #: ../data/gnome-nettool.ui.h:19
-msgid "Display:"
-msgstr "Képernyő:"
+msgid "Not Available"
+msgstr "Nem érhető el"
 
 #: ../data/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "Tartománycím"
+msgid "Interface Information"
+msgstr "Felületinformáció"
 
 #: ../data/gnome-nettool.ui.h:21
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"Adjon meg egy tartománycímet a whois információk kikereséséhez. Például: www."
-"tartomany.hu vagy 192.168.2.1"
+msgid "Transmitted bytes:"
+msgstr "Továbbított bájtok:"
 
 #: ../data/gnome-nettool.ui.h:22
-#| msgid ""
-#| "Enter the network address to lookup. For example: www.domain.com or "
-#| "192.168.2.1"
-msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr ""
-"Adja meg a kikeresendő tartományt. Például: www.tartomany.hu vagy ftp."
-"tartomany.hu."
+msgid "Received bytes:"
+msgstr "Fogadott bájtok:"
 
 #: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"Adjon meg egy hálózati címet a felhasználó finger információinak "
-"lekéréséhez. Például: www.tartomany.hu vagy 192.168.2.1"
+msgid "Transmission errors:"
+msgstr "Adatátviteli hibák:"
 
 #: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "Továbbított csomagok:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "Fogadott csomagok:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "Fogadási hibák:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "Ütközések:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "Felületstatisztika"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "Eszközök"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "Csak"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "kérés"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "Végtelen számú kérés"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "Küldés:"
+
+#: ../data/gnome-nettool.ui.h:34
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Adja meg a pingelendő hálózati címet. Például: www.tartomany.hu vagy "
 "192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:25
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr ""
-"Adja meg a hálózati címet a nyitott portok kereséséhez. Például: www."
-"tartomany.hu vagy 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:35
+msgid "Network address"
+msgstr "Hálózati cím"
 
-#: ../data/gnome-nettool.ui.h:26
-#| msgid ""
-#| "Enter the network address to trace a route to. For example: www.domain."
-#| "com or 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "_Hálózati cím:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "Ping"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "ms"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "Maximum:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "Átlag:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "Minimum:"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "Körbejárási idő statisztikája"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "Továbbított csomagok:"
+
+#: ../data/gnome-nettool.ui.h:46
+#, no-c-format
+msgid "0%"
+msgstr "0%"
+
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr "0"
+
+#: ../data/gnome-nettool.ui.h:48
+msgid "Successful packets:"
+msgstr "Sikeres csomagok:"
+
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "Fogadott csomagok:"
+
+#: ../data/gnome-nettool.ui.h:50
+msgid "Transmission Statistics"
+msgstr "Adatátvitel statisztikája"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr "Részletek"
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "Képernyő:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "Útválasztási táblázat-információ"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "Aktív hálózati szolgáltatások"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "Multicast-információ"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "Netstat"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr "A net stat kimenete"
+
+#: ../data/gnome-nettool.ui.h:58
+msgid "Netstat output"
+msgstr "Netstat kimenete"
+
+#: ../data/gnome-nettool.ui.h:59
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
@@ -215,7 +332,19 @@ msgstr ""
 "Adja meg a hálózati címet az út nyomon követéséhez. Például: www.tartomany."
 "hu vagy 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "Nyomkövetés"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr "A traceroute kimenete"
+
+#: ../data/gnome-nettool.ui.h:62
+msgid "Traceroute output"
+msgstr "Traceroute kimenete"
+
+#: ../data/gnome-nettool.ui.h:63
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -223,245 +352,115 @@ msgstr ""
 "Adja meg a hálózati címet az út nyomon követéséhez. Például: www.tartomany."
 "hu vagy 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:28
-msgid "Enter the user to finger"
-msgstr "Adja meg a felhasználót a fingerhez"
-
-#: ../data/gnome-nettool.ui.h:29 ../src/main.c:811
-msgid "Finger"
-msgstr "Finger"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Finger output"
-msgstr "Finger kimenete"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "Hardware address:"
-msgstr "Hardvercím:"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Host"
-msgstr "Gép"
-
-#: ../data/gnome-nettool.ui.h:33
-msgid "Link speed:"
-msgstr "Kapcsolat sebessége:"
-
-#: ../data/gnome-nettool.ui.h:34 ../src/main.c:733
-msgid "Lookup"
-msgstr "Keresés"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "Lookup output"
-msgstr "Kikeresés kimenete"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:37
-msgid "Maximum:"
-msgstr "Maximum:"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "Minimum:"
-msgstr "Minimum:"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "Multicast Information"
-msgstr "Multicast-információ"
-
-#: ../data/gnome-nettool.ui.h:40
-msgid "Multicast:"
-msgstr "Multicast:"
-
-#: ../data/gnome-nettool.ui.h:41 ../src/main.c:444
-msgid "Netstat"
-msgstr "Netstat"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Netstat output"
-msgstr "Netstat kimenete"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Network address"
-msgstr "Hálózati cím"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Not Available"
-msgstr "Nem érhető el"
-
-#: ../data/gnome-nettool.ui.h:45
-msgid "Only"
-msgstr "Csak"
-
-#: ../data/gnome-nettool.ui.h:46
-msgid "Output for finger"
-msgstr "A finger kimenete"
-
-#: ../data/gnome-nettool.ui.h:47
-msgid "Output for lookup"
-msgstr "A kikeresés kimenete"
-
-#: ../data/gnome-nettool.ui.h:48
-msgid "Output for net stat"
-msgstr "A net stat kimenete"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Output for port scan"
-msgstr "A portvizsgálat kimenete"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Output for traceroute"
-msgstr "A traceroute kimenete"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Output for whois"
-msgstr "A whois kimenete"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Packets received:"
-msgstr "Fogadott csomagok:"
-
-#: ../data/gnome-nettool.ui.h:53
-msgid "Packets transmitted:"
-msgstr "Továbbított csomagok:"
-
-#: ../data/gnome-nettool.ui.h:54 ../src/main.c:290
-msgid "Ping"
-msgstr "Ping"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Port Scan"
-msgstr "Portvizsgálat"
-
-#: ../data/gnome-nettool.ui.h:56
-msgid "Port scan output"
-msgstr "Portvizsgálat kimenete"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Received bytes:"
-msgstr "Fogadott bájtok:"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Received packets:"
-msgstr "Fogadott csomagok:"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid "Reception errors:"
-msgstr "Fogadási hibák:"
-
-#: ../data/gnome-nettool.ui.h:60
-msgid "Routing Table Information"
-msgstr "Útválasztási táblázat-információ"
-
-#: ../data/gnome-nettool.ui.h:61 ../src/main.c:615
-msgid "Scan"
-msgstr "Vizsgálat"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "Send:"
-msgstr "Küldés:"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid "State:"
-msgstr "Állapot:"
-
 #: ../data/gnome-nettool.ui.h:64
-msgid "Successful packets:"
-msgstr "Sikeres csomagok:"
-
-#: ../data/gnome-nettool.ui.h:65 ../src/main.c:375
-msgid "Trace"
-msgstr "Nyomkövetés"
-
-#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute"
 msgstr "Traceroute"
 
+#: ../data/gnome-nettool.ui.h:65
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Adja meg a hálózati címet a nyitott portok kereséséhez. Például: www."
+"tartomany.hu vagy 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "Vizsgálat"
+
 #: ../data/gnome-nettool.ui.h:67
-msgid "Traceroute output"
-msgstr "Traceroute kimenete"
+msgid "Output for port scan"
+msgstr "A portvizsgálat kimenete"
 
 #: ../data/gnome-nettool.ui.h:68
-msgid "Transmission errors:"
-msgstr "Adatátviteli hibák:"
+msgid "Port scan output"
+msgstr "Portvizsgálat kimenete"
 
 #: ../data/gnome-nettool.ui.h:69
-msgid "Transmitted bytes:"
-msgstr "Továbbított bájtok:"
+msgid "Port Scan"
+msgstr "Portvizsgálat"
 
 #: ../data/gnome-nettool.ui.h:70
-msgid "Transmitted packets:"
-msgstr "Továbbított csomagok:"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "Unlimited requests"
-msgstr "Végtelen számú kérés"
-
-#: ../data/gnome-nettool.ui.h:72
-msgid "User"
-msgstr "Felhasználó"
-
-#: ../data/gnome-nettool.ui.h:73
-msgid "User name"
-msgstr "Felhasználónév"
-
-#: ../data/gnome-nettool.ui.h:74 ../src/main.c:915
-msgid "Whois"
-msgstr "Whois"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid "Whois output"
-msgstr "Whois kimenete"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "_Configure"
-msgstr "_Beállítás"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "_Contents"
-msgstr "_Tartalom"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Domain address:"
-msgstr "_Tartománycím:"
-
-#: ../data/gnome-nettool.ui.h:79
-msgid "_Edit"
-msgstr "S_zerkesztés"
-
-#: ../data/gnome-nettool.ui.h:80
-msgid "_Help"
-msgstr "_Súgó"
-
-#: ../data/gnome-nettool.ui.h:81
 msgid "_Information type:"
 msgstr "_Információ típusa:"
 
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Network address:"
-msgstr "_Hálózati cím:"
+#: ../data/gnome-nettool.ui.h:71
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Adja meg a kikeresendő tartományt. Például: www.tartomany.hu vagy ftp."
+"tartomany.hu."
 
-#: ../data/gnome-nettool.ui.h:83
-msgid "_Network device:"
-msgstr "_Hálózati eszköz:"
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "Keresés"
 
-#: ../data/gnome-nettool.ui.h:84
-msgid "_Tool"
-msgstr "_Eszköz"
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr "A kikeresés kimenete"
 
-#: ../data/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:74
+msgid "Lookup output"
+msgstr "Kikeresés kimenete"
+
+#: ../data/gnome-nettool.ui.h:75
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Adjon meg egy hálózati címet a felhasználó finger információinak "
+"lekéréséhez. Például: www.tartomany.hu vagy 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+msgid "Enter the user to finger"
+msgstr "Adja meg a felhasználót a fingerhez"
+
+#: ../data/gnome-nettool.ui.h:77
+msgid "User name"
+msgstr "Felhasználónév"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Username:"
 msgstr "_Felhasználónév:"
 
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
+
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr "A finger kimenete"
+
+#: ../data/gnome-nettool.ui.h:81
+msgid "Finger output"
+msgstr "Finger kimenete"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "_Tartománycím:"
+
+#: ../data/gnome-nettool.ui.h:83
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Adjon meg egy tartománycímet a whois információk kikereséséhez. Például: www."
+"tartomany.hu vagy 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+msgid "Domain address"
+msgstr "Tartománycím"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Whois"
+
 #: ../data/gnome-nettool.ui.h:86
-msgid "ms"
-msgstr "ms"
+msgid "Output for whois"
+msgstr "A whois kimenete"
 
 #: ../data/gnome-nettool.ui.h:87
-msgid "requests"
-msgstr "kérés"
+msgid "Whois output"
+msgstr "Whois kimenete"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:60
@@ -740,7 +739,6 @@ msgstr "A cím gépneve"
 #. It defines which server is the primary nameserver
 #. for a domain
 #: ../src/main.c:678
-#| msgid "Start-of-authority"
 msgid "Start of Authority"
 msgstr "Zóna kezdete (SOA)"
 
@@ -981,11 +979,10 @@ msgstr "IP"
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/traceroute.c:361
-#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Ugrás\tGépnév\tIP\tIdő 1\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
