@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-20 23:11+0100\n"
-"PO-Revision-Date: 2012-02-19 20:20+0100\n"
+"POT-Creation-Date: 2013-03-17 14:51+0100\n"
+"PO-Revision-Date: 2013-03-16 17:55+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -73,144 +73,267 @@ msgstr "Kan ikke åbne hjælpefil"
 msgid "View information about your network"
 msgstr "Vis information om dit netværk"
 
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "netværk;overvågning;overvåg;fjern;"
+
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "A list of domains previously used"
-msgstr "En liste af tidligere brugte domæner"
+msgid "Historically used hostnames"
+msgstr "Historisk brugte værtsnavne"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
 msgstr "En liste af tidligere brugte værtsnavne"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "A list of usernames previously used"
-msgstr "En liste af tidligere brugte brugernavne"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "Historically used domains"
-msgstr "Historisk brugte domæner"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used hostnames"
-msgstr "Historisk brugte værtsnavne"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
 msgstr "Historisk brugte brugernavne"
 
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr "En liste af tidligere brugte brugernavne"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr "Historisk brugte domæner"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr "En liste af tidligere brugte domæner"
+
 #: ../data/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "0"
+msgid "Host"
+msgstr "Vært"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "Bruger"
 
 #: ../data/gnome-nettool.ui.h:3
-#, no-c-format
-msgid "0%"
-msgstr "0%"
+msgid "_Tool"
+msgstr "_Værktøj"
 
 #: ../data/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "0.0"
-
-#: ../data/gnome-nettool.ui.h:5
-msgid "IP Information"
-msgstr "IP-information"
-
-#: ../data/gnome-nettool.ui.h:6
-msgid "Interface Information"
-msgstr "Information om grænsefladen"
-
-#: ../data/gnome-nettool.ui.h:7
-msgid "Interface Statistics"
-msgstr "Statistik for grænsefladen"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "Round Trip Time Statistics"
-msgstr "Statistik for tiden tur-retur"
-
-#: ../data/gnome-nettool.ui.h:9
-msgid "Transmission Statistics"
-msgstr "Transmissionsstatistik"
-
-#: ../data/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "Aktive netværkstjenester"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "Gennemsnit:"
-
-#: ../data/gnome-nettool.ui.h:12
 msgid "Beep on ping"
 msgstr "Bip ved ping"
 
-#: ../data/gnome-nettool.ui.h:13
-msgid "Clear _History"
-msgstr "Ryd _historik"
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr "_Redigér"
 
-#: ../data/gnome-nettool.ui.h:14
-msgid "Collisions:"
-msgstr "Sammenstød:"
-
-#: ../data/gnome-nettool.ui.h:15
+#: ../data/gnome-nettool.ui.h:6
 msgid "Copy as text _report"
 msgstr "Kopiér som tekst_rapport"
 
-#: ../data/gnome-nettool.ui.h:16
-msgid "Details"
-msgstr "Detaljer"
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "Ryd _historik"
 
-#: ../data/gnome-nettool.ui.h:17
-msgid "Devices"
-msgstr "Enheder"
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr "_Hjælp"
 
-#: ../data/gnome-nettool.ui.h:18
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr "_Indhold"
+
+#: ../data/gnome-nettool.ui.h:10
 msgid "Devices - Network Tools"
 msgstr "Enheder - Netværksværktøjer"
 
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "_Netværksenhed:"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "_Konfigurér"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "IP-information"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "Hardwareadresse:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "Multisending:"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "Forbindelsens hastighed:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "Tilstand:"
+
 #: ../data/gnome-nettool.ui.h:19
-msgid "Display:"
-msgstr "Vis:"
+msgid "Not Available"
+msgstr "Ikke tilgængelig"
 
 #: ../data/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "Domæneadresse"
+msgid "Interface Information"
+msgstr "Information om grænsefladen"
 
 #: ../data/gnome-nettool.ui.h:21
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"Angiv en domæneadresse for at slå dens \"whois\"-information op. F.eks. www."
-"domaene.dk eller 192.168.2.1"
+msgid "Transmitted bytes:"
+msgstr "Byte sendt:"
 
 #: ../data/gnome-nettool.ui.h:22
-msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr ""
-"Angiv domæne til \"lookup\". For eksempel: domaene.dk eller ftp.domain.com."
+msgid "Received bytes:"
+msgstr "Byte modtaget:"
 
 #: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"Angiv netværksadressen for at få \"finger\"-informationer om brugeren. F."
-"eks. auth.domaene.dk eller 192.168.2.1"
+msgid "Transmission errors:"
+msgstr "Transmissionsfejl:"
 
 #: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "Pakker sendt:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "Pakker modtaget:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "Modtagelsesfejl:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "Sammenstød:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "Statistik for grænsefladen"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "Enheder"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "Kun"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "forespørgsler"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "Ubegrænset antal forespørgsler"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "Send:"
+
+#: ../data/gnome-nettool.ui.h:34
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Angiv netværksadressen der skal pinges. F.eks. www.domaene.dk eller "
 "192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:25
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr ""
-"Angiv netværksadressen der skal skannes for åbne porte. F.eks. www.domaene."
-"dk eller 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:35
+msgid "Network address"
+msgstr "Netværksadresse"
 
-#: ../data/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "_Netværksadresse:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "Ping"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "ms"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "Maksimum:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "Gennemsnit:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "Minimum:"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "Statistik for tiden tur-retur"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "Pakker sendt:"
+
+#: ../data/gnome-nettool.ui.h:46
+#, no-c-format
+msgid "0%"
+msgstr "0%"
+
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr "0"
+
+#: ../data/gnome-nettool.ui.h:48
+msgid "Successful packets:"
+msgstr "Pakker modtaget:"
+
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "Pakker modtaget:"
+
+#: ../data/gnome-nettool.ui.h:50
+msgid "Transmission Statistics"
+msgstr "Transmissionsstatistik"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "Vis:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "Rutetabel-information"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "Aktive netværkstjenester"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "Multisendingsinformation"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "Netstat"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr "Uddata fra netstat"
+
+#: ../data/gnome-nettool.ui.h:58
+msgid "Netstat output"
+msgstr "Uddata fra netstat"
+
+#: ../data/gnome-nettool.ui.h:59
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
@@ -218,7 +341,19 @@ msgstr ""
 "Angiv netværksadressen hvortil du vil spore en sti. F.eks. www.domaene.dk "
 "eller 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "Spor"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr "Uddata fra traceroute"
+
+#: ../data/gnome-nettool.ui.h:62
+msgid "Traceroute output"
+msgstr "Uddata fra traceroute"
+
+#: ../data/gnome-nettool.ui.h:63
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -226,245 +361,114 @@ msgstr ""
 "Angiv netværksadressen hvortil du vil spore en rute. F.eks. www.domaene.dk "
 "eller 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:28
-msgid "Enter the user to finger"
-msgstr "Angiv brugeren du vil have information på"
-
-#: ../data/gnome-nettool.ui.h:29 ../src/main.c:811
-msgid "Finger"
-msgstr "Finger"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Finger output"
-msgstr "Uddata fra finger"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "Hardware address:"
-msgstr "Hardwareadresse:"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Host"
-msgstr "Vært"
-
-#: ../data/gnome-nettool.ui.h:33
-msgid "Link speed:"
-msgstr "Forbindelsens hastighed:"
-
-#: ../data/gnome-nettool.ui.h:34 ../src/main.c:733
-msgid "Lookup"
-msgstr "Opslag"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "Lookup output"
-msgstr "Uddata fra lookup"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:37
-msgid "Maximum:"
-msgstr "Maksimum:"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "Minimum:"
-msgstr "Minimum:"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "Multicast Information"
-msgstr "Multisendingsinformation"
-
-#: ../data/gnome-nettool.ui.h:40
-msgid "Multicast:"
-msgstr "Multisending:"
-
-#: ../data/gnome-nettool.ui.h:41 ../src/main.c:444
-msgid "Netstat"
-msgstr "Netstat"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Netstat output"
-msgstr "Uddata fra netstat"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Network address"
-msgstr "Netværksadresse"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Not Available"
-msgstr "Ikke tilgængelig"
-
-#: ../data/gnome-nettool.ui.h:45
-msgid "Only"
-msgstr "Kun"
-
-#: ../data/gnome-nettool.ui.h:46
-msgid "Output for finger"
-msgstr "Uddata fra finger"
-
-#: ../data/gnome-nettool.ui.h:47
-msgid "Output for lookup"
-msgstr "Uddata fra lookup"
-
-#: ../data/gnome-nettool.ui.h:48
-msgid "Output for net stat"
-msgstr "Uddata fra netstat"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Output for port scan"
-msgstr "Uddata fra portscanning"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Output for traceroute"
-msgstr "Uddata fra traceroute"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Output for whois"
-msgstr "Uddata fra whois"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Packets received:"
-msgstr "Pakker modtaget:"
-
-#: ../data/gnome-nettool.ui.h:53
-msgid "Packets transmitted:"
-msgstr "Pakker sendt:"
-
-#: ../data/gnome-nettool.ui.h:54 ../src/main.c:290
-msgid "Ping"
-msgstr "Ping"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Port Scan"
-msgstr "Portskanning"
-
-#: ../data/gnome-nettool.ui.h:56
-msgid "Port scan output"
-msgstr "Uddata fra portscanning"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Received bytes:"
-msgstr "Byte modtaget:"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Received packets:"
-msgstr "Pakker modtaget:"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid "Reception errors:"
-msgstr "Modtagelsesfejl:"
-
-#: ../data/gnome-nettool.ui.h:60
-msgid "Routing Table Information"
-msgstr "Rutetabel-information"
-
-#: ../data/gnome-nettool.ui.h:61 ../src/main.c:615
-msgid "Scan"
-msgstr "Skan"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "Send:"
-msgstr "Send:"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid "State:"
-msgstr "Tilstand:"
-
 #: ../data/gnome-nettool.ui.h:64
-msgid "Successful packets:"
-msgstr "Pakker modtaget:"
-
-#: ../data/gnome-nettool.ui.h:65 ../src/main.c:375
-msgid "Trace"
-msgstr "Spor"
-
-#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute"
 msgstr "Traceroute"
 
+#: ../data/gnome-nettool.ui.h:65
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Angiv netværksadressen der skal skannes for åbne porte. F.eks. www.domaene."
+"dk eller 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "Skan"
+
 #: ../data/gnome-nettool.ui.h:67
-msgid "Traceroute output"
-msgstr "Uddata fra traceroute"
+msgid "Output for port scan"
+msgstr "Uddata fra portscanning"
 
 #: ../data/gnome-nettool.ui.h:68
-msgid "Transmission errors:"
-msgstr "Transmissionsfejl:"
+msgid "Port scan output"
+msgstr "Uddata fra portscanning"
 
 #: ../data/gnome-nettool.ui.h:69
-msgid "Transmitted bytes:"
-msgstr "Byte sendt:"
+msgid "Port Scan"
+msgstr "Portskanning"
 
 #: ../data/gnome-nettool.ui.h:70
-msgid "Transmitted packets:"
-msgstr "Pakker sendt:"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "Unlimited requests"
-msgstr "Ubegrænset antal forespørgsler"
-
-#: ../data/gnome-nettool.ui.h:72
-msgid "User"
-msgstr "Bruger"
-
-#: ../data/gnome-nettool.ui.h:73
-msgid "User name"
-msgstr "Brugernavn"
-
-#: ../data/gnome-nettool.ui.h:74 ../src/main.c:915
-msgid "Whois"
-msgstr "Whois"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid "Whois output"
-msgstr "Uddata fra whois"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "_Configure"
-msgstr "_Konfigurér"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "_Contents"
-msgstr "_Indhold"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Domain address:"
-msgstr "_Domæneadresse:"
-
-#: ../data/gnome-nettool.ui.h:79
-msgid "_Edit"
-msgstr "_Redigér"
-
-#: ../data/gnome-nettool.ui.h:80
-msgid "_Help"
-msgstr "_Hjælp"
-
-#: ../data/gnome-nettool.ui.h:81
 msgid "_Information type:"
 msgstr "_Informationstype:"
 
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Network address:"
-msgstr "_Netværksadresse:"
+#: ../data/gnome-nettool.ui.h:71
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Angiv domæne til \"lookup\". For eksempel: domaene.dk eller ftp.domain.com."
 
-#: ../data/gnome-nettool.ui.h:83
-msgid "_Network device:"
-msgstr "_Netværksenhed:"
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "Opslag"
 
-#: ../data/gnome-nettool.ui.h:84
-msgid "_Tool"
-msgstr "_Værktøj"
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr "Uddata fra lookup"
 
-#: ../data/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:74
+msgid "Lookup output"
+msgstr "Uddata fra lookup"
+
+#: ../data/gnome-nettool.ui.h:75
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Angiv netværksadressen for at få \"finger\"-informationer om brugeren. F."
+"eks. auth.domaene.dk eller 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+msgid "Enter the user to finger"
+msgstr "Angiv brugeren du vil have information på"
+
+#: ../data/gnome-nettool.ui.h:77
+msgid "User name"
+msgstr "Brugernavn"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Username:"
 msgstr "_Brugernavn:"
 
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
+
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr "Uddata fra finger"
+
+#: ../data/gnome-nettool.ui.h:81
+msgid "Finger output"
+msgstr "Uddata fra finger"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "_Domæneadresse:"
+
+#: ../data/gnome-nettool.ui.h:83
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Angiv en domæneadresse for at slå dens \"whois\"-information op. F.eks. www."
+"domaene.dk eller 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+msgid "Domain address"
+msgstr "Domæneadresse"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Whois"
+
 #: ../data/gnome-nettool.ui.h:86
-msgid "ms"
-msgstr "ms"
+msgid "Output for whois"
+msgstr "Uddata fra whois"
 
 #: ../data/gnome-nettool.ui.h:87
-msgid "requests"
-msgstr "forespørgsler"
+msgid "Whois output"
+msgstr "Uddata fra whois"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:60
@@ -978,14 +982,13 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Hop\tVærtsnavn\tIP\tTid 1\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
