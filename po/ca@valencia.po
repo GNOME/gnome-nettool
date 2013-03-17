@@ -5,15 +5,15 @@
 # Softcatala <linux@softcatala.org>, 2000.
 # Xavier Conde Rueda <xavi.conde@gmail.com>, 2004.
 # Jordi Mallach <jordi@sindominio.net>, 2004, 2005, 2006, 2007.
-# Joan Duran <jodufi@gmail.com>, 2011, 2012.
+# Joan Duran <jodufi@gmail.com>, 2011-2013.
 # Jordi Serratosa <jordis@softcatala.cat>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-10 23:17+0200\n"
-"PO-Revision-Date: 2012-03-06 22:54+0100\n"
+"POT-Creation-Date: 2013-03-17 19:58+0100\n"
+"PO-Revision-Date: 2013-03-07 21:27+0100\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca-XV\n"
@@ -63,6 +63,10 @@ msgstr "No s'ha pogut obrir el fitxer d'ajuda"
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
 msgstr "Visualitzeu informació sobre la xarxa"
+
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "xarxa;monitor;remot;"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
 msgid "Historically used hostnames"
@@ -975,14 +979,13 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Salt\tOrdinador\tIP\tTemps 1\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
