@@ -2,14 +2,15 @@
 # This file is distributed under the same license as the gnome-netstatus package
 #
 # Young-Ho Cha <ganadist at gmail dot com>, 2003, 2005, 2007.
-# Changwoo Ryu <cwryu@debian.org>, 1999, 2006, 2008, 2009, 2011, 2012.
+# Changwoo Ryu <cwryu@debian.org>, 1999, 2006, 2008-2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-10 14:44+0900\n"
-"PO-Revision-Date: 2012-03-10 14:50+0900\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-21 20:00+0000\n"
+"PO-Revision-Date: 2013-03-18 01:55+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: Korean\n"
@@ -37,7 +38,7 @@ msgstr "네트워크 도구"
 
 #: ../src/callbacks.c:346
 msgid "Graphical user interface for common network utilities"
-msgstr "일반적인 네트워크 프로그램들의 그래픽 인터페이스"
+msgstr "일반적인 네트워크 프로그램의 그래픽 인터페이스"
 
 #: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
@@ -57,6 +58,10 @@ msgstr "도움말 파일을 열 수 없습니다"
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
 msgstr "네트워크의 정보를 봅니다."
+
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "network;네트워크;monitor;모니터링;감시;remote;원격;"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
 msgid "Historically used hostnames"
@@ -320,7 +325,9 @@ msgstr "네트워크 통계 출력"
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
-msgstr "경로를 추적할 네트워크 주소를 입력하십시오. 예: www.domain.com 또는 192.168.2.1"
+msgstr ""
+"경로를 추적할 네트워크 주소를 입력하십시오. 예: www.domain.com 또는 "
+"192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
 msgid "Trace"
@@ -375,7 +382,7 @@ msgstr "정보 형식(_I):"
 
 #: ../data/gnome-nettool.ui.h:71
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr "정보를 찾아볼 도메인을 입력하십시오. 예: www.domain.com 또는 192.168.2.1"
+msgstr "정보를 찾아 볼 도메인을 입력하십시오. 예: www.domain.com 또는 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
 msgid "Lookup"
@@ -852,7 +859,7 @@ msgstr "실행"
 #. Created up here so we can get the geometry info.
 #: ../src/ping.c:155
 msgid "Time (ms):"
-msgstr "시간 (ms):"
+msgstr "시간(밀리초):"
 
 #: ../src/ping.c:176
 msgid "Seq. No.:"
@@ -967,7 +974,7 @@ msgstr "IP"
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Hop\t호스트이름\tIP\t시간 1\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
