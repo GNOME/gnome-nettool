@@ -4,21 +4,21 @@
 #
 # Jayaradha N <jaya@pune.redhat.com>, 2004.
 # Felix <ifelix@redhat.com>, 2006.
-# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2011, 2012.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2011, 2012, 2013.
 # I. Felix <ifelix@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.HEAD.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-28 17:33+0530\n"
-"PO-Revision-Date: 2012-02-28 17:39+0530\n"
-"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
-"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"POT-Creation-Date: 2013-03-20 16:25+0530\n"
+"PO-Revision-Date: 2013-03-20 16:28+0530\n"
+"Last-Translator: Dr.T.Vasudevan <drtvasudevan@gmail.com>\n"
+"Language-Team: Tamil <<gnome-tamil-translation@googlegroups.com>>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\\n"
 "\n"
 "\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
-msgstr "Tirumurthi Vasudevan, 2008, 2009,2010,2011,2012"
+msgstr "Tirumurthi Vasudevan, 2008, 2009,2010,2011,2012.2013"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -65,397 +65,410 @@ msgstr "உதவி கோப்பினை திறக்க முடிய
 msgid "View information about your network"
 msgstr "வலைப்பின்னல் குறித்த தகவலை பார்க்க"
 
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "வலையமைப்பு;திரை;தொலை;"
+
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "A list of domains previously used"
-msgstr "முன்பு பயன்படுத்திய டொமெய்ன்களின் பட்டியல்"
+msgid "Historically used hostnames"
+msgstr "இது வரை பயன்படுத்திய புரவலன் பெயர்கள்"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
 msgstr "முன்பு பயன்படுத்திய புரவலன் பெயர்களின் பட்டியல்"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "A list of usernames previously used"
-msgstr "முன்பு பயன்படுத்திய பயனர் பெயர்களின் பட்டியல்"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "Historically used domains"
-msgstr "இது வரை பயன்படுத்திய டொமெய்ன்கள்"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used hostnames"
-msgstr "இது வரை பயன்படுத்திய புரவலன் பெயர்கள்"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
 msgstr "இது வரை பயன்படுத்திய பயனர் பெயர்கள்"
 
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr "முன்பு பயன்படுத்திய பயனர் பெயர்களின் பட்டியல்"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr "இது வரை பயன்படுத்திய டொமெய்ன்கள்"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr "முன்பு பயன்படுத்திய டொமெய்ன்களின் பட்டியல்"
+
 #: ../data/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "0"
+msgid "Host"
+msgstr "புரவலம்"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "பயனீட்டாளர்"
 
 #: ../data/gnome-nettool.ui.h:3
+msgid "_Tool"
+msgstr "(_T)கருவி"
+
+#: ../data/gnome-nettool.ui.h:4
+msgid "Beep on ping"
+msgstr "இணைக்கும் போது ஒலி எழுப்பவும்"
+
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr "தொகுக்கவும் (_E)"
+
+#: ../data/gnome-nettool.ui.h:6
+msgid "Copy as text _report"
+msgstr "உரை அறிக்கையாக நகலெடு (_r)"
+
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "(_H)வரலாற்றை நீக்கு"
+
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr "உதவி (_H)"
+
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr "_C உள்ளடக்கங்கள்"
+
+#: ../data/gnome-nettool.ui.h:10
+msgid "Devices - Network Tools"
+msgstr "சாதனங்கள் - பிணைய கருவிகள்"
+
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "(_N)வலைப்பின்னல் சாதனம்:"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "(_C)அமைப்பு"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "IP தகவல்"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "வன்பொருள் முகவரி"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "தொலை ஒலிபரப்பு"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "இணைப்பு வேகம்:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "நிலை:"
+
+#: ../data/gnome-nettool.ui.h:19
+msgid "Not Available"
+msgstr "கிடைக்கவில்லை"
+
+#: ../data/gnome-nettool.ui.h:20
+msgid "Interface Information"
+msgstr "இடைமுக தகவல்"
+
+#: ../data/gnome-nettool.ui.h:21
+msgid "Transmitted bytes:"
+msgstr "அனுப்பப்பட்ட பைட்கள்"
+
+#: ../data/gnome-nettool.ui.h:22
+msgid "Received bytes:"
+msgstr "பெறப்பட்ட பைட்கள்"
+
+#: ../data/gnome-nettool.ui.h:23
+msgid "Transmission errors:"
+msgstr "அனுப்பல் பிழை"
+
+#: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "அனுப்பப்பட்ட கட்டுகள்"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "பெறப்பட்ட கட்டுகள்:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "பெறுதல் பிழை"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "மோதல்:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "இடைமுக புள்ளிவிவரம்"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "சாதனங்கள்"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "மட்டும்"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "அழைப்புகள்"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "கணக்கில்லா கோரிக்கைகள்"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "அனுப்பு:"
+
+#: ../data/gnome-nettool.ui.h:34
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"சீண்டிப்பார்க்க (பிங்) ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : "
+"www.domain.com "
+"அல்லது 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:35
+msgid "Network address"
+msgstr "பிணைய முகவரி"
+
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "(_N)வலைப்பின்னல் முகவரி:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "அழை"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "ms"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "அதிக பட்ச:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "சராசரி:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "குறைந்தபட்ச"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "முழு நேர புள்ளிவிவர தகவல்"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "அனுப்பப்பட்ட கட்டுகள்:"
+
+#: ../data/gnome-nettool.ui.h:46
 #, no-c-format
 msgid "0%"
 msgstr "0%"
 
-#: ../data/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "0.0"
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr "0"
 
-#: ../data/gnome-nettool.ui.h:5
-msgid "IP Information"
-msgstr "IP தகவல்"
+#: ../data/gnome-nettool.ui.h:48
+msgid "Successful packets:"
+msgstr "வெற்றிகரமான கட்டுகள்:"
 
-#: ../data/gnome-nettool.ui.h:6
-msgid "Interface Information"
-msgstr "இடைமுக தகவல்"
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "பெறப்பட்ட கட்டுகள்:"
 
-#: ../data/gnome-nettool.ui.h:7
-msgid "Interface Statistics"
-msgstr "இடைமுக புள்ளிவிவரம்"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "Round Trip Time Statistics"
-msgstr "முழு நேர புள்ளிவிவர தகவல்"
-
-#: ../data/gnome-nettool.ui.h:9
+#: ../data/gnome-nettool.ui.h:50
 msgid "Transmission Statistics"
 msgstr "பரிமாற்று புள்ளிவிவரங்கள்"
 
-#: ../data/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "செயலில் உள்ள வலைப்பின்னல் சேவைகள்"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "சராசரி:"
-
-#: ../data/gnome-nettool.ui.h:12
-msgid "Beep on ping"
-msgstr "இணைக்கும் போது ஒலி எழுப்பவும்"
-
-#: ../data/gnome-nettool.ui.h:13
-msgid "Clear _History"
-msgstr "(_H)வரலாற்றை நீக்கு"
-
-#: ../data/gnome-nettool.ui.h:14
-msgid "Collisions:"
-msgstr "மோதல்:"
-
-#: ../data/gnome-nettool.ui.h:15
-msgid "Copy as text _report"
-msgstr "உரை அறிக்கையாக நகலெடு (_r)"
-
-#: ../data/gnome-nettool.ui.h:16
+#: ../data/gnome-nettool.ui.h:51
 msgid "Details"
 msgstr "விவரங்கள்"
 
-#: ../data/gnome-nettool.ui.h:17
-msgid "Devices"
-msgstr "சாதனங்கள்"
-
-#: ../data/gnome-nettool.ui.h:18
-msgid "Devices - Network Tools"
-msgstr "சாதனங்கள் - பிணைய கருவிகள்"
-
-#: ../data/gnome-nettool.ui.h:19
+#: ../data/gnome-nettool.ui.h:52
 msgid "Display:"
 msgstr "காட்சி:"
 
-#: ../data/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "டொமைன் முகவரி"
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "வழிகாட்டி அட்டவணை தகவல்"
 
-#: ../data/gnome-nettool.ui.h:21
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"யார் இது தகவலை  பார்க்க ஒரு களப்பெயரை உள்ளிடவும். உதாரணமாக  : www.domain.com அல்லது "
-"192.168.2.1"
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "செயலில் உள்ள வலைப்பின்னல் சேவைகள்"
 
-#: ../data/gnome-nettool.ui.h:22
-msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr ""
-"ஆராய்ச்சிக்கு (லுக்அப்) டொமைன் ஐ உள்ளிடவும். உதாரணமாக: domain.com அல்லது ftp.domain.com."
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "தொலை ஒலிபரப்புத்தகவல்"
 
-#: ../data/gnome-nettool.ui.h:23
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"பயனரை தொட ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www.domain.com அல்லது "
-"192.168.2.1"
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "வலைபுள்ளிவிவரம்"
 
-#: ../data/gnome-nettool.ui.h:24
-msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"சீண்டிப்பார்க்க (பிங்) ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www.domain.com "
-"அல்லது 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr "net statக்கான வெளிப்பாடு"
 
-#: ../data/gnome-nettool.ui.h:25
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr ""
-"திறந்த துறைகளை காண ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www.domain."
-"com அல்லது 192.168.2.1"
+#: ../data/gnome-nettool.ui.h:58
+msgid "Netstat output"
+msgstr "Netstat வெளிப்பாடு"
 
-#: ../data/gnome-nettool.ui.h:26
+#: ../data/gnome-nettool.ui.h:59
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
 msgstr ""
-"பாதையை தேடிப்பார்க்க  ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www.domain."
+"பாதையை தேடிப்பார்க்க  ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : "
+"www.domain."
 "com அல்லது 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:27
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "தடத்தை தேடு"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr "tracerouteக்கான வெளிப்பாடு"
+
+#: ../data/gnome-nettool.ui.h:62
+msgid "Traceroute output"
+msgstr "Traceroute வெளிப்பாடு"
+
+#: ../data/gnome-nettool.ui.h:63
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
-"தடத்தை தேடிப்பார்க்க  ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www.domain."
+"தடத்தை தேடிப்பார்க்க  ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : "
+"www.domain."
 "com அல்லது 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:28
-msgid "Enter the user to finger"
-msgstr "தொடுவதற்கு ஒரு பயனரை   உள்ளிடுக"
-
-#: ../data/gnome-nettool.ui.h:29 ../src/main.c:811
-msgid "Finger"
-msgstr "விரல்"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Finger output"
-msgstr "விரல் வெளியீடு"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "Hardware address:"
-msgstr "வன்பொருள் முகவரி"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Host"
-msgstr "புரவலம்"
-
-#: ../data/gnome-nettool.ui.h:33
-msgid "Link speed:"
-msgstr "இணைப்பு வேகம்:"
-
-#: ../data/gnome-nettool.ui.h:34 ../src/main.c:733
-msgid "Lookup"
-msgstr "பார்வை"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "Lookup output"
-msgstr "வெளிப்பாட்டை தேடு"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:37
-msgid "Maximum:"
-msgstr "அதிக பட்ச:"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "Minimum:"
-msgstr "குறைந்தபட்ச"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "Multicast Information"
-msgstr "தொலை ஒலிபரப்புத்தகவல்"
-
-#: ../data/gnome-nettool.ui.h:40
-msgid "Multicast:"
-msgstr "தொலை ஒலிபரப்பு"
-
-#: ../data/gnome-nettool.ui.h:41 ../src/main.c:444
-msgid "Netstat"
-msgstr "வலைபுள்ளிவிவரம்"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Netstat output"
-msgstr "Netstat வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Network address"
-msgstr "பிணைய முகவரி"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Not Available"
-msgstr "கிடைக்கவில்லை"
-
-#: ../data/gnome-nettool.ui.h:45
-msgid "Only"
-msgstr "மட்டும்"
-
-#: ../data/gnome-nettool.ui.h:46
-msgid "Output for finger"
-msgstr "விரலுக்கான வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:47
-msgid "Output for lookup"
-msgstr "தேடுதலுக்கான வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:48
-msgid "Output for net stat"
-msgstr "net statக்கான வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Output for port scan"
-msgstr "port scanக்கான வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Output for traceroute"
-msgstr "tracerouteக்கான வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Output for whois"
-msgstr "whoisக்கான வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Packets received:"
-msgstr "பெறப்பட்ட கட்டுகள்:"
-
-#: ../data/gnome-nettool.ui.h:53
-msgid "Packets transmitted:"
-msgstr "அனுப்பப்பட்ட கட்டுகள்:"
-
-#: ../data/gnome-nettool.ui.h:54 ../src/main.c:290
-msgid "Ping"
-msgstr "அழை"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Port Scan"
-msgstr "வழி தேடல்"
-
-#: ../data/gnome-nettool.ui.h:56
-msgid "Port scan output"
-msgstr "Port scan வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Received bytes:"
-msgstr "பெறப்பட்ட பைட்கள்"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Received packets:"
-msgstr "பெறப்பட்ட கட்டுகள்:"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid "Reception errors:"
-msgstr "பெறுதல் பிழை"
-
-#: ../data/gnome-nettool.ui.h:60
-msgid "Routing Table Information"
-msgstr "வழிகாட்டி அட்டவணை தகவல்"
-
-#: ../data/gnome-nettool.ui.h:61 ../src/main.c:615
-msgid "Scan"
-msgstr "தேடு"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "Send:"
-msgstr "அனுப்பு:"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid "State:"
-msgstr "நிலை:"
-
 #: ../data/gnome-nettool.ui.h:64
-msgid "Successful packets:"
-msgstr "வெற்றிகரமான கட்டுகள்:"
-
-#: ../data/gnome-nettool.ui.h:65 ../src/main.c:375
-msgid "Trace"
-msgstr "தடத்தை தேடு"
-
-#: ../data/gnome-nettool.ui.h:66
 msgid "Traceroute"
 msgstr "தடம்"
 
+#: ../data/gnome-nettool.ui.h:65
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"திறந்த துறைகளை காண ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : "
+"www.domain."
+"com அல்லது 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "தேடு"
+
 #: ../data/gnome-nettool.ui.h:67
-msgid "Traceroute output"
-msgstr "Traceroute வெளிப்பாடு"
+msgid "Output for port scan"
+msgstr "port scanக்கான வெளிப்பாடு"
 
 #: ../data/gnome-nettool.ui.h:68
-msgid "Transmission errors:"
-msgstr "அனுப்பல் பிழை"
+msgid "Port scan output"
+msgstr "Port scan வெளிப்பாடு"
 
 #: ../data/gnome-nettool.ui.h:69
-msgid "Transmitted bytes:"
-msgstr "அனுப்பப்பட்ட பைட்கள்"
+msgid "Port Scan"
+msgstr "வழி தேடல்"
 
 #: ../data/gnome-nettool.ui.h:70
-msgid "Transmitted packets:"
-msgstr "அனுப்பப்பட்ட கட்டுகள்"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "Unlimited requests"
-msgstr "கணக்கில்லா கோரிக்கைகள்"
-
-#: ../data/gnome-nettool.ui.h:72
-msgid "User"
-msgstr "பயனீட்டாளர்"
-
-#: ../data/gnome-nettool.ui.h:73
-msgid "User name"
-msgstr "பயனர் பெயர்"
-
-#: ../data/gnome-nettool.ui.h:74 ../src/main.c:915
-msgid "Whois"
-msgstr "யாரது"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid "Whois output"
-msgstr "Whois வெளிப்பாடு"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "_Configure"
-msgstr "(_C)அமைப்பு"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "_Contents"
-msgstr "_C உள்ளடக்கங்கள்"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Domain address:"
-msgstr "(_D)டொமைன் முகவரி:"
-
-#: ../data/gnome-nettool.ui.h:79
-msgid "_Edit"
-msgstr "தொகுக்கவும் (_E)"
-
-#: ../data/gnome-nettool.ui.h:80
-msgid "_Help"
-msgstr "உதவி (_H)"
-
-#: ../data/gnome-nettool.ui.h:81
 msgid "_Information type:"
 msgstr "(_I)தகவல் வகை:"
 
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Network address:"
-msgstr "(_N)வலைப்பின்னல் முகவரி:"
+#: ../data/gnome-nettool.ui.h:71
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"ஆராய்ச்சிக்கு (லுக்அப்) டொமைன் ஐ உள்ளிடவும். உதாரணமாக: domain.com அல்லது "
+"ftp.domain."
+"com."
 
-#: ../data/gnome-nettool.ui.h:83
-msgid "_Network device:"
-msgstr "(_N)வலைப்பின்னல் சாதனம்:"
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "பார்வை"
 
-#: ../data/gnome-nettool.ui.h:84
-msgid "_Tool"
-msgstr "(_T)கருவி"
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr "தேடுதலுக்கான வெளிப்பாடு"
 
-#: ../data/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:74
+msgid "Lookup output"
+msgstr "வெளிப்பாட்டை தேடு"
+
+#: ../data/gnome-nettool.ui.h:75
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"பயனரை தொட ஒரு வலைப்பின்னல் முகவரியை உள்ளிடவும். உதாரணமாக  : www.domain.com "
+"அல்லது "
+"192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+msgid "Enter the user to finger"
+msgstr "தொடுவதற்கு ஒரு பயனரை   உள்ளிடுக"
+
+#: ../data/gnome-nettool.ui.h:77
+msgid "User name"
+msgstr "பயனர் பெயர்"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Username:"
 msgstr "(_U)பயனீட்டாளர் பெயர்:"
 
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "விரல்"
+
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr "விரலுக்கான வெளிப்பாடு"
+
+#: ../data/gnome-nettool.ui.h:81
+msgid "Finger output"
+msgstr "விரல் வெளியீடு"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "(_D)டொமைன் முகவரி:"
+
+#: ../data/gnome-nettool.ui.h:83
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"யார் இது தகவலை  பார்க்க ஒரு களப்பெயரை உள்ளிடவும். உதாரணமாக  : www.domain.com "
+"அல்லது "
+"192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+msgid "Domain address"
+msgstr "டொமைன் முகவரி"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "யாரது"
+
 #: ../data/gnome-nettool.ui.h:86
-msgid "ms"
-msgstr "ms"
+msgid "Output for whois"
+msgstr "whoisக்கான வெளிப்பாடு"
 
 #: ../data/gnome-nettool.ui.h:87
-msgid "requests"
-msgstr "அழைப்புகள்"
+msgid "Whois output"
+msgstr "Whois வெளிப்பாடு"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:60
@@ -633,7 +646,8 @@ msgstr "HOST"
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
-"வலைப்பின்னல் புள்ளிவிவரத்தகவலை பெற்றுக்கொள். செல்லகூடிய தேர்வுக: வழி, செயலில் உள்ள , "
+"வலைப்பின்னல் புள்ளிவிவரத்தகவலை பெற்றுக்கொள். செல்லகூடிய தேர்வுக: வழி, செயலில் "
+"உள்ள , "
 "தொலை ஒலை ஒலிபரப்பு"
 
 #: ../src/main.c:91
@@ -673,7 +687,8 @@ msgstr "DOMAIN"
 msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
-msgstr "கோப்பு %sஐ காணவில்லை, gnome-netinfo சரியாக நிறுவப்பட்டதா என்பதை சரிபார்க்கவும்"
+msgstr ""
+"கோப்பு %sஐ காணவில்லை, gnome-netinfo சரியாக நிறுவப்பட்டதா என்பதை சரிபார்க்கவும்"
 
 #: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
@@ -969,14 +984,13 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Hop\tபுரவலன் பெயர்\tIP\tநேரம் 1\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
