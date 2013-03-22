@@ -5,23 +5,23 @@
 # Mehran Mehr <mehran@cybermehr.com>, 2005.
 # Roozbeh Pournader <roozbeh@farsiweb.info>, 2005.
 # Mahyar Moghimi <mahyar.moqimi@gmail.com>, 2010.
-# Arash Mousavi <mousavi.arash@gmail.com>, 2011, 2012.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2011, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-01-03 04:23+0000\n"
-"PO-Revision-Date: 2012-03-10 14:35+0330\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-21 20:00+0000\n"
+"PO-Revision-Date: 2013-03-22 12:08+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: Persian\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
-"X-Poedit-Language: Persian\n"
-"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -38,8 +38,7 @@ msgid "Copyright © 2003-2008 %s"
 msgstr "حق رونوشت © ۲۰۰۸-۲۰۰۳ %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:343
-#: ../src/callbacks.c:344
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
 #: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "ابزارهای شبکه"
@@ -48,9 +47,7 @@ msgstr "ابزارهای شبکه"
 msgid "Graphical user interface for common network utilities"
 msgstr "واسط گرافیکی کاربر برای عملیات رایج شبکه"
 
-#: ../src/callbacks.c:458
-#: ../src/main.c:142
-#: ../src/nettool.c:524
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
 msgstr "بی‌کار"
 
@@ -69,387 +66,402 @@ msgstr "ناتوان در باز کردن پرونده‌ی راهنما"
 msgid "View information about your network"
 msgstr "دیدن اطلاعات درباره‌ی شبکه‌ی شما"
 
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "شبکه;پایش;دوردست;"
+
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "A list of domains previously used"
-msgstr "فهرستی از دامنه‌ها که قبلا استفاده شده است"
+msgid "Historically used hostnames"
+msgstr "نام میزبان‌های استفاده شده تاریخی"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
 msgstr "فهرستی از نام میزبان‌ها که قبلا استفاده شده است"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "A list of usernames previously used"
-msgstr "فهرستی از نام‌های کاربری که قبلا استفاده شده است"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "Historically used domains"
-msgstr "دامنه‌های استفاده شده تاریخی"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used hostnames"
-msgstr "نام میزبان‌های استفاده شده تاریخی"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "Historically used usernames"
 msgstr "نام‌های کاربری استفاده شده تاریخی"
 
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr "فهرستی از نام‌های کاربری که قبلا استفاده شده است"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr "دامنه‌های استفاده شده تاریخی"
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr "فهرستی از دامنه‌ها که قبلا استفاده شده است"
+
 #: ../data/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "۰"
+msgid "Host"
+msgstr "میزبان"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "کاربر"
 
 #: ../data/gnome-nettool.ui.h:3
+msgid "_Tool"
+msgstr "_ابزار"
+
+#: ../data/gnome-nettool.ui.h:4
+msgid "Beep on ping"
+msgstr "بیب در هنگام پینگ"
+
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr "_ویرایش"
+
+#: ../data/gnome-nettool.ui.h:6
+msgid "Copy as text _report"
+msgstr "رونوشت همچون _گزارش متنی (text report)"
+
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "پاک کردن _تاریخچه"
+
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr "_راهنما"
+
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr "_محتویات"
+
+#: ../data/gnome-nettool.ui.h:10
+msgid "Devices - Network Tools"
+msgstr "دستگاه‌ها - ابزارهای شبکه"
+
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "دستگاه _شبکه:"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "_پیکربندی"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "اطلاعات IP"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "نشانی سخت‌افزاری:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "انتشار خاص:"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "سرعت پیوند:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "وضعیت:"
+
+#: ../data/gnome-nettool.ui.h:19
+msgid "Not Available"
+msgstr "موجود نیست"
+
+#: ../data/gnome-nettool.ui.h:20
+msgid "Interface Information"
+msgstr "اطلاعات رابط"
+
+#: ../data/gnome-nettool.ui.h:21
+msgid "Transmitted bytes:"
+msgstr "بایت‌های مخابره شده:"
+
+#: ../data/gnome-nettool.ui.h:22
+msgid "Received bytes:"
+msgstr "بایت‌های دریافت شده:"
+
+#: ../data/gnome-nettool.ui.h:23
+msgid "Transmission errors:"
+msgstr "خطاهای مخابره:"
+
+#: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "بسته‌های مخابره شده:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "بسته‌های دریافت‌شده:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "خطاهای دریافت:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "تصادم‌ها:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "آمار رابط"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "دستگاه‌ها"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "فقط"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "درخواست‌ها"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "درخواست‌های نامحدود"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "ارسال:"
+
+#: ../data/gnome-nettool.ui.h:34
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"نشانی شبکه را برای پینگ وارد کنید. برای مثال: www.domain.com یا 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:35
+msgid "Network address"
+msgstr "نشانی شبکه‌ای"
+
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "نشانی _شبکه:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "پینگ"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "۰.۰"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "میلی‌ثانیه"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "حداکثر:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "میانگین:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "حداقل:"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "آمار زمان رفت و برگشت"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "بسته‌های ارسال شده:"
+
+#: ../data/gnome-nettool.ui.h:46
 #, no-c-format
 msgid "0%"
 msgstr "۰٪"
 
-#: ../data/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "۰.۰"
-
-#: ../data/gnome-nettool.ui.h:5
-msgid "IP Information"
-msgstr "اطلاعات IP"
-
-#: ../data/gnome-nettool.ui.h:6
-msgid "Interface Information"
-msgstr "اطلاعات رابط"
-
-#: ../data/gnome-nettool.ui.h:7
-msgid "Interface Statistics"
-msgstr "آمار رابط"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "Round Trip Time Statistics"
-msgstr "آمار زمان رفت و برگشت"
-
-#: ../data/gnome-nettool.ui.h:9
-msgid "Transmission Statistics"
-msgstr "آمار مخابره"
-
-#: ../data/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "خدمت‌های فعال شبکه"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "میانگین:"
-
-#: ../data/gnome-nettool.ui.h:12
-msgid "Beep on ping"
-msgstr "بیب در هنگام پینگ"
-
-#: ../data/gnome-nettool.ui.h:13
-msgid "Clear _History"
-msgstr "پاک کردن _تاریخچه"
-
-#: ../data/gnome-nettool.ui.h:14
-msgid "Collisions:"
-msgstr "تصادم‌ها:"
-
-#: ../data/gnome-nettool.ui.h:15
-msgid "Copy as text _report"
-msgstr "رونوشت همچون _گزارش متنی (text report)"
-
-#: ../data/gnome-nettool.ui.h:16
-msgid "Details"
-msgstr "جزئیات"
-
-#: ../data/gnome-nettool.ui.h:17
-msgid "Devices"
-msgstr "دستگاه‌ها"
-
-#: ../data/gnome-nettool.ui.h:18
-msgid "Devices - Network Tools"
-msgstr "دستگاه‌ها - ابزارهای شبکه"
-
-#: ../data/gnome-nettool.ui.h:19
-msgid "Display:"
-msgstr "نمایش:"
-
-#: ../data/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "نشانی دامنه"
-
-#: ../data/gnome-nettool.ui.h:21
-msgid "Enter a domain address to lookup its whois information. For example: www.domain.com or 192.168.2.1"
-msgstr "یک نشانی دامنه‌ای برای مراجعه به اطلاعات whois وارد کنید. مثلا: www.domain.com یا 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:22
-#| msgid ""
-#| "Enter the network address to lookup. For example: www.domain.com or "
-#| "192.168.2.1"
-msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr "نشانی شبکه را جهت بررسی وارد کنید. برای مثال: www.domain.com یا ftp.domain.com."
-
-#: ../data/gnome-nettool.ui.h:23
-msgid "Enter the network address to finger that user. For example: www.domain.com or 192.168.2.1"
-msgstr "نشانی شبکه را برای finger کردن آن کاربر وارد کنید. برای مثال: www.domain.com یا 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:24
-msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
-msgstr "نشانی شبکه را برای پینگ وارد کنید. برای مثال: www.domain.com یا 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:25
-msgid "Enter the network address to scan for open ports. For example: www.domain.com or 192.168.2.1"
-msgstr "نشانی شبکه را جهت پوییدن برای درگاه‌های باز وارد کنید. برای مثال: www.domain.com یا 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:26
-#| msgid ""
-#| "Enter the network address to trace a route to. For example: www.domain."
-#| "com or 192.168.2.1"
-msgid "Enter the network address to trace a path to. For example: www.domain.com or 192.168.2.1"
-msgstr "نشانی شبکه را برای ردیابی مسیر (trace a route) وارد کنید. برای مثال: www.domain.com یا 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:27
-msgid "Enter the network address to trace a route to. For example: www.domain.com or 192.168.2.1"
-msgstr "نشانی شبکه را برای ردیابی مسیر(trace a route) وارد کنید. برای مثال: www.domain.com یا 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:28
-msgid "Enter the user to finger"
-msgstr "نام کاربر را برای finger وارد کنید"
-
-#: ../data/gnome-nettool.ui.h:29
-#: ../src/main.c:811
-msgid "Finger"
-msgstr "Finger"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Finger output"
-msgstr "خروجی Finger"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "Hardware address:"
-msgstr "نشانی سخت‌افزاری:"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Host"
-msgstr "میزبان"
-
-#: ../data/gnome-nettool.ui.h:33
-msgid "Link speed:"
-msgstr "سرعت پیوند:"
-
-#: ../data/gnome-nettool.ui.h:34
-#: ../src/main.c:733
-msgid "Lookup"
-msgstr "جستجو"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "Lookup output"
-msgstr "خروجی جستجو"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:37
-msgid "Maximum:"
-msgstr "حداکثر:"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "Minimum:"
-msgstr "حداقل:"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "Multicast Information"
-msgstr "اطلاعات انتشار خاص"
-
-#: ../data/gnome-nettool.ui.h:40
-msgid "Multicast:"
-msgstr "انتشار خاص:"
-
-#: ../data/gnome-nettool.ui.h:41
-#: ../src/main.c:444
-msgid "Netstat"
-msgstr "Netstat"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Netstat output"
-msgstr "خروجی Netstat"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Network address"
-msgstr "نشانی شبکه‌ای"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Not Available"
-msgstr "موجود نیست"
-
-#: ../data/gnome-nettool.ui.h:45
-msgid "Only"
-msgstr "فقط"
-
-#: ../data/gnome-nettool.ui.h:46
-msgid "Output for finger"
-msgstr "خروجی برای finger کردن"
-
 #: ../data/gnome-nettool.ui.h:47
-msgid "Output for lookup"
-msgstr "خروجی برای جستجو"
+msgid "0"
+msgstr "۰"
 
 #: ../data/gnome-nettool.ui.h:48
-msgid "Output for net stat"
-msgstr "خروجی برای وضعیت شبکه (net stat)"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Output for port scan"
-msgstr "خروجی برای پوییدن درگاه (port scan)"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Output for traceroute"
-msgstr "خروجی برای ردیابی مسیر (traceroute)"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Output for whois"
-msgstr "خروجی برای whois"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Packets received:"
-msgstr "بسته‌های دریافت شده:"
-
-#: ../data/gnome-nettool.ui.h:53
-msgid "Packets transmitted:"
-msgstr "بسته‌های ارسال شده:"
-
-#: ../data/gnome-nettool.ui.h:54
-#: ../src/main.c:290
-msgid "Ping"
-msgstr "پینگ"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Port Scan"
-msgstr "پویش درگاه‌ها"
-
-#: ../data/gnome-nettool.ui.h:56
-msgid "Port scan output"
-msgstr "خروجی پویش درگاه‌ها"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Received bytes:"
-msgstr "بایت‌های دریافت شده:"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Received packets:"
-msgstr "بسته‌های دریافت‌شده:"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid "Reception errors:"
-msgstr "خطاهای دریافت:"
-
-#: ../data/gnome-nettool.ui.h:60
-msgid "Routing Table Information"
-msgstr "اطلاعات جدول مسیریابی"
-
-#: ../data/gnome-nettool.ui.h:61
-#: ../src/main.c:615
-msgid "Scan"
-msgstr "پویش"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "Send:"
-msgstr "ارسال:"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid "State:"
-msgstr "وضعیت:"
-
-#: ../data/gnome-nettool.ui.h:64
 msgid "Successful packets:"
 msgstr "بسته‌های موفق:"
 
-#: ../data/gnome-nettool.ui.h:65
-#: ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "بسته‌های دریافت شده:"
+
+#: ../data/gnome-nettool.ui.h:50
+msgid "Transmission Statistics"
+msgstr "آمار مخابره"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr "جزئیات"
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "نمایش:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "اطلاعات جدول مسیریابی"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "خدمت‌های فعال شبکه"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "اطلاعات انتشار خاص"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "Netstat"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr "خروجی برای وضعیت شبکه (net stat)"
+
+#: ../data/gnome-nettool.ui.h:58
+msgid "Netstat output"
+msgstr "خروجی Netstat"
+
+#: ../data/gnome-nettool.ui.h:59
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"نشانی شبکه را برای ردیابی مسیر (trace a route) وارد کنید. برای مثال: www."
+"domain.com یا 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
 msgid "Trace"
 msgstr "ردیابی"
 
-#: ../data/gnome-nettool.ui.h:66
-msgid "Traceroute"
-msgstr "ردیابی مسیر (Traceroute)"
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr "خروجی برای ردیابی مسیر (traceroute)"
 
-#: ../data/gnome-nettool.ui.h:67
+#: ../data/gnome-nettool.ui.h:62
 msgid "Traceroute output"
 msgstr "خروجی ردیابی مسیر (traceroute)"
 
+#: ../data/gnome-nettool.ui.h:63
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"نشانی شبکه را برای ردیابی مسیر(trace a route) وارد کنید. برای مثال: www."
+"domain.com یا 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:64
+msgid "Traceroute"
+msgstr "ردیابی مسیر (Traceroute)"
+
+#: ../data/gnome-nettool.ui.h:65
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"نشانی شبکه را جهت پوییدن برای درگاه‌های باز وارد کنید. برای مثال: www.domain."
+"com یا 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "پویش"
+
+#: ../data/gnome-nettool.ui.h:67
+msgid "Output for port scan"
+msgstr "خروجی برای پوییدن درگاه (port scan)"
+
 #: ../data/gnome-nettool.ui.h:68
-msgid "Transmission errors:"
-msgstr "خطاهای مخابره:"
+msgid "Port scan output"
+msgstr "خروجی پویش درگاه‌ها"
 
 #: ../data/gnome-nettool.ui.h:69
-msgid "Transmitted bytes:"
-msgstr "بایت‌های مخابره شده:"
+msgid "Port Scan"
+msgstr "پویش درگاه‌ها"
 
 #: ../data/gnome-nettool.ui.h:70
-msgid "Transmitted packets:"
-msgstr "بسته‌های مخابره شده:"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "Unlimited requests"
-msgstr "درخواست‌های نامحدود"
-
-#: ../data/gnome-nettool.ui.h:72
-msgid "User"
-msgstr "کاربر"
-
-#: ../data/gnome-nettool.ui.h:73
-msgid "User name"
-msgstr "نام کاربر"
-
-#: ../data/gnome-nettool.ui.h:74
-#: ../src/main.c:915
-msgid "Whois"
-msgstr "Whois"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid "Whois output"
-msgstr "خروجی whois"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "_Configure"
-msgstr "_پیکربندی"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "_Contents"
-msgstr "_محتویات"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Domain address:"
-msgstr "نشانی _دامنه:"
-
-#: ../data/gnome-nettool.ui.h:79
-msgid "_Edit"
-msgstr "_ویرایش"
-
-#: ../data/gnome-nettool.ui.h:80
-msgid "_Help"
-msgstr "_راهنما"
-
-#: ../data/gnome-nettool.ui.h:81
 msgid "_Information type:"
 msgstr "نوع _اطلاعات:"
 
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Network address:"
-msgstr "نشانی _شبکه:"
+#: ../data/gnome-nettool.ui.h:71
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"نشانی شبکه را جهت بررسی وارد کنید. برای مثال: www.domain.com یا ftp.domain."
+"com."
 
-#: ../data/gnome-nettool.ui.h:83
-msgid "_Network device:"
-msgstr "دستگاه _شبکه:"
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "جستجو"
 
-#: ../data/gnome-nettool.ui.h:84
-msgid "_Tool"
-msgstr "_ابزار"
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr "خروجی برای جستجو"
 
-#: ../data/gnome-nettool.ui.h:85
+#: ../data/gnome-nettool.ui.h:74
+msgid "Lookup output"
+msgstr "خروجی جستجو"
+
+#: ../data/gnome-nettool.ui.h:75
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"نشانی شبکه را برای finger کردن آن کاربر وارد کنید. برای مثال: www.domain.com "
+"یا 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+msgid "Enter the user to finger"
+msgstr "نام کاربر را برای finger وارد کنید"
+
+#: ../data/gnome-nettool.ui.h:77
+msgid "User name"
+msgstr "نام کاربر"
+
+#: ../data/gnome-nettool.ui.h:78
 msgid "_Username:"
 msgstr "نام _کاربر:"
 
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
+
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr "خروجی برای finger کردن"
+
+#: ../data/gnome-nettool.ui.h:81
+msgid "Finger output"
+msgstr "خروجی Finger"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "نشانی _دامنه:"
+
+#: ../data/gnome-nettool.ui.h:83
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"یک نشانی دامنه‌ای برای مراجعه به اطلاعات whois وارد کنید. مثلا: www.domain."
+"com یا 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+msgid "Domain address"
+msgstr "نشانی دامنه"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Whois"
+
 #: ../data/gnome-nettool.ui.h:86
-msgid "ms"
-msgstr "میلی‌ثانیه"
+msgid "Output for whois"
+msgstr "خروجی برای whois"
 
 #: ../data/gnome-nettool.ui.h:87
-msgid "requests"
-msgstr "درخواست‌ها"
+msgid "Whois output"
+msgstr "خروجی whois"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: ../src/info.c:60
@@ -488,8 +500,7 @@ msgstr "رابط ناشناخته"
 msgid "Network Devices Not Found"
 msgstr "هیچ دستگاه شبکه‌ای یافت نشد"
 
-#: ../src/info.c:396
-#: ../src/info.c:399
+#: ../src/info.c:396 ../src/info.c:399
 msgid "Unknown"
 msgstr "ناشناس"
 
@@ -621,16 +632,14 @@ msgstr "DEVICE"
 msgid "Send a ping to a network address"
 msgstr "ارسال یک پینگ به یک نشانی شبکه‌ای"
 
-#: ../src/main.c:87
-#: ../src/main.c:95
-#: ../src/main.c:99
-#: ../src/main.c:103
+#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
 msgid "HOST"
 msgstr "HOST"
 
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "دریافت اطلاعات netstat.  گزینه‌های صحیح route، active، و multicast هستند."
+msgstr ""
+"دریافت اطلاعات netstat.  گزینه‌های صحیح route، active، و multicast هستند."
 
 #: ../src/main.c:91
 msgid "COMMAND"
@@ -666,11 +675,14 @@ msgstr "DOMAIN"
 
 #: ../src/main.c:130
 #, c-format
-msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
-msgstr "پرونده‌ی %s وجود ندارد، لطفاً بررسی کنید که ابزار شبکه گنوم (gnome-nettool) به درستی نصب شده باشد"
+msgid ""
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"installed"
+msgstr ""
+"پرونده‌ی %s وجود ندارد، لطفاً بررسی کنید که ابزار شبکه گنوم (gnome-nettool) به "
+"درستی نصب شده باشد"
 
-#: ../src/main.c:478
-#: ../src/netstat.c:464
+#: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
 msgstr "قرارداد"
 
@@ -728,7 +740,6 @@ msgstr "نام میزبان برای آدرس"
 #. It defines which server is the primary nameserver
 #. for a domain
 #: ../src/main.c:678
-#| msgid "Start-of-authority"
 msgid "Start of Authority"
 msgstr "Start of Authority"
 
@@ -764,8 +775,7 @@ msgstr "منبع IP"
 msgid "Port/Service"
 msgstr "درگاه/خدمت"
 
-#: ../src/netstat.c:487
-#: ../src/scan.c:213
+#: ../src/netstat.c:487 ../src/scan.c:213
 msgid "State"
 msgstr "وضعیت"
 
@@ -785,8 +795,7 @@ msgstr "دروازه"
 msgid "Netmask"
 msgstr "نقاب شبکه"
 
-#: ../src/netstat.c:665
-#: ../src/netstat.c:771
+#: ../src/netstat.c:665 ../src/netstat.c:771
 msgid "Interface"
 msgstr "رابط"
 
@@ -822,8 +831,7 @@ msgstr "رابط\tعضو\tگروه\n"
 msgid "A network address was not specified"
 msgstr "نشانی شبکه تعیین نشده است"
 
-#: ../src/nettool.c:205
-#: ../src/nettool.c:214
+#: ../src/nettool.c:205 ../src/nettool.c:214
 msgid "Please enter a valid network address and try again."
 msgstr "لطفاً یک نشانی صحیح شبکه وارد کرده و دوباره امتحان کنید."
 
@@ -883,8 +891,7 @@ msgstr "منبع"
 msgid "Seq"
 msgstr "سری"
 
-#: ../src/ping.c:602
-#: ../src/traceroute.c:336
+#: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
 msgstr "زمان"
 
@@ -973,13 +980,14 @@ msgstr "IP"
 #. Round Trip Time 2 (Time2),
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/traceroute.c:361
-#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "جست\tنام میزبان\tIP\tزمان ۱\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
-msgid "In order to use this feature of the program, %s must be installed in your system"
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
 msgstr "برای استفاده از ویژگی برنامه، %s باید بر روی سیستم شما نصب باشد"
 
 #: ../src/finger.c:65
