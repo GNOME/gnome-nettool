@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the gnome-nettool package.
 # Maxim Dizumanenko <dziumanenko@gmail.com>, 2004-2009
 # Korostil Daniel <ted.korostiled@gmail.com>, 2011, 2012.
+# Daniel Korostil <ted.korostiled@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-netool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-18 18:22+0200\n"
-"PO-Revision-Date: 2012-03-18 18:28+0300\n"
-"Last-Translator: Korostil Daniel <ted.korostiled@gmail.com>\n"
-"Language-Team: translation@linux.org.ua\n"
+"POT-Creation-Date: 2013-03-26 21:12+0200\n"
+"PO-Revision-Date: 2013-03-26 21:12+0300\n"
+"Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
+"Language-Team: linux.org.ua\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,6 +61,10 @@ msgstr "Не вдалось відкрити файл довідки"
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
 msgstr "Отримати інформацію про мережний пристрій"
+
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "мережа;монітор;віддалений;"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
 msgid "Historically used hostnames"
@@ -321,8 +326,8 @@ msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
 msgstr ""
-"Введіть мережеву адресу, щоб простежити шлях до неї. Наприклад: "
-"www.domain.com або 192.168.2.1"
+"Введіть мережеву адресу, щоб простежити шлях до неї. Наприклад: www.domain."
+"com або 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
 msgid "Trace"
@@ -379,8 +384,8 @@ msgstr "_Тип інформації"
 #: ../data/gnome-nettool.ui.h:71
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
-"Введіть мережеву адресу для пошуку. Наприклад: www.domain.com або "
-"ftp.domain.com."
+"Введіть мережеву адресу для пошуку. Наприклад: www.domain.com або ftp.domain."
+"com."
 
 #: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
 msgid "Lookup"
@@ -965,14 +970,13 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Hop\tВузол\tIP\tЧас 1\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
