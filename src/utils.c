@@ -272,7 +272,7 @@ util_legible_bytes (guint64 bytes)
 	    unit = "KiB";
 	}
 	
-	result = g_strdup_printf ("%lld.%lld %s", short_rx / 10,
+	result = g_strdup_printf ("%" G_GUINT64_FORMAT ".%" G_GUINT64_FORMAT " %s", short_rx / 10,
                                   short_rx % 10, unit);
 	return result;	
 }

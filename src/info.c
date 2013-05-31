@@ -232,13 +232,13 @@ info_nic_update_stats (gpointer data)
 	text_rx_bytes = util_legible_bytes (netload.bytes_in);
 	text_tx_bytes = util_legible_bytes (netload.bytes_out);
 
-	g_sprintf (rx_pkt, "%lld", netload.packets_in);
-	g_sprintf (tx_pkt, "%lld", netload.packets_out);
+	g_sprintf (rx_pkt, "%" G_GUINT64_FORMAT, netload.packets_in);
+	g_sprintf (tx_pkt, "%" G_GUINT64_FORMAT, netload.packets_out);
 
-	g_sprintf (rx_error, "%lld", netload.errors_in);
-	g_sprintf (tx_error, "%lld", netload.errors_out);
+	g_sprintf (rx_error, "%" G_GUINT64_FORMAT, netload.errors_in);
+	g_sprintf (tx_error, "%" G_GUINT64_FORMAT, netload.errors_out);
 
-	g_sprintf (collisions, "%lld", netload.collisions);
+	g_sprintf (collisions, "%" G_GUINT64_FORMAT, netload.collisions);
 	
 	gtk_label_set_text (GTK_LABEL (info->tx_bytes), text_tx_bytes);
 	gtk_label_set_text (GTK_LABEL (info->tx), tx_pkt);
