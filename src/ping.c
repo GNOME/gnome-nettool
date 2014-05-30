@@ -519,7 +519,7 @@ ping_foreach_with_tree (Netinfo * netinfo, gchar * line, gint len,
 		g_sprintf (stmp, "%d%%", packets_success);
 		gtk_label_set_text (pkt_success, stmp);
 	}
-	draw_ping_graph (netinfo);
+	gtk_widget_queue_draw (netinfo->graph);
 }
 
 static gint
