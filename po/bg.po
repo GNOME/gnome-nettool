@@ -1,10 +1,10 @@
 # Bulgarian translation of gnome-nettool po-file.
 # This file is distributed under the same license as the gnome-nettool package.
 # Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
-# Copyright (C) 2011, 2012, 2013 Free Software Foundation, Inc.
+# Copyright (C) 2011, 2012, 2013, 2015 Free Software Foundation, Inc.
 # Rostislav "zbrox" Raykov <zbrox@i-space.org>, 2004, 2005
 # Iassen Pramatarov <turin@fsa-bg.org>, 2005.
-# Alexander Shopov <ash@kambanaria.org>, 2006, 2007, 2009, 2011, 2012, 2013.
+# Alexander Shopov <ash@kambanaria.org>, 2006, 2007, 2009, 2011, 2012, 2013, 2015.
 # Yavor Doganov <yavor@gnu.org>, 2008.
 #
 #
@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-13 16:49+0200\n"
-"PO-Revision-Date: 2013-01-13 16:49+0200\n"
+"POT-Creation-Date: 2015-03-09 19:34+0200\n"
+"PO-Revision-Date: 2015-03-09 19:34+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -69,6 +69,10 @@ msgstr "Файлът с помощта не може да бъде отворе�
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
 msgstr "Разглеждане на информация за мрежата ви"
+
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "мрежа;монитор;наблюдение;хост;отдалечен;network;monitor;remote;"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
 msgid "Historically used hostnames"
@@ -977,10 +981,9 @@ msgid "IP"
 msgstr "Адрес на IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Скок\tИме на хост\tАдрес на IP\tВреме 1\n"
 
