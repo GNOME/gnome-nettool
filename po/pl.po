@@ -7,14 +7,14 @@
 # Artur Flinta <aflinta@at.kernel.pl>, 2004-2007.
 # Wadim Dziedzic <wdziedzic@aviary.pl>, 2007.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2013.
-# Aviary.pl <gnomepl@aviary.pl>, 2007-2013.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2015.
+# Aviary.pl <gnomepl@aviary.pl>, 2007-2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-22 16:32+0100\n"
-"PO-Revision-Date: 2013-01-22 16:33+0100\n"
+"POT-Creation-Date: 2015-08-24 20:27+0200\n"
+"PO-Revision-Date: 2015-08-24 20:28+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -32,8 +32,8 @@ msgstr ""
 "Artur Flinta <aflinta@at.kernel.pl>, 2004-2007\n"
 "Wadim Dziedzic <wdziedzic@aviary.pl>, 2007\n"
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2010-2013\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2007-2013"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2015\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2007-2015"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -61,7 +61,7 @@ msgstr "Bezczynny"
 #: ../src/callbacks.c:463
 #, c-format
 msgid "%s - Network Tools"
-msgstr "%s - narzędzia sieciowe"
+msgstr "%s — narzędzia sieciowe"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -139,7 +139,7 @@ msgstr "_Spis treści"
 
 #: ../data/gnome-nettool.ui.h:10
 msgid "Devices - Network Tools"
-msgstr "Urządzenia - narzędzia sieciowe"
+msgstr "Urządzenia — narzędzia sieciowe"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -311,7 +311,7 @@ msgstr "Wyświetlanie:"
 
 #: ../data/gnome-nettool.ui.h:53
 msgid "Routing Table Information"
-msgstr "Tablicy routingu"
+msgstr "Tablica trasowania"
 
 #: ../data/gnome-nettool.ui.h:54
 msgid "Active Network Services"
@@ -522,7 +522,7 @@ msgstr "Nieaktywny"
 
 #: ../src/info.c:478
 msgid "Loopback"
-msgstr "Loopback"
+msgstr "Zwrotny"
 
 #: ../src/info.c:489
 msgid "Enabled"
@@ -647,7 +647,7 @@ msgstr "KOMPUTER"
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
-"Pobiera informacje netstat. Prawidłowe opcje to: route, active, multicast."
+"Pobiera informacje netstat. Prawidłowe opcje: route, active, multicast."
 
 #: ../src/main.c:91
 msgid "COMMAND"
@@ -687,7 +687,7 @@ msgid ""
 "The file %s doesn't exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Plik \"%s\" nie istnieje. Proszę sprawdzić, czy program gnome-nettool jest "
+"Plik „%s” nie istnieje. Proszę sprawdzić, czy program gnome-nettool jest "
 "poprawnie zainstalowany"
 
 #: ../src/main.c:478 ../src/netstat.c:464
@@ -749,7 +749,7 @@ msgstr "Nazwa komputera dla adresu"
 #. for a domain
 #: ../src/main.c:678
 msgid "Start of Authority"
-msgstr "Start of Authority (SOA)"
+msgstr "SOA"
 
 #: ../src/main.c:679
 msgid "Text Information"
@@ -789,7 +789,7 @@ msgstr "Stan"
 
 #: ../src/netstat.c:640
 msgid "Destination/Prefix"
-msgstr "Przeznaczenie/Prefiks"
+msgstr "Przeznaczenie/prefiks"
 
 #: ../src/netstat.c:642
 msgid "Destination"
@@ -846,11 +846,11 @@ msgstr "Proszę wprowadzić prawidłowy adres sieciowy i spróbować jeszcze raz
 #: ../src/nettool.c:212
 #, c-format
 msgid "The address '%s' cannot be found"
-msgstr "Nie można odnaleźć adresu \"%s\""
+msgstr "Nie można odnaleźć adresu „%s”"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
-msgstr "Nie określono adresu domeny"
+msgstr "Nie podano adresu domeny"
 
 #: ../src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
@@ -859,11 +859,11 @@ msgstr "Proszę wprowadzić prawidłowy adres domeny i spróbować jeszcze raz."
 #: ../src/nettool.c:290
 #, c-format
 msgid "An error occurred when try to run '%s'"
-msgstr "Wystąpił błąd podczas próby uruchomienia \"%s\""
+msgstr "Wystąpił błąd podczas próby uruchomienia „%s”"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
-msgstr "Informacje nie są dostępne"
+msgstr "Informacje są niedostępne"
 
 #: ../src/nettool.c:589
 msgid "Stop"
@@ -880,7 +880,7 @@ msgstr "Czas (ms):"
 
 #: ../src/ping.c:176
 msgid "Seq. No.:"
-msgstr "Seq. No.:"
+msgstr "Numer sekwencji:"
 
 #: ../src/ping.c:261
 #, c-format
@@ -897,7 +897,7 @@ msgstr "Źródło"
 
 #: ../src/ping.c:592
 msgid "Seq"
-msgstr "Sek"
+msgstr "Sekwencja"
 
 #: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
@@ -984,10 +984,9 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Skok\tKomputer\tIP\tCzas 1\n"
 
@@ -1001,12 +1000,12 @@ msgstr "Aby użyć tej funkcji programu, należy zainstalować program %s"
 #: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr "Pobieranie informacji o %s z \"%s\""
+msgstr "Pobieranie informacji o %s z „%s”"
 
 #: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "Pobieranie informacji o wszystkich użytkownikach z \"%s\""
+msgstr "Pobieranie informacji o wszystkich użytkownikach z „%s”"
 
 #: ../src/whois.c:62
 #, c-format
