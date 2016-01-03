@@ -1,24 +1,30 @@
 # Thai translation of gnome-nettool.
-# Copyright (C) 2005-2012 Free Software Foundation, Inc.
+# Copyright (C) 2005-2016 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2012.
+# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2005-2012.
+# Akom Chotiphantawanon <knight2000@gmail.com>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool 2.23.3\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-05-15 20:01+0000\n"
-"PO-Revision-Date: 2012-09-07 22:11+0700\n"
-"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
+"POT-Creation-Date: 2015-12-29 21:28+0000\n"
+"PO-Revision-Date: 2016-01-03 17:12+0700\n"
+"Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
-msgstr "Theppitak Karoonboonyanan <thep@linux.thai.net>"
+msgstr ""
+"Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
+"Akom Chotiphantawanon <knight2000@gmail.com>"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -54,6 +60,10 @@ msgstr "ไม่สามารถเปิดแฟ้มเอกสารว
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
 msgstr "ดูข้อมูลเกี่ยวกับเครือข่ายของคุณ"
+
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr "เครือข่าย;เฝ้าสังเกต;แม่ข่าย;"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
 msgid "Historically used hostnames"
@@ -950,14 +960,13 @@ msgid "IP"
 msgstr "ไอพี"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "ฮ็อป\tชื่อเครื่อง\tไอพี\tเวลา 1\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
