@@ -666,7 +666,12 @@ nettool_lookup_setup_combo_type (Netinfo *lookup)
 		N_("Internet Address"),
 		N_("Canonical Name"),
 		N_("CPU / OS Type"),
-		/* When asking for MX record in DNS context */
+		/* Translators: Mailbox Exchange refers to a DNS record.
+		   It defines the priority of mail servers to contact
+		   to deliver an email.
+		   It has nothing to do with e-mail clients.
+		   See https://tools.ietf.org/html/rfc5321#section-3.6.2
+		 */
 		N_("Mailbox Exchange"),
 		N_("Mailbox Information"),
 		/* When asking for NS record in DNS context */
