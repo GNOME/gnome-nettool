@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-17 14:51+0100\n"
-"PO-Revision-Date: 2013-03-16 17:55+0100\n"
+"POT-Creation-Date: 2016-03-20 23:13+0100\n"
+"PO-Revision-Date: 2016-03-20 21:23+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -398,7 +398,7 @@ msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
 "Angiv domæne til \"lookup\". For eksempel: domaene.dk eller ftp.domain.com."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Opslag"
 
@@ -430,7 +430,7 @@ msgstr "Brugernavn"
 msgid "_Username:"
 msgstr "_Brugernavn:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -458,7 +458,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Domæneadresse"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -724,40 +724,47 @@ msgstr "Kanonisk navn"
 msgid "CPU / OS Type"
 msgstr "CPU / OS-type"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+# XXXX kan ikke verificere dette fra kildekoden
+# https://bugzilla.gnome.org/show_bug.cgi?id=763957
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
-msgstr "E-postkasse Exchange"
+msgstr "Postkasse-udveksling"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
-msgstr "E-postkasse-information"
+msgstr "Information om postkasse"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Navneserver"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Værtsnavn for adresse"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Start på autoritet"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Tekstinformation"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Velkendte tjenester"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Eventuel information"
 
