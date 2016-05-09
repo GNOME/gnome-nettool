@@ -1,24 +1,24 @@
 # Occitan translation of gnome-nettool.
 # Copyright (C) 1998-2012 Free Software Foundation, Inc.
 # This file is distributed under the GNU General Public License 2.0.
-#
 # Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2006-2008.
 # Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>, 2015.
+# Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-07 18:57+0000\n"
-"PO-Revision-Date: 2015-06-10 10:57+0200\n"
-"Last-Translator: Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>\n"
-"Language-Team: www.totenoc.eu\n"
+"POT-Creation-Date: 2016-04-29 08:54+0000\n"
+"PO-Revision-Date: 2016-05-08 18:55+0200\n"
+"Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
+"Language-Team: Tot En Òc\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../src/callbacks.c:332
@@ -31,7 +31,7 @@ msgstr "Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>"
 msgid "Copyright © 2003-2008 %s"
 msgstr "Copyright © 2003-2008 %s"
 
-# Chers développeurs, votre nom manque d'imagination e nous le préférons en français (Stéphane).
+# Chers développeurs, vòstre nom manque d'imagination e nous lo préférons en français (Stéphane).
 #. Dear translator: This is the name of the application
 #: ../src/callbacks.c:343 ../src/callbacks.c:344
 #: ../data/gnome-nettool.desktop.in.in.h:1
@@ -57,7 +57,7 @@ msgstr "%s - Aisinas ret"
 msgid "Unable to open help file"
 msgstr "Impossible de dobrir lo fichièr d'ajuda"
 
-# Utilisation de l'infinitif dans les infobulles del Bureau
+# Utilizacion de l'infinitiu dins las infobullas del Burèu
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
 msgstr "Afichar d'informacions sus vòstra ret"
@@ -388,7 +388,7 @@ msgstr ""
 "Picatz lo nom de domeni de percórrer. Per exemple : domain.com o ftp.domain."
 "com."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Percórrer"
 
@@ -420,7 +420,7 @@ msgstr "Nom d'utilizaire"
 msgid "_Username:"
 msgstr "Nom d'_utilizaire :"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -448,7 +448,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Adreça del domeni"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -716,40 +716,45 @@ msgstr "Nom canonic"
 msgid "CPU / OS Type"
 msgstr "Tipe de CPU/OS"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Mailbox Exchange"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Informacions Mailbox"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Servidor de noms"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Nom d'òste per l'adreça"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Start of Authority"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Informacions tèxte"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Servicis plan coneguts"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Quala que siá / totas las informacions"
 
@@ -850,7 +855,7 @@ msgstr "Picatz una adreça de domeni valida e ensajatz tornamai."
 #, c-format
 msgid "An error occurred when try to run '%s'"
 msgstr ""
-"Una error s'es producha al moment de la temptativa d'execucion de « %s »"
+"Una error s'es produita al moment de la temptativa d'execucion de « %s »"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
