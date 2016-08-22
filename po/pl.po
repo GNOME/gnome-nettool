@@ -1,30 +1,26 @@
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aviary.pl
-# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# gnomepl@aviary.pl
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Polish translation for gnome-nettool.
+# Copyright © 2004-2016 the gnome-nettool authors.
+# This file is distributed under the same license as the gnome-nettool package.
 # Artur Flinta <aflinta@at.kernel.pl>, 2004-2007.
 # Wadim Dziedzic <wdziedzic@aviary.pl>, 2007.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2015.
-# Aviary.pl <gnomepl@aviary.pl>, 2007-2015.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2016.
+# Aviary.pl <community-poland@mozilla.org>, 2007-2016.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-24 20:27+0200\n"
-"PO-Revision-Date: 2015-08-24 20:28+0200\n"
+"POT-Creation-Date: 2016-08-22 17:19+0200\n"
+"PO-Revision-Date: 2016-08-22 17:20+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: Poland\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -32,8 +28,8 @@ msgstr ""
 "Artur Flinta <aflinta@at.kernel.pl>, 2004-2007\n"
 "Wadim Dziedzic <wdziedzic@aviary.pl>, 2007\n"
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2010-2015\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2007-2015"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2016\n"
+"Aviary.pl <community-poland@mozilla.org>, 2007-2016"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -69,7 +65,7 @@ msgstr "Nie można otworzyć pliku pomocy"
 
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
-msgstr "Wyświetlanie informacji o sieci"
+msgstr "Wyświetlanie informacji o sieci"
 
 #: ../data/gnome-nettool.desktop.in.in.h:3
 msgid "network;monitor;remote;"
@@ -237,7 +233,7 @@ msgstr "Wyślij:"
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Proszę wprowadzić adres sieciowy do odpytania. Na przykład: www.domena.com "
+"Proszę wprowadzić adres sieciowy do odpytania. Na przykład: www.example.com "
 "lub 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:35
@@ -339,7 +335,7 @@ msgid ""
 "192.168.2.1"
 msgstr ""
 "Proszę wprowadzić adres sieciowy do śledzenia ścieżki. Na przykład: www."
-"domena.com lub 192.168.2.1"
+"example.com lub 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
 msgid "Trace"
@@ -358,8 +354,8 @@ msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
-"Proszę wprowadzić adres sieciowy do śledzenia trasy. Na przykład: www.domena."
-"com lub 192.168.2.1"
+"Proszę wprowadzić adres sieciowy do śledzenia trasy. Na przykład: www."
+"example.com lub 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:64
 msgid "Traceroute"
@@ -371,7 +367,7 @@ msgid ""
 "com or 192.168.2.1"
 msgstr ""
 "Proszę wprowadzić adres sieciowy do wyszukania otwartych portów. Na "
-"przykład: www.domena.com lub 192.168.2.1"
+"przykład: www.example.com lub 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
 msgid "Scan"
@@ -396,10 +392,10 @@ msgstr "Typ _informacji:"
 #: ../data/gnome-nettool.ui.h:71
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
-"Proszę wprowadzić domenę do wyszukania. Na przykład: domena.com lub ftp."
-"domena.com."
+"Proszę wprowadzić domenę do wyszukania. Na przykład: example.com lub ftp."
+"example.com."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Przeszukanie"
 
@@ -417,7 +413,7 @@ msgid ""
 "or 192.168.2.1"
 msgstr ""
 "Proszę wprowadzić adres sieciowy użytkownika dla polecenia finger. Na "
-"przykład: auth.domena.com lub 192.168.2.1"
+"przykład: auth.example.com lub 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:76
 msgid "Enter the user to finger"
@@ -431,7 +427,7 @@ msgstr "Nazwa użytkownika"
 msgid "_Username:"
 msgstr "_Nazwa użytkownika:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -453,13 +449,13 @@ msgid ""
 "domain.com or 192.168.2.1"
 msgstr ""
 "Proszę wprowadzić adres sieciowy do wyszukania jego informacji whois. Na "
-"przykład: www.domena.com lub 192.168.2.1"
+"przykład: www.example.com lub 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:84
 msgid "Domain address"
 msgstr "Adres domeny"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -630,7 +626,7 @@ msgstr "Źródło\tTTL\tTyp adresu\tTyp wpisu\tWyniki\n"
 
 #: ../src/main.c:82
 msgid "Load information for a network device"
-msgstr "Wczytuje informacje o urządzeniu sieciowym"
+msgstr "Wczytuje informacje o urządzeniu sieciowym"
 
 #: ../src/main.c:83
 msgid "DEVICE"
@@ -720,46 +716,51 @@ msgstr "Adres internetowy"
 
 #: ../src/main.c:667
 msgid "Canonical Name"
-msgstr "Nazwa kanoniczna (CNAME)"
+msgstr "Nazwa kanoniczna"
 
 #: ../src/main.c:668
 msgid "CPU / OS Type"
 msgstr "Procesor/system operacyjny"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
-msgstr "Mailbox Exchange"
+msgstr "Wymiana skrzynek pocztowych"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
-msgstr "Informacje o skrzynce pocztowej"
+msgstr "Informacje o skrzynce pocztowej"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Serwer nazw"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Nazwa komputera dla adresu"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "SOA"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Informacje tekstowe"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Dobrze znane usługi"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Jakiekolwiek/wszystkie informacje"
 
@@ -773,7 +774,7 @@ msgstr "Pobieranie listy aktywnych połączeń internetowych"
 
 #: ../src/netstat.c:158
 msgid "Getting group memberships"
-msgstr "Pobieranie listy członkostwa w grupach"
+msgstr "Pobieranie listy członkostwa w grupach"
 
 #: ../src/netstat.c:471
 msgid "IP Source"
@@ -789,11 +790,11 @@ msgstr "Stan"
 
 #: ../src/netstat.c:640
 msgid "Destination/Prefix"
-msgstr "Przeznaczenie/prefiks"
+msgstr "Cel/przedrostek"
 
 #: ../src/netstat.c:642
 msgid "Destination"
-msgstr "Przeznaczenie"
+msgstr "Cel"
 
 #: ../src/netstat.c:649
 msgid "Gateway"
@@ -827,7 +828,7 @@ msgstr "Protokół\tŹródło IP\tPort/Usługa\tStan\n"
 #. It's a tabular output, and these belongs to the column titles
 #: ../src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
-msgstr "Przeznaczenie\tBrama\tMaska sieci\tInterfejs\n"
+msgstr "Cel\tBrama\tMaska sieci\tInterfejs\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
@@ -841,7 +842,7 @@ msgstr "Nie podano adresu sieciowego"
 
 #: ../src/nettool.c:205 ../src/nettool.c:214
 msgid "Please enter a valid network address and try again."
-msgstr "Proszę wprowadzić prawidłowy adres sieciowy i spróbować jeszcze raz."
+msgstr "Proszę wprowadzić prawidłowy adres sieciowy i spróbować jeszcze raz."
 
 #: ../src/nettool.c:212
 #, c-format
@@ -854,7 +855,7 @@ msgstr "Nie podano adresu domeny"
 
 #: ../src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
-msgstr "Proszę wprowadzić prawidłowy adres domeny i spróbować jeszcze raz."
+msgstr "Proszę wprowadzić prawidłowy adres domeny i spróbować jeszcze raz."
 
 #: ../src/nettool.c:290
 #, c-format
@@ -949,7 +950,7 @@ msgstr "Udane pakiety:\t%s\n"
 #: ../src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr "Wyszukiwanie otwartych portów w %s"
+msgstr "Wyszukiwanie otwartych portów w %s"
 
 #: ../src/scan.c:205
 msgid "Port"
@@ -1000,14 +1001,14 @@ msgstr "Aby użyć tej funkcji programu, należy zainstalować program %s"
 #: ../src/finger.c:65
 #, c-format
 msgid "Getting information of %s on \"%s\""
-msgstr "Pobieranie informacji o %s z „%s”"
+msgstr "Pobieranie informacji o %s z „%s”"
 
 #: ../src/finger.c:69
 #, c-format
 msgid "Getting information of all users on \"%s\""
-msgstr "Pobieranie informacji o wszystkich użytkownikach z „%s”"
+msgstr "Pobieranie informacji o wszystkich użytkownikach z „%s”"
 
 #: ../src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
-msgstr "Pobieranie informacji whois o %s"
+msgstr "Pobieranie informacji whois o %s"
