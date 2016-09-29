@@ -8,24 +8,24 @@
 # Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
 # Jochen Skulj <jochen@jochenskulj.de>, 2006.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2012.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2012, 2016.
 # Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-01 21:08+0100\n"
-"PO-Revision-Date: 2013-02-01 21:09+0100\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-09-29 13:44+0000\n"
+"PO-Revision-Date: 2016-09-29 15:47+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -45,8 +45,7 @@ msgid "Copyright © 2003-2008 %s"
 msgstr "Copyright © 2003-2008 %s"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:343
-#: ../src/callbacks.c:344
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
 #: ../data/gnome-nettool.desktop.in.in.h:1
 msgid "Network Tools"
 msgstr "Netzwerkdiagnose"
@@ -55,9 +54,7 @@ msgstr "Netzwerkdiagnose"
 msgid "Graphical user interface for common network utilities"
 msgstr "Eine grafische Oberfläche zur einfachen Netzwerkdiagnose"
 
-#: ../src/callbacks.c:458
-#: ../src/main.c:142
-#: ../src/nettool.c:524
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
 msgid "Idle"
 msgstr "Bereit"
 
@@ -237,8 +234,11 @@ msgid "Send:"
 msgstr "Senden:"
 
 #: ../data/gnome-nettool.ui.h:34
-msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
-msgstr "Bitte geben Sie die Netzwerkadresse ein, an die ein Ping gesendet werden soll. Zum Beispiel: www.domain.de oder 192.168.2.1"
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Bitte geben Sie die Netzwerkadresse ein, an die ein Ping gesendet werden "
+"soll. Zum Beispiel: www.domain.de oder 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:35
 msgid "Network address"
@@ -248,8 +248,7 @@ msgstr "Netzwerkadresse"
 msgid "_Network address:"
 msgstr "_Netzwerkadresse:"
 
-#: ../data/gnome-nettool.ui.h:37
-#: ../src/main.c:290
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
 msgid "Ping"
 msgstr "Ping"
 
@@ -322,8 +321,7 @@ msgstr "Aktive Netzwerkdienste"
 msgid "Multicast Information"
 msgstr "Multicast-Informationen"
 
-#: ../data/gnome-nettool.ui.h:56
-#: ../src/main.c:444
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
 msgid "Netstat"
 msgstr "Netzwerkstatus"
 
@@ -336,11 +334,14 @@ msgid "Netstat output"
 msgstr "Ausgabe von Netzwerkstatus"
 
 #: ../data/gnome-nettool.ui.h:59
-msgid "Enter the network address to trace a path to. For example: www.domain.com or 192.168.2.1"
-msgstr "Bitte geben Sie die Netzwerkadresse ein, deren Route verfolgt werden soll. Zum Beispiel: »www.domain.de« oder »192.168.2.1«"
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"Bitte geben Sie die Netzwerkadresse ein, deren Route verfolgt werden soll. "
+"Zum Beispiel: »www.domain.de« oder »192.168.2.1«"
 
-#: ../data/gnome-nettool.ui.h:60
-#: ../src/main.c:375
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
 msgid "Trace"
 msgstr "Verfolgen"
 
@@ -353,19 +354,26 @@ msgid "Traceroute output"
 msgstr "Ausgabe von Traceroute"
 
 #: ../data/gnome-nettool.ui.h:63
-msgid "Enter the network address to trace a route to. For example: www.domain.com or 192.168.2.1"
-msgstr "Bitte geben Sie die Netzwerkadresse ein, nach deren Route verfolgt werden soll. Zum Beispiel: www.domain.de oder 192.168.2.1"
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Bitte geben Sie die Netzwerkadresse ein, nach deren Route verfolgt werden "
+"soll. Zum Beispiel: www.domain.de oder 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:64
 msgid "Traceroute"
 msgstr "Traceroute"
 
 #: ../data/gnome-nettool.ui.h:65
-msgid "Enter the network address to scan for open ports. For example: www.domain.com or 192.168.2.1"
-msgstr "Bitte geben Sie die Netzwerkadresse ein, bei der nach offenen Ports gesucht werden soll. Zum Beispiel: www.domain.de oder 192.168.2.1"
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Bitte geben Sie die Netzwerkadresse ein, bei der nach offenen Ports gesucht "
+"werden soll. Zum Beispiel: www.domain.de oder 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:66
-#: ../src/main.c:615
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
 msgid "Scan"
 msgstr "Scannen"
 
@@ -387,10 +395,11 @@ msgstr "Art der _Informationen:"
 
 #: ../data/gnome-nettool.ui.h:71
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr "Bitte geben Sie die Domäne ein, welche nachgeschlagen werden soll. Zum Beispiel: »www.domain.de« oder »ftp.domain.com«."
+msgstr ""
+"Bitte geben Sie die Domäne ein, welche nachgeschlagen werden soll. Zum "
+"Beispiel: »www.domain.de« oder »ftp.domain.com«."
 
-#: ../data/gnome-nettool.ui.h:72
-#: ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Nachschlagen"
 
@@ -403,12 +412,18 @@ msgid "Lookup output"
 msgstr "Ergebnis des Nachschlagens"
 
 #: ../data/gnome-nettool.ui.h:75
-msgid "Enter the network address to finger that user. For example: www.domain.com or 192.168.2.1"
-msgstr "Geben Sie die Netzwerkadresse ein, an die eine »Finger«-Anfrage gesendet werden soll. z.B.: www.domain.de oder 192.168.2.1"
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Geben Sie die Netzwerkadresse ein, an die eine »Finger«-Anfrage gesendet "
+"werden soll. z.B.: www.domain.de oder 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:76
 msgid "Enter the user to finger"
-msgstr "Geben Sie den Benutzer ein, an den eine »Finger«-Anfrage gesendet werden soll."
+msgstr ""
+"Geben Sie den Benutzer ein, an den eine »Finger«-Anfrage gesendet werden "
+"soll."
 
 #: ../data/gnome-nettool.ui.h:77
 msgid "User name"
@@ -418,8 +433,7 @@ msgstr "Benutzername"
 msgid "_Username:"
 msgstr "_Benutzername:"
 
-#: ../data/gnome-nettool.ui.h:79
-#: ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -436,15 +450,18 @@ msgid "_Domain address:"
 msgstr "_Domänenadresse:"
 
 #: ../data/gnome-nettool.ui.h:83
-msgid "Enter a domain address to lookup its whois information. For example: www.domain.com or 192.168.2.1"
-msgstr "Bitte geben Sie die Adresse der Domäne ein, die nach Informationen durchsucht werden soll. z.B.: www.domain.de oder 192.168.2.1"
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Bitte geben Sie die Adresse der Domäne ein, die nach Informationen "
+"durchsucht werden soll. z.B.: www.domain.de oder 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:84
 msgid "Domain address"
 msgstr "Domänenadresse"
 
-#: ../data/gnome-nettool.ui.h:85
-#: ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -482,94 +499,97 @@ msgid "Infrared Interface"
 msgstr "Infrarotschnittstelle"
 
 #: ../src/info.c:66
+msgid "Infiniband Interface"
+msgstr "Infiniband-Schnittstelle"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Loopback-Schnittstelle"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Unbekannte Schnittstelle"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Netzwerkgeräte nicht gefunden"
 
-#: ../src/info.c:396
-#: ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Aktiv"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Inaktiv"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Deaktiviert"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Netzwerkgerät:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardware-Adresse:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "Größtmögliches Datenpaket:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Verbindungsgeschwindigkeit:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Status:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Übertragene Pakete:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Übertragungsfehler:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Empfangene Pakete:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Empfangsfehler:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kollisionen:\t%s\n"
@@ -626,16 +646,15 @@ msgstr "GERÄT"
 msgid "Send a ping to a network address"
 msgstr "Einen »ping« an eine Netzwerkadresse senden"
 
-#: ../src/main.c:87
-#: ../src/main.c:95
-#: ../src/main.c:99
-#: ../src/main.c:103
+#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
 msgid "HOST"
 msgstr "HOST"
 
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr "Informationen zum Netzwerkstatus anzeigen.  Gültige Optionen sind: route, active, multicast."
+msgstr ""
+"Informationen zum Netzwerkstatus anzeigen.  Gültige Optionen sind: route, "
+"active, multicast."
 
 #: ../src/main.c:91
 msgid "COMMAND"
@@ -671,11 +690,14 @@ msgstr "DOMÄNE"
 
 #: ../src/main.c:130
 #, c-format
-msgid "The file %s doesn't exist, please check if gnome-nettool is correctly installed"
-msgstr "Die Datei »%s« existiert nicht! Bitte überprüfen Sie, ob gnome-nettool korrekt installiert ist"
+msgid ""
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"installed"
+msgstr ""
+"Die Datei »%s« existiert nicht! Bitte überprüfen Sie, ob gnome-nettool "
+"korrekt installiert ist"
 
-#: ../src/main.c:478
-#: ../src/netstat.c:464
+#: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
 msgstr "Protokoll"
 
@@ -711,40 +733,45 @@ msgstr "Kanonischer Name"
 msgid "CPU / OS Type"
 msgstr "Prozessortyp / Betriebssystem"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Postfachaustausch"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Postfachinformationen"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Namens-Server"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Rechnername für Adresse"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Oberste Autorität"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Textinformationen"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Allgemein bekannte Dienste"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Irgendwelche / Alle Informationen"
 
@@ -768,8 +795,7 @@ msgstr "IP Quelle"
 msgid "Port/Service"
 msgstr "Port / Dienst"
 
-#: ../src/netstat.c:487
-#: ../src/scan.c:213
+#: ../src/netstat.c:487 ../src/scan.c:213
 msgid "State"
 msgstr "Status"
 
@@ -789,8 +815,7 @@ msgstr "Zugang"
 msgid "Netmask"
 msgstr "Netzwerkmaske"
 
-#: ../src/netstat.c:665
-#: ../src/netstat.c:771
+#: ../src/netstat.c:665 ../src/netstat.c:771
 msgid "Interface"
 msgstr "Schnittstelle"
 
@@ -826,10 +851,11 @@ msgstr "Schnittstelle\tMitglied\tGruppe\n"
 msgid "A network address was not specified"
 msgstr "Sie haben keine Netzwerkadresse angegeben"
 
-#: ../src/nettool.c:205
-#: ../src/nettool.c:214
+#: ../src/nettool.c:205 ../src/nettool.c:214
 msgid "Please enter a valid network address and try again."
-msgstr "Bitte geben Sie eine gültige Netzwerkadresse ein und versuchen Sie es danach erneut."
+msgstr ""
+"Bitte geben Sie eine gültige Netzwerkadresse ein und versuchen Sie es danach "
+"erneut."
 
 #: ../src/nettool.c:212
 #, c-format
@@ -842,7 +868,9 @@ msgstr "Sie haben keine Domänenadresse angegeben"
 
 #: ../src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
-msgstr "Bitte geben Sie eine gültige Domänenadresse ein und versuchen Sie es danach erneut."
+msgstr ""
+"Bitte geben Sie eine gültige Domänenadresse ein und versuchen Sie es danach "
+"erneut."
 
 #: ../src/nettool.c:290
 #, c-format
@@ -887,8 +915,7 @@ msgstr "Quelle"
 msgid "Seq"
 msgstr "Sequenz"
 
-#: ../src/ping.c:602
-#: ../src/traceroute.c:336
+#: ../src/ping.c:602 ../src/traceroute.c:336
 msgid "Time"
 msgstr "Zeit"
 
@@ -973,17 +1000,19 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Hop\tHost-Name\tIP\tZeit 1\n"
 
 #: ../src/utils.c:239
 #, c-format
-msgid "In order to use this feature of the program, %s must be installed in your system"
-msgstr "Um diese Funktion zu nutzen, muss »%s« auf Ihrem Rechner installiert sein."
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
+msgstr ""
+"Um diese Funktion zu nutzen, muss »%s« auf Ihrem Rechner installiert sein."
 
 #: ../src/finger.c:65
 #, c-format
