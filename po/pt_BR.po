@@ -1,30 +1,31 @@
 # Brazilian Portuguese translation of gnome-nettool.
-# Copyright (C) 2000, 2004, 2006-2009, 2013 the gnome-nettool.
+# Copyright (C) 2016 the gnome-nettool.
 # This file is distributed under the same license as the gnome-nettool package.
 # Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
 # Raphael Higino <In memoriam>, 2004.
-# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2009.
 # Og Maciel <ogmaciel@ubuntu.com>, 2007, 2008.
 # Djavan Fagundes <dnoway@gmail.com>, 2008.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2009.
 # Krix Apolinário <krixapolinario@gmail.com>, 2010.
 # Jonh Wendell <jwendell@gnome.org>, 2008, 2012.
 # Enrico Nicoletto <liverig@gmail.com>, 2013.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool 2.28\n"
+"Project-Id-Version: gnome-nettool master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-21 20:00+0000\n"
-"PO-Revision-Date: 2013-01-21 22:47-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"POT-Creation-Date: 2016-09-29 13:44+0000\n"
+"PO-Revision-Date: 2016-09-29 22:29-0200\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -338,8 +339,8 @@ msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
 msgstr ""
-"Digite o endereço de rede cuj caminho deve ser rastreado. Por exemplo: www."
-"dominio.com.br ou 192.168.2.1"
+"Digite o endereço de rede cuj caminho deve ser rastreado. Por exemplo: "
+"www.dominio.com.br ou 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
 msgid "Trace"
@@ -396,10 +397,10 @@ msgstr "Tipo de _informação:"
 #: ../data/gnome-nettool.ui.h:71
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
-"Digite o domínio a ser consultado. Por exemplo: www.dominio.com.br ou ftp."
-"site.com.br"
+"Digite o domínio a ser consultado. Por exemplo: www.dominio.com.br ou "
+"ftp.site.com.br"
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Consultar"
 
@@ -431,7 +432,7 @@ msgstr "Nome do usuário"
 msgid "_Username:"
 msgstr "Nome do _usuário:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -459,7 +460,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Endereço do domínio"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -497,93 +498,98 @@ msgid "Infrared Interface"
 msgstr "Interface infra-vermelho"
 
 #: ../src/info.c:66
+#| msgid "Infrared Interface"
+msgid "Infiniband Interface"
+msgstr "Interface Infiniband"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Interface local"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Interface desconhecida"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Dispositivos de rede não localizados"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Desconhecida"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Ativo"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Inativo"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Local"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Habilitada"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Desabilitada"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Dispositivo de rede:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Endereço de hardware:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Velocidade do link:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Condição:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Pacotes transmitidos:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Erros de transmissão:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Pacotes recebidos:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Erros de recepção:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Colisões:\t%s\n"
@@ -725,40 +731,45 @@ msgstr "Nome canônico"
 msgid "CPU / OS Type"
 msgstr "CPU / tipo de S.O."
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "E-Mail Exchange (Registro MX)"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Informações de e-mail"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Servidor de nomes"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Nomes para endereços"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Início da autoridade"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Informações de texto"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Serviços conhecidos"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Todas as informações"
 
@@ -983,10 +994,9 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Hop\tMáquina\t\tIP\tTempo 1\n"
 
