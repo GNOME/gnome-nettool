@@ -4,26 +4,28 @@
 #
 # Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2004-2005, 2009, 2011.
 # Ilkka Tuohela <hile@iki.fi>, 2005-2009.
-# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2013.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2013, 2016.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-21 20:00+0000\n"
-"PO-Revision-Date: 2013-03-09 18:41+0200\n"
+"POT-Creation-Date: 2016-09-29 13:44+0000\n"
+"PO-Revision-Date: 2016-10-02 20:31+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
-"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"Language-Team: suomi <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
+"Jiri Grönroos, 2016\n"
 "Tommi Vainikainen, 2004-2005, 2011\n"
 "Ilkka Tuohela, 2005-2009\n"
 "\n"
@@ -324,15 +326,12 @@ msgid "Netstat output"
 msgstr "Netstat-tuloste"
 
 #: ../data/gnome-nettool.ui.h:59
-#| msgid ""
-#| "Enter the network address to trace a route to. For example: www.domain."
-#| "com or 192.168.2.1"
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
 msgstr ""
-"Syötä verkko-osoite, jonne reitti jäljitetään. Esimerkiksi: www.jotain.fi tai "
-"192.168.2.1"
+"Syötä verkko-osoite, jonne reitti jäljitetään. Esimerkiksi: www.jotain.fi "
+"tai 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
 msgid "Trace"
@@ -387,15 +386,12 @@ msgid "_Information type:"
 msgstr "_Tietojen tyyppi:"
 
 #: ../data/gnome-nettool.ui.h:71
-#| msgid ""
-#| "Enter the network address to lookup. For example: www.domain.com or "
-#| "192.168.2.1"
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
-"Syötä selvitettävä verkko-osoite. Esimerkiksi: www.jotain.fi tai "
-"ftp.jotain.fi."
+"Syötä selvitettävä verkko-osoite. Esimerkiksi: www.jotain.fi tai ftp.jotain."
+"fi."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Nimen haku"
 
@@ -427,7 +423,7 @@ msgstr "Käyttäjätunnus"
 msgid "_Username:"
 msgstr "Käyttäjät_unnus:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -455,7 +451,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Tomialueen osoite"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -493,93 +489,98 @@ msgid "Infrared Interface"
 msgstr "Infrapunaliitäntä"
 
 #: ../src/info.c:66
+#| msgid "Infrared Interface"
+msgid "Infiniband Interface"
+msgstr "Infiniband-liitäntä"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Silmukkaliitäntä"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Tuntematon liitäntä"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Verkkolaitteita ei löytynyt"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Tuntematon"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Toiminnassa"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Ei käytössä"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Silmukka"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Käytössä"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Ei käytössä"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Verkkolaite:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Laiteosoite:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Monilähetys:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Yhteysnopeus:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Tila:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Lähetettyjä paketteja:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Lähetysvirheitä:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Vastaanotetut paketit:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Vastaanottovirheet:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Törmäykset:\t%s\n"
@@ -723,41 +724,45 @@ msgstr "Kanoninen nimi"
 msgid "CPU / OS Type"
 msgstr "Prosessori- ja käyttöjärjestelmätiedot"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Sähköposti välitys"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Tietoja sähköpostin välityksestä"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Nimipalvelin"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Osoitteen verkkonimi"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
-#| msgid "Start-of-authority"
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "SOA-tietue"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Tekstitiedot"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Tunnetut palvelut"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Mitkä tahansa / kaikki tiedot"
 
@@ -982,11 +987,9 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
-#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Piste\tVerkkonimi\tIP\tAika 1\n"
 
