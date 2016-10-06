@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the gnome-nettool package.
 # Francesco Marletta <francesco.marletta@tiscali.it>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
 # Milo Casagrande <milo@ubuntu.com>, 2011, 2012, 2013.
+# Gianvito Cavasoli <gianvito@gmx.it>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-25 15:55+0100\n"
-"PO-Revision-Date: 2013-01-25 15:56+0100\n"
-"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
-"Language-Team: Italian <tp@lists.linux.it>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-09-29 13:44+0000\n"
+"PO-Revision-Date: 2016-10-06 13:35+0200\n"
+"Last-Translator: Gianvito Cavasoli <gianvito@gmx.it>\n"
+"Language-Team: Italiano <gnome-it-list@gnome.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8-bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -390,7 +393,7 @@ msgstr ""
 "Inserire il dominio di cui fare il lookup. Per esempio: example.org o ftp."
 "example.org."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -422,7 +425,7 @@ msgstr "Nome utente"
 msgid "_Username:"
 msgstr "Nome _utente:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -450,7 +453,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Indirizzo del dominio"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -488,95 +491,100 @@ msgid "Infrared Interface"
 msgstr "Interfaccia infrarossi"
 
 #: ../src/info.c:66
+#| msgid "Infrared Interface"
+msgid "Infiniband Interface"
+msgstr "Interfaccia infiniband"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Interfaccia di loopback"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Interfaccia sconosciuta"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Interfacce di rete non trovate"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Sconosciuto"
 
 # [NdT] Si riferisce all'interfaccia
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Attiva"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Inattiva"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Abilitata"
 
 # [NdT] Si riferisce all'interfaccia
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Disabilitata"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Interfaccia di rete:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Indirizzo hardware:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Velocità collegamento:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stato:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Pacchetti trasmessi:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Errori di trasmissione:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Pacchetti ricevuti:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Errori di ricezione:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Collisioni:\t%s\n"
@@ -721,22 +729,27 @@ msgid "CPU / OS Type"
 msgstr "Tipo CPU/SO"
 
 # non sono sicuro...
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Server di posta"
 
 # NdT: si riferisce al campo MINFO del DNS
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Informazioni mailbox"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Nome del server"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Nome host per indirizzo"
 
@@ -744,19 +757,19 @@ msgstr "Nome host per indirizzo"
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Start of authority"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Informazioni testo"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Servizi noti"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Ogni informazione (tutte)"
 
@@ -981,10 +994,9 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Passo\tNome host\tIP\tTempo 1\n"
 
