@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-11 07:00+0000\n"
-"PO-Revision-Date: 2014-08-28 23:22+0200\n"
+"POT-Creation-Date: 2016-09-29 13:44+0000\n"
+"PO-Revision-Date: 2016-10-06 10:54+0300\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: team@gnome.gr\n"
 "Language: el\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.8.9\n"
 "X-Project-Style: gnome\n"
 
 #: ../src/callbacks.c:332
@@ -399,7 +399,7 @@ msgstr ""
 "Εισάγετε τη διεύθυνση δικτύου για lookup. Για παράδειγμα: domain.com or ftp."
 "domain.com."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -431,7 +431,7 @@ msgstr "Όνομα χρήστη"
 msgid "_Username:"
 msgstr "_Όνομα χρήστη:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -459,7 +459,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Διεύθυνση τομέα"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -497,93 +497,97 @@ msgid "Infrared Interface"
 msgstr "Διεπαφή υπερύθρων"
 
 #: ../src/info.c:66
+msgid "Infiniband Interface"
+msgstr "Διεπαφή Infiniband"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Διεπαφή Loopback"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Άγνωστη διεπαφή"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Δεν βρέθηκαν συσκευές δικτύου"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Άγνωστο"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Ενεργή"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Ανενεργή"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Ενεργοποιημένη"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Απενεργοποιημένη"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Συσκευή δίκτυου :\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Διεύθυνση υλικού:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Ταχύτητα σύνδεσης:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Κατάσταση:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Εξερχόμενα πακέτα:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Σφάλματα μετάδοσης:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Εισερχόμενα πακέτα:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Σφάλματα λήψης:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Συγκρούσεις:\t%s\n"
@@ -725,40 +729,45 @@ msgstr "Κανονικό όνομα"
 msgid "CPU / OS Type"
 msgstr "Τύπος CPU / OS "
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Mailbox Exchange"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Πληροφορίες Mailbox"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Διακομιστής ονοματοδοσίας"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Όνομα κεντρικού υπολογιστή για διεύθυνση"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Έναρξη της Αρχής"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Πληροφορίες κειμένου"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Γνωστές υπηρεσίες"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Οποιαδήποτε / Όλες οι πληροφορίες "
 
