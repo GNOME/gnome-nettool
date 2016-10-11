@@ -8,15 +8,15 @@
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010, 2011.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool-master-po-gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-07 01:03+0100\n"
-"PO-Revision-Date: 2013-02-07 01:03+0200\n"
+"POT-Creation-Date: 2016-10-11 15:44+0200\n"
+"PO-Revision-Date: 2016-10-11 15:44+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language-Team: Galician\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +28,7 @@ msgstr ""
 #: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
-"Fran Diéguez <frandieguez@ubuntu.com>, 2009-2013.\n"
+"Fran Diéguez <frandieguez@ubuntu.com>, 2009-2016.\n"
 "Antón Méixome <meixome@mancomun.org>, 2009.\n"
 "Mancomún - Centro de Referencia e Servizos de Software Libre "
 "<g11n@mancomun.org>, 2009.\n"
@@ -396,7 +396,7 @@ msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
 "Escriba o dominio a buscar. Por exemplo: www.dominio.com ou 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Lookup"
 
@@ -428,7 +428,7 @@ msgstr "Nome de usuario"
 msgid "_Username:"
 msgstr "_Nome usuario:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -456,7 +456,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Enderezo de dominio"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -494,93 +494,97 @@ msgid "Infrared Interface"
 msgstr "Interface de infravermellos"
 
 #: ../src/info.c:66
+msgid "Infiniband Interface"
+msgstr "Interface de Infiniband"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Interface loopback"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Interface descoñecida"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Non se atoparon dispositivos de rede"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Descoñecido"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Activo"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Inactivo"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Activado"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Desactivado"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Dispositivo de rede:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Enderezo de hardware:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Velocidade de ligazón:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Estado:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Paquetes transmitidos:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Erros de transmisión:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Paquetes recibidos:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Erros de recepción:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Colisións:\t%s\n"
@@ -724,40 +728,45 @@ msgstr "Nome canónico"
 msgid "CPU / OS Type"
 msgstr "Tipo de CPU / SO"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Caixa de correos Exchange"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Información da caixa de correos"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Nome do servidor"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Nome do host para o enderezo"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Inicio de autoridade"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Texto de información"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Servizos coñecidos"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Calquera / Toda a información"
 
@@ -982,10 +991,9 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Salto\tEquipo\tIP\tTempo 1\n"
 
