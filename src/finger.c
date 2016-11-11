@@ -62,11 +62,11 @@ finger_do (Netinfo * netinfo)
 
 	if (g_ascii_strcasecmp (user, "") != 0)
 		netinfo->stbar_text =
-			g_strdup_printf (_("Getting information of %s on \"%s\""), user,
+			g_strdup_printf (_("Getting information of %s on “%s”"), user,
 					 g_ascii_strcasecmp (host, "") != 0 ? host : "localhost");
 	else
 		netinfo->stbar_text =
-			g_strdup_printf (_("Getting information of all users on \"%s\""),
+			g_strdup_printf (_("Getting information of all users on “%s”"),
 					 g_ascii_strcasecmp (host, "") != 0 ? host : "localhost");
 	/*if (netinfo->stbar_text)
 		g_free (netinfo->stbar_text);

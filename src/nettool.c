@@ -209,7 +209,7 @@ netinfo_validate_host (Netinfo * netinfo)
 		if (hostname == NULL) {
 			hostname = gethostbyname2 (host, PF_INET6);
 			if (hostname == NULL) {
-				primary = g_strdup_printf (_("The address '%s' cannot be found"),
+				primary = g_strdup_printf (_("The address “%s” cannot be found"),
 							   host);
 				secondary = g_strdup (_("Please enter a valid network address and try again."));
 			}
@@ -285,9 +285,9 @@ netinfo_reap_child (GPid pid, gint status, gpointer user_data)
 		cmd = g_strjoinv (" ", netinfo->command_line);
 
 		primary = g_strdup_printf (
-				/* '%s' is the task name to run
+				/* “%s” is the task name to run
 				   (e.g. Traceroute, Port Scan, Finger, etc.) */
-				_("An error occurred when try to run '%s'"),
+				_("An error occurred when try to run “%s”"),
 				page_label);
 		secondary = g_strdup_printf ("%s", cmd);
 

@@ -127,7 +127,7 @@ main (int argc, char *argv[])
 	}
 
 	if (!g_file_test (dialog, G_FILE_TEST_EXISTS)) {
-		g_critical (_("The file %s doesn't exist, "
+		g_critical (_("The file %s doesn’t exist, "
 			      "please check if gnome-nettool is correctly installed"),
 			    dialog);
 		return -1;

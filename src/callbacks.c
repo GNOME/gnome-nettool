@@ -460,7 +460,7 @@ on_page_switch (GtkNotebook     * notebook,
 
 	/* Dear Translator: This is the Window Title. 'Network Tools' is the
 	 * name of the application */
-	title = g_strdup_printf (_("%s - Network Tools"),
+	title = g_strdup_printf (_("%s — Network Tools"),
 				 gtk_label_get_text (GTK_LABEL (netinfo->page_label)));
 	gtk_window_set_title (GTK_WINDOW (netinfo->main_window), title);
 	g_free (title);
