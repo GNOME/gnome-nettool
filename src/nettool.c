@@ -284,9 +284,9 @@ netinfo_reap_child (GPid pid, gint status, gpointer user_data)
 	if (WEXITSTATUS(status) > 0) {
 		cmd = g_strjoinv (" ", netinfo->command_line);
 
-		/* '%s' is the task name to run
-		   (e.g. Traceroute, Port Scan, Finger, etc.) */
 		primary = g_strdup_printf (
+				/* '%s' is the task name to run
+				   (e.g. Traceroute, Port Scan, Finger, etc.) */
 				_("An error occurred when try to run '%s'"),
 				page_label);
 		secondary = g_strdup_printf ("%s", cmd);
