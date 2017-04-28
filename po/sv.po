@@ -1,5 +1,5 @@
 # Swedish translation of gnome-nettool.
-# Copyright © 2004-2016 Free Software Foundation, Inc.
+# Copyright © 2004-2017 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
 # Anders Jonsson <anders.jonsson@norsjovallen.se>, 2016.
@@ -7,17 +7,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-09-29 13:44+0000\n"
-"PO-Revision-Date: 2016-09-29 16:15+0200\n"
+"POT-Creation-Date: 2017-04-28 16:47+0000\n"
+"PO-Revision-Date: 2017-04-28 23:43+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -52,8 +52,8 @@ msgstr "Overksam"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Nätverksverktyg"
+msgid "%s — Network Tools"
+msgstr "%s — Nätverksverktyg"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -128,8 +128,8 @@ msgid "_Contents"
 msgstr "_Innehåll"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Enheter - Nätverksverktyg"
+msgid "Devices — Network Tools"
+msgstr "Enheter — Nätverksverktyg"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -681,7 +681,7 @@ msgstr "DOMÄN"
 #: ../src/main.c:130
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "Filen %s finns inte, kontrollera om gnome-nettool är korrekt installerat"
@@ -846,8 +846,8 @@ msgstr "Ange en giltig nätverksadress och försök igen."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "Adressen \"%s\" kan inte hittas"
+msgid "The address “%s” cannot be found"
+msgstr "Adressen ”%s” kan inte hittas"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
@@ -857,10 +857,12 @@ msgstr "En domänadress angavs inte"
 msgid "Please enter a valid domain address and try again."
 msgstr "Ange en giltig domänadress och försök igen."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
-msgstr "Ett fel inträffade vid försök att köra \"%s\""
+msgid "An error occurred when try to run “%s”"
+msgstr "Ett fel inträffade vid försök att köra ”%s”"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
@@ -1002,13 +1004,13 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "Hämtar information om %s på \"%s\""
+msgid "Getting information of %s on “%s”"
+msgstr "Hämtar information om %s på ”%s”"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "Hämtar information om alla användare på \"%s\""
+msgid "Getting information of all users on “%s”"
+msgstr "Hämtar information om alla användare på ”%s”"
 
 #: ../src/whois.c:62
 #, c-format
