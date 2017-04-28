@@ -1,18 +1,18 @@
 # Polish translation for gnome-nettool.
-# Copyright © 2004-2016 the gnome-nettool authors.
+# Copyright © 2004-2017 the gnome-nettool authors.
 # This file is distributed under the same license as the gnome-nettool package.
 # Artur Flinta <aflinta@at.kernel.pl>, 2004-2007.
 # Wadim Dziedzic <wdziedzic@aviary.pl>, 2007.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2016.
-# Aviary.pl <community-poland@mozilla.org>, 2007-2016.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2017.
+# Aviary.pl <community-poland@mozilla.org>, 2007-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-29 17:28+0200\n"
-"PO-Revision-Date: 2016-09-29 17:29+0200\n"
+"POT-Creation-Date: 2017-04-28 18:52+0200\n"
+"PO-Revision-Date: 2017-04-28 18:53+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -28,8 +28,8 @@ msgstr ""
 "Artur Flinta <aflinta@at.kernel.pl>, 2004-2007\n"
 "Wadim Dziedzic <wdziedzic@aviary.pl>, 2007\n"
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2010-2016\n"
-"Aviary.pl <community-poland@mozilla.org>, 2007-2016"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2017\n"
+"Aviary.pl <community-poland@mozilla.org>, 2007-2017"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -56,7 +56,7 @@ msgstr "Bezczynny"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
+msgid "%s — Network Tools"
 msgstr "%s — narzędzia sieciowe"
 
 #: ../src/callbacks.c:487
@@ -134,7 +134,7 @@ msgid "_Contents"
 msgstr "_Spis treści"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
 msgstr "Urządzenia — narzędzia sieciowe"
 
 #: ../data/gnome-nettool.ui.h:11
@@ -250,7 +250,7 @@ msgstr "Ping"
 
 #: ../data/gnome-nettool.ui.h:38
 msgid "0.0"
-msgstr "0.0"
+msgstr "0,0"
 
 #: ../data/gnome-nettool.ui.h:39
 msgid "ms"
@@ -556,7 +556,7 @@ msgstr "MTU:\t%s\n"
 #: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
-msgstr "Prędkość połączenia:\t$%s\n"
+msgstr "Prędkość połączenia:\t%s\n"
 
 #: ../src/info.c:586
 #, c-format
@@ -684,7 +684,7 @@ msgstr "DOMENA"
 #: ../src/main.c:130
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "Plik „%s” nie istnieje. Proszę sprawdzić, czy program gnome-nettool jest "
@@ -850,7 +850,7 @@ msgstr "Proszę wprowadzić prawidłowy adres sieciowy i spróbować jeszcze ra
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
 msgstr "Nie można odnaleźć adresu „%s”"
 
 #: ../src/nettool.c:241
@@ -861,10 +861,12 @@ msgstr "Nie podano adresu domeny"
 msgid "Please enter a valid domain address and try again."
 msgstr "Proszę wprowadzić prawidłowy adres domeny i spróbować jeszcze raz."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
-msgstr "Wystąpił błąd podczas próby uruchomienia „%s”"
+msgid "An error occurred when try to run “%s”"
+msgstr "Wystąpił błąd podczas uruchamiania „%s”"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
@@ -924,17 +926,17 @@ msgstr "Bajty\tŹródło\tSekwencje\tCzas\tJednostki\n"
 #: ../src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
-msgstr "Minimalny czas:\t%s ms\n"
+msgstr "Minimalny czas:\t%s ms\n"
 
 #: ../src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
-msgstr "Średni czas:\t%s ms\n"
+msgstr "Średni czas:\t%s ms\n"
 
 #: ../src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
-msgstr "Maksymalny czas:\t%s ms\n"
+msgstr "Maksymalny czas:\t%s ms\n"
 
 #: ../src/ping.c:655
 #, c-format
@@ -1000,16 +1002,16 @@ msgstr "Skok\tKomputer\tIP\tCzas 1\n"
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
-msgstr "Aby użyć tej funkcji programu, należy zainstalować program %s"
+msgstr "Aby użyć tej funkcji, należy zainstalować program %s"
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
 msgstr "Pobieranie informacji o %s z „%s”"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "Pobieranie informacji o wszystkich użytkownikach z „%s”"
 
 #: ../src/whois.c:62
