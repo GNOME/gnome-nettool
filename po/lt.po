@@ -7,15 +7,15 @@
 # Marius Karnauskas <marius@esga.lt>, 2004.
 # Žygimantas Beručka <zygis@gnome.org>, 2005-2006.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2016.
+# Aurimas Černius <aurisc4@gmail.com>, 2013, 2016, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-09-29 13:44+0000\n"
-"PO-Revision-Date: 2016-10-15 21:38+0300\n"
+"POT-Creation-Date: 2017-04-28 16:47+0000\n"
+"PO-Revision-Date: 2017-04-29 21:16+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -56,8 +56,9 @@ msgstr "Nedirba"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Tinklo įrankiai"
+#| msgid "%s - Network Tools"
+msgid "%s — Network Tools"
+msgstr "%s – Tinklo įrankiai"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -132,8 +133,9 @@ msgid "_Contents"
 msgstr "_Turinys"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Įrenginiai - tinklo įrankiai"
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
+msgstr "Įrenginiai – Tinklo įrankiai"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -491,7 +493,6 @@ msgid "Infrared Interface"
 msgstr "Infraraudonųjų spindulių sąsaja"
 
 #: ../src/info.c:66
-#| msgid "Infrared Interface"
 msgid "Infiniband Interface"
 msgstr "Infiniband sąsaja"
 
@@ -682,11 +683,13 @@ msgstr "DOMENAS"
 
 #: ../src/main.c:130
 #, c-format
+#| msgid ""
+#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
+#| "installed"
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
-msgstr ""
-"Failas %s neegzistuoja, patikrinkite ar korektiškai įdiegtas gnome-nettool"
+msgstr "Failo %s nėra, patikrinkite ar korektiškai įdiegtas gnome-nettool"
 
 #: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
@@ -848,8 +851,9 @@ msgstr "Nurodykite teisingą adresą ir pabandykite iš naujo."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "%s nerastas"
+#| msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
+msgstr "Nepavyko rasti adreso %s"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
@@ -859,9 +863,12 @@ msgstr "Nenurodytas domeno adresas"
 msgid "Please enter a valid domain address and try again."
 msgstr "Įveskite galiojantį tinklo adresą ir pabandykite iš naujo."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+#| msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "Bandant paleisti „%s“ kilo klaida"
 
 #: ../src/nettool.c:464
@@ -1002,12 +1009,14 @@ msgstr "Jei norite naudoti šią funkciją, turite įdiegti %s."
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
+#| msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
 msgstr "Gaunama informacija apie %s iš „%s“"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+#| msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "Gaunama informacija apie visus naudotojus, esančius „%s“"
 
 #: ../src/whois.c:62
