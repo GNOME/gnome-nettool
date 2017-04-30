@@ -4,22 +4,23 @@
 # Ivan Noris <vix@vazka.sk>, 2005.
 # Peter Tuharsky <tuharsky@misbb.sk>, 2007.
 # Tomáš Virgl <tomas@virgl.net>, 2010, 2011.
+# Dušan Kazik <prescott66@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-09-29 13:44+0000\n"
-"PO-Revision-Date: 2016-09-30 18:52+0200\n"
+"POT-Creation-Date: 2017-04-28 16:47+0000\n"
+"PO-Revision-Date: 2017-04-30 10:09+0200\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
-"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language-Team: slovenčina <>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.8.9\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -54,8 +55,9 @@ msgstr "Nečinné"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Sieťové nástroje"
+#| msgid "%s - Network Tools"
+msgid "%s — Network Tools"
+msgstr "%s — Sieťové nástroje"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -130,8 +132,9 @@ msgid "_Contents"
 msgstr "Ob_sah"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Zariadenia - Sieťové nástroje"
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
+msgstr "Zariadenia — Sieťové nástroje"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -488,7 +491,6 @@ msgid "Infrared Interface"
 msgstr "Infračervené rozhranie"
 
 #: ../src/info.c:66
-#| msgid "Infrared Interface"
 msgid "Infiniband Interface"
 msgstr "Rozhranie Infiniband"
 
@@ -684,8 +686,11 @@ msgstr "DOMÉNA"
 
 #: ../src/main.c:130
 #, c-format
+#| msgid ""
+#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
+#| "installed"
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "Súbor %s neexistuje. Skontrolujte, prosím, či je gnome-nettool správne "
@@ -853,7 +858,8 @@ msgstr "Zadajte, prosím, platnú sieťovú adresu a skúste to znova."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
+#| msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
 msgstr "Adresu „%s“ sa nepodarilo nájsť"
 
 #: ../src/nettool.c:241
@@ -864,9 +870,12 @@ msgstr "Nebola špecifikovaná adresa domény"
 msgid "Please enter a valid domain address and try again."
 msgstr "Zadajte, prosím, platnú doménovú adresu a skúste to znova"
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+#| msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "Vyskytla sa chyba pri pokuse o spustenie „%s“"
 
 #: ../src/nettool.c:464
@@ -1009,12 +1018,14 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
+#| msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
 msgstr "Získavajú sa informácie o %s na „%s“"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+#| msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "Získavajú sa informácie o všetkých používateľoch „%s“"
 
 #: ../src/whois.c:62
