@@ -1,34 +1,36 @@
 # Serbian translation of gnome-nettool
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2003—2016.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003—2017.
 # This file is distributed under the same license as the gnome-nettool package.
-# Maintainer: Предраг Кртолица <predrag_k@optusnet.com.au>
+# Предраг Кртолица <predrag_k@optusnet.com.au>
 # Игор Несторовић <igor@prevod.org>, 2005
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2013.
+# Данило Шеган <danilo@gnome.org>
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2017.
 # Марко М. Костић <marko.m.kostic@gmail.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-11 16:32+0000\n"
-"PO-Revision-Date: 2016-10-30 10:07+0100\n"
-"Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
-"Language-Team: Serbian <gnom@prevod.org>\n"
+"POT-Creation-Date: 2017-04-28 16:47+0000\n"
+"PO-Revision-Date: 2017-04-30 07:48+0200\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Language-Team: српски <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
-"X-Generator: Poedit 1.8.8\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
 "Предраг Кртолица <predrag_k@optusnet.com.au>\n"
+"Игор Несторовић <igor@prevod.org>\n"
 "Данило Шеган <danilo@gnome.org>\n"
 "Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "\n"
 "http://prevod.org — превод на српски језик."
 
@@ -56,8 +58,9 @@ msgstr "Неактивно"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s — мрежни алати"
+#| msgid "%s - Network Tools"
+msgid "%s — Network Tools"
+msgstr "%s — Мрежни алати"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -132,7 +135,8 @@ msgid "_Contents"
 msgstr "_Садржај"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
 msgstr "Уређаји — Мрежни алати"
 
 #: ../data/gnome-nettool.ui.h:11
@@ -681,8 +685,11 @@ msgstr "ДОМЕН"
 
 #: ../src/main.c:130
 #, c-format
+#| msgid ""
+#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
+#| "installed"
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "Датотека „%s“ не постоји, проверите да ли је програм гномови мрежни алати "
@@ -848,7 +855,8 @@ msgstr "Унесите исправну мрежну адресу па поку�
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
+#| msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
 msgstr "Не могу да нађем адресу „%s“"
 
 #: ../src/nettool.c:241
@@ -859,11 +867,12 @@ msgstr "Адреса домена није назначена"
 msgid "Please enter a valid domain address and try again."
 msgstr "Унесите исправну адресу домена па покушајте поново."
 
-#. '%s' is the task name to run
+#. “%s” is the task name to run
 #. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+#| msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "Дошло је до грешке када сам покушао да покренем „%s“"
 
 #: ../src/nettool.c:464
@@ -1006,12 +1015,14 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
+#| msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
 msgstr "Добављам податке о „%s“ на „%s“"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+#| msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "Добављам податке о свим корисницима на „%s“"
 
 #: ../src/whois.c:62
