@@ -8,15 +8,15 @@
 # Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
 # Petr Kovar <pknbe@volny.cz>, 2008.
 # Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009, 2010, 2012.
-# Marek Černocký <marek@manet.cz>, 2010, 2013.
+# Marek Černocký <marek@manet.cz>, 2010, 2013, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-09-29 13:44+0000\n"
-"PO-Revision-Date: 2016-09-29 18:50+0100\n"
+"POT-Creation-Date: 2017-04-28 16:47+0000\n"
+"PO-Revision-Date: 2017-06-20 14:19+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -59,7 +59,7 @@ msgstr "Nečinný"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
+msgid "%s — Network Tools"
 msgstr "%s – Síťové nástroje"
 
 #: ../src/callbacks.c:487
@@ -135,7 +135,7 @@ msgid "_Contents"
 msgstr "_Obsah"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
 msgstr "Zařízení – Síťové nástroje"
 
 #: ../data/gnome-nettool.ui.h:11
@@ -684,7 +684,7 @@ msgstr "DOMÉNA"
 #: ../src/main.c:130
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "Soubor %s neexistuje, zkontrolujte prosím, jestli je gnome-nettool správně "
@@ -850,7 +850,7 @@ msgstr "Zadejte prosím platnou adresu sítě a zkuste to znovu."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
 msgstr "Adresa „%s“ nebyla nalezena"
 
 #: ../src/nettool.c:241
@@ -861,9 +861,11 @@ msgstr "Nebyla zadána adresa domény"
 msgid "Please enter a valid domain address and try again."
 msgstr "Zadejte prosím platnou adresu domény a zkuste to znovu."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "Vyskytla se chyba při pokusu o spuštění „%s“"
 
 #: ../src/nettool.c:464
@@ -1006,12 +1008,12 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "Získávají se informace o %s na „%s“"
+msgid "Getting information of %s on “%s”"
+msgstr "Získávají se informace o uživateli %s na „%s“"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "Získávají se informace o všech uživatelích na „%s“"
 
 #: ../src/whois.c:62
