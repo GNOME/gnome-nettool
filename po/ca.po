@@ -11,10 +11,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-07 12:19+0000\n"
-"PO-Revision-Date: 2013-03-07 21:27+0100\n"
+"POT-Creation-Date: 2017-06-28 17:25+0000\n"
+"PO-Revision-Date: 2017-07-08 13:36+0200\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -22,6 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.0\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -54,7 +55,7 @@ msgstr "Inactiu"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
+msgid "%s — Network Tools"
 msgstr "%s - Eines de xarxa"
 
 #: ../src/callbacks.c:487
@@ -130,8 +131,8 @@ msgid "_Contents"
 msgstr "_Contingut"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Dispositius - Eines de xarxa"
+msgid "Devices — Network Tools"
+msgstr "Dispositius — Eines de xarxa"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -392,7 +393,7 @@ msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
 "Introduïu el domini a cercar. Per exemple: domini.com o ftp.domini.cat."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Cerca"
 
@@ -424,7 +425,7 @@ msgstr "Nom d'usuari"
 msgid "_Username:"
 msgstr "Nom d'_usuari:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -453,7 +454,7 @@ msgid "Domain address"
 msgstr "Adreça del domini"
 
 # FIXME: jo deixaria "Whois" (josep)
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -491,93 +492,97 @@ msgid "Infrared Interface"
 msgstr "Interfície d'infraroigs"
 
 #: ../src/info.c:66
+msgid "Infiniband Interface"
+msgstr "Interfície Infiniband"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Interfície loopback"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Interfície desconeguda"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "No s'ha trobat cap dispositiu de xarxa"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Activa"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Inactiva"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Habilitada"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Inhabilitada"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Dispositiu de xarxa:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Adreça del maquinari:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multidifusió:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "UTM:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Velocitat de l'enllaç:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Estat:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Paquets transmesos:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Errors de transmissió:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Paquets rebuts:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Errors de recepció:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Col·lisions:\t%s\n"
@@ -679,7 +684,7 @@ msgstr "Domini"
 #: ../src/main.c:130
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "El fitxer %s no existeix. Comproveu que el gnome-nettool estigui instal·lat "
@@ -721,41 +726,46 @@ msgstr "Nom canònic"
 msgid "CPU / OS Type"
 msgstr "CPU / Tipus de SO"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Bústia Exchange"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Informació de la bústia"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Nom del servidor"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Nom de l'ordinador de l'adreça"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Inici d'autoritat"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Informació de text"
 
 # FIXME
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Servei ben conegut"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Cap / tota informació"
 
@@ -841,7 +851,7 @@ msgstr "Introduïu una adreça de xarxa vàlida i torneu-ho a provar."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
 msgstr "No s'ha trobat l'adreça '%s'"
 
 #: ../src/nettool.c:241
@@ -852,9 +862,11 @@ msgstr "No s'ha especificat cap adreça de domini"
 msgid "Please enter a valid domain address and try again."
 msgstr "Introduïu una adreça de domini vàlida i torneu-ho a provar."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "S'ha produït un error en intentar executar «%s»"
 
 #: ../src/nettool.c:464
@@ -997,12 +1009,12 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "S'està obtenint informació de l'usuari «%s» de «%s»"
+msgid "Getting information of %s on “%s”"
+msgstr "S'està obtenint informació de l'usuari %s de «%s»"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "S'està obtenint informació de tots els usuaris de «%s»"
 
 #: ../src/whois.c:62
