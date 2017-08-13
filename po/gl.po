@@ -8,13 +8,14 @@
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010, 2011.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2016.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool-master-po-gl\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-11 15:44+0200\n"
-"PO-Revision-Date: 2016-10-11 15:44+0200\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-06-28 17:25+0000\n"
+"PO-Revision-Date: 2017-08-14 00:09+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician\n"
 "Language: gl\n"
@@ -28,7 +29,7 @@ msgstr ""
 #: ../src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
-"Fran Diéguez <frandieguez@ubuntu.com>, 2009-2016.\n"
+"Fran Diéguez <frandieguez@ubuntu.com>, 2009-2017.\n"
 "Antón Méixome <meixome@mancomun.org>, 2009.\n"
 "Mancomún - Centro de Referencia e Servizos de Software Libre "
 "<g11n@mancomun.org>, 2009.\n"
@@ -60,8 +61,9 @@ msgstr "Inactivo"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Ferramentas de rede"
+#| msgid "%s - Network Tools"
+msgid "%s — Network Tools"
+msgstr "%s — Ferramentas de rede"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -136,8 +138,9 @@ msgid "_Contents"
 msgstr "_Contidos"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Dispositivos - Ferramentas de rede"
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
+msgstr "Dispositivos — Ferramentas de rede"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -685,8 +688,11 @@ msgstr "DOMINIO"
 
 #: ../src/main.c:130
 #, c-format
+#| msgid ""
+#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
+#| "installed"
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "O ficheiro %s non existe. Verifique se o gnome-nettool está instalado "
@@ -852,7 +858,8 @@ msgstr "Introduza un enderezo de rede correcto e ténteo de novo."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
+#| msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
 msgstr "Non foi posíbel atopar o enderezo '%s'"
 
 #: ../src/nettool.c:241
@@ -863,9 +870,12 @@ msgstr "Non se especificou o enderezo de dominio"
 msgid "Please enter a valid domain address and try again."
 msgstr "Introduza un enderezo de dominio correcto e ténteo de novo."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+#| msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "Produciuse un erro ao tentar executar «%s»"
 
 #: ../src/nettool.c:464
@@ -1008,13 +1018,15 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "Obtendo a información de %s en \"%s\""
+#| msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
+msgstr "Obtendo a información de %s en «%s»"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "Obtendo a información de todos os usuarios en \"%s\""
+#| msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
+msgstr "Obtendo a información de todos os usuarios en «%s»"
 
 #: ../src/whois.c:62
 #, c-format
