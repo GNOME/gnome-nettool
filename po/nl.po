@@ -2,23 +2,27 @@
 #
 # This file is distributed under the same license as the gnome-nettool package.
 #
+#
 # Tino Meinen <a.t.meinen@chello.nl>, 2004.
 # Taco Witte <tcwitte@cs.uu.nl>, 2003-2004.
 # Ronald van Engelen <ronalde@lacocina.nl>, 2005.
-# Wouter Bolsterlee <wbolster@gnome.org>, 2007–2013
-#
+# Wouter Bolsterlee <wbolster@gnome.org>, 2007–2013.
+# Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-09 17:10+0100\n"
-"PO-Revision-Date: 2013-02-09 17:09+0100\n"
-"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
-"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-n"
+"ettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-06-28 17:25+0000\n"
+"PO-Revision-Date: 2017-08-24 12:23+0100\n"
+"Last-Translator: Hannie Dumoleyn <hannie@ubuntu-nl.org>\n"
+"Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -28,7 +32,8 @@ msgstr ""
 "Tino Meinen\n"
 "Ronald van Engelen\n"
 "Taco Witte\n"
-"Wouter Bolsterlee"
+"Wouter Bolsterlee\n"
+"Hannie Dumoleyn"
 
 #. Translators: %s is the name of the copyright holder
 #: ../src/callbacks.c:339
@@ -54,12 +59,13 @@ msgstr "Inactief"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s – Netwerkhulpmiddelen"
+#| msgid "%s - Network Tools"
+msgid "%s — Network Tools"
+msgstr "%s — Netwerkhulpmiddelen"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
-msgstr "Kon hulpbestand niet openen"
+msgstr "Hulpbestand kon niet worden geopend"
 
 #: ../data/gnome-nettool.desktop.in.in.h:2
 msgid "View information about your network"
@@ -134,8 +140,9 @@ msgid "_Contents"
 msgstr "_Inhoud"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Apparaten - Netwerkhulpmiddelen"
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
+msgstr "Apparaten  — Netwerkhulpmiddelen"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -398,7 +405,7 @@ msgstr ""
 "Geef het domein om op te zoeken. Bijvoorbeeld: example.org of www.example."
 "org."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Opzoeken"
 
@@ -430,7 +437,7 @@ msgstr "Gebruikersnaam"
 msgid "_Username:"
 msgstr "_Gebruikersnaam:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Finger"
 
@@ -460,7 +467,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Domeinadres"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Whois"
 
@@ -499,93 +506,98 @@ msgid "Infrared Interface"
 msgstr "Infrarood interface"
 
 #: ../src/info.c:66
+#| msgid "Infrared Interface"
+msgid "Infiniband Interface"
+msgstr "Infiniband interface"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Loopback interface"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Onbekende interface"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Geen netwerkapparaten gevonden"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Onbekend"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Actief"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Inactief"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Lus"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Netwerkapparaat:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardware adres:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Verbindingssnelheid:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Status:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Verzonden pakketten:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Verzendfouten:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Ontvangen pakketten:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Ontvangstfouten:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Botsingen:\t%s\n"
@@ -686,12 +698,14 @@ msgstr "DOMEIN"
 
 #: ../src/main.c:130
 #, c-format
+#| msgid ""
+#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
+#| "installed"
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Het bestand %s bestaat niet. Controleer of gnome-netinfo goed is "
-"geïnstalleerd"
+"Het bestand %s bestaat niet. Controleer of gnome-nettool goed is geïnstalleerd"
 
 #: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
@@ -731,22 +745,27 @@ msgid "CPU / OS Type"
 msgstr "Processor / Besturingssysteem"
 
 # Expres onvertaald (Wouter Bolsterlee)
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Mailbox Exchange"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "E-mailinformatie"
 
 # Expres onvertaald (Wouter Bolsterlee)
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Name Server"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Hostnaam voor adres"
 
@@ -754,19 +773,19 @@ msgstr "Hostnaam voor adres"
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Start of Authority"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Tekstinformatie"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Bekende diensten"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Sommige/alle informatie"
 
@@ -852,8 +871,9 @@ msgstr "Geef een geldig netwerkadres en probeer opnieuw."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "Het adres '%s' kan niet worden gevonden"
+#| msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
+msgstr "Het adres ‘%s’ kan niet worden gevonden"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
@@ -863,9 +883,12 @@ msgstr "Er is geen domeinadres opgegeven"
 msgid "Please enter a valid domain address and try again."
 msgstr "Geef een geldig domeinadres en probeer opnieuw."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+#| msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "Fout bij het uitvoeren van ‘%s’"
 
 #: ../src/nettool.c:464
@@ -1009,12 +1032,14 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
+#| msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
 msgstr "Bezig met opvragen informatie van %s op ‘%s’"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+#| msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "Bezig met opvragen informatie over alle gebruikers op ‘%s’"
 
 #: ../src/whois.c:62
