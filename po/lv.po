@@ -5,14 +5,14 @@
 # Linux localization project <viesturs.zarins@mii.lu.lv>, 2006.
 # Raivis Dejus <orvils@gmail.com>, 2006, 2009.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010.
-# Rudolfs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2016.
+# Rudolfs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-ne"
-"ttool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-09-29 13:44+0000\n"
-"PO-Revision-Date: 2016-10-09 19:20+0200\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-n"
+"ettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-06-28 17:25+0000\n"
+"PO-Revision-Date: 2017-08-28 11:35+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -53,8 +53,9 @@ msgstr "Dīkstāvē"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - tīkla rīki"
+#| msgid "%s - Network Tools"
+msgid "%s — Network Tools"
+msgstr "%s — tīkla rīki"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -129,8 +130,9 @@ msgid "_Contents"
 msgstr "_Saturs"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Ierīces - tīkla rīki"
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
+msgstr "Ierīces — tīkla rīki"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -485,7 +487,6 @@ msgid "Infrared Interface"
 msgstr "Infrasarkanā saskarne"
 
 #: ../src/info.c:66
-#| msgid "Infrared Interface"
 msgid "Infiniband Interface"
 msgstr "Infiniband saskarne"
 
@@ -677,8 +678,11 @@ msgstr "DOMĒNS"
 
 #: ../src/main.c:130
 #, c-format
+#| msgid ""
+#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
+#| "installed"
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "Datne %s neeksistē. Lūdzu, pārliecinieties, vai gnome-nettool ir pareizi "
@@ -844,7 +848,8 @@ msgstr "Lūdzu, ievadiet derīgu tīkla adresi un mēģiniet vēlreiz."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
+#| msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
 msgstr "Nevar atrast adresi “%s”"
 
 #: ../src/nettool.c:241
@@ -855,9 +860,12 @@ msgstr "Nav norādīta domēna adrese"
 msgid "Please enter a valid domain address and try again."
 msgstr "Lūdzu, ievadiet derīgu domēna adresi un mēģiniet vēlreiz."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+#| msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "Mēģinot palaist “%s”, gadījās kļūda"
 
 #: ../src/nettool.c:464
@@ -999,12 +1007,14 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
+#| msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
 msgstr "Saņem informāciju no %s par “%s”"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+#| msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "Saņem informāciju par visiem lietotājiem no “%s”"
 
 #: ../src/whois.c:62
