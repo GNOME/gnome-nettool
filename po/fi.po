@@ -9,10 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-09-29 13:44+0000\n"
-"PO-Revision-Date: 2016-10-02 20:31+0300\n"
+"POT-Creation-Date: 2017-06-28 17:25+0000\n"
+"PO-Revision-Date: 2017-08-29 23:54+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../src/callbacks.c:332
 msgid "translator-credits"
@@ -55,8 +55,8 @@ msgstr "Jouten"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - verkkotyökalut"
+msgid "%s — Network Tools"
+msgstr "%s — verkkotyökalut"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -131,8 +131,8 @@ msgid "_Contents"
 msgstr "_Sisältö"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Laitteet - Verkkotyökalut"
+msgid "Devices — Network Tools"
+msgstr "Laitteet — Verkkotyökalut"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -489,7 +489,6 @@ msgid "Infrared Interface"
 msgstr "Infrapunaliitäntä"
 
 #: ../src/info.c:66
-#| msgid "Infrared Interface"
 msgid "Infiniband Interface"
 msgstr "Infiniband-liitäntä"
 
@@ -682,7 +681,7 @@ msgstr "TOIMIALUE"
 #: ../src/main.c:130
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "Tiedostoa %s ei ole olemassa. Tarkista, että gnome-nettool on oikein "
@@ -848,8 +847,8 @@ msgstr "Syötä kelvollinen verkko-osoite ja yritä uudelleen."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "Osoitetta \"%s\" ei löytynyt"
+msgid "The address “%s” cannot be found"
+msgstr "Osoitetta “%s” ei löytynyt"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
@@ -859,10 +858,12 @@ msgstr "Toimialueosoitetta ei määritetty"
 msgid "Please enter a valid domain address and try again."
 msgstr "Syötä kelvollinen toimialueosoite ja yritä uudelleen."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
-msgstr "Kohteen '%s' suoritus aiheutti virheen"
+msgid "An error occurred when try to run “%s”"
+msgstr "Kohteen “%s” suoritus aiheutti virheen"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
@@ -1003,13 +1004,13 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "Haetaan käyttäjän %s tiedot isännältä \"%s\""
+msgid "Getting information of %s on “%s”"
+msgstr "Haetaan käyttäjän %s tiedot isännältä “%s”"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "Haetaan koneelta \"%s\" kaikkien käyttäjien tiedot"
+msgid "Getting information of all users on “%s”"
+msgstr "Haetaan koneelta “%s” kaikkien käyttäjien tiedot"
 
 #: ../src/whois.c:62
 #, c-format
