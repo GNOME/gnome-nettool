@@ -1,10 +1,11 @@
 # Bulgarian translation of gnome-nettool po-file.
 # This file is distributed under the same license as the gnome-nettool package.
 # Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
-# Copyright (C) 2011, 2012, 2013, 2015 Free Software Foundation, Inc.
+# Copyright (C) 2011, 2012, 2013, 2015, 2017 Free Software Foundation, Inc.
 # Rostislav "zbrox" Raykov <zbrox@i-space.org>, 2004, 2005
 # Iassen Pramatarov <turin@fsa-bg.org>, 2005.
 # Alexander Shopov <ash@kambanaria.org>, 2006, 2007, 2009, 2011, 2012, 2013, 2015.
+# Alexander Shopov <ash@kambanaria.org>, 2017.
 # Yavor Doganov <yavor@gnu.org>, 2008.
 #
 #
@@ -12,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 19:34+0200\n"
-"PO-Revision-Date: 2015-03-09 19:34+0200\n"
+"POT-Creation-Date: 2017-09-07 22:59+0300\n"
+"PO-Revision-Date: 2017-09-07 22:59+0300\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -59,7 +60,7 @@ msgstr "Бездействие"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
+msgid "%s — Network Tools"
 msgstr "%s — мрежови инструменти"
 
 #: ../src/callbacks.c:487
@@ -135,7 +136,7 @@ msgid "_Contents"
 msgstr "_Ръководство"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
 msgstr "Устройства — мрежови инструменти"
 
 #: ../data/gnome-nettool.ui.h:11
@@ -394,7 +395,7 @@ msgstr "_Вид данни:"
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr "Въведете домейн, който да се потърси. Напр. domain.com."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "Търсене"
 
@@ -426,7 +427,7 @@ msgstr "Потребителско име"
 msgid "_Username:"
 msgstr "_Потребителско име:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "Проверка на потребител"
 
@@ -454,7 +455,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "Адрес на домейна:"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "Данни за домейн"
 
@@ -492,93 +493,97 @@ msgid "Infrared Interface"
 msgstr "Инфрачервен интерфейс"
 
 #: ../src/info.c:66
+msgid "Infiniband Interface"
+msgstr "Интерфейс инфинибанд"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "Локален интерфейс"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "Непознат интерфейс"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Не са открити мрежови устройства"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "Непознат"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "Активно"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "Неактивно"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "Локален"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "Включено"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "Изключено"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Мрежово устройство:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Хардуерен адрес:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Адрес за разпръскване:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Скорост на връзката:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Състояние:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Изпратени пакети:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Грешки при изпращане:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Получени пакети:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Грешки при получаване:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Колизии:\t%s\n"
@@ -642,8 +647,7 @@ msgstr "ХОСТ"
 #: ../src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
-"Вид данни за получаване. Възможните стойности са:\n"
-"                              route, active, multicast."
+"Вид данни за получаване. Възможните стойности са: route, active, multicast."
 
 #: ../src/main.c:91
 msgid "COMMAND"
@@ -671,9 +675,7 @@ msgstr "ПОТРЕБИТЕЛ"
 
 #: ../src/main.c:110
 msgid "Perform a whois lookup for a network domain"
-msgstr ""
-"Изпълняване на заявка „whois“ за откриване на данни\n"
-"                              за домейна"
+msgstr "Изпълняване на заявка „whois“ за откриване на данни за домейна"
 
 #: ../src/main.c:111
 msgid "DOMAIN"
@@ -682,10 +684,11 @@ msgstr "ДОМЕЙН"
 #: ../src/main.c:130
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Файлът %s не съществува. Проверете дали gnome-nettool е инсталиран правилно."
+"Файлът „%s“ не съществува. Проверете дали gnome-nettool е инсталиран "
+"правилно."
 
 #: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
@@ -723,40 +726,45 @@ msgstr "Канонично име"
 msgid "CPU / OS Type"
 msgstr "Вид процесор/ОС"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "Запис „MX“"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "Информация за пощенска кутия"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "Запис „NS“"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "Хост за адрес"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "Запис „SOA“"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "Запис „TXT“"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "Известни услуги"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "Всякаква информация"
 
@@ -842,7 +850,7 @@ msgstr "Въведете валиден мрежови адрес и опита�
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
 msgstr "Адресът „%s“ не може да бъде намерен."
 
 #: ../src/nettool.c:241
@@ -853,9 +861,11 @@ msgstr "Не беше указан домейн адрес."
 msgid "Please enter a valid domain address and try again."
 msgstr "Въведете валиден домейн адрес и опитайте отново."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "Грешка при изпълнението на „%s“"
 
 #: ../src/nettool.c:464
@@ -998,12 +1008,12 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
 msgstr "Получаване на данни за %s на „%s“"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
 msgstr "Получаване на данни за всички потребители на „%s“"
 
 #: ../src/whois.c:62
