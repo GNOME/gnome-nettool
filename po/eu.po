@@ -8,10 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-09-29 13:44+0000\n"
-"PO-Revision-Date: 2017-01-27 11:26+0100\n"
+"POT-Creation-Date: 2017-06-28 17:25+0000\n"
+"PO-Revision-Date: 2017-08-27 14:46+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -51,8 +51,9 @@ msgstr "Inaktiboa"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Sareko tresnak"
+#| msgid "%s - Network Tools"
+msgid "%s — Network Tools"
+msgstr "%s — Sareko tresnak"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -127,8 +128,9 @@ msgid "_Contents"
 msgstr "_Edukia"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Gailuak - Sareko tresnak"
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
+msgstr "Gailuak — Sareko tresnak"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -485,7 +487,6 @@ msgid "Infrared Interface"
 msgstr "Infragorri interfazea"
 
 #: ../src/info.c:66
-#| msgid "Infrared Interface"
 msgid "Infiniband Interface"
 msgstr "Infiniband interfazea"
 
@@ -677,8 +678,11 @@ msgstr "DOMEINUA"
 
 #: ../src/main.c:130
 #, c-format
+#| msgid ""
+#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
+#| "installed"
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "%s fitxategia ez da existitzen, begiratu gnome-nettool ondo instalatuta "
@@ -844,8 +848,9 @@ msgstr "Sartu sareko helbidea eta saiatu berriro."
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "'%s' helbidea ezin da aurkitu"
+#| msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
+msgstr "“%s“ helbidea ezin da aurkitu"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
@@ -855,10 +860,13 @@ msgstr "Domeinuaren helbidea ez duzu zehaztu"
 msgid "Please enter a valid domain address and try again."
 msgstr "Sartu domeinuaren helbidea eta saiatu berriro."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
-msgstr "Errore bat gertatu da '%s' exekutatzen saiatzean"
+#| msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
+msgstr "Errore bat gertatu da “%“ exekutatzen saiatzean"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
@@ -998,13 +1006,15 @@ msgstr "%s sisteman instalatu behar da programaren funtzio hau erabiltzeko."
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "\"%2$s\"-(e)ko %1$s-(r)en informazioa eskuratzen"
+#| msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
+msgstr "“%2$s“-(e)ko %1$s-(r)en informazioa eskuratzen"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "\"%s\"-(e)ko erabiltzaile guztien informazioa eskuratzen"
+#| msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
+msgstr "“%s“-(e)ko erabiltzaile guztien informazioa eskuratzen"
 
 #: ../src/whois.c:62
 #, c-format
