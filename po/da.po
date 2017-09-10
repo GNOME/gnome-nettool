@@ -1,5 +1,5 @@
 # Danish translation of gnome-nettool
-# Copyright (C) 1999-2009, 2016 Free Software Foundation, Inc.
+# Copyright (C) 1999-2009, 2016-2017 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-nettool package.
 #
 # Henrik Hansen <hh@mailserver.dk>, 1999.
@@ -8,17 +8,17 @@
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004-2005.
 # Peter Bach <bach.peter@gmail.com>, 2007.
 # Kenneth Nielsen <k.nielsen81@gmail.com>, 2008.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2009, 2016.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2009, 2016-2017.
 #
 # Husk at tilføje dig i credit-listen (besked id "translator_credits")
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: "
-"https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-28 17:25+0000\n"
-"PO-Revision-Date: 2016-10-08 00:19+0200\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-08-26 17:13+0000\n"
+"PO-Revision-Date: 2017-09-03 20:38+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -63,10 +63,9 @@ msgstr "Ubenyttet"
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
 #: ../src/callbacks.c:463
-#, c-format, fuzzy
-#| msgid "%s - Network Tools"
+#, c-format
 msgid "%s — Network Tools"
-msgstr "%s - Netværksværktøjer"
+msgstr "%s — Netværksværktøjer"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -141,10 +140,8 @@ msgid "_Contents"
 msgstr "_Indhold"
 
 #: ../data/gnome-nettool.ui.h:10
-#, fuzzy
-#| msgid "Devices - Network Tools"
 msgid "Devices — Network Tools"
-msgstr "Enheder - Netværksværktøjer"
+msgstr "Enheder — Netværksværktøjer"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -372,11 +369,11 @@ msgstr "Traceroute"
 
 #: ../data/gnome-nettool.ui.h:65
 msgid ""
-"Enter the network address to scan for open ports. For example: "
-"www.domain.com or 192.168.2.1"
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
 msgstr ""
-"Angiv netværksadressen der skal skannes for åbne porte. F.eks. "
-"www.domaene.dk eller 192.168.2.1"
+"Angiv netværksadressen der skal skannes for åbne porte. F.eks. www.domaene."
+"dk eller 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
 msgid "Scan"
@@ -453,11 +450,11 @@ msgstr "_Domæneadresse:"
 
 #: ../data/gnome-nettool.ui.h:83
 msgid ""
-"Enter a domain address to lookup its whois information. For example: "
-"www.domain.com or 192.168.2.1"
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
 msgstr ""
-"Angiv en domæneadresse for at slå dens “whois”-information op. F.eks. "
-"www.domaene.dk eller 192.168.2.1"
+"Angiv en domæneadresse for at slå dens “whois”-information op. F.eks. www."
+"domaene.dk eller 192.168.2.1"
 
 #: ../data/gnome-nettool.ui.h:84
 msgid "Domain address"
@@ -690,15 +687,11 @@ msgid "DOMAIN"
 msgstr "DOMÆNE"
 
 #: ../src/main.c:130
-#, c-format, fuzzy
-#| msgid ""
-#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
-#| "installed"
+#, c-format
 msgid ""
 "The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
-msgstr ""
-"Filen %s findes ikke, kontrollér at gnome-nettool er korrekt installeret"
+msgstr "Filen %s findes ikke — kontrollér at gnome-nettool er korrekt installeret"
 
 #: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
@@ -861,10 +854,9 @@ msgid "Please enter a valid network address and try again."
 msgstr "Angiv venligst en gyldig netværksadresse og prøv igen."
 
 #: ../src/nettool.c:212
-#, c-format, fuzzy
-#| msgid "The address '%s' cannot be found"
+#, c-format
 msgid "The address “%s” cannot be found"
-msgstr "Adressen \"%s\" findes ikke"
+msgstr "Kan ikke finde adressen “%s”"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
@@ -877,10 +869,9 @@ msgstr "Angiv venligst en gyldig domæneadresse og prøv igen."
 #. “%s” is the task name to run
 #. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
-#, c-format, fuzzy
-#| msgid "An error occurred when try to run '%s'"
+#, c-format
 msgid "An error occurred when try to run “%s”"
-msgstr "Der opstod en fejl ved forsøg på at køre \"%s\""
+msgstr "Der opstod en fejl ved forsøg på at køre “%s”"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
@@ -1021,16 +1012,14 @@ msgstr ""
 "system"
 
 #: ../src/finger.c:65
-#, c-format, fuzzy
-#| msgid "Getting information of %s on \"%s\""
+#, c-format
 msgid "Getting information of %s on “%s”"
-msgstr "Henter information fra %s på \"%s\""
+msgstr "Henter information fra %s på “%s”"
 
 #: ../src/finger.c:69
-#, c-format, fuzzy
-#| msgid "Getting information of all users on \"%s\""
+#, c-format
 msgid "Getting information of all users on “%s”"
-msgstr "Henter information om alle brugere på \"%s\""
+msgstr "Henter information om alle brugere på “%s”"
 
 #: ../src/whois.c:62
 #, c-format
@@ -1081,5 +1070,3 @@ msgstr "Henter whois-informationen for %s"
 
 #~ msgid "Network Tools - Devices"
 #~ msgstr "Netværksværktøj - Enheder"
-
-
