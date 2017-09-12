@@ -12,18 +12,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-09-29 13:44+0000\n"
-"PO-Revision-Date: 2016-10-06 10:54+0300\n"
-"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
+"POT-Creation-Date: 2017-06-28 17:25+0000\n"
+"PO-Revision-Date: 2017-09-09 03:16+0200\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: team@gnome.gr\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Project-Style: gnome\n"
 
 #: ../src/callbacks.c:332
@@ -61,8 +61,9 @@ msgstr "Αδρανής"
 #. * name of the application
 #: ../src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Εργαλεία δικτύου"
+#| msgid "%s - Network Tools"
+msgid "%s — Network Tools"
+msgstr "%s — Εργαλεία δικτύου"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -138,8 +139,9 @@ msgid "_Contents"
 msgstr "Περιε_χόμενα"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Συσκευές - Εργαλεία δικτύου"
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
+msgstr "Συσκευές — Εργαλεία δικτύου"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -687,11 +689,15 @@ msgstr "ΤΟΜΕΑΣ"
 
 #: ../src/main.c:130
 #, c-format
+#| msgid ""
+#| "The file %s doesn't exist, please check if gnome-nettool is correctly "
+#| "installed"
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Το αρχείο %s δεν υπάρχει, ελέγξτε αν το gnome-nettool έχει εγκατασταθεί σωστά"
+"Το αρχείο %s δεν υπάρχει, παρακαλούμε ελέγξτε αν το gnome-nettool έχει "
+"εγκατασταθεί σωστά"
 
 #: ../src/main.c:478 ../src/netstat.c:464
 msgid "Protocol"
@@ -853,8 +859,9 @@ msgstr "Παρακαλούμε εισάγετε μια έγκυρη διεύθυ
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "Δε μπορεί να βρεθεί η διεύθυνση '%s'"
+#| msgid "The address '%s' cannot be found"
+msgid "The address “%s” cannot be found"
+msgstr "Δε μπορεί να βρεθεί η διεύθυνση «%s»"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
@@ -864,10 +871,13 @@ msgstr "Δεν καθορίστηκε διεύθυνση τομέα"
 msgid "Please enter a valid domain address and try again."
 msgstr "Εισάγετε μια έγκυρη διεύθυνση τομέα και προσπαθήστε ξανά"
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
-msgstr "Παρουσιάστηκε ένα σφάλμα κατά την προσπάθεια εκτέλεσης του '%s'"
+#| msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
+msgstr "Παρουσιάστηκε ένα σφάλμα κατά την προσπάθεια εκτέλεσης του «%s»"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
@@ -1009,13 +1019,15 @@ msgstr ""
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "Λήψη πληροφοριών για %s σε \"%s\""
+#| msgid "Getting information of %s on \"%s\""
+msgid "Getting information of %s on “%s”"
+msgstr "Λήψη πληροφοριών για %s σε «%s»"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "Λήψη πληροφοριών για όλους τους χρήστες σε \"%s\""
+#| msgid "Getting information of all users on \"%s\""
+msgid "Getting information of all users on “%s”"
+msgstr "Λήψη πληροφοριών για όλους τους χρήστες σε «%s»"
 
 #: ../src/whois.c:62
 #, c-format
