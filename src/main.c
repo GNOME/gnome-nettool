@@ -113,11 +113,9 @@ main (int argc, char *argv[])
 		{ NULL, '\0', 0, 0, NULL, NULL, NULL }
  	};
 
-#ifdef ENABLE_NLS
 	bindtextdomain (GETTEXT_PACKAGE, GNOME_NETTOOL_LOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
-#endif
 
 	glibtop_init ();
 
@@ -143,7 +141,7 @@ main (int argc, char *argv[])
 
 	g_signal_connect (G_OBJECT (window), "delete-event",
 			  G_CALLBACK (gn_quit_app), NULL);
-	
+
 	pinger = load_ping_widgets_from_builder (builder);
 	tracer = load_traceroute_widgets_from_builder (builder);
 	netstat = load_netstat_widgets_from_builder (builder);
@@ -216,13 +214,13 @@ main (int argc, char *argv[])
 	g_object_set_data (G_OBJECT (notebook), "lookup", lookup);
 	g_object_set_data (G_OBJECT (notebook), "finger", finger);
 	g_object_set_data (G_OBJECT (notebook), "whois", whois);
-	
+
 	menu_beep = GTK_ACTION (gtk_builder_get_object (builder, "m_beep"));
 
 	g_signal_connect (G_OBJECT (menu_beep), "activate",
 			  G_CALLBACK (on_beep_activate),
-			  (gpointer) pinger); 
-	
+			  (gpointer) pinger);
+
 	gtk_builder_connect_signals (builder, NULL);
 	g_object_unref (G_OBJECT (builder));
 
@@ -304,7 +302,7 @@ load_ping_widgets_from_builder (GtkBuilder * builder)
 
 	label = GTK_WIDGET (gtk_builder_get_object (builder, "ping_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), pinger->host);
-	
+
 	pinger->button_callback = G_CALLBACK (on_ping_activate);
 	pinger->process_line = NETINFO_FOREACH_FUNC (ping_foreach_with_tree);
 	pinger->copy_output = NETINFO_COPY_FUNC (ping_copy_to_clipboard);
@@ -316,7 +314,7 @@ load_ping_widgets_from_builder (GtkBuilder * builder)
 	gtk_combo_box_set_entry_text_column (GTK_COMBO_BOX (pinger->host), 0);
 
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (pinger->host)));
-	
+
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
 	g_object_unref (completion);
@@ -446,11 +444,11 @@ load_netstat_widgets_from_builder (GtkBuilder * builder)
 
 	netstat->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	netstat->stbar_text = NULL;
-	
+
 	netstat->button_callback = G_CALLBACK (on_netstat_activate);
 	netstat->process_line = NETINFO_FOREACH_FUNC (netstat_foreach_with_tree);
-	netstat->copy_output = NETINFO_COPY_FUNC (netstat_copy_to_clipboard);	
-	
+	netstat->copy_output = NETINFO_COPY_FUNC (netstat_copy_to_clipboard);
+
 	g_signal_connect (G_OBJECT (netstat->button), "clicked",
 				  netstat->button_callback,
 				  netstat);
@@ -494,14 +492,14 @@ info_list_ip_addr_add_columns (GtkWidget *list_ip_addr)
 							   "text", 2,
 							   NULL);
 	gtk_tree_view_insert_column (GTK_TREE_VIEW (list_ip_addr), column, 2);
-	
+
 	renderer = gtk_cell_renderer_text_new ();
 	column = gtk_tree_view_column_new_with_attributes (_("Broadcast"),
 							   renderer,
 							   "text", 3,
 							   NULL);
 	gtk_tree_view_insert_column (GTK_TREE_VIEW (list_ip_addr), column, 3);
-	
+
 	renderer = gtk_cell_renderer_text_new ();
 	column = gtk_tree_view_column_new_with_attributes (_("Scope"),
 							   renderer,
@@ -509,7 +507,7 @@ info_list_ip_addr_add_columns (GtkWidget *list_ip_addr)
 							   NULL);
 	gtk_tree_view_insert_column (GTK_TREE_VIEW (list_ip_addr), column, 4);
 
-	
+
 }
 
 /* The value returned must be released from memory */
@@ -557,7 +555,7 @@ load_info_widgets_from_builder (GtkBuilder * builder)
 						    G_TYPE_STRING));
 	gtk_tree_view_set_model (GTK_TREE_VIEW (info->list_ip_addr), model);
 	g_object_unref (model);
-	
+
 	info_list_ip_addr_add_columns (info->list_ip_addr);
 
 	label1 = GTK_WIDGET (gtk_builder_get_object (builder, "info_combo_label"));
@@ -577,7 +575,7 @@ load_info_widgets_from_builder (GtkBuilder * builder)
 	g_signal_connect (G_OBJECT (info->combo), "changed",
 			  G_CALLBACK (info_nic_changed),
 			  info);
-	
+
 	info_load_iface (info);
 	info->copy_output = NETINFO_COPY_FUNC (info_copy_to_clipboard);
 
@@ -617,7 +615,7 @@ load_scan_widgets_from_builder (GtkBuilder * builder)
 
 	scan->status_bar = GTK_WIDGET (gtk_builder_get_object (builder, "statusbar"));
 	scan->stbar_text = NULL;
-	
+
 	label = GTK_WIDGET (gtk_builder_get_object (builder, "scan_host_label"));
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), scan->host);
 
@@ -688,13 +686,13 @@ nettool_lookup_setup_combo_type (Netinfo *lookup)
 	};
 
 	model = GTK_TREE_MODEL (gtk_list_store_new (1, G_TYPE_STRING));
-	
+
 	for (i=0; types[i]; i++) {
 		gtk_list_store_append (GTK_LIST_STORE (model), &iter);
 		gtk_list_store_set (GTK_LIST_STORE (model), &iter,
 				    0, _(types[i]), -1);
 	}
-	
+
 	gtk_combo_box_set_model (GTK_COMBO_BOX (lookup->type), model);
 
 	g_object_unref (model);
@@ -899,7 +897,7 @@ load_whois_widgets_from_builder (GtkBuilder * builder)
 	GtkTreeModel *model;
 	GtkEntryCompletion *completion;
 	PangoFontDescription *font_desc;
-	
+
 
 	g_return_val_if_fail (builder != NULL, NULL);
 
@@ -943,9 +941,9 @@ load_whois_widgets_from_builder (GtkBuilder * builder)
 	g_object_unref (model);
 
 	gtk_combo_box_set_entry_text_column (GTK_COMBO_BOX (whois->host), 0);
-	
+
 	entry_host = GTK_ENTRY (gtk_bin_get_child (GTK_BIN (whois->host)));
-	
+
 	completion = gtk_entry_completion_new ();
 	gtk_entry_set_completion (entry_host, completion);
 	g_object_unref (completion);
