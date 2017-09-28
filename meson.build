@@ -43,6 +43,8 @@ gmodule_dep = dependency('gmodule-export-2.0')
 
 nettool_deps = [gtk_dep, gio_dep, gmodule_dep, gtop_dep]
 
+po_dir = join_paths(meson.source_root(), 'po')
+
 subdir('src')
 subdir('po')
 subdir('data')
