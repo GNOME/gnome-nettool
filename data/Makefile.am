@@ -14,11 +14,11 @@ gnome-nettool.desktop: gnome-nettool.desktop.in
 
 EXTRA_DIST =			\
 	$(desktop_in_in_files)	\
+	$(gsettings_SCHEMAS)	\
 	$(ui_DATA)
 
 DISTCLEANFILES =                \
-	$(desktop_in_files)	\
-	$(gsettings_SCHEMAS)
+	$(desktop_in_files)
 
 CLEANFILES =                    \
 	$(desktop_DATA)
