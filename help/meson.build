@@ -21,6 +21,7 @@ linguas = [
   'en_GB',
   'es',
   'fr',
+  'fur',
   'hu',
   'ko',
   'oc',
