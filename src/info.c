@@ -479,7 +479,6 @@ info_get_nic_information (const gchar *nic, Netinfo *info)
 		dst = g_strdup_printf ("%s", _("Loopback"));
 		gtk_label_set_text (GTK_LABEL (info->hw_address), dst);
 		g_free (dst);
-		ip->ip_bcast = g_strdup ("");
 		info_setup_configure_button (info, FALSE);
 	} else {
 		info_setup_configure_button (info, TRUE);
