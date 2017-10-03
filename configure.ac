@@ -89,6 +89,7 @@ AC_CONFIG_FILES([
 Makefile
 data/Makefile
 data/gnome-nettool.desktop.in
+data/gnome-nettool.appdata.xml
 help/Makefile
 pixmaps/Makefile
 pixmaps/icons/Makefile

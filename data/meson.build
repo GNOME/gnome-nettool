@@ -28,4 +28,13 @@ i18n.merge_file('desktop',
                 install: true,
                 install_dir: join_paths(prefix, datadir, 'applications'))
 
+i18n.merge_file('desktop',
+                type: 'xml',
+                input: 'gnome-nettool.appdata.xml.in',
+                output: 'gnome-nettool.appdata.xml',
+                po_dir: po_dir,
+                install: true,
+                install_dir: join_paths(prefix, datadir, 'appdata'),
+)
+
 install_data('org.gnome.gnome-nettool.gschema.xml', install_dir: schemas_dir)
