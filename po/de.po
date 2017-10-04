@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: gnome-nettool master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-28 22:59+0000\n"
-"PO-Revision-Date: 2017-10-01 13:18+0200\n"
+"POT-Creation-Date: 2017-10-03 20:18+0000\n"
+"PO-Revision-Date: 2017-10-04 19:32+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -28,21 +28,54 @@ msgstr ""
 "X-Generator: Poedit 2.0.3\n"
 
 #. Dear translator: This is the name of the application
-#: data/gnome-nettool.desktop.in.in:3 src/callbacks.c:343 src/callbacks.c:344
+#: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
+#: src/callbacks.c:343 src/callbacks.c:344
 msgid "Network Tools"
 msgstr "Netzwerkdiagnose"
 
+#: data/gnome-nettool.appdata.xml.in:11
+msgid "Perform advanced networking analysis"
+msgstr "Ausführen fortgeschrittener Operationen zur Netzwerkanalyse"
+
+#: data/gnome-nettool.appdata.xml.in:13
+msgid ""
+"Network Tools is a utility to perform advanced networking analysis "
+"operations. It features a range of networking tools that are typically done "
+"on the command line, but allows you to perform them with a graphical "
+"interface."
+msgstr ""
+"Die Netzwerkdiagnose ist ein Dienstprogramm zum Ausführen fortgeschrittener "
+"Operationen zur Netzwerkanalyse. Es vereint eine Reihe von Netzwerkzeugen, "
+"die typischerweise in der Befehlszeile ausgeführt werden, aber stellt Ihnen "
+"dafür eine grafische Oberfläche zur Verfügung."
+
+#: data/gnome-nettool.appdata.xml.in:20
+msgid ""
+"With Network Tools, you can perform the following: ping, netstat, "
+"traceroute, port scans, lookup, finger and whois."
+msgstr ""
+"Mit der Netzwerkdiagnose können Sie folgende Befehle ausführen: ping, "
+"netstat, traceroute, port scans, lookup, finger und whois."
+
+#: data/gnome-nettool.appdata.xml.in:39
+msgid "The GNOME Project"
+msgstr "Das GNOME-Projekt"
+
 #: data/gnome-nettool.desktop.in.in:4
+msgid "Network information tools"
+msgstr "Netzwerk-Informationswerkzeuge"
+
+#: data/gnome-nettool.desktop.in.in:5
 msgid "View information about your network"
 msgstr "Informationen über Ihr Netzwerk anzeigen"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/gnome-nettool.desktop.in.in:6
+#: data/gnome-nettool.desktop.in.in:7
 msgid "network;monitor;remote;"
 msgstr "Netzwerk;Überwachung;LAN;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/gnome-nettool.desktop.in.in:9
+#: data/gnome-nettool.desktop.in.in:10
 msgid "gnome-nettool"
 msgstr "gnome-nettool"
 
@@ -559,66 +592,66 @@ msgstr "Inaktiv"
 msgid "Loopback"
 msgstr "Loopback"
 
-#: src/info.c:490
+#: src/info.c:489
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: src/info.c:492
+#: src/info.c:491
 msgid "Disabled"
 msgstr "Deaktiviert"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:581
+#: src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Netzwerkgerät:\t%s\n"
 
-#: src/info.c:582
+#: src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Hardware-Adresse:\t%s\n"
 
-#: src/info.c:583
+#: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:584
+#: src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "Größtmögliches Datenpaket:\t%s\n"
 
-#: src/info.c:585
+#: src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Verbindungsgeschwindigkeit:\t%s\n"
 
-#: src/info.c:586
+#: src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Status:\t%s\n"
 
-#: src/info.c:588
+#: src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Übertragene Pakete:\t%s\n"
 
-#: src/info.c:589
+#: src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Übertragungsfehler:\t%s\n"
 
-#: src/info.c:590
+#: src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Empfangene Pakete:\t%s\n"
 
-#: src/info.c:591
+#: src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Empfangsfehler:\t%s\n"
 
-#: src/info.c:592
+#: src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kollisionen:\t%s\n"
