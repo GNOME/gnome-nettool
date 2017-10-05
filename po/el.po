@@ -14,34 +14,67 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-28 22:59+0000\n"
-"PO-Revision-Date: 2017-09-29 11:44+0200\n"
-"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
+"POT-Creation-Date: 2017-10-03 20:18+0000\n"
+"PO-Revision-Date: 2017-10-05 11:59+0300\n"
+"Last-Translator: Tom Tryfonidis <tomtryf@gnome.org>\n"
 "Language-Team: team@gnome.gr\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Project-Style: gnome\n"
 
 #. Dear translator: This is the name of the application
-#: data/gnome-nettool.desktop.in.in:3 src/callbacks.c:343 src/callbacks.c:344
+#: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
+#: src/callbacks.c:343 src/callbacks.c:344
 msgid "Network Tools"
 msgstr "Εργαλεία δικτύου"
 
+#: data/gnome-nettool.appdata.xml.in:11
+msgid "Perform advanced networking analysis"
+msgstr "Εκτελέστε προχωρημένες αναλύσεις δικτύων"
+
+#: data/gnome-nettool.appdata.xml.in:13
+msgid ""
+"Network Tools is a utility to perform advanced networking analysis "
+"operations. It features a range of networking tools that are typically done "
+"on the command line, but allows you to perform them with a graphical "
+"interface."
+msgstr ""
+"Τα Εργαλεία δικτύου είναι μια εφαρμογή όπου μπορείτε να εκτελέσετε "
+"προχωρημένη ανάλυση δικτύων. Διαθέτει μια σειρά εργαλείων δικτύου που "
+"συνήθως εκτελούνται στη γραμμή εντολών, αλλά σας επιτρέπει να τα εκτελέσετε "
+"σε μια γραφική διεπαφή."
+
+#: data/gnome-nettool.appdata.xml.in:20
+msgid ""
+"With Network Tools, you can perform the following: ping, netstat, "
+"traceroute, port scans, lookup, finger and whois."
+msgstr ""
+"Με τα Εργαλεία δικτύου, μπορείτε να εκτελέσετε τα παρακάτω: ping, netstat, "
+"traceroute, σάρωση πορτών, lookup, finger και whois."
+
+#: data/gnome-nettool.appdata.xml.in:39
+msgid "The GNOME Project"
+msgstr "Το έργο GNOME"
+
 #: data/gnome-nettool.desktop.in.in:4
+msgid "Network information tools"
+msgstr "Εργαλεία πληροφορίων δικτύου"
+
+#: data/gnome-nettool.desktop.in.in:5
 msgid "View information about your network"
 msgstr "Προβολή πληροφοριών για το δίκτυο σας"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/gnome-nettool.desktop.in.in:6
+#: data/gnome-nettool.desktop.in.in:7
 msgid "network;monitor;remote;"
 msgstr "δίκτυο;οθόνη;απομακρυσμένο;network;monitor;remote;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/gnome-nettool.desktop.in.in:9
+#: data/gnome-nettool.desktop.in.in:10
 msgid "gnome-nettool"
 msgstr "gnome-nettool"
 
@@ -276,7 +309,7 @@ msgstr "Ενεργές υπηρεσίες δικτύου"
 
 #: data/gnome-nettool.ui:1526
 msgid "Multicast Information"
-msgstr "Πληροφορίες Multicast "
+msgstr "Πληροφορίες Multicast"
 
 #: data/gnome-nettool.ui:1581 data/gnome-nettool.ui:1649 src/main.c:442
 msgid "Netstat"
@@ -378,7 +411,7 @@ msgstr ""
 
 #: data/gnome-nettool.ui:2231
 msgid "Enter the user to finger"
-msgstr "Εισάγετε το χρήστη για finger "
+msgstr "Εισάγετε το χρήστη για finger"
 
 #: data/gnome-nettool.ui:2237
 msgid "User name"
@@ -488,7 +521,7 @@ msgstr "%s — Εργαλεία δικτύου"
 
 #: src/callbacks.c:487
 msgid "Unable to open help file"
-msgstr "Αδύνατο το άνοιγμα του αρχείου βοήθειας."
+msgstr "Αδύνατο το άνοιγμα του αρχείου βοήθειας"
 
 #: src/finger.c:65
 #, c-format
@@ -557,66 +590,66 @@ msgstr "Ανενεργή"
 msgid "Loopback"
 msgstr "Loopback"
 
-#: src/info.c:490
+#: src/info.c:489
 msgid "Enabled"
 msgstr "Ενεργοποιημένη"
 
-#: src/info.c:492
+#: src/info.c:491
 msgid "Disabled"
 msgstr "Απενεργοποιημένη"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:581
+#: src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Συσκευή δίκτυου :\t%s\n"
 
-#: src/info.c:582
+#: src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Διεύθυνση υλικού:\t%s\n"
 
-#: src/info.c:583
+#: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: src/info.c:584
+#: src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: src/info.c:585
+#: src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Ταχύτητα σύνδεσης:\t%s\n"
 
-#: src/info.c:586
+#: src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Κατάσταση:\t%s\n"
 
-#: src/info.c:588
+#: src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Εξερχόμενα πακέτα:\t%s\n"
 
-#: src/info.c:589
+#: src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Σφάλματα μετάδοσης:\t%s\n"
 
-#: src/info.c:590
+#: src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Εισερχόμενα πακέτα:\t%s\n"
 
-#: src/info.c:591
+#: src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Σφάλματα λήψης:\t%s\n"
 
-#: src/info.c:592
+#: src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Συγκρούσεις:\t%s\n"
@@ -645,7 +678,7 @@ msgstr "Τύπος διεύθυνσης"
 
 #: src/lookup.c:307
 msgid "Record Type"
-msgstr "Τύπος Record "
+msgstr "Τύπος Record"
 
 #: src/lookup.c:316
 msgid "Address"
@@ -799,7 +832,7 @@ msgstr "Γνωστές υπηρεσίες"
 
 #: src/main.c:684
 msgid "Any / All Information"
-msgstr "Οποιαδήποτε / Όλες οι πληροφορίες "
+msgstr "Οποιαδήποτε / Όλες οι πληροφορίες"
 
 #: src/netstat.c:134
 msgid "Getting routing table"
@@ -892,7 +925,7 @@ msgstr "Δεν καθορίστηκε διεύθυνση τομέα"
 
 #: src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
-msgstr "Εισάγετε μια έγκυρη διεύθυνση τομέα και προσπαθήστε ξανά"
+msgstr "Εισάγετε μια έγκυρη διεύθυνση τομέα και προσπαθήστε ξανά."
 
 #. “%s” is the task name to run
 #. (e.g. Traceroute, Port Scan, Finger, etc.)
@@ -1037,7 +1070,7 @@ msgid ""
 "system"
 msgstr ""
 "Για να χρησιμοποιήσετε αυτή τη λειτουργιού του προγράμματος, θα πρέπει να "
-"είναι εγκατεστημένο στο σύστημα σας το %s."
+"είναι εγκατεστημένο στο σύστημα σας το %s"
 
 #: src/whois.c:62
 #, c-format
@@ -1079,6 +1112,3 @@ msgstr "Λήψη πληροφοριών whois του %s"
 
 #~ msgid "Packet loss:\t%s\n"
 #~ msgstr "Πακέτα που χάθηκαν:\t%s\n"
-
-#~ msgid "Network Information Tools"
-#~ msgstr "Εργαλεία πληροφορίων δικτύου"
