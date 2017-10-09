@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-28 22:59+0000\n"
-"PO-Revision-Date: 2017-09-29 19:34+0330\n"
+"POT-Creation-Date: 2017-10-03 20:18+0000\n"
+"PO-Revision-Date: 2017-10-09 12:13+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -24,21 +24,52 @@ msgstr ""
 "X-Generator: Poedit 2.0.4\n"
 
 #. Dear translator: This is the name of the application
-#: data/gnome-nettool.desktop.in.in:3 src/callbacks.c:343 src/callbacks.c:344
+#: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
+#: src/callbacks.c:343 src/callbacks.c:344
 msgid "Network Tools"
 msgstr "ابزارهای شبکه"
 
+#: data/gnome-nettool.appdata.xml.in:11
+msgid "Perform advanced networking analysis"
+msgstr "انجام آنالیزهای پیشرفتهٔ شبکه"
+
+#: data/gnome-nettool.appdata.xml.in:13
+msgid ""
+"Network Tools is a utility to perform advanced networking analysis operations. "
+"It features a range of networking tools that are typically done on the command "
+"line, but allows you to perform them with a graphical interface."
+msgstr ""
+"«ابزارهای شبکه» یک ابزار برای انجام آنالیزهای پیشرفتهٔ شبکه است. ابزارهای مختلف "
+"مرتبط به شبکه را شامل می‌شود که به طور معمول از طریق خط فرمان اجرا می‌شوند، اما "
+"«ابزارهای شبکه» به شما امکان اجرای آنها را در محیط گرافیکی را می‌دهد."
+
+#: data/gnome-nettool.appdata.xml.in:20
+msgid ""
+"With Network Tools, you can perform the following: ping, netstat, traceroute, "
+"port scans, lookup, finger and whois."
+msgstr ""
+"با «ابزارهای شبکه»، شما می‌توانید موارد مقابل را انجام دهید: ping، netstat، "
+"traceroute، port scans، lookup، finger و whois."
+
+#: data/gnome-nettool.appdata.xml.in:39
+msgid "The GNOME Project"
+msgstr "پروژه گنوم"
+
 #: data/gnome-nettool.desktop.in.in:4
+msgid "Network information tools"
+msgstr "ابزارهای اطلاعات شبکه"
+
+#: data/gnome-nettool.desktop.in.in:5
 msgid "View information about your network"
 msgstr "دیدن اطلاعات درباره‌ی شبکه‌ی شما"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/gnome-nettool.desktop.in.in:6
+#: data/gnome-nettool.desktop.in.in:7
 msgid "network;monitor;remote;"
 msgstr "شبکه;پایش;دوردست;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/gnome-nettool.desktop.in.in:9
+#: data/gnome-nettool.desktop.in.in:10
 msgid "gnome-nettool"
 msgstr "gnome-nettool"
 
@@ -545,66 +576,66 @@ msgstr "غیرفعال"
 msgid "Loopback"
 msgstr "خوداتصال"
 
-#: src/info.c:490
+#: src/info.c:489
 msgid "Enabled"
 msgstr "فعال شد"
 
-#: src/info.c:492
+#: src/info.c:491
 msgid "Disabled"
 msgstr "غیرفعال شد"
 
 #. The info output in a text format (to copy on clipboard)
-#: src/info.c:581
+#: src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "دستگاه شبکه:\t%s\n"
 
-#: src/info.c:582
+#: src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "نشانی سخت‌افزاری:\t%s\n"
 
-#: src/info.c:583
+#: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "انتشار خاص:\t%s\n"
 
-#: src/info.c:584
+#: src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "‏MTU‏:\t%s\n"
 
-#: src/info.c:585
+#: src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "سرعت پیوند:\t%s\n"
 
-#: src/info.c:586
+#: src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "وضعیت:\t%s\n"
 
-#: src/info.c:588
+#: src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "بسته‌های مخابره شده:\t%s\n"
 
-#: src/info.c:589
+#: src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "خطاهای مخابره:\t%s\n"
 
-#: src/info.c:590
+#: src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "بسته‌های دریافت شده:\t%s\n"
 
-#: src/info.c:591
+#: src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "خطاهای دریافت:\t%s\n"
 
-#: src/info.c:592
+#: src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "تصادم‌ها:\t%s\n"
@@ -1060,9 +1091,6 @@ msgstr "گرفتن اطلاعات whois از %s"
 
 #~ msgid "%s: Command not found"
 #~ msgstr "%s: فرمان پیدا نشد"
-
-#~ msgid "Network Information Tools"
-#~ msgstr "ابزارهای اطلاعات شبکه"
 
 #~ msgid "Network Tools - Devices"
 #~ msgstr "ابزارهای شبکه ‐ دستگاه‌ها"
