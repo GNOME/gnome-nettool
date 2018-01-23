@@ -7,13 +7,16 @@
 # Anas Husseini <linux.anas@gmail.com>, 2007.
 # Abou Manal <aboumanal@gmail.com>, 2008.
 # Abderrahim Kitouni <a.kitouni@gmail.com>, 2012.
+# Muhannad Alrusayni <Muhannad.Alrusayni@gmail.com>, 2016.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.gnome-2-16.ar\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-18 16:11+0100\n"
-"PO-Revision-Date: 2012-03-18 16:11+0100\n"
-"Last-Translator: Abderrahim Kitouni <a.kitouni@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-04-28 16:47+0000\n"
+"PO-Revision-Date: 2017-09-14 13:45+0300\n"
+"Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +24,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"&& n%100<=10 ? 3: n%100>=11 ? 4 : 5;\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../src/callbacks.c:332
@@ -57,9 +61,8 @@ msgstr "ساكن"
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
 #: ../src/callbacks.c:463
-#, c-format
-msgid "%s - Network Tools"
-msgstr "%s - أدوات الشّبكة"
+msgid "%s — Network Tools"
+msgstr "%s — أدوات الشّبكة"
 
 #: ../src/callbacks.c:487
 msgid "Unable to open help file"
@@ -69,29 +72,34 @@ msgstr "تعذّر فتح ملف المساعدة"
 msgid "View information about your network"
 msgstr "اعرض معلومات عن شبكتك"
 
+#: ../data/gnome-nettool.desktop.in.in.h:3
+#, fuzzy
+msgid "network;monitor;remote;"
+msgstr "شبكة;مراقبة;عن بعد;"
+
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
 msgid "Historically used hostnames"
-msgstr ""
+msgstr "أسماء المضيفين التي استُخدمت قديما"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
 msgid "A list of hostnames previously used"
-msgstr ""
+msgstr "قائمة تحتوي أسماء المضيفين التي استُخدمت قديما"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
 msgid "Historically used usernames"
-msgstr ""
+msgstr "أسماء المستخدمين التي استُخدمت قديما"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
 msgid "A list of usernames previously used"
-msgstr ""
+msgstr "قائمة تحتوي أسماء المستخدمين التي استُخدمت قديما"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
 msgid "Historically used domains"
-msgstr ""
+msgstr "النطاقات التي استُخدمت قديما"
 
 #: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
 msgid "A list of domains previously used"
-msgstr ""
+msgstr "قائمة تحتوي أسماء النطاقات التي استُخدمت قديما"
 
 #: ../data/gnome-nettool.ui.h:1
 msgid "Host"
@@ -130,8 +138,8 @@ msgid "_Contents"
 msgstr "الم_حتويات"
 
 #: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "أجهزة - أدوات الشّبكة"
+msgid "Devices — Network Tools"
+msgstr "أجهزة — أدوات الشّبكة"
 
 #: ../data/gnome-nettool.ui.h:11
 msgid "_Network device:"
@@ -386,7 +394,7 @@ msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
 "أدخل عنوان الشّبكة الذي تريد البحث عنه. مثلًا: domain.com أو ftp.domain.com."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:738
 msgid "Lookup"
 msgstr "البحث"
 
@@ -417,7 +425,7 @@ msgstr "اسم المستخدم"
 msgid "_Username:"
 msgstr "ا_سم المستخدم:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:816
 msgid "Finger"
 msgstr "جس"
 
@@ -445,7 +453,7 @@ msgstr ""
 msgid "Domain address"
 msgstr "عنوان النطاق"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:920
 msgid "Whois"
 msgstr "معلومات الهوية"
 
@@ -483,93 +491,97 @@ msgid "Infrared Interface"
 msgstr "واجهة الأشعّة تحت الحمراء"
 
 #: ../src/info.c:66
+msgid "Infiniband Interface"
+msgstr "واجهة Infiniband"
+
+#: ../src/info.c:67
 msgid "Loopback Interface"
 msgstr "واجهة التّحلّق الخلفي"
 
-#: ../src/info.c:67
+#: ../src/info.c:68
 msgid "Unknown Interface"
 msgstr "واجهة مجهولة"
 
-#: ../src/info.c:165
+#: ../src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "لم يعثر على أجهزة الشّبكة"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: ../src/info.c:397 ../src/info.c:400
 msgid "Unknown"
 msgstr "مجهول"
 
-#: ../src/info.c:471
+#: ../src/info.c:472
 msgid "Active"
 msgstr "نشط"
 
-#: ../src/info.c:473
+#: ../src/info.c:474
 msgid "Inactive"
 msgstr "غير نشط"
 
-#: ../src/info.c:478
+#: ../src/info.c:479
 msgid "Loopback"
 msgstr "تحلّق خلفي"
 
-#: ../src/info.c:489
+#: ../src/info.c:490
 msgid "Enabled"
 msgstr "ممكّن"
 
-#: ../src/info.c:491
+#: ../src/info.c:492
 msgid "Disabled"
 msgstr "معطّل"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: ../src/info.c:581
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "جهاز الشّبكة:\t%s\n"
 
-#: ../src/info.c:581
+#: ../src/info.c:582
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "عنوان العتاد:\t%s\n"
 
-#: ../src/info.c:582
+#: ../src/info.c:583
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "تعدّد البث:\t%s\n"
 
-#: ../src/info.c:583
+#: ../src/info.c:584
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: ../src/info.c:585
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "سرعة الوصلة:\t%s\n"
 
-#: ../src/info.c:585
+#: ../src/info.c:586
 #, c-format
 msgid "State:\t%s\n"
 msgstr "الحالة:\t%s\n"
 
-#: ../src/info.c:587
+#: ../src/info.c:588
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "الحزم المرسَلة:\t%s\n"
 
-#: ../src/info.c:588
+#: ../src/info.c:589
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "أخطاء الإرسال:\t%s\n"
 
-#: ../src/info.c:589
+#: ../src/info.c:590
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "الحزم المستلَمة:\t%s\n"
 
-#: ../src/info.c:590
+#: ../src/info.c:591
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "أخطاء الاستلام:\t%s\n"
 
-#: ../src/info.c:591
+#: ../src/info.c:592
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "التّصادمات:\t%s\n"
@@ -671,7 +683,7 @@ msgstr "النّطاق"
 #: ../src/main.c:130
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "الملف %s غير موجود. فضلًا تأكّد إن كانت حزمة gnome-nettool مثبّتةً بشكلٍ صحيح"
@@ -712,40 +724,45 @@ msgstr "الاسم الرسمي"
 msgid "CPU / OS Type"
 msgstr "نوع المعالج / نظام التشغيل"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: ../src/main.c:675
 msgid "Mailbox Exchange"
 msgstr "إكستشينج"
 
-#: ../src/main.c:671
+#: ../src/main.c:676
 msgid "Mailbox Information"
 msgstr "معلومات صندوق البريد"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: ../src/main.c:678
 msgid "Name Server"
 msgstr "خادوم نطاق الاسماء"
 
-#: ../src/main.c:674
+#: ../src/main.c:679
 msgid "Host name for Address"
 msgstr "اسم المستضيف كعنوان"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: ../src/main.c:683
 msgid "Start of Authority"
 msgstr "بداية السلطة"
 
-#: ../src/main.c:679
+#: ../src/main.c:684
 msgid "Text Information"
 msgstr "معلومات النص"
 
-#: ../src/main.c:680
+#: ../src/main.c:685
 msgid "Well Known Services"
 msgstr "خدمات معروفة جدا"
 
-#: ../src/main.c:681
+#: ../src/main.c:686
 msgid "Any / All Information"
 msgstr "معلومات أي / كل"
 
@@ -831,8 +848,8 @@ msgstr "فضلًا أدخل عنوان شبكةٍ سليم و حاول مجدّ�
 
 #: ../src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "لا يمكن العثور على العنوان '%s'"
+msgid "The address “%s” cannot be found"
+msgstr "لا يمكن العثور على العنوان ”%s“"
 
 #: ../src/nettool.c:241
 msgid "A domain address was not specified"
@@ -842,10 +859,12 @@ msgstr "لم يحدّد عنوان نطاق"
 msgid "Please enter a valid domain address and try again."
 msgstr "فضلًا أدخل عنوان نطاقٍ سليم و حاول مجدّدًا."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: ../src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
-msgstr "حدث خطأ عند محاولة تنفيذ «%s»"
+msgid "An error occurred when try to run “%s”"
+msgstr "حدث خطأ عند محاولة تنفيذ ”%s“"
 
 #: ../src/nettool.c:464
 msgid "Information not available"
@@ -970,14 +989,13 @@ msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:361
+#: ../src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "القفزة\tاسم المضيف\tالـIP\tالوقت 1\n"
 
-#: ../src/utils.c:231
+#: ../src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
@@ -986,13 +1004,13 @@ msgstr "لاستعمال هذه الميزة في البرنامج، يجب تث
 
 #: ../src/finger.c:65
 #, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "يجلب معلومات %s على \"%s\""
+msgid "Getting information of %s on “%s”"
+msgstr "يجلب معلومات %s على ”%s“"
 
 #: ../src/finger.c:69
 #, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "يجلب معلومات كافّة المستخدمين على \"%s\""
+msgid "Getting information of all users on “%s”"
+msgstr "يجلب معلومات كافّة المستخدمين على ”%s“"
 
 #: ../src/whois.c:62
 #, c-format
