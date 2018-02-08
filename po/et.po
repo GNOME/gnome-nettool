@@ -12,247 +12,311 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-12 15:11+0000\n"
-"PO-Revision-Date: 2013-03-12 22:24+0300\n"
-"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"POT-Creation-Date: 2017-10-03 20:18+0000\n"
+"PO-Revision-Date: 2018-02-09 00:48+0200\n"
+"Last-Translator: Mart Raudsepp <leio@gentoo.org>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-
-msgid "translator-credits"
-msgstr ""
-"Ivar Smolin <okul@linux.ee>, 2005–2010.\n"
-"Priit Laes <amd@store20.com>, 2005.\n"
-"Mattias Põldaru <mahfiaz@gmail.com>, 2012."
-
-#. Translators: %s is the name of the copyright holder
-#, c-format
-msgid "Copyright © 2003-2008 %s"
-msgstr "Autoriõigused © 2003-2008 %s"
+"X-Generator: Poedit 2.0.6\n"
 
 #. Dear translator: This is the name of the application
+#: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
+#: src/callbacks.c:343 src/callbacks.c:344
 msgid "Network Tools"
 msgstr "Võrgutööriistad"
 
-msgid "Graphical user interface for common network utilities"
-msgstr "Graafiline kasutajaliides üldiste võrguutiliitide jaoks"
+#: data/gnome-nettool.appdata.xml.in:11
+msgid "Perform advanced networking analysis"
+msgstr "Keeruliste võrguanalüüside teostamine"
 
-msgid "Idle"
-msgstr "Jõude"
+#: data/gnome-nettool.appdata.xml.in:13
+msgid ""
+"Network Tools is a utility to perform advanced networking analysis "
+"operations. It features a range of networking tools that are typically done "
+"on the command line, but allows you to perform them with a graphical "
+"interface."
+msgstr ""
 
-#. Dear Translator: This is the Window Title. 'Network Tools' is the
-#. * name of the application
-#, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Võrgutööriistad"
+#: data/gnome-nettool.appdata.xml.in:20
+msgid ""
+"With Network Tools, you can perform the following: ping, netstat, "
+"traceroute, port scans, lookup, finger and whois."
+msgstr ""
 
-msgid "Unable to open help file"
-msgstr "Abiteabe faili pole võimalik avada"
+#: data/gnome-nettool.appdata.xml.in:39
+msgid "The GNOME Project"
+msgstr "GNOME projekt"
 
+#: data/gnome-nettool.desktop.in.in:4
+msgid "Network information tools"
+msgstr "Võrguteabe tööriistad"
+
+#: data/gnome-nettool.desktop.in.in:5
 msgid "View information about your network"
 msgstr "Sinu võrgu kohta andmete vaatamine"
 
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-nettool.desktop.in.in:7
 msgid "network;monitor;remote;"
-msgstr "võrk;monitooring;kaugühendus;ühendused;"
+msgstr "network;monitor;remote;võrk;monitooring;kaugühendus;ühendused;"
 
-msgid "Historically used hostnames"
-msgstr "Varasemalt kasutatud hostinimed"
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/gnome-nettool.desktop.in.in:10
+msgid "gnome-nettool"
+msgstr "gnome-nettool"
 
-msgid "A list of hostnames previously used"
-msgstr "Varem kasutatud hostinimede loetelu"
-
-msgid "Historically used usernames"
-msgstr "Varasemalt kasutatud kasutajanimed"
-
-msgid "A list of usernames previously used"
-msgstr "Varem kasutatud kasutajanimede loetelu"
-
-msgid "Historically used domains"
-msgstr "Varasemalt kasutatud domeenid"
-
-msgid "A list of domains previously used"
-msgstr "Varem kasutatud domeenide loetelu"
-
+#: data/gnome-nettool.ui:18 data/gnome-nettool.ui:28 data/gnome-nettool.ui:38
+#: data/gnome-nettool.ui:48 data/gnome-nettool.ui:58 data/gnome-nettool.ui:78
 msgid "Host"
 msgstr "Host"
 
+#: data/gnome-nettool.ui:68
 msgid "User"
 msgstr "Kasutaja"
 
+#: data/gnome-nettool.ui:88
 msgid "_Tool"
 msgstr "_Vahendid"
 
+#: data/gnome-nettool.ui:94
 msgid "Beep on ping"
 msgstr "Piiksumine pingimisel"
 
+#: data/gnome-nettool.ui:107
 msgid "_Edit"
 msgstr "_Redaktor"
 
+#: data/gnome-nettool.ui:113
 msgid "Copy as text _report"
 msgstr "Kopeeri teksti_raportina"
 
+#: data/gnome-nettool.ui:121
 msgid "Clear _History"
 msgstr "Puhasta _ajalugu"
 
+#: data/gnome-nettool.ui:128
 msgid "_Help"
 msgstr "A_bi"
 
+#: data/gnome-nettool.ui:135
 msgid "_Contents"
 msgstr "_Sisukord"
 
-msgid "Devices - Network Tools"
-msgstr "Seadmed - Võrgutööriistad"
+#. Dear Translator: This is the Window Title
+#: data/gnome-nettool.ui:170
+msgid "Devices — Network Tools"
+msgstr "Seadmed — Võrgutööriistad"
 
+#: data/gnome-nettool.ui:202
 msgid "_Network device:"
 msgstr "Võr_guseade:"
 
+#: data/gnome-nettool.ui:250
 msgid "_Configure"
 msgstr "_Seadista"
 
+#: data/gnome-nettool.ui:308
 msgid "IP Information"
 msgstr "IP andmed"
 
+#: data/gnome-nettool.ui:348
 msgid "Hardware address:"
 msgstr "Riistvaraline aadress:"
 
+#: data/gnome-nettool.ui:362
 msgid "Multicast:"
 msgstr "Multicast:"
 
+#: data/gnome-nettool.ui:378
 msgid "MTU:"
 msgstr "MTU:"
 
+#: data/gnome-nettool.ui:394
 msgid "Link speed:"
 msgstr "Ühenduskiirus:"
 
+#: data/gnome-nettool.ui:410
 msgid "State:"
 msgstr "Olek:"
 
+#: data/gnome-nettool.ui:426 data/gnome-nettool.ui:444
+#: data/gnome-nettool.ui:463 data/gnome-nettool.ui:482
+#: data/gnome-nettool.ui:501 data/gnome-nettool.ui:590
+#: data/gnome-nettool.ui:609 data/gnome-nettool.ui:626
+#: data/gnome-nettool.ui:661 data/gnome-nettool.ui:696
+#: data/gnome-nettool.ui:731 data/gnome-nettool.ui:766
 msgid "Not Available"
 msgstr "Pole saadaval"
 
+#: data/gnome-nettool.ui:523
 msgid "Interface Information"
 msgstr "Liidese andmed"
 
+#: data/gnome-nettool.ui:560
 msgid "Transmitted bytes:"
-msgstr "Ülekantud baite:"
+msgstr "Saadetud baite:"
 
+#: data/gnome-nettool.ui:574
 msgid "Received bytes:"
 msgstr "Vastuvõetud baite:"
 
+#: data/gnome-nettool.ui:645
 msgid "Transmission errors:"
-msgstr "Ülekandevigu:"
+msgstr "Saatmisvigu:"
 
+#: data/gnome-nettool.ui:680
 msgid "Transmitted packets:"
-msgstr "Ülekantud pakette:"
+msgstr "Saadetud pakette:"
 
+#: data/gnome-nettool.ui:715
 msgid "Received packets:"
 msgstr "Vastuvõetud pakette:"
 
+#: data/gnome-nettool.ui:750
 msgid "Reception errors:"
 msgstr "Vastuvõtuvigu:"
 
+#: data/gnome-nettool.ui:785
 msgid "Collisions:"
 msgstr "Kollisioone:"
 
+#: data/gnome-nettool.ui:805
 msgid "Interface Statistics"
 msgstr "Liidese statistika"
 
+#: data/gnome-nettool.ui:835
 msgid "Devices"
 msgstr "Seadmed"
 
+#: data/gnome-nettool.ui:870
 msgid "Only"
 msgstr "Ainult"
 
+#: data/gnome-nettool.ui:898
 msgid "requests"
 msgstr "päringut"
 
+#: data/gnome-nettool.ui:916
 msgid "Unlimited requests"
 msgstr "Piiramatu arv päringuid"
 
+#: data/gnome-nettool.ui:941
 msgid "Send:"
 msgstr "Saadetakse:"
 
+#: data/gnome-nettool.ui:961
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Sisesta võrguaadress, millele soovid ping-päringut saata. Näiteks: www."
 "domain.com või 192.168.2.1"
 
+#: data/gnome-nettool.ui:967 data/gnome-nettool.ui:981
+#: data/gnome-nettool.ui:1851 data/gnome-nettool.ui:2028
+#: data/gnome-nettool.ui:2201
 msgid "Network address"
 msgstr "Võrguaadress"
 
+#: data/gnome-nettool.ui:994 data/gnome-nettool.ui:1674
+#: data/gnome-nettool.ui:1829 data/gnome-nettool.ui:2051
+#: data/gnome-nettool.ui:2260
 msgid "_Network address:"
 msgstr "Võr_guaadress:"
 
+#: data/gnome-nettool.ui:1042 data/gnome-nettool.ui:1457 src/main.c:288
 msgid "Ping"
 msgstr "Ping"
 
+#: data/gnome-nettool.ui:1100 data/gnome-nettool.ui:1119
+#: data/gnome-nettool.ui:1138
 msgid "0.0"
 msgstr "0.0"
 
+#. Translators: this is the abbreviation for milliseconds
+#: data/gnome-nettool.ui:1155 data/gnome-nettool.ui:1170
+#: data/gnome-nettool.ui:1185
 msgid "ms"
 msgstr "ms"
 
+#: data/gnome-nettool.ui:1198
 msgid "Maximum:"
 msgstr "Suurim:"
 
+#: data/gnome-nettool.ui:1214
 msgid "Average:"
 msgstr "Keskmine:"
 
+#: data/gnome-nettool.ui:1230
 msgid "Minimum:"
 msgstr "Vähim:"
 
+#: data/gnome-nettool.ui:1247
 msgid "Round Trip Time Statistics"
 msgstr "Ringi läbimise ajaline statistika"
 
+#: data/gnome-nettool.ui:1280
 msgid "Packets transmitted:"
-msgstr "Edastatud pakette:"
+msgstr "Saadetud pakette:"
 
-#, no-c-format
+#: data/gnome-nettool.ui:1294
 msgid "0%"
 msgstr "0%"
 
+#: data/gnome-nettool.ui:1313 data/gnome-nettool.ui:1332
 msgid "0"
 msgstr "0"
 
+#: data/gnome-nettool.ui:1349
 msgid "Successful packets:"
 msgstr "Vigadeta pakette:"
 
+#: data/gnome-nettool.ui:1365
 msgid "Packets received:"
 msgstr "Vastuvõetud pakette:"
 
+#: data/gnome-nettool.ui:1384
 msgid "Transmission Statistics"
 msgstr "Ülekandestatistika"
 
+#: data/gnome-nettool.ui:1441
 msgid "Details"
 msgstr "Üksikasjad"
 
+#: data/gnome-nettool.ui:1482
 msgid "Display:"
 msgstr "Kuvatakse:"
 
+#: data/gnome-nettool.ui:1497
 msgid "Routing Table Information"
 msgstr "Ruutingutabeli andmed"
 
+#: data/gnome-nettool.ui:1511
 msgid "Active Network Services"
 msgstr "Aktiivsed võrguteenused"
 
+#: data/gnome-nettool.ui:1526
 msgid "Multicast Information"
-msgstr "Multicast'i andmed"
+msgstr "Multicasti andmed"
 
+#: data/gnome-nettool.ui:1581 data/gnome-nettool.ui:1649 src/main.c:442
 msgid "Netstat"
 msgstr "Võrgustatistika"
 
+#: data/gnome-nettool.ui:1625
 msgid "Output for net stat"
 msgstr "Võrgustatistika väljund"
 
+#: data/gnome-nettool.ui:1632
 msgid "Netstat output"
 msgstr "Võrgustatistika väljund"
 
+#: data/gnome-nettool.ui:1690
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
@@ -260,218 +324,352 @@ msgstr ""
 "Sisesta võrguaadress, kuhu sa soovid pakettide liikumisrada tuvastada. "
 "Näiteks: www.domeen.ee või 192.168.2.1"
 
+#: data/gnome-nettool.ui:1741 src/main.c:373
 msgid "Trace"
 msgstr "Leia marsruut"
 
+#: data/gnome-nettool.ui:1778
 msgid "Output for traceroute"
 msgstr "Marsruudi leidmise väljund"
 
+#: data/gnome-nettool.ui:1785
 msgid "Traceroute output"
 msgstr "Marsruudi leidmise väljund"
 
+#: data/gnome-nettool.ui:1803
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
-"Sisesta võrguaadress, kuhu sa soovid pakettide liikumisdada tuvastada. "
-"Näiteks: www.domain.com või 192.168.2.1"
+"Sisesta võrguaadress, kuhu sa soovid pakettide liikumisrada tuvastada. "
+"Näiteks: www.domeen.ee või 192.168.2.1"
 
+#: data/gnome-nettool.ui:1804
 msgid "Traceroute"
 msgstr "Marsruudi leidmine"
 
+#: data/gnome-nettool.ui:1845
 msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
 msgstr ""
 "Sisesta võrguaadress, mille avatud porte soovid kontrollida. Näiteks: www."
-"domain.com või 192.168.2.1"
+"domeen.ee või 192.168.2.1"
 
+#: data/gnome-nettool.ui:1901 src/main.c:613
 msgid "Scan"
 msgstr "Skanni"
 
+#: data/gnome-nettool.ui:1938
 msgid "Output for port scan"
 msgstr "Pordiskannimise väljund"
 
+#: data/gnome-nettool.ui:1945
 msgid "Port scan output"
 msgstr "Pordiskannimise väljund"
 
+#: data/gnome-nettool.ui:1962
 msgid "Port Scan"
 msgstr "Pordiskannimine"
 
+#: data/gnome-nettool.ui:2004
 msgid "_Information type:"
 msgstr "A_ndmete liik:"
 
+#: data/gnome-nettool.ui:2022
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
-"Sisesta domeen, mida soovid lahendada. Näiteks: domeen.ee või ftp.domeen.ee"
+"Sisesta domeen, mida soovid lahendada. Näiteks: domeen.ee või ftp.domeen.ee."
 
+#: data/gnome-nettool.ui:2096 data/gnome-nettool.ui:2163 src/main.c:736
 msgid "Lookup"
 msgstr "Nimelahendus"
 
+#: data/gnome-nettool.ui:2140
 msgid "Output for lookup"
 msgstr "Nimelahenduse väljund"
 
+#: data/gnome-nettool.ui:2146
 msgid "Lookup output"
 msgstr "Nimelahenduse väljund"
 
+#: data/gnome-nettool.ui:2195
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
 "Sisesta domeen või aadress, millelt soovid finger-päringut teha. Näiteks: "
-"www.domain.com või 192.168.2.1"
+"www.domeen.ee või 192.168.2.1"
 
+#: data/gnome-nettool.ui:2231
 msgid "Enter the user to finger"
 msgstr "Sisesta kasutaja, kelle kohta soovid finger-päringut teha"
 
+#: data/gnome-nettool.ui:2237
 msgid "User name"
 msgstr "Kasutaja nimi"
 
+#: data/gnome-nettool.ui:2274
 msgid "_Username:"
 msgstr "_Kasutajanimi:"
 
+#: data/gnome-nettool.ui:2319 data/gnome-nettool.ui:2387 src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
+#: data/gnome-nettool.ui:2363
 msgid "Output for finger"
-msgstr "Fingeri väljund"
+msgstr "Finger väljund"
 
+#: data/gnome-nettool.ui:2370
 msgid "Finger output"
-msgstr "Fingeri väljund"
+msgstr "Finger väljund"
 
+#: data/gnome-nettool.ui:2412
 msgid "_Domain address:"
 msgstr "_Domeeni aadress:"
 
+#: data/gnome-nettool.ui:2428
 msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
 msgstr ""
 "Sisesta domeen või aadress, mille kohta soovid whois-päringut teha. Näiteks: "
-"www.domain.com või 192.168.2.1"
+"www.domeen.ee või 192.168.2.1"
 
+#: data/gnome-nettool.ui:2434
 msgid "Domain address"
 msgstr "Domeeni aadress"
 
+#: data/gnome-nettool.ui:2484 data/gnome-nettool.ui:2548 src/main.c:918
 msgid "Whois"
 msgstr "Whois"
 
+#: data/gnome-nettool.ui:2521 data/gnome-nettool.ui:2547
 msgid "Output for whois"
-msgstr "Whoisi väljund"
+msgstr "Whois väljund"
 
+#: data/gnome-nettool.ui:2529 data/gnome-nettool.ui:2530
+#: data/gnome-nettool.ui:2554
 msgid "Whois output"
-msgstr "Whoisi väljund"
+msgstr "Whois väljund"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:6
+msgid "Historically used hostnames"
+msgstr "Varasemalt kasutatud hostinimed"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:7
+msgid "A list of hostnames previously used"
+msgstr "Varem kasutatud hostinimede loetelu"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:11
+msgid "Historically used usernames"
+msgstr "Varasemalt kasutatud kasutajanimed"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:12
+msgid "A list of usernames previously used"
+msgstr "Varem kasutatud kasutajanimede loetelu"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:16
+msgid "Historically used domains"
+msgstr "Varasemalt kasutatud domeenid"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:17
+msgid "A list of domains previously used"
+msgstr "Varem kasutatud domeenide loetelu"
+
+#: src/callbacks.c:332
+msgid "translator-credits"
+msgstr ""
+"Ivar Smolin <okul@linux.ee>, 2005–2010.\n"
+"Priit Laes <amd@store20.com>, 2005.\n"
+"Mattias Põldaru <mahfiaz@gmail.com>, 2012.\n"
+"Mart Raudsepp <leio@gentoo.org>, 2018."
+
+#. Translators: %s is the name of the copyright holder
+#: src/callbacks.c:339
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr "Autoriõigused © 2003-2008 %s"
+
+#: src/callbacks.c:346
+msgid "Graphical user interface for common network utilities"
+msgstr "Graafiline kasutajaliides üldiste võrguutiliitide jaoks"
+
+#: src/callbacks.c:458 src/main.c:140 src/nettool.c:524
+msgid "Idle"
+msgstr "Jõude"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: src/callbacks.c:463
+#, c-format
+msgid "%s — Network Tools"
+msgstr "%s — Võrgutööriistad"
+
+#: src/callbacks.c:487
+msgid "Unable to open help file"
+msgstr "Abiteabe faili pole võimalik avada"
+
+#: src/finger.c:65
+#, c-format
+msgid "Getting information of %s on “%s”"
+msgstr "„%s“ andmete hankimine hostilt „%s“"
+
+#: src/finger.c:69
+#, c-format
+msgid "Getting information of all users on “%s”"
+msgstr "„%s“ kõikide kasutajate kohta andmete hankimine"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
+#: src/info.c:60
 msgid "Other type"
 msgstr "Muu liik"
 
+#: src/info.c:61
 msgid "Ethernet Interface"
 msgstr "Ethernet liides"
 
+#: src/info.c:62
 msgid "Wireless Interface"
 msgstr "Traadita liides"
 
+#: src/info.c:63
 msgid "Modem Interface"
 msgstr "Modemliides"
 
+#: src/info.c:64
 msgid "Parallel Line Interface"
 msgstr "Paralleelliini liides"
 
+#: src/info.c:65
 msgid "Infrared Interface"
 msgstr "Infrapunaliides"
 
+#: src/info.c:66
+#| msgid "Infrared Interface"
+msgid "Infiniband Interface"
+msgstr "Infiniband-liides"
+
+#: src/info.c:67
 msgid "Loopback Interface"
 msgstr "Loopback liides"
 
+#: src/info.c:68
 msgid "Unknown Interface"
 msgstr "Tundmatu liides"
 
+#: src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Võrguseadmeid ei leitud"
 
+#: src/info.c:397 src/info.c:400
 msgid "Unknown"
 msgstr "Tundmatu"
 
+#: src/info.c:472
 msgid "Active"
 msgstr "Aktiivne"
 
+#: src/info.c:474
 msgid "Inactive"
 msgstr "Mitteaktiivne"
 
+#: src/info.c:479
 msgid "Loopback"
 msgstr "Loopback"
 
+#: src/info.c:489
 msgid "Enabled"
 msgstr "Lubatud"
 
+#: src/info.c:491
 msgid "Disabled"
 msgstr "Keelatud"
 
 #. The info output in a text format (to copy on clipboard)
+#: src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Võrguseade:\t%s\n"
 
+#: src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Riistvaraline aadress:\t%s\n"
 
+#: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
+#: src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
+#: src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Ühenduskiirus:\t%s\n"
 
+#: src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Olek:\t%s\n"
 
+#: src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
-msgstr "Ülekantud pakette:\t%s\n"
+msgstr "Saadetud pakette:\t%s\n"
 
+#: src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
-msgstr "Ülekandevigu:\t%s\n"
+msgstr "Saatmisvigu:\t%s\n"
 
+#: src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Vastuvõetud pakette:\t%s\n"
 
+#: src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Vastuvõtu vigu:\t%s\n"
 
+#: src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Kollisioone:\t%s\n"
 
+#: src/info.h:23
 msgid "not available"
 msgstr "pole saadaval"
 
+#: src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "%s lahendamine"
 
+#: src/lookup.c:279
 msgid "Name"
 msgstr "Nimi"
 
 #. Time To Live of a hostname in a name server
+#: src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
+#: src/lookup.c:297
 msgid "Address Type"
 msgstr "Aadressi liik"
 
+#: src/lookup.c:307
 msgid "Record Type"
 msgstr "Kirje liik"
 
+#: src/lookup.c:316
 msgid "Address"
 msgstr "Aadress"
 
@@ -481,95 +679,128 @@ msgstr "Aadress"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
+#: src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Lähteaadress\tTTL\tAadressi liik\tKirje liik\tTulemus\n"
 
+#: src/main.c:82
 msgid "Load information for a network device"
 msgstr "Võrguseadme kohta andmete laadimine"
 
+#: src/main.c:83
 msgid "DEVICE"
 msgstr "SEADE"
 
+#: src/main.c:86
 msgid "Send a ping to a network address"
 msgstr "Ping pakettide saatmine võrguaadressile"
 
+#: src/main.c:87 src/main.c:95 src/main.c:99 src/main.c:103
 msgid "HOST"
 msgstr "HOST"
 
+#: src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
 "Netstat andmete hankimine.  Lubatud võtmed on: route, active, multicast."
 
+#: src/main.c:91
 msgid "COMMAND"
 msgstr "KÄSK"
 
+#: src/main.c:94
 msgid "Trace a route to a network address"
 msgstr "Võrguaadressini viiva marsruudi jälgimine"
 
+#: src/main.c:98
 msgid "Port scan a network address"
 msgstr "Võrguaadressi portide skannimine"
 
+#: src/main.c:102
 msgid "Look up a network address"
 msgstr "Võrguaadressi lahendamine"
 
+#: src/main.c:106
 msgid "Finger command to run"
 msgstr "Finger käsu täitmine"
 
+#: src/main.c:107
 msgid "USER"
 msgstr "KASUTAJA"
 
+#: src/main.c:110
 msgid "Perform a whois lookup for a network domain"
 msgstr "Võrgudomeeni lahendamiseks whois päringu teostamine"
 
+#: src/main.c:111
 msgid "DOMAIN"
 msgstr "DOMEEN"
 
+#: src/main.c:128
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
 "Faili %s pole olemas, palun veendu, et gnome-nettool on korralikult "
 "paigaldatud"
 
+#: src/main.c:476 src/netstat.c:464
 msgid "Protocol"
 msgstr "Protokoll"
 
+#: src/main.c:483
 msgid "IP Address"
 msgstr "IP-aadress"
 
+#: src/main.c:490
 msgid "Netmask / Prefix"
 msgstr "Võrgumask / Eesliide"
 
+#: src/main.c:497
 msgid "Broadcast"
 msgstr "Broadcast"
 
+#: src/main.c:504
 msgid "Scope"
 msgstr "Skoop"
 
+#: src/main.c:663
 msgid "Default Information"
 msgstr "Vaikimisi andmed"
 
+#: src/main.c:664
 msgid "Internet Address"
 msgstr "Internetiaadress"
 
+#: src/main.c:665
 msgid "Canonical Name"
 msgstr "Kanooniline nimi"
 
+#: src/main.c:666
 msgid "CPU / OS Type"
 msgstr "Protsessori / opsüsteemi liik"
 
-#. When asking for MX record in DNS context
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: src/main.c:673
 msgid "Mailbox Exchange"
 msgstr "Postivahetaja"
 
+#: src/main.c:674
 msgid "Mailbox Information"
 msgstr "Postkasti andmed"
 
 #. When asking for NS record in DNS context
+#: src/main.c:676
 msgid "Name Server"
 msgstr "Nimeserver"
 
+#: src/main.c:677
 msgid "Host name for Address"
 msgstr "Aadressi hostinimi"
 
@@ -577,126 +808,165 @@ msgstr "Aadressi hostinimi"
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
+#: src/main.c:681
 msgid "Start of Authority"
 msgstr "Tsooni algusblokk (SOA)"
 
+#: src/main.c:682
 msgid "Text Information"
 msgstr "Tekstilised andmed"
 
+#: src/main.c:683
 msgid "Well Known Services"
 msgstr "Üldtuntud teenused"
 
+#: src/main.c:684
 msgid "Any / All Information"
 msgstr "Kogu teave (Any / All Information)"
 
+#: src/netstat.c:134
 msgid "Getting routing table"
 msgstr "Ruutingutabeli hankimine"
 
+#: src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "Aktiivsete internetiühenduste hankimine"
 
+#: src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "Grupikuuluvuste hankimine"
 
+#: src/netstat.c:471
 msgid "IP Source"
 msgstr "IP lähteaadress"
 
+#: src/netstat.c:479
 msgid "Port/Service"
 msgstr "Port/teenus"
 
+#: src/netstat.c:487 src/scan.c:213
 msgid "State"
 msgstr "Olek"
 
+#: src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "Sihtkoht/Eesliide"
 
+#: src/netstat.c:642
 msgid "Destination"
 msgstr "Sihtkoht"
 
+#: src/netstat.c:649
 msgid "Gateway"
-msgstr "Värav"
+msgstr "Lüüs"
 
+#: src/netstat.c:657
 msgid "Netmask"
 msgstr "Võrgumask"
 
+#: src/netstat.c:665 src/netstat.c:771
 msgid "Interface"
 msgstr "Liides"
 
+#: src/netstat.c:778
 msgid "Member"
 msgstr "Liige"
 
+#: src/netstat.c:786
 msgid "Group"
 msgstr "Grupp"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
+#: src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protokoll\tIP allikas\tPort/Teenus\tOlek\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
+#: src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
-msgstr "Sihtkoht\tVärav\tVõrgumask\tLiides\n"
+msgstr "Sihtkoht\tLüüs\tVõrgumask\tLiides\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
+#: src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "Liides\tLiige\tGrupp\n"
 
+#: src/nettool.c:204
 msgid "A network address was not specified"
 msgstr "Võrguaadress on määramata"
 
+#: src/nettool.c:205 src/nettool.c:214
 msgid "Please enter a valid network address and try again."
 msgstr "Palun sisesta korrektne võrguaadress ja proovi uuesti."
 
+#: src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "Aadressi '%s' pole võimalik leida"
+msgid "The address “%s” cannot be found"
+msgstr "Aadressi „%s“ pole võimalik leida"
 
+#: src/nettool.c:241
 msgid "A domain address was not specified"
 msgstr "Domeeniaadress on määramata"
 
+#: src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
 msgstr "Palun sisesta korrektne domeeni aadress ja proovi uuesti."
 
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
+#: src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
-msgstr "'%s' käivitamisel esines viga"
+msgid "An error occurred when try to run “%s”"
+msgstr "„%s“ käivitamisel esines viga"
 
+#: src/nettool.c:464
 msgid "Information not available"
 msgstr "Andmed pole saadaval"
 
+#: src/nettool.c:589
 msgid "Stop"
 msgstr "Seiska"
 
+#: src/nettool.c:595
 msgid "Run"
 msgstr "Käivita"
 
 #. Created up here so we can get the geometry info.
+#: src/ping.c:155
 msgid "Time (ms):"
 msgstr "Aeg (ms):"
 
+#: src/ping.c:176
 msgid "Seq. No.:"
 msgstr "Jrk Nr:"
 
+#: src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Ping päringu saatmine aadressile %s"
 
+#: src/ping.c:577
 msgid "Bytes"
 msgstr "Baiti"
 
+#: src/ping.c:584
 msgid "Source"
 msgstr "Allikas"
 
+#: src/ping.c:592
 msgid "Seq"
 msgstr "Jrk"
 
+#: src/ping.c:602 src/traceroute.c:336
 msgid "Time"
 msgstr "Aeg"
 
+#: src/ping.c:610
 msgid "Units"
 msgstr "Ühik"
 
@@ -704,69 +974,86 @@ msgstr "Ühik"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
+#: src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Baiti\tAllikas\tJrk\tAeg\tÜhik\n"
 
 #. The ping output in a text format (to copy on clipboard)
+#: src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Vähim aeg:\t%s ms\n"
 
+#: src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Keskmine aeg:\t%s ms\n"
 
+#: src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Suurim aeg:\t%s ms\n"
 
+#: src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
-msgstr "Ülekantud pakette:\t%s\n"
+msgstr "Saadetud pakette:\t%s\n"
 
+#: src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Vastuvõetud pakette:\t%s\n"
 
+#: src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Vigadeta pakette:\t%s\n"
 
+#: src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr "Avatud portide skannimine aadressil %s"
+msgstr "Avatud portide skaneerimine aadressil %s"
 
+#: src/scan.c:205
 msgid "Port"
 msgstr "Port"
 
+#: src/scan.c:221
 msgid "Service"
 msgstr "Teenus"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
+#: src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "Port\tOlek\tTeenus\n"
 
+#: src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "Otsin marsruuti hostini %s"
 
+#: src/traceroute.c:309
 msgid "Hop"
-msgstr "Hop"
+msgstr "Hopp"
 
+#: src/traceroute.c:317
 msgid "Hostname"
 msgstr "Hostinimi"
 
+#: src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
+#: src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
-msgstr "Hop\tHostinimi\tIP\tAeg 1\n"
+msgstr "Hopp\tHostinimi\tIP\tAeg 1\n"
 
+#: src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
@@ -775,14 +1062,7 @@ msgstr ""
 "Programmi selle võimaluse kasutamiseks peab sinu süsteemi olema paigaldatud "
 "%s"
 
-#, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "\"%s\" andmete hankimine hostilt \"%s\""
-
-#, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "\"%s\" kõikide kasutajate kohta andmete hankimine"
-
+#: src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Whois andmete hankimine %s kohta"
