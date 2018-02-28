@@ -22,6 +22,7 @@ linguas = [
   'es',
   'fr',
   'fur',
+  'gl',
   'hu',
   'ko',
   'oc',
