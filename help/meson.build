@@ -12,32 +12,7 @@ media = [
   'figures/gnome-nettool.png',
 ]
 
-linguas = [
-  'ca',
-  'cs',
-  'da',
-  'de',
-  'el',
-  'en_GB',
-  'es',
-  'fr',
-  'fur',
-  'gl',
-  'hu',
-  'ko',
-  'oc',
-  'pa',
-  'pl',
-  'pt_BR',
-  'ru',
-  'sv',
-  'uk',
-  'vi',
-  'zh_CN',
-]
-
 gnome.yelp(meson.project_name(),
            sources: sources,
            media: media,
-           symlink_media: true,
-           languages: linguas)
+           symlink_media: true)
