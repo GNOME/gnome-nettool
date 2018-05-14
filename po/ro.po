@@ -9,328 +9,320 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-06-22 07:24+0000\n"
-"PO-Revision-Date: 2015-06-22 19:32+0200\n"
-"Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"
+"POT-Creation-Date: 2018-03-26 22:11+0000\n"
+"PO-Revision-Date: 2018-05-13 15:44+0300\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
+"com>\n"
 "Language-Team: Gnome Romanian Translation Team\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"20)) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.7\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/callbacks.c:332
-msgid "translator-credits"
-msgstr ""
-"Mișu Moldovan\n"
-"Sebastian Ivan\n"
-"Adi Roiban\n"
-"Lucian Adrian Grijincu"
-
-#. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:339
-#, c-format
-msgid "Copyright © 2003-2008 %s"
-msgstr "Drepturi de autor © 2003-2008 %s"
-
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:343 ../src/callbacks.c:344
-#: ../data/gnome-nettool.desktop.in.in.h:1
+#: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
+#: src/callbacks.c:343 src/callbacks.c:344
 msgid "Network Tools"
 msgstr "Utilitare rețea"
 
-#: ../src/callbacks.c:346
-msgid "Graphical user interface for common network utilities"
-msgstr "Interfață grafică pentru utilitare uzuale de rețea"
+#: data/gnome-nettool.appdata.xml.in:11
+msgid "Perform advanced networking analysis"
+msgstr "Efectuează o analiză avansată de rețea"
 
-#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
-msgid "Idle"
-msgstr "Inactiv"
+#: data/gnome-nettool.appdata.xml.in:13
+msgid ""
+"Network Tools is a utility to perform advanced networking analysis "
+"operations. It features a range of networking tools that are typically done "
+"on the command line, but allows you to perform them with a graphical "
+"interface."
+msgstr ""
+"Utilitare rețea este un utilitar pentru efectuarea de operații de analiză "
+"avansată de rețea. Dispune de o gamă de unelte de rețea care sunt de obicei "
+"rulate în linie de comandă, dar vă permite să le efectuați cu o interfață "
+"grafică."
 
-#. Dear Translator: This is the Window Title. 'Network Tools' is the
-#. * name of the application
-#: ../src/callbacks.c:463
-#, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Utilitare rețea"
+#: data/gnome-nettool.appdata.xml.in:20
+msgid ""
+"With Network Tools, you can perform the following: ping, netstat, "
+"traceroute, port scans, lookup, finger and whois."
+msgstr ""
+"Cu Utilitare rețea, puteți să efectuați următoarele: ping, netstat, "
+"traceroute, scanări de porturi, lookup, finger și whois."
 
-#: ../src/callbacks.c:487
-msgid "Unable to open help file"
-msgstr "Nu s-a putut deschide fișierul de ajutor"
+#: data/gnome-nettool.appdata.xml.in:39
+msgid "The GNOME Project"
+msgstr "Proiectul GNOME"
 
-#: ../data/gnome-nettool.desktop.in.in.h:2
+#: data/gnome-nettool.desktop.in.in:4
+msgid "Network information tools"
+msgstr "Utilitare pentru informații despre rețea"
+
+#: data/gnome-nettool.desktop.in.in:5
 msgid "View information about your network"
 msgstr "Vizualizare informații despre rețeaua dumneavoastră"
 
-#: ../data/gnome-nettool.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-nettool.desktop.in.in:7
 msgid "network;monitor;remote;"
 msgstr "network;monitor;remote;rețea;distanță;monitorizare;"
 
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "Historically used hostnames"
-msgstr "Nume de gazdă utilizate în trecut"
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/gnome-nettool.desktop.in.in:10
+msgid "gnome-nettool"
+msgstr "gnome-nettool"
 
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
-msgid "A list of hostnames previously used"
-msgstr "O listă de nume de gazdă utilizate trecut"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "Historically used usernames"
-msgstr "Nume de utilizator utilizate în trecut"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "A list of usernames previously used"
-msgstr "O listă de nume de utilizate utilizate trecut"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used domains"
-msgstr "Domenii utilizate în trecut"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
-msgid "A list of domains previously used"
-msgstr "O listă de domenii utilizate în trecut"
-
-#: ../data/gnome-nettool.ui.h:1
+#: data/gnome-nettool.ui:18 data/gnome-nettool.ui:28 data/gnome-nettool.ui:38
+#: data/gnome-nettool.ui:48 data/gnome-nettool.ui:58 data/gnome-nettool.ui:78
 msgid "Host"
 msgstr "Gazdă"
 
-#: ../data/gnome-nettool.ui.h:2
+#: data/gnome-nettool.ui:68
 msgid "User"
 msgstr "Utilizator"
 
-#: ../data/gnome-nettool.ui.h:3
+#: data/gnome-nettool.ui:88
 msgid "_Tool"
 msgstr "_Unealtă"
 
-#: ../data/gnome-nettool.ui.h:4
+#: data/gnome-nettool.ui:94
 msgid "Beep on ping"
 msgstr "Bip la ping"
 
-#: ../data/gnome-nettool.ui.h:5
+#: data/gnome-nettool.ui:107
 msgid "_Edit"
 msgstr "_Editare"
 
-#: ../data/gnome-nettool.ui.h:6
+#: data/gnome-nettool.ui:113
 msgid "Copy as text _report"
 msgstr "Copiază ca _raport text"
 
-#: ../data/gnome-nettool.ui.h:7
+#: data/gnome-nettool.ui:121
 msgid "Clear _History"
 msgstr "Șterge _istoric"
 
-#: ../data/gnome-nettool.ui.h:8
+#: data/gnome-nettool.ui:128
 msgid "_Help"
 msgstr "_Ajutor"
 
-#: ../data/gnome-nettool.ui.h:9
+#: data/gnome-nettool.ui:135
 msgid "_Contents"
 msgstr "_Conținut"
 
-#: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "Dispozitive - Utilitare rețea"
+#. Dear Translator: This is the Window Title
+#: data/gnome-nettool.ui:170
+msgid "Devices — Network Tools"
+msgstr "Dispozitive — Utilitare rețea"
 
-#: ../data/gnome-nettool.ui.h:11
+#: data/gnome-nettool.ui:202
 msgid "_Network device:"
 msgstr "_Dispozitiv rețea:"
 
-#: ../data/gnome-nettool.ui.h:12
+#: data/gnome-nettool.ui:250
 msgid "_Configure"
 msgstr "_Configurare"
 
-#: ../data/gnome-nettool.ui.h:13
+#: data/gnome-nettool.ui:308
 msgid "IP Information"
 msgstr "Informații IP"
 
-#: ../data/gnome-nettool.ui.h:14
+#: data/gnome-nettool.ui:348
 msgid "Hardware address:"
 msgstr "Adresă hardware:"
 
-#: ../data/gnome-nettool.ui.h:15
+#: data/gnome-nettool.ui:362
 msgid "Multicast:"
 msgstr "Multicast:"
 
-#: ../data/gnome-nettool.ui.h:16
+#: data/gnome-nettool.ui:378
 msgid "MTU:"
 msgstr "MTU:"
 
-#: ../data/gnome-nettool.ui.h:17
+#: data/gnome-nettool.ui:394
 msgid "Link speed:"
 msgstr "Viteză legătură:"
 
-#: ../data/gnome-nettool.ui.h:18
+#: data/gnome-nettool.ui:410
 msgid "State:"
 msgstr "Stare:"
 
-#: ../data/gnome-nettool.ui.h:19
+#: data/gnome-nettool.ui:426 data/gnome-nettool.ui:444
+#: data/gnome-nettool.ui:463 data/gnome-nettool.ui:482
+#: data/gnome-nettool.ui:501 data/gnome-nettool.ui:590
+#: data/gnome-nettool.ui:609 data/gnome-nettool.ui:626
+#: data/gnome-nettool.ui:661 data/gnome-nettool.ui:696
+#: data/gnome-nettool.ui:731 data/gnome-nettool.ui:766
 msgid "Not Available"
 msgstr "Nedisponibil"
 
-#: ../data/gnome-nettool.ui.h:20
+#: data/gnome-nettool.ui:523
 msgid "Interface Information"
 msgstr "Informații interfață"
 
-#: ../data/gnome-nettool.ui.h:21
+#: data/gnome-nettool.ui:560
 msgid "Transmitted bytes:"
 msgstr "Octeți transmiși:"
 
-#: ../data/gnome-nettool.ui.h:22
+#: data/gnome-nettool.ui:574
 msgid "Received bytes:"
 msgstr "Octeți primiți:"
 
-#: ../data/gnome-nettool.ui.h:23
+#: data/gnome-nettool.ui:645
 msgid "Transmission errors:"
 msgstr "Erori transmisie:"
 
-#: ../data/gnome-nettool.ui.h:24
+#: data/gnome-nettool.ui:680
 msgid "Transmitted packets:"
 msgstr "Pachete transmise:"
 
-#: ../data/gnome-nettool.ui.h:25
+#: data/gnome-nettool.ui:715
 msgid "Received packets:"
 msgstr "Pachete primite:"
 
-#: ../data/gnome-nettool.ui.h:26
+#: data/gnome-nettool.ui:750
 msgid "Reception errors:"
 msgstr "Erori primire:"
 
-#: ../data/gnome-nettool.ui.h:27
+#: data/gnome-nettool.ui:785
 msgid "Collisions:"
 msgstr "Coliziuni:"
 
-#: ../data/gnome-nettool.ui.h:28
+#: data/gnome-nettool.ui:805
 msgid "Interface Statistics"
 msgstr "Statistici interfață"
 
-#: ../data/gnome-nettool.ui.h:29
+#: data/gnome-nettool.ui:835
 msgid "Devices"
 msgstr "Dispozitive"
 
-#: ../data/gnome-nettool.ui.h:30
+#: data/gnome-nettool.ui:870
 msgid "Only"
 msgstr "Doar"
 
-#: ../data/gnome-nettool.ui.h:31
+#: data/gnome-nettool.ui:898
 msgid "requests"
 msgstr "cereri"
 
-#: ../data/gnome-nettool.ui.h:32
+#: data/gnome-nettool.ui:916
 msgid "Unlimited requests"
 msgstr "Cereri nelimitate"
 
-#: ../data/gnome-nettool.ui.h:33
+#: data/gnome-nettool.ui:941
 msgid "Send:"
 msgstr "Trimite:"
 
-#: ../data/gnome-nettool.ui.h:34
+#: data/gnome-nettool.ui:961
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
 "Introduceți adresa de rețea pentru ping. De exemplu: www.domeniu.com sau "
 "192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:35
+#: data/gnome-nettool.ui:967 data/gnome-nettool.ui:981
+#: data/gnome-nettool.ui:1851 data/gnome-nettool.ui:2028
+#: data/gnome-nettool.ui:2201
 msgid "Network address"
-msgstr "Adresă rețea:"
+msgstr "Adresă de rețea"
 
-#: ../data/gnome-nettool.ui.h:36
+#: data/gnome-nettool.ui:994 data/gnome-nettool.ui:1674
+#: data/gnome-nettool.ui:1829 data/gnome-nettool.ui:2051
+#: data/gnome-nettool.ui:2260
 msgid "_Network address:"
 msgstr "Adresă _rețea:"
 
-#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+#: data/gnome-nettool.ui:1042 data/gnome-nettool.ui:1457 src/main.c:288
 msgid "Ping"
 msgstr "Ping"
 
-#: ../data/gnome-nettool.ui.h:38
+#: data/gnome-nettool.ui:1100 data/gnome-nettool.ui:1119
+#: data/gnome-nettool.ui:1138
 msgid "0.0"
 msgstr "0,0"
 
-#: ../data/gnome-nettool.ui.h:39
+#. Translators: this is the abbreviation for milliseconds
+#: data/gnome-nettool.ui:1155 data/gnome-nettool.ui:1170
+#: data/gnome-nettool.ui:1185
 msgid "ms"
 msgstr "ms"
 
-#: ../data/gnome-nettool.ui.h:40
+#: data/gnome-nettool.ui:1198
 msgid "Maximum:"
 msgstr "Maxim:"
 
-#: ../data/gnome-nettool.ui.h:41
+#: data/gnome-nettool.ui:1214
 msgid "Average:"
 msgstr "Mediu:"
 
-#: ../data/gnome-nettool.ui.h:42
+#: data/gnome-nettool.ui:1230
 msgid "Minimum:"
 msgstr "Minim:"
 
-#: ../data/gnome-nettool.ui.h:43
+#: data/gnome-nettool.ui:1247
 msgid "Round Trip Time Statistics"
-msgstr "Statistici „round trip time”"
+msgstr "Statistici round trip time"
 
-#: ../data/gnome-nettool.ui.h:44
+#: data/gnome-nettool.ui:1280
 msgid "Packets transmitted:"
 msgstr "Pachete transmise:"
 
-#: ../data/gnome-nettool.ui.h:46
-#, no-c-format
+#: data/gnome-nettool.ui:1294
 msgid "0%"
 msgstr "0%"
 
-#: ../data/gnome-nettool.ui.h:47
+#: data/gnome-nettool.ui:1313 data/gnome-nettool.ui:1332
 msgid "0"
 msgstr "0"
 
-#: ../data/gnome-nettool.ui.h:48
+#: data/gnome-nettool.ui:1349
 msgid "Successful packets:"
 msgstr "Pachete cu succes:"
 
-#: ../data/gnome-nettool.ui.h:49
+#: data/gnome-nettool.ui:1365
 msgid "Packets received:"
 msgstr "Pachete primite:"
 
-#: ../data/gnome-nettool.ui.h:50
+#: data/gnome-nettool.ui:1384
 msgid "Transmission Statistics"
 msgstr "Statistici transmisiune"
 
-#: ../data/gnome-nettool.ui.h:51
+#: data/gnome-nettool.ui:1441
 msgid "Details"
 msgstr "Detalii"
 
-#: ../data/gnome-nettool.ui.h:52
+#: data/gnome-nettool.ui:1482
 msgid "Display:"
 msgstr "Afișare:"
 
-#: ../data/gnome-nettool.ui.h:53
+#: data/gnome-nettool.ui:1497
 msgid "Routing Table Information"
 msgstr "Informații tabelă de rutare"
 
-#: ../data/gnome-nettool.ui.h:54
+#: data/gnome-nettool.ui:1511
 msgid "Active Network Services"
 msgstr "Servicii de rețea active"
 
-#: ../data/gnome-nettool.ui.h:55
+#: data/gnome-nettool.ui:1526
 msgid "Multicast Information"
 msgstr "Informații multicast"
 
-#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+#: data/gnome-nettool.ui:1581 data/gnome-nettool.ui:1649 src/main.c:442
 msgid "Netstat"
 msgstr "Netstat"
 
-#: ../data/gnome-nettool.ui.h:57
+#: data/gnome-nettool.ui:1625
 msgid "Output for net stat"
-msgstr "Ieșire pentru „net stat”"
+msgstr "Ieșire pentru net stat"
 
-#: ../data/gnome-nettool.ui.h:58
+#: data/gnome-nettool.ui:1632
 msgid "Netstat output"
-msgstr "Ieșire „netstat”"
+msgstr "Ieșire netstat"
 
-#: ../data/gnome-nettool.ui.h:59
-#| msgid ""
-#| "Enter the network address to trace a route to. For example: www.domain."
-#| "com or 192.168.2.1"
+#: data/gnome-nettool.ui:1690
 msgid ""
 "Enter the network address to trace a path to. For example: www.domain.com or "
 "192.168.2.1"
@@ -338,19 +330,19 @@ msgstr ""
 "Introduceți adresa de rețea pentru traceroute. De exemplu: www.domeniu.com "
 "sau 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+#: data/gnome-nettool.ui:1741 src/main.c:373
 msgid "Trace"
 msgstr "Trace"
 
-#: ../data/gnome-nettool.ui.h:61
+#: data/gnome-nettool.ui:1778
 msgid "Output for traceroute"
-msgstr "Ieșire pentru „traceroute”"
+msgstr "Ieșire pentru traceroute"
 
-#: ../data/gnome-nettool.ui.h:62
+#: data/gnome-nettool.ui:1785
 msgid "Traceroute output"
-msgstr "Ieșire „traceroute”"
+msgstr "Ieșire traceroute"
 
-#: ../data/gnome-nettool.ui.h:63
+#: data/gnome-nettool.ui:1803
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
@@ -358,11 +350,11 @@ msgstr ""
 "Introduceți adresa de rețea pentru traceroute. De exemplu: www.domeniu.com "
 "sau 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:64
+#: data/gnome-nettool.ui:1804
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../data/gnome-nettool.ui.h:65
+#: data/gnome-nettool.ui:1845
 msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
@@ -370,47 +362,44 @@ msgstr ""
 "Introduceți adresa de rețea pentru scanarea porturilor. De exemplu: www."
 "domeniu.com sau 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+#: data/gnome-nettool.ui:1901 src/main.c:613
 msgid "Scan"
 msgstr "Scanare"
 
-#: ../data/gnome-nettool.ui.h:67
+#: data/gnome-nettool.ui:1938
 msgid "Output for port scan"
-msgstr "Ieșire pentru „port scan”"
+msgstr "Ieșire pentru scanarea de port"
 
-#: ../data/gnome-nettool.ui.h:68
+#: data/gnome-nettool.ui:1945
 msgid "Port scan output"
 msgstr "Ieșire scanare port"
 
-#: ../data/gnome-nettool.ui.h:69
+#: data/gnome-nettool.ui:1962
 msgid "Port Scan"
 msgstr "Scanare porturi"
 
-#: ../data/gnome-nettool.ui.h:70
+#: data/gnome-nettool.ui:2004
 msgid "_Information type:"
 msgstr "Tip _informație:"
 
-#: ../data/gnome-nettool.ui.h:71
-#| msgid ""
-#| "Enter the network address to lookup. For example: www.domain.com or "
-#| "192.168.2.1"
+#: data/gnome-nettool.ui:2022
 msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
 msgstr ""
 "Introduceți domeniul pentru lookup. De exemplu: domain.com or ftp.domain.com."
 
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+#: data/gnome-nettool.ui:2096 data/gnome-nettool.ui:2163 src/main.c:736
 msgid "Lookup"
 msgstr "Lookup"
 
-#: ../data/gnome-nettool.ui.h:73
+#: data/gnome-nettool.ui:2140
 msgid "Output for lookup"
-msgstr "Ieșire pentru „lookup”"
+msgstr "Ieșire pentru lookup"
 
-#: ../data/gnome-nettool.ui.h:74
+#: data/gnome-nettool.ui:2146
 msgid "Lookup output"
-msgstr "Ieșire „lookup”"
+msgstr "Ieșire lookup"
 
-#: ../data/gnome-nettool.ui.h:75
+#: data/gnome-nettool.ui:2195
 msgid ""
 "Enter the network address to finger that user. For example: www.domain.com "
 "or 192.168.2.1"
@@ -418,35 +407,35 @@ msgstr ""
 "Introduceți adresa de rețea pentru „finger”. De exemplu: www.domeniu.com sau "
 "192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:76
+#: data/gnome-nettool.ui:2231
 msgid "Enter the user to finger"
-msgstr "Introduceți un utilizator pentru „finger”"
+msgstr "Introduceți un utilizator pentru finger"
 
-#: ../data/gnome-nettool.ui.h:77
+#: data/gnome-nettool.ui:2237
 msgid "User name"
 msgstr "Nume utilizator"
 
-#: ../data/gnome-nettool.ui.h:78
+#: data/gnome-nettool.ui:2274
 msgid "_Username:"
 msgstr "Nume _utilizator:"
 
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+#: data/gnome-nettool.ui:2319 data/gnome-nettool.ui:2387 src/main.c:814
 msgid "Finger"
 msgstr "Finger"
 
-#: ../data/gnome-nettool.ui.h:80
+#: data/gnome-nettool.ui:2363
 msgid "Output for finger"
-msgstr "Ieșire pentru „finger”"
+msgstr "Ieșire pentru finger"
 
-#: ../data/gnome-nettool.ui.h:81
+#: data/gnome-nettool.ui:2370
 msgid "Finger output"
-msgstr "Ieșire „finger”"
+msgstr "Ieșire finger"
 
-#: ../data/gnome-nettool.ui.h:82
+#: data/gnome-nettool.ui:2412
 msgid "_Domain address:"
 msgstr "Adresă do_meniu:"
 
-#: ../data/gnome-nettool.ui.h:83
+#: data/gnome-nettool.ui:2428
 msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
@@ -454,166 +443,239 @@ msgstr ""
 "Introduceți adresa domeniului pentru informații „whois”. De exemplu: www."
 "domeniu.com sau 192.168.2.1"
 
-#: ../data/gnome-nettool.ui.h:84
+#: data/gnome-nettool.ui:2434
 msgid "Domain address"
 msgstr "Adresă domeniu"
 
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+#: data/gnome-nettool.ui:2484 data/gnome-nettool.ui:2548 src/main.c:918
 msgid "Whois"
 msgstr "Whois"
 
-#: ../data/gnome-nettool.ui.h:86
+#: data/gnome-nettool.ui:2521 data/gnome-nettool.ui:2547
 msgid "Output for whois"
-msgstr "Ieșire pentru „whois”"
+msgstr "Ieșire pentru whois"
 
-#: ../data/gnome-nettool.ui.h:87
+#: data/gnome-nettool.ui:2529 data/gnome-nettool.ui:2530
+#: data/gnome-nettool.ui:2554
 msgid "Whois output"
-msgstr "Ieșire „whois”"
+msgstr "Ieșire whois"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:6
+msgid "Historically used hostnames"
+msgstr "Nume de gazdă utilizate în trecut"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:7
+msgid "A list of hostnames previously used"
+msgstr "O listă de nume de gazdă utilizate trecut"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:11
+msgid "Historically used usernames"
+msgstr "Nume de utilizator utilizate în trecut"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:12
+msgid "A list of usernames previously used"
+msgstr "O listă de nume de utilizate utilizate trecut"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:16
+msgid "Historically used domains"
+msgstr "Domenii utilizate în trecut"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:17
+msgid "A list of domains previously used"
+msgstr "O listă de domenii utilizate în trecut"
+
+#: src/callbacks.c:332
+msgid "translator-credits"
+msgstr ""
+"Mișu Moldovan\n"
+"Sebastian Ivan\n"
+"Adi Roiban\n"
+"Lucian Adrian Grijincu\n"
+"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2018"
+
+#. Translators: %s is the name of the copyright holder
+#: src/callbacks.c:339
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr "Drepturi de autor © 2003-2008 %s"
+
+#: src/callbacks.c:346
+msgid "Graphical user interface for common network utilities"
+msgstr "Interfață grafică pentru utilitare uzuale de rețea"
+
+#: src/callbacks.c:458 src/main.c:140 src/nettool.c:524
+msgid "Idle"
+msgstr "Inactiv"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: src/callbacks.c:463
+#, c-format
+msgid "%s — Network Tools"
+msgstr "%s — Utilitare rețea"
+
+#: src/callbacks.c:487
+msgid "Unable to open help file"
+msgstr "Nu s-a putut deschide fișierul de ajutor"
+
+#: src/finger.c:65
+#, c-format
+msgid "Getting information of %s on “%s”"
+msgstr "Se obțin informații pentru %s din „%s”"
+
+#: src/finger.c:69
+#, c-format
+msgid "Getting information of all users on “%s”"
+msgstr "Se obțin informații pentru toți utilizatorii din „%s”"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
-#: ../src/info.c:60
+#: src/info.c:60
 msgid "Other type"
 msgstr "Alt tip"
 
-#: ../src/info.c:61
+#: src/info.c:61
 msgid "Ethernet Interface"
 msgstr "Interfață ethernet"
 
-#: ../src/info.c:62
+#: src/info.c:62
 msgid "Wireless Interface"
 msgstr "Interfată wireless"
 
-#: ../src/info.c:63
+#: src/info.c:63
 msgid "Modem Interface"
 msgstr "Interfață modem"
 
-#: ../src/info.c:64
+#: src/info.c:64
 msgid "Parallel Line Interface"
 msgstr "Interfață paralelă"
 
-#: ../src/info.c:65
+#: src/info.c:65
 msgid "Infrared Interface"
 msgstr "Interfață infraroșu"
 
-#: ../src/info.c:66
+#: src/info.c:66
+msgid "Infiniband Interface"
+msgstr "Interfață infiniband"
+
+#: src/info.c:67
 msgid "Loopback Interface"
 msgstr "Interfață loopback"
 
-#: ../src/info.c:67
+#: src/info.c:68
 msgid "Unknown Interface"
 msgstr "Interfață necunoscută"
 
-#: ../src/info.c:165
+#: src/info.c:166
 msgid "Network Devices Not Found"
 msgstr "Dispozitive de rețea negăsite"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: src/info.c:397 src/info.c:400
 msgid "Unknown"
 msgstr "Necunoscut"
 
-#: ../src/info.c:471
+#: src/info.c:472
 msgid "Active"
 msgstr "Activ"
 
-#: ../src/info.c:473
+#: src/info.c:474
 msgid "Inactive"
 msgstr "Inactiv"
 
-#: ../src/info.c:478
+#: src/info.c:479
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:489
+#: src/info.c:489
 msgid "Enabled"
 msgstr "Activat"
 
-#: ../src/info.c:491
+#: src/info.c:491
 msgid "Disabled"
 msgstr "Dezactivat"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Dispozitiv rețea:\t%s\n"
 
-#: ../src/info.c:581
+#: src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Adresă hardware:\t%s\n"
 
-#: ../src/info.c:582
+#: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:583
+#: src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Lățime de bandă:\t%s\n"
 
-#: ../src/info.c:585
+#: src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Stare:\t%s\n"
 
-#: ../src/info.c:587
+#: src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Pachete transmise:\t%s\n"
 
-#: ../src/info.c:588
+#: src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Erori de transmise:\t%s\n"
 
-#: ../src/info.c:589
+#: src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "Pachete primite:\t%s\n"
 
-#: ../src/info.c:590
+#: src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Erori primire:\t%s\n"
 
-#: ../src/info.c:591
+#: src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Coliziuni:\t%s\n"
 
-#: ../src/info.h:23
+#: src/info.h:23
 msgid "not available"
 msgstr "nedisponibil"
 
-#: ../src/lookup.c:85
+#: src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "Se caută %s"
 
-#: ../src/lookup.c:279
+#: src/lookup.c:279
 msgid "Name"
 msgstr "Nume"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:288
+#: src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:297
+#: src/lookup.c:297
 msgid "Address Type"
 msgstr "Tip adresă"
 
-#: ../src/lookup.c:307
+#: src/lookup.c:307
 msgid "Record Type"
 msgstr "Tip înregistrare"
 
-#: ../src/lookup.c:316
+#: src/lookup.c:316
 msgid "Address"
 msgstr "Adresă"
 
@@ -623,285 +685,291 @@ msgstr "Adresă"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:344
+#: src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Sursă\tTTL\tTip adresă\tTip înregistrare\tRezultat\n"
 
-#: ../src/main.c:82
+#: src/main.c:82
 msgid "Load information for a network device"
 msgstr "Încărcare informații pentru un dispozitv de rețea"
 
-#: ../src/main.c:83
+#: src/main.c:83
 msgid "DEVICE"
 msgstr "DISPOZITIV"
 
-#: ../src/main.c:86
+#: src/main.c:86
 msgid "Send a ping to a network address"
 msgstr "Trimite un ping către o adresă de rețea"
 
-#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
+#: src/main.c:87 src/main.c:95 src/main.c:99 src/main.c:103
 msgid "HOST"
 msgstr "GAZDĂ"
 
-#: ../src/main.c:90
+#: src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr "Obține detalii netstat. Opțiuni valide: route, active, multicast."
 
-#: ../src/main.c:91
+#: src/main.c:91
 msgid "COMMAND"
 msgstr "COMANDĂ"
 
-#: ../src/main.c:94
+#: src/main.c:94
 msgid "Trace a route to a network address"
 msgstr "Investighează ruta către o adresă de rețea"
 
-#: ../src/main.c:98
+#: src/main.c:98
 msgid "Port scan a network address"
 msgstr "Scanează porturile unei adrese de rețea"
 
-#: ../src/main.c:102
+#: src/main.c:102
 msgid "Look up a network address"
 msgstr "Caută o adresă de rețea"
 
-#: ../src/main.c:106
+#: src/main.c:106
 msgid "Finger command to run"
 msgstr "Comanda „finger” de utilizat"
 
-#: ../src/main.c:107
+#: src/main.c:107
 msgid "USER"
 msgstr "UTILIZATOR"
 
-#: ../src/main.c:110
+#: src/main.c:110
 msgid "Perform a whois lookup for a network domain"
-msgstr "Căutare „whois” pentru un domeniu de rețea"
+msgstr "Efectuează o căutare whois pentru un domeniu de rețea"
 
-#: ../src/main.c:111
+#: src/main.c:111
 msgid "DOMAIN"
 msgstr "DOMENIU"
 
-#: ../src/main.c:130
+#: src/main.c:128
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Fișierul %s nu există. Verificați dacă gnome-nettool este corect instalat"
+"Fișierul %s nu există, verificați dacă gnome-nettool este instalat corect"
 
-#: ../src/main.c:478 ../src/netstat.c:464
+#: src/main.c:476 src/netstat.c:464
 msgid "Protocol"
 msgstr "Protocol"
 
-#: ../src/main.c:485
+#: src/main.c:483
 msgid "IP Address"
 msgstr "Adresă IP"
 
-#: ../src/main.c:492
+#: src/main.c:490
 msgid "Netmask / Prefix"
 msgstr "Netmask / Prefix"
 
-#: ../src/main.c:499
+#: src/main.c:497
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: ../src/main.c:506
+#: src/main.c:504
 msgid "Scope"
 msgstr "Domeniu"
 
-#: ../src/main.c:665
+#: src/main.c:663
 msgid "Default Information"
 msgstr "Informații implicite"
 
-#: ../src/main.c:666
+#: src/main.c:664
 msgid "Internet Address"
 msgstr "Adresă Internet"
 
-#: ../src/main.c:667
+#: src/main.c:665
 msgid "Canonical Name"
 msgstr "Nume canonic"
 
-#: ../src/main.c:668
+#: src/main.c:666
 msgid "CPU / OS Type"
 msgstr "Tip procesor / sistem de operare"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: src/main.c:673
 msgid "Mailbox Exchange"
 msgstr "Server e-mail"
 
-#: ../src/main.c:671
+#: src/main.c:674
 msgid "Mailbox Information"
 msgstr "Informații cont email"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: src/main.c:676
 msgid "Name Server"
 msgstr "Server de nume"
 
-#: ../src/main.c:674
+#: src/main.c:677
 msgid "Host name for Address"
 msgstr "Nume gazdă pentru adresă"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
-#| msgid "Start-of-authority"
+#: src/main.c:681
 msgid "Start of Authority"
 msgstr "Start of Authority"
 
-#: ../src/main.c:679
+#: src/main.c:682
 msgid "Text Information"
 msgstr "Informații text"
 
-#: ../src/main.c:680
+#: src/main.c:683
 msgid "Well Known Services"
 msgstr "Serviciu bine cunoscut"
 
-#: ../src/main.c:681
+#: src/main.c:684
 msgid "Any / All Information"
 msgstr "Orice / Toate informațiile"
 
-#: ../src/netstat.c:134
+#: src/netstat.c:134
 msgid "Getting routing table"
 msgstr "Se obține tabela de rutare"
 
-#: ../src/netstat.c:149
+#: src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "Se obțin conexiunile active la Internet"
 
-#: ../src/netstat.c:158
+#: src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "Se obțin informațiile despre grupuri"
 
-#: ../src/netstat.c:471
+#: src/netstat.c:471
 msgid "IP Source"
 msgstr "Sursă IP"
 
-#: ../src/netstat.c:479
+#: src/netstat.c:479
 msgid "Port/Service"
 msgstr "Port/Serviciu"
 
-#: ../src/netstat.c:487 ../src/scan.c:213
+#: src/netstat.c:487 src/scan.c:213
 msgid "State"
 msgstr "Stare"
 
-#: ../src/netstat.c:640
+#: src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "Destinație/Prefix"
 
-#: ../src/netstat.c:642
+#: src/netstat.c:642
 msgid "Destination"
 msgstr "Destinație"
 
-#: ../src/netstat.c:649
+#: src/netstat.c:649
 msgid "Gateway"
 msgstr "Gateway"
 
-#: ../src/netstat.c:657
+#: src/netstat.c:657
 msgid "Netmask"
 msgstr "Mască rețea"
 
-#: ../src/netstat.c:665 ../src/netstat.c:771
+#: src/netstat.c:665 src/netstat.c:771
 msgid "Interface"
 msgstr "Interfață"
 
-#: ../src/netstat.c:778
+#: src/netstat.c:778
 msgid "Member"
 msgstr "Membru"
 
-#: ../src/netstat.c:786
+#: src/netstat.c:786
 msgid "Group"
 msgstr "Grup"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:826
+#: src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protocol\tSursă IP\tPort/Serviciu\tStare\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:832
+#: src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Destinație\tGateway\tNetmask\tInterfață\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:837
+#: src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "Interfață\tMembru\tGrup\n"
 
-#: ../src/nettool.c:204
+#: src/nettool.c:204
 msgid "A network address was not specified"
 msgstr "Nu s-a specificat o adresă de rețea"
 
-#: ../src/nettool.c:205 ../src/nettool.c:214
+#: src/nettool.c:205 src/nettool.c:214
 msgid "Please enter a valid network address and try again."
 msgstr "Introduceți o adresă de rețea validă și încercați din nou."
 
-#: ../src/nettool.c:212
+#: src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "Adresa „%s” nu a fost găsită"
+msgid "The address “%s” cannot be found"
+msgstr "Nu se poate găsi adresa „%s”"
 
-#: ../src/nettool.c:241
+#: src/nettool.c:241
 msgid "A domain address was not specified"
 msgstr "Nu s-a specificat adresa unui domeniu"
 
-#: ../src/nettool.c:242
+#: src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
 msgstr "Introduceți o adresă de domeniu validă și încercați din nou."
 
-#: ../src/nettool.c:290
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
+#: src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
+msgid "An error occurred when try to run “%s”"
 msgstr "A apărut o eroare când s-a încercat rularea lui „%s”"
 
-#: ../src/nettool.c:464
+#: src/nettool.c:464
 msgid "Information not available"
 msgstr "Informații indisponibile"
 
-#: ../src/nettool.c:589
+#: src/nettool.c:589
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/nettool.c:595
+#: src/nettool.c:595
 msgid "Run"
 msgstr "Start"
 
 #. Created up here so we can get the geometry info.
-#: ../src/ping.c:155
+#: src/ping.c:155
 msgid "Time (ms):"
 msgstr "Timp (ms):"
 
-#: ../src/ping.c:176
+#: src/ping.c:176
 msgid "Seq. No.:"
 msgstr "Nr. secvență:"
 
-#: ../src/ping.c:261
+#: src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "Se trimit cereri ping către %s"
 
-#: ../src/ping.c:577
+#: src/ping.c:577
 msgid "Bytes"
 msgstr "Octeți"
 
-#: ../src/ping.c:584
+#: src/ping.c:584
 msgid "Source"
 msgstr "Sursă"
 
-#: ../src/ping.c:592
+#: src/ping.c:592
 msgid "Seq"
 msgstr "Secv"
 
-#: ../src/ping.c:602 ../src/traceroute.c:336
+#: src/ping.c:602 src/traceroute.c:336
 msgid "Time"
 msgstr "Timp"
 
-#: ../src/ping.c:610
+#: src/ping.c:610
 msgid "Units"
 msgstr "Unități"
 
@@ -909,106 +977,95 @@ msgstr "Unități"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:636
+#: src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Octeți\tSursă\tSecv\tTimp\tUnități\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:651
+#: src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "Timp minim:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Timp mediu:\t%s ms\n"
 
-#: ../src/ping.c:653
+#: src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "Timp maxim:\t%s ms\n"
 
-#: ../src/ping.c:655
+#: src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Pachete transmise:\t%s\n"
 
-#: ../src/ping.c:657
+#: src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Pachete primite:\t%s\n"
 
-#: ../src/ping.c:660
+#: src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "Pachete cu succes:\t%s\n"
 
-#: ../src/scan.c:68
+#: src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "Se scanează %s pentru porturi deschise"
 
-#: ../src/scan.c:205
+#: src/scan.c:205
 msgid "Port"
 msgstr "Port"
 
-#: ../src/scan.c:221
+#: src/scan.c:221
 msgid "Service"
 msgstr "Serviciu"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:243
+#: src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "Port\tStare\tServiciu\n"
 
-#: ../src/traceroute.c:67
+#: src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "Se găsește ruta către %s"
 
-#: ../src/traceroute.c:309
+#: src/traceroute.c:309
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:317
+#: src/traceroute.c:317
 msgid "Hostname"
 msgstr "Nume gazdă"
 
-#: ../src/traceroute.c:325
+#: src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:360
-#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+#: src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "Hop\tNume gazdă\tIP\tTimp 1\n"
 
-#: ../src/utils.c:239
+#: src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr ""
-"Pentru a folosi această funcționalitate a programului, trebui să instalați "
-"%s în sistem."
+"Pentru a utiliza această funcționalitate a programului, trebui să instalați "
+"%s în sistem"
 
-#: ../src/finger.c:65
-#, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "Se obțin informații pentru %s din „%s”"
-
-#: ../src/finger.c:69
-#, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "Se obțin informații pentru toți utilizatorii din „%s”"
-
-#: ../src/whois.c:62
+#: src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "Obțin detalii „whois” pentru %s"
@@ -1051,9 +1108,6 @@ msgstr "Obțin detalii „whois” pentru %s"
 
 #~ msgid "%s: Command not found"
 #~ msgstr "%s: Comanda nu a fost găsită"
-
-#~ msgid "Network Information Tools"
-#~ msgstr "Utilitare de investigare a rețelei"
 
 #~ msgid "Network Tools - Devices"
 #~ msgstr "Utilitare de rețea - Dispozitive"
