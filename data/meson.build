@@ -28,7 +28,7 @@ i18n.merge_file('desktop',
                 install: true,
                 install_dir: join_paths(prefix, datadir, 'applications'))
 
-i18n.merge_file('desktop',
+i18n.merge_file('appdata',
                 type: 'xml',
                 input: 'gnome-nettool.appdata.xml.in',
                 output: 'gnome-nettool.appdata.xml',
