@@ -6,607 +6,646 @@
 # Hari Vishnu <harivishnu@gmail.com>, 2008
 # Anish A <aneesh.nl@gmail.com>, 2012.
 # Balasankar C <c.balasankar@gmail.com>, 2013.
+# Ranjith Siji <ranjith.sajeev@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool.master.ml\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"nettool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-11 08:23+0000\n"
-"PO-Revision-Date: 2013-03-11 23:50+0530\n"
-"Last-Translator: Balasankar C <c.balasankar@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-nettool/issues\n"
+"POT-Creation-Date: 2018-06-10 16:59+0000\n"
+"PO-Revision-Date: 2018-10-26 12:50+0530\n"
+"Last-Translator: Ranjith Siji <ranjith.sajeev@gmail.com>\n"
 "Language-Team: Swatantra Malayalam Computing\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
-"X-Poedit-Language: Malayalam\n"
-"X-Poedit-Country: INDIA\n"
+"X-Generator: Poedit 2.2\n"
 
-#: ../src/callbacks.c:332
+#. Dear translator: This is the name of the application
+#: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3 src/callbacks.c:343
+#: src/callbacks.c:344
+msgid "Network Tools"
+msgstr "ശൃംഖല പ്രയോഗങ്ങള്‍"
+
+#: data/gnome-nettool.appdata.xml.in:11
+msgid "Perform advanced networking analysis"
+msgstr "അഡ്വാന്‍സ്ഡായ നെറ്റ്‍വര്‍ക്കിംഗ് വിശകലനം നടത്തുക"
+
+#: data/gnome-nettool.appdata.xml.in:13
+msgid ""
+"Network Tools is a utility to perform advanced networking analysis operations. It features a range "
+"of networking tools that are typically done on the command line, but allows you to perform them "
+"with a graphical interface."
+msgstr ""
+"അഡ്വാന്‍സ്ഡായ നെറ്റ്‍വര്‍ക്കിംഗ് വിശകലനം നടത്തുന്നതിനുള്ള ഒരു യൂട്ടിലിറ്റിയാണ് നെറ്റ്‍വര്‍ക്ക് ടൂള്‍സ്. ഇതില്‍ അനേകം നെറ്റ്‍വര്‍ക്ക് ടൂളുകള്‍ "
+"ഉണ്ട്, ഇവ സാധാരണയായി കമാന്റ് ലൈനില്‍ ഉപയോഗിക്കാവുന്നവയാണ്, പക്ഷെ ഗ്രാഫിക്കല്‍ മോഡില്‍ ഉപയോഗിക്കാനനുവദിക്കുന്നു."
+
+#: data/gnome-nettool.appdata.xml.in:20
+msgid ""
+"With Network Tools, you can perform the following: ping, netstat, traceroute, port scans, lookup, "
+"finger and whois."
+msgstr ""
+"നെറ്റ്‍വര്‍ക്ക് ടൂൾ ഉപയോഗിച്ച് നിങ്ങള്‍ക്ക് പിങ്ങ്, നെറ്റ്സ്റ്റാറ്റ്, ട്രേസ്റൂട്ട്, പോര്‍ട്ട് സ്കാന്‍, ലുക്കപ്പ്, ഫിംഗര്‍, ഹുയീസ് തുടങ്ങിയവ "
+"ചെയ്യാന്‍ കഴിയും."
+
+#: data/gnome-nettool.appdata.xml.in:39
+msgid "The GNOME Project"
+msgstr "ഗ്നോം പദ്ധതി"
+
+#: data/gnome-nettool.desktop.in.in:4
+msgid "Network information tools"
+msgstr "ശൃംഖലാവിവര ഉപകരണങ്ങള്‍"
+
+#: data/gnome-nettool.desktop.in.in:5
+msgid "View information about your network"
+msgstr "നിങ്ങളുടെ നെറ്റ്‌വര്‍ക്കിനെ പറ്റി വിവരങ്ങള്‍ കാണുക"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-nettool.desktop.in.in:7
+msgid "network;monitor;remote;"
+msgstr "ശൃംഖല;നിരീക്ഷകൻ ;വിദൂരം;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/gnome-nettool.desktop.in.in:10
+msgid "gnome-nettool"
+msgstr "ഗ്നോം-നെറ്റ്‍ടൂള്‍"
+
+#: data/gnome-nettool.ui:18 data/gnome-nettool.ui:28 data/gnome-nettool.ui:38
+#: data/gnome-nettool.ui:48 data/gnome-nettool.ui:58 data/gnome-nettool.ui:78
+msgid "Host"
+msgstr "ഹോസ്റ്റ്"
+
+#: data/gnome-nettool.ui:68
+msgid "User"
+msgstr "ഉപയോക്താവ്"
+
+#: data/gnome-nettool.ui:88
+msgid "_Tool"
+msgstr "പ്രയോഗം (_T)"
+
+#: data/gnome-nettool.ui:94
+msgid "Beep on ping"
+msgstr "പിങ് ചെയ്യുന്പോള്‍ ശബ്ദമുണ്ടാക്കുക"
+
+#: data/gnome-nettool.ui:107
+msgid "_Edit"
+msgstr "മാറ്റം വരുത്തുക (_E)"
+
+#: data/gnome-nettool.ui:113
+msgid "Copy as text _report"
+msgstr "ടെക്സ്റ്റ് _റിപോര്‍ട്ടായി പകര്‍ത്തുക"
+
+#: data/gnome-nettool.ui:121
+msgid "Clear _History"
+msgstr "ഹിസ്റ്ററി വെടിപ്പാക്കുക (_H)"
+
+#: data/gnome-nettool.ui:128
+msgid "_Help"
+msgstr "സഹായം (_H)"
+
+#: data/gnome-nettool.ui:135
+msgid "_Contents"
+msgstr "_ഉളളടക്കം"
+
+#. Dear Translator: This is the Window Title
+#: data/gnome-nettool.ui:170
+#, fuzzy
+#| msgid "Devices - Network Tools"
+msgid "Devices — Network Tools"
+msgstr "ഉപകരണങ്ങള്‍ - ശൃംഖല പ്രയോഗങ്ങള്‍"
+
+#: data/gnome-nettool.ui:202
+msgid "_Network device:"
+msgstr "ശൃംഖല ഉപകരണം: (_N)"
+
+#: data/gnome-nettool.ui:250
+msgid "_Configure"
+msgstr "ക്രമീകരിക്കുക (_C)"
+
+#: data/gnome-nettool.ui:308
+msgid "IP Information"
+msgstr "IP വിവരങ്ങള്‍"
+
+#: data/gnome-nettool.ui:348
+msgid "Hardware address:"
+msgstr "ഹാര്‍ഡ്‌വെയര്‍ വിലാസം:"
+
+#: data/gnome-nettool.ui:362
+msgid "Multicast:"
+msgstr "മള്‍ട്ടികാസ്റ്റ്:"
+
+#: data/gnome-nettool.ui:378
+msgid "MTU:"
+msgstr "MTU:"
+
+#: data/gnome-nettool.ui:394
+msgid "Link speed:"
+msgstr "ലിങ്കിന്‍റെ വേഗത:"
+
+#: data/gnome-nettool.ui:410
+msgid "State:"
+msgstr "അവസ്ഥ:"
+
+#: data/gnome-nettool.ui:426 data/gnome-nettool.ui:444 data/gnome-nettool.ui:463
+#: data/gnome-nettool.ui:482 data/gnome-nettool.ui:501 data/gnome-nettool.ui:590
+#: data/gnome-nettool.ui:609 data/gnome-nettool.ui:626 data/gnome-nettool.ui:661
+#: data/gnome-nettool.ui:696 data/gnome-nettool.ui:731 data/gnome-nettool.ui:766
+msgid "Not Available"
+msgstr "ലഭ്യമല്ല"
+
+#: data/gnome-nettool.ui:523
+msgid "Interface Information"
+msgstr "സംയോജകഘടകത്തിനെ പറ്റിയുളള വിവരങ്ങള്‍"
+
+#: data/gnome-nettool.ui:560
+msgid "Transmitted bytes:"
+msgstr "സംപ്രേക്ഷണം ചെയ്ത ബൈറ്റ്സ്:"
+
+#: data/gnome-nettool.ui:574
+msgid "Received bytes:"
+msgstr "അയച്ച ബൈറ്റ്സ്:"
+
+#: data/gnome-nettool.ui:645
+msgid "Transmission errors:"
+msgstr "സംപ്രേക്ഷണത്തിലുളള പിശകുകള്‍:"
+
+#: data/gnome-nettool.ui:680
+msgid "Transmitted packets:"
+msgstr "സംപ്രേക്ഷണം ചെയ്ത പാക്കറ്റുകള്‍:"
+
+#: data/gnome-nettool.ui:715
+msgid "Received packets:"
+msgstr "വന്ന പാക്കറ്റുകള്‍:"
+
+#: data/gnome-nettool.ui:750
+msgid "Reception errors:"
+msgstr "സ്വീകരിക്കുന്നതിലുളള പിശകുകള്‍:"
+
+#: data/gnome-nettool.ui:785
+msgid "Collisions:"
+msgstr "കൂട്ടിമുട്ടലുകള്‍:"
+
+#: data/gnome-nettool.ui:805
+msgid "Interface Statistics"
+msgstr "സംയോജകഘടകത്തിന്‍റെ സ്ഥിതിവിവരകണക്കുകള്‍"
+
+#: data/gnome-nettool.ui:835
+msgid "Devices"
+msgstr "ഉപകരണങ്ങള്‍"
+
+#: data/gnome-nettool.ui:870
+msgid "Only"
+msgstr "മാത്രം"
+
+#: data/gnome-nettool.ui:898
+msgid "requests"
+msgstr "ആവശ്യങ്ങള്‍"
+
+#: data/gnome-nettool.ui:916
+msgid "Unlimited requests"
+msgstr "പരിധിയില്ലാത്ത ആവശ്യങ്ങള്‍"
+
+#: data/gnome-nettool.ui:941
+msgid "Send:"
+msgstr "അയയ്ക്കുക:"
+
+#: data/gnome-nettool.ui:961
+msgid "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr "പിങ് ചെയ്യുന്നതിനായുളള ശൃംഖല വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: data/gnome-nettool.ui:967 data/gnome-nettool.ui:981 data/gnome-nettool.ui:1851
+#: data/gnome-nettool.ui:2028 data/gnome-nettool.ui:2201
+msgid "Network address"
+msgstr "ശൃംഖല വിലാസം"
+
+#: data/gnome-nettool.ui:994 data/gnome-nettool.ui:1674 data/gnome-nettool.ui:1829
+#: data/gnome-nettool.ui:2051 data/gnome-nettool.ui:2260
+msgid "_Network address:"
+msgstr "ശൃംഖല വിലാസം: (_N)"
+
+#: data/gnome-nettool.ui:1042 data/gnome-nettool.ui:1457 src/main.c:288
+msgid "Ping"
+msgstr "പിങ്"
+
+#: data/gnome-nettool.ui:1100 data/gnome-nettool.ui:1119 data/gnome-nettool.ui:1138
+msgid "0.0"
+msgstr "0.0"
+
+#. Translators: this is the abbreviation for milliseconds
+#: data/gnome-nettool.ui:1155 data/gnome-nettool.ui:1170 data/gnome-nettool.ui:1185
+msgid "ms"
+msgstr "ms"
+
+#: data/gnome-nettool.ui:1198
+msgid "Maximum:"
+msgstr "ഏറ്റവും കൂടുതല്‍:"
+
+#: data/gnome-nettool.ui:1214
+msgid "Average:"
+msgstr "ശരാശരി:"
+
+#: data/gnome-nettool.ui:1230
+msgid "Minimum:"
+msgstr "ഏറ്റവും കുറഞ്ഞത്:"
+
+#: data/gnome-nettool.ui:1247
+msgid "Round Trip Time Statistics"
+msgstr "റൌണ്ട് ട്രിപ്പ് സമയത്തിന്‍റെ സ്ഥിതിവിവരകണക്കുകള്‍"
+
+#: data/gnome-nettool.ui:1280
+msgid "Packets transmitted:"
+msgstr "അയച്ച പാക്കറ്റുകള്‍:"
+
+#: data/gnome-nettool.ui:1294
+msgid "0%"
+msgstr "0%"
+
+#: data/gnome-nettool.ui:1313 data/gnome-nettool.ui:1332
+msgid "0"
+msgstr "0"
+
+#: data/gnome-nettool.ui:1349
+msgid "Successful packets:"
+msgstr "ശരിയായി വന്ന പാക്കറ്റുകള്‍:"
+
+#: data/gnome-nettool.ui:1365
+msgid "Packets received:"
+msgstr "വന്ന പാക്കറ്റുകള്‍:"
+
+#: data/gnome-nettool.ui:1384
+msgid "Transmission Statistics"
+msgstr "സംപ്രേക്ഷണത്തിന്‍റെ സ്ഥിതിവിവരകണക്കുകള്‍"
+
+#: data/gnome-nettool.ui:1441
+msgid "Details"
+msgstr "വിവരങ്ങള്‍"
+
+#: data/gnome-nettool.ui:1482
+msgid "Display:"
+msgstr "പ്രദര്‍ശനം:"
+
+#: data/gnome-nettool.ui:1497
+msgid "Routing Table Information"
+msgstr "റൌട്ടിങ് ടേബിളിന്‍റെ വിവരങ്ങള്‍"
+
+#: data/gnome-nettool.ui:1511
+msgid "Active Network Services"
+msgstr "പ്രവര്‍ത്തനത്തിലുളള ശൃംഖല സേവനങ്ങള്‍"
+
+#: data/gnome-nettool.ui:1526
+msgid "Multicast Information"
+msgstr "മള്‍ട്ടികാസ്റ്റിന്‍റെ വിവരങ്ങള്‍"
+
+#: data/gnome-nettool.ui:1581 data/gnome-nettool.ui:1649 src/main.c:442
+msgid "Netstat"
+msgstr "Netstat"
+
+#: data/gnome-nettool.ui:1625
+msgid "Output for net stat"
+msgstr "net stat-നുള്ള ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:1632
+msgid "Netstat output"
+msgstr "Netstat ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:1690
+msgid "Enter the network address to trace a path to. For example: www.domain.com or 192.168.2.1"
+msgstr "ഒരു വഴി തിരയുന്നതിനായുളള ശൃംഖല വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: data/gnome-nettool.ui:1741 src/main.c:373
+msgid "Trace"
+msgstr "ട്രേസ്"
+
+#: data/gnome-nettool.ui:1778
+msgid "Output for traceroute"
+msgstr "traceroute-നുള്ള ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:1785
+msgid "Traceroute output"
+msgstr "Traceroute ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:1803
+msgid "Enter the network address to trace a route to. For example: www.domain.com or 192.168.2.1"
+msgstr "ഒരു വഴി തിരയുന്നതിനായുളള ശൃംഖല വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: data/gnome-nettool.ui:1804
+msgid "Traceroute"
+msgstr "ട്രേസ്റൂട്ട്"
+
+#: data/gnome-nettool.ui:1845
+msgid "Enter the network address to scan for open ports. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"തുറന്നുകിടക്കുന്ന പോര്‍ട്ടുകള്‍ പരിശോധിക്കുന്നതിനുളള ശൃംഖല വിലാസം നല്‍കുക.ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ "
+"192.168.2.1"
+
+#: data/gnome-nettool.ui:1901 src/main.c:613
+msgid "Scan"
+msgstr "പരിശോധിക്കുക"
+
+#: data/gnome-nettool.ui:1938
+msgid "Output for port scan"
+msgstr "port scan-നുള്ള ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:1945
+msgid "Port scan output"
+msgstr "Port scan ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:1962
+msgid "Port Scan"
+msgstr "Port Scan"
+
+#: data/gnome-nettool.ui:2004
+msgid "_Information type:"
+msgstr "ഏത് തരത്തിലുളള വിവരം: (_I)"
+
+#: data/gnome-nettool.ui:2022
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr "തിരയുന്നതിനായുളള ഡൊമൈന്‍ നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ ftp.domain.com."
+
+#: data/gnome-nettool.ui:2096 data/gnome-nettool.ui:2163 src/main.c:736
+msgid "Lookup"
+msgstr "തിരയുക"
+
+#: data/gnome-nettool.ui:2140
+msgid "Output for lookup"
+msgstr "lookup-നുള്ള ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:2146
+msgid "Lookup output"
+msgstr "തെരച്ചില്‍ ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:2195
+msgid "Enter the network address to finger that user. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"പറഞ്ഞിരിക്കുന്ന ഉപയോക്താവിനെ finger ചെയ്യുന്നതിനായി ശൃംഖല വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ "
+"192.168.2.1"
+
+#: data/gnome-nettool.ui:2231
+msgid "Enter the user to finger"
+msgstr "ഉപകരണം finger ചെയ്യുന്നതിനായുളള ഉപയോക്താവ് ഏതെന്ന് പറയുക"
+
+#: data/gnome-nettool.ui:2237
+msgid "User name"
+msgstr "ഉപയോക്തൃനാമം"
+
+#: data/gnome-nettool.ui:2274
+msgid "_Username:"
+msgstr "ഉപയോക്തൃനാമം : (_U)"
+
+#: data/gnome-nettool.ui:2319 data/gnome-nettool.ui:2387 src/main.c:814
+msgid "Finger"
+msgstr "Finger"
+
+#: data/gnome-nettool.ui:2363
+msgid "Output for finger"
+msgstr "finger-നുള്ള ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:2370
+msgid "Finger output"
+msgstr "Finger ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:2412
+msgid "_Domain address:"
+msgstr "ഡൊമെന്‍റെ മേല്‍വിലാസം: (_D)"
+
+#: data/gnome-nettool.ui:2428
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"whois വിവരങ്ങള്‍ കണ്ടുപിടിക്കുന്നതിനായി ശൃംഖല വിലാസം നല്‍കുക.ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
+
+#: data/gnome-nettool.ui:2434
+msgid "Domain address"
+msgstr "ഡൊമെന്‍റെ മേല്‍വിലാസം"
+
+#: data/gnome-nettool.ui:2484 data/gnome-nettool.ui:2548 src/main.c:918
+msgid "Whois"
+msgstr "Whois"
+
+#: data/gnome-nettool.ui:2521 data/gnome-nettool.ui:2547
+msgid "Output for whois"
+msgstr "whois-നുള്ള ഔട്ട്പുട്ട്"
+
+#: data/gnome-nettool.ui:2529 data/gnome-nettool.ui:2530 data/gnome-nettool.ui:2554
+msgid "Whois output"
+msgstr "Whois output"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:6
+msgid "Historically used hostnames"
+msgstr "മുന്‍പ് ഉപയോഗിച്ച ഹോസ്റ്റ് നാമങ്ങള്‍"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:7
+msgid "A list of hostnames previously used"
+msgstr "മുന്‍പ് ഉപയോഗിച്ച ഹോസ്റ്റ് നാമങ്ങളുടെ പട്ടിക"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:11
+msgid "Historically used usernames"
+msgstr "മുന്‍പ് ഉപയോഗിച്ച ഉപയോക്തൃ നാമങ്ങള്‍"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:12
+msgid "A list of usernames previously used"
+msgstr "മുന്‍പ് ഉപയോഗിച്ച ഉപയോക്തൃനാമങ്ങളുടെ പട്ടിക"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:16
+msgid "Historically used domains"
+msgstr "മുന്‍പ് ഉപയോഗിച്ച ഡൊമൈന്‍ നാമങ്ങള്‍"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:17
+msgid "A list of domains previously used"
+msgstr "മുന്‍പ് ഉപയോഗിച്ച ഡൊമൈന്‍ നാമങ്ങളുടെ പട്ടിക"
+
+#: src/callbacks.c:332
 msgid "translator-credits"
 msgstr ""
 "അനി പീറ്റര്‍ <apeter@redhat.com>\n"
 "അനീഷ് എ <aneesh.nl@gmail.com>\n"
-"ബാലശങ്കർ സി <c.balasankar@gmail.com>"
+"ബാലശങ്കർ സി <c.balasankar@gmail.com>\n"
+"രണ്‍ജിത്ത് സിജി <ranjith.sajeev@gmail.com>"
 
 #. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:339
+#: src/callbacks.c:339
 #, c-format
 msgid "Copyright © 2003-2008 %s"
 msgstr "പകര്‍പ്പവകാശം © 2003-2012 %s"
 
-#. Dear translator: This is the name of the application
-#: ../src/callbacks.c:343 ../src/callbacks.c:344
-#: ../data/gnome-nettool.desktop.in.in.h:1
-msgid "Network Tools"
-msgstr "ശൃംഘല പ്രയോഗങ്ങള്‍"
-
-#: ../src/callbacks.c:346
+#: src/callbacks.c:346
 msgid "Graphical user interface for common network utilities"
-msgstr "സാധാരണയായുളള ശൃംഘല ഉപയോഗങ്ങള്‍ക്ക് വേണ്ടിയുളള ഗ്രാഫിക്കല്‍ യൂസര്‍ ഇന്‍റര്‍ഫെയിസ്"
+msgstr "സാധാരണയായുളള ശൃംഖല ഉപയോഗങ്ങള്‍ക്ക് വേണ്ടിയുളള ഗ്രാഫിക്കല്‍ യൂസര്‍ ഇന്‍റര്‍ഫെയിസ്"
 
-#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
+#: src/callbacks.c:458 src/main.c:140 src/nettool.c:524
 msgid "Idle"
 msgstr "നിശ്ചലം"
 
 #. Dear Translator: This is the Window Title. 'Network Tools' is the
 #. * name of the application
-#: ../src/callbacks.c:463
+#: src/callbacks.c:463
 #, c-format
-msgid "%s - Network Tools"
-msgstr "%s - ശൃംഘല ഉപകരണങ്ങള്‍"
+msgid "%s — Network Tools"
+msgstr "%s - ശൃംഖല ഉപകരണങ്ങള്‍"
 
-#: ../src/callbacks.c:487
+#: src/callbacks.c:487
 msgid "Unable to open help file"
 msgstr "സഹായത്തിനുള്ള ഫയല്‍ തുറക്കുവാന്‍ സാധ്യമല്ല"
 
-#: ../data/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "നിങ്ങളുടെ നെറ്റ്‌വര്‍ക്കിനെ പറ്റി വിവരങ്ങള്‍ കാണുക"
-
-#: ../data/gnome-nettool.desktop.in.in.h:3
-msgid "network;monitor;remote;"
-msgstr "ശൃംഘല;നിരീക്ഷകൻ ;വിദൂരം;"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
-msgid "Historically used hostnames"
-msgstr "മുന്‍പ് ഉപയോഗിച്ച ഹോസ്റ്റ് നാമങ്ങള്‍"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
-msgid "A list of hostnames previously used"
-msgstr "മുന്‍പ് ഉപയോഗിച്ച ഹോസ്റ്റ് നാമങ്ങളുടെ പട്ടിക"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
-msgid "Historically used usernames"
-msgstr "മുന്‍പ് ഉപയോഗിച്ച ഉപയോക്തൃ നാമങ്ങള്‍"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
-msgid "A list of usernames previously used"
-msgstr "മുന്‍പ് ഉപയോഗിച്ച ഉപയോക്തൃനാമങ്ങളുടെ പട്ടിക"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
-msgid "Historically used domains"
-msgstr "മുന്‍പ് ഉപയോഗിച്ച ഡൊമൈന്‍ നാമങ്ങള്‍"
-
-#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
-msgid "A list of domains previously used"
-msgstr "മുന്‍പ് ഉപയോഗിച്ച ഡൊമൈന്‍ നാമങ്ങളുടെ പട്ടിക"
-
-#: ../data/gnome-nettool.ui.h:1
-msgid "Host"
-msgstr "ഹോസ്റ്റ്"
-
-#: ../data/gnome-nettool.ui.h:2
-msgid "User"
-msgstr "ഉപയോക്താവ്"
-
-#: ../data/gnome-nettool.ui.h:3
-msgid "_Tool"
-msgstr "പ്രയോഗം (_T)"
-
-#: ../data/gnome-nettool.ui.h:4
-msgid "Beep on ping"
-msgstr "പിങ് ചെയ്യുന്പോള്‍ ശബ്ദമുണ്ടാക്കുക"
-
-#: ../data/gnome-nettool.ui.h:5
-msgid "_Edit"
-msgstr "മാറ്റം വരുത്തുക (_E)"
-
-#: ../data/gnome-nettool.ui.h:6
-msgid "Copy as text _report"
-msgstr "ടെക്സ്റ്റ് _റിപോര്‍ട്ടായി പകര്‍ത്തുക"
-
-#: ../data/gnome-nettool.ui.h:7
-msgid "Clear _History"
-msgstr "ഹിസ്റ്ററി വെടിപ്പാക്കുക (_H)"
-
-#: ../data/gnome-nettool.ui.h:8
-msgid "_Help"
-msgstr "സഹായം (_H)"
-
-#: ../data/gnome-nettool.ui.h:9
-msgid "_Contents"
-msgstr "_ഉളളടക്കം"
-
-#: ../data/gnome-nettool.ui.h:10
-msgid "Devices - Network Tools"
-msgstr "ഉപകരണങ്ങള്‍ - ശൃംഘല പ്രയോഗങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:11
-msgid "_Network device:"
-msgstr "ശൃംഘല ഉപകരണം: (_N)"
-
-#: ../data/gnome-nettool.ui.h:12
-msgid "_Configure"
-msgstr "ക്രമീകരിക്കുക (_C)"
-
-#: ../data/gnome-nettool.ui.h:13
-msgid "IP Information"
-msgstr "IP വിവരങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:14
-msgid "Hardware address:"
-msgstr "ഹാര്‍ഡ്‌വെയര്‍ വിലാസം:"
-
-#: ../data/gnome-nettool.ui.h:15
-msgid "Multicast:"
-msgstr "മള്‍ട്ടികാസ്റ്റ്:"
-
-#: ../data/gnome-nettool.ui.h:16
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../data/gnome-nettool.ui.h:17
-msgid "Link speed:"
-msgstr "ലിങ്കിന്‍റെ വേഗത:"
-
-#: ../data/gnome-nettool.ui.h:18
-msgid "State:"
-msgstr "അവസ്ഥ:"
-
-#: ../data/gnome-nettool.ui.h:19
-msgid "Not Available"
-msgstr "ലഭ്യമല്ല"
-
-#: ../data/gnome-nettool.ui.h:20
-msgid "Interface Information"
-msgstr "സംയോജകഘടകത്തിനെ പറ്റിയുളള വിവരങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:21
-msgid "Transmitted bytes:"
-msgstr "സംപ്രേക്ഷണം ചെയ്ത ബൈറ്റ്സ്:"
-
-#: ../data/gnome-nettool.ui.h:22
-msgid "Received bytes:"
-msgstr "അയച്ച ബൈറ്റ്സ്:"
-
-#: ../data/gnome-nettool.ui.h:23
-msgid "Transmission errors:"
-msgstr "സംപ്രേക്ഷണത്തിലുളള പിശകുകള്‍:"
-
-#: ../data/gnome-nettool.ui.h:24
-msgid "Transmitted packets:"
-msgstr "സംപ്രേക്ഷണം ചെയ്ത പാക്കറ്റുകള്‍:"
-
-#: ../data/gnome-nettool.ui.h:25
-msgid "Received packets:"
-msgstr "വന്ന പാക്കറ്റുകള്‍:"
-
-#: ../data/gnome-nettool.ui.h:26
-msgid "Reception errors:"
-msgstr "സ്വീകരിക്കുന്നതിലുളള പിശകുകള്‍:"
-
-#: ../data/gnome-nettool.ui.h:27
-msgid "Collisions:"
-msgstr "കൂട്ടിമുട്ടലുകള്‍:"
-
-#: ../data/gnome-nettool.ui.h:28
-msgid "Interface Statistics"
-msgstr "സംയോജകഘടകത്തിന്‍റെ സ്ഥിതിവിവരകണക്കുകള്‍"
-
-#: ../data/gnome-nettool.ui.h:29
-msgid "Devices"
-msgstr "ഉപകരണങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:30
-msgid "Only"
-msgstr "മാത്രം"
-
-#: ../data/gnome-nettool.ui.h:31
-msgid "requests"
-msgstr "ആവശ്യങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:32
-msgid "Unlimited requests"
-msgstr "പരിധിയില്ലാത്ത ആവശ്യങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:33
-msgid "Send:"
-msgstr "അയയ്ക്കുക:"
-
-#: ../data/gnome-nettool.ui.h:34
-msgid ""
-"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"പിങ് ചെയ്യുന്നതിനായുളള ശൃംഘല വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ "
-"192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:35
-msgid "Network address"
-msgstr "ശൃംഘല വിലാസം"
-
-#: ../data/gnome-nettool.ui.h:36
-msgid "_Network address:"
-msgstr "ശൃംഘല വിലാസം: (_N)"
-
-#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
-msgid "Ping"
-msgstr "പിങ്"
-
-#: ../data/gnome-nettool.ui.h:38
-msgid "0.0"
-msgstr "0.0"
-
-#: ../data/gnome-nettool.ui.h:39
-msgid "ms"
-msgstr "ms"
-
-#: ../data/gnome-nettool.ui.h:40
-msgid "Maximum:"
-msgstr "ഏറ്റവും കൂടുതല്‍:"
-
-#: ../data/gnome-nettool.ui.h:41
-msgid "Average:"
-msgstr "ശരാശരി:"
-
-#: ../data/gnome-nettool.ui.h:42
-msgid "Minimum:"
-msgstr "ഏറ്റവും കുറഞ്ഞത്:"
-
-#: ../data/gnome-nettool.ui.h:43
-msgid "Round Trip Time Statistics"
-msgstr "റൌണ്ട് ട്രിപ്പ് സമയത്തിന്‍റെ സ്ഥിതിവിവരകണക്കുകള്‍"
-
-#: ../data/gnome-nettool.ui.h:44
-msgid "Packets transmitted:"
-msgstr "അയച്ച പാക്കറ്റുകള്‍:"
-
-#: ../data/gnome-nettool.ui.h:46
-#, no-c-format
-msgid "0%"
-msgstr "0%"
-
-#: ../data/gnome-nettool.ui.h:47
-msgid "0"
-msgstr "0"
-
-#: ../data/gnome-nettool.ui.h:48
-msgid "Successful packets:"
-msgstr "ശരിയായി വന്ന പാക്കറ്റുകള്‍:"
-
-#: ../data/gnome-nettool.ui.h:49
-msgid "Packets received:"
-msgstr "വന്ന പാക്കറ്റുകള്‍:"
-
-#: ../data/gnome-nettool.ui.h:50
-msgid "Transmission Statistics"
-msgstr "സംപ്രേക്ഷണത്തിന്‍റെ സ്ഥിതിവിവരകണക്കുകള്‍"
-
-#: ../data/gnome-nettool.ui.h:51
-msgid "Details"
-msgstr "വിവരങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:52
-msgid "Display:"
-msgstr "പ്രദര്‍ശനം:"
-
-#: ../data/gnome-nettool.ui.h:53
-msgid "Routing Table Information"
-msgstr "റൌട്ടിങ് ടേബിളിന്‍റെ വിവരങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:54
-msgid "Active Network Services"
-msgstr "പ്രവര്‍ത്തനത്തിലുളള ശൃംഘല സേവനങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:55
-msgid "Multicast Information"
-msgstr "മള്‍ട്ടികാസ്റ്റിന്‍റെ വിവരങ്ങള്‍"
-
-#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
-msgid "Netstat"
-msgstr "Netstat"
-
-#: ../data/gnome-nettool.ui.h:57
-msgid "Output for net stat"
-msgstr "net stat-നുള്ള ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:58
-msgid "Netstat output"
-msgstr "Netstat ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:59
-msgid ""
-"Enter the network address to trace a path to. For example: www.domain.com or "
-"192.168.2.1"
-msgstr ""
-"ഒരു വഴി തിരയുന്നതിനായുളള ശൃംഘല വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ "
-"192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
-msgid "Trace"
-msgstr "ട്രേസ്"
-
-#: ../data/gnome-nettool.ui.h:61
-msgid "Output for traceroute"
-msgstr "traceroute-നുള്ള ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:62
-msgid "Traceroute output"
-msgstr "Traceroute ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:63
-msgid ""
-"Enter the network address to trace a route to. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"ഒരു വഴി തിരയുന്നതിനായുളള ശൃംഘല വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ "
-"192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:64
-msgid "Traceroute"
-msgstr "ട്രേസ്റൂട്ട്"
-
-#: ../data/gnome-nettool.ui.h:65
-msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
-msgstr ""
-"തുറന്നുകിടക്കുന്ന പോര്‍ട്ടുകള്‍ പരിശോധിക്കുന്നതിനുളള ശൃംഘല വിലാസം നല്‍കുക.ഉദാഹരണത്തിന്: www.domain."
-"com അല്ലെങ്കില്‍ 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
-msgid "Scan"
-msgstr "പരിശോധിക്കുക"
-
-#: ../data/gnome-nettool.ui.h:67
-msgid "Output for port scan"
-msgstr "port scan-നുള്ള ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:68
-msgid "Port scan output"
-msgstr "Port scan ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:69
-msgid "Port Scan"
-msgstr "Port Scan"
-
-#: ../data/gnome-nettool.ui.h:70
-msgid "_Information type:"
-msgstr "ഏത് തരത്തിലുളള വിവരം: (_I)"
-
-#: ../data/gnome-nettool.ui.h:71
-msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
-msgstr ""
-"തിരയുന്നതിനായുളള ഡൊമൈന്‍ നല്‍കുക. ഉദാഹരണത്തിന്: www.domain.com അല്ലെങ്കില്‍ ftp.domain.com"
-
-#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
-msgid "Lookup"
-msgstr "തിരയുക"
-
-#: ../data/gnome-nettool.ui.h:73
-msgid "Output for lookup"
-msgstr "lookup-നുള്ള ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:74
-msgid "Lookup output"
-msgstr "തെരച്ചില്‍ ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:75
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"പറഞ്ഞിരിക്കുന്ന ഉപയോക്താവിനെ finger ചെയ്യുന്നതിനായി ശൃംഘല വിലാസം നല്‍കുക. ഉദാഹരണത്തിന്: "
-"www.domain.com അല്ലെങ്കില്‍ 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:76
-msgid "Enter the user to finger"
-msgstr "finger ചെയ്യുന്നതിനായുളള ഉപയോക്താവ് ഏതെന്ന് പറയുക"
-
-#: ../data/gnome-nettool.ui.h:77
-msgid "User name"
-msgstr "ഉപയോക്തൃനാമം"
-
-#: ../data/gnome-nettool.ui.h:78
-msgid "_Username:"
-msgstr "ഉപയോക്തൃനാമം : (_U)"
-
-#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
-msgid "Finger"
-msgstr "Finger"
-
-#: ../data/gnome-nettool.ui.h:80
-msgid "Output for finger"
-msgstr "finger-നുള്ള ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:81
-msgid "Finger output"
-msgstr "Finger ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:82
-msgid "_Domain address:"
-msgstr "ഡൊമെന്‍റെ മേല്‍വിലാസം: (_D)"
-
-#: ../data/gnome-nettool.ui.h:83
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"whois വിവരങ്ങള്‍ കണ്ടുപിടിക്കുന്നതിനായി ശൃംഘല വിലാസം നല്‍കുക.ഉദാഹരണത്തിന്: www.domain.com "
-"അല്ലെങ്കില്‍ 192.168.2.1"
-
-#: ../data/gnome-nettool.ui.h:84
-msgid "Domain address"
-msgstr "ഡൊമെന്‍റെ മേല്‍വിലാസം"
-
-#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
-msgid "Whois"
-msgstr "Whois"
-
-#: ../data/gnome-nettool.ui.h:86
-msgid "Output for whois"
-msgstr "whois-നുള്ള ഔട്ട്പുട്ട്"
-
-#: ../data/gnome-nettool.ui.h:87
-msgid "Whois output"
-msgstr "Whois output"
+#: src/finger.c:65
+#, c-format
+msgid "Getting information of %s on “%s”"
+msgstr "“%s”-ലുളള %s-നെ പറ്റിയുളള വിവരങ്ങള്‍ ലഭ്യമാകുന്നു"
+
+#: src/finger.c:69
+#, c-format
+msgid "Getting information of all users on “%s”"
+msgstr "“%s”-ലുളള എല്ലാ ഉപയോക്താക്കളുടേയും വിവരങ്ങള്‍ ലഭ്യമാകുന്നു"
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
-#: ../src/info.c:60
+#: src/info.c:60
 msgid "Other type"
 msgstr "മറ്റ് തരത്തിലുളളത്"
 
-#: ../src/info.c:61
+#: src/info.c:61
 msgid "Ethernet Interface"
 msgstr "ഈഥര്‍നെറ്റിനുളള സംയോജകഘടകം"
 
-#: ../src/info.c:62
+#: src/info.c:62
 msgid "Wireless Interface"
 msgstr "വയര്‍‍ലെസ്സിനുളള സംയോജകഘടകം"
 
-#: ../src/info.c:63
+#: src/info.c:63
 msgid "Modem Interface"
 msgstr "മോഡമിനുളള സംയോജകഘടകം"
 
-#: ../src/info.c:64
+#: src/info.c:64
 msgid "Parallel Line Interface"
 msgstr "പാരലല്‍ ലൈനിനുളള സംയോജകഘടകം"
 
-#: ../src/info.c:65
+#: src/info.c:65
 msgid "Infrared Interface"
 msgstr "ഇന്‍ഫ്രാറെഡിന്‍റെ സംയോജകഘടകം"
 
-#: ../src/info.c:66
+#: src/info.c:66
+msgid "Infiniband Interface"
+msgstr "ഇന്‍ഫിനിബാന്റ് സംയോജകഘടകം"
+
+#: src/info.c:67
 msgid "Loopback Interface"
 msgstr "Loopback-നുളള സംയോജകഘടകം"
 
-#: ../src/info.c:67
+#: src/info.c:68
 msgid "Unknown Interface"
 msgstr "അപരിചിതമായ സംയോജകഘടകം"
 
-#: ../src/info.c:165
+#: src/info.c:166
 msgid "Network Devices Not Found"
-msgstr "ശൃംഘല ഉപകരണങ്ങള്‍ ലഭ്യമല്ല"
+msgstr "ശൃംഖല ഉപകരണങ്ങള്‍ ലഭ്യമല്ല"
 
-#: ../src/info.c:396 ../src/info.c:399
+#: src/info.c:397 src/info.c:400
 msgid "Unknown"
 msgstr "അപരിചിതം"
 
-#: ../src/info.c:471
+#: src/info.c:472
 msgid "Active"
 msgstr "സജീവം"
 
-#: ../src/info.c:473
+#: src/info.c:474
 msgid "Inactive"
 msgstr "നിഷ്ക്രിയമായ"
 
-#: ../src/info.c:478
+#: src/info.c:479
 msgid "Loopback"
 msgstr "Loopback"
 
-#: ../src/info.c:489
+#: src/info.c:489
 msgid "Enabled"
 msgstr "പ്രവര്‍ത്തന സജ്ജം"
 
-#: ../src/info.c:491
+#: src/info.c:491
 msgid "Disabled"
 msgstr "പ്രവര്‍ത്തന രഹിതം"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:580
+#: src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
-msgstr "ശൃംഘല ഉപകരണം:\t%s\n"
+msgstr "ശൃംഖല ഉപകരണം:\t%s\n"
 
-#: ../src/info.c:581
+#: src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "ഹാര്‍ഡ്‌വെയര്‍ വിലാസം:\t%s\n"
 
-#: ../src/info.c:582
+#: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "മള്‍ട്ടികാസ്റ്റ്:\t%s\n"
 
-#: ../src/info.c:583
+#: src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:584
+#: src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "ലിങ്കിന്‍റെ വേഗത:\t%s\n"
 
-#: ../src/info.c:585
+#: src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "അവസ്ഥ:\t%s\n"
 
-#: ../src/info.c:587
+#: src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "സംപ്രേക്ഷണം ചെയ്ത പാക്കറ്റുകള്‍:\t%s\n"
 
-#: ../src/info.c:588
+#: src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "സംപ്രേക്ഷണത്തിലുളള പിശകുകള്‍:\t%s\n"
 
-#: ../src/info.c:589
+#: src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "വന്ന പാക്കറ്റുകള്‍:\t%s\n"
 
-#: ../src/info.c:590
+#: src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "സ്വീകരിക്കുന്നതിലുളള പിശകുകള്‍:\t%s\n"
 
-#: ../src/info.c:591
+#: src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "കൂട്ടിമുട്ടലുകള്‍:\t%s\n"
 
-#: ../src/info.h:23
+#: src/info.h:23
 msgid "not available"
 msgstr "ലഭ്യമല്ല"
 
-#: ../src/lookup.c:85
+#: src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "%s-നായി തിരയുന്നു"
 
-#: ../src/lookup.c:279
+#: src/lookup.c:279
 msgid "Name"
 msgstr "പേര്"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:288
+#: src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:297
+#: src/lookup.c:297
 msgid "Address Type"
 msgstr "ഏത് തരം വിലാസം"
 
-#: ../src/lookup.c:307
+#: src/lookup.c:307
 msgid "Record Type"
 msgstr "ഏത് തരം റിക്കോര്‍ഡ്"
 
-#: ../src/lookup.c:316
+#: src/lookup.c:316
 msgid "Address"
 msgstr "വിലാസം"
 
@@ -616,287 +655,288 @@ msgstr "വിലാസം"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:344
+#: src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 
-#: ../src/main.c:82
+#: src/main.c:82
 msgid "Load information for a network device"
-msgstr "ശൃംഘല ഉപകരണത്തിനായി വിവരങ്ങള്‍ ലോഡ് ചെയ്യുക"
+msgstr "ശൃംഖല ഉപകരണത്തിനായി വിവരങ്ങള്‍ ലോഡ് ചെയ്യുക"
 
-#: ../src/main.c:83
+#: src/main.c:83
 msgid "DEVICE"
 msgstr "DEVICE"
 
-#: ../src/main.c:86
+#: src/main.c:86
 msgid "Send a ping to a network address"
-msgstr "ഒരു ശൃംഘല വിലാസത്തിലേക്ക് പിങ് ചെയ്യുക"
+msgstr "ഒരു ശൃംഖല വിലാസത്തിലേക്ക് പിങ് ചെയ്യുക"
 
-#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
+#: src/main.c:87 src/main.c:95 src/main.c:99 src/main.c:103
 msgid "HOST"
 msgstr "HOST"
 
-#: ../src/main.c:90
+#: src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
-msgstr ""
-"netstat സംബന്ധിച്ച വിവരങ്ങള്‍ ലഭ്യമാക്കുന്നു.  ശരിയായ ഉപാധികള്‍: route, active, "
-"multicast."
+msgstr "netstat സംബന്ധിച്ച വിവരങ്ങള്‍ ലഭ്യമാക്കുന്നു.  ശരിയായ ഉപാധികള്‍: route, active, multicast."
 
-#: ../src/main.c:91
+#: src/main.c:91
 msgid "COMMAND"
 msgstr "COMMAND"
 
-#: ../src/main.c:94
+#: src/main.c:94
 msgid "Trace a route to a network address"
-msgstr "ഒരു ശൃംഘല വിലാസത്തിലേക്കുളള വഴി കണ്ടുപിടിക്കുന്നു"
+msgstr "ഒരു ശൃംഖല വിലാസത്തിലേക്കുളള വഴി കണ്ടുപിടിക്കുന്നു"
 
-#: ../src/main.c:98
+#: src/main.c:98
 msgid "Port scan a network address"
-msgstr "ഒരു ശൃംഘല വിലാസം പോര്‍ട്ടില്‍ കൂടി പരിശോധിക്കുക"
+msgstr "ഒരു ശൃംഖല വിലാസം പോര്‍ട്ടില്‍ കൂടി പരിശോധിക്കുക"
 
-#: ../src/main.c:102
+#: src/main.c:102
 msgid "Look up a network address"
-msgstr "ഒരു ശൃംഘല വിലാസത്തിലേക്കിനായി തിരയുന്നു"
+msgstr "ഒരു ശൃംഖല വിലാസത്തിലേക്കിനായി തിരയുന്നു"
 
-#: ../src/main.c:106
+#: src/main.c:106
 msgid "Finger command to run"
 msgstr "പ്രവര്‍ത്തിക്കുന്നതിനായുളള Finger നിര്‍ദ്ദേശം"
 
-#: ../src/main.c:107
+#: src/main.c:107
 msgid "USER"
 msgstr "USER"
 
-#: ../src/main.c:110
+#: src/main.c:110
 msgid "Perform a whois lookup for a network domain"
-msgstr "ഒരു ശൃംഘല ഡൊമെയിനിനായി whois തിരച്ചില്‍ നടത്തുക"
+msgstr "ഒരു ശൃംഖല ഡൊമെയിനിനായി whois തിരച്ചില്‍ നടത്തുക"
 
-#: ../src/main.c:111
+#: src/main.c:111
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:130
+#: src/main.c:128
 #, c-format
-msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
-"installed"
-msgstr ""
-"ഫയല്‍ %s നിലവിലില്ല, ദയവായി gnome-nettool ശരിയായി ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കുന്നു "
-"എന്നുറപ്പുവരുത്തുക"
+msgid "The file %s doesn’t exist, please check if gnome-nettool is correctly installed"
+msgstr "ഫയല്‍ %s നിലവിലില്ല, ദയവായി gnome-nettool ശരിയായി ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കുന്നു എന്നുറപ്പുവരുത്തുക"
 
-#: ../src/main.c:478 ../src/netstat.c:464
+#: src/main.c:476 src/netstat.c:464
 msgid "Protocol"
 msgstr "കീഴ്‍വഴക്കങ്ങള്‍"
 
-#: ../src/main.c:485
+#: src/main.c:483
 msgid "IP Address"
 msgstr "IP വിലാസം"
 
-#: ../src/main.c:492
+#: src/main.c:490
 msgid "Netmask / Prefix"
 msgstr "നെറ്റ്മാസ്ക് / പ്രിഫിക്സ്"
 
-#: ../src/main.c:499
+#: src/main.c:497
 msgid "Broadcast"
 msgstr "സംപ്രേക്ഷണം"
 
-#: ../src/main.c:506
+#: src/main.c:504
 msgid "Scope"
 msgstr "ചെയ്യുവാനുളള ജോലിയുടെ പരിധി നിര്‍ണ്ണയം (സ്കോപ്പ്)"
 
-#: ../src/main.c:665
+#: src/main.c:663
 msgid "Default Information"
 msgstr "ഡിഫോള്‍ട്ട്  വിവരങ്ങള്‍"
 
-#: ../src/main.c:666
+#: src/main.c:664
 msgid "Internet Address"
 msgstr "ഇന്‍റ്റര്‍നെറ്റ് വിലാസം"
 
-#: ../src/main.c:667
+#: src/main.c:665
 msgid "Canonical Name"
 msgstr "കനോണിക്കല്‍ പേരു്‌"
 
-#: ../src/main.c:668
+#: src/main.c:666
 msgid "CPU / OS Type"
 msgstr "സി.പി.യു / ഒ.എസ് തരം"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:670
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: src/main.c:673
 msgid "Mailbox Exchange"
 msgstr "മെയില്‍-പെട്ടി കയ്മാറല്‍"
 
-#: ../src/main.c:671
+#: src/main.c:674
 msgid "Mailbox Information"
 msgstr "മെയില്‍-പെട്ടി വിവരങ്ങള്‍"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:673
+#: src/main.c:676
 msgid "Name Server"
 msgstr "പേരു്‌ സര്‍വര്‍"
 
-#: ../src/main.c:674
+#: src/main.c:677
 msgid "Host name for Address"
 msgstr "വിലാസത്തിനുള്ള ആഥിതേയന്‍റ്റെ പേരു്‌"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
 #. for a domain
-#: ../src/main.c:678
+#: src/main.c:681
 msgid "Start of Authority"
 msgstr "സ്റ്റാട്ട് ഓഫ് അതോറിറ്റി"
 
-#: ../src/main.c:679
+#: src/main.c:682
 msgid "Text Information"
 msgstr "പദാവലി വിവരങ്ങള്‍"
 
-#: ../src/main.c:680
+#: src/main.c:683
 msgid "Well Known Services"
 msgstr "നല്ലവണ്ണം അറിയാവുന്ന സേവനങ്ങള്‍"
 
-#: ../src/main.c:681
+#: src/main.c:684
 msgid "Any / All Information"
 msgstr "ഏതെങ്കിലും/എല്ലാം വിവരങ്ങള്‍"
 
-#: ../src/netstat.c:134
+#: src/netstat.c:134
 msgid "Getting routing table"
 msgstr "റൌട്ടിങിനുളള ടേബിള്‍ ലഭ്യമാകുന്നു"
 
-#: ../src/netstat.c:149
+#: src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "സജീവമായ ഇന്‍റര്‍നെറ്റ് കണക്ഷനുകള്‍ ലഭ്യമാകുന്നു"
 
-#: ../src/netstat.c:158
+#: src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "ഗ്രൂപ്പിലേക്ക അംഗങ്ങളെ ലഭ്യമാകുന്നു"
 
-#: ../src/netstat.c:471
+#: src/netstat.c:471
 msgid "IP Source"
 msgstr "IP ഉറവിടം"
 
-#: ../src/netstat.c:479
+#: src/netstat.c:479
 msgid "Port/Service"
 msgstr "പോര്‍ട്ട്/സേവനം"
 
-#: ../src/netstat.c:487 ../src/scan.c:213
+#: src/netstat.c:487 src/scan.c:213
 msgid "State"
 msgstr "അവസ്ഥ"
 
-#: ../src/netstat.c:640
+#: src/netstat.c:640
 msgid "Destination/Prefix"
 msgstr "ലക്ഷ്യസ്ഥലം/പ്രിഫിക്സ്"
 
-#: ../src/netstat.c:642
+#: src/netstat.c:642
 msgid "Destination"
 msgstr "ലക്ഷ്യസ്ഥലം"
 
-#: ../src/netstat.c:649
+#: src/netstat.c:649
 msgid "Gateway"
 msgstr "ഗേറ്റ്‍വെ"
 
-#: ../src/netstat.c:657
+#: src/netstat.c:657
 msgid "Netmask"
 msgstr "നെറ്റ്മാസ്ക്"
 
-#: ../src/netstat.c:665 ../src/netstat.c:771
+#: src/netstat.c:665 src/netstat.c:771
 msgid "Interface"
 msgstr "സംയോജകഘടകം"
 
-#: ../src/netstat.c:778
+#: src/netstat.c:778
 msgid "Member"
 msgstr "അംഗം"
 
-#: ../src/netstat.c:786
+#: src/netstat.c:786
 msgid "Group"
 msgstr "ഗ്രൂപ്പ്"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:826
+#: src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
 msgstr "Protocol\tIP Source\tPort/Service\tState\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:832
+#: src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
 msgstr "Destination\tGateway\tNetmask\tInterface\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:837
+#: src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
 msgstr "Interface\tMember\tGroup\n"
 
-#: ../src/nettool.c:204
+#: src/nettool.c:204
 msgid "A network address was not specified"
-msgstr "ഒരു ശൃംഘല വിലാസം പറഞ്ഞിട്ടില്ല"
+msgstr "ഒരു ശൃംഖല വിലാസം പറഞ്ഞിട്ടില്ല"
 
-#: ../src/nettool.c:205 ../src/nettool.c:214
+#: src/nettool.c:205 src/nettool.c:214
 msgid "Please enter a valid network address and try again."
-msgstr "ശരിയായ ഒരു ശൃംഘല വിലാസം ദയവായി നല്‍കിയ ശേഷം വീണ്ടും ശ്രമിക്കുക."
+msgstr "ശരിയായ ഒരു ശൃംഖല വിലാസം ദയവായി നല്‍കിയ ശേഷം വീണ്ടും ശ്രമിക്കുക."
 
-#: ../src/nettool.c:212
+#: src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "വിലാസം '%s' ലഭ്യമല്ല"
+msgid "The address “%s” cannot be found"
+msgstr "വിലാസം “%s” ലഭ്യമല്ല"
 
-#: ../src/nettool.c:241
+#: src/nettool.c:241
 msgid "A domain address was not specified"
 msgstr "ഒരു ഡൊമെയിന്‍ വിലാസം പറഞ്ഞിട്ടില്ല"
 
-#: ../src/nettool.c:242
+#: src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
 msgstr "ശരിയായ ഒരു ഡൊമെയിന്‍ വിലാസം ദയവായി നല്‍കിയ ശേഷം വീണ്ടും ശ്രമിക്കുക."
 
-#: ../src/nettool.c:290
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
+#: src/nettool.c:290
 #, c-format
-msgid "An error occurred when try to run '%s'"
-msgstr "'%s' പ്രവര്‍ത്തിപ്പിക്കാന്‍ ശ്രമിച്ചപ്പോള്‍ പിഴവ്"
+msgid "An error occurred when try to run “%s”"
+msgstr "“%s” പ്രവര്‍ത്തിപ്പിക്കാന്‍ ശ്രമിച്ചപ്പോള്‍ പിഴവ്"
 
-#: ../src/nettool.c:464
+#: src/nettool.c:464
 msgid "Information not available"
 msgstr "വിവരം ലഭ്യമല്ല"
 
-#: ../src/nettool.c:589
+#: src/nettool.c:589
 msgid "Stop"
 msgstr "നിര്‍ത്തുക"
 
-#: ../src/nettool.c:595
+#: src/nettool.c:595
 msgid "Run"
 msgstr "പ്രവര്‍ത്തിപ്പിക്കുക"
 
 #. Created up here so we can get the geometry info.
-#: ../src/ping.c:155
+#: src/ping.c:155
 msgid "Time (ms):"
 msgstr "സമയം (മില്ലി.സെക്):"
 
-#: ../src/ping.c:176
+#: src/ping.c:176
 msgid "Seq. No.:"
 msgstr "സീക്വെസ് നം :"
 
-#: ../src/ping.c:261
+#: src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
 msgstr "%s-ലേക്ക് പിങ് ആവശ്യങ്ങള്‍ അയയ്ക്കുന്നു"
 
-#: ../src/ping.c:577
+#: src/ping.c:577
 msgid "Bytes"
 msgstr "ബൈറ്റ്സ്"
 
-#: ../src/ping.c:584
+#: src/ping.c:584
 msgid "Source"
 msgstr "ഉറവിടം"
 
-#: ../src/ping.c:592
+#: src/ping.c:592
 msgid "Seq"
 msgstr "Seq"
 
-#: ../src/ping.c:602 ../src/traceroute.c:336
+#: src/ping.c:602 src/traceroute.c:336
 msgid "Time"
 msgstr "സമയം"
 
-#: ../src/ping.c:610
+#: src/ping.c:610
 msgid "Units"
 msgstr "അളവ്"
 
@@ -904,105 +944,91 @@ msgstr "അളവ്"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:636
+#: src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bytes\tSource\tSeq\tTime\tUnits\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:651
+#: src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
 msgstr "ഏറ്റവും കുറഞ്ഞ സമയം:\t%s ms\n"
 
-#: ../src/ping.c:652
+#: src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "ശരാശരി സമയം:\t%s ms\n"
 
-#: ../src/ping.c:653
+#: src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
 msgstr "ഏറ്റവും കൂടിയ സമയം:\t%s ms\n"
 
-#: ../src/ping.c:655
+#: src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "സംപ്രേക്ഷണം നടത്തിയ പാക്കറ്റുകള്‍:\t%s\n"
 
-#: ../src/ping.c:657
+#: src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "വന്ന പാക്കറ്റുകള്‍:\t%s\n"
 
-#: ../src/ping.c:660
+#: src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
 msgstr "ശരിയായി വന്ന പാക്കറ്റുകള്‍:\t%s\n"
 
-#: ../src/scan.c:68
+#: src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
 msgstr "തുറന്ന് കിടക്കുന്ന പോര്‍ട്ടുകള്‍ക്കായി %s പരിശോധിക്കുന്നു"
 
-#: ../src/scan.c:205
+#: src/scan.c:205
 msgid "Port"
 msgstr "പോര്‍ട്ട്"
 
-#: ../src/scan.c:221
+#: src/scan.c:221
 msgid "Service"
 msgstr "സേവനം"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:243
+#: src/scan.c:243
 msgid "Port\tState\tService\n"
 msgstr "Port\tState\tService\n"
 
-#: ../src/traceroute.c:67
+#: src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
 msgstr "%s-ലേക്കുളള വഴി കണ്ടുപിടിക്കുന്നു"
 
-#: ../src/traceroute.c:309
+#: src/traceroute.c:309
 msgid "Hop"
 msgstr "ഹോപ്പ്"
 
-#: ../src/traceroute.c:317
+#: src/traceroute.c:317
 msgid "Hostname"
 msgstr "(ആഥിതേയന്‍ പേരു്‌)"
 
-#: ../src/traceroute.c:325
+#: src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
 
 #. The traceroute output in text format:
 #. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:360
+#: src/traceroute.c:360
 msgid "Hop\tHostname\tIP\tTime 1\n"
 msgstr "ചാട്ടം\tഹേസ്റ്റ് നാമം\tIP\tസമയം 1\n"
 
-#: ../src/utils.c:239
+#: src/utils.c:239
 #, c-format
-msgid ""
-"In order to use this feature of the program, %s must be installed in your "
-"system"
-msgstr ""
-"പ്രോഗ്രാമിന്‍റെ ഈ സവിശേഷത ഉപയോഗിക്കുന്നതിനായി, %s നിങ്ങളുടെ കംപ്യൂട്ടറില്‍ ഇന്‍സ്റ്റോള്‍ "
-"ചെയ്യേണ്ടതാണ്"
+msgid "In order to use this feature of the program, %s must be installed in your system"
+msgstr "പ്രോഗ്രാമിന്‍റെ ഈ സവിശേഷത ഉപയോഗിക്കുന്നതിനായി, %s നിങ്ങളുടെ കംപ്യൂട്ടറില്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യേണ്ടതാണ്"
 
-#: ../src/finger.c:65
-#, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "\"%s\"-ലുളള %s-നെ പറ്റിയുളള വിവരങ്ങള്‍ ലഭ്യമാകുന്നു"
-
-#: ../src/finger.c:69
-#, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "\"%s\"-ലുളള എല്ലാ ഉപയോക്താക്കളുടേയും വിവരങ്ങള്‍ ലഭ്യമാകുന്നു"
-
-#: ../src/whois.c:62
+#: src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr "%s-ന്‍റെ whois വിവരങ്ങള്‍ ലഭ്യമാകുന്നു"
