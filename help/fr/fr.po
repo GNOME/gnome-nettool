@@ -6,19 +6,21 @@
 # Vincent Untz <vuntz@gnome.org>, 2007.
 # J. Sirgue <jsirgue@free.fr>, 2016.
 # Nicolas Cuffia <cuffia.cuceglio@vivaldi.net>, 2016.
+# Charles Monzat <charles.monzat@numericable.fr>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool documentation\n"
-"POT-Creation-Date: 2016-07-06 16:44+0000\n"
-"PO-Revision-Date: 2016-06-27 20:34+0200\n"
-"Last-Translator: Nicolas Cuffia <cuffia.cuceglio@vivaldi.net>\n"
-"Language-Team: français <>\n"
+"POT-Creation-Date: 2018-06-10 16:59+0000\n"
+"PO-Revision-Date: 2018-12-10 17:11+0100\n"
+"Last-Translator: Charles Monzat <charles.monzat@numericable.fr>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Gtranslator 3.30.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -29,7 +31,7 @@ msgstr ""
 "Jérôme Sirgue <jsirgue@free.fr>, 2016.\n"
 "Nicolas Cuffia <cuffia.cuceglio@vivaldi.net>, 2016."
 
-#. (itstool) path: media
+#. (itstool) path: title/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
@@ -43,32 +45,17 @@ msgstr ""
 "external ref='figures/gnome-nettool-trail.png' "
 "md5='fa7ce8464985fc4e631454c81b873d46'"
 
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:22
-msgctxt "_"
-msgid ""
-"external ref='figures/gnome-nettool.png' "
-"md5='a288cc42fc2a8fb341f63893e4dd557e'"
-msgstr ""
-"external ref='figures/gnome-nettool.png' "
-"md5='a288cc42fc2a8fb341f63893e4dd557e'"
-
 #. (itstool) path: info/title
 #: C/index.page:6
 msgctxt "link"
 msgid "Net Tool"
-msgstr "Outil réseau"
+msgstr "Outils réseau"
 
 #. (itstool) path: info/title
 #: C/index.page:7
 msgctxt "text"
 msgid "Net Tool"
-msgstr "Outil réseau"
+msgstr "Outils réseau"
 
 #. (itstool) path: credit/name
 #: C/index.page:11 C/introduction.page:11 C/ip-information.page:10
@@ -93,6 +80,20 @@ msgstr "Un outil de diagnostic réseau"
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Partage dans les Mêmes Conditions 3.0"
 
+#. (itstool) path: title/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/gnome-nettool.png' "
+"md5='a288cc42fc2a8fb341f63893e4dd557e'"
+msgstr ""
+"external ref='figures/gnome-nettool.png' "
+"md5='a288cc42fc2a8fb341f63893e4dd557e'"
+
 #. (itstool) path: page/title
 #: C/index.page:22
 msgid ""
@@ -100,7 +101,7 @@ msgid ""
 "media>Net Tool"
 msgstr ""
 "<media type=\"image\" src=\"figures/gnome-nettool.png\">Logo outil réseau</"
-"media>Outil réseau"
+"media>Outils réseau"
 
 #. (itstool) path: section/title
 #: C/index.page:25
@@ -110,7 +111,7 @@ msgstr "Accéder aux informations sur le réseau"
 #. (itstool) path: info/desc
 #: C/introduction.page:7
 msgid "Introduction to the <em>Net Tool</em>."
-msgstr "Introduction à <em>Outil réseau</em>."
+msgstr "Introduction à <em>Outils réseau</em>."
 
 #. (itstool) path: page/title
 #: C/introduction.page:20
@@ -124,8 +125,8 @@ msgid ""
 "provides a graphical user interface for a number of common network tools, "
 "such as ping, netstat, traceroute, port scan, lookup, finger, and whois."
 msgstr ""
-"<app>Outils réseaux</app> est un outil pour diagnostiquer l'état du réseau "
-"et des services. Il fournit une interface graphique pour un certain nombre "
+"<app>Outils réseau</app> est un outil pour diagnostiquer l’état du réseau et "
+"des services. Il fournit une interface graphique pour un certain nombre "
 "d’outils, comme ping, netstat, traceroute, port scan, lookup, finger et "
 "whois."
 
@@ -135,19 +136,19 @@ msgid ""
 "The functionality is very basic, it is oriented to get the first insight of "
 "an potential issue and to bring this information to technical staff."
 msgstr ""
-"Les fonctionnalités sont très simples, l'outil est destiné à donner une "
-"première idée sur la cause de l'erreur et à fournir cette information aux "
+"Les fonctionnalités sont très simples, l’outil est destiné à donner une "
+"première idée sur la cause de l’erreur et à fournir cette information aux "
 "équipes techniques."
 
 #. (itstool) path: info/desc
 #: C/ip-information.page:6
 msgid "Find the Internet Address (IP) that provides Internet connectivity."
-msgstr "Trouver l'adresse internet (IP) qui donne accès à Internet."
+msgstr "Trouver l’adresse Internet (IP) qui donne accès à Internet."
 
 #. (itstool) path: page/title
 #: C/ip-information.page:19
 msgid "Getting the Internet Address"
-msgstr "Obtenir l'adresse IP"
+msgstr "Obtenir l’adresse IP"
 
 #. (itstool) path: page/p
 #: C/ip-information.page:21
@@ -157,12 +158,12 @@ msgid ""
 "information for each device and get some usage statistics. The statistics "
 "are set to zero any time you restart your computer."
 msgstr ""
-"Un ordinateur a en général un ou plusieurs périphériques réseaux. L'un "
-"d'entre eux est utilisé pour se connecter à Internet. Dans "
+"Un ordinateur a en général un ou plusieurs périphériques réseaux. L’un "
+"d’entre eux est utilisé pour se connecter à Internet. Dans "
 "<gui>Périphériques</gui> vous pouvez obtenir des informations sur chaque "
 "périphérique et accéder à des statistiques sur leur utilisation. Ces "
 "statistiques sont remises à zéro chaque fois que vous redémarrez "
-"l'ordinateur."
+"l’ordinateur."
 
 #. (itstool) path: page/p
 #: C/ip-information.page:26 C/network-connectivity.page:23
@@ -176,18 +177,18 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/network-connectivity.page:6
 msgid "Determine if your computer has Internet access."
-msgstr "Vérifier si l'ordinateur a accès à Internet."
+msgstr "Vérifier si l’ordinateur a accès à Internet."
 
 #. (itstool) path: page/title
 #: C/network-connectivity.page:19
 msgid "Checking Network Connectivity"
-msgstr "Vérifier si l'ordinateur a accès à Internet."
+msgstr "Vérifier si l’ordinateur a accès à Internet."
 
 #. (itstool) path: page/p
 #: C/network-connectivity.page:21
 msgid "Select the <gui>Ping</gui> tab to check the network connectivity."
 msgstr ""
-"Sélectionnez l'onglet <gui>Ping</gui> pour vérifier la connexion au réseau."
+"Sélectionnez l’onglet <gui>Ping</gui> pour vérifier la connexion au réseau."
 
 #. (itstool) path: page/p
 #: C/network-connectivity.page:26
@@ -197,7 +198,7 @@ msgid ""
 "you to discard an issue in your computer for the lack of connectivity to "
 "other sites."
 msgstr ""
-"Si vous obtenez une réponse d'une autre machine sur Internet, votre "
+"Si vous obtenez une réponse d’une autre machine sur Internet, votre "
 "ordinateur est aussi connecté à un réseau (vraisemblablement à Internet lui "
-"aussi). Cela vous permet d'éliminer certains problèmes si vous avez des "
-"soucis de connexion à d'autres sites."
+"aussi). Cela vous permet d’éliminer certains problèmes si vous avez des "
+"soucis de connexion à d’autres sites."
