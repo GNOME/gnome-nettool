@@ -5,572 +5,665 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ms-longgok\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 15:21+0300\n"
-"PO-Revision-Date: 2010-03-21 23:16+0800\n"
-"Last-Translator: Ahmed Noor Kader Mustajir Md Eusoff <sir.ade@gmail.com>\n"
-"Language-Team: Projek Gabai <gabai-penyumbang@lists.sourceforge.net>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-nettool/issues\n"
+"POT-Creation-Date: 2019-09-19 11:37+0000\n"
+"PO-Revision-Date: 2019-12-04 01:59+0800\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
+"Language-Team: Pasukan Terjemahan GNOME Malaysia\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../src/callbacks.c:323
-msgid "translator-credits"
-msgstr "Ahmed Noor Kader Mustajir Md Eusoff <sir.ade@gmail.com> 2010"
-
-#. Translators: %s is the name of the copyright holder
-#: ../src/callbacks.c:330
-#, c-format
-msgid "Copyright © 2003-2008 %s"
-msgstr ""
+"X-Generator: Poedit 2.2.4\n"
 
 #. Dear translator: This is the name of the application
-#: ../src/callbacks.c:334 ../src/callbacks.c:335
-#: ../src/gnome-nettool.desktop.in.in.h:1
+#: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
+#: src/callbacks.c:343 src/callbacks.c:344
 msgid "Network Tools"
 msgstr "Alatan Rangkaian"
 
-#: ../src/callbacks.c:337
-msgid "Graphical user interface for common network utilities"
-msgstr "Antaramuka pengguna grafik bagi utiliti rangkaian"
+#: data/gnome-nettool.appdata.xml.in:11
+msgid "Perform advanced networking analysis"
+msgstr "Buat analisis perangkaian lanjutan"
 
-#: ../src/callbacks.c:450 ../src/main.c:142 ../src/nettool.c:483
-msgid "Idle"
+#: data/gnome-nettool.appdata.xml.in:13
+msgid ""
+"Network Tools is a utility to perform advanced networking analysis "
+"operations. It features a range of networking tools that are typically done "
+"on the command line, but allows you to perform them with a graphical "
+"interface."
 msgstr ""
+"Alatan Rangkaian merupakan sebuah utiliti yang membuat operasi analisis "
+"perangkaian lanjutan. Ia memfiturkan sejumlah alatan perangkaian yang "
+"biasanya dibuat dalam baris perintah, tetapi anda kini boleh membuatnya "
+"dengan bantuan antara muka bergrafik."
 
-#. Dear Translator: This is the Window Title. 'Network Tools' is the
-#. * name of the application
-#: ../src/callbacks.c:455
-#, c-format
-msgid "%s - Network Tools"
-msgstr "%s - Alatan Rangkaian"
-
-#: ../src/callbacks.c:479
-msgid "Unable to open help file"
+#: data/gnome-nettool.appdata.xml.in:20
+msgid ""
+"With Network Tools, you can perform the following: ping, netstat, "
+"traceroute, port scans, lookup, finger and whois."
 msgstr ""
+"dengan Alatan Rangkaian, anda boleh buat perkara berikut: ping, netstat, "
+"traceroute, port scans, lookup, finger dan whois."
 
-#: ../src/gnome-nettool.ui.h:1
-msgid "0"
-msgstr "0"
+#: data/gnome-nettool.appdata.xml.in:39
+msgid "The GNOME Project"
+msgstr "Projek GNOME"
 
-#: ../src/gnome-nettool.ui.h:3
-#, no-c-format
-msgid "0%"
-msgstr "0%"
+#: data/gnome-nettool.desktop.in.in:4
+msgid "Network information tools"
+msgstr "Alatan maklumat rangkaian"
 
-#: ../src/gnome-nettool.ui.h:4
-msgid "0.0"
-msgstr "0.0"
+#: data/gnome-nettool.desktop.in.in:5
+msgid "View information about your network"
+msgstr "Lihat maklumat berkenaan rangkaian anda"
 
-# #-#-#-#-#  longgok.edited (longokan)  #-#-#-#-#
-# libgnomeui/gnome-messagebox.c:111 libgnomeui/gnome-messagebox.c:244
-#: ../src/gnome-nettool.ui.h:5
-msgid "IP Information"
-msgstr "Maklumat IP"
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-nettool.desktop.in.in:7
+msgid "network;monitor;remote;"
+msgstr "rangkaian;pemantau;jauh;"
 
-#: ../src/gnome-nettool.ui.h:6
-msgid "Interface Information"
-msgstr "Maklumat Antaramuka"
+#: data/gnome-nettool.ui:18 data/gnome-nettool.ui:28 data/gnome-nettool.ui:38
+#: data/gnome-nettool.ui:48 data/gnome-nettool.ui:58 data/gnome-nettool.ui:78
+msgid "Host"
+msgstr "Hos"
 
-#: ../src/gnome-nettool.ui.h:7
-msgid "Interface Statistics"
-msgstr "Statistik Antaramuka"
+#: data/gnome-nettool.ui:68
+msgid "User"
+msgstr "Pengguna"
 
-#: ../src/gnome-nettool.ui.h:8
-msgid "Round Trip Time Statistics"
-msgstr "Tetapan Bunyi"
+#: data/gnome-nettool.ui:88
+msgid "_Tool"
+msgstr "_Alat"
 
-#: ../src/gnome-nettool.ui.h:9
-#, fuzzy
-msgid "Transmission Statistics"
-msgstr "Statistik Penghantaran"
-
-#: ../src/gnome-nettool.ui.h:10
-msgid "Active Network Services"
-msgstr "Servis Rangkaian Aktif"
-
-#: ../src/gnome-nettool.ui.h:11
-msgid "Average:"
-msgstr "Purata:"
-
-#: ../src/gnome-nettool.ui.h:12
+#: data/gnome-nettool.ui:94
 msgid "Beep on ping"
-msgstr ""
+msgstr "_Bip ketika ping"
 
-#: ../src/gnome-nettool.ui.h:13
+#: data/gnome-nettool.ui:107
+msgid "_Edit"
+msgstr "_Sunting"
+
+#: data/gnome-nettool.ui:113
+msgid "Copy as text _report"
+msgstr "Salin sebagai _laporan teks"
+
+#: data/gnome-nettool.ui:121
 msgid "Clear _History"
 msgstr "Kosongkan _Sejarah"
 
-#: ../src/gnome-nettool.ui.h:14
+#: data/gnome-nettool.ui:128
+msgid "_Help"
+msgstr "_Bantuan"
+
+#: data/gnome-nettool.ui:135
+msgid "_Contents"
+msgstr "_Kandungan"
+
+#. Dear Translator: This is the Window Title
+#: data/gnome-nettool.ui:170
+msgid "Devices — Network Tools"
+msgstr "Peranti — Alatan Rangkaian"
+
+#: data/gnome-nettool.ui:202
+msgid "_Network device:"
+msgstr "Peranti _rangkaian:"
+
+#: data/gnome-nettool.ui:250
+msgid "_Configure"
+msgstr "_Konfigur"
+
+# #-#-#-#-#  longgok.edited (longokan)  #-#-#-#-#
+# libgnomeui/gnome-messagebox.c:111 libgnomeui/gnome-messagebox.c:244
+#: data/gnome-nettool.ui:308
+msgid "IP Information"
+msgstr "Maklumat IP"
+
+#: data/gnome-nettool.ui:348
+msgid "Hardware address:"
+msgstr "Alamat perkakasan:"
+
+#: data/gnome-nettool.ui:362
+msgid "Multicast:"
+msgstr "Multicast:"
+
+#: data/gnome-nettool.ui:378
+msgid "MTU:"
+msgstr "MTU:"
+
+#: data/gnome-nettool.ui:394
+msgid "Link speed:"
+msgstr "Kelajuan pautan:"
+
+#: data/gnome-nettool.ui:410
+msgid "State:"
+msgstr "Keadaan:"
+
+#: data/gnome-nettool.ui:426 data/gnome-nettool.ui:444
+#: data/gnome-nettool.ui:463 data/gnome-nettool.ui:482
+#: data/gnome-nettool.ui:501 data/gnome-nettool.ui:590
+#: data/gnome-nettool.ui:609 data/gnome-nettool.ui:626
+#: data/gnome-nettool.ui:661 data/gnome-nettool.ui:696
+#: data/gnome-nettool.ui:731 data/gnome-nettool.ui:766
+msgid "Not Available"
+msgstr "Tidak Tersedia"
+
+#: data/gnome-nettool.ui:523
+msgid "Interface Information"
+msgstr "Maklumat Antara Mmuka"
+
+#: data/gnome-nettool.ui:560
+msgid "Transmitted bytes:"
+msgstr "Bait dihantar:"
+
+#: data/gnome-nettool.ui:574
+msgid "Received bytes:"
+msgstr "Bait diterima:"
+
+#: data/gnome-nettool.ui:645
+msgid "Transmission errors:"
+msgstr "Rakat penghantaran:"
+
+#: data/gnome-nettool.ui:680
+msgid "Transmitted packets:"
+msgstr "Paket dihantar:"
+
+#: data/gnome-nettool.ui:715
+msgid "Received packets:"
+msgstr "Paket diterima:"
+
+#: data/gnome-nettool.ui:750
+msgid "Reception errors:"
+msgstr "Ralat Penerimaan:"
+
+#: data/gnome-nettool.ui:785
 msgid "Collisions:"
 msgstr "Perlanggaran:"
 
-#: ../src/gnome-nettool.ui.h:15
-msgid "Copy as text _report"
-msgstr ""
+#: data/gnome-nettool.ui:805
+msgid "Interface Statistics"
+msgstr "Statistik Antara Muka"
 
-#: ../src/gnome-nettool.ui.h:16
-msgid "Details"
-msgstr ""
-
-#: ../src/gnome-nettool.ui.h:17
+#: data/gnome-nettool.ui:835
 msgid "Devices"
 msgstr "Peranti"
 
-#: ../src/gnome-nettool.ui.h:18
-msgid "Devices - Network Tools"
-msgstr "Peranti - Alatan Rangkaian"
+#: data/gnome-nettool.ui:870
+msgid "Only"
+msgstr "Sahaja"
 
-#: ../src/gnome-nettool.ui.h:19
-msgid "Display:"
-msgstr "Paparan:"
+#: data/gnome-nettool.ui:898
+msgid "requests"
+msgstr "permintaan"
 
-#: ../src/gnome-nettool.ui.h:20
-msgid "Domain address"
-msgstr "Alamat Domain"
+#: data/gnome-nettool.ui:916
+msgid "Unlimited requests"
+msgstr "Permintaan tanpa had"
 
-#: ../src/gnome-nettool.ui.h:21
-#, fuzzy
-msgid ""
-"Enter a domain address to lookup its whois information. For example: www."
-"domain.com or 192.168.2.1"
-msgstr ""
-"Masukkan alamat domain untuk dicari maklumat whoisnya.\n"
-"Sebagai contoh: www.my-penguin.org atau 192.168.2.1"
+#: data/gnome-nettool.ui:941
+msgid "Send:"
+msgstr "Hantar:"
 
-#: ../src/gnome-nettool.ui.h:22
-#, fuzzy
-msgid ""
-"Enter the network address to finger that user. For example: www.domain.com "
-"or 192.168.2.1"
-msgstr ""
-"Masukkan alamat rangkaian untuk difinger penggunanya.\n"
-"Sebagai contoh: www.my-penguin.org atau 192.168.2.1"
-
-#: ../src/gnome-nettool.ui.h:23
-#, fuzzy
-msgid ""
-"Enter the network address to lookup. For example: www.domain.com or "
-"192.168.2.1"
-msgstr ""
-"Masukkan alamat rangkaian untuk dicari.\n"
-"Sebagai contoh: www.my-penguin.org atau 192.168.2.1"
-
-#: ../src/gnome-nettool.ui.h:24
-#, fuzzy
+#: data/gnome-nettool.ui:961
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Masukkan alamat rangkaian untuk diping.\n"
-"Sebagai contoh: www.my-penguin.org atau 192.168.2.1"
+"Masukkan alamat rangkaian untuk dipingkan. Sebagai contoh: www.my-penguin."
+"org atau 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:25
-#, fuzzy
+#: data/gnome-nettool.ui:967 data/gnome-nettool.ui:981
+#: data/gnome-nettool.ui:1851 data/gnome-nettool.ui:2028
+#: data/gnome-nettool.ui:2201
+msgid "Network address"
+msgstr "Alamat rangkaian"
+
+#: data/gnome-nettool.ui:994 data/gnome-nettool.ui:1674
+#: data/gnome-nettool.ui:1829 data/gnome-nettool.ui:2051
+#: data/gnome-nettool.ui:2260
+msgid "_Network address:"
+msgstr "Alamat _rangkaian:"
+
+#: data/gnome-nettool.ui:1042 data/gnome-nettool.ui:1457 src/main.c:288
+msgid "Ping"
+msgstr "Ping"
+
+#: data/gnome-nettool.ui:1100 data/gnome-nettool.ui:1119
+#: data/gnome-nettool.ui:1138
+msgid "0.0"
+msgstr "0.0"
+
+#. Translators: this is the abbreviation for milliseconds
+#: data/gnome-nettool.ui:1155 data/gnome-nettool.ui:1170
+#: data/gnome-nettool.ui:1185
+msgid "ms"
+msgstr "ms"
+
+#: data/gnome-nettool.ui:1198
+msgid "Maximum:"
+msgstr "Maksimum:"
+
+#: data/gnome-nettool.ui:1214
+msgid "Average:"
+msgstr "Purata:"
+
+#: data/gnome-nettool.ui:1230
+msgid "Minimum:"
+msgstr "Minimum:"
+
+#: data/gnome-nettool.ui:1247
+msgid "Round Trip Time Statistics"
+msgstr "Statistik Masa Pergi Balik"
+
+#: data/gnome-nettool.ui:1280
+msgid "Packets transmitted:"
+msgstr "Paket dihantar:"
+
+#: data/gnome-nettool.ui:1294
+msgid "0%"
+msgstr "0%"
+
+#: data/gnome-nettool.ui:1313 data/gnome-nettool.ui:1332
+msgid "0"
+msgstr "0"
+
+#: data/gnome-nettool.ui:1349
+msgid "Successful packets:"
+msgstr "Paket berjaya diterima:"
+
+#: data/gnome-nettool.ui:1365
+msgid "Packets received:"
+msgstr "Paket diterima:"
+
+#: data/gnome-nettool.ui:1384
+msgid "Transmission Statistics"
+msgstr "Statistik Pengantaran"
+
+#: data/gnome-nettool.ui:1441
+msgid "Details"
+msgstr "Perincian:"
+
+#: data/gnome-nettool.ui:1482
+msgid "Display:"
+msgstr "Paparan:"
+
+#: data/gnome-nettool.ui:1497
+msgid "Routing Table Information"
+msgstr "Maklumat Jadual Penghalaan"
+
+#: data/gnome-nettool.ui:1511
+msgid "Active Network Services"
+msgstr "Perkhidmatan Rangkaian Aktif"
+
+#: data/gnome-nettool.ui:1526
+msgid "Multicast Information"
+msgstr "Maklumat Multicast"
+
+#: data/gnome-nettool.ui:1581 data/gnome-nettool.ui:1649 src/main.c:442
+msgid "Netstat"
+msgstr "Netstat"
+
+#: data/gnome-nettool.ui:1625
+msgid "Output for net stat"
+msgstr "Output untuk net stat"
+
+#: data/gnome-nettool.ui:1632
+msgid "Netstat output"
+msgstr "Output Netstat"
+
+#: data/gnome-nettool.ui:1690
 msgid ""
-"Enter the network address to scan for open ports. For example: www.domain."
-"com or 192.168.2.1"
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
 msgstr ""
-"Masukkan alamat rangkaian untuk diimbas liang yang terbuka.\n"
-"Sebagai contoh: www.my-penguin.org atau 192.168.2.1"
+"Masukkan alamat rangkaian untuk disurih laluannya. Sebagai contoh: www.my-"
+"penguin.org atau 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:26
-#, fuzzy
+#: data/gnome-nettool.ui:1741 src/main.c:373
+msgid "Trace"
+msgstr "Surih"
+
+#: data/gnome-nettool.ui:1778
+msgid "Output for traceroute"
+msgstr "Output untuk traceroute"
+
+#: data/gnome-nettool.ui:1785
+msgid "Traceroute output"
+msgstr "Output Traceroute"
+
+#: data/gnome-nettool.ui:1803
 msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
-"Masukkan alamat rangkaian untuk disurih routenya.\n"
-"Sebagai contoh: www.my-penguin.org atau 192.168.2.1"
+"Masukkan alamat rangkaian untuk disurih halanya. Sebagai contoh: www.my-"
+"penguin.org atau 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:27
-msgid "Enter the user to finger"
-msgstr "Masukkan pengguna untuk difinger"
-
-#: ../src/gnome-nettool.ui.h:28 ../src/main.c:814
-msgid "Finger"
-msgstr "Finger"
-
-#: ../src/gnome-nettool.ui.h:29
-#, fuzzy
-msgid "Finger output"
-msgstr "Finger"
-
-#: ../src/gnome-nettool.ui.h:30
-msgid "Hardware address:"
-msgstr "Alamat perkakasan:"
-
-#: ../src/gnome-nettool.ui.h:31
-msgid "Host"
-msgstr "Hos"
-
-#: ../src/gnome-nettool.ui.h:32
-msgid "Link speed:"
-msgstr "Kelajuan pautan:"
-
-#: ../src/gnome-nettool.ui.h:33 ../src/main.c:734
-msgid "Lookup"
-msgstr "Cari"
-
-#: ../src/gnome-nettool.ui.h:34
-#, fuzzy
-msgid "Lookup output"
-msgstr "Cari"
-
-#: ../src/gnome-nettool.ui.h:35
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../src/gnome-nettool.ui.h:36
-msgid "Maximum:"
-msgstr "Maksimum:"
-
-#: ../src/gnome-nettool.ui.h:37
-msgid "Minimum:"
-msgstr "Minimum:"
-
-#: ../src/gnome-nettool.ui.h:38
-msgid "Multicast Information"
-msgstr "Maklumat Multicast"
-
-#: ../src/gnome-nettool.ui.h:39
-msgid "Multicast:"
-msgstr "Multicast:"
-
-#: ../src/gnome-nettool.ui.h:40 ../src/main.c:446
-msgid "Netstat"
-msgstr "Netstat"
-
-#: ../src/gnome-nettool.ui.h:41
-#, fuzzy
-msgid "Netstat output"
-msgstr "Netstat"
-
-#: ../src/gnome-nettool.ui.h:42
-msgid "Network address"
-msgstr "Alamat rangkaian"
-
-#: ../src/gnome-nettool.ui.h:43
-msgid "Not Available"
-msgstr "Tidak Ada"
-
-#: ../src/gnome-nettool.ui.h:44
-msgid "Only"
-msgstr "Sahaja"
-
-#: ../src/gnome-nettool.ui.h:45
-msgid "Output for finger"
-msgstr ""
-
-#: ../src/gnome-nettool.ui.h:46
-msgid "Output for lookup"
-msgstr ""
-
-#: ../src/gnome-nettool.ui.h:47
-msgid "Output for net stat"
-msgstr ""
-
-#: ../src/gnome-nettool.ui.h:48
-msgid "Output for port scan"
-msgstr ""
-
-#: ../src/gnome-nettool.ui.h:49
-msgid "Output for traceroute"
-msgstr ""
-
-#: ../src/gnome-nettool.ui.h:50
-msgid "Output for whois"
-msgstr ""
-
-#: ../src/gnome-nettool.ui.h:51
-msgid "Packets received:"
-msgstr "Paket diterima:"
-
-#: ../src/gnome-nettool.ui.h:52
-msgid "Packets transmitted:"
-msgstr "Paket dihantar:"
-
-#: ../src/gnome-nettool.ui.h:53 ../src/main.c:290
-msgid "Ping"
-msgstr "Ping"
-
-#: ../src/gnome-nettool.ui.h:54
-msgid "Port Scan"
-msgstr "Imbas Liang"
-
-#: ../src/gnome-nettool.ui.h:55
-#, fuzzy
-msgid "Port scan output"
-msgstr "Imbas Liang"
-
-#: ../src/gnome-nettool.ui.h:56
-msgid "Received bytes:"
-msgstr "Bait diterima:"
-
-#: ../src/gnome-nettool.ui.h:57
-msgid "Received packets:"
-msgstr "Paket diterima:"
-
-#: ../src/gnome-nettool.ui.h:58
-msgid "Reception errors:"
-msgstr "Ralat Penerimaan:"
-
-#: ../src/gnome-nettool.ui.h:59
-msgid "Routing Table Information"
-msgstr "Maklumat Jadual routing"
-
-#: ../src/gnome-nettool.ui.h:60 ../src/main.c:619
-msgid "Scan"
-msgstr "Imbas"
-
-#: ../src/gnome-nettool.ui.h:61
-msgid "Send:"
-msgstr "Hantar:"
-
-#: ../src/gnome-nettool.ui.h:62
-msgid "State:"
-msgstr "Negeri:"
-
-#: ../src/gnome-nettool.ui.h:63
-msgid "Successful packets:"
-msgstr "Paket berjaya diterima:"
-
-#: ../src/gnome-nettool.ui.h:64 ../src/main.c:375
-msgid "Trace"
-msgstr "Surih"
-
-#: ../src/gnome-nettool.ui.h:65
+#: data/gnome-nettool.ui:1804
 msgid "Traceroute"
 msgstr "Traceroute"
 
-#: ../src/gnome-nettool.ui.h:66
-#, fuzzy
-msgid "Traceroute output"
-msgstr "Traceroute"
-
-#: ../src/gnome-nettool.ui.h:67
-msgid "Transmission errors:"
-msgstr "Rakat penghantaran:"
-
-#: ../src/gnome-nettool.ui.h:68
-msgid "Transmitted bytes:"
-msgstr "Bait dihantar:"
-
-#: ../src/gnome-nettool.ui.h:69
-msgid "Transmitted packets:"
-msgstr "Paket dihantar:"
-
-#: ../src/gnome-nettool.ui.h:70
-msgid "Unlimited requests"
-msgstr "Permintaan tanpa had"
-
-#: ../src/gnome-nettool.ui.h:71
-msgid "User"
-msgstr "Pengguna"
-
-#: ../src/gnome-nettool.ui.h:72
-msgid "User name"
-msgstr "Nama pengguna"
-
-#: ../src/gnome-nettool.ui.h:73 ../src/main.c:920
-msgid "Whois"
-msgstr "Whois"
-
-#: ../src/gnome-nettool.ui.h:74
-msgid "Whois output"
+#: data/gnome-nettool.ui:1845
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
 msgstr ""
+"Masukkan alamat rangkaian untuk diimbas port terbuka. Sebagai contoh: www.my-"
+"penguin.org atau 192.168.2.1"
 
-#: ../src/gnome-nettool.ui.h:75
-msgid "_Configure"
-msgstr "_Konfigurasi"
+#: data/gnome-nettool.ui:1901 src/main.c:613
+msgid "Scan"
+msgstr "Imbas"
 
-#: ../src/gnome-nettool.ui.h:76
-msgid "_Domain address:"
-msgstr "Alamat _Domain:"
+#: data/gnome-nettool.ui:1938
+msgid "Output for port scan"
+msgstr "Output untuk imbasan port"
 
-#: ../src/gnome-nettool.ui.h:77
-msgid "_Edit"
-msgstr ""
+#: data/gnome-nettool.ui:1945
+msgid "Port scan output"
+msgstr "Output imbasan Port"
 
-#: ../src/gnome-nettool.ui.h:78
-msgid "_Help"
-msgstr "_Bantuan"
+#: data/gnome-nettool.ui:1962
+msgid "Port Scan"
+msgstr "Imbas Port"
 
 # #-#-#-#-#  longgok.edited (longokan)  #-#-#-#-#
 # libgnomeui/gnome-messagebox.c:111 libgnomeui/gnome-messagebox.c:244
-#: ../src/gnome-nettool.ui.h:79
+#: data/gnome-nettool.ui:2004
 msgid "_Information type:"
 msgstr "_Jenis maklumat:"
 
-#: ../src/gnome-nettool.ui.h:80
-msgid "_Network address:"
-msgstr "Alamat _rangkaian:"
+#: data/gnome-nettool.ui:2022
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Masukkan alamat rangkaian untuk dicari. Sebagai contoh: domain.com atau ftp."
+"domain.com."
 
-#: ../src/gnome-nettool.ui.h:81
-msgid "_Network device:"
-msgstr "Peranti _rangkaian"
+#: data/gnome-nettool.ui:2096 data/gnome-nettool.ui:2163 src/main.c:736
+msgid "Lookup"
+msgstr "Carian"
 
-#: ../src/gnome-nettool.ui.h:82
-msgid "_Tool"
-msgstr "_Alatan"
+#: data/gnome-nettool.ui:2140
+msgid "Output for lookup"
+msgstr "Output untuk carian"
 
-#: ../src/gnome-nettool.ui.h:83
+#: data/gnome-nettool.ui:2146
+msgid "Lookup output"
+msgstr "Output carian"
+
+#: data/gnome-nettool.ui:2195
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Masukkan alamat rangkaian untuk finger pengguna tersebut. Sebagai contoh: "
+"www.my-penguin.org atau 192.168.2.1"
+
+#: data/gnome-nettool.ui:2231
+msgid "Enter the user to finger"
+msgstr "Masukkan pengguna yang difingerkan"
+
+#: data/gnome-nettool.ui:2237
+msgid "User name"
+msgstr "Nama pengguna"
+
+#: data/gnome-nettool.ui:2274
 msgid "_Username:"
-msgstr "_Namapengguna:"
+msgstr "_Nama Pengguna:"
 
-#: ../src/gnome-nettool.ui.h:84
-msgid "ms"
-msgstr "ms"
+#: data/gnome-nettool.ui:2319 data/gnome-nettool.ui:2387 src/main.c:814
+msgid "Finger"
+msgstr "Finger"
 
-#: ../src/gnome-nettool.ui.h:85
-msgid "requests"
-msgstr "permintaan"
+#: data/gnome-nettool.ui:2363
+msgid "Output for finger"
+msgstr "Output untuk finger"
+
+#: data/gnome-nettool.ui:2370
+msgid "Finger output"
+msgstr "Output finger"
+
+#: data/gnome-nettool.ui:2412
+msgid "_Domain address:"
+msgstr "Alamat _Domain:"
+
+#: data/gnome-nettool.ui:2428
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Masukkan alamat domain untuk cari maklumat whoisnya. Sebagai contoh: www.my-"
+"penguin.org atau 192.168.2.1"
+
+#: data/gnome-nettool.ui:2434
+msgid "Domain address"
+msgstr "Alamat domain"
+
+#: data/gnome-nettool.ui:2484 data/gnome-nettool.ui:2548 src/main.c:918
+msgid "Whois"
+msgstr "Whois"
+
+#: data/gnome-nettool.ui:2521 data/gnome-nettool.ui:2547
+msgid "Output for whois"
+msgstr "Output untuk whois"
+
+#: data/gnome-nettool.ui:2529 data/gnome-nettool.ui:2530
+#: data/gnome-nettool.ui:2554
+msgid "Whois output"
+msgstr "Output Whois"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:6
+msgid "Historically used hostnames"
+msgstr "Nama hos yang digunakan mengikut sejarah"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:7
+msgid "A list of hostnames previously used"
+msgstr "Satu senarai nama hos yang digunakan sebelum ini"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:11
+msgid "Historically used usernames"
+msgstr "Nama pengguna yang digunakan mengikut sejarah"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:12
+msgid "A list of usernames previously used"
+msgstr "Satu senarai nama pengguna yang telah digunakan"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:16
+msgid "Historically used domains"
+msgstr "Domain yang digunakan mengikut sejarah"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:17
+msgid "A list of domains previously used"
+msgstr "Satu senarai domain yang telah digunakan"
+
+#: src/callbacks.c:332
+msgid "translator-credits"
+msgstr ""
+"Ahmed Noor Kader Mustajir Md Eusoff <sir.ade@gmail.com> 2010\n"
+"Abuyop"
+
+#. Translators: %s is the name of the copyright holder
+#: src/callbacks.c:339
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr "Hak Cipta © 2003-2008 %s"
+
+#: src/callbacks.c:346
+msgid "Graphical user interface for common network utilities"
+msgstr "Antara muka pengguna grafik bagi utiliti rangkaian"
+
+#: src/callbacks.c:458 src/main.c:140 src/nettool.c:524
+msgid "Idle"
+msgstr "Melahu"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: src/callbacks.c:463
+#, c-format
+msgid "%s — Network Tools"
+msgstr "%s — Alatan Rangkaian"
+
+#: src/callbacks.c:487
+msgid "Unable to open help file"
+msgstr "Tidak boleh membuka fail bantuan"
+
+#: src/finger.c:65
+#, c-format
+msgid "Getting information of %s on “%s”"
+msgstr "Mendapatkan maklumat %s pada \"%s\""
+
+#: src/finger.c:69
+#, c-format
+msgid "Getting information of all users on “%s”"
+msgstr "Mendapatkan maklumat semua pengguna pada \"%s\""
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
-#: ../src/info.c:60
+#: src/info.c:60
 msgid "Other type"
 msgstr "Jenis lain"
 
-#: ../src/info.c:61
+#: src/info.c:61
 msgid "Ethernet Interface"
-msgstr "Antaramuka Ethernet"
+msgstr "Antara Muka Ethernet"
 
-#: ../src/info.c:62
+#: src/info.c:62
 msgid "Wireless Interface"
-msgstr "Antaramuka Tanpawayar"
+msgstr "Antara Muka Tanpa Wayar"
 
-#: ../src/info.c:63
+#: src/info.c:63
 msgid "Modem Interface"
-msgstr "Antaramuka Modem"
+msgstr "Antara Muka Modem"
 
-#: ../src/info.c:64
+#: src/info.c:64
 msgid "Parallel Line Interface"
-msgstr "Antaramuka Talian Selari"
+msgstr "Antara Muka Talian Selari"
 
-#: ../src/info.c:65
+#: src/info.c:65
 msgid "Infrared Interface"
-msgstr "Antaramuka Inframerah"
+msgstr "Antara Muka Infra Merah"
 
-#: ../src/info.c:66
+#: src/info.c:66
+msgid "Infiniband Interface"
+msgstr "Antara Muka Infiniband"
+
+#: src/info.c:67
 msgid "Loopback Interface"
-msgstr "Antaramuka Gelungbalik"
+msgstr "Antara Muka Gelung Balik"
 
-#: ../src/info.c:67
+#: src/info.c:68
 msgid "Unknown Interface"
-msgstr "Antaramuka tak diketahui"
+msgstr "Antara Muka Tidak Diketahui"
 
-#: ../src/info.c:165
-#, fuzzy
+#: src/info.c:166
 msgid "Network Devices Not Found"
-msgstr "<i>Peranti Rangkaian Tak Ddijumpai</i>"
+msgstr "Peranti Rangkaian Tidak Ditemui"
 
-#: ../src/info.c:392 ../src/info.c:395
+#: src/info.c:397 src/info.c:400
 msgid "Unknown"
-msgstr "Entah"
+msgstr "Tidak Diketahui"
 
-#: ../src/info.c:466
+#: src/info.c:472
 msgid "Active"
 msgstr "Aktif"
 
-#: ../src/info.c:468
+#: src/info.c:474
 msgid "Inactive"
 msgstr "Tidak aktif"
 
-#: ../src/info.c:473
+#: src/info.c:479
 msgid "Loopback"
-msgstr "Gelungbalik"
+msgstr "Gelung Balik"
 
-#: ../src/info.c:482
+#: src/info.c:489
 msgid "Enabled"
-msgstr "Dihidupkan"
+msgstr "Dibenarkan"
 
-#: ../src/info.c:484
+#: src/info.c:491
 msgid "Disabled"
-msgstr "Dimatikan"
+msgstr "Dilumpuhkan"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:573
+#: src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
 msgstr "Peranti rangkaian:\t%s\n"
 
-#: ../src/info.c:574
+#: src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "Alamat perkakasan:\t%s\n"
 
-#: ../src/info.c:575
+#: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
 msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:576
+#: src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:577
+#: src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
 msgstr "Kelajuan pautan:\t%s\n"
 
-#: ../src/info.c:578
+#: src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "Keadaan:\t%s\n"
 
-#: ../src/info.c:580
+#: src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
 msgstr "Paket dihantar:\t%s\n"
 
-#: ../src/info.c:581
+#: src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "Ralat penghantaran:\t%s\n"
 
-#: ../src/info.c:582
+#: src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "PAket diterima:\t%s\n"
 
-#: ../src/info.c:583
+#: src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "Ralat penerimaan:\t%s\n"
 
-#: ../src/info.c:584
+#: src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "Perlanggaran:\t%s\n"
 
-#: ../src/info.h:27
+#: src/info.h:23
 msgid "not available"
 msgstr "tidak ada"
 
-#: ../src/lookup.c:80
+#: src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
 msgstr "Mencari %s"
 
-#: ../src/lookup.c:274
+#: src/lookup.c:279
 msgid "Name"
 msgstr "Nama"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:283
+#: src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:292
+#: src/lookup.c:297
 msgid "Address Type"
 msgstr "Jenis Alamat"
 
-#: ../src/lookup.c:302
+#: src/lookup.c:307
 msgid "Record Type"
 msgstr "Jenis Rekod"
 
-#: ../src/lookup.c:311
+#: src/lookup.c:316
 msgid "Address"
 msgstr "Alamat"
 
@@ -580,281 +673,293 @@ msgstr "Alamat"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:339
+#: src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
 msgstr "Sumber\tTTL\tJenis Alamat\tJenis Rekod 1\tResolusi\n"
 
-#: ../src/main.c:82
+#: src/main.c:82
 msgid "Load information for a network device"
 msgstr "Muatkan maklumat bagi peranti rangkaian"
 
-#: ../src/main.c:83
+#: src/main.c:83
 msgid "DEVICE"
 msgstr "PERANTI"
 
-#: ../src/main.c:86
+#: src/main.c:86
 msgid "Send a ping to a network address"
 msgstr "Hantar ping ke alamat rangkaian"
 
-#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
+#: src/main.c:87 src/main.c:95 src/main.c:99 src/main.c:103
 msgid "HOST"
 msgstr "HOS"
 
-#: ../src/main.c:90
+#: src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
-"Peroleh maklumat netstat. Opsyen yg sah adalah: route, active, multicast"
+"Peroleh maklumat netstat. Pilihan yang sah adalah: route, active, multicast."
 
-#: ../src/main.c:91
+#: src/main.c:91
 msgid "COMMAND"
-msgstr "ARAHAN"
+msgstr "PERINTAH"
 
-#: ../src/main.c:94
+#: src/main.c:94
 msgid "Trace a route to a network address"
-msgstr "Surih route ke alamat rangkaian"
+msgstr "Surih satu hala ke alamat rangkaian"
 
-#: ../src/main.c:98
+#: src/main.c:98
 msgid "Port scan a network address"
-msgstr "Imbas liang alamat rangkaian"
+msgstr "Imbas port satu alamat rangkaian"
 
-#: ../src/main.c:102
+#: src/main.c:102
 msgid "Look up a network address"
-msgstr "Cari alamat rangkaian"
+msgstr "Cari satu alamat rangkaian"
 
-#: ../src/main.c:106
+#: src/main.c:106
 msgid "Finger command to run"
-msgstr "Arahan finger untuk dilaksanakan"
+msgstr "Perintah finger yang dijalankan"
 
-#: ../src/main.c:107
+#: src/main.c:107
 msgid "USER"
 msgstr "PENGGUNA"
 
-#: ../src/main.c:110
+#: src/main.c:110
 msgid "Perform a whois lookup for a network domain"
-msgstr "Lakukan carian  whois pada domain rangkaian"
+msgstr "Buat carian whois untuk domain rangkaian"
 
-#: ../src/main.c:111
+#: src/main.c:111
 msgid "DOMAIN"
 msgstr "DOMAIN"
 
-#: ../src/main.c:130
-#, fuzzy, c-format
+#: src/main.c:128
+#, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Fail %s tak wujud, sila periksa samada gnome-netinfo dipasang dgn betul"
+"Fail %s tidak wujud, sila periksa sama ada gnome-nettool telah dipasang "
+"dengan betul"
 
-#: ../src/main.c:482 ../src/netstat.c:443
+#: src/main.c:476 src/netstat.c:464
 msgid "Protocol"
 msgstr "Protokol"
 
-#: ../src/main.c:489
+#: src/main.c:483
 msgid "IP Address"
 msgstr "Alamat IP"
 
-#: ../src/main.c:496
+#: src/main.c:490
 msgid "Netmask / Prefix"
-msgstr "Netmask / Prefiks"
+msgstr "Topeng Internet / Awalan"
 
-#: ../src/main.c:503
+#: src/main.c:497
 msgid "Broadcast"
 msgstr "Siaran"
 
-#: ../src/main.c:510
+#: src/main.c:504
 msgid "Scope"
 msgstr "Skop"
 
-#: ../src/main.c:669
-#, fuzzy
+#: src/main.c:663
 msgid "Default Information"
-msgstr "Maklumat Multicast"
+msgstr "Maklumat Lalai"
 
-#: ../src/main.c:670
-#, fuzzy
+#: src/main.c:664
 msgid "Internet Address"
-msgstr "Alamat IP"
+msgstr "Alamat Internet"
 
-#: ../src/main.c:671
+#: src/main.c:665
 msgid "Canonical Name"
-msgstr ""
+msgstr "Nama Rasmi"
 
-#: ../src/main.c:672
+#: src/main.c:666
 msgid "CPU / OS Type"
 msgstr "Jenis CPU / OS"
 
-#. When asking for MX record in DNS context
-#: ../src/main.c:674
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: src/main.c:673
 msgid "Mailbox Exchange"
-msgstr ""
+msgstr "Pertukaran Peti Mel"
 
-#: ../src/main.c:675
+#: src/main.c:674
 msgid "Mailbox Information"
-msgstr "Maklumat Kotakmail"
+msgstr "Maklumat Peti Mel"
 
 #. When asking for NS record in DNS context
-#: ../src/main.c:677
+#: src/main.c:676
 msgid "Name Server"
-msgstr "Nama Server"
+msgstr "Nama Pelayan"
 
-#: ../src/main.c:678
-#, fuzzy
+#: src/main.c:677
 msgid "Host name for Address"
-msgstr "Imbas liang alamat rangkaian"
+msgstr "Nama hos untuk Alamat"
 
-#: ../src/main.c:679
-msgid "Start-of-authority"
-msgstr ""
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
+#: src/main.c:681
+msgid "Start of Authority"
+msgstr "Permulaan Autoriti"
 
-#: ../src/main.c:680
+#: src/main.c:682
 msgid "Text Information"
 msgstr "Maklumat Teks"
 
-#: ../src/main.c:681
+#: src/main.c:683
 msgid "Well Known Services"
-msgstr ""
+msgstr "Perkhidmatan Diketahui"
 
-#: ../src/main.c:682
-#, fuzzy
+#: src/main.c:684
 msgid "Any / All Information"
-msgstr "Maklumat Jadual routing"
+msgstr "Apa-Apa / Semua Maklumat"
 
-#: ../src/netstat.c:122
+#: src/netstat.c:134
 msgid "Getting routing table"
-msgstr "Memperoleh jadual routing"
+msgstr "Memperoleh jadual penghalaan"
 
-#: ../src/netstat.c:137
+#: src/netstat.c:149
 msgid "Getting active Internet connections"
 msgstr "Memperoleh sambungan Internet aktif"
 
-#: ../src/netstat.c:146
+#: src/netstat.c:158
 msgid "Getting group memberships"
 msgstr "Memperoleh keahlian kumpulan"
 
-#: ../src/netstat.c:450
+#: src/netstat.c:471
 msgid "IP Source"
 msgstr "Sumber IP"
 
-#: ../src/netstat.c:458
+#: src/netstat.c:479
 msgid "Port/Service"
-msgstr "Liang/Servis"
+msgstr "Port/Servis"
 
-#: ../src/netstat.c:466 ../src/scan.c:314
+#: src/netstat.c:487 src/scan.c:213
 msgid "State"
 msgstr "Keadaan"
 
-#: ../src/netstat.c:609
+#: src/netstat.c:640
 msgid "Destination/Prefix"
-msgstr "Destinasi/Prefiks"
+msgstr "Destinasi/Awalan"
 
-#: ../src/netstat.c:611
+#: src/netstat.c:642
 msgid "Destination"
 msgstr "Destinasi"
 
-#: ../src/netstat.c:618
+#: src/netstat.c:649
 msgid "Gateway"
-msgstr "Gateway"
+msgstr "Get Laluan"
 
-#: ../src/netstat.c:626
+#: src/netstat.c:657
 msgid "Netmask"
-msgstr "Netmask"
+msgstr "Topeng Internet"
 
-#: ../src/netstat.c:634 ../src/netstat.c:741
+#: src/netstat.c:665 src/netstat.c:771
 msgid "Interface"
-msgstr "Antaramuka"
+msgstr "Antara Muka"
 
-#: ../src/netstat.c:748
+#: src/netstat.c:778
 msgid "Member"
 msgstr "Ahli"
 
-#: ../src/netstat.c:756
+#: src/netstat.c:786
 msgid "Group"
 msgstr "Kumpulan"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:798
+#: src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
-msgstr "Protokol\tSumber IP\tLiang/Servis\tKeadaan\n"
+msgstr "Protokol\tSumber IP\tPort/Servis\tKeadaan\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:804
+#: src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
-msgstr "Destinasi\tGateway\tNetmask\tAntaramuka\n"
+msgstr "Destinasi\tGet Laluan\tTopeng Internet\tAntara Muka\n"
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:809
+#: src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
-msgstr "Antaramuka\tAhli\tKumpulan\n"
+msgstr "Antara Muka\tAhli\tKumpulan\n"
 
-#: ../src/nettool.c:199
+#: src/nettool.c:204
 msgid "A network address was not specified"
-msgstr "Alamat rangkaian tak dinyatakan."
+msgstr "Satu alamat rangkaian tidak dinyatakan"
 
-#: ../src/nettool.c:200 ../src/nettool.c:209
+#: src/nettool.c:205 src/nettool.c:214
 msgid "Please enter a valid network address and try again."
-msgstr "Sila masukkan alamat rangkaian dan cuba lagi."
+msgstr "Sila masukkan alamat rangkaian yang sah dan cuba lagi."
 
-#: ../src/nettool.c:207
+#: src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "Alamat '%s' tidak dijumpai"
+msgid "The address “%s” cannot be found"
+msgstr "Alamat \"%s\" tidak ditemui"
 
-#: ../src/nettool.c:236
+#: src/nettool.c:241
 msgid "A domain address was not specified"
-msgstr "Alamat domain tak dinyatakan"
+msgstr "Satu alamat domain tidak dinyatakan"
 
-#: ../src/nettool.c:237
+#: src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
-msgstr "Sila masukkan alamat domain dan cuba lagi."
+msgstr "Sila masukkan satu alamat domain yang sah dan cuba lagi."
 
-#: ../src/nettool.c:428
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
+#: src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run “%s”"
+msgstr "Satu ralat berlaku ketika cuba menjalankan \"%s\""
+
+#: src/nettool.c:464
 msgid "Information not available"
-msgstr "tiada maklumat"
+msgstr "Maklumat tidak tersedia"
 
-#: ../src/nettool.c:548
+#: src/nettool.c:589
 msgid "Stop"
 msgstr "Henti"
 
-#: ../src/nettool.c:554
+#: src/nettool.c:595
 msgid "Run"
-msgstr "Laksana"
+msgstr "Jalan"
 
 #. Created up here so we can get the geometry info.
-#: ../src/ping.c:151
+#: src/ping.c:155
 msgid "Time (ms):"
 msgstr "Masa (ms):"
 
-#: ../src/ping.c:171
+#: src/ping.c:176
 msgid "Seq. No.:"
-msgstr ""
+msgstr "Bil. Jujuk:"
 
-#: ../src/ping.c:254
+#: src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
-msgstr "Menghantar permintaanping ke %s"
+msgstr "Menghantar permintaan ping kepada %s"
 
-#: ../src/ping.c:569
+#: src/ping.c:577
 msgid "Bytes"
-msgstr "Byte"
+msgstr "Bait"
 
-#: ../src/ping.c:576
+#: src/ping.c:584
 msgid "Source"
 msgstr "Sumber"
 
-#: ../src/ping.c:584
+#: src/ping.c:592
 msgid "Seq"
 msgstr "Juj"
 
-#: ../src/ping.c:594
+#: src/ping.c:602 src/traceroute.c:336
 msgid "Time"
 msgstr "Masa"
 
-#: ../src/ping.c:602
+#: src/ping.c:610
 msgid "Units"
 msgstr "Unit"
 
@@ -862,128 +967,110 @@ msgstr "Unit"
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:628
+#: src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
 msgstr "Bait\tSumberr\tJuj\tMasa\tUnit\n"
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:643
+#: src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
-msgstr "Minumum masa:\t%s ms\n"
+msgstr "Minimum masa:\t%s ms\n"
 
-#: ../src/ping.c:644
+#: src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
 msgstr "Purata masa:\t%s ms\n"
 
-#: ../src/ping.c:645
+#: src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
-msgstr "maksimum masa:\t%s ms\n"
+msgstr "Maksimum masa:\t%s ms\n"
 
-#: ../src/ping.c:647
+#: src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
 msgstr "Paket dihantar:\t%s\n"
 
-#: ../src/ping.c:649
+#: src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
 msgstr "Paket diterima:\t%s\n"
 
-#: ../src/ping.c:652
+#: src/ping.c:660
 #, c-format
 msgid "Successful packets:\t%s\n"
-msgstr "Paket diterima:\t%s\n"
+msgstr "Paket berjaya diterima:\t%s\n"
 
-#: ../src/scan.c:94
+#: src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr "Mengimbas %s untuk liang terbuka"
+msgstr "Mengimbas %s untuk port terbuka"
 
-#: ../src/scan.c:169
-msgid "unknown"
-msgstr "entah"
-
-#. Translators: "open" is a network status and should be one word.
-#: ../src/scan.c:173
-msgid "open"
-msgstr "buka"
-
-#: ../src/scan.c:306
+#: src/scan.c:205
 msgid "Port"
-msgstr "Liang"
+msgstr "Port"
 
-#: ../src/scan.c:322
+#: src/scan.c:221
 msgid "Service"
 msgstr "Servis"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:344
+#: src/scan.c:243
 msgid "Port\tState\tService\n"
-msgstr "Liang\tKeadaan\tServis\n"
+msgstr "Port\tKeadaan\tServis\n"
 
-#: ../src/traceroute.c:62
+#: src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
-msgstr "Menyuring route ke %s"
+msgstr "Menyurih hala ke %s"
 
-#: ../src/traceroute.c:265
+#: src/traceroute.c:309
 msgid "Hop"
 msgstr "Hop"
 
-#: ../src/traceroute.c:273
+#: src/traceroute.c:317
 msgid "Hostname"
-msgstr "Namahos"
+msgstr "Nama Hos"
 
-#: ../src/traceroute.c:281
+#: src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:292
-msgid "Time 1"
-msgstr "Masa 1"
-
-#: ../src/traceroute.c:302
-msgid "Time 2"
-msgstr "Masa 2"
-
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:328
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "Hop\tNamahos\tIP\tmasa 1\tMasa 2\n"
+#: src/traceroute.c:360
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Hop\tNama Hos\tIP\tmasa 1\n"
 
-#: ../src/utils.c:227
+#: src/utils.c:239
 #, c-format
 msgid ""
 "In order to use this feature of the program, %s must be installed in your "
 "system"
 msgstr ""
+"Supaya dapat menggunakan fitur program ini. %s mesti dipasang ke dalam "
+"sistem anda"
 
-#: ../src/gnome-nettool.desktop.in.in.h:2
-msgid "View information about your network"
-msgstr "Lihat maklumat bagi peranti rangkaian"
-
-#: ../src/finger.c:63
-#, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "Memperoleh maklumat bagi %s pada \"%s\""
-
-#: ../src/finger.c:67
-#, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "Memperoleh maklumat bagi semua pengguna pada \"%s\""
-
-#: ../src/whois.c:58
+#: src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
-msgstr "Memperoleh maklumat bagi '%s'"
+msgstr "Memperoleh maklumat whois bagi '%s'"
+
+#~ msgid "unknown"
+#~ msgstr "entah"
+
+#~ msgid "open"
+#~ msgstr "buka"
+
+#~ msgid "Time 1"
+#~ msgstr "Masa 1"
+
+#~ msgid "Time 2"
+#~ msgstr "Masa 2"
 
 #~ msgid "Broadcast:"
 #~ msgstr "Siaran:"
@@ -1011,9 +1098,6 @@ msgstr "Memperoleh maklumat bagi '%s'"
 
 #~ msgid "%s: Command not found"
 #~ msgstr "%s: Arahan tidak dijumpai."
-
-#~ msgid "Network Information Tools"
-#~ msgstr "Alatan Maklumat Rangkaian"
 
 #~ msgid "Network Tools - Devices"
 #~ msgstr "Alatan Rangkaian - Peranti"
