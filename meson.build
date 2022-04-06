@@ -1,5 +1,5 @@
 project('gnome-nettool', 'c',
-        version: '3.8.1',
+        version: '42.0',
         default_options: [
           'buildtype=debugoptimized',
           'warning_level=1',
