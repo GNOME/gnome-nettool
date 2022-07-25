@@ -1,434 +1,647 @@
-# translation of gnome-nettool.po to Georgian
-# Copyright (C) 2006 Gnome Georgian Translators <gnome@inet.ge>
-# This file is distributed under the same license as the gnome-nettool package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Alexander Didebulidze <didebuli@in.tum.de>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-15 12:42-0400\n"
-"PO-Revision-Date: 2006-03-20 21:35+0100\n"
-"Last-Translator: Alexander Didebulidze <didebuli@in.tum.de>\n"
-"Language-Team: Georgian <gnome@inet.ge>\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-nettool/issues\n"
+"POT-Creation-Date: 2022-06-29 19:06+0000\n"
+"PO-Revision-Date: 2022-07-25 17:55+0200\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: \n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
 
-#: ../src/callbacks.c:311
-#, fuzzy
-msgid "translator-credits"
-msgstr ""
-"Nikoloz Chavchanidze ნიკოლოზ ჭავჭანიძე <nikabsd@comcast.net>Malkhaz "
-"Barkalaya მალხაზ ბარკალაია <malxaz@gmail.com>"
-
-#: ../src/callbacks.c:326
-msgid "Graphical user interface for common network utilities"
-msgstr "ქსელის.ძირითადი.უტილიტების.გრაფიკული ინტერფეისი"
-
-#: ../src/gnome-nettool.glade.h:1
-msgid "0.0"
-msgstr "0.0"
-
-#: ../src/gnome-nettool.glade.h:2
-msgid "IP Information"
-msgstr "IP ინფორმაცია"
-
-#: ../src/gnome-nettool.glade.h:3
-msgid "Interface Information"
-msgstr "ინტერფეისის ინფორმაცია"
-
-#: ../src/gnome-nettool.glade.h:4
-msgid "Interface Statistics"
-msgstr "ინტერფეისის სტატისტიკა"
-
-#: ../src/gnome-nettool.glade.h:5
-msgid "Round Trip Time Statistics"
-msgstr "შემოვლის დროის სტატისტიკა"
-
-#: ../src/gnome-nettool.glade.h:6
-msgid "Transmission Statistics"
-msgstr "<>გადაცემის სტატისტიკა"
-
-#: ../src/gnome-nettool.glade.h:7
-msgid "Active Network Services"
-msgstr "ქსელის აქტიური სერვისები"
-
-#: ../src/gnome-nettool.glade.h:8
-msgid "Average:"
-msgstr "რაოდენობა:"
-
-#: ../src/gnome-nettool.glade.h:9
-msgid "Broadcast:"
-msgstr "მაუწყებლობა:"
-
-#: ../src/gnome-nettool.glade.h:10
-msgid "Clear _History"
-msgstr "ისტორიის _გასუფთავება"
-
-#: ../src/gnome-nettool.glade.h:11
-msgid "Collisions:"
-msgstr "კოლიზიები:"
-
-#: ../src/gnome-nettool.glade.h:12
-msgid "Devices"
-msgstr "მოწყობილობები"
-
-#. Dear Translator: This is the Window Title
-#: ../src/gnome-nettool.glade.h:14
-#, fuzzy
-msgid "Devices - Network Tools"
+#. Dear translator: This is the name of the application
+#: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
+#: src/callbacks.c:343 src/callbacks.c:344
+msgid "Network Tools"
 msgstr "ქსელის ხელსაწყოები"
 
-#: ../src/gnome-nettool.glade.h:15
-msgid "Display:"
-msgstr "დისპლეი:"
+#: data/gnome-nettool.appdata.xml.in:11
+msgid "Perform advanced networking analysis"
+msgstr "ქსელის დამატებითი ანალიზი"
 
-#: ../src/gnome-nettool.glade.h:16 ../src/main.c:857
-msgid "Finger"
-msgstr "Finger"
+#: data/gnome-nettool.appdata.xml.in:13
+msgid ""
+"Network Tools is a utility to perform advanced networking analysis "
+"operations. It features a range of networking tools that are typically done "
+"on the command line, but allows you to perform them with a graphical "
+"interface."
+msgstr ""
 
-#: ../src/gnome-nettool.glade.h:17
-msgid "Hardware address:"
-msgstr "აპარატურული მისამართი:"
+#: data/gnome-nettool.appdata.xml.in:20
+msgid ""
+"With Network Tools, you can perform the following: ping, netstat, "
+"traceroute, port scans, lookup, finger and whois."
+msgstr ""
 
-#: ../src/gnome-nettool.glade.h:18
+#: data/gnome-nettool.appdata.xml.in:39
+msgid "The GNOME Project"
+msgstr "პროექტი \"GNOME\""
+
+#: data/gnome-nettool.desktop.in.in:4
+msgid "Network information tools"
+msgstr "ქსელის ინფორმაციის ხელსაწყოები"
+
+#: data/gnome-nettool.desktop.in.in:5
+msgid "View information about your network"
+msgstr "იხილეთ ინფორმაცია თქვენი ქსელის შესახებ"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-nettool.desktop.in.in:7
+msgid "network;monitor;remote;"
+msgstr "network;monitor;remote;"
+
+#: data/gnome-nettool.ui:18 data/gnome-nettool.ui:28 data/gnome-nettool.ui:38
+#: data/gnome-nettool.ui:48 data/gnome-nettool.ui:58 data/gnome-nettool.ui:78
 msgid "Host"
 msgstr "ჰოსტი"
 
-#: ../src/gnome-nettool.glade.h:19
-msgid "IP Address:"
-msgstr "IP მისამართი:"
-
-#: ../src/gnome-nettool.glade.h:20
-msgid "Link speed:"
-msgstr "კავშირის სიჩქარე:"
-
-#: ../src/gnome-nettool.glade.h:21 ../src/main.c:771
-msgid "Lookup"
-msgstr "მონახვა"
-
-#: ../src/gnome-nettool.glade.h:22
-msgid "MTU:"
-msgstr "MTU:"
-
-#: ../src/gnome-nettool.glade.h:23
-msgid "Maximum:"
-msgstr "მაქსიმუმი:"
-
-#: ../src/gnome-nettool.glade.h:24
-msgid "Minimum:"
-msgstr "მინიმუმი:"
-
-#: ../src/gnome-nettool.glade.h:25
-msgid "Multicast Information"
-msgstr "ინფორმაცია ჯგუფური მაუწყებლობის შესახებ"
-
-#: ../src/gnome-nettool.glade.h:26
-msgid "Multicast:"
-msgstr "ჯგუფური მაუწყებლობა:"
-
-#: ../src/gnome-nettool.glade.h:27
-msgid "Netmask:"
-msgstr "ქსელის შაბლონი:"
-
-#: ../src/gnome-nettool.glade.h:28 ../src/main.c:469
-msgid "Netstat"
-msgstr "ქსელის სტატუსი"
-
-#: ../src/gnome-nettool.glade.h:29
-msgid "Not Available"
-msgstr "ხელმიუწვდომელია"
-
-#: ../src/gnome-nettool.glade.h:30
-msgid "Only"
-msgstr "მხოლოდ"
-
-#: ../src/gnome-nettool.glade.h:31
-msgid "Packets loss:"
-msgstr "დაკარგული პაკეტები:"
-
-#: ../src/gnome-nettool.glade.h:32
-msgid "Packets received:"
-msgstr "მიღებული.პაკეტები:"
-
-#: ../src/gnome-nettool.glade.h:33
-msgid "Packets transmitted:"
-msgstr "გადაცემული პაკეტები:"
-
-#: ../src/gnome-nettool.glade.h:34 ../src/main.c:305
-msgid "Ping"
-msgstr "პინგი"
-
-#: ../src/gnome-nettool.glade.h:35
-msgid "Port Scan"
-msgstr "პორტის სკანირება"
-
-#: ../src/gnome-nettool.glade.h:36
-msgid "Received bytes:"
-msgstr "მიღებული ბაიტები:"
-
-#: ../src/gnome-nettool.glade.h:37
-msgid "Received packets:"
-msgstr "მიღებული პაკეტები:"
-
-#: ../src/gnome-nettool.glade.h:38
-msgid "Reception errors:"
-msgstr "მიღების შეცდომები:"
-
-#: ../src/gnome-nettool.glade.h:39
-msgid "Routing Table Information"
-msgstr "მარშრუტიზაციის ცხრილი:"
-
-#: ../src/gnome-nettool.glade.h:40 ../src/main.c:652
-msgid "Scan"
-msgstr "სკანირება"
-
-#: ../src/gnome-nettool.glade.h:41
-msgid "Send:"
-msgstr "გაგზავნილი:"
-
-#: ../src/gnome-nettool.glade.h:42
-msgid "State:"
-msgstr "მდგომარეობა:"
-
-#: ../src/gnome-nettool.glade.h:43 ../src/main.c:393
-msgid "Trace"
-msgstr "ტრასა"
-
-#: ../src/gnome-nettool.glade.h:44
-msgid "Traceroute"
-msgstr "მარშრუტიზაცია"
-
-#: ../src/gnome-nettool.glade.h:45
-msgid "Transmission errors:"
-msgstr "გადაცემის შეცდომები:"
-
-#: ../src/gnome-nettool.glade.h:46
-msgid "Transmitted bytes:"
-msgstr "გადაცემული ბაიტები:"
-
-#: ../src/gnome-nettool.glade.h:47
-msgid "Transmitted packets:"
-msgstr "გადაცემული პაკეტები:"
-
-#: ../src/gnome-nettool.glade.h:48
-msgid "Unlimited requests"
-msgstr "ულიმიტო მოთხოვნები"
-
-#: ../src/gnome-nettool.glade.h:49
+#: data/gnome-nettool.ui:68
 msgid "User"
 msgstr "მომხმარებელი"
 
-#: ../src/gnome-nettool.glade.h:50 ../src/main.c:973
-msgid "Whois"
-msgstr "\"ვინ ვინ არის\""
-
-#: ../src/gnome-nettool.glade.h:51
-msgid "_Configure"
-msgstr "_კონფიგურაცია"
-
-#: ../src/gnome-nettool.glade.h:52
-msgid "_Domain address:"
-msgstr "_დომენის მისამართი:"
-
-#: ../src/gnome-nettool.glade.h:53
-msgid "_Edit"
-msgstr "_რედაქტირება"
-
-#: ../src/gnome-nettool.glade.h:54
-msgid "_Help"
-msgstr "_დახმარება"
-
-#: ../src/gnome-nettool.glade.h:55
-msgid "_Information type:"
-msgstr "_ინფორმაციის ტიპი:"
-
-#: ../src/gnome-nettool.glade.h:56
-msgid "_Network address:"
-msgstr "_ქსელის მისამართი:"
-
-#: ../src/gnome-nettool.glade.h:57
-msgid "_Network device:"
-msgstr "_ქსელის მოწყობილობა:"
-
-#: ../src/gnome-nettool.glade.h:58
+#: data/gnome-nettool.ui:88
 msgid "_Tool"
 msgstr "_ხელსაწყო"
 
-#: ../src/gnome-nettool.glade.h:59
-msgid "_Username:"
-msgstr "_მომხმარებელი:"
+#: data/gnome-nettool.ui:94
+msgid "Beep on ping"
+msgstr "ვიყვირო პინგზე"
 
-#: ../src/gnome-nettool.glade.h:60
+#: data/gnome-nettool.ui:107
+msgid "_Edit"
+msgstr "_დამუშავება"
+
+#: data/gnome-nettool.ui:113
+msgid "Copy as text _report"
+msgstr "_რეპორტის როგორც ტექსტის კოპირება"
+
+#: data/gnome-nettool.ui:121
+msgid "Clear _History"
+msgstr "ისტორიის _გასუფთავება"
+
+#: data/gnome-nettool.ui:128
+msgid "_Help"
+msgstr "და_ხმარება"
+
+#: data/gnome-nettool.ui:135
+msgid "_Contents"
+msgstr "_შინაარსი"
+
+#. Dear Translator: This is the Window Title
+#: data/gnome-nettool.ui:170
+msgid "Devices — Network Tools"
+msgstr "მოწყობილობები — ქსელის ხელსაწყოები"
+
+#: data/gnome-nettool.ui:202
+msgid "_Network device:"
+msgstr "_ქსელური მოწყობილობები:"
+
+#: data/gnome-nettool.ui:250
+msgid "_Configure"
+msgstr "_მორგება"
+
+#: data/gnome-nettool.ui:308
+msgid "IP Information"
+msgstr "IP ინფორმაცია"
+
+#: data/gnome-nettool.ui:348
+msgid "Hardware address:"
+msgstr "აპარატურული მისამართი:"
+
+#: data/gnome-nettool.ui:362
+msgid "Multicast:"
+msgstr "Multicast:"
+
+#: data/gnome-nettool.ui:378
+msgid "MTU:"
+msgstr "MTU:"
+
+#: data/gnome-nettool.ui:394
+msgid "Link speed:"
+msgstr "შეერთების სიჩქარე:"
+
+#: data/gnome-nettool.ui:410
+msgid "State:"
+msgstr "მდგომარეობა:"
+
+#: data/gnome-nettool.ui:426 data/gnome-nettool.ui:444
+#: data/gnome-nettool.ui:463 data/gnome-nettool.ui:482
+#: data/gnome-nettool.ui:501 data/gnome-nettool.ui:590
+#: data/gnome-nettool.ui:609 data/gnome-nettool.ui:626
+#: data/gnome-nettool.ui:661 data/gnome-nettool.ui:696
+#: data/gnome-nettool.ui:731 data/gnome-nettool.ui:766
+msgid "Not Available"
+msgstr "მიუწვდომელია"
+
+#: data/gnome-nettool.ui:523
+msgid "Interface Information"
+msgstr "ინფორმაცია ინტერფეისის შესახებ"
+
+#: data/gnome-nettool.ui:560
+msgid "Transmitted bytes:"
+msgstr "გადაცემული ბაიტები:"
+
+#: data/gnome-nettool.ui:574
+msgid "Received bytes:"
+msgstr "მიღებული ბაიტები:"
+
+#: data/gnome-nettool.ui:645
+msgid "Transmission errors:"
+msgstr "გადაცემის შეცდომები:"
+
+#: data/gnome-nettool.ui:680
+msgid "Transmitted packets:"
+msgstr "გადაცემული პაკეტები:"
+
+#: data/gnome-nettool.ui:715
+msgid "Received packets:"
+msgstr "მიღებული პაკეტები:"
+
+#: data/gnome-nettool.ui:750
+msgid "Reception errors:"
+msgstr "მიღების შეცდომები:"
+
+#: data/gnome-nettool.ui:785
+msgid "Collisions:"
+msgstr "კოლიზიები:"
+
+#: data/gnome-nettool.ui:805
+msgid "Interface Statistics"
+msgstr "ინტერფეისის სტატისტიკა"
+
+#: data/gnome-nettool.ui:835
+msgid "Devices"
+msgstr "მოწყობილობები"
+
+#: data/gnome-nettool.ui:870
+msgid "Only"
+msgstr "მხოლოდ"
+
+#: data/gnome-nettool.ui:898
+msgid "requests"
+msgstr "მოთხოვნები"
+
+#: data/gnome-nettool.ui:916
+msgid "Unlimited requests"
+msgstr "შეუზღუდავი მოთხოვნები"
+
+#: data/gnome-nettool.ui:941
+msgid "Send:"
+msgstr "გაგზავნა:"
+
+#: data/gnome-nettool.ui:961
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"შეიყვანეთ დასაპინგი ქსელური მისამართი. მაგალითად www.domain.com ან "
+"192.168.2.1"
+
+#: data/gnome-nettool.ui:967 data/gnome-nettool.ui:981
+#: data/gnome-nettool.ui:1851 data/gnome-nettool.ui:2028
+#: data/gnome-nettool.ui:2201
+msgid "Network address"
+msgstr "ქსელის მისამართი"
+
+#: data/gnome-nettool.ui:994 data/gnome-nettool.ui:1674
+#: data/gnome-nettool.ui:1829 data/gnome-nettool.ui:2051
+#: data/gnome-nettool.ui:2260
+msgid "_Network address:"
+msgstr "_ქსელის მისამართი:"
+
+#: data/gnome-nettool.ui:1042 data/gnome-nettool.ui:1457 src/main.c:288
+msgid "Ping"
+msgstr "პინგი"
+
+#: data/gnome-nettool.ui:1100 data/gnome-nettool.ui:1119
+#: data/gnome-nettool.ui:1138
+msgid "0.0"
+msgstr "0.0"
+
+#. Translators: this is the abbreviation for milliseconds
+#: data/gnome-nettool.ui:1155 data/gnome-nettool.ui:1170
+#: data/gnome-nettool.ui:1185
 msgid "ms"
 msgstr "მწმ"
 
-#: ../src/gnome-nettool.glade.h:61
-msgid "requests"
-msgstr "მოთხოვნა"
+#: data/gnome-nettool.ui:1198
+msgid "Maximum:"
+msgstr "მაქსიმუმი:"
+
+#: data/gnome-nettool.ui:1214
+msgid "Average:"
+msgstr "საშუალო:"
+
+#: data/gnome-nettool.ui:1230
+msgid "Minimum:"
+msgstr "მინიმუმი:"
+
+#: data/gnome-nettool.ui:1247
+msgid "Round Trip Time Statistics"
+msgstr "წინ და უკან დროის სტატისტიკა"
+
+#: data/gnome-nettool.ui:1280
+msgid "Packets transmitted:"
+msgstr "გადაცემული პაკეტები:"
+
+#: data/gnome-nettool.ui:1294
+msgid "0%"
+msgstr "0%"
+
+#: data/gnome-nettool.ui:1313 data/gnome-nettool.ui:1332
+msgid "0"
+msgstr "0"
+
+#: data/gnome-nettool.ui:1349
+msgid "Successful packets:"
+msgstr "წარმატებული პაკეტები:"
+
+#: data/gnome-nettool.ui:1365
+msgid "Packets received:"
+msgstr "მიღებული პაკეტები:"
+
+#: data/gnome-nettool.ui:1384
+msgid "Transmission Statistics"
+msgstr "გადაცემის სტატისტიკა"
+
+#: data/gnome-nettool.ui:1441
+msgid "Details"
+msgstr "დეტალები"
+
+#: data/gnome-nettool.ui:1482
+msgid "Display:"
+msgstr "ჩვენება:"
+
+#: data/gnome-nettool.ui:1497
+msgid "Routing Table Information"
+msgstr "რაუტინგის ცხრილის ინფორმაცია"
+
+#: data/gnome-nettool.ui:1511
+msgid "Active Network Services"
+msgstr "აქტიური ქსელური სერვისები"
+
+#: data/gnome-nettool.ui:1526
+msgid "Multicast Information"
+msgstr "Multicast-ის ინფორმაცია"
+
+#: data/gnome-nettool.ui:1581 data/gnome-nettool.ui:1649 src/main.c:442
+msgid "Netstat"
+msgstr "Netstat"
+
+#: data/gnome-nettool.ui:1625
+msgid "Output for net stat"
+msgstr "Netstat-ის გამოტანა"
+
+#: data/gnome-nettool.ui:1632
+msgid "Netstat output"
+msgstr "Netstat-ის გამოტანა"
+
+#: data/gnome-nettool.ui:1690
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+
+#: data/gnome-nettool.ui:1741 src/main.c:373
+msgid "Trace"
+msgstr ""
+
+#: data/gnome-nettool.ui:1778
+msgid "Output for traceroute"
+msgstr ""
+
+#: data/gnome-nettool.ui:1785
+msgid "Traceroute output"
+msgstr ""
+
+#: data/gnome-nettool.ui:1803
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+
+#: data/gnome-nettool.ui:1804
+msgid "Traceroute"
+msgstr "Traceroute"
+
+#: data/gnome-nettool.ui:1845
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+
+#: data/gnome-nettool.ui:1901 src/main.c:613
+msgid "Scan"
+msgstr "სკანირება"
+
+#: data/gnome-nettool.ui:1938
+msgid "Output for port scan"
+msgstr "პორტის სკანირების გამოტანა"
+
+#: data/gnome-nettool.ui:1945
+msgid "Port scan output"
+msgstr "პორტის სკანირების გამოტანა"
+
+#: data/gnome-nettool.ui:1962
+msgid "Port Scan"
+msgstr "პორტის სკანირება"
+
+#: data/gnome-nettool.ui:2004
+msgid "_Information type:"
+msgstr "_ინფორმაცის ტიპი:"
+
+#: data/gnome-nettool.ui:2022
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+
+#: data/gnome-nettool.ui:2096 data/gnome-nettool.ui:2163 src/main.c:736
+msgid "Lookup"
+msgstr "ამოხსნა"
+
+#: data/gnome-nettool.ui:2140
+msgid "Output for lookup"
+msgstr "ამოხსნის გამოტანა"
+
+#: data/gnome-nettool.ui:2146
+msgid "Lookup output"
+msgstr "ამოხსნის გამოტანა"
+
+#: data/gnome-nettool.ui:2195
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+
+#: data/gnome-nettool.ui:2231
+msgid "Enter the user to finger"
+msgstr ""
+
+#: data/gnome-nettool.ui:2237
+msgid "User name"
+msgstr "მომხმარებლის სახელი"
+
+#: data/gnome-nettool.ui:2274
+msgid "_Username:"
+msgstr "_მომხმარებელი:"
+
+#: data/gnome-nettool.ui:2319 data/gnome-nettool.ui:2387 src/main.c:814
+msgid "Finger"
+msgstr ""
+
+#: data/gnome-nettool.ui:2363
+msgid "Output for finger"
+msgstr ""
+
+#: data/gnome-nettool.ui:2370
+msgid "Finger output"
+msgstr ""
+
+#: data/gnome-nettool.ui:2412
+msgid "_Domain address:"
+msgstr "_დომენის მისამართი:"
+
+#: data/gnome-nettool.ui:2428
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+
+#: data/gnome-nettool.ui:2434
+msgid "Domain address"
+msgstr "დომენის მისამართი"
+
+#: data/gnome-nettool.ui:2484 data/gnome-nettool.ui:2548 src/main.c:918
+msgid "Whois"
+msgstr "Whois"
+
+#: data/gnome-nettool.ui:2521 data/gnome-nettool.ui:2547
+msgid "Output for whois"
+msgstr "Whois-ის გამოტანა"
+
+#: data/gnome-nettool.ui:2529 data/gnome-nettool.ui:2530
+#: data/gnome-nettool.ui:2554
+msgid "Whois output"
+msgstr "Whois-ის გამოტანა"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:6
+msgid "Historically used hostnames"
+msgstr "ისტორიულად გამოყენებული ჰოსტის სახელები"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:7
+msgid "A list of hostnames previously used"
+msgstr "ისტორიულად გამოყენებული ჰოსტის სახელები"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:11
+msgid "Historically used usernames"
+msgstr "ისტორიულად გამოყენებული მომხმარებლის სახელები"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:12
+msgid "A list of usernames previously used"
+msgstr "ისტორიულად გამოყენებული მომხმარებლის სახელები"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:16
+msgid "Historically used domains"
+msgstr "ისტორიულად გამოყენებული დომენები"
+
+#: data/org.gnome.gnome-nettool.gschema.xml:17
+msgid "A list of domains previously used"
+msgstr "ისტორიულად გამოყენებული დომენები"
+
+#: src/callbacks.c:332
+msgid "translator-credits"
+msgstr "თემური დოღონაძე"
+
+#. Translators: %s is the name of the copyright holder
+#: src/callbacks.c:339
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr "© 2003-2008 %s, ყველა უფლება დაცულია"
+
+#: src/callbacks.c:346
+msgid "Graphical user interface for common network utilities"
+msgstr ""
+
+#: src/callbacks.c:458 src/main.c:140 src/nettool.c:524
+msgid "Idle"
+msgstr "უმოქმედო"
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: src/callbacks.c:463
+#, c-format
+msgid "%s — Network Tools"
+msgstr ""
+
+#: src/callbacks.c:487
+msgid "Unable to open help file"
+msgstr ""
+
+#: src/finger.c:65
+#, c-format
+msgid "Getting information of %s on “%s”"
+msgstr ""
+
+#: src/finger.c:69
+#, c-format
+msgid "Getting information of all users on “%s”"
+msgstr ""
 
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
-#: ../src/info.c:57
+#: src/info.c:60
 msgid "Other type"
 msgstr "სხვა ტიპი"
 
-#: ../src/info.c:58
+#: src/info.c:61
 msgid "Ethernet Interface"
-msgstr "Ethernet-ინტერფეისი"
+msgstr "Ethernet ინტერფეისი"
 
-#: ../src/info.c:59
+#: src/info.c:62
 msgid "Wireless Interface"
-msgstr "უკაბელო ინტერფეისი"
+msgstr "უსადენო ინტერფეისი"
 
-#: ../src/info.c:60
+#: src/info.c:63
 msgid "Modem Interface"
-msgstr "მოდემური ინტერფეისი"
+msgstr "მოდემის ინტერფეისი"
 
-#: ../src/info.c:61
+#: src/info.c:64
 msgid "Parallel Line Interface"
-msgstr "პარალელური კავშირის ინტერფეისი"
+msgstr "პარალელური ხაზის ინტერფეისი"
 
-#: ../src/info.c:62
+#: src/info.c:65
 msgid "Infrared Interface"
 msgstr "ინფრაწითელი ინტერფეისი"
 
-#: ../src/info.c:63
-msgid "Loopback Interface"
-msgstr "მარყუჟული ინტერფეისი"
+#: src/info.c:66
+msgid "Infiniband Interface"
+msgstr "InfiniBand ინტერფეისი"
 
-#: ../src/info.c:64
+#: src/info.c:67
+msgid "Loopback Interface"
+msgstr "მარყუჟი ინტერფეისი"
+
+#: src/info.c:68
 msgid "Unknown Interface"
 msgstr "უცნობი ინტერფეისი"
 
-#: ../src/info.c:162
+#: src/info.c:166
 msgid "Network Devices Not Found"
-msgstr "ქსელის მოწყობილობები ვერ მოიძებნა"
+msgstr "ქსელური მოწყობილობები ხელმისაწვდომი არაა"
 
-#: ../src/info.c:385
+#: src/info.c:397 src/info.c:400
 msgid "Unknown"
 msgstr "უცნობი"
 
-#: ../src/info.c:545
+#: src/info.c:472
 msgid "Active"
 msgstr "აქტიური"
 
-#: ../src/info.c:547
+#: src/info.c:474
 msgid "Inactive"
 msgstr "არააქტიური"
 
-#: ../src/info.c:552
+#: src/info.c:479
 msgid "Loopback"
-msgstr "მარყუჟი"
+msgstr "მარყუჟი ინტერფეისი"
 
-#: ../src/info.c:569
+#: src/info.c:489
 msgid "Enabled"
-msgstr "ჩართული"
+msgstr "ჩართულია"
 
-#: ../src/info.c:571
+#: src/info.c:491
 msgid "Disabled"
-msgstr "გამორთული"
+msgstr "გამორთულია"
 
 #. The info output in a text format (to copy on clipboard)
-#: ../src/info.c:708
+#: src/info.c:580
 #, c-format
 msgid "Network device:\t%s\n"
-msgstr "ქსელის მოწყობილობა:\t%s\n"
+msgstr "ქსელური მოწყობილობა:\t%s\n"
 
-#: ../src/info.c:709
+#: src/info.c:581
 #, c-format
 msgid "Hardware address:\t%s\n"
 msgstr "აპარატურული მისამართი:\t%s\n"
 
-#: ../src/info.c:710
-#, c-format
-msgid "IP address:\t%s\n"
-msgstr "IP მისამართი:\t%s\n"
-
-#: ../src/info.c:711
-#, c-format
-msgid "Netmask:\t%s\n"
-msgstr "ქსელის შაბლონი:\t%s\n"
-
-#: ../src/info.c:712
-#, c-format
-msgid "Broadcast:\t%s\n"
-msgstr "მაუწყებლობა:\t%s\n"
-
-#: ../src/info.c:713
+#: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
-msgstr "ჯგუფური მაუწყებლობა:\t%s\n"
+msgstr "Multicast:\t%s\n"
 
-#: ../src/info.c:714
+#: src/info.c:583
 #, c-format
 msgid "MTU:\t%s\n"
 msgstr "MTU:\t%s\n"
 
-#: ../src/info.c:715
+#: src/info.c:584
 #, c-format
 msgid "Link speed:\t%s\n"
-msgstr "ბმის სიჩქარე:\t%s\n"
+msgstr "შეერთების სიჩქარე:\t%s\n"
 
-#: ../src/info.c:716
+#: src/info.c:585
 #, c-format
 msgid "State:\t%s\n"
 msgstr "მდგომარეობა:\t%s\n"
 
-#: ../src/info.c:718
+#: src/info.c:587
 #, c-format
 msgid "Transmitted packets:\t%s\n"
-msgstr "გაგზავნილი პაკეტები:\t%s\n"
+msgstr "გადაცემული პაკეტები:\t%s\n"
 
-#: ../src/info.c:719
+#: src/info.c:588
 #, c-format
 msgid "Transmission errors:\t%s\n"
 msgstr "გადაცემის შეცდომები:\t%s\n"
 
-#: ../src/info.c:720
+#: src/info.c:589
 #, c-format
 msgid "Received packets:\t%s\n"
 msgstr "მიღებული პაკეტები:\t%s\n"
 
-#: ../src/info.c:721
+#: src/info.c:590
 #, c-format
 msgid "Reception errors:\t%s\n"
 msgstr "მიღების შეცდომები:\t%s\n"
 
-#: ../src/info.c:722
+#: src/info.c:591
 #, c-format
 msgid "Collisions:\t%s\n"
 msgstr "კოლიზიები:\t%s\n"
 
-#: ../src/info.h:27
+#: src/info.h:23
 msgid "not available"
 msgstr "მიუწვდომელია"
 
-#: ../src/lookup.c:80
+#: src/lookup.c:85
 #, c-format
 msgid "Looking up %s"
-msgstr "იძებნება %s"
+msgstr "ამოხსნა: %s"
 
-#: ../src/lookup.c:278
+#: src/lookup.c:279
 msgid "Name"
 msgstr "სახელი"
 
 #. Time To Live of a hostname in a name server
-#: ../src/lookup.c:287
+#: src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
 
-#: ../src/lookup.c:296
+#: src/lookup.c:297
 msgid "Address Type"
 msgstr "მისამართის ტიპი"
 
-#: ../src/lookup.c:306
+#: src/lookup.c:307
 msgid "Record Type"
 msgstr "ჩანაწერის ტიპი"
 
-#: ../src/lookup.c:315
+#: src/lookup.c:316
 msgid "Address"
 msgstr "მისამართი"
 
@@ -438,398 +651,384 @@ msgstr "მისამართი"
 #. Record Type (A, PTR, HINFO, NS, TXT, etc.),
 #. Resolution (results of the query)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/lookup.c:343
+#: src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
-msgstr "წყარო\tTTL\tმისამართის ტიპი\tჩანაწერის ტიპი1\tგარჩევადობა\n"
+msgstr ""
 
-#: ../src/main.c:80
+#: src/main.c:82
 msgid "Load information for a network device"
-msgstr "ქსელის მოწყობილობის ინფორმაციის ჩატვირთვა"
+msgstr "ქსელური მოწყობილობის ინფორმაციის ჩატვირთვა"
 
-#: ../src/main.c:81
+#: src/main.c:83
 msgid "DEVICE"
 msgstr "მოწყობილობა"
 
-#: ../src/main.c:84
+#: src/main.c:86
 msgid "Send a ping to a network address"
-msgstr "პინგის გაგზავნა ქსელის მისამართზე"
+msgstr "ქსელურ მისამართზე პინგის გაგზავნა"
 
-#: ../src/main.c:85 ../src/main.c:93 ../src/main.c:97 ../src/main.c:101
+#: src/main.c:87 src/main.c:95 src/main.c:99 src/main.c:103
 msgid "HOST"
 msgstr "ჰოსტი"
 
-#: ../src/main.c:88
+#: src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
-"Netstat-ინფორმაციის მიღება.  მართებული პარამეტრები: route,·active,·multicast."
 
-#: ../src/main.c:89
+#: src/main.c:91
 msgid "COMMAND"
 msgstr "ბრძანება"
 
-#: ../src/main.c:92
+#: src/main.c:94
 msgid "Trace a route to a network address"
-msgstr "ქსელის მისამართის მარშრუტის ტრასირება"
+msgstr ""
 
-#: ../src/main.c:96
+#: src/main.c:98
 msgid "Port scan a network address"
-msgstr "ქსელის მისამართის პორტის სკანირება"
+msgstr "ქსელური მისამართის პორტების სკანირება"
 
-#: ../src/main.c:100
+#: src/main.c:102
 msgid "Look up a network address"
-msgstr "ქსელის მისამართის მონახვა"
+msgstr "ქსელური მისამართის ამოხსნა"
 
-#: ../src/main.c:104
+#: src/main.c:106
 msgid "Finger command to run"
-msgstr "Finger-ის ბრძანება"
+msgstr ""
 
-#: ../src/main.c:105
+#: src/main.c:107
 msgid "USER"
 msgstr "მომხმარებელი"
 
-#: ../src/main.c:108
+#: src/main.c:110
 msgid "Perform a whois lookup for a network domain"
-msgstr "\"ვინ ვინ არის\" ქსელის დომენში"
+msgstr ""
 
-#: ../src/main.c:109
+#: src/main.c:111
 msgid "DOMAIN"
 msgstr "დომენი"
 
-#: ../src/main.c:126
+#: src/main.c:128
 #, c-format
 msgid ""
-"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"ფაილი %s არ არსებობს. შეამოწმეთ, არის თუ არა გნომის ხელსაწყოები სწორად "
-"დაყენებული"
 
-#: ../src/main.c:338
-msgid ""
-"Enter the network address to ping.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"შეიყვანე ქსელის მისამართი პინგისათვის \n"
-"მაგალითად: www.domain.com ან 192.168.2.1"
-
-#: ../src/main.c:420
-msgid ""
-"Enter the network address to trace a route to.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"შეიყვანე ქსელის მისამართი ტრასირებისათვის.\n"
-"მაგალითად:·www.domain.com ან 192.168.2.1"
-
-#: ../src/main.c:505 ../src/netstat.c:443
+#: src/main.c:476 src/netstat.c:464
 msgid "Protocol"
 msgstr "პროტოკოლი"
 
-#: ../src/main.c:512
+#: src/main.c:483
 msgid "IP Address"
 msgstr "IP მისამართი"
 
-#: ../src/main.c:519
+#: src/main.c:490
 msgid "Netmask / Prefix"
-msgstr "ქსელის შაბლონი / პრეფიქსი"
+msgstr "ქსელური ნიღაბი / პრეფიქსი"
 
-#: ../src/main.c:526
+#: src/main.c:497
 msgid "Broadcast"
-msgstr "მაუწყებლობა"
+msgstr "გამოცხადება"
 
-#: ../src/main.c:533
+#: src/main.c:504
 msgid "Scope"
-msgstr "ხილვის არე:"
+msgstr "ფარგლები"
 
-#: ../src/main.c:674
-msgid ""
-"Enter the network address to scan for open ports.\n"
-"For example: www.domain.com or 192.168.2.1"
+#: src/main.c:663
+msgid "Default Information"
+msgstr "ნაგულისხმები ინფორმაცია"
+
+#: src/main.c:664
+msgid "Internet Address"
+msgstr "ინტერნეტ მისამართი"
+
+#: src/main.c:665
+msgid "Canonical Name"
+msgstr "კანონიკური სახელი"
+
+#: src/main.c:666
+msgid "CPU / OS Type"
+msgstr "CPU / OS -ის ტპი"
+
+#. Translators: Mailbox Exchange refers to a DNS record.
+#. It defines the priority of mail servers to contact
+#. to deliver an email.
+#. It has nothing to do with e-mail clients.
+#. See https://tools.ietf.org/html/rfc5321#section-3.6.2
+#.
+#: src/main.c:673
+msgid "Mailbox Exchange"
 msgstr ""
-"შეიყვანეთ მისამართი გახსნილი პორტების დასასკანირებლად.\n"
-"მაგალითად: www.domain.com ან 192.168.2.1"
 
-#: ../src/main.c:802
-msgid ""
-"Enter the network address to lookup.\n"
-"For example: www.domain.com or 192.168.2.1"
+#: src/main.c:674
+msgid "Mailbox Information"
 msgstr ""
-"შეიყვანეთ საძიებელი მისამართი.\n"
-"მაგალითად: www.domain.com. ან 192.168.2.1"
 
-#: ../src/main.c:891
-msgid "Enter the user to finger."
-msgstr "შეიყვანეთ მომხმარებელი finger-ისათვის."
+#. When asking for NS record in DNS context
+#: src/main.c:676
+msgid "Name Server"
+msgstr "NS"
 
-#: ../src/main.c:918
-#, fuzzy
-msgid ""
-"Enter the network address to finger that user.\n"
-"For example: auth.domain.com or 192.168.2.1"
+#: src/main.c:677
+msgid "Host name for Address"
+msgstr "ჰოსტის სახელი მისამართისთვის"
+
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
+#: src/main.c:681
+msgid "Start of Authority"
 msgstr ""
-"შეიყვანეთ მომხმარებლის მისამართი finger-ისათვის.\n"
-"მაგალითად: www.domain.com ან 192.168.2.1"
 
-#: ../src/main.c:1005
-msgid ""
-"Enter a domain address to lookup its whois information.\n"
-"For example: www.domain.com or 192.168.2.1"
-msgstr ""
-"შეიყვანეთ დომენის მისამართები \"ვინ ვინ არის\" სანახავად.\n"
-"მაგალითად: www.domain.com ან 192.168.2.1"
+#: src/main.c:682
+msgid "Text Information"
+msgstr "ტექსტური ინფორმაცია"
 
-#: ../src/netstat.c:122
+#: src/main.c:683
+msgid "Well Known Services"
+msgstr "ნაცნობი სერვისები"
+
+#: src/main.c:684
+msgid "Any / All Information"
+msgstr "ყველა / ყველანაირი ინფორმაცია"
+
+#: src/netstat.c:134
 msgid "Getting routing table"
-msgstr "მარშრუტიზაციის ცხრილის მიღება"
+msgstr "რაუტინგის ცხრილის მიღება"
 
-#: ../src/netstat.c:137
+#: src/netstat.c:149
 msgid "Getting active Internet connections"
-msgstr "აქტიური ინტერნეტ-კავშირების მიღება"
+msgstr ""
 
-#: ../src/netstat.c:146
+#: src/netstat.c:158
 msgid "Getting group memberships"
-msgstr "ინფორმაცია ჯგუფის წევრობის შესახებ"
+msgstr ""
 
-#: ../src/netstat.c:450
+#: src/netstat.c:471
 msgid "IP Source"
-msgstr "IP წყარო"
+msgstr "IP-ის წყარო"
 
-#: ../src/netstat.c:458
+#: src/netstat.c:479
 msgid "Port/Service"
 msgstr "პორტი/სერვისი"
 
-#: ../src/netstat.c:466 ../src/scan.c:298
+#: src/netstat.c:487 src/scan.c:213
 msgid "State"
 msgstr "მდგომარეობა"
 
-#: ../src/netstat.c:608
+#: src/netstat.c:640
 msgid "Destination/Prefix"
-msgstr "სამიზნე/პრეფიქსი"
+msgstr "დანიშნულება/პრეფიქსი"
 
-#: ../src/netstat.c:610
+#: src/netstat.c:642
 msgid "Destination"
-msgstr "სამიზნე"
+msgstr "დანიშნულება"
 
-#: ../src/netstat.c:617
+#: src/netstat.c:649
 msgid "Gateway"
-msgstr "კარიბჭე"
+msgstr "ნაგულისხმები რაუტერი"
 
-#: ../src/netstat.c:625
+#: src/netstat.c:657
 msgid "Netmask"
-msgstr "ქსელის შაბლონი"
+msgstr "ქსელური ნიღაბი"
 
-#: ../src/netstat.c:633 ../src/netstat.c:739
+#: src/netstat.c:665 src/netstat.c:771
 msgid "Interface"
 msgstr "ინტერფეისი"
 
-#: ../src/netstat.c:746
+#: src/netstat.c:778
 msgid "Member"
 msgstr "წევრი"
 
-#: ../src/netstat.c:754
+#: src/netstat.c:786
 msgid "Group"
 msgstr "ჯგუფი"
 
 #. The netstat "Display active network services" output in
 #. text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:796
+#: src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
-msgstr "პროტოკოლი\tIP წყარო\tპორტი/სერვისი\tმდგომარეობა\n"
+msgstr ""
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:802
+#: src/netstat.c:832
 msgid "Destination\tGateway\tNetmask\tInterface\n"
-msgstr "სამიზნე\tკარიბჭე\tქსელის შაბლონი\tინტერფეისი\n"
+msgstr ""
 
 #. The netstat "Multicast information" output in text format.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/netstat.c:807
+#: src/netstat.c:837
 msgid "Interface\tMember\tGroup\n"
-msgstr "ინტერფეისი\tწევრი\tჯგუფი\n"
+msgstr ""
 
-#: ../src/nettool.c:198
+#: src/nettool.c:204
 msgid "A network address was not specified"
-msgstr "ქსელის მისამართი არ არის მითითებული"
+msgstr ""
 
-#: ../src/nettool.c:199 ../src/nettool.c:208
+#: src/nettool.c:205 src/nettool.c:214
 msgid "Please enter a valid network address and try again."
-msgstr "შეიყვანეთ ქსელის მართებული მისამართი და სცადეთ თავიდან"
+msgstr ""
 
-#: ../src/nettool.c:206
+#: src/nettool.c:212
 #, c-format
-msgid "The address '%s' cannot be found"
-msgstr "'%s' მისამართი ვერ მოიძებნა"
+msgid "The address “%s” cannot be found"
+msgstr ""
 
-#: ../src/nettool.c:235
+#: src/nettool.c:241
 msgid "A domain address was not specified"
-msgstr "დომენის მისამართი არ არის მითითებული"
+msgstr ""
 
-#: ../src/nettool.c:236
+#: src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
-msgstr "შეიყვანეთ დომენის მართებული მისამართი და სცადეთ თავიდან."
+msgstr ""
 
-#: ../src/nettool.c:394
+#. “%s” is the task name to run
+#. (e.g. Traceroute, Port Scan, Finger, etc.)
+#: src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run “%s”"
+msgstr ""
+
+#: src/nettool.c:464
 msgid "Information not available"
-msgstr "ინფორმაცია მიუწვდომელია"
+msgstr ""
 
-#: ../src/nettool.c:512
+#: src/nettool.c:589
 msgid "Stop"
 msgstr "შეჩერება"
 
-#: ../src/nettool.c:518
+#: src/nettool.c:595
 msgid "Run"
 msgstr "გაშვება"
 
-#: ../src/ping.c:77
+#. Created up here so we can get the geometry info.
+#: src/ping.c:155
+msgid "Time (ms):"
+msgstr "დრო (მწმ):"
+
+#: src/ping.c:176
+msgid "Seq. No.:"
+msgstr "მიმდ. ნო. :"
+
+#: src/ping.c:261
 #, c-format
 msgid "Sending ping requests to %s"
-msgstr "იგზავნება პინგ-მოთხოვნები %s მისამართზე"
+msgstr ""
 
-#: ../src/ping.c:385
+#: src/ping.c:577
 msgid "Bytes"
-msgstr "ბაიტები"
+msgstr "ბაიტი"
 
-#: ../src/ping.c:392
+#: src/ping.c:584
 msgid "Source"
 msgstr "წყარო"
 
-#: ../src/ping.c:400
+#: src/ping.c:592
 msgid "Seq"
-msgstr "სეკვენცია"
+msgstr "მიმდ"
 
-#: ../src/ping.c:410
+#: src/ping.c:602 src/traceroute.c:336
 msgid "Time"
 msgstr "დრო"
 
-#: ../src/ping.c:418
+#: src/ping.c:610
 msgid "Units"
-msgstr "ერთეული"
+msgstr "საზომი ერთეულები"
 
 #. The ping output in text format:
 #. Bytes received, Address Source, Number of Sequence,
 #. Round Trip Time (Time), Units of Time.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/ping.c:444
+#: src/ping.c:636
 msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
-msgstr "ბაიტები\t.წყარო\tსეკვენცია\tდრო\tერთეულები\n"
+msgstr ""
 
 #. The ping output in a text format (to copy on clipboard)
-#: ../src/ping.c:459
+#: src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
-msgstr "მინიმალური დრო:\t%s მწმ\n"
+msgstr ""
 
-#: ../src/ping.c:460
+#: src/ping.c:652
 #, c-format
 msgid "Time average:\t%s ms\n"
-msgstr "საშუალო დრო:\t%s მწმ\n"
+msgstr ""
 
-#: ../src/ping.c:461
+#: src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
-msgstr "მაქსიმალური დრო:\t%s მწმ\n"
+msgstr ""
 
-#: ../src/ping.c:463
+#: src/ping.c:655
 #, c-format
 msgid "Packets transmitted:\t%s\n"
-msgstr "გაგზავნილია პაკეტი:\t%s\n"
+msgstr ""
 
-#: ../src/ping.c:465
+#: src/ping.c:657
 #, c-format
 msgid "Packets received:\t%s\n"
-msgstr "მიღებულია პაკეტი:\t%s\n"
+msgstr ""
 
-#: ../src/ping.c:467
+#: src/ping.c:660
 #, c-format
-msgid "Packet loss:\t%s\n"
-msgstr "დაკარგულია პაკეტი:\t%s\n"
+msgid "Successful packets:\t%s\n"
+msgstr ""
 
-#: ../src/scan.c:86
+#: src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr "%s პორტების გახსნილობის სკანირება"
+msgstr ""
 
-#: ../src/scan.c:161
-msgid "unknown"
-msgstr "უცნობი"
-
-#: ../src/scan.c:290
+#: src/scan.c:205
 msgid "Port"
 msgstr "პორტი"
 
-#: ../src/scan.c:306
+#: src/scan.c:221
 msgid "Service"
 msgstr "სერვისი"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/scan.c:328
+#: src/scan.c:243
 msgid "Port\tState\tService\n"
-msgstr "პორტი\tმდგომარეობა\tსერვისი\n"
+msgstr ""
 
-#: ../src/traceroute.c:62
+#: src/traceroute.c:67
 #, c-format
 msgid "Tracing route to %s"
-msgstr "%s-ს ტრასირება"
+msgstr ""
 
-#: ../src/traceroute.c:271
+#: src/traceroute.c:309
 msgid "Hop"
-msgstr "უბანი"
+msgstr ""
 
-#: ../src/traceroute.c:279
+#: src/traceroute.c:317
 msgid "Hostname"
 msgstr "ჰოსტის სახელი"
 
-#: ../src/traceroute.c:287
+#: src/traceroute.c:325
 msgid "IP"
 msgstr "IP"
 
-#: ../src/traceroute.c:298
-msgid "Time 1"
-msgstr "დრო 1"
-
-#: ../src/traceroute.c:308
-msgid "Time 2"
-msgstr "დრო 2"
-
 #. The traceroute output in text format:
-#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
-#. Round Trip Time 2 (Time2),
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
 #. It's a tabular output, and these belongs to the column titles
-#: ../src/traceroute.c:334
-msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
-msgstr "უბანი\tჰოსტის სახელი\tIP\tდრო 1\tდრო 2\n"
+#: src/traceroute.c:360
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr ""
 
-#: ../src/utils.c:227
+#: src/utils.c:239
 #, c-format
-msgid "%s: Command not found"
-msgstr "%s: ბრძანება ვერ მოიძებნა"
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
+msgstr ""
 
-#: ../src/gnome-nettool.desktop.in.h:1
-msgid "Network Information Tools"
-msgstr "ქსელის საინფორმაციო ხელსაწყოები"
-
-#: ../src/gnome-nettool.desktop.in.h:2
-msgid "Network Tools"
-msgstr "ქსელის ხელსაწყოები"
-
-#: ../src/finger.c:62
-#, c-format
-msgid "Getting information of %s on \"%s\""
-msgstr "\"%s\"-ზე %s-ის შესახებ ინფორმაციის მიღება"
-
-#: ../src/finger.c:66
-#, c-format
-msgid "Getting information of all users on \"%s\""
-msgstr "\"%s\"-ზე ყველა მომხმარებლის შესახებ ინფორმაციის მიღება"
-
-#: ../src/whois.c:58
+#: src/whois.c:62
 #, c-format
 msgid "Getting the whois information of %s"
-msgstr "%s-ს შესახებ \"ვინ ვინ არის\" ინფორმაციის მიღება"
-
-#~ msgid "Network Tools - Devices"
-#~ msgstr "ქსელის ხელსაწყოები - მოწყობილობები"
+msgstr ""
