@@ -1,20 +1,14 @@
-# Copyright (C) 2022 The Abkhazian language development fund named after Bagrat Shinkuba
-# This file is distributed under the same license as the gnome-nettool package.
-# Нанба Наала <naala-nanba@rambler.ru>, 2022.
-#
-
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-nettool\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-nettool/issues\n"
 "POT-Creation-Date: 2022-06-29 19:06+0000\n"
-"PO-Revision-Date: 2022-07-22 16:00+0000\n"
 "Last-Translator: Нанба Наала <naala-nanba@rambler.ru>\n"
-"Language-Team: Abkhazian <LL@li.org>\n"
+"Language-Team: Abkhazian <ab@li.org>\n"
 "Language: ab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Dear translator: This is the name of the application
 #: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
@@ -42,7 +36,7 @@ msgstr ""
 
 #: data/gnome-nettool.appdata.xml.in:39
 msgid "The GNOME Project"
-msgstr ""
+msgstr "The GNOME Project"
 
 #: data/gnome-nettool.desktop.in.in:4
 msgid "Network information tools"
@@ -254,7 +248,7 @@ msgstr "0%"
 
 #: data/gnome-nettool.ui:1313 data/gnome-nettool.ui:1332
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: data/gnome-nettool.ui:1349
 msgid "Successful packets:"
@@ -455,7 +449,9 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Нанба Наала <naala-nanba@rambler.ru>, 2022"
 
+#. Translators: %s is the name of the copyright holder
 #: src/callbacks.c:339
+#, c-format
 msgid "Copyright © 2003-2008 %s"
 msgstr "Аԥҵаҩы изин © 2003-2008 %s"
 
@@ -535,7 +531,7 @@ msgstr ""
 
 #: src/info.c:472
 msgid "Active"
-msgstr "Иактивуп"
+msgstr "Иактиву"
 
 #: src/info.c:474
 msgid "Inactive"
@@ -622,6 +618,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
+#. Time To Live of a hostname in a name server
 #: src/lookup.c:288
 msgid "TTL"
 msgstr "TTL"
@@ -1025,23 +1022,3 @@ msgstr ""
 #, c-format
 msgid "Getting the whois information of %s"
 msgstr ""
-
-#: data/gnome-nettool.ui:1100+data/gnome-nettool.ui:1119+data/gnome-nettool.ui:1138
-msgctxt ""
-"data/gnome-nettool.ui:1100 data/gnome-nettool.ui:1119 data/gnome-nettool."
-"ui:1138"
-msgid "0"
-msgstr "0"
-
-#: data/gnome-nettool.ui:1313+data/gnome-nettool.ui:1332
-msgctxt "data/gnome-nettool.ui:1313 data/gnome-nettool.ui:1332"
-msgid "0"
-msgstr "0"
-
-#: src/info.c:582
-msgid "Multicast:%s"
-msgstr "Multicast:%s"
-
-#: src/info.c:583
-msgid "MTU:%s"
-msgstr "MTU:%s"
