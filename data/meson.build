@@ -20,16 +20,14 @@ desktop_in = configure_file(input: 'gnome-nettool.desktop.in.in',
                             output: 'gnome-nettool.desktop.in',
                             configuration: desktop_conf)
 
-i18n.merge_file('desktop',
-                type: 'desktop',
+i18n.merge_file(type: 'desktop',
                 input: desktop_in,
                 output: 'gnome-nettool.desktop',
                 po_dir: po_dir,
                 install: true,
                 install_dir: join_paths(prefix, datadir, 'applications'))
 
-i18n.merge_file('appdata',
-                type: 'xml',
+i18n.merge_file(type: 'xml',
                 input: 'gnome-nettool.appdata.xml.in',
                 output: 'gnome-nettool.appdata.xml',
                 po_dir: po_dir,
