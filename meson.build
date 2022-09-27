@@ -7,7 +7,7 @@ project(
     'warning_level=1',
   ],
   meson_version: '>= 0.40.1',
-  license: 'GPLv2.0+',
+  license: 'GPL-2.0-or-later',
 )
 
 gio_req = '>= 2.26'
