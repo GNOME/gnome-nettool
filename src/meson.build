@@ -15,7 +15,10 @@ nettool_sources = [
   'main.c',
 ]
 
-executable('gnome-nettool', nettool_sources,
-           include_directories: config_inc,
-           dependencies: nettool_deps,
-           install: true)
+executable(
+  'gnome-nettool',
+  nettool_sources,
+  include_directories: config_inc,
+  dependencies: nettool_deps,
+  install: true,
+)

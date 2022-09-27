@@ -9,7 +9,10 @@ pixmaps = [
   'wavelan-16.png',
 ]
 pixmaps_dir = join_paths(prefix, datadir, pkg, 'pixmaps')
-install_data(pixmaps, install_dir: pixmaps_dir)
+install_data(
+  pixmaps,
+  install_dir: pixmaps_dir,
+)
 
 icons = [
   ['16x16', files('icons/16x16/apps/gnome-nettool.png')],
@@ -24,5 +27,8 @@ foreach icon : icons
   size = icon[0]
   file = icon[1]
   iconsdir = join_paths(prefix, datadir, 'icons', 'hicolor', size, 'apps')
-  install_data(file, install_dir: iconsdir)
+  install_data(
+    file,
+    install_dir: iconsdir,
+  )
 endforeach

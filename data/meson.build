@@ -11,28 +11,39 @@ cdata.set_quoted('GNOME_NETTOOL_LOCALEDIR', join_paths(prefix, localedir))
 cdata.set_quoted('PIXMAPS_DIR', pixmaps_dir)
 cdata.set_quoted('UI_DIR', ui_dir)
 
-install_data('gnome-nettool.ui', install_dir: ui_dir)
+install_data(
+  'gnome-nettool.ui',
+  install_dir: ui_dir,
+)
 
 desktop_conf = configuration_data()
 desktop_conf.set('PACKAGE_VERSION', meson.project_version())
 
-desktop_in = configure_file(input: 'gnome-nettool.desktop.in.in',
-                            output: 'gnome-nettool.desktop.in',
-                            configuration: desktop_conf)
-
-i18n.merge_file(type: 'desktop',
-                input: desktop_in,
-                output: 'gnome-nettool.desktop',
-                po_dir: po_dir,
-                install: true,
-                install_dir: join_paths(prefix, datadir, 'applications'))
-
-i18n.merge_file(type: 'xml',
-                input: 'gnome-nettool.appdata.xml.in',
-                output: 'gnome-nettool.appdata.xml',
-                po_dir: po_dir,
-                install: true,
-                install_dir: join_paths(prefix, datadir, 'metainfo'),
+desktop_in = configure_file(
+  input: 'gnome-nettool.desktop.in.in',
+  output: 'gnome-nettool.desktop.in',
+  configuration: desktop_conf,
 )
 
-install_data('org.gnome.gnome-nettool.gschema.xml', install_dir: schemas_dir)
+i18n.merge_file(
+  type: 'desktop',
+  input: desktop_in,
+  output: 'gnome-nettool.desktop',
+  po_dir: po_dir,
+  install: true,
+  install_dir: join_paths(prefix, datadir, 'applications'),
+)
+
+i18n.merge_file(
+  type: 'xml',
+  input: 'gnome-nettool.appdata.xml.in',
+  output: 'gnome-nettool.appdata.xml',
+  po_dir: po_dir,
+  install: true,
+  install_dir: join_paths(prefix, datadir, 'metainfo'),
+)
+
+install_data(
+  'org.gnome.gnome-nettool.gschema.xml',
+  install_dir: schemas_dir,
+)

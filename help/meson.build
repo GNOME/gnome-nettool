@@ -12,7 +12,9 @@ media = [
   'figures/gnome-nettool.png',
 ]
 
-gnome.yelp(meson.project_name(),
-           sources: sources,
-           media: media,
-           symlink_media: true)
+gnome.yelp(
+  meson.project_name(),
+  sources: sources,
+  media: media,
+  symlink_media: true,
+)
