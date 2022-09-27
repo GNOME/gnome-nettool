@@ -6,7 +6,7 @@ project(
     'buildtype=debugoptimized',
     'warning_level=1',
   ],
-  meson_version: '>= 0.56.0',
+  meson_version: '>= 0.59.0',
   license: 'GPL-2.0-or-later',
 )
 
@@ -68,4 +68,8 @@ configure_file(
   configuration: cdata,
 )
 
-meson.add_install_script('postinstall.py')
+gnome.post_install(
+  glib_compile_schemas: true,
+  gtk_update_icon_cache: true,
+  update_desktop_database: true,
+)
