@@ -6,7 +6,7 @@ project(
     'buildtype=debugoptimized',
     'warning_level=1',
   ],
-  meson_version: '>= 0.40.1',
+  meson_version: '>= 0.56.0',
   license: 'GPL-2.0-or-later',
 )
 
@@ -54,7 +54,7 @@ nettool_deps = [
   gtop_dep,
 ]
 
-po_dir = join_paths(meson.source_root(), 'po')
+po_dir = join_paths(meson.project_source_root(), 'po')
 
 subdir('src')
 subdir('po')
