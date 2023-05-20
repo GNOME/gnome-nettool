@@ -10,21 +10,23 @@
 # Furkan Ahmet Kara <furkanahmetkara.fk@gmail.com>, 2017.
 # Hanifi Çakmak <hanifi0507@gmail.com>, 2017.
 # Muhammet Kara <muhammetk@gmail.com>, 2012, 2017.
+# Sabri Ünal <libreajans@gmail.com>, 2023.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-nettool master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-nettool/issues\n"
-"POT-Creation-Date: 2022-07-25 15:46+0000\n"
-"PO-Revision-Date: 2017-11-26 22:01+0300\n"
-"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
+"POT-Creation-Date: 2023-03-04 16:08+0000\n"
+"PO-Revision-Date: 2023-05-20 09:00+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Dear translator: This is the name of the application
 #: data/gnome-nettool.appdata.xml.in:10 data/gnome-nettool.desktop.in.in:3
@@ -34,7 +36,7 @@ msgstr "Ağ Araçları"
 
 #: data/gnome-nettool.appdata.xml.in:11
 msgid "Perform advanced networking analysis"
-msgstr "Gelişmiş ağ analizi yap"
+msgstr "Gelişmiş ağ incelemesi yap"
 
 #: data/gnome-nettool.appdata.xml.in:13
 msgid ""
@@ -43,10 +45,10 @@ msgid ""
 "on the command line, but allows you to perform them with a graphical "
 "interface."
 msgstr ""
-"Ağ Araçları, gelişmiş ağ analizi işlemlerini gerçekleştirmek için kullanılan "
-"bir araçtır. Genellikle komut satırında kullanılan ağ araçlarının "
-"özelliklerini içerir, ancak bunları grafiksel bir arayüzle "
-"gerçekleştirmenize izin verir."
+"Ağ Araçları, gelişmiş ağ inceleme işlemlerini gerçekleştirmek için kullanılan "
+"araçtır. Genellikle komut satırında kullanılan ağ araçlarının "
+"özelliklerini içerir, ancak bunları grafiksel arayüzle "
+"gerçekleştirmenizi sağlar."
 
 #: data/gnome-nettool.appdata.xml.in:20
 msgid ""
@@ -54,7 +56,7 @@ msgid ""
 "traceroute, port scans, lookup, finger and whois."
 msgstr ""
 "Ağ Araçları ile, şunları gerçekleştirebilirsiniz: ping, netstat, traceroute, "
-"port taraması, lookup, finger ve whois."
+"bağlantı noktası taraması, lookup, finger ve whois."
 
 #: data/gnome-nettool.appdata.xml.in:39
 msgid "The GNOME Project"
@@ -66,7 +68,7 @@ msgstr "Ağ bilgisi araçları"
 
 #: data/gnome-nettool.desktop.in.in:5
 msgid "View information about your network"
-msgstr "Ağınız hakkında bilgi görüntüleyin"
+msgstr "Ağınızla ilgili bilgileri görüntüleyin"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-nettool.desktop.in.in:7
@@ -133,7 +135,7 @@ msgstr "Donanım adresi:"
 
 #: data/gnome-nettool.ui:362
 msgid "Multicast:"
-msgstr "Çoklu Yayın:"
+msgstr "Multicast:"
 
 #: data/gnome-nettool.ui:378
 msgid "MTU:"
@@ -154,7 +156,7 @@ msgstr "Durum:"
 #: data/gnome-nettool.ui:661 data/gnome-nettool.ui:696
 #: data/gnome-nettool.ui:731 data/gnome-nettool.ui:766
 msgid "Not Available"
-msgstr "Mevcut Değil"
+msgstr "Yok"
 
 #: data/gnome-nettool.ui:523
 msgid "Interface Information"
@@ -206,7 +208,7 @@ msgstr "istek"
 
 #: data/gnome-nettool.ui:916
 msgid "Unlimited requests"
-msgstr "Sınırsız istekler"
+msgstr "Sınırsız istek"
 
 #: data/gnome-nettool.ui:941
 msgid "Send:"
@@ -216,7 +218,7 @@ msgstr "Gönder:"
 msgid ""
 "Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
 msgstr ""
-"Ping atılacak ağ adresini girin. Örneğin: www.domain.com.tr veya 192.168.2.1"
+"Ping atılacak ağ adresini girin. Örneğin: www.alanadi.com.tr ya da 192.168.2.1"
 
 #: data/gnome-nettool.ui:967 data/gnome-nettool.ui:981
 #: data/gnome-nettool.ui:1851 data/gnome-nettool.ui:2028
@@ -247,7 +249,7 @@ msgstr "ms"
 
 #: data/gnome-nettool.ui:1198
 msgid "Maximum:"
-msgstr "Maksimum:"
+msgstr "Azami:"
 
 #: data/gnome-nettool.ui:1214
 msgid "Average:"
@@ -255,7 +257,7 @@ msgstr "Ortalama:"
 
 #: data/gnome-nettool.ui:1230
 msgid "Minimum:"
-msgstr "Minimum:"
+msgstr "Asgari:"
 
 #: data/gnome-nettool.ui:1247
 msgid "Round Trip Time Statistics"
@@ -299,7 +301,7 @@ msgstr "Yönlendirme Tablosu Bilgisi"
 
 #: data/gnome-nettool.ui:1511
 msgid "Active Network Services"
-msgstr "Etkin Ağ Servisleri"
+msgstr "Etkin Ağ Hizmetleri"
 
 #: data/gnome-nettool.ui:1526
 msgid "Multicast Information"
@@ -342,7 +344,7 @@ msgid ""
 "Enter the network address to trace a route to. For example: www.domain.com "
 "or 192.168.2.1"
 msgstr ""
-"Giden yolun izleneceği ağ adresini girin. Örneğin: www.domain.com.tr veya "
+"Giden yolun izleneceği ağ adresini girin. Örneğin: www.alanadi.com.tr ya da "
 "192.168.2.1"
 
 #: data/gnome-nettool.ui:1804
@@ -354,8 +356,8 @@ msgid ""
 "Enter the network address to scan for open ports. For example: www.domain."
 "com or 192.168.2.1"
 msgstr ""
-"Açık portların taranacağı ağ adresini girin. Örneğin: www.domain.com.tr veya "
-"192.168.2.1"
+"Açık bağlantı noktalarının taranacağı ağ adresini girin. Örneğin: www.alanadi."
+"com.tr ya da 192.168.2.1"
 
 #: data/gnome-nettool.ui:1901 src/main.c:613
 msgid "Scan"
@@ -363,15 +365,15 @@ msgstr "Tara"
 
 #: data/gnome-nettool.ui:1938
 msgid "Output for port scan"
-msgstr "Port taraması için çıktı"
+msgstr "Bağlantı noktası taraması için çıktı"
 
 #: data/gnome-nettool.ui:1945
 msgid "Port scan output"
-msgstr "Port tarama çıktısı"
+msgstr "Bağlantı noktası tarama çıktısı"
 
 #: data/gnome-nettool.ui:1962
 msgid "Port Scan"
-msgstr "Port Tarama"
+msgstr "Bağlantı Noktası Tarama"
 
 #: data/gnome-nettool.ui:2004
 msgid "_Information type:"
@@ -401,7 +403,7 @@ msgid ""
 "or 192.168.2.1"
 msgstr ""
 "Kullanıcı bilgisinin sorgulanacağı ağ adresini girin. Örneğin: auth.alan.com."
-"tr veya 192.168.2.1"
+"tr ya da 192.168.2.1"
 
 #: data/gnome-nettool.ui:2231
 msgid "Enter the user to finger"
@@ -436,7 +438,7 @@ msgid ""
 "Enter a domain address to lookup its whois information. For example: www."
 "domain.com or 192.168.2.1"
 msgstr ""
-"Whois bilgisi aranacak alanı girin. Örneğin: www.domain.com.tr veya "
+"Whois bilgisi aranacak alanı girin. Örneğin: www.alanadi.com.tr ya da "
 "192.168.2.1"
 
 #: data/gnome-nettool.ui:2434
@@ -524,11 +526,11 @@ msgstr "“%s” üstündeki tüm kullanıcıların bilgileri alınıyor"
 #. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
 #: src/info.c:60
 msgid "Other type"
-msgstr "Diğer tip"
+msgstr "Diğer tür"
 
 #: src/info.c:61
 msgid "Ethernet Interface"
-msgstr "Eternet Arabirimi"
+msgstr "Ethernet Arabirimi"
 
 #: src/info.c:62
 msgid "Wireless Interface"
@@ -584,7 +586,7 @@ msgstr "Etkin"
 
 #: src/info.c:491
 msgid "Disabled"
-msgstr "Etkin Değil"
+msgstr "Devre Dışı"
 
 #. The info output in a text format (to copy on clipboard)
 #: src/info.c:580
@@ -600,7 +602,7 @@ msgstr "Donanım adresi:\t%s\n"
 #: src/info.c:582
 #, c-format
 msgid "Multicast:\t%s\n"
-msgstr "Çoklu yayın:\t%s\n"
+msgstr "Multicast:\t%s\n"
 
 #: src/info.c:583
 #, c-format
@@ -644,7 +646,7 @@ msgstr "Çakışmalar:\t%s\n"
 
 #: src/info.h:23
 msgid "not available"
-msgstr "mevcut değil"
+msgstr "yok"
 
 #: src/lookup.c:85
 #, c-format
@@ -662,11 +664,11 @@ msgstr "TTL"
 
 #: src/lookup.c:297
 msgid "Address Type"
-msgstr "Adres Tipi"
+msgstr "Adres Türü"
 
 #: src/lookup.c:307
 msgid "Record Type"
-msgstr "Kayıt Tipi"
+msgstr "Kayıt Türü"
 
 #: src/lookup.c:316
 msgid "Address"
@@ -680,7 +682,7 @@ msgstr "Adres"
 #. It's a tabular output, and these belongs to the column titles
 #: src/lookup.c:344
 msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
-msgstr "Kaynak\tTTL\tAdres Tipi\tKayıt Tipi1\tSonuç\n"
+msgstr "Kaynak\tTTL\tAdres Türü\tKayıt Türü1\tSonuç\n"
 
 #: src/main.c:82
 msgid "Load information for a network device"
@@ -701,7 +703,7 @@ msgstr "MAKİNE"
 #: src/main.c:90
 msgid "Get netstat information.  Valid options are: route, active, multicast."
 msgstr ""
-"netstat bilgisini al.  Geçerli seçenekler: yönler(route), aktif, çoklu yayın."
+"netstat bilgisini al.  Geçerli seçenekler: route, active, multicast."
 
 #: src/main.c:91
 msgid "COMMAND"
@@ -713,7 +715,7 @@ msgstr "Ağ adresine giden yolu izle"
 
 #: src/main.c:98
 msgid "Port scan a network address"
-msgstr "Ağ adresinde port taraması yap"
+msgstr "Ağ adresinde bağlantı noktası taraması yap"
 
 #: src/main.c:102
 msgid "Look up a network address"
@@ -741,20 +743,20 @@ msgid ""
 "The file %s doesn’t exist, please check if gnome-nettool is correctly "
 "installed"
 msgstr ""
-"Dosya %s yok, lütfen gnome-nettool paketinin doğru kurulup kurulmadığını "
+"%s dosyası yok, lütfen gnome-nettool paketinin doğru kurulup kurulmadığını "
 "denetleyin"
 
 #: src/main.c:476 src/netstat.c:464
 msgid "Protocol"
-msgstr "Protokol"
+msgstr "İletişim Kuralı"
 
 #: src/main.c:483
 msgid "IP Address"
-msgstr "IP adresi"
+msgstr "IP Adresi"
 
 #: src/main.c:490
 msgid "Netmask / Prefix"
-msgstr "Ağ Maskesi / Ön eki"
+msgstr "Ağ Maskesi / Ön Ek"
 
 #: src/main.c:497
 msgid "Broadcast"
@@ -774,11 +776,11 @@ msgstr "İnternet Adresi"
 
 #: src/main.c:665
 msgid "Canonical Name"
-msgstr "Eşlenik İsim"
+msgstr "Eşlenik Ad"
 
 #: src/main.c:666
 msgid "CPU / OS Type"
-msgstr "MİB / OS Türü"
+msgstr "MİB / İS Türü"
 
 #. Translators: Mailbox Exchange refers to a DNS record.
 #. It defines the priority of mail servers to contact
@@ -797,11 +799,11 @@ msgstr "Posta Kutusu Bilgisi"
 #. When asking for NS record in DNS context
 #: src/main.c:676
 msgid "Name Server"
-msgstr "İsim Sunucusu"
+msgstr "Ad Sunucusu"
 
 #: src/main.c:677
 msgid "Host name for Address"
-msgstr "Adres İçin Makine İsmi"
+msgstr "Adres İçin Makine Adı"
 
 #. When asking for SOA record in DNS context.
 #. It defines which server is the primary nameserver
@@ -816,11 +818,11 @@ msgstr "Metin Bilgisi"
 
 #: src/main.c:683
 msgid "Well Known Services"
-msgstr "İyi Bilinen Servisler"
+msgstr "İyi Bilinen Hizmetler"
 
 #: src/main.c:684
 msgid "Any / All Information"
-msgstr "Bazı / Hepsi Bilgi"
+msgstr "Herhangi / Tüm Bilgiler"
 
 #: src/netstat.c:134
 msgid "Getting routing table"
@@ -840,7 +842,7 @@ msgstr "Kaynak IP"
 
 #: src/netstat.c:479
 msgid "Port/Service"
-msgstr "Port/Servis"
+msgstr "Bağlantı Noktası/Hizmet"
 
 #: src/netstat.c:487 src/scan.c:213
 msgid "State"
@@ -848,7 +850,7 @@ msgstr "Durum"
 
 #: src/netstat.c:640
 msgid "Destination/Prefix"
-msgstr "Hedef/Ön ek"
+msgstr "Hedef/Ön Ek"
 
 #: src/netstat.c:642
 msgid "Destination"
@@ -860,7 +862,7 @@ msgstr "Geçit"
 
 #: src/netstat.c:657
 msgid "Netmask"
-msgstr "Ağ maskesi"
+msgstr "Ağ Maskesi"
 
 #: src/netstat.c:665 src/netstat.c:771
 msgid "Interface"
@@ -879,7 +881,7 @@ msgstr "Grup"
 #. It's a tabular output, and these belongs to the column titles
 #: src/netstat.c:826
 msgid "Protocol\tIP Source\tPort/Service\tState\n"
-msgstr "Protokol\tKaynak IP\tPort/Servis\tDurum\n"
+msgstr "İletişim Kuralı\tKaynak IP\tBağlantı Noktası/Hizmet\tDurum\n"
 
 #. The netstat "Display routing" output in text format.
 #. This seems as a route table.
@@ -900,7 +902,7 @@ msgstr "Ağ adresi belirtilmedi"
 
 #: src/nettool.c:205 src/nettool.c:214
 msgid "Please enter a valid network address and try again."
-msgstr "Lütfen geçerli bir adres girip tekrar deneyin."
+msgstr "Lütfen geçerli adres girip yeniden deneyin."
 
 #: src/nettool.c:212
 #, c-format
@@ -913,14 +915,14 @@ msgstr "Alan adresi belirtilmedi"
 
 #: src/nettool.c:242
 msgid "Please enter a valid domain address and try again."
-msgstr "Lütfen geçerli bir alan adı girip tekrar deneyin."
+msgstr "Lütfen geçerli alan adı girip yeniden deneyin."
 
 #. “%s” is the task name to run
 #. (e.g. Traceroute, Port Scan, Finger, etc.)
 #: src/nettool.c:290
 #, c-format
 msgid "An error occurred when try to run “%s”"
-msgstr "“%s” çalıştırılmaya çalışılırken bir hata oluştu"
+msgstr "“%s” çalıştırılırken hata oluştu"
 
 #: src/nettool.c:464
 msgid "Information not available"
@@ -980,7 +982,7 @@ msgstr "Bayt\tKaynak\tSeq\tZaman\tBirim\n"
 #: src/ping.c:651
 #, c-format
 msgid "Time minimum:\t%s ms\n"
-msgstr "Minimum zaman:\t%s ms\n"
+msgstr "Asgari zaman:\t%s ms\n"
 
 #: src/ping.c:652
 #, c-format
@@ -990,7 +992,7 @@ msgstr "Ortalama zaman:\t%s ms\n"
 #: src/ping.c:653
 #, c-format
 msgid "Time maximum:\t%s ms\n"
-msgstr "Maksimum zaman:\t%s ms\n"
+msgstr "Azami zaman:\t%s ms\n"
 
 #: src/ping.c:655
 #, c-format
@@ -1010,22 +1012,22 @@ msgstr "Başarılı paketler:\t%s\n"
 #: src/scan.c:68
 #, c-format
 msgid "Scanning %s for open ports"
-msgstr "%s açık portlar için taranıyor"
+msgstr "%s açık bağlantı noktaları için taranıyor"
 
 #: src/scan.c:205
 msgid "Port"
-msgstr "Port"
+msgstr "Bağlantı noktası"
 
 #: src/scan.c:221
 msgid "Service"
-msgstr "Servis"
+msgstr "Hizmet"
 
 #. The portscan output in text format:
 #. Port, State, Service.
 #. It's a tabular output, and these belongs to the column titles
 #: src/scan.c:243
 msgid "Port\tState\tService\n"
-msgstr "Port\tDurum\tServis\n"
+msgstr "Bağlantı Noktası\tDurum\tHizmet\n"
 
 #: src/traceroute.c:67
 #, c-format
@@ -1038,7 +1040,7 @@ msgstr "Sekme"
 
 #: src/traceroute.c:317
 msgid "Hostname"
-msgstr "Makine adı"
+msgstr "Makine Adı"
 
 #: src/traceroute.c:325
 msgid "IP"
